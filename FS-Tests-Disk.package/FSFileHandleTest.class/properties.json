@@ -1,0 +1,14 @@
+{
+	"category" : "FS-Tests-Disk",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "FSFileHandleTest",
+	"pools" : [
+		 ],
+	"super" : "FSHandleTest",
+	"type" : "normal" }

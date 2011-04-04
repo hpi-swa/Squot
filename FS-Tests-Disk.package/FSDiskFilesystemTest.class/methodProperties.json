@@ -1,0 +1,8 @@
+{
+	"class" : {
+		 },
+	"instance" : {
+		"createFilesystem" : "cwp 2/18/2011 22:59",
+		"testDefaultWorkingDirectory" : "cwp 10/11/2009 22:23",
+		"testEqual" : "cwp 7/24/2009 00:40",
+		"testIsDirectory" : "cwp 2/18/2011 17:01" } }

@@ -1,0 +1,15 @@
+{
+	"category" : "FS-Tests-Core",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"filesystem",
+		"toDelete" ],
+	"name" : "FSFilesystemTest",
+	"pools" : [
+		 ],
+	"super" : "TestCase",
+	"type" : "normal" }

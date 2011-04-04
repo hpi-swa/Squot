@@ -1,0 +1,7 @@
+{
+	"class" : {
+		"isAbstract" : "lr 7/13/2010 13:48" },
+	"instance" : {
+		"createDirectory:" : "cwp 11/21/2009 11:30",
+		"createFile:" : "cwp 2/18/2011 16:17",
+		"setUp" : "cwp 2/19/2011 01:26" } }

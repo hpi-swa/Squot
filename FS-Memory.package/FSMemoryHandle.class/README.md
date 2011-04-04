@@ -1,0 +1,1 @@
+I provide "primitives" for doing IO on files in a FSMemoryFilesystem. I buffer writes until the stream is flushed or closed. 

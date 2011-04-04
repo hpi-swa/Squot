@@ -1,0 +1,17 @@
+{
+	"class" : {
+		 },
+	"instance" : {
+		"contents" : "cwp 2/18/2011 12:52",
+		"setUp" : "cwp 2/19/2011 01:26",
+		"testClose" : "cwp 7/28/2009 22:48",
+		"testContents" : "cwp 7/29/2009 21:55",
+		"testCr" : "cwp 7/29/2009 21:55",
+		"testFlush" : "cwp 7/28/2009 22:21",
+		"testNextPut" : "cwp 7/29/2009 21:55",
+		"testNextPutAll" : "cwp 7/29/2009 22:23",
+		"testOverriding" : "MaxLeske 11/14/2010 10:43",
+		"testSpace" : "cwp 7/29/2009 21:55",
+		"testTab" : "cwp 7/29/2009 21:56",
+		"testTruncate" : "cwp 10/15/2009 22:04",
+		"testTruncateTo" : "cwp 10/15/2009 21:50" } }

@@ -1,0 +1,15 @@
+{
+	"category" : "FS-Tests-AnsiStreams",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"filesystem",
+		"stream" ],
+	"name" : "FSWriteStreamTest",
+	"pools" : [
+		 ],
+	"super" : "TestCase",
+	"type" : "normal" }

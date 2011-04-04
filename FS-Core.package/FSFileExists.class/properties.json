@@ -1,0 +1,14 @@
+{
+	"category" : "FS-Core-Exceptions",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "cwp 11/18/2009 12:37",
+	"instvars" : [
+		 ],
+	"name" : "FSFileExists",
+	"pools" : [
+		 ],
+	"super" : "FSFilesystemError",
+	"type" : "normal" }

@@ -1,0 +1,14 @@
+{
+	"category" : "FS-Core-Enumeration",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "cwp 11/18/2009 12:25",
+	"instvars" : [
+		 ],
+	"name" : "FSVisitor",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }

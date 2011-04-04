@@ -1,0 +1,15 @@
+{
+	"category" : "FS-Core-Public",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		"Resolver" ],
+	"commentStamp" : "cwp 4/4/2011 18:43",
+	"instvars" : [
+		"origin",
+		"path" ],
+	"name" : "FSLocator",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }

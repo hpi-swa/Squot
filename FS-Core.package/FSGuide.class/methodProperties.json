@@ -1,0 +1,9 @@
+{
+	"class" : {
+		"for:" : "cwp 10/29/2009 19:27",
+		"show:to:" : "cwp 11/17/2009 11:58" },
+	"instance" : {
+		"initialize" : "StephaneDucasse 1/27/2011 10:37",
+		"initializeWithVisitor:" : "cwp 10/29/2009 23:48",
+		"show:" : "cwp 10/29/2009 23:21",
+		"whileNotDoneDo:" : "lr 7/13/2010 15:36" } }

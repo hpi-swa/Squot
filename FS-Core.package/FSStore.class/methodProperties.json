@@ -1,0 +1,27 @@
+{
+	"class" : {
+		 },
+	"instance" : {
+		"basicCopy:ifAbsent:to:ifPresent:filesystem:" : "cwp 2/19/2011 00:49",
+		"basicIsDirectory:" : "cwp 2/18/2011 13:15",
+		"basicIsFile:" : "cwp 2/18/2011 14:32",
+		"close" : "cwp 2/19/2011 01:39",
+		"createDirectory:" : "cwp 2/18/2011 23:59",
+		"defaultWorkingDirectory" : "cwp 2/18/2011 16:49",
+		"delete:" : "cwp 2/18/2011 13:25",
+		"delimiter" : "cwp 2/18/2011 17:19",
+		"directoryAt:ifAbsent:nodesDo:" : "cwp 2/18/2011 13:07",
+		"ensureDirectory:" : "cwp 2/19/2011 00:00",
+		"exists:" : "cwp 2/18/2011 13:11",
+		"filename:matches:" : "cwp 2/18/2011 12:28",
+		"isDirectory:" : "cwp 2/18/2011 13:22",
+		"isFile:" : "cwp 2/18/2011 14:35",
+		"nodeAt:ifPresent:ifAbsent:" : "cwp 2/18/2011 12:50",
+		"open" : "cwp 2/19/2011 01:38",
+		"pathFromString:" : "cwp 2/26/2011 17:53",
+		"printPath:on:" : "cwp 2/28/2011 12:28",
+		"signalDirectoryDoesNotExist:" : "cwp 4/3/2011 22:16",
+		"signalDirectoryExists:" : "cwp 4/3/2011 22:16",
+		"signalFileDoesNotExist:" : "cwp 4/3/2011 22:17",
+		"signalFileExists:" : "cwp 4/3/2011 22:17",
+		"stringFromPath:" : "cwp 2/28/2011 12:28" } }

@@ -1,0 +1,14 @@
+{
+	"category" : "FS-Core-Resolvers",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "cwp 11/18/2009 11:56",
+	"instvars" : [
+		 ],
+	"name" : "FSPlatformResolver",
+	"pools" : [
+		 ],
+	"super" : "FSResolver",
+	"type" : "normal" }

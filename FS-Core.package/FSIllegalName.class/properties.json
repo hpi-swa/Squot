@@ -1,0 +1,14 @@
+{
+	"category" : "FS-Core-Exceptions",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"name" ],
+	"name" : "FSIllegalName",
+	"pools" : [
+		 ],
+	"super" : "FSFilesystemError",
+	"type" : "normal" }

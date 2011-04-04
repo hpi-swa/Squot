@@ -1,0 +1,18 @@
+{
+	"category" : "FS-Core-Public",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "cwp 11/18/2009 11:09",
+	"instvars" : [
+		"reference",
+		"creation",
+		"modification",
+		"isDirectory",
+		"size" ],
+	"name" : "FSDirectoryEntry",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }

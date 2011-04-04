@@ -1,0 +1,1 @@
+A dummy class to publish the code in FileSystem on SqueakSource and PharoTaskForces

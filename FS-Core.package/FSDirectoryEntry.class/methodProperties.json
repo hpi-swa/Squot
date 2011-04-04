@@ -1,0 +1,16 @@
+{
+	"class" : {
+		"filesystem:path:creation:modification:isDir:size:" : "StephaneDucasse 1/27/2011 22:22",
+		"reference:creation:modification:isDir:size:" : "StephaneDucasse 1/27/2011 22:19" },
+	"instance" : {
+		"basename" : "StephaneDucasse 2/15/2010 17:59",
+		"creation" : "StephaneDucasse 1/27/2011 22:14",
+		"creationSeconds" : "StephaneDucasse 1/27/2011 22:16",
+		"initializeWithRef:creation:modification:isDir:size:" : "cwp 11/15/2009 21:52",
+		"isDirectory" : "StephaneDucasse 1/27/2011 22:16",
+		"isFile" : "StephaneDucasse 1/27/2011 22:16",
+		"modification" : "StephaneDucasse 1/27/2011 22:15",
+		"modificationSeconds" : "StephaneDucasse 1/27/2011 22:15",
+		"printOn:" : "sd 2/11/2011 19:40",
+		"reference" : "cwp 11/15/2009 21:54",
+		"size" : "StephaneDucasse 1/27/2011 22:15" } }

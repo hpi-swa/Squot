@@ -1,0 +1,15 @@
+{
+	"category" : "FS-AnsiStreams",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "cwp 11/18/2009 11:34",
+	"instvars" : [
+		"handle",
+		"position" ],
+	"name" : "FSStream",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }

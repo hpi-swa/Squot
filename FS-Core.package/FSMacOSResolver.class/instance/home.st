@@ -1,4 +1,4 @@
 origins
 home
-	^ (self resolveString: SecurityManager default untrustedUserDirectory)
+	^ (self resolveString: self class primitiveGetUntrustedUserDirectory)
 		parent parent parent parent parent

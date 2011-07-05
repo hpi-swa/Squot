@@ -1,0 +1,14 @@
+{
+	"category" : "FS-Core-Implementation",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		"Disks" ],
+	"commentStamp" : "",
+	"instvars" : [
+		"disk" ],
+	"name" : "FSWindowsStore",
+	"pools" : [
+		 ],
+	"super" : "FSDiskStore",
+	"type" : "normal" }

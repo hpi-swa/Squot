@@ -1,1 +1,1 @@
-SystemOrganization addCategory: #'FS-Core-Public'!SystemOrganization addCategory: #'FS-Core-Kernel'!SystemOrganization addCategory: #'FS-Core-Resolvers'!SystemOrganization addCategory: #'FS-Core-Enumeration'!
+SystemOrganization addCategory: #'FS-Core-Public'!SystemOrganization addCategory: #'FS-Core-Kernel'!SystemOrganization addCategory: #'FS-Core-Implementation'!

@@ -1,0 +1,15 @@
+{
+	"category" : "FS-Core-Implementation",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		"CurrentFS",
+		"Primitives" ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "FSDiskStore",
+	"pools" : [
+		 ],
+	"super" : "FSStore",
+	"type" : "normal" }

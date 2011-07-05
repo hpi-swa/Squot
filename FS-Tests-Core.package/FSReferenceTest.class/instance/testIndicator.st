@@ -7,14 +7,14 @@ testIndicator
 	self deny: ref exists.
 	self assert: ref indicator = '?'.
 	
-	ref := filesystem working / 'plonk'.
+	ref := filesystem workingDirectory / 'plonk'.
 	self deny: ref exists.
 	[ref createDirectory.
 	 self assert: ref exists.
 	self assert: ref isDirectory.
 	 self assert: ref indicator equals: '/' ] ensure: [ref delete].
 	
-	ref := filesystem working / 'plonk'.
+	ref := filesystem workingDirectory / 'plonk'.
 	self deny: ref exists.
 	[ref writeStreamDo: [:stream | stream nextPutAll: 'foo'  ] ifPresent: [self fail].
 	 self assert: ref exists.

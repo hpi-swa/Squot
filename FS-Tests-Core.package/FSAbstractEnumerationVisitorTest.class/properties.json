@@ -7,8 +7,8 @@
 	"commentStamp" : "",
 	"instvars" : [
 		 ],
-	"name" : "FSCollectVisitorTest",
+	"name" : "FSAbstractEnumerationVisitorTest",
 	"pools" : [
 		 ],
-	"super" : "FSAbstractEnumerationVisitorTest",
+	"super" : "FSSingleTreeTest",
 	"type" : "normal" }

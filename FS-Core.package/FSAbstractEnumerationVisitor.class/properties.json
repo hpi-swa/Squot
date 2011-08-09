@@ -4,11 +4,12 @@
 		 ],
 	"classvars" : [
 		 ],
-	"commentStamp" : "cwp 11/18/2009 12:32",
+	"commentStamp" : "",
 	"instvars" : [
-		 ],
-	"name" : "FSCollectVisitor",
+		"out",
+		"block" ],
+	"name" : "FSAbstractEnumerationVisitor",
 	"pools" : [
 		 ],
-	"super" : "FSAbstractEnumerationVisitor",
+	"super" : "FSVisitor",
 	"type" : "normal" }

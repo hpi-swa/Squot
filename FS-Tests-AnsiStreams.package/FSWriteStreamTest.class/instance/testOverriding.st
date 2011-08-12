@@ -7,5 +7,5 @@ testOverriding
 		readStream contents asString = 'foo bar'.
 	
 	(filesystem root resolve: 'giffle') writeStreamDo: [ :s | s nextPutAll: 'x' ].
-	self assert: (filesystem referenceTo: 'giffle') 
+	self assert: (filesystem / 'giffle') 
 		readStream contents asString = 'x'

@@ -1,6 +1,6 @@
 running
 setUp
-	source := FSFilesystem inMemory.
-	dest := FSFilesystem inMemory.
+	source := FSFilesystem memory.
+	dest := FSFilesystem memory.
 	
 	

@@ -1,7 +1,7 @@
 tests
 testSlash
 	| ref result |
-	ref := filesystem referenceTo: 'plonk'.
+	ref := filesystem * 'plonk'.
 	result := ref / 'griffle'.
 	self assert: result class = ref class.
 	self assert: result  isRelative.

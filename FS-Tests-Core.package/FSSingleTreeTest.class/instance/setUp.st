@@ -1,5 +1,5 @@
 running
 setUp
 	super setUp.
-	filesystem := FSFilesystem inMemory.
+	filesystem := FSFilesystem memory.
 	

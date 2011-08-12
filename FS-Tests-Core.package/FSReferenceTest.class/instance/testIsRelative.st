@@ -1,3 +1,3 @@
 tests
 testIsRelative
-	self assert: (filesystem referenceTo: 'plonk') isRelative
+	self assert: (filesystem * 'plonk') isRelative

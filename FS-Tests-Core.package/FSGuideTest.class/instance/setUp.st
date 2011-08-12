@@ -1,5 +1,5 @@
 running
 setUp
 	visited := OrderedCollection new.
-	filesystem := FSFilesystem inMemory.
+	filesystem := FSFilesystem memory.
 	self setUpGreek

@@ -1,8 +1,8 @@
 tests
 testParentResolutionWithAbsoluteReference
 	| base relative absolute |
-	base := (filesystem referenceTo: '/plonk/pinto').
-	relative := (FSFilesystem inMemory referenceTo: '/griffle/zonk').
+	base := (filesystem / '/plonk' / 'pinto').
+	relative := (FSFilesystem memory / 'griffle' / 'zonk').
 	absolute := base resolve: relative.
 	self assert: absolute filesystem == relative filesystem.
 	self assert: absolute isAbsolute.

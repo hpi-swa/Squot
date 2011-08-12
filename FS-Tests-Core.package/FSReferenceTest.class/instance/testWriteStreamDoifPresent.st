@@ -1,7 +1,7 @@
 tests
 testWriteStreamDoifPresent
 	| ref s |
-	ref := filesystem referenceTo: 'plonk'.
+	ref := filesystem / 'plonk'.
 	ref 
 		writeStreamDo:
 			[:stream |

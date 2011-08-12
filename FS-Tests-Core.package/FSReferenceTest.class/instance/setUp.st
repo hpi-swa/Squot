@@ -1,3 +1,3 @@
 running
 setUp
-	filesystem := FSFilesystem inMemory.
+	filesystem := FSFilesystem memory.

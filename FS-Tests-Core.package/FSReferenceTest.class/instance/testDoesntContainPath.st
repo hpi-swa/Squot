@@ -1,5 +1,5 @@
 tests
 testDoesntContainPath
 	| ref |
-	ref := filesystem referenceTo: (FSPath * 'griffle').
+	ref := filesystem * 'griffle'.
 	self deny: (ref contains: (FSPath * 'nurp'))

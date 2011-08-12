@@ -1,3 +1,3 @@
 tests
 testIsAbsolute
-	self assert: (filesystem referenceTo: '/plonk') isAbsolute
+	self assert: (filesystem / 'plonk') isAbsolute

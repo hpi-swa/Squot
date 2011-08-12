@@ -1,6 +1,6 @@
 tests
 testUnequalContent
 	| a b |
-	a := filesystem referenceTo: 'plonk'.
-	b := filesystem referenceTo: 'griffle'.
+	a := filesystem * 'plonk'.
+	b := filesystem * 'griffle'.
 	self deny: a = b.

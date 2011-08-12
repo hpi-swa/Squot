@@ -1,5 +1,5 @@
 running
 setUp
 	filesystem := self createFilesystem.
-	reference := filesystem referenceTo: 'plonk'.
+	reference := filesystem * 'plonk'.
 	handle := reference openWritable: true

@@ -5,7 +5,7 @@ testChildren
 	filesystem createDirectory: '/alpha/beta'.
 	filesystem createDirectory: '/alpha/gamma'.
 	
-	ref := filesystem referenceTo: '/alpha'.
+	ref := filesystem / 'alpha'.
 	children := ref children.
 	self assert: children size = 2.
 	children do:

@@ -1,3 +1,3 @@
 tests
 testIsNotRoot
-	self deny: (filesystem referenceTo: FSPath / 'plonk') isRoot
+	self deny: (filesystem / 'plonk') isRoot

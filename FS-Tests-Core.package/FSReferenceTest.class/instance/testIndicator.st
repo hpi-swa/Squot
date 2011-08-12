@@ -3,7 +3,7 @@ testIndicator
 	"self debug: #testIndicator"
 	
 	| ref |
-	ref := filesystem referenceTo: 'plonk/griffle'.
+	ref := filesystem * 'plonk' / 'griffle'.
 	self deny: ref exists.
 	self assert: ref indicator = '?'.
 	

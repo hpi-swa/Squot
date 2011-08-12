@@ -1,5 +1,5 @@
 tests
 testResolve
 	| ref |
-	ref := filesystem referenceTo: FSPath / 'griffle'.
+	ref := filesystem / 'griffle'.
 	self assert: ref resolve == ref

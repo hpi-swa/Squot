@@ -9,7 +9,7 @@ testAllDirectories
 	filesystem createDirectory: '/alpha/beta/delta'.
 	filesystem createDirectory: '/alpha/gamma'.
 	
-	ref := filesystem referenceTo: '/alpha'.
+	ref := filesystem / 'alpha'.
 	children := ref allDirectories.
 	"all children returns the directories: '/alpha', '/alpha/beta', and '/alpha/gamma'."
 	self assert: children size = 4.

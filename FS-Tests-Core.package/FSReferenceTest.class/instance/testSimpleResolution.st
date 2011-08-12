@@ -1,7 +1,7 @@
 tests
 testSimpleResolution
 	| base relative absolute |
-	base := filesystem referenceTo: FSPath / 'plonk'.
+	base := filesystem / 'plonk'.
 	relative := (FSPath * 'griffle') / 'zonk'.
 	absolute := base resolve: relative.
 	self assert: absolute isAbsolute.

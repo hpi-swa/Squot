@@ -3,9 +3,9 @@ testChildDirectories
 	| childDirectories |
 	filesystem createDirectory: '/beta'.
 	filesystem createDirectory: '/gamma'.	
-	(filesystem referenceTo: '/delta')
+	(filesystem / 'delta')
 		writeStreamDo: [ :stream | stream nextPutAll: '1' ].
-	(filesystem referenceTo: '/epsilon')
+	(filesystem / 'epsilon')
 		writeStreamDo: [ :stream | stream nextPutAll: '2' ].
 	childDirectories := filesystem root directories.
 	self assert: childDirectories size = 2.

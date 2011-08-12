@@ -1,5 +1,5 @@
 tests
 testRootParent
 	| root |
-	root := filesystem referenceTo: FSPath root.
+	root := filesystem root.
 	self assert: root parent == root

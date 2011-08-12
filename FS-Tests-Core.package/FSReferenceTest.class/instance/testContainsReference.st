@@ -1,5 +1,5 @@
 tests
 testContainsReference
 	| ref |
-	ref := filesystem referenceTo: (FSPath * 'griffle').
+	ref := filesystem * 'griffle'.
 	self assert: (ref contains: ref / 'nurp')

@@ -1,3 +1,3 @@
 as yet unclassified
 root
-	^ filesystem referenceTo: '/alpha'
+	^ filesystem / 'alpha'

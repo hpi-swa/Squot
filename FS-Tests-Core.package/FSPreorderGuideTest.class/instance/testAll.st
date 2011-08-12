@@ -1,7 +1,7 @@
 tests
 testAll
 	guide := FSPreorderGuide for: self.
-	guide show: (filesystem referenceTo: '/alpha').
+	guide show: (filesystem / 'alpha').
 	self assertVisitedIs: #(
 			'alpha'
 			'beta'

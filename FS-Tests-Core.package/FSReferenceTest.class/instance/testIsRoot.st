@@ -1,3 +1,3 @@
 tests
 testIsRoot
-	self assert: (filesystem referenceTo: FSPath root) isRoot
+	self assert: (filesystem root) isRoot

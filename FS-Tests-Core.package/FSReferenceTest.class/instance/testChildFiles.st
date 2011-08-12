@@ -3,9 +3,9 @@ testChildFiles
 	| childFiles |
 	filesystem createDirectory: '/beta'.
 	filesystem createDirectory: '/gamma'.	
-	(filesystem referenceTo: '/delta')
+	(filesystem / 'delta')
 		writeStreamDo: [ :stream | stream nextPutAll: '1' ].
-	(filesystem referenceTo: '/epsilon')
+	(filesystem / 'epsilon')
 		writeStreamDo: [ :stream | stream nextPutAll: '2' ].
 	childFiles := filesystem root files.
 	self assert: childFiles size = 2.

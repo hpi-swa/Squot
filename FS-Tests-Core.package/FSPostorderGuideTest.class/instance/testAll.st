@@ -1,7 +1,7 @@
 tests
 testAll
 	guide := FSPostorderGuide for: self.
-	guide show: (filesystem referenceTo: '/alpha').
+	guide show: (filesystem / 'alpha').
 	self assertVisitedIs: #(
 			'delta'
 			'gamma'

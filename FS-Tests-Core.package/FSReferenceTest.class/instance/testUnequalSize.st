@@ -1,6 +1,6 @@
 tests
 testUnequalSize
 	| a b |
-	a := filesystem referenceTo: 'plonk'.
-	b := filesystem referenceTo: 'plonk/griffle'.
+	a := filesystem * 'plonk'.
+	b := filesystem / 'plonk' / 'griffle'.
 	self deny: a = b.

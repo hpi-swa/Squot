@@ -1,6 +1,6 @@
 tests
 testDoesntContainReferenceFilesystem
 	| ref other |
-	ref := filesystem referenceTo: (FSPath * 'griffle').
+	ref := filesystem  * 'griffle'.
 	other := FSFilesystem memory / 'griffle' / 'nurp'.
 	self deny: (ref contains: other)

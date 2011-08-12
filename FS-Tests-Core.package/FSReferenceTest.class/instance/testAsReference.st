@@ -1,5 +1,5 @@
 tests
 testAsReference
 	| ref |
-	ref := filesystem referenceTo: 'plonk'.
+	ref := filesystem * 'plonk'.
 	self assert: ref asReference == ref

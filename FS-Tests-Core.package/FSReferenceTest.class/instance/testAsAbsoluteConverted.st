@@ -4,7 +4,7 @@ testAsAbsoluteConverted
 	that it's absolute and still has the same path."
 	
 	| ref absolute |
-	ref := filesystem referenceTo: 'plonk'.
+	ref := filesystem * 'plonk'.
 	absolute := ref asAbsolute.
 	self assert: absolute isAbsolute.
 	self assert: (absolute path at: 1) = 'plonk'

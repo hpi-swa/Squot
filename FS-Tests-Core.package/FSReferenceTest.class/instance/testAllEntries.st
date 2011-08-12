@@ -6,7 +6,7 @@ testAllEntries
 	filesystem createDirectory: '/alpha/beta/delta'.
 	filesystem createDirectory: '/alpha/gamma'.
 	
-	ref := filesystem referenceTo: '/alpha'.
+	ref := filesystem / 'alpha'.
 	entries := ref allEntries.
 	self assert: entries size = 4.
 	entries do:

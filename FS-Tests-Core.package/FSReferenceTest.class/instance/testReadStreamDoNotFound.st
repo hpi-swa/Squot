@@ -1,8 +1,7 @@
 tests stream
 testReadStreamDoNotFound
-	| ref path |
-	path := FSPath * 'plonk'.
-	ref := filesystem referenceTo: path.
+	| ref |
+	ref := filesystem / 'plonk'.
 	self
 		should: [ref readStreamDo: [:s]]
 		raise: FSFileDoesNotExist 

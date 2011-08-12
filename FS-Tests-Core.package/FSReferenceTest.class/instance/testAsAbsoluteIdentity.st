@@ -1,5 +1,5 @@
 tests
 testAsAbsoluteIdentity
 	| ref |
-	ref := filesystem referenceTo: '/plonk'.
+	ref := filesystem / 'plonk'.
 	self assert: ref asAbsolute == ref

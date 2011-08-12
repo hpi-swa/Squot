@@ -1,4 +1,4 @@
 tests
 testCr
 	stream cr.
-	self assert: self contents first = 13
+	self assert: self contents first = Character cr asInteger

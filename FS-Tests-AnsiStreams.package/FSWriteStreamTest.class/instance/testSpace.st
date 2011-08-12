@@ -1,4 +1,4 @@
 tests
 testSpace
 	stream space.
-	self assert: self contents first = 32
+	self assert: self contents first = Character space asInteger

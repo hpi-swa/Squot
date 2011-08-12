@@ -6,7 +6,7 @@ printOn: aStream
 		ifFalse: 
 			[aStream 
 				nextPutAll: '* ''';
-				nextPutAll: (self at: 1);
+				nextPutAll: (self at: 1) asString;
 				nextPut: $'.
 			2 to: self size do:
 				[:i |

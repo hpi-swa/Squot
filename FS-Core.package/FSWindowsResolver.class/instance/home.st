@@ -1,5 +1,5 @@
 origins
 home
 	| pathString |
-	pathString := SecurityManager default untrustedUserDirectory.
+	pathString := self class primitiveGetUntrustedUserDirectory.
 	^ (self resolveString: pathString) parent parent

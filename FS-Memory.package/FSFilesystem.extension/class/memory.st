@@ -1,3 +1,3 @@
 *fs-memory
-inMemory
+memory
 	^ self store: (FSMemoryStore new)

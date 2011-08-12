@@ -1,5 +1,5 @@
 tests
 testDefaultWorkingDirectory
 	| ref |
-	ref := filesystem referenceTo: filesystem workingDirectory.
+	ref := filesystem workingDirectory.
 	self assert: (SmalltalkImage current imagePath beginsWith: ref asString)

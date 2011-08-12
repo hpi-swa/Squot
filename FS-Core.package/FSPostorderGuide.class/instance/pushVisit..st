@@ -1,5 +1,5 @@
 showing
 pushVisit: aReference 
-	work add: (Message 
+	self push: (Message 
 				selector: #visit:
 				argument: aReference)

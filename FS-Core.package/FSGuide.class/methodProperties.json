@@ -5,5 +5,9 @@
 	"instance" : {
 		"initialize" : "StephaneDucasse 1/27/2011 10:37",
 		"initializeWithVisitor:" : "cwp 10/29/2009 23:48",
+		"pop" : "CamilloBruni 8/12/2011 18:18",
+		"push:" : "CamilloBruni 8/12/2011 18:18",
+		"pushAll:" : "CamilloBruni 8/12/2011 18:20",
 		"show:" : "cwp 10/29/2009 23:21",
+		"top" : "CamilloBruni 8/12/2011 18:22",
 		"whileNotDoneDo:" : "lr 7/13/2010 15:36" } }

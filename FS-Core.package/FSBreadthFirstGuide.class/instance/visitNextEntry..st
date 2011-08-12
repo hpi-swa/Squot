@@ -4,4 +4,4 @@ visitNextEntry: entry
 		ifTrue: [ ^ visitor visitFile: entry ].
 	
 	visitor visitDirectory: entry.
-	work addAll: entry reference entries.
+	self pushAll: entry reference entries.

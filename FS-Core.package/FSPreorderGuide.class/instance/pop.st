@@ -1,3 +1,0 @@
-showing
-pop
-	^ work removeLast

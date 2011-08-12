@@ -1,5 +1,5 @@
 showing
 pushTraverse: aReference 
-	work add: (Message 
+	self push: (Message 
 				selector: #traverse:
 				argument: aReference)

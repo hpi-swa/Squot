@@ -1,4 +1,4 @@
 showing
 show: aReference 
-	work add: aReference entry.
-	self whileNotDoneDo: [ self visitNextEntry: work removeFirst ]
+	self push: aReference entry.
+	self whileNotDoneDo: [ self visitNextEntry: self top ]

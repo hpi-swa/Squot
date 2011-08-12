@@ -1,3 +1,3 @@
-ansi puttable
+character writing
 cr
 	self nextPut: 13

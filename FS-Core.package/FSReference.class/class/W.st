@@ -1,3 +1,3 @@
 windows
 W
-	^ self filesystem: (FSFilesystem onDisk) path: FSPath / 'W:'
+	^ self driveNamed: #W

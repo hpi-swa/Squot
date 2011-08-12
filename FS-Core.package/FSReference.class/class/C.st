@@ -1,3 +1,3 @@
 windows
 C
-	^ self filesystem: (FSFilesystem onDisk) path: FSPath / 'C:'
+	^ self driveNamed: #C

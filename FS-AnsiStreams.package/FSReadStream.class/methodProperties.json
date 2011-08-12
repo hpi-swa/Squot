@@ -3,6 +3,7 @@
 		 },
 	"instance" : {
 		"atEnd" : "cwp 7/29/2009 22:45",
+		"converter:" : "CamilloBruni 8/12/2011 20:47",
 		"do:" : "cwp 7/29/2009 22:58",
 		"next" : "cwp 7/29/2009 22:59",
 		"next:" : "cwp 7/29/2009 23:03",
@@ -11,6 +12,7 @@
 		"nextMatchFor:" : "cwp 7/30/2009 23:03",
 		"peek" : "cwp 7/29/2009 23:27",
 		"peekFor:" : "cwp 7/30/2009 23:06",
+		"size" : "CamilloBruni 8/12/2011 20:49",
 		"skip:" : "cwp 7/30/2009 23:19",
 		"skipTo:" : "cwp 7/30/2009 23:27",
 		"upTo:" : "cwp 7/30/2009 23:37" } }

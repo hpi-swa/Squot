@@ -5,4 +5,6 @@ instance creation
 	neverthelesss resembles paths as they appear in a unix shell. Eg.
 	FSPath / 'griffle' / 'plonk'."
 	
+	aString isEmptyOrNil 
+		ifTrue: [ Error signal: 'Path element cannot be empty or nil'].
 	^ FSAbsolutePath with: aString

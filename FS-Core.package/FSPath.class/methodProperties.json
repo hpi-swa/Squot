@@ -1,7 +1,7 @@
 {
 	"class" : {
 		"*" : "cwp 3/25/2011 20:36",
-		"/" : "cwp 3/25/2011 20:51",
+		"/" : "CamilloBruni 8/15/2011 17:36",
 		"addElement:to:" : "cwp 10/26/2009 13:42",
 		"addEmptyElementTo:" : "cwp 10/26/2009 13:41",
 		"addParentElementTo:" : "cwp 10/26/2009 13:39",
@@ -9,14 +9,14 @@
 		"extensionDelimiter" : "StephaneDucasse 2/18/2011 22:31",
 		"parent" : "cwp 3/25/2011 21:01",
 		"parents:" : "cwp 11/15/2009 00:11",
-		"readFrom:delimiter:" : "cwp 3/25/2011 21:04",
+		"readFrom:delimiter:" : "CamilloBruni 8/15/2011 17:43",
 		"root" : "cwp 3/25/2011 21:04",
 		"with:" : "cwp 3/25/2011 21:45",
 		"withAll:" : "cwp 12/13/2008 13:33",
 		"workingDirectory" : "cwp 3/25/2011 20:57" },
 	"instance" : {
 		"," : "cwp 11/17/2009 23:52",
-		"/" : "cwp 12/13/2008 21:11",
+		"/" : "CamilloBruni 8/15/2011 17:36",
 		"=" : "cwp 12/14/2008 17:36",
 		"asPathWith:" : "cwp 10/10/2009 18:04",
 		"asReference" : "CamilloBruni 8/12/2011 15:11",
@@ -55,7 +55,7 @@
 		"resolvePath:" : "cwp 3/29/2011 16:29",
 		"resolveReference:" : "cwp 9/22/2009 09:06",
 		"resolveString:" : "cwp 3/29/2011 16:30",
-		"segments" : "CamilloBruni 8/12/2011 17:07",
+		"segments" : "CamilloBruni 8/12/2011 20:16",
 		"withExtension:" : "cwp 11/17/2009 23:51",
 		"withName:extension:" : "cwp 11/17/2009 23:58",
 		"withParents" : "cwp 3/29/2011 16:42" } }

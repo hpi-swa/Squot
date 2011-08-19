@@ -6,6 +6,6 @@ segments
 	index := 1.
 	self do: [ :part|
 		segments at: index put: part.
-		index += 1 ].
+		index := index + 1 ].
 	
 	^ segments

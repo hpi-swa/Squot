@@ -9,7 +9,7 @@ filesystemsAndReferences
 =====================================================
 
 The class "FSFilesystem" is the entrypoint for creating and addressing different filesystems. An instance of the filesystem of the current platform can be retrieved by evaluating the following in a workspace:
-   disk := FSFilesystem onDisk.
+   disk := FSFilesystem disk.
 
 An FSFilesystem object answers FSReference objects that describe the relationship between a resource (e.g. a file or directory) inside a filesystem and the filesystem itself. We now ask the filesystem for a reference to the working directory and assign it to the variable "working". The working directory is the directory containing the running image.
    working := disk workingDirectory.

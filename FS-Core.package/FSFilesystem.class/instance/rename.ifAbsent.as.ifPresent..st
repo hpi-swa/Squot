@@ -6,4 +6,9 @@ rename: sourcePath ifAbsent: aBlock as: destPath ifPresent: pBlock
 	| source destination |
 	source := self resolve: sourcePath.
 	destination := self resolve: destPath.
-	self basicRename: source ifAbsent: aBlock as: destination ifPresent: pBlock
+	store
+		rename: source
+		ifAbsent: aBlock
+		to: destination
+		ifPresent: pBlock
+		filesystem: self.

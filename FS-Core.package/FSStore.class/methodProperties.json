@@ -20,6 +20,7 @@
 		"open" : "cwp 2/19/2011 01:38",
 		"pathFromString:" : "cwp 2/26/2011 17:53",
 		"printPath:on:" : "cwp 2/28/2011 12:28",
+		"rename:ifAbsent:to:ifPresent:filesystem:" : "SeanDeNigris 11/3/2011 10:16",
 		"signalDirectoryDoesNotExist:" : "StephaneDucasse 7/3/2011 16:09",
 		"signalDirectoryExists:" : "StephaneDucasse 7/3/2011 16:09",
 		"signalFileDoesNotExist:" : "StephaneDucasse 7/3/2011 16:10",

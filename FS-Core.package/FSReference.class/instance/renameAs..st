@@ -1,8 +1,4 @@
 operations
-renameAs: aStringOrPath
+renameAs: aString
 	
-	| res |
-	res := self filesystem rename: self as: aStringOrPath.
-	res ifNotNil: [self setFilesystem: filesystem path: (self filesystem resolvePath: aStringOrPath) ].
-	^ self
-		
+	self moveTo: self parent / aString.

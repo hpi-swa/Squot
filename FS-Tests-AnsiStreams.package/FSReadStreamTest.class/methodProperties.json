@@ -14,6 +14,7 @@
 		"testNextLineLF" : "cwp 7/29/2009 23:31",
 		"testNextMatchFalse" : "cwp 7/30/2009 23:04",
 		"testNextMatchTrue" : "cwp 7/30/2009 23:01",
+		"testNextPutAllThenNextPut" : "MarianoMartinezPeck 1/9/2012 18:07",
 		"testNotAtEnd" : "cwp 7/29/2009 22:46",
 		"testPeek" : "cwp 7/30/2009 23:05",
 		"testPeekForFalse" : "cwp 7/30/2009 23:06",

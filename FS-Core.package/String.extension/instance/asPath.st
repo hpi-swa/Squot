@@ -2,6 +2,7 @@
 asPath
 	"convert myself to a path"
 	"Examples:
+		'.' asPath
 		'~/Desktop' asPath
 		'/home/foo' asPath
 		'../../foo.bar' asPath"

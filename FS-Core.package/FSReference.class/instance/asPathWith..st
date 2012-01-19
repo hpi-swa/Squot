@@ -1,3 +1,3 @@
 converting
 asPathWith: anObject
-	^ path
+	^ self path

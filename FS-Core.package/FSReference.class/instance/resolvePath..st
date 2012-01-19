@@ -1,3 +1,3 @@
 resolving
 resolvePath: anObject
-	^ self navigateWith: [path resolve: anObject]
+	^ self withPath: (path resolve: anObject)

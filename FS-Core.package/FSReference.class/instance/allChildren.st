@@ -1,4 +1,4 @@
-enumerating
+as yet unclassified
 allChildren
 	"Return all the files and folders recursively nested in the receiver"
 	

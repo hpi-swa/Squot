@@ -1,3 +1,3 @@
 navigating
 , aString
-	^ self navigateWith: [path, aString]
+	^ self withPath: self path, aString

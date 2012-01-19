@@ -1,3 +1,3 @@
 navigating
 / anObject
-	^ self navigateWith: [path / anObject]
+	^ self withPath: self path / anObject

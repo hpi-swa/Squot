@@ -1,3 +1,3 @@
 navigating
 parent
-	^ self navigateWith: [path parent]
+	^ self withPath: self path parent

@@ -10,12 +10,14 @@
 		"defaultWorkingDirectory" : "CamilloBruni 8/12/2011 17:52",
 		"delete:" : "cwp 2/18/2011 13:25",
 		"delimiter" : "cwp 2/18/2011 17:19",
+		"directoryAt:ifAbsent:directoryNodesDo:" : "CamilloBruni 1/19/2012 00:15",
+		"directoryAt:ifAbsent:fileNodesDo:" : "CamilloBruni 1/19/2012 00:15",
 		"directoryAt:ifAbsent:nodesDo:" : "cwp 2/18/2011 13:07",
 		"ensureDirectory:" : "cwp 2/19/2011 00:00",
 		"exists:" : "cwp 2/18/2011 13:11",
 		"filename:matches:" : "cwp 2/18/2011 12:28",
 		"isDirectory:" : "cwp 2/18/2011 13:22",
-		"isFile:" : "cwp 2/18/2011 14:35",
+		"isFile:" : "CamilloBruni 1/18/2012 15:22",
 		"nodeAt:ifPresent:ifAbsent:" : "cwp 2/18/2011 12:50",
 		"open" : "cwp 2/19/2011 01:38",
 		"pathFromString:" : "cwp 2/26/2011 17:53",
@@ -24,4 +26,4 @@
 		"signalDirectoryExists:" : "StephaneDucasse 7/3/2011 16:09",
 		"signalFileDoesNotExist:" : "StephaneDucasse 7/3/2011 16:10",
 		"signalFileExists:" : "StephaneDucasse 7/3/2011 16:10",
-		"stringFromPath:" : "cwp 2/28/2011 12:28" } }
+		"stringFromPath:" : "CamilloBruni 1/19/2012 00:24" } }

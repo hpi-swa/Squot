@@ -8,6 +8,6 @@ I pass into my store. My store acts as a factory and offers platform specific ac
 
 Filesystem instances know two methods that return an FSReference object: workingDirectory and root.
 
-FSFilesystem onDisk workingDirectory
-FSFilesystem onDisk root
+FSFilesystem disk workingDirectory
+FSFilesystem disk root
 

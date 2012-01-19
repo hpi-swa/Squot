@@ -1,0 +1,3 @@
+converting
+asReference
+	^ self resolve

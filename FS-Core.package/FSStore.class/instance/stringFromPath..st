@@ -1,3 +1,4 @@
 converting
 stringFromPath: aPath
-	^ String streamContents: [ :out | self printPath: aPath on: out ]
+	^ String streamContents: [ :out | 
+		self printPath: aPath on: out ]

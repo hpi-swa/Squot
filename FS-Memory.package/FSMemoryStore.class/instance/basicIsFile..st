@@ -1,3 +1,3 @@
 private
-basicIsFile: entry
-	^ entry isDictionary not
+basicIsFile: association
+	^ association value isDictionary not

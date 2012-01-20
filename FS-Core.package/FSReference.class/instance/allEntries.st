@@ -1,3 +1,3 @@
-as yet unclassified
+enumerating
 allEntries
 	^ FSCollectVisitor breadthFirst: self

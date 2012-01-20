@@ -2,10 +2,11 @@
 	"class" : {
 		 },
 	"instance" : {
-		"basicCopy:ifAbsent:to:ifPresent:filesystem:" : "cwp 2/19/2011 00:49",
-		"basicIsDirectory:" : "cwp 2/18/2011 13:15",
-		"basicIsFile:" : "cwp 2/18/2011 14:32",
+		"basicIsDirectory:" : "CamilloBruni 1/20/2012 11:34",
+		"basicIsFile:" : "CamilloBruni 1/20/2012 11:34",
+		"basicOpen:writable:" : "CamilloBruni 1/20/2012 13:34",
 		"close" : "cwp 2/19/2011 01:39",
+		"copy:ifAbsent:to:ifPresent:filesystem:" : "CamilloBruni 1/20/2012 11:42",
 		"createDirectory:" : "cwp 2/18/2011 23:59",
 		"defaultWorkingDirectory" : "CamilloBruni 8/12/2011 17:52",
 		"delete:" : "cwp 2/18/2011 13:25",
@@ -17,7 +18,7 @@
 		"exists:" : "cwp 2/18/2011 13:11",
 		"filename:matches:" : "cwp 2/18/2011 12:28",
 		"isDirectory:" : "cwp 2/18/2011 13:22",
-		"isFile:" : "CamilloBruni 1/18/2012 15:22",
+		"isFile:" : "CamilloBruni 1/20/2012 13:13",
 		"nodeAt:ifPresent:ifAbsent:" : "cwp 2/18/2011 12:50",
 		"open" : "cwp 2/19/2011 01:38",
 		"pathFromString:" : "CamilloBruni 1/19/2012 14:58",

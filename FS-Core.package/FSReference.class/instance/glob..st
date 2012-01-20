@@ -1,3 +1,3 @@
-as yet unclassified
+enumerating
 glob: aBlock
 	^ FSSelectVisitor breadthFirst: self select: aBlock

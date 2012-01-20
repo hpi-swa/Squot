@@ -3,10 +3,10 @@
 		"delimiter" : "cwp 2/18/2011 17:19" },
 	"instance" : {
 		"basenameFromEntry:" : "cwp 2/18/2011 13:08",
-		"basicCopy:ifAbsent:to:ifPresent:filesystem:" : "cwp 4/3/2011 22:16",
 		"basicIsDirectory:" : "CamilloBruni 1/19/2012 00:47",
 		"basicIsFile:" : "CamilloBruni 1/19/2012 00:47",
 		"basicOpen:writable:" : "cwp 4/3/2011 22:17",
+		"copy:ifAbsent:to:ifPresent:filesystem:" : "CamilloBruni 1/20/2012 11:42",
 		"createDirectory:" : "cwp 4/3/2011 22:17",
 		"createFile:" : "cwp 4/3/2011 22:16",
 		"delete:" : "cwp 2/18/2011 13:24",

@@ -6,5 +6,5 @@ rename: sourcePath to: destName
 	^ self
 		rename: sourcePath
 		ifAbsent: [store signalFileDoesNotExist: sourcePath]
-		as: destName
+		to: destName
 		ifPresent: [self signalFileExists: destName]

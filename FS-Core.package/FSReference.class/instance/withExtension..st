@@ -1,3 +1,3 @@
 navigating
 withExtension: aString 
-	^ self navigateWith: [ path withExtension: aString ]
+	^ self withPath: (self path withExtension: aString)

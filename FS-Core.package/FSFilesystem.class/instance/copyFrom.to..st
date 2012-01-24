@@ -1,5 +1,5 @@
 private
-copyFrom: in to: destPath
+copyFrom: inputStream to: destPath
 	| buffer out |
 	out := nil.
 	(self exists: destPath)
@@ -7,7 +7,7 @@ copyFrom: in to: destPath
 	^ [ 
 	out := self writeStreamOn: destPath.
 	buffer := ByteArray new: 1024.
-	[ in atEnd ]
+	[ inputStream atEnd ]
 		whileFalse: [ 
-			buffer := in nextInto: buffer.
-			out nextPutAll: buffer ] ] ensure: [ out ifNotNil: [ out close ] ]
+			buffer := inputStream nextInto: buffer.
+			out nextPutAll: buffer ]] ensure: [ out ifNotNil: [ out close ]]

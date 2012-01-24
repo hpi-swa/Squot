@@ -4,7 +4,7 @@
 		 ],
 	"classvars" : [
 		 ],
-	"commentStamp" : "StephaneDucasse 7/3/2011 16:00",
+	"commentStamp" : "CamilloBruni 1/19/2012 10:07",
 	"instvars" : [
 		"workingDirectory",
 		"store" ],

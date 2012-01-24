@@ -1,4 +1,4 @@
-as yet unclassified
+navigating
 relativeToPath: landmarkPath 
 	
 	^ path relativeTo: landmarkPath

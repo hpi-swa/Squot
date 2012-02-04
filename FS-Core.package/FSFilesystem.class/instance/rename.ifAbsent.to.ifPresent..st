@@ -12,3 +12,4 @@ rename: sourcePath ifAbsent: aBlock to: destPath ifPresent: pBlock
 		to: destination
 		ifPresent: pBlock
 		filesystem: self.
+	^ destination

@@ -1,13 +1,13 @@
 operations
 renameTo: aStringOrPath
 	
-	| res |
+	| destinationPath |
 	
-	res := self filesystem rename: self to: aStringOrPath.
+	destinationPath := self filesystem rename: self to: aStringOrPath.
 	
-	res ifNotNil: [
+	destinationPath ifNotNil: [
 		self 
 			setFilesystem: filesystem 
-			path: (self filesystem resolvePath: aStringOrPath) ].
+			path: destinationPath ].
 	^ self
 		

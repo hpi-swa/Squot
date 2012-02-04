@@ -1,3 +1,4 @@
 public
 position: anInteger
-	position := anInteger
+	self assert: anInteger > 0.
+	position := anInteger.

@@ -1,5 +1,5 @@
 public
 open
 
-	bytes := reference filesystem basicOpen: reference path writable: writable.
+	bytes := self basicOpen.
 	size := bytes size.

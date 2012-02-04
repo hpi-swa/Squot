@@ -14,6 +14,7 @@
 		"getMacFile:type:creator:" : "cwp 7/20/2009 17:23",
 		"getPosition:" : "cwp 7/20/2009 17:27",
 		"imageFile" : "cwp 10/11/2009 11:02",
+		"lookupDirectory:filename:" : "CamilloBruni 1/17/2012 17:09",
 		"lookupEntryIn:index:" : "cwp 7/20/2009 17:24",
 		"open:writable:" : "cwp 7/20/2009 17:27",
 		"read:into:startingAt:count:" : "cwp 7/20/2009 17:28",

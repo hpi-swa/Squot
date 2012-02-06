@@ -1,4 +1,5 @@
 streams
 readStream
-	"Return a writestream on the receiver."
+	"Return a FSWriteStream on myself. 
+	Not this does not create a new file"
 	^ filesystem readStreamOn: path

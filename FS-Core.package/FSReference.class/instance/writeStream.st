@@ -1,4 +1,4 @@
 streams
 writeStream
-	"Return a writestream on the receiver."
+	"Create the file if necessary and return an FSWriteStream on myself."
 	^ filesystem writeStreamOn: path

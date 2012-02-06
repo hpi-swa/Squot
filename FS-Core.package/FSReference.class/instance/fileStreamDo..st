@@ -1,4 +1,4 @@
 streams
 fileStreamDo: aBlock
-	"aBlock should get a stream as argument."
+	"Evaluate aBlock with a StandardFileStream on myself"
 	^ self fileStreamWritable: true do: aBlock

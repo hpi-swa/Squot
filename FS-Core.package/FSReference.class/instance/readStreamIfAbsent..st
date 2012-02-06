@@ -1,6 +1,7 @@
 streams
 readStreamIfAbsent: absentBlock
-	"Return a readstream on the receiver if it already exists or execute the absentBlock with no argument"
+	"If the file exists already return a FSReadStream on the receiver.
+	If the files does not exist execute the absentBlock with no arguments"
 	^ self isFile
 		ifTrue: [ self readStream ]
 		ifFalse: [ absentBlock value ]

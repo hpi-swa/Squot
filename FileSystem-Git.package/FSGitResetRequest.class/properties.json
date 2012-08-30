@@ -1,0 +1,14 @@
+{
+	"category" : "FileSystem-Git-Notifications",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "FSGitResetRequest",
+	"pools" : [
+		 ],
+	"super" : "Notification",
+	"type" : "normal" }

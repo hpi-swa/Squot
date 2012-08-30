@@ -1,0 +1,21 @@
+{
+	"category" : "FileSystem-Git-Plumbing-Utilities",
+	"classinstvars" : [
+		 ],
+	"classtraitcomposition" : "TGitVisitor classTrait",
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"all",
+		"repository",
+		"reachable",
+		"unreachable",
+		"errors",
+		"referenceContext" ],
+	"name" : "GitFSCK",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"traitcomposition" : "TGitVisitor",
+	"type" : "normal" }

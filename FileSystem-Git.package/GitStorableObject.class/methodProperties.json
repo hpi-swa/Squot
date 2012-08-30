@@ -1,0 +1,19 @@
+{
+	"class" : {
+		"byteTypeCode" : "MaxLeske 2/29/2012 14:25",
+		"forType:" : "MaxLeske 2/29/2012 15:10",
+		"fromLooseObjectStream:in:" : "MaxLeske 7/1/2012 19:35",
+		"fromPackedObjectStream:type:in:" : "MaxLeske 7/1/2012 19:33",
+		"isAbstract" : "MaxLeske 2/29/2012 15:13",
+		"named:in:" : "MaxLeske 2/28/2012 15:13",
+		"typeCode" : "MaxLeske 2/29/2012 14:22" },
+	"instance" : {
+		"=" : "MaxLeske 2/28/2012 11:07",
+		"byteData" : "MaxLeske 6/24/2012 11:17",
+		"byteSignature" : "MaxLeske 2/26/2012 09:45",
+		"compressed" : "MaxLeske 6/24/2012 09:59",
+		"compressedForPack" : "MaxLeske 8/12/2012 22:20",
+		"hash" : "MaxLeske 2/28/2012 09:54",
+		"hexHash" : "MaxLeske 2/27/2012 21:43",
+		"store" : "MaxLeske 2/28/2012 18:59",
+		"typeCode" : "tonyg 2/23/2010 15:47" } }

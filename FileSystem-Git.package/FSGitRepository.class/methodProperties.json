@@ -1,0 +1,21 @@
+{
+	"class" : {
+		"on:" : "MaxLeske 7/9/2010 15:10" },
+	"instance" : {
+		"branchNamed:" : "CamilloBruni 7/13/2011 17:25",
+		"branchNames" : "CamilloBruni 7/13/2011 17:23",
+		"branches" : "CamilloBruni 7/15/2011 15:18",
+		"commitNamed:" : "MaxLeske 8/12/2011 09:29",
+		"filesystemOn:" : "CamilloBruni 7/15/2011 15:27",
+		"gitStoreOn:" : "Camillobruni 8/17/2011 19:57",
+		"head" : "CamilloBruni 7/13/2011 17:25",
+		"initializeOn:" : "MaxLeske 7/23/2010 09:59",
+		"lastVersions:" : "MaxLeske 8/25/2011 19:12",
+		"recursivelyCollectCommits:into:" : "MaxLeske 8/25/2011 19:16",
+		"recursivelyCollectCommits:into:limit:" : "MaxLeske 8/25/2011 19:15",
+		"repository" : "CamilloBruni 6/22/2011 05:08",
+		"tagNamed:" : "CamilloBruni 7/13/2011 17:25",
+		"tagNames" : "MaxLeske 11/8/2010 17:24",
+		"tags" : "CamilloBruni 1/23/2012 20:06",
+		"validate" : "CamilloBruni 8/9/2011 16:58",
+		"versions" : "MaxLeske 8/25/2011 19:16" } }

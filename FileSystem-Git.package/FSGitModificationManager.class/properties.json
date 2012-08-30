@@ -1,0 +1,20 @@
+{
+	"category" : "FileSystem-Git",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "CamilloBruni 8/1/2011 18:31",
+	"instvars" : [
+		"createdPaths",
+		"deletedPaths",
+		"repository",
+		"cache",
+		"treeMap",
+		"storedObjects",
+		"hasChanges" ],
+	"name" : "FSGitModificationManager",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }

@@ -1,0 +1,3 @@
+testing
+canDecode
+	self subclassResponsibility

@@ -1,0 +1,3 @@
+testing
+= aSet
+	^ set = aSet

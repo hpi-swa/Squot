@@ -1,0 +1,19 @@
+{
+	"category" : "FileSystem-Git-Plumbing-Packs",
+	"classinstvars" : [
+		 ],
+	"classtraitcomposition" : "TGitVisitor classTrait",
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"packFile",
+		"repository",
+		"orderedHashes",
+		"hashDict" ],
+	"name" : "GitPackFileCreator",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"traitcomposition" : "TGitVisitor",
+	"type" : "normal" }

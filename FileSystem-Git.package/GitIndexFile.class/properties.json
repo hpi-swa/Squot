@@ -1,0 +1,19 @@
+{
+	"category" : "FileSystem-Git-Plumbing-Packs",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"fullStream",
+		"crcTable",
+		"fanoutTable",
+		"fourByteOffsetStream",
+		"hashStream",
+		"eightByteOffsetStream" ],
+	"name" : "GitIndexFile",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }

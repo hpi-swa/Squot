@@ -1,0 +1,22 @@
+{
+	"class" : {
+		"defaultEmail" : "MaxLeske 8/12/2011 09:59",
+		"defaultEmail:" : "CamilloBruni 6/22/2011 05:33",
+		"defaultName" : "MaxLeske 8/12/2011 10:00",
+		"defaultName:" : "lr 4/13/2010 16:21",
+		"ensureDefaultValues" : "CamilloBruni 6/22/2011 05:37",
+		"fromString:" : "tonyg 2/23/2010 21:29",
+		"now" : "lr 4/13/2010 16:50",
+		"readFrom:" : "MaxLeske 6/24/2012 13:31",
+		"requestEmail" : "CamilloBruni 1/23/2012 18:57",
+		"requestName" : "CamilloBruni 1/23/2012 18:57" },
+	"instance" : {
+		"cleanUp:" : "tonyg 2/23/2010 21:24",
+		"email" : "tonyg 2/23/2010 21:21",
+		"email:" : "CamilloBruni 6/22/2011 05:18",
+		"initialize" : "lr 4/13/2010 16:46",
+		"name" : "tonyg 2/23/2010 21:22",
+		"name:" : "tonyg 2/23/2010 21:23",
+		"printOn:" : "lr 7/19/2010 13:48",
+		"timeStamp" : "tonyg 2/23/2010 21:21",
+		"timeStamp:" : "MaxLeske 5/25/2010 20:30" } }

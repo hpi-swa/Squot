@@ -1,0 +1,24 @@
+{
+	"class" : {
+		"byteTypeCodeFrom:" : "MaxLeske 2/29/2012 21:11",
+		"canDecode" : "MaxLeske 2/29/2012 21:18",
+		"fromPack:at:in:" : "MaxLeske 2/29/2012 21:24",
+		"types" : "MaxLeske 2/29/2012 15:23" },
+	"instance" : {
+		"byteTypeCode" : "MaxLeske 2/29/2012 19:09",
+		"computeCRC" : "MaxLeske 6/23/2012 16:46",
+		"crc" : "MaxLeske 6/17/2012 12:49",
+		"initialize" : "MaxLeske 6/23/2012 16:46",
+		"loadDeltaInterpreter" : "MaxLeske 6/24/2012 10:45",
+		"loadFrom:" : "MaxLeske 6/17/2012 12:47",
+		"object" : "MaxLeske 7/1/2012 19:33",
+		"pack" : "tonyg 2/23/2010 11:05",
+		"pack:" : "tonyg 2/23/2010 11:05",
+		"packedLength" : "MaxLeske 6/23/2012 16:46",
+		"readHeaders" : "MaxLeske 2/29/2012 19:10",
+		"readUnpackedDataSize" : "MaxLeske 6/23/2012 16:46",
+		"repository" : "MaxLeske 2/29/2012 19:23",
+		"repository:" : "MaxLeske 7/26/2010 12:54",
+		"runDeltaInterpreter:against:" : "MaxLeske 6/24/2012 10:41",
+		"unpack" : "MaxLeske 2/29/2012 21:13",
+		"unpackedBytes" : "tonyg 2/23/2010 20:09" } }

@@ -1,0 +1,11 @@
+{
+	"class" : {
+		 },
+	"instance" : {
+		"testAsByteHash" : "MaxLeske 2/27/2012 22:16",
+		"testAsHexHash" : "MaxLeske 2/27/2012 22:17",
+		"testBlobHash" : "MaxLeske 2/28/2012 18:33",
+		"testBytePadding" : "MaxLeske 2/27/2012 22:15",
+		"testCommitHash" : "MaxLeske 2/28/2012 18:36",
+		"testSize" : "MaxLeske 2/27/2012 22:16",
+		"testTreeHash" : "MaxLeske 6/24/2012 11:17" } }

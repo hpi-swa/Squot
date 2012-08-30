@@ -1,0 +1,11 @@
+{
+	"class" : {
+		"lastStoredRun" : "MaxLeske 2/29/2012 19:14",
+		"packageNamesUnderTest" : "MaxLeske 7/24/2010 17:26" },
+	"instance" : {
+		"buildMockFor:" : "MaxLeske 2/28/2012 18:45",
+		"setUp" : "Camillobruni 8/17/2011 19:58",
+		"testForType" : "MaxLeske 2/29/2012 15:16",
+		"testFromLooseStream" : "MaxLeske 7/1/2012 19:35",
+		"testHashCreation" : "MaxLeske 2/26/2012 16:46",
+		"testTypeCode" : "MaxLeske 2/29/2012 15:15" } }

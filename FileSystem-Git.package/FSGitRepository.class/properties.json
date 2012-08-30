@@ -1,0 +1,14 @@
+{
+	"category" : "FileSystem-Git",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "<historical>",
+	"instvars" : [
+		"repository" ],
+	"name" : "FSGitRepository",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }

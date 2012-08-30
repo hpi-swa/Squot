@@ -1,0 +1,3 @@
+storing
+storeLightWeightTag
+	self updateTagRef

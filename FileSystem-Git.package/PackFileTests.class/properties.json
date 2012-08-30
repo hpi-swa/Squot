@@ -1,0 +1,18 @@
+{
+	"category" : "FileSystem-Git-Plumbing-Tests",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"packReader",
+		"filesystem",
+		"repository",
+		"packFile",
+		"indexFile" ],
+	"name" : "PackFileTests",
+	"pools" : [
+		 ],
+	"super" : "GitTestCase",
+	"type" : "normal" }

@@ -1,0 +1,22 @@
+tests
+testCommitHash
+	| entryHash treeEntry tree message commit commitDataSize |
+	entryHash := SecureHashAlgorithm new hashMessage: #[1 2 3 ].
+	treeEntry :=
+		GitTreeEntry
+			fileNamed: 'file1' hash: entryHash.
+	tree := GitTree entries: {treeEntry} in: nil.
+	message := 'a message'.
+	commit :=
+		GitCommit
+			withTree: tree
+			message: message
+			author: self defaultStamp
+			committer: self defaultStamp.
+	commitDataSize :=
+		GitCommit typeCode size +
+		1 + "space"
+		commit byteData size asString size +
+		1 + "null byte"
+		commit byteData size.
+	self assert: commit byteSignature size = commitDataSize

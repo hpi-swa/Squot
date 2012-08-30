@@ -1,0 +1,3 @@
+accessing
+typeCode
+	self subclassResponsibility

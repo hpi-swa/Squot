@@ -1,0 +1,19 @@
+{
+	"category" : "FileSystem-Git-Monticello",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"classFolder",
+		"definitions",
+		"className",
+		"classDefinition",
+		"instanceMethodDefinitions",
+		"classMethodDefinitions" ],
+	"name" : "MCGitClassReader",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }

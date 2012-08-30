@@ -1,7 +1,7 @@
 running
 setUp
 	| packsDir |
-	filesystem := FSFilesystem memory.
+	filesystem := FileSystem memory.
 	repository := GitRepository on: (filesystem root / 'repo').
 	repository  headFile writeStreamDo: [ :stream | 
 		stream nextPutAll: '21f6939ef44d5fadc3f537300b42e4b2889cc415' ] .

@@ -6,7 +6,7 @@ setUp
 		name: 'Homer Simpson';
 		email: 'homer@nuke.com';
 		yourself.
-	reference := (FSFilesystem memory / 'test.git').
+	reference := (FileSystem memory / 'test.git').
 	repository := GitRepository on: reference.
 
 	blob1 := (GitBlob bytes: 'testBlob' in: repository) store; yourself.

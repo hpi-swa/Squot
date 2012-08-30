@@ -2,7 +2,7 @@ helpers
 packOffsetOf: sha1
 	| dummyFS pack |
 	"GitPackFile / GitIndexFile already contain the necessary code."
-	dummyFS := FSFilesystem memory.
+	dummyFS := FileSystem memory.
 	(dummyFS root / 'pack.idx') writeStreamDo: [ :stream | 
 		stream nextPutAll: self indexBytesWithRefDelta ].
 	(dummyFS root / 'pack.pack') writeStreamDo: [ :stream |

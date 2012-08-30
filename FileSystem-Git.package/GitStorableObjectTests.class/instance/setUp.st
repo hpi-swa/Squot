@@ -1,4 +1,4 @@
 running
 setUp
 	super setUp.
-	repository := GitRepository on: (FSFilesystem memory / 'repo')
+	repository := GitRepository on: (FileSystem memory / 'repo')

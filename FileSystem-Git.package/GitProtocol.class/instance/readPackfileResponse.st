@@ -6,7 +6,7 @@ Careful: when using Transcript for debugging, the code might become so slow that
 	
 	| stream length sideband content |
 	
-	stream := (FSFilesystem disk workingDirectory / 'packfile.pack') writeStream.
+	stream := (FileSystem disk workingDirectory / 'packfile.pack') writeStream.
 	
 	self socketStream binary.
 	

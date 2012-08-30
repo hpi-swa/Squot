@@ -1,0 +1,3 @@
+delegating
+reset
+	store reset

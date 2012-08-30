@@ -1,7 +1,7 @@
 tests
 testIsInitialized
 	repository := GitRepository basicNew.
-	repository instVarNamed: 'reference' put: (FSFilesystem memory / 'test.git').
+	repository instVarNamed: 'reference' put: (FileSystem memory / 'test.git').
 	self deny: repository isInitialized.
 	
 	repository gitInitialize.

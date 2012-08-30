@@ -1,4 +1,4 @@
 initialize-release
 on: aReference
-	^self basicNew initializeOn: aReference asReference
+	^self basicNew initializeOn: aReference asFileReference
 	

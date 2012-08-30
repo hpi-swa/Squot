@@ -1,14 +1,14 @@
 tests
 testWriteObjectsOn
 	| blob creator file contents reference repository bytesRead |
-	reference := FSFilesystem memory root / 'repo'.
+	reference := FileSystem memory root / 'repo'.
 	repository := GitRepository on: reference.
 	blob := GitBlob bytes: 'my blob with size greater than 32' in: repository.
 	blob store.
 	creator := GitPackFileCreator new
 		repository: repository;
 		yourself.
-	file := FSFilesystem memory root / 'afile'.
+	file := FileSystem memory root / 'afile'.
 	file writeStreamDo: [ :stream | creator on: stream ].
 	contents := file readStreamDo: [ :stream | stream contents ].
 	contents := contents allButFirst: 2.	"ignore header"

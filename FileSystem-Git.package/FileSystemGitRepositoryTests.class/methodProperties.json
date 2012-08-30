@@ -1,0 +1,13 @@
+{
+	"class" : {
+		"lastStoredRun" : "CamilloBruni 8/1/2011 16:49" },
+	"instance" : {
+		"setUp" : "CamilloBruni 8/30/2012 14:09",
+		"tearDown" : "CamilloBruni 6/22/2011 05:22",
+		"testBranches" : "CamilloBruni 8/30/2012 14:11",
+		"testFullTags" : "CamilloBruni 8/30/2012 14:06",
+		"testHead" : "CamilloBruni 8/30/2012 14:06",
+		"testLightTags" : "CamilloBruni 8/30/2012 14:06",
+		"testTags" : "CamilloBruni 6/22/2011 04:47",
+		"testVersions" : "MaxLeske 8/13/2011 17:03",
+		"testVersionsOrder" : "MaxLeske 2/1/2011 17:56" } }

@@ -1,7 +1,7 @@
 tests
 testAt
 	| tree entry blob repo |
-	repo := GitRepository on: (FSFilesystem memory / 'testRepo').
+	repo := GitRepository on: (FileSystem memory / 'testRepo').
 	blob := GitBlob bytes: 'testblob' in: repo.
 	blob store.
 	entry := GitTreeEntry

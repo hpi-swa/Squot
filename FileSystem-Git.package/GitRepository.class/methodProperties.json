@@ -1,11 +1,11 @@
 {
 	"class" : {
 		"new" : "MaxLeske 8/11/2011 22:15",
-		"on:" : "CamilloBruni 7/13/2011 20:05" },
+		"on:" : "CamilloBruni 8/30/2012 13:58" },
 	"instance" : {
 		"=" : "CamilloBruni 7/20/2011 13:07",
 		"accept:" : "MaxLeske 8/13/2012 21:55",
-		"activeBranchName" : "CamilloBruni 7/13/2011 19:34",
+		"activeBranchName" : "CamilloBruni 8/30/2012 14:12",
 		"baseDir" : "CamilloBruni 7/15/2011 15:40",
 		"basicUpdateRef:to:" : "CamilloBruni 8/9/2011 17:47",
 		"branchNamed:" : "MaxLeske 2/28/2012 18:21",
@@ -24,7 +24,7 @@
 		"headFile" : "MaxLeske 7/23/2010 18:02",
 		"headRef" : "MaxLeske 8/11/2011 21:23",
 		"headsDir" : "CamilloBruni 8/9/2011 17:41",
-		"initializeOn:" : "CamilloBruni 7/13/2011 20:03",
+		"initializeOn:" : "CamilloBruni 8/30/2012 13:59",
 		"isInitialized" : "MaxLeske 6/24/2012 11:45",
 		"isObjectDirectory:" : "MaxLeske 6/24/2012 11:21",
 		"looseObjectNamed:ifAbsent:" : "MaxLeske 7/1/2012 19:35",

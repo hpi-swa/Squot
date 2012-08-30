@@ -1,3 +1,3 @@
 accessing-git
 repository
-	^ FSGitRepository on: self reference
+	^ FileSystemGitRepository on: self reference

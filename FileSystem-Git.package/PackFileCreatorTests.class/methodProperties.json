@@ -4,5 +4,5 @@
 	"instance" : {
 		"testFanoutTableCreation" : "MaxLeske 8/28/2012 15:34",
 		"testHighestOrderedHashes" : "MaxLeske 8/28/2012 15:29",
-		"testWriteObjectHeaderOn" : "MaxLeske 8/12/2012 18:34",
-		"testWriteObjectsOn" : "MaxLeske 8/18/2012 15:41" } }
+		"testWriteObjectHeaderOn" : "CamilloBruni 8/30/2012 14:10",
+		"testWriteObjectsOn" : "CamilloBruni 8/30/2012 14:10" } }

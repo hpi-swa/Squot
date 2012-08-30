@@ -1,0 +1,3 @@
+delegating
+message
+	^ store message

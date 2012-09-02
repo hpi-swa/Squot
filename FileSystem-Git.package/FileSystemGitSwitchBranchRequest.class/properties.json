@@ -1,0 +1,14 @@
+{
+	"category" : "FileSystem-Git-Notifications",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "FileSystemGitSwitchBranchRequest",
+	"pools" : [
+		 ],
+	"super" : "Notification",
+	"type" : "normal" }

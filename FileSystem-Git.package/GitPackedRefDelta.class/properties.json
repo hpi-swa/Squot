@@ -1,0 +1,14 @@
+{
+	"category" : "FileSystem-Git-Plumbing-Packs",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "GitPackedRefDelta",
+	"pools" : [
+		 ],
+	"super" : "GitPackedObject",
+	"type" : "normal" }

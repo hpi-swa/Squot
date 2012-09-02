@@ -1,0 +1,13 @@
+{
+	"class" : {
+		"canDecode:" : "MaxLeske 6/24/2012 16:05" },
+	"instance" : {
+		"findBinary:from:to:" : "MaxLeske 6/24/2012 20:09",
+		"indexMagicNumber" : "MaxLeske 6/24/2012 15:50",
+		"indexVersionTwo" : "MaxLeske 6/24/2012 15:50",
+		"initializeWith:" : "MaxLeske 6/24/2012 15:50",
+		"offsetForIndex:" : "MaxLeske 6/24/2012 20:12",
+		"offsetForObjectNamed:" : "MaxLeske 6/24/2012 20:21",
+		"verifyIndexFile" : "MaxLeske 6/24/2012 15:50",
+		"verifyIndexMagicNumber" : "MaxLeske 6/24/2012 15:50",
+		"verifyIndexVersion" : "MaxLeske 6/24/2012 15:50" } }

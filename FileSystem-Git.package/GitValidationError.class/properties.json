@@ -1,0 +1,14 @@
+{
+	"category" : "FileSystem-Git-Plumbing-Exceptions",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "GitValidationError",
+	"pools" : [
+		 ],
+	"super" : "GitError",
+	"type" : "normal" }

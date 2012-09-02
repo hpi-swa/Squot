@@ -1,0 +1,3 @@
+accessing
+types
+	^ self allSubclasses

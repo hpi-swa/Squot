@@ -1,0 +1,3 @@
+delegating
+branchNames
+	^ repository branchNames

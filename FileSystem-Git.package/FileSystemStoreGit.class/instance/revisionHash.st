@@ -1,0 +1,3 @@
+delegate
+revisionHash
+	^ revision objectHash

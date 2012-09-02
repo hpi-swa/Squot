@@ -1,0 +1,3 @@
+public-testing
+isInFilemode
+	^ isInFilemode

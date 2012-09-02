@@ -1,0 +1,17 @@
+{
+	"class" : {
+		"isAbstract" : "MaxLeske 2/29/2012 15:14" },
+	"instance" : {
+		"isKeyValid:" : "MaxLeske 2/26/2012 10:29",
+		"loadFrom:" : "MaxLeske 2/29/2012 16:03",
+		"loadKey:value:" : "MaxLeske 2/26/2012 10:28",
+		"loadValidKey:value:" : "MaxLeske 2/26/2012 11:24",
+		"message" : "tonyg 2/25/2010 16:22",
+		"message:" : "tonyg 2/25/2010 16:22",
+		"properties" : "MaxLeske 2/27/2012 21:46",
+		"properties:" : "tonyg 2/25/2010 16:23",
+		"saveKey:value:to:" : "MaxLeske 4/23/2010 13:50",
+		"storeFixedKeysOn:" : "MaxLeske 6/24/2012 11:15",
+		"storeOn:" : "MaxLeske 6/24/2012 11:17",
+		"validKeys" : "MaxLeske 2/26/2012 10:30",
+		"validate" : "MaxLeske 8/11/2011 22:28" } }

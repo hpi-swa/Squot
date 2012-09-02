@@ -1,0 +1,16 @@
+{
+	"category" : "FileSystem-Git-Tests",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"basicRepository",
+		"fsRepository",
+		"workingCopy" ],
+	"name" : "FileSystemGitFilesystemUsageTests",
+	"pools" : [
+		 ],
+	"super" : "GitTestCase",
+	"type" : "normal" }

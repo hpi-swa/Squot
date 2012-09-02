@@ -1,0 +1,20 @@
+{
+	"category" : "FileSystem-Git-Plumbing-Packs",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"packFile",
+		"repository",
+		"orderedHashes",
+		"hashDict",
+		"sortedHashes",
+		"indexFile",
+		"packFileChecksum" ],
+	"name" : "GitPackFileCreator",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }

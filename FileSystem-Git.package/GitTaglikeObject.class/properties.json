@@ -1,0 +1,15 @@
+{
+	"category" : "FileSystem-Git-Plumbing-Core",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "<historical>",
+	"instvars" : [
+		"message",
+		"properties" ],
+	"name" : "GitTaglikeObject",
+	"pools" : [
+		 ],
+	"super" : "GitStorableObject",
+	"type" : "normal" }

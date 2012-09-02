@@ -1,0 +1,14 @@
+{
+	"category" : "FileSystem-Git-Plumbing-Tests",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "PackIndexVersion2Tests",
+	"pools" : [
+		 ],
+	"super" : "PackFileTests",
+	"type" : "normal" }

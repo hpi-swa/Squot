@@ -1,0 +1,3 @@
+delegating
+validate
+	^ repository validate

@@ -1,0 +1,9 @@
+private
+gitDirectories
+	^#('objects' 
+		'objects/pack' 
+		'objects/info' 
+		'refs'
+		'refs/heads' 
+		'refs/tags' 
+		'info')

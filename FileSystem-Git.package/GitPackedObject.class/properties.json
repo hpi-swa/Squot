@@ -1,0 +1,22 @@
+{
+	"category" : "FileSystem-Git-Plumbing-Packs",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"pack",
+		"file",
+		"length",
+		"headerPos",
+		"unpackedBytes",
+		"repository",
+		"typeByte",
+		"crc",
+		"packedLength" ],
+	"name" : "GitPackedObject",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }

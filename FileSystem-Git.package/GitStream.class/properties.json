@@ -1,0 +1,14 @@
+{
+	"category" : "FileSystem-Git-Plumbing-Utilities",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "<historical>",
+	"instvars" : [
+		"stream" ],
+	"name" : "GitStream",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }

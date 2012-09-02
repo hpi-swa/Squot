@@ -1,0 +1,19 @@
+{
+	"category" : "FileSystem-Git-Plumbing-Utilities",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"all",
+		"repository",
+		"reachable",
+		"unreachable",
+		"errors",
+		"referenceContext" ],
+	"name" : "GitFSCK",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }

@@ -1,0 +1,14 @@
+{
+	"category" : "FileSystem-Git",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "CamilloBruni 8/1/2011 18:30",
+	"instvars" : [
+		"repository" ],
+	"name" : "FileSystemGit",
+	"pools" : [
+		 ],
+	"super" : "FileSystem",
+	"type" : "normal" }

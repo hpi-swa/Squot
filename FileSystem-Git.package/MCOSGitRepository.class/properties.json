@@ -1,0 +1,15 @@
+{
+	"category" : "FileSystem-Git-Monticello",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"remote",
+		"pushAutomatically" ],
+	"name" : "MCOSGitRepository",
+	"pools" : [
+		 ],
+	"super" : "MCGitRepository",
+	"type" : "normal" }

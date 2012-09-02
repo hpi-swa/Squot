@@ -1,0 +1,3 @@
+delegating
+detachWorkingCopy
+	store detachWorkingCopy.

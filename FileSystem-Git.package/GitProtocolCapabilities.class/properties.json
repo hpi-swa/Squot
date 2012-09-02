@@ -1,0 +1,14 @@
+{
+	"category" : "FileSystem-Git-Remote",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"capabilities" ],
+	"name" : "GitProtocolCapabilities",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }

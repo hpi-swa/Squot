@@ -1,0 +1,3 @@
+configuration
+morphicConfigure
+	^ self fillInTheBlankConfigure

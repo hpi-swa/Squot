@@ -4,7 +4,7 @@
 		"memory" : "CamilloBruni 8/30/2012 14:04" },
 	"instance" : {
 		"basenameFromEntry:" : "CamilloBruni 7/15/2011 16:36",
-		"basicCommit:to:" : "CamilloBruni 9/2/2012 11:12",
+		"basicCommit:to:" : "CamilloBruni 9/2/2012 18:36",
 		"basicCopy:ifAbsent:to:ifPresent:filesystem:" : "CamilloBruni 8/1/2011 16:30",
 		"basicIsDirectory:" : "CamilloBruni 7/15/2011 16:46",
 		"basicIsFile:" : "CamilloBruni 7/15/2011 16:46",
@@ -45,7 +45,7 @@
 		"repository:" : "CamilloBruni 9/2/2012 12:22",
 		"reset" : "CamilloBruni 7/13/2011 19:48",
 		"revision" : "CamilloBruni 7/13/2011 17:56",
-		"revision:" : "CamilloBruni 7/15/2011 18:42",
+		"revision:" : "CamilloBruni 9/2/2012 18:37",
 		"revisionHash" : "CamilloBruni 1/23/2012 22:34",
 		"tagNames" : "CamilloBruni 7/13/2011 20:22",
 		"tagRevision:with:" : "CamilloBruni 7/15/2011 17:36",

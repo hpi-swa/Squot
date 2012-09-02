@@ -2,7 +2,7 @@ writing
 writeClassDefinition: aClassDefinition 
 	| classPath |
 	
-	classPath := self classPathFor: aClassDefinition actualClass.
+	classPath := self classPathFor: aClassDefinition.
 	
 	((classPath / 'instance-side') ensureDirectory / 'definition.st') writeStreamDo: [ :s|
 		self writeClassDefinition: aClassDefinition on: s].

@@ -16,6 +16,6 @@ testFullTags
 	
 	self assert: tags size = 1.
 	
-	self assert: tags keys first = tag.
-	self assert: tags values first species = GitFilesystem.
-	self assert: tags values first revision = commit.
+	self assert: tags keys first equals: tag.
+	self assert: tags values first species equals: GitFilesystem.
+	self assert: tags values first revision equals: commit.

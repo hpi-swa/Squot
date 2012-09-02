@@ -1,1 +1,1 @@
-I track the changes made to a FSGitFilesystem. On a commit all the changes are saved to "disk" and I am reset.
+I track the changes made to a GitFilesystem. On a commit all the changes are saved to "disk" and I am reset.

@@ -1,3 +1,5 @@
 private
 newTreeFrom: aTree
-	^ GitTree entries: aTree entries in: repository
+	^ GitTree 
+		entries: aTree entries 
+		in: repository

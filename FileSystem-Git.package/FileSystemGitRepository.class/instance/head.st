@@ -1,3 +1,3 @@
 accessing
 head
-	^ self filesystemOn: repository head
+	^ self filesystemOn: (repository headIfAbsent: [ nil ])

@@ -1,6 +1,5 @@
 initialize-release
 initializeWith: aRepository with: aCache for: aRevision
-	super initialize.
 	hasChanges := false.
 	repository := aRepository.
 	cache := aCache.

@@ -1,0 +1,15 @@
+{
+	"category" : "FileSystem-Git",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "CamilloBruni 8/1/2011 18:32",
+	"instvars" : [
+		"set",
+		"maxDepth" ],
+	"name" : "GitSetWrapper",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }

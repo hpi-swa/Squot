@@ -3,15 +3,16 @@
 		 },
 	"instance" : {
 		"generateMoreThan2GHashes" : "MaxLeske 9/2/2012 21:39",
-		"setUp" : "MaxLeske 9/2/2012 12:16",
+		"setUp" : "MaxLeske 9/2/2012 23:26",
 		"testFanoutByte0" : "MaxLeske 9/2/2012 10:40",
 		"testFanoutByte255" : "MaxLeske 9/2/2012 10:49",
 		"testFanoutOffsets" : "MaxLeske 9/2/2012 10:49",
 		"testFanoutTableCreation" : "MaxLeske 9/2/2012 10:50",
+		"testHighestOrderedHashes" : "MaxLeske 8/28/2012 15:29",
 		"testWrite4ByteOffsetTable" : "MaxLeske 9/2/2012 20:52",
-		"testWrite8ByteOffsetTable" : "MaxLeske 9/2/2012 21:47",
+		"testWrite8ByteOffsetTable" : "MaxLeske 9/2/2012 23:27",
 		"testWriteCRCTableOn" : "MaxLeske 8/29/2012 20:56",
-		"testWriteObjectHeaderOn" : "MaxLeske 8/12/2012 18:34",
+		"testWriteObjectHeaderOn" : "MaxLeske 9/2/2012 23:26",
 		"testWriteObjectNamesOn" : "MaxLeske 9/2/2012 11:00",
-		"testWriteObjectsOn" : "MaxLeske 8/29/2012 16:07",
-		"testwriteIndexFileTrailerOn" : "MaxLeske 9/2/2012 12:21" } }
+		"testWriteObjectsOn" : "MaxLeske 9/2/2012 23:26",
+		"testwriteIndexFileTrailerOn" : "MaxLeske 9/2/2012 23:25" } }

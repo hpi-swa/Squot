@@ -2,7 +2,7 @@ tests-index
 testwriteIndexFileTrailerOn
 	| bytes index |
 	index := GitIndexFileVersion2 new
-		reference: (FSFilesystem memory root  / 'index');
+		reference: (FileSystem memory root  / 'index');
 		yourself.
 	creator 
 		indexFile: index;

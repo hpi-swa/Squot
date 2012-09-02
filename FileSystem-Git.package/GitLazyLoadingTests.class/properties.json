@@ -1,0 +1,16 @@
+{
+	"category" : "FileSystem-Git-Tests",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"filesystem",
+		"repository",
+		"workingCopy" ],
+	"name" : "GitLazyLoadingTests",
+	"pools" : [
+		 ],
+	"super" : "GitTestCase",
+	"type" : "normal" }

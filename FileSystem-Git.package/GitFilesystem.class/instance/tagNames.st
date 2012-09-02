@@ -1,0 +1,3 @@
+delegating
+tagNames
+	^ repository tagNames

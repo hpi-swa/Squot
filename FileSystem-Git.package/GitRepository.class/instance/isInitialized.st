@@ -1,6 +1,3 @@
 public-testing
 isInitialized
-	| isInitialized foundDirectories |
-	foundDirectories := self gitDirectories collect: [ :each | (self baseDir resolve: each) exists ].
-	^ (foundDirectories size = (self gitDirectories size))
-		and: [ self headFile exists ]
+	^ (self gitDirectories allSatisfy: [ :each | (self baseDir resolve: each) exists ]) and: [ self headFile exists ]

@@ -1,7 +1,7 @@
 tests
 testWritingSameCommitTwice
 	| commit newRepository tree blob treeEntry |
-	newRepository := GitRepository on: (FSFilesystem memory root).
+	newRepository := GitRepository on: (FileSystem memory root).
 	blob := GitBlob bytes: 'ablob' in: newRepository.
 	treeEntry :=
 		GitTreeEntry 

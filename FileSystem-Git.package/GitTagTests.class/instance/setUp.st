@@ -2,7 +2,7 @@ running
 setUp
 	| blob tree commit |
 	super setUp.
-	repository := GitRepository on: (FSFilesystem memory / 'testRepo').
+	repository := GitRepository on: (FileSystem memory / 'testRepo').
 	blob := GitBlob bytes: 'test' in: repository.
 	blob store.
 	tree := GitTree 

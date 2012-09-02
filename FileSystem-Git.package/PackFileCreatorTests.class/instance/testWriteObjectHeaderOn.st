@@ -1,9 +1,8 @@
 tests
 testWriteObjectHeaderOn
-	| blob creator file contents |
+	| blob file contents |
 	blob := GitBlob bytes: 'my blob with size greater than 32' in: nil.
-	creator := GitPackFileCreator new.
-	file := FSFilesystem memory root / 'afile'.
+	file := FileSystem memory root / 'afile'.
 	file writeStreamDo: [ :stream | creator writeObjectHeader: blob on: stream ].
 	contents := file readStreamDo: [ :stream | stream contents ].
 	

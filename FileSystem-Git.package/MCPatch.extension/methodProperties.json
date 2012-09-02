@@ -1,0 +1,11 @@
+{
+	"class" : {
+		 },
+	"instance" : {
+		"classRemovals" : "CamilloBruni 8/9/2011 20:43",
+		"methodRemovals" : "CamilloBruni 8/9/2011 20:43",
+		"packageRemovals" : "CamilloBruni 8/9/2011 20:43",
+		"removeMethodsOfClass:" : "CamilloBruni 8/9/2011 20:43",
+		"simplifyClassRemovals" : "CamilloBruni 8/9/2011 20:43",
+		"simplifyHierarchy" : "CamilloBruni 8/9/2011 20:43",
+		"simplifyMethodRemovals" : "CamilloBruni 8/9/2011 20:43" } }

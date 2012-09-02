@@ -1,7 +1,7 @@
 running
 setUp
 	
-	filesystem :=  FSFilesystem memory.
+	filesystem :=  FileSystem memory.
 	repository :=  MCGitRepository reference: filesystem root.
 	
 	GitStamp

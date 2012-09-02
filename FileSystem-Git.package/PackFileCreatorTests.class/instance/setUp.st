@@ -11,7 +11,7 @@ setUp
 		#[236 216 1 54 98 69 148 164 244 71 189 82 48 250 53 240 85 4 72 81] asInteger.
 		#[255 216 1 54 98 69 148 164 244 71 189 82 48 250 53 240 85 4 72 81] asInteger }.
 	
-	repository := GitRepository on: (FSFilesystem memory root / 'repo').
+	repository := GitRepository on: (FileSystem memory root / 'repo').
 	1 to: 7 do: [ :index | 
 		(GitBlob bytes: 'content', index asString in: repository)
 			instVarNamed: 'integerHash' put: (sortedHashes at: index);

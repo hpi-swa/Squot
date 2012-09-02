@@ -10,7 +10,7 @@ verifyDeltificationWithBaseAt: baseOffset
 		instVarNamed: 'commands' put: unpackedDelta readStream;
 		instVarNamed: 'instructions' put: unpackedDelta. 
 
-	dummyFS := FSFilesystem memory.
+	dummyFS := FileSystem memory.
 	(dummyFS root / 'pack.idx') writeStreamDo: [ :stream | 
 		stream nextPutAll: self indexBytesWithRefDelta ].
 	(dummyFS root / 'pack.pack') writeStreamDo: [ :stream |

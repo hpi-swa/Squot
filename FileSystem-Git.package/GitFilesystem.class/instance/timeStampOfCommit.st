@@ -1,0 +1,3 @@
+delegating
+timeStampOfCommit
+	^ store timeStampOfCommit

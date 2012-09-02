@@ -1,0 +1,3 @@
+delegating
+timeStampOfCreation
+	^ store timeStampOfCreation

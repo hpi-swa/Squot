@@ -1,0 +1,3 @@
+delegate
+delimiter
+	^ cacheStore delimiter

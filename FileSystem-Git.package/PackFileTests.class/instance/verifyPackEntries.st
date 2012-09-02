@@ -65,6 +65,6 @@ and #expandAndVerify:."
 	checksum := packReader next: 20.
 	self 
 		assert: checksum
-		equals: calculatedChecksum asByteHash.
+		equals: calculatedChecksum byteHash.
 	
 	self assert: packReader atEnd

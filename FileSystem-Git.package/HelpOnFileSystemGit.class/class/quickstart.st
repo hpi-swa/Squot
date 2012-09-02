@@ -9,7 +9,7 @@ quickstart
 =====================================================
 
 Get a filesystem on the head of a Git repository (new or existing) by evaluating the following expression in a workspace:
-	workingCopy := FSFilesystem onGit: (<anFSReference>).
+	workingCopy := FileSystem onGit: (<anFSReference>).
 	
 Examples of expressions for <anFSReference>:
 	->  FSFilesystem inMemory / ''repository''

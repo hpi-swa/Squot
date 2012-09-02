@@ -32,4 +32,4 @@ createFixedTimeStampCommitIn: anFSReference
 	commit parents: OrderedCollection new.
 	commit store.
 
-	repository updateRef: repository headFile to: commit signature
+	repository updateRef: repository headFile to: commit hexHash

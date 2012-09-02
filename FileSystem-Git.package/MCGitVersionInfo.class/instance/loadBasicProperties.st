@@ -1,6 +1,6 @@
 loading
 loadBasicProperties
-	id := commit signature hexHash.
+	id := commit hexHash.
 	author := commit author name.
 	date := commit author timeStamp date.
 	time := commit author timeStamp time.

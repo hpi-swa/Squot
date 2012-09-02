@@ -18,5 +18,7 @@ basicCommit: aMessage to: branchName
 		repository: repository;
 		store.
 	
-	repository updateRef: repository headsDir / branchName to: commit signature.
+	repository 
+		updateRef: repository headsDir / branchName 
+		to: commit hexHash.
 	self basicReset.

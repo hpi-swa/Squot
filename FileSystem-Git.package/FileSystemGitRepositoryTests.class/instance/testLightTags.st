@@ -11,4 +11,4 @@ testLightTags
 	self assert: tags size = 2.
 	tags do: [ :each |
 		self assert: each species = GitFilesystem.
-		self assert: ({ master. branch1} includes: (each revision) signature) ]
+		self assert: ({ master. branch1} includes: each revision hexHash) ]

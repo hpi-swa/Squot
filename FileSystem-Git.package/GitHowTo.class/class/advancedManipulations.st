@@ -1,11 +1,11 @@
 pages
 advancedManipulations
 	"This method was automatically generated. Edit it using:"
-	"FSGitHowTo edit: #advancedManipulations"
+	"GitHowTo edit: #advancedManipulations"
 	^HelpTopic
 		title: 'Advanced manipulations'
 		contents: 
-'** How to use FS-Git - Advanced manipulations **
+'** How to use FileSystem-Git - Advanced manipulations **
 =====================================================
 
 To provide a better picture of what Git is capable of we will create a second commit so that the repository holds two versions of the working copy:

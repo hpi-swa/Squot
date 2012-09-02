@@ -11,5 +11,5 @@ testActiveBranch
 	self commit: 'a commit'.
 	basicRepository 
 		basicUpdateRef: basicRepository headFile 
-		to: basicRepository head signature hexHash.
+		to: basicRepository head hexHash hexHash.
 	self assert: workingCopy branchName isNil

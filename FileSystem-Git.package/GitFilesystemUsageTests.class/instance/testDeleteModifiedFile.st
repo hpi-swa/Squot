@@ -7,7 +7,7 @@ testDeleteModifiedFile
 	ref := workingCopy referenceTo: path.
 	ref parent ensureDirectory.
 	
-	ref writeStreamDo: [ :stream | 
+	ref ensureDeleted writeStreamDo: [ :stream | 
 		stream nextPutAll: 'changed it' ].
 	
 	self assert: ref readStream contents asString = 'changed it'.

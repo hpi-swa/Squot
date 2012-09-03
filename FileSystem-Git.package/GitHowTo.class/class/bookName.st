@@ -1,3 +1,3 @@
 accessing
 bookName
-	^ 'How to use FS-Git'
+	^ 'How to use FileSystem-Git'

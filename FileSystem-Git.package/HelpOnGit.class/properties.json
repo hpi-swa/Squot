@@ -1,0 +1,14 @@
+{
+	"category" : "FileSystem-Git-Help",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "HelpOnGit",
+	"pools" : [
+		 ],
+	"super" : "CustomHelp",
+	"type" : "normal" }

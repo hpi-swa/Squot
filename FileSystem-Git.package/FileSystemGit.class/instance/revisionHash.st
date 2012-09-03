@@ -1,3 +1,0 @@
-delegating
-revisionHash
-	^ store revisionHash

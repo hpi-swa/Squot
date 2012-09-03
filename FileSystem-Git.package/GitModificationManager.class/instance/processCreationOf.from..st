@@ -10,6 +10,7 @@ processCreationOf: entries from: entryPath
 				tree := (self treeAt: entryPath) 
 					putEntry: (GitTreeEntry
 						fileNamed: directory basename
-						hash: childTree hash).
+						hash: childTree hash
+						in: repository).
 				self flag: 'TODO: update refs only once after processing all deletes and creates'.
 				self updateParentSignaturesOfChanged: tree at: entryPath.]]

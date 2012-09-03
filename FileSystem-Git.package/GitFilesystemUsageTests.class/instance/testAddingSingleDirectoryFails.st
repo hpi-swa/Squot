@@ -7,6 +7,6 @@ testAddingSingleDirectoryFails
 	ref createDirectory.
 	self assert: ref exists.
 	
-	self commit: 'aCommit'.
+	workingCopy commit: 'aCommit'.
 	"the commit shouldn't have happened:"
 	self assert: sha1name = workingCopy name

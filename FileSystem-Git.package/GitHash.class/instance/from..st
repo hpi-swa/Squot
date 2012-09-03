@@ -1,3 +1,3 @@
 initialize-release
 from: aStringOrByteArray
-	integerHash := SecureHashAlgorithm new hashMessage: aStringOrByteArray
+	integerHash := (GitHash new from: aStringOrByteArray) hash

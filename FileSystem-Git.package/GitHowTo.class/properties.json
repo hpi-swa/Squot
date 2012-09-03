@@ -10,5 +10,5 @@
 	"name" : "GitHowTo",
 	"pools" : [
 		 ],
-	"super" : "HelpOnFileSystemGit",
+	"super" : "HelpOnGit",
 	"type" : "normal" }

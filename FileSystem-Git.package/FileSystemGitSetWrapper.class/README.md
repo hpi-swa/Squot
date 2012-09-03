@@ -1,1 +1,0 @@
-I am used to track changes made to a certain directory in a git filesystem. Each change is recorded by the FSGitModificationManager which stores the modified paths for each parent directory in a FSGitSetWrapper.

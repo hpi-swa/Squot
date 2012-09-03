@@ -2,10 +2,10 @@
 	"class" : {
 		"lastStoredRun" : "MaxLeske 2/28/2012 18:10" },
 	"instance" : {
-		"setUp" : "CamilloBruni 8/30/2012 14:09",
+		"setUp" : "CamilloBruni 9/3/2012 18:54",
 		"testBaseDir" : "MaxLeske 6/30/2010 08:07",
 		"testBranches" : "MaxLeske 2/28/2012 09:49",
-		"testCommit" : "MaxLeske 6/24/2012 10:09",
+		"testCommit" : "CamilloBruni 9/3/2012 18:55",
 		"testCreateReferencedDirectory" : "CamilloBruni 8/30/2012 14:09",
 		"testDelete" : "MaxLeske 7/24/2010 15:17",
 		"testDirDoesntExist" : "MaxLeske 7/23/2010 10:00",

@@ -1,3 +1,0 @@
-delegate
-revisionHash
-	^ revision objectHash

@@ -1,5 +1,5 @@
 private
 filesystemOn: aGitCommit
-	^ (FileSystemGit store: (self gitStoreOn: aGitCommit))
+	^ (GitFilesystem store: (self gitStoreOn: aGitCommit))
 			repository: self;
 			yourself

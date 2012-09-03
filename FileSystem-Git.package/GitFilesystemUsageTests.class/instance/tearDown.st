@@ -1,3 +1,4 @@
 running
 tearDown
-	GitFSCK validate: basicRepository.
+	shouldValidateRepos
+		ifFalse: [ GitFSCK validate: basicRepository ].

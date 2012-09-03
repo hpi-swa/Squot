@@ -1,3 +1,0 @@
-delegating
-branchName
-	^ store branchName

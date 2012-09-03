@@ -4,7 +4,9 @@ testLoadingHash
 	hash := (GitHash from: #[1 2 3]) hash.
 	treeEntry := 
 		GitTreeEntry
-			fileNamed: 'file1' hash: hash.
+			fileNamed: 'file1' 
+			hash: hash
+			in: repository.
 	tree := GitTree entries: {treeEntry} in: repository.
 	tree store.
 	

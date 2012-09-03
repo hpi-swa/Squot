@@ -1,3 +1,0 @@
-delegating
-detachWorkingCopy
-	store detachWorkingCopy.

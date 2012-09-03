@@ -9,18 +9,16 @@ basicCommit: aMessage to: branchName
 		withTree: modManager rootTree
 		message: aMessage
 		author: (author ifNil: [ author := GitStamp now ])
-		committer: (committer ifNil: [ committer := GitStamp now ]).
+		committer: (committer ifNil: [ committer := GitStamp now ])
+		in: repository.
 		
 	parents := OrderedCollection new.
-	revision ifNotNil: [ parents add: revision hash ].
+	revision ifNotNil: [ parents add: revision hexHash ].
 	commit 
 		parents: parents;
-		repository: repository;
 		store.
 	
 	repository 
 		updateRef: repository headsDir / branchName 
 		to: commit hexHash.
-	self 
-		basicReset;
-		revision: commit.
+	self revision: commit.

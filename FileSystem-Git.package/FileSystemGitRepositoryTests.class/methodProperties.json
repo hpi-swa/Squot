@@ -2,12 +2,12 @@
 	"class" : {
 		"lastStoredRun" : "CamilloBruni 8/1/2011 16:49" },
 	"instance" : {
-		"setUp" : "MaxLeske 9/2/2012 23:05",
+		"setUp" : "CamilloBruni 9/3/2012 18:53",
 		"tearDown" : "CamilloBruni 6/22/2011 05:22",
-		"testBranches" : "MaxLeske 9/2/2012 22:58",
-		"testFullTags" : "MaxLeske 9/2/2012 22:58",
-		"testHead" : "MaxLeske 9/2/2012 22:58",
-		"testLightTags" : "MaxLeske 9/2/2012 22:58",
-		"testTags" : "CamilloBruni 6/22/2011 04:47",
-		"testVersions" : "MaxLeske 8/13/2011 17:03",
-		"testVersionsOrder" : "MaxLeske 2/1/2011 17:56" } }
+		"testBranches" : "CamilloBruni 9/3/2012 16:32",
+		"testFullTags" : "MaxLeske 9/3/2012 20:56",
+		"testHead" : "MaxLeske 9/3/2012 20:56",
+		"testLightTags" : "MaxLeske 9/3/2012 20:56",
+		"testTags" : "CamilloBruni 9/2/2012 11:12",
+		"testVersions" : "CamilloBruni 9/3/2012 18:32",
+		"testVersionsOrder" : "CamilloBruni 9/3/2012 16:20" } }

@@ -1,3 +1,0 @@
-delegating
-reset
-	store reset

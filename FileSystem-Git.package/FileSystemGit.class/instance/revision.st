@@ -1,3 +1,0 @@
-delegating
-revision
-	^ store revision

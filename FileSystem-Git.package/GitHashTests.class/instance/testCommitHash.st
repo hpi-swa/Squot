@@ -4,7 +4,7 @@ testCommitHash
 	entryHash := (GitHash from: #[1 2 3 ]) hash.
 	treeEntry :=
 		GitTreeEntry
-			fileNamed: 'file1' hash: entryHash.
+			fileNamed: 'file1' hash: entryHash in: nil.
 	tree := GitTree entries: {treeEntry} in: nil.
 	message := 'a message'.
 	commit :=
@@ -12,7 +12,8 @@ testCommitHash
 			withTree: tree
 			message: message
 			author: self defaultStamp
-			committer: self defaultStamp.
+			committer: self defaultStamp
+			in: nil.
 	commitDataSize :=
 		GitCommit typeCode size +
 		1 + "space"

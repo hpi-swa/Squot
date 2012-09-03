@@ -1,3 +1,0 @@
-delegating
-branches
-	^ repository branches

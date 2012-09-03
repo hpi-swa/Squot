@@ -1,3 +1,0 @@
-accessing
-anyOne
-	^ set anyOne

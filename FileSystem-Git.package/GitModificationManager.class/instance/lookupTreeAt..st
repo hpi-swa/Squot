@@ -8,5 +8,5 @@ lookupTreeAt: aPath
 			entryAt: segment
 			ifPresent: [ :entry | 
 				"let's try to load the entry, might still be that it has been freshly added by a previous processCreation send"
-				^ repository objectWithSignature: entry objectSignature ifAbsent: [ nil]]
+				^ repository objectNamed: entry entryHexHash ifAbsent: [ nil]]
 			ifAbsent: [ ^ nil ] ].

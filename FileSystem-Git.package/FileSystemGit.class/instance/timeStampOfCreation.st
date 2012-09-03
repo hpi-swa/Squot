@@ -1,3 +1,0 @@
-delegating
-timeStampOfCreation
-	^ store timeStampOfCreation

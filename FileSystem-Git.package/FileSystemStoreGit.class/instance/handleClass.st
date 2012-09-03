@@ -1,3 +1,0 @@
-delegate
-handleClass
-	^ cacheStore handleClass

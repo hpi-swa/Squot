@@ -10,8 +10,8 @@ testAddingMultipleDirectoriesFails
 	(workingCopy referenceTo: subDir1) createDirectory.
 	self assert: (workingCopy referenceTo: subDir1) exists.
 	(workingCopy / dir2) createDirectory.
-	self assert: (workingCopy / dir2) exists.	
-	
-	self commit: 'aCommit..'.
+	self assert: (workingCopy / dir2) exists.
+		
+	workingCopy commit: 'aCommit..'.
 	"the commit should not have happened:"
 	self assert: sha1name = workingCopy name.

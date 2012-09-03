@@ -1,3 +1,3 @@
 delegate
 revisionHash
-	^ revision objectHash
+	^ revision hexHash

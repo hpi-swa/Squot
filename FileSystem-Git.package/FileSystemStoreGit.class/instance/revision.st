@@ -1,3 +1,0 @@
-delegate
-revision
-	^ revision

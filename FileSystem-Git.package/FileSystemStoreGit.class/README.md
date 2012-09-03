@@ -1,1 +1,0 @@
-I am used to access files and directorys of a specific version of a git repository.

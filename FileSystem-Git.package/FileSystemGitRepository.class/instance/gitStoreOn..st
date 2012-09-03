@@ -1,6 +1,6 @@
 private
 gitStoreOn: aGitCommit
-	^ FileSystemStoreGit memory
+	^ GitStore memory
 		repository: repository;
 		revision: aGitCommit;
 		yourself

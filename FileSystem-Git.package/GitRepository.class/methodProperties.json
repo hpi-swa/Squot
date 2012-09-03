@@ -5,9 +5,9 @@
 	"instance" : {
 		"=" : "CamilloBruni 7/20/2011 13:07",
 		"accept:" : "MaxLeske 8/13/2012 21:55",
-		"activeBranchName" : "CamilloBruni 8/30/2012 14:12",
+		"activeBranchName" : "CamilloBruni 9/3/2012 16:32",
 		"baseDir" : "CamilloBruni 7/15/2011 15:40",
-		"basicUpdateRef:to:" : "CamilloBruni 9/1/2012 12:27",
+		"basicUpdateRef:to:" : "CamilloBruni 9/3/2012 16:19",
 		"branchNamed:" : "MaxLeske 2/28/2012 18:21",
 		"branchNames" : "MaxLeske 10/29/2010 22:17",
 		"branches" : "MaxLeske 2/28/2012 18:18",
@@ -23,7 +23,7 @@
 		"gitInitialize" : "CamilloBruni 9/2/2012 12:14",
 		"hash" : "CamilloBruni 7/15/2011 18:14",
 		"head" : "CamilloBruni 9/2/2012 11:19",
-		"headFile" : "MaxLeske 7/23/2010 18:02",
+		"headFile" : "CamilloBruni 9/3/2012 16:51",
 		"headIfAbsent:" : "CamilloBruni 9/2/2012 11:21",
 		"headOrEmptyRootCommit" : "CamilloBruni 9/2/2012 12:27",
 		"headRef" : "MaxLeske 8/11/2011 21:23",
@@ -63,6 +63,6 @@
 		"tags" : "MaxLeske 6/24/2012 10:08",
 		"tagsDir" : "MaxLeske 7/23/2010 17:47",
 		"updateHeadToBranch:" : "MaxLeske 11/2/2010 22:32",
-		"updateRef:to:" : "MaxLeske 2/26/2012 14:50",
+		"updateRef:to:" : "CamilloBruni 9/3/2012 18:22",
 		"validate" : "CamilloBruni 8/9/2011 16:58",
 		"workingDir" : "MaxLeske 6/24/2012 11:37" } }

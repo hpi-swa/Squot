@@ -6,10 +6,10 @@ testTreeHash
 	treeHash := #[83 30 221 175 161 242 190 210 135 98 78 1 20 103 113 251 149 188 122 146].
 	entry1 := 
 		GitTreeEntry
-			directoryNamed: 'dir1' hash: hash1.
+			directoryNamed: 'dir1' hash: hash1 in: nil.
 	entry2 :=
 		GitTreeEntry
-			fileNamed: 'file1' hash: hash2.
+			fileNamed: 'file1' hash: hash2 in: nil.
 	tree := GitTree entries: {entry1. entry2} in: nil.
 	dataSize1 := 
 		(GitTreeEntry printMode: GitTreeEntry dirMode) size +

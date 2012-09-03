@@ -1,3 +1,0 @@
-helpers
-reset
-	workingCopy reset

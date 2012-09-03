@@ -1,3 +1,0 @@
-delegating
-tags
-	^ repository tags

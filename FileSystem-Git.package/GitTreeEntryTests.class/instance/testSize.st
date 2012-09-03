@@ -7,7 +7,8 @@ testSize
 	treeEntry :=
 		GitTreeEntry 
 			fileNamed: fileName 
-			hash: blob hash.
+			hash: blob hash
+			in: repository.
 					
 	sizeToBe := 
 		(mode size) +

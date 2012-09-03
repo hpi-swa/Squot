@@ -1,3 +1,3 @@
 initialize-release
-createFilesystem
+createFileSystem
 	^ (FileSystemGitRepository on: (FileSystem memory / 'testRepo.git')) head.

@@ -9,7 +9,8 @@
 		"basicRepository",
 		"fsRepository",
 		"workingCopy",
-		"shouldValidateRepos" ],
+		"shouldValidateRepos",
+		"reference" ],
 	"name" : "GitFilesystemUsageTests",
 	"pools" : [
 		 ],

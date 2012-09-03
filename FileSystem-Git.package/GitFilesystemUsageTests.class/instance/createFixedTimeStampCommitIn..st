@@ -5,6 +5,7 @@ createFixedTimeStampCommitIn: anFSReference
 	
 	blob := GitBlob bytes: 'blob1' in: repository.
 	blob store.
+	
 	tree := GitTree 
 		entries: {
 			GitTreeEntry
@@ -30,8 +31,9 @@ createFixedTimeStampCommitIn: anFSReference
 		message: 'aMessage'
 		author: author
 		committer: committer
-		in: basicRepository.
+		in: repository.
 	commit parents: OrderedCollection new.
 	commit store.
 
-	repository updateRef: repository headsDir / 'master' to: commit hexHash
+	repository updateRef: repository headsDir / 'master' to: commit hexHash.
+	GitFSCK validate: repository.

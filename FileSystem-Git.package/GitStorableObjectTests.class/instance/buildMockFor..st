@@ -6,7 +6,8 @@ buildMockFor: aGitObjectClass
 		entries: {
 			GitTreeEntry 
 				fileNamed: 'testFile' 
-				hash: fakeName}
+				hash: fakeName
+				in: repository}
 		in: repository.
 	aGitObjectClass = GitBlob
 		ifTrue: [ ^ GitBlob bytes: 'test' in: repository ].

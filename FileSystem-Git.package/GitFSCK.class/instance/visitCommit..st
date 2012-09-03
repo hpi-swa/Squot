@@ -5,4 +5,5 @@ visitCommit: aCommit
 	self
 		mark: aCommit;
 		validate: aCommit;
-		visit: aCommit tree
+		visit: aCommit tree;
+		visit: aCommit parents.

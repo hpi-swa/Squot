@@ -3,7 +3,6 @@ testVersions
 	| versions version1 version2 workingCopy |
 	
 	self assert: repository versions size equals: 2.
-	
 	workingCopy := repository head.
 	(workingCopy / 'aFile') writeStreamDo: [ :stream | stream nextPutAll: 'aFile' ].
 	workingCopy commit: 'message3'.

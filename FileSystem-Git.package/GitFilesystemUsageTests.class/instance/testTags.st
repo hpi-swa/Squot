@@ -14,6 +14,6 @@ testTags
 	
 	basicRepository 
 		updateRef: basicRepository tagsDir / 'tag3' 
-		to: workingCopy hash.
+		to: workingCopy revisionHash.
 	self assert: workingCopy tagNames size = 3.
 	self assert: (workingCopy tagNames includesAllOf: #('tag 1' 'tag number two' 'tag3'))

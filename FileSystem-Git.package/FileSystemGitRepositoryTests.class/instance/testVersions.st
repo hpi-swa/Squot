@@ -1,6 +1,6 @@
 tests
 testVersions
-	| versions versionOld versionNew workingCopy |
+	| versions version1 version2 workingCopy |
 	
 	self assert: repository versions size equals: 2.
 	
@@ -12,11 +12,11 @@ testVersions
 	self assert: versions size equals: 3.
 	
 	versions detect: [ :version| version message = 'message3' ].
-	versionNew := versions detect: [ :version | version message = 'message1' ].
-	versionOld := versions detect: [ :version | version message = 'message2' ].
+	version1 := versions detect: [ :version | version message = 'message1' ].
+	version2 := versions detect: [ :version | version message = 'message2' ].
 	
-	self assert: versionOld root children size equals: 1.
-	self assert: versionOld root children first basename equals: 'first blob'.
+	self assert: version1 root children size equals: 1.
+	self assert: version1 root children first basename equals: 'blob1'.
 	
-	self assert: versionNew root children size equals: 1.
-	self assert: versionNew root children first basename equals: 'second blob'
+	self assert: version2 root children size equals: 1.
+	self assert: version2 root children first basename equals: 'blob2'

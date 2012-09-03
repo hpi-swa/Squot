@@ -44,4 +44,4 @@ setUp
 	repository
 		updateRef: repository headsDir / 'branch1' to: commit1 hexHash;
 		updateRef: repository headsDir / 'master' to: commit2 hexHash;
-		updateRef: repository headFile to: 'master'
+		updateRef: repository headFile to: 'ref: refs/heads/master'

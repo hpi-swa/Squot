@@ -12,7 +12,7 @@ basicCommit: aMessage to: branchName
 		committer: (committer ifNil: [ committer := GitStamp now ]).
 		
 	parents := OrderedCollection new.
-	revision ifNotNil: [ parents add: revision hash ].
+	revision ifNotNil: [ parents add: revision hexHash ].
 	commit 
 		parents: parents;
 		repository: repository;
@@ -21,6 +21,4 @@ basicCommit: aMessage to: branchName
 	repository 
 		updateRef: repository headsDir / branchName 
 		to: commit hexHash.
-	self 
-		basicReset;
-		revision: commit.
+	self revision: commit.

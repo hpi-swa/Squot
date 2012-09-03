@@ -1,3 +1,3 @@
 public-locations
 headFile
-	^ self baseDir resolve: 'HEAD'
+	^ self baseDir / 'HEAD'

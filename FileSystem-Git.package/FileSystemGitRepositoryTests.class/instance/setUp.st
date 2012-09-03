@@ -18,6 +18,7 @@ setUp
 				hash: blob1 hash}
 		in: basicRepository.
 	tree1 store.
+	
 	tree2 := GitTree 
 		entries: {
 			GitTreeEntry
@@ -25,6 +26,7 @@ setUp
 				hash: blob2 hash}
 		in: basicRepository.
 	tree2 store.
+	
 	commit1 := (GitCommit in: basicRepository)
 		tree: tree1;
 		message: 'message1';
@@ -32,6 +34,7 @@ setUp
 		committer: stamp;
 		store;
 		yourself.
+	
 	commit2 := (GitCommit in: basicRepository)
 		tree: tree2;
 		message: 'message2';
@@ -43,6 +46,7 @@ setUp
 	
 	basicRepository
 		updateRef: basicRepository headsDir / 'branch1' to: commit1 hexHash;
-		updateRef: basicRepository headsDir / 'master' to: commit2 hexHash.
-		
+		updateRef: basicRepository headsDir / 'master' to: commit2 hexHash.	
+	GitFSCK validate: basicRepository.
+	
 	repository := FileSystemGitRepository on: reference.

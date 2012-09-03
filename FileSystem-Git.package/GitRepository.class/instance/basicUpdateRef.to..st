@@ -13,7 +13,7 @@ basicUpdateRef: refPath to: aString
 		ifFalse: [ refPath ].
 		
 	pathReference parent ensureDirectory.
-	pathReference writeStreamDo: [ :stream | 
+	pathReference ensureDeleted writeStreamDo: [ :stream | 
 		stream 
 			nextPutAll: aString; 
 			nextPut: Character lf ]

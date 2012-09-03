@@ -11,7 +11,8 @@ testActiveBranch
 	
 	(workingCopy / 'anotherFile') writeStreamDo: [ :stream | ].
 	self commit: 'a commit'.
+	self flag: 'Why do we manually replace the symbolic reference in HEAD?'.
 	basicRepository 
 		basicUpdateRef: basicRepository headFile 
-		to: basicRepository head hexHash hexHash.
-	self assert: workingCopy branchName isNil
+		to: basicRepository head hexHash.
+	self assert: workingCopy branchName equals: 'master'

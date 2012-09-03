@@ -43,7 +43,6 @@ setUp
 	
 	basicRepository
 		updateRef: basicRepository headsDir / 'branch1' to: commit1 hexHash;
-		updateRef: basicRepository headsDir / 'master' to: commit2 hexHash;
-		updateRef: basicRepository headFile to: commit2 hexHash.
+		updateRef: basicRepository headsDir / 'master' to: commit2 hexHash.
 		
 	repository := FileSystemGitRepository on: reference.

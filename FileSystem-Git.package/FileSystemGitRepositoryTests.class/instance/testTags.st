@@ -1,4 +1,4 @@
-commit tests
+tests
 testTags
 	self assert: repository tags isEmpty.
 	

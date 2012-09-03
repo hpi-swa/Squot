@@ -1,7 +1,7 @@
 tests
 testFullTags
 	| commit tags tag|
-	commit := basicRepository objectWithSignature: (basicRepository resolveRef: 'refs/heads/branch1').
+	commit := basicRepository objectNamed: (basicRepository resolveRef: 'refs/heads/branch1').
 	[[ tag := GitTag
 		makeFullTag: 'version 4.3alpha'
 		for: commit

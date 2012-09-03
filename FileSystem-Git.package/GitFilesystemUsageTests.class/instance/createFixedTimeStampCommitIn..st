@@ -9,7 +9,8 @@ createFixedTimeStampCommitIn: anFSReference
 		entries: {
 			GitTreeEntry
 				fileNamed: 'first blob'
-				hash: blob hash }
+				hash: blob hash
+				in: repository }
 		in: repository.
 	tree store.
 		
@@ -28,7 +29,8 @@ createFixedTimeStampCommitIn: anFSReference
 		withTree: tree
 		message: 'aMessage'
 		author: author
-		committer: committer.
+		committer: committer
+		in: basicRepository.
 	commit parents: OrderedCollection new.
 	commit store.
 

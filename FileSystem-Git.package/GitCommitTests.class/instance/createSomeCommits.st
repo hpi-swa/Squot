@@ -4,12 +4,12 @@ createSomeCommits
 	i := 0.
 	commits := self createSomeTrees collect: [ :tree |
 		i := i + 1.
-		(GitCommit
+		GitCommit
 			withTree: tree
 			message: 'commit ', i asString 
 			author: self defaultStamp
-			committer: self defaultStamp)
-				repository: repository ].
+			committer: self defaultStamp
+			in: repository ].
 		
 	commits last parents: ((commits reversed allButFirst: 1) collect: [ :commit | commit hexHash ]).
 	commits second parents: (OrderedCollection with: commits first hexHash).

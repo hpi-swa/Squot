@@ -3,13 +3,16 @@ testRemoveEntry
 	| tree collection entry1 entry2 entry3 |
 	entry1 := GitTreeEntry
 		fileNamed: 'entry 1'
-		hash: 1.
+		hash: 1
+		in: nil.
 	entry2 := GitTreeEntry
 		fileNamed: 'entry 2'
-		hash: 2.
+		hash: 2
+		in: nil.
 	entry3 := GitTreeEntry
 		fileNamed: 'entry 3'
-		hash: 3.
+		hash: 3
+		in: nil.
 	collection := OrderedCollection new add: entry1; add: entry2; add: entry3; yourself.
 	tree := GitTree entries: collection in: nil.
 	

@@ -6,8 +6,8 @@ testAt
 	blob store.
 	entry := GitTreeEntry
 		fileNamed: 'testFile'
-		hash: blob hash.
-	entry repository: repo.
+		hash: blob hash
+		in: repo.
 	tree := GitTree entries: {entry} in: repo.
 	
 	self assert: (tree at: entry entryName) = blob

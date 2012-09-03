@@ -9,7 +9,8 @@ setUp
 		entries: {
 			GitTreeEntry
 				fileNamed: 'testFile'
-				hash: blob hash}
+				hash: blob hash
+				in: repository}
 		in: repository.
 	tree store.
 	commit := [ [ GitCommit withDefaultStamps ]

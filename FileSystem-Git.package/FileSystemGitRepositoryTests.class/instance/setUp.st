@@ -15,7 +15,8 @@ setUp
 		entries: {
 			GitTreeEntry
 				fileNamed: 'blob1'
-				hash: blob1 hash}
+				hash: blob1 hash
+				in: basicRepository}
 		in: basicRepository.
 	tree1 store.
 	
@@ -23,7 +24,8 @@ setUp
 		entries: {
 			GitTreeEntry
 				fileNamed: 'blob2'
-				hash: blob2 hash}
+				hash: blob2 hash
+				in: basicRepository}
 		in: basicRepository.
 	tree2 store.
 	

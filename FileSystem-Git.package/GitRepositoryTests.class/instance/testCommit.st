@@ -3,7 +3,7 @@ testCommit
 	| blob tree commit |
 	blob := (GitBlob bytes: 'hello' in: repository) store; yourself.
 	tree := GitTree
-		entries: {(GitTreeEntry fileNamed: 'testFile' hash: blob hash)}
+		entries: {(GitTreeEntry fileNamed: 'testFile' hash: blob hash in: repository)}
 		in: repository.
 	tree store.
 	commit := (GitCommit in: repository)

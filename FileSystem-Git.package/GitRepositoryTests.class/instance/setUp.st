@@ -15,14 +15,16 @@ setUp
 		entries: {
 			GitTreeEntry
 				fileNamed: 'blob1'
-				hash: blob1 hash}
+				hash: blob1 hash
+				in: repository}
 		in: repository.
 	tree1 store.
 	tree2 := GitTree 
 		entries: {
 			GitTreeEntry
 				fileNamed: 'blob2'
-				hash: blob2 hash}
+				hash: blob2 hash
+				in: repository}
 		in: repository.
 	tree2 store.
 	commit1 := (GitCommit in: repository)

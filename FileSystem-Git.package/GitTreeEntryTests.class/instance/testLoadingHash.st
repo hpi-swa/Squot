@@ -4,7 +4,9 @@ testLoadingHash
 	hash := SecureHashAlgorithm new hashMessage: #[1 2 3].
 	treeEntry := 
 		GitTreeEntry
-			fileNamed: 'file1' hash: hash.
+			fileNamed: 'file1' 
+			hash: hash
+			in: repository.
 	tree := GitTree entries: {treeEntry} in: repository.
 	tree store.
 	

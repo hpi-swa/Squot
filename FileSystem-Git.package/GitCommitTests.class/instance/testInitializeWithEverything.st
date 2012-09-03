@@ -17,14 +17,16 @@ testInitializeWithEverything
 		entries: {
 			GitTreeEntry 
 				fileNamed: 'filename'
-				hash: blob hash }
+				hash: blob hash
+				in: repository }
 		in: nil.
 	
 	commit := GitCommit 
 				withTree: tree
 				message: message
 				author: author
-				committer: committer.
+				committer: committer
+				in: nil.
 	
 	self assert: commit tree = tree.
 	self assert: commit message = message.

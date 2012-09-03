@@ -4,10 +4,12 @@ testSettingEntries
 	collection := OrderedCollection new.
 	entry1 := GitTreeEntry 
 		fileNamed: 'object1' 
-		hash: 234.
+		hash: 234
+		in: nil.
 	entry2 := GitTreeEntry 
 		fileNamed: 'object2' 
-		hash: 564.
+		hash: 564
+		in: nil.
 	collection add: entry1; add: entry2.
 	tree := GitTree entries: collection in: nil.
 	

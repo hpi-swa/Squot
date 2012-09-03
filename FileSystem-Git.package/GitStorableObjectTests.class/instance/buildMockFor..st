@@ -27,5 +27,5 @@ buildMockFor: aGitObjectClass
 				tagger: self defaultStamp
 				in: repository ].
 	aGitObjectClass = GitTree
-		ifTrue: [ ^ GitTree entries: {(GitTreeEntry fileNamed: 'testFile' hash: fakeName)} in: repository ].
+		ifTrue: [ ^ GitTree entries: {(GitTreeEntry fileNamed: 'testFile' hash: fakeName in: repository)} in: repository ].
 	self error: 'the class you provided needs to be instantiated to test #loadFrom:. Add a new entry to #buildMockFor:'

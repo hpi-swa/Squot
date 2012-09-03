@@ -11,6 +11,7 @@ processBlobAt: path in: tree
 	
 	entry := GitTreeEntry
 		fileNamed: path basename
-		hash: blob hash.
-	entry repository: repository.
+		hash: blob hash
+		in: repository.
+		
 	tree putEntry: entry

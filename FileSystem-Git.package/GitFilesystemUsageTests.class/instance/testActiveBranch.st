@@ -1,11 +1,13 @@
 tests
 testActiveBranch
-	self assert: workingCopy branchName = 'master'.
+	self assert: workingCopy branchName equals: 'master'.
+	
 	(workingCopy / 'aFile') writeStreamDo: [ :stream | ].
 	self branch: 'branch 1' message: 'branch 1 commit'.
-	self assert: workingCopy branchName = 'branch 1'.
+	self assert: workingCopy branchName equals: 'branch 1'.
+	
 	basicRepository updateHeadToBranch: 'master'.
-	self assert: workingCopy branchName = 'master'.
+	self assert: workingCopy branchName equals: 'master'.
 	
 	(workingCopy / 'anotherFile') writeStreamDo: [ :stream | ].
 	self commit: 'a commit'.

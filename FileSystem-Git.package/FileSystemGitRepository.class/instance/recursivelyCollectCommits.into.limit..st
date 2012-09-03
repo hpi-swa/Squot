@@ -2,7 +2,8 @@ private
 recursivelyCollectCommits: aCommit into: aCollection limit: anInteger
 	anInteger notNil & anInteger = 0 ifTrue: [ ^ self ].
 	
-	aCommit isLoaded ifFalse: [ aCommit loadLazily ].
+	self flag: 'TODO'.
+	"aCommit isLoaded ifFalse: [ aCommit loadLazily ]."
 	aCollection add: aCommit.
 	aCommit parents do: [ :parent | 
 		self 

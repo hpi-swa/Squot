@@ -1,7 +1,6 @@
 tests
 testFullTags
 	| commit tags tag|
-	self fail. "fails in GitRepository>>tags because it loads a lightweight tag when it should load a full tag"
 	commit := basicRepository objectNamed: (basicRepository resolveRef: 'refs/heads/branch1').
 	[[ tag := GitTag
 		makeFullTag: 'version 4.3alpha'
@@ -17,6 +16,6 @@ testFullTags
 	
 	self assert: tags size = 1.
 	
-	self assert: tag equals: tags keys first.
-	self assert: tags values first species = GitFilesystem.
-	self assert: tags values first revision = commit.
+	self assert: tags keys first equals: tag.
+	self assert: tags values first species equals: GitFilesystem.
+	self assert: tags values first revision equals: commit.

@@ -1,8 +1,9 @@
 {
 	"class" : {
+		"canDecode:" : "MaxLeske 9/4/2012 21:43",
+		"decodeClassFrom:" : "MaxLeske 9/4/2012 21:59",
 		"in:" : "MaxLeske 6/30/2010 14:12",
-		"isAbstract" : "MaxLeske 2/29/2012 15:13",
-		"types" : "MaxLeske 2/29/2012 15:09" },
+		"isAbstract" : "MaxLeske 2/29/2012 15:13" },
 	"instance" : {
 		"accept:" : "CamilloBruni 6/21/2011 06:13",
 		"initializeOn:" : "MaxLeske 7/24/2010 17:21",

@@ -14,10 +14,13 @@ testCommit
 		store;
 		yourself.
 	GitTag
-		makeFullTag: 'tagtest'
+		named: 'tagtest'
 		for: commit
 		message: 'First tag'
 		tagger: self defaultStamp
 		in: repository.
-	GitTag makeLightWeightTag: 'light tag' for: commit in: repository.
+	GitLightweightTag 
+		named: 'light tag' 
+		for: commit 
+		in: repository.
 	repository updateRef: 'HEAD' to: commit hexHash

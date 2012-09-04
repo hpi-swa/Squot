@@ -22,7 +22,7 @@ buildMockFor: aGitObjectClass
 	aGitObjectClass = GitTag
 		ifTrue: [ 
 			^ GitTag
-				makeFullTag: 'testTag'
+				named: 'testTag'
 				for: ((self buildMockFor: GitCommit) store; yourself)
 				message: 'aMessage'
 				tagger: self defaultStamp

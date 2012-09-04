@@ -1,5 +1,6 @@
 class-tests
 testForType
-	GitStorableObject types do: [ :each | each typeCode isNil 
-		ifFalse: [ self assert: (GitStorableObject forType: each typeCode) = each ]
-		ifTrue: [ self should: [ GitStorableObject forType: each typeCode ] raise: GitInvalidObjectError ] ]
+	self assert: (GitStorableObject forType: 'blob') equals: GitBlob.
+	self assert: (GitStorableObject forType: 'commit') equals: GitCommit.
+	self assert: (GitStorableObject forType: 'tree') equals: GitTree.
+	self assert: (GitStorableObject forType: 'tag') equals: GitTag

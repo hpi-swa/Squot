@@ -1,14 +1,12 @@
 {
 	"class" : {
 		"byteTypeCode" : "MaxLeske 2/29/2012 14:26",
-		"makeFullTag:for:message:in:" : "MaxLeske 8/12/2011 09:04",
-		"makeFullTag:for:message:tagger:in:" : "MaxLeske 8/12/2011 09:04",
-		"makeLightWeightTag:for:in:" : "MaxLeske 8/12/2011 09:05",
+		"named:for:message:in:" : "MaxLeske 9/4/2012 22:11",
+		"named:for:message:tagger:in:" : "MaxLeske 9/4/2012 22:12",
 		"typeCode" : "tonyg 2/25/2010 16:16" },
 	"instance" : {
 		"accept:" : "MaxLeske 8/13/2012 21:54",
-		"hash" : "MaxLeske 2/28/2012 11:23",
-		"isLightWeightTag" : "MaxLeske 8/12/2011 08:26",
+		"isLightWeightTag" : "MaxLeske 9/4/2012 20:52",
 		"loadObject:" : "MaxLeske 2/28/2012 18:46",
 		"loadTag:" : "MaxLeske 2/26/2012 10:32",
 		"loadTagger:" : "MaxLeske 2/26/2012 10:33",
@@ -18,12 +16,13 @@
 		"object" : "MaxLeske 8/12/2011 08:29",
 		"object:" : "MaxLeske 6/30/2010 14:01",
 		"printOn:" : "MaxLeske 8/12/2011 08:43",
-		"store" : "MaxLeske 8/12/2011 09:03",
+		"store" : "MaxLeske 9/4/2012 20:59",
 		"storeFixedKeysOn:" : "MaxLeske 6/24/2012 11:15",
-		"storeFullTag" : "MaxLeske 2/28/2012 15:36",
-		"storeLightWeightTag" : "MaxLeske 2/28/2012 15:36",
 		"tagger" : "tonyg 2/25/2010 16:30",
 		"tagger:" : "MaxLeske 6/30/2010 14:00",
-		"updateTagRef" : "MaxLeske 2/28/2012 18:43",
+		"updateTagRef" : "MaxLeske 9/4/2012 21:00",
 		"validKeys" : "MaxLeske 2/26/2012 10:30",
-		"validate" : "MaxLeske 6/24/2012 15:13" } }
+		"validate" : "MaxLeske 9/4/2012 21:10",
+		"validateName" : "MaxLeske 9/4/2012 21:59",
+		"validateObject" : "MaxLeske 9/4/2012 21:15",
+		"validateTagger" : "MaxLeske 9/4/2012 21:16" } }

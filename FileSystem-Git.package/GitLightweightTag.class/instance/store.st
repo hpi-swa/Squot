@@ -1,3 +1,3 @@
 storing
-storeLightWeightTag
+store
 	self updateTagRef

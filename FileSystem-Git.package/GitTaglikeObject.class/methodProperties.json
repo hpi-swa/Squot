@@ -1,6 +1,6 @@
 {
 	"class" : {
-		"isAbstract" : "MaxLeske 2/29/2012 15:14" },
+		"isAbstract" : "MaxLeske 9/4/2012 21:55" },
 	"instance" : {
 		"isKeyValid:" : "MaxLeske 2/26/2012 10:29",
 		"loadFrom:" : "MaxLeske 2/29/2012 16:03",
@@ -14,4 +14,5 @@
 		"storeFixedKeysOn:" : "MaxLeske 6/24/2012 11:15",
 		"storeOn:" : "MaxLeske 6/24/2012 11:17",
 		"validKeys" : "MaxLeske 2/26/2012 10:30",
-		"validate" : "MaxLeske 8/11/2011 22:28" } }
+		"validate" : "MaxLeske 9/4/2012 21:12",
+		"validateMessage" : "MaxLeske 9/4/2012 21:13" } }

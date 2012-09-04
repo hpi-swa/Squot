@@ -1,6 +1,4 @@
-public-storing
+storing
 store
-	self isLightWeightTag
-		ifTrue: [self storeLightWeightTag]
-		ifFalse: [self storeFullTag]
-	
+	super store.
+	self updateTagRef

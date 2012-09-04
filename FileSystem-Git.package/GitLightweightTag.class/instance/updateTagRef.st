@@ -2,4 +2,4 @@ storing
 updateTagRef
 	self repository 
 		updateRef: self repository tagsDir / self name 
-		to: self hexHash
+		to: self object hexHash

@@ -1,3 +1,3 @@
 public-testing
 isLightWeightTag
-	^ false
+	^ true

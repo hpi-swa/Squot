@@ -1,7 +1,7 @@
 tests
 testReadingLightTag
 	| tagFile |
-	GitTag makeLightWeightTag: 'testTag' for: repository head in: repository.
+	GitLightweightTag named: 'testTag' for: repository head in: repository.
 	
 	tagFile := repository tagsDir / 'testTag'.
 	self assert: tagFile exists.

@@ -10,12 +10,12 @@ tags
 	referencedObjects addAll: self collectTagsFromLooseRefs.
 	
 	referencedObjects keysAndValuesDo: [ :name :object |
-		tags add: (object species = GitCommit
+		tags add: (object class = GitCommit
 			ifTrue: [ "this is a lightweight tag"
-				GitTag new
-					name: name;
-					object: object;
-					yourself ]
+				GitLightweightTag
+					named: name
+					for: object
+					in: self ]
 			ifFalse: [ "this is a full tag and will be loaded later"
 				 object ]) ].
 	

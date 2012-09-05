@@ -1,4 +1,5 @@
 testing
-canDecode: aString
+canDecode: anObject
 	^ self isAbstract not 
-		and: [ aString = self typeCode ]
+		and: [ anObject = self typeCode
+		or: [ anObject = self byteTypeCode ] ]

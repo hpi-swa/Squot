@@ -2,8 +2,8 @@ tests
 testTags
 	| firstCommit tags |
 	firstCommit := repository head parents first.
-	GitTag
-		makeLightWeightTag: 'tag1'
+	GitLightweightTag
+		named: 'tag1'
 		for: firstCommit
 		in: repository.
 	

@@ -6,4 +6,4 @@ testAddedFiles
 	
 	self assert: versionInfo name equals: 'MonticelloTest-xxx.1-rev1'.
 	
-	self assert: (root / 'Category') exists.
+	self assert: (root / 'y') exists.

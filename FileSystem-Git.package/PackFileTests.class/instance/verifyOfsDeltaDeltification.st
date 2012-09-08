@@ -4,7 +4,7 @@ verifyOfsDeltaDeltification
 	"GitPackedObject already contains the necessary code."
 	position := packReader position.
 	packedObject := GitPackedOfsDelta new.
-	packedObject instVarNamed: 'file' put: packReader.
+	packedObject sourceStream: packReader.
 
 	self skipEntryHeader.
 	result := self verifyDeltificationWithBaseAt: position - packedObject readBaseObjectOffset.

@@ -2,4 +2,8 @@
 	"class" : {
 		"canDecode:" : "MaxLeske 2/29/2012 21:19" },
 	"instance" : {
-		"unpack" : "MaxLeske 6/24/2012 19:14" } }
+		"basicDeltaBase" : "MaxLeske 9/8/2012 16:36",
+		"deltaBaseName" : "MaxLeske 9/8/2012 18:57",
+		"deltaBaseName:" : "MaxLeske 9/8/2012 18:58",
+		"readHeaders" : "MaxLeske 9/8/2012 18:57",
+		"unpack" : "MaxLeske 9/8/2012 18:59" } }

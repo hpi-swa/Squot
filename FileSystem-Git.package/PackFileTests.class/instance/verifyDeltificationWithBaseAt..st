@@ -4,19 +4,21 @@ verifyDeltificationWithBaseAt: baseOffset
 	"GitDeltaInterpreter GitPack and GitPackedObject already contain the necessary code."
 	interpreter := GitDeltaInterpreter new.
 	position := packReader position.
-	unpackedDelta := (ZLibReadStream on: packReader upToEnd) contents.
+	unpackedDelta := (GitZLibReadStream on: packReader upToEnd) contents.
 	packReader position: position.
 	interpreter 
 		instVarNamed: 'commands' put: unpackedDelta readStream;
 		instVarNamed: 'instructions' put: unpackedDelta. 
 
 	dummyFS := FileSystem memory.
-	(dummyFS root / 'pack.idx') writeStreamDo: [ :stream | 
+	repository := GitRepository on: dummyFS root / 'repo'.
+	
+	(repository packsDir / 'pack.idx') writeStreamDo: [ :stream | 
 		stream nextPutAll: self indexBytesWithRefDelta ].
-	(dummyFS root / 'pack.pack') writeStreamDo: [ :stream |
+	(repository packsDir / 'pack.pack') writeStreamDo: [ :stream |
 		stream nextPutAll: self packBytesWithRefDelta ].
 	 
-	pack := GitPackFile on: dummyFS root / 'pack.pack' in: nil.
+	pack := GitPackFile on: repository packsDir / 'pack.pack' in: repository.
 
 	baseSize := interpreter readBaseObjectSize.
 	finalSize := interpreter readFinalObjectSize.

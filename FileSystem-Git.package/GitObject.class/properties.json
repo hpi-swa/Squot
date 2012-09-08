@@ -10,5 +10,5 @@
 	"name" : "GitObject",
 	"pools" : [
 		 ],
-	"super" : "Object",
+	"super" : "GitAbstractObject",
 	"type" : "normal" }

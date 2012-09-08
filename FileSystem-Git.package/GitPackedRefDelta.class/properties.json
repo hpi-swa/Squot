@@ -6,9 +6,9 @@
 		 ],
 	"commentStamp" : "",
 	"instvars" : [
-		 ],
+		"deltaBaseName" ],
 	"name" : "GitPackedRefDelta",
 	"pools" : [
 		 ],
-	"super" : "GitPackedObject",
+	"super" : "GitPackedDelta",
 	"type" : "normal" }

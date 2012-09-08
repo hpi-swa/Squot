@@ -1,7 +1,7 @@
 helpers
 compressedDataSize: aByteArray
 	| zlibReader |
-	zlibReader := ZLibReadStream on: aByteArray.
+	zlibReader := GitZLibReadStream on: aByteArray.
 	^ zlibReader 
 		contents;
 		sourcePosition

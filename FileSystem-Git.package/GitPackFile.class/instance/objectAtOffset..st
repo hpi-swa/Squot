@@ -1,4 +1,4 @@
-accessing
+public-accessing
 objectAtOffset: offset 
 	^ GitPackedObject
 		fromPack: self

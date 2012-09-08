@@ -1,0 +1,14 @@
+{
+	"category" : "FileSystem-Git-Plumbing-Utilities",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"sourceStartPosition" ],
+	"name" : "GitZLibReadStream",
+	"pools" : [
+		 ],
+	"super" : "ZLibReadStream",
+	"type" : "normal" }

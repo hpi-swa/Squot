@@ -1,7 +1,8 @@
 processing
 unpack
 	| baseOffset base interpreter |
-	baseOffset := self readBaseObjectOffset.
+	(self pack hasIndexFile not
+	and: [ (self pack repository hasLooseObject: self deltaBaseName) not ]) ifTrue: [ ^ self ].
+
 	interpreter := self loadDeltaInterpreter.
-	base := self pack objectAtOffset: headerPos - baseOffset.
-	self runDeltaInterpreter: interpreter against: base
+	self runDeltaInterpreter: interpreter against: self deltaBase

@@ -5,7 +5,7 @@ hasCommitData
 	position := packReader position.
 	self skipEntryHeader.	
 	compressedSize := self compressedDataSize.
-	stream := (ZLibReadStream on: (packReader next: compressedSize)) contents readStream.
+	stream := (GitZLibReadStream on: (packReader next: compressedSize)) contents readStream.
 	packReader position: position.
 	
 	^ (stream next: 4) asString = GitTree typeCode

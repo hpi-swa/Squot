@@ -1,8 +1,8 @@
 processing
 unpack
-	| hexHash interpreter base |
-	hexHash := (file next: 20) asHexHash.
-	packedLength := packedLength + 20.
+	| hexHash interpreter |
+	(self pack hasIndexFile not
+	and: [ (self pack repository hasLooseObject: self deltaBaseName) not ]) ifTrue: [ ^ self ].
+
 	interpreter := self loadDeltaInterpreter.
-	base := self pack objectNamed: hexHash.
-	self runDeltaInterpreter: interpreter against: base
+	self runDeltaInterpreter: interpreter against: self deltaBase

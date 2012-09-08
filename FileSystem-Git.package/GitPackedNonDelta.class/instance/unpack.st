@@ -1,6 +1,5 @@
 processing
 unpack
 	| reader |
-	reader := (ZLibReadStream on: file).
-	unpackedBytes :=  reader contents.
-	packedLength := packedLength + reader sourcePosition
+	reader := GitZLibReadStream on: self sourceStream.
+	unpackedBytes :=  reader contents

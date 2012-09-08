@@ -1,0 +1,3 @@
+accessing
+basicDeltaBase
+	self subclassResponsibility

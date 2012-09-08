@@ -4,9 +4,7 @@ fromPack: aPack at: anOffset in: aRepository
 	stream := aPack readStream.
 	stream position: anOffset.
 	typeCode := self byteTypeCodeFrom: stream.
-	class := self types 
-		detect: [ :aClass | aClass canDecode: typeCode ]
-		ifNone: [ GitInvalidObjectError signal: 'Invalid type code for packed object.' ].
+	class := self decodeClassFrom: typeCode.
 	
 	^ class new
 		repository: aRepository;

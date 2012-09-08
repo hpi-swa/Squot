@@ -6,7 +6,7 @@ the data will either be GitTreeEntry class>>dirMode of GitTreeEntry class>>fileM
 	position := packReader position.
 	self skipEntryHeader.
 	compressedSize := self compressedDataSize.
-	stream := (ZLibReadStream on: (packReader next: compressedSize)) contents readStream.
+	stream := (GitZLibReadStream on: (packReader next: compressedSize)) contents readStream.
 	packReader position: position.
 	
 	mode := (stream next: 6) asString.

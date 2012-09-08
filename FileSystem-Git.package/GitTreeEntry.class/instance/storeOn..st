@@ -1,8 +1,8 @@
 storing
 storeOn: aStream.
 	aStream 
-		nextPutAll: self printMode;
-		space;
-		nextPutAll: entryName;
-		nullByte;
-		nextPutAll: entryHash
+		nextPutAll: self printMode asByteArray;
+		nextPut: Character space asInteger;
+		nextPutAll: entryName asByteArray;
+		nextPut: 0;
+		nextPutAll: entryHash asByteArray

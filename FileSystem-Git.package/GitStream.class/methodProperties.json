@@ -1,6 +1,6 @@
 {
 	"class" : {
-		 },
+		"streamContents:" : "MaxLeske 9/8/2012 16:22" },
 	"instance" : {
 		"contents" : "MaxLeske 4/23/2010 13:44",
 		"initialize" : "MaxLeske 4/23/2010 13:45",
@@ -10,4 +10,5 @@
 		"nextPutBytes:" : "MaxLeske 6/24/2010 10:55",
 		"nullByte" : "MaxLeske 4/23/2010 13:51",
 		"size" : "MaxLeske 6/24/2012 12:05",
-		"space" : "MaxLeske 4/23/2010 13:44" } }
+		"space" : "MaxLeske 4/23/2010 13:44",
+		"streamContents:" : "MaxLeske 9/8/2012 16:21" } }

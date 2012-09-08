@@ -13,5 +13,5 @@ testWriteObjectsOn
 	contents := file readStreamDo: [ :stream | stream contents ].
 	contents := contents allButFirst: 2.	"ignore header"
 	self assert: contents size equals: blob compressedForPack size.
-	self shouldnt: [ bytesRead := (ZLibReadStream on: contents) contents ] raise: Error.
+	self shouldnt: [ bytesRead := (GitZLibReadStream on: contents) contents ] raise: Error.
 	self assert: bytesRead equals: blob byteData

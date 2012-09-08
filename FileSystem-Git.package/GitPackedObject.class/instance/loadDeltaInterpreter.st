@@ -1,7 +1,7 @@
 processing
 loadDeltaInterpreter
 	| reader unpackedDelta |
-	reader := ZLibReadStream on: file.
-	unpackedDelta := reader contents.
-	packedLength := packedLength + reader sourcePosition.
-	^ GitDeltaInterpreter on: unpackedDelta
+	self sourceStream position: self dataStartPosition.
+	reader := GitZLibReadStream on: self sourceStream.
+
+	^ GitDeltaInterpreter on: reader contents

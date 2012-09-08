@@ -6,5 +6,5 @@ loadFrom: aStream
 		readHeaders;
 		dataStartPosition: aStream position;
 		unpack;
-		packedLength: aStream position - self startPosition;
+		lengthInPack: aStream position - self startPosition;
 		computeCRC

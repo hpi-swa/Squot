@@ -1,3 +1,3 @@
 accessing
 stopPosition
-	^ self startPosition + self packedLength
+	^ self startPosition + self lengthInPack

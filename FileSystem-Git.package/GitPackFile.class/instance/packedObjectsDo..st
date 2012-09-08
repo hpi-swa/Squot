@@ -8,5 +8,5 @@ packedObjectsDo: aBlock
 			fromPack: self
 			at: position
 			in: repository.
-		position := position + object packedLength.
+		position := position + object lengthInPack.
 		aBlock value: object ]

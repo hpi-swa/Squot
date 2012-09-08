@@ -8,14 +8,14 @@
 	"instvars" : [
 		"pack",
 		"sourceStream",
-		"length",
 		"startPosition",
 		"unpackedBytes",
 		"repository",
 		"typeByte",
 		"crc",
-		"packedLength",
-		"dataStartPosition" ],
+		"dataStartPosition",
+		"lengthInPack",
+		"unpackedLength" ],
 	"name" : "GitPackedObject",
 	"pools" : [
 		 ],

@@ -2,14 +2,13 @@
 	"class" : {
 		 },
 	"instance" : {
-		"generateMoreThan2GHashes" : "MaxLeske 9/2/2012 21:39",
-		"setUp" : "MaxLeske 9/2/2012 23:26",
+		"setUp" : "MaxLeske 9/8/2012 21:14",
 		"testFanoutByte0" : "MaxLeske 9/2/2012 10:40",
 		"testFanoutByte255" : "MaxLeske 9/2/2012 10:49",
 		"testFanoutOffsets" : "MaxLeske 9/2/2012 10:49",
 		"testFanoutTableCreation" : "MaxLeske 9/2/2012 10:50",
 		"testWrite4ByteOffsetTable" : "MaxLeske 9/2/2012 20:52",
-		"testWrite8ByteOffsetTable" : "MaxLeske 9/2/2012 23:27",
+		"testWrite8ByteOffsetTable" : "MaxLeske 9/8/2012 21:32",
 		"testWriteCRCTableOn" : "MaxLeske 8/29/2012 20:56",
 		"testWriteObjectHeaderOn" : "MaxLeske 9/2/2012 23:26",
 		"testWriteObjectNamesOn" : "MaxLeske 9/2/2012 11:00",

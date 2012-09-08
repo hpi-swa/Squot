@@ -1,10 +1,21 @@
 tests-index
 testWrite8ByteOffsetTable
-	| reference |
-	self fail. "not enough memory..."
-	self generateMoreThan2GHashes.
-	reference := FileSystem disk workingDirectory / 'git_offset_test.tmp'.
-	reference writeStreamDo: [ :stream | creator writeOffsetTableOfSize: 8 on: stream ].
+	"NOTE: cannot reliably test this because I can't generate enough objects without 
+	blowing the memory"
+	| byteStream |
+	byteStream := (ByteArray streamContents: [ :stream | 
+		creator
+			write4ByteIndexTableOn: stream;
+			writeOffsetTableOfSize: 8 on: stream ]) readStream.
 	
-	"smallest offset is always 12 because of 12 header bytes"	
-	self assert: 12 equals: (reference readStream next: 8) asInteger
+	self assert: byteStream contents size equals: (7 * 4) + (7 * 8).
+	self assert: (byteStream next: 4) equals: #[128 0 0 0].
+	self assert: (byteStream next: 4) equals: #[128 0 0 8].
+	self assert: (byteStream next: 4) equals: #[128 0 0 16].
+	self assert: (byteStream next: 4) equals: #[128 0 0 24].
+	self assert: (byteStream next: 4) equals: #[128 0 0 32].
+	self assert: (byteStream next: 4) equals: #[128 0 0 40].
+	self assert: (byteStream next: 4) equals: #[128 0 0 48].
+	
+	"each of the objects has size 8 (see #setUp) but the compressed size varies"
+	self assert: (byteStream next: 8) asInteger equals: 12

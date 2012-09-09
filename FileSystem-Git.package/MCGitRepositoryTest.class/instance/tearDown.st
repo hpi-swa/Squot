@@ -2,4 +2,6 @@ running
 tearDown
 	GitStamp
 		defaultName: nil;
-		defaultEmail: nil
+		defaultEmail: nil.
+		
+	Author reset

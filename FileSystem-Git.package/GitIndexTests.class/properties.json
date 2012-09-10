@@ -1,0 +1,14 @@
+{
+	"category" : "FileSystem-Git-Plumbing-Tests",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"indexReader" ],
+	"name" : "GitIndexTests",
+	"pools" : [
+		 ],
+	"super" : "GitTestCase",
+	"type" : "normal" }

@@ -2,8 +2,12 @@
 	"class" : {
 		 },
 	"instance" : {
-		"indexBytes" : "MaxLeske 9/10/2012 08:42",
+		"fieldsDo:" : "MaxLeske 9/29/2012 17:43",
+		"indexBytes" : "MaxLeske 9/30/2012 07:54",
+		"readEntryInto:" : "MaxLeske 9/30/2012 07:44",
 		"setUp" : "MaxLeske 9/10/2012 08:42",
 		"testIndexStructure" : "MaxLeske 9/10/2012 08:39",
-		"verifyIndexEntries" : "MaxLeske 9/10/2012 08:46",
-		"verifyIndexHeader" : "MaxLeske 9/10/2012 08:45" } }
+		"verifyFlags:" : "MaxLeske 9/30/2012 08:43",
+		"verifyIndexEntries" : "MaxLeske 9/30/2012 10:54",
+		"verifyIndexHeader" : "MaxLeske 9/30/2012 07:54",
+		"verifyMode:" : "MaxLeske 9/29/2012 18:41" } }

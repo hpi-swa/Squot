@@ -1,9 +1,10 @@
 verifying
 verifyIndexHeader
+	"see 'index-format.txt' in the docs"
 	| identifier version entryCount |
 	identifier := indexReader next: 4.
-	self assert:  identifier asString = 'DIRC'.
+	self assert:  identifier asString equals: 'DIRC'.
 	version := indexReader next: 4.
-	self assert: version asInteger = 2.
+	self assert: version asInteger equals: 2.
 	entryCount := indexReader next: 4.
-	self assert: entryCount asInteger = 161
+	self assert: entryCount asInteger equals: 1

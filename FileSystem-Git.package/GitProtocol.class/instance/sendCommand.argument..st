@@ -1,3 +1,3 @@
 private
 sendCommand: commandName argument: anArgument
-	^ self sendCommand: commandName, ' ', anArgument
+	^ self sendRawCommand: commandName argument: anArgument, String lf

@@ -4,7 +4,8 @@
 	"instance" : {
 		"branches" : "CamilloBruni 12/25/2011 13:54",
 		"consumeNAK" : "CamilloBruni 1/17/2012 01:23",
-		"encodeCommandLine:" : "CamilloBruni 10/8/2012 13:28",
+		"encodeCommandLine:" : "CamilloBruni 10/8/2012 13:37",
+		"encodeRawCommandLine:" : "CamilloBruni 10/8/2012 13:37",
 		"head" : "CamilloBruni 12/25/2011 13:38",
 		"hostInformation" : "Camillobruni 8/19/2011 17:34",
 		"openConnection" : "CamilloBruni 1/17/2012 01:31",
@@ -22,12 +23,13 @@
 		"refsPrefixed:" : "CamilloBruni 12/25/2011 13:55",
 		"sendCommand:" : "Camillobruni 8/19/2011 19:04",
 		"sendCommand:argument:" : "CamilloBruni 10/8/2012 13:29",
-		"sendData:" : "mml 1/15/2012 18:26",
-		"sendRawCommand:argument:" : "CamilloBruni 10/8/2012 13:29",
+		"sendData:" : "CamilloBruni 10/8/2012 13:43",
+		"sendRawCommand:" : "CamilloBruni 10/8/2012 13:38",
+		"sendRawCommand:argument:" : "CamilloBruni 10/8/2012 13:38",
 		"socketStream" : "CamilloBruni 1/23/2012 18:32",
 		"tags" : "CamilloBruni 12/25/2011 13:54",
 		"uploadPack" : "CamilloBruni 10/8/2012 13:28",
 		"want:" : "CamilloBruni 12/25/2011 14:00",
 		"want:properties:" : "CamilloBruni 1/15/2012 22:26",
 		"wantAll:" : "CamilloBruni 1/15/2012 22:29",
-		"wantAll:properties:" : "MaxLeske 2/26/2012 13:58" } }
+		"wantAll:properties:" : "CamilloBruni 10/8/2012 13:44" } }

@@ -7,7 +7,7 @@
 	"commentStamp" : "",
 	"instvars" : [
 		 ],
-	"name" : "GitSmartHtppProtocol",
+	"name" : "GitDumbHTTPProtocol",
 	"pools" : [
 		 ],
 	"super" : "GitHttpProtocol",

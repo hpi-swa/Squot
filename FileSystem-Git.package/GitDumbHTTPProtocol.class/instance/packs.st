@@ -1,3 +1,4 @@
-as yet unclassified
+command
 packs
-	^ self info: 'packs'
+	self flag: 'TODO: read packfile'.
+	^ self objectsInfo: 'packs'

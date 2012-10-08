@@ -1,3 +1,3 @@
-as yet unclassified
+command
 refs
-	^ self info: 'refs'
+	^ self parseRefs: (self info: 'refs')

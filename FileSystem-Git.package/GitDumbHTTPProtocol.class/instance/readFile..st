@@ -1,3 +1,3 @@
-as yet unclassified
+command
 readFile: aPath
-	^ ZnEasy get: url asString, '/objects', aPath.
+	^ ZnEasy get: url asString, aPath.

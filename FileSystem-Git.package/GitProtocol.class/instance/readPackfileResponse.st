@@ -21,7 +21,7 @@ Careful: when using Transcript for debugging, the code might become so slow that
 				sideband = 1
 					ifFalse: [ "log progress info etc.  here if you want to"
 						Transcript show: content asString ]
-					ifTrue: [ stream nextPutAll: content ]]] 
+					ifTrue: [ Transcript show: 'read ', content size asString, ' bytes'; cr. stream nextPutAll: content ]]] 
 	] ensure: [ stream close ].
 
 	self socketStream ascii.

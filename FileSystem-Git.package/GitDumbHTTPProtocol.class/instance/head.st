@@ -1,3 +1,3 @@
-as yet unclassified
+command
 head
-	^ self readFile: 'HEAD'
+	^ self resolveRef: (self readFile: 'HEAD') contents asString

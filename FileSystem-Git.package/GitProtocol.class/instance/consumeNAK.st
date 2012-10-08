@@ -1,4 +1,4 @@
 private
 consumeNAK
 
-	self socketStream skip: 4
+	self stream skip: 4

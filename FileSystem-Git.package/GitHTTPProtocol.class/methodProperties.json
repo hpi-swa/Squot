@@ -2,4 +2,8 @@
 	"class" : {
 		"schemes" : "CamilloBruni 10/8/2012 14:39" },
 	"instance" : {
-		 } }
+		"flush" : "CamilloBruni 10/8/2012 17:23",
+		"loadRefs" : "CamilloBruni 10/8/2012 16:47",
+		"openConnection" : "CamilloBruni 10/8/2012 16:34",
+		"outputStream" : "CamilloBruni 10/8/2012 17:03",
+		"refs" : "CamilloBruni 10/8/2012 16:32" } }

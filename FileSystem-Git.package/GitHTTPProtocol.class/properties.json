@@ -6,7 +6,8 @@
 		 ],
 	"commentStamp" : "",
 	"instvars" : [
-		 ],
+		"client",
+		"outputStream" ],
 	"name" : "GitHTTPProtocol",
 	"pools" : [
 		 ],

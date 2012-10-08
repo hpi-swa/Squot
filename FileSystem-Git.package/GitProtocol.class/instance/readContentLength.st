@@ -1,3 +1,3 @@
 private
 readContentLength
-	^ (Integer readFrom: (self socketStream next: 4) asString base: 16)
+	^ (Integer readFrom: (self stream next: 4) asString base: 16)

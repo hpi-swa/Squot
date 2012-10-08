@@ -1,4 +1,4 @@
 accessing
-socketStream
+stream
 	self openConnection.
-	^ socketStream
+	^ stream

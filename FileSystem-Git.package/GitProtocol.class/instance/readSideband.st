@@ -1,4 +1,4 @@
 private
 readSideband
 
-	^ self socketStream next asInteger 
+	^ self stream next asInteger 

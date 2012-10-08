@@ -10,6 +10,6 @@ wantAll: gitSignatures properties: gitProtocolProperties
 	2 to: gitSignatures size do: [ :i|
 		self sendCommand:  'want ', (gitSignatures at: i) ].
 	
-	self sendCommand: '00000009done'.
+	self flushPacket; done.
 	^ self readPackfileResponse
 	

@@ -3,7 +3,7 @@ example1
 	|git|
 	
 	"setting up the remote repository"
-	git := AbstractGitProtocol url: 'git://github.com/dh83/p.git'.
+	git := GitAbstractGitProtocol url: 'git://github.com/dh83/p.git'.
 
 	"inspecting the repository returning list/dicts with GitObjectSignature"
 	git refs.

@@ -7,5 +7,3 @@ setUp
 	GitStamp
 		defaultName: 'Homer Simpson';
 		defaultEmail: 'homer@nuke.com'.
-		
-	Author fullName: 'Montgomery C. Burns'

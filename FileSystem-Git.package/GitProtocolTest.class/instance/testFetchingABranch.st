@@ -1,4 +1,4 @@
-as yet unclassified
+tests
 testFetchingABranch
 	|protocol branch|
 	protocol := self newProtocol.

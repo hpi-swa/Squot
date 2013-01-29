@@ -1,3 +1,3 @@
-as yet unclassified
+example request
 exampleCountingObjects
 	^ #[ 48 48 50 48 2 67 111 117 110 116 105 110 103 32 111 98 106 101 99 116 115 58 32 55 44 32 100 111 110 101 46 10 ]

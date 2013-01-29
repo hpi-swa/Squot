@@ -1,3 +1,3 @@
-tests
+helper
 url
 	^ self subclassResponsibility 

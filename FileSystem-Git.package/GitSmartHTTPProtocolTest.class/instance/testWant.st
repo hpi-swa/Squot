@@ -1,4 +1,4 @@
-as yet unclassified
+tests
 testWant
 	|protocol signature|
 	protocol := self newProtocol.

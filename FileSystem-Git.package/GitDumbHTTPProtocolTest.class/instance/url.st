@@ -1,3 +1,3 @@
-as yet unclassified
+helper
 url
 	^ 'https://git.gitorious.org/pharo-build/pharo-build.git'

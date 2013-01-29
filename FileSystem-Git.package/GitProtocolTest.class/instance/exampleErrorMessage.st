@@ -1,3 +1,3 @@
-as yet unclassified
+example request
 exampleErrorMessage
 	^ 'This is an error' asByteArray

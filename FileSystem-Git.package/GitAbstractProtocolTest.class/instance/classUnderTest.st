@@ -1,3 +1,3 @@
-tests
+helper
 classUnderTest
 	^ self subclassResponsibility

@@ -3,8 +3,9 @@
 		"schemes" : "DamienCassou 1/28/2013 21:08" },
 	"instance" : {
 		"client" : "DamienCassou 1/29/2013 14:16",
-		"flush" : "DamienCassou 1/28/2013 20:52",
+		"firstWantCapabilityListSeparator" : "DamienCassou 1/29/2013 16:13",
+		"flush" : "DamienCassou 1/29/2013 16:20",
 		"loadRefs" : "DamienCassou 1/29/2013 14:15",
-		"openConnection" : "DamienCassou 1/28/2013 20:53",
-		"outputStream" : "DamienCassou 1/28/2013 20:53",
+		"openConnection" : "DamienCassou 1/29/2013 15:02",
+		"outputStream" : "DamienCassou 1/29/2013 15:02",
 		"refs" : "DamienCassou 1/28/2013 20:53" } }

@@ -4,11 +4,11 @@ readPackfileResponse
 find out, why SocketStream doesn't deliver all of the data or corrupts it (or who else does).
 Careful: when using Transcript for debugging, the code might become so slow that you won't see any problems with receiving data..."
 	
-	| stream length sideband content |
+	| str length sideband content |
 	
-	stream := (FileSystem disk workingDirectory / 'packfile.pack') writeStream.
+	str := (FileSystem disk workingDirectory / 'packfile.pack') writeStream.
 	
-	self stream binary.
+	self stream binary halt.
 	
 	[[ true ] whileTrue: [
 		self stream atEnd ifTrue: [ ^ self ].
@@ -21,7 +21,7 @@ Careful: when using Transcript for debugging, the code might become so slow that
 				sideband = 1
 					ifFalse: [ "log progress info etc.  here if you want to"
 						Transcript show: content asString ]
-					ifTrue: [ Transcript show: 'read ', content size asString, ' bytes'; cr. stream nextPutAll: content ]]] 
-	] ensure: [ stream close ].
+					ifTrue: [ Transcript show: 'read ', content size asString, ' bytes'; cr. str nextPutAll: content ]]] 
+	] ensure: [ str close ].
 
 	self stream ascii.

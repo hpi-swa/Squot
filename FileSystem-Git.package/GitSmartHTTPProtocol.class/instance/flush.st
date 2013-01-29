@@ -1,13 +1,12 @@
 as yet unclassified
 flush
 	| entity data |
-	entity := ZnStringEntity type: (ZnMimeType main: 'application' sub: 'x-git-upload-pack-request').
+	entity := ZnStringEntity type: ZnMimeType applicationGitUploadPackRequest.
 	entity string: self outputStream contents.
 	
-	data := client
-		url: self url asString, '/git-upload-pack' ;
+	data := self client
+		url: self url asString, '/info/refs' ;
 		queryAt: 'service' put: 'git-upload-pack';
 		entity: entity;
-		post;
-		response.
+		post.
 	stream := data readStream

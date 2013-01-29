@@ -7,7 +7,7 @@
 	"commentStamp" : "",
 	"instvars" : [
 		 ],
-	"name" : "GitGitProtocolTest",
+	"name" : "GitProtocolTest",
 	"pools" : [
 		 ],
 	"super" : "GitAbstractProtocolTest",

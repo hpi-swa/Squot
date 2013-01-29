@@ -10,5 +10,5 @@
 	"name" : "GitSmartHTTPProtocolTest",
 	"pools" : [
 		 ],
-	"super" : "GitAbstractProtocolTest",
+	"super" : "GitProtocolTest",
 	"type" : "normal" }

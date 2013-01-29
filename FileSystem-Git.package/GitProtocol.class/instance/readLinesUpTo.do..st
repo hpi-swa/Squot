@@ -1,4 +1,4 @@
-private
+accessing
 readLinesUpTo: terminator do: aBlock
 	
 	" read input until we get the terminating line"

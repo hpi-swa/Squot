@@ -1,4 +1,4 @@
-private
+accessing
 parseUploadPackResponse
 	| null result properties|
 	null := 0 asCharacter.

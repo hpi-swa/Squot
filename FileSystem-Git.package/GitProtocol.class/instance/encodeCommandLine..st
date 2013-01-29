@@ -1,3 +1,3 @@
-private
+accessing
 encodeCommandLine: aCommandString
 	^ self encodeRawCommandLine: aCommandString, String lf

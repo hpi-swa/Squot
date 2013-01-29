@@ -3,4 +3,4 @@ testFetchingABranch
 	|protocol branch|
 	protocol := self newProtocol.
 	branch := protocol branches anyOne.
-	protocol want: branch
+	protocol halt want: branch

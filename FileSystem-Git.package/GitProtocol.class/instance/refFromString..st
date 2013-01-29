@@ -1,4 +1,4 @@
-private
+accessing
 refFromString: aString
 	| lineLength |
 	lineLength := (Integer readFrom: (aString first: 4) base: 16) - 1.

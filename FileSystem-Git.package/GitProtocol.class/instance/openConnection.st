@@ -1,4 +1,4 @@
-private
+accessing
 openConnection
 	(stream notNil and: [ stream isConnected ])
 		ifTrue: [ ^ self ].

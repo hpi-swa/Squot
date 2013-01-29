@@ -1,3 +1,3 @@
-private
+accessing
 flush
 	^ self outputStream flush

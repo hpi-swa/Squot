@@ -1,4 +1,4 @@
-commands
+as yet unclassified
 wantAll: gitSignatures 
 	^ self 
 		wantAll: gitSignatures 

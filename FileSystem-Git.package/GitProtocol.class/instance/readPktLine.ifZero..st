@@ -1,4 +1,4 @@
-private
+accessing
 readPktLine: aStream ifZero: aBlock
 	| totalLineLength |
 	totalLineLength := Integer readFrom: (aStream next: 4) base: 16.

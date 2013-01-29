@@ -1,3 +1,3 @@
-as yet unclassified
+private
 firstWantCapabilityListSeparator
 	^ Character space

@@ -1,4 +1,4 @@
-private
+accessing
 writePktLine: data
 	|dataSize|
 	dataSize :=  4 "data length string" + data size.

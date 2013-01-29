@@ -1,3 +1,3 @@
-accessing
+commands
 outputStream
 	^ self stream 

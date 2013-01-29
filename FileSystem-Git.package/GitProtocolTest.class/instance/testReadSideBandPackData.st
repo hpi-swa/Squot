@@ -4,7 +4,7 @@ testReadSideBandPackData
 	protocol := self newProtocol.
 	protocol
 		readSideBandResponseFrom: self exampleDataLine readStream
-		ifData: [:data | ^ self assert: data equals: self examplePackData ]
-		ifMessage: [self fail ]
-		ifError: [self fail ].
+		ifData: [ :data | ^ self assert: data equals: self examplePackData ]
+		ifMessage: [ :data | self fail ]
+		ifError: [ :data | self fail ].
 	self fail

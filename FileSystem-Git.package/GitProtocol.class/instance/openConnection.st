@@ -4,5 +4,7 @@ openConnection
 		ifTrue: [ ^ self ].
 		
 	stream := SocketStream openConnectionToHostNamed: self host port: 9418.
-	"20 seconds timeout"
-	stream timeout: 60.
+	
+	stream 
+		timeout: 60 "seconds";
+		binary.

@@ -12,6 +12,8 @@ wantAll: gitSignatures properties: gitProtocolProperties
 	2 to: gitSignatures size do: [ :i |
 		self sendCommand:  'want ', (gitSignatures at: i) ].
 	
+	self flag: 'proper negotiation phase missing...'.
+	
 	self flushPacket; done.
 	^ self readPackfileResponse
 	

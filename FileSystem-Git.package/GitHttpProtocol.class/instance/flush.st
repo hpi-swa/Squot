@@ -10,4 +10,4 @@ flush
 		entity: entity;
 		post;
 		response.
-	stream := data readStream.
+	stream := data readStream

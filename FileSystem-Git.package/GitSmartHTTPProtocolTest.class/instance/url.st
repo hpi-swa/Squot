@@ -1,3 +1,3 @@
 as yet unclassified
 url
-	^ 'https://git.gitorious.org/pharo-build/pharo-build.git'
+	^ 'https://git.gitorious.org/gitorious/mainline.git'

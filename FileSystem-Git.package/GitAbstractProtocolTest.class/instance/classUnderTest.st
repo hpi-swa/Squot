@@ -1,0 +1,3 @@
+tests
+classUnderTest
+	^ self subclassResponsibility

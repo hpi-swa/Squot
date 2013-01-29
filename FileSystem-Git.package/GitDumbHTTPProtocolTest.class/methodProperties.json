@@ -2,4 +2,7 @@
 	"class" : {
 		 },
 	"instance" : {
-		"testNegotiation" : "DamienCassou 1/29/2013 14:18" } }
+		"classUnderTest" : "DamienCassou 1/29/2013 14:31",
+		"expectedFailures" : "DamienCassou 1/29/2013 14:41",
+		"testNegotiation" : "DamienCassou 1/29/2013 14:38",
+		"url" : "DamienCassou 1/29/2013 14:30" } }

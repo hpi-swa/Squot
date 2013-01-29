@@ -2,6 +2,8 @@
 	"class" : {
 		"isAbstract" : "DamienCassou 1/28/2013 19:01" },
 	"instance" : {
+		"classUnderTest" : "DamienCassou 1/29/2013 14:30",
 		"newProtocol" : "DamienCassou 1/28/2013 19:03",
+		"testCorrectProtocol" : "DamienCassou 1/29/2013 14:30",
 		"testTags" : "DamienCassou 1/28/2013 18:58",
 		"url" : "DamienCassou 1/28/2013 19:03" } }

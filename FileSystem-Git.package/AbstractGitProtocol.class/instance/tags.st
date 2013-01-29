@@ -1,3 +1,3 @@
 accessing
 tags
-	self subclassResponsibility
+	^ self refsPrefixed: 'refs/tags'

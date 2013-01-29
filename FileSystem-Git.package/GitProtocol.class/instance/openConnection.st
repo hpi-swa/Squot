@@ -1,8 +1,8 @@
 private
 openConnection
-	(socketStream notNil and: [ socketStream isConnected ])
+	(stream notNil and: [ stream isConnected ])
 		ifTrue: [ ^ self ].
 		
-	socketStream := SocketStream openConnectionToHostNamed: self host port: 9418.
+	stream := SocketStream openConnectionToHostNamed: self host port: 9418.
 	"20 seconds timeout"
-	socketStream timeout: 60.
+	stream timeout: 60.

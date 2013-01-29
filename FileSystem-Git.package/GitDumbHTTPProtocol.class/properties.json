@@ -6,10 +6,9 @@
 		 ],
 	"commentStamp" : "",
 	"instvars" : [
-		"refs",
-		"stream" ],
-	"name" : "GitProtocol",
+		"refs" ],
+	"name" : "GitDumbHTTPProtocol",
 	"pools" : [
 		 ],
-	"super" : "AbstractGitProtocol",
+	"super" : "GitHttpProtocol",
 	"type" : "normal" }

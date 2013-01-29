@@ -10,5 +10,5 @@
 	"name" : "GitDumbHTTPProtocol",
 	"pools" : [
 		 ],
-	"super" : "GitHttpProtocol",
+	"super" : "GitHTTPProtocol",
 	"type" : "normal" }

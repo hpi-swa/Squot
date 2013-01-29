@@ -10,7 +10,7 @@
 		"stream",
 		"outputStream",
 		"refs" ],
-	"name" : "GitHttpProtocol",
+	"name" : "GitHTTPProtocol",
 	"pools" : [
 		 ],
 	"super" : "AbstractGitProtocol",

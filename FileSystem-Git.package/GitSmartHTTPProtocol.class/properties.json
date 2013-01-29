@@ -10,5 +10,5 @@
 	"name" : "GitSmartHTTPProtocol",
 	"pools" : [
 		 ],
-	"super" : "GitHttpProtocol",
+	"super" : "GitHTTPProtocol",
 	"type" : "normal" }

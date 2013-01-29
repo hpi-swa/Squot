@@ -1,4 +1,4 @@
-as yet unclassified
+commands
 wantAll: gitSignatures properties: gitProtocolProperties
 "TODO:
 #readPackfileResponse writes pack to file. need to unpack that file into a repository and read from there. Then answer the objects."

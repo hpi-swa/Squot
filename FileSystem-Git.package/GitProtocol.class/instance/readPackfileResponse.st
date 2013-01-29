@@ -8,11 +8,13 @@ Careful: when using Transcript for debugging, the code might become so slow that
 	
 	str := (FileSystem disk workingDirectory / 'packfile.pack') writeStream.
 	
-	self stream binary halt.
+	self stream binary.
 	
 	[[ true ] whileTrue: [
 		self stream atEnd ifTrue: [ ^ self ].
 		length := self readContentLength.
+		length = 0 
+			ifTrue: [ ^ self ].
 		self peekForNAK 
 			ifTrue: [ self consumeNAK ]
 			ifFalse: [

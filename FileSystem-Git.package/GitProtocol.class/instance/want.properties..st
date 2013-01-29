@@ -1,3 +1,3 @@
-as yet unclassified
+commands
 want: gitSignature properties: propertiesString
 	^ self wantAll: { gitSignature } properties: propertiesString

@@ -1,4 +1,4 @@
-as yet unclassified
+commands
 flushPacket
 	self sendData: '0000'.
 	self flush.

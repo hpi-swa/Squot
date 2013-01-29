@@ -1,3 +1,3 @@
-as yet unclassified
+commands
 want: gitSignature 
 	^ self wantAll: { gitSignature }

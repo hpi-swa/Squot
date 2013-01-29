@@ -6,11 +6,9 @@
 		 ],
 	"commentStamp" : "",
 	"instvars" : [
-		"client",
-		"stream",
-		"outputStream",
-		"refs" ],
-	"name" : "GitHTTPProtocol",
+		"refs",
+		"stream" ],
+	"name" : "GitProtocol",
 	"pools" : [
 		 ],
 	"super" : "GitAbstractProtocol",

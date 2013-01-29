@@ -2,7 +2,7 @@ as yet unclassified
 loadRefs
 	| data |
 	self openConnection.
-	data := client
+	data := self client
 		url: self url asString, '/info/refs';
 		queryAt: 'service' put: 'git-upload-pack';
 		get.

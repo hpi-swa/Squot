@@ -1,7 +1,9 @@
 tests
 testFetchingATag
-	| protocol tag |
+	| protocol tag result |
+	
 	protocol := self newProtocol.
 	tag := protocol tags anyOne.
-	self halt.
-	protocol want: tag
+	result := protocol want: tag.
+	
+	self deny: result isEmpty.

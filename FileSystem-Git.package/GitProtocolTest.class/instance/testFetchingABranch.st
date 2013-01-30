@@ -1,6 +1,9 @@
 tests
 testFetchingABranch
-	|protocol branch|
+	| protocol branch result |
+	
 	protocol := self newProtocol.
 	branch := protocol branches anyOne.
-	protocol want: branch
+	result := protocol want: branch.
+	
+	self deny: result isEmpty.

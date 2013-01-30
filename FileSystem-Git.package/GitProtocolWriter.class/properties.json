@@ -6,12 +6,9 @@
 		 ],
 	"commentStamp" : "<historical>",
 	"instvars" : [
-		"refs",
-		"stream",
-		"reader",
-		"writer" ],
-	"name" : "GitProtocol",
+		"stream" ],
+	"name" : "GitProtocolWriter",
 	"pools" : [
 		 ],
-	"super" : "GitAbstractProtocol",
+	"super" : "Object",
 	"type" : "normal" }

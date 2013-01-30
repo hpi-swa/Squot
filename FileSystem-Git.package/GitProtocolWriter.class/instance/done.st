@@ -1,4 +1,4 @@
-private sending
+sending
 done
 	self sendCommand: 'done'.
 	self flush.

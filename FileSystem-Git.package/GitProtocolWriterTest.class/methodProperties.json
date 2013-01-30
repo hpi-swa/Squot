@@ -1,0 +1,6 @@
+{
+	"class" : {
+		 },
+	"instance" : {
+		"testWritePktLine" : "DamienCassou 1/30/2013 18:04",
+		"withWriterAssert:equals:" : "DamienCassou 1/30/2013 18:00" } }

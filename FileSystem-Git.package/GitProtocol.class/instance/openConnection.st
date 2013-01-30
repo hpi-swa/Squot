@@ -10,3 +10,4 @@ openConnection
 		binary.
 	
 	reader := GitProtocolReader on: stream.
+	writer := GitProtocolWriter on: stream.

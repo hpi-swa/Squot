@@ -1,0 +1,1 @@
+Takes care of writing requests to a server

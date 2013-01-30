@@ -1,8 +1,8 @@
 {
 	"class" : {
-		"isAbstract" : "DamienCassou 1/28/2013 19:01",
-		"mustTestCoverage" : "DamienCassou 1/30/2013 13:34" },
+		"isAbstract" : "DamienCassou 1/28/2013 19:01" },
 	"instance" : {
+		"classToBeTested" : "DamienCassou 1/30/2013 16:53",
 		"newProtocol" : "DamienCassou 1/28/2013 19:03",
 		"testCorrectProtocol" : "DamienCassou 1/30/2013 13:27",
 		"testTags" : "DamienCassou 1/28/2013 18:58",

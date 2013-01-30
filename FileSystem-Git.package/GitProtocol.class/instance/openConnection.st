@@ -1,4 +1,4 @@
-accessing
+private connection
 openConnection
 	(stream notNil and: [ stream isConnected ])
 		ifTrue: [ ^ self ].
@@ -6,5 +6,7 @@ openConnection
 	stream := SocketStream openConnectionToHostNamed: self host port: 9418.
 	
 	stream 
-		timeout: 60 "seconds";
+		timeout: 10 "seconds";
 		binary.
+	
+	reader := GitProtocolReader on: stream.

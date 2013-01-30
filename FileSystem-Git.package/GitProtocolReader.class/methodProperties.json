@@ -1,0 +1,20 @@
+{
+	"class" : {
+		"nakValue" : "DamienCassou 1/30/2013 16:51",
+		"on:" : "DamienCassou 1/30/2013 16:44" },
+	"instance" : {
+		"consumeNAK" : "DamienCassou 1/30/2013 16:26",
+		"initializeWith:" : "DamienCassou 1/30/2013 16:25",
+		"parseUploadPackResponse" : "DamienCassou 1/30/2013 16:27",
+		"peekForNAK" : "DamienCassou 1/30/2013 16:52",
+		"readContentOfLength:" : "DamienCassou 1/30/2013 16:29",
+		"readLineLength" : "DamienCassou 1/30/2013 16:29",
+		"readLines:" : "DamienCassou 1/30/2013 16:29",
+		"readLinesUpTo:do:" : "DamienCassou 1/30/2013 16:29",
+		"readPackfile" : "DamienCassou 1/30/2013 16:30",
+		"readPackfileResponse" : "DamienCassou 1/30/2013 16:30",
+		"readPktLine" : "DamienCassou 1/30/2013 16:31",
+		"readPktLineIfZero:" : "DamienCassou 1/30/2013 16:31",
+		"readSideBandResponseIfData:ifMessage:ifError:ifZero:" : "DamienCassou 1/30/2013 16:32",
+		"readUntilNAK" : "DamienCassou 1/30/2013 16:32",
+		"stream" : "DamienCassou 1/30/2013 16:51" } }

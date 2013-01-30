@@ -1,0 +1,1 @@
+Takes care of reading responses from a server

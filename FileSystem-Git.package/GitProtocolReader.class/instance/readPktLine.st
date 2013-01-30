@@ -1,0 +1,3 @@
+initialize-release
+readPktLine
+	^ self readPktLineIfZero: [ Error signal: 'Special case 0000 encountered.' ]

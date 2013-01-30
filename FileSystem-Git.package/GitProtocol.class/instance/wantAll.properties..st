@@ -15,5 +15,5 @@ wantAll: gitSignatures properties: gitProtocolProperties
 	self flag: 'proper negotiation phase missing...'.
 	
 	self flushPacket; done.
-	^ self readPackfileResponseFrom: self stream
+	^ reader readPackfileResponse
 	

@@ -2,8 +2,6 @@ private receiving
 parseUploadPackResponse
 	| null result properties|
 
-	self isThisEverCalled.
-
 	null := 0 asCharacter.
 	result := Dictionary new.
 	

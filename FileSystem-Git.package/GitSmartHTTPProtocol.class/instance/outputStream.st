@@ -1,3 +1,3 @@
-as yet unclassified
+commands
 outputStream
 	^ outputStream ifNil: [ outputStream := '' writeStream ]

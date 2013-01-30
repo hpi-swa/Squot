@@ -1,4 +1,4 @@
-as yet unclassified
+accessing
 flush
 	| entity data |
 	entity := ZnStringEntity type: ZnMimeType applicationGitUploadPackRequest.

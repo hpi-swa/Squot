@@ -1,4 +1,4 @@
-as yet unclassified
+accessing
 client
 	^ ZnClient new
 		enforceHttpSuccess: true;

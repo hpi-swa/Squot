@@ -1,4 +1,4 @@
-as yet unclassified
+private
 loadRefs
 	| data |
 	self openConnection.

@@ -1,3 +1,3 @@
 tests
 testCorrectProtocol
-	self assert: self newProtocol class equals: self classUnderTest
+	self assert: self newProtocol class equals: self targetClass

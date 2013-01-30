@@ -6,6 +6,7 @@
 		"url:" : "CamilloBruni 12/21/2011 14:49" },
 	"instance" : {
 		"branches" : "CamilloBruni 10/8/2012 14:22",
+		"classToBeTested" : "DamienCassou 1/30/2013 13:35",
 		"head" : "CamilloBruni 12/25/2011 13:38",
 		"host" : "CamilloBruni 12/21/2011 14:50",
 		"initializeWith:" : "DamienCassou 1/29/2013 15:45",
@@ -13,4 +14,5 @@
 		"refsPrefixed:" : "CamilloBruni 10/8/2012 14:23",
 		"repository" : "CamilloBruni 12/21/2011 14:48",
 		"tags" : "CamilloBruni 10/8/2012 14:23",
+		"targetClass" : "DamienCassou 1/30/2013 13:36",
 		"url" : "CamilloBruni 12/21/2011 14:50" } }

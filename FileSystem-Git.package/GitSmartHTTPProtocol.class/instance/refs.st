@@ -1,3 +1,3 @@
-as yet unclassified
+commands
 refs
 	^ refs := self loadRefs

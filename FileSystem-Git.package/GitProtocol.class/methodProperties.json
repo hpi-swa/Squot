@@ -3,15 +3,14 @@
 		"schemes" : "CamilloBruni 12/21/2011 14:35" },
 	"instance" : {
 		"firstWantCapabilityListSeparator" : "DamienCassou 1/29/2013 16:12",
-		"flushPacket" : "CamilloBruni 10/8/2012 16:57",
 		"head" : "CamilloBruni 12/25/2011 13:38",
 		"hostInformation" : "Camillobruni 8/19/2011 17:34",
 		"openConnection" : "DamienCassou 1/30/2013 18:08",
 		"outputStream" : "CamilloBruni 10/8/2012 16:58",
 		"refs" : "CamilloBruni 10/8/2012 14:22",
 		"stream" : "CamilloBruni 10/8/2012 16:36",
-		"uploadPack" : "DamienCassou 1/30/2013 18:07",
+		"uploadPack" : "DamienCassou 1/30/2013 18:17",
 		"want:" : "CamilloBruni 12/25/2011 14:00",
 		"want:properties:" : "CamilloBruni 1/15/2012 22:26",
 		"wantAll:" : "CamilloBruni 1/15/2012 22:29",
-		"wantAll:properties:" : "DamienCassou 1/30/2013 17:12" } }
+		"wantAll:properties:" : "DamienCassou 1/30/2013 18:22" } }

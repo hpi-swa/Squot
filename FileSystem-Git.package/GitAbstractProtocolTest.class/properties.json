@@ -10,5 +10,5 @@
 	"name" : "GitAbstractProtocolTest",
 	"pools" : [
 		 ],
-	"super" : "TestCase",
+	"super" : "ClassTestCase",
 	"type" : "normal" }

@@ -13,4 +13,11 @@ readPktLineIfZero: aBlock
 	totalLineLength := self readLineLength.
 	^ totalLineLength = 0
 		ifTrue: aBlock 
-		ifFalse: [ self readContentOfLength: totalLineLength ]
+		ifFalse: [ | content |
+			content := (self readContentOfLength: totalLineLength) asString.
+			"Server SHOULD terminate each non-flush line using LF (\n) terminator;
+			client MUST NOT complain if there is no terminator."
+			(content isEmpty or: [ content last ~= Character lf])
+				ifTrue: [ content ]
+				ifFalse: [ content allButLast ]]
+				

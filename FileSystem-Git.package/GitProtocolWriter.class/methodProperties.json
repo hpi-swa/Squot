@@ -2,12 +2,15 @@
 	"class" : {
 		"on:" : "DamienCassou 1/30/2013 17:27" },
 	"instance" : {
+		"concatenateArguments:andCapabilities:" : "DamienCassou 1/31/2013 13:27",
 		"concatenateCommand:withArguments:" : "DamienCassou 1/30/2013 17:49",
 		"done" : "DamienCassou 1/30/2013 18:22",
 		"encodePktLine:" : "DamienCassou 1/30/2013 17:29",
+		"firstWantCapabilityListSeparator" : "DamienCassou 1/31/2013 12:54",
 		"flush" : "DamienCassou 1/30/2013 17:30",
 		"flushPacket" : "DamienCassou 1/30/2013 18:21",
 		"initializeWith:" : "DamienCassou 1/30/2013 17:27",
 		"sendCommand:arguments:withLineTerminator:" : "DamienCassou 1/30/2013 17:49",
 		"sendCommand:withLineTerminator:" : "DamienCassou 1/30/2013 17:48",
-		"sendData:" : "DamienCassou 1/30/2013 17:32" } }
+		"sendData:" : "DamienCassou 1/30/2013 17:32",
+		"sendWantAll:capabilities:" : "DamienCassou 1/31/2013 13:24" } }

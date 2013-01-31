@@ -2,15 +2,16 @@
 	"class" : {
 		"schemes" : "CamilloBruni 12/21/2011 14:35" },
 	"instance" : {
-		"firstWantCapabilityListSeparator" : "DamienCassou 1/29/2013 16:12",
+		"closeConnection" : "DamienCassou 1/31/2013 12:34",
 		"head" : "CamilloBruni 12/25/2011 13:38",
 		"hostInformation" : "Camillobruni 8/19/2011 17:34",
-		"openConnection" : "DamienCassou 1/30/2013 18:08",
+		"isConnected" : "DamienCassou 1/31/2013 12:30",
+		"openConnection" : "DamienCassou 1/31/2013 12:30",
 		"outputStream" : "CamilloBruni 10/8/2012 16:58",
 		"refs" : "CamilloBruni 10/8/2012 14:22",
 		"stream" : "CamilloBruni 10/8/2012 16:36",
 		"uploadPack" : "DamienCassou 1/30/2013 18:17",
 		"want:" : "CamilloBruni 12/25/2011 14:00",
-		"want:properties:" : "CamilloBruni 1/15/2012 22:26",
-		"wantAll:" : "CamilloBruni 1/15/2012 22:29",
-		"wantAll:properties:" : "DamienCassou 1/30/2013 18:22" } }
+		"want:capabilities:" : "DamienCassou 1/31/2013 12:46",
+		"wantAll:" : "DamienCassou 1/31/2013 12:44",
+		"wantAll:capabilities:" : "DamienCassou 1/31/2013 13:25" } }

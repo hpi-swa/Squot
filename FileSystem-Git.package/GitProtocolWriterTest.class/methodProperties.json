@@ -2,5 +2,6 @@
 	"class" : {
 		 },
 	"instance" : {
+		"testWantAllCapabilitiesOnlyOne" : "DamienCassou 1/31/2013 13:28",
 		"testWritePktLine" : "DamienCassou 1/30/2013 18:04",
 		"withWriterAssert:equals:" : "DamienCassou 1/30/2013 18:00" } }

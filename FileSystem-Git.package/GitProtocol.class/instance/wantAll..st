@@ -2,4 +2,4 @@ commands
 wantAll: gitSignatures 
 	^ self 
 		wantAll: gitSignatures 
-		properties: GitProtocolCapabilities multiAck sideBand64k ofsDelta
+		capabilities: GitProtocolCapabilities multiAck sideBand64k ofsDelta

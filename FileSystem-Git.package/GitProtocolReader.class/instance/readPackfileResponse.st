@@ -1,4 +1,4 @@
-initialize-release
+private receiving
 readPackfileResponse
 "TODO:
 find out, why SocketStream doesn't deliver all of the data or corrupts it (or who else does).

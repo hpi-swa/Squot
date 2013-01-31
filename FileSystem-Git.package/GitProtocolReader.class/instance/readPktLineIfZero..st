@@ -1,4 +1,4 @@
-initialize-release
+private receiving
 readPktLineIfZero: aBlock
 	" A PktLine consist of a 4 byte line length and data.
 	The encoded length also includes the 4 bytes, hence the shortest sequence is 0004 denoting the empty line.

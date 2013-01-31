@@ -1,4 +1,4 @@
-initialize-release
+private receiving
 readUntilNAK
 	| length |
 	[ 

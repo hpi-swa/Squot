@@ -1,3 +1,3 @@
-initialize-release
+private receiving
 readLineLength
 	^ Integer readFrom: (stream next: 4) asString base: 16

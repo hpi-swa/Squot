@@ -1,4 +1,4 @@
-private receiving
+dead-code?
 readPackfile
 	|  objects |
 	self isThisEverCalled.

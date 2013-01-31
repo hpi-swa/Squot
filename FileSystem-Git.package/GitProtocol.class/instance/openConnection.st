@@ -1,6 +1,6 @@
 private connection
 openConnection
-	(stream notNil and: [ stream isConnected ])
+	self isConnected
 		ifTrue: [ ^ self ].
 		
 	stream := SocketStream openConnectionToHostNamed: self host port: 9418.

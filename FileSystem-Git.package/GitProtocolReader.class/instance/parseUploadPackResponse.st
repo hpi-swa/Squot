@@ -1,4 +1,4 @@
-private receiving
+receiving
 parseUploadPackResponse
 	| result firstLine firstSplit capabilities|
 

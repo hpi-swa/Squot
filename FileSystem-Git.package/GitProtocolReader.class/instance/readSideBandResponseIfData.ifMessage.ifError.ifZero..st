@@ -1,4 +1,4 @@
-initialize-release
+private receiving
 readSideBandResponseIfData: dataBlock ifMessage: messageBlock ifError: errorBlock ifZero: zeroBlock
 	| length streamCode data |
 	length := self readLineLength.

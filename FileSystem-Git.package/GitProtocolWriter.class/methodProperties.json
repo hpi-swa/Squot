@@ -13,4 +13,7 @@
 		"sendCommand:arguments:withLineTerminator:" : "DamienCassou 1/30/2013 17:49",
 		"sendCommand:withLineTerminator:" : "DamienCassou 1/30/2013 17:48",
 		"sendData:" : "DamienCassou 1/30/2013 17:32",
-		"sendWantAll:capabilities:" : "DamienCassou 1/31/2013 13:24" } }
+		"sendDepth:" : "DamienCassou 1/31/2013 14:24",
+		"sendShallowLines:" : "DamienCassou 1/31/2013 14:06",
+		"sendWant:" : "DamienCassou 1/31/2013 14:09",
+		"sendWantAll:capabilities:shallowLines:depth:" : "DamienCassou 1/31/2013 14:13" } }

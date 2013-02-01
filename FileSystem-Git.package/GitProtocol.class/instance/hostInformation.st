@@ -1,3 +1,3 @@
-commands
+configuration
 hostInformation
 	^ 'host=myserver.com'

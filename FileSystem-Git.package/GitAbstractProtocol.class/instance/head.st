@@ -1,3 +1,3 @@
-accessing
+commands
 head
-	self subclassResponsibility
+	^ self refs at: 'HEAD'

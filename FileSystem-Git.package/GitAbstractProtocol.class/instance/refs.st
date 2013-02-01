@@ -1,3 +1,3 @@
 accessing
 refs
-	self subclassResponsibility
+	^ refs ifNil: [ refs := self fetchRefs ]

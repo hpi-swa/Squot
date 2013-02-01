@@ -4,9 +4,10 @@
 		 ],
 	"classvars" : [
 		 ],
-	"commentStamp" : "",
+	"commentStamp" : "<historical>",
 	"instvars" : [
-		"url" ],
+		"url",
+		"refs" ],
 	"name" : "GitAbstractProtocol",
 	"pools" : [
 		 ],

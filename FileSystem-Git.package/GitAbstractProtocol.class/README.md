@@ -1,0 +1,1 @@
+Contains public methods that are valid for all Git protocols

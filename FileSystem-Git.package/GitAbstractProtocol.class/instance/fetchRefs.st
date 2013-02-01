@@ -1,0 +1,3 @@
+accessing
+fetchRefs
+	^ self subclassResponsibility

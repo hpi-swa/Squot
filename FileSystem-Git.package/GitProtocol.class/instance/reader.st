@@ -1,3 +1,3 @@
 private accessing
-stream
-	^ stream
+reader
+	^ reader

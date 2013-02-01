@@ -6,10 +6,11 @@
 		"url:" : "CamilloBruni 12/21/2011 14:49" },
 	"instance" : {
 		"branches" : "CamilloBruni 10/8/2012 14:22",
-		"head" : "CamilloBruni 12/25/2011 13:38",
+		"fetchRefs" : "DamienCassou 1/31/2013 16:28",
+		"head" : "DamienCassou 1/31/2013 16:34",
 		"host" : "CamilloBruni 12/21/2011 14:50",
 		"initializeWith:" : "DamienCassou 1/29/2013 15:45",
-		"refs" : "CamilloBruni 12/25/2011 13:38",
+		"refs" : "DamienCassou 1/31/2013 16:27",
 		"refsPrefixed:" : "CamilloBruni 10/8/2012 14:23",
 		"repository" : "CamilloBruni 12/21/2011 14:48",
 		"tags" : "CamilloBruni 10/8/2012 14:23",

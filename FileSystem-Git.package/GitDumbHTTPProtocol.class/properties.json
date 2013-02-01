@@ -8,8 +8,7 @@
 	"instvars" : [
 		"client",
 		"stream",
-		"outputStream",
-		"refs" ],
+		"outputStream" ],
 	"name" : "GitDumbHTTPProtocol",
 	"pools" : [
 		 ],

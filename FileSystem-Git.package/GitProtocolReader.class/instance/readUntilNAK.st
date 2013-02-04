@@ -1,5 +1,11 @@
 private receiving
 readUntilNAK
-	[ self peekForNAK
-		ifTrue: [ true ]
-		ifFalse: [ stream next. false ] ] whileFalse
+	| length |
+	[ 
+		length := self readLineLength.
+		length = 0 ifTrue: [ ^ self ].
+			
+		self peekForNAK 
+			ifTrue: [ ^ self consumeNAK ].
+			
+	true.] whileTrue.

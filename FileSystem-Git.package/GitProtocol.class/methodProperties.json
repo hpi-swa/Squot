@@ -3,7 +3,7 @@
 		"schemes" : "CamilloBruni 12/21/2011 14:35" },
 	"instance" : {
 		"closeConnection" : "DamienCassou 1/31/2013 12:34",
-		"fetchRefs" : "DamienCassou 1/31/2013 16:35",
+		"fetchRefs" : "DamienCassou 2/4/2013 09:35",
 		"hostInformation" : "Camillobruni 8/19/2011 17:34",
 		"isConnected" : "DamienCassou 1/31/2013 12:30",
 		"openConnection" : "DamienCassou 1/31/2013 16:33",
@@ -12,6 +12,6 @@
 		"want:" : "CamilloBruni 12/25/2011 14:00",
 		"want:capabilities:" : "DamienCassou 1/31/2013 12:46",
 		"wantAll:" : "DamienCassou 1/31/2013 12:44",
-		"wantAll:capabilities:" : "DamienCassou 1/31/2013 14:37",
+		"wantAll:capabilities:" : "DamienCassou 2/4/2013 09:33",
 		"withOpenConnection:" : "DamienCassou 1/31/2013 16:31",
 		"writer" : "DamienCassou 1/31/2013 16:36" } }

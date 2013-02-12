@@ -1,3 +1,3 @@
 configuration
 firstWantCapabilityListSeparator
-	^ Character space
+	^ firstWantCapabilityListSeparator

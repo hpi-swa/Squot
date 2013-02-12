@@ -6,7 +6,8 @@
 		 ],
 	"commentStamp" : "<historical>",
 	"instvars" : [
-		"stream" ],
+		"stream",
+		"firstWantCapabilityListSeparator" ],
 	"name" : "GitProtocolWriter",
 	"pools" : [
 		 ],

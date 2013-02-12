@@ -1,0 +1,3 @@
+configuration
+firstWantCapabilityListSeparator: aCharacter
+	firstWantCapabilityListSeparator := aCharacter

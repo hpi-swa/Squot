@@ -1,11 +1,11 @@
 private
 loadRefs
-	| data |
-	self openConnection.
-	data := self client
-		url: self url asString, '/info/refs';
-		queryAt: 'service' put: 'git-upload-pack';
+	stream := self clientForUploadPackService
+		streaming: true;
 		get.
 	self flag: 'TODO: use streaming response'.
-	stream := data asString readStream.
-	^ self parseUploadPackResponse; parseUploadPackResponse
+	
+	reader := GitProtocolReader on: stream.
+	writer := GitProtocolWriter on: stream.
+	
+	^ reader readPktLine; readZeroLine; parseUploadPackResponse

@@ -6,7 +6,8 @@
 		 ],
 	"commentStamp" : "<historical>",
 	"instvars" : [
-		"stream" ],
+		"stream",
+		"fourByteLookahead" ],
 	"name" : "GitProtocolReader",
 	"pools" : [
 		 ],

@@ -6,6 +6,6 @@ readUntilNAK
 		length = 0 ifTrue: [ ^ self ].
 			
 		self peekForNAK 
-			ifTrue: [ ^ self consumeNAK ].
+			ifTrue: [ ^ self resetFourByteLookahead ].
 			
 	true.] whileTrue.

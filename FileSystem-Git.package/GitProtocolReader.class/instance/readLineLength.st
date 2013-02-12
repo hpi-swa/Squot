@@ -1,3 +1,6 @@
 private receiving
 readLineLength
-	^ Integer readFrom: (stream next: 4) asString base: 16
+	| lineLength |
+	lineLength := Integer readFrom: self fourByteLookahead asString base: 16.
+	self resetFourByteLookahead.
+	^ lineLength

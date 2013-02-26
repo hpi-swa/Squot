@@ -1,5 +1,8 @@
-as yet unclassified
+instance creation
 connectTo: aUrl
-	^ (self isSmartRepository: aUrl)
-		ifTrue: [GitSmartHTTPProtocol connectTo: aUrl ]
-		ifFalse: [super connectTo: aUrl  ]
+	| initialResponse |
+	initialResponse := (self initialRequestTo: aUrl) response.
+	^ ((self isSmartResponse: initialResponse)
+			ifTrue: [GitSmartHTTPProtocol]
+			ifFalse: [self])
+		continueWith: initialResponse from: aUrl 

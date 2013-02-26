@@ -1,4 +1,4 @@
-pivate
+private
 parseRefs: aResponse
 	refs := Dictionary new.
 	aResponse contents asString linesDo: [ :line| |split|

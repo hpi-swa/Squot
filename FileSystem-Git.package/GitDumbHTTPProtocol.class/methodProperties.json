@@ -1,9 +1,12 @@
 {
 	"class" : {
-		"connectTo:" : "DamienCassou 1/28/2013 21:09",
-		"isSmartRepository:" : "DamienCassou 1/29/2013 15:08",
+		"connectTo:" : "DamienPollet 2/19/2013 11:34",
+		"continueWith:from:" : "DamienPollet 2/19/2013 11:48",
+		"initialRequestTo:" : "DamienPollet 2/19/2013 17:34",
+		"isSmartResponse:" : "DamienPollet 2/19/2013 11:36",
 		"schemes" : "DamienCassou 1/28/2013 21:08" },
 	"instance" : {
+		"continueWith:" : "DamienPollet 2/19/2013 17:36",
 		"head" : "CamilloBruni 10/8/2012 14:25",
 		"httpAlternates" : "CamilloBruni 10/8/2012 14:34",
 		"info:" : "CamilloBruni 1/15/2012 22:53",

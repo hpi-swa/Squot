@@ -1,4 +1,4 @@
-as yet unclassified
+accessing
 url: anUrlString
 	| url protocol |
 	url := anUrlString asUrl.

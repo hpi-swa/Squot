@@ -1,14 +1,14 @@
 {
 	"class" : {
+		"continueWith:from:" : "DamienPollet 2/19/2013 11:50",
 		"schemes" : "DamienCassou 1/28/2013 21:08" },
 	"instance" : {
 		"client" : "DamienCassou 1/29/2013 14:16",
 		"clientForPostService:" : "CamilloBruni 2/12/2013 17:53",
-		"clientForService:" : "CamilloBruni 2/12/2013 17:30",
 		"clientForUploadPack" : "CamilloBruni 2/12/2013 17:51",
-		"clientForUploadPackService" : "CamilloBruni 2/12/2013 17:50",
-		"firstWantCapabilityListSeparator" : "CamilloBruni 2/12/2013 16:54",
-		"flush" : "DamienCassou 1/29/2013 16:20",
+		"clientForUploadPackService" : "DamienPollet 2/19/2013 11:02",
+		"continueWith:" : "DamienPollet 2/19/2013 17:46",
+		"flush" : "DamienPollet 2/19/2013 11:06",
 		"loadRefs" : "CamilloBruni 2/12/2013 17:50",
 		"openConnection" : "DamienCassou 1/29/2013 15:02",
 		"outputStream" : "DamienCassou 1/29/2013 15:02",

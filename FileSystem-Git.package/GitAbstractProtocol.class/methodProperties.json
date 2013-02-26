@@ -1,11 +1,14 @@
 {
 	"class" : {
 		"connectTo:" : "CamilloBruni 12/21/2011 14:49",
+		"continueWith:from:" : "DamienPollet 2/19/2013 11:39",
 		"example1" : "DamienCassou 1/28/2013 20:47",
 		"protocolForScheme:" : "CamilloBruni 12/21/2011 14:37",
+		"schemes" : "DamienPollet 2/19/2013 11:42",
 		"url:" : "CamilloBruni 12/21/2011 14:49" },
 	"instance" : {
 		"branches" : "CamilloBruni 10/8/2012 14:22",
+		"continueWith:" : "DamienPollet 2/19/2013 17:45",
 		"fetchRefs" : "DamienCassou 1/31/2013 16:28",
 		"head" : "DamienCassou 1/31/2013 16:34",
 		"host" : "CamilloBruni 12/21/2011 14:50",
@@ -14,5 +17,4 @@
 		"refsPrefixed:" : "CamilloBruni 10/8/2012 14:23",
 		"repository" : "CamilloBruni 12/21/2011 14:48",
 		"tags" : "CamilloBruni 10/8/2012 14:23",
-		"targetClass" : "DamienCassou 1/30/2013 13:36",
 		"url" : "CamilloBruni 12/21/2011 14:50" } }

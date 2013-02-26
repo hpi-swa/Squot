@@ -5,5 +5,6 @@ initialRequestTo: aUrl
 		queryAt: 'service' put: 'git-upload-pack';
 		"username: 'admin' password: 'admin';"
 		enforceHttpSuccess: true;
+		streaming: true;
 		get;
 		yourself

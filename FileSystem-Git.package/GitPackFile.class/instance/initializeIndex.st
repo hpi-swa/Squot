@@ -1,4 +1,4 @@
-initialize-release
+operations
 initializeIndex 
 	| noExtension indexReference |
 	noExtension := self reference basename copyUpToLast: $..

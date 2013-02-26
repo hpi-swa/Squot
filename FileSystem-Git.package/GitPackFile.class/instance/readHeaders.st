@@ -1,4 +1,4 @@
-initialize-release
+operations
 readHeaders
 	| stream |
 	stream := self readStream.

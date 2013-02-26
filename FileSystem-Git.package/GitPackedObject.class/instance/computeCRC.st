@@ -1,3 +1,3 @@
 processing
 computeCRC
-	crc := CRC crc32FromCollection: self compressedData
+	crc := CRC crc32FromCollection: self completeData

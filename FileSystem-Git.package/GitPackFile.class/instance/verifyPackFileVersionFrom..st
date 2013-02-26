@@ -1,4 +1,4 @@
-initialize-release
+operations
 verifyPackFileVersionFrom: aStream
 	| version |
 	version := (aStream next: 4) asInteger.

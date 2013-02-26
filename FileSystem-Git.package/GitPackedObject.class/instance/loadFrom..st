@@ -1,6 +1,6 @@
 initialize-release
 loadFrom: aStream
-	self 
+	self
 		sourceStream: aStream;
 		startPosition: aStream position; 
 		readHeaders;

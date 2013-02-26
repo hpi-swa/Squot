@@ -1,4 +1,4 @@
-initialize-release
+operations
 verifyPackFileIdentifierFrom: aStream
 	| id |
 	id := (aStream next: 4) asString.

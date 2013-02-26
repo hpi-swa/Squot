@@ -1,3 +1,3 @@
-public-operations
+public-testing
 unpack
 	GitPackFileUnpacker unpack: self

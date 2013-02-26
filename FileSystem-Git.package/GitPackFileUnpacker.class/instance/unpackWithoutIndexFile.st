@@ -2,6 +2,7 @@ operations
 unpackWithoutIndexFile
 	| reader count |
 	reader := self packFile readStream.
+	reader reset.
 	reader skip: 12. "skip header"
 	
 	count := self packFile numberOfObjects.

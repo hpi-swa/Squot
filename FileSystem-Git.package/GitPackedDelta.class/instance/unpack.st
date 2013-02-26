@@ -1,6 +1,6 @@
 processing
 unpack
-	| hexHash interpreter |
+	| interpreter |
 	(self pack hasIndexFile not
 	and: [ (self pack repository hasLooseObject: self deltaBaseName) not ]) ifTrue: [ ^ self ].
 

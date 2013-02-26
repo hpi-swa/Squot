@@ -6,7 +6,8 @@
 		 ],
 	"commentStamp" : "<historical>",
 	"instvars" : [
-		"outputStream" ],
+		"outputStream",
+		"client" ],
 	"name" : "GitSmartHTTPProtocol",
 	"pools" : [
 		 ],

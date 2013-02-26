@@ -1,4 +1,4 @@
 instance creation
-continueWith: initialResponse from: aUrl
+continueWith: aZnClient from: aUrl
 	^ (self connectTo: aUrl)
-		continueWith: initialResponse
+				continueWith: aZnClient

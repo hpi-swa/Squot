@@ -1,3 +1,3 @@
 accessing
 refs
-	^ refs ifNil: [ refs := self fetchRefs ]
+	^ refs ifNil: [ self loadRefs ]

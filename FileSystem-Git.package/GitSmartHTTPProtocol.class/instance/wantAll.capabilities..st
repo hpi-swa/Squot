@@ -22,7 +22,6 @@ wantAll: gitSignatures capabilities: capabilities
 		streaming: true;
 		entity: entity;
 		post.
-	
-	reader := GitProtocolReader on: stream.
-	^ reader readPackfileResponse
+
+	^ (GitProtocolReader on: stream) readPackfileResponse
 	

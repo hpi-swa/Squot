@@ -1,3 +1,3 @@
 command
-refs
+fetchRefs
 	^ self parseRefs: (self info: 'refs')

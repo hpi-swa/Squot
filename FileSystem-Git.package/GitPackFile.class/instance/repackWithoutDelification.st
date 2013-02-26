@@ -1,3 +1,3 @@
-public-operations
+public-testing
 repackWithoutDelification
 	(GitPackFileCreator on: self) repackWithoutDelification

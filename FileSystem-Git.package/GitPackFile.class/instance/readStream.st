@@ -1,3 +1,3 @@
-accessing
+initialize-release
 readStream
-	^ self packData readStream
+	^ readStream ifNil: [ self packData readStream ]

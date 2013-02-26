@@ -1,3 +1,3 @@
-public-testing
+enumerating
 hasIndexFile
 	^ self indexFile notNil

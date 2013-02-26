@@ -1,7 +1,8 @@
 {
 	"class" : {
 		"on:in:" : "MaxLeske 2/29/2012 18:03",
-		"pack:" : "MaxLeske 8/12/2012 13:47" },
+		"pack:" : "MaxLeske 8/12/2012 13:47",
+		"readFrom:" : "DamienCassou 2/26/2013 16:00" },
 	"instance" : {
 		"delete" : "MaxLeske 8/12/2012 13:33",
 		"hasIndexFile" : "MaxLeske 9/8/2012 13:20",
@@ -14,7 +15,8 @@
 		"packData" : "MaxLeske 6/23/2012 17:08",
 		"packedObjectsDo:" : "MaxLeske 9/8/2012 20:45",
 		"readHeaders" : "MaxLeske 9/8/2012 08:55",
-		"readStream" : "MaxLeske 6/23/2012 17:09",
+		"readStream" : "DamienCassou 2/26/2013 18:19",
+		"readStream:" : "DamienCassou 2/26/2013 15:54",
 		"reference" : "MaxLeske 2/29/2012 18:47",
 		"reference:" : "MaxLeske 2/29/2012 18:48",
 		"repackWithoutDelification" : "MaxLeske 8/5/2012 18:09",

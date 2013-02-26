@@ -1,2 +1,4 @@
 initialize-release
-continueWith: initialResponse
+continueWith: aZnClient
+	client := aZnClient.
+	refs := self fetchRefsFrom: client contents

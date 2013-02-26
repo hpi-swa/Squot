@@ -10,7 +10,8 @@
 		"packData",
 		"repository",
 		"reference",
-		"indexFile" ],
+		"indexFile",
+		"readStream" ],
 	"name" : "GitPackFile",
 	"pools" : [
 		 ],

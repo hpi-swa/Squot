@@ -1,11 +1,10 @@
 {
 	"class" : {
-		"canDecode:" : "MaxLeske 2/29/2012 21:20" },
+		"canDecode:" : "DamienCassou 2/26/2013 16:37" },
 	"instance" : {
 		"basicDeltaBase" : "MaxLeske 9/8/2012 19:01",
 		"deltaBaseName" : "MaxLeske 9/8/2012 13:25",
 		"deltaBaseOffset" : "MaxLeske 9/8/2012 19:02",
 		"deltaBaseOffset:" : "MaxLeske 9/8/2012 19:04",
 		"readBaseObjectOffset" : "MaxLeske 9/8/2012 18:26",
-		"readHeaders" : "MaxLeske 9/8/2012 19:18",
-		"unpack" : "MaxLeske 9/8/2012 18:58" } }
+		"readHeaders" : "MaxLeske 9/8/2012 19:18" } }

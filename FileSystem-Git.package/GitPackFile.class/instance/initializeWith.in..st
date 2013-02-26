@@ -1,4 +1,4 @@
-initialize-release
+operations
 initializeWith: aReference in: aRepository
 	self 
 		repository: aRepository;

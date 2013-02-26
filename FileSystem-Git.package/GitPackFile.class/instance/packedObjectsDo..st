@@ -1,4 +1,4 @@
-enumerating
+public-operations
 packedObjectsDo: aBlock
 	| position |
 	"First entry is at position 12, after header"

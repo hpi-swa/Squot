@@ -7,5 +7,5 @@ testCompleteData
 							sourceStream: pack readStream;
 							startPosition: 0;
 							readHeaders;
-							lengthInPack: 4.
+							lengthInPack: 5.
 	self assert: object completeData equals: pack.

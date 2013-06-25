@@ -1,3 +1,3 @@
 helper
 url
-	^ 'https://git.gitorious.org/gitorious/mainline.git'
+	^ 'https://github.com/dh83/filesystem-git-test-repository.git'

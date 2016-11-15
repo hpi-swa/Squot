@@ -1,0 +1,2 @@
+initialize-release
+continueWith: initialResponse initialResponseContent: aString

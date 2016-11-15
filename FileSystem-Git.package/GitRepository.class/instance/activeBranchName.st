@@ -4,7 +4,7 @@ activeBranchName
 
 	| headContents headObject |
 	
-	headContents := self headFile readStreamDo: [ :stream | stream contents asString trimBoth ].
+	headContents := self headFile readStreamDo: [ :stream | stream contents asString withBlanksTrimmed ].
 	(headContents beginsWith: 'ref:')
 		ifTrue: [ ^ headContents copyAfterLast: $/ ].
 	

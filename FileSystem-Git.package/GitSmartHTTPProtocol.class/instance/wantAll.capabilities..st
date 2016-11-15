@@ -1,8 +1,6 @@
 commands
 wantAll: gitSignatures capabilities: capabilities
-	| contents entity|
-	
-	self flag: 'TODO: use streaming response'.
+	| contents response |
 	
 	contents := String streamContents: [ :s|
 		outputStream := s.
@@ -15,13 +13,7 @@ wantAll: gitSignatures capabilities: capabilities
 		
 		writer flushPacket; done ].
 
-	entity := ZnStringEntity type: ZnMimeType applicationGitUploadPackRequest.
-	entity string: contents.
-	
-	stream :=  self clientForUploadPack
-		streaming: true;
-		entity: entity;
-		post.
-
-	^ (GitProtocolReader on: stream) readPackfileResponse
+	response := self postForUploadPack: contents.
+	response stream binary.
+	^ (GitProtocolReader on: response contentStream) readPackfileResponse
 	

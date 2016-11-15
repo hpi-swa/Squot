@@ -2,15 +2,15 @@ verifying
 verifyReadingPackfile
 	| workingCopy|
 	workingCopy := repository head.
-	self assert: 'blah2' equals: workingCopy message trimBoth.
+	self assert: 'blah2' equals: workingCopy message withBlanksTrimmed.
 	
 	self assert: 1 equals: workingCopy parents size.
 	workingCopy := workingCopy parents first.
-	self assert: 'blah' equals: workingCopy message trimBoth.
+	self assert: 'blah' equals: workingCopy message withBlanksTrimmed.
 	
 	"I reset HEAD to the second to last commit. So the last commit is not reachable"
 	workingCopy := repository objectNamed: 'fea21a7e0e910cf24f3c455cc6e0ea86d589a0db'.
-	self assert: 'blah3' equals: workingCopy message trimBoth.
+	self assert: 'blah3' equals: workingCopy message withBlanksTrimmed.
 	
 	"see if all object types are accessable"
 	self 

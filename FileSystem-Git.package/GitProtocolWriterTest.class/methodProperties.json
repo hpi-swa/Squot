@@ -2,8 +2,8 @@
 	"class" : {
 		 },
 	"instance" : {
-		"testWantAllCapabilitiesMoreThanOne" : "DamienCassou 1/31/2013 14:05",
-		"testWantAllCapabilitiesOnlyOne" : "DamienCassou 2/4/2013 09:57",
-		"testWantAllCapabilitiesWithAllOptions" : "DamienCassou 1/31/2013 14:27",
+		"testWantAllCapabilitiesMoreThanOne" : "jr 10/26/2016 16:56",
+		"testWantAllCapabilitiesOnlyOne" : "jr 10/26/2016 16:57",
+		"testWantAllCapabilitiesWithAllOptions" : "jr 10/26/2016 16:57",
 		"testWritePktLine" : "DamienCassou 1/30/2013 18:04",
 		"withWriterAssert:equals:" : "DamienCassou 1/30/2013 18:00" } }

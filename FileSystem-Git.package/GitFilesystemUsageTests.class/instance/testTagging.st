@@ -8,5 +8,5 @@ testTagging
 	self assert: ref exists.
 	self assert: ref basename equals: 'my first tag'.
 	self 
-		assert: (basicRepository objectNamed: ref readStream contents asString trimBoth) message 
+		assert: (basicRepository objectNamed: ref readStream contents asString withBlanksTrimmed) message 
 		equals: 'a commit'

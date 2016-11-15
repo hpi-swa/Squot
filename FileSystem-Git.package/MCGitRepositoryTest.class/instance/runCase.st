@@ -1,3 +1,3 @@
 running
 runCase
-	Author useAuthor: 'Montgomery C. Burns' during: [ super runCase ]
+	Utilities setAuthorInitials: 'Montgomery C. Burns' during: [ super runCase ]

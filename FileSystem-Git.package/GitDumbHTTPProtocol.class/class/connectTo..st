@@ -1,8 +1,9 @@
 instance creation
 connectTo: aUrl
-	| client |
-	client := self initialRequestTo: aUrl.
-	^ ((self isSmartResponse: client response)
+	| response client |
+	client := WebClient new.
+	response := self initialRequestTo: aUrl with: client.
+	^ ((self isSmartResponse: response)
 				ifTrue: [ GitSmartHTTPProtocol ]
 				ifFalse: [ self ])
-			continueWith: client from: aUrl
+			continueWith: client from: aUrl content: response content

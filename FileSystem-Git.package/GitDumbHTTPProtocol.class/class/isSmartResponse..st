@@ -1,4 +1,3 @@
 testing
 isSmartResponse: initialResponse
-	^ initialResponse contentType
-		matches: ZnMimeType applicationGitUploadPackAdvertisement
+	^ initialResponse contentType = 'application/x-git-upload-pack-advertisement'

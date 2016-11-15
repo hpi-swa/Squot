@@ -4,7 +4,7 @@ classPathForPackage: packageName class: className
 	
 	path := self reference.
 	
-	($- split: packageName) do: [ :categorySegment|
+	(packageName splitBy: '-') do: [ :categorySegment|
 		path := path / categorySegment].
 	
 	path := path / className, 'class'.

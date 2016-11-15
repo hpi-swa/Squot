@@ -1,16 +1,16 @@
 {
 	"class" : {
-		"continueWith:from:" : "DamienCassou 2/26/2013 14:40",
+		"continueWith:from:content:" : "jr 10/25/2016 14:39",
 		"schemes" : "DamienCassou 1/28/2013 21:08" },
 	"instance" : {
 		"client" : "DamienCassou 2/26/2013 14:51",
-		"clientForPostService:" : "CamilloBruni 2/12/2013 17:53",
-		"clientForUploadPack" : "CamilloBruni 2/12/2013 17:51",
 		"clientForUploadPackService" : "DamienPollet 2/19/2013 11:02",
-		"continueWith:" : "DamienCassou 2/26/2013 14:49",
+		"continueWith:initialResponseContent:" : "jr 10/25/2016 14:41",
 		"fetchRefs" : "DamienCassou 2/26/2013 14:56",
 		"fetchRefsFrom:" : "DamienCassou 2/26/2013 15:16",
 		"flush" : "DamienPollet 2/19/2013 11:06",
 		"openConnection" : "DamienCassou 2/26/2013 14:53",
 		"outputStream" : "DamienCassou 1/29/2013 15:02",
-		"wantAll:capabilities:" : "DamienCassou 2/26/2013 15:16" } }
+		"postForUploadPack:" : "jr 10/25/2016 17:05",
+		"urlForService:" : "jr 10/25/2016 17:05",
+		"wantAll:capabilities:" : "jr 10/26/2016 16:27" } }

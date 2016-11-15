@@ -1,8 +1,8 @@
 instance creation
 readFrom: aStream
 	| author email secondsSince1970 sign zoneOffset |
-	author := (aStream upTo: $<) trimBoth.
-	email := (aStream upTo: $>) trimBoth.
+	author := (aStream upTo: $<) withBlanksTrimmed.
+	email := (aStream upTo: $>) withBlanksTrimmed.
 	aStream skipSeparators.
 	secondsSince1970 := Integer readFrom: aStream.
 	aStream skipSeparators.
@@ -17,5 +17,5 @@ readFrom: aStream
 	^ self new
 		name: author;
 		email: email; 
-		timeStamp: ((DateAndTime fromUnixTime: secondsSince1970) offset: zoneOffset) asTimeStamp;
+		timeStamp: ((DateAndTime fromUnixTime: secondsSince1970) utcOffset: zoneOffset);
 		yourself

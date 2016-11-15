@@ -7,11 +7,9 @@ Careful: when using Transcript for debugging, the code might become so slow that
 	self readUntilNAK.
 	
 	^ ByteArray streamContents: [ :packStream | 
-		[ :job | [
-			self 
+		'' displayProgressFrom: 0 to: 1 during: [:progress | [ self 
 				readSideBandResponseIfData: [ :data | packStream nextPutAll: data ]
-				ifMessage: [ :message | job title: (message splitOn: Character lf) first asString ]
+				ifMessage: [ :message | progress value: (message splitBy: String lf asByteArray) first asString ]
 				ifError: [ :errorMessage | Error signal: errorMessage ]
 				ifZero: [ ^ packStream contents ].
-			stream atEnd ] whileFalse
-		] asJob run ].
+			stream atEnd ] whileFalse ] ].

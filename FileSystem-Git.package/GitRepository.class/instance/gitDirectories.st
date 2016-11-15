@@ -1,9 +1,9 @@
 private
 gitDirectories
-	^#('objects' 
-		'objects/pack' 
-		'objects/info' 
-		'refs'
-		'refs/heads' 
-		'refs/tags' 
-		'info')
+	^{'objects'.
+		FSPath * 'objects' / 'pack'.
+		FSPath * 'objects' / 'info'.
+		'refs'.
+		FSPath * 'refs' / 'heads'.
+		FSPath * 'refs' / 'tags'.
+		'info'}

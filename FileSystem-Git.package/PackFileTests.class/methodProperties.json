@@ -50,7 +50,7 @@
 		"verifyPackEntries" : "MaxLeske 9/2/2012 23:28",
 		"verifyPackHeader" : "MaxLeske 6/24/2012 19:52",
 		"verifyPackedObjectsDo" : "MaxLeske 6/24/2012 19:14",
-		"verifyReadingPackfile" : "MaxLeske 6/15/2012 14:19",
+		"verifyReadingPackfile" : "jr 10/23/2016 00:34",
 		"verifyRefDeltaDeltification" : "MaxLeske 6/24/2012 19:21",
 		"verifySizesWithOfsDelta" : "MaxLeske 6/24/2012 19:34",
 		"verifySizesWithRefDelta" : "MaxLeske 6/24/2012 19:32",

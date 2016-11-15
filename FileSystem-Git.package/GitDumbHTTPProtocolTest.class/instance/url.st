@@ -1,3 +1,3 @@
 helper
 url
-	^ 'https://git.gitorious.org/pharo-build/pharo-build.git'
+	^ 'https://github.com/j4yk/filesystem-git-test-repository.git'

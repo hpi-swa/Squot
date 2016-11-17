@@ -5,4 +5,4 @@ storeOn: aStream.
 		nextPut: Character space asInteger;
 		nextPutAll: entryName asByteArray;
 		nextPut: 0;
-		nextPutAll: entryHash asByteArray
+		nextPutAll: entryHash asByteHash

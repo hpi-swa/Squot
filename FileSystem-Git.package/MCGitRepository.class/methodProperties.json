@@ -8,6 +8,7 @@
 		"morphicConfigure" : "lr 10/29/2010 14:40",
 		"reference:" : "lr 10/29/2010 14:37" },
 	"instance" : {
+		"allPackageNames" : "jr 11/16/2016 18:21",
 		"alwaysStoreDiffs" : "CamilloBruni 4/29/2011 01:03",
 		"basicStoreVersion:" : "CamilloBruni 9/2/2012 18:44",
 		"cacheAllFileNamesDuring:" : "CamilloBruni 4/28/2011 23:59",
@@ -16,8 +17,11 @@
 		"includesVersionNamed:" : "CamilloBruni 1/23/2012 19:04",
 		"initializeReference:" : "lr 10/29/2010 14:38",
 		"morphicOpen:" : "lr 10/29/2010 15:07",
-		"readableFileNames" : "CamilloBruni 1/23/2012 20:17",
+		"readableFileNames" : "jr 11/16/2016 18:26",
 		"reference" : "lr 10/29/2010 14:45",
 		"repository" : "MaxLeske 9/3/2012 20:58",
 		"versionFromFileNamed:" : "CamilloBruni 1/23/2012 22:28",
+		"versionInfoFromFileNamed:" : "jr 11/17/2016 12:39",
+		"versionNamed:" : "jr 11/17/2016 13:02",
+		"versionNamesForPackageNamed:" : "jr 11/15/2016 18:47",
 		"versionWithInfo:ifAbsent:" : "Camillobruni 8/18/2011 12:13" } }

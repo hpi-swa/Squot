@@ -1,7 +1,7 @@
 loading
 loadDefinitions
 	classDefinition := self loadCassDefinition.
-	definitions add: classDefinition.
+	classDefinition ifNotNil: [definitions add: classDefinition].
 	
 	instanceMethodDefinitions := self loadInstanceMethodDefinitions.
 	definitions addAll: instanceMethodDefinitions.

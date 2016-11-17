@@ -1,6 +1,6 @@
 {
 	"class" : {
-		"fileOut:on:" : "lr 10/29/2010 17:31",
+		"fileOut:on:" : "jr 11/16/2016 15:49",
 		"readerClass" : "CamilloBruni 8/9/2011 15:26" },
 	"instance" : {
 		"addDefinition:" : "CamilloBruni 4/29/2011 13:42",
@@ -17,7 +17,7 @@
 		"removeDefinition:" : "CamilloBruni 4/29/2011 13:56",
 		"removeMethod:" : "CamilloBruni 4/29/2011 15:54",
 		"serializeDefinitions:" : "CamilloBruni 8/9/2011 15:39",
-		"serializeMethodDefinition:" : "CamilloBruni 4/28/2011 23:48",
+		"serializeMethodDefinition:" : "jr 11/16/2016 15:51",
 		"serializeVersionInfo:" : "lr 10/29/2010 17:44",
 		"snapshotWriterClass" : "lr 10/29/2010 17:22",
 		"syncClassAt:" : "CamilloBruni 7/6/2011 15:33",
@@ -28,12 +28,12 @@
 		"syncSources" : "CamilloBruni 4/29/2011 14:49",
 		"writeClassDefinition:" : "CamilloBruni 9/2/2012 18:42",
 		"writeClassDefinition:on:" : "CamilloBruni 1/24/2012 12:28",
-		"writeDefinition:" : "CamilloBruni 1/24/2012 12:19",
+		"writeDefinition:" : "jr 11/16/2016 13:47",
 		"writeDefinitions:" : "CamilloBruni 1/24/2012 12:19",
 		"writeInfo:" : "CamilloBruni 8/9/2011 15:40",
 		"writeLegacySnapshot:" : "CamilloBruni 8/9/2011 15:39",
 		"writeLegacyVersion:" : "Camillobruni 8/18/2011 17:02",
-		"writeMetaClassDefinition:on:" : "CamilloBruni 1/24/2012 12:27",
+		"writeMetaClassDefinition:on:" : "jr 11/16/2016 16:01",
 		"writeMethodDefinition:" : "CamilloBruni 1/24/2012 12:19",
 		"writeMethodDefinition:on:" : "CamilloBruni 1/24/2012 12:18",
 		"writeModificationPatch:" : "CamilloBruni 4/29/2011 01:43",

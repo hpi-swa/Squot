@@ -10,6 +10,7 @@ writeMetaClassDefinition: aClassDefinition on: aStream
 			nextPutAll: aClassDefinition classTraitCompositionString;
 			lf; tab].
 		
-	aStream nextPutAll: 'instanceVariableNames: ''';
-		nextPutAll: aClassDefinition classInstanceVariablesString;
-		nextPut: $'
+	aClassDefinition hasClassInstanceVariables ifTrue: [
+		aStream nextPutAll: 'instanceVariableNames: ''';
+			nextPutAll: aClassDefinition classInstanceVariablesString;
+			nextPut: $']

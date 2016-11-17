@@ -1,5 +1,8 @@
 writing
 fileOut: aVersion on: aStream
-	| inst |
+	| inst workingCopyEnvironment |
 	inst := self on: aStream.
-	inst writeVersion: aVersion
+	workingCopyEnvironment := aVersion package hasWorkingCopy
+		ifTrue: [aVersion package workingCopy package environment]
+		ifFalse: [Environment current].
+	workingCopyEnvironment beCurrentDuring: [inst writeVersion: aVersion].

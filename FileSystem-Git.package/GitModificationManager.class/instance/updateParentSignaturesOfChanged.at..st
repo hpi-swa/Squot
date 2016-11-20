@@ -11,7 +11,7 @@ updateParentSignaturesOfChanged: target at: aPath
 		ifFalse: [
 			parent putEntry: 
 				(GitTreeEntry
-					fileNamed: aPath basename
+					directoryNamed: aPath basename
 					hash: target hash
 					in: repository)].
 	self updateParentSignaturesOfChanged: parent at: aPath parent. 

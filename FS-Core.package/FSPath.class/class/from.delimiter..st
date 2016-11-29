@@ -5,4 +5,4 @@ from: aString delimiter: aDelimiterCharacter
 	aString isEmpty
 		ifTrue: [ ^ self root ].
 	
-	^ self withAll: (self canonicalizeElements: (aDelimiterCharacter split: aString))
+	^ self withAll: (self canonicalizeElements: (aString findTokens: aDelimiterCharacter))

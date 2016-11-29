@@ -1,7 +1,12 @@
 converting
 pathFromString: aString
-
-	^ ((aString first isLetter and: [aString second = $:])
-		ifTrue: [ FSAbsolutePath ]
-		ifFalse: [ FSRelativePath ])
-			from: aString delimiter: self delimiter
+	"Need to distinguish '' and '/' , so tag latter with invalid character ':'  "
+	| normalized pathClass pathElements |
+	normalized := aString copy replaceAll: FSUnixStore delimiter with: self delimiter.
+	pathElements := normalized splitBy: self delimiter asString.
+	pathClass := (FSPath isAbsoluteWindowsPath: normalized)
+		ifTrue: [ (normalized = self delimiter asString) ifTrue: [ pathElements := { ':' } ].
+			FSAbsolutePath ]
+		ifFalse: [ self stripDrive: pathElements.
+			FSRelativePath ].
+	^pathClass withAll: (pathClass canonicalizeElements: pathElements).

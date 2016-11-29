@@ -2,6 +2,7 @@
 	"class" : {
 		"onHandle:" : "cwp 7/29/2009 22:30" },
 	"instance" : {
+		"binary" : "jr 10/23/2016 00:29",
 		"close" : "cwp 7/29/2009 22:29",
 		"contents" : "cwp 7/29/2009 22:29",
 		"isOpen" : "cwp 10/29/2009 09:47",

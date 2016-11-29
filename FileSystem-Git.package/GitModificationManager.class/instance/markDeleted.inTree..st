@@ -16,3 +16,7 @@ markDeleted: aPath inTree: aTree
 		at: aPath parent
 		ifAbsentPut: [ GitSetWrapper new]) 
 			add: aPath.
+	
+	createdPaths
+		at: aPath parent
+		ifPresent: [:set | set remove: aPath ifAbsent: []].

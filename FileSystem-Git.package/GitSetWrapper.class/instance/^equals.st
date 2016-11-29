@@ -1,3 +1,3 @@
-testing
+comparing
 = aSet
 	^ set = aSet

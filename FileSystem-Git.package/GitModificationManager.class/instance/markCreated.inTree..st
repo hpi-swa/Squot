@@ -1,6 +1,5 @@
 accessing
 markCreated: aPath inTree: aTree
-	| newTree |
 	aPath = Path root ifTrue: [ ^ self ].
 
 	treeMap
@@ -11,3 +10,7 @@ markCreated: aPath inTree: aTree
 		at: aPath parent
 		ifAbsentPut: [ GitSetWrapper new]) 
 			add: aPath.
+	
+	deletedPaths
+		at: aPath parent
+		ifPresent: [:set | set remove: aPath ifAbsent: []].

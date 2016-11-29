@@ -13,7 +13,7 @@ tags
 		tags add: (object class = GitCommit
 			ifTrue: [ "this is a lightweight tag"
 				GitLightweightTag
-					named: name
+					named: (self nameOf: name in: 'refs/tags/')
 					for: object
 					in: self ]
 			ifFalse: [ "this is a full tag and will be loaded later"

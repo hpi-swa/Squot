@@ -3,8 +3,8 @@ writeMethodDefinition: aMethodDefinition
 	|path|
 	
 	path := self methodPathFor: aMethodDefinition.
-	path ensureDirectory.
+	path parent ensureDirectory.
 	
-	(path / aMethodDefinition selector, 'st')
+	path
 		writeStreamDo: [ :s| 
 			self writeMethodDefinition: aMethodDefinition on: s].

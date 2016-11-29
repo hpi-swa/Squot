@@ -6,5 +6,5 @@ streamPackedObjectNamed: aHexHash ifAbsent: aBlock
 			packedObjectNamed: aHexHash
 			ifAbsent: [ nil ].
 	^ packedObject
-		ifNotNil: [ packedObject byteStream ]
+		ifNotNil: [ packedObject byteSignature readStream "this is stupid, should read from the pack directly" ]
 		ifNil: aBlock

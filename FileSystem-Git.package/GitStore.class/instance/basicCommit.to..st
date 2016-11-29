@@ -16,9 +16,10 @@ basicCommit: aMessage to: branchName
 	revision ifNotNil: [ parents add: revision hexHash ].
 	commit 
 		parents: parents;
-		store.
+		store. 
 	
 	repository 
 		updateRef: repository headsDir / branchName 
 		to: commit hexHash.
 	self revision: commit.
+	modManager initializeWith: repository with: cache for: revision.

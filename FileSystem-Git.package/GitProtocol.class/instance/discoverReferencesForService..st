@@ -1,11 +1,12 @@
-commands
-fetchRefs
+private
+discoverReferencesForService: aServiceName
 	| null |
 	self openConnection.
 	null := Character null asString.
 	writer
-		sendCommand: 'git-upload-pack' 
+		writeCommand: aServiceName
 		arguments: (self repository, null, self hostInformation, null)
 		withLineTerminator: false.
-	refs := reader parseUploadPackResponse.
+	self flush.
+	refs := reader parseReferenceDiscoveryResponse.
 	^ refs

@@ -1,8 +1,8 @@
 tests
-testParseUploadPackResponse
+testParseReferenceDicoveryResponse
 	| reader refs capabilities |
 	reader := self newReaderFor: self exampleResponse.
-	refs := reader parseUploadPackResponse.
+	refs := reader parseReferenceDiscoveryResponse.
 	self assert: refs size equals: 6. "5 refs + capabilities "
 	capabilities := refs at: #capabilities.
 	self assert: capabilities size equals: 9.

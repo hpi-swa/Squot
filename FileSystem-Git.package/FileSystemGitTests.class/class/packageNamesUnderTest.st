@@ -1,3 +1,3 @@
 accessing
 packageNamesUnderTest
-	^ #('FS-Git')
+	^ #('FileSystem-Git')

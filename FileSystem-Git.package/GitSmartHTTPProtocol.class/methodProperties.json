@@ -1,16 +1,19 @@
 {
 	"class" : {
-		"continueWith:from:content:" : "jr 10/25/2016 14:39",
-		"schemes" : "DamienCassou 1/28/2013 21:08" },
+		"schemes" : "jr 12/1/2016 14:25" },
 	"instance" : {
-		"client" : "DamienCassou 2/26/2013 14:51",
-		"clientForUploadPackService" : "DamienPollet 2/19/2013 11:02",
-		"continueWith:initialResponseContent:" : "jr 10/25/2016 14:41",
-		"fetchRefs" : "DamienCassou 2/26/2013 14:56",
-		"fetchRefsFrom:" : "DamienCassou 2/26/2013 15:16",
-		"flush" : "DamienPollet 2/19/2013 11:06",
-		"openConnection" : "DamienCassou 2/26/2013 14:53",
+		"client" : "jr 12/1/2016 15:05",
+		"closeConnection" : "jr 12/3/2016 01:12",
+		"discoverReferencesForService:" : "jr 12/1/2016 23:48",
+		"fallbackToDumbProtocol" : "jr 12/1/2016 16:45",
+		"fetchRefsFrom:" : "jr 11/30/2016 18:13",
+		"initialRequestTo:withService:" : "jr 12/1/2016 16:54",
+		"invokeReceivePackWithRefs:" : "jr 12/4/2016 17:41",
+		"isConnected" : "jr 12/3/2016 01:21",
+		"isSmartResponse:" : "jr 12/1/2016 23:40",
+		"openConnection" : "jr 12/2/2016 16:31",
 		"outputStream" : "DamienCassou 1/29/2013 15:02",
 		"postForUploadPack:" : "jr 10/25/2016 17:05",
+		"putRefs:" : "",
 		"urlForService:" : "jr 10/25/2016 17:05",
-		"wantAll:capabilities:" : "jr 10/26/2016 16:27" } }
+		"wantAll:capabilities:" : "jr 12/2/2016 17:27" } }

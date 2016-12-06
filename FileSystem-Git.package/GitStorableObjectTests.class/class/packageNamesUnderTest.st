@@ -1,3 +1,3 @@
 package selection
 packageNamesUnderTest
-	^#('FS-Git-Plumbing')
+	^#('FileSystem-Git-Plumbing')

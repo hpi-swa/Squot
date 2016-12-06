@@ -1,3 +1,4 @@
-accessing
+private
 loadRefs
-	^ refs := self fetchRefs 
+	self withOpenConnection: [self discoverReferencesForService: 'git-upload-pack'].
+	^ refs

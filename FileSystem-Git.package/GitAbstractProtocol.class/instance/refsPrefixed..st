@@ -1,4 +1,4 @@
-accessing
+private
 refsPrefixed: aPrefix
 	
 	|result|

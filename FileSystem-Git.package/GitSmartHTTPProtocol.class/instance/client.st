@@ -1,3 +1,3 @@
 accessing
 client
-	^ client
+	^ client ifNil: [client := WebClient new]

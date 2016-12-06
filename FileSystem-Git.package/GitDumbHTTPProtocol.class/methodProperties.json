@@ -1,13 +1,7 @@
 {
 	"class" : {
-		"connectTo:" : "jr 10/25/2016 14:24",
-		"continueWith:from:content:" : "jr 10/25/2016 14:37",
-		"initialRequestTo:with:" : "jr 10/25/2016 14:21",
-		"isSmartResponse:" : "jr 10/25/2016 14:13",
-		"schemes" : "DamienCassou 1/28/2013 21:08" },
+		"schemes" : "jr 12/1/2016 14:25" },
 	"instance" : {
-		"continueWith:" : "DamienPollet 2/19/2013 17:36",
-		"continueWith:initialResponseContent:" : "jr 10/25/2016 14:40",
 		"fetchRefs" : "DamienCassou 2/26/2013 14:18",
 		"head" : "CamilloBruni 10/8/2012 14:25",
 		"httpAlternates" : "CamilloBruni 10/8/2012 14:34",

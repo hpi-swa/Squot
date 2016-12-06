@@ -1,3 +1,3 @@
-accessing
+private
 fetchRefs
 	^ self subclassResponsibility

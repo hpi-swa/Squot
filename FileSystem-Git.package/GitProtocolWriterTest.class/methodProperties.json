@@ -2,8 +2,9 @@
 	"class" : {
 		 },
 	"instance" : {
-		"testWantAllCapabilitiesMoreThanOne" : "jr 10/26/2016 16:56",
-		"testWantAllCapabilitiesOnlyOne" : "jr 10/26/2016 16:57",
-		"testWantAllCapabilitiesWithAllOptions" : "jr 10/26/2016 16:57",
+		"testUpdateReferences" : "jr 12/4/2016 21:41",
+		"testWantAllCapabilitiesMoreThanOne" : "jr 12/3/2016 01:01",
+		"testWantAllCapabilitiesOnlyOne" : "jr 12/3/2016 01:01",
+		"testWantAllCapabilitiesWithAllOptions" : "jr 12/3/2016 01:01",
 		"testWritePktLine" : "DamienCassou 1/30/2013 18:04",
-		"withWriterAssert:equals:" : "DamienCassou 1/30/2013 18:00" } }
+		"withWriterAssert:equals:" : "jr 12/4/2016 21:25" } }

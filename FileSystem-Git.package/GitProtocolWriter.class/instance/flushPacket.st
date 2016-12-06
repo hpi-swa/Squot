@@ -1,4 +1,3 @@
-sending
+commands
 flushPacket
-	self sendData: '0000'.
-	self flush.
+	self writeData: '0000'.

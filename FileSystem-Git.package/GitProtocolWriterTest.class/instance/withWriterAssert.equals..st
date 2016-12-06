@@ -5,4 +5,4 @@ withWriterAssert: aBlock equals: aString
 		| writer |
 		writer := self targetClass on: stream.
 		aBlock value: writer].
-	self assert: result equals: aString
+	self assert: aString equals: result

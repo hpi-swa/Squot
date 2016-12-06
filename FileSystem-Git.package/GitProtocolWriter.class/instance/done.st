@@ -1,4 +1,3 @@
-sending
+commands
 done
-	self sendCommand: 'done' withLineTerminator: true.
-	self flush.
+	self writeCommand: 'done' withLineTerminator: true.

@@ -2,4 +2,4 @@ as yet unclassified
 classToBeTested
 	| className |
 	className := self class name asString copyFrom: 1 to: self class name size - 4.
-	^ Smalltalk globals at: className asString asSymbol
+	^ self class environment at: className asString asSymbol

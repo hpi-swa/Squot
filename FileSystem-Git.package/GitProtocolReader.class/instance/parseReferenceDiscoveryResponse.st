@@ -1,11 +1,12 @@
 receiving
-parseUploadPackResponse
-	| result firstLine firstSplit capabilities|
+parseReferenceDiscoveryResponse
+	| result firstLine firstSplit|
 
 	result := Dictionary new.
 	
 	"the first line is special: after a null character, there is a list of capabilities" 
 	firstLine := self readPktLineIfZero: [Error signal: 'The response was not well formed' ].
+	(firstLine beginsWith: 'ERR ') ifTrue: [Error signal: (firstLine allButFirst: 4)].
 	firstSplit := firstLine splitBy: Character null asString.
 	
 	"e.g., 'multi_ack thin-pack side-band side-band-64k ofs-delta'"

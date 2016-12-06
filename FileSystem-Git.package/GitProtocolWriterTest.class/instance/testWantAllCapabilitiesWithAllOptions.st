@@ -9,7 +9,7 @@ testWantAllCapabilitiesWithAllOptions
 	self
 		withWriterAssert: [ :writer |
 				writer
-					sendWantAll: gitSignatures
+					writeWantAll: gitSignatures
 					capabilities: capabilities
 					shallowLines: shallowLines
 					depth: depth ]

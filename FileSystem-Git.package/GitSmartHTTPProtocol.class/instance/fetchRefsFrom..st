@@ -1,3 +1,3 @@
 private
 fetchRefsFrom: aStream
-	^ (GitProtocolReader on: aStream) readPktLine; readZeroLine; parseUploadPackResponse
+	^ (GitProtocolReader on: aStream) readPktLine; readZeroLine; parseReferenceDiscoveryResponse

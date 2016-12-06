@@ -1,6 +1,5 @@
-private sending
-sendData: aString
+private
+writeData: aString
 	Transcript show: '> ', aString; cr; cr.
 	stream nextPutAll: aString.
-	self flush.
 	^ aString

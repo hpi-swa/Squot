@@ -6,7 +6,7 @@ wantAll: gitSignatures capabilities: capabilities
 		outputStream := s.
 		writer := GitProtocolWriter on: outputStream.
 		writer 
-			sendWantAll: gitSignatures 
+			writeWantAll: gitSignatures 
 			capabilities: capabilities 
 			shallowLines: nil 
 			depth: nil.

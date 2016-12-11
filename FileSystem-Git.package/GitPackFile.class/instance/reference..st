@@ -1,3 +1,3 @@
-initialize-release
+accessing
 reference: aReference
 	reference := aReference

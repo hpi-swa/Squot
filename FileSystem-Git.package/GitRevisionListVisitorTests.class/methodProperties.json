@@ -7,4 +7,5 @@
 		"testRevListTopoOrder" : "jr 10/23/2016 22:02",
 		"testRevListWithMerge" : "jr 10/23/2016 22:03",
 		"testRevListWithSink" : "jr 10/23/2016 22:05",
+		"testRevWalkingWithMerge" : "jr 12/6/2016 17:49",
 		"testSimpleRevList" : "jr 10/23/2016 01:54" } }

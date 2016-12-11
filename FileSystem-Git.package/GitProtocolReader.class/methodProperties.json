@@ -9,6 +9,7 @@
 		"peekForNAK" : "jr 10/26/2016 15:46",
 		"readContentOfLength:" : "DamienCassou 1/30/2013 16:29",
 		"readLineLength" : "CamilloBruni 2/12/2013 18:08",
+		"readLines" : "jr 12/9/2016 14:59",
 		"readLines:" : "DamienCassou 1/30/2013 17:10",
 		"readLinesUpTo:do:" : "DamienCassou 1/30/2013 17:10",
 		"readPackfile" : "DamienCassou 1/30/2013 16:30",

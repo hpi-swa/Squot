@@ -1,3 +1,3 @@
-initialize-release
+accessing
 repository: anObject
 	repository := anObject

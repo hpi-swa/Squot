@@ -1,5 +1,5 @@
 git protocol clients
-putRefs: aDictionary
+putRefs: aDictionary of: aRepository
 	"git push {aDictionary keys [String]}:{aDictionary values [GitStorableObject]}"
 	"note that pushing via the git:// protocol is typically disallowed for the lack of authentication"
 	| null serverRefsBeforeUpdate |
@@ -11,4 +11,3 @@ putRefs: aDictionary
 		withLineTerminator: false.
 	self flush.
 	serverRefsBeforeUpdate := reader parseReferenceDiscoveryResponse.
-	self halt.

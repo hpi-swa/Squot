@@ -16,4 +16,3 @@ writeUpdateReferences: newRefsDictionary previousReferences: oldRefsDictionary
 				nextPut: Character null;
 				print: GitProtocolCapabilities reportStatus ofsDelta]].
 		self writeCommand: command withLineTerminator: true].
-	self flushPacket.

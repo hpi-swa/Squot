@@ -1,8 +1,9 @@
 ansi gettable
 nextLine
-	| char |
-	^ ByteArray streamContents:
+	| char lineSeparators |
+	lineSeparators := Array with: 10 with: 13 with: Character lf with: Character cr.
+	^ (isBinary ifTrue: ByteArray ifFalse: String) streamContents:
 		[:out |
-		[self atEnd or: [#(13 10) includes: (char := self next)]] whileFalse: [out nextPut: char].
-		(char = 13 and: [self peek = 10]) ifTrue: [position := position + 1]].
+		[self atEnd or: [lineSeparators includes: (char := self next)]] whileFalse: [out nextPut: char].
+		(self atEnd not and: [char asInteger = 13] and: [self peek asInteger = 10]) ifTrue: [position := position + 1]].
 	

@@ -2,9 +2,12 @@
 	"class" : {
 		"onHandle:" : "cwp 7/29/2009 22:30" },
 	"instance" : {
-		"binary" : "jr 10/23/2016 00:29",
+		"ascii" : "jr 12/13/2016 19:13",
+		"binary" : "jr 12/13/2016 19:13",
 		"close" : "cwp 7/29/2009 22:29",
-		"contents" : "cwp 7/29/2009 22:29",
+		"contents" : "jr 12/13/2016 20:00",
+		"converter" : "jr 12/13/2016 19:14",
+		"isBinary" : "jr 12/13/2016 19:35",
 		"isOpen" : "cwp 10/29/2009 09:47",
 		"isRead" : "CamilloBruni 8/14/2011 15:28",
 		"isStream" : "cwp 2/5/2011 22:54",
@@ -12,4 +15,4 @@
 		"open" : "cwp 10/29/2009 09:47",
 		"position" : "Camillobruni 8/18/2011 16:43",
 		"position:" : "Camillobruni 8/18/2011 16:49",
-		"setHandle:" : "cwp 7/29/2009 22:30" } }
+		"setHandle:" : "jr 12/13/2016 19:41" } }

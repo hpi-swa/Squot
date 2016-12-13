@@ -1,8 +1,6 @@
 squeak
 nextInto: aCollection
-	| count |
-	count := handle at: position read: aCollection startingAt: 1 count: aCollection size.
-	position := position + count.
- 	^ count < aCollection size
-		ifTrue: [aCollection first: count]
-		ifFalse: [aCollection]
+	isBinary ifTrue: [^ self basicNextInto: aCollection].
+	position := 1.
+	aCollection size timesRepeat: [aCollection at: position put: (self converter nextFromStream: self).
+		position := position + 1].

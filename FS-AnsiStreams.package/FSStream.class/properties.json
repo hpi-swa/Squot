@@ -7,7 +7,9 @@
 	"commentStamp" : "cwp 11/18/2009 11:34",
 	"instvars" : [
 		"handle",
-		"position" ],
+		"position",
+		"converter",
+		"isBinary" ],
 	"name" : "FSStream",
 	"pools" : [
 		 ],

@@ -1,6 +1,4 @@
 ansi gettable
 next
-	| result |
-	result := handle at: position.
-	position := position + 1.
- 	^ result
+	isBinary ifTrue: [^ self basicNext].
+	^ self converter nextFromStream: self

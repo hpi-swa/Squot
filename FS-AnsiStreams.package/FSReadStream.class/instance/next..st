@@ -1,3 +1,5 @@
 ansi gettable
 next: count
-	^ self nextInto: (ByteArray new: count)
+	isBinary ifTrue: [^ self basicNext: count].
+	^ String streamContents: [:result |
+		count timesRepeat: [result nextPut: (self converter nextFromStream: self)]]

@@ -1,9 +1,7 @@
 ansi gettable
 next: number into: aCollection
-    | count |
-    count := handle at: position read: aCollection startingAt: 1 count: number.
-
-    position := position + count.
-     ^ count < aCollection size
-        ifTrue: [aCollection first: count]
-        ifFalse: [aCollection]
+	| pos |
+	isBinary ifTrue: [^ self basicNext: number into: aCollection].
+	pos := 1.
+	number timesRepeat: [aCollection at: pos put: (self converter nextFromStream: self).
+		position := position + 1]

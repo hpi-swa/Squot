@@ -11,7 +11,6 @@ unpackWithoutIndexFile
 		packedObject class = GitPackedNonDelta 
 			ifTrue: [ packedObject store ]
 			ifFalse: [ self unpackDelta: packedObject ].
-		reader position: reader position + packedObject lengthInPack.
 		
 		count := count - 1 ].
 	self processDeltas

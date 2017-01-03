@@ -1,8 +1,8 @@
 git porcelain
 fetchFrom: aRemoteName
 	| url fetchConfig localRemoteRefPattern packFile protocol remoteRefPattern remoteRefs wantRefs wantSignatures packFileData |
-	url := (repository configAt: 'remotes.', aRemoteName, '.url') asUrl.
-	fetchConfig := repository configAt: 'remotes.', aRemoteName, '.fetch'.
+	url := (repository remoteConfigFor: aRemoteName option: 'url') asUrl.
+	fetchConfig := repository remoteConfigFor: aRemoteName option: 'fetch'.
 	(fetchConfig splitBy: ':') in: [:parts | remoteRefPattern := parts first. localRemoteRefPattern := parts second].
 	remoteRefPattern := remoteRefPattern allButFirst: 1. "+"
 	protocol := GitAbstractProtocol url: url.

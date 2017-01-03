@@ -2,10 +2,11 @@
 	"class" : {
 		"lastStoredRun" : "CamilloBruni 8/1/2011 16:49" },
 	"instance" : {
+		"remoteUrl" : "jr 12/19/2016 10:11",
 		"setUp" : "CamilloBruni 9/3/2012 18:53",
 		"tearDown" : "CamilloBruni 6/22/2011 05:22",
 		"testBranches" : "CamilloBruni 9/3/2012 16:32",
-		"testClone" : "jr 12/15/2016 16:28",
+		"testClone" : "jr 12/19/2016 10:10",
 		"testFullTags" : "MaxLeske 9/4/2012 22:13",
 		"testHead" : "CamilloBruni 9/1/2012 12:39",
 		"testLightTags" : "CamilloBruni 9/2/2012 11:11",

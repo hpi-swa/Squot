@@ -1,6 +1,5 @@
 git protocol clients
-putRefs: aDictionary of: aRepository
-	"git push {aDictionary keys [String]}:{aDictionary values [GitStorableObject]}"
+pushReferences: updateAssociations of: aRepository deleting: deleteAssociations
 	"note that pushing via the git:// protocol is typically disallowed for the lack of authentication"
 	| null serverRefsBeforeUpdate |
 	self openConnection.
@@ -11,3 +10,4 @@ putRefs: aDictionary of: aRepository
 		withLineTerminator: false.
 	self flush.
 	serverRefsBeforeUpdate := reader parseReferenceDiscoveryResponse.
+	self shouldBeImplemented. "prepare and send pack file"

@@ -1,0 +1,16 @@
+{
+	"category" : "FileSystem-Git-Remote",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"unpackStatus",
+		"errors",
+		"successes" ],
+	"name" : "GitReceivePackStatusReport",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }

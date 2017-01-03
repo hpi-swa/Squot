@@ -1,15 +1,16 @@
 private
-invokeReceivePackWithRefs: aDictionary andPack: aPackFile
-	| response contents |
+invokeReceivePackWithRefs: updateAssociations andPack: aPackFile deleting: deleteRefs
+	| response contents responseReader report |
 	contents := ByteArray streamContents: [:stream |
 		writer := GitProtocolWriter on: stream.
-		writer updateRequest: aDictionary
+		writer updateRequest: updateAssociations
+			deleting: deleteRefs
 			previousReferences: refs
 			serverCapabilities: (refs at: #capabilities)
 			pack: aPackFile].
 	response := self client httpPost: (self urlForService: 'git-receive-pack')
 		content: contents type: 'application/x-git-receive-pack-request'.
 	response isSuccess ifFalse: [Error signal: response status].
-	StringHolder new
-		contents: (GitProtocolReader on: response contentStream) readLines;
-		openLabel: 'git push response'.
+	responseReader := GitProtocolReader on: response contentStream.
+	report := responseReader readReceivePackResponse.
+	report hasErrors ifTrue: [self error: 'Not all references could be updated.'].

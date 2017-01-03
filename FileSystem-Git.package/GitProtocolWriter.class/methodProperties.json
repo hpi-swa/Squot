@@ -14,7 +14,7 @@
 		"initialize" : "CamilloBruni 2/12/2013 16:56",
 		"initializeWith:" : "DamienCassou 1/30/2013 17:27",
 		"updateReference:from:to:" : "jr 12/4/2016 17:27",
-		"updateRequest:previousReferences:serverCapabilities:pack:" : "jr 12/11/2016 14:14",
+		"updateRequest:deleting:previousReferences:serverCapabilities:pack:" : "jr 1/2/2017 23:19",
 		"writeCommand:arguments:withLineTerminator:" : "jr 12/2/2016 17:24",
 		"writeCommand:withLineTerminator:" : "jr 12/2/2016 17:24",
 		"writeCreateReference:as:" : "jr 12/3/2016 01:04",
@@ -24,7 +24,7 @@
 		"writePackFile:" : "jr 12/9/2016 17:01",
 		"writeShallowLines:" : "jr 12/3/2016 01:03",
 		"writeUpdateReference:from:to:" : "jr 12/3/2016 01:03",
-		"writeUpdateReferences:previousReferences:" : "jr 12/9/2016 14:37",
+		"writeUpdateReferences:deleteReferences:previousReferences:" : "jr 1/2/2017 23:24",
 		"writeWant:" : "jr 12/2/2016 17:24",
 		"writeWantAll:capabilities:shallowLines:depth:" : "jr 12/2/2016 17:28",
 		"zeroSignature" : "jr 12/2/2016 16:53" } }

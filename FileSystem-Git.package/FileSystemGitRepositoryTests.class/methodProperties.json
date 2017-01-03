@@ -11,6 +11,8 @@
 		"testFullTags" : "MaxLeske 9/4/2012 22:13",
 		"testHead" : "CamilloBruni 9/1/2012 12:39",
 		"testLightTags" : "CamilloBruni 9/2/2012 11:11",
+		"testPush" : "jr 1/3/2017 15:22",
+		"testPushCreateUpdateDelete" : "jr 1/3/2017 15:41",
 		"testRemoveAndCommitting" : "jr 12/15/2016 16:54",
 		"testTags" : "CamilloBruni 9/2/2012 11:12",
 		"testVersions" : "CamilloBruni 9/3/2012 18:32",

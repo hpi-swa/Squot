@@ -11,6 +11,7 @@
 		"testDirDoesntExist" : "MaxLeske 7/23/2010 10:00",
 		"testDirExistsButNotInitialized" : "MaxLeske 7/23/2010 10:02",
 		"testEquals" : "CamilloBruni 8/30/2012 14:09",
+		"testExpandRef" : "jr 1/2/2017 23:08",
 		"testGitInitializeOnReferenceWithSubDirs" : "CamilloBruni 8/30/2012 14:09",
 		"testHeadFile" : "MaxLeske 6/24/2012 10:08",
 		"testInitializeOnDiskFilesystem" : "jr 10/21/2016 10:06",

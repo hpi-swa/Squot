@@ -1,3 +1,3 @@
 public-accessing
 deltaBaseName
-	^ self deltaBase object hexHash
+	^ self deltaBase hexHash

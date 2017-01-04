@@ -1,0 +1,3 @@
+converting
+asHexHash
+	^ self hexHash

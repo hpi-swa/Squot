@@ -5,7 +5,7 @@ writeUpdateReferences: updateAssociations deleteReferences: deleteRefs previousR
 	clientCapabilities := GitProtocolCapabilities reportStatus ofsDelta.
 	first := true.
 	updateAssociations do: [:each | | refname signature command |
-		refname := each key. signature := each value hexHash.
+		refname := each key. signature := each value asHexHash.
 		command := String streamContents: [:cmd |
 			(oldRefsDictionary includesKey: refname)
 				ifTrue: [cmd nextPutAll: (self updateReference: refname

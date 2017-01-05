@@ -1,0 +1,9 @@
+{
+	"class" : {
+		 },
+	"instance" : {
+		"at:write:" : "jr 1/5/2017 14:17",
+		"buildSnapshot" : "jr 1/5/2017 15:15",
+		"root" : "jr 1/5/2017 14:42",
+		"root:" : "jr 1/5/2017 14:44",
+		"startFrom:" : "jr 1/5/2017 14:42" } }

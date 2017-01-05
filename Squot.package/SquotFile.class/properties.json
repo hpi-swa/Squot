@@ -1,0 +1,14 @@
+{
+	"category" : "Squot-Core",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "jr 1/5/2017 00:06",
+	"instvars" : [
+		 ],
+	"name" : "SquotFile",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }

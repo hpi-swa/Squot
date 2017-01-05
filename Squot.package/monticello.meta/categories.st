@@ -1,0 +1,1 @@
+SystemOrganization addCategory: #'Squot-Core'!SystemOrganization addCategory: #'Squot-Serialization'!SystemOrganization addCategory: #'Squot-Tests'!

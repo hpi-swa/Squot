@@ -1,0 +1,14 @@
+{
+	"category" : "Squot-Serialization",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "SquotSmartRefStreamDeserializer",
+	"pools" : [
+		 ],
+	"super" : "SquotDeserializer",
+	"type" : "normal" }

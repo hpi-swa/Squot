@@ -1,0 +1,17 @@
+{
+	"category" : "Squot-Core",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "jr 1/4/2017 17:06",
+	"instvars" : [
+		"objects",
+		"paths",
+		"serializers",
+		"base" ],
+	"name" : "SquotPurStore",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }

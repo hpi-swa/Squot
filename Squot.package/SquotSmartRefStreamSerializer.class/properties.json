@@ -1,0 +1,14 @@
+{
+	"category" : "Squot-Serialization",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "jr 1/5/2017 14:10",
+	"instvars" : [
+		 ],
+	"name" : "SquotSmartRefStreamSerializer",
+	"pools" : [
+		 ],
+	"super" : "SquotSerializer",
+	"type" : "normal" }

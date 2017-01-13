@@ -1,3 +1,3 @@
-delegating
+git
 branchNames
 	^ repository branchNames

@@ -1,3 +1,3 @@
-delegating
+git
 tags
 	^ repository tags

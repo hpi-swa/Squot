@@ -1,3 +1,3 @@
-delegating
+git
 branchName
 	^ store branchName

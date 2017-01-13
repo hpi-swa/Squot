@@ -1,3 +1,3 @@
-delegating
+git
 reset
 	store reset

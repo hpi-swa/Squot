@@ -1,3 +1,3 @@
-delegating
+git
 message
 	^ store message

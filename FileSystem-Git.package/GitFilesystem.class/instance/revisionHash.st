@@ -1,3 +1,3 @@
-delegating
+git
 revisionHash
 	^ store revisionHash

@@ -1,3 +1,3 @@
-delegating
+git
 timeStampOfCommit
 	^ store timeStampOfCommit

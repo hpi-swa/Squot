@@ -1,3 +1,3 @@
-delegating
+git
 tagNames
 	^ repository tagNames

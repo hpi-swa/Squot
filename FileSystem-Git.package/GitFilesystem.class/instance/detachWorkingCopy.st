@@ -1,3 +1,3 @@
-delegating
+git
 detachWorkingCopy
 	store detachWorkingCopy.

@@ -1,3 +1,3 @@
-delegating
+git
 branches
 	^ repository branches

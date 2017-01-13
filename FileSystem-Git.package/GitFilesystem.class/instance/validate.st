@@ -1,3 +1,3 @@
-delegating
+git
 validate
 	^ repository validate

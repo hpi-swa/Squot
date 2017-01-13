@@ -1,3 +1,3 @@
-delegating
+git
 commit: aMessageString
 	^ store commit: aMessageString

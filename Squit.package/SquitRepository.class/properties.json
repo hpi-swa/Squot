@@ -1,0 +1,14 @@
+{
+	"category" : "Squit-Core",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"gitRepository" ],
+	"name" : "SquitRepository",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }

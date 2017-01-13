@@ -1,0 +1,9 @@
+{
+	"class" : {
+		 },
+	"instance" : {
+		"setUp" : "jr 1/11/2017 18:33",
+		"tearDown" : "jr 1/11/2017 18:32",
+		"testCreateCommit" : "jr 1/12/2017 14:42",
+		"testGetMasterSnapshot" : "jr 1/11/2017 18:29",
+		"testInstantiation" : "jr 1/11/2017 17:50" } }

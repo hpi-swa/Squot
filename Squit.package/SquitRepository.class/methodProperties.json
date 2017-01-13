@@ -1,0 +1,11 @@
+{
+	"class" : {
+		"on:" : "jr 1/11/2017 16:37" },
+	"instance" : {
+		"delete:" : "jr 1/11/2017 16:35",
+		"gitRepository" : "jr 1/11/2017 18:14",
+		"historianNamed:" : "jr 1/11/2017 18:09",
+		"historians" : "jr 1/11/2017 16:35",
+		"initializeWith:" : "jr 1/11/2017 17:40",
+		"newHistorian:version:" : "jr 1/11/2017 16:35",
+		"versionForCommit:" : "jr 1/11/2017 18:13" } }

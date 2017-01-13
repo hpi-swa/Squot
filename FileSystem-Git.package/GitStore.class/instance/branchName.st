@@ -1,4 +1,7 @@
 git-delegating
 branchName
-	self flag: 'this might be conceptually wrong'.
-	^ repository activeBranchName
+	| fullRef |
+	fullRef := revision
+		ifNil: [repository followSymbolicRef: repository headFile]
+		ifNotNil: [repository refTo: revision].
+	^ repository nameOf: fullRef in: 'refs/heads/'

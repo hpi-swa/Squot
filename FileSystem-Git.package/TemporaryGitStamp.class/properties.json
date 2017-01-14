@@ -4,11 +4,12 @@
 		 ],
 	"classvars" : [
 		 ],
-	"commentStamp" : "",
+	"commentStamp" : "jr 1/14/2017 00:51",
 	"instvars" : [
-		"temporaryGitStamp" ],
-	"name" : "GitTestCase",
+		"oldName",
+		"oldEmail" ],
+	"name" : "TemporaryGitStamp",
 	"pools" : [
 		 ],
-	"super" : "TestCase",
+	"super" : "GitStamp",
 	"type" : "normal" }

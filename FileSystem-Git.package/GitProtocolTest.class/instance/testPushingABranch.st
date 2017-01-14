@@ -8,8 +8,7 @@ testPushingABranch
 	workingCopy / 'aFile' writeStreamDo: [:stream | stream nextPutAll: 'new file'].
 	randomName := String streamContents: [:str |
 		32 timesRepeat: [str nextPut: '0123456789abcdef' atRandom]].
-	GitStamp ensureDefaultValues.
-	modifiedDefaultStamp := true.
+	temporaryGitStamp := TemporaryGitStamp ensureDefaultValues.
 	workingCopy branch: randomName message: 'testPushingBranch commit'.
 	fullRefName := 'refs/heads/', randomName.
 	"push that branch to the test repository"

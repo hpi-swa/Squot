@@ -2,7 +2,7 @@
 	"class" : {
 		"lastStoredRun" : "CamilloBruni 8/1/2011 16:49" },
 	"instance" : {
-		"setUp" : "CamilloBruni 8/30/2012 14:09",
+		"setUp" : "jr 1/14/2017 01:17",
 		"testLessThanOrEqual" : "MaxLeske 9/3/2012 21:07",
 		"testLoadingHash" : "MaxLeske 9/3/2012 21:07",
 		"testPrintMode" : "MaxLeske 7/10/2010 11:18",

@@ -1,6 +1,7 @@
 running
 setUp
 	| packsDir |
+	super setUp.
 	filesystem := FileSystem memory.
 	repository := GitRepository on: (filesystem root / 'repo').
 	repository  headFile writeStreamDo: [ :stream | 

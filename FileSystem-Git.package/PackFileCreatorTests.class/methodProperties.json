@@ -2,7 +2,7 @@
 	"class" : {
 		 },
 	"instance" : {
-		"setUp" : "MaxLeske 9/8/2012 21:14",
+		"setUp" : "jr 1/14/2017 01:17",
 		"testFanoutByte0" : "MaxLeske 9/2/2012 10:40",
 		"testFanoutByte255" : "MaxLeske 9/2/2012 10:49",
 		"testFanoutOffsets" : "MaxLeske 9/2/2012 10:49",

@@ -1,0 +1,3 @@
+tests
+expectedFailures
+	^ Array new

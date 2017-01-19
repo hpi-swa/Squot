@@ -3,6 +3,7 @@
 		"filesystem:path:creation:modification:isDir:size:" : "StephaneDucasse 1/27/2011 22:22",
 		"reference:creation:modification:isDir:size:" : "StephaneDucasse 1/27/2011 22:19" },
 	"instance" : {
+		"asFileReference" : "jr 1/18/2017 17:28",
 		"asReference" : "CamilloBruni 8/12/2011 20:58",
 		"basename" : "StephaneDucasse 2/15/2010 17:59",
 		"creation" : "StephaneDucasse 1/27/2011 22:14",

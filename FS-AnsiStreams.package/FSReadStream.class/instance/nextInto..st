@@ -1,6 +1,10 @@
 squeak
 nextInto: aCollection
+	| positionInCollection |
 	isBinary ifTrue: [^ self basicNextInto: aCollection].
-	position := 1.
-	aCollection size timesRepeat: [aCollection at: position put: (self converter nextFromStream: self).
-		position := position + 1].
+	positionInCollection := 1.
+	(aCollection size min: handle size - position + 1) timesRepeat: [aCollection at: positionInCollection put: (self converter nextFromStream: self).
+		positionInCollection := positionInCollection + 1].
+	^ positionInCollection - 1 = aCollection size
+		ifTrue: [aCollection]
+		ifFalse: [aCollection copyFrom: 1 to: positionInCollection - 1]

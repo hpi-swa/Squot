@@ -7,12 +7,15 @@
 		"close" : "cwp 7/29/2009 22:29",
 		"contents" : "jr 12/13/2016 20:00",
 		"converter" : "jr 12/13/2016 19:14",
+		"converter:" : "jr 1/18/2017 18:17",
 		"isBinary" : "jr 12/13/2016 19:35",
 		"isOpen" : "cwp 10/29/2009 09:47",
 		"isRead" : "CamilloBruni 8/14/2011 15:28",
 		"isStream" : "cwp 2/5/2011 22:54",
+		"isText" : "jr 1/18/2017 18:20",
 		"isWrite" : "CamilloBruni 8/14/2011 15:28",
 		"open" : "cwp 10/29/2009 09:47",
 		"position" : "Camillobruni 8/18/2011 16:43",
 		"position:" : "Camillobruni 8/18/2011 16:49",
-		"setHandle:" : "jr 12/13/2016 19:41" } }
+		"setHandle:" : "jr 12/13/2016 19:41",
+		"text" : "jr 1/18/2017 18:20" } }

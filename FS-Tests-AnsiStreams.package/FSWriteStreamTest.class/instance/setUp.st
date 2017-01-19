@@ -1,4 +1,5 @@
 running
 setUp
 	filesystem := FSFilesystem memory.
-	stream := filesystem writeStreamOn: 'giffle'
+	stream := filesystem writeStreamOn: 'giffle'.
+	stream binary.

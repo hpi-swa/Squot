@@ -2,7 +2,7 @@
 	"class" : {
 		 },
 	"instance" : {
-		"contents:" : "cwp 7/29/2009 22:43",
+		"contents:" : "jr 1/19/2017 16:58",
 		"setUp" : "CamilloBruni 8/12/2011 15:08",
 		"testAtEnd" : "cwp 7/29/2009 22:38",
 		"testDo" : "cwp 7/29/2009 22:57",
@@ -14,7 +14,7 @@
 		"testNextLineLF" : "cwp 7/29/2009 23:31",
 		"testNextMatchFalse" : "cwp 7/30/2009 23:04",
 		"testNextMatchTrue" : "cwp 7/30/2009 23:01",
-		"testNextPutAllThenNextPut" : "MarianoMartinezPeck 1/9/2012 18:07",
+		"testNextPutAllThenNextPut" : "jr 1/19/2017 17:00",
 		"testNotAtEnd" : "cwp 7/29/2009 22:46",
 		"testPeek" : "cwp 7/30/2009 23:05",
 		"testPeekForFalse" : "cwp 7/30/2009 23:06",

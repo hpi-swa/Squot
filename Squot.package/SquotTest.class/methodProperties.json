@@ -2,4 +2,9 @@
 	"class" : {
 		 },
 	"instance" : {
-		"testSnapshotAndRestoreText" : "jr 1/5/2017 14:30" } }
+		"setUp" : "jr 1/20/2017 16:58",
+		"snapshotClass:at:" : "jr 1/24/2017 14:05",
+		"tearDown" : "jr 1/24/2017 13:19",
+		"testRestoreClass" : "jr 1/24/2017 14:05",
+		"testSnapshotAndRestoreText" : "jr 1/5/2017 14:30",
+		"testSnapshotClass" : "jr 1/24/2017 14:06" } }

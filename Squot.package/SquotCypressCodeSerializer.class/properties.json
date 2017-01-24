@@ -1,0 +1,17 @@
+{
+	"category" : "Squot-Serialization-Cypress",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "jr 1/17/2017 14:21",
+	"instvars" : [
+		"definitions",
+		"fileTreeWriter",
+		"cypressWriter",
+		"currentDirectory" ],
+	"name" : "SquotCypressCodeSerializer",
+	"pools" : [
+		 ],
+	"super" : "SquotSerializer",
+	"type" : "normal" }

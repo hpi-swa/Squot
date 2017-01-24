@@ -1,0 +1,11 @@
+{
+	"class" : {
+		"on:" : "jr 1/17/2017 16:43" },
+	"instance" : {
+		"/" : "jr 1/17/2017 16:42",
+		"directory" : "jr 1/17/2017 16:42",
+		"initializeWith:" : "jr 1/17/2017 16:42",
+		"objectReferencesDo:" : "jr 1/18/2017 12:58",
+		"pathOf:" : "jr 1/17/2017 16:58",
+		"resolve:" : "jr 1/17/2017 16:46",
+		"tableOfContents" : "jr 1/17/2017 17:15" } }

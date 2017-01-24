@@ -1,3 +1,3 @@
 accessing
 baseSnapshot
-	^ base ifNil: [FSFilesystem memory root]
+	^ base ifNil: [SquotSnapshot on: FSFilesystem memory root]

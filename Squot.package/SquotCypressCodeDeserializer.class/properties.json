@@ -1,0 +1,14 @@
+{
+	"category" : "Squot-Serialization-Cypress",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"fileUtils" ],
+	"name" : "SquotCypressCodeDeserializer",
+	"pools" : [
+		 ],
+	"super" : "SquotDeserializer",
+	"type" : "normal" }

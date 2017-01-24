@@ -1,0 +1,11 @@
+{
+	"class" : {
+		"forObjectAt:" : "jr 1/20/2017 17:04",
+		"on:" : "jr 1/18/2017 16:01" },
+	"instance" : {
+		"fileContents" : "jr 1/18/2017 16:00",
+		"initializeWith:" : "jr 1/18/2017 16:01",
+		"metadataFile" : "jr 1/18/2017 16:00",
+		"objectClassName" : "jr 1/18/2017 16:00",
+		"serializerName" : "jr 1/18/2017 16:02",
+		"writeClassName:serializerName:" : "jr 1/18/2017 16:05" } }

@@ -6,7 +6,10 @@
 		 ],
 	"commentStamp" : "jr 1/5/2017 14:20",
 	"instvars" : [
-		 ],
+		"class",
+		"store",
+		"createdClasses",
+		"createdEnvironments" ],
 	"name" : "SquotTest",
 	"pools" : [
 		 ],

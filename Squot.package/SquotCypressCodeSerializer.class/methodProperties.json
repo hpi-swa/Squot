@@ -1,0 +1,11 @@
+{
+	"class" : {
+		 },
+	"instance" : {
+		"directory" : "jr 1/17/2017 14:24",
+		"initialize" : "jr 1/17/2017 15:12",
+		"propertyFileExtension" : "jr 1/17/2017 15:19",
+		"version" : "jr 1/15/2017 19:07",
+		"write:at:" : "jr 1/17/2017 15:12",
+		"writeClass:at:" : "jr 1/19/2017 17:47",
+		"writePackage:at:" : "jr 1/24/2017 14:20" } }

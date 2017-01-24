@@ -1,3 +1,3 @@
 initialize-release
 startFrom: aSnapshot
-	self root: aSnapshot.
+	self root: aSnapshot directory.

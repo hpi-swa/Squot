@@ -3,13 +3,15 @@
 	"classinstvars" : [
 		 ],
 	"classvars" : [
-		 ],
+		"DefaultDeserializerRegistry" ],
 	"commentStamp" : "jr 1/4/2017 17:06",
 	"instvars" : [
 		"objects",
 		"paths",
 		"serializers",
-		"base" ],
+		"base",
+		"environment",
+		"deserializers" ],
 	"name" : "SquotPurStore",
 	"pools" : [
 		 ],

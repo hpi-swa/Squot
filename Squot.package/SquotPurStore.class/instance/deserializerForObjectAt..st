@@ -1,4 +1,6 @@
 private
 deserializerForObjectAt: aFSReference
-	self flag: #stub.
-	^ SquotSmartRefStreamDeserializer new
+	| serializerName deserializer |
+	serializerName := (self metadataForObjectAt: aFSReference) serializerName.
+	deserializer := self deserializers detect: [:each | each canReadObjectSerializedBy: serializerName].
+	^ deserializer new

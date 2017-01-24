@@ -1,0 +1,3 @@
+MCRepository
+propertyFileExtension
+	^ '.json'

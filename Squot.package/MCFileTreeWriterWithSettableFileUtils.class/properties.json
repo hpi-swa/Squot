@@ -1,0 +1,14 @@
+{
+	"category" : "Squot-Serialization-Cypress",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "jr 1/17/2017 13:43",
+	"instvars" : [
+		"fileUtils" ],
+	"name" : "MCFileTreeWriterWithSettableFileUtils",
+	"pools" : [
+		 ],
+	"super" : "MCFileTreeWriter",
+	"type" : "normal" }

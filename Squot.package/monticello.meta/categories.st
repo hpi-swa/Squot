@@ -1,1 +1,1 @@
-SystemOrganization addCategory: #'Squot-Core'!SystemOrganization addCategory: #'Squot-Serialization'!SystemOrganization addCategory: #'Squot-Tests'!
+SystemOrganization addCategory: #'Squot-Core'!SystemOrganization addCategory: #'Squot-Serialization'!SystemOrganization addCategory: #'Squot-Serialization-Cypress'!SystemOrganization addCategory: #'Squot-Tests'!

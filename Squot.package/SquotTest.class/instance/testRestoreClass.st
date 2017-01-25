@@ -4,11 +4,8 @@ testRestoreClass
 	snapshot := self snapshotClass: (storedClass := self class) at: 'test.class'.
 	self flag: #metamodel.
 	targetStore := SquotPurStore new.
-	targetStore environment: (environment := Environment withName: thisContext printString).
-	createdEnvironments add: environment.
-	environment import: self class environment.
-	environment importSelf.
+	targetStore environment: (environment := self createTestEnvironment).
 	targetStore restoreToSnapshot: snapshot.
-	self shouldnt: [restoredClass := environment at: storedClass name] raise: KeyNotFound.
-	self assert: (restoredClass isKindOf: Class).
-	createdClasses add: restoredClass.
+	self assert: ((restoredClass := targetStore objectAt: 'test.class') isKindOf: Class).
+	self assert: restoredClass
+		equals: (self shouldnt: [environment at: storedClass name] raise: KeyNotFound).

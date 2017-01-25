@@ -1,0 +1,3 @@
+*squot-serializing
+squotPreferredSerializer
+	^ SquotCypressCodeSerializer

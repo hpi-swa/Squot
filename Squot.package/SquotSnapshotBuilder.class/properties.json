@@ -4,7 +4,7 @@
 		 ],
 	"classvars" : [
 		 ],
-	"commentStamp" : "",
+	"commentStamp" : "jr 1/25/2017 15:54",
 	"instvars" : [
 		"root" ],
 	"name" : "SquotSnapshotBuilder",

@@ -1,4 +1,4 @@
-tests
+utilities
 snapshotClass: aClass at: pathString
 	class := aClass.
 	store := SquotPurStore new.

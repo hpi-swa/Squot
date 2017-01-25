@@ -12,4 +12,5 @@ testSnapshotClass
 	self assert: (classDirectory / 'properties.json') isFile.
 	self assert: (classDirectory / 'instance') isDirectory.
 	self assert: (classDirectory / 'instance' / (testSelector, '.st')) isFile.
-	self assert: (snapshot / 'src' / '.squot-contents') isFile.
+	self assert: (snapshot tableOfContents includesKey: ((classDirectory relativeTo: snapshot directory) printWithDelimiter: $/)).
+	self assert: (classDirectory / '.squot-contents') isFile.

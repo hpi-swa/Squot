@@ -1,11 +1,16 @@
 {
 	"class" : {
-		 },
+		"addClassDirectoryForClass:to:" : "jr 1/25/2017 17:37",
+		"addPackageAndClassDirectoryForClass:to:" : "jr 1/25/2017 17:55",
+		"addPackageDirectoryForPackage:to:" : "jr 1/25/2017 18:05",
+		"rewritePath:for:" : "jr 1/25/2017 17:23",
+		"rewritePath:ofClass:" : "jr 1/25/2017 17:57",
+		"rewritePath:ofPackage:" : "jr 1/25/2017 18:05" },
 	"instance" : {
 		"directory" : "jr 1/17/2017 14:24",
 		"initialize" : "jr 1/17/2017 15:12",
 		"propertyFileExtension" : "jr 1/17/2017 15:19",
 		"version" : "jr 1/15/2017 19:07",
 		"write:at:" : "jr 1/17/2017 15:12",
-		"writeClass:at:" : "jr 1/19/2017 17:47",
-		"writePackage:at:" : "jr 1/24/2017 14:20" } }
+		"writeClass:at:" : "jr 1/25/2017 18:01",
+		"writePackage:at:" : "jr 1/25/2017 18:13" } }

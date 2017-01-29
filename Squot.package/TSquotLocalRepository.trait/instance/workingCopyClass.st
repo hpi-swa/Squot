@@ -1,0 +1,3 @@
+Squot repository
+workingCopyClass
+	^ SquotWorkingCopy

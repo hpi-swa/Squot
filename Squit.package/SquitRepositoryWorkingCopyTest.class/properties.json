@@ -1,0 +1,14 @@
+{
+	"category" : "Squit-Tests",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "SquitRepositoryWorkingCopyTest",
+	"pools" : [
+		 ],
+	"super" : "SquotWorkingCopyTest",
+	"type" : "normal" }

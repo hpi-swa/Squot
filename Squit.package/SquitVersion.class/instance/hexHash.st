@@ -1,0 +1,3 @@
+Git
+hexHash
+	^ commit hexHash

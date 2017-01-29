@@ -3,10 +3,12 @@
 		 },
 	"instance" : {
 		"gitRepository:" : "jr 1/11/2017 18:05",
+		"headHash" : "jr 1/29/2017 22:37",
 		"initializeWith:" : "jr 1/11/2017 18:03",
 		"name" : "jr 1/11/2017 16:50",
 		"name:" : "jr 1/11/2017 17:49",
-		"newVersion:message:" : "jr 1/12/2017 14:39",
+		"newVersion:message:" : "jr 1/29/2017 22:57",
+		"newWorkingDirectory" : "jr 1/29/2017 22:57",
 		"repository" : "jr 1/11/2017 16:50",
 		"repository:" : "jr 1/11/2017 17:48",
 		"version" : "jr 1/11/2017 18:10",

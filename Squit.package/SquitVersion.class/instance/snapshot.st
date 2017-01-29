@@ -1,5 +1,7 @@
 Pur version
 snapshot
 	"returns a snapshot"
-	self flag: #metamodel.
-	^ repository gitRepository filesystemOn: commit
+	| fs |
+	fs := repository workingTreeForCommitNamed: commit hexHash.
+	^ (SquotFileSystemStore inDirectory: fs root)
+		captureSnapshot

@@ -1,0 +1,3 @@
+Squit internal
+orphanedWorkingDirectory
+	^ gitRepository orphanedHead

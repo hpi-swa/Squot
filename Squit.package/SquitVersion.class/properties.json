@@ -4,7 +4,7 @@
 		 ],
 	"classvars" : [
 		 ],
-	"commentStamp" : "",
+	"commentStamp" : "jr 1/26/2017 14:32",
 	"instvars" : [
 		"repository",
 		"commit" ],

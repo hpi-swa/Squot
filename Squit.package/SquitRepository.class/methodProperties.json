@@ -4,13 +4,16 @@
 	"instance" : {
 		"defaultHistorian" : "jr 1/26/2017 17:48",
 		"delete:" : "jr 1/11/2017 16:35",
+		"exportVersionAt:to:" : "jr 1/26/2017 14:03",
 		"gitRepository" : "jr 1/11/2017 18:14",
 		"historianNamed:" : "jr 1/11/2017 18:09",
 		"historians" : "jr 1/11/2017 16:35",
+		"importVersionAt:from:" : "jr 1/26/2017 14:03",
 		"initializeGitRepositoryIn:" : "jr 1/26/2017 12:28",
 		"initializeInDirectory:" : "jr 1/26/2017 17:35",
 		"initializeWith:" : "jr 1/11/2017 17:40",
 		"newHistorian:version:" : "jr 1/11/2017 16:35",
 		"orphanedWorkingDirectory" : "jr 1/29/2017 22:57",
+		"versionAt:" : "jr 1/26/2017 14:01",
 		"versionForCommit:" : "jr 1/11/2017 18:13",
 		"workingTreeForCommitNamed:" : "jr 1/29/2017 22:37" } }

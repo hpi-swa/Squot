@@ -1,3 +1,3 @@
 Pur historian
 version: aVersion
-	self shouldBeImplemented
+	gitRepository updateRef: referenceName to: aVersion hexHash.

@@ -1,0 +1,18 @@
+{
+	"class" : {
+		"isAbstract" : "jr 1/26/2017 17:27" },
+	"instance" : {
+		"createTestEnvironment" : "jr 1/26/2017 14:56",
+		"nameForTestEnvironment" : "jr 1/26/2017 14:56",
+		"newRepository" : "jr 1/26/2017 17:15",
+		"newStore" : "jr 1/29/2017 22:20",
+		"newWorkingCopy" : "jr 1/26/2017 17:05",
+		"repositoryRootDirectory" : "jr 1/26/2017 17:17",
+		"setUp" : "jr 1/26/2017 17:23",
+		"targetClass" : "jr 1/26/2017 17:21",
+		"tearDown" : "jr 1/29/2017 22:21",
+		"testRestoreClass" : "jr 1/26/2017 16:25",
+		"testRestorePackage" : "jr 1/26/2017 16:23",
+		"testTrackingAClass" : "jr 1/26/2017 15:51",
+		"testTrackingAPackage" : "jr 1/26/2017 15:49",
+		"testTrackingText" : "jr 1/26/2017 16:03" } }

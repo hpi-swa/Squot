@@ -1,0 +1,15 @@
+{
+	"class" : {
+		 },
+	"instance" : {
+		"add:at:" : "jr 1/26/2017 17:40",
+		"baseVersion" : "jr 1/26/2017 15:35",
+		"loadVersion:interactive:" : "jr 1/29/2017 23:12",
+		"loadedHistorian" : "jr 1/26/2017 14:48",
+		"loadedHistorian:" : "jr 1/26/2017 14:48",
+		"repository" : "jr 1/26/2017 14:48",
+		"repository:" : "jr 1/26/2017 14:48",
+		"saveNewVersionMessage:interactive:" : "jr 1/26/2017 17:46",
+		"store" : "jr 1/26/2017 14:48",
+		"store:" : "jr 1/26/2017 14:48",
+		"unload" : "jr 1/26/2017 17:38" } }

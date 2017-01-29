@@ -1,0 +1,16 @@
+{
+	"category" : "Squot-Core",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "jr 1/26/2017 14:45",
+	"instvars" : [
+		"store",
+		"repository",
+		"loadedHistorian" ],
+	"name" : "SquotWorkingCopy",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }

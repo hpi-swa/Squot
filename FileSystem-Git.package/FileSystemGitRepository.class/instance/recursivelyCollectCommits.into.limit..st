@@ -1,4 +1,4 @@
-private
+private to be removed
 recursivelyCollectCommits: aCommit into: aCollection limit: anInteger
 	anInteger notNil & anInteger = 0 ifTrue: [ ^ self ].
 	

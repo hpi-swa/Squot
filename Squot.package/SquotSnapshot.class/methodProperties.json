@@ -1,11 +1,13 @@
 {
 	"class" : {
-		"on:" : "jr 1/17/2017 16:43" },
+		"builder" : "jr 1/27/2017 15:21",
+		"with:" : "jr 1/27/2017 15:22" },
 	"instance" : {
-		"/" : "jr 1/17/2017 16:42",
-		"directory" : "jr 1/17/2017 16:42",
-		"initializeWith:" : "jr 1/17/2017 16:42",
-		"objectReferencesDo:" : "jr 1/18/2017 12:58",
-		"pathOf:" : "jr 1/17/2017 16:58",
-		"resolve:" : "jr 1/17/2017 16:46",
-		"tableOfContents" : "jr 1/17/2017 17:15" } }
+		"artifactAt:" : "jr 1/29/2017 21:35",
+		"artifactsDo:" : "jr 1/27/2017 15:16",
+		"initialize" : "jr 1/27/2017 15:18",
+		"initializeWith:" : "jr 1/27/2017 15:20",
+		"pathOf:" : "jr 1/27/2017 15:14",
+		"resolve:" : "jr 1/27/2017 15:11",
+		"resolvePath:" : "jr 1/27/2017 15:12",
+		"resolveString:" : "jr 1/27/2017 15:11" } }

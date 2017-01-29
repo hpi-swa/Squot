@@ -1,3 +1,3 @@
-as yet unclassified
-pathOf: aReference
-	^ (aReference relativeTo: directory) printWithDelimiter: $/
+accessing
+pathOf: anArtifact
+	^ anArtifact path

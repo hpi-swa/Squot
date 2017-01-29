@@ -1,0 +1,19 @@
+{
+	"category" : "Squot-FileSystemStore",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		"DefaultDeserializerRegistry" ],
+	"commentStamp" : "jr 1/27/2017 14:35",
+	"instvars" : [
+		"objects",
+		"paths",
+		"serializers",
+		"base",
+		"deserializers",
+		"directory" ],
+	"name" : "SquotFileSystemStore",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }

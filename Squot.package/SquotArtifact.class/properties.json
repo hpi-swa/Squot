@@ -1,0 +1,16 @@
+{
+	"category" : "Squot-Core",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "jr 1/27/2017 15:05",
+	"instvars" : [
+		"content",
+		"path",
+		"storeInfo" ],
+	"name" : "SquotArtifact",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }

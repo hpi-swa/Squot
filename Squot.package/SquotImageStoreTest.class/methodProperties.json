@@ -1,0 +1,13 @@
+{
+	"class" : {
+		 },
+	"instance" : {
+		"createTestEnvironment" : "jr 1/27/2017 16:08",
+		"nameForTestEnvironment" : "jr 1/27/2017 16:02",
+		"setUp" : "jr 1/27/2017 16:08",
+		"snapshotClass:at:" : "jr 1/27/2017 16:10",
+		"snapshotPackage:at:" : "jr 1/27/2017 16:10",
+		"tearDown" : "jr 1/27/2017 16:03",
+		"testRestoreClass" : "jr 1/27/2017 16:11",
+		"testRestorePackage" : "jr 1/27/2017 16:15",
+		"testSnapshotAndRestoreText" : "jr 1/27/2017 16:04" } }

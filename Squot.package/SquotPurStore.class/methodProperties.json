@@ -4,10 +4,10 @@
 		"initialize" : "jr 1/18/2017 16:20",
 		"removeDeserializerFactory:" : "jr 1/18/2017 16:18" },
 	"instance" : {
-		"add:at:" : "jr 1/5/2017 14:35",
+		"add:at:" : "jr 1/27/2017 16:59",
 		"add:at:using:" : "jr 1/25/2017 18:30",
 		"assume:toBeStoredAt:" : "jr 1/4/2017 17:32",
-		"baseSnapshot" : "jr 1/17/2017 16:47",
+		"baseSnapshot" : "jr 1/26/2017 17:58",
 		"captureSnapshot" : "jr 1/17/2017 17:11",
 		"deserializerForObjectAt:" : "jr 1/18/2017 16:35",
 		"deserializers" : "jr 1/18/2017 16:24",

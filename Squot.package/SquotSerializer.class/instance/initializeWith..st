@@ -1,3 +1,3 @@
 initialize-release
-initializeWith: aSnapshotBuilder
-	snapshotBuilder := aSnapshotBuilder.
+initializeWith: aFileReference
+	rootDirectory := aFileReference.

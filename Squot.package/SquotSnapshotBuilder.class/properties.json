@@ -1,12 +1,12 @@
 {
-	"category" : "Squot-Core",
+	"category" : "Squot-Internal",
 	"classinstvars" : [
 		 ],
 	"classvars" : [
 		 ],
 	"commentStamp" : "jr 1/25/2017 15:54",
 	"instvars" : [
-		"root" ],
+		"artifacts" ],
 	"name" : "SquotSnapshotBuilder",
 	"pools" : [
 		 ],

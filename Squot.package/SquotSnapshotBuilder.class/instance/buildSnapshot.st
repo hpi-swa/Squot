@@ -1,3 +1,3 @@
 snapshot
 buildSnapshot
-	^ SquotSnapshot on: root
+	^ SquotSnapshot with: artifacts

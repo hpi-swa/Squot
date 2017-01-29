@@ -1,0 +1,27 @@
+{
+	"class" : {
+		"addDeserializerFactory:" : "jr 1/27/2017 14:33",
+		"inDirectory:" : "jr 1/29/2017 22:41",
+		"initialize" : "jr 1/27/2017 14:33",
+		"removeDeserializerFactory:" : "jr 1/27/2017 14:33" },
+	"instance" : {
+		"/" : "jr 1/27/2017 15:07",
+		"artifactReferencesDo:" : "jr 1/29/2017 21:57",
+		"artifactsDo:" : "jr 1/29/2017 21:42",
+		"captureSnapshot" : "jr 1/29/2017 22:07",
+		"deserializers" : "jr 1/27/2017 14:33",
+		"directory" : "jr 1/27/2017 15:07",
+		"generateTableOfContentsFor:in:" : "jr 1/29/2017 21:25",
+		"initialize" : "jr 1/27/2017 14:41",
+		"initializeWith:" : "jr 1/27/2017 15:07",
+		"metadataFor:" : "jr 1/29/2017 21:19",
+		"metadataForObjectAt:" : "jr 1/27/2017 14:33",
+		"pathOf:" : "jr 1/27/2017 15:07",
+		"resolve:" : "jr 1/27/2017 15:07",
+		"restoreArtifactFrom:" : "jr 1/29/2017 22:09",
+		"restoreToSnapshot:" : "jr 1/29/2017 21:21",
+		"serializerFactoryFor:" : "jr 1/29/2017 21:45",
+		"serializerOfObjectAt:" : "jr 1/27/2017 14:33",
+		"store:" : "jr 1/29/2017 21:26",
+		"storeSquotMetadataFor:" : "jr 1/29/2017 21:31",
+		"tableOfContents" : "jr 1/27/2017 15:07" } }

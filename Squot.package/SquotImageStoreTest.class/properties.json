@@ -1,0 +1,17 @@
+{
+	"category" : "Squot-Tests",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "jr 1/27/2017 16:13",
+	"instvars" : [
+		"class",
+		"imageStore",
+		"createdClasses",
+		"testEnvironment" ],
+	"name" : "SquotImageStoreTest",
+	"pools" : [
+		 ],
+	"super" : "TestCase",
+	"type" : "normal" }

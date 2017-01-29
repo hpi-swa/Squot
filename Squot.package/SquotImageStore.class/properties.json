@@ -1,0 +1,20 @@
+{
+	"category" : "Squot-Core",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		"DefaultDeserializerRegistry" ],
+	"commentStamp" : "jr 1/27/2017 14:37",
+	"instvars" : [
+		"objects",
+		"paths",
+		"serializers",
+		"base",
+		"environment",
+		"deserializers",
+		"additionalInfo" ],
+	"name" : "SquotImageStore",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }

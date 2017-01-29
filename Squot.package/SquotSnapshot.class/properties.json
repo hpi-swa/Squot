@@ -4,9 +4,9 @@
 		 ],
 	"classvars" : [
 		 ],
-	"commentStamp" : "",
+	"commentStamp" : "jr 1/27/2017 15:28",
 	"instvars" : [
-		"directory" ],
+		"artifacts" ],
 	"name" : "SquotSnapshot",
 	"pools" : [
 		 ],

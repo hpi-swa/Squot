@@ -1,3 +1,4 @@
 initialize-release
-initializeWith: aDirectoryReference
-	directory := aDirectoryReference.
+initializeWith: aCollectionOfArtifacts
+	self initialize.
+	aCollectionOfArtifacts do: [:each | artifacts at: each path put: each].

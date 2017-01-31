@@ -1,3 +1,0 @@
-initialize-release
-initializeWith: anFSReference
-	self shouldBeImplemented

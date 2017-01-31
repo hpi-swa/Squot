@@ -1,0 +1,13 @@
+{
+	"class" : {
+		"on:ignoring:addingTo:" : "jr 1/31/2017 11:46" },
+	"instance" : {
+		"fileStore" : "jr 1/31/2017 11:46",
+		"fileStore:" : "jr 1/31/2017 11:46",
+		"ignoredPaths" : "jr 1/31/2017 11:46",
+		"ignoredPaths:" : "jr 1/31/2017 12:04",
+		"snapshotBuilder" : "jr 1/31/2017 11:46",
+		"snapshotBuilder:" : "jr 1/31/2017 11:46",
+		"visit:" : "jr 1/31/2017 11:49",
+		"visitDirectory:" : "jr 1/31/2017 12:02",
+		"visitFile:" : "jr 1/31/2017 11:59" } }

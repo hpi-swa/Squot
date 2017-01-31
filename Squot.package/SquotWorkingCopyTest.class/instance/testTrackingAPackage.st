@@ -3,7 +3,7 @@ testTrackingAPackage
 	| sampleClass packageInfo anotherClass versionBeforeSave latestVersion |
 	sampleClass := classFactory newClass.
 	sampleClass compile: 'firstMethod ^ self' classified: 'methods of first version'.
-	packageInfo := sampleClass package.
+	packageInfo := PackageInfo named: classFactory packageName.
 	workingCopy add: packageInfo at: 'src'.
 	versionBeforeSave := workingCopy loadedHistorian version.
 	

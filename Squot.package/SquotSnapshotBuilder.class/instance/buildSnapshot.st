@@ -1,3 +1,3 @@
 snapshot
 buildSnapshot
-	^ SquotSnapshot with: artifacts
+	^ SquotSnapshot new artifacts: artifacts; yourself

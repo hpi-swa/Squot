@@ -1,3 +1,3 @@
 adding
 addAll: aCollectionOfArtifacts
-	artifacts addAll: aCollectionOfArtifacts.
+	aCollectionOfArtifacts do: [:each | self add: each].

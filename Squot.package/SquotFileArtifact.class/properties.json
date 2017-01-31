@@ -1,0 +1,14 @@
+{
+	"category" : "Squot-FileSystemStore",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "jr 1/31/2017 14:08",
+	"instvars" : [
+		"fileReference" ],
+	"name" : "SquotFileArtifact",
+	"pools" : [
+		 ],
+	"super" : "SquotArtifact",
+	"type" : "normal" }

@@ -4,7 +4,7 @@
 		 ],
 	"classvars" : [
 		 ],
-	"commentStamp" : "jr 1/25/2017 15:54",
+	"commentStamp" : "jr 1/31/2017 11:32",
 	"instvars" : [
 		"artifacts" ],
 	"name" : "SquotSnapshotBuilder",

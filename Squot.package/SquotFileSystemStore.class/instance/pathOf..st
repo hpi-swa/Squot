@@ -1,3 +1,3 @@
-as yet unclassified
+accessing
 pathOf: aReference
 	^ (aReference relativeTo: directory) printWithDelimiter: $/

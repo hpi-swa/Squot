@@ -1,3 +1,3 @@
 adding
 add: anArtifact
-	artifacts add: anArtifact.
+	artifacts at: anArtifact path put: anArtifact.

@@ -1,0 +1,15 @@
+{
+	"class" : {
+		"for:" : "jr 1/31/2017 11:54" },
+	"instance" : {
+		"=" : "jr 1/31/2017 14:14",
+		"content" : "jr 1/31/2017 11:56",
+		"content:" : "jr 1/31/2017 11:57",
+		"fileReference" : "jr 1/31/2017 11:55",
+		"fileReference:" : "jr 1/31/2017 11:55",
+		"hash" : "jr 1/31/2017 14:33",
+		"loadWith:replacing:" : "jr 1/31/2017 15:50",
+		"printOn:" : "jr 1/31/2017 14:45",
+		"storeWith:" : "jr 1/31/2017 13:54",
+		"wantsToBeInTableOfContents" : "jr 1/31/2017 13:36",
+		"writeWith:" : "jr 1/31/2017 14:10" } }

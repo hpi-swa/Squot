@@ -1,3 +1,3 @@
 initialize-release
 initialize
-	artifacts := OrderedCollection new.
+	artifacts := Dictionary new. "path -> artifact"

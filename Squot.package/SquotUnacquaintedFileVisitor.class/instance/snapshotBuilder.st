@@ -1,0 +1,4 @@
+accessing
+snapshotBuilder
+
+	^ snapshotBuilder

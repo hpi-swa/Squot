@@ -2,7 +2,8 @@
 	"class" : {
 		 },
 	"instance" : {
-		"add:" : "jr 1/27/2017 15:23",
-		"addAll:" : "jr 1/27/2017 15:23",
-		"buildSnapshot" : "jr 1/27/2017 15:22",
-		"initialize" : "jr 1/27/2017 15:24" } }
+		"add:" : "jr 1/31/2017 12:16",
+		"addAll:" : "jr 1/31/2017 12:16",
+		"artifactAt:" : "jr 1/31/2017 14:12",
+		"buildSnapshot" : "jr 1/31/2017 12:19",
+		"initialize" : "jr 1/31/2017 12:16" } }

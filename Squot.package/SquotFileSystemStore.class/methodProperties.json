@@ -8,10 +8,10 @@
 		"/" : "jr 1/27/2017 15:07",
 		"artifactReferencesDo:" : "jr 1/29/2017 21:57",
 		"artifactsDo:" : "jr 1/29/2017 21:42",
-		"captureSnapshot" : "jr 1/29/2017 22:07",
+		"captureSnapshot" : "jr 1/31/2017 12:00",
 		"deserializers" : "jr 1/27/2017 14:33",
 		"directory" : "jr 1/27/2017 15:07",
-		"generateTableOfContentsFor:in:" : "jr 1/29/2017 21:25",
+		"generateTableOfContentsFor:in:" : "jr 1/31/2017 13:38",
 		"initialize" : "jr 1/27/2017 14:41",
 		"initializeWith:" : "jr 1/27/2017 15:07",
 		"metadataFor:" : "jr 1/29/2017 21:19",
@@ -22,6 +22,8 @@
 		"restoreToSnapshot:" : "jr 1/29/2017 21:21",
 		"serializerFactoryFor:" : "jr 1/29/2017 21:45",
 		"serializerOfObjectAt:" : "jr 1/27/2017 14:33",
-		"store:" : "jr 1/29/2017 21:26",
+		"store:" : "jr 1/31/2017 13:55",
+		"storeFile:" : "jr 1/31/2017 14:51",
+		"storeOrdinary:" : "jr 1/31/2017 13:45",
 		"storeSquotMetadataFor:" : "jr 1/29/2017 21:31",
-		"tableOfContents" : "jr 1/27/2017 15:07" } }
+		"tableOfContents" : "jr 1/31/2017 11:27" } }

@@ -4,4 +4,4 @@ objectReferenced: aString
 	For example:
 		self objectReferenced: 'master'
 	...should answer the GitCommit referenced in refs/heads/master."
-	^ self objectNamed: (self resolveRef: aString)
+	^ self objectNamed: ((self resolveRef: aString) ifNil: [^ nil])

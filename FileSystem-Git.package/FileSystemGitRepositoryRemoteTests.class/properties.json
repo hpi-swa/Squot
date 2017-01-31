@@ -1,0 +1,16 @@
+{
+	"category" : "FileSystem-Git-Tests",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"repository",
+		"basicRepository",
+		"reference" ],
+	"name" : "FileSystemGitRepositoryRemoteTests",
+	"pools" : [
+		 ],
+	"super" : "GitTestCase",
+	"type" : "normal" }

@@ -5,7 +5,7 @@ processBlobAt: path in: tree
 	
 	reference isFile ifFalse: [ ^ self].
 	
-	data := reference readStreamDo: [ :stream | stream contents ].
+	data := reference readStreamDo: [ :stream | stream binary; contents ].
 	blob := GitBlob bytes: data in: repository.
 	blob store.
 	
@@ -14,4 +14,5 @@ processBlobAt: path in: tree
 		hash: blob hash
 		in: repository.
 		
-	tree putEntry: entry
+	tree putEntry: entry.
+	pendingPathsForEntryUpdate add: path parent. "need to update the ancestor trees later"

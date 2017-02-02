@@ -11,6 +11,8 @@
 		"setUp" : "CamilloBruni 9/3/2012 19:26",
 		"tearDown" : "CamilloBruni 9/3/2012 18:49",
 		"testActiveBranch" : "jr 1/13/2017 16:52",
+		"testAddFileDeepInTrees" : "jr 2/1/2017 17:17",
+		"testAddFilesAndDirectoriesDeepInTrees" : "jr 2/2/2017 14:08",
 		"testAddingEmptySubdir" : "CamilloBruni 8/9/2011 20:09",
 		"testAddingFile" : "CamilloBruni 8/9/2011 17:03",
 		"testAddingFileSubdir" : "CamilloBruni 8/9/2011 17:04",

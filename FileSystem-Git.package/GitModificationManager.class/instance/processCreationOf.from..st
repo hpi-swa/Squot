@@ -1,6 +1,7 @@
 operations
 processCreationOf: entries from: entryPath
-	|tree childTree|
+	|tree childTree addedEntryPathToPending|
+	addedEntryPathToPending := false.
 	entries
 		select: [ :path | (cache referenceTo: path) isDirectory ]
 		thenDo: [ :directory |
@@ -11,6 +12,8 @@ processCreationOf: entries from: entryPath
 					putEntry: (GitTreeEntry
 						directoryNamed: directory basename
 						hash: childTree hash
-						in: repository).
-				self flag: 'TODO: update refs only once after processing all deletes and creates'.
-				self updateParentSignaturesOfChanged: tree at: entryPath.]]
+						in: repository);
+					yourself.
+				addedEntryPathToPending
+					ifFalse: [pendingPathsForEntryUpdate add: entryPath.
+						addedEntryPathToPending := true]]]

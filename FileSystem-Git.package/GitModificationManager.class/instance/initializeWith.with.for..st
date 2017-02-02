@@ -10,4 +10,8 @@ initializeWith: aRepository with: aCache for: aRevision
 		at: Path root
 		put: (aRevision
 			ifNotNil: [ self newTreeFrom: aRevision tree ]
-			ifNil: [ self newTreeAt: Path root ])
+			ifNil: [ self newTreeAt: Path root ]).
+	pendingPathsForEntryUpdate := Heap sortBlock: [:a :b |
+		a size > b size
+		or: [a size = b size
+			and: [(a parent printWithDelimiter: $/) >= (b parent printWithDelimiter: $/)]]].

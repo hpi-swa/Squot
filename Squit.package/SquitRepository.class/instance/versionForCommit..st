@@ -1,8 +1,7 @@
 Squit internal
 versionForCommit: aGitCommit
 	"Answer the (cached?) SquitVersion on aGitCommit"
-	self flag: #optimize.
-	^ SquitVersion new
-		repository: self;
-		commit: aGitCommit;
-		yourself
+	aGitCommit ifNil: [^ nil].
+	^ (versionsCache at: aGitCommit hexHash
+		ifAbsentPut: [self newVersionForCommit: aGitCommit])
+		ifNil: [versionsCache at: aGitCommit hexHash put: (self newVersionForCommit: aGitCommit)]

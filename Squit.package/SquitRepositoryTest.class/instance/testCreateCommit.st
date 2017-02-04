@@ -1,18 +1,21 @@
 tests
 testCreateCommit
-	| master oldMasterVersion editableSnapshot newVersion gitMaster commit |
+	| master oldMasterVersion oldMasterSnapshot snapshotBuilder newVersion newSnapshot gitMaster commit |
 	master := squitRepository historianNamed: 'master'.
 	oldMasterVersion := master version.
 	"create a new snapshot (by using whatever means available)"
-	self flag: #hack. "this looks horrible, API-wise"
-	editableSnapshot := oldMasterVersion snapshot.
-	(editableSnapshot / 'README.md') 
+	oldMasterSnapshot := oldMasterVersion snapshot.
+	snapshotBuilder := oldMasterSnapshot createNewBuilder.
+	self assert: (oldMasterSnapshot artifactAt: 'README.md')
+		equals: (snapshotBuilder artifactAt: 'README.md') description: 'shared blob'.
+	(snapshotBuilder artifactAt: 'README.md') fileReference
 		writeStreamDo: [:stream | stream nextPutAll: 'hollaboo'; truncate].
-	self assert: ((editableSnapshot / 'README.md') readStreamDo: [:s | s contents asString]) = 'hollaboo'.
 	"create a new version from this snapshot"
-	newVersion := master newVersion: editableSnapshot message: 'This is a test commit'.
+	newVersion := master newVersion: snapshotBuilder buildSnapshot
+		message: 'This is a test commit'.
 	"assertions about the Squit objects"
-	self assert: newVersion snapshot = (gitRepository branchNamed: 'master').
+	newSnapshot := newVersion snapshot.
+	self assert: 'hollaboo' equals: (newSnapshot artifactAt: 'README.md') content.
 	self assert: newVersion parents asArray = {oldMasterVersion}.
 	self assert: 'This is a test commit' equals: newVersion message.
 	"assertions about the git contents"

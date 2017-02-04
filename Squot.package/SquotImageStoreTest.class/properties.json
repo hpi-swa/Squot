@@ -8,8 +8,10 @@
 	"instvars" : [
 		"class",
 		"imageStore",
+		"classFactory",
 		"createdClasses",
-		"testEnvironment" ],
+		"testEnvironment",
+		"changeLogSuppressor" ],
 	"name" : "SquotImageStoreTest",
 	"pools" : [
 		 ],

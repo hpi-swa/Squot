@@ -10,7 +10,8 @@
 		"classFactory",
 		"repositoryDirectory",
 		"repository",
-		"store" ],
+		"store",
+		"changeLogSuppressor" ],
 	"name" : "SquotWorkingCopyTest",
 	"pools" : [
 		 ],

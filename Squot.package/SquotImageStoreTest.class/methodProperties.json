@@ -4,11 +4,11 @@
 	"instance" : {
 		"createTestEnvironment" : "jr 1/27/2017 16:08",
 		"nameForTestEnvironment" : "jr 1/27/2017 16:02",
-		"setUp" : "jr 1/27/2017 16:08",
+		"setUp" : "jr 2/2/2017 14:41",
 		"snapshotClass:at:" : "jr 1/27/2017 16:10",
 		"snapshotPackage:at:" : "jr 1/27/2017 16:10",
-		"tearDown" : "jr 1/27/2017 16:03",
+		"tearDown" : "jr 2/2/2017 14:41",
 		"testFiles" : "jr 1/31/2017 15:52",
-		"testRestoreClass" : "jr 1/27/2017 16:11",
-		"testRestorePackage" : "jr 1/27/2017 16:15",
+		"testRestoreClass" : "jr 2/1/2017 14:19",
+		"testRestorePackage" : "jr 2/2/2017 14:52",
 		"testSnapshotAndRestoreText" : "jr 1/27/2017 16:04" } }

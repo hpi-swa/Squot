@@ -5,12 +5,13 @@ testTrackingAClass
 	class compile: 'firstMethod ^ self' classified: 'methods of first version'.
 	workingCopy add: class at: 'src'.
 	versionBeforeSave := workingCopy loadedHistorian version.
+	self assert: versionBeforeSave isNil description: 'starting from empty history'.
 	
 	workingCopy saveNewVersionMessage: 'first version' interactive: false.
 	latestVersion := workingCopy baseVersion.
 	self assert: versionBeforeSave ~= latestVersion description: 'new version'.
-	self assert: (latestVersion parents includes: versionBeforeSave) description: 'ancestry'.
-	self assert: workingCopy loadedHistorian version == latestVersion description: 'updated historian'.
+	self assert: latestVersion parents isEmpty description: 'ancestry'.
+	self assert: workingCopy loadedHistorian version == latestVersion description: 'stable version'.
 	self assertVersion: latestVersion containsClass: class.
 	self assertVersion: latestVersion containsMethod: class >> #firstMethod.
 	
@@ -19,9 +20,9 @@ testTrackingAClass
 	self assert: latestVersion equals: versionBeforeSave.
 	
 	workingCopy saveNewVersionMessage: 'second version' interactive: false.
-	latestVersion := workingCopy loadedHistorian version.
+	latestVersion := workingCopy baseVersion.
 	self assert: versionBeforeSave ~= latestVersion description: 'new version'.
 	self assert: (latestVersion parents includes: versionBeforeSave) description: 'ancestry'.
-	self assert: workingCopy loadedHistorian version == latestVersion description: 'updated historian'.
+	self assert: workingCopy loadedHistorian version == latestVersion description: 'stable version'.
 	self assertVersion: latestVersion containsMethod: class >> #addedMethod.
 	self assertVersion: latestVersion containsMethod: class >> #firstMethod.

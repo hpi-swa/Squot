@@ -8,3 +8,6 @@ tearDown
 	workingCopy := nil.
 	repository := nil.
 	store := nil.
+	repositoryDirectory := nil.
+	changeLogSuppressor tearDown.
+	changeLogSuppressor := nil.

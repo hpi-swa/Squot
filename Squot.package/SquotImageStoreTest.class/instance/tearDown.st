@@ -1,5 +1,9 @@
 running
 tearDown
 	imageStore := nil.
-	createdClasses do: [:each | each removeFromSystemUnlogged].
-	testEnvironment destroy.
+	changeLogSuppressor suppressChangeNotificationsDuring: [
+		classFactory cleanUp.
+		createdClasses do: [:each | each removeFromSystemUnlogged].
+		testEnvironment destroy].
+	changeLogSuppressor tearDown.
+	changeLogSuppressor := nil.

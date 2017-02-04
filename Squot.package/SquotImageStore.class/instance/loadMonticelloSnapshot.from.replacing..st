@@ -1,16 +1,10 @@
 private loading
 loadMonticelloSnapshot: anMCSnapshot from: anArtifact replacing: aPackageInfoOrClass
-	| objectClassName isSingleClass packageDirectory packageName pathElements |
+	| objectClassName isSingleClass |
 	objectClassName := anArtifact storeInfo at: #objectClassName.
 	isSingleClass := objectClassName endsWith: ' class'.
-	self assert: ((isSingleClass = (aPackageInfoOrClass isKindOf: ClassDescription)) or: [aPackageInfoOrClass isNil]).
-	packageDirectory := (pathElements := anArtifact path splitBy: '/')
-		at: (isSingleClass ifTrue: [pathElements size - 1] ifFalse: [pathElements size]).
-	packageName := packageDirectory allButLast: '.package' size.
-	MCPackageLoader new
-		installSnapshot: anMCSnapshot;
-		loadWithNameLike: packageName.
-	isSingleClass
-		ifTrue: [^ (anMCSnapshot definitions detect: [:each | each isClassDefinition])
-			actualClass].
-	^ PackageInfo named: packageName
+	^ isSingleClass
+		ifTrue: [self loadMonticelloClassSnapshot: anMCSnapshot
+			from: anArtifact replacing: aPackageInfoOrClass]
+		ifFalse: [self loadMonticelloPackageSnapshot: anMCSnapshot
+			from: anArtifact replacing: aPackageInfoOrClass]

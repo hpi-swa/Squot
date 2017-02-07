@@ -1,0 +1,17 @@
+{
+	"category" : "Squot-Tools-Tests",
+	"classinstvars" : [
+		 ],
+	"classtraitcomposition" : "TSquotLocalRepository classTrait",
+	"classvars" : [
+		 ],
+	"commentStamp" : "jr 2/4/2017 02:03",
+	"instvars" : [
+		"historians",
+		"versions" ],
+	"name" : "SquotInMemoryRepository",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"traitcomposition" : "TSquotLocalRepository",
+	"type" : "normal" }

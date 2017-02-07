@@ -4,5 +4,6 @@ saveNewVersionMessage: aString interactive: shouldBeInteractiveBoolean
 	If interactive, let the user review and edit the set of changes to be included
 	in the new snapshot."
 	shouldBeInteractiveBoolean ifTrue: [self notYetImplemented].
-	loadedHistorian newVersion: store captureSnapshot message: aString.
+	loadedHistorian createNewVersion: store captureSnapshot
+		with: [:version | version message: aString].
 	self flag: 'TODO: let the store (SnapshotBuilder) and repository cooperate to save some processing time'.

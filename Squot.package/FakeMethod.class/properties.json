@@ -1,0 +1,16 @@
+{
+	"category" : "Squot-Tools-Tests",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"className",
+		"selector",
+		"source" ],
+	"name" : "FakeMethod",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }

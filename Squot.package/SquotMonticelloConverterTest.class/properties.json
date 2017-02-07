@@ -1,0 +1,17 @@
+{
+	"category" : "Squot-Tools-Tests",
+	"classinstvars" : [
+		 ],
+	"classtraitcomposition" : "TSnapshotAssertionsForMonticello classTrait",
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"converter",
+		"repository" ],
+	"name" : "SquotMonticelloConverterTest",
+	"pools" : [
+		 ],
+	"super" : "TestCase",
+	"traitcomposition" : "TSnapshotAssertionsForMonticello",
+	"type" : "normal" }

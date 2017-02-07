@@ -1,0 +1,3 @@
+accessing
+squotVersionForMonticelloVersion: aMCVersion
+	^ self squotVersionForMonticelloVersionInfo: aMCVersion info

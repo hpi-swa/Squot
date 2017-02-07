@@ -1,0 +1,3 @@
+Pur historian
+version
+	^ version

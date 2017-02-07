@@ -1,0 +1,17 @@
+{
+	"category" : "Squot-Tools-Tests",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"snapshot",
+		"parents",
+		"repository",
+		"metadata" ],
+	"name" : "SquotInMemoryVersion",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }

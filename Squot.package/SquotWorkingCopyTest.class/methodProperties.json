@@ -2,9 +2,6 @@
 	"class" : {
 		"isAbstract" : "jr 1/26/2017 17:27" },
 	"instance" : {
-		"assertVersion:containsClass:" : "jr 2/1/2017 15:19",
-		"assertVersion:containsMethod:" : "jr 2/4/2017 01:04",
-		"assertVersion:containsPackage:" : "jr 2/1/2017 14:59",
 		"createTestEnvironment" : "jr 1/26/2017 14:56",
 		"nameForTestEnvironment" : "jr 1/26/2017 14:56",
 		"newRepository" : "jr 1/26/2017 17:15",

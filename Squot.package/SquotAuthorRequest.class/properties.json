@@ -1,0 +1,14 @@
+{
+	"category" : "Squot-Tools",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "SquotAuthorRequest",
+	"pools" : [
+		 ],
+	"super" : "Notification",
+	"type" : "normal" }

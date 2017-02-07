@@ -2,6 +2,7 @@
 	"class" : {
 		"on:" : "jr 1/11/2017 16:37" },
 	"instance" : {
+		"createNewVersion:with:" : "jr 2/5/2017 22:46",
 		"defaultHistorian" : "jr 1/26/2017 17:48",
 		"delete:" : "jr 1/11/2017 16:35",
 		"exportVersionAt:to:" : "jr 1/26/2017 14:03",

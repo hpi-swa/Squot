@@ -1,4 +1,4 @@
-I am a Pur local repository version for a Git commit.
+I am a Pur local repository version for a Git commit. Basically, I am an adapter.
 
 Instance Variables
 	commit:		<Object>

@@ -4,11 +4,15 @@
 		 ],
 	"classvars" : [
 		 ],
-	"commentStamp" : "jr 2/5/2017 22:40",
+	"commentStamp" : "jr 2/5/2017 22:48",
 	"instvars" : [
 		"repository",
-		"commit" ],
-	"name" : "SquitVersion",
+		"message",
+		"parents",
+		"snapshot",
+		"author",
+		"committer" ],
+	"name" : "SquitVersionBuilder",
 	"pools" : [
 		 ],
 	"super" : "Object",

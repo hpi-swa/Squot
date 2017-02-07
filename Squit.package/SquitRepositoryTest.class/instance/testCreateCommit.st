@@ -11,8 +11,8 @@ testCreateCommit
 	(snapshotBuilder artifactAt: 'README.md') fileReference
 		writeStreamDo: [:stream | stream nextPutAll: 'hollaboo'; truncate].
 	"create a new version from this snapshot"
-	newVersion := master newVersion: snapshotBuilder buildSnapshot
-		message: 'This is a test commit'.
+	newVersion := master createNewVersion: snapshotBuilder buildSnapshot
+		with: [:version | version message: 'This is a test commit'].
 	"assertions about the Squit objects"
 	newSnapshot := newVersion snapshot.
 	self assert: 'hollaboo' equals: (newSnapshot artifactAt: 'README.md') content.

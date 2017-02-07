@@ -8,10 +8,8 @@
 	"instvars" : [
 		"objects",
 		"paths",
-		"serializers",
 		"base",
 		"environment",
-		"deserializers",
 		"additionalInfo" ],
 	"name" : "SquotImageStore",
 	"pools" : [

@@ -3,7 +3,7 @@
 	"classinstvars" : [
 		 ],
 	"classvars" : [
-		"DefaultDeserializerRegistry" ],
+		 ],
 	"commentStamp" : "jr 1/27/2017 14:37",
 	"instvars" : [
 		"objects",

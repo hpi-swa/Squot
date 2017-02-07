@@ -1,3 +1,0 @@
-as yet unclassified
-removeDeserializerFactory: aDeserializerFactory
-	DefaultDeserializerRegistry remove: aDeserializerFactory.

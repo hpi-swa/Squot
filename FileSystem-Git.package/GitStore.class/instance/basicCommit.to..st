@@ -1,23 +1,11 @@
 internal
 basicCommit: aMessage to: branchName
-	| commit parents author committer |
+	| commit |
 	"Disallow empty commits"
 	modManager hasModifications ifFalse: [ ^ self ].
-	modManager processChanges.
-	
-	commit := GitCommit
-		withTree: modManager rootTree
-		message: aMessage
-		author: (author ifNil: [ author := GitStamp now ])
-		committer: (committer ifNil: [ committer := GitStamp now ])
-		in: repository.
-		
-	parents := OrderedCollection new.
-	revision ifNotNil: [ parents add: revision hexHash ].
-	commit 
-		parents: parents;
-		store. 
-	
+	(commit := self prepareNewCommit)
+		message: aMessage;
+		store.
 	repository 
 		updateRef: repository headsDir / branchName 
 		to: commit hexHash.

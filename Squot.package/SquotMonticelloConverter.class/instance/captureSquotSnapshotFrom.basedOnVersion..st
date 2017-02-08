@@ -1,4 +1,4 @@
-as yet unclassified
+private
 captureSquotSnapshotFrom: aMCVersionInfo basedOnVersion: aSquotVersion
 	| mcVersion |
 	self flag: 'TODO: use aSquotVersion once "incremental" updating is available'.

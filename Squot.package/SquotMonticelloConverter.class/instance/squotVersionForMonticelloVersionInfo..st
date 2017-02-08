@@ -1,3 +1,3 @@
-accessing
+private accessing
 squotVersionForMonticelloVersionInfo: aMCVersionInfo
 	^ versionMapFromMonticello at: aMCVersionInfo

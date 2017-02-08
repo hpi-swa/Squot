@@ -1,4 +1,4 @@
-as yet unclassified
+private
 convertMonticelloVersion: aMCVersionInfo
 	| squotSnapshot newVersion |
 	squotSnapshot := self captureSquotSnapshotFrom: aMCVersionInfo

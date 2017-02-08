@@ -4,11 +4,9 @@
 	"instance" : {
 		"captureSquotSnapshotFrom:basedOnVersion:" : "jr 2/5/2017 23:43",
 		"cleanUpTemporaryHistorians" : "jr 2/4/2017 02:41",
-		"collectAncestorsOfMonticelloVersion:" : "jr 2/4/2017 03:16",
-		"convertMonticelloHistoryUpTo:from:asNewHistorianNamed:in:" : "jr 2/5/2017 21:57",
+		"convertMonticelloHistoryUpTo:from:asNewHistorianNamed:in:" : "jr 2/8/2017 13:50",
 		"convertMonticelloVersion:" : "jr 2/5/2017 23:45",
 		"initialize" : "jr 2/7/2017 00:19",
 		"mapMonticelloVersion:to:" : "jr 2/4/2017 03:14",
-		"newHistorianAtMonticelloVersion:" : "jr 2/4/2017 02:36",
 		"squotVersionForMonticelloVersion:" : "jr 2/5/2017 23:38",
 		"squotVersionForMonticelloVersionInfo:" : "jr 2/5/2017 23:38" } }

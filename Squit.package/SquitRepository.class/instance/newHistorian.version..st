@@ -1,3 +1,7 @@
 Pur repository
 newHistorian: name version: aVersion
-	self shouldBeImplemented
+	| fullRefName |
+	gitRepository repository
+		updateRef: (fullRefName := self expandShortRefName: name)
+		to: aVersion hexHash.
+	^ self historianNamed: fullRefName

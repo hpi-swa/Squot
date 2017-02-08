@@ -1,5 +1,5 @@
 accessing
 author: anObject
-
-	self flag: 'TODO: handle String vs. GitStamp input'.
-	author := anObject
+	anObject species = GitStamp
+		ifTrue: [author := anObject]
+		ifFalse: [author readFrom: (ReadStream on: anObject)]

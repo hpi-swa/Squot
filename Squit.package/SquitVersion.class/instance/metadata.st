@@ -1,4 +1,11 @@
 Pur version
 metadata
-	"returns Dictionary"
-	self shouldBeImplemented
+	^ Dictionary newFromPairs:
+		{#author. commit author name.
+		#authorEmail. commit author email.
+		#authoringTimeStamp. commit author timeStamp.
+		#committer. commit committer name.
+		#committerEmail. commit committer email.
+		#commitTimeStamp. commit committer timeStamp.
+		#message. commit message.
+		#hash. commit hexHash}

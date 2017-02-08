@@ -1,5 +1,6 @@
 accessing
 committer: anObject
 
-	self flag: 'TODO: handle String vs. GitStamp input'.
-	committer := anObject
+	anObject species = GitStamp
+		ifTrue: [committer := anObject]
+		ifFalse: [committer readFrom: (ReadStream on: anObject)]

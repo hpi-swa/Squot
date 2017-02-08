@@ -7,7 +7,7 @@ testConvertTwoVersions
 		MCSnapshot fromDefinitions: {
 			MCClassDefinition name: #Griffle
 				superclassName: #Object
-				category: 'Squot-Tools-Tests-Data' 
+				category: 'Plonk-Tests-Data' 
 				instVarNames: #()
 				classVarNames: #()
 				poolDictionaryNames: #()
@@ -21,7 +21,7 @@ testConvertTwoVersions
 		MCSnapshot fromDefinitions: {
 			MCClassDefinition name: #Griffle
 				superclassName: #Object
-				category: 'Squot-Tools-Tests-Data' 
+				category: 'Plonk-Tests-Data' 
 				instVarNames: #()
 				classVarNames: #()
 				poolDictionaryNames: #()

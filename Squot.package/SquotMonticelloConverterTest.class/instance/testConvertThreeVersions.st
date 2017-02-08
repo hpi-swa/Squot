@@ -7,7 +7,7 @@ testConvertThreeVersions
 		MCSnapshot fromDefinitions: {
 			MCClassDefinition name: #Griffle
 				superclassName: #Object
-				category: 'Squot-Tools-Tests-Data' 
+				category: 'Plonk-Tests-Data' 
 				instVarNames: #()
 				classVarNames: #()
 				poolDictionaryNames: #()
@@ -21,7 +21,7 @@ testConvertThreeVersions
 		MCSnapshot fromDefinitions: {
 			MCClassDefinition name: #Griffle
 				superclassName: #Object
-				category: 'Squot-Tools-Tests-Data' 
+				category: 'Plonk-Tests-Data' 
 				instVarNames: #()
 				classVarNames: #()
 				poolDictionaryNames: #()
@@ -35,7 +35,7 @@ testConvertThreeVersions
 		MCSnapshot fromDefinitions: {
 			MCClassDefinition name: #Griffle
 				superclassName: #Object
-				category: 'Squot-Tools-Tests-Data' 
+				category: 'Plonk-Tests-Data' 
 				instVarNames: #('myInstVar')
 				classVarNames: #()
 				poolDictionaryNames: #()

@@ -7,7 +7,7 @@ testConvertMerge
 		MCSnapshot fromDefinitions: {
 			MCClassDefinition name: #Griffle
 				superclassName: #Object
-				category: 'Squot-Tools-Tests-Data' 
+				category: 'Plonk-Tests-Data' 
 				instVarNames: #()
 				classVarNames: #()
 				poolDictionaryNames: #()
@@ -21,7 +21,7 @@ testConvertMerge
 		MCSnapshot fromDefinitions: {
 			MCClassDefinition name: #Plonk
 				superclassName: #Object
-				category: 'Squot-Tools-Tests-Data' 
+				category: 'Plonk-Tests-Data' 
 				instVarNames: #()
 				classVarNames: #()
 				poolDictionaryNames: #()
@@ -35,7 +35,7 @@ testConvertMerge
 		MCSnapshot fromDefinitions: {
 			MCClassDefinition name: #Plonk
 				superclassName: #Object
-				category: 'Squot-Tools-Tests-Data' 
+				category: 'Plonk-Tests-Data' 
 				instVarNames: #()
 				classVarNames: #()
 				poolDictionaryNames: #()
@@ -48,7 +48,7 @@ testConvertMerge
 				source: 'initialize'.
 			MCClassDefinition name: #Griffle
 				superclassName: #Object
-				category: 'Squot-Tools-Tests-Data' 
+				category: 'Plonk-Tests-Data' 
 				instVarNames: #()
 				classVarNames: #()
 				poolDictionaryNames: #()

@@ -6,7 +6,7 @@ testConvertOneVersion
 	mcSnapshot := MCSnapshot fromDefinitions: {
 		MCClassDefinition name: #Griffle
 			superclassName: #Object
-			category: 'Squot-Tools-Tests-Data' 
+			category: 'Plonk-Tests-Data' 
 			instVarNames: #()
 			classVarNames: #()
 			poolDictionaryNames: #()
@@ -29,7 +29,7 @@ testConvertOneVersion
 	self assert: historian version notNil.
 	self assert: historian version message = 'hooray'.
 	self assert: historian version parents isEmpty.
-	self assert: (historian version metadata at: #author) = 'squot'.
+	self assert: 'squot' equals: (historian version metadata at: #author).
 	self assert: (historian version metadata at: #committer) = Utilities authorInitials. self flag: 'TODO: want proper names, right?'.
 	self shouldnt: [historian version metadata at: #timestamp] raise: KeyNotFound.
 	self assertVersion: historian version containsClass: (PseudoClass new name: #Griffle).

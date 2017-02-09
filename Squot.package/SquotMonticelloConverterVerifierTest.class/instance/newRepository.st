@@ -1,0 +1,3 @@
+running
+newRepository
+	^ SquotInMemoryRepository new

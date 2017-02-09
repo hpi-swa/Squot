@@ -1,0 +1,19 @@
+{
+	"category" : "Squot-Tools",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"squotRepository",
+		"monticelloRepository",
+		"historian",
+		"pendingVersions",
+		"pendingMCVersions",
+		"mcPackage" ],
+	"name" : "SquotMonticelloConverterVerifier",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }

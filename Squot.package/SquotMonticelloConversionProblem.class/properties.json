@@ -1,0 +1,14 @@
+{
+	"category" : "Squot-Tools",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "SquotMonticelloConversionProblem",
+	"pools" : [
+		 ],
+	"super" : "Exception",
+	"type" : "normal" }

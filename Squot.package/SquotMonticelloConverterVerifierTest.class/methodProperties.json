@@ -1,0 +1,13 @@
+{
+	"class" : {
+		 },
+	"instance" : {
+		"newRepository" : "jr 2/9/2017 18:26",
+		"setUp" : "jr 2/9/2017 18:37",
+		"testAcceptsCorrectConversion" : "jr 2/9/2017 18:49",
+		"testDetectsBogusClass" : "jr 2/9/2017 19:21",
+		"testDetectsBogusMethod" : "jr 2/9/2017 19:21",
+		"testDetectsBogusTrait" : "jr 2/9/2017 19:23",
+		"testDetectsMissingClass" : "jr 2/9/2017 19:07",
+		"testDetectsMissingMethod" : "jr 2/9/2017 18:51",
+		"testDetectsMissingTrait" : "jr 2/9/2017 19:09" } }

@@ -1,0 +1,8 @@
+{
+	"class" : {
+		 },
+	"instance" : {
+		"findPackageIn:" : "jr 2/9/2017 19:05",
+		"initialize" : "jr 2/9/2017 18:57",
+		"verify:" : "jr 2/9/2017 19:06",
+		"verify:hasCorrectConversionsUpTo:whichComesFrom:" : "jr 2/9/2017 19:02" } }

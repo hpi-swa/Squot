@@ -1,4 +1,4 @@
-private snapshot building
+private storing
 generateTableOfContentsFor: aSnapshot in: aDirectory
 	| toc |
 	toc := Dictionary new.

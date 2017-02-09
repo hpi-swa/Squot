@@ -1,4 +1,4 @@
-private snapshot building
+private storing
 storeOrdinary: anArtifact
 	| serializer |
 	serializer := self serializerFactoryFor: anArtifact.

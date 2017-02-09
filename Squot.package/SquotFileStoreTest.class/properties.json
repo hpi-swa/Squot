@@ -1,0 +1,14 @@
+{
+	"category" : "Squot-Tests",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "jr 2/9/2017 14:20",
+	"instvars" : [
+		"fileStore" ],
+	"name" : "SquotFileStoreTest",
+	"pools" : [
+		 ],
+	"super" : "TestCase",
+	"type" : "normal" }

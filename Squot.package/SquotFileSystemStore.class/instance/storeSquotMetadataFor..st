@@ -1,4 +1,4 @@
-private snapshot building
+private storing
 storeSquotMetadataFor: anArtifact
 	self flag: #featureEnvy.
 	(self metadataFor: anArtifact)

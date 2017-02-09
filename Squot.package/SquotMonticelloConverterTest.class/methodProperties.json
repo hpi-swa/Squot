@@ -7,4 +7,5 @@
 		"testConvertMerge" : "jr 2/8/2017 15:23",
 		"testConvertOneVersion" : "jr 2/8/2017 15:23",
 		"testConvertThreeVersions" : "jr 2/8/2017 15:23",
-		"testConvertTwoVersions" : "jr 2/8/2017 15:23" } }
+		"testConvertTwoVersions" : "jr 2/8/2017 15:23",
+		"testConvertVersionsWithRemoval" : "jr 2/8/2017 23:47" } }

@@ -1,4 +1,4 @@
-private snapshot building
+private storing
 serializerFactoryFor: anArtifact
 	| name factoryName |
 	name := anArtifact storeInfo at: #serializer ifAbsent: [self guessSerializerFor: anArtifact].

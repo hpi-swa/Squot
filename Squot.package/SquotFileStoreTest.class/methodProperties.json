@@ -1,0 +1,8 @@
+{
+	"class" : {
+		 },
+	"instance" : {
+		"setUp" : "jr 2/9/2017 11:50",
+		"tearDown" : "jr 2/9/2017 11:51",
+		"testDeleteArtifact" : "jr 2/9/2017 14:28",
+		"testDeleteMethod" : "jr 2/9/2017 12:04" } }

@@ -1,4 +1,4 @@
-private snapshot building
+private storing
 storeFile: anArtifact
 	| source target |
 	source := anArtifact fileReference.

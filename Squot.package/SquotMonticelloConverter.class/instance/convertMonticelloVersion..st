@@ -8,6 +8,7 @@ convertMonticelloVersion: aMCVersionInfo
 	squotSnapshot ifNil: [^ self convertMonticelloVersionWithMissingSnapshot: aMCVersionInfo].
 	newVersion := squotRepository createNewVersion: squotSnapshot
 		with: [:version | version
+			initializeClean;
 			parents: (aMCVersionInfo ancestors
 				collect: [:each | self squotVersionForMonticelloVersionInfo: each]);
 			message: aMCVersionInfo message;

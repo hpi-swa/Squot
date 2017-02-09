@@ -2,6 +2,7 @@
 	"category" : "Squot-Tools-Tests",
 	"classinstvars" : [
 		 ],
+	"classtraitcomposition" : "TSquotVersionBuilder classTrait",
 	"classvars" : [
 		 ],
 	"commentStamp" : "",
@@ -14,4 +15,5 @@
 	"pools" : [
 		 ],
 	"super" : "Object",
+	"traitcomposition" : "TSquotVersionBuilder",
 	"type" : "normal" }

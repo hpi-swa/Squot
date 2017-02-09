@@ -1,0 +1,5 @@
+{
+	"category" : "Squot-Extensions",
+	"comment" : "I define messages that the object that is used to create a new Version should understand.",
+	"commentStamp" : "jr 2/9/2017 18:16",
+	"name" : "TSquotVersionBuilder" }

@@ -1,0 +1,4 @@
+accessing
+timestamp
+
+	^ self shouldBeImplemented

@@ -1,0 +1,4 @@
+accessing
+snapshot
+
+	^ self shouldBeImplemented

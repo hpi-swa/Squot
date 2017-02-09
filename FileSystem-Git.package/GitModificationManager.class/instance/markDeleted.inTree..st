@@ -1,16 +1,16 @@
 accessing
 markDeleted: aPath inTree: aTree
-	| duplicateDeletions |
 	aPath isRoot ifTrue: [self halt].
 	hasChanges := true.
 	
 	"remove any children of the deleted path"
-	duplicateDeletions := OrderedCollection new.
-	deletedPaths keysAndValuesDo: [ :key :paths|
-		(paths includesSubPath: aPath)
-			ifTrue: [ duplicateDeletions add: key]].
-	duplicateDeletions do: [:aKey | deletedPaths removeKey: aKey].
-		
+	deletedPaths keysAndValuesRemove: [ :key :paths | paths includesSubPath: aPath].
+	
+	"forget aPath's trees and subtrees so they do not get reused"
+	treeMap keysAndValuesRemove: [:eachPath :tree | aPath contains: eachPath].
+	treeMap removeKey: aPath ifAbsent: [].
+	aTree removeEntryAt: aPath basename ifAbsent: [].
+	
 	"collect a list of deleted paths"
 	(deletedPaths
 		at: aPath parent

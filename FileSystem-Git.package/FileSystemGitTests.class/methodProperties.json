@@ -4,4 +4,5 @@
 		"packageNamesUnderTest" : "jr 11/30/2016 16:01" },
 	"instance" : {
 		"createFilesystem" : "jr 10/20/2016 14:23",
-		"testCreateDirectoryNoParent" : "MaxLeske 9/3/2012 21:41" } }
+		"testCreateDirectoryNoParent" : "MaxLeske 9/3/2012 21:41",
+		"testDeletedDirectoryContentsDoesNotReappear" : "jr 2/9/2017 13:36" } }

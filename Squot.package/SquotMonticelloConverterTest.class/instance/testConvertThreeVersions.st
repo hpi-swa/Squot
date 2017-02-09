@@ -1,4 +1,4 @@
-as yet unclassified
+tests
 testConvertThreeVersions
 	| package versionInfos first second third mcSnapshots theVersions mcRepo historian testedVersion |
 	"given"

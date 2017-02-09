@@ -1,5 +1,5 @@
 {
 	"category" : "Squot-Core",
-	"comment" : "I define some messages that local repositores should understand and provide default implementations for some of them.",
-	"commentStamp" : "jr 1/27/2017 15:26",
+	"comment" : "",
+	"commentStamp" : "",
 	"name" : "TSquotLocalRepository" }

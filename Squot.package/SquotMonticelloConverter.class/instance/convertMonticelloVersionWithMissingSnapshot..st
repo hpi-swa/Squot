@@ -8,6 +8,7 @@ convertMonticelloVersionWithMissingSnapshot: aMCVersionInfo
 	self flag: 'TODO: make it possible for backends like git to skip writing a new snapshot'.
 	newVersion := squotRepository createNewVersion: squotSnapshot
 		with: [:version | version
+			initializeClean;
 			parents: (aMCVersionInfo ancestors
 				collect: [:each | self squotVersionForMonticelloVersionInfo: each]);
 			message: aMCVersionInfo message;

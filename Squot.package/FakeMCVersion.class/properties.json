@@ -1,0 +1,14 @@
+{
+	"category" : "Squot-Tools",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"info" ],
+	"name" : "FakeMCVersion",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }

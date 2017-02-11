@@ -6,7 +6,8 @@ verify: aHistorian hasCorrectConversionsUpTo: aMCVersion whichComesFrom: aMCRepo
 	pendingVersions add: historian version.
 	pendingMCVersions add: aMCVersion.
 	mcPackage := aMCVersion package.
-	[pendingVersions notEmpty]
+	'Verifying versions... ' displaySequentialProgress:
+	[[pendingVersions notEmpty]
 		whileTrue: [ | nextVersion | nextVersion := pendingVersions removeFirst.
-			self verify: nextVersion.
-			pendingVersions addAll: nextVersion parents].
+			ProgressNotification signal: 0.5 extra: nextVersion asString.
+			self verify: nextVersion]].

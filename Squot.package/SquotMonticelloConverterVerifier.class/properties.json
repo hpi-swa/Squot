@@ -11,7 +11,8 @@
 		"historian",
 		"pendingVersions",
 		"pendingMCVersions",
-		"mcPackage" ],
+		"mcPackage",
+		"missingMCVersions" ],
 	"name" : "SquotMonticelloConverterVerifier",
 	"pools" : [
 		 ],

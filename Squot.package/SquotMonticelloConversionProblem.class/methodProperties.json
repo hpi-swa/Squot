@@ -2,4 +2,5 @@
 	"class" : {
 		 },
 	"instance" : {
-		 } }
+		"defaultAction" : "jr 2/9/2017 19:28",
+		"isResumable" : "jr 2/9/2017 19:28" } }

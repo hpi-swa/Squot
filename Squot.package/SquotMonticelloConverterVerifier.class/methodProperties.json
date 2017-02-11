@@ -2,7 +2,8 @@
 	"class" : {
 		 },
 	"instance" : {
-		"findPackageIn:" : "jr 2/9/2017 19:05",
-		"initialize" : "jr 2/9/2017 18:57",
-		"verify:" : "jr 2/9/2017 19:06",
-		"verify:hasCorrectConversionsUpTo:whichComesFrom:" : "jr 2/9/2017 19:02" } }
+		"findPackageIn:" : "jr 2/9/2017 20:37",
+		"initialize" : "jr 2/11/2017 03:49",
+		"pushAncestorsOfMCVersionInfo:" : "jr 2/11/2017 04:06",
+		"verify:" : "jr 2/11/2017 04:09",
+		"verify:hasCorrectConversionsUpTo:whichComesFrom:" : "jr 2/9/2017 20:57" } }

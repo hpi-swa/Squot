@@ -1,0 +1,17 @@
+{
+	"category" : "Squot-Tools",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"original",
+		"proposed",
+		"current",
+		"mcChangeSelector" ],
+	"name" : "SquotPatchEditorForMCSnapshot",
+	"pools" : [
+		 ],
+	"super" : "Model",
+	"type" : "normal" }

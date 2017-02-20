@@ -1,0 +1,3 @@
+results
+accepted
+	^ canceled == false

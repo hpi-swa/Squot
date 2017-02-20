@@ -3,4 +3,6 @@
 		 },
 	"instance" : {
 		"asLoadedBySquot:from:replacing:" : "jr 1/28/2017 00:24",
+		"squotCreatePatchEditorFor:original:proposed:" : "jr 2/16/2017 00:16",
+		"squotWithSortedDefinitions" : "jr 2/16/2017 01:42",
 		"squotWrite:with:" : "jr 1/29/2017 21:03" } }

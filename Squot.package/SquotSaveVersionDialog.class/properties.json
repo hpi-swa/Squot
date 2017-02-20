@@ -1,0 +1,16 @@
+{
+	"category" : "Squot-Tools",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "jr 2/17/2017 16:50",
+	"instvars" : [
+		"changeChooser",
+		"message",
+		"canceled" ],
+	"name" : "SquotSaveVersionDialog",
+	"pools" : [
+		 ],
+	"super" : "Model",
+	"type" : "normal" }

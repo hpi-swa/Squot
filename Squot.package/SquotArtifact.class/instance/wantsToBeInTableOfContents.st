@@ -1,3 +1,3 @@
-nil
+serializing
 wantsToBeInTableOfContents
 	^ true

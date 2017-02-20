@@ -2,8 +2,9 @@
 	"class" : {
 		 },
 	"instance" : {
+		"countVersions:" : "jr 2/11/2017 14:52",
 		"findPackageIn:" : "jr 2/9/2017 20:37",
 		"initialize" : "jr 2/11/2017 03:49",
 		"pushAncestorsOfMCVersionInfo:" : "jr 2/11/2017 04:06",
 		"verify:" : "jr 2/11/2017 04:09",
-		"verify:hasCorrectConversionsUpTo:whichComesFrom:" : "jr 2/9/2017 20:57" } }
+		"verify:hasCorrectConversionsUpTo:whichComesFrom:" : "jr 2/11/2017 14:54" } }

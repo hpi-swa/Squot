@@ -1,0 +1,1 @@
+I am a factory for recurring widget specs.

@@ -1,1 +1,1 @@
-{	'FileSystem-Git.package' : #SquotCypressCodeSerializer}
+{	'src/FileSystem-Git.package' : #SquotCypressCodeSerializer}

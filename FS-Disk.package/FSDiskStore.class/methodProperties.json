@@ -18,7 +18,7 @@
 		"createDirectory:" : "cwp 4/3/2011 22:17",
 		"defaultWorkingDirectory" : "cwp 2/27/2011 10:03",
 		"delete:" : "cwp 2/27/2011 10:03",
-		"directoryAt:ifAbsent:nodesDo:" : "cwp 2/27/2011 10:03",
+		"directoryAt:ifAbsent:nodesDo:" : "jr 2/11/2017 03:18",
 		"entryFromNode:filesystem:path:" : "cwp 2/18/2011 14:45",
 		"entryFromNode:path:for:" : "cwp 2/18/2011 14:56",
 		"forReferencePrintOn:" : "cwp 2/27/2011 08:32",

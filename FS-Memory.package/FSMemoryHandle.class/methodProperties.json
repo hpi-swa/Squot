@@ -6,7 +6,7 @@
 		"at:put:" : "lr 4/13/2010 16:12",
 		"at:read:startingAt:count:" : "lr 2/15/2010 20:54",
 		"at:write:startingAt:count:" : "cwp 1/31/2010 22:39",
-		"close" : "cwp 7/28/2009 23:10",
+		"close" : "jr 1/20/2017 15:57",
 		"copyFrom:to:" : "jr 10/12/2016 18:08",
 		"fileSize" : "jr 10/18/2016 22:09",
 		"flush" : "cwp 7/29/2009 22:23",

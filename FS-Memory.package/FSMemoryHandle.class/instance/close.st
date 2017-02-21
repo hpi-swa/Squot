@@ -1,4 +1,4 @@
 public
 close
-	self truncateTo: size.
+	writable ifTrue: [self truncateTo: size].
 	bytes := nil

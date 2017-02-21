@@ -1,6 +1,6 @@
 {
 	"class" : {
-		 },
+		"verifyVersionsOf:ofLoadedPackageNamed:" : "jr 2/21/2017 14:47" },
 	"instance" : {
 		"countVersions:" : "jr 2/11/2017 14:52",
 		"findPackageIn:" : "jr 2/9/2017 20:37",

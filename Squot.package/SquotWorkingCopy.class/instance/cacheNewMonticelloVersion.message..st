@@ -1,4 +1,4 @@
-creating new versions
+private creating new versions
 cacheNewMonticelloVersion: aPackageInfoArtifact message: messageText
 	| folderName packageName mcWorkingCopy |
 	folderName := (aPackageInfoArtifact path copyAfterLast: $/) ifEmpty: aPackageInfoArtifact path.

@@ -1,3 +1,3 @@
-as yet unclassified
+deserialization registry
 addDeserializerFactory: aDeserializerFactory
 	DefaultDeserializerRegistry add: aDeserializerFactory.

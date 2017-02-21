@@ -1,4 +1,4 @@
-creating new versions
+private creating new versions
 answer: aMCVersionNameAndMessageRequest toApproximate: aPackageInfoArtifact message: messageText workingCopy: mcWorkingCopy
 	| allOperations ignored versionName wantedOperations |
 	allOperations := aMCVersionNameAndMessageRequest patchBlock value operations.

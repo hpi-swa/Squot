@@ -1,4 +1,4 @@
-creating new versions
+private creating new versions
 cacheNewMonticelloVersions: finalSnapshot message: messageText
 	finalSnapshot artifactsDo: [:each |
 		(each storeInfo at: #objectClassName ifAbsent: []) = #PackageInfo

@@ -1,4 +1,5 @@
 {
 	#objectClassName : #PackageInfo,
-	#serializer : #SquotCypressCodeSerializer
+	#serializer : #SquotCypressCodeSerializer,
+	#loader : 'nil'
 }

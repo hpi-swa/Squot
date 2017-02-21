@@ -21,7 +21,8 @@ verify: aVersion
 			collect: [:each |
 				((each isKindOf: MCTraitDefinition) and: [mcTraits includes: each className])
 					ifTrue: [each copy instVarNamed: 'comment' put: ''; yourself]
-					ifFalse: [each]]).
+					ifFalse: [each]]
+			as: originMCVersion snapshot definitions species).
 	originMCVersion snapshot definitions sorted = artifactSnapshot definitions sorted
 		ifFalse: [
 			patch := packageArtifact content patchRelativeToBase: originMCVersion snapshot.

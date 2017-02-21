@@ -13,6 +13,8 @@ convertMonticelloVersion: aMCVersionInfo
 				collect: [:each | self squotVersionForMonticelloVersionInfo: each]);
 			message: aMCVersionInfo message;
 			author: aMCVersionInfo author;
-			committer: Utilities authorInitials;
+			committer: (squotRepository extension: #authorInformation
+				ifPresent: [:authorInformation | authorInformation defaultAuthor]
+				ifAbsent: [Utilities authorInitials]);
 			authoringTimeStamp: aMCVersionInfo timeStamp].
 	self mapMonticelloVersion: aMCVersionInfo to: newVersion.

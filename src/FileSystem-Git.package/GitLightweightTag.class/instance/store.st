@@ -1,0 +1,3 @@
+storing
+store
+	self updateTagRef

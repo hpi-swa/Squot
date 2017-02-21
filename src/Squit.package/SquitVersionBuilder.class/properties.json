@@ -1,0 +1,21 @@
+{
+	"category" : "Squit-Core",
+	"classinstvars" : [
+		 ],
+	"classtraitcomposition" : "TSquotVersionBuilder classTrait",
+	"classvars" : [
+		 ],
+	"commentStamp" : "jr 2/5/2017 22:48",
+	"instvars" : [
+		"repository",
+		"message",
+		"parents",
+		"snapshot",
+		"author",
+		"committer" ],
+	"name" : "SquitVersionBuilder",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"traitcomposition" : "TSquotVersionBuilder",
+	"type" : "normal" }

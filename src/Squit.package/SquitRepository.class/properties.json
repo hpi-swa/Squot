@@ -1,0 +1,17 @@
+{
+	"category" : "Squit-Core",
+	"classinstvars" : [
+		 ],
+	"classtraitcomposition" : "TSquotLocalRepository classTrait",
+	"classvars" : [
+		 ],
+	"commentStamp" : "jr 1/26/2017 14:31",
+	"instvars" : [
+		"gitRepository",
+		"versionsCache" ],
+	"name" : "SquitRepository",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"traitcomposition" : "TSquotLocalRepository",
+	"type" : "normal" }

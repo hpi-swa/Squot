@@ -1,0 +1,21 @@
+{
+	"category" : "FileSystem-Git-Plumbing-Utilities",
+	"classinstvars" : [
+		 ],
+	"classtraitcomposition" : "TGitVisitor classTrait",
+	"classvars" : [
+		 ],
+	"commentStamp" : "jr 10/22/2016 15:43",
+	"instvars" : [
+		"sourceCommits",
+		"sinkCommits",
+		"seen",
+		"searchFrontier",
+		"revList",
+		"commitBlock" ],
+	"name" : "GitRevisionListVisitor",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"traitcomposition" : "TGitVisitor",
+	"type" : "normal" }

@@ -1,0 +1,24 @@
+{
+	"class" : {
+		 },
+	"instance" : {
+		"=" : "MaxLeske 10/18/2010 12:14",
+		"add:" : "CamilloBruni 7/15/2011 19:43",
+		"allSatisfy:" : "CamilloBruni 7/5/2011 16:34",
+		"anyOne" : "MaxLeske 10/19/2010 09:38",
+		"anySatisfy:" : "CamilloBruni 7/5/2011 17:07",
+		"collect:" : "MaxLeske 10/18/2010 12:13",
+		"do:" : "MaxLeske 10/18/2010 12:13",
+		"hash" : "jr 11/24/2016 11:44",
+		"ifEmpty:" : "jr 2/2/2017 11:41",
+		"includes:" : "MaxLeske 10/18/2010 12:15",
+		"includesSubPath:" : "CamilloBruni 8/30/2012 14:11",
+		"initialize" : "CamilloBruni 7/15/2011 19:43",
+		"isEmpty" : "jr 2/2/2017 11:41",
+		"maxDepth" : "CamilloBruni 7/15/2011 19:44",
+		"printOn:" : "CamilloBruni 8/1/2011 17:05",
+		"remove:" : "jr 11/24/2016 11:45",
+		"remove:ifAbsent:" : "jr 11/24/2016 11:50",
+		"select:" : "MaxLeske 10/18/2010 12:13",
+		"select:thenDo:" : "MaxLeske 10/19/2010 09:07",
+		"sorted:" : "MaxLeske 10/18/2010 22:31" } }

@@ -1,0 +1,18 @@
+{
+	"category" : "Squit-Tests",
+	"classinstvars" : [
+		 ],
+	"classtraitcomposition" : "SquitTestRepo classTrait",
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"gitRepository",
+		"squitRepository",
+		"oldMaster" ],
+	"name" : "SquitRepositoryTest",
+	"pools" : [
+		 ],
+	"super" : "TestCase",
+	"traitcomposition" : "SquitTestRepo",
+	"type" : "normal" }

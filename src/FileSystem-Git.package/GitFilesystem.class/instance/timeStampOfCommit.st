@@ -1,0 +1,3 @@
+git
+timeStampOfCommit
+	^ store timeStampOfCommit

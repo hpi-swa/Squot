@@ -1,0 +1,19 @@
+{
+	"class" : {
+		"schemes" : "CamilloBruni 12/21/2011 14:35" },
+	"instance" : {
+		"closeConnection" : "DamienCassou 1/31/2013 12:34",
+		"discoverReferencesForService:" : "jr 12/3/2016 01:06",
+		"flush" : "jr 12/3/2016 01:14",
+		"hostInformation" : "jr 12/3/2016 01:16",
+		"isConnected" : "DamienCassou 1/31/2013 12:30",
+		"openConnection" : "DamienCassou 1/31/2013 16:33",
+		"pushReferences:of:deleting:" : "jr 1/2/2017 19:31",
+		"reader" : "DamienCassou 1/31/2013 16:36",
+		"stream" : "DamienCassou 1/31/2013 16:23",
+		"want:" : "CamilloBruni 12/25/2011 14:00",
+		"want:capabilities:" : "DamienCassou 1/31/2013 12:46",
+		"wantAll:" : "DamienCassou 1/31/2013 12:44",
+		"wantAll:capabilities:" : "jr 12/3/2016 01:15",
+		"withOpenConnection:" : "jr 12/1/2016 23:52",
+		"writer" : "DamienCassou 1/31/2013 16:36" } }

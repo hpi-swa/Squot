@@ -1,0 +1,3 @@
+delegate
+handleClass
+	^ cacheStore handleClass

@@ -1,0 +1,10 @@
+{
+	"class" : {
+		 },
+	"instance" : {
+		"testUpdateReferences" : "jr 1/2/2017 19:51",
+		"testWantAllCapabilitiesMoreThanOne" : "jr 12/3/2016 01:01",
+		"testWantAllCapabilitiesOnlyOne" : "jr 12/3/2016 01:01",
+		"testWantAllCapabilitiesWithAllOptions" : "jr 12/3/2016 01:01",
+		"testWritePktLine" : "DamienCassou 1/30/2013 18:04",
+		"withWriterAssert:equals:" : "jr 12/4/2016 21:25" } }

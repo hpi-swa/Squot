@@ -1,0 +1,10 @@
+initialize-release
+initializeWith: aPackFile
+	| dir |
+	self 
+		packFile: aPackFile;
+		indexFile: GitIndexFileVersion2 new;
+		repository: aPackFile repository.
+	dir := aPackFile repository packsDir.
+	aPackFile reference:  dir / 'tmp_pack_XXXXXX'.
+	self indexFile reference: dir / 'tmp_idx_XXXXXX'

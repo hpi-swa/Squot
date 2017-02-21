@@ -1,0 +1,19 @@
+{
+	"class" : {
+		"schemes" : "jr 12/1/2016 14:25" },
+	"instance" : {
+		"client" : "jr 12/1/2016 15:05",
+		"closeConnection" : "jr 12/3/2016 01:12",
+		"discoverReferencesForService:" : "jr 12/1/2016 23:48",
+		"fallbackToDumbProtocol" : "jr 12/1/2016 16:45",
+		"fetchRefsFrom:" : "jr 11/30/2016 18:13",
+		"initialRequestTo:withService:" : "jr 12/1/2016 16:54",
+		"invokeReceivePackWithRefs:andPack:deleting:" : "jr 1/3/2017 16:53",
+		"isConnected" : "jr 12/3/2016 01:21",
+		"isSmartResponse:" : "jr 12/1/2016 23:40",
+		"openConnection" : "jr 12/2/2016 16:31",
+		"outputStream" : "DamienCassou 1/29/2013 15:02",
+		"postForUploadPack:" : "jr 10/25/2016 17:05",
+		"pushReferences:of:deleting:" : "jr 1/2/2017 23:13",
+		"urlForService:" : "jr 10/25/2016 17:05",
+		"wantAll:capabilities:" : "jr 12/2/2016 17:27" } }

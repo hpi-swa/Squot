@@ -1,0 +1,25 @@
+{
+	"class" : {
+		"validate:" : "CamilloBruni 6/21/2011 06:05" },
+	"instance" : {
+		"addError:for:" : "MaxLeske 6/24/2012 09:46",
+		"collectError:for:" : "MaxLeske 6/24/2012 09:50",
+		"collectObjects" : "CamilloBruni 6/22/2011 05:01",
+		"collectUnreachableErrors" : "CamilloBruni 6/22/2011 04:19",
+		"errorsFor:" : "MaxLeske 6/24/2012 09:47",
+		"isReachable:" : "MaxLeske 8/13/2012 22:22",
+		"mark:" : "CamilloBruni 7/21/2011 15:05",
+		"repository" : "CamilloBruni 6/22/2011 03:45",
+		"repository:" : "CamilloBruni 6/21/2011 06:06",
+		"validate" : "MaxLeske 6/24/2012 15:32",
+		"validate:" : "jr 11/20/2016 21:46",
+		"validateBranches" : "MaxLeske 8/12/2012 11:55",
+		"validateHead" : "MaxLeske 8/12/2012 11:55",
+		"validateHeadFile" : "MaxLeske 6/24/2012 15:33",
+		"validateObjects" : "CamilloBruni 6/21/2011 06:27",
+		"validateTags" : "MaxLeske 8/12/2012 11:55",
+		"validateUnreachableObjects" : "MaxLeske 8/12/2012 12:05",
+		"visitBlob:" : "MaxLeske 8/13/2012 22:22",
+		"visitCommit:" : "CamilloBruni 9/3/2012 18:32",
+		"visitTag:" : "MaxLeske 8/13/2012 22:29",
+		"visitTree:" : "MaxLeske 8/13/2012 22:29" } }

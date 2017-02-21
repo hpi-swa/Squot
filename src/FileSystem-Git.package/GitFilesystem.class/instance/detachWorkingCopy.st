@@ -1,0 +1,3 @@
+git
+detachWorkingCopy
+	store detachWorkingCopy.

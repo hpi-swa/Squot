@@ -1,0 +1,28 @@
+{
+	"class" : {
+		"isAbstract" : "DamienCassou 1/30/2013 16:37" },
+	"instance" : {
+		"example4Zeros" : "DamienCassou 1/30/2013 16:34",
+		"exampleAdditionalDataLine" : "DamienCassou 1/30/2013 16:34",
+		"exampleBranch1" : "DamienCassou 1/30/2013 16:34",
+		"exampleCompressingMessages" : "DamienCassou 1/30/2013 16:34",
+		"exampleCompressingMessagesLine" : "DamienCassou 1/30/2013 16:34",
+		"exampleCountingObjects" : "DamienCassou 1/30/2013 16:34",
+		"exampleDataLine" : "DamienCassou 1/30/2013 16:34",
+		"exampleErrorMessage" : "DamienCassou 1/30/2013 16:34",
+		"exampleErrorMessageLine" : "DamienCassou 1/30/2013 16:34",
+		"exampleFirstResponseLine" : "DamienCassou 1/31/2013 13:05",
+		"exampleMaster" : "DamienCassou 1/30/2013 16:34",
+		"exampleNak" : "DamienCassou 1/30/2013 16:34",
+		"examplePackData" : "DamienCassou 1/30/2013 16:34",
+		"exampleResponse" : "DamienCassou 1/30/2013 16:34",
+		"exampleTagV2" : "DamienCassou 1/31/2013 13:05",
+		"exampleTagV3" : "DamienCassou 1/31/2013 13:36",
+		"exampleTotalDeltaReused" : "DamienCassou 1/30/2013 16:34",
+		"newReaderFor:" : "DamienCassou 1/30/2013 16:40",
+		"testParseReferenceDicoveryResponse" : "jr 11/30/2016 18:13",
+		"testReadPktLine" : "DamienCassou 1/30/2013 19:36",
+		"testReadSideBandErrorMessage" : "DamienCassou 1/30/2013 16:45",
+		"testReadSideBandPackData" : "DamienCassou 1/30/2013 16:48",
+		"testReadSideBandProgressMessages" : "DamienCassou 1/30/2013 16:48",
+		"testReadSideBandZero" : "DamienCassou 1/30/2013 16:49" } }

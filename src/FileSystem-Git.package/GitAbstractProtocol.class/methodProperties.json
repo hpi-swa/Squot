@@ -1,0 +1,26 @@
+{
+	"class" : {
+		"connectTo:" : "CamilloBruni 12/21/2011 14:49",
+		"continueWith:from:" : "DamienPollet 2/19/2013 11:39",
+		"continueWith:from:content:" : "jr 10/25/2016 14:38",
+		"example1" : "DamienCassou 1/28/2013 20:47",
+		"protocolForScheme:" : "CamilloBruni 12/21/2011 14:37",
+		"schemes" : "DamienPollet 2/19/2013 11:42",
+		"url:" : "CamilloBruni 12/21/2011 14:49" },
+	"instance" : {
+		"branches" : "CamilloBruni 10/8/2012 14:22",
+		"continueWith:initialResponseContent:" : "jr 10/25/2016 14:40",
+		"fetchRefs" : "DamienCassou 1/31/2013 16:28",
+		"head" : "DamienCassou 1/31/2013 16:34",
+		"host" : "CamilloBruni 12/21/2011 14:50",
+		"initializeWith:" : "DamienCassou 1/29/2013 15:45",
+		"loadRefs" : "jr 12/1/2016 16:52",
+		"preparePackFileToPushRefs:of:" : "jr 1/2/2017 22:39",
+		"printOn:" : "jr 10/25/2016 16:32",
+		"pushReferences:of:deleting:" : "jr 1/2/2017 19:31",
+		"refs" : "DamienCassou 2/26/2013 14:17",
+		"refsPrefixed:" : "CamilloBruni 10/8/2012 14:23",
+		"repository" : "CamilloBruni 12/21/2011 14:48",
+		"requestCredentials" : "jr 12/2/2016 00:14",
+		"tags" : "CamilloBruni 10/8/2012 14:23",
+		"url" : "CamilloBruni 12/21/2011 14:50" } }

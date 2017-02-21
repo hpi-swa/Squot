@@ -1,0 +1,13 @@
+{
+	"class" : {
+		"lastStoredRun" : "CamilloBruni 8/1/2011 16:49" },
+	"instance" : {
+		"createSomeBlobs" : "MaxLeske 2/28/2012 16:42",
+		"createSomeCommits" : "CamilloBruni 9/3/2012 18:59",
+		"createSomeTreeEntries" : "CamilloBruni 9/3/2012 18:53",
+		"createSomeTrees" : "MaxLeske 2/28/2012 16:40",
+		"setUp" : "CamilloBruni 8/30/2012 14:09",
+		"testInitializeWithEverything" : "CamilloBruni 9/3/2012 18:59",
+		"testPrintOn" : "MaxLeske 6/27/2010 19:55",
+		"testRetrievingParents" : "MaxLeske 2/26/2012 15:40",
+		"testWritingSameCommitTwice" : "CamilloBruni 9/3/2012 18:59" } }

@@ -1,0 +1,3 @@
+git
+timeStampOfCreation
+	^ store timeStampOfCreation

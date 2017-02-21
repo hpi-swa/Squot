@@ -1,0 +1,14 @@
+{
+	"category" : "FileSystem-Git-Core",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "<historical>",
+	"instvars" : [
+		"repository" ],
+	"name" : "FileSystemGitRepository",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }

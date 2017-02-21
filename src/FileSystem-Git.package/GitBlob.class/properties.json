@@ -1,0 +1,14 @@
+{
+	"category" : "FileSystem-Git-Plumbing-Core",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "<historical>",
+	"instvars" : [
+		"bytes" ],
+	"name" : "GitBlob",
+	"pools" : [
+		 ],
+	"super" : "GitStorableObject",
+	"type" : "normal" }

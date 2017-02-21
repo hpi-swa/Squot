@@ -1,0 +1,28 @@
+{
+	"class" : {
+		"on:in:" : "MaxLeske 2/29/2012 18:03",
+		"pack:" : "MaxLeske 8/12/2012 13:47",
+		"readFrom:" : "DamienCassou 2/26/2013 16:00" },
+	"instance" : {
+		"delete" : "MaxLeske 8/12/2012 13:33",
+		"hasIndexFile" : "MaxLeske 9/8/2012 13:20",
+		"indexFile" : "MaxLeske 6/23/2012 20:13",
+		"initializeIndex" : "MaxLeske 9/1/2012 20:45",
+		"initializeWith:in:" : "MaxLeske 6/23/2012 20:39",
+		"numberOfObjects" : "MaxLeske 9/8/2012 10:09",
+		"objectAtOffset:" : "MaxLeske 6/23/2012 17:08",
+		"objectNamed:" : "MaxLeske 6/23/2012 19:34",
+		"packData" : "MaxLeske 6/23/2012 17:08",
+		"packDataStreamDo:" : "jr 12/7/2016 15:46",
+		"packedObjectsDo:" : "MaxLeske 9/8/2012 20:45",
+		"readHeaders" : "MaxLeske 9/8/2012 08:55",
+		"readStream" : "DamienCassou 2/26/2013 18:19",
+		"readStream:" : "DamienCassou 2/26/2013 15:54",
+		"reference" : "MaxLeske 2/29/2012 18:47",
+		"reference:" : "MaxLeske 2/29/2012 18:48",
+		"repackWithoutDelification" : "MaxLeske 8/5/2012 18:09",
+		"repository" : "MaxLeske 2/29/2012 17:46",
+		"repository:" : "MaxLeske 2/29/2012 17:46",
+		"unpack" : "MaxLeske 9/8/2012 10:06",
+		"verifyPackFileIdentifierFrom:" : "MaxLeske 9/8/2012 08:53",
+		"verifyPackFileVersionFrom:" : "MaxLeske 9/8/2012 08:54" } }

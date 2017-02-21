@@ -1,0 +1,15 @@
+{
+	"category" : "FileSystem-Git-Plumbing-Tests",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "jr 1/14/2017 00:51",
+	"instvars" : [
+		"oldName",
+		"oldEmail" ],
+	"name" : "TemporaryGitStamp",
+	"pools" : [
+		 ],
+	"super" : "GitStamp",
+	"type" : "normal" }

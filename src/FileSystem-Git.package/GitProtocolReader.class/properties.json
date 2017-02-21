@@ -1,0 +1,15 @@
+{
+	"category" : "FileSystem-Git-Remote",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "<historical>",
+	"instvars" : [
+		"stream",
+		"fourByteLookahead" ],
+	"name" : "GitProtocolReader",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }

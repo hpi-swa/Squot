@@ -1,0 +1,3 @@
+helper
+url
+	^ self subclassResponsibility 

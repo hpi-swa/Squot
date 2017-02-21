@@ -1,0 +1,14 @@
+{
+	"category" : "FileSystem-Git-Remote-Tests",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "GitDumbHTTPProtocolTest",
+	"pools" : [
+		 ],
+	"super" : "GitAbstractProtocolTest",
+	"type" : "normal" }

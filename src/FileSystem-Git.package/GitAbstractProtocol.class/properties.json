@@ -1,0 +1,16 @@
+{
+	"category" : "FileSystem-Git-Remote",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "jr 12/2/2016 00:00",
+	"instvars" : [
+		"url",
+		"refs",
+		"credentials" ],
+	"name" : "GitAbstractProtocol",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }

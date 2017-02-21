@@ -1,0 +1,3 @@
+Squit internal
+gitRepository
+	^ gitRepository

@@ -1,0 +1,27 @@
+{
+	"class" : {
+		 },
+	"instance" : {
+		"=" : "CamilloBruni 7/15/2011 15:59",
+		"branch:message:" : "CamilloBruni 7/15/2011 17:37",
+		"branch:message:andTag:" : "CamilloBruni 7/15/2011 17:37",
+		"branchName" : "CamilloBruni 7/13/2011 20:21",
+		"branchNames" : "CamilloBruni 7/15/2011 15:26",
+		"branches" : "CamilloBruni 7/15/2011 15:26",
+		"commit:" : "CamilloBruni 7/13/2011 20:18",
+		"commit:andTag:" : "CamilloBruni 7/15/2011 15:36",
+		"detachWorkingCopy" : "CamilloBruni 7/15/2011 18:03",
+		"message" : "CamilloBruni 7/13/2011 20:15",
+		"name" : "CamilloBruni 8/1/2011 16:17",
+		"parents" : "CamilloBruni 7/15/2011 17:18",
+		"prepareNewCommit" : "jr 2/8/2017 15:14",
+		"repository" : "CamilloBruni 7/15/2011 15:26",
+		"repository:" : "CamilloBruni 7/15/2011 15:26",
+		"reset" : "CamilloBruni 7/13/2011 19:46",
+		"revision" : "CamilloBruni 7/13/2011 20:21",
+		"revisionHash" : "CamilloBruni 1/23/2012 22:33",
+		"tagNames" : "CamilloBruni 7/15/2011 15:27",
+		"tags" : "CamilloBruni 7/15/2011 15:27",
+		"timeStampOfCommit" : "CamilloBruni 7/15/2011 15:33",
+		"timeStampOfCreation" : "CamilloBruni 7/15/2011 15:33",
+		"validate" : "CamilloBruni 8/9/2011 16:57" } }

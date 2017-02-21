@@ -1,0 +1,17 @@
+{
+	"category" : "FileSystem-Git-Plumbing-Tests",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"repository",
+		"emptyBlob",
+		"simpleTree",
+		"visitor" ],
+	"name" : "GitRevisionListVisitorTests",
+	"pools" : [
+		 ],
+	"super" : "GitTestCase",
+	"type" : "normal" }

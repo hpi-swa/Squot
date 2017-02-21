@@ -1,0 +1,1 @@
+https://github.com/git/git/blob/master/Documentation/technical/protocol-capabilities.txt

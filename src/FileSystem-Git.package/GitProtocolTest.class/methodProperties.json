@@ -1,0 +1,10 @@
+{
+	"class" : {
+		 },
+	"instance" : {
+		"expectedFailures" : "jr 12/1/2016 23:57",
+		"tearDown" : "jr 1/14/2017 01:12",
+		"testFetchingABranch" : "jr 12/1/2016 23:53",
+		"testFetchingATag" : "jr 12/1/2016 23:53",
+		"testPushingABranch" : "jr 1/14/2017 01:12",
+		"url" : "jr 10/26/2016 16:32" } }

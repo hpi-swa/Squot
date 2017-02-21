@@ -1,0 +1,1 @@
+I represent a git repository. Every message sent to me will return an FSGitFilesystem object or a collection of such objects.

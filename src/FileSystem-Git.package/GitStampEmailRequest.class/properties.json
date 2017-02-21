@@ -1,0 +1,14 @@
+{
+	"category" : "FileSystem-Git-Plumbing-Notifications",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "<historical>",
+	"instvars" : [
+		 ],
+	"name" : "GitStampEmailRequest",
+	"pools" : [
+		 ],
+	"super" : "Notification",
+	"type" : "normal" }

@@ -1,0 +1,14 @@
+{
+	"category" : "FileSystem-Git-Plumbing-Core",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "<historical>",
+	"instvars" : [
+		 ],
+	"name" : "GitLightweightTag",
+	"pools" : [
+		 ],
+	"super" : "GitTag",
+	"type" : "normal" }

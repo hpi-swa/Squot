@@ -1,0 +1,12 @@
+{
+	"class" : {
+		 },
+	"instance" : {
+		"indexBytesWithRefDelta" : "MaxLeske 6/27/2012 10:28",
+		"indexBytesWithTag" : "MaxLeske 6/26/2012 17:21",
+		"testCRC" : "MaxLeske 6/24/2012 19:19",
+		"testPackedObjectsDoWithOfsDelta" : "MaxLeske 6/24/2012 19:51",
+		"testUnpackingWithOfsDelta" : "MaxLeske 6/24/2012 19:15",
+		"testUnpackingWithoutIndexFileOfsDelta" : "MaxLeske 9/8/2012 19:19",
+		"usePackWithOfsDelta" : "MaxLeske 6/24/2012 18:48",
+		"verifyCRCFor:at:" : "MaxLeske 6/24/2012 19:20" } }

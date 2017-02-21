@@ -1,0 +1,14 @@
+{
+	"category" : "Squit-Tests",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "SquotMonticelloConverterTestWithSquit",
+	"pools" : [
+		 ],
+	"super" : "SquotMonticelloConverterTest",
+	"type" : "normal" }

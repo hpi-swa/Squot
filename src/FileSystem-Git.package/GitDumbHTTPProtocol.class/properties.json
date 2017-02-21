@@ -1,0 +1,16 @@
+{
+	"category" : "FileSystem-Git-Remote",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "<historical>",
+	"instvars" : [
+		"client",
+		"stream",
+		"outputStream" ],
+	"name" : "GitDumbHTTPProtocol",
+	"pools" : [
+		 ],
+	"super" : "GitAbstractProtocol",
+	"type" : "normal" }

@@ -1,0 +1,25 @@
+{
+	"class" : {
+		"byteTypeCode" : "MaxLeske 2/29/2012 14:27",
+		"entries:in:" : "MaxLeske 2/28/2012 16:28",
+		"typeCode" : "tonyg 2/22/2010 07:17" },
+	"instance" : {
+		"accept:" : "MaxLeske 8/13/2012 22:15",
+		"at:" : "MaxLeske 2/28/2012 18:09",
+		"entries" : "MaxLeske 6/26/2010 22:28",
+		"entries:" : "MaxLeske 6/24/2012 11:00",
+		"entryAt:" : "tonyg 2/23/2010 19:10",
+		"entryAt:ifAbsent:" : "MaxLeske 10/11/2010 23:14",
+		"entryAt:ifPresent:ifAbsent:" : "MaxLeske 10/18/2010 09:46",
+		"initialize" : "tonyg 2/23/2010 20:18",
+		"isEmpty" : "MaxLeske 6/24/2012 09:51",
+		"isTree" : "CamilloBruni 7/15/2011 19:22",
+		"loadFrom:" : "MaxLeske 6/24/2012 11:01",
+		"objects" : "MaxLeske 6/24/2012 10:57",
+		"printOn:" : "CamilloBruni 7/5/2011 16:54",
+		"putEntry:" : "jr 11/22/2016 17:31",
+		"removeEntryAt:" : "jr 11/22/2016 17:31",
+		"removeEntryAt:ifAbsent:" : "jr 11/22/2016 17:32",
+		"size" : "MaxLeske 6/8/2010 22:36",
+		"storeOn:" : "MaxLeske 6/24/2012 11:17",
+		"validate" : "MaxLeske 2/28/2012 20:02" } }

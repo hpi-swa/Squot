@@ -1,0 +1,3 @@
+helpers
+defaultStamp
+	^ GitStamp now

@@ -1,0 +1,7 @@
+{
+	"class" : {
+		"ensureDefaultValues" : "jr 1/14/2017 01:04",
+		"new" : "jr 1/14/2017 01:03" },
+	"instance" : {
+		"initialize" : "jr 1/14/2017 01:04",
+		"restorePreviousValues" : "jr 1/14/2017 00:49" } }

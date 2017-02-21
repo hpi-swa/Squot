@@ -1,0 +1,3 @@
+git
+revision
+	^ store revision

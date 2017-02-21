@@ -1,0 +1,3 @@
+comparing
+= aSet
+	^ set = aSet

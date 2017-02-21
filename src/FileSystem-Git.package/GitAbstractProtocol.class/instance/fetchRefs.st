@@ -1,0 +1,3 @@
+private
+fetchRefs
+	^ self subclassResponsibility

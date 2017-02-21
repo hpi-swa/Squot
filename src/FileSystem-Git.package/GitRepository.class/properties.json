@@ -1,0 +1,15 @@
+{
+	"category" : "FileSystem-Git-Plumbing-Core",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "<historical>",
+	"instvars" : [
+		"reference",
+		"packs" ],
+	"name" : "GitRepository",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }

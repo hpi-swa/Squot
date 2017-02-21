@@ -1,0 +1,28 @@
+{
+	"class" : {
+		"deleteRefs" : "CamilloBruni 1/15/2012 22:30",
+		"includeTag" : "CamilloBruni 1/15/2012 22:30",
+		"multiAck" : "CamilloBruni 1/15/2012 22:30",
+		"noProgress" : "CamilloBruni 1/15/2012 22:31",
+		"ofsDelta" : "CamilloBruni 1/15/2012 22:31",
+		"reportStatus" : "CamilloBruni 1/15/2012 22:31",
+		"shallow" : "CamilloBruni 1/15/2012 22:31",
+		"sideBand" : "CamilloBruni 1/15/2012 22:31",
+		"sideBand64k" : "CamilloBruni 1/15/2012 22:31",
+		"thinPack" : "CamilloBruni 1/15/2012 22:32" },
+	"instance" : {
+		"deleteRefs" : "CamilloBruni 1/15/2012 22:31",
+		"disable:" : "CamilloBruni 1/15/2012 22:24",
+		"enable:" : "CamilloBruni 1/15/2012 22:24",
+		"includeTag" : "CamilloBruni 1/15/2012 22:31",
+		"initialize" : "CamilloBruni 1/15/2012 22:25",
+		"multiAck" : "CamilloBruni 1/15/2012 22:31",
+		"noProgress" : "CamilloBruni 1/15/2012 22:18",
+		"ofsDelta" : "CamilloBruni 1/15/2012 22:31",
+		"printOn:" : "DamienCassou 1/31/2013 13:27",
+		"reportStatus" : "CamilloBruni 1/15/2012 22:31",
+		"shallow" : "CamilloBruni 1/15/2012 22:31",
+		"sideBand" : "CamilloBruni 1/15/2012 22:31",
+		"sideBand64k" : "CamilloBruni 1/15/2012 22:31",
+		"sideBand:" : "CamilloBruni 1/15/2012 22:20",
+		"thinPack" : "CamilloBruni 1/15/2012 22:19" } }

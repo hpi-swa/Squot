@@ -1,0 +1,16 @@
+{
+	"category" : "FileSystem-Git-Plumbing-Core",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "<historical>",
+	"instvars" : [
+		"entryName",
+		"entryHash",
+		"isInFilemode" ],
+	"name" : "GitTreeEntry",
+	"pools" : [
+		 ],
+	"super" : "GitObject",
+	"type" : "normal" }

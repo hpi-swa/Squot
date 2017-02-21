@@ -1,0 +1,15 @@
+{
+	"category" : "Squit-Core",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "jr 2/5/2017 22:40",
+	"instvars" : [
+		"repository",
+		"commit" ],
+	"name" : "SquitVersion",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }

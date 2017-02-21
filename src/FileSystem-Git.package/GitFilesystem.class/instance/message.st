@@ -1,0 +1,3 @@
+git
+message
+	^ store message

@@ -1,0 +1,15 @@
+{
+	"category" : "FileSystem-Git-Plumbing-Packs",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"packFile",
+		"deltaQueue" ],
+	"name" : "GitPackFileUnpacker",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }

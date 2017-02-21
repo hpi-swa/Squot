@@ -1,0 +1,16 @@
+{
+	"class" : {
+		"loadDefinitionsFrom:" : "CamilloBruni 7/12/2011 13:36",
+		"loadDefinitionsFrom:into:" : "CamilloBruni 7/12/2011 13:39" },
+	"instance" : {
+		"classInstVarNames" : "CamilloBruni 7/12/2011 16:51",
+		"className" : "CamilloBruni 1/23/2012 23:32",
+		"definitions:" : "CamilloBruni 7/12/2011 13:39",
+		"loadCassDefinition" : "jr 11/17/2016 14:07",
+		"loadClassMethodDefinitions" : "CamilloBruni 1/23/2012 23:45",
+		"loadDefinitions" : "jr 11/17/2016 13:14",
+		"loadInstanceMethodDefinitions" : "CamilloBruni 1/23/2012 23:25",
+		"loadMethodDefinitionFrom:meta:" : "CamilloBruni 1/23/2012 23:40",
+		"loadMethodsFrom:meta:" : "CamilloBruni 1/23/2012 23:34",
+		"readFrom:" : "CamilloBruni 7/12/2011 13:38",
+		"typeOfSubclass:" : "CamilloBruni 7/12/2011 16:51" } }

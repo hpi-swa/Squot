@@ -1,0 +1,3 @@
+git
+revisionHash
+	^ store revisionHash

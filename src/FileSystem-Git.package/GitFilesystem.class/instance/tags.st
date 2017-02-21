@@ -1,0 +1,3 @@
+git
+tags
+	^ repository tags

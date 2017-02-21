@@ -1,0 +1,18 @@
+{
+	"category" : "FileSystem-Git-Core",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "CamilloBruni 8/1/2011 18:33",
+	"instvars" : [
+		"revision",
+		"cache",
+		"modManager",
+		"repository",
+		"cacheStore" ],
+	"name" : "GitStore",
+	"pools" : [
+		 ],
+	"super" : "FileSystemStore",
+	"type" : "normal" }

@@ -1,0 +1,21 @@
+{
+	"category" : "FileSystem-Git-Core",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "<historical>",
+	"instvars" : [
+		"createdPaths",
+		"deletedPaths",
+		"repository",
+		"cache",
+		"treeMap",
+		"storedObjects",
+		"hasChanges",
+		"pendingPathsForEntryUpdate" ],
+	"name" : "GitModificationManager",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }

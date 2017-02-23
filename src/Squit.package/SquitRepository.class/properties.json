@@ -8,7 +8,9 @@
 	"commentStamp" : "jr 1/26/2017 14:31",
 	"instvars" : [
 		"gitRepository",
-		"versionsCache" ],
+		"versionsCache",
+		"filesystemsCache",
+		"leastRecentlyRequestedFilesystems" ],
 	"name" : "SquitRepository",
 	"pools" : [
 		 ],

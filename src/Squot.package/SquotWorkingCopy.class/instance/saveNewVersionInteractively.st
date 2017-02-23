@@ -1,6 +1,6 @@
 creating new versions
 saveNewVersionInteractively
-	| snapshotBuilder loadedSnapshot baseSnapshot selectedChanges tool finalSnapshot |
+	| snapshotBuilder loadedSnapshot baseSnapshot selectedChanges tool finalSnapshot newVersion |
 	self flag: #optimize. "snapshotting and diffing"
 	tool := SquotSaveVersionDialog new
 		parentVersions: self parentVersions;
@@ -16,9 +16,10 @@ saveNewVersionInteractively
 	snapshotBuilder := baseSnapshot createNewBuilder.
 	selectedChanges do: [:each | snapshotBuilder add: each].
 	finalSnapshot := snapshotBuilder buildSnapshot.
-	self halt.
-	loadedHistorian createNewVersion: finalSnapshot
+	newVersion := loadedHistorian createNewVersion: finalSnapshot
 		with: [:version | version
 				message: tool message asString;
 				author: self defaultAuthor].
+	previousSnapshot := finalSnapshot.
+	previousVersionId := newVersion internalId.
 	self cacheNewMonticelloVersions: finalSnapshot message: tool message.

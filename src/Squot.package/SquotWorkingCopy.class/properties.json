@@ -8,7 +8,9 @@
 	"instvars" : [
 		"store",
 		"repository",
-		"loadedHistorian" ],
+		"loadedHistorian",
+		"previousVersionId",
+		"previousSnapshot" ],
 	"name" : "SquotWorkingCopy",
 	"pools" : [
 		 ],

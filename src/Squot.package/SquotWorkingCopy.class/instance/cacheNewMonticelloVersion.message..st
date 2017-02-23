@@ -5,6 +5,9 @@ cacheNewMonticelloVersion: aPackageInfoArtifact message: messageText
 	packageName := folderName allButLast: '.package' size.
 	[mcWorkingCopy := MCWorkingCopy forPackageNamed: packageName]
 		on: NotFound do: [^ self].
+	(aPackageInfoArtifact content
+		patchRelativeToBase: (self cachedMCBaseVersionOf: mcWorkingCopy) snapshot)
+		operations isEmpty ifTrue: ["no changes to this package" ^ self].
 	[mcWorkingCopy newVersion]
 		on: MCVersionNameAndMessageRequest
 		do: [:request | self answer: request toApproximate: aPackageInfoArtifact message: messageText workingCopy: mcWorkingCopy]

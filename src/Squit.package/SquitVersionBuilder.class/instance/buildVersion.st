@@ -7,7 +7,7 @@ buildVersion
 		ifNotEmpty: [repository workingTreeForCommitNamed: parents first hexHash].
 	(SquotFileSystemStore inDirectory: fs root) 	restoreToSnapshot: snapshot.
 	(commit := fs prepareNewCommit)
-		message: self message;
+		message: (self message withLineEndings: String lf);
 		parents: (parents collect: [:each | each hexHash]);
 		author: author;
 		committer: committer;

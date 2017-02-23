@@ -2,6 +2,7 @@
 	"class" : {
 		 },
 	"instance" : {
+		"createNewVersion:with:" : "jr 2/23/2017 13:24",
 		"gitRepository:" : "jr 1/11/2017 18:05",
 		"initializeWith:" : "jr 1/11/2017 18:03",
 		"name" : "jr 1/11/2017 16:50",

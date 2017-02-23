@@ -8,6 +8,6 @@ logUpdateFrom: previousHexHash to: nextHexHash by: stamp message: aString
 			nextPutAll: nextHexHash asHexHash;
 			space;
 			nextPutAll: stamp printString;
-			space;
+			tab;
 			nextPutAll: aString withoutLineEndings;
 			lf].

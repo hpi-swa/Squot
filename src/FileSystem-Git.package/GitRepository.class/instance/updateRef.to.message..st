@@ -4,7 +4,7 @@ updateRef: refPath to: hexHash message: reflogMessageString
 	Symbolic references are resolved, so the non-symbolic reference is updated.
 	If the file denoted by refPath does not yet exist it will be created."
 	| target |
-	target := [(self baseDir resolve: refPath) readStreamDo: [ :stream | stream contents ]]
+	target := [(self baseDir resolve: refPath) readStreamDo: [ :stream | stream contents withBlanksTrimmed ]]
 		on: FileDoesNotExist do: [:ex | ex return: nil].
 		
 	(self reflogForReference: refPath)
@@ -14,6 +14,6 @@ updateRef: refPath to: hexHash message: reflogMessageString
 		message: reflogMessageString.
 
 	(target isNil not and: [target beginsWith: 'ref:']) ifTrue: [
-		^ self updateRef: (target allButFirst: 4) withBlanksTrimmed to: hexHash ].
+		^ self updateRef: (target allButFirst: 4) to: hexHash ].
 	
 	self basicUpdateRef: refPath to: hexHash asHexHash

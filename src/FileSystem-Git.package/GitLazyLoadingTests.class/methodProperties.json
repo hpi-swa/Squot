@@ -4,7 +4,7 @@
 	"instance" : {
 		"commit:" : "MaxLeske 10/18/2010 16:07",
 		"setUp" : "MaxLeske 9/3/2012 20:58",
-		"tearDown" : "CamilloBruni 6/22/2011 05:08",
+		"tearDown" : "jr 2/23/2017 12:49",
 		"testBasicCommit" : "CamilloBruni 7/15/2011 15:59",
 		"testLazyLoading" : "CamilloBruni 8/1/2011 16:16",
 		"testLookup" : "CamilloBruni 7/15/2011 16:00" } }

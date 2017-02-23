@@ -1,5 +1,3 @@
 running
 tearDown
-	GitStamp
-		defaultName: nil;
-		defaultEmail: nil.
+	temporaryGitStamp restorePreviousValues.

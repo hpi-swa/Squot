@@ -49,7 +49,7 @@ testConvertTwoVersions
 	self assert: testedVersion message = 'next'.
 	self assert: testedVersion parents size = 1.
 	self assert: (testedVersion metadata at: #author) = 'squit'.
-	self assert: (testedVersion metadata at: #committer) = Utilities authorInitials. self flag: 'TODO: want proper names, right?'.
+	self assert: (testedVersion metadata at: #committer) notEmpty.
 	self shouldnt: [testedVersion metadata at: #timestamp] raise: KeyNotFound.
 	self assertVersion: testedVersion containsClass: (PseudoClass new name: #Griffle).
 	self assertVersion: testedVersion containsMethod: (FakeMethod new methodClassName: #Griffle; selector: #initialize; source: 'initialize Transcript show: 1 + 1').
@@ -57,7 +57,7 @@ testConvertTwoVersions
 	self assert: testedVersion message = 'hooray'.
 	self assert: testedVersion parents isEmpty.
 	self assert: (testedVersion metadata at: #author) = 'squot'.
-	self assert: (testedVersion metadata at: #committer) = Utilities authorInitials. self flag: 'TODO: want proper names, right?'.
+	self assert: (testedVersion metadata at: #committer) notEmpty.
 	self shouldnt: [testedVersion metadata at: #timestamp] raise: KeyNotFound.
 	self assertVersion: testedVersion containsClass: (PseudoClass new name: #Griffle).
 	self assertVersion: testedVersion containsMethod: (FakeMethod new methodClassName: #Griffle; selector: #initialize; source: 'initialize').

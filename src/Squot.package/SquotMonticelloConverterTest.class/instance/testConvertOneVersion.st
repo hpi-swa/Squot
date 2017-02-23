@@ -30,7 +30,7 @@ testConvertOneVersion
 	self assert: historian version message = 'hooray'.
 	self assert: historian version parents isEmpty.
 	self assert: 'squot' equals: (historian version metadata at: #author).
-	self assert: (historian version metadata at: #committer) = Utilities authorInitials. self flag: 'TODO: want proper names, right?'.
+	self assert: (historian version metadata at: #committer) notEmpty.
 	self shouldnt: [historian version metadata at: #timestamp] raise: KeyNotFound.
 	self assert: '' equals: (historian version metadata at: #email ifAbsent: ['']) description: 'no email address should be set because MCVersionInfo has no field for it'.
 	self assertVersion: historian version containsClass: (PseudoClass new name: #Griffle).

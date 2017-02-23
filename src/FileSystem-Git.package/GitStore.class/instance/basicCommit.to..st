@@ -8,6 +8,7 @@ basicCommit: aMessage to: branchName
 		store.
 	repository 
 		updateRef: repository headsDir / branchName 
-		to: commit hexHash.
+		to: commit hexHash
+		message: 'commit: ', aMessage asString.
 	self revision: commit.
 	modManager initializeWith: repository with: cache for: revision.

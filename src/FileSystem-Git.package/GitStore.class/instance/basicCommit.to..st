@@ -10,5 +10,4 @@ basicCommit: aMessage to: branchName
 		updateRef: repository headsDir / branchName 
 		to: commit hexHash
 		message: 'commit: ', aMessage asString.
-	self revision: commit.
-	modManager initializeWith: repository with: cache for: revision.
+	self revision: commit. "calls basicReset and discards the cached files!"

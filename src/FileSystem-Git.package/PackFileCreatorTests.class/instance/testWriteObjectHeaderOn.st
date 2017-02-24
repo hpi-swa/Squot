@@ -4,7 +4,7 @@ testWriteObjectHeaderOn
 	blob := GitBlob bytes: 'my blob with size greater than 32' in: nil.
 	file := FileSystem memory root / 'afile'.
 	file writeStreamDo: [ :stream | creator writeObjectHeader: blob on: stream ].
-	contents := file readStreamDo: [ :stream | stream contents ].
+	contents := file readStreamDo: [ :stream | stream binary; contents ].
 	
 	self assert: contents size equals: 2.
 	"leading one: more header bytes follow

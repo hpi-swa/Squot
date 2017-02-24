@@ -8,8 +8,8 @@ testwriteIndexFileTrailerOn
 		indexFile: index;
 		packFileChecksum: (GitHash from: 'bar') byteHash.
 	index reference writeStreamDo: [ :stream | 
-		stream nextPutAll: 'foo'.
+		stream binary; nextPutAll: 'foo'.
 		creator writeIndexFileTrailerOn: stream ].
-	bytes := index reference readStream contents.
+	bytes := index reference readStream binary; contents.
 	
 	self assert: 3 + (2 * 20) equals: bytes size

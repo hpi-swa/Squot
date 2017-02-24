@@ -30,7 +30,7 @@
 		"writeCRCTableOn:" : "MaxLeske 8/29/2012 21:22",
 		"writeFanoutTableOn:" : "MaxLeske 8/28/2012 15:20",
 		"writeFileNames" : "MaxLeske 9/2/2012 12:20",
-		"writeIndexFile" : "MaxLeske 8/29/2012 20:31",
+		"writeIndexFile" : "jr 2/22/2017 01:09",
 		"writeIndexFileHeaderOn:" : "MaxLeske 8/19/2012 19:09",
 		"writeIndexFileTrailerOn:" : "MaxLeske 9/1/2012 19:51",
 		"writeObjectHeader:on:" : "MaxLeske 8/12/2012 18:34",
@@ -38,7 +38,7 @@
 		"writeObjectsOn:" : "MaxLeske 9/8/2012 15:27",
 		"writeOffsetTableOfSize:on:" : "MaxLeske 9/2/2012 20:49",
 		"writeOffsetTablesOn:" : "MaxLeske 9/2/2012 20:52",
-		"writePackFile" : "MaxLeske 9/1/2012 09:47",
+		"writePackFile" : "jr 1/20/2017 15:08",
 		"writePackFileHeaderOn:" : "MaxLeske 8/19/2012 19:09",
 		"writePackFileTrailer" : "MaxLeske 9/3/2012 21:07",
 		"writePackFileTrailerOn:" : "MaxLeske 9/1/2012 20:06" } }

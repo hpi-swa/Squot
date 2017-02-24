@@ -10,7 +10,7 @@ testWriteObjectsOn
 		yourself.
 	file := FileSystem memory root / 'afile'.
 	file writeStreamDo: [ :stream | creator writeObjectsOn: stream ].
-	contents := file readStreamDo: [ :stream | stream contents ].
+	contents := file readStreamDo: [ :stream | stream binary; contents ].
 	contents := contents allButFirst: 2.	"ignore header"
 	self assert: contents size equals: blob compressedForPack size.
 	self shouldnt: [ bytesRead := (GitZLibReadStream on: contents) contents ] raise: Error.

@@ -13,4 +13,4 @@ fillContentOf: anArtifact from: aDirectory
 		ifTrue: [ | className | className := classOfStoredObject substrings first.
 			MCSnapshot fromDefinitions: (cypressReader definitions
 				select: [:each | (each respondsTo: #className) and: [each className = className]])].
-	anArtifact content: snapshot.
+	anArtifact content: snapshot squotWithSortedDefinitions.

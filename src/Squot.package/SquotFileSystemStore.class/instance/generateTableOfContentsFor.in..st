@@ -6,4 +6,4 @@ generateTableOfContentsFor: aSnapshot in: aDirectory
 		each wantsToBeInTableOfContents
 			ifTrue: [ toc at: each path put: (each storeInfo at: #serializer) ]].
 	directory / '.squot-table-of-contents' writeStreamDo: [:stream |
-		STON put: toc onStreamPretty: stream].
+		STON squotPut: toc onStream: stream].

@@ -1,1 +1,5 @@
-{	'src/Squit.package' : #SquotCypressCodeSerializer,	'src/Squot.package' : #SquotCypressCodeSerializer,	'src/FileSystem-Git.package' : #SquotCypressCodeSerializer}
+{
+	'src/Squit.package' : #SquotCypressCodeSerializer,
+	'src/Squot.package' : #SquotCypressCodeSerializer,
+	'src/FileSystem-Git.package' : #SquotCypressCodeSerializer
+}

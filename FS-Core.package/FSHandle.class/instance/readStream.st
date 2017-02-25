@@ -1,3 +1,3 @@
 public
 readStream
-	^ self isOpen ifTrue: [FSReadStream onHandle: self]
+	^ FSReadStream onHandle: self

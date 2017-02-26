@@ -3,7 +3,7 @@ allReferencesDo: aBlock
 	"Invoke aBlock with all references (as strings) in this repository.
 	References outside of the refsDir will come last."
 	| baseDir |
-	baseDir := self baseDir.
+	baseDir := self baseDir asAbsolute.
 	CollectVisitor breadthFirst: baseDir / 'refs'
 		collect: [:each | each isFile
 			ifTrue: [aBlock value: ((each reference relativeTo: baseDir) printWithDelimiter: $/)]].

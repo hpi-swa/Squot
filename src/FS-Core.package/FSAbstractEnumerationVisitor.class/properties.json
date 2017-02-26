@@ -1,0 +1,15 @@
+{
+	"category" : "FS-Core-Implementation",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"out",
+		"block" ],
+	"name" : "FSAbstractEnumerationVisitor",
+	"pools" : [
+		 ],
+	"super" : "FSVisitor",
+	"type" : "normal" }

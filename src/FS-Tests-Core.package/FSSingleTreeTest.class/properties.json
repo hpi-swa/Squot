@@ -1,0 +1,14 @@
+{
+	"category" : "FS-Tests-Core",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"filesystem" ],
+	"name" : "FSSingleTreeTest",
+	"pools" : [
+		 ],
+	"super" : "FSTreeTest",
+	"type" : "normal" }

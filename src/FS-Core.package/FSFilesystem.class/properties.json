@@ -1,0 +1,15 @@
+{
+	"category" : "FS-Core-Public",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "CamilloBruni 1/19/2012 10:07",
+	"instvars" : [
+		"workingDirectory",
+		"store" ],
+	"name" : "FSFilesystem",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }

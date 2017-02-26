@@ -1,0 +1,14 @@
+{
+	"category" : "FS-Core-Implementation",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "cwp 11/18/2009 12:13",
+	"instvars" : [
+		 ],
+	"name" : "FSBreadthFirstGuide",
+	"pools" : [
+		 ],
+	"super" : "FSGuide",
+	"type" : "normal" }

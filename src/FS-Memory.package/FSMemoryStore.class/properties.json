@@ -1,0 +1,14 @@
+{
+	"category" : "FS-Memory",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"root" ],
+	"name" : "FSMemoryStore",
+	"pools" : [
+		 ],
+	"super" : "FSStore",
+	"type" : "normal" }

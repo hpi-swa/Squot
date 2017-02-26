@@ -1,0 +1,23 @@
+{
+	"class" : {
+		"filesystem:path:creation:modification:isDir:size:" : "StephaneDucasse 1/27/2011 22:22",
+		"reference:creation:modification:isDir:size:" : "StephaneDucasse 1/27/2011 22:19" },
+	"instance" : {
+		"asFileReference" : "jr 1/18/2017 17:28",
+		"asReference" : "CamilloBruni 8/12/2011 20:58",
+		"basename" : "StephaneDucasse 2/15/2010 17:59",
+		"creation" : "StephaneDucasse 1/27/2011 22:14",
+		"creationSeconds" : "StephaneDucasse 1/27/2011 22:16",
+		"extension" : "CamilloBruni 8/15/2011 17:02",
+		"fullName" : "CamilloBruni 8/12/2011 20:33",
+		"initializeWithRef:creation:modification:isDir:size:" : "cwp 11/15/2009 21:52",
+		"isDirectory" : "StephaneDucasse 1/27/2011 22:16",
+		"isFile" : "StephaneDucasse 1/27/2011 22:16",
+		"modification" : "StephaneDucasse 1/27/2011 22:15",
+		"modificationSeconds" : "StephaneDucasse 1/27/2011 22:15",
+		"pathSegments" : "CamilloBruni 8/12/2011 20:56",
+		"printOn:" : "sd 2/11/2011 19:40",
+		"readStream" : "CamilloBruni 8/12/2011 20:32",
+		"reference" : "cwp 11/15/2009 21:54",
+		"size" : "StephaneDucasse 1/27/2011 22:15",
+		"writeStream" : "CamilloBruni 8/12/2011 20:33" } }

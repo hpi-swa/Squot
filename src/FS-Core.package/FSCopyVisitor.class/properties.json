@@ -1,0 +1,15 @@
+{
+	"category" : "FS-Core-Implementation",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "cwp 11/18/2009 12:30",
+	"instvars" : [
+		"source",
+		"dest" ],
+	"name" : "FSCopyVisitor",
+	"pools" : [
+		 ],
+	"super" : "FSVisitor",
+	"type" : "normal" }

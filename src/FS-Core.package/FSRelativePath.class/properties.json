@@ -1,0 +1,14 @@
+{
+	"category" : "FS-Core-Kernel",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "FSRelativePath",
+	"pools" : [
+		 ],
+	"super" : "FSPath",
+	"type" : "variable" }

@@ -1,0 +1,15 @@
+{
+	"category" : "FS-Core-Implementation",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "cwp 11/18/2009 12:09",
+	"instvars" : [
+		"visitor",
+		"work" ],
+	"name" : "FSGuide",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }

@@ -1,0 +1,14 @@
+{
+	"category" : "FS-Core-Kernel",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "cwp 11/18/2009 12:32",
+	"instvars" : [
+		"reference" ],
+	"name" : "FSFilesystemError",
+	"pools" : [
+		 ],
+	"super" : "Error",
+	"type" : "normal" }

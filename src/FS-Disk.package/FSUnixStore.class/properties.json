@@ -1,0 +1,14 @@
+{
+	"category" : "FS-Disk",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "FSUnixStore",
+	"pools" : [
+		 ],
+	"super" : "FSDiskStore",
+	"type" : "normal" }

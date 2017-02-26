@@ -1,3 +1,3 @@
 {
-	'FS-Disk.package' : #SquotCypressCodeSerializer
+	'src/FS-Disk.package' : #SquotCypressCodeSerializer
 }

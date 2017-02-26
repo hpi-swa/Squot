@@ -1,4 +1,4 @@
-initialize-release
+running
 setUp
 	classFactory := ClassFactoryForTestCase new.
 	createdClasses := OrderedCollection new.

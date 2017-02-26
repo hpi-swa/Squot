@@ -48,6 +48,8 @@
 		"testModifyExistingFile" : "CamilloBruni 7/15/2011 15:57",
 		"testModifying" : "MaxLeske 8/12/2011 08:52",
 		"testModifyingWithReload" : "MaxLeske 8/12/2011 08:57",
+		"testMoveDirectory" : "jr 2/25/2017 23:03",
+		"testMoveFile" : "jr 2/25/2017 23:15",
 		"testParents" : "CamilloBruni 7/15/2011 16:25",
 		"testParentsWithReload" : "CamilloBruni 7/15/2011 16:25",
 		"testReadExistingFile" : "CamilloBruni 7/15/2011 15:57",

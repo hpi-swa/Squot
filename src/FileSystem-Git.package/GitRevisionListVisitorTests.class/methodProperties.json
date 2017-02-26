@@ -3,6 +3,7 @@
 		 },
 	"instance" : {
 		"addCommit:withParents:" : "jr 10/23/2016 01:54",
+		"expectedFailures" : "jr 2/25/2017 23:13",
 		"setUp" : "jr 10/23/2016 01:51",
 		"testRevListTopoOrder" : "jr 10/23/2016 22:02",
 		"testRevListWithMerge" : "jr 10/23/2016 22:03",

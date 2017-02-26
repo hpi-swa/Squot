@@ -8,7 +8,8 @@
 		"hasModifications" : "CamilloBruni 7/15/2011 20:58",
 		"initializeWith:with:for:" : "jr 2/1/2017 18:27",
 		"isDeleted:" : "CamilloBruni 7/5/2011 17:05",
-		"lookupTreeAt:" : "jr 11/29/2016 16:06",
+		"lookupTreeAt:" : "jr 2/25/2017 22:09",
+		"lookupTreeAt:startingFrom:" : "jr 2/25/2017 22:04",
 		"mapAll:" : "MaxLeske 3/6/2011 13:33",
 		"markCreated:" : "CamilloBruni 9/2/2012 12:44",
 		"markCreated:inTree:" : "jr 11/29/2016 17:25",
@@ -16,6 +17,8 @@
 		"markDeleted:inTree:" : "jr 2/9/2017 14:12",
 		"markDirectoryCreated:" : "CamilloBruni 8/1/2011 16:30",
 		"markFileCreated:" : "CamilloBruni 8/1/2011 16:30",
+		"moveTreeFrom:to:" : "jr 2/25/2017 22:46",
+		"nearestMappedParentTree:do:ifNone:" : "jr 2/25/2017 22:37",
 		"newTreeAt:" : "CamilloBruni 9/3/2012 17:30",
 		"newTreeFrom:" : "CamilloBruni 9/3/2012 17:16",
 		"processBlobAt:in:" : "jr 2/1/2017 18:39",
@@ -34,4 +37,5 @@
 		"storeTrees" : "MaxLeske 2/28/2012 16:22",
 		"treeAt:" : "CamilloBruni 8/9/2011 19:28",
 		"updateCacheAt:with:" : "CamilloBruni 7/15/2011 21:10",
-		"updateIntermediateEntries" : "jr 2/2/2017 13:38" } }
+		"updateEntryWithPath:in:toTree:" : "jr 2/25/2017 22:59",
+		"updateIntermediateEntries" : "jr 2/25/2017 23:02" } }

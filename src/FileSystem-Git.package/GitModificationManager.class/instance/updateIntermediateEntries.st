@@ -8,12 +8,12 @@ updateIntermediateEntries
 				tree := self treeAt: current.
 				parentTree := self treeAt: current parent.
 				tree isEmpty
-					ifFalse: [(parentTree entryAt: current basename) entryHash ~= tree hash
-							 ifTrue: [parentTree putEntry: (GitTreeEntry
-								directoryNamed: current basename
-								hash: tree hash
-								in: repository).
-								pendingPathsForEntryUpdate add: current parent]]
+					ifFalse: [parentTree entryAt: current basename
+							ifPresent: [:entry | entry entryHash ~= tree hash
+								ifTrue: [self updateEntryWithPath: current in: parentTree
+											toTree: tree]]
+							ifAbsent: [self updateEntryWithPath: current in: parentTree
+										toTree: tree]]
 					ifTrue: [(parentTree entryAt: current basename
 							ifPresent: [:entry |
 								parentTree removeEntryAt: current basename.

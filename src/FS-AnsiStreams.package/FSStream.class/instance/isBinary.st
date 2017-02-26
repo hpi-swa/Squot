@@ -1,0 +1,3 @@
+ansi
+isBinary
+	^ isBinary

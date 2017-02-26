@@ -1,0 +1,14 @@
+{
+	"category" : "FS-AnsiStreams",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "cwp 11/18/2009 11:36",
+	"instvars" : [
+		 ],
+	"name" : "FSReadStream",
+	"pools" : [
+		 ],
+	"super" : "FSStream",
+	"type" : "normal" }

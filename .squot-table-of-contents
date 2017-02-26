@@ -1,3 +1,11 @@
 {
-	'src/FS-Core.package' : #SquotCypressCodeSerializer
+	'src/FS-Disk.package' : #SquotCypressCodeSerializer,
+	'src/FS-Core.package' : #SquotCypressCodeSerializer,
+	'src/FS-Tests-Memory.package' : #SquotCypressCodeSerializer,
+	'src/FS-Tests-AnsiStreams.package' : #SquotCypressCodeSerializer,
+	'src/FS-Memory.package' : #SquotCypressCodeSerializer,
+	'src/FS-Tests-Disk.package' : #SquotCypressCodeSerializer,
+	'src/FS-AnsiStreams.package' : #SquotCypressCodeSerializer,
+	'src/FS-Help.package' : #SquotCypressCodeSerializer,
+	'src/FS-Tests-Core.package' : #SquotCypressCodeSerializer
 }

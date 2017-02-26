@@ -1,0 +1,15 @@
+{
+	"category" : "FS-Memory",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "cwp 11/18/2009 11:24",
+	"instvars" : [
+		"store",
+		"path" ],
+	"name" : "FSFileStream",
+	"pools" : [
+		 ],
+	"super" : "RWBinaryOrTextStream",
+	"type" : "normal" }

@@ -1,0 +1,14 @@
+{
+	"category" : "FS-Tests-Core",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"resolver" ],
+	"name" : "FSResolverTest",
+	"pools" : [
+		 ],
+	"super" : "TestCase",
+	"type" : "normal" }

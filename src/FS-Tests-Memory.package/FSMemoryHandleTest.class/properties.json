@@ -1,0 +1,14 @@
+{
+	"category" : "FS-Tests-Memory",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "FSMemoryHandleTest",
+	"pools" : [
+		 ],
+	"super" : "FSHandleTest",
+	"type" : "normal" }

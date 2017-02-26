@@ -1,0 +1,3 @@
+ansi
+isText
+	^ isBinary not

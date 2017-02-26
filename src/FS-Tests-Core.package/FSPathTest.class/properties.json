@@ -1,0 +1,14 @@
+{
+	"category" : "FS-Tests-Core",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "FSPathTest",
+	"pools" : [
+		 ],
+	"super" : "TestCase",
+	"type" : "variable" }

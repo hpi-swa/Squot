@@ -1,0 +1,28 @@
+{
+	"class" : {
+		 },
+	"instance" : {
+		"atEnd" : "cwp 7/29/2009 22:45",
+		"basicNext" : "jr 1/18/2017 18:25",
+		"basicNext:" : "jr 12/13/2016 19:44",
+		"basicNext:into:" : "jr 12/13/2016 19:23",
+		"basicNextInto:" : "jr 12/13/2016 19:36",
+		"do:" : "cwp 7/29/2009 22:58",
+		"isRead" : "CamilloBruni 8/14/2011 15:28",
+		"isWrite" : "CamilloBruni 8/14/2011 15:28",
+		"next" : "jr 12/13/2016 19:22",
+		"next:" : "jr 12/13/2016 19:22",
+		"next:into:" : "jr 12/13/2016 19:31",
+		"nextInt32" : "jr 1/5/2017 15:35",
+		"nextInto:" : "jr 1/19/2017 16:56",
+		"nextLine" : "jr 12/13/2016 20:22",
+		"nextMatchFor:" : "cwp 7/30/2009 23:03",
+		"nextNumber:" : "jr 1/5/2017 15:23",
+		"nextString" : "jr 1/5/2017 15:37",
+		"peek" : "jr 2/21/2017 14:23",
+		"peekFor:" : "jr 2/21/2017 14:18",
+		"size" : "CamilloBruni 8/12/2011 20:49",
+		"skip:" : "cwp 7/30/2009 23:19",
+		"skipTo:" : "cwp 7/30/2009 23:27",
+		"upTo:" : "cwp 7/30/2009 23:37",
+		"upToEnd" : "jr 1/20/2017 16:10" } }

@@ -9,6 +9,7 @@
 		"definitions",
 		"fileTreeWriter",
 		"cypressWriter",
+		"fileUtils",
 		"currentDirectory" ],
 	"name" : "SquotCypressCodeSerializer",
 	"pools" : [

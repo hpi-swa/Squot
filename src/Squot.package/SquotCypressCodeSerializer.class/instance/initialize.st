@@ -1,6 +1,5 @@
 initialize-release
 initialize
-	| fileUtils |
 	super initialize.
 	definitions := OrderedCollection new.
 	fileUtils := MCFileTreeFileSystemUtilsForSquot new.

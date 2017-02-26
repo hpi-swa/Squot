@@ -2,6 +2,22 @@
 	"class" : {
 		 },
 	"instance" : {
-		"directory:" : "jr 1/17/2017 15:11",
-		"doesNotUnderstand:" : "jr 1/17/2017 15:13",
-		"pathNameDelimiter" : "jr 1/17/2017 15:11" } }
+		"buildPathFrom:" : "jr 2/26/2017 13:47",
+		"default" : "jr 2/26/2017 13:48",
+		"deleteAll:" : "jr 2/26/2017 13:47",
+		"directory" : "jr 2/26/2017 13:49",
+		"directory:" : "jr 2/26/2017 13:49",
+		"directoryExists:" : "jr 2/26/2017 13:47",
+		"directoryFromEntry:" : "jr 2/26/2017 13:47",
+		"directoryFromPath:" : "jr 2/26/2017 13:48",
+		"directoryFromPath:relativeTo:" : "jr 2/26/2017 13:47",
+		"directoryName:" : "jr 2/26/2017 13:47",
+		"directoryPathString:" : "jr 2/26/2017 13:47",
+		"ensureDirectoryExists:" : "jr 2/26/2017 13:47",
+		"ensureFilePathExists:relativeTo:" : "jr 2/26/2017 13:47",
+		"filePathExists:relativeTo:" : "jr 2/26/2017 13:47",
+		"parentDirectoryOf:" : "jr 2/26/2017 13:47",
+		"pathNameDelimiter" : "jr 2/26/2017 13:50",
+		"readStreamFor:in:do:" : "jr 2/26/2017 13:47",
+		"resolvePath:in:" : "jr 2/26/2017 13:47",
+		"writeStreamFor:in:do:" : "jr 2/26/2017 13:47" } }

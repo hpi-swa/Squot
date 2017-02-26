@@ -8,8 +8,8 @@
 		"rewritePath:ofPackage:" : "jr 1/25/2017 18:05" },
 	"instance" : {
 		"directory" : "jr 1/17/2017 14:24",
-		"initialize" : "jr 1/17/2017 15:12",
-		"initializeFileTreeWritersInPackageDirectory:" : "jr 1/29/2017 21:12",
+		"initialize" : "jr 2/26/2017 13:55",
+		"initializeFileTreeWritersInPackageDirectory:" : "jr 2/26/2017 13:56",
 		"propertyFileExtension" : "jr 1/17/2017 15:19",
 		"version" : "jr 1/15/2017 19:07",
 		"write:" : "jr 1/29/2017 21:05",

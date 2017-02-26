@@ -5,6 +5,7 @@ fillContentOf: anArtifact from: aDirectory
 	isClass := classOfStoredObject endsWith: ' class'.
 	cypressReader := MCFileTreeStCypressReaderWithSettableFileUtils on: aDirectory.
 	cypressReader fileUtils: fileUtils.
+	fileUtils directory: aDirectory.
 	packageDirectory := isClass ifTrue: [aDirectory parent] ifFalse: [aDirectory].
 	packageName := packageDirectory basename first: packageDirectory basename size - '.package' size.
 	cypressReader packageDirectory: packageDirectory pathString.

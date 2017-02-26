@@ -1,3 +1,3 @@
-as yet unclassified
+utilities
 pathNameDelimiter
-	^ directory filesystem delimiter
+    ^ directory filesystem delimiter

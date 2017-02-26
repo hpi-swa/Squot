@@ -1,3 +1,4 @@
 accessing
-directory: aFileSystemReference
-	directory := aFileSystemReference.
+directory: anObject
+
+	directory := anObject

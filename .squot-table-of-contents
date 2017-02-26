@@ -1,3 +1,3 @@
 {
-	'FS-Memory.package' : #SquotCypressCodeSerializer
+	'src/FS-Memory.package' : #SquotCypressCodeSerializer
 }

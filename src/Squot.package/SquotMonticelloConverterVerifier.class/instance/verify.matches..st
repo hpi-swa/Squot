@@ -1,9 +1,10 @@
 as yet unclassified
 verify: aVersion matches: aMCVersion
-	| artifactSnapshot mcTraits packageArtifact patch |
+	| artifactSnapshot mcSnapshot mcTraits packageArtifact patch |
 	packageArtifact := self findPackageIn: aVersion snapshot.
+	mcSnapshot := aMCVersion snapshot.
 	"Monticello fails to store trait comments, so ignore them here."
-	mcTraits := (aMCVersion snapshot definitions
+	mcTraits := (mcSnapshot definitions
 		select: [:each | (each isKindOf: MCTraitDefinition) and: [each comment isEmpty]])
 		collect: [:each | each className] as: Set.
 	artifactSnapshot := MCSnapshot
@@ -13,6 +14,6 @@ verify: aVersion matches: aMCVersion
 					ifTrue: [each copy instVarNamed: 'comment' put: ''; yourself]
 					ifFalse: [each]]
 			as: aMCVersion snapshot definitions species).
-	(patch := packageArtifact content patchRelativeToBase: aMCVersion snapshot) isEmpty
+	(patch := artifactSnapshot patchRelativeToBase: mcSnapshot) isEmpty
 		ifFalse: [
 			SquotMonticelloConversionProblem signal: 'Snapshots do not match']

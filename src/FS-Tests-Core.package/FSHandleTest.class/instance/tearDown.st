@@ -1,4 +1,4 @@
 running
 tearDown
-	handle close.
-	reference delete
+	handle ifNotNil: [handle close].
+	reference ifNotNil: [reference delete].

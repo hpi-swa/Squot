@@ -1,3 +1,3 @@
 character writing
 cr
-	self nextPut: 13
+	self nextPut: Character cr

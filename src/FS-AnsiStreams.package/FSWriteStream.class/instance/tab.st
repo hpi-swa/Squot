@@ -1,3 +1,3 @@
 character writing
 tab
-	self nextPut: 9
+	self nextPut: Character tab

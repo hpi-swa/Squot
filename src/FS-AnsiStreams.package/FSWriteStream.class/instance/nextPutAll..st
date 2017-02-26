@@ -1,5 +1,4 @@
 writing
 nextPutAll: aCollection
-	handle at: position write: aCollection startingAt: 1 count: aCollection size.
-	position := position + aCollection size.
-	^ aCollection
+	(isBinary or: [aCollection class == ByteArray]) ifTrue: [^ self basicNextPutAll: aCollection].
+	^ self converter nextPutAll: aCollection toStream: self

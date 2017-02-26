@@ -1,5 +1,4 @@
 writing
 nextPut: anObject
-	handle at: position put: anObject.
-	position := position + 1.
-	^ anObject
+	(isBinary or: [anObject isInteger]) ifTrue: [^ self basicNextPut: anObject].
+	^ self converter nextPut: anObject toStream: self

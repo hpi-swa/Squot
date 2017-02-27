@@ -39,6 +39,7 @@
 		"initializeWithCache:" : "CamilloBruni 8/30/2012 14:04",
 		"loadFromRepository:" : "CamilloBruni 7/15/2011 21:07",
 		"loadGitTreeAt:" : "jr 2/25/2017 23:10",
+		"loadRootIntoCache" : " 2/27/2017 22:21:59",
 		"message" : "CamilloBruni 7/15/2011 15:11",
 		"name" : "jr 1/31/2017 15:30",
 		"nodeAt:ifPresent:ifAbsent:" : "CamilloBruni 7/15/2011 18:54",

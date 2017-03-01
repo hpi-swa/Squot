@@ -2,7 +2,7 @@ tests
 testRestorePackage
 	| sampleClass packageInfo snapshot restoredClass |
 	sampleClass := classFactory newClass.
-	packageInfo := PackageInfo new packageName: sampleClass category; yourself. "do not register"
+	packageInfo := PackageInfo new packageName: classFactory packageName; yourself. "do not register"
 	self assert: packageInfo extensionMethods isEmpty description: 'Prerequisite'.
 	snapshot := self snapshotPackage: packageInfo at: 'src'.
 	changeLogSuppressor suppressChangeNotificationsDuring: [imageStore restoreToSnapshot: snapshot].

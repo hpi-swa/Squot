@@ -10,5 +10,5 @@
 	"name" : "FSMemoryStore",
 	"pools" : [
 		 ],
-	"super" : "FSStore",
+	"super" : "FileSystemStore",
 	"type" : "normal" }

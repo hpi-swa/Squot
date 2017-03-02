@@ -11,5 +11,5 @@
 	"name" : "FSDiskStore",
 	"pools" : [
 		 ],
-	"super" : "FSStore",
+	"super" : "FileSystemStore",
 	"type" : "normal" }

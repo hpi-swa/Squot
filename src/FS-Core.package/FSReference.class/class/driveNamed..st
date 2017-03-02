@@ -1,3 +1,3 @@
 windows
 driveNamed: driveName
-	^ self filesystem: (FSFilesystem disk) path: Path / (driveName, ':')
+	^ self filesystem: (FileSystem disk) path: Path / (driveName, ':')

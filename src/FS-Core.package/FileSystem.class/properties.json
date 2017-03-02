@@ -8,7 +8,7 @@
 	"instvars" : [
 		"workingDirectory",
 		"store" ],
-	"name" : "FSFilesystem",
+	"name" : "FileSystem",
 	"pools" : [
 		 ],
 	"super" : "Object",

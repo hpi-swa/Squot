@@ -1,3 +1,3 @@
 running
 createFilesystem
-	^ FSFilesystem store: FSDiskStore activeClass createDefault
+	^ FileSystem store: FSDiskStore activeClass createDefault

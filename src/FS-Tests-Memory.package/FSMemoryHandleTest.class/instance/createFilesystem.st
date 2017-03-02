@@ -1,3 +1,3 @@
 running
 createFilesystem
-	^ FSFilesystem memory
+	^ FileSystem memory

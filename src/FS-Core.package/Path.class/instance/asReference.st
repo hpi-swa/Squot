@@ -1,3 +1,3 @@
 converting
 asReference
-	^ FSFilesystem disk referenceTo: self
+	^ FileSystem disk referenceTo: self

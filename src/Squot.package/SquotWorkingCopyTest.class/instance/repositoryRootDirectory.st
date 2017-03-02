@@ -1,3 +1,3 @@
 initialize-release
 repositoryRootDirectory
-	^ repositoryDirectory ifNil: [repositoryDirectory := FSFilesystem memory root]
+	^ repositoryDirectory ifNil: [repositoryDirectory := FileSystem memory root]

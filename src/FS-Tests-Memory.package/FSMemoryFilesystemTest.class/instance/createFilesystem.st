@@ -1,3 +1,3 @@
 initialize-release
 createFilesystem
-	^ FSFilesystem memory
+	^ FileSystem memory

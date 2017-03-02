@@ -1,3 +1,3 @@
 origins
 workingDirectory
-	^ FSFilesystem disk referenceTo: FSRelativePath new
+	^ FileSystem disk referenceTo: FSRelativePath new

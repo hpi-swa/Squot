@@ -10,5 +10,5 @@
 	"name" : "FSMemoryFilesystemTest",
 	"pools" : [
 		 ],
-	"super" : "FSFilesystemTest",
+	"super" : "FileSystemTest",
 	"type" : "normal" }

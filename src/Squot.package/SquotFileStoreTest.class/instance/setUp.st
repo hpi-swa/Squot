@@ -1,3 +1,3 @@
 initialize-release
 setUp
-	fileStore := SquotFileSystemStore inDirectory: FSFilesystem memory root.
+	fileStore := SquotFileSystemStore inDirectory: FileSystem memory root.

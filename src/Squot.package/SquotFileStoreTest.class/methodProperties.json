@@ -2,7 +2,7 @@
 	"class" : {
 		 },
 	"instance" : {
-		"setUp" : "jr 2/9/2017 11:50",
+		"setUp" : "jr 3/2/2017 17:39",
 		"tearDown" : "jr 2/9/2017 11:51",
 		"testDeleteArtifact" : "jr 2/9/2017 14:28",
 		"testDeleteMethod" : "jr 2/9/2017 12:04" } }

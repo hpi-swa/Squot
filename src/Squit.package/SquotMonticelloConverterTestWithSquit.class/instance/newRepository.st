@@ -1,3 +1,3 @@
 running
 newRepository
-	^ SquitRepository new initializeInDirectory: FSFilesystem memory / 'testrepo.git'
+	^ SquitRepository new initializeInDirectory: FileSystem memory / 'testrepo.git'

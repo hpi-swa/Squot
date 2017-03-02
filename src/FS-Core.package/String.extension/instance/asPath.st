@@ -6,4 +6,4 @@ asPath
 		'~/Desktop' asPath
 		'/home/foo' asPath
 		'../../foo.bar' asPath"
-	^ FSFilesystem disk resolve: self
+	^ FileSystem disk resolve: self

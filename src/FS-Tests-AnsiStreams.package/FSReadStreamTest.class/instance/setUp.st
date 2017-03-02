@@ -1,4 +1,4 @@
 running
 setUp
-	filesystem := FSFilesystem memory.
+	filesystem := FileSystem memory.
 	

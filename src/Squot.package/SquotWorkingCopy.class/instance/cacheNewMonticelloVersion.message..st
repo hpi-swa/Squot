@@ -12,6 +12,6 @@ cacheNewMonticelloVersion: aPackageInfoArtifact message: messageText
 	Transcript nextPutAll: 'automatically created from Squot save: ';
 		show: version info name; cr]
 		on: MCVersionNameAndMessageRequest
-		do: [:request | self answer: request toApply: aPackageInfoArtifact message: messageText workingCopy: mcWorkingCopy]
+		do: [:request | self answer: request toApply: patch message: messageText workingCopy: mcWorkingCopy]
 		on: MCRepositoryRequest
 		do: [:request | request resume: MCCacheRepository default]

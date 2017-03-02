@@ -1,7 +1,7 @@
 tests
 testReadStreamDo
 	| ref path s |
-	path := FSPath * 'plonk'.
+	path := Path * 'plonk'.
 	filesystem store createFile: path.
 	ref := filesystem referenceTo: path.
 	ref

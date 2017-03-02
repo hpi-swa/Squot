@@ -1,7 +1,7 @@
 tests
 testWriteStreamDoExists
 	| ref s path |
-	path := FSPath * 'plonk'.
+	path := Path * 'plonk'.
 	filesystem store createFile: path.
 	ref := filesystem referenceTo: path.
 	ref

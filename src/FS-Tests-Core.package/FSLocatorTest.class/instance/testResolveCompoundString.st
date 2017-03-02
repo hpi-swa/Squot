@@ -6,4 +6,4 @@ testResolveCompoundString
 	result := locator resolve: compound.
 	self assert: result class = locator class.
 	self assert: result origin = locator origin.
-	self assert: result path = ((FSPath * 'plonk') / 'griffle' / 'nurp')
+	self assert: result path = ((Path * 'plonk') / 'griffle' / 'nurp')

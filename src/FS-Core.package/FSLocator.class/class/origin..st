@@ -1,3 +1,3 @@
 instance creation
 origin: aSymbol 
-	^ self origin: aSymbol path: FSPath workingDirectory
+	^ self origin: aSymbol path: Path workingDirectory

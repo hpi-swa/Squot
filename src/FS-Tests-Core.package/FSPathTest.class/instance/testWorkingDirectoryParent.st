@@ -1,6 +1,6 @@
 tests
 testWorkingDirectoryParent
 	| path |
-	path := FSPath workingDirectory parent.
+	path := Path workingDirectory parent.
 	self assert: path size = 1.
 	self assert: (path at: 1) = '..'

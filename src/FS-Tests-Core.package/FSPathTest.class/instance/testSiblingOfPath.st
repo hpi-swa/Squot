@@ -1,7 +1,7 @@
 tests
 testSiblingOfPath
 	| griffle  nurb |
-	griffle := FSPath / 'griffle'.
-	nurb := FSPath / 'nurb'.
+	griffle := Path / 'griffle'.
+	nurb := Path / 'nurb'.
 	self deny: (griffle isChildOf: nurb).
 	self deny: (nurb isChildOf: griffle).

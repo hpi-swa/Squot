@@ -1,5 +1,5 @@
 tests
 testPrintWithDelimiter
 	| path |
-	path := (FSPath * 'plonk') / 'griffle'.
+	path := (Path * 'plonk') / 'griffle'.
 	self assert: (path printWithDelimiter: $%) = 'plonk%griffle'

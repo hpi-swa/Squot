@@ -1,7 +1,7 @@
 tests
 testEnsureDirectory
 	| path |
-	path := FSPath * 'plonk'.
+	path := Path * 'plonk'.
 	self delete: path.
 	filesystem ensureDirectory: path.
 	self assert: (filesystem isDirectory: path).

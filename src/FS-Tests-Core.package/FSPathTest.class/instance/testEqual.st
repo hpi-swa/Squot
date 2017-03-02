@@ -1,7 +1,7 @@
 tests
 testEqual
 	| a b |
-	a := FSPath * 'plonk'.
-	b := FSPath * 'plonk'.
+	a := Path * 'plonk'.
+	b := Path * 'plonk'.
 	self deny: a == b.
 	self assert: a = b.

@@ -3,7 +3,7 @@ testResolveString
 	"self debug: #testResolveString"
 
 	| path result |
-	path := FSPath * 'plonk'.
+	path := Path * 'plonk'.
 	result := path resolve: 'griffle'.
 	self assert: result class = path class.
 	self assert: result size = 2.

@@ -1,7 +1,7 @@
 tests
 testEntryAt
 	| path entry |
-	path := FSPath * 'plonk'.
+	path := Path * 'plonk'.
 	filesystem createDirectory: path.
 	self delete: path.
 	entry := filesystem entryAt: path.

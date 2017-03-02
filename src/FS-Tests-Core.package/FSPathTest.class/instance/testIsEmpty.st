@@ -1,3 +1,3 @@
 tests
 testIsEmpty
-	self assert: (FSPath workingDirectory) isEmpty
+	self assert: (Path workingDirectory) isEmpty

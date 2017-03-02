@@ -1,6 +1,6 @@
 tests
 testRootPrintString
 	| path actual |
-	path := FSPath root.
+	path := Path root.
 	actual := path printString.
 	self assert: actual = 'FSPath root'

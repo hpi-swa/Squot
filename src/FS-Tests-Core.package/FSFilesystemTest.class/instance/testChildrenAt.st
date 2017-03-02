@@ -1,7 +1,7 @@
 tests
 testChildrenAt
 	| directory entries |
-	directory := FSPath * 'plonk'.
+	directory := Path * 'plonk'.
 	filesystem createDirectory: directory.
 	filesystem createDirectory: directory / 'griffle'.
 	filesystem createDirectory: directory / 'bint'.
@@ -12,6 +12,6 @@ testChildrenAt
 	self assert: entries size = 2.
 	entries do: 
 		[ :ea | 
-		self assert: (ea isKindOf: FSPath).
+		self assert: (ea isKindOf: Path).
 		self assert: ea parent = (filesystem resolve: directory).
 		self assert: (#('griffle' 'bint' ) includes: ea basename) ]

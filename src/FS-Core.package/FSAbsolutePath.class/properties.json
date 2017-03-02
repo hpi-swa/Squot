@@ -10,5 +10,5 @@
 	"name" : "FSAbsolutePath",
 	"pools" : [
 		 ],
-	"super" : "FSPath",
+	"super" : "Path",
 	"type" : "variable" }

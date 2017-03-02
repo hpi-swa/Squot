@@ -1,7 +1,7 @@
 tests
 testRelativeToBranch
 	| parent child relative |
-	parent := FSPath / 'griffle' / 'bibb'.
-	child := FSPath / 'griffle' / 'plonk' / 'nurp'.
+	parent := Path / 'griffle' / 'bibb'.
+	child := Path / 'griffle' / 'plonk' / 'nurp'.
 	relative := child relativeTo: parent.
-	self assert: relative = (FSPath parent / 'plonk' / 'nurp')
+	self assert: relative = (Path parent / 'plonk' / 'nurp')

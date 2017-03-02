@@ -1,3 +1,3 @@
 accessing
 defaultWorkingDirectory
-	^ FSPath root
+	^ Path root

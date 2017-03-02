@@ -1,5 +1,5 @@
 tests
 testRootParent
 	| root |
-	root := FSPath root.
+	root := Path root.
 	self assert: root parent == root

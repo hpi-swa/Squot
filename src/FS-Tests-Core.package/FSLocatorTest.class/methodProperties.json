@@ -19,10 +19,10 @@
 		"testOriginBasename" : "cwp 2/18/2011 17:05",
 		"testParent" : "cwp 2/18/2011 17:01",
 		"testResolveAbsoluteReference" : "CamilloBruni 8/12/2011 15:07",
-		"testResolveCompoundString" : "cwp 2/26/2011 18:19",
-		"testResolvePath" : "cwp 2/26/2011 18:19",
+		"testResolveCompoundString" : "jr 3/1/2017 17:31",
+		"testResolvePath" : "jr 3/1/2017 17:31",
 		"testResolveRelativeReference" : "CamilloBruni 8/12/2011 15:45",
-		"testResolveString" : "cwp 2/26/2011 18:19",
+		"testResolveString" : "jr 3/1/2017 17:31",
 		"testSlash" : "lr 7/13/2010 15:18",
 		"testWithExtensionAddsExtension" : "lr 7/13/2010 15:18",
 		"testWithExtensionReplacesExtension" : "lr 7/13/2010 15:18" } }

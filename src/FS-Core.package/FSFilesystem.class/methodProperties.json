@@ -3,7 +3,7 @@
 		"startUp:" : "cwp 4/4/2011 19:08",
 		"store:" : "cwp 2/18/2011 20:34" },
 	"instance" : {
-		"*" : "CamilloBruni 8/12/2011 17:48",
+		"*" : "jr 3/1/2017 17:29",
 		"/" : "cwp 3/25/2011 13:04",
 		"=" : "cwp 2/18/2011 16:08",
 		"changeDirectory:" : "cwp 3/29/2011 15:58",
@@ -45,7 +45,7 @@
 		"resolvePath:" : "CamilloBruni 2/4/2012 19:22",
 		"resolveReference:" : "cwp 10/10/2009 17:32",
 		"resolveString:" : "cwp 3/29/2011 15:56",
-		"root" : "StephaneDucasse 7/3/2011 16:02",
+		"root" : "jr 3/1/2017 17:29",
 		"store" : "cwp 2/18/2011 16:08",
 		"stringFromPath:" : "cwp 2/18/2011 12:09",
 		"workingDirectory" : "StephaneDucasse 7/3/2011 16:07",

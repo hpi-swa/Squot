@@ -1,5 +1,5 @@
 tests
 testPrintRelativeWithParent
 	| path |
-	path := FSPath parent / 'foo'.
+	path := Path parent / 'foo'.
 	self assert: (path printWithDelimiter: $/) = '../foo'

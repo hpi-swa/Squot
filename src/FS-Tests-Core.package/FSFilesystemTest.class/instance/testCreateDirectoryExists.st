@@ -1,7 +1,7 @@
 tests
 testCreateDirectoryExists
 	| path |
-	path := FSPath * 'griffle'.
+	path := Path * 'griffle'.
 	self delete: path.
 	filesystem createDirectory: path.
 	self 

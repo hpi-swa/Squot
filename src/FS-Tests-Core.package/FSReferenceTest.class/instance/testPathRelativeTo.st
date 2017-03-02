@@ -2,6 +2,6 @@ tests
 testPathRelativeTo
 	| parent childPath relative |
 	parent := filesystem / 'griffle'.
-	childPath := FSPath / 'griffle' / 'plonk' / 'nurb'.
+	childPath := Path / 'griffle' / 'plonk' / 'nurb'.
 	relative := childPath relativeTo: parent.
-	self assert: relative = (FSPath * 'plonk' / 'nurb')
+	self assert: relative = (Path * 'plonk' / 'nurb')

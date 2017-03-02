@@ -19,4 +19,6 @@ testSnapshotPackageInDifferentEnvironment
 				ifNone: [self fail: 'No artifact for the package generated'])
 			content definitions includes: class asClassDefinition)
 		description: 'ImageStore must find the class'.]
-	ensure: [workingCopy unregister. yetAnotherEnvironment destroy].
+	ensure: [workingCopy unregister.
+		classFactory delete: class.
+		yetAnotherEnvironment destroy].

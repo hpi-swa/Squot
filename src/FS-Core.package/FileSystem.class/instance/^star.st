@@ -2,4 +2,4 @@ navigating
 * anObject
 	"Return a relative reference."
 	
-	^ self referenceTo: Path * anObject
+	^ self referenceTo:( FSPath * anObject)

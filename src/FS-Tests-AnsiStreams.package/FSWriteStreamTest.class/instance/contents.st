@@ -1,6 +1,6 @@
 accessing
 contents
 	^ (filesystem instVarNamed: 'store')
-		nodeAt: Path / 'giffle'
+		nodeAt: FSPath / 'giffle'
 		ifPresent: [:bytes | bytes]
 		ifAbsent: [self signalFailure: 'No file!']

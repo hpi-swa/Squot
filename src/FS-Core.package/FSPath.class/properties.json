@@ -7,7 +7,7 @@
 	"commentStamp" : "cwp 3/29/2011 16:16",
 	"instvars" : [
 		 ],
-	"name" : "Path",
+	"name" : "FSPath",
 	"pools" : [
 		 ],
 	"super" : "Object",

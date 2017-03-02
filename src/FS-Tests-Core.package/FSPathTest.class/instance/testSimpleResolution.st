@@ -1,8 +1,8 @@
 tests
 testSimpleResolution
 	| base relative absolute |
-	base := Path / 'plonk'.
-	relative := (Path * 'griffle') / 'zonk'.
+	base := FSPath / 'plonk'.
+	relative := (FSPath * 'griffle') / 'zonk'.
 	absolute := base resolve: relative.
 	self assert: absolute isAbsolute.
 	self assert: (absolute at: 1) = 'plonk'.

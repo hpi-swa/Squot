@@ -1,7 +1,7 @@
 tests
 testEnsureDirectoryExists
 	| path |
-	path := Path * 'plonk'.
+	path := FSPath * 'plonk'.
 	self delete: path.
 	filesystem createDirectory: path.
 	self 

@@ -1,6 +1,6 @@
 tests
 testResolveAbsolute
 	| path |
-	path := Path / 'griffle'.
+	path := FSPath / 'griffle'.
 	self assert: path resolve == path.
 	self assert: path isAbsolute

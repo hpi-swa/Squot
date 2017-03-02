@@ -1,6 +1,6 @@
 tests
 testAbsolutePrintString
 	| path actual |
-	path := Path / 'plonk' / 'griffle'.
+	path := FSPath / 'plonk' / 'griffle'.
 	actual := path printString.
 	self assert: actual = 'FSPath / ''plonk'' / ''griffle'''

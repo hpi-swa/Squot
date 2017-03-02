@@ -1,3 +1,3 @@
 tests
 testIsAbsolute
-	self assert: (Path / 'plonk') isAbsolute
+	self assert: (FSPath / 'plonk') isAbsolute

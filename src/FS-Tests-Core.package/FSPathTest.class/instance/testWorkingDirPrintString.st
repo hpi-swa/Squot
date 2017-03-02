@@ -1,6 +1,6 @@
 tests
 testWorkingDirPrintString
 	| path actual |
-	path := Path workingDirectory. 
+	path := FSPath workingDirectory. 
 	actual := path printString.
 	self assert: actual = 'FSPath workingDirectory'

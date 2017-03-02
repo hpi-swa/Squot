@@ -1,3 +1,3 @@
 tests
 testIsRoot
-	self assert: Path root isRoot
+	self assert: FSPath root isRoot

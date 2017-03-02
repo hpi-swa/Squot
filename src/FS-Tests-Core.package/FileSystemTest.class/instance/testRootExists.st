@@ -1,3 +1,3 @@
 tests
 testRootExists
-	self assert: (filesystem exists: Path root)
+	self assert: (filesystem exists: FSPath root)

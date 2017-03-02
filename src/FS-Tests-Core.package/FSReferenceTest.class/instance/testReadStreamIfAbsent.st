@@ -1,7 +1,7 @@
 tests
 testReadStreamIfAbsent
 	| ref stream path |
-	path := Path * 'plonk'.
+	path := FSPath * 'plonk'.
 	filesystem store createFile: path.
 	ref := filesystem referenceTo: path.
 	[ 

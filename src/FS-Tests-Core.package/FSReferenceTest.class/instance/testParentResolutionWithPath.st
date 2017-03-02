@@ -2,7 +2,7 @@ tests
 testParentResolutionWithPath
 	| base relative absolute |
 	base := filesystem / 'plonk' / 'pinto'.
-	relative := Path parent / 'griffle' / 'zonk'.
+	relative := FSPath parent / 'griffle' / 'zonk'.
 	absolute := base resolve: relative.
 	self assert: absolute isAbsolute.
 	self assert: (absolute path at: 1) = 'plonk'.

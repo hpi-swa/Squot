@@ -4,4 +4,4 @@ testRelativeToReference
 	parent := filesystem / 'griffle'.
 	child := filesystem  / 'griffle' / 'plonk' / 'nurb'.
 	relative := child relativeTo: parent.
-	self assert: relative = (Path * 'plonk' / 'nurb')
+	self assert: relative = (FSPath * 'plonk' / 'nurb')

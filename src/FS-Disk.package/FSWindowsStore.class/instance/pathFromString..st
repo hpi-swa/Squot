@@ -4,7 +4,7 @@ pathFromString: aString
 	| normalized pathClass pathElements |
 	normalized := aString copy replaceAll: FSUnixStore delimiter with: self delimiter.
 	pathElements := normalized splitBy: self delimiter asString.
-	pathClass := (Path isAbsoluteWindowsPath: normalized)
+	pathClass := (FSPath isAbsoluteWindowsPath: normalized)
 		ifTrue: [ (normalized = self delimiter asString) ifTrue: [ pathElements := { ':' } ].
 			FSAbsolutePath ]
 		ifFalse: [ self stripDrive: pathElements.

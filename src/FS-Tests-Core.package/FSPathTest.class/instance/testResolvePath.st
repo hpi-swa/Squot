@@ -3,12 +3,12 @@ testResolvePath
 	"self debug: #testResolvePath"
 	
 	| path |
-	path := Path / 'grandfather' / 'father' / 'child'.
-	self assert: (path resolvePath: Path / 'grandfather') = (Path / 'grandfather').
-	self assert: (path resolvePath: Path / 'child') = (Path / 'child').
-	self assert: (path resolvePath: Path * 'grandfather') = (Path / 'grandfather' / 'father' / 'child' / 'grandfather').
-	self assert: (path resolvePath: Path * 'child') = (Path / 'grandfather' / 'father' / 'child' / 'child').
-	self assert: (path resolvePath: Path * 'grandfather') = (Path / 'grandfather' / 'father' / 'child' / 'grandfather').
-	self assert: (path resolvePath: Path * 'child') = (Path / 'grandfather' / 'father' / 'child' / 'child').
-	self assert:  (path resolvePath: (Path parent) / '..') =  (Path / 'grandfather')
+	path := FSPath / 'grandfather' / 'father' / 'child'.
+	self assert: (path resolvePath: FSPath / 'grandfather') = (FSPath / 'grandfather').
+	self assert: (path resolvePath: FSPath / 'child') = (FSPath / 'child').
+	self assert: (path resolvePath: FSPath * 'grandfather') = (FSPath / 'grandfather' / 'father' / 'child' / 'grandfather').
+	self assert: (path resolvePath: FSPath * 'child') = (FSPath / 'grandfather' / 'father' / 'child' / 'child').
+	self assert: (path resolvePath: FSPath * 'grandfather') = (FSPath / 'grandfather' / 'father' / 'child' / 'grandfather').
+	self assert: (path resolvePath: FSPath * 'child') = (FSPath / 'grandfather' / 'father' / 'child' / 'child').
+	self assert:  (path resolvePath: (FSPath parent) / '..') =  (FSPath / 'grandfather')
 

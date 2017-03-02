@@ -8,7 +8,7 @@
 		"close" : "cwp 2/19/2011 01:39",
 		"copy:ifAbsent:to:ifPresent:filesystem:" : "CamilloBruni 1/20/2012 11:42",
 		"createDirectory:" : "cwp 2/18/2011 23:59",
-		"defaultWorkingDirectory" : "jr 3/1/2017 17:35",
+		"defaultWorkingDirectory" : "CamilloBruni 8/12/2011 17:52",
 		"delete:" : "cwp 2/18/2011 13:25",
 		"delimiter" : "cwp 2/18/2011 17:19",
 		"directoryAt:ifAbsent:directoryNodesDo:" : "CamilloBruni 1/19/2012 00:15",

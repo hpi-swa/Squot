@@ -1,3 +1,3 @@
 enumerating
 withParents
-	^ super withParents addFirst: (Path root); yourself
+	^ super withParents addFirst: (FSPath root); yourself

@@ -1,7 +1,7 @@
 tests
 testRelativeWithParents
 	| path allPaths |
-	path := Path * 'plonk' / 'griffle' / 'nurb'.
+	path := FSPath * 'plonk' / 'griffle' / 'nurb'.
 	allPaths := path withParents.
 	
 	self assert: allPaths size = 3.

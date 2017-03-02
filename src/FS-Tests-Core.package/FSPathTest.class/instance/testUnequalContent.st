@@ -1,6 +1,6 @@
 tests
 testUnequalContent
 	| a b |
-	a := Path * 'plonk'.
-	b := Path * 'griffle'.
+	a := FSPath * 'plonk'.
+	b := FSPath * 'griffle'.
 	self deny: a = b.

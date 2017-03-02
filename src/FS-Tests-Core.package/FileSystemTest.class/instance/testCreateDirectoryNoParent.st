@@ -1,7 +1,7 @@
 tests
 testCreateDirectoryNoParent
 	| path |
-	path := Path * 'griffle' / 'nurp'.
+	path := FSPath * 'griffle' / 'nurp'.
 	self 
 		should: [filesystem createDirectory: path]
 		raise: FSDirectoryDoesNotExist.

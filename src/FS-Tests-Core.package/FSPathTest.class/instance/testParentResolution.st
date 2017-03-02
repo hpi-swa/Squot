@@ -1,8 +1,8 @@
 tests
 testParentResolution
 	| base relative absolute |
-	base := Path / 'plonk' / 'pinto'.
-	relative := Path parent / 'griffle' / 'zonk'.
+	base := FSPath / 'plonk' / 'pinto'.
+	relative := FSPath parent / 'griffle' / 'zonk'.
 	absolute := base resolve: relative.
 	self assert: absolute isAbsolute.
 	self assert: (absolute at: 1) = 'plonk'.

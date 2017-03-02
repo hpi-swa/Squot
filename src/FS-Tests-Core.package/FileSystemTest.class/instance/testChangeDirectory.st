@@ -1,7 +1,7 @@
 tests
 testChangeDirectory
 	| cwd |
-	filesystem workingDirectoryPath: Path / 'plonk'.
+	filesystem workingDirectoryPath: FSPath / 'plonk'.
 	filesystem changeDirectory: 'griffle'.
 	cwd := filesystem workingDirectoryPath.
 	self assert: cwd isAbsolute.

@@ -1,7 +1,7 @@
 tests
 testFile
 	| path out |
-	path := Path * 'gooly'.
+	path := FSPath * 'gooly'.
 	out := filesystem open: path writable: true.
 	out close.
 	self assert: (filesystem exists: path).

@@ -34,6 +34,7 @@
 		"testDeleteExistingFile" : "CamilloBruni 7/15/2011 15:56",
 		"testDeleteModifiedFile" : "CamilloBruni 9/3/2012 18:35",
 		"testDeleting" : "MaxLeske 8/12/2011 09:00",
+		"testDeletingDeepDirectoryThenReaddingPartsOfIt" : "jr 3/1/2017 17:48",
 		"testDeletingDirectory" : "MaxLeske 8/12/2011 08:54",
 		"testDeletingDirectoryThenReaddingIt" : "jr 2/9/2017 14:09",
 		"testDeletingMultipleDirectories" : "MaxLeske 8/12/2011 08:54",

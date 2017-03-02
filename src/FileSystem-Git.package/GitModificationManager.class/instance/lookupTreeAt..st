@@ -4,6 +4,6 @@ lookupTreeAt: aPath
 		(treeMap includesKey: each)
 			ifTrue: [(self lookupTreeAt: (aPath relativeTo: each)
 					startingFrom: (treeMap at: each))
-						ifNil: []
+						ifNil: [^ nil]
 						ifNotNil: [:tree | ^ tree]]].
 	^ nil

@@ -10,7 +10,8 @@
 		"cache",
 		"modManager",
 		"repository",
-		"cacheStore" ],
+		"cacheStore",
+		"additionalParents" ],
 	"name" : "GitStore",
 	"pools" : [
 		 ],

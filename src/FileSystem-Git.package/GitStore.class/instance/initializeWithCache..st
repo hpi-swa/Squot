@@ -7,3 +7,4 @@ initializeWithCache: aFilessytem
 		initializeWith: repository
 		with: cache
 		for: revision.
+	additionalParents := OrderedCollection new.

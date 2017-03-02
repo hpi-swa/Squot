@@ -10,5 +10,6 @@ prepareNewCommit
 		yourself.
 	parents := OrderedCollection new.
 	revision ifNotNil: [ parents add: revision hexHash ].
+	parents addAll: additionalParents.
 	commit parents: parents.
 	^ commit

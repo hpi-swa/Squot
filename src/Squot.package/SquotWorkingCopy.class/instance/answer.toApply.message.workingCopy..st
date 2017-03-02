@@ -1,9 +1,8 @@
 private creating new versions
-answer: aMCVersionNameAndMessageRequest toApproximate: aPackageInfoArtifact message: messageText workingCopy: mcWorkingCopy
+answer: aMCVersionNameAndMessageRequest toApply: aMCPatch message: messageText workingCopy: mcWorkingCopy
 	| allOperations ignored versionName wantedOperations |
 	allOperations := aMCVersionNameAndMessageRequest patchBlock value operations.
-	wantedOperations := (aPackageInfoArtifact content
-		patchRelativeToBase: (self cachedMCBaseVersionOf: mcWorkingCopy) snapshot) operations.
+	wantedOperations := aMCPatch operations.
 	ignored := allOperations difference: wantedOperations.
 	versionName := mcWorkingCopy uniqueVersionName.
 	aMCVersionNameAndMessageRequest resume: {versionName. messageText asString. ignored}.

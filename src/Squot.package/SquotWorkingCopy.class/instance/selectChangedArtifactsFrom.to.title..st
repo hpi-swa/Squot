@@ -1,14 +1,14 @@
 creating new versions
-selectChangedArtifactsFrom: baseSnapshot to: loadedSnapshot
+selectChangedArtifactsFrom: baseSnapshot to: loadedSnapshot title: titleString
 	| builder tool view |
 	tool := SquotChangedArtifactsChooser from: baseSnapshot to: loadedSnapshot.
 	"tool addIgnoredArtifacts: self ignoredArtifacts."
 	tool initializeSelectedChangesWithProposedChanges.
 	tool controllerForIgnores: self.
 	builder := ToolBuilder default.
-	view := builder open: tool label: 'Select changes to be saved'.
+	view := builder open: tool label: titleString.
 	builder runModal: view.
-	^ tool canceled
-		ifFalse: [tool selectedChanges]
-		ifTrue: [nil]
+	^ tool accepted
+		ifTrue: [tool selectedChanges]
+		ifFalse: [nil]
 	

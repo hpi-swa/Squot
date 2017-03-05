@@ -4,4 +4,4 @@ testReadStreamNotFound
 	ref := filesystem * 'plonk'.
 	self
 		should: [ref readStream]
-		raise: FSFileDoesNotExist 
+		raise: FileDoesNotExist 

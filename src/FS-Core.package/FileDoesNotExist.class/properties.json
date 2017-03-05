@@ -7,7 +7,7 @@
 	"commentStamp" : "cwp 11/18/2009 12:35",
 	"instvars" : [
 		 ],
-	"name" : "FSFileDoesNotExist",
+	"name" : "FileDoesNotExist",
 	"pools" : [
 		 ],
 	"super" : "FSFilesystemError",

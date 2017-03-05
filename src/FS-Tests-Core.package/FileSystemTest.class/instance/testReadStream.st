@@ -4,10 +4,10 @@ testReadStream
 	self delete: (reference := filesystem workingDirectory / 'griffle').
 	self
 		should: [ reference readStream ]
-		raise: FSFileDoesNotExist.
+		raise: FileDoesNotExist.
 	reference writeStreamDo: [ :ws | ws nextPutAll: 'griffle' ].
 	self
 		shouldnt: [ stream := reference readStream ]
-		raise: FSFileDoesNotExist.
+		raise: FileDoesNotExist.
 	self assert: stream contents asString = 'griffle'.
 	stream close

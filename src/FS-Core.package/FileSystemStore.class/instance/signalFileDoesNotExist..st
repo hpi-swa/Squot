@@ -1,5 +1,5 @@
 error signalling
 signalFileDoesNotExist: aPath
-	"Raise FSFileDoesNotExist exception"
+	"Raise FileDoesNotExist exception"
 		
-	^ FSFileDoesNotExist signalWith: aPath
+	^ FileDoesNotExist signalWith: aPath

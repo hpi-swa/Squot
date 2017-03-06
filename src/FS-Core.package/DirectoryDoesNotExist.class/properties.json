@@ -7,7 +7,7 @@
 	"commentStamp" : "cwp 11/18/2009 12:33",
 	"instvars" : [
 		 ],
-	"name" : "FSDirectoryDoesNotExist",
+	"name" : "DirectoryDoesNotExist",
 	"pools" : [
 		 ],
 	"super" : "FSFilesystemError",

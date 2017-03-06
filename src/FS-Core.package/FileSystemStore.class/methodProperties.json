@@ -25,7 +25,7 @@
 		"pathFromString:" : "CamilloBruni 1/19/2012 14:58",
 		"printPath:on:" : "cwp 2/28/2011 12:28",
 		"rename:ifAbsent:to:ifPresent:filesystem:" : "CamilloBruni 1/23/2012 15:53",
-		"signalDirectoryDoesNotExist:" : "StephaneDucasse 7/3/2011 16:09",
+		"signalDirectoryDoesNotExist:" : "jr 3/6/2017 13:42",
 		"signalDirectoryExists:" : "StephaneDucasse 7/3/2011 16:09",
 		"signalFileDoesNotExist:" : "jr 3/5/2017 13:15",
 		"signalFileExists:" : "StephaneDucasse 7/3/2011 16:10",

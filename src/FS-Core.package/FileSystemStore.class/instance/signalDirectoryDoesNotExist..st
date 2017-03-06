@@ -2,4 +2,4 @@ error signalling
 signalDirectoryDoesNotExist: aPath
 	"Raise FSDirectoryDoesNotExist exception"
 		
-	^ FSDirectoryDoesNotExist signalWith: aPath
+	^ DirectoryDoesNotExist signalWith: aPath

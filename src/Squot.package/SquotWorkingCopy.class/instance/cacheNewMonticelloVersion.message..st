@@ -6,7 +6,7 @@ cacheNewMonticelloVersion: aPackageInfoArtifact message: messageText
 	[mcWorkingCopy := MCWorkingCopy forPackageNamed: packageName]
 		on: NotFound do: [^ self].
 	(patch := aPackageInfoArtifact content
-		patchRelativeToBase: (self cachedMCBaseVersionOf: mcWorkingCopy) snapshot)
+		patchRelativeToBase: (self cachedMCAncestorSnapshotOf: mcWorkingCopy))
 		isEmpty ifTrue: ["no changes to this package" ^ self].
 	version := mcWorkingCopy
 		newVersionWithName: mcWorkingCopy uniqueVersionName

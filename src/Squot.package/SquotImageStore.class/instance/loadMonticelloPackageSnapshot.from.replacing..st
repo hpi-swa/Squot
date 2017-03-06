@@ -5,12 +5,13 @@ loadMonticelloPackageSnapshot: anMCSnapshot from: anArtifact replacing: aPackage
 	packageDirectory := (pathElements := anArtifact path splitBy: '/') last.
 	packageName := packageDirectory allButLast: '.package' size.
 	mcPackage := MCPackage named: packageName.
-	"borrowed from MCPackageLoader>>#updatePackage:withSnapshot:"
+	"partially borrowed from MCPackageLoader>>#updatePackage:withSnapshot:"
 	packageSnapshot := mcPackage snapshot.
 	patch := anMCSnapshot patchRelativeToBase: packageSnapshot.
-	loader := MCPackageLoader new.
-	patch applyTo: loader.
-	packageSnapshot definitions do: [:each | loader provisions addAll: each provisions].
-	"end of borrowed code"
-	loader loadWithNameLike: packageName.
+	patch isEmpty ifFalse:
+		[loader := MCPackageLoader new.
+		patch applyTo: loader.
+		packageSnapshot definitions do: [:each | loader provisions addAll: each provisions].
+		"end of borrowed code"
+		loader loadWithNameLike: packageName].
 	^ PackageInfo named: packageName

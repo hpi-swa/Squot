@@ -6,5 +6,5 @@ testCreateAndReadFile
 	self
 		shouldnt: [ (workingCopy / filename) writeStreamDo: [ :stream |
 			stream nextPutAll: 'initial content' ] ]
-		raise: FSFileDoesNotExist.
+		raise: FileDoesNotExist.
 	self assert: (workingCopy readStreamOn: filename) contents asString = 'initial content'

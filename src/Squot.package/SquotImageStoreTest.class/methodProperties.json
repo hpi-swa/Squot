@@ -6,7 +6,7 @@
 		"nameForTestEnvironment" : "jr 1/27/2017 16:02",
 		"newPackageInfoFor:" : "jr 3/5/2017 16:55",
 		"setUp" : "jr 2/2/2017 14:41",
-		"snapshotClass:at:" : "jr 1/27/2017 16:10",
+		"snapshotClass:at:" : "jr 3/6/2017 14:33",
 		"snapshotPackage:at:" : "jr 1/27/2017 16:10",
 		"tearDown" : "jr 3/6/2017 14:27",
 		"testFiles" : "jr 1/31/2017 15:52",
@@ -14,4 +14,4 @@
 		"testRestorePackage" : "jr 3/5/2017 16:55",
 		"testRestorePackageThatLivesInAnotherEnvironment" : "jr 3/6/2017 14:28",
 		"testSnapshotAndRestoreText" : "jr 1/27/2017 16:04",
-		"testSnapshotPackageInDifferentEnvironment" : "jr 3/1/2017 17:11" } }
+		"testSnapshotPackageInDifferentEnvironment" : "jr 3/6/2017 14:33" } }

@@ -1,6 +1,6 @@
 tests
 testSnapshotPackageInDifferentEnvironment
-	| yetAnotherEnvironment package workingCopy snapshot |
+	| yetAnotherEnvironment package workingCopy class snapshot |
 	yetAnotherEnvironment := Environment withName: self nameForTestEnvironment, ' II'.
 	yetAnotherEnvironment importSelf.
 	package := MCPackage named: #VeryUnlikelyPackageName.

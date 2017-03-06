@@ -1,7 +1,7 @@
 *squot
-squotInitializeStoreInfo: aDictionary
+squotAddTransientStoreInfoTo: aDictionary
 	| monticelloPackage |
-	super squotInitializeStoreInfo: aDictionary.
+	super squotAddTransientStoreInfoTo: aDictionary.
 	(monticelloPackage := self mcPackage) hasWorkingCopy
 		ifTrue: [aDictionary at: #environment
 				put: (monticelloPackage workingCopy environment)]

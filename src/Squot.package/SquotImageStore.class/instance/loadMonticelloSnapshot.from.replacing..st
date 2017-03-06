@@ -3,8 +3,7 @@ loadMonticelloSnapshot: anMCSnapshot from: anArtifact replacing: aPackageInfoOrC
 	| objectClassName isSingleClass |
 	objectClassName := anArtifact storeInfo at: #objectClassName.
 	isSingleClass := objectClassName endsWith: ' class'.
-	((additionalInfo at: anArtifact path) at: #environment ifAbsent: [Environment current])
-	beCurrentDuring: 
+	(self environmentForLoadedArtifact: anArtifact) beCurrentDuring: 
 		[^ isSingleClass
 			ifTrue: [self loadMonticelloClassSnapshot: anMCSnapshot
 				from: anArtifact replacing: aPackageInfoOrClass]

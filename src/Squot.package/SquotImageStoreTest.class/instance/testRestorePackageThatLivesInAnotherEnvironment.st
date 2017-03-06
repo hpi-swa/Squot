@@ -8,7 +8,6 @@ testRestorePackageThatLivesInAnotherEnvironment
 		[class := classFactory newClass.
 		classRef := class asClassReference. "which stores name and environment, and stays"
 		package := MCPackage named: classFactory packageName.
-		self deny: package hasWorkingCopy.
 		imageStore add: (self newPackageInfoFor: classFactory packageName) at: 'src'].
 	snapshot := imageStore captureSnapshot.
 	self assert: ((packageArtifact := snapshot artifacts
@@ -29,6 +28,4 @@ testRestorePackageThatLivesInAnotherEnvironment
 		description: 'stored artifact should not know the environment']
 	ensure:
 		[(Environment current hasClassNamed: classRef className) "wrong environment"
-			ifTrue: [classFactory delete: (Environment current at: classRef className)].
-		(MCWorkingCopy forPackage: (MCPackage named: classFactory packageName))
-			unregister].
+			ifTrue: [classFactory delete: (Environment current at: classRef className)]].

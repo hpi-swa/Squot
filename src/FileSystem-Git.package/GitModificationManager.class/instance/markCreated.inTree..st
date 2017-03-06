@@ -1,6 +1,6 @@
 accessing
 markCreated: aPath inTree: aTree
-	aPath = Path root ifTrue: [ ^ self ].
+	aPath = FSPath root ifTrue: [ ^ self ].
 
 	treeMap
 		at: aPath parent

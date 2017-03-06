@@ -7,10 +7,10 @@ initializeWith: aRepository with: aCache for: aRevision
 	createdPaths := Dictionary new.
 	deletedPaths := Dictionary new.
 	treeMap
-		at: Path root
+		at: FSPath root
 		put: (aRevision
 			ifNotNil: [ self newTreeFrom: aRevision tree ]
-			ifNil: [ self newTreeAt: Path root ]).
+			ifNil: [ self newTreeAt: FSPath root ]).
 	pendingPathsForEntryUpdate := Heap sortBlock: [:a :b |
 		a size > b size
 		or: [a size = b size

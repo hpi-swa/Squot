@@ -2,7 +2,7 @@ commit tests
 testAddFileDeepInTrees
 	| deepDirectoryPath deepDirectory |
 	self assert: workingCopy root children isEmpty.
-	deepDirectoryPath := Path / 'foo' / 'bar' / 'bla'.
+	deepDirectoryPath := FSPath / 'foo' / 'bar' / 'bla'.
 	(deepDirectory := workingCopy root resolve: deepDirectoryPath) ensureDirectory.
 	deepDirectory / 'file1' writeStreamDo: [:stream | stream nextPutAll: 'file1'].
 	workingCopy commit: 'first commit'.

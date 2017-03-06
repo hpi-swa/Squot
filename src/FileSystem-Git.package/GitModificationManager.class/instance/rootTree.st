@@ -1,3 +1,3 @@
 accessing
 rootTree
-	^ treeMap at: Path root
+	^ treeMap at: FSPath root

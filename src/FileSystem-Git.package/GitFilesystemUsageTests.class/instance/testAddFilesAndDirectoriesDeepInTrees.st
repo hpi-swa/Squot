@@ -2,7 +2,7 @@ commit tests
 testAddFilesAndDirectoriesDeepInTrees
 	| intermediatePath |
 	self assert: workingCopy root children isEmpty.
-	intermediatePath := Path / 'foo'.
+	intermediatePath := FSPath / 'foo'.
 	((workingCopy root resolve: intermediatePath / 'bar' / 'bla') ensureDirectory; yourself)
 		/ 'file1' writeStreamDo: [:stream | stream nextPutAll: 'file1'].
 	workingCopy commit: 'first commit'.

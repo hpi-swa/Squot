@@ -4,9 +4,8 @@ allReferencesDo: aBlock
 	References outside of the refsDir will come last."
 	| baseDir |
 	baseDir := self baseDir asAbsolute.
-	CollectVisitor breadthFirst: baseDir / 'refs'
-		collect: [:each | each isFile
-			ifTrue: [aBlock value: ((each reference relativeTo: baseDir) printWithDelimiter: $/)]].
+	(FSSelectVisitor breadthFirst: baseDir / 'refs' select: [:each | each isFile])
+		do: [:each | aBlock value: ((each reference relativeTo: baseDir) printWithDelimiter: $/)].
 	baseDir children
 		select: [:each | each basename allSatisfy: #isUppercase]
 		thenDo: [:each | aBlock value: each basename].

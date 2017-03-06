@@ -1,0 +1,14 @@
+{
+	"category" : "Pharo-compatibility",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "<historical>",
+	"instvars" : [
+		 ],
+	"name" : "Checksum",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }

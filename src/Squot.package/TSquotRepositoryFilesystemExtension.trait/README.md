@@ -1,0 +1,1 @@
+The filesystem extension allows versions in a repository to be navigated as a filesystem.

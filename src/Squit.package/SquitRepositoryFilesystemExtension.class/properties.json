@@ -1,0 +1,16 @@
+{
+	"category" : "Squit-Extensions",
+	"classinstvars" : [
+		 ],
+	"classtraitcomposition" : "TSquotRepositoryFilesystemExtension classTrait",
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"repository" ],
+	"name" : "SquitRepositoryFilesystemExtension",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"traitcomposition" : "TSquotRepositoryFilesystemExtension",
+	"type" : "normal" }

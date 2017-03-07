@@ -1,1 +1,1 @@
-SystemOrganization addCategory: #'Squit-Core'!SystemOrganization addCategory: #'Squit-Tests'!
+SystemOrganization addCategory: #'Squit-Core'!SystemOrganization addCategory: #'Squit-Extensions'!SystemOrganization addCategory: #'Squit-Tests'!

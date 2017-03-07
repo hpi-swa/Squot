@@ -1,3 +1,3 @@
 comparing
 hash
-	^ (fileReference hash hashMultiply + self species hash) hashMultiply
+	^ (fileReference hash hashMultiply bitXor: self species hash) hashMultiply

@@ -2,6 +2,7 @@
 	"class" : {
 		"dirMode" : "MaxLeske 6/23/2010 19:10",
 		"directoryNamed:hash:in:" : "CamilloBruni 9/3/2012 17:29",
+		"executableFileMode" : "jr 3/6/2017 19:13",
 		"fileMode" : "MaxLeske 6/23/2010 19:13",
 		"fileNamed:hash:in:" : "CamilloBruni 9/3/2012 17:29",
 		"modeFor:" : "MaxLeske 7/21/2010 18:59",
@@ -20,7 +21,7 @@
 		"isInDirectorymode" : "MaxLeske 2/26/2012 14:04",
 		"isInFilemode" : "MaxLeske 2/26/2012 14:04",
 		"loadFrom:" : "jr 2/24/2017 21:48",
-		"loadModeFrom:" : "MaxLeske 6/24/2012 15:12",
+		"loadModeFrom:" : "jr 3/6/2017 19:11",
 		"mode" : "MaxLeske 2/26/2012 14:03",
 		"object" : "MaxLeske 2/26/2012 12:04",
 		"printMode" : "MaxLeske 6/23/2010 19:17",

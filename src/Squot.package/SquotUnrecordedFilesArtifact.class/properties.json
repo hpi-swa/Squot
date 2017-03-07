@@ -1,0 +1,15 @@
+{
+	"category" : "Squot-FileSystemStore",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"rootDirectory",
+		"ownerSnapshot" ],
+	"name" : "SquotUnrecordedFilesArtifact",
+	"pools" : [
+		 ],
+	"super" : "SquotArtifact",
+	"type" : "normal" }

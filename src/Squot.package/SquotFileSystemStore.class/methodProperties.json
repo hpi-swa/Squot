@@ -8,7 +8,7 @@
 		"/" : "jr 1/27/2017 15:07",
 		"artifactReferencesDo:" : "jr 1/29/2017 21:57",
 		"artifactsDo:" : "jr 1/29/2017 21:42",
-		"captureSnapshot" : "jr 1/31/2017 12:00",
+		"captureSnapshot" : "jr 3/7/2017 01:03",
 		"deserializers" : "jr 1/27/2017 14:33",
 		"directory" : "jr 1/27/2017 15:07",
 		"generateTableOfContentsFor:in:" : "jr 2/24/2017 22:01",
@@ -27,4 +27,5 @@
 		"storeFile:" : "jr 1/31/2017 14:51",
 		"storeOrdinary:" : "jr 1/31/2017 13:45",
 		"storeSquotMetadataFor:" : "jr 2/21/2017 13:54",
+		"storeUnrecordedFiles:" : "jr 3/7/2017 13:20",
 		"tableOfContents" : "jr 1/31/2017 11:27" } }

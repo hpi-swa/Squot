@@ -2,6 +2,7 @@
 	"category" : "FS-AnsiStreams",
 	"classinstvars" : [
 		 ],
+	"classtraitcomposition" : "TReadableStream classTrait + TPositionableStream classTrait",
 	"classvars" : [
 		 ],
 	"commentStamp" : "cwp 11/18/2009 11:36",
@@ -11,4 +12,5 @@
 	"pools" : [
 		 ],
 	"super" : "FSStream",
+	"traitcomposition" : "TReadableStream + TPositionableStream",
 	"type" : "normal" }

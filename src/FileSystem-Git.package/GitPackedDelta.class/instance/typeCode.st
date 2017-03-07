@@ -1,3 +1,3 @@
 accessing
 typeCode
-	^ self deltaBase typeCode
+	^ self deltaBaseHeader typeCode

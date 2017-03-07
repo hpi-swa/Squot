@@ -1,3 +1,3 @@
-abstract
+public operations
 createDirectory: aPath
 	self subclassResponsibility 

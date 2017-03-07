@@ -1,4 +1,4 @@
-public
+public testing
 isDirectory: aPath
 	aPath isRoot ifTrue: [ ^ true ].
 	self 

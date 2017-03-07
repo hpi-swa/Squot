@@ -1,1 +1,1 @@
-SystemOrganization addCategory: #'FS-Tests-AnsiStreams'!
+SystemOrganization addCategory: #'FS-Tests-AnsiStreams'!

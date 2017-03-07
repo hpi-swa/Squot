@@ -1,1 +1,1 @@
-SystemOrganization addCategory: #'FS-Tests-Core'!
+SystemOrganization addCategory: #'FS-Tests-Core'!

@@ -1,4 +1,4 @@
-abstract
+public accessing
 directoryAt: aPath ifAbsent: absentBlock fileNodesDo: aBlock
 	^ self 
 		directoryAt: aPath 

@@ -1,4 +1,4 @@
-public
+public accessing
 nodeAt: aPath
 	^ self 
 		nodeAt: aPath 

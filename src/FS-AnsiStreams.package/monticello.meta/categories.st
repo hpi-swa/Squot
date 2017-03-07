@@ -1,1 +1,1 @@
-SystemOrganization addCategory: #'FS-AnsiStreams'!
+SystemOrganization addCategory: #'FS-AnsiStreams'!

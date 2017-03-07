@@ -1,1 +1,1 @@
-SystemOrganization addCategory: #'Pharo-compatibility'!
+SystemOrganization addCategory: #'Pharo-compatibility'!

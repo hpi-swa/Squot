@@ -1,4 +1,4 @@
-public
+public testing
 isFile: aPath
 	"slow solution for big directories! "
 	^ self 

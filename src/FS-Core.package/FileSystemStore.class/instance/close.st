@@ -1,3 +1,3 @@
-abstract
+public operations
 close
 	"Some kinds of filesystems need to open connections to external resources"

@@ -44,6 +44,7 @@
 		"testEmptyCommitTimeStamp" : "MaxLeske 9/3/2012 20:58",
 		"testEquals" : "MaxLeske 8/12/2011 08:55",
 		"testGettingCommitTimestamp" : "CamilloBruni 9/3/2012 19:29",
+		"testLineEndingsAreNormalized" : "jr 3/7/2017 16:39",
 		"testLoadExistingFiles" : "CamilloBruni 7/19/2011 18:51",
 		"testLoadExistingFilesFromHead" : "CamilloBruni 7/19/2011 18:51",
 		"testLoadExistingFilesFromRevision" : "CamilloBruni 7/19/2011 18:51",

@@ -5,7 +5,7 @@ processBlobAt: path in: tree
 	
 	reference isFile ifFalse: [ ^ self].
 	
-	data := reference readStreamDo: [ :stream | stream binary; contents ].
+	data := reference readStreamDo: [:stream | self filterBytesFrom: stream at: path].
 	blob := GitBlob bytes: data in: repository.
 	blob store.
 	

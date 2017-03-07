@@ -9,7 +9,7 @@ testAddAndCommitting
 	"then"
 	master := repository branchNamed: 'master'.
 	self assert: 'This is a test', String cr
-		equals: (master / 'README.md' readStreamDo: [:stream | stream ascii; contents]).
+		equals: (master / 'README.md' readStreamDo: [:stream | stream ascii; contents]) withSqueakLineEndings.
 	self assert: 'foo'
 		equals: (master / 'blob2' readStreamDo: [:stream | stream ascii; contents]).
 	self assert: 'testAddAndCommitting commit' equals: master revision message.

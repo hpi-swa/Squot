@@ -10,7 +10,8 @@
 		"repository",
 		"loadedHistorian",
 		"previousVersionId",
-		"previousSnapshot" ],
+		"previousSnapshot",
+		"shouldStoreMetadata" ],
 	"name" : "SquotWorkingCopy",
 	"pools" : [
 		 ],

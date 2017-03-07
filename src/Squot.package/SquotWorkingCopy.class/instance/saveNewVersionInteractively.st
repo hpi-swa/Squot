@@ -18,8 +18,9 @@ saveNewVersionInteractively
 	finalSnapshot := snapshotBuilder buildSnapshot.
 	newVersion := loadedHistorian createNewVersion: finalSnapshot
 		with: [:version | version
-				message: tool message asString;
-				author: self defaultAuthor].
+					message: tool message asString;
+					author: self defaultAuthor.
+				self shouldNotStoreMetadata ifTrue: [version doNotStoreMetadata]].
 	previousSnapshot := finalSnapshot.
 	previousVersionId := newVersion internalId.
 	self cacheNewMonticelloVersions: finalSnapshot message: tool message.

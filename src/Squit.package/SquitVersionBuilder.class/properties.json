@@ -12,7 +12,8 @@
 		"parents",
 		"snapshot",
 		"author",
-		"committer" ],
+		"committer",
+		"shouldStoreMetadata" ],
 	"name" : "SquitVersionBuilder",
 	"pools" : [
 		 ],

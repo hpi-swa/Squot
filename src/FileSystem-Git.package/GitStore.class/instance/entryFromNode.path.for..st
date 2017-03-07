@@ -1,4 +1,13 @@
 delegate
-entryFromNode: node path: path for: aFileystem	
-	self flag: 'TODO: check if we need to intercept here and update the modification manager and the cache'.
-	^ cacheStore entryFromNode: node path: path for: aFileystem
+entryFromNode: treeEntry path: path for: aFilesystem
+	treeEntry class == GitTreeEntry
+		ifFalse: [^ cacheStore entryFromNode: treeEntry path: path for: aFilesystem].
+	^ FSDirectoryEntry
+		filesystem: aFilesystem
+		path: path / treeEntry entryName
+		creation: 0
+		modification: 0
+		isDir: treeEntry isInDirectorymode
+		size: (treeEntry isInDirectorymode
+				ifTrue: [0]
+				ifFalse: [repository sizeOfObjectNamed: treeEntry entryHash])

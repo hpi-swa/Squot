@@ -1,8 +1,11 @@
 delegate
 directoryAt: aPath ifAbsent: absentBlock nodesDo: aBlock
+	| doneEntryNames |
 	self ensure: aPath.
-	"load the directory into the cache"
-	(modManager treeAt: aPath) entries do: [ :gitEntry|
-			self ensure: aPath / gitEntry entryName.
-		].
-	cacheStore directoryAt: aPath ifAbsent: absentBlock nodesDo: aBlock.
+	doneEntryNames := Set new.
+	cacheStore directoryAt: aPath ifAbsent: absentBlock nodesDo:
+		[:cacheEntry | doneEntryNames add: (cacheStore basenameFromEntry: cacheEntry).
+			aBlock value: cacheEntry].
+	(modManager treeAt: aPath) entries do:
+		[:treeEntry | (doneEntryNames includes: treeEntry entryName)
+				ifFalse: [aBlock value: treeEntry]].

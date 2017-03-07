@@ -2,6 +2,7 @@
 	"class" : {
 		"byteTypeCodeFrom:" : "DamienCassou 2/26/2013 16:34",
 		"fromPack:at:in:" : "MaxLeske 9/8/2012 10:26",
+		"headerFromPack:at:in:" : "jr 3/6/2017 23:17",
 		"isAbstract" : "MaxLeske 9/8/2012 13:00",
 		"packedOfsBinaryCode" : "DamienCassou 2/26/2013 16:38",
 		"packedRefsBinaryCode" : "DamienCassou 2/26/2013 16:38" },
@@ -18,7 +19,8 @@
 		"lengthInPack" : "MaxLeske 9/8/2012 20:45",
 		"lengthInPack:" : "MaxLeske 9/8/2012 20:45",
 		"loadDeltaInterpreter" : "MaxLeske 9/8/2012 18:56",
-		"loadFrom:" : "DamienCassou 2/26/2013 18:14",
+		"loadFrom:" : "jr 3/6/2017 23:18",
+		"loadHeaderFrom:" : "jr 3/6/2017 23:17",
 		"object" : "MaxLeske 7/1/2012 19:33",
 		"pack" : "tonyg 2/23/2010 11:05",
 		"pack:" : "tonyg 2/23/2010 11:05",

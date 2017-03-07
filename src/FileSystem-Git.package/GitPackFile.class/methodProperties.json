@@ -6,6 +6,8 @@
 	"instance" : {
 		"delete" : "MaxLeske 8/12/2012 13:33",
 		"hasIndexFile" : "MaxLeske 9/8/2012 13:20",
+		"headerOfObjectAtOffset:" : "jr 3/6/2017 23:11",
+		"headerOfObjectNamed:" : "jr 3/6/2017 23:07",
 		"indexFile" : "MaxLeske 6/23/2012 20:13",
 		"initializeIndex" : "MaxLeske 9/1/2012 20:45",
 		"initializeWith:in:" : "MaxLeske 6/23/2012 20:39",

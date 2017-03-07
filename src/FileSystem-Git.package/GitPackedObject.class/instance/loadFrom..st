@@ -1,9 +1,7 @@
 initialize-release
 loadFrom: aStream
 	self
-		sourceStream: aStream;
-		startPosition: aStream position; 
-		readHeaders;
+		loadHeaderFrom: aStream;
 		dataStartPosition: aStream position;
 		unpack;
 		lengthInPack: aStream position - self startPosition;

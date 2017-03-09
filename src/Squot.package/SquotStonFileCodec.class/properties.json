@@ -1,0 +1,16 @@
+{
+	"category" : "Squot-Serialization",
+	"classinstvars" : [
+		 ],
+	"classtraitcomposition" : "TSquotCodec classTrait + TSquotSingleFileSerializer classTrait",
+	"classvars" : [
+		 ],
+	"commentStamp" : "jr 3/8/2017 17:08",
+	"instvars" : [
+		 ],
+	"name" : "SquotStonFileCodec",
+	"pools" : [
+		 ],
+	"super" : "SquotSerializer",
+	"traitcomposition" : "TSquotCodec + TSquotSingleFileSerializer",
+	"type" : "normal" }

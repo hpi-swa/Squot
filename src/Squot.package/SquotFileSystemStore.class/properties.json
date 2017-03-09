@@ -6,10 +6,6 @@
 		"DefaultDeserializerRegistry" ],
 	"commentStamp" : "jr 1/27/2017 14:35",
 	"instvars" : [
-		"objects",
-		"paths",
-		"serializers",
-		"base",
 		"deserializers",
 		"directory",
 		"shouldStoreMetadata" ],

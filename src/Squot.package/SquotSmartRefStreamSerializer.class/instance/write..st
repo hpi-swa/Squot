@@ -1,5 +1,4 @@
-as yet unclassified
+Squot serialization
 write: anArtifact
-	(rootDirectory resolve: anArtifact path) writeStreamDo: [:stream |
-		(self streamClass on: stream)
-			nextPutObjOnly: anArtifact content]
+	self atPathOf: anArtifact writeStreamDo:
+		[:stream | (self streamClass on: stream) nextPutObjOnly: anArtifact content]

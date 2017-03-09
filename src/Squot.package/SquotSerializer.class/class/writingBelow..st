@@ -1,5 +1,5 @@
 as yet unclassified
 writingBelow: aFileReference
 	^ self new
-		initializeWith: aFileReference;
+		rootDirectory: aFileReference;
 		yourself

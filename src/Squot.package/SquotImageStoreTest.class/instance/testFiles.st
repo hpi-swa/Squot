@@ -8,6 +8,7 @@ testFiles
 		add: vmBinaryArtifact;
 		buildSnapshot.
 	imageStore restoreToSnapshot: snapshot.
-	self shouldnt: [imageStore objectAt: 'vm'] raise: Error.
+	self deny: (imageStore includesObjectAt: 'vm').
+	"self shouldnt: [imageStore objectAt: 'vm'] raise: Error.
 	self assert: ((imageStore objectAt: 'vm') isKindOf: SquotFileArtifact).
-	self assert: vmBinaryArtifact equals: (imageStore objectAt: 'vm').
+	self assert: vmBinaryArtifact equals: (imageStore objectAt: 'vm')."

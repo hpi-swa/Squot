@@ -1,3 +1,3 @@
 running
 tearDown
-	gitRepository updateBranchNamed: 'master' to: oldMaster.
+	self repositoryPathForTests asFileReference deleteAll.

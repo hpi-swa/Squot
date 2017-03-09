@@ -1,3 +1,3 @@
-as yet unclassified
+accessing
 ifPresent: presentBlock ifAbsent: absentBlock
 	^ absentBlock value

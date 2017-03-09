@@ -1,0 +1,3 @@
+serializing
+writeWith: aSerializer
+	self shouldNotImplement

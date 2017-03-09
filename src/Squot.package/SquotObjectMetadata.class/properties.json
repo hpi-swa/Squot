@@ -6,7 +6,8 @@
 		 ],
 	"commentStamp" : "jr 1/18/2017 15:54",
 	"instvars" : [
-		"metadataFile" ],
+		"metadataFile",
+		"metadata" ],
 	"name" : "SquotObjectMetadata",
 	"pools" : [
 		 ],

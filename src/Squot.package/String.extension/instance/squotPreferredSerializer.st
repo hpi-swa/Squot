@@ -1,0 +1,3 @@
+*Squot-serializing
+squotPreferredSerializer
+	^ SquotTextFileCodec

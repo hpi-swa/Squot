@@ -1,4 +1,4 @@
 writing
 updateFrom: anArtifact
-	metadataFile writeStreamDo: [:stream |
-		STON squotPut: anArtifact storeInfo onStream: stream].
+	metadata := anArtifact storeInfo.
+	metadataFile writeStreamDo: [:stream | STON squotPut: metadata onStream: stream].

@@ -5,4 +5,9 @@
 	"instance" : {
 		"absentCopy" : "jr 2/16/2017 01:34",
 		"copyWithDifferentContent:" : "jr 2/16/2017 01:35",
-		"ifPresent:ifAbsent:" : "jr 2/16/2017 01:23" } }
+		"ifAbsent:" : "jr 3/8/2017 14:31",
+		"ifPresent:" : "jr 3/8/2017 14:31",
+		"ifPresent:ifAbsent:" : "jr 2/16/2017 01:23",
+		"storeWith:" : "jr 3/8/2017 14:23",
+		"wantsToBeInTableOfContents" : "jr 3/8/2017 14:23",
+		"writeWith:" : "jr 3/8/2017 14:23" } }

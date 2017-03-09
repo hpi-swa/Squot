@@ -1,3 +1,3 @@
-*Squot
+*Squot-serializing
 squotPreferredSerializer
 	^ SquotSmartRefStreamSerializer

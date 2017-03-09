@@ -1,0 +1,1 @@
+I write and read (serialize/deserialize) Strings as plain text files.

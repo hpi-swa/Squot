@@ -1,3 +1,6 @@
 copying
 absentCopy
-	^ SquotAbsentArtifact newFrom: self
+	^ (SquotAbsentArtifact newFrom: self)
+		postCopyWithoutContent;
+		content: nil;
+		yourself

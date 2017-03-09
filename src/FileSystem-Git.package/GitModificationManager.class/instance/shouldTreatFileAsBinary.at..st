@@ -1,3 +1,4 @@
 operations
 shouldTreatFileAsBinary: aFileStream at: path
-	^ (self shouldFilterLineEndings: path) not
+	self flag: #gitattributes.
+	^ (self probeStreamForNullBytes: aFileStream) or: [(self shouldFilterLineEndings: path) not]

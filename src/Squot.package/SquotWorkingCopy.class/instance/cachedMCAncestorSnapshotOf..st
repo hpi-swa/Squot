@@ -1,6 +1,6 @@
 private creating new versions
 cachedMCAncestorSnapshotOf: aMCWorkingCopy
 	aMCWorkingCopy ancestors ifEmpty: [^ MCSnapshot empty].
-	^ ((MCCacheRepository default
+	^ ((aMCWorkingCopy repositoryGroup
 		versionWithInfo: aMCWorkingCopy ancestors first)
-		ifNil: [^ MCSnapshot empty]) snapshot
+		ifNil: [^ MCSnapshot empty]) addToCache; snapshot

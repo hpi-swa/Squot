@@ -1,3 +1,3 @@
 accessing
 pathOf: aReference
-	^ (aReference relativeTo: directory) printWithDelimiter: $/
+	^ SquotPath fromPath: (aReference relativeTo: directory)

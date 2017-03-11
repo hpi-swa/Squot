@@ -3,6 +3,7 @@ cacheNewMonticelloVersion: aPackageInfoArtifact message: messageText
 	| folderName packageName mcWorkingCopy patch version |
 	folderName := (aPackageInfoArtifact path copyAfterLast: $/) ifEmpty: aPackageInfoArtifact path.
 	packageName := folderName allButLast: '.package' size.
+	self flag: #FIXME. "this does not work for 'branched' packages"
 	[mcWorkingCopy := MCWorkingCopy forPackageNamed: packageName]
 		on: NotFound do: [^ self].
 	(patch := aPackageInfoArtifact content

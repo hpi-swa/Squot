@@ -1,0 +1,14 @@
+{
+	"category" : "Squot-Core",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "jr 3/11/2017 00:59",
+	"instvars" : [
+		 ],
+	"name" : "SquotPath",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }

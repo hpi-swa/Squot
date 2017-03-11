@@ -1,0 +1,1 @@
+Helper class to handle or convert paths.

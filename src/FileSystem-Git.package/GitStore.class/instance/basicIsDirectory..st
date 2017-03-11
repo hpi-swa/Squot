@@ -1,3 +1,4 @@
 delegate
-basicIsDirectory: aPath
-	^ cacheStore basicIsDirectory: aPath
+basicIsDirectory: anEntry
+	anEntry class == GitTreeEntry ifTrue: [^ anEntry isInDirectorymode].
+	^ cacheStore basicIsDirectory: anEntry

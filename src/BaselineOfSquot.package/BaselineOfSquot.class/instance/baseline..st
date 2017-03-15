@@ -7,6 +7,9 @@ baseline: spec
 					className: 'ConfigurationOfSton';
 					versionString: #'stable';
 					repository: 'http://www.smalltalkhub.com/mc/SvenVanCaekenberghe/STON/main' ].
+		spec baseline: 'FileTree' with: [
+				spec
+					repository: 'github://dalehenrich/filetree:squeak4.3/repository'. ].
 		spec 
 			package: 'INIFile' with: [
 				spec

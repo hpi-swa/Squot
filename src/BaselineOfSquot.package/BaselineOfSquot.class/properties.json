@@ -1,0 +1,14 @@
+{
+	"category" : "BaselineOfSquot",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "BaselineOfSquot",
+	"pools" : [
+		 ],
+	"super" : "BaselineOf",
+	"type" : "normal" }

@@ -11,6 +11,8 @@ It uses the package FileSystem-Git (also included here) to browse and manipulate
 
 ## Installation instructions
 
+You will need a Squeak trunk image that is newer than 2017-03-12. The image's version number should be at about 17037 or higher.
+
 Until a proper baseline for Metacello has been created, you can use the following code to load Squot and all its prerequisites (including Metacello):
 
 ```smalltalk

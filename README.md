@@ -119,3 +119,14 @@ SquotMonticelloConverterVerifier
   verifyVersionsOf: (repository historianNamed: historianName)
   ofLoadedPackageNamed: packageName.
 ```
+
+## Goodies
+
+Because Squot does not yet include a sufficient set of tools to manipulate a
+Git repository, you may want to create a button that opens gitk or another
+program on the repository.
+
+Here a do-it for Windows users (requires OSProcess):
+```smalltalk
+OSProcess command: 'cmd /C start /D "', (squitRepository gitRepository repository baseDir path printWithDelimiter: $\), '" gitk --all'.
+```

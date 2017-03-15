@@ -9,7 +9,9 @@ baseline: spec
 					repository: 'http://www.smalltalkhub.com/mc/SvenVanCaekenberghe/STON/main' ].
 		spec 
 			package: 'INIFile' with: [
-				spec repository: 'http://www.squeaksource.com/INIFile'. ];
+				spec
+					repository: 'http://www.squeaksource.com/INIFile';
+					file: 'INIFile-jf.3'. ];
 			package: 'FS-Core';
 			package: 'FS-Disk' with: [
 				spec requires: #('FS-Core' ). ];

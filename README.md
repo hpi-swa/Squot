@@ -13,72 +13,13 @@ It uses the package FileSystem-Git (also included here) to browse and manipulate
 
 You will need a Squeak trunk image that is newer than 2017-03-12. The image's version number should be at about 17037 or higher.
 
-Until a proper baseline for Metacello has been created, you can use the following code to load Squot and all its prerequisites (including Metacello):
+First install the latest [Metacello](//github.com/dalehenrich/metacello-work), then you can use the following code to load Squot and all its prerequisites:
 
 ```smalltalk
-"install latest Metacello"
-Installer ss3
-    project: 'FileTree';
-    install: 'ConfigurationOfFileTree'.
-((Smalltalk at: #ConfigurationOfFileTree) project version: #'stable') load.
-
-Installer gemsource
-    project: 'metacello';
-    addPackage: 'ConfigurationOfMetacello';
-    install.
-
-((Smalltalk at: #ConfigurationOfMetacello) project 
-  version: #'previewBootstrap') load.
-
-(Smalltalk at: #Metacello) new
-  configuration: 'MetacelloPreview';
-  version: #stable;
-  repository: 'github://dalehenrich/metacello-work:configuration';
+Metacello new
+  baseline: 'Squot';
+  repository: 'github://j4yk/Squot:master/src';
   load.
-
-(Smalltalk at: #Metacello) new
-  baseline: 'Metacello';
-  repository: 'github://dalehenrich/metacello-work:master/repository';
-  get.
-(Smalltalk at: #Metacello) new
-  baseline: 'Metacello';
-  repository: 'github://dalehenrich/metacello-work:master/repository';
-  load.
-
-"install latest FileTree"
-(Smalltalk at: #Metacello) new
-  baseline: 'FileTree';
-  repository: 'github://dalehenrich/filetree:squeak4.3/repository';
-  load.
-
-"install prerequisites"
-[(Smalltalk at: #Metacello) new
-	configuration: 'Ston';
-	repository: 'http://www.smalltalkhub.com/mc/SvenVanCaekenberghe/STON/main';
-	load]
-on: Warning do: [:e | e resume].
-
-(Smalltalk at: #Gofer) new
-	squeaksource: 'INIFile';
-	version: 'INIFile-jf.3';
-	load.
-
-(Smalltalk at: #Gofer) new
-	disablePackageCache;
-	repository: ((Smalltalk at: #MCGitHubRepository) location: 'github://j4yk/Squot:master/src');
-	package: 'FS-Core';
-	package: 'FS-Disk';
-	package: 'FS-Memory';
-	package: 'FS-AnsiStreams';
-	package: 'FS-Tests-Core';
-	package: 'FS-Tests-Disk';
-	package: 'FS-Tests-Memory';
-	package: 'FS-Tests-AnsiStreams';
-	package: 'Squot';
-	package: 'Pharo-compatibility';
-	package: 'FileSystem-Git';
-	package: 'Squit';
-	load.
 ```
 
 ## Usage instructions

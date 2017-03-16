@@ -1,4 +1,4 @@
-# Squot
+# Squot [![Build Status][travis_badge]][travis]
 Squeak Object Tracker - Version control for arbitrary objects in Squeak, currently with Git storage
 
 This repository also contains a variant of the FileSystem library,
@@ -73,3 +73,6 @@ Here a do-it for Windows users (requires OSProcess):
 ```smalltalk
 OSProcess command: 'cmd /C start /D "', (squitRepository gitRepository repository baseDir path printWithDelimiter: $\), '" gitk --all'.
 ```
+
+[travis]: https://travis-ci.org/j4yk/Squot
+[travis_badge]: https://travis-ci.org/j4yk/Squot.svg?branch=master

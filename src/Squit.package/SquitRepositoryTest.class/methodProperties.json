@@ -1,6 +1,6 @@
 {
 	"class" : {
-		 },
+		"resources" : "jr 3/16/2017 17:55" },
 	"instance" : {
 		"createReadmeCommit" : "jr 3/8/2017 16:50",
 		"repositoryForTests" : "jr 3/8/2017 16:42",

@@ -1,0 +1,14 @@
+{
+	"category" : "FileSystem-Git-Plumbing-Tests",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"temporaryGitStamp" ],
+	"name" : "DefaultGitStampForTests",
+	"pools" : [
+		 ],
+	"super" : "TestResource",
+	"type" : "normal" }

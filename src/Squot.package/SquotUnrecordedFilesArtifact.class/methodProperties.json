@@ -2,11 +2,11 @@
 	"class" : {
 		 },
 	"instance" : {
+		"initialize" : "jr 3/15/2017 16:57",
 		"isLoadable" : "jr 3/8/2017 16:16",
 		"loadWith:replacing:" : "jr 3/7/2017 00:59",
 		"ownerSnapshot" : "jr 3/7/2017 01:02",
 		"ownerSnapshot:" : "jr 3/7/2017 01:02",
-		"path" : "jr 3/8/2017 17:38",
 		"path:" : "jr 3/8/2017 17:37",
 		"rootDirectory" : "jr 3/7/2017 01:02",
 		"rootDirectory:" : "jr 3/7/2017 01:02",

@@ -3,10 +3,10 @@ testRestorePackage
 	| sampleClass sampleClassName firstMethod packageInfo anotherClass anotherClassName addedMethod firstVersion latestVersion |
 	changeLogSuppressor suppressChangeNotificationsDuring: [
 		sampleClass := classFactory newClass.
-		sampleClass compile: 'firstMethod ^ self' classified: 'methods of first version'].
+		sampleClass compileSilently: 'firstMethod ^ self' classified: 'methods of first version'].
 	sampleClassName := sampleClass name. "when unloaded, the class is renamed"
 	firstMethod := sampleClass >> #firstMethod.
-	packageInfo := sampleClass package.
+	packageInfo := PackageInfo named: classFactory packageName.
 	workingCopy add: packageInfo at: 'src'.
 	workingCopy saveNewVersionMessage: 'first version' interactive: false.
 	firstVersion := workingCopy baseVersion.

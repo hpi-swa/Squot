@@ -1,9 +1,12 @@
 tests
 testTrackingAClass
 	| class versionBeforeSave latestVersion |
-	class := classFactory newClass.
-	class compile: 'firstMethod ^ self' classified: 'methods of first version'.
-	workingCopy add: class at: 'src'.
+	SystemChangeNotifier uniqueInstance doSilently:
+		[class := classFactory newClass.
+		class compileSilently: 'firstMethod ^ self' classified: 'methods of first version'].
+	[workingCopy add: class at: 'src']
+		on: SquotClassWithoutPackageException
+		do: [:e | e resume: (PackageInfo named: classFactory packageName)].
 	versionBeforeSave := workingCopy loadedHistorian version.
 	self assert: versionBeforeSave isNil description: 'starting from empty history'.
 	
@@ -15,7 +18,7 @@ testTrackingAClass
 	self assertVersion: latestVersion containsClass: class.
 	self assertVersion: latestVersion containsMethod: class >> #firstMethod.
 	
-	class compile: 'addedMethod ^ self' classified: 'methods of second version'.
+	class compileSilently: 'addedMethod ^ self' classified: 'methods of second version'.
 	versionBeforeSave := workingCopy loadedHistorian version.
 	self assert: latestVersion equals: versionBeforeSave.
 	

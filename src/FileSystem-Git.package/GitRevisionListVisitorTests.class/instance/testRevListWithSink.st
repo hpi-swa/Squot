@@ -8,7 +8,7 @@ testRevListWithSink
 	repository updateRef: repository headsDir / 'master' to: commit4 hexHash.
 	GitFSCK validate: repository.
 	"when"
-	visitor sinkCommits: {commit2}.
+	visitor sinkCommits: {commit1}.
 	visitor visit: (repository branches at: 'master').
 	"then"
 	self assert: (visitor revisions asArray = {commit4. commit3. commit2})

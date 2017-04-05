@@ -14,3 +14,4 @@ invokeReceivePackWithRefs: updateAssociations andPack: aPackFile deleting: delet
 	responseReader := GitProtocolReader on: response contentStream.
 	report := responseReader readReceivePackResponse.
 	report hasErrors ifTrue: [self error: 'Not all references could be updated.'].
+	^ report

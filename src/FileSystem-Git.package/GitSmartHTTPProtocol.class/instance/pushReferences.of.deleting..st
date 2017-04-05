@@ -7,4 +7,4 @@ pushReferences: updateAssociations of: aRepository deleting: deleteRefs
 		(updateAssociations notEmpty)
 			ifTrue: [packFile := self preparePackFileToPushRefs: updateAssociations of: aRepository]
 			ifFalse: [packFile := nil].
-		self invokeReceivePackWithRefs: updateAssociations andPack: packFile deleting: deleteRefs]
+		^ self invokeReceivePackWithRefs: updateAssociations andPack: packFile deleting: deleteRefs]

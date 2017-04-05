@@ -1,0 +1,10 @@
+{
+	"class" : {
+		"lastStoredRun" : "jr 3/22/2017 15:19" },
+	"instance" : {
+		"newCommit:parents:" : "jr 3/22/2017 15:21",
+		"setUp" : "jr 3/22/2017 15:27",
+		"testNearestMergeBaseFar" : "jr 3/22/2017 15:24",
+		"testNearestMergeBaseIsNearest" : "jr 3/22/2017 15:25",
+		"testNearestMergeBaseNone" : "jr 3/22/2017 15:26",
+		"testNearestMergeBaseOneStep" : "jr 3/22/2017 15:26" } }

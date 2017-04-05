@@ -1,0 +1,16 @@
+{
+	"category" : "FileSystem-Git-Plumbing-Utilities",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"nextRightObject",
+		"leftEntry",
+		"rightEntry" ],
+	"name" : "GitDiffCreator",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }

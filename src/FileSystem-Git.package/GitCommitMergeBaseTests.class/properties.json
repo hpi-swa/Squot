@@ -1,0 +1,15 @@
+{
+	"category" : "FileSystem-Git-Plumbing-Tests",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"repository",
+		"fakeTree" ],
+	"name" : "GitCommitMergeBaseTests",
+	"pools" : [
+		 ],
+	"super" : "GitTestCase",
+	"type" : "normal" }

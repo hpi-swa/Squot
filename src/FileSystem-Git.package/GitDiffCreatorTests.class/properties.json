@@ -1,0 +1,15 @@
+{
+	"category" : "FileSystem-Git-Plumbing-Tests",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"repository",
+		"diffCreator" ],
+	"name" : "GitDiffCreatorTests",
+	"pools" : [
+		 ],
+	"super" : "GitTestCase",
+	"type" : "normal" }

@@ -1,0 +1,15 @@
+{
+	"category" : "FileSystem-Git-Plumbing-Utilities",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"leftSide",
+		"rightSide" ],
+	"name" : "GitDiffTreeEntry",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }

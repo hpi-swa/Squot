@@ -7,7 +7,7 @@ preparePackFileToPushRefs: updateAssociations of: aRepository
 	remoteRefs := refs copy. remoteRefs removeKey: #capabilities. self flag: #hack.
 	visitor sinkCommits: (remoteRefs values collect: [:each | aRepository objectNamed: each ifAbsent: []]).
 	visitor visitingCommitsFrom: (updateAssociations collect: [:each | each value])
-		do: [:each | creator addObject: each. creator visit: each tree].
+		do: [:each | self addNewObjectsIn: each to: creator basedOn: remoteRefs values].
 	creator writePackFile.
 	^ packFile
 	

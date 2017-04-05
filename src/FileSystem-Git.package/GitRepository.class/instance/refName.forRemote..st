@@ -4,4 +4,4 @@ refName: refName forRemote: remoteName
 	branch := (refName beginsWith: 'refs/heads/')
 		ifTrue: [refName allButFirst: 'refs/heads/' size]
 		ifFalse: [refName].
-	^ 'remotes/', remoteName, '/', branch
+	^ 'refs/remotes/', remoteName, '/', branch

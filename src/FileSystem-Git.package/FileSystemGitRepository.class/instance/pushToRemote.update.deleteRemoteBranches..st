@@ -12,5 +12,5 @@ pushToRemote: remoteName update: aCollectionOfBranchNamesAndAssociations deleteR
 	report successes do: [:each | repository
 		updateRef: each
 		ofRemote: remoteName
-		to: (updateRefs at: each) hexHash
+		to: (updateRefs detect: [:assoc | assoc key = each]) value hexHash
 		message: 'update by push']

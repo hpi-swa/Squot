@@ -1,10 +1,12 @@
-enumerating
+accessing-objects
 looseObjectNamed: aHexHash ifAbsent: aBlock
-	| stream |
+	| stream object |
 	stream :=
 		self 
 			streamLooseObjectNamed: aHexHash
 			ifAbsent: [ ^ aBlock value ].
-	^ GitStorableObject 
+	[object := GitStorableObject 
 		fromLooseObjectStream: stream
-		in: self
+		in: self]
+	ensure: [stream close].
+	^ objectCache at: object hexHash put: object

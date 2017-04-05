@@ -7,7 +7,8 @@
 	"commentStamp" : "<historical>",
 	"instvars" : [
 		"reference",
-		"packs" ],
+		"packs",
+		"objectCache" ],
 	"name" : "GitRepository",
 	"pools" : [
 		 ],

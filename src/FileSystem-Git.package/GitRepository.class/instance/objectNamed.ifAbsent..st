@@ -1,5 +1,6 @@
 public-accessing-objects
 objectNamed: aHash ifAbsent: aBlock
+	objectCache at: aHash ifPresent: [:it | it ifNotNil: [^ it]].
 	^ self
 		looseObjectNamed: aHash
 		ifAbsent: [ 

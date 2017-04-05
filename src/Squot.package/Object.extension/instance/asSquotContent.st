@@ -1,3 +1,3 @@
 *Squot
 asSquotContent
-	^ self copy
+	^ SquotMetaobject for: self

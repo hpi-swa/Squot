@@ -1,0 +1,18 @@
+{
+	"category" : "Squot-Metaobjects",
+	"classinstvars" : [
+		 ],
+	"classtraitcomposition" : "TSquotArtifactContent classTrait",
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"originalClass",
+		"instVars",
+		"variableSizePart" ],
+	"name" : "SquotMetaobject",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"traitcomposition" : "TSquotArtifactContent",
+	"type" : "normal" }

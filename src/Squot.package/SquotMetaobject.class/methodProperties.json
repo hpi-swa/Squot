@@ -1,0 +1,10 @@
+{
+	"class" : {
+		"for:" : "jr 4/5/2017 23:43" },
+	"instance" : {
+		"asLoadedBySquot:from:replacing:" : "jr 4/6/2017 00:08",
+		"asLoadedBySquot:like:" : "jr 4/6/2017 00:47",
+		"initialize" : "jr 4/5/2017 23:42",
+		"initializeFor:" : "jr 4/6/2017 00:38",
+		"materializeLike:" : "jr 4/6/2017 00:27",
+		"materializeLike:onBehalfOf:" : "jr 4/6/2017 01:25" } }

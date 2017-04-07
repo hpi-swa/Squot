@@ -1,4 +1,4 @@
-private loading
+private materializing
 loadMonticelloPackageSnapshot: anMCSnapshot from: anArtifact replacing: aPackageInfo
 	| packageDirectory packageName pathElements mcPackage packageSnapshot patch loader |
 	self assert: ((aPackageInfo isKindOf: PackageInfo) or: [aPackageInfo isNil]).

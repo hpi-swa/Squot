@@ -5,5 +5,6 @@ squotInitializeStoreInfo: aDictionary
 	aDictionary
 		at: #objectClassName put: self class name;
 		at: #serializer put: self squotPreferredSerializer name.
-	self squotPreferredLoader ifNotNil: [:loader | aDictionary at: #loader put: loader name].
+	self squotPreferredMaterializer
+		ifNotNil: [:materializer | aDictionary at: #loader put: materializer name].
 	

@@ -1,4 +1,4 @@
-private loading
+private materializing
 mcSnapshotForSingleClass: aClass
 	aClass ifNil: [^ MCSnapshot empty].
 	^ MCSnapshot fromDefinitions: (Array streamContents: [:stream |

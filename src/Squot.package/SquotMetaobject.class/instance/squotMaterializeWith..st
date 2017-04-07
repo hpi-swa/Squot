@@ -1,4 +1,4 @@
-*Squot-loading
+rematerializing
 squotMaterializeWith: aMaterializer
 	"Answer the object restored from me. Double dispatch path"
 	| object |

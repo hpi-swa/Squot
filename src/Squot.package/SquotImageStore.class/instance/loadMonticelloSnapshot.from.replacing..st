@@ -1,4 +1,4 @@
-private loading
+private materializing
 loadMonticelloSnapshot: anMCSnapshot from: anArtifact replacing: aPackageInfoOrClass
 	| objectClassName isSingleClass |
 	objectClassName := anArtifact storeInfo at: #objectClassName.

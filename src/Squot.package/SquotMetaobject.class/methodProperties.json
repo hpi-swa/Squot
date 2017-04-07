@@ -2,10 +2,10 @@
 	"class" : {
 		 },
 	"instance" : {
-		"asLoadedBySquot:from:replacing:" : "jr 4/6/2017 00:08",
 		"createMaterializedInstance" : "jr 4/7/2017 00:40",
 		"initialize" : "jr 4/5/2017 23:42",
 		"initializeFrom:andItsCopy:with:" : "jr 4/6/2017 23:48",
 		"materializeAs:with:" : "jr 4/7/2017 12:59",
 		"squotContentClassMarker" : "jr 4/7/2017 12:00",
-		"squotMaterializeWith:" : "jr 4/7/2017 11:57" } }
+		"squotMaterializeWith:" : "jr 4/7/2017 11:57",
+		"squotMaterializeWith:from:replacing:" : "jr 4/7/2017 16:08" } }

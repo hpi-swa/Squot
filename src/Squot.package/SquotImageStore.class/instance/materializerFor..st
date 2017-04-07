@@ -1,5 +1,5 @@
-private loading
-loaderFor: anArtifact
+private materializing
+materializerFor: anArtifact
 	| loader |
 	loader := Environment current
 		valueOf: (anArtifact storeInfo at: #loader ifAbsent: [])

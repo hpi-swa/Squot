@@ -2,8 +2,8 @@
 	"class" : {
 		 },
 	"instance" : {
-		"asLoadedBySquot:from:replacing:" : "jr 2/16/2017 00:24",
 		"squotContentClassMarker" : "jr 4/7/2017 12:02",
 		"squotCreatePatchEditorFor:original:proposed:" : "jr 2/16/2017 00:20",
 		"squotMaterializeWith:" : "jr 4/7/2017 11:57",
+		"squotMaterializeWith:from:replacing:" : "jr 4/7/2017 16:00",
 		"squotWrite:with:" : "jr 2/16/2017 00:23" } }

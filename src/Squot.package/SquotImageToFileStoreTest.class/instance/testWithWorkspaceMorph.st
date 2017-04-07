@@ -15,7 +15,7 @@ testWithWorkspaceMorph
 	(fileStore directory / 'sample workspace.morph.squot-content') exists.
 	"restore"
 	workspaceArtifact := fileStore captureSnapshot artifactAt: 'sample workspace.morph'.
-	restoredSystemWindow := (imageStore loaderFor: workspaceArtifact) load: workspaceArtifact replacing: nil.
+	restoredSystemWindow := (imageStore materializerFor: workspaceArtifact) materialize: workspaceArtifact replacing: nil.
 	restoredSystemWindow openAsIs.
 	self assert: systemWindow label equals: restoredSystemWindow label.
 	self assert: workspace contents equals: restoredSystemWindow model contents.

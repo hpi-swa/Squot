@@ -1,0 +1,1 @@
+I read Smalltalk code from Cypress formatted file trees and convert them to Monticello snapshots.  I use a modified MCFileTreeStCypressReader to accomplish this.

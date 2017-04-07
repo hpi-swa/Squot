@@ -1,7 +1,0 @@
-{
-	"class" : {
-		"delegate:in:" : "jr 1/18/2017 12:57" },
-	"instance" : {
-		"doesNotUnderstand:" : "jr 1/18/2017 12:53",
-		"initializeWith:and:" : "jr 1/18/2017 12:56",
-		"squotSnapshot" : "jr 1/18/2017 12:56" } }

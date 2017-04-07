@@ -1,13 +1,14 @@
+SystemOrganization addCategory: #'Squot-Interfaces'!
 SystemOrganization addCategory: #'Squot-Core'!
 SystemOrganization addCategory: #'Squot-Metaobjects'!
 SystemOrganization addCategory: #'Squot-Internal'!
 SystemOrganization addCategory: #'Squot-FileSystemStore'!
-SystemOrganization addCategory: #'Squot-SnapshotContent'!
 SystemOrganization addCategory: #'Squot-Serialization'!
 SystemOrganization addCategory: #'Squot-Serialization-Cypress'!
 SystemOrganization addCategory: #'Squot-Extensions'!
 SystemOrganization addCategory: #'Squot-Tools'!
+SystemOrganization addCategory: #'Squot-Monticello-Converter'!
 SystemOrganization addCategory: #'Squot-InMemoryRepository'!
 SystemOrganization addCategory: #'Squot-Tests'!
-SystemOrganization addCategory: #'Squot-Tools-Tests'!
+SystemOrganization addCategory: #'Squot-Monticello-Converter-Tests'!
 SystemOrganization addCategory: #'Squot-InMemoryRepository-Tests'!

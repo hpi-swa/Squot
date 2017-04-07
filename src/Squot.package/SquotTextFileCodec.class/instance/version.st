@@ -1,3 +1,3 @@
-as yet unclassified
+Squot serialization
 version
 	^ 1

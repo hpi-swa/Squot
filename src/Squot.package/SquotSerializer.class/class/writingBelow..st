@@ -1,4 +1,4 @@
-as yet unclassified
+instance creation
 writingBelow: aFileReference
 	^ self new
 		rootDirectory: aFileReference;

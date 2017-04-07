@@ -2,7 +2,6 @@
 	"category" : "Squit-Tests",
 	"classinstvars" : [
 		 ],
-	"classtraitcomposition" : "SquitTestRepo classTrait",
 	"classvars" : [
 		 ],
 	"commentStamp" : "",
@@ -13,5 +12,4 @@
 	"pools" : [
 		 ],
 	"super" : "TestCase",
-	"traitcomposition" : "SquitTestRepo",
 	"type" : "normal" }

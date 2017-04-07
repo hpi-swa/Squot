@@ -1,0 +1,17 @@
+{
+	"category" : "Squot-Metaobjects",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"rootObject",
+		"rootCopy",
+		"rootMetaobject",
+		"convertedObjects" ],
+	"name" : "SquotMetaobjectBuilder",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }

@@ -3,8 +3,8 @@
 		 },
 	"instance" : {
 		"asLoadedBySquot:from:replacing:" : "jr 1/28/2017 00:26",
-		"asLoadedBySquot:like:" : "jr 4/6/2017 01:26",
-		"asSquotContent" : "jr 4/5/2017 23:43",
+		"asSquotContent" : "jr 4/6/2017 13:33",
+		"asSquotContentWith:andCopy:" : "jr 4/6/2017 23:54",
 		"squotAddTransientStoreInfoTo:" : "jr 3/6/2017 14:17",
 		"squotInitializeStoreInfo:" : "jr 2/21/2017 21:35",
 		"squotPreferredLoader" : "jr 1/28/2017 00:51",

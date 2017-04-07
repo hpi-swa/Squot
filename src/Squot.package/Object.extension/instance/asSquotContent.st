@@ -1,3 +1,3 @@
 *Squot
 asSquotContent
-	^ SquotMetaobject for: self
+	^ SquotMetaobjectBuilder new convertRoot: self

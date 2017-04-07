@@ -1,0 +1,11 @@
+{
+	"class" : {
+		 },
+	"instance" : {
+		"build:from:andItsCopy:" : "jr 4/6/2017 23:53",
+		"convert:withItsCopy:" : "jr 4/7/2017 13:50",
+		"convertRoot:" : "jr 4/6/2017 23:54",
+		"initialize" : "jr 4/6/2017 13:20",
+		"project" : "jr 4/7/2017 13:52",
+		"replace:with:" : "jr 4/7/2017 13:24",
+		"squotContentFrom:andItsCopy:" : "jr 4/7/2017 13:12" } }

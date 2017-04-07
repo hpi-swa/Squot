@@ -1,0 +1,3 @@
+*Squot
+asSquotContent
+	^ self

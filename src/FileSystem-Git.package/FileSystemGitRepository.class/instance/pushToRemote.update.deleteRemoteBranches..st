@@ -9,8 +9,12 @@ pushToRemote: remoteName update: aCollectionOfBranchNamesAndAssociations deleteR
 	deleteRefs := aCollectionOfRemoteBranchNames collect: [:each | self expandRemoteRef: each].
 	protocol := GitAbstractProtocol url: url.
 	report := protocol pushReferences: updateRefs of: repository deleting: deleteRefs.
-	report successes do: [:each | repository
-		updateRef: each
-		ofRemote: remoteName
-		to: (updateRefs detect: [:assoc | assoc key = each]) value hexHash
-		message: 'update by push']
+	updateRefs do: [:refAndCommit |
+		(report successes includes: refAndCommit key) ifTrue:
+			[repository
+				updateRef: refAndCommit key
+				ofRemote: remoteName
+				to: refAndCommit value hexHash
+				message: 'update by push']].
+	deleteRefs do: [:each |
+		(report successes includes: each) ifTrue: [repository deleteRef: each]].

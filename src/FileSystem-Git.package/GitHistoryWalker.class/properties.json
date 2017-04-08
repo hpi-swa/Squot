@@ -2,10 +2,9 @@
 	"category" : "FileSystem-Git-Plumbing-Utilities",
 	"classinstvars" : [
 		 ],
-	"classtraitcomposition" : "TGitVisitor classTrait",
 	"classvars" : [
 		 ],
-	"commentStamp" : "jr 10/22/2016 15:43",
+	"commentStamp" : "<historical>",
 	"instvars" : [
 		"sourceCommits",
 		"sinkCommits",
@@ -13,9 +12,8 @@
 		"searchFrontier",
 		"revList",
 		"commitBlock" ],
-	"name" : "GitRevisionListVisitor",
+	"name" : "GitHistoryWalker",
 	"pools" : [
 		 ],
 	"super" : "Object",
-	"traitcomposition" : "TGitVisitor",
 	"type" : "normal" }

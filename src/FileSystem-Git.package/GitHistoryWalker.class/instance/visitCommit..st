@@ -1,4 +1,4 @@
-visiting
+history walking
 visitCommit: aCommit
 	(seen includes: aCommit hash) ifTrue: [^self].
 	seen add: aCommit hash.

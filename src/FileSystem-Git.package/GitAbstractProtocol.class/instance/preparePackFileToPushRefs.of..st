@@ -1,12 +1,13 @@
 private
 preparePackFileToPushRefs: updateAssociations of: aRepository 
-	| creator packFile visitor remoteRefs |
+	| creator packFile historyWalker remoteRefs |
 	packFile := GitPackFile new repository: aRepository; yourself.
 	creator := GitPackFileCreator on: packFile.
-	visitor := GitRevisionListVisitor new.
+	historyWalker := GitHistoryWalker new.
 	remoteRefs := refs copy. remoteRefs removeKey: #capabilities. self flag: #hack.
-	visitor sinkCommits: (remoteRefs values collect: [:each | aRepository objectNamed: each ifAbsent: []]).
-	visitor visitingCommitsFrom: (updateAssociations collect: [:each | each value])
+	historyWalker sinkCommits: (remoteRefs values collect: [:each | aRepository objectNamed: each ifAbsent: []]).
+	historyWalker
+		startingFromAll: (updateAssociations collect: [:each | each value])
 		do: [:each | self addNewObjectsIn: each to: creator basedOn: remoteRefs values].
 	creator writePackFile.
 	^ packFile

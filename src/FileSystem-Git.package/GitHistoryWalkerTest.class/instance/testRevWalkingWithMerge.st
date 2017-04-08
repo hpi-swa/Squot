@@ -1,6 +1,6 @@
 as yet unclassified
-testRevListWithMerge
-	| commit1 commit2 commit3 commit4 |
+testRevWalkingWithMerge
+	| commit1 commit2 commit3 commit4 revisions |
 	commit1 := self addCommit: '1' withParents: nil.
 	commit2 := self addCommit: '2' withParents: {commit1 hexHash}.
 	commit3 := self addCommit: '3' withParents: {commit1 hexHash}.
@@ -8,6 +8,10 @@ testRevListWithMerge
 	repository updateRef: repository headsDir / 'master' to: commit4 hexHash.
 	GitFSCK validate: repository.
 	"when"
-	visitor collectRevisionsStartingFrom: (repository branches at: 'master').
+	revisions := OrderedCollection new.
+	historyWalker
+		startingFrom: (repository branches at: 'master')
+		do: [:revision | revisions add: revision].
 	"then"
-	self assert: (visitor revisions asBag = {commit1. commit2. commit3. commit4} asBag)
+	self assert: (revisions asBag = {commit1. commit2. commit3. commit4} asBag)
+	"TODO: assert something about the order"

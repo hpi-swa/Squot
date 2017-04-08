@@ -6,4 +6,4 @@ setUp
 	simpleTree := (GitTree entries: {
 			GitTreeEntry fileNamed: 'a' hash: emptyBlob hash in: repository }
 		in: repository) store; yourself.
-	visitor := GitRevisionListVisitor new.
+	historyWalker := GitHistoryWalker new.

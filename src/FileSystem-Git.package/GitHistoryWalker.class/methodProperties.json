@@ -1,0 +1,15 @@
+{
+	"class" : {
+		 },
+	"instance" : {
+		"initialize" : "jr 4/9/2017 00:29",
+		"performSearch" : "jr 4/9/2017 00:25",
+		"revisions" : "jr 4/8/2017 23:26",
+		"sinkCommits" : "jr 4/8/2017 23:26",
+		"sinkCommits:" : "jr 4/8/2017 23:26",
+		"sourceCommits" : "jr 4/8/2017 23:26",
+		"sourceCommits:" : "jr 4/8/2017 23:26",
+		"startingFrom:" : "jr 4/8/2017 23:38",
+		"startingFrom:do:" : "jr 4/8/2017 23:39",
+		"startingFromAll:do:" : "jr 4/9/2017 00:22",
+		"visitCommit:" : "jr 4/8/2017 23:26" } }

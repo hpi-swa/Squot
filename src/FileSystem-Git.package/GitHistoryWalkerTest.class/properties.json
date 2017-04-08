@@ -9,8 +9,8 @@
 		"repository",
 		"emptyBlob",
 		"simpleTree",
-		"visitor" ],
-	"name" : "GitRevisionListVisitorTests",
+		"historyWalker" ],
+	"name" : "GitHistoryWalkerTest",
 	"pools" : [
 		 ],
 	"super" : "GitTestCase",

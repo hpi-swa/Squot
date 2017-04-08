@@ -1,5 +1,7 @@
 visiting
 collectRevisionsStartingFrom: aGitCommitOrCollection
 	commitBlock := nil.
-	searchFrontier addAll: aGitCommitOrCollection asArray.
+	aGitCommitOrCollection isCollection
+		ifTrue: [searchFrontier addAll: aGitCommitOrCollection]
+		ifFalse: [searchFrontier add: aGitCommitOrCollection].
 	self performSearch.

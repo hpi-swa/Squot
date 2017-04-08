@@ -7,4 +7,5 @@ storeLooseObject: aGitStorableObject
 	objectReference writeStreamDo: [ :stream | 
 		stream binary.
 		aGitStorableObject compressedOn: stream ].
-	objectCache at: aGitStorableObject hexHash put: aGitStorableObject.
+	aGitStorableObject ifNotPacked:
+		[objectCache at: aGitStorableObject hexHash put: aGitStorableObject].

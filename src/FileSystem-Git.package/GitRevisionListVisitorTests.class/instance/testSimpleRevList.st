@@ -6,6 +6,6 @@ testSimpleRevList
 	repository updateRef: repository headsDir / 'master' to: commit2 hexHash.
 	GitFSCK validate: repository.
 	"when"
-	visitor visit: (repository branches at: 'master').
+	visitor collectRevisionsStartingFrom: (repository branches at: 'master').
 	"then"
 	self assert: (visitor revisions includesAllOf: {commit1. commit2})

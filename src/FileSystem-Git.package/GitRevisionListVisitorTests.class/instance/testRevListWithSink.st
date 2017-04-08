@@ -9,6 +9,6 @@ testRevListWithSink
 	GitFSCK validate: repository.
 	"when"
 	visitor sinkCommits: {commit1}.
-	visitor visit: (repository branches at: 'master').
+	visitor collectRevisionsStartingFrom: (repository branches at: 'master').
 	"then"
 	self assert: (visitor revisions asArray = {commit4. commit3. commit2})

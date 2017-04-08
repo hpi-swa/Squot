@@ -9,7 +9,7 @@ testWriteObjectsOn
 		instVarNamed: 'hashDict' put: (Dictionary with: blob hash -> 21);
 		yourself.
 	file := FileSystem memory root / 'afile'.
-	file writeStreamDo: [ :stream | creator writeObjectsOn: stream ].
+	file writeStreamDo: [ :stream | stream binary. creator writeObjectsOn: stream ].
 	contents := file readStreamDo: [ :stream | stream binary; contents ].
 	contents := contents allButFirst: 2.	"ignore header"
 	self assert: contents size equals: blob compressedForPack size.

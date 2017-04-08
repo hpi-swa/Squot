@@ -4,11 +4,15 @@
 	"instance" : {
 		"contents" : "MaxLeske 4/23/2010 13:44",
 		"initialize" : "MaxLeske 4/23/2010 13:45",
+		"isBinary" : "jr 4/8/2017 22:10",
+		"isStream" : "jr 4/8/2017 22:09",
 		"lf" : "MaxLeske 7/23/2010 15:25",
+		"next:putAll:" : "jr 4/8/2017 22:11",
 		"nextPut:" : "MaxLeske 4/23/2010 13:43",
 		"nextPutAll:" : "MaxLeske 4/23/2010 13:44",
 		"nextPutBytes:" : "MaxLeske 6/24/2010 10:55",
 		"nullByte" : "MaxLeske 4/23/2010 13:51",
+		"position" : "jr 4/8/2017 22:11",
 		"size" : "MaxLeske 6/24/2012 12:05",
 		"space" : "MaxLeske 4/23/2010 13:44",
 		"streamContents:" : "MaxLeske 9/8/2012 16:21" } }

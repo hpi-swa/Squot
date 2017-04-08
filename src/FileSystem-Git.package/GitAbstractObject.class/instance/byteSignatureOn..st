@@ -8,5 +8,5 @@ byteSignatureOn: aStream
 		nextPutAll: self typeCode;
 		space;
 		nextPutAll: data size asString; "ASCII value for $0 is not 0 but 48!"
-		nullByte;
+		nextPut: 0;
 		nextPutAll: data

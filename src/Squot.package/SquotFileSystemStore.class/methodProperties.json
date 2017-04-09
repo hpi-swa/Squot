@@ -12,10 +12,10 @@
 		"deserializers" : "jr 1/27/2017 14:33",
 		"directory" : "jr 1/27/2017 15:07",
 		"doNotStoreMetadata" : "jr 3/7/2017 17:38",
-		"generateTableOfContentsFor:in:" : "jr 2/24/2017 22:01",
+		"generateTableOfContentsFor:in:" : "jr 4/9/2017 16:00",
 		"initialize" : "jr 3/8/2017 16:47",
 		"initializeWith:" : "jr 1/27/2017 15:07",
-		"metadataFor:" : "jr 1/29/2017 21:19",
+		"metadataFor:" : "jr 4/9/2017 15:57",
 		"metadataForObjectAt:" : "jr 1/27/2017 14:33",
 		"pathOf:" : "jr 3/11/2017 01:00",
 		"removeArtifactsOutdatedBy:" : "jr 2/9/2017 12:53",
@@ -30,4 +30,4 @@
 		"storeOrdinary:" : "jr 3/7/2017 17:39",
 		"storeSquotMetadataFor:" : "jr 2/21/2017 13:54",
 		"storeUnrecordedFiles:" : "jr 3/7/2017 13:20",
-		"tableOfContents" : "jr 1/31/2017 11:27" } }
+		"tableOfContents" : "jr 4/9/2017 16:00" } }

@@ -8,7 +8,7 @@ invokeReceivePackWithRefs: updateAssociations andPack: aPackFile deleting: delet
 			previousReferences: refs
 			serverCapabilities: (refs at: #capabilities)
 			pack: aPackFile].
-	self client userAgent: 'git/1.7.6'.
+	self client userAgent: 'git/FileSystem-Git via ', self client defaultUserAgent.
 	response := self client httpPost: (self urlForService: 'git-receive-pack')
 		content: contents type: 'application/x-git-receive-pack-request'.
 	response isSuccess ifFalse: [Error signal: response status].

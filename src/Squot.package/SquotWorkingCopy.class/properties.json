@@ -1,11 +1,12 @@
 {
 	"category" : "Squot-Core",
 	"classinstvars" : [
-		 ],
+		"registry" ],
 	"classvars" : [
 		 ],
 	"commentStamp" : "jr 1/26/2017 14:45",
 	"instvars" : [
+		"name",
 		"store",
 		"repository",
 		"loadedHistorian",

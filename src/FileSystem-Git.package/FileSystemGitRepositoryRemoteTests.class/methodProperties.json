@@ -2,6 +2,7 @@
 	"class" : {
 		 },
 	"instance" : {
+		"expectedFailures" : "jr 4/9/2017 21:34",
 		"remoteUrl" : "jr 1/31/2017 15:21",
 		"setUp" : "jr 1/31/2017 15:21",
 		"tearDown" : "jr 2/23/2017 12:49",

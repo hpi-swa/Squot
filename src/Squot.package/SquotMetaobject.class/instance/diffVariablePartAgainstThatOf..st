@@ -1,0 +1,3 @@
+comparing
+diffVariablePartAgainstThatOf: otherMetaobject
+	^ otherMetaobject diffVariablePartAgainst: variableSizePart

@@ -1,0 +1,7 @@
+{
+	"category" : "Squot-Interfaces",
+	"classtraitcomposition" : "TSquotArtifactContent classTrait",
+	"comment" : "",
+	"commentStamp" : "",
+	"name" : "TSquotDiffableArtifactContent",
+	"traitcomposition" : "TSquotArtifactContent" }

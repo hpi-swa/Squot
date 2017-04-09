@@ -1,0 +1,3 @@
+*Squot
+squotHasChanges
+	^ false

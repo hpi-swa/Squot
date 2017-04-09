@@ -1,0 +1,3 @@
+*Squot
+squotDiffAgainst: other
+	^ other

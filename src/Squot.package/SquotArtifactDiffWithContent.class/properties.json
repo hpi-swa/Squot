@@ -1,0 +1,14 @@
+{
+	"category" : "Squot-Core",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"diffContent" ],
+	"name" : "SquotArtifactDiffWithContent",
+	"pools" : [
+		 ],
+	"super" : "SquotArtifactDiff",
+	"type" : "normal" }

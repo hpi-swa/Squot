@@ -1,0 +1,12 @@
+{
+	"class" : {
+		"left:right:" : "jr 4/9/2017 21:55",
+		"onlyLeft:" : "jr 4/9/2017 22:19",
+		"onlyRight:" : "jr 4/9/2017 22:54" },
+	"instance" : {
+		"changedInstVars" : "jr 4/9/2017 21:56",
+		"changedVariablePart" : "jr 4/9/2017 21:56",
+		"diff:against:" : "jr 4/9/2017 22:10",
+		"initialize" : "jr 4/9/2017 21:57",
+		"onlyRight:" : "jr 4/9/2017 22:55",
+		"squotHasChanges" : "jr 4/9/2017 22:52" } }

@@ -1,0 +1,15 @@
+{
+	"category" : "Squot-Metaobjects",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		"UnchangedPlaceholder" ],
+	"commentStamp" : "",
+	"instvars" : [
+		"changedInstVars",
+		"changedVariablePart" ],
+	"name" : "SquotMetaobjectDiff",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }

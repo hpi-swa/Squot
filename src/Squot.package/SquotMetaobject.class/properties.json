@@ -2,7 +2,7 @@
 	"category" : "Squot-Metaobjects",
 	"classinstvars" : [
 		 ],
-	"classtraitcomposition" : "TSquotArtifactContent classTrait",
+	"classtraitcomposition" : "TSquotDiffableArtifactContent classTrait",
 	"classvars" : [
 		 ],
 	"commentStamp" : "jr 4/7/2017 16:29",
@@ -14,5 +14,5 @@
 	"pools" : [
 		 ],
 	"super" : "Object",
-	"traitcomposition" : "TSquotArtifactContent",
+	"traitcomposition" : "TSquotDiffableArtifactContent",
 	"type" : "normal" }

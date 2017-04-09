@@ -4,6 +4,8 @@
 	"instance" : {
 		"asSquotContent" : "jr 4/6/2017 13:33",
 		"asSquotContentWith:andCopy:" : "jr 4/6/2017 23:54",
+		"asSquotDiffOnlyLeft" : "jr 4/9/2017 23:00",
+		"asSquotDiffOnlyRight" : "jr 4/9/2017 22:58",
 		"squotAddTransientStoreInfoTo:" : "jr 3/6/2017 14:17",
 		"squotInitializeStoreInfo:" : "jr 4/7/2017 16:44",
 		"squotMaterializeWith:from:replacing:" : "",

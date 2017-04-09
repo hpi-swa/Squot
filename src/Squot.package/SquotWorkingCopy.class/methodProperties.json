@@ -1,10 +1,12 @@
 {
 	"class" : {
+		"newOnObjectMemory" : "jr 4/9/2017 14:58",
 		"register:" : "jr 4/9/2017 14:13",
 		"registered" : "jr 4/9/2017 14:14" },
 	"instance" : {
 		"add:at:" : "jr 1/26/2017 17:40",
 		"addPackageInfoForDirectory:at:" : "jr 3/10/2017 23:20",
+		"addPackageNamed:at:" : "jr 4/9/2017 15:00",
 		"baseSnapshot" : "jr 3/11/2017 01:15",
 		"baseVersion" : "jr 1/26/2017 15:35",
 		"cacheNewMonticelloVersion:message:" : "jr 3/11/2017 01:49",
@@ -17,7 +19,7 @@
 		"findPackagesWithoutTableOfContentsIn:" : "jr 3/11/2017 00:53",
 		"guessArtifactsFromFiles:" : "jr 3/11/2017 01:12",
 		"guessArtifactsFromFilesIn:" : "jr 3/11/2017 01:12",
-		"isPreviousSnapshotUpToDate" : "jr 3/6/2017 18:47",
+		"isPreviousSnapshotUpToDate" : "jr 4/9/2017 14:26",
 		"loadCurrentVersionInteractively" : "jr 3/5/2017 15:29",
 		"loadVersion:interactive:" : "jr 3/5/2017 15:27",
 		"loadVersionInteractively:" : "jr 3/5/2017 15:57",

@@ -1,4 +1,4 @@
-as yet unclassified
+testing
 testDiffTwoTextsWithDifferentFormatting
 	| diff text1 text2 |
 	text1 := 'foo' asText.
@@ -11,4 +11,3 @@ testDiffTwoTextsWithDifferentFormatting
 		changedInstVars at: #values)
 		changedVariablePart at: 1)
 		changedVariablePart at: 1) left isNil.
-	

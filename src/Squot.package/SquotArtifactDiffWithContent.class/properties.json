@@ -1,12 +1,13 @@
 {
-	"category" : "Squot-Core",
+	"category" : "Squot-Diffs",
 	"classinstvars" : [
 		 ],
 	"classvars" : [
 		 ],
-	"commentStamp" : "",
+	"commentStamp" : "jr 4/10/2017 23:48",
 	"instvars" : [
-		"diffContent" ],
+		"diffContent",
+		"topNodes" ],
 	"name" : "SquotArtifactDiffWithContent",
 	"pools" : [
 		 ],

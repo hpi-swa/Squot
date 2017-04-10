@@ -3,12 +3,13 @@
 	"classinstvars" : [
 		 ],
 	"classvars" : [
-		"UnchangedPlaceholder" ],
-	"commentStamp" : "jr 4/10/2017 23:46",
+		 ],
+	"commentStamp" : "jr 4/10/2017 23:42",
 	"instvars" : [
-		"changedInstVars",
-		"changedVariablePart" ],
-	"name" : "SquotMetaobjectDiff",
+		"title",
+		"content",
+		"children" ],
+	"name" : "SquotDiffNode",
 	"pools" : [
 		 ],
 	"super" : "Object",

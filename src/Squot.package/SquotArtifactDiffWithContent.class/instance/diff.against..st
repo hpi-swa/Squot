@@ -1,4 +1,5 @@
 initialize-release
 diff: leftArtifact against: rightArtifact
 	super diff: left against: right.
-	diffContent := leftArtifact contents squotDiffAgainst: rightArtifact contents.
+	diffContent := leftArtifact content squotDiffAgainst: rightArtifact content.
+	topNodes := diffContent asSquotHierarchicalDiff.

@@ -1,11 +1,11 @@
 {
-	"category" : "Squot-Core",
+	"category" : "Squot-Diffs",
 	"classinstvars" : [
 		"instance" ],
 	"classtraitcomposition" : "TSquotDiffContent classTrait",
 	"classvars" : [
 		 ],
-	"commentStamp" : "",
+	"commentStamp" : "jr 4/10/2017 23:42",
 	"instvars" : [
 		 ],
 	"name" : "SquotDiffOfEqualObjects",

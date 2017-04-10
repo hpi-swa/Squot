@@ -1,4 +1,4 @@
-as yet unclassified
+testing
 testDiffTwoTexts
 	| diff text1 text2 |
 	text1 := 'foo' asText.

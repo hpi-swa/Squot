@@ -1,6 +1,7 @@
 SystemOrganization addCategory: #'Squot-Interfaces'!
 SystemOrganization addCategory: #'Squot-Core'!
 SystemOrganization addCategory: #'Squot-Metaobjects'!
+SystemOrganization addCategory: #'Squot-Diffs'!
 SystemOrganization addCategory: #'Squot-Internal'!
 SystemOrganization addCategory: #'Squot-FileSystemStore'!
 SystemOrganization addCategory: #'Squot-Serialization'!

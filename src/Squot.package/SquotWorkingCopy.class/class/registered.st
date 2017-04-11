@@ -1,3 +1,4 @@
 working copy registry
 registered
-	^ registry copy
+	"registry := nil"
+	^ (registry ifNil: [registry := OrderedCollection new]) copy

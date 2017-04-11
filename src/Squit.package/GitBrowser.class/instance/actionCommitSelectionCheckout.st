@@ -1,0 +1,3 @@
+toolbuilder
+actionCommitSelectionCheckout
+	self projectSelection loadVersion: self commitSelection version interactive: true

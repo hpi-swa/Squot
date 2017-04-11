@@ -1,0 +1,3 @@
+model
+aboutToStyle: aStyler
+	^ false

@@ -1,0 +1,19 @@
+{
+	"category" : "Squot-Internal",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "<historical>",
+	"instvars" : [
+		"seen",
+		"searchFrontier",
+		"sourceVersions",
+		"sinkVersions",
+		"versionList",
+		"versionBlock" ],
+	"name" : "SquotHistoryWalker",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }

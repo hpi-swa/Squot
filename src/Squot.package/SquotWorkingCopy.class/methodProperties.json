@@ -1,8 +1,9 @@
 {
 	"class" : {
 		"newOnObjectMemory" : "jr 4/9/2017 14:58",
-		"register:" : "jr 4/9/2017 14:13",
-		"registered" : "jr 4/9/2017 14:14" },
+		"register:" : "fn 4/11/2017 11:35",
+		"registered" : "fn 4/11/2017 11:36",
+		"unregister:" : "fn 4/11/2017 11:57" },
 	"instance" : {
 		"add:at:" : "jr 1/26/2017 17:40",
 		"addPackageInfoForDirectory:at:" : "jr 3/10/2017 23:20",
@@ -29,6 +30,7 @@
 		"name:" : "jr 4/9/2017 14:20",
 		"packageDirectoriesIn:" : "jr 3/12/2017 21:49",
 		"parentVersions" : "jr 2/17/2017 19:33",
+		"printOn:" : "fn 4/11/2017 11:50",
 		"register" : "jr 4/9/2017 14:15",
 		"registerPackagesInStore" : "jr 2/21/2017 17:31",
 		"remove:" : "jr 2/26/2017 01:29",
@@ -42,4 +44,5 @@
 		"shouldStoreMetadata:" : "jr 3/7/2017 17:33",
 		"store" : "jr 1/26/2017 14:48",
 		"store:" : "jr 1/26/2017 14:48",
-		"unload" : "jr 1/26/2017 17:38" } }
+		"unload" : "jr 1/26/2017 17:38",
+		"unregister" : "fn 4/11/2017 11:57" } }

@@ -1,0 +1,14 @@
+{
+	"class" : {
+		"open" : "fn 4/11/2017 10:22" },
+	"instance" : {
+		"aboutToStyle:" : "fn 4/11/2017 10:32",
+		"actionCancel" : "fn 4/11/2017 10:52",
+		"buildButtonBar:" : "fn 4/11/2017 10:38",
+		"buildWith:" : "fn 4/11/2017 10:43",
+		"changeContents" : "fn 4/11/2017 10:42",
+		"changeContentsSelection" : "fn 4/11/2017 10:42",
+		"commitSelection" : "fn 4/11/2017 10:28",
+		"contents" : "fn 4/11/2017 10:32",
+		"contentsSelection" : "fn 4/11/2017 10:32",
+		"dataChanges" : "fn 4/11/2017 10:39" } }

@@ -1,0 +1,3 @@
+actions
+actionCommit
+	self projectSelection saveNewVersionInteractively

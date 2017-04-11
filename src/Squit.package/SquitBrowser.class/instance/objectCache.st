@@ -1,3 +1,3 @@
 caching
 objectCache
-	^ objectCache ifNil: [ self objectCacheRefreshAsync ]
+	^ objectCache ifNil: [ self objectCacheRefreshAsync. #() ]

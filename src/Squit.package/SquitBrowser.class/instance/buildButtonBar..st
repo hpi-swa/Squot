@@ -1,11 +1,11 @@
 toolbuilder
 buildButtonBar: builder
-	| buttonBar commitButton pullButton pushButton fetchButton branchButton mergeButton refreshButton |
+	| buttonBar commitButton pullButton pushButton fetchButton branchButton mergeButton settingsButton |
 	buttonBar := builder pluggablePanelSpec new
 		layout: #horizontal;
 		"spacing: -1;"
 		children: OrderedCollection new;
-		frame: (LayoutFrame new leftFraction: 0.2 offset: 0;
+		frame: (LayoutFrame new leftFraction: 0 offset: 0;
 					 topFraction: 0.6 offset: -25;
 					 rightFraction: 1 offset: 0;
 					 bottomFraction: 0.6 offset: 0)
@@ -53,12 +53,15 @@ buildButtonBar: builder
 		action: #actionMerge;
 		help: ''.
 
-	refreshButton := builder pluggableActionButtonSpec new.
-	refreshButton
+	settingsButton := builder pluggableActionButtonSpec new.
+	settingsButton
 		model: self;
-		label: 'Refresh';
-		action: #actionRefresh;
+		label: 'Settings';
+		action: #actionSettings;
 		help: ''.
 
-	buttonBar children addAll: {commitButton. pullButton. pushButton. fetchButton. branchButton. mergeButton. refreshButton}.
+	buttonBar children addAll: {
+		commitButton. pullButton. pushButton. fetchButton. branchButton. mergeButton.
+		builder pluggableSpacerSpec new.
+		settingsButton}.
 	^ buttonBar

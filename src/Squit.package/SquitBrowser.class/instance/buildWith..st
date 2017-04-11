@@ -5,8 +5,7 @@ buildWith: builder
 		label: #labelString;
 		children: {
 			self buildButtonBar: builder.
-			self buildProjectList: builder.
-			self buildBranchList: builder.
-			self buildCommitList: builder.
+			self buildProjectBranchPanel: builder.
+			self buildCommitSearchPanel: builder.
 			self buildSummary: builder.
 			self buildObjectList: builder})

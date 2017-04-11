@@ -5,5 +5,5 @@ buildBranchList: builder
 		list: #branchList;
 		getIndex: #branchIndex;
 		setIndex: #branchIndex:;
-		menu: #fieldListMenu:;
-		frame: (0@0.3 corner: 0.2@0.6)
+		menu: #branchListMenu:;
+		frame: (LayoutFrame fractions: (0@0.5 corner: 1@1))

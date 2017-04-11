@@ -1,3 +1,5 @@
 ui
 commitSelection
-	^ commitSelection ifNil: [commitSelection := self commitList first]
+	^ commitSelection ifNil: [
+		self commitList ifNotEmpty: [:list | commitSelection := list first ].
+		commitSelection]

@@ -10,7 +10,10 @@
 		"commitSelection",
 		"branchIndex",
 		"objectIndex",
-		"objectCache" ],
+		"objectCache",
+		"commitForCache",
+		"timeOfLastListUpdate",
+		"searchTerm" ],
 	"name" : "SquitBrowser",
 	"pools" : [
 		 ],

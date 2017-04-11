@@ -6,4 +6,4 @@ buildProjectList: builder
 		getIndex: #projectIndex;
 		setIndex: #projectIndex:;
 		menu: #projectListMenu:;
-		frame: (0@0 corner: 0.2@0.3)
+		frame: (0@0 corner: 1@0.5)

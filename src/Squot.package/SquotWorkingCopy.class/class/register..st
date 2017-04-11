@@ -1,3 +1,3 @@
 working copy registry
 register: aWorkingCopy
-	(registry ifNil: [registry := IdentitySet new]) add: aWorkingCopy.
+	(registry ifNil: [registry := OrderedCollection new]) add: aWorkingCopy.

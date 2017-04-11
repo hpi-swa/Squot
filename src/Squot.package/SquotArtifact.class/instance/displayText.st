@@ -1,0 +1,3 @@
+printing
+displayText
+	^ self path

@@ -4,13 +4,16 @@
 	"instance" : {
 		"accept" : "jr 2/18/2017 00:28",
 		"accepted" : "jr 2/18/2017 00:33",
-		"buildWith:" : "jr 2/17/2017 17:34",
+		"actionCancel" : "fn 4/11/2017 16:01",
+		"actionCommit" : "fn 4/11/2017 16:01",
+		"buildButtonBar:" : "fn 4/11/2017 15:26",
+		"buildWith:" : "fn 4/11/2017 15:28",
 		"buttonHeight" : "jr 2/17/2017 18:54",
 		"cancel" : "jr 2/17/2017 23:52",
 		"canceled" : "jr 2/17/2017 17:03",
 		"canceled:" : "jr 2/17/2017 17:03",
-		"changeChooser" : "jr 2/17/2017 17:03",
-		"changeChooser:" : "jr 2/17/2017 17:03",
+		"changeContents" : "fn 4/11/2017 15:30",
+		"changeContentsSelection" : "fn 4/11/2017 15:30",
 		"controllerForIgnores:" : "jr 2/17/2017 19:36",
 		"initialize" : "jr 2/17/2017 17:35",
 		"message" : "jr 2/17/2017 17:03",
@@ -19,4 +22,4 @@
 		"parentVersions:" : "jr 2/17/2017 19:34",
 		"proposeArtifacts:" : "jr 2/17/2017 19:38",
 		"selectedChanges" : "jr 2/17/2017 23:50",
-		"widgetSpecs:" : "jr 2/17/2017 18:57" } }
+		"widgetSpecs:" : "fn 4/11/2017 15:58" } }

@@ -12,7 +12,7 @@ buildProjectPanel: builder
 		list: #projectList;
 		getIndex: #projectIndex;
 		setIndex: #projectIndex:;
-		menu: #fieldListMenu:;
+		menu: #projectListMenu:;
 		frame: (LayoutFrame new
 			leftFraction: 0 offset: 0;
 			topFraction: 0 offset: 0;

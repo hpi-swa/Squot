@@ -1,0 +1,3 @@
+git porcelain
+remoteNames
+	self notYetImplemented

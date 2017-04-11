@@ -1,6 +1,6 @@
 toolbuilder
-menuCommitCheckoutHook: aMenu
-	<menuCommitCheckout>
+menuCommitListHook: aMenu
+	<menuCommitList>
 	aMenu addList: {
 		{'Checkout'. #actionCommitSelectionCheckout. 'Checkout this commit.'}
 	}.

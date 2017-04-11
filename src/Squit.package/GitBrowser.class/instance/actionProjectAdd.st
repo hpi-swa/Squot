@@ -1,10 +1,14 @@
 actions
 actionProjectAdd
-	| workingCopy repositoryPath |
+	| workingCopy name directory repositoryPath |
 	workingCopy := SquotWorkingCopy newOnObjectMemory.
-	workingCopy name: (UIManager default request: 'Project name:').
-	repositoryPath := (UIManager default chooseDirectory: 'Repository directory') pathName.
+	name := UIManager default request: 'Project name:'.
+	name ifNil: [^ self].
+	workingCopy name: name.
+	directory := (UIManager default chooseDirectory: 'Repository directory').
+	directory ifNil: [^ self].
+	repositoryPath := directory pathName.
 	workingCopy repository: (SquitRepository new initializeInDirectory: (FileSystem disk root resolve: repositoryPath)).
 	workingCopy loadedHistorian: (workingCopy repository historianNamed: 'master').
 	workingCopy register.
-	self changed: #projectList
+	self refresh.

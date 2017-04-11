@@ -14,4 +14,6 @@ fetchFrom: aRemoteName
 		packFile := GitPackFile readFrom: packFileData readStream].
 	packFile repository: repository.
 	packFile unpack.
-	wantRefs do: [:each | repository updateRef: each to: (remoteRefs at: each)].
+	wantRefs do: [:each | repository
+		updateRef: (repository refName: each forRemote: aRemoteName)
+		to: (remoteRefs at: each)].

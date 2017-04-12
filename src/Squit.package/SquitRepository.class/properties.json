@@ -10,7 +10,8 @@
 		"gitRepository",
 		"versionsCache",
 		"filesystemsCache",
-		"leastRecentlyRequestedFilesystems" ],
+		"leastRecentlyRequestedFilesystems",
+		"credentials" ],
 	"name" : "SquitRepository",
 	"pools" : [
 		 ],

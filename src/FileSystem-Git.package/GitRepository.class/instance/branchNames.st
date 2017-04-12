@@ -1,9 +1,10 @@
 public-accessing-objects
 branchNames
 	| branchRefs branchNames |
-	branchRefs := self headsDir children.
+	branchRefs := self headsDir allFiles.
 	branchRefs isEmpty
-		ifFalse: [ ^ branchRefs collect: [ :ref | ref basename ] ]
+		ifFalse: [ ^ branchRefs
+			collect: [ :ref | (ref relativeTo: self headsDir asAbsolute) printWithDelimiter: $/ ] ]
 		ifTrue: [ | packedRefs |
 			packedRefs := self packedRefs.
 			packedRefs ifNil: [ ^ OrderedCollection new ].

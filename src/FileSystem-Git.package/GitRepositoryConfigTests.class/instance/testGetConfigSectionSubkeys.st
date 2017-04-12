@@ -9,6 +9,6 @@ testGetConfigSectionSubkeys
 	foo = bar
 [core]
 	bare = true'].
-	self assert: #('origin') equals: (repository configSubkeysAt: 'remote' ifAbsent: [#()]).
-	self assert: #('bare') equals: (repository configSubkeysAt: 'core' ifAbsent: [#()]).
-	self assert: #('bla' 'url' 'fetch') asSet equals: (repository configSubkeysAt: 'remote.origin' ifAbsent: [#()]) asSet.
+	self assert: #('origin') equals: (repository configSubkeysAt: 'remote').
+	self assert: #('bare') equals: (repository configSubkeysAt: 'core').
+	self assert: #('bla' 'url' 'fetch') asSet equals: (repository configSubkeysAt: 'remote.origin') asSet.

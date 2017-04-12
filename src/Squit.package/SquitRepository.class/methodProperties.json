@@ -11,7 +11,7 @@
 		"defaultHistorian" : "jr 1/26/2017 17:48",
 		"delete:" : "jr 1/11/2017 16:35",
 		"expandShortRefName:" : "jr 2/8/2017 14:25",
-		"exportToUpstream:ifNone:" : "jr 4/12/2017 14:07",
+		"exportToUpstream:ifNone:" : "jr 4/12/2017 14:47",
 		"exportVersionAt:to:" : "jr 1/26/2017 14:03",
 		"extension:ifPresent:ifAbsent:" : "jr 3/6/2017 19:41",
 		"filesystemExtension" : "jr 3/6/2017 19:42",
@@ -26,6 +26,8 @@
 		"newHistorian:version:" : "jr 2/8/2017 14:23",
 		"newVersionForCommit:" : "jr 2/1/2017 15:04",
 		"orphanedWorkingDirectory" : "jr 1/29/2017 22:57",
+		"updateRemoteRepositories" : "jr 4/12/2017 14:47",
 		"versionAt:" : "jr 1/26/2017 14:01",
 		"versionForCommit:" : "jr 2/23/2017 17:45",
+		"withCredentialsDo:" : "jr 4/12/2017 14:52",
 		"workingTreeForCommitNamed:" : "jr 2/23/2017 18:02" } }

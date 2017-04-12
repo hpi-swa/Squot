@@ -2,6 +2,8 @@ toolbuilder
 menuCommitListHook: aMenu
 	<menuCommitList>
 	aMenu addList: {
-		{'Checkout'. #actionCommitSelectionCheckout. 'Checkout this commit.'}
+		{'Checkout commit'. #actionCommitSelectionCheckout. 'Checkout this commit.'}.
+		{'Reset branch to commit'. #actionBranchResetToCommit. ''}.
+		{'Tag commit'. #actionCommitTag. ''}.
 	}.
 	^ aMenu

@@ -1,3 +1,3 @@
 actions
 actionSettings
-	self notYetImplemented
+	SquitSettings open

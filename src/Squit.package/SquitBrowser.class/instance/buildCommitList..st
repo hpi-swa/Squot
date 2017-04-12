@@ -2,10 +2,12 @@ toolbuilder
 buildCommitList: builder
 	^ builder pluggableTreeSpec new
 		model: self;
+		hScrollBarPolicy: #whenNeeded;
 		roots: #commitList;
 		getSelected: #commitSelection;
 		setSelected: #commitSelection:;
 		menu: #commitListMenu:;
+		keyPress: #commitListKey:from:;
 		columns: {
 				[:listMorph | (listMorph filteredItems collect: [:item |
 					item preferredWidthOfColumn: 1]) max].

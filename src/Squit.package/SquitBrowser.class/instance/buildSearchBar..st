@@ -6,5 +6,5 @@ buildSearchBar: builder
 		getText: #searchTerm;
 		setText: #searchTerm:;
 		indicateUnacceptedChanges: false;
-		help: 'Search for commits.';
+		help: 'Search commits...';
 		frame: (0@0 corner: 0.9@1)

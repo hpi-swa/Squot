@@ -5,5 +5,5 @@ buildObjectList: builder
 		list: #objectList;
 		getIndex: #objectIndex;
 		setIndex: #objectIndex:;
-		menu: #fieldListMenu:;
+		menu: #objectListMenu:;
 		frame: (0.7@0.6 corner: 1@1)

@@ -1,0 +1,17 @@
+{
+	"class" : {
+		"defaultTitle" : "fn 4/12/2017 10:30",
+		"open" : "fn 4/12/2017 09:18" },
+	"instance" : {
+		"actionCancel" : "fn 4/12/2017 10:29",
+		"actionSaveAndClose" : "fn 4/12/2017 10:37",
+		"actionUserEmail" : "fn 4/12/2017 10:35",
+		"actionUserEmail:" : "fn 4/12/2017 10:44",
+		"actionUserName" : "fn 4/12/2017 10:35",
+		"actionUserName:" : "fn 4/12/2017 10:34",
+		"buildButtons:" : "fn 4/12/2017 11:23",
+		"buildInputFields:" : "fn 4/12/2017 11:24",
+		"buildInputPanel:" : "fn 4/12/2017 11:25",
+		"buildWith:" : "fn 4/12/2017 11:25",
+		"close" : "fn 4/12/2017 10:02",
+		"labelString" : "fn 4/12/2017 09:18" } }

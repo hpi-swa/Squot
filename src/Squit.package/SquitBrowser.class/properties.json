@@ -1,0 +1,21 @@
+{
+	"category" : "Squit-UI",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"projectIndex",
+		"commitSelection",
+		"branchIndex",
+		"objectIndex",
+		"objectCache",
+		"commitForCache",
+		"timeOfLastListUpdate",
+		"searchTerm" ],
+	"name" : "SquitBrowser",
+	"pools" : [
+		 ],
+	"super" : "Model",
+	"type" : "normal" }

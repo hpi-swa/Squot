@@ -1,0 +1,3 @@
+actions
+actionSettings
+	SquitSettings open

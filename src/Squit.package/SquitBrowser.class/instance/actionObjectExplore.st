@@ -1,0 +1,3 @@
+actions
+actionObjectExplore
+	self objectSelection explore

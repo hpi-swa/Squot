@@ -1,3 +1,0 @@
-actions
-actionRefresh
-	self refresh

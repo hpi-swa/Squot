@@ -1,14 +1,15 @@
 {
-	"category" : "Squit-UI-Support",
+	"category" : "Squit-UI",
 	"classinstvars" : [
 		 ],
 	"classvars" : [
 		 ],
 	"commentStamp" : "",
 	"instvars" : [
-		"historian" ],
-	"name" : "SquitHistorianWrapper",
+		"userEmail",
+		"userName" ],
+	"name" : "SquitSettings",
 	"pools" : [
 		 ],
-	"super" : "Object",
+	"super" : "Model",
 	"type" : "normal" }

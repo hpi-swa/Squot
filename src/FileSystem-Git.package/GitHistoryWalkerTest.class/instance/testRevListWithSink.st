@@ -8,7 +8,7 @@ testRevListWithSink
 	repository updateRef: repository headsDir / 'master' to: commit4 hexHash.
 	GitFSCK validate: repository.
 	"when"
-	historyWalker sinkCommits: {commit1}.
+	historyWalker excludeAncestorsOf: commit1.
 	revList := historyWalker startingFrom: (repository branches at: 'master').
 	"then"
 	self assert: (revList asArray = {commit4. commit3. commit2})

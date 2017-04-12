@@ -1,5 +1,6 @@
 history walking
 startingFrom: aGitCommit do: aBlock
-	commitBlock := aBlock.
-	searchFrontier add: aGitCommit.
-	self performSearch.
+	self walkWhile:
+		[:commit | aBlock value: commit.
+			true "do not prune except on sink commits"]
+		startingFrom: aGitCommit

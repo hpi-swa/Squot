@@ -9,6 +9,7 @@
 		"testRevListChronologicalOrder" : "jr 4/9/2017 00:32",
 		"testRevListTopoOrder" : "jr 4/9/2017 00:33",
 		"testRevListWithMerge" : "jr 4/8/2017 23:38",
-		"testRevListWithSink" : "jr 4/8/2017 23:38",
+		"testRevListWithSink" : "jr 4/12/2017 16:59",
 		"testRevWalkingWithMerge" : "jr 4/8/2017 23:38",
-		"testSimpleRevList" : "jr 4/8/2017 23:39" } }
+		"testSimpleRevList" : "jr 4/8/2017 23:39",
+		"testWalkToFindCommitSetDifference" : "jr 4/12/2017 17:14" } }

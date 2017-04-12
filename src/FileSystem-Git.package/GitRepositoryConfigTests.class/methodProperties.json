@@ -4,4 +4,6 @@
 	"instance" : {
 		"setUp" : "jr 1/14/2017 01:17",
 		"testConfigRead" : "jr 12/13/2016 18:41",
-		"testConfigWrite" : "jr 4/12/2017 11:34" } }
+		"testConfigWrite" : "jr 4/12/2017 11:34",
+		"testGetConfigSectionSubkeys" : "jr 4/12/2017 13:07",
+		"testGetConfigSections" : "jr 4/12/2017 11:40" } }

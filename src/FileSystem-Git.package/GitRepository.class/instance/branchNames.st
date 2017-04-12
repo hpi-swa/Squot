@@ -2,7 +2,7 @@ public-accessing-objects
 branchNames
 	| looseBranchNames packedRefs packedBranchNames |
 	looseBranchNames := self headsDir allFiles
-		collect: [:each | (each relativeTo: self headsDir asAbsolute) printWithDelimiter: $/].
+		collect: [:each | self refFromFile: each relativeTo: self headsDir].
 	packedRefs := self packedRefs.
 	packedRefs ifNil: [^ looseBranchNames].
 	packedBranchNames := OrderedCollection new.

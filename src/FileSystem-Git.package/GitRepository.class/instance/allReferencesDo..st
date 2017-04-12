@@ -5,7 +5,7 @@ allReferencesDo: aBlock
 	| baseDir |
 	baseDir := self baseDir asAbsolute.
 	(FSSelectVisitor breadthFirst: baseDir / 'refs' select: [:each | each isFile])
-		do: [:each | aBlock value: ((each reference relativeTo: baseDir) printWithDelimiter: $/)].
+		do: [:each | aBlock value: (self refFromFile: each reference relativeTo: baseDir)].
 	baseDir children
 		select: [:each | each basename allSatisfy: #isUppercase]
 		thenDo: [:each | aBlock value: each basename].

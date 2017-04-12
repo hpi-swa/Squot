@@ -2,7 +2,7 @@
 	"class" : {
 		"shouldInheritSelectors" : "DamienCassou 1/30/2013 13:32" },
 	"instance" : {
-		"expectedFailures" : "jr 4/9/2017 21:33",
+		"expectedFailures" : "jr 4/12/2017 14:05",
 		"testBranches" : "CamilloBruni 2/12/2013 17:08",
 		"testNegotiation" : "jr 12/1/2016 23:45",
 		"url" : "jr 10/26/2016 16:32" } }

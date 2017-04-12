@@ -1,3 +1,3 @@
 private
 requestCredentials
-	credentials := GitCredentialsRequest signal.
+	credentials := (NeedGitCredentials for: url) signal.

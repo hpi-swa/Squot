@@ -1,4 +1,4 @@
 tests
 expectedFailures
-	GitCredentialsRequest signal ifNotNil: [^ super expectedFailures].
+	(NeedGitCredentials for: self remoteUrl) signal ifNotNil: [^ super expectedFailures].
 	^ super expectedFailures , #(testPushingABranch)

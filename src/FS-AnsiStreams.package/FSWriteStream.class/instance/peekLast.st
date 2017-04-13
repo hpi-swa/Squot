@@ -1,5 +1,5 @@
 character writing
 peekLast
-	position > 1
-		ifTrue: [handle at: position - 1]
+	position > 0
+		ifTrue: [handle at: position]
 		ifFalse: [nil]

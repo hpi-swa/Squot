@@ -1,3 +1,3 @@
 file
 truncate
-	handle truncateTo: position - 1
+	handle truncateTo: position

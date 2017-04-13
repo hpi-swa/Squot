@@ -1,3 +1,3 @@
 positioning
 resetToStart
-	position := 1.
+	position := 0.

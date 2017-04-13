@@ -1,3 +1,3 @@
 positioning
 setToEnd
-	position := handle size + 1.
+	position := handle size.

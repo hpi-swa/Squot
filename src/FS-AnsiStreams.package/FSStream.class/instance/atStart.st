@@ -1,3 +1,3 @@
 testing
 atStart
-	^ position = 1
+	^ position = 0

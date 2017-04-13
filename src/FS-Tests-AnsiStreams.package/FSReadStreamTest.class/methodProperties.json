@@ -19,11 +19,12 @@
 		"testPeek" : "cwp 7/30/2009 23:05",
 		"testPeekForFalse" : "cwp 7/30/2009 23:06",
 		"testPeekForTrue" : "cwp 7/30/2009 23:06",
-		"testSkip" : "cwp 7/30/2009 23:17",
+		"testSkip" : "jr 4/13/2017 15:47",
 		"testSkipPastEnd" : "cwp 7/30/2009 23:18",
-		"testSkipTo" : "cwp 7/30/2009 23:20",
+		"testSkipTo" : "jr 4/13/2017 15:48",
 		"testSkipToEnd" : "cwp 7/30/2009 23:24",
 		"testSkipToFalse" : "cwp 7/30/2009 23:27",
 		"testSkipToTrue" : "cwp 7/30/2009 23:25",
 		"testUpTo" : "cwp 7/30/2009 23:38",
-		"testUpToEnd" : "cwp 7/30/2009 23:38" } }
+		"testUpToEnd" : "jr 4/13/2017 16:30",
+		"testUpToPastEnd" : "jr 4/13/2017 16:29" } }

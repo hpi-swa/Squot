@@ -1,0 +1,16 @@
+{
+	"category" : "Squit-UI",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"title",
+		"message",
+		"author" ],
+	"name" : "SquitFeedback",
+	"pools" : [
+		 ],
+	"super" : "Model",
+	"type" : "normal" }

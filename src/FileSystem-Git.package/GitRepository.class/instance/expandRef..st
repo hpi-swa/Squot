@@ -19,7 +19,7 @@ expandRef: name
 		'refs/remotes/'
 		"We don't do the last case (number 6) from the manual yet."
 	) do: [ :prefix |
-		(basePath resolve: (prefix , name)) exists ifTrue: [^ prefix, name].
+		(basePath resolve: (prefix , name)) isFile ifTrue: [^ prefix, name].
 		havePackedRefs ifFalse: [
 				packedRefs := self packedRefs. 
 				havePackedRefs := true ].

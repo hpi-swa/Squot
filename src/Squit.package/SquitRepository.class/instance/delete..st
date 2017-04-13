@@ -1,3 +1,3 @@
 Pur repository
 delete: aHistorian
-	self shouldBeImplemented
+	gitRepository repository deleteRef: aHistorian name.

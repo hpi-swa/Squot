@@ -13,7 +13,6 @@ menuBranchListHook: aMenu
 	}.
 	aMenu addLine.
 	aMenu addList: {
-		{'Add branch'. #actionBranchAdd. ''}.
 		{'Rename branch'. #actionBranchRename. ''}.
 		{'Remove branch'. #actionBranchRemove. ''}.
 	}.

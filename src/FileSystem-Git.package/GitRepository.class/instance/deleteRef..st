@@ -1,8 +1,8 @@
 public-accessing-references
 deleteRef: refPath
 	"Deletes the (possibly symbolic) reference denoted by refPath and its reflog."
-	| refFile |
-	refFile := self baseDir resolve: refPath.
-	refFile isDirectory ifTrue: [self error: 'Incomplete reference: ', refPath].
+	| refFile expandedRef |
+	refFile := self baseDir resolve: (expandedRef := self expandRef: refPath).
+	refFile isDirectory ifTrue: [self error: 'Incomplete reference: ', expandedRef].
 	refFile ensureDeleted.
-	(self reflogFileForReference: refPath) ensureDeleted.
+	(self reflogFileForReference: expandedRef) ensureDeleted.

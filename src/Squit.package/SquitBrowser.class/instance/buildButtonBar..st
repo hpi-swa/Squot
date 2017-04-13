@@ -1,6 +1,6 @@
 toolbuilder
 buildButtonBar: builder
-	| buttonBar commitButton pullButton pushButton fetchButton branchButton mergeButton settingsButton |
+	| buttonBar commitButton pullButton pushButton fetchButton branchButton mergeButton settingsButton feedbackButton |
 	buttonBar := builder pluggablePanelSpec new
 		layout: #horizontal;
 		"spacing: -1;"
@@ -53,6 +53,13 @@ buildButtonBar: builder
 		action: #actionMerge;
 		help: ''.
 
+	feedbackButton := builder pluggableActionButtonSpec new.
+	feedbackButton
+		model: self;
+		label: 'Feedback';
+		action: #actionFeedback;
+		help: ''.
+
 	settingsButton := builder pluggableActionButtonSpec new.
 	settingsButton
 		model: self;
@@ -63,5 +70,5 @@ buildButtonBar: builder
 	buttonBar children addAll: {
 		commitButton. pullButton. pushButton. fetchButton. branchButton. mergeButton.
 		builder pluggableSpacerSpec new.
-		settingsButton}.
+		settingsButton. feedbackButton}.
 	^ buttonBar

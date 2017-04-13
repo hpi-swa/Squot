@@ -9,4 +9,4 @@ commitList
 				collect: [:each | SquitVersionWrapper on: each])
 					select: [:each | self searchTerm
 						ifEmpty: [true]
-						ifNotEmpty: [:term | each asString includesSubstring: term ]]]
+						ifNotEmpty: [:term | each asString includesSubstring: term]]]

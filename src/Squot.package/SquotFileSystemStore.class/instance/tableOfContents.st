@@ -8,4 +8,4 @@ tableOfContents
 				store: self;
 				rootDirectory: directory;
 				signal.
-			^ notification artifacts]
+			^ notification tableOfContents]

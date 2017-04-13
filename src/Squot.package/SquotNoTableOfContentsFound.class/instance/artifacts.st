@@ -1,4 +1,0 @@
-accessing
-artifacts
-	
-	^ artifacts

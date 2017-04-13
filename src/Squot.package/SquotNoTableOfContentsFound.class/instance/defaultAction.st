@@ -1,3 +1,3 @@
-as yet unclassified
+exceptionDescription
 defaultAction
 	self resume

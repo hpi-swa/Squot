@@ -10,7 +10,9 @@ captureSnapshot
 			(self packageDirectoriesIn: directory)
 				collect: 	[:eachDirectory | self restorePackageFrom: eachDirectory]
 				thenDo: [:eachArtifact | builder add: eachArtifact.
-					addedPaths add: eachArtifact path].
+					addedPaths add: eachArtifact path.
+					e addArtifactAt: eachArtifact path
+						serializedBy: PackageInfo squotPreferredSerializer name].
 			e pass].
 	builder add: (unrecordedFiles := SquotUnrecordedFilesArtifact new
 		rootDirectory: directory;

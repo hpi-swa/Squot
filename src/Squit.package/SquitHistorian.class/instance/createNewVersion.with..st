@@ -12,7 +12,7 @@ createNewVersion: aSnapshot with: aBlock
 				ifNotNil: [:it | OrderedCollection with: it]);
 			in: aBlock].
 	gitRepository
-		updateRef: referenceName
+		updateRef: self expandedName
 		to: newVersion hexHash
 		message: 'commit: ', (newVersion message lineNumber: 1).
 	^ newVersion

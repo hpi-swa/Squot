@@ -1,3 +1,3 @@
 accessing
 expandedName
-	^ gitRepository expandRef: referenceName
+	^ repository expandShortRefName: referenceName

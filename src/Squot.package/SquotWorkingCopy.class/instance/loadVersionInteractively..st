@@ -7,6 +7,6 @@ loadVersionInteractively: aVersion
 		to: aVersion snapshot
 		title: 'Selected changes to load')
 		ifNil: [^ false]
-		ifNotNil: [:effectiveSnapshot | self halt.
+		ifNotNil: [:effectiveSnapshot |
 			store restoreToSnapshot: effectiveSnapshot.
 			^ true].

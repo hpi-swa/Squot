@@ -1,7 +1,8 @@
 Squot deserialization
 fillContentOf: anArtifact from: aDirectory
 	| classOfStoredObject isClass cypressReader packageDirectory packageName snapshot |
-	classOfStoredObject := anArtifact storeInfo at: #objectClassName.
+	self flag: 'magic constant PackageInfo'.
+	classOfStoredObject := anArtifact storeInfo at: #objectClassName ifAbsent: ['PackageInfo'].
 	isClass := classOfStoredObject endsWith: ' class'.
 	cypressReader := MCFileTreeStCypressReaderWithSettableFileUtils on: aDirectory.
 	cypressReader fileUtils: fileUtils.

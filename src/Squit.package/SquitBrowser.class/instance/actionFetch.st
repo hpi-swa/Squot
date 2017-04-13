@@ -9,4 +9,5 @@ actionFetch
 		title: 'Choose Remotes:'.
 	selection ifNil: [^ self].
 	selection ifEmpty: [UIManager default inform: 'Nothing selected.'. ^ self].
-	gitRepository fetchFromAll: selection
+	gitRepository fetchFromAll: selection.
+	self refresh.

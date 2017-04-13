@@ -3,4 +3,9 @@ tableOfContents
 	(directory / '_squot-table-of-contents') readStreamDo: [:stream |
 		stream ascii.
 		^ STON fromStreamWithComments: stream]
-		ifAbsent: [^ Dictionary new]
+		ifAbsent: [ | notification |
+			(notification := SquotNoTableOfContentsFound new)
+				store: self;
+				rootDirectory: directory;
+				signal.
+			^ notification tableOfContents]

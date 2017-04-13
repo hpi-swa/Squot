@@ -1,5 +1,6 @@
 storing
 storeOn: aStream
+	self quickValidate.
 	self storeFixedKeysOn: aStream.
 	properties ifNotNil: [ properties keysAndValuesDo: [ :key :value |
 		self saveKey: key value: value to: aStream ] ].

@@ -2,6 +2,7 @@ private
 restoreArtifactFrom: aFileOrDirectory
 	| artifact artifactClass metadata deserializer |
 	metadata := self metadataForObjectAt: aFileOrDirectory.
+	metadata isPresent ifFalse: [(SquotNoMetadataFileFound for: aFileOrDirectory) signal].
 	artifactClass := metadata artifactClass.
 	artifact := artifactClass new.
 	artifact path: (self pathOf: aFileOrDirectory).

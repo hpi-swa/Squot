@@ -1,0 +1,14 @@
+{
+	"category" : "Squot-FileSystemStore",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"fileOrDirectory" ],
+	"name" : "SquotNoMetadataFileFound",
+	"pools" : [
+		 ],
+	"super" : "Notification",
+	"type" : "normal" }

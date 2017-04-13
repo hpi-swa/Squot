@@ -1,0 +1,3 @@
+accessing
+objectPaths
+	^ objects keys

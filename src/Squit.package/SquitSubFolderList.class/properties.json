@@ -1,0 +1,14 @@
+{
+	"category" : "Squit-UI-Support",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "SquitSubFolderList",
+	"pools" : [
+		 ],
+	"super" : "FileList2",
+	"type" : "normal" }

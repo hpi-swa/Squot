@@ -1,4 +1,4 @@
-initialize-release
+private package finding
 packageDirectoriesIn: directoryReference
 	| repositoryDirectory |
 	repositoryDirectory := self findDirectoryWithPackages: directoryReference

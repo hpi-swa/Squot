@@ -6,6 +6,7 @@
 		 ],
 	"commentStamp" : "<historical>",
 	"instvars" : [
+		"treeHash",
 		"tree",
 		"parents",
 		"author",

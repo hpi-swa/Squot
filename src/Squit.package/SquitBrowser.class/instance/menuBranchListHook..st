@@ -8,8 +8,8 @@ menuBranchListHook: aMenu
 	}.
 	aMenu addLine.
 	aMenu addList: {
-		{'Start tracking a package'. #actionObjectPackageAdd. ''}.
-		{'Stop tracking a package'. #actionObjectPackageRemove. ''}.
+		{'Start tracking packages'. #actionObjectPackageAdd. ''}.
+		{'Stop tracking packages'. #actionObjectPackageRemove. ''}.
 	}.
 	aMenu addLine.
 	aMenu addList: {

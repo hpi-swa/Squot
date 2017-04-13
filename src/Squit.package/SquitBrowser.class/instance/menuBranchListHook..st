@@ -2,7 +2,7 @@ toolbuilder
 menuBranchListHook: aMenu
 	<menuBranchList>
 	aMenu addList: {
-		{'Checkout branch'. #actionBranchRemove. ''}.
+		{'Switch to this branch'. #actionBranchSwitch. ''}.
 		{'Merge branch'. #actionBranchMerge. ''}.
 		{'Push branch'. #actionBranchPush. ''}.
 	}.

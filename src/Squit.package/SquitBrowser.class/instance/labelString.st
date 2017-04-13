@@ -5,5 +5,5 @@ labelString
 	self projectSelection ifNotNil: [:project |
 		label := label, ': ', project.
 		self branchSelection ifNotNil: [:branch |
-			label := label, ' (', branch, ')']].
+			label := label, ' (', branch historian name, ')']].
 	^ label

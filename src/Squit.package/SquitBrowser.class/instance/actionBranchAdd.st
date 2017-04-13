@@ -5,4 +5,4 @@ actionBranchAdd
 	name := UIManager default request: 'New branch name'.
 	(name isNil or: [name isEmpty]) ifTrue: [^ self].
 	self projectSelection repository newHistorian: name version: self commitSelection version.
-	self changed: #branchList.
+	self refresh.

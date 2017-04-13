@@ -3,6 +3,7 @@
 		"on:" : "jr 1/11/2017 16:37",
 		"onDirectory:" : "jr 3/6/2017 18:44" },
 	"instance" : {
+		"=" : "jr 4/14/2017 00:55",
 		"addCredentialsFor:user:password:" : "jr 4/12/2017 14:21",
 		"convertToCurrentVersion:refStream:" : "jr 4/12/2017 14:20",
 		"createNewVersion:with:" : "jr 2/5/2017 22:46",
@@ -16,6 +17,7 @@
 		"extension:ifPresent:ifAbsent:" : "jr 3/6/2017 19:41",
 		"filesystemExtension" : "jr 3/6/2017 19:42",
 		"gitRepository" : "jr 1/11/2017 18:14",
+		"hash" : "jr 4/14/2017 00:55",
 		"historianNamed:" : "jr 2/20/2017 20:47",
 		"historians" : "jr 4/11/2017 13:33",
 		"importVersionAt:from:" : "jr 1/26/2017 14:03",

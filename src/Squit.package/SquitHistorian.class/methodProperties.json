@@ -2,13 +2,17 @@
 	"class" : {
 		 },
 	"instance" : {
+		"=" : "jr 4/14/2017 00:50",
 		"createNewVersion:with:" : "jr 2/23/2017 13:24",
+		"expandedName" : "jr 4/14/2017 00:51",
 		"gitRepository:" : "jr 1/11/2017 18:05",
+		"hash" : "jr 4/14/2017 00:53",
 		"initializeWith:" : "jr 1/11/2017 18:03",
 		"name" : "jr 1/11/2017 16:50",
 		"name:" : "jr 1/11/2017 17:49",
 		"printOn:" : "jr 2/1/2017 14:10",
 		"repository" : "jr 1/11/2017 16:50",
 		"repository:" : "jr 1/11/2017 17:48",
+		"shortName" : "jr 4/14/2017 00:47",
 		"version" : "jr 1/11/2017 18:10",
 		"version:" : "jr 2/23/2017 12:38" } }

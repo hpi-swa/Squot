@@ -1,3 +1,4 @@
 actions
 actionBranchResetToCommit
-	self notYetImplemented
+	self branchSelection historian version: self commitSelection version.
+	self refresh.

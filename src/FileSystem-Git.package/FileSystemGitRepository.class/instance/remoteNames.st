@@ -1,3 +1,3 @@
-git porcelain
+remotes
 remoteNames
 	^ repository configSubkeysAt: 'remote'

@@ -1,4 +1,4 @@
-private
+private configuration
 configSectionLabelFromParts: aCollectionOfStrings
 	| key sectionHead |
 	sectionHead := aCollectionOfStrings first.

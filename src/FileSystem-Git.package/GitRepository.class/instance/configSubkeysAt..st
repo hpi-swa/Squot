@@ -1,15 +1,11 @@
-private
+private configuration
 configSubkeysAt: aNameString
 	| config subNames file hierarchicalSectionNames relevantSections |
 	file := self configFile.
 	file exists ifFalse: [^ #()].
 	config := file readStreamDo: [:stream | stream ascii. INIFile readFrom: stream].
-	hierarchicalSectionNames := config sections collect: [:each |
-		(each label includesSubstring: ' "')
-			ifTrue: [{each label copyUpTo: Character space},
-				((each label copyFrom: (each label indexOf: $") + 1 to: each label size - 1)
-					splitBy: '.')]
-			ifFalse: [{each label}]].
+	hierarchicalSectionNames := config sections collect:
+		[:each | self configPartsFromSectionLabel: each label].
 	subNames := aNameString splitBy: '.'.
 	relevantSections := hierarchicalSectionNames select: [:each |
 		each size >= subNames size

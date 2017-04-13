@@ -1,3 +1,3 @@
-git porcelain
+remotes
 removeRemoteNamed: aName
-	self notYetImplemented
+	repository removeRemoteNamed: aName

@@ -7,6 +7,8 @@ branchNames
 	packedRefs ifNil: [^ looseBranchNames].
 	packedBranchNames := OrderedCollection new.
 	packedRefs keysAndValuesDo: [:refName :refSignature | 
-		(refName beginsWith: 'refs/heads/') ifTrue: [
-			packedBranchNames add: (refName allButFirst: 'refs/heads/' size)]].
+		(refName beginsWith: 'refs/heads/') ifTrue: [ | branchName |
+			branchName := refName allButFirst: 'refs/heads/' size.
+			(looseBranchNames includes: branchName)
+				ifFalse: [packedBranchNames add: branchName]]].
 	^ looseBranchNames, packedBranchNames

@@ -1,4 +1,4 @@
-private
+private configuration
 configSections
 	| config file |
 	file := self configFile.

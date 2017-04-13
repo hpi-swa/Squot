@@ -6,4 +6,5 @@
 		"testConfigRead" : "jr 12/13/2016 18:41",
 		"testConfigWrite" : "jr 4/12/2017 11:34",
 		"testGetConfigSectionSubkeys" : "jr 4/12/2017 13:44",
-		"testGetConfigSections" : "jr 4/12/2017 11:40" } }
+		"testGetConfigSections" : "jr 4/12/2017 11:40",
+		"testUnset" : "jr 4/13/2017 23:22" } }

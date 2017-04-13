@@ -1,14 +1,12 @@
 public-accessing-objects
 branchNames
-	| branchRefs branchNames |
-	branchRefs := self headsDir children.
-	branchRefs isEmpty
-		ifFalse: [ ^ branchRefs collect: [ :ref | ref basename ] ]
-		ifTrue: [ | packedRefs |
-			packedRefs := self packedRefs.
-			packedRefs ifNil: [ ^ OrderedCollection new ].
-			branchNames := OrderedCollection new.
-			packedRefs keysAndValuesDo: [ :refName :refSignature | 
-				(refName includesSubString: 'heads') ifTrue: [
-					branchNames add: (refName subStrings: '/') last ] ].
-			^ branchNames ]
+	| looseBranchNames packedRefs packedBranchNames |
+	looseBranchNames := self headsDir allFiles
+		collect: [:each | self refFromFile: each relativeTo: self headsDir].
+	packedRefs := self packedRefs.
+	packedRefs ifNil: [^ looseBranchNames].
+	packedBranchNames := OrderedCollection new.
+	packedRefs keysAndValuesDo: [:refName :refSignature | 
+		(refName beginsWith: 'refs/heads/') ifTrue: [
+			packedBranchNames add: (refName allButFirst: 'refs/heads/' size)]].
+	^ looseBranchNames, packedBranchNames

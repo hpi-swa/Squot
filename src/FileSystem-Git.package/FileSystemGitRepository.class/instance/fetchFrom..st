@@ -3,6 +3,7 @@ fetchFrom: aRemoteName
 	| url fetchConfig localRemoteRefPattern packFile protocol remoteRefPattern remoteRefs wantRefs wantSignatures packFileData |
 	url := (repository remoteConfigFor: aRemoteName option: 'url') asUrl.
 	fetchConfig := repository remoteConfigFor: aRemoteName option: 'fetch'.
+	fetchConfig ifNil: [fetchConfig := '+refs/heads/*:refs/remotes/', aRemoteName, '/*'].
 	(fetchConfig splitBy: ':') in: [:parts | remoteRefPattern := parts first. localRemoteRefPattern := parts second].
 	remoteRefPattern := remoteRefPattern allButFirst: 1. "+"
 	protocol := GitAbstractProtocol url: url.
@@ -14,4 +15,6 @@ fetchFrom: aRemoteName
 		packFile := GitPackFile readFrom: packFileData readStream].
 	packFile repository: repository.
 	packFile unpack.
-	wantRefs do: [:each | repository updateRef: each to: (remoteRefs at: each)].
+	wantRefs do: [:each | repository
+		updateRef: (repository refName: each forRemote: aRemoteName)
+		to: (remoteRefs at: each)].

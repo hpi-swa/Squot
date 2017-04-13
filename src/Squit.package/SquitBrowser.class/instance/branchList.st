@@ -4,5 +4,5 @@ branchList
 		(self projectSelection
 			ifNil: [#()]
 			ifNotNil: [:project |
-				project repository historians
+				project repository historians, project repository remoteHistorians
 					collect: [:historian | SquitHistorianWrapper on: historian]])

@@ -1,3 +1,7 @@
 MultiByteFileStream accessing
 lineEndConvention: aSymbol
-	"Do nothing for the time being. A client might expect the MultiByteFileStream interface."
+	self converter installLineEndConvention: (aSymbol caseOf: {
+			[#cr] -> [String cr].
+			[#lf] -> [String lf].
+			[#crlf] -> [String crlf].
+			[nil] -> [nil]}).

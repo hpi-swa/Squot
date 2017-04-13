@@ -1,3 +1,3 @@
 git porcelain
 remoteNames
-	self notYetImplemented
+	^ repository configSubkeysAt: 'remote'

@@ -1,3 +1,3 @@
 actions
 actionFetch
-	self notYetImplemented
+	self projectSelection repository updateRemoteRepositories

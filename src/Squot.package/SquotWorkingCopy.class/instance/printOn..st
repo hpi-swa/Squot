@@ -1,3 +1,3 @@
 printing
 printOn: aStream
-	aStream nextPutAll: self name
+	aStream nextPutAll: (self name ifNil: '(Unnamed working copy)')

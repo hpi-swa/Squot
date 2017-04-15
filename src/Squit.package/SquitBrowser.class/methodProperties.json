@@ -4,7 +4,7 @@
 		"initialize" : "fn 4/11/2017 15:11",
 		"open" : "fn 4/11/2017 09:09",
 		"registerInWorldMenu" : "fn 4/11/2017 15:11",
-		"selfUpdate" : "fn 4/15/2017 11:01",
+		"selfUpdate" : "jr 4/15/2017 14:19",
 		"updateRepository" : "fn 4/15/2017 10:51" },
 	"instance" : {
 		"aboutToStyle:" : "fn 4/11/2017 09:53",

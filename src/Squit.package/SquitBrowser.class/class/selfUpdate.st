@@ -11,5 +11,6 @@ selfUpdate
 	UpdateWorkingCopy repository gitRepository fetchFrom: 'origin'.
 	UpdateWorkingCopy loadedHistorian: (
 		UpdateWorkingCopy repository historianNamed: 'origin/master').
+	UpdateWorkingCopy registerPackagesInStore.
 	"UpdateWorkingCopy loadVersion: UpdateWorkingCopy baseVersion interactive: false."
 	UpdateWorkingCopy loadCurrentVersionInteractively.

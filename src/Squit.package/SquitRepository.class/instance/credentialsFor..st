@@ -1,3 +1,3 @@
 synchronizing
-credentialsFor: repositoryUrlString
-	^ credentials at: repositoryUrlString ifAbsent: []
+credentialsFor: repositoryUrl
+	^ credentials at: repositoryUrl asString ifAbsent: []

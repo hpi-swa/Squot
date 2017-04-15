@@ -1,24 +1,24 @@
 public-accessing
 nearestMergeBaseWithAnyOf: aCollectionOfHashes
 	"Perform a breadth first search from me and the other commits,
-	answer the first commit that is visited twice and has a path to me."
-	| next visited pathToSelf |
+	answer the first commit that is reachable from me and any of the other commits."
+	| next otherEnds visited paths |
 	next := OrderedCollection withAll:
 		(aCollectionOfHashes collect: [:each | repository objectNamed: each ifAbsent: []]).
 	next removeAllSuchThat: [:each | each isNil].
+	otherEnds := Array withAll: next.
 	next addLast: self.
-	pathToSelf := Dictionary new.
-	pathToSelf at: self put: Array empty.
+	paths := GitGraphPathDictionary new.
+	next do: [:each | paths addTarget: each].
 	visited := Set new.
 	[next notEmpty] whileTrue:
-		[ | current nextOnPathToSelf |
+		[ | current |
 		current := next removeFirst.
-		nextOnPathToSelf := pathToSelf at: current ifAbsent: [].
-		(nextOnPathToSelf notNil and: [visited includes: current])
+		((paths hasPathFrom: current to: self) and: (paths hasPathFrom: current toAnyOf: otherEnds))
 			ifTrue: [^ current].
 		(visited includes: current) ifFalse:
 			[current parents
 				do: [:each | next add: each.
-					nextOnPathToSelf ifNotNil: [pathToSelf at: each put: current]].
+					paths add: each asParentOf: current].
 			visited add: current]].
 	^ nil "no common ancestor"

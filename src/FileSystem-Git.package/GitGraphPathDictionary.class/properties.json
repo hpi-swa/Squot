@@ -1,0 +1,14 @@
+{
+	"category" : "FileSystem-Git-Plumbing-Utilities",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"paths" ],
+	"name" : "GitGraphPathDictionary",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }

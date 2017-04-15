@@ -1,3 +1,3 @@
 toolbuilder
 actionCommitSelectionCheckout
-	self projectSelection loadVersion: self commitSelection version interactive: true
+	self projectSelection loadVersion: self commitSelection interactive: true

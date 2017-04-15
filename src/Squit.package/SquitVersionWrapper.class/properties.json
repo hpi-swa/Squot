@@ -10,5 +10,5 @@
 	"name" : "SquitVersionWrapper",
 	"pools" : [
 		 ],
-	"super" : "Object",
+	"super" : "PluggableListItemWrapper",
 	"type" : "normal" }

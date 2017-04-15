@@ -5,8 +5,7 @@ commitList
 		ifNotNil: [:project | | historian |
 			self branchSelection ifNil: [^ #()].
 			historian := self branchSelection historian.
-			((SquotHistoryWalker new startingFrom: historian version)
-				collect: [:each | SquitVersionWrapper on: each])
+			(SquotHistoryWalker new startingFrom: historian version)
 					select: [:each | self searchTerm
 						ifEmpty: [true]
-						ifNotEmpty: [:term | each asString includesSubstring: term]]]
+						ifNotEmpty: [:term | each message, each metadata asString, each internalId includesSubstring: term]]]

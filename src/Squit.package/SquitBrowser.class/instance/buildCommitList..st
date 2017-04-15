@@ -4,6 +4,7 @@ buildCommitList: builder
 		model: self;
 		hScrollBarPolicy: #whenNeeded;
 		roots: #commitList;
+		nodeClass: SquitVersionWrapper;
 		getSelected: #commitSelection;
 		setSelected: #commitSelection:;
 		menu: #commitListMenu:;

@@ -2,7 +2,8 @@
 	"class" : {
 		"on:" : "fn 4/11/2017 12:26" },
 	"instance" : {
-		"printOn:" : "jr 4/13/2017 23:35",
-		"summary" : "jr 4/13/2017 23:35",
+		"asString" : "fn 4/14/2017 22:38",
+		"balloonText" : "fn 4/14/2017 22:35",
+		"summary" : "fn 4/14/2017 22:44",
 		"version" : "fn 4/11/2017 12:22",
 		"version:" : "fn 4/11/2017 12:22" } }

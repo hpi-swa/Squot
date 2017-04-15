@@ -2,8 +2,6 @@
 	"class" : {
 		"on:" : "fn 4/11/2017 13:44" },
 	"instance" : {
-		"displayText" : "jr 4/14/2017 01:13",
-		"displayText:" : "jr 4/14/2017 01:13",
 		"historian" : "fn 4/11/2017 13:44",
-		"historian:" : "jr 4/14/2017 01:13",
-		"printOn:" : "jr 4/14/2017 01:14" } }
+		"historian:" : "fn 4/15/2017 11:21",
+		"printOn:" : "fn 4/14/2017 23:03" } }

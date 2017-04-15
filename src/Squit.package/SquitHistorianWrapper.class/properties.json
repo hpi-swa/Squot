@@ -6,8 +6,7 @@
 		 ],
 	"commentStamp" : "",
 	"instvars" : [
-		"historian",
-		"displayText" ],
+		"historian" ],
 	"name" : "SquitHistorianWrapper",
 	"pools" : [
 		 ],

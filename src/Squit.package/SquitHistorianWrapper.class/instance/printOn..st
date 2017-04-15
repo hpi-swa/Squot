@@ -1,3 +1,3 @@
 printing
 printOn: aStream
-	aStream nextPutAll: displayText
+	aStream nextPutAll: historian name

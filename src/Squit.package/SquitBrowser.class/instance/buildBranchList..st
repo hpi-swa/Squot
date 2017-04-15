@@ -6,4 +6,5 @@ buildBranchList: builder
 		getIndex: #branchIndex;
 		setIndex: #branchIndex:;
 		menu: #branchListMenu:;
+		icon: #branchListIconAt:;
 		frame: (LayoutFrame fractions: (0@0.5 corner: 1@1))

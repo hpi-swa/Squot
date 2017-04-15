@@ -1,0 +1,3 @@
+printing
+balloonText
+	^ self summary

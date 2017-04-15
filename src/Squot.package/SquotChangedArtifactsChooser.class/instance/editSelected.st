@@ -1,7 +1,7 @@
 operations
 editSelected
 	| selectedArtifact editor editorUI newArtifact originalArtifact proposedArtifact |
-	editor := self editorFor: (selectedArtifact := self selectedArtifact).
+	editor := self editorFor: (selectedArtifact := self selection).
 	editorUI := editor buildUI.
 	((self dependents detect: #isInSystemWindow) outermostMorphThat: #isSystemWindow)
 		openModal: editorUI.

@@ -2,7 +2,9 @@ ui menus
 changedArtifactsMenuHook: aMenu shifted: aBoolean
 	<changedArtifactsListMenu>
 	| selectedArtifact selectionState originalOfSelected |
-	selectionState := self stateOf: (selectedArtifact := self selectedArtifact ifNil: [^ aMenu]).
+	(self selection isKindOf: SquotDiffNode) ifTrue: [
+		^ self changedSquotDiffNodeMenuHook: aMenu shifted: aBoolean].
+	selectionState := self stateOf: (selectedArtifact := self selection first ifNil: [^ aMenu]).
 	aMenu addList: (Array streamContents: [:stream |
 		selectionState == #ignored ifTrue: [
 			stream nextPut: #('unignore' #toggleIgnoreForSelected 'do no longer ignore this change')].

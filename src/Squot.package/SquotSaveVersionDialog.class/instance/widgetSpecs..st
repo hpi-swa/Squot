@@ -4,7 +4,7 @@ widgetSpecs: builder
 		name: 'changes selector';
 		model: changeChooser;
 		children: (changeChooser chooserWidgetSpecs: builder);
-		frame: (0@0 corner: 0.3@0.7);
+		frame: (0@0 corner: 0.4@0.7);
 		yourself.
 	builder pluggableTextSpec new
 		model: self;
@@ -12,7 +12,7 @@ widgetSpecs: builder
 		setText: #changeContents:notifying:; 
 		selection: #changeContentsSelection; 
 		menu: #fieldListMenu:;
-		frame: (0.3@0 corner: 1@0.7).
+		frame: (0.4@0 corner: 1@0.7).
 	builder pluggableTextSpec new
 		name: 'message for the new version';
 		model: self;

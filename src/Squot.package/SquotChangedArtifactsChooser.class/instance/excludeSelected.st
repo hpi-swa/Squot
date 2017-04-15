@@ -1,4 +1,4 @@
 operations
 excludeSelected
-	(list at: selectedIndex) value: (self originalOf: self selectedArtifact).
+	(list at: selection) value: (self originalOf: self selection).
 	self listChanged.

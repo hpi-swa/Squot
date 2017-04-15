@@ -1,4 +1,3 @@
 ui
 selectionChanged
-	self changed: #selectedIndex.
-	self changed: #selectionSummary.
+	self changed: #selection

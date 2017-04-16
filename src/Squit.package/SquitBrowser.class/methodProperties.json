@@ -3,8 +3,10 @@
 		"defaultTitle" : "fn 4/11/2017 17:23",
 		"initialize" : "fn 4/11/2017 15:11",
 		"open" : "fn 4/11/2017 09:09",
-		"registerInWorldMenu" : "fn 4/11/2017 15:11",
+		"registerInWorldMenu" : "jr 4/15/2017 13:34",
 		"selfUpdate" : "jr 4/15/2017 14:19",
+		"unload" : "jr 4/15/2017 13:28",
+		"unregisterFromWorldMenu" : "jr 4/15/2017 14:25",
 		"updateRepository" : "fn 4/15/2017 10:51" },
 	"instance" : {
 		"aboutToStyle:" : "fn 4/11/2017 09:53",

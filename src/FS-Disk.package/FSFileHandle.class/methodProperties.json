@@ -6,7 +6,7 @@
 	"instance" : {
 		"at:read:startingAt:count:" : "cwp 7/31/2009 00:05",
 		"at:write:startingAt:count:" : "cwp 7/26/2009 14:15",
-		"close" : "cwp 11/20/2009 14:59",
+		"close" : "jr 4/16/2017 22:16",
 		"flush" : "cwp 7/22/2009 07:49",
 		"isOpen" : "cwp 7/22/2009 07:10",
 		"open" : "jr 3/5/2017 13:14",

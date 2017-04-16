@@ -7,7 +7,6 @@
 	"commentStamp" : "",
 	"instvars" : [
 		"objectCount",
-		"packData",
 		"repository",
 		"reference",
 		"indexFile",

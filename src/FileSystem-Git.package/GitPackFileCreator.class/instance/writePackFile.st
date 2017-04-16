@@ -5,5 +5,6 @@ writePackFile
 		stream binary.
 		self
 			writePackFileHeaderOn: stream;
-			writeObjectsOn: stream;
-			writePackFileTrailerOn: stream]
+			writeObjectsOn: stream.
+		stream truncate.
+		self writePackFileTrailerOn: stream]

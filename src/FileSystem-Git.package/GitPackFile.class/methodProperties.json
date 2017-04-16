@@ -14,8 +14,7 @@
 		"numberOfObjects" : "MaxLeske 9/8/2012 10:09",
 		"objectAtOffset:" : "MaxLeske 6/23/2012 17:08",
 		"objectNamed:" : "jr 3/6/2017 19:03",
-		"packData" : "jr 1/20/2017 15:06",
-		"packDataStreamDo:" : "jr 1/20/2017 15:09",
+		"packDataStreamDo:" : "jr 4/16/2017 13:36",
 		"packedObjectsDo:" : "MaxLeske 9/8/2012 20:45",
 		"readHeaders" : "MaxLeske 9/8/2012 08:55",
 		"readStream" : "jr 4/13/2017 15:05",
@@ -26,5 +25,6 @@
 		"repository" : "MaxLeske 2/29/2012 17:46",
 		"repository:" : "MaxLeske 2/29/2012 17:46",
 		"unpack" : "MaxLeske 9/8/2012 10:06",
+		"validate" : "jr 4/16/2017 13:59",
 		"verifyPackFileIdentifierFrom:" : "MaxLeske 9/8/2012 08:53",
 		"verifyPackFileVersionFrom:" : "MaxLeske 9/8/2012 08:54" } }

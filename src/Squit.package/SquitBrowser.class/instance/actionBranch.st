@@ -1,3 +1,5 @@
 actions
 actionBranch
-	self notYetImplemented
+	self branchSelection ifNil: [^ self].
+	(self createNewBranchAt: self branchSelection historian version) ifFalse: [^ self].
+	self refresh.

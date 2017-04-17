@@ -10,8 +10,8 @@
 		"updateRepository" : "fn 4/15/2017 10:51" },
 	"instance" : {
 		"aboutToStyle:" : "fn 4/11/2017 09:53",
-		"actionBranch" : "fn 4/13/2017 13:25",
-		"actionBranchAdd" : "jr 4/14/2017 00:27",
+		"actionBranch" : "jr 4/17/2017 02:44",
+		"actionBranchAdd" : "jr 4/17/2017 02:43",
 		"actionBranchPush" : "jr 4/14/2017 00:05",
 		"actionBranchRemove" : "jr 4/14/2017 00:22",
 		"actionBranchRename" : "jr 4/14/2017 01:10",
@@ -66,6 +66,7 @@
 		"commitSelection:" : "fn 4/11/2017 14:43",
 		"commitSelectionWrapped" : "fn 4/14/2017 22:40",
 		"contents" : "fn 4/14/2017 22:39",
+		"createNewBranchAt:" : "jr 4/17/2017 02:43",
 		"labelString" : "jr 4/14/2017 01:18",
 		"menuBranchListHook:" : "jr 4/14/2017 01:16",
 		"menuCommitListHook:" : "jr 4/14/2017 00:58",

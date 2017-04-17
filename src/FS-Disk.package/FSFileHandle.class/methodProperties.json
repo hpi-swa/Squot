@@ -7,9 +7,11 @@
 		"at:read:startingAt:count:" : "cwp 7/31/2009 00:05",
 		"at:write:startingAt:count:" : "cwp 7/26/2009 14:15",
 		"close" : "jr 4/16/2017 22:16",
+		"finalizationRegistry" : "jr 4/17/2017 16:33",
 		"flush" : "cwp 7/22/2009 07:49",
 		"isOpen" : "cwp 7/22/2009 07:10",
-		"open" : "jr 3/5/2017 13:14",
+		"open" : "jr 4/17/2017 16:53",
+		"registerForFinalization" : "jr 4/17/2017 16:34",
 		"size" : "cwp 7/22/2009 07:44",
 		"startUp" : "cwp 11/20/2009 16:48",
 		"truncateTo:" : "cwp 7/22/2009 08:17" } }

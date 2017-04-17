@@ -4,6 +4,7 @@
 	"instance" : {
 		"atEnd:" : "cwp 7/20/2009 17:26",
 		"close:" : "jr 4/16/2017 22:16",
+		"closeNoError:" : "jr 4/17/2017 16:18",
 		"createDirectory:" : "cwp 11/17/2009 16:26",
 		"decode:" : "lr 7/13/2010 14:10",
 		"deleteDirectory:" : "cwp 7/20/2009 17:21",

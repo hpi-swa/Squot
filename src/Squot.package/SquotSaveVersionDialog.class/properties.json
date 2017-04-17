@@ -8,7 +8,12 @@
 	"instvars" : [
 		"changeChooser",
 		"message",
-		"canceled" ],
+		"canceled",
+		"diffRootNodes",
+		"originalSnapshot",
+		"proposedSnapshot",
+		"diffs",
+		"selectedDiffNode" ],
 	"name" : "SquotSaveVersionDialog",
 	"pools" : [
 		 ],

@@ -8,6 +8,7 @@ SystemOrganization addCategory: #'Squot-Serialization'!
 SystemOrganization addCategory: #'Squot-Serialization-Cypress'!
 SystemOrganization addCategory: #'Squot-Extensions'!
 SystemOrganization addCategory: #'Squot-Tools'!
+SystemOrganization addCategory: #'Squot-Tools-Support'!
 SystemOrganization addCategory: #'Squot-Monticello-Converter'!
 SystemOrganization addCategory: #'Squot-InMemoryRepository'!
 SystemOrganization addCategory: #'Squot-Tests'!

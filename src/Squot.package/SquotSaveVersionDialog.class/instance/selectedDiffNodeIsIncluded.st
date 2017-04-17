@@ -1,4 +1,3 @@
 ui
 selectedDiffNodeIsIncluded
-	self flag: #stub.
-	^ true
+	^ self diffSelectedNode isActive

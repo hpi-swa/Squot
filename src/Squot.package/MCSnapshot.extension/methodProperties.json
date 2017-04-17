@@ -2,6 +2,8 @@
 	"class" : {
 		 },
 	"instance" : {
+		"squotApplyDiffNode:" : "jr 4/18/2017 00:04",
+		"squotApplyInverseOfExcludedDiffNodes:" : "jr 4/18/2017 00:04",
 		"squotContentClassMarker" : "jr 4/7/2017 12:00",
 		"squotCreatePatchEditorFor:original:proposed:" : "jr 2/16/2017 00:16",
 		"squotDiffAgainst:" : "jr 4/9/2017 21:48",

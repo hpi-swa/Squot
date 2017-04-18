@@ -1,4 +1,4 @@
 operations
 includeSelected
-	(list at: selectedIndex) value: (self proposedOf: self selectedArtifact).
+	(list at: selection) value: (self proposedOf: self selection).
 	self listChanged.

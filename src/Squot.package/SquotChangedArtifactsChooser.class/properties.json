@@ -12,8 +12,8 @@
 		"list",
 		"controllerForIgnores",
 		"ignored",
-		"selectedIndex",
-		"canceled" ],
+		"canceled",
+		"selection" ],
 	"name" : "SquotChangedArtifactsChooser",
 	"pools" : [
 		 ],

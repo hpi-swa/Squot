@@ -5,4 +5,4 @@ initialize
 	effective := Dictionary new.
 	list := Array empty.
 	ignored := Dictionary new. "path -> nil or concrete artifact"
-	selectedIndex := 0.
+	selection := 0.

@@ -1,18 +1,25 @@
 ui toolbuilder
 widgetSpecs: builder
-	^{builder pluggablePanelSpec new name: 'changes selector';
-		name: 'changes selector';
-		model: changeChooser;
-		children: (changeChooser chooserWidgetSpecs: builder);
-		frame: (0@0 corner: 0.3@0.7);
-		yourself.
-	builder pluggableTextSpec new
+	^{builder pluggableTreeSpec new
+		name: 'Diff';
 		model: self;
-		getText: #changeContents; 
-		setText: #changeContents:notifying:; 
-		selection: #changeContentsSelection; 
-		menu: #fieldListMenu:;
-		frame: (0.3@0 corner: 1@0.7).
+		nodeClass: SquotDiffNodeTreeWrapper;
+		roots: #diffRoots;
+		label: #diffTitleOf:;
+		"help: #diffTextFor:;"
+		getSelectedPath: #diffSelectedPath;
+		getSelected: #diffSelectedNode;
+		setSelected: #diffSelect:;
+		getChildren: #diffChildrenOf:;
+		hasChildren: #diffHasChildren:;
+		menu: #diffTreeMenu:;
+		frame: (0@0 corner: 0.4@0.7).
+	builder pluggableTextSpec new
+		name: 'diff text for selected item';
+		model: self;
+		getText: #diffText;
+		frame: (0.4@0 corner: 1@0.7);
+		yourself.
 	builder pluggableTextSpec new
 		name: 'message for the new version';
 		model: self;

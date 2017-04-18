@@ -2,6 +2,20 @@
 	"class" : {
 		"title:content:children:" : "jr 4/10/2017 22:59" },
 	"instance" : {
-		"children" : "jr 4/10/2017 23:03",
+		"addContentForInspectionTo:" : "jr 4/17/2017 02:28",
+		"asStringOrText" : "jr 4/17/2017 02:02",
+		"balloonText" : "jr 4/17/2017 01:20",
+		"children" : "jr 4/17/2017 01:01",
+		"concatenatedChildrenTexts" : "jr 4/17/2017 02:00",
+		"content" : "jr 4/17/2017 02:25",
+		"exclude" : "jr 4/17/2017 22:52",
+		"hasChildren" : "jr 4/17/2017 00:58",
+		"hasContent" : "jr 4/17/2017 02:19",
+		"include" : "jr 4/17/2017 22:53",
+		"initialize" : "jr 4/17/2017 22:52",
+		"inspectContent" : "jr 4/17/2017 02:27",
+		"isActive" : "jr 4/17/2017 22:53",
+		"submitSelfAndChildrenTo:" : "jr 4/17/2017 22:47",
 		"title" : "jr 4/10/2017 23:00",
-		"title:content:children:" : "jr 4/10/2017 23:00" } }
+		"title:content:children:" : "jr 4/10/2017 23:00",
+		"withAllChildren" : "jr 4/17/2017 22:46" } }

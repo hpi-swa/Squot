@@ -6,9 +6,14 @@
 		 ],
 	"commentStamp" : "jr 2/17/2017 16:50",
 	"instvars" : [
-		"changeChooser",
 		"message",
-		"canceled" ],
+		"canceled",
+		"diffRootNodes",
+		"originalSnapshot",
+		"proposedSnapshot",
+		"diffs",
+		"selectedDiffNode",
+		"controllerForIgnores" ],
 	"name" : "SquotSaveVersionDialog",
 	"pools" : [
 		 ],

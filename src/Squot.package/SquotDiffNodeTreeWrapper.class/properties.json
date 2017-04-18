@@ -1,0 +1,14 @@
+{
+	"category" : "Squot-Tools-Support",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "SquotDiffNodeTreeWrapper",
+	"pools" : [
+		 ],
+	"super" : "PluggableTreeItemNode",
+	"type" : "normal" }

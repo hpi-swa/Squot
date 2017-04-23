@@ -1,4 +1,4 @@
-toolbuilder
+ui menu
 menuCommitListHook: aMenu
 	<menuCommitList>
 	aMenu addList: {

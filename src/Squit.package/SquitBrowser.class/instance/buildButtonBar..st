@@ -16,56 +16,57 @@ buildButtonBar: builder
 		model: self;
 		label: 'Commit';
 		action: #actionCommit;
-		help: ''.
+		help: 'Commit your current changes.'.
 
 	pullButton := builder pluggableActionButtonSpec new.
 	pullButton
 		model: self;
 		label: 'Pull';
 		action: #actionPull;
-		help: ''.
+		help: 'Pull commits from a remote.'.
 
 	pushButton := builder pluggableActionButtonSpec new.
 	pushButton
 		model: self;
 		label: 'Push';
 		action: #actionPush;
-		help: ''.
+		help: 'Push commits to a remote.'.
 		
 	fetchButton := builder pluggableActionButtonSpec new.
 	fetchButton
 		model: self;
 		label: 'Fetch';
 		action: #actionFetch;
-		help: ''.
+		help: 'Fetch commits from remotes.'.
 
 	branchButton := builder pluggableActionButtonSpec new.
 	branchButton
 		model: self;
 		label: 'Branch';
 		action: #actionBranch;
-		help: ''.
+		help: 'Create a new branch.'.
 
 	mergeButton := builder pluggableActionButtonSpec new.
 	mergeButton
 		model: self;
 		label: 'Merge';
+		enabled: false;
 		action: #actionMerge;
-		help: ''.
-
-	feedbackButton := builder pluggableActionButtonSpec new.
-	feedbackButton
-		model: self;
-		label: 'Feedback';
-		action: #actionFeedback;
-		help: ''.
+		help: 'Merge another branch into your current one. Available soon...'.
 
 	settingsButton := builder pluggableActionButtonSpec new.
 	settingsButton
 		model: self;
 		label: 'Settings';
 		action: #actionSettings;
-		help: ''.
+		help: 'Edit your global Git settings.'.
+
+	feedbackButton := builder pluggableActionButtonSpec new.
+	feedbackButton
+		model: self;
+		label: 'Feedback';
+		action: #actionFeedback;
+		help: 'Send feedback to the tool maintainers.'.
 
 	buttonBar children addAll: {
 		commitButton. pullButton. pushButton. fetchButton. branchButton. mergeButton.

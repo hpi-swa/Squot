@@ -4,4 +4,5 @@ addModelItemsToWindowMenu: aMenu
 	aMenu
 		add: 'self-update...'
 		target: self
-		selector: #actionSelfUpdate
+		selector: #actionSelfUpdate.
+	aMenu balloonTextForLastItem: 'Update and reopen Git Browser.'

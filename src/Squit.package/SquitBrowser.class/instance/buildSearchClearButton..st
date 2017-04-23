@@ -4,5 +4,5 @@ buildSearchClearButton: builder
 		model: self;
 		label: 'Clear';
 		action: #actionClearSearch;
-		help: '';
+		help: 'Clear your search.';
 		frame: (0.9@0 corner: 1@1)

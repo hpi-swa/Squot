@@ -1,7 +1,7 @@
 actions
 actionObjectPackageAdd
 	| packageNames selection workingDir path subPath |
-	packageNames := (PackageOrganizer default packageNames
+	packageNames := (SystemOrganizer default categories
 		copyWithoutAll: (self packagesInCurrentStore)) sorted.
 	selection := UIManager default
 		chooseMultipleFrom: packageNames

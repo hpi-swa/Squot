@@ -22,7 +22,7 @@ diffRoots
 						(SquotDiffNode title: path content: nil children: nodes)]]].
 	(proposed keys reject: [:each | original includesKey: each]) do: [:path | | proposedArtifact diff |
 		proposedArtifact := proposed at: path.
-		diff := (SquotAbsentArtifact newFrom: proposedArtifact) diffAgainst: proposedArtifact.
+		diff := proposedArtifact absentCopy diffAgainst: proposedArtifact.
 		diffs at: path put: diff.
 		diff topNodes ifNotEmpty: [:nodes |
 			diffRootNodes add:

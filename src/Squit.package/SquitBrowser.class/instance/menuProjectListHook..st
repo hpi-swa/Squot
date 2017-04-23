@@ -7,6 +7,7 @@ menuProjectListHook: aMenu
 	}.
 	aMenu addLine.
 	aMenu addList: {
+		{'Edit credentials for project'. #actionCredentialsEdit}.
 		{'Edit project-level git user name/email'. #actionGitUserEdit}
 	}.
 	aMenu addLine.

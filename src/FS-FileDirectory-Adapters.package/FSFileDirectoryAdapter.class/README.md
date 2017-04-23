@@ -1,0 +1,1 @@
+Provides part of the interface of FileDirectory for a FSReference.

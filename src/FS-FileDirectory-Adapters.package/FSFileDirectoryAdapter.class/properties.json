@@ -1,0 +1,14 @@
+{
+	"category" : "FS-FileDirectory-Adapters",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "jr 4/23/2017 23:02",
+	"instvars" : [
+		"reference" ],
+	"name" : "FSFileDirectoryAdapter",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }

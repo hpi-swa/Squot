@@ -1,0 +1,9 @@
+{
+	"class" : {
+		"onEntry:" : "jr 4/23/2017 23:23" },
+	"instance" : {
+		"convertFromSystemName" : "jr 4/23/2017 23:25",
+		"entry:" : "jr 4/23/2017 23:24",
+		"fileSize" : "jr 4/23/2017 23:28",
+		"isDirectory" : "jr 4/23/2017 23:26",
+		"modificationTime" : "jr 4/23/2017 23:27" } }

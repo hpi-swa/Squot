@@ -1,0 +1,3 @@
+filenames
+tocFileName
+	^ '.squot.ston'

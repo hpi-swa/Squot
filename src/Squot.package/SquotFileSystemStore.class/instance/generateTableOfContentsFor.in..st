@@ -5,5 +5,5 @@ generateTableOfContentsFor: aSnapshot in: aDirectory
 	aSnapshot artifactsDo: [:each |
 		each wantsToBeInTableOfContents
 			ifTrue: [ toc at: each path put: (each storeInfo at: #serializer) ]].
-	directory / '_squot-table-of-contents' writeStreamDo: [:stream |
+	directory / self class tocFileName writeStreamDo: [:stream |
 		STON squotPut: toc onStream: stream].

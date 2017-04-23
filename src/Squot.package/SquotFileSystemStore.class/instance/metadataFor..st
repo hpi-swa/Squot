@@ -1,7 +1,8 @@
 private metadata access
 metadataFor: anArtifact
 	"See also #readSquotMetadataForObjectAt:"
-	| reference |
+	| fileName reference |
+	fileName := self class metadataFileName.
 	^ SquotObjectMetadata on: ((reference := directory resolve: anArtifact path) isDirectory
-		ifTrue: [reference / '_squot-contents']
-		ifFalse: ["for single files" reference, 'squot-contents'])
+		ifTrue: [reference / fileName]
+		ifFalse: ["for single files" reference, fileName])

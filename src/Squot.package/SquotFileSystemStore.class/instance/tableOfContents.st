@@ -1,6 +1,6 @@
 private
 tableOfContents
-	(directory / '_squot-table-of-contents') readStreamDo: [:stream |
+	(directory / self class tocFileName) readStreamDo: [:stream |
 		stream ascii.
 		^ STON fromStreamWithComments: stream]
 		ifAbsent: [ | notification |

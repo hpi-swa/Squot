@@ -9,12 +9,14 @@ actionObjectPackageAdd
 		title: 'Choose Packages To Track:'.
 	selection ifNil: [^ self].
 	selection ifEmpty: [UIManager default inform: 'Nothing selected.'. ^ self].
-	workingDir := self projectSelection repository gitRepository repository workingDir pathString.
-	path := SquitSubFolderList modalFolderSelector: (FileDirectory on: workingDir).
+	workingDir := SquitRepositoryFilesystemExtension new
+		repository: self projectSelection repository;
+		forVersion: self branchSelection historian version.
+	path := SquitSubFolderList modalFolderSelector: (FSFileDirectoryAdapter on: workingDir).
 	path ifNil: [^ self].
-	(path pathName beginsWith: workingDir)
+	(path pathName beginsWith: workingDir pathString)
 		ifFalse: [UIManager default inform: 'No subdirectory selected.'. ^ self].
-	subPath := path pathName allButFirst: workingDir size.
+	subPath := path pathName allButFirst: workingDir pathString size.
 	subPath ifNotEmpty: [
 		subPath first asString = FileDirectory slash
 			ifTrue: [subPath := subPath allButFirst]].

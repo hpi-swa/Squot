@@ -2,6 +2,17 @@ ui menu
 menuProjectListHook: aMenu
 	<menuProjectList>
 	aMenu addList: {
+		{'Add project'. #actionProjectAdd}.
+		{'Rename project'. #actionProjectRename}.
+		{'Remove project'. #actionProjectRemove}.
+	}.
+	aMenu addLine.
+	aMenu addList: {
+		{'Start tracking packages'. #actionObjectPackageAdd. 'Add new packages to this project.'}.
+		{'Stop tracking packages'. #actionObjectPackageRemove. 'Remove packages from this project.'}.
+	}.
+	aMenu addLine.
+	aMenu addList: {
 		{'Add remote'. #actionRemoteAdd}.
 		{'Remove remote'. #actionRemoteRemove}
 	}.
@@ -12,8 +23,6 @@ menuProjectListHook: aMenu
 	}.
 	aMenu addLine.
 	aMenu addList: {
-		{'Add project'. #actionProjectAdd}.
-		{'Rename project'. #actionProjectRename}.
-		{'Remove project'. #actionProjectRemove}.
+		{'Explore SquotWorkingCopy'. #actionSquotWorkingCopyExplore}.
 	}.
 	^ aMenu

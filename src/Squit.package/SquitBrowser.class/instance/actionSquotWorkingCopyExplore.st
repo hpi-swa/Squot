@@ -1,0 +1,3 @@
+actions
+actionSquotWorkingCopyExplore
+	self projectSelection explore 

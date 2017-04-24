@@ -18,7 +18,7 @@ First install the latest [Metacello](//github.com/dalehenrich/metacello-work), t
 ```smalltalk
 Metacello new
   baseline: 'Squot';
-  repository: 'github://j4yk/Squot:master/src';
+  repository: 'github://hpi-swa/Squot:master/src';
   load.
 ```
 
@@ -74,5 +74,5 @@ Here a do-it for Windows users (requires OSProcess):
 OSProcess command: 'cmd /C start /D "', (squitRepository gitRepository repository baseDir path printWithDelimiter: $\), '" gitk --all'.
 ```
 
-[travis]: https://travis-ci.org/j4yk/Squot
-[travis_badge]: https://travis-ci.org/j4yk/Squot.svg?branch=master
+[travis]: https://travis-ci.org/hpi-swa/Squot
+[travis_badge]: https://travis-ci.org/hpi-swa/Squot.svg?branch=master

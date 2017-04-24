@@ -1,3 +1,3 @@
 filenames
 tocFileName
-	^ '.squot.ston'
+	^ '.squot'

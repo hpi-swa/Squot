@@ -1,3 +1,3 @@
 filenames
 metadataFileName
-	^ '.squot-contents.ston'
+	^ '.squot-contents'

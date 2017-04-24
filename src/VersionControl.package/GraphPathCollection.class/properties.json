@@ -1,0 +1,14 @@
+{
+	"category" : "VersionControl-Algorithms",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "jr 4/24/2017 15:19",
+	"instvars" : [
+		"paths" ],
+	"name" : "GraphPathCollection",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }

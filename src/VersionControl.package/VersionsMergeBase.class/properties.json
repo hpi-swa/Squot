@@ -1,0 +1,15 @@
+{
+	"category" : "VersionControl-Algorithms",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"inputVersions",
+		"baseVersion" ],
+	"name" : "VersionsMergeBase",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }

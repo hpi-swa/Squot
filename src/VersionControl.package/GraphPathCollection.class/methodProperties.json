@@ -1,0 +1,10 @@
+{
+	"class" : {
+		 },
+	"instance" : {
+		"add:asParentOf:" : "jr 4/24/2017 15:13",
+		"addEdgeFrom:to:" : "jr 4/24/2017 15:17",
+		"addTarget:" : "jr 4/24/2017 15:18",
+		"hasPathFrom:to:" : "jr 4/24/2017 15:18",
+		"hasPathFrom:toAnyOf:" : "jr 4/24/2017 15:19",
+		"initialize" : "jr 4/24/2017 15:13" } }

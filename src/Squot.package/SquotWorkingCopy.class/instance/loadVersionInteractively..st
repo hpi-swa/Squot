@@ -8,11 +8,5 @@ loadVersionInteractively: aVersion
 		on: SquotNoTableOfContentsFound do: [:e |
 			(self packageDirectoriesIn: e rootDirectory) do:
 				[:each | self addPackageInfoForDirectory: each at: (each relativeTo: e rootDirectory)].
-			e pass]
-.	(self composeSnapshotInteractivelyFrom: store captureSnapshot
-		to: snapshot
-		title: 'Selected changes to load')
-		ifNil: [^ false]
-		ifNotNil: [:effectiveSnapshot |
-			store restoreToSnapshot: effectiveSnapshot.
-			^ true].
+			e pass].
+	^ self loadSnapshotInteractively: snapshot

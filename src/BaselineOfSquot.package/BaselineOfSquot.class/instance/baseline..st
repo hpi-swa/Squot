@@ -37,8 +37,9 @@ baseline: spec
 				spec requires: #('FS-Tests-Core' ). ];
 			package: 'FS-Tests-AnsiStreams' with: [
 				spec requires: #('FS-Tests-Core' ). ];
+			package: 'VersionControl';
 			package: 'Squot' with: [
-				spec requires: #('FS-Core' 'Ston' ). ];
+				spec requires: #('FS-Core' 'Ston' 'VersionControl' ). ];
 			package: 'Pharo-compatibility';
 			package: 'FileSystem-Git' with: [
 				spec requires: #('FS-Core' 'FS-Disk' 'FS-Memory' 'FS-AnsiStreams' 'FS-Tests-Core' 'Pharo-compatibility' 'INIFile' ). ];

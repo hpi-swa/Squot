@@ -12,4 +12,4 @@ testSnapshotClass
 	self assert: (classDirectory / 'instance') isDirectory.
 	self assert: (classDirectory / 'instance' / (testSelector, '.st')) isFile.
 	self assert: (fileStore tableOfContents includesKey: ((classDirectory relativeTo: fileStore directory) printWithDelimiter: $/)).
-	self assert: (classDirectory / SquotFileSystemStore metadataFileName) isFile.
+	self assert: (classDirectory / SquotObjectMetadata metadataFileName) isFile.

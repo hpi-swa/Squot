@@ -1,6 +1,6 @@
 private
 tableOfContents
-	(directory / self class tocFileName) readStreamDo: [:stream |
+	(self tableOfContentsFileIn: directory) readStreamDo: [:stream |
 		stream ascii.
 		^ STON fromStreamWithComments: stream]
 		ifAbsent: [ | notification |

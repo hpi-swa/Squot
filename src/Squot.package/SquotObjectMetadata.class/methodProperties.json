@@ -1,7 +1,9 @@
 {
 	"class" : {
-		"forObjectAt:" : "jr 4/9/2017 15:58",
-		"on:" : "jr 1/18/2017 16:01" },
+		"forObjectAt:" : "jr 4/24/2017 18:23",
+		"metadataFileName" : "jr 4/24/2017 18:23",
+		"on:" : "jr 1/18/2017 16:01",
+		"referenceToMetadataFileForDirectory:" : "jr 4/24/2017 18:22" },
 	"instance" : {
 		"applyTo:" : "jr 3/8/2017 16:06",
 		"artifactClass" : "jr 3/8/2017 16:10",

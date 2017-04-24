@@ -9,4 +9,4 @@ testSnapshotPackage
 	self assert: (packageDirectory / 'properties.json') isFile.
 	classDirectory := packageDirectory / (sampleClass name, '.class').
 	self assert: classDirectory isDirectory.
-	self assert: (packageDirectory / '_squot-contents') isFile.
+	self assert: (packageDirectory / SquotObjectMetadata metadataFileName) isFile.

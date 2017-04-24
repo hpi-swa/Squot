@@ -3,7 +3,8 @@
 		"addDeserializerFactory:" : "jr 1/27/2017 14:33",
 		"inDirectory:" : "jr 1/29/2017 22:41",
 		"initialize" : "jr 3/8/2017 17:34",
-		"removeDeserializerFactory:" : "jr 1/27/2017 14:33" },
+		"removeDeserializerFactory:" : "jr 1/27/2017 14:33",
+		"tocFileName" : "fn 4/23/2017 19:13" },
 	"instance" : {
 		"/" : "jr 1/27/2017 15:07",
 		"artifactReferencesDo:" : "jr 1/29/2017 21:57",
@@ -13,10 +14,10 @@
 		"directory" : "jr 1/27/2017 15:07",
 		"doNotStoreMetadata" : "jr 3/7/2017 17:38",
 		"findDirectoryWithPackages:ifNone:" : "jr 4/13/2017 18:47",
-		"generateTableOfContentsFor:in:" : "jr 4/9/2017 16:00",
+		"generateTableOfContentsFor:in:" : "fn 4/23/2017 19:07",
 		"initialize" : "jr 3/8/2017 16:47",
 		"initializeWith:" : "jr 1/27/2017 15:07",
-		"metadataFor:" : "jr 4/9/2017 15:57",
+		"metadataFor:" : "jr 4/24/2017 17:51",
 		"metadataForObjectAt:" : "jr 1/27/2017 14:33",
 		"packageDirectoriesIn:" : "jr 4/13/2017 18:46",
 		"pathOf:" : "jr 3/11/2017 01:00",
@@ -33,4 +34,5 @@
 		"storeOrdinary:" : "jr 3/7/2017 17:39",
 		"storeSquotMetadataFor:" : "jr 2/21/2017 13:54",
 		"storeUnrecordedFiles:" : "jr 3/7/2017 13:20",
-		"tableOfContents" : "jr 4/13/2017 19:11" } }
+		"tableOfContents" : "jr 4/24/2017 17:47",
+		"tableOfContentsFileIn:" : "jr 4/24/2017 18:45" } }

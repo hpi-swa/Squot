@@ -2,7 +2,7 @@ instance creation
 forObjectAt: aFileReference
 	| metadataFile |
 	metadataFile := (aFileReference isDirectory
-		ifTrue: [aFileReference / '_squot-contents']
+		ifTrue: [self referenceToMetadataFileForDirectory: aFileReference]
 		ifFalse: ["for single files"
-			aFileReference parent / (aFileReference basename, '.squot-contents')]).
+			aFileReference parent / (aFileReference basename, self metadataFileName)]).
 	^ self on: metadataFile

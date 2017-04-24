@@ -11,6 +11,14 @@ baseline: spec
 				spec
 					repository: 'github://dalehenrich/filetree:squeak4.3/repository'. ].
 		spec 
+			package: 'WebClient-Core' with: [
+				spec
+					repository: 'http://source.squeak.org/trunk';
+					file: 'WebClient-Core-jr.104'. ];
+			package: 'WebClient-HTTP' with: [
+				spec
+					repository: 'http://source.squeak.org/trunk';
+					file: 'WebClient-HTTP-cmm.6'. ];
 			package: 'INIFile' with: [
 				spec
 					repository: 'http://www.squeaksource.com/INIFile';

@@ -1,3 +1,3 @@
 constants
 selfUpdateRepository
-	^ 'https://github.com/j4yk/Squot.git'
+	^ 'https://github.com/hpi-swa/Squot.git'

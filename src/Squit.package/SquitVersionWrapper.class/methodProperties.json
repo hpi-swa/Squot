@@ -2,8 +2,10 @@
 	"class" : {
 		"on:" : "fn 4/11/2017 12:26" },
 	"instance" : {
-		"asString" : "fn 4/14/2017 22:38",
+		"asString" : "fn 4/24/2017 18:21",
 		"balloonText" : "fn 4/14/2017 22:35",
+		"formatDate:" : "fn 4/24/2017 18:29",
+		"makeTwoDigitString:" : "fn 4/24/2017 18:09",
 		"summary" : "fn 4/14/2017 22:44",
 		"version" : "fn 4/11/2017 12:22",
 		"version:" : "fn 4/11/2017 12:22" } }

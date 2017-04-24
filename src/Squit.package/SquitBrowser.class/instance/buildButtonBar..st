@@ -15,6 +15,7 @@ buildButtonBar: builder
 	commitButton
 		model: self;
 		label: 'Commit';
+		enabled: #hasProjectSelection;
 		action: #actionCommit;
 		help: 'Commit your current changes.'.
 
@@ -22,13 +23,15 @@ buildButtonBar: builder
 	pullButton
 		model: self;
 		label: 'Pull';
+		enabled: false;
 		action: #actionPull;
-		help: 'Pull commits from a remote.'.
+		help: 'Pull commits from a remote. Available soon...'.
 
 	pushButton := builder pluggableActionButtonSpec new.
 	pushButton
 		model: self;
 		label: 'Push';
+		enabled: #hasBranchSelection;
 		action: #actionPush;
 		help: 'Push commits to a remote.'.
 		
@@ -36,6 +39,7 @@ buildButtonBar: builder
 	fetchButton
 		model: self;
 		label: 'Fetch';
+		enabled: #hasProjectSelection;
 		action: #actionFetch;
 		help: 'Fetch commits from remotes.'.
 
@@ -43,6 +47,7 @@ buildButtonBar: builder
 	branchButton
 		model: self;
 		label: 'Branch';
+		enabled: #hasBranchSelection;
 		action: #actionBranch;
 		help: 'Create a new branch.'.
 
@@ -51,7 +56,7 @@ buildButtonBar: builder
 		model: self;
 		label: 'Merge';
 		enabled: false;
-		action: #actionMerge;
+		action: #hasCommitSelection;
 		help: 'Merge another branch into your current one. Available soon...'.
 
 	settingsButton := builder pluggableActionButtonSpec new.

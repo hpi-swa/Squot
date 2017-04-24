@@ -6,6 +6,7 @@ squotMergeWith: aMCSnapshot basedOn: aSquotArtifact
 				target: aMCSnapshot
 				ancestor: (aSquotArtifact contentOfSameTypeAs: self)]
 		on: MCNoChangesException do: [:e | e resume].
-	merger isMerged
-		ifTrue: [^ merger mergedSnapshot]
-		ifFalse: [self notYetImplemented. "Deal with conflicts"]
+	merger isMerged ifFalse:
+		[((MCMergeResolutionRequest new merger: merger) signal: 'Preparing merge')
+			ifFalse: [self error: 'There is no different means to resolve conflicts yet.']].
+	^ merger mergedSnapshot

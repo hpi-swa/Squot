@@ -4,8 +4,10 @@
 		"initialize" : "fn 4/11/2017 15:11",
 		"open" : "fn 4/11/2017 09:09",
 		"registerInWorldMenu" : "jr 4/15/2017 13:34",
-		"selfUpdate" : "fn 4/18/2017 09:33",
+		"selfUpdate" : "jr 4/26/2017 15:24",
+		"selfUpdateFromMetacello" : "jr 4/26/2017 15:20",
 		"selfUpdateRepository" : "fn 4/18/2017 09:20",
+		"selfUpdateWithSquot:" : "jr 4/26/2017 15:25",
 		"unload" : "jr 4/15/2017 13:28",
 		"unregisterFromWorldMenu" : "jr 4/15/2017 14:25" },
 	"instance" : {

@@ -1,4 +1,4 @@
-actions
+user requests
 categoriesPlusPrefixes
 	^ (SystemOrganizer default categories gather: [:each | | eachSplitted |
 		eachSplitted := each splitBy: '-'.

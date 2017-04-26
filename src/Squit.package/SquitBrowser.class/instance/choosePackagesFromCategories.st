@@ -1,4 +1,4 @@
-actions
+user requests
 choosePackagesFromCategories
 	"self new choosePackagesFromCategories"
 	| packageNames selection alreadyTrackedPackageNames |

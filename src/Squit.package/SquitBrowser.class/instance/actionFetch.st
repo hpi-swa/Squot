@@ -1,16 +1,9 @@
 actions
 actionFetch
-	| gitRepository remoteNames selection |
+	| gitRepository remoteNames |
 	gitRepository := self projectSelection repository gitRepository.
-	remoteNames := gitRepository remoteNames select:
-		[:each | (gitRepository remoteUrl: each) beginsWith: 'http'].
-	selection := remoteNames size = 1
-		ifTrue: [remoteNames]
-		ifFalse: [UIManager default
-			chooseMultipleFrom: remoteNames
-			values: remoteNames
-			title: 'Choose Remotes (http only):'].
-	selection ifNil: [^ self].
-	selection ifEmpty: [UIManager default inform: 'Nothing selected.'. ^ self].
-	gitRepository fetchFromAll: selection.
+	remoteNames := self chooseRemotesFrom: gitRepository.
+	remoteNames ifNil: [^ self].
+	remoteNames ifEmpty: [UIManager default inform: 'Nothing selected.'. ^ self].
+	gitRepository fetchFromAll: remoteNames.
 	self refresh.

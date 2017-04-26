@@ -1,12 +1,22 @@
 actions
 actionBranchPush
-	| historian branchName repository remoteName remoteUrl |
+	| historian branchName repository gitRepository |
 	historian := self branchSelection historian.
 	branchName := historian name.
 	repository := self projectSelection repository.
-	remoteName := repository gitRepository repository configAt: 'branch.', branchName, '.remote'.
-	remoteUrl := repository gitRepository remoteUrl: remoteName.
-	(self ensureCredentials: repository remoteUrl: remoteUrl) ifFalse: [^ self].
-	self projectSelection repository
+	gitRepository := repository gitRepository.
+	[self projectSelection repository
 		exportToUpstream: historian
-		ifNone: [UIManager default inform: 'No upstream branch configured for ', branchName]
+		ifNone: [ | remoteName |
+			(UIManager default confirm: 'No upstream remote configured for branch ', branchName, '. Would you like to set one?')
+				ifFalse: [^ self].
+			remoteName := self chooseOneRemoteFrom: gitRepository.
+			remoteName ifNil: [^ self].
+			gitRepository repository setUpstreamRemoteOfBranchNamed: branchName to: remoteName.
+			^ self actionBranchPush "try again"]]
+	on: NeedGitCredentials do: [:e | | credentials |
+		credentials :=
+			self requestAndStoreCredentialsFor: repository
+				remoteUrl: e repositoryUrl asString
+				ifCanceled: [^ self].
+		e resume: credentials]

@@ -1,10 +1,9 @@
-actions
-ensureCredentials: repository remoteUrl: remoteUrl
+user requests
+requestAndStoreCredentialsFor: repository remoteUrl: remoteUrl ifCanceled: cancelBlock
 	| newUser newPassword |
-	(repository credentialsFor: remoteUrl) ifNotNil: [^ true].
 	newUser := UIManager default request: 'Enter username'.
-	newUser ifEmpty: [^ false].
+	newUser ifEmpty: [^ cancelBlock value].
 	newPassword := UIManager default requestPassword: 'Enter password:'.
-	newPassword ifEmpty: [^ false].
+	newPassword ifEmpty: [^ cancelBlock value].
 	repository addCredentialsFor: remoteUrl user: newUser password: newPassword.
-	^ true
+	^ repository credentialsFor: remoteUrl

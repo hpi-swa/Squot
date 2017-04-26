@@ -1,26 +1,21 @@
 ui toolbuilder
 chooserWidgetSpecs: builder
-	^ {builder pluggableListSpec new
-		name: 'list of changed artifacts';
+	^ {builder pluggableTreeSpec new
+		name: 'hierarchical diff';
 		model: self;
-		list: #changedArtifacts;
-		getIndex: #selectedIndex;
-		setIndex: #selectedIndex:;
-		menu: #changedArtifactsMenu:shifted:;
-		keyPress: #changedArtifactsKey:from:;
-		frame: (LayoutFrame
-			fractions: (0@0 corner: 1@1)
-			offsets: (0@0 corner: 0@ -25));
+		nodeClass: SquotDiffNodeTreeWrapper;
+		roots: #rootNodes;
+		label: #nodeLabelOf:;
+		getSelected: #selectedNode;
+		setSelected: #selectNode:;
+		getChildren: #childNodesOf:;
+		hasChildren: #hasChildren:;
+		menu: #diffNodeMenu:shifted:;
+		frame: (0@0 corner: 0.4@1);
 		yourself.
 	builder pluggableTextSpec new
-		name: 'change summary for selected artifact';
+		name: 'diff text for selected item';
 		model: self;
-		getText: #selectionSummary;
-		readOnly: true;
-		indicateUnacceptedChanges: false;
-		frame: (LayoutFrame new
-			leftFraction: 0 offset: 0;
-			topFraction: 1 offset: -25;
-			rightFraction: 1 offset: 0;
-			bottomFraction: 1 offset: 0);
+		getText: #diffText;
+		frame: (0.4@0 corner: 1@1);
 		yourself}

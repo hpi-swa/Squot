@@ -15,15 +15,13 @@ buildButtonBar: builder
 	cancelButton
 		model: self;
 		label: 'Cancel';
-		action: #actionCancel;
-		help: ''.
+		action: #actionCancel.
 		
 	commitButton := builder pluggableButtonSpec new.
 	commitButton
 		model: self;
 		label: 'Commit';
-		action: #actionCommit;
-		help: ''.
+		action: #actionCommit.
 	
 	buttonBar children addAll: {cancelButton. commitButton}.
 	^ buttonBar

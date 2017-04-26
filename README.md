@@ -71,7 +71,7 @@ program on the repository.
 
 Here a do-it for Windows users (requires OSProcess):
 ```smalltalk
-OSProcess command: 'cmd /C start /D "', (squitRepository gitRepository repository baseDir path printWithDelimiter: $\), '" gitk --all'.
+OSProcess command: 'cmd /C start /D "', (squitRepository gitRepository repository baseDir pathString), '" gitk --all'.
 ```
 
 [travis]: https://travis-ci.org/hpi-swa/Squot

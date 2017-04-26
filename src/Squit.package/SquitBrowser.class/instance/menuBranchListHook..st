@@ -5,6 +5,7 @@ menuBranchListHook: aMenu
 		{'Switch to this branch'. #actionBranchSwitch}.
 		"{'Merge branch'. #actionBranchMerge. 'Merge another branch into your current one.'}."
 		{'Push branch'. #actionBranchPush}.
+		{'Set upstream branch of this branch'. #actionSetUpstreamBranch}
 	}.
 	aMenu addLine.
 	aMenu addList: {

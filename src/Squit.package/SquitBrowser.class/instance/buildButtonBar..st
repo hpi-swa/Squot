@@ -25,7 +25,7 @@ buildButtonBar: builder
 		label: 'Pull';
 		enabled: #hasBranchSelection;
 		action: #actionPull;
-		help: 'Pull commits from a remote.'.
+		help: 'Pull commits into the active branch from its tracked remote branch.'.
 
 	pushButton := builder pluggableActionButtonSpec new.
 	pushButton

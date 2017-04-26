@@ -13,7 +13,8 @@
 		"objectCache",
 		"commitForCache",
 		"timeOfLastListUpdate",
-		"searchTerm" ],
+		"searchTerm",
+		"offeredToAddFirstProject" ],
 	"name" : "SquitBrowser",
 	"pools" : [
 		 ],

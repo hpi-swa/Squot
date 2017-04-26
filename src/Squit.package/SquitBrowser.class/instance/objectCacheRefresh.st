@@ -5,5 +5,5 @@ objectCacheRefresh
 		ifNil: [#()]
 		ifNotNil: [:commit |
 			commitForCache := commit.
-			commit snapshot artifacts values
-				collect: [:artifact | SquitArtifactWrapper on: artifact]]
+			(commit snapshot artifacts values
+				collect: [:artifact | SquitArtifactWrapper on: artifact]) sorted]

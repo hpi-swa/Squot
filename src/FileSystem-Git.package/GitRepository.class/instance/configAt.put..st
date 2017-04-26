@@ -12,5 +12,6 @@ configAt: aNameString put: value
 	config section: sectionName at: key put: value asString.
 	self configFile writeStreamDo: [:stream |
 		stream lineEndConvention: #lf.
-		config writeOn: stream].
+		config writeOn: stream.
+		stream truncate].
 	^ value

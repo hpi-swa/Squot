@@ -23,9 +23,9 @@ buildButtonBar: builder
 	pullButton
 		model: self;
 		label: 'Pull';
-		enabled: false;
+		enabled: #hasBranchSelection;
 		action: #actionPull;
-		help: 'Pull commits from a remote. Available soon...'.
+		help: 'Pull commits from a remote.'.
 
 	pushButton := builder pluggableActionButtonSpec new.
 	pushButton

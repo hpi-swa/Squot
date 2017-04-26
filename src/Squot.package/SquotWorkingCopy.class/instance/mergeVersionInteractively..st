@@ -4,8 +4,13 @@ mergeVersionInteractively: aVersion
 	| mergeBase aVersionIsAncestor fastForwardPossible mergeSnapshot |
 	self flag: #optimize. "work with diffs, not whole snapshots"
 	mergeBase := aVersion mergeBaseWith: self baseVersion.
+	mergeBase ifNil:
+		["the versions have no common base version, fall back to load"
+		(self loadSnapshotInteractively: aVersion snapshot) ifTrue:
+			[self addParentVersion: aVersion].
+		^ self].
 	aVersionIsAncestor := mergeBase = aVersion.
-	aVersionIsAncestor ifTrue: [^ self inform: 'This version already is an ancestor of the head of the active branch ', loadedHistorian name, '.'].
+	aVersionIsAncestor ifTrue: [^ self inform: 'Merge version already is an ancestor of the head of the active branch ', loadedHistorian name, '.'].
 	fastForwardPossible := mergeBase = self baseVersion.
 	mergeSnapshot :=
 		store captureSnapshot

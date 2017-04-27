@@ -1,5 +1,6 @@
 ui
 branchList
+	repositoryExists ifFalse: [^ #('-- Repository disappeared --')].
 	^ #('-- Branches --'),
 		(self projectSelection
 			ifNil: [#()]

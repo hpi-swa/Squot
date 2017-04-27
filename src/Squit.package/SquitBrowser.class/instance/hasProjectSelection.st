@@ -1,3 +1,5 @@
 ui
 hasProjectSelection
-	^ self projectSelection notNil
+	^ self projectSelection
+		ifNil: [false]
+		ifNotNil: [:project | repositoryExists := project repository exists]

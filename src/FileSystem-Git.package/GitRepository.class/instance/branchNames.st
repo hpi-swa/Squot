@@ -1,8 +1,10 @@
 public-accessing-objects
 branchNames
 	| looseBranchNames packedRefs packedBranchNames |
-	looseBranchNames := self headsDir allFiles
-		collect: [:each | self refFromFile: each relativeTo: self headsDir].
+	looseBranchNames := #().
+	self headsDir exists ifTrue:
+		[looseBranchNames := self headsDir allFiles
+			collect: [:each | self refFromFile: each relativeTo: self headsDir]].
 	packedRefs := self packedRefs.
 	packedRefs ifNil: [^ looseBranchNames].
 	packedBranchNames := OrderedCollection new.

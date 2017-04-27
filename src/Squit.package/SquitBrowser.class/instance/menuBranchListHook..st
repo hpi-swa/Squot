@@ -2,6 +2,7 @@ ui menu
 menuBranchListHook: aMenu
 	<menuBranchList>
 	| activeBranchName |
+	self hasBranchSelection ifFalse: [^ aMenu].
 	aMenu addList: {
 		{'Switch to this branch'. #actionBranchSwitch}
 	}.

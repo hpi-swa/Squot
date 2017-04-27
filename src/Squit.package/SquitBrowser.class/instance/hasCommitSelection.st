@@ -1,3 +1,3 @@
 ui
 hasCommitSelection
-	^ self commitSelection notNil
+	^ self commitSelection notNil and: [self hasProjectSelection]

@@ -1,7 +1,7 @@
 actions
 actionMerge
 	| mergeHeadCommit |
-	self projectSelection ifNil: [^ self].
-	self commitSelection ifNil: [^ self].
+	self hasProjectSelection ifFalse: [^ self].
+	self hasCommitSelection ifFalse: [^ self].
 	mergeHeadCommit := self commitSelection.
 	self mergeVersionIntoActiveBranch: mergeHeadCommit.

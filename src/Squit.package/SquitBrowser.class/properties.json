@@ -14,7 +14,8 @@
 		"commitForCache",
 		"timeOfLastListUpdate",
 		"searchTerm",
-		"offeredToAddFirstProject" ],
+		"offeredToAddFirstProject",
+		"repositoryExists" ],
 	"name" : "SquitBrowser",
 	"pools" : [
 		 ],

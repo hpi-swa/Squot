@@ -37,6 +37,8 @@ baseline: spec
 				spec requires: #('FS-Tests-Core' ). ];
 			package: 'FS-Tests-AnsiStreams' with: [
 				spec requires: #('FS-Tests-Core' ). ];
+			package: 'FS-FileDirectory-Adapters' with: [
+				spec requires: #('FS-Core'). ];
 			package: 'VersionControl';
 			package: 'Squot' with: [
 				spec requires: #('FS-Core' 'Ston' 'VersionControl' ). ];
@@ -44,7 +46,7 @@ baseline: spec
 			package: 'FileSystem-Git' with: [
 				spec requires: #('FS-Core' 'FS-Disk' 'FS-Memory' 'FS-AnsiStreams' 'FS-Tests-Core' 'Pharo-compatibility' 'INIFile' ). ];
 			package: 'Squit' with: [
-				spec requires: #('FileSystem-Git' 'Squot' ). ].
+				spec requires: #('FileSystem-Git' 'Squot' 'FS-FileDirectory-Adapters' ). ].
 		spec 
 			group: 'FileSystemGit' with: #('FileSystem-Git' );
 			group: 'FileSystem' with: #('FS-Core' 'FS-Disk' 'FS-Memory' 'FS-AnsiStreams' );

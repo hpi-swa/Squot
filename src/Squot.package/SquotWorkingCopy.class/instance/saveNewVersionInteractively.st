@@ -3,6 +3,7 @@ saveNewVersionInteractively
 	| snapshotBuilder loadedSnapshot baseSnapshot selectedChanges tool finalSnapshot newVersion |
 	self flag: #optimize. "snapshotting and diffing"
 	baseSnapshot := self baseSnapshot.
+	self addGlobalObjectsToStore: baseSnapshot.
 	tool := SquotSaveVersionDialog new
 		parentVersions: self parentVersions;
 		originalArtifacts: baseSnapshot;

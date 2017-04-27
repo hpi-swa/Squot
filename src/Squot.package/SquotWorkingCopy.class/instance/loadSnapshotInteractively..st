@@ -4,6 +4,7 @@ loadSnapshotInteractively: aSnapshot
 	Answer true if the load was accepted, false if it was canceled."
 	| effectiveSnapshot |
 	self flag: #optimize. "work with diffs, not whole snapshots"
+	self addGlobalObjectsToStore: aSnapshot.
 	effectiveSnapshot :=
 		(self composeSnapshotInteractivelyFrom: store captureSnapshot
 			to: aSnapshot

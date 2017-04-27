@@ -57,7 +57,7 @@ buildButtonBar: builder
 		label: 'Merge';
 		enabled: #hasCommitSelection;
 		action: #actionMerge;
-		help: 'Merge another branch into your current one. Available soon...'.
+		help: 'Merge selected commit into the active branch.'.
 
 	settingsButton := builder pluggableActionButtonSpec new.
 	settingsButton

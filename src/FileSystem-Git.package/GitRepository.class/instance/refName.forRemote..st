@@ -4,4 +4,5 @@ refName: refName forRemote: remoteName
 	branch := (refName beginsWith: 'refs/heads/')
 		ifTrue: [refName allButFirst: 'refs/heads/' size]
 		ifFalse: [refName].
+	self flag: 'TODO: adhere to fetch spec (remote.name.fetch)'.
 	^ 'refs/remotes/', remoteName, '/', branch

@@ -3,7 +3,7 @@ actionSubmit
 	self actionTitle ifEmpty: [self error: 'No title provided.'].
 	self actionMessage ifEmpty: [self error: 'No message provided.'].
 	WebClient 
-		htmlSubmit: 'https://squot.fniephaus.com/create.php'
+		htmlSubmit: 'http://squot.fniephaus.com/create.php'
 		fields: {
 			'title' -> self actionTitle.
 			'message' -> self actionMessage.

@@ -2,9 +2,10 @@ creating new versions
 saveNewVersionInteractively
 	| snapshotBuilder loadedSnapshot baseSnapshot selectedChanges tool finalSnapshot newVersion |
 	self flag: #optimize. "snapshotting and diffing"
+	baseSnapshot := self baseSnapshot.
 	tool := SquotSaveVersionDialog new
 		parentVersions: self parentVersions;
-		originalArtifacts: (baseSnapshot := self baseSnapshot);
+		originalArtifacts: baseSnapshot;
 		proposeArtifacts: (loadedSnapshot := store captureSnapshot);
 		controllerForIgnores: self;
 		yourself.

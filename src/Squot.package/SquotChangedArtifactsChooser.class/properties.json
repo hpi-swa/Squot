@@ -13,7 +13,10 @@
 		"controllerForIgnores",
 		"ignored",
 		"selectedIndex",
-		"canceled" ],
+		"canceled",
+		"rootNodes",
+		"artifactDiffs",
+		"selectedNode" ],
 	"name" : "SquotChangedArtifactsChooser",
 	"pools" : [
 		 ],

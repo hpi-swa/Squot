@@ -2,11 +2,9 @@ baseline
 baseline: spec
 	<baseline>
 	spec for: #'common' do: [
-		spec project: 'Ston' with: [
+		spec baseline: 'Ston' with: [
 				spec
-					className: 'ConfigurationOfSton';
-					versionString: #'stable';
-					repository: 'http://www.smalltalkhub.com/mc/SvenVanCaekenberghe/STON/main' ].
+					repository: 'github://fniephaus/ston:fniephaus-patch-3/repository' ].
 		spec baseline: 'FileTree' with: [
 				spec
 					repository: 'github://dalehenrich/filetree:squeak4.3/repository'. ].

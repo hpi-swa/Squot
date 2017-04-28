@@ -11,7 +11,8 @@
 		"sourceVersions",
 		"sinkVersions",
 		"versionList",
-		"versionBlock" ],
+		"versionBlock",
+		"stopRequested" ],
 	"name" : "SquotHistoryWalker",
 	"pools" : [
 		 ],

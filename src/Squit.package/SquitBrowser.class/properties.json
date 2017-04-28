@@ -16,7 +16,8 @@
 		"searchTerm",
 		"offeredToAddFirstProject",
 		"repositoryExists",
-		"cachedCommitList" ],
+		"cachedCommitList",
+		"commitListBuildProcess" ],
 	"name" : "SquitBrowser",
 	"pools" : [
 		 ],

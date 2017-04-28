@@ -1,4 +1,4 @@
-private configuration
+public-configuration
 configAt: aNameString ifAbsent: aBlock
 	| config key sectionHead subNames file sectionName |
 	file := self configFile.

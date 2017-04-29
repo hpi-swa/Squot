@@ -2,4 +2,5 @@
 	"class" : {
 		 },
 	"instance" : {
-		"testReadStream" : "MaxLeske 9/8/2012 18:10" } }
+		"testReadStream" : "MaxLeske 9/8/2012 18:10",
+		"testSourceStreamPositionAfterReadingLargeCompressedObject" : "jr 4/29/2017 17:14" } }

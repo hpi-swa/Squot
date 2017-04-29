@@ -1,0 +1,15 @@
+{
+	"category" : "FileSystem-Git-Plumbing-Tests",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"sourceStream",
+		"position" ],
+	"name" : "EndlessStream",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }

@@ -3,7 +3,8 @@ baseSnapshot
 	self isPreviousSnapshotUpToDate ifTrue: [^ previousSnapshot].
 	loadedHistorian version
 		ifNotNil: [:version |
-			previousSnapshot := version snapshot.
+			'Reading snapshot of previous version' displaySequentialProgress:
+				[previousSnapshot := version snapshot].
 			previousSnapshot artifacts
 				detect: [:ea | ea wantsToBeInTableOfContents]
 				ifNone: ["no Squot-tracked artifacts"

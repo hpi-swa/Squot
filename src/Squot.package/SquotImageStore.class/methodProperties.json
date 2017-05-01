@@ -7,7 +7,7 @@
 		"add:copiedFromArtifact:" : "jr 1/27/2017 16:53",
 		"addLoadedPackageInfoNamed:at:" : "jr 2/21/2017 21:25",
 		"assume:toBeStoredAt:" : "jr 1/27/2017 14:33",
-		"captureSnapshot" : "jr 1/27/2017 16:23",
+		"captureSnapshot" : "jr 5/1/2017 18:27",
 		"createArtifactFor:at:" : "jr 1/28/2017 00:56",
 		"environment" : "jr 1/27/2017 14:33",
 		"environment:" : "jr 1/27/2017 14:33",
@@ -32,5 +32,5 @@
 		"removeAllObjects" : "jr 3/18/2017 00:25",
 		"restore:from:" : "jr 4/7/2017 16:20",
 		"restoreObjectFrom:" : "jr 1/28/2017 00:16",
-		"restoreToSnapshot:" : "jr 1/27/2017 16:41",
+		"restoreToSnapshot:" : "jr 5/1/2017 18:29",
 		"store:at:in:" : "jr 3/5/2017 17:29" } }

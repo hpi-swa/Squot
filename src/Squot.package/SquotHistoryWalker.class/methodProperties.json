@@ -2,8 +2,9 @@
 	"class" : {
 		 },
 	"instance" : {
-		"initialize" : "fn 4/11/2017 14:16",
-		"performSearch" : "fn 4/11/2017 12:14",
+		"continueDo:" : "jr 4/27/2017 18:22",
+		"initialize" : "jr 4/27/2017 18:17",
+		"performSearch" : "jr 4/27/2017 18:22",
 		"sinkVersions" : "fn 4/11/2017 12:13",
 		"sinkVersions:" : "fn 4/11/2017 12:13",
 		"sourceVersions" : "fn 4/11/2017 12:13",
@@ -11,5 +12,6 @@
 		"startingFrom:" : "fn 4/11/2017 12:15",
 		"startingFrom:do:" : "fn 4/11/2017 12:15",
 		"startingFromAll:do:" : "fn 4/11/2017 12:15",
+		"stop" : "jr 4/27/2017 18:21",
 		"versions" : "fn 4/11/2017 12:15",
-		"visitVersion:" : "fn 4/11/2017 12:14" } }
+		"visitVersion:" : "jr 4/27/2017 18:25" } }

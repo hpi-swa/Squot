@@ -1,7 +1,6 @@
 ui toolbuilder
 buildWith: builder
 	| mainWidgets mainWidgetsPanel acceptButton cancelButton window |
-	self realizeChangesList.
 	mainWidgets := self chooserWidgetSpecs: builder.
 	acceptButton := builder pluggableButtonSpec new
 		model: self;

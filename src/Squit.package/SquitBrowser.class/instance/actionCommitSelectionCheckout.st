@@ -1,3 +1,3 @@
 actions
 actionCommitSelectionCheckout
-	self projectSelection loadVersion: self commitSelection interactive: true
+	self projectSelection loadVersionInteractively: self commitSelection ifCanceled: [^ self].

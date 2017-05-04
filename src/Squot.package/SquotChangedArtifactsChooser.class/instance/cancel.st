@@ -1,4 +1,4 @@
 ui
 cancel
 	canceled := true.
-	self topView ifNotNil: #delete.
+	self changed: #close.

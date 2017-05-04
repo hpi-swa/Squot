@@ -1,0 +1,18 @@
+{
+	"category" : "Squot-Core",
+	"classinstvars" : [
+		 ],
+	"classtraitcomposition" : "TSquotArtifact classTrait",
+	"classvars" : [
+		 ],
+	"commentStamp" : "jr 5/1/2017 20:30",
+	"instvars" : [
+		"object",
+		"path",
+		"storeInfo" ],
+	"name" : "SquotLiveObject",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"traitcomposition" : "TSquotArtifact",
+	"type" : "normal" }

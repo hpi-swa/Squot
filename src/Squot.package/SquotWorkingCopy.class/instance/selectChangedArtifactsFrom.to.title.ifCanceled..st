@@ -1,10 +1,10 @@
-creating new versions
+private
 selectChangedArtifactsFrom: baseSnapshot
 to: loadedSnapshot
 title: titleString
 ifCanceled: cancelBlock
 	| builder tool view |
-	tool := SquotChangedArtifactsChooser from: baseSnapshot to: loadedSnapshot.
+	tool := SquotChangedArtifactsChooserOnSnapshots from: baseSnapshot to: loadedSnapshot.
 	"tool addIgnoredArtifacts: self ignoredArtifacts."
 	tool controllerForIgnores: self.
 	builder := ToolBuilder default.

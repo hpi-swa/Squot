@@ -1,0 +1,64 @@
+tests
+testApplyPatch
+	| className category packageArtifactBeforePatch packageArtifactAfterPatch snapshotBefore patch diffs class hashMethodBeforePatch |
+	className := classFactory newName asSymbol.
+	category := classFactory defaultCategory.
+	packageArtifactBeforePatch := SquotArtifact new
+		path: classFactory packageName, '.package';
+		storeInfo: (Dictionary newFromPairs: {#objectClassName. #PackageInfo});
+		content: (MCSnapshot fromDefinitions:
+			{MCClassDefinition name: className
+				superclassName: #Object
+				category: category
+				instVarNames: #()
+				classVarNames: #()
+				poolDictionaryNames: #()
+				classInstVarNames: #()
+				comment:  ''.
+			MCMethodDefinition className: className
+				selector: 'initialize'
+				category: 'initialize-release'
+				timeStamp: ''
+				source: 'initialize'.
+			MCMethodDefinition className: className
+				selector: 'hash'
+				category: 'comparing'
+				timeStamp: ''
+				source: 'hash ^ 0'}).
+	snapshotBefore := SquotSnapshot with: {packageArtifactBeforePatch}.
+	packageArtifactAfterPatch := SquotArtifact new
+		path: classFactory packageName, '.package';
+		storeInfo: (Dictionary newFromPairs: {#objectClassName. #PackageInfo});
+		content: (MCSnapshot fromDefinitions:
+			{MCClassDefinition name: className
+					superclassName: #Object
+					category: category
+					instVarNames: #()
+					classVarNames: #()
+					poolDictionaryNames: #()
+					classInstVarNames: #()
+					comment:  'We are all individuals.'.
+				MCMethodDefinition className: className
+					selector: 'hash'
+					category: 'comparing'
+					timeStamp: ''
+					source: 'hash ^ 0'.
+				MCMethodDefinition className: className
+					selector: '='
+					category: 'comparing'
+					timeStamp: ''
+					source: '= other ^ false'}).
+	diffs := Dictionary new.
+	diffs at: packageArtifactAfterPatch path put: (packageArtifactBeforePatch diffAgainst: packageArtifactAfterPatch).
+	patch := SquotPatch with: diffs.
+	imageStore restoreToSnapshot: snapshotBefore.
+	class := testEnvironment at: className.
+	hashMethodBeforePatch := class >> #hash.
+	"when"
+	imageStore applyPatch: patch.
+	"then"
+	self assert: class == (testEnvironment at: className).
+	self assert: 'We are all individuals.' equals: class organization classComment asString.
+	self deny: (class includesSelector: #initialize).
+	self assert: (class includesSelector: #=).
+	self assert: hashMethodBeforePatch equals: class >> #hash.

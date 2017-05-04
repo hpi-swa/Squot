@@ -1,0 +1,16 @@
+{
+	"category" : "Squot-Tools",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"original",
+		"proposed",
+		"effective" ],
+	"name" : "SquotChangedArtifactsChooserOnSnapshots",
+	"pools" : [
+		 ],
+	"super" : "SquotChangedArtifactsChooser",
+	"type" : "normal" }

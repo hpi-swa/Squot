@@ -1,0 +1,9 @@
+{
+	"class" : {
+		"with:" : "jr 5/1/2017 20:52" },
+	"instance" : {
+		"add:" : "jr 5/1/2017 19:50",
+		"artifacts" : "jr 5/1/2017 19:53",
+		"diffs" : "jr 5/1/2017 21:26",
+		"initialize" : "jr 5/1/2017 19:47",
+		"initializeWith:" : "jr 5/1/2017 20:52" } }

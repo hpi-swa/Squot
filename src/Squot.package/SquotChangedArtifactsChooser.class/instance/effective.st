@@ -1,4 +1,0 @@
-accessing
-effective
-
-	^ effective

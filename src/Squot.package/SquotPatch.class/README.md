@@ -1,0 +1,1 @@
+I am a collection of ArtifactDiffs, like a Snapshot, but with diffs.

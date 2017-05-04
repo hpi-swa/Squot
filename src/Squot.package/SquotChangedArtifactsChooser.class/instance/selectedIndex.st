@@ -1,3 +1,0 @@
-ui
-selectedIndex
-	^ selectedIndex

@@ -6,13 +6,8 @@
 		 ],
 	"commentStamp" : "jr 2/16/2017 01:51",
 	"instvars" : [
-		"original",
-		"proposed",
-		"effective",
-		"list",
 		"controllerForIgnores",
 		"ignored",
-		"selectedIndex",
 		"canceled",
 		"rootNodes",
 		"artifactDiffs",

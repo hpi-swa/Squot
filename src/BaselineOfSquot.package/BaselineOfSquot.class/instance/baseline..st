@@ -11,8 +11,7 @@ baseline: spec
 		spec 
 			package: 'SqueakSSL-Core' with: [
 				spec
-					repository: 'http://source.squeak.org/trunk';
-					file: 'SqueakSSL-Core-eem.32'. ];
+					repository: 'http://source.squeak.org/trunk'. ];
 			package: 'WebClient-Core' with: [
 				spec
 					repository: 'http://source.squeak.org/trunk';

@@ -9,6 +9,10 @@ baseline: spec
 				spec
 					repository: 'github://dalehenrich/filetree:squeak4.3/repository'. ].
 		spec 
+			package: 'SqueakSSL-Core' with: [
+				spec
+					repository: 'http://source.squeak.org/trunk';
+					file: 'SqueakSSL-Core-eem.32'. ];
 			package: 'WebClient-Core' with: [
 				spec
 					repository: 'http://source.squeak.org/trunk';

@@ -14,3 +14,4 @@ SystemOrganization addCategory: #'Squot-InMemoryRepository'!
 SystemOrganization addCategory: #'Squot-Tests'!
 SystemOrganization addCategory: #'Squot-Monticello-Converter-Tests'!
 SystemOrganization addCategory: #'Squot-InMemoryRepository-Tests'!
+SystemOrganization addCategory: #'Squot-Serialization-Tests'!

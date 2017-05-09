@@ -16,7 +16,7 @@ actionPull
 		remoteUrl := gitRepository repository remoteUrl: remoteName.
 		remoteRef := gitRepository repository upstreamRefOfBranchNamed: localBranchName].
 	gitRepository fetchFrom: remoteName.
-	remoteTrackingRef := gitRepository repository refName: localBranchName forRemote: remoteName.
+	remoteTrackingRef := gitRepository repository refName: remoteRef forRemote: remoteName.
 	remoteTrackingHistorian := repository historianNamed: remoteTrackingRef.
 	remoteVersion := remoteTrackingHistorian version.
 	previousVersion := self projectSelection loadedHistorian version.

@@ -20,15 +20,16 @@ actionPull
 	remoteTrackingHistorian := repository historianNamed: remoteTrackingRef.
 	remoteVersion := remoteTrackingHistorian version.
 	previousVersion := self projectSelection loadedHistorian version.
-	remoteVersion = previousVersion ifTrue:
-		[UIManager default inform: 'Already up-to-date'.
-		^ self].
-	(previousVersion mergeBaseWith: remoteVersion) = remoteVersion
-		ifTrue: ["already merged" ^ self inform:
-			'Already up-to-date. Your local branch is ahead of the remote branch'].
-	self projectSelection mergeVersionInteractively: remoteVersion.
-	(self projectSelection loadedHistorian version = remoteVersion)
-		ifTrue: ["fast-forward merge" ^ self refresh].
-	[self actionCommit] on: SquotInitialLogMessageRequested
-		do: [:request | request resume: 'Merge branch ', remoteTrackingHistorian shortName, ' of ', remoteUrl].
+	previousVersion
+		ifNil: ["new branch"]
+		ifNotNil: [remoteVersion = previousVersion
+				ifTrue: [^ self inform: 'Already up-to-date'].
+			(previousVersion mergeBaseWith: remoteVersion) = remoteVersion
+				ifTrue: ["already merged" ^ self inform:
+					'Already up-to-date. Your local branch is ahead of the remote branch']].
+	[self mergeVersionIntoActiveBranch: remoteVersion]
+		on: SquotInitialLogMessageRequested
+		do: [:request | request resume:
+			'Merge branch ''', (repository historianNamed: remoteRef) shortName,
+			''' of ', remoteUrl].
 	self refresh.

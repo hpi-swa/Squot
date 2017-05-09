@@ -1,6 +1,8 @@
 creating new versions
 parentVersions
+	| mainParent |
 	additionalParents ifNil: [additionalParents := OrderedCollection new].
-	loadedHistorian version ifNil: [^ additionalParents].
-	^ {loadedHistorian version}, additionalParents
+	mainParent := loadedHistorian version.
+	mainParent ifNil: [^ additionalParents].
+	^ {mainParent}, (additionalParents copyWithout: mainParent)
 	

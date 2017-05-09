@@ -1,4 +1,4 @@
 history walking
 performSearch
-	[searchFrontier isEmpty] whileFalse:
+	[searchFrontier isEmpty or: stopRequested] whileFalse:
 		[self visitVersion: searchFrontier removeFirst].

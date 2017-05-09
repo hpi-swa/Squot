@@ -1,0 +1,14 @@
+{
+	"category" : "Squot-Tests",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"walker" ],
+	"name" : "SquotHistoryWalkerTest",
+	"pools" : [
+		 ],
+	"super" : "TestCase",
+	"type" : "normal" }

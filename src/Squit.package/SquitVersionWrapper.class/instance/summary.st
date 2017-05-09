@@ -10,5 +10,5 @@ summary
 	^ message withBlanksTrimmed, String cr, String cr,
 		'Commit: ', commitHash, ', Parents: ', parents asCommaString, String cr,
 		'Author: ', author, String cr,
-		'Commiter: ', committer, String cr,
+		'Committer: ', committer, String cr,
 		'Date: ', timeStamp, String cr

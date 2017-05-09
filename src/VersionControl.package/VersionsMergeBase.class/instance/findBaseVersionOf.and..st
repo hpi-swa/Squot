@@ -3,6 +3,7 @@ findBaseVersionOf: version1 and: version2
 	"Perform a breadth first search from the two versions,
 	answer the first version that is reachable from both versions."
 	| next visited paths |
+	(version1 isNil or: [version2 isNil]) ifTrue: [^ nil].
 	inputVersions := {version1. version2}.
 	next := OrderedCollection withAll: inputVersions.
 	paths := GraphPathCollection new.

@@ -4,6 +4,8 @@ restoreToSnapshot: aSnapshot
 	| restoredPaths |
 	restoredPaths := Set new.
 	self environment beCurrentDuring: [
-		aSnapshot artifactsDo: [:each |
-			self restoreObjectFrom: each.
-			restoredPaths add: each path]].
+		aSnapshot artifacts
+			do: [:each |
+				self restoreObjectFrom: each.
+				restoredPaths add: each path]
+			displayingProgress: 'Loading objects into memory'].

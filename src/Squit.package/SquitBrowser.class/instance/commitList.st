@@ -2,10 +2,11 @@ ui
 commitList
 	^ self projectSelection
 		ifNil: [#()]
-		ifNotNil: [:project | | historian |
+		ifNotNil: [:project | 
 			self branchSelection ifNil: [^ #()].
-			historian := self branchSelection historian.
-			(SquotHistoryWalker new startingFrom: historian version)
-					select: [:each | self searchTerm
-						ifEmpty: [true]
-						ifNotEmpty: [:term | each message, each metadata asString, each internalId includesSubstring: term]]]
+			self branchSelection historian version = (cachedCommitList at: 1 ifAbsent: [])
+				ifFalse: [self rebuildCommitList].
+			self searchTerm ifEmpty: [^ cachedCommitList].
+			^ cachedCommitList select: [:each |
+				each message, each metadata asString, each internalId
+					includesSubstring: self searchTerm]]

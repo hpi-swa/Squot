@@ -2,4 +2,4 @@ store
 packagesInCurrentStore
 	^ (self projectSelection store objectPaths
 		select: [:each | each endsWith: '.package'])
-			collect: [:each | (each copyAfterLast: $/) allButLast: ('.package' size)]
+		collect: [:each | each squotPathSegments last allButLast: '.package' size]

@@ -5,6 +5,6 @@ objectCacheRefreshAsync
 	self changed: #objectList.
 	[[self objectCacheRefresh]
 		on: ProgressInitiationException do: [:e |
-			e sendNotificationsTo: [ :min :max :curr | "silence"]].
+			e rearmHandlerDuring: 	[e sendNotificationsTo: [ :min :max :curr | "silence"]]].
 	self changed: #objectList] forkAt: Processor userBackgroundPriority.
 	^ objectCache

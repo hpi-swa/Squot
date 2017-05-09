@@ -7,4 +7,7 @@ mergeWith: anotherSnapshot basedOn: mergeBaseSnapshot
 		base := mergeBaseSnapshot artifactAt: own path ifAbsent: [own absentCopy].
 		self flag: #optimization. "VC backend could quickly tell if the artifacts are equal"
 		mergeBuilder add: (self mergeArtifact: own with: other basedOn: base)].
+	anotherSnapshot artifactsDo: [:incoming |
+		(self containsArtifactAt: incoming path) ifFalse:
+			[mergeBuilder add: incoming]].
 	^ mergeBuilder buildSnapshot

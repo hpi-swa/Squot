@@ -18,7 +18,6 @@ saveNewVersionInteractively
 	snapshotBuilder := baseSnapshot createNewBuilder.
 	selectedChanges do: [:each | snapshotBuilder add: each].
 	finalSnapshot := snapshotBuilder buildSnapshot.
-	additionalParents ifNil: [additionalParents := OrderedCollection new].
 	newVersion := loadedHistorian createNewVersion: finalSnapshot
 		with: [:version | version
 					message: tool message asString;

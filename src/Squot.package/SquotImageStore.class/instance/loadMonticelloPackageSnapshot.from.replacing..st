@@ -2,7 +2,7 @@ private materializing
 loadMonticelloPackageSnapshot: anMCSnapshot from: anArtifact replacing: aPackageInfo
 	| packageDirectory packageName pathElements mcPackage packageSnapshot patch loader |
 	self assert: ((aPackageInfo isKindOf: PackageInfo) or: [aPackageInfo isNil]).
-	packageDirectory := (pathElements := anArtifact path splitBy: '/') last.
+	packageDirectory := (pathElements := anArtifact path squotPathSegments) last.
 	packageName := packageDirectory allButLast: '.package' size.
 	mcPackage := MCPackage named: packageName.
 	"partially borrowed from MCPackageLoader>>#updatePackage:withSnapshot:"

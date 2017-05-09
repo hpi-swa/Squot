@@ -15,7 +15,9 @@
 		"timeOfLastListUpdate",
 		"searchTerm",
 		"offeredToAddFirstProject",
-		"repositoryExists" ],
+		"repositoryExists",
+		"cachedCommitList",
+		"commitListBuildProcess" ],
 	"name" : "SquitBrowser",
 	"pools" : [
 		 ],

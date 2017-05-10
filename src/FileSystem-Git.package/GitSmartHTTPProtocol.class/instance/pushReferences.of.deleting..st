@@ -6,6 +6,8 @@ pushReferences: updateAssociations of: aRepository deleting: deleteRefs
 	'Pushing to ', url asString displaySequentialProgress:
 		[self withOpenConnection: [
 			self discoverReferencesForService: 'git-receive-pack'.
+			self ifAllUpToDate: updateAssociations andDeleted: deleteRefs
+				do: [^ GitReceivePackStatusReport alreadyUpToDate].
 			(updateAssociations notEmpty)
 				ifTrue: [packFile := self preparePackFileToPushRefs: updateAssociations of: aRepository]
 				ifFalse: [packFile := nil].

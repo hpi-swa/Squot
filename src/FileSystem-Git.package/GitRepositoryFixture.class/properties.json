@@ -6,9 +6,11 @@
 		 ],
 	"commentStamp" : "",
 	"instvars" : [
-		 ],
-	"name" : "GitProtocolTest",
+		"repo",
+		"workingCopy",
+		"basicRepo" ],
+	"name" : "GitRepositoryFixture",
 	"pools" : [
 		 ],
-	"super" : "GitAbstractProtocolTest",
+	"super" : "Object",
 	"type" : "normal" }

@@ -5,7 +5,7 @@
 	"instance" : {
 		"fourByteLookahead" : "CamilloBruni 2/12/2013 18:08",
 		"initializeWith:" : "DamienCassou 1/30/2013 16:25",
-		"parseReferenceDiscoveryResponse" : "jr 11/30/2016 18:17",
+		"parseReferenceDiscoveryResponse" : "jr 5/10/2017 17:14",
 		"peekForNAK" : "jr 10/26/2016 15:46",
 		"readContentOfLength:" : "DamienCassou 1/30/2013 16:29",
 		"readLineLength" : "CamilloBruni 2/12/2013 18:08",

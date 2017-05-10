@@ -6,6 +6,7 @@ actionBranchPush
 	branchName := historian name.
 	repository := self projectSelection repository.
 	gitRepository := repository gitRepository.
+	self checkTrackedBranchOrOfferChange: historian ifUnsupported: [^ self].
 	[self projectSelection repository
 		exportToUpstream: historian
 		ifNone: [

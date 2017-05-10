@@ -4,6 +4,8 @@ actionPull
 	| gitRepository localBranchName remoteName repository remoteRef remoteTrackingHistorian remoteTrackingRef remoteUrl remoteVersion previousVersion |
 	repository := self projectSelection repository.
 	gitRepository := repository gitRepository.
+	self checkTrackedBranchOrOfferChange: self projectSelection loadedHistorian
+		ifUnsupported: [^ self].
 	localBranchName := self projectSelection loadedHistorian shortName.
 	remoteName := gitRepository repository upstreamRemoteOfBranchNamed: localBranchName.
 	remoteUrl := gitRepository repository remoteUrl: remoteName.

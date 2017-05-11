@@ -7,6 +7,7 @@
 	"instance" : {
 		"accept:" : "MaxLeske 8/13/2012 21:53",
 		"ancestors" : "jr 4/9/2017 00:38",
+		"asCommit" : "jr 5/11/2017 15:52",
 		"author" : "MaxLeske 2/28/2012 11:11",
 		"author:" : "MaxLeske 5/26/2010 19:52",
 		"basicParents" : "MaxLeske 2/26/2012 11:29",
@@ -18,7 +19,7 @@
 		"loadParent:" : "MaxLeske 2/26/2012 11:27",
 		"loadParents" : "MaxLeske 2/26/2012 11:28",
 		"loadTree:" : "jr 4/13/2017 16:51",
-		"nearestMergeBaseWithAnyOf:" : "jr 4/15/2017 15:57",
+		"nearestMergeBaseWithAnyOf:" : "jr 5/11/2017 15:54",
 		"parents" : "MaxLeske 2/26/2012 11:28",
 		"parents:" : "MaxLeske 5/26/2010 20:04",
 		"printOn:" : "CamilloBruni 6/22/2011 04:33",

@@ -8,4 +8,5 @@
 		"testNearestMergeBaseIsNearest" : "jr 3/22/2017 15:25",
 		"testNearestMergeBaseNone" : "jr 3/22/2017 15:26",
 		"testNearestMergeBaseOneStep" : "jr 3/22/2017 15:26",
+		"testNearestMergeBaseWithTag" : "jr 5/11/2017 16:01",
 		"testNearestMergeBaseWithUnrelatedMerge" : "jr 4/15/2017 15:35" } }

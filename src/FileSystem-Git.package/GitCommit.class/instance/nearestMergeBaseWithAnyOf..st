@@ -6,6 +6,7 @@ nearestMergeBaseWithAnyOf: aCollectionOfHashes
 	next := OrderedCollection withAll:
 		(aCollectionOfHashes collect: [:each | repository objectNamed: each ifAbsent: []]).
 	next removeAllSuchThat: [:each | each isNil].
+	next replace: [:each | each asCommit].
 	otherEnds := Array withAll: next.
 	next addLast: self.
 	paths := GitGraphPathDictionary new.

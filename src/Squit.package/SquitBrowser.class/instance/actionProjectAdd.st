@@ -1,4 +1,4 @@
 actions
 actionProjectAdd
-	self addProject.
+	self addProjectIfCanceled: [^ self].
 	self refresh.

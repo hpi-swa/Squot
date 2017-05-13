@@ -1,3 +1,3 @@
 working copy registry
 unregister: aWorkingCopy
-	registry remove: aWorkingCopy
+	registry remove: aWorkingCopy ifAbsent: []

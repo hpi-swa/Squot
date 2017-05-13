@@ -3,7 +3,7 @@
 		"newOnObjectMemory" : "jr 4/9/2017 14:58",
 		"register:" : "fn 4/11/2017 11:35",
 		"registered" : "fn 4/11/2017 11:36",
-		"unregister:" : "fn 4/11/2017 11:57" },
+		"unregister:" : "jr 5/13/2017 14:46" },
 	"instance" : {
 		"add:at:" : "jr 1/26/2017 17:40",
 		"addGlobalObjectsToStore:" : "jr 4/27/2017 13:15",

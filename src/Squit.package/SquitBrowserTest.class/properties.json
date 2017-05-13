@@ -1,0 +1,14 @@
+{
+	"category" : "Squit-UI-Tests",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"browser" ],
+	"name" : "SquitBrowserTest",
+	"pools" : [
+		 ],
+	"super" : "TestCase",
+	"type" : "normal" }

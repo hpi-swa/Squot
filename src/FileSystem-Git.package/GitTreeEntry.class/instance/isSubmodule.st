@@ -1,3 +1,3 @@
 public-testing
 isSubmodule
-	^ isSubmodule
+	^ mode == #submoduleMode

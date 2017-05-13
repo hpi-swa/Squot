@@ -1,3 +1,3 @@
 public-testing
 isInFilemode
-	^ isInFilemode
+	^ mode == #fileMode

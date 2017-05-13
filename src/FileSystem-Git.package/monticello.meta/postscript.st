@@ -1,6 +1,7 @@
 (PackageInfo named: 'FileSystem-Git') postscript: '"code to be run after the loading of this package"
-"initialize GitTreeEntry isSubmodule inst var"
-GitTreeEntry allInstancesDo: [:each |
-	each isInFilemode
-		ifTrue: [each beInFilemode]
-		ifFalse: [each isSubmodule ifNil: [each beInDirectorymode]]].'!
+"initialize GitTreeEntry mode inst var"
+modes := Smalltalk globals at: #TEMP_GitTreeEntryModes.
+modes keysAndValuesDo: [:entry :modes |
+	entry convertToCurrentVersion: modes refStream: nil].
+"clean up"
+Smalltalk globals removeKey: #TEMP_GitTreeEntryModes.'!

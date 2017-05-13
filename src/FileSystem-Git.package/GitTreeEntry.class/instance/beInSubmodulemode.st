@@ -1,4 +1,3 @@
 initialize-release
 beInSubmodulemode
-	isInFilemode := false.
-	isSubmodule := true
+	mode := #submoduleMode.

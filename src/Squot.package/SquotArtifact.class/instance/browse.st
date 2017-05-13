@@ -1,0 +1,3 @@
+tools
+browse
+	^ content browseFromSquot

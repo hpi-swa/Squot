@@ -1,0 +1,3 @@
+tools
+browse
+	^ object browseFromSquot

@@ -7,11 +7,11 @@ unpackWithoutIndexFile
 	self packFile readStream: reader.
 	
 	count := self packFile numberOfObjects.
-	count timesRepeat: [ | packedObject |
-		packedObject := self packFile objectAtOffset: reader position.
-		packedObject class = GitPackedNonDelta 
-			ifTrue: [ packedObject store ]
-			ifFalse: [ self unpackDelta: packedObject ].
-		
-		count := count - 1 ].
+	'Unpacking Git objects' displayProgressFrom: 0 to: count during: [:progress |
+		| done |
+		done := 0.
+		count timesRepeat: [ | packedObject |
+			packedObject := self packFile objectAtOffset: reader position.
+			packedObject unpackWith: self.
+			progress value: (done := done + 1)]].
 	self processDeltas

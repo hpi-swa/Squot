@@ -5,12 +5,12 @@
 	"classtraitcomposition" : "TSquotArtifact classTrait",
 	"classvars" : [
 		 ],
-	"commentStamp" : "jr 1/27/2017 15:05",
+	"commentStamp" : "jr 5/1/2017 20:30",
 	"instvars" : [
-		"content",
+		"object",
 		"path",
 		"storeInfo" ],
-	"name" : "SquotArtifact",
+	"name" : "SquotLiveObject",
 	"pools" : [
 		 ],
 	"super" : "Object",

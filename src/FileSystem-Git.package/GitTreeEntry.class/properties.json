@@ -8,7 +8,8 @@
 	"instvars" : [
 		"entryName",
 		"entryHash",
-		"isInFilemode" ],
+		"isInFilemode",
+		"isSubmodule" ],
 	"name" : "GitTreeEntry",
 	"pools" : [
 		 ],

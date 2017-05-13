@@ -1,3 +1,4 @@
 public-accessing
 beInDirectorymode
-	isInFilemode := false
+	isInFilemode := false.
+	isSubmodule := false

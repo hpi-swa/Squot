@@ -1,3 +1,3 @@
 public-testing
 isInDirectorymode
-	^ isInFilemode not
+	^ isInFilemode not and: [self isSubmodule not]

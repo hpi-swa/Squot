@@ -1,3 +1,4 @@
 public-accessing
 beInFilemode
-	isInFilemode := true
+	isInFilemode := true.
+	isSubmodule := false

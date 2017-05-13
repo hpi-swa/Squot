@@ -8,5 +8,6 @@ loadModeFrom: aStream
 	mode = self class fileMode ifTrue: [ ^ self beInFilemode ].
 	mode = self class executableFileMode ifTrue: [ ^ self beInFilemode ].
 	mode = self class dirMode ifTrue: [ ^ self beInDirectorymode ].
+	mode = self class submoduleMode ifTrue: [ ^ self beInSubmodulemode ].
 	
 	GitInvalidObjectError signal: 'This tree entry has an invalid filemode.'

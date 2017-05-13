@@ -1,3 +1,3 @@
 tools
 browse
-	^ object browseFromSquot
+	^ object browseFromSquot: self

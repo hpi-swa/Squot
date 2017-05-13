@@ -1,6 +1,6 @@
 actions
 actionObjectBrowseLoaded
-	| path loadedObject |
+	| path liveObject |
 	path := self objectSelection artifact path.
-	loadedObject := self projectSelection objectAt: path.
-	^ loadedObject browseFromSquot
+	liveObject := self projectSelection artifactAt: path.
+	liveObject browse.

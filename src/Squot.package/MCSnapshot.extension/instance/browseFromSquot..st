@@ -1,4 +1,4 @@
 *Squot
-browseFromSquot
+browseFromSquot: aSquotArtifact
 	^ (MCSnapshotBrowser forSnapshot: self)
 		show

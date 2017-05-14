@@ -1,3 +1,3 @@
 public-accessing
 beInDirectorymode
-	isInFilemode := false
+	mode := #dirMode.

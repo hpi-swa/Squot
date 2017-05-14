@@ -1,3 +1,3 @@
 public-testing
 isInDirectorymode
-	^ isInFilemode not
+	^ mode == #dirMode

@@ -1,3 +1,3 @@
-private metadata access
-metadataForObjectAt: aFSReference
-	^ SquotObjectMetadata forObjectAt: aFSReference
+accessing
+metadataForObjectAt: path
+	^ additionalInfo at: path

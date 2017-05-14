@@ -1,3 +1,3 @@
 public-accessing
 beInFilemode
-	isInFilemode := true
+	mode := #fileMode.

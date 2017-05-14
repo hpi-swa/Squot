@@ -7,8 +7,8 @@ loadFromRepository: aPath
 	currentGitTree ifNil: [ ^ self ].
 	currentGitTree entryAt: aPath basename
 		ifPresent: [:entry |
-			entry isInDirectorymode ifTrue: [self loadGitTreeAt: aPath].
-			entry isInFilemode ifTrue: [ | blob |
+			entry isInDirectoryMode ifTrue: [self loadGitTreeAt: aPath].
+			entry isInFileMode ifTrue: [ | blob |
 				blob := entry object.
 				self updateCacheAt: aPath with: blob]]
 		ifAbsent: ["nothing to be loaded here"]

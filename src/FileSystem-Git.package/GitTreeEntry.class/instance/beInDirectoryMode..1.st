@@ -1,3 +1,3 @@
 public-accessing
-beInDirectorymode
+beInDirectoryMode
 	mode := #dirMode.

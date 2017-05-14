@@ -1,3 +1,3 @@
 public-accessing
-beInFilemode
+beInFileMode
 	mode := #fileMode.

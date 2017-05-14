@@ -1,3 +1,3 @@
 public-testing
-isInDirectorymode
+isInDirectoryMode
 	^ mode == #dirMode

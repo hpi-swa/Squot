@@ -4,5 +4,5 @@ fileNamed: aString hash: integerHash in: aRepository
 		entryName: aString;
 		entryHash: integerHash;
 		repository: aRepository;
-		beInFilemode;
+		beInFileMode;
 		yourself

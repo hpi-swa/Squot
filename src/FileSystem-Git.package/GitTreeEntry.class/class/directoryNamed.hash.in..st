@@ -4,5 +4,5 @@ directoryNamed: aString hash: integerHash in: aRepository
 		entryName: aString;
 		entryHash: integerHash;
 		repository: aRepository;
-		beInDirectorymode;
+		beInDirectoryMode;
 		yourself

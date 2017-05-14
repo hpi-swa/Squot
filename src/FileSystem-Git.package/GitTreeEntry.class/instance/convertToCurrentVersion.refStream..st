@@ -4,7 +4,7 @@ convertToCurrentVersion: varDict refStream: smartRefStrm
 	and: [(varDict includesKey: #mode) not
 	and: [varDict includesKey: #isInFilemode]])
 		ifTrue: [(varDict at: #isInFilemode)
-			ifTrue: [self beInFilemode]
+			ifTrue: [self beInFileMode]
 			ifFalse: [(varDict at: #isSubmodule ifAbsent: [false])
-					ifTrue: [self beInSubmodulemode]
-					ifFalse: [self beInDirectorymode]]].
+					ifTrue: [self beInSubmoduleMode]
+					ifFalse: [self beInDirectoryMode]]].

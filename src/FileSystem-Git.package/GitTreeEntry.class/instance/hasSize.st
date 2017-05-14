@@ -1,3 +1,3 @@
 public-testing
 hasSize
-	^ self isInFilemode
+	^ self isInFileMode

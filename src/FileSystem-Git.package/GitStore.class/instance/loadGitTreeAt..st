@@ -16,7 +16,7 @@ loadGitTreeAt: aPath
 		currentGitTree
 			entryAt: path basename
 			ifPresent: [ :entry | 
-				entry isInDirectorymode
+				entry isInDirectoryMode
 					ifTrue: [currentGitTree := entry object.
 						self updateCacheAt: (basePath resolve: path) with: currentGitTree]
 					ifFalse: [^ nil]]

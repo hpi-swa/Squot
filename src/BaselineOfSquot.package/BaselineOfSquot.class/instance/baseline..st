@@ -45,7 +45,7 @@ baseline: spec
 				spec requires: #('FS-Core' 'Ston' 'VersionControl' ). ];
 			package: 'Pharo-compatibility';
 			package: 'FileSystem-Git' with: [
-				spec requires: #('FS-Core' 'FS-Disk' 'FS-Memory' 'FS-AnsiStreams' 'FS-Tests-Core' 'Pharo-compatibility' 'INIFile' ). ];
+				spec requires: #('FS-Core' 'FS-Disk' 'FS-Memory' 'FS-AnsiStreams' 'FS-Tests-Core' 'Pharo-compatibility' 'INIFile' 'VersionControl' ). ];
 			package: 'Squit' with: [
 				spec requires: #('FileSystem-Git' 'Squot' 'FS-FileDirectory-Adapters' ). ].
 		spec 

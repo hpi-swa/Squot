@@ -1,0 +1,13 @@
+{
+	"class" : {
+		"on:" : "jr 5/14/2017 19:10" },
+	"instance" : {
+		"allMarks" : "jr 5/14/2017 19:18",
+		"initialize" : "jr 5/14/2017 18:52",
+		"isMarkedWith:" : "jr 5/14/2017 18:54",
+		"isNotMarkedWith:" : "jr 5/14/2017 19:23",
+		"mark:" : "jr 5/14/2017 18:52",
+		"markWithAll:" : "jr 5/14/2017 19:22",
+		"object" : "jr 5/14/2017 18:52",
+		"object:" : "jr 5/14/2017 18:52",
+		"removeAllMarks" : "jr 5/14/2017 19:53" } }

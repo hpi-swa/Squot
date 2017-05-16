@@ -1,0 +1,13 @@
+{
+	"class" : {
+		"on:" : "jr 5/14/2017 20:17" },
+	"instance" : {
+		"commonAncestors" : "jr 5/14/2017 19:56",
+		"enqueueParentsOf:markedWith:" : "jr 5/14/2017 19:54",
+		"initialize" : "jr 5/14/2017 19:45",
+		"isNewCommonAncestor:" : "jr 5/14/2017 20:06",
+		"marked:" : "jr 5/14/2017 20:17",
+		"marksKeeper:" : "jr 5/14/2017 20:17",
+		"rememberCommonAncestor:" : "jr 5/16/2017 17:21",
+		"traverseHistoryFromOrigin:andOthers:" : "jr 5/14/2017 20:06",
+		"traverseMarkedVersions:do:" : "jr 5/16/2017 17:52" } }

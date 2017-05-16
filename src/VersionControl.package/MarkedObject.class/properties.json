@@ -4,11 +4,11 @@
 		 ],
 	"classvars" : [
 		 ],
-	"commentStamp" : "jr 5/16/2017 18:17",
+	"commentStamp" : "jr 5/16/2017 18:31",
 	"instvars" : [
-		"markedVersions",
-		"commonAncestors" ],
-	"name" : "VersionsMergeBase",
+		"object",
+		"marks" ],
+	"name" : "MarkedObject",
 	"pools" : [
 		 ],
 	"super" : "Object",

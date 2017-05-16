@@ -26,6 +26,6 @@ actionBranchPush
 			ifTrue: [message := message, ' If you have two-factor authentification enabled, you must use a personal access token instead of your GitHub login password.'].
 		self inform: message]
 	on: GitNonFastForwardPushUpdatesDetected do: [:e |
-		(self confirm: 'Warning: the tip of your branch is not an ancestor of its remote counterpart. Do you want to force the push anyway?')
+		(self confirm: 'Warning: the tip of your branch is behind its remote counterpart. Do you want to force the push anyway?')
 			ifTrue: [e proceedWithForcedPush]
 			ifFalse: [^ self]].

@@ -1,6 +1,6 @@
 actions
 actionProjectRemove
-	self hasProjectSelection ifFalse: [^ self].
+	self projectSelection ifNil: [^ self].
 	(UIManager confirm: 'Really delete project ', self projectSelection name, '?')
 		ifFalse: [^ self].
 	self projectSelection unregister.

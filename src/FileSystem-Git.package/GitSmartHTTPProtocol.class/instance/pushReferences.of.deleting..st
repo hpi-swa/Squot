@@ -8,6 +8,7 @@ pushReferences: updateAssociations of: aRepository deleting: deleteRefs
 			self discoverReferencesForService: 'git-receive-pack'.
 			self ifAllUpToDate: updateAssociations andDeleted: deleteRefs
 				do: [^ GitReceivePackStatusReport alreadyUpToDate].
+			self checkForNonFastForwardUpdates: updateAssociations with: aRepository.
 			(updateAssociations notEmpty)
 				ifTrue: [packFile := self preparePackFileToPushRefs: updateAssociations of: aRepository]
 				ifFalse: [packFile := nil].

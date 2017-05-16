@@ -3,6 +3,7 @@
 		"schemes" : "jr 12/1/2016 14:25" },
 	"instance" : {
 		"applyCredentials" : "jr 4/12/2017 14:54",
+		"checkForNonFastForwardUpdates:with:" : "jr 5/16/2017 14:12",
 		"client" : "jr 12/1/2016 15:05",
 		"closeConnection" : "jr 12/3/2016 01:12",
 		"discoverReferencesForService:" : "jr 5/10/2017 17:08",
@@ -16,6 +17,6 @@
 		"openConnection" : "jr 4/12/2017 14:54",
 		"outputStream" : "DamienCassou 1/29/2013 15:02",
 		"postForUploadPack:" : "jr 10/25/2016 17:05",
-		"pushReferences:of:deleting:" : "jr 5/13/2017 15:27",
+		"pushReferences:of:deleting:" : "jr 5/16/2017 13:47",
 		"urlForService:" : "jr 10/25/2016 17:05",
 		"wantAll:capabilities:" : "jr 12/2/2016 17:27" } }

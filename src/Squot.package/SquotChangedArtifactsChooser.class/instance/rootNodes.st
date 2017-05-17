@@ -5,7 +5,7 @@ rootNodes
 	artifactDiffs := Dictionary new.
 	'Diffing snapshots' displaySequentialProgress:
 	[| progress progressStep | progress := 0.
-	progressStep := 1 / (original size + proposed size).
+	progressStep := 1 / (1 max: original size + proposed size).
 	original keysAndValuesDo: [:path :originalArtifact |
 		proposed at: path
 			ifPresent: [:proposedArtifact | | diff |

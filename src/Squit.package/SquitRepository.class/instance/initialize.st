@@ -4,3 +4,4 @@ initialize
 	filesystemsCache := Dictionary new.
 	leastRecentlyRequestedFilesystems := OrderedCollection new.
 	credentials := Dictionary new. "repository URL -> credentials"
+	shouldWriteToDiskWorkingCopy := false.

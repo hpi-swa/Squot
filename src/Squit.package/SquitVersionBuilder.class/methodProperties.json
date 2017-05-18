@@ -6,7 +6,7 @@
 		"author:" : "jr 2/8/2017 14:05",
 		"authorEmail:" : "jr 2/9/2017 17:49",
 		"authoringTimeStamp:" : "jr 2/5/2017 22:49",
-		"buildVersion" : "jr 3/7/2017 17:37",
+		"buildVersion" : "jr 5/18/2017 12:09",
 		"committer" : "jr 2/5/2017 22:43",
 		"committer:" : "jr 2/20/2017 22:13",
 		"committerEmail:" : "jr 2/20/2017 11:19",
@@ -20,5 +20,8 @@
 		"parents:" : "jr 2/5/2017 22:43",
 		"repository" : "jr 2/5/2017 22:43",
 		"repository:" : "jr 2/5/2017 22:43",
+		"shouldStoreMetadata" : "jr 5/18/2017 12:04",
 		"snapshot" : "jr 2/5/2017 22:43",
-		"snapshot:" : "jr 2/5/2017 22:43" } }
+		"snapshot:" : "jr 2/5/2017 22:43",
+		"storeInDirectory:" : "jr 5/18/2017 12:08",
+		"storeInDiskWorkingCopy" : "jr 5/18/2017 12:12" } }

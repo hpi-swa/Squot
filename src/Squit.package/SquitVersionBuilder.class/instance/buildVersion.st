@@ -1,13 +1,11 @@
 building
 buildVersion
 	"Create the commit and answer the SquitVersion for it"
-	| fs fsStore commit |
+	| fs commit |
 	fs := parents
 		ifEmpty: [repository orphanedWorkingDirectory]
 		ifNotEmpty: [repository workingTreeForCommitNamed: parents first hexHash].
-	fsStore := SquotFileSystemStore inDirectory: fs root.
-	shouldStoreMetadata ifFalse: [fsStore doNotStoreMetadata].
-	fsStore restoreToSnapshot: snapshot.
+	self storeInDirectory: fs root.
 	(commit := fs prepareNewCommit)
 		message: (self message withLineEndings: String lf);
 		parents: (parents collect: [:each | each hexHash]);

@@ -9,10 +9,10 @@ metadata
 		{#author. commit author name.
 		#authorEmail. commit author email.
 		#email. commit author email.
-		#authoringTimeStamp. commit author timeStamp.
+		#authoringTimestamp. commit author timeStamp.
 		#timestamp. commit author timeStamp.
 		#committer. commit committer name.
 		#committerEmail. commit committer email.
-		#commitTimeStamp. commit committer timeStamp.
+		#commitTimestamp. commit committer timeStamp.
 		#message. commit message.
 		#hash. commit hexHash}

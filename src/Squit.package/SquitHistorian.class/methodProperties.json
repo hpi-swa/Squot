@@ -3,12 +3,13 @@
 		 },
 	"instance" : {
 		"=" : "jr 4/14/2017 00:50",
-		"createNewVersion:with:" : "jr 4/14/2017 01:23",
+		"createNewVersion:with:" : "jr 5/18/2017 12:10",
 		"expandedName" : "jr 4/14/2017 01:36",
 		"gitRepository:" : "jr 1/11/2017 18:05",
 		"hasUpstreamHistorian" : "jr 5/22/2017 00:05",
 		"hash" : "jr 4/14/2017 00:53",
 		"initializeWith:" : "jr 1/11/2017 18:03",
+		"isHead" : "jr 5/18/2017 11:58",
 		"name" : "jr 1/11/2017 16:50",
 		"name:" : "jr 1/11/2017 17:49",
 		"printOn:" : "jr 2/1/2017 14:10",
@@ -18,4 +19,5 @@
 		"upstreamHistorianName" : "jr 5/21/2017 23:43",
 		"upstreamRemoteName" : "jr 5/21/2017 23:42",
 		"version" : "jr 1/11/2017 18:10",
-		"version:" : "jr 4/14/2017 01:26" } }
+		"version:" : "jr 5/18/2017 10:50",
+		"version:reflogMessage:" : "jr 5/18/2017 10:50" } }

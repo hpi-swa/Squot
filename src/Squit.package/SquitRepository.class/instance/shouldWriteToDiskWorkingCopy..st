@@ -1,0 +1,3 @@
+accessing
+shouldWriteToDiskWorkingCopy: aBoolean
+	shouldWriteToDiskWorkingCopy := aBoolean

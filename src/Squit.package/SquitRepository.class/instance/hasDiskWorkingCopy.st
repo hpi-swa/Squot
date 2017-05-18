@@ -1,0 +1,3 @@
+testing
+hasDiskWorkingCopy
+	^ gitRepository repository hasWorkingCopy

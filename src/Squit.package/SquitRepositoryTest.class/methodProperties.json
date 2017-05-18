@@ -10,4 +10,5 @@
 		"testCreateCommit" : "jr 3/8/2017 17:35",
 		"testDefaultAuthor" : "jr 2/20/2017 22:27",
 		"testGetMasterSnapshot" : "jr 3/8/2017 17:53",
+		"testHistorianIsHead" : "jr 5/18/2017 11:56",
 		"testInstantiation" : "jr 1/11/2017 17:50" } }

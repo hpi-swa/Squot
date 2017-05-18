@@ -10,9 +10,8 @@ createNewVersion: aSnapshot with: aBlock
 			parents: (self version
 				ifNil: [OrderedCollection new]
 				ifNotNil: [:it | OrderedCollection with: it]);
-			in: aBlock].
-	gitRepository
-		updateRef: self expandedName
-		to: newVersion hexHash
-		message: 'commit: ', (newVersion message lineNumber: 1).
+			in: aBlock.
+			(self isHead and: [repository shouldWriteToDiskWorkingCopy])
+				ifTrue: [version storeInDiskWorkingCopy]].
+	self version: newVersion reflogMessage: 'commit: ', (newVersion message lineNumber: 1).
 	^ newVersion

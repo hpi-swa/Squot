@@ -1,0 +1,27 @@
+{
+	"class" : {
+		"on:" : "jr 5/18/2017 17:41" },
+	"instance" : {
+		"*" : "jr 5/18/2017 17:49",
+		"/" : "jr 5/18/2017 17:58",
+		"changedPaths" : "jr 5/18/2017 17:44",
+		"copy:ifAbsent:to:ifPresent:" : "jr 5/18/2017 17:25",
+		"copy:to:" : "jr 5/18/2017 18:02",
+		"createDirectory:" : "jr 5/18/2017 17:32",
+		"delete:" : "jr 5/18/2017 17:33",
+		"doesNotUnderstand:" : "jr 5/18/2017 17:10",
+		"ensureDirectory:" : "jr 5/18/2017 17:37",
+		"entriesAt:" : "jr 5/18/2017 17:55",
+		"entryAt:" : "jr 5/18/2017 17:54",
+		"initialize" : "jr 5/18/2017 17:09",
+		"on:" : "jr 5/18/2017 17:40",
+		"open:writable:" : "jr 5/18/2017 17:29",
+		"openFileStream:writable:" : "jr 5/18/2017 17:39",
+		"openStreamDescription:writable:" : "jr 5/18/2017 17:30",
+		"referenceTo:" : "jr 5/18/2017 17:46",
+		"rename:ifAbsent:to:ifPresent:" : "jr 5/18/2017 17:31",
+		"rename:to:" : "jr 5/18/2017 18:03",
+		"root" : "jr 5/18/2017 17:47",
+		"workingDirectory" : "jr 5/18/2017 17:48",
+		"wrapEntry:" : "jr 5/18/2017 17:54",
+		"writeStreamOn:" : "jr 5/18/2017 18:04" } }

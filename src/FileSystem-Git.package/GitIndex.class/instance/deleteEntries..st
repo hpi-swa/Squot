@@ -1,0 +1,2 @@
+operations
+deleteEntries: aCollection

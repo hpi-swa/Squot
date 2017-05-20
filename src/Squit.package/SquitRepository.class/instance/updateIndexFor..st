@@ -1,0 +1,3 @@
+private
+updateIndexFor: aCollectionOfPaths
+	gitRepository repository addAllToIndex: aCollectionOfPaths.

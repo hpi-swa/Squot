@@ -6,13 +6,9 @@
 		 ],
 	"commentStamp" : "",
 	"instvars" : [
-		"indexFile",
-		"fileStream",
-		"version",
-		"entries",
-		"extensions",
-		"repository" ],
-	"name" : "GitIndex",
+		"signature",
+		"data" ],
+	"name" : "GitIndexExtension",
 	"pools" : [
 		 ],
 	"super" : "Object",

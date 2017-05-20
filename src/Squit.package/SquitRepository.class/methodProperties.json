@@ -41,6 +41,7 @@
 		"shouldWriteToDiskWorkingCopy:" : "jr 5/17/2017 17:53",
 		"store:in:withMetadata:" : "jr 5/18/2017 12:06",
 		"updateDiskWorkingCopy:withMetadata:" : "jr 5/18/2017 17:44",
+		"updateIndexFor:" : "jr 5/18/2017 18:09",
 		"updateRemoteRepositories" : "jr 4/12/2017 14:47",
 		"versionAt:" : "jr 1/26/2017 14:01",
 		"versionForCommit:" : "jr 2/23/2017 17:45",

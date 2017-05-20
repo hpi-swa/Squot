@@ -6,5 +6,5 @@ openForUpdateDo: aBlock
 		stream binary.
 		self readFrom: stream.
 		aBlock value: self.
-		stream reset.
+		stream reset; truncate.
 		self writeTo: stream]

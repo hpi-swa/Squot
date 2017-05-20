@@ -2,14 +2,15 @@
 	"class" : {
 		"on:in:" : "jr 5/19/2017 12:40" },
 	"instance" : {
-		"deleteEntries:" : "jr 5/19/2017 12:35",
+		"deleteEntries:" : "jr 5/21/2017 00:24",
 		"on:in:" : "jr 5/19/2017 12:40",
 		"openForUpdateDo:" : "jr 5/19/2017 17:33",
 		"readEntryFrom:" : "jr 5/19/2017 12:52",
 		"readExtensionFrom:" : "jr 5/19/2017 12:54",
 		"readFrom:" : "jr 5/19/2017 12:46",
+		"removeEntryFor:" : "jr 5/21/2017 00:27",
 		"updateEntries:" : "jr 5/20/2017 23:54",
-		"updateEntryFrom:" : "jr 5/20/2017 23:54",
+		"updateEntryFrom:" : "jr 5/21/2017 00:26",
 		"writeEntry:to:" : "jr 5/19/2017 17:39",
 		"writeExtension:to:" : "jr 5/19/2017 17:40",
 		"writeTo:" : "jr 5/20/2017 23:09" } }

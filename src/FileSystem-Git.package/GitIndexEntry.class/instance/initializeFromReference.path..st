@@ -1,8 +1,12 @@
 as yet unclassified
 initializeFromReference: aFSReference path: aRelativePath
-	| directoryEntry shortNameLength |
-	directoryEntry := aFSReference entry.
-	self updateFromReference: aFSReference.
+	| shortNameLength |
+	aFSReference exists
+		ifTrue: [self updateFromReference: aFSReference]
+		ifFalse: [ctime := DateAndTime epoch.
+				mtime := DateAndTime epoch.
+				size := 0.
+				objectHash := #[0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0]].
 	uid := 0.
 	gid := 0.
 	inode := 0.

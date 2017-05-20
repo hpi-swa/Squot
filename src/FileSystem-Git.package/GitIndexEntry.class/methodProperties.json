@@ -4,6 +4,7 @@
 		"readFrom:indexVersion:" : "jr 5/19/2017 12:58" },
 	"instance" : {
 		"<=" : "jr 5/19/2017 17:28",
+		"compareWithEach" : "jr 5/21/2017 00:27",
 		"ctime" : "jr 5/19/2017 15:10",
 		"ctime:" : "jr 5/19/2017 15:10",
 		"device" : "jr 5/19/2017 15:10",
@@ -13,7 +14,7 @@
 		"gid" : "jr 5/19/2017 15:10",
 		"gid:" : "jr 5/19/2017 15:10",
 		"initializeFromPath:in:" : "jr 5/19/2017 15:24",
-		"initializeFromReference:path:" : "jr 5/20/2017 23:41",
+		"initializeFromReference:path:" : "jr 5/21/2017 00:49",
 		"inode" : "jr 5/19/2017 15:10",
 		"inode:" : "jr 5/19/2017 15:10",
 		"mode" : "jr 5/19/2017 15:10",

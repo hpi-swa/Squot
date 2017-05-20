@@ -5,11 +5,6 @@ updateEntryFrom: aRelativePath
 	reference := workingCopyDir resolve: aRelativePath.
 	searchEntry := GitIndexEntry fromPath: aRelativePath in: workingCopyDir.
 	entries
-		findBinary: [:each |
-			searchEntry <= each
-				ifTrue: [each path = searchEntry path
-						ifTrue: [0]
-						ifFalse: [-1]]
-				ifFalse: [1]]
+		findBinary: searchEntry compareWithEach
 		do: [:existing | existing updateFromReference: reference]
 		ifNone: [newEntries add: searchEntry].

@@ -1,4 +1,6 @@
 intercepted
 delete: aResolvable
+	| isFile |
+	isFile := wrappedFilesystem isFile: aResolvable.
 	wrappedFilesystem delete: aResolvable.
-	changedPaths add: (wrappedFilesystem resolve: aResolvable).
+	isFile ifTrue: [changedPaths add: (wrappedFilesystem resolve: aResolvable)].

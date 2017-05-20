@@ -1,5 +1,6 @@
 {
 	"class" : {
-		 },
+		"readFrom:indexVersion:" : "jr 5/19/2017 12:59" },
 	"instance" : {
-		"readFrom:indexVersion:" : "jr 5/19/2017 12:54" } }
+		"readFrom:indexVersion:" : "jr 5/19/2017 12:54",
+		"writeTo:indexVersion:" : "jr 5/20/2017 22:04" } }

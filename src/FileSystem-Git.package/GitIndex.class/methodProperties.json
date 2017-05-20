@@ -4,8 +4,12 @@
 	"instance" : {
 		"deleteEntries:" : "jr 5/19/2017 12:35",
 		"on:in:" : "jr 5/19/2017 12:40",
-		"openForUpdateDo:" : "jr 5/19/2017 12:44",
+		"openForUpdateDo:" : "jr 5/19/2017 17:33",
 		"readEntryFrom:" : "jr 5/19/2017 12:52",
 		"readExtensionFrom:" : "jr 5/19/2017 12:54",
 		"readFrom:" : "jr 5/19/2017 12:46",
-		"updateEntries:" : "jr 5/19/2017 12:38" } }
+		"updateEntries:" : "jr 5/20/2017 23:54",
+		"updateEntryFrom:" : "jr 5/20/2017 23:54",
+		"writeEntry:to:" : "jr 5/19/2017 17:39",
+		"writeExtension:to:" : "jr 5/19/2017 17:40",
+		"writeTo:" : "jr 5/20/2017 23:09" } }

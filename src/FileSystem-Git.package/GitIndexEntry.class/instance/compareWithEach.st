@@ -1,4 +1,4 @@
-as yet unclassified
+comparing
 compareWithEach
 	"Answer a block to be used for a binary search among index entries"
 	^ [:each | self <= each

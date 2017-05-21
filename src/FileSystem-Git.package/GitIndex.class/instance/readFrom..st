@@ -1,4 +1,4 @@
-as yet unclassified
+reading
 readFrom: aStream
 	| binaryHash |
 	self readStartFrom: aStream.

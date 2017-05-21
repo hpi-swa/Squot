@@ -1,4 +1,4 @@
-as yet unclassified
+reading
 readStartFrom: aStream
 	self assert: (aStream next: 4) asString = 'DIRC'. "magic number"
 	version := (aStream next: 4) asInteger.

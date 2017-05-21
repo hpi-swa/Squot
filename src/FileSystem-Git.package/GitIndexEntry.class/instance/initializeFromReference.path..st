@@ -1,4 +1,4 @@
-as yet unclassified
+initialize-release
 initializeFromReference: aFSReference path: aRelativePath
 	| shortNameLength |
 	aFSReference exists

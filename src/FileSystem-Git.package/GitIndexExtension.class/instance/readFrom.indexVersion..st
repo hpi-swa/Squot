@@ -1,4 +1,4 @@
-as yet unclassified
+reading and writing
 readFrom: aStream indexVersion: versionNumber
 	| size |
 	signature := aStream next: 4.

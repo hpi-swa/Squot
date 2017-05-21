@@ -1,4 +1,4 @@
-as yet unclassified
+writing
 writeTo: aStream
 	| hash |
 	aStream nextPutAll: 'DIRC' asByteArray. "magic number"

@@ -1,3 +1,3 @@
-as yet unclassified
+reading
 readEntryFrom: aStream
 	entries add: (GitIndexEntry readFrom: aStream indexVersion: version).

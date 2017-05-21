@@ -1,4 +1,4 @@
-operations
+private
 updateEntryFrom: aRelativePath
 	"Replace an existing entry with up-to-date data or add a new one in the correct place"
 	| reference searchEntry |

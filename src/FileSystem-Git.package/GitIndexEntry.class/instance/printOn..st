@@ -1,4 +1,4 @@
-as yet unclassified
+printing
 printOn: aStream
 	super printOn: aStream.
 	aStream nextPut: $(;

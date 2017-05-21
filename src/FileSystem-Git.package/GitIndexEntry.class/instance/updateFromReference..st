@@ -1,4 +1,4 @@
-as yet unclassified
+modification
 updateFromReference: aFSReference
 	| directoryEntry |
 	directoryEntry := aFSReference entry.

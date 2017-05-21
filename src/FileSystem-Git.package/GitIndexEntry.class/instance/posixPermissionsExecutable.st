@@ -1,3 +1,3 @@
-as yet unclassified
+permission bits
 posixPermissionsExecutable
 	^ 8r0755

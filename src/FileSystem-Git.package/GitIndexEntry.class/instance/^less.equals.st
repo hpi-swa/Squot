@@ -1,4 +1,4 @@
-as yet unclassified
+comparing
 <= other
 	| maxIndex otherPath |
 	otherPath := other path.

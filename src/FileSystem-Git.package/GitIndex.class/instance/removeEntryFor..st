@@ -1,4 +1,4 @@
-operations
+private
 removeEntryFor: aRelativePath
 	| searchEntry |
 	searchEntry := GitIndexEntry fromPath: aRelativePath in: workingCopyDir.

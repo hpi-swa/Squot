@@ -1,4 +1,4 @@
-as yet unclassified
+reading and writing
 writeTo: aStream indexVersion: versionNumber
 	| startPosition shortNameLength |
 	startPosition := aStream position.

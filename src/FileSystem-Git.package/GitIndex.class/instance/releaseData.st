@@ -1,4 +1,4 @@
-operations
+private
 releaseData
 	fileStream := nil.
 	workingCopyDir := nil.

@@ -1,4 +1,4 @@
-as yet unclassified
+reading and writing
 readFrom: aStream indexVersion: versionNumber
 	| ctimeNanos ctimeSeconds moreFlags mtimeNanos mtimeSeconds shortNameLength startPosition objectType posixPermissions |
 	startPosition := aStream position.

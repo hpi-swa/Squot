@@ -1,10 +1,7 @@
 as yet unclassified
 readFrom: aStream
-	| binaryHash numberOfEntries |
-	self assert: (aStream next: 4) asString = 'DIRC'. "magic number"
-	version := (aStream next: 4) asInteger.
-	self assert: version = 2. "do not support the others as of now"
-	numberOfEntries := (aStream next: 4) asInteger.
+	| binaryHash |
+	self readStartFrom: aStream.
 	entries := OrderedCollection new: numberOfEntries.
 	numberOfEntries timesRepeat: [self readEntryFrom: aStream].
 	extensions := OrderedCollection new.
@@ -12,3 +9,4 @@ readFrom: aStream
 		whileFalse: [self readExtensionFrom: aStream].
 	binaryHash := aStream next: 20.
 	self assert: aStream atEnd.
+	self assert: binaryHash = (GitHash from: (aStream contents allButLast: 20)) byteHash.

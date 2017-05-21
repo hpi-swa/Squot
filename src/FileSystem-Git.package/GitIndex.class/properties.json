@@ -13,7 +13,8 @@
 		"extensions",
 		"repository",
 		"workingCopyDir",
-		"newEntries" ],
+		"newEntries",
+		"numberOfEntries" ],
 	"name" : "GitIndex",
 	"pools" : [
 		 ],

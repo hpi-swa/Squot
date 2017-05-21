@@ -1,0 +1,4 @@
+accessing
+pathString
+	
+	^ path asString

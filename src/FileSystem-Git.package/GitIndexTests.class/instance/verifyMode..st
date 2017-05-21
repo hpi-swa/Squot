@@ -1,9 +1,9 @@
 verifying
-verifyMode: aByteArray
+verifyMode: anInteger
 	| byte3 modes mode permissions topBit byte4 permissionBits |
-	self assert: 0 equals: (aByteArray first: 2) asInteger.
+	self assert: 0 equals: (anInteger bitShift: -16).
 	
-	byte3 := aByteArray third.
+	byte3 := anInteger digitAt: 2. "digit 1 = LSB"
 	modes := #(
 		2r1000 "file"
 		2r1010 "symlink"
@@ -21,7 +21,7 @@ verifyMode: aByteArray
 		0 "symlink / gitlink").
 	"shift to position 9"
 	topBit := (byte3 bitAnd: 1) bitShift: 8.
-	byte4 := aByteArray fourth.
+	byte4 := anInteger digitAt: 1.
 	"create UNIX 9-bit permissions"
 	permissionBits := topBit bitOr: byte4.
 	self assert: (permissions includes: permissionBits)

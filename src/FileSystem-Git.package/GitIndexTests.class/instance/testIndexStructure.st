@@ -1,6 +1,7 @@
 tests
 testIndexStructure
-	self 
-		verifyIndexHeader;
-		verifyIndexEntries;
-		verifyIndexExtensions
+	index openForReadingDo: [:index |
+		self 
+			verifyIndexHeader;
+			verifyIndexEntries;
+			verifyIndexExtensions].

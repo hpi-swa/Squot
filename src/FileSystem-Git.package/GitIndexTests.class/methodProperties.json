@@ -2,13 +2,11 @@
 	"class" : {
 		 },
 	"instance" : {
-		"fieldsDo:" : "MaxLeske 9/29/2012 17:43",
 		"indexBytes" : "MaxLeske 9/30/2012 07:54",
-		"readEntryInto:" : "MaxLeske 9/30/2012 07:44",
-		"setUp" : "jr 1/14/2017 01:16",
-		"testIndexStructure" : "MaxLeske 9/10/2012 08:39",
+		"setUp" : "jr 5/21/2017 13:46",
+		"testIndexStructure" : "jr 5/21/2017 14:06",
 		"verifyFlags:" : "MaxLeske 9/30/2012 08:43",
-		"verifyIndexEntries" : "MaxLeske 9/30/2012 10:54",
+		"verifyIndexEntries" : "jr 5/21/2017 14:29",
 		"verifyIndexExtensions" : "DamienCassou 1/29/2013 09:48",
-		"verifyIndexHeader" : "MaxLeske 9/30/2012 07:54",
-		"verifyMode:" : "MaxLeske 9/29/2012 18:41" } }
+		"verifyIndexHeader" : "jr 5/21/2017 14:06",
+		"verifyMode:" : "jr 5/21/2017 14:30" } }

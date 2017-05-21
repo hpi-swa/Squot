@@ -1,4 +1,7 @@
 running
 setUp
+	| memoryFile |
 	super setUp.
-	indexReader := self indexBytes readStream
+	memoryFile := FileSystem memory / 'index'.
+	memoryFile writeStreamDo: [:stream | stream binary; nextPutAll: self indexBytes].
+	index := GitIndex on: memoryFile in: nil.

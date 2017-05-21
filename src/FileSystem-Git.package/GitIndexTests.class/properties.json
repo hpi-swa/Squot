@@ -6,7 +6,8 @@
 		 ],
 	"commentStamp" : "",
 	"instvars" : [
-		"indexReader" ],
+		"indexReader",
+		"index" ],
 	"name" : "GitIndexTests",
 	"pools" : [
 		 ],

@@ -20,4 +20,8 @@ menuBranchListHook: aMenu
 		{'Rename branch'. #actionBranchRename}.
 		{'Remove branch'. #actionBranchRemove}.
 	}.
+	self branchSelection historian hasUpstreamHistorian ifTrue:
+		[aMenu add: 'Remove upstream branch at the remote'
+			help: 'Push the deletion of the remote branch'
+			action: #actionBranchRemoveUpstream].
 	^ aMenu

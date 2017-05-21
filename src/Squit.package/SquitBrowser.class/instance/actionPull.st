@@ -1,27 +1,28 @@
 actions
 actionPull
 	"Pulls into the active (not the selected!) branch"
-	| gitRepository localBranchName remoteName repository remoteRef remoteTrackingHistorian remoteTrackingRef remoteUrl remoteVersion previousVersion |
+	| gitRepository localHistorian localBranchName remoteName repository remoteRef remoteTrackingHistorian remoteTrackingRef remoteUrl remoteVersion previousVersion |
 	repository := self projectSelection repository.
 	gitRepository := repository gitRepository.
-	self checkTrackedBranchOrOfferChange: self projectSelection loadedHistorian
+	localHistorian := self projectSelection loadedHistorian.
+	self checkTrackedBranchOrOfferChange: localHistorian
 		ifUnsupported: [^ self].
-	localBranchName := self projectSelection loadedHistorian shortName.
-	remoteName := gitRepository repository upstreamRemoteOfBranchNamed: localBranchName.
+	localBranchName := localHistorian shortName.
+	remoteName := localHistorian upstreamRemoteName.
 	remoteUrl := gitRepository repository remoteUrl: remoteName.
-	remoteRef := gitRepository repository upstreamRefOfBranchNamed: localBranchName.
+	remoteRef := localHistorian upstreamHistorianName.
 	(remoteName isNil or: [remoteRef isNil]) ifTrue:
 		[self offerToSetUpstreamBranchOf: localBranchName
 			in: gitRepository
 			ifCanceled: [^ self].
-		remoteName := gitRepository repository upstreamRemoteOfBranchNamed: localBranchName.
+		remoteName := localHistorian upstreamRemoteName.
 		remoteUrl := gitRepository repository remoteUrl: remoteName.
-		remoteRef := gitRepository repository upstreamRefOfBranchNamed: localBranchName].
+		remoteRef := localHistorian upstreamHistorianName].
 	gitRepository fetchFrom: remoteName.
 	remoteTrackingRef := gitRepository repository refName: remoteRef forRemote: remoteName.
 	remoteTrackingHistorian := repository historianNamed: remoteTrackingRef.
 	remoteVersion := remoteTrackingHistorian version.
-	previousVersion := self projectSelection loadedHistorian version.
+	previousVersion := localHistorian version.
 	previousVersion
 		ifNil: ["new branch"]
 		ifNotNil: [remoteVersion = previousVersion

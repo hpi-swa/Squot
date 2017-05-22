@@ -2,7 +2,6 @@
 	"class" : {
 		"lastStoredRun" : "jr 4/24/2017 15:27" },
 	"instance" : {
-		"newVersion:withParents:" : "jr 4/24/2017 15:56",
 		"testNearestMergeBaseFar" : "jr 4/24/2017 15:51",
 		"testNearestMergeBaseIsNearest" : "jr 4/24/2017 15:53",
 		"testNearestMergeBaseIsNearest2" : "jr 4/24/2017 15:54",

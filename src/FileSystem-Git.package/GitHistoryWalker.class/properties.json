@@ -6,14 +6,9 @@
 		 ],
 	"commentStamp" : "<historical>",
 	"instvars" : [
-		"sourceCommits",
-		"sinkCommits",
-		"seen",
-		"searchFrontier",
-		"revList",
-		"commitBlock" ],
+		 ],
 	"name" : "GitHistoryWalker",
 	"pools" : [
 		 ],
-	"super" : "Object",
+	"super" : "VersionHistoryWalker",
 	"type" : "normal" }

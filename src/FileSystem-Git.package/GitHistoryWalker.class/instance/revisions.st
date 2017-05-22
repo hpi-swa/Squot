@@ -1,3 +1,3 @@
 accessing
 revisions
-	^ revList
+	^ self versions

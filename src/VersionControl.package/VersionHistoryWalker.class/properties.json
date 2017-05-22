@@ -1,0 +1,20 @@
+{
+	"category" : "VersionControl-Algorithms",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "jr 5/22/2017 21:00",
+	"instvars" : [
+		"seen",
+		"searchFrontier",
+		"sourceVersions",
+		"sinkVersions",
+		"versionList",
+		"versionBlock",
+		"stopRequested" ],
+	"name" : "VersionHistoryWalker",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }

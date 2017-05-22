@@ -8,7 +8,7 @@
 	"instvars" : [
 		"parents",
 		"text" ],
-	"name" : "VersionsMergeBaseTestsMockVersion",
+	"name" : "VersionsTestsFakeVersion",
 	"pools" : [
 		 ],
 	"super" : "Object",

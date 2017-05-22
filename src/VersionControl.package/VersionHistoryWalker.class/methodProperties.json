@@ -1,0 +1,21 @@
+{
+	"class" : {
+		 },
+	"instance" : {
+		"continueDo:" : "jr 5/22/2017 20:55",
+		"excludeAncestorsOf:" : "jr 5/22/2017 23:48",
+		"idOf:" : "jr 5/22/2017 23:47",
+		"initialize" : "jr 5/22/2017 23:33",
+		"initializeSearchFrontier" : "jr 5/22/2017 21:05",
+		"performSearch" : "jr 5/22/2017 20:55",
+		"sinkVersions" : "jr 5/22/2017 20:55",
+		"sinkVersions:" : "jr 5/22/2017 20:55",
+		"sourceVersions" : "jr 5/22/2017 20:55",
+		"sourceVersions:" : "jr 5/22/2017 20:55",
+		"startingFrom:" : "jr 5/22/2017 20:55",
+		"startingFrom:do:" : "jr 5/22/2017 20:55",
+		"startingFromAll:" : "jr 5/22/2017 23:38",
+		"startingFromAll:do:" : "jr 5/22/2017 20:55",
+		"stop" : "jr 5/22/2017 20:55",
+		"versions" : "jr 5/22/2017 20:55",
+		"visitVersion:" : "jr 5/22/2017 23:46" } }

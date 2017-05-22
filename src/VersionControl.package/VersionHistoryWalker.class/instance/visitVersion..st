@@ -1,7 +1,7 @@
 history walking
 visitVersion: aVersion
-	(seen includes: aVersion internalId) ifTrue: [^self].
-	seen add: aVersion internalId.
+	(seen includes: (self idOf: aVersion)) ifTrue: [^self].
+	seen add: (self idOf: aVersion).
 	(sinkVersions includes: aVersion) ifTrue: [^self].
 	searchFrontier addAll: aVersion parents.
 	versionBlock

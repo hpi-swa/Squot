@@ -2,19 +2,11 @@
 	"class" : {
 		 },
 	"instance" : {
-		"excludeAncestorsOf:" : "jr 4/12/2017 17:18",
 		"excludeAncestorsOfAll:" : "jr 4/12/2017 16:59",
-		"initialize" : "jr 4/12/2017 16:57",
-		"performSearch" : "jr 4/9/2017 00:25",
-		"revisions" : "jr 4/8/2017 23:26",
-		"sinkCommits" : "jr 4/8/2017 23:26",
-		"sinkCommits:" : "jr 4/8/2017 23:26",
-		"sourceCommits" : "jr 4/8/2017 23:26",
-		"sourceCommits:" : "jr 4/8/2017 23:26",
-		"startingFrom:" : "jr 4/8/2017 23:38",
-		"startingFrom:do:" : "jr 4/12/2017 17:05",
-		"startingFromAll:" : "jr 4/12/2017 17:15",
-		"startingFromAll:do:" : "jr 4/12/2017 17:27",
-		"visitCommit:" : "jr 4/12/2017 17:02",
-		"walkWhile:startingFrom:" : "jr 4/12/2017 17:04",
-		"walkWhile:startingFromAll:" : "jr 4/12/2017 17:05" } }
+		"idOf:" : "jr 5/22/2017 23:46",
+		"initializeSearchFrontier" : "jr 5/22/2017 23:42",
+		"revisions" : "jr 5/22/2017 23:43",
+		"sinkCommits" : "jr 5/22/2017 23:43",
+		"sinkCommits:" : "jr 5/22/2017 23:43",
+		"sourceCommits" : "jr 5/22/2017 23:43",
+		"sourceCommits:" : "jr 5/22/2017 23:43" } }

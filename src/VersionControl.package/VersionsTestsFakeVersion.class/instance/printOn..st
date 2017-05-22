@@ -1,4 +1,4 @@
-nil
+printing
 printOn: aStream
 	aStream
 		nextPutAll: 'mock version ';

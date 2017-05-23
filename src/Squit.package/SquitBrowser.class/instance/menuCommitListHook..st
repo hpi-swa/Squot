@@ -21,4 +21,7 @@ menuCommitListHook: aMenu
 		{'Create new branch at this commit'. #actionBranchAdd. ''}.
 		{'Tag commit'. #actionCommitTag. ''}.
 	}.
+	aMenu addList: {
+		{'Merge this into memory'. #actionCommitMergeIntoMemory. ''}.
+	}.
 	^ aMenu

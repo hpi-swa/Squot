@@ -5,6 +5,7 @@
 	"instance" : {
 		"=" : "jr 4/14/2017 00:55",
 		"addCredentialsFor:user:password:" : "jr 4/12/2017 14:21",
+		"cloneFrom:" : "jr 5/23/2017 14:22",
 		"convertToCurrentVersion:refStream:" : "jr 4/12/2017 14:20",
 		"createNewVersion:with:" : "jr 2/5/2017 22:46",
 		"credentialsFor:" : "jr 4/15/2017 14:35",
@@ -21,6 +22,7 @@
 		"hash" : "jr 4/14/2017 00:55",
 		"historianNamed:" : "jr 2/20/2017 20:47",
 		"historians" : "jr 4/11/2017 13:33",
+		"importFromAll:" : "jr 5/23/2017 14:14",
 		"importFromUpstream:" : "jr 5/23/2017 12:04",
 		"importVersionAt:from:" : "jr 1/26/2017 14:03",
 		"initialize" : "jr 4/12/2017 14:16",

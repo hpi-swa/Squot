@@ -15,5 +15,5 @@ testNearestMergeBaseIsNearest
 		tree: tree; repository: repository; store; yourself.
 	commit4 := GitCommit withDefaultStamps parents: {commit2 hexHash}; message: '4';
 		tree: tree; repository: repository; store; yourself.
-	self assert: commit2 == (commit3 nearestMergeBaseWithAnyOf: {commit4 hexHash}).
-	self assert: commit2 == (commit3 nearestMergeBaseWithAnyOf: {commit4 hexHash}).
+	self assert: commit2 == (commit3 mergeBaseWithAnyOf: {commit4 hexHash}).
+	self assert: commit2 == (commit3 mergeBaseWithAnyOf: {commit4 hexHash}).

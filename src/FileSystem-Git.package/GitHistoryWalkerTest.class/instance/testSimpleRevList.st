@@ -1,4 +1,4 @@
-as yet unclassified
+testing
 testSimpleRevList
 	| commit1 commit2 revList |
 	commit1 := self addCommit: '1' withParents: nil.

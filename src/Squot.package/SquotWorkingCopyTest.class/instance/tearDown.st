@@ -10,3 +10,4 @@ tearDown
 	(repository respondsTo: #close) ifTrue: [repository close].
 	(store respondsTo: #close) ifTrue: [store close].
 	changeLogSuppressor tearDown.
+	workingCopy repository delete: workingCopy loadedHistorian.

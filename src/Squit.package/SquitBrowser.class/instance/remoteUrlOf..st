@@ -4,5 +4,5 @@ remoteUrlOf: aHistorian
 	repository := aHistorian repository.
 	gitRepository := repository gitRepository.
 	localBranchName := aHistorian shortName.
-	remoteName := gitRepository repository upstreamRemoteOfBranchNamed: localBranchName.
+	remoteName := aHistorian upstreamRemoteName.
 	^ gitRepository repository remoteUrl: remoteName

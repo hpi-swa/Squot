@@ -1,4 +1,4 @@
-as yet unclassified
+helpers
 addCommit: message time: dateAndTime withParents: parentCommits
 	^ (GitCommit in: repository)
 		tree: simpleTree;

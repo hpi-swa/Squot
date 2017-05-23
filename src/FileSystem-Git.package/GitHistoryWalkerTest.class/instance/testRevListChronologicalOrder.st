@@ -1,4 +1,4 @@
-as yet unclassified
+testing
 testRevListChronologicalOrder
 	| first a1 a2 b1 b2 b3 base merge revList |
 	first := DateAndTime year: 2017 day: 1.

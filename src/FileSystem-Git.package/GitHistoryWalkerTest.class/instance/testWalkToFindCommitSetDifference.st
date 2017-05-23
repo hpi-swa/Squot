@@ -1,4 +1,4 @@
-as yet unclassified
+testing
 testWalkToFindCommitSetDifference
 	| commit1 commit2 commit3 commit4 commit5 commit6 revisions |
 	"commit1 --- commit2 --- commit3 --- commit6

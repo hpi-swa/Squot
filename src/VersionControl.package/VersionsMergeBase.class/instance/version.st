@@ -1,3 +1,3 @@
-as yet unclassified
+accessing
 version
-	^ baseVersion
+	^ (self commonAncestors ifEmpty: [^ nil]) anyOne

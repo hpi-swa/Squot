@@ -1,4 +1,4 @@
-as yet unclassified
+testing
 testRevWalkingWithMerge
 	| commit1 commit2 commit3 commit4 revisions |
 	commit1 := self addCommit: '1' withParents: nil.

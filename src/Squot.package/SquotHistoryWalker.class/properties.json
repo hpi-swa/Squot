@@ -6,15 +6,9 @@
 		 ],
 	"commentStamp" : "<historical>",
 	"instvars" : [
-		"seen",
-		"searchFrontier",
-		"sourceVersions",
-		"sinkVersions",
-		"versionList",
-		"versionBlock",
-		"stopRequested" ],
+		 ],
 	"name" : "SquotHistoryWalker",
 	"pools" : [
 		 ],
-	"super" : "Object",
+	"super" : "VersionHistoryWalker",
 	"type" : "normal" }

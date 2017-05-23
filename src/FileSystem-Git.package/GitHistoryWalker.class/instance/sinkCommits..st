@@ -1,4 +1,4 @@
 accessing
 sinkCommits: anObject
 
-	sinkCommits := anObject
+	sinkVersions := anObject

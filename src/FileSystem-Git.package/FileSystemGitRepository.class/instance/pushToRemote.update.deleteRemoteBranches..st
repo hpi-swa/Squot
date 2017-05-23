@@ -17,4 +17,5 @@ pushToRemote: remoteName update: aCollectionOfBranchNamesAndAssociations deleteR
 				to: refAndCommit value hexHash
 				message: 'update by push']].
 	deleteRefs do: [:each |
-		(report successes includes: each) ifTrue: [repository deleteRef: each]].
+		(report successes includes: each) ifTrue:
+			[repository deleteRef: (repository refName: each forRemote: remoteName)]].

@@ -4,6 +4,7 @@
 	"instance" : {
 		"newCommit:parents:" : "jr 3/22/2017 15:21",
 		"setUp" : "jr 3/22/2017 15:27",
+		"testAllMergeBases" : "jr 5/23/2017 11:36",
 		"testNearestMergeBaseFar" : "jr 5/23/2017 11:29",
 		"testNearestMergeBaseIsNearest" : "jr 5/23/2017 11:29",
 		"testNearestMergeBaseIsNearest2" : "jr 5/23/2017 11:29",

@@ -2,7 +2,7 @@ private
 addNewObjectsIn: aCommit to: packFileCreator basedOn: remoteRefHashes
 	| baseCommit |
 	packFileCreator addObject: aCommit.
-	baseCommit := aCommit nearestMergeBaseWithAnyOf: remoteRefHashes.
+	baseCommit := aCommit mergeBaseWithAnyOf: remoteRefHashes.
 	baseCommit
 		ifNil: [packFileCreator addObject: aCommit; visit: aCommit  tree]
 		ifNotNil: [(GitDiffCreator new diffTrees: baseCommit tree and: aCommit tree)

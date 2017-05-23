@@ -1,5 +1,5 @@
 public-accessing
-nearestMergeBaseWithAnyOf: aCollectionOfHashes
+mergeBaseWithAnyOf: aCollectionOfHashes
 	| commits |
 	commits := OrderedCollection withAll:
 		(aCollectionOfHashes collect: [:each | repository objectNamed: each ifAbsent: []]).

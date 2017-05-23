@@ -6,5 +6,5 @@ testNearestMergeBaseNone
 		tree: tree; repository: repository; store; yourself.
 	commit2 := GitCommit withDefaultStamps parents: {}; message: '2';
 		tree: tree; repository: repository; store; yourself.
-	self assert: (commit1 nearestMergeBaseWithAnyOf: {commit2 hexHash}) isNil.
-	self assert: (commit2 nearestMergeBaseWithAnyOf: {commit1 hexHash}) isNil.
+	self assert: (commit1 mergeBaseWithAnyOf: {commit2 hexHash}) isNil.
+	self assert: (commit2 mergeBaseWithAnyOf: {commit1 hexHash}) isNil.

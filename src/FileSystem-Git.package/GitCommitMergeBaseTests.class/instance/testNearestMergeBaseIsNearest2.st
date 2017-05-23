@@ -14,4 +14,4 @@ testNearestMergeBaseIsNearest2
 	commit5 := self newCommit: '5' parents: {commit4}.
 	commit6 := self newCommit: '6' parents: {commit5. commit1}.
 	commit7 := self newCommit: '7' parents: {commit6}.
-	self assert: commit2 == (commit3 nearestMergeBaseWithAnyOf: {commit7 hexHash}).
+	self assert: commit2 == (commit3 mergeBaseWithAnyOf: {commit7 hexHash}).

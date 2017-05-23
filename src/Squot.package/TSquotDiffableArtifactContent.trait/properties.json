@@ -1,7 +1,6 @@
 {
 	"category" : "Squot-Interfaces",
 	"classtraitcomposition" : "TSquotArtifactContent classTrait",
-	"comment" : "My users are the #content of SquotArtifacts and support computing changes between two artifacts (diff).",
 	"commentStamp" : "jr 4/10/2017 23:35",
 	"name" : "TSquotDiffableArtifactContent",
 	"traitcomposition" : "TSquotArtifactContent" }

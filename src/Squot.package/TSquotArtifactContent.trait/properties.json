@@ -1,7 +1,4 @@
 {
 	"category" : "Squot-Interfaces",
-	"comment" : "I define methods that objects used as content in an Artifact should understand.
-
-You should probably copy my methods to classes instead of letting them use me.",
 	"commentStamp" : "jr 2/16/2017 00:25",
 	"name" : "TSquotArtifactContent" }

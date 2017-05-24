@@ -2,6 +2,6 @@ accessing
 lastLoadedHistorian
 
 	^ lastLoadedHistorian ifNil:
-		[lastLoadedHistorian := (repository historianNamed: 'refs/meta/squot-loaded')
+		[lastLoadedHistorian := repository metaHistorianForLastLoadedVersion
 			version: loadedHistorian version;
 			yourself]

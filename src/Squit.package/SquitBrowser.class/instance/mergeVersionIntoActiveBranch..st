@@ -4,6 +4,7 @@ mergeVersionIntoActiveBranch: mergeHeadCommit
 	self projectSelection loadedHistorian version
 		 ifNil: ["new branch that got an ancestor now"
 			self projectSelection loadedHistorian version: mergeHeadCommit.
+			self projectSelection loadedVersion: mergeHeadCommit.
 			^ self refresh].
 	(self projectSelection loadedHistorian version = mergeHeadCommit)
 		ifTrue: ["fast-forward merge" ^ self refresh].

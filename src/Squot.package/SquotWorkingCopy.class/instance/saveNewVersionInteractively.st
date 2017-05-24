@@ -24,7 +24,7 @@ saveNewVersionInteractively
 					author: self defaultAuthor.
 				version parents addAll: additionalParents.
 				self shouldNotStoreMetadata ifTrue: [version doNotStoreMetadata]].
-	self lastLoadedHistorian version: newVersion.
+	self loadedVersion: newVersion.
 	self resetAdditionalParents.
 	previousSnapshot := finalSnapshot.
 	previousVersionId := newVersion internalId.

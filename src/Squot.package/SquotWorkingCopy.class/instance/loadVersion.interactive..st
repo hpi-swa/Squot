@@ -6,3 +6,4 @@ loadVersion: aVersion interactive: shouldBeInteractiveBoolean
 	shouldBeInteractiveBoolean ifTrue: [^ self loadVersionInteractively: aVersion].
 	self store restoreToSnapshot: aVersion snapshot.
 	self loadedHistorian version: aVersion.
+	self loadedVersion: aVersion.

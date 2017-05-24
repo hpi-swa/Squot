@@ -24,7 +24,8 @@ saveNewVersionInteractively
 					author: self defaultAuthor.
 				version parents addAll: additionalParents.
 				self shouldNotStoreMetadata ifTrue: [version doNotStoreMetadata]].
-	additionalParents := OrderedCollection new.
+	self lastLoadedHistorian version: newVersion.
+	self resetAdditionalParents.
 	previousSnapshot := finalSnapshot.
 	previousVersionId := newVersion internalId.
 	self cacheNewMonticelloVersions: finalSnapshot message: tool message.

@@ -13,7 +13,8 @@
 		"previousVersionId",
 		"previousSnapshot",
 		"shouldStoreMetadata",
-		"additionalParents" ],
+		"additionalParents",
+		"lastLoadedHistorian" ],
 	"name" : "SquotWorkingCopy",
 	"pools" : [
 		 ],

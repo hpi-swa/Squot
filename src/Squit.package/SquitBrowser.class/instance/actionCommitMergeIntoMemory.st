@@ -1,17 +1,18 @@
 ui menu
 actionCommitMergeIntoMemory
 
-	| previouslyLoadedHistorian workingCopy previousAdditionalParents |
+	| previouslyLoadedHistorian workingCopy selectedVersion previousAdditionalParents |
 	workingCopy := self projectSelection.
+	selectedVersion := self commitSelection.
 	previouslyLoadedHistorian := workingCopy loadedHistorian.
 	previousAdditionalParents := workingCopy additionalParents.
 	
 	workingCopy
 		loadedHistorian: workingCopy lastLoadedHistorian;
 		saveNewVersionMessage: '''stash'' commit' interactive: false;
-		mergeVersionInteractively: self commitSelection.
+		mergeVersionInteractively: selectedVersion.
 	
-	workingCopy lastLoadedHistorian version: previouslyLoadedHistorian version.
+	workingCopy loadedVersion: selectedVersion.
 	
 	workingCopy
 		loadedHistorian: previouslyLoadedHistorian;

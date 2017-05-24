@@ -18,5 +18,7 @@ mergeVersionInteractively: aVersion
 			basedOn: mergeBase snapshot.
 	(self loadSnapshotInteractively: mergeSnapshot) ifTrue:
 		[fastForwardPossible
-			ifTrue: [loadedHistorian version: aVersion]
+			ifTrue: 
+				[loadedHistorian version: aVersion.
+				self loadedVersion: aVersion]
 			ifFalse: [self addParentVersion: aVersion]].

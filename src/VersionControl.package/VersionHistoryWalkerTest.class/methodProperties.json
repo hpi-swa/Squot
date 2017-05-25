@@ -2,7 +2,9 @@
 	"class" : {
 		 },
 	"instance" : {
-		"setUp" : "jr 5/22/2017 21:06",
+		"setUp" : "jr 5/25/2017 23:32",
+		"testMultipleVisitsToExcludedVersion" : "jr 5/26/2017 00:24",
+		"testMultipleVisitsToExcludedVersionWithBlock" : "jr 5/26/2017 00:25",
 		"testSimple" : "jr 5/22/2017 23:35",
 		"testStartingFromNil" : "jr 5/22/2017 21:06",
 		"testWalkToFindSetDifference" : "jr 5/22/2017 23:37",

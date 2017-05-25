@@ -1,6 +1,6 @@
 history walking
 startingFrom: aVersion
 	versionBlock := nil.
-	searchFrontier add: aVersion.
+	self addStart: aVersion.
 	self performSearch.
 	^ versionList

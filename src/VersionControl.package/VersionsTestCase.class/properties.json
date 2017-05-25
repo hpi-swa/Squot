@@ -6,9 +6,9 @@
 		 ],
 	"commentStamp" : "",
 	"instvars" : [
-		"walker" ],
-	"name" : "VersionHistoryWalkerTest",
+		"lastFakeVersionNumber" ],
+	"name" : "VersionsTestCase",
 	"pools" : [
 		 ],
-	"super" : "VersionsTestCase",
+	"super" : "TestCase",
 	"type" : "normal" }

@@ -1,0 +1,14 @@
+{
+	"category" : "VersionControl-Algorithms",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "MarkedVersionForHistoryWalk",
+	"pools" : [
+		 ],
+	"super" : "MarkedObject",
+	"type" : "normal" }

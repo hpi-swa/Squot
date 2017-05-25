@@ -1,8 +1,10 @@
 {
 	"class" : {
+		"initialize" : "jr 5/24/2017 18:17",
 		"newOnObjectMemory" : "jr 4/9/2017 14:58",
 		"register:" : "fn 4/11/2017 11:35",
 		"registered" : "fn 4/11/2017 11:36",
+		"shutDown:" : "jr 5/24/2017 18:15",
 		"unregister:" : "jr 5/13/2017 14:46" },
 	"instance" : {
 		"add:at:" : "jr 1/26/2017 17:40",
@@ -59,4 +61,5 @@
 		"store" : "jr 1/26/2017 14:48",
 		"store:" : "jr 1/26/2017 14:48",
 		"unload" : "jr 1/26/2017 17:38",
-		"unregister" : "fn 4/11/2017 11:57" } }
+		"unregister" : "fn 4/11/2017 11:57",
+		"updateLastLoadedHistorianName" : "jr 5/24/2017 18:21" } }

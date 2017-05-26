@@ -16,6 +16,7 @@
 		"committer:" : "MaxLeske 5/26/2010 19:51",
 		"initialize" : "MaxLeske 2/27/2012 21:47",
 		"isAncestorOf:" : "jr 5/23/2017 11:29",
+		"isGpgSigned" : "jr 5/26/2017 19:52",
 		"loadAuthor:" : "MaxLeske 2/26/2012 10:20",
 		"loadCommitter:" : "MaxLeske 2/26/2012 10:20",
 		"loadParent:" : "MaxLeske 2/26/2012 11:27",

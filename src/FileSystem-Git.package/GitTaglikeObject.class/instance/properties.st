@@ -1,3 +1,3 @@
 public-accessing
 properties
-	^ properties ifNil: [ properties := Dictionary new ]
+	^ properties ifNil: [ properties := OrderedDictionary new ]

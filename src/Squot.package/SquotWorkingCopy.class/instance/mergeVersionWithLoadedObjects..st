@@ -6,10 +6,11 @@ mergeVersionWithLoadedObjects: aVersion
 	previouslyLoadedHistorian := loadedHistorian.
 	previousAdditionalParents := additionalParents.
 	[loadedHistorian := self lastLoadedHistorian.
-	self
+	self withCurrentSnapshot:
+	[self
 		saveNewVersionMessage: 'temporary version with unsaved changes' interactive: false;
 		mergeVersionInteractively: aVersion;	
-		loadedVersion: aVersion]
+		loadedVersion: aVersion]]
 	ensure:
 		[loadedHistorian := previouslyLoadedHistorian.
 		additionalParents := previousAdditionalParents].

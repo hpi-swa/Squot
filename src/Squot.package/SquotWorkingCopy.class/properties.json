@@ -14,7 +14,8 @@
 		"previousSnapshot",
 		"shouldStoreMetadata",
 		"additionalParents",
-		"lastLoadedHistorian" ],
+		"lastLoadedHistorian",
+		"snapshotBlock" ],
 	"name" : "SquotWorkingCopy",
 	"pools" : [
 		 ],

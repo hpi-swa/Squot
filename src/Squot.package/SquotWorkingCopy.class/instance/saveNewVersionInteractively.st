@@ -7,7 +7,7 @@ saveNewVersionInteractively
 	tool := SquotSaveVersionDialog new
 		parentVersions: self parentVersions;
 		originalArtifacts: baseSnapshot;
-		proposeArtifacts: (loadedSnapshot := store captureSnapshot);
+		proposeArtifacts: (loadedSnapshot := self currentSnapshot);
 		controllerForIgnores: self;
 		yourself.
 	ToolBuilder default in: [:builder | | view |

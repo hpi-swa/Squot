@@ -1,0 +1,15 @@
+loading and unloading
+mergeVersionWithLoadedObjects: aVersion
+	"Create a temporary version that saves all unsaved changes on the lastLoadedHistorian,
+	merge it with aVersion and go back to the original historian without the temp version."
+	| previouslyLoadedHistorian previousAdditionalParents |
+	previouslyLoadedHistorian := loadedHistorian.
+	previousAdditionalParents := additionalParents.
+	[loadedHistorian := self lastLoadedHistorian.
+	self
+		saveNewVersionMessage: 'temporary version with unsaved changes' interactive: false;
+		mergeVersionInteractively: aVersion;	
+		loadedVersion: aVersion]
+	ensure:
+		[loadedHistorian := previouslyLoadedHistorian.
+		additionalParents := previousAdditionalParents].

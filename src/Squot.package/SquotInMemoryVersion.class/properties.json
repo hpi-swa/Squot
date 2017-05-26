@@ -2,7 +2,7 @@
 	"category" : "Squot-InMemoryRepository",
 	"classinstvars" : [
 		 ],
-	"classtraitcomposition" : "TSquotVersionBuilder classTrait",
+	"classtraitcomposition" : "TSquotVersion classTrait + TSquotVersionBuilder classTrait",
 	"classvars" : [
 		 ],
 	"commentStamp" : "",
@@ -15,5 +15,5 @@
 	"pools" : [
 		 ],
 	"super" : "Object",
-	"traitcomposition" : "TSquotVersionBuilder",
+	"traitcomposition" : "TSquotVersion + TSquotVersionBuilder",
 	"type" : "normal" }

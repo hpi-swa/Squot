@@ -22,7 +22,7 @@ saveNewVersionInteractively
 		with: [:version | version
 					message: tool message asString;
 					author: self defaultAuthor.
-				version parents addAll: additionalParents.
+				version parents: self parentVersions.
 				self shouldNotStoreMetadata ifTrue: [version doNotStoreMetadata]].
 	self loadedVersion: newVersion.
 	self resetAdditionalParents.

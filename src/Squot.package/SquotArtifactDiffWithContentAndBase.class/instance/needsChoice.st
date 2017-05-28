@@ -1,3 +1,4 @@
 testing
 needsChoice
-	^ topNodes withAllChildren anySatisfy: [:any | any needsChoice]
+	^ topNodes anySatisfy: [:anyTop |
+		anyTop withAllChildren anySatisfy: [:anyChild | anyChild needsChoice]]

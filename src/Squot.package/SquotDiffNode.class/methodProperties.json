@@ -3,6 +3,7 @@
 		"title:content:children:" : "jr 4/10/2017 22:59" },
 	"instance" : {
 		"addContentForInspectionTo:" : "jr 4/17/2017 02:28",
+		"anyChildNeedsChoice" : "jr 5/29/2017 01:33",
 		"areAllChildrenActive" : "jr 5/28/2017 15:05",
 		"asStringOrText" : "jr 4/17/2017 02:02",
 		"balloonText" : "jr 4/17/2017 01:20",
@@ -18,6 +19,7 @@
 		"inspectContent" : "jr 4/17/2017 02:27",
 		"isActive" : "jr 4/17/2017 22:53",
 		"needsChoice" : "jr 5/29/2017 00:00",
+		"offersChoice" : "jr 5/29/2017 01:34",
 		"printOn:" : "jr 5/28/2017 15:01",
 		"submitSelfAndChildrenTo:" : "jr 4/17/2017 22:47",
 		"title" : "jr 4/10/2017 23:00",

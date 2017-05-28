@@ -6,6 +6,9 @@
 		"chooseLeft" : "jr 5/28/2017 23:41",
 		"chooseRight" : "jr 5/28/2017 23:41",
 		"effectiveContent" : "jr 5/28/2017 23:59",
-		"isActive" : "jr 5/28/2017 23:42",
+		"exclude" : "jr 5/29/2017 01:36",
+		"include" : "jr 5/29/2017 01:37",
+		"isActive" : "jr 5/29/2017 01:21",
 		"needsChoice" : "jr 5/29/2017 00:00",
+		"offersChoice" : "jr 5/29/2017 01:34",
 		"resetChoice" : "jr 5/28/2017 23:41" } }

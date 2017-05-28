@@ -1,4 +1,4 @@
 serializing
 wantsToBeInTableOfContents
-	"I am not literally not there, no need to record me"
+	"I am literally not there, no need to record me"
 	^ false

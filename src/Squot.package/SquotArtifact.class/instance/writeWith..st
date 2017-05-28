@@ -1,3 +1,3 @@
 serializing
 writeWith: aSerializer
-	^ content squotWrite: self with: aSerializer
+	^ self content squotWrite: self with: aSerializer

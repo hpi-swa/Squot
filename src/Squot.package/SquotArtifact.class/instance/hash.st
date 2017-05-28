@@ -1,3 +1,3 @@
 comparing
 hash
-	^ ((content hash bitXor: path hash) hashMultiply bitXor: storeInfo hash) hashMultiply
+	^ ((self content hash bitXor: path hash) hashMultiply bitXor: self storeInfo hash) hashMultiply

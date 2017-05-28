@@ -1,0 +1,15 @@
+{
+	"category" : "Squot-FileSystemStore",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "jr 5/28/2017 14:29",
+	"instvars" : [
+		"contentBlock",
+		"storeInfoBlock" ],
+	"name" : "SquotLazyArtifact",
+	"pools" : [
+		 ],
+	"super" : "SquotArtifact",
+	"type" : "normal" }

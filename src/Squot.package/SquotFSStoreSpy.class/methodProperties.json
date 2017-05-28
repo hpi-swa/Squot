@@ -1,0 +1,10 @@
+{
+	"class" : {
+		"on:" : "jr 5/28/2017 13:00" },
+	"instance" : {
+		"basicOpen:writable:" : "jr 5/28/2017 13:04",
+		"doesNotUnderstand:" : "jr 5/28/2017 12:59",
+		"initialize" : "jr 5/28/2017 13:00",
+		"on:" : "jr 5/28/2017 13:01",
+		"recordOpened:writable:" : "jr 5/28/2017 13:05",
+		"wasOpened:" : "jr 5/28/2017 13:09" } }

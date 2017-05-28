@@ -1,4 +1,4 @@
 copying
 postCopy
-	content := content copy.
+	self content: self content copy.
 	self postCopyWithoutContent.

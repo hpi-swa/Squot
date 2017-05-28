@@ -1,0 +1,15 @@
+{
+	"category" : "Squot-Tests-Tools",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "jr 5/28/2017 12:59",
+	"instvars" : [
+		"watchedStore",
+		"openedFiles" ],
+	"name" : "SquotFSStoreSpy",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }

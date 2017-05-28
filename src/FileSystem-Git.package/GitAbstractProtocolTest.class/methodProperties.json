@@ -1,6 +1,7 @@
 {
 	"class" : {
-		"isAbstract" : "DamienCassou 1/28/2013 19:01" },
+		"isAbstract" : "DamienCassou 1/28/2013 19:01",
+		"resources" : "jr 5/10/2017 17:11" },
 	"instance" : {
 		"classToBeTested" : "jr 11/30/2016 16:11",
 		"newProtocol" : "DamienCassou 1/28/2013 19:03",

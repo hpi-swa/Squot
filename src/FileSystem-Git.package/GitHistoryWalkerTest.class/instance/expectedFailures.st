@@ -1,3 +1,3 @@
-as yet unclassified
+testing
 expectedFailures
 	^ #(testRevListTopoOrder "not yet implemeted")

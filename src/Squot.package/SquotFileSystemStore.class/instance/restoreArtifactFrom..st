@@ -8,6 +8,9 @@ restoreArtifactFrom: aFileOrDirectory
 	artifact path: (self pathOf: aFileOrDirectory).
 	metadata applyTo: artifact.
 	deserializer := self deserializers detect: [:each |
-		each canReadObjectSerializedBy: (artifact storeInfo at: #serializer)].
+		each canReadObjectSerializedBy:
+			(artifact storeInfo at: #serializer
+				ifAbsent: [(self guessSerializerForArtifact: artifact in: aFileOrDirectory)
+						ifNil: [(SquotCannotFindSerializer for: aFileOrDirectory) signal]])].
 	deserializer new fillContentOf: artifact from: aFileOrDirectory.
 	^ artifact

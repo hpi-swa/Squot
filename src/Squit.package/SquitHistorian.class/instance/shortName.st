@@ -7,6 +7,6 @@ shortName
 				ifFalse: [^ shortHeadRef]].
 	(referenceName beginsWith: 'refs/remotes/')
 		ifTrue: [shortRemoteRef := referenceName allButFirst: 'refs/remotes/' size.
-			(gitRepository refExists: 'refs/heads', shortRemoteRef)
+			(gitRepository refExists: 'refs/heads/', shortRemoteRef)
 				ifFalse: [^ shortRemoteRef]].
 	^ referenceName

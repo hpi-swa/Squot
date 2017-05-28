@@ -11,7 +11,10 @@ invokeReceivePackWithRefs: updateAssociations andPack: aPackFile deleting: delet
 			pack: aPackFile].
 	response := self client httpPost: (self urlForService: 'git-receive-pack')
 		content: contents type: 'application/x-git-receive-pack-request'.
-	response isSuccess ifFalse: [Error signal: response status].
+	response isSuccess ifFalse: [
+		(response code = 401
+			ifTrue: [GitRemoteAuthenticationFailed]
+			ifFalse: [GitRemoteError]) signal: response status].
 	responseReader := GitProtocolReader on: response contentStream.
 	report := responseReader readReceivePackResponse.
 	report hasErrors ifTrue: [self error: 'Not all references could be updated.'].

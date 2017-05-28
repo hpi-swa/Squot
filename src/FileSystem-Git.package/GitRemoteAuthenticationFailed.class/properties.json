@@ -1,0 +1,14 @@
+{
+	"category" : "FileSystem-Git-Remote",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "GitRemoteAuthenticationFailed",
+	"pools" : [
+		 ],
+	"super" : "GitRemoteError",
+	"type" : "normal" }

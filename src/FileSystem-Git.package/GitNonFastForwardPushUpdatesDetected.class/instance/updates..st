@@ -1,0 +1,4 @@
+initialize-release
+updates: associationsOfRemoteCommitsOrHexHashesAndTargetCommits
+	relevantRefUpdates := associationsOfRemoteCommitsOrHexHashesAndTargetCommits
+	

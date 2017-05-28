@@ -1,3 +1,3 @@
 converting
 fromPath: aFSPath
-	^ aFSPath printWithDelimiter: $/
+	^ aFSPath printWithDelimiter: self delimiter

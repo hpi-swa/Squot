@@ -1,0 +1,3 @@
+accessing
+internalId
+	^ self identityHash

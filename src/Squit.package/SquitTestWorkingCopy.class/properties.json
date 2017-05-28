@@ -1,0 +1,14 @@
+{
+	"category" : "Squit-UI-Tests",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"workingCopy" ],
+	"name" : "SquitTestWorkingCopy",
+	"pools" : [
+		 ],
+	"super" : "TestResource",
+	"type" : "normal" }

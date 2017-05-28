@@ -1,15 +1,19 @@
-private
+creating new versions
 selectChangedArtifactsFrom: baseSnapshot
 to: loadedSnapshot
 title: titleString
 ifCanceled: cancelBlock
-	| builder tool view |
-	tool := SquotChangedArtifactsChooserOnSnapshots from: baseSnapshot to: loadedSnapshot.
+	| tool |
+	(SquotSelectionOfChangesRequested new
+		originalSnapshot: baseSnapshot;
+		proposedSnapshot: loadedSnapshot;
+		title: titleString;
+		signal)
+	ifNotNil: [:selectedArtifacts | ^ selectedArtifacts].
+	tool := SquotChangedArtifactsChooser from: baseSnapshot to: loadedSnapshot.
 	"tool addIgnoredArtifacts: self ignoredArtifacts."
 	tool controllerForIgnores: self.
-	builder := ToolBuilder default.
-	view := builder open: tool label: titleString.
-	builder runModal: view.
+	tool requestSelectedChangesWithTitle: titleString.
 	^ tool accepted
 		ifTrue: [tool selectedChanges]
 		ifFalse: [cancelBlock value]

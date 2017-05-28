@@ -1,3 +1,5 @@
 actions
 actionFeedback
-	SquitFeedback open
+	| username |
+	username := self detectGitHubUsernameIfNone: [^ SquitFeedback open].
+	SquitFeedback openWithAuthor: '@', username

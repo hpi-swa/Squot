@@ -1,4 +1,4 @@
-private
+creating new versions
 baseSnapshot
 	self isPreviousSnapshotUpToDate ifTrue: [^ previousSnapshot].
 	loadedHistorian version

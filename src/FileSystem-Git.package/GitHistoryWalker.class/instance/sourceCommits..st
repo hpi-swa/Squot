@@ -1,4 +1,4 @@
 accessing
 sourceCommits: anObject
 
-	sourceCommits := anObject
+	sourceVersions := anObject

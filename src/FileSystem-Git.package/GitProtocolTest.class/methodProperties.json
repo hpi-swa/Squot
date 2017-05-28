@@ -2,9 +2,9 @@
 	"class" : {
 		 },
 	"instance" : {
-		"expectedFailures" : "jr 12/1/2016 23:57",
-		"tearDown" : "jr 1/14/2017 01:12",
+		"expectedFailures" : "jr 5/10/2017 17:15",
 		"testFetchingABranch" : "jr 12/1/2016 23:53",
 		"testFetchingATag" : "jr 12/1/2016 23:53",
-		"testPushingABranch" : "jr 1/14/2017 01:12",
+		"testPushingABranch" : "jr 5/10/2017 17:36",
+		"testUnauthenticatedPushRaisesException" : "jr 5/10/2017 17:33",
 		"url" : "jr 10/26/2016 16:32" } }

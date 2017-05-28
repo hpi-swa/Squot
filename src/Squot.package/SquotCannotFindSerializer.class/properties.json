@@ -1,0 +1,14 @@
+{
+	"category" : "Squot-FileSystemStore",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"fileOrDirectory" ],
+	"name" : "SquotCannotFindSerializer",
+	"pools" : [
+		 ],
+	"super" : "Error",
+	"type" : "normal" }

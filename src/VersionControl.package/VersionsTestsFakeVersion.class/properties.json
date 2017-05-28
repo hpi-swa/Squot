@@ -1,0 +1,16 @@
+{
+	"category" : "VersionControl-Algorithms-Tests",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"parents",
+		"number",
+		"text" ],
+	"name" : "VersionsTestsFakeVersion",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }

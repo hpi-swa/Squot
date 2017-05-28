@@ -1,0 +1,14 @@
+{
+	"category" : "VersionControl-Algorithms-Tests",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"lastFakeVersionNumber" ],
+	"name" : "VersionsTestCase",
+	"pools" : [
+		 ],
+	"super" : "TestCase",
+	"type" : "normal" }

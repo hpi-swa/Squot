@@ -6,7 +6,7 @@ loadSnapshotInteractively: aSnapshot
 	self flag: #optimize. "work with diffs, not whole snapshots"
 	self addGlobalObjectsToStore: aSnapshot.
 	effectiveSnapshot :=
-		(self composeSnapshotInteractivelyFrom: store captureSnapshot
+		(self composeSnapshotInteractivelyFrom: self currentSnapshot
 			to: aSnapshot
 			title: 'Selected changes to load'
 			ifCanceled: [^ false]).

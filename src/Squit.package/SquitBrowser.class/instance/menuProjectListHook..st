@@ -3,6 +3,7 @@ menuProjectListHook: aMenu
 	<menuProjectList>
 	aMenu addList: {
 		{'Add project'. #actionProjectAdd}.
+		{'Clone project'. #actionProjectClone}.
 		{'Rename project'. #actionProjectRename}.
 		{'Remove project'. #actionProjectRemove}.
 	}.

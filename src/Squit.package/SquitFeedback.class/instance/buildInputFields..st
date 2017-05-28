@@ -21,6 +21,6 @@ buildInputFields: builder
 		getText: #actionAuthor;
 		editText: #actionAuthor:;
 		setText: #actionAuthor:;
-		help: 'Your name...';
+		help: 'Your name (preferably your GitHub user name)...';
 		frame: (0@0.9 corner: 1@1).
 	}

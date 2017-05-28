@@ -11,5 +11,5 @@
 	"name" : "VersionsMergeBaseTests",
 	"pools" : [
 		 ],
-	"super" : "TestCase",
+	"super" : "VersionsTestCase",
 	"type" : "normal" }

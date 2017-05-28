@@ -9,6 +9,9 @@ baseline: spec
 				spec
 					repository: 'github://dalehenrich/filetree:squeak4.3/repository'. ].
 		spec 
+			package: 'SqueakSSL-Core' with: [
+				spec
+					repository: 'http://source.squeak.org/trunk'. ];
 			package: 'WebClient-Core' with: [
 				spec
 					repository: 'http://source.squeak.org/trunk';
@@ -42,7 +45,7 @@ baseline: spec
 				spec requires: #('FS-Core' 'Ston' 'VersionControl' ). ];
 			package: 'Pharo-compatibility';
 			package: 'FileSystem-Git' with: [
-				spec requires: #('FS-Core' 'FS-Disk' 'FS-Memory' 'FS-AnsiStreams' 'FS-Tests-Core' 'Pharo-compatibility' 'INIFile' ). ];
+				spec requires: #('FS-Core' 'FS-Disk' 'FS-Memory' 'FS-AnsiStreams' 'FS-Tests-Core' 'Pharo-compatibility' 'INIFile' 'VersionControl' ). ];
 			package: 'Squit' with: [
 				spec requires: #('FileSystem-Git' 'Squot' 'FS-FileDirectory-Adapters' ). ].
 		spec 

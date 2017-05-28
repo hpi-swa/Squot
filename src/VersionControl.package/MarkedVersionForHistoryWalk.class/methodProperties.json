@@ -1,0 +1,9 @@
+{
+	"class" : {
+		 },
+	"instance" : {
+		"isPromisingForContinuedWalk" : "jr 5/25/2017 23:13",
+		"isReachableFromSink" : "jr 5/23/2017 16:01",
+		"isReachableFromSource" : "jr 5/25/2017 23:08",
+		"markReachableFromSink" : "jr 5/23/2017 16:00",
+		"markReachableFromSource" : "jr 5/25/2017 23:08" } }

@@ -4,10 +4,10 @@
 		 ],
 	"classvars" : [
 		 ],
-	"commentStamp" : "",
+	"commentStamp" : "jr 5/16/2017 18:17",
 	"instvars" : [
-		"inputVersions",
-		"baseVersion" ],
+		"markedVersions",
+		"commonAncestors" ],
 	"name" : "VersionsMergeBase",
 	"pools" : [
 		 ],

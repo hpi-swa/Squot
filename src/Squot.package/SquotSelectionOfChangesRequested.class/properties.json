@@ -1,0 +1,16 @@
+{
+	"category" : "Squot-Tools",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "jr 5/26/2017 22:17",
+	"instvars" : [
+		"title",
+		"originalSnapshot",
+		"proposedSnapshot" ],
+	"name" : "SquotSelectionOfChangesRequested",
+	"pools" : [
+		 ],
+	"super" : "Notification",
+	"type" : "normal" }

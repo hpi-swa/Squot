@@ -1,4 +1,4 @@
-as yet unclassified
+testing
 testRevListWithSink
 	| commit1 commit2 commit3 commit4 revList |
 	commit1 := self addCommit: '1' withParents: nil.

@@ -8,5 +8,5 @@ testNearestMergeBaseOneStep
 		tree: tree; repository: repository; store; yourself.
 	commit2 := GitCommit withDefaultStamps parents: {commitBase hexHash}; message: '2';
 		tree: tree; repository: repository; store; yourself.
-	self assert: commitBase == (commit1 nearestMergeBaseWithAnyOf: {commit2 hexHash}).
-	self assert: commitBase == (commit2 nearestMergeBaseWithAnyOf: {commit1 hexHash}).
+	self assert: commitBase == (commit1 mergeBaseWithAnyOf: {commit2 hexHash}).
+	self assert: commitBase == (commit2 mergeBaseWithAnyOf: {commit1 hexHash}).

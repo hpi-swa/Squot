@@ -1,34 +1,40 @@
 actions
 actionPull
 	"Pulls into the active (not the selected!) branch"
-	| gitRepository localBranchName remoteName repository remoteRef remoteTrackingHistorian remoteTrackingRef remoteUrl remoteVersion previousVersion |
+	| gitRepository localHistorian localBranchName remoteName repository remoteRef remoteTrackingHistorian remoteTrackingRef remoteUrl remoteVersion previousVersion |
 	repository := self projectSelection repository.
 	gitRepository := repository gitRepository.
-	localBranchName := self projectSelection loadedHistorian shortName.
-	remoteName := gitRepository repository upstreamRemoteOfBranchNamed: localBranchName.
+	localHistorian := self projectSelection loadedHistorian.
+	self checkTrackedBranchOrOfferChange: localHistorian
+		ifUnsupported: [^ self].
+	localBranchName := localHistorian shortName.
+	remoteName := localHistorian upstreamRemoteName.
 	remoteUrl := gitRepository repository remoteUrl: remoteName.
-	remoteRef := gitRepository repository upstreamRefOfBranchNamed: localBranchName.
+	remoteRef := localHistorian upstreamHistorianName.
 	(remoteName isNil or: [remoteRef isNil]) ifTrue:
 		[self offerToSetUpstreamBranchOf: localBranchName
 			in: gitRepository
 			ifCanceled: [^ self].
-		remoteName := gitRepository repository upstreamRemoteOfBranchNamed: localBranchName.
+		remoteName := localHistorian upstreamRemoteName.
 		remoteUrl := gitRepository repository remoteUrl: remoteName.
-		remoteRef := gitRepository repository upstreamRefOfBranchNamed: localBranchName].
-	gitRepository fetchFrom: remoteName.
-	remoteTrackingRef := gitRepository repository refName: localBranchName forRemote: remoteName.
+		remoteRef := localHistorian upstreamHistorianName].
+	self handlingCredentialsOf: localHistorian
+		do: [repository importFromUpstream: remoteName]
+		ifCanceled: [^ self].
+	remoteTrackingRef := gitRepository repository refName: remoteRef forRemote: remoteName.
 	remoteTrackingHistorian := repository historianNamed: remoteTrackingRef.
 	remoteVersion := remoteTrackingHistorian version.
-	previousVersion := self projectSelection loadedHistorian version.
-	remoteVersion = previousVersion ifTrue:
-		[UIManager default inform: 'Already up-to-date'.
-		^ self].
-	(previousVersion mergeBaseWith: remoteVersion) = remoteVersion
-		ifTrue: ["already merged" ^ self inform:
-			'Already up-to-date. Your local branch is ahead of the remote branch'].
-	self projectSelection mergeVersionInteractively: remoteVersion.
-	(self projectSelection loadedHistorian version = remoteVersion)
-		ifTrue: ["fast-forward merge" ^ self refresh].
-	[self actionCommit] on: SquotInitialLogMessageRequested
-		do: [:request | request resume: 'Merge branch ', remoteTrackingHistorian shortName, ' of ', remoteUrl].
+	previousVersion := localHistorian version.
+	previousVersion
+		ifNil: ["new branch"]
+		ifNotNil: [remoteVersion = previousVersion
+				ifTrue: [^ self inform: 'Already up-to-date'].
+			(previousVersion mergeBaseWith: remoteVersion) = remoteVersion
+				ifTrue: ["already merged" ^ self inform:
+					'Already up-to-date. Your local branch is ahead of the remote branch']].
+	[self mergeVersionIntoActiveBranch: remoteVersion]
+		on: SquotInitialLogMessageRequested
+		do: [:request | request resume:
+			'Merge branch ''', (repository historianNamed: remoteRef) shortName,
+			''' of ', remoteUrl].
 	self refresh.

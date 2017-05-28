@@ -1,4 +1,4 @@
-as yet unclassified
+helpers
 addCommit: message withParents: parents
 	^ (GitCommit in: repository)
 		tree: simpleTree;

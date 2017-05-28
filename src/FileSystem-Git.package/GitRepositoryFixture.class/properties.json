@@ -1,0 +1,16 @@
+{
+	"category" : "FileSystem-Git-Remote-Tests",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"repo",
+		"workingCopy",
+		"basicRepo" ],
+	"name" : "GitRepositoryFixture",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }

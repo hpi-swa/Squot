@@ -7,7 +7,7 @@ entryFromNode: treeEntry path: path for: aFilesystem
 		path: path / treeEntry entryName
 		creation: 0
 		modification: 0
-		isDir: treeEntry isInDirectorymode
-		size: (treeEntry isInDirectorymode
-				ifTrue: [0]
-				ifFalse: [repository sizeOfObjectNamed: treeEntry entryHash])
+		isDir: treeEntry isInDirectoryMode
+		size: (treeEntry hasSize
+				ifTrue: [repository sizeOfObjectNamed: treeEntry entryHash]
+				ifFalse: [0])

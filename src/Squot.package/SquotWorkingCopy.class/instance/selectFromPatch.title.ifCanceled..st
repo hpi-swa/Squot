@@ -1,12 +1,15 @@
 private
 selectFromPatch: aPatch title: titleString ifCanceled: cancelBlock
-	| tool builder view |
+	| tool |
+	(SquotSelectionOfChangesRequested new
+		patch: aPatch;
+		title: titleString;
+		signal)
+	ifNotNil: [:selectedPatch | ^ selectedPatch].
 	tool := SquotChangedArtifactsChooser on: aPatch.
 	"tool addIgnoredArtifacts: self ignoredArtifacts."
 	tool controllerForIgnores: self.
-	builder := ToolBuilder default.
-	view := builder open: tool label: titleString.
-	builder runModal: view.
+	tool requestSelectedChangesWithTitle: titleString.
 	^ tool accepted
 		ifTrue: [tool selectedPatch]
 		ifFalse: [cancelBlock value]

@@ -1,6 +1,6 @@
 actions
 mergeVersionIntoActiveBranch: mergeHeadCommit
-	self projectSelection mergeVersionInteractively: mergeHeadCommit.
+	self projectSelection mergeVersionInteractively: mergeHeadCommit ifCanceled: [^ self].
 	self projectSelection loadedHistorian version
 		 ifNil: ["new branch that got an ancestor now"
 			self projectSelection loadedHistorian version: mergeHeadCommit.

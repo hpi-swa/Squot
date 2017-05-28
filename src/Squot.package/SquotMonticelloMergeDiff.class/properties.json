@@ -1,0 +1,17 @@
+{
+	"category" : "Squot-Diffs",
+	"classinstvars" : [
+		 ],
+	"classtraitcomposition" : "TSquotDiffContent classTrait",
+	"classvars" : [
+		 ],
+	"commentStamp" : "jr 5/29/2017 00:37",
+	"instvars" : [
+		"operations",
+		"conflicts" ],
+	"name" : "SquotMonticelloMergeDiff",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"traitcomposition" : "TSquotDiffContent",
+	"type" : "normal" }

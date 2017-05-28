@@ -1,0 +1,11 @@
+{
+	"class" : {
+		 },
+	"instance" : {
+		"chooseBase" : "jr 5/28/2017 23:41",
+		"chooseLeft" : "jr 5/28/2017 23:41",
+		"chooseRight" : "jr 5/28/2017 23:41",
+		"effectiveContent" : "jr 5/28/2017 23:59",
+		"isActive" : "jr 5/28/2017 23:42",
+		"needsChoice" : "jr 5/29/2017 00:00",
+		"resetChoice" : "jr 5/28/2017 23:41" } }

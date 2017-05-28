@@ -1,0 +1,3 @@
+testing
+needsChoice
+	^ choice isNil

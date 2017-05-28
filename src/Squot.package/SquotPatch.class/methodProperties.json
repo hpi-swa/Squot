@@ -3,7 +3,13 @@
 		"with:" : "jr 5/1/2017 20:52" },
 	"instance" : {
 		"add:" : "jr 5/1/2017 19:50",
+		"adjustedDiffFromNodes:" : "jr 5/28/2017 23:53",
+		"applyOnTopOf:" : "jr 5/28/2017 19:02",
 		"artifacts" : "jr 5/1/2017 19:53",
+		"commonPathsWith:" : "jr 5/28/2017 19:03",
+		"diffAt:" : "jr 5/28/2017 16:58",
 		"diffs" : "jr 5/1/2017 21:26",
 		"initialize" : "jr 5/1/2017 19:47",
-		"initializeWith:" : "jr 5/1/2017 20:52" } }
+		"initializeWith:" : "jr 5/1/2017 20:52",
+		"paths" : "jr 5/28/2017 22:57",
+		"updateFromNodes" : "jr 5/28/2017 23:50" } }

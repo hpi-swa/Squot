@@ -2,7 +2,10 @@
 	"class" : {
 		"left:right:" : "jr 4/9/2017 21:46" },
 	"instance" : {
+		"applyOnTopOf:" : "jr 5/29/2017 01:03",
+		"base" : "jr 5/29/2017 00:57",
 		"diff:against:" : "jr 4/9/2017 22:59",
 		"left" : "jr 4/9/2017 23:13",
 		"path" : "jr 5/1/2017 19:48",
-		"right" : "jr 4/9/2017 23:13" } }
+		"right" : "jr 4/9/2017 23:13",
+		"withApplied:" : "jr 5/29/2017 01:03" } }

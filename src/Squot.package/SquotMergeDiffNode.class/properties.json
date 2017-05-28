@@ -1,0 +1,14 @@
+{
+	"category" : "Squot-Diffs",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"choice" ],
+	"name" : "SquotMergeDiffNode",
+	"pools" : [
+		 ],
+	"super" : "SquotDiffNode",
+	"type" : "normal" }

@@ -7,5 +7,4 @@ loadPatchInteractively: aPatch ifCanceled: cancelBlock
 		(self selectFromPatch: aPatch
 			title: 'Selected changes to load'
 			ifCanceled: cancelBlock).
-	self halt.
 	store applyPatch: effectivePatch.

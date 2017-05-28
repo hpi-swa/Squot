@@ -2,6 +2,7 @@ tests
 testMergeVersionWithLoadedObjects
 	| sampleClass packagePath firstVersion addedMethodSource secondVersion |
 	"create a base version"
+	classFactory cleanUp.
 	sampleClass := classFactory newClass.
 	sampleClass compile: 'firstMethod ^ self' classified: 'methods of first version'.
 	workingCopy add: (PackageInfo named: classFactory packageName) at: 'src'.
@@ -25,16 +26,13 @@ testMergeVersionWithLoadedObjects
 	"merge the second version
 	and assert that no attempt is made to discard the unsaved method"
 	[[workingCopy mergeVersionWithLoadedObjects: secondVersion]
-		on: SquotSelectionOfChangesRequested do: [:request |
-			"make sure the unsaved method is present and the same on both sides"
-			(request originalSnapshot artifactAt: packagePath) content definitions
-				detect: [:each |
-					each isMethodDefinition and: [each source = addedMethodSource]]
-				ifNone: [self fail: 'unsaved method not present on the left side'].
-			(request proposedSnapshot artifactAt: packagePath) content definitions
-				detect: [:each | each isMethodDefinition and: [each source = addedMethodSource]]
-				ifNone: [self fail: 'unsaved method not present on the right side'].
-			request resume: request proposedSnapshot artifacts "all of them"]]
+		on: SquotSelectionOfChangesRequested do: [:request | | packageDiff |
+			"make sure the unsaved method does not appear in the diff (will not be changed)"
+			packageDiff := request patch diffAt: packagePath.
+			self assert: (packageDiff content operations
+				noneSatisfy: [:each | each definition isMethodDefinition and: [each fromSource asString = addedMethodSource]]).
+			self assert: packageDiff content conflicts isEmpty.
+			request resume: request patch "all of it"]]
 		valueSupplyingAnswers: {{'*'. #default}}.
 	self assert: addedMethodSource
 		equals: (sampleClass >> #addedMethod) getSource asString

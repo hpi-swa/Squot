@@ -2,6 +2,11 @@
 	"class" : {
 		 },
 	"instance" : {
+		"asBaseDiff:against:" : "jr 5/28/2017 19:25",
 		"copyWithDiffApplied:" : "jr 5/1/2017 21:58",
 		"diffAgainst:" : "jr 5/1/2017 20:33",
-		"diffContentAgainstThatOf:" : "jr 5/1/2017 20:36" } }
+		"diffContentAgainstThatOf:" : "jr 5/1/2017 20:36",
+		"diffContentAgainstThatOf:withBase:" : "jr 5/28/2017 19:25",
+		"mergeDiffWith:basedOn:" : "jr 5/28/2017 19:13",
+		"reverseDiffContentAgainst:" : "jr 5/28/2017 18:50",
+		"reverseDiffContentAgainst:withBase:" : "jr 5/28/2017 19:26" } }

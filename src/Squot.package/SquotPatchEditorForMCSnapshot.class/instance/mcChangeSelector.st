@@ -1,4 +1,0 @@
-accessing
-mcChangeSelector
-
-	^ mcChangeSelector

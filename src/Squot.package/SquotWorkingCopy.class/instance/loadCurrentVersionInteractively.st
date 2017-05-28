@@ -1,3 +1,3 @@
 loading and unloading
 loadCurrentVersionInteractively
-	^ self loadVersionInteractively: self baseVersion
+	^ self loadVersionInteractively: self baseVersion ifCanceled: []

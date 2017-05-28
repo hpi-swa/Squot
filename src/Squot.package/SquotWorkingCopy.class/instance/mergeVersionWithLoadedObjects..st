@@ -9,7 +9,7 @@ mergeVersionWithLoadedObjects: aVersion
 	self withCurrentSnapshot:
 	[self
 		saveNewVersionMessage: 'temporary version with unsaved changes' interactive: false;
-		mergeVersionInteractively: aVersion;	
+		mergeVersionInteractively: aVersion ifCanceled: [^ self];	
 		loadedVersion: aVersion]]
 	ensure:
 		[loadedHistorian := previouslyLoadedHistorian.

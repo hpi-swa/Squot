@@ -1,0 +1,3 @@
+writing
+delete
+	metadataFile delete.

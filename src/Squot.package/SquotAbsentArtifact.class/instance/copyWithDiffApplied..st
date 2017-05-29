@@ -1,3 +1,3 @@
 copying
-copyWithDiffApplied: aDiffNode
-	^ self copyWithDifferentContent: (aDiffNode something)
+copyWithDiffApplied: aDiff
+	^ self copyWithDifferentContent: (aDiff applyTo: (self contentOfSameTypeAs: aDiff right content))

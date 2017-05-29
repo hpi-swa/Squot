@@ -1,2 +1,2 @@
-*Squot-loading
+*Squot
 squotContentClassMarker

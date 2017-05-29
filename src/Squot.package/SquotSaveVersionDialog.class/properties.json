@@ -9,8 +9,6 @@
 		"message",
 		"canceled",
 		"diffRootNodes",
-		"originalSnapshot",
-		"proposedSnapshot",
 		"diffs",
 		"selectedDiffNode",
 		"controllerForIgnores" ],

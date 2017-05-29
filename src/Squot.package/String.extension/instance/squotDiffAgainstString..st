@@ -1,4 +1,4 @@
 *Squot
 squotDiffAgainstString: leftSideString
 	leftSideString = self ifTrue: [^ SquotDiffOfEqualObjects instance].
-	^ TextDiffBuilder buildDisplayPatchFrom: leftSideString to: self
+	^ HuntMcilroyDiff new file1: leftSideString; file2: self

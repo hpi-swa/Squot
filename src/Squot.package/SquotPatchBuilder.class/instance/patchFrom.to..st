@@ -1,5 +1,6 @@
 public
 patchFrom: leftObjectContainer to: rightObjectContainer
+	self flag: #refactor. "split and extract progress handling"
 	self initialize.
 	leftArtifacts := leftObjectContainer artifacts.
 	rightArtifacts := rightObjectContainer artifacts.

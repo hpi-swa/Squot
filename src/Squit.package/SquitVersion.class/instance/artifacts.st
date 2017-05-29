@@ -1,3 +1,3 @@
 snapshot
 artifacts
-	^ self snapshot artifacts
+	^ self lazySnapshot artifacts

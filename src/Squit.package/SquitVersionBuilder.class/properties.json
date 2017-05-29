@@ -5,12 +5,13 @@
 	"classtraitcomposition" : "TSquotVersionBuilder classTrait",
 	"classvars" : [
 		 ],
-	"commentStamp" : "jr 2/5/2017 22:48",
+	"commentStamp" : "jr 5/30/2017 00:26",
 	"instvars" : [
 		"repository",
 		"message",
 		"parents",
 		"snapshot",
+		"patch",
 		"author",
 		"committer",
 		"shouldStoreMetadata" ],

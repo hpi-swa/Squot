@@ -1,7 +1,7 @@
 results
 selectedPatch
 	| adjustedDiffs rootNodesByArtifact |
-	canceled == false ifFalse: [^ SquotPatch empty].
+	self accepted ifFalse: [^ SquotPatch empty].
 	"Answer a patch that describes all selected DiffNodes."
 	rootNodesByArtifact := Dictionary withAll:
 		(rootNodes collect: [:each | (artifactDiffs at: each title) -> each]).

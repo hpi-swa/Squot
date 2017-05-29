@@ -1,24 +1,18 @@
 creating new versions
 saveNewVersionInteractively
-	| snapshotBuilder loadedSnapshot baseSnapshot selectedChanges tool finalSnapshot newVersion |
-	self flag: #optimize. "snapshotting and diffing"
-	baseSnapshot := self baseSnapshot.
-	self addGlobalObjectsToStore: baseSnapshot.
+	| baseVersion patch selectedPatch tool newVersion |
+	baseVersion := self baseVersion.
+	baseVersion ifNotNil: [self addGlobalObjectsToStore: baseVersion].
+	patch := self lazySnapshot patchRelativeToBase: baseVersion.
 	tool := SquotSaveVersionDialog new
 		parentVersions: self parentVersions;
-		originalArtifacts: baseSnapshot;
-		proposeArtifacts: (loadedSnapshot := self currentSnapshot);
+		patch: patch;
 		controllerForIgnores: self;
 		yourself.
-	ToolBuilder default in: [:builder | | view |
-		view := builder open: tool label: 'Select new version changes and message'.
-		builder runModal: view].
+	tool requestSelectedChangesWithTitle: 'Select changes and message for the new version'.
 	tool accepted ifFalse: [^ nil].
-	selectedChanges := tool selectedChanges.
-	snapshotBuilder := baseSnapshot createNewBuilder.
-	selectedChanges do: [:each | snapshotBuilder add: each].
-	finalSnapshot := snapshotBuilder buildSnapshot.
-	newVersion := loadedHistorian createNewVersion: finalSnapshot
+	selectedPatch := tool selectedPatch.
+	newVersion := loadedHistorian createNewVersionFromPatch: selectedPatch
 		with: [:version | version
 					message: tool message asString;
 					author: self defaultAuthor.
@@ -26,6 +20,6 @@ saveNewVersionInteractively
 				self shouldNotStoreMetadata ifTrue: [version doNotStoreMetadata]].
 	self loadedVersion: newVersion.
 	self resetAdditionalParents.
-	previousSnapshot := finalSnapshot.
+	previousSnapshot := nil.
 	previousVersionId := newVersion internalId.
-	self cacheNewMonticelloVersions: finalSnapshot message: tool message.
+	self cacheNewMonticelloVersions: selectedPatch message: tool message.

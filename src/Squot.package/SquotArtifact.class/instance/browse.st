@@ -1,3 +1,3 @@
 tools
 browse
-	^ content browseFromSquot: self
+	^ self content browseFromSquot: self

@@ -4,6 +4,7 @@
 	"instance" : {
 		"=" : "jr 4/14/2017 00:50",
 		"createNewVersion:with:" : "jr 4/14/2017 01:23",
+		"createNewVersionFromPatch:with:" : "jr 5/29/2017 15:06",
 		"expandedName" : "jr 4/14/2017 01:36",
 		"gitRepository:" : "jr 1/11/2017 18:05",
 		"hasUpstreamHistorian" : "jr 5/22/2017 00:05",

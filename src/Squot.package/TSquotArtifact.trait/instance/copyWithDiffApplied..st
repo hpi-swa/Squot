@@ -1,3 +1,3 @@
 copying
-copyWithDiffApplied: aDiffNode
-	^ self copyWithDifferentContent: (self content squotApplyDiffNode: aDiffNode)
+copyWithDiffApplied: aDiff
+	^ self copyWithDifferentContent: (aDiff applyTo: self content)

@@ -1,0 +1,3 @@
+testing
+hasChanges
+	^ left ~= right

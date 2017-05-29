@@ -1,18 +1,18 @@
 private creating new versions
-cacheNewMonticelloVersion: aPackageInfoArtifact message: messageText
-	| folderName packageName mcWorkingCopy patch version |
-	folderName := (aPackageInfoArtifact path copyAfterLast: $/) ifEmpty: aPackageInfoArtifact path.
+cacheNewMonticelloVersion: aPackageInfoDiff message: messageText
+	| folderName packageName mcWorkingCopy patch version mcSnapshot |
+	folderName := aPackageInfoDiff path squotPathSegments last.
 	packageName := folderName allButLast: '.package' size.
 	self flag: #FIXME. "this does not work for 'branched' packages"
 	[mcWorkingCopy := MCWorkingCopy forPackageNamed: packageName]
 		on: NotFound do: [^ self].
-	(patch := aPackageInfoArtifact content
-		patchRelativeToBase: (self cachedMCAncestorSnapshotOf: mcWorkingCopy))
-		isEmpty ifTrue: ["no changes to this package" ^ self].
+	patch := aPackageInfoDiff content.
+	patch isEmpty ifTrue: [^ self].
+	mcSnapshot := aPackageInfoDiff right content.
 	version := mcWorkingCopy
 		newVersionWithName: mcWorkingCopy uniqueVersionName
 		message: messageText asString
-		snapshot: aPackageInfoArtifact content.
+		snapshot: mcSnapshot.
 	"version is automatically stored in the cache upon construction"
 	Transcript nextPutAll: 'automatically created from Squot save: ';
 		show: version info name; cr.

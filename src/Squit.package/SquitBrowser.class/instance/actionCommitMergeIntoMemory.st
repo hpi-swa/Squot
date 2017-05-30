@@ -1,3 +1,3 @@
 ui menu
 actionCommitMergeIntoMemory
-	self projectSelection mergeVersionWithLoadedObjects: self commitSelection
+	self projectSelection mergeVersionWithLoadedObjects: self commitSelection ifCanceled: []

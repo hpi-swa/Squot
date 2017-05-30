@@ -1,5 +1,5 @@
 creating new versions
-saveNewVersionInteractively
+saveNewVersionInteractivelyIfCanceled: cancelBlock
 	| baseVersion patch selectedPatch tool newVersion |
 	baseVersion := self baseVersion.
 	baseVersion ifNotNil: [self addGlobalObjectsToStore: baseVersion].
@@ -10,7 +10,7 @@ saveNewVersionInteractively
 		controllerForIgnores: self;
 		yourself.
 	tool requestSelectedChangesWithTitle: 'Select changes and message for the new version'.
-	tool accepted ifFalse: [^ nil].
+	tool accepted ifFalse: [^ cancelBlock value].
 	selectedPatch := tool selectedPatch.
 	newVersion := loadedHistorian createNewVersionFromPatch: selectedPatch
 		with: [:version | version

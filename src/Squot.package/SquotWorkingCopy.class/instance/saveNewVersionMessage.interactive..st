@@ -4,7 +4,7 @@ saveNewVersionMessage: aString interactive: shouldBeInteractiveBoolean
 	If interactive, let the user review and edit the set of changes to be included
 	in the new snapshot."
 	| newVersion |
-	shouldBeInteractiveBoolean ifTrue: [^ self saveNewVersionInteractively].
+	shouldBeInteractiveBoolean ifTrue: [^ self saveNewVersionInteractivelyIfCanceled: []].
 	newVersion := loadedHistorian createNewVersion: self currentSnapshot
 		with: [:version | version message: aString].
 	self loadedVersion: newVersion.

@@ -1,4 +1,4 @@
 actions
 actionCommit
-	self projectSelection saveNewVersionInteractively.
+	self projectSelection saveNewVersionInteractivelyIfCanceled: [^ self].
 	self refresh.

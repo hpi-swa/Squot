@@ -1,5 +1,5 @@
 loading and unloading
-mergeVersionWithLoadedObjects: aVersion
+mergeVersionWithLoadedObjects: aVersion ifCanceled: cancelBlock
 	"Create a temporary version that saves all unsaved changes on the lastLoadedHistorian,
 	merge it with aVersion and go back to the original historian without the temp version."
 	| previouslyLoadedHistorian previousAdditionalParents |
@@ -9,7 +9,7 @@ mergeVersionWithLoadedObjects: aVersion
 	self withCurrentSnapshot:
 	[self
 		saveNewVersionMessage: 'temporary version with unsaved changes' interactive: false;
-		mergeVersionInteractively: aVersion ifCanceled: [^ self];	
+		mergeVersionInteractively: aVersion ifCanceled: [^ cancelBlock value];	
 		loadedVersion: aVersion]]
 	ensure:
 		[loadedHistorian := previouslyLoadedHistorian.

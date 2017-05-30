@@ -25,7 +25,8 @@ testMergeVersionWithLoadedObjects
 			with: [:newVersion | newVersion message: 'second version']].
 	"merge the second version
 	and assert that no attempt is made to discard the unsaved method"
-	[[workingCopy mergeVersionWithLoadedObjects: secondVersion]
+	[[workingCopy mergeVersionWithLoadedObjects: secondVersion
+			ifCanceled: [self fail: 'should not reach here']]
 		on: SquotSelectionOfChangesRequested do: [:request | | packageDiff |
 			"make sure the unsaved method does not appear in the diff (will not be changed)"
 			packageDiff := request patch diffAt: packagePath.

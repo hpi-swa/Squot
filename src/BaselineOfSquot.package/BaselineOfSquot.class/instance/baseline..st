@@ -24,6 +24,10 @@ baseline: spec
 				spec
 					repository: 'http://www.squeaksource.com/INIFile';
 					file: 'INIFile-jf.3'. ];
+			package: 'DiffMerge' with: [
+				spec
+					repository: 'http://www.squeaksource.com/DiffMerge';
+					file: 'DiffMerge-tonyg.12'. ];
 			package: 'FS-Core';
 			package: 'FS-Disk' with: [
 				spec requires: #('FS-Core' ). ];

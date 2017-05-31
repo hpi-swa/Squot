@@ -1,0 +1,8 @@
+{
+	"class" : {
+		 },
+	"instance" : {
+		"subjectTestCase" : "jr 5/31/2017 15:01",
+		"testErringTestStillErrs" : "jr 5/31/2017 15:03",
+		"testFailingTestStillFails" : "jr 5/31/2017 15:03",
+		"testPassingTestStillPasses" : "jr 5/31/2017 15:03" } }

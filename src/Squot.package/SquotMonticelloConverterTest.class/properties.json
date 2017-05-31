@@ -2,7 +2,7 @@
 	"category" : "Squot-Monticello-Converter-Tests",
 	"classinstvars" : [
 		 ],
-	"classtraitcomposition" : "TSnapshotAssertionsForMonticello classTrait",
+	"classtraitcomposition" : "TSnapshotAssertionsForMonticello classTrait + TTestCaseSuppressingProgressDisplay classTrait",
 	"classvars" : [
 		 ],
 	"commentStamp" : "",
@@ -13,5 +13,5 @@
 	"pools" : [
 		 ],
 	"super" : "TestCase",
-	"traitcomposition" : "TSnapshotAssertionsForMonticello",
+	"traitcomposition" : "TSnapshotAssertionsForMonticello + TTestCaseSuppressingProgressDisplay",
 	"type" : "normal" }

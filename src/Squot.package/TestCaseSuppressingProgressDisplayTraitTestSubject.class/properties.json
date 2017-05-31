@@ -1,18 +1,14 @@
 {
-	"category" : "Squot-Tests",
+	"category" : "Squot-Tests-Tools",
 	"classinstvars" : [
 		 ],
 	"classtraitcomposition" : "TTestCaseSuppressingProgressDisplay classTrait",
 	"classvars" : [
 		 ],
-	"commentStamp" : "jr 1/27/2017 16:13",
+	"commentStamp" : "",
 	"instvars" : [
-		"imageStore",
-		"classFactory",
-		"createdClasses",
-		"testEnvironment",
-		"changeLogSuppressor" ],
-	"name" : "SquotImageStoreTest",
+		 ],
+	"name" : "TestCaseSuppressingProgressDisplayTraitTestSubject",
 	"pools" : [
 		 ],
 	"super" : "TestCase",

@@ -46,7 +46,7 @@ baseline: spec
 				spec requires: #('FS-Core'). ];
 			package: 'VersionControl';
 			package: 'Squot' with: [
-				spec requires: #('FS-Core' 'Ston' 'VersionControl' ). ];
+				spec requires: #('FS-Core' 'Ston' 'DiffMerge' 'VersionControl' ). ];
 			package: 'Pharo-compatibility';
 			package: 'FileSystem-Git' with: [
 				spec requires: #('FS-Core' 'FS-Disk' 'FS-Memory' 'FS-AnsiStreams' 'FS-Tests-Core' 'Pharo-compatibility' 'INIFile' 'VersionControl' ). ];

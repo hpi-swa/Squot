@@ -12,6 +12,7 @@
 		"loadedHistorian",
 		"previousVersionId",
 		"previousSnapshot",
+		"previouslySavedArtifacts",
 		"shouldStoreMetadata",
 		"additionalParents",
 		"lastLoadedHistorian",

@@ -7,5 +7,5 @@ patchRelativeToBase: aVersion
 		ifNotNil: [:myparent | baseForUnsavedChanges := myparent.
 			myparent patchRelativeToBase: aVersion].
 	"add unsaved changes on top"
-	unsavedChanges := (SquotSnapshot with: store artifacts) patchRelativeToBase: baseForUnsavedChanges.
+	unsavedChanges := self lazySnapshot patchRelativeToBase: baseForUnsavedChanges.
 	^ unsavedChanges applyOnTopOf: patch

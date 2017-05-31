@@ -1,0 +1,3 @@
+caching
+flushPreviouslySavedArtifacts
+	self previouslySavedArtifacts removeAll.

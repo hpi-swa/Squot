@@ -1,0 +1,1 @@
+I can be signalled when a component captured some artifacts (deserialized from files, snapshot from memory, ...), so that another component can pick them up, for example for caching.

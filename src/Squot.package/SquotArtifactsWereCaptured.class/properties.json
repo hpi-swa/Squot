@@ -1,0 +1,14 @@
+{
+	"category" : "Squot-Internal",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "jr 5/31/2017 17:24",
+	"instvars" : [
+		"artifacts" ],
+	"name" : "SquotArtifactsWereCaptured",
+	"pools" : [
+		 ],
+	"super" : "Notification",
+	"type" : "normal" }

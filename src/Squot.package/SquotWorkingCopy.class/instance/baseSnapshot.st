@@ -1,17 +1,12 @@
 creating new versions
 baseSnapshot
-	self isPreviousSnapshotUpToDate ifTrue: [^ previousSnapshot].
-	loadedHistorian version
-		ifNotNil: [:version |
-			'Reading snapshot of previous version' displaySequentialProgress:
-				[previousSnapshot := version snapshot].
-			previousSnapshot artifacts
-				detect: [:ea | ea wantsToBeInTableOfContents]
-				ifNone: ["no Squot-tracked artifacts"
-					previousSnapshot := 
-					previousSnapshot createNewBuilder
-						addAll: (self guessArtifactsFromFiles: version);
-						buildSnapshot].
-			previousVersionId := version internalId.
-			^ previousSnapshot].
-	^ SquotSnapshot empty
+	"Compose a lazy snapshot from caches and the baseVersion"
+	| baseVersionSnapshot |
+	baseVersionSnapshot := (self baseVersion ifNil: [^ SquotSnapshot empty]) lazySnapshot.
+	self addGlobalObjectsToStore: baseVersionSnapshot.
+	self loadedHistorian version ~= self baseVersion
+		ifTrue: [^ baseVersionSnapshot].
+	^ baseVersionSnapshot createNewBuilder
+		addAll: (self previouslySavedArtifacts
+			associationsSelect: [:each | baseVersionSnapshot includesObjectAt: each key]);
+		buildSnapshot

@@ -16,4 +16,5 @@ buildVersion
 		author: author;
 		committer: committer;
 		store.
+	SquotArtifactsWereCaptured new artifacts: fsStore capturedArtifacts; signal.
 	^ repository versionForCommit: commit

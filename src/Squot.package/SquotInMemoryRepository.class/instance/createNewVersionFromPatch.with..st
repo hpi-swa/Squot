@@ -15,4 +15,5 @@ createNewVersionFromPatch: aPatch with: aBlock
 		at: #committer ifAbsentPut: [SquotCommitterRequest signal];
 		at: #timestamp ifAbsentPut: [TimeStamp now].
 	versions add: version.
+	SquotArtifactsWereCaptured new artifacts: version snapshot artifacts; signal.
 	^ version

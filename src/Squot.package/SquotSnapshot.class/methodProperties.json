@@ -14,8 +14,6 @@
 		"createNewBuilder" : "jr 1/31/2017 12:12",
 		"initialize" : "jr 1/27/2017 15:18",
 		"initializeWith:" : "jr 1/27/2017 15:20",
-		"mergeArtifact:with:basedOn:" : "jr 4/24/2017 16:44",
-		"mergeWith:basedOn:" : "jr 4/29/2017 21:52",
 		"patchRelativeToBase:" : "jr 5/29/2017 13:32",
 		"pathOf:" : "jr 1/27/2017 15:14",
 		"resolve:" : "jr 1/27/2017 15:11",

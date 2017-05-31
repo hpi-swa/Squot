@@ -1,12 +1,12 @@
 private
 convertMonticelloVersion: aMCVersionInfo
-	| squotSnapshot newVersion |
-	squotSnapshot := self captureSquotSnapshotFrom: aMCVersionInfo
+	| squotPatch newVersion |
+	squotPatch := self captureSquotPatchFrom: aMCVersionInfo
 		basedOnVersion: (aMCVersionInfo ancestors
 			ifEmpty: []
-			ifNotEmpty: [:ancestors | ancestors anyOne]).
-	squotSnapshot ifNil: [^ self convertMonticelloVersionWithMissingSnapshot: aMCVersionInfo].
-	newVersion := squotRepository createNewVersion: squotSnapshot
+			ifNotEmpty: [:ancestors | ancestors first]).
+	squotPatch ifNil: [^ self convertMonticelloVersionWithMissingSnapshot: aMCVersionInfo].
+	newVersion := squotRepository createNewVersionFromPatch: squotPatch
 		with: [:version | version
 			initializeClean;
 			parents: (aMCVersionInfo ancestors

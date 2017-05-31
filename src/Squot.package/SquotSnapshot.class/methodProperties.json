@@ -4,6 +4,7 @@
 		"empty" : "jr 2/15/2017 17:31",
 		"with:" : "jr 1/27/2017 15:22" },
 	"instance" : {
+		"applyPatch:" : "jr 5/31/2017 13:19",
 		"artifactAt:" : "jr 1/29/2017 21:35",
 		"artifactAt:ifAbsent:" : "jr 4/17/2017 23:34",
 		"artifacts" : "jr 2/14/2017 17:06",

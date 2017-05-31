@@ -1,12 +1,10 @@
 private
 convertMonticelloVersionWithMissingSnapshot: aMCVersionInfo
 	"Pretend that nothing has changed, but create a commit anyway."
-	| squotSnapshot newVersion |
+	| newVersion |
 	self assert: aMCVersionInfo ancestors size = 1
 		description: 'cannot guess which snapshot to use when there are multiple parents'.
-	squotSnapshot := (versionMapFromMonticello at: aMCVersionInfo ancestors first) snapshot.
-	self flag: 'TODO: make it possible for backends like git to skip writing a new snapshot'.
-	newVersion := squotRepository createNewVersion: squotSnapshot
+	newVersion := squotRepository createNewVersionFromPatch: SquotPatch empty
 		with: [:version | version
 			initializeClean;
 			parents: (aMCVersionInfo ancestors

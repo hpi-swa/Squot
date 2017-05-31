@@ -1,7 +1,6 @@
 private
-captureSquotSnapshotFrom: aMCVersionInfo basedOnVersion: aSquotVersion
+captureSquotSnapshotFrom: aMCVersionInfo
 	| mcVersion |
-	self flag: 'TODO: use aSquotVersion once "incremental" updating is available'.
 	mcVersion := monticelloRepository versionWithInfo: aMCVersionInfo.
 	mcVersion ifNil: [^ nil].
 	^ SquotSnapshot builder

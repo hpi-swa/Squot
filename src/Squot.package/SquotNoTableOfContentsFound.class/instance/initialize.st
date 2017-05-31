@@ -1,4 +1,4 @@
 initialize-release
 initialize
 	super initialize.
-	tableOfContents := Dictionary new.
+	tableOfContents := SquotFileSystemStore tableOfContentsClass new.

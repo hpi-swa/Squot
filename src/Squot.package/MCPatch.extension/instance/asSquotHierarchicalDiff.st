@@ -1,4 +1,4 @@
-*Squot-comparing
+*Squot-diff-converting
 asSquotHierarchicalDiff
 	| byClass topNodes byClassification operationsWithClass rest |
 	operationsWithClass := operations select: [:each | each definition respondsTo: #isCodeDefinition].

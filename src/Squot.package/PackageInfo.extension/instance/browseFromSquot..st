@@ -1,4 +1,4 @@
-*Squot
+*Squot-trackable
 browseFromSquot: aSquotLiveObject
 	| environment |
 	environment := aSquotLiveObject storeInfo

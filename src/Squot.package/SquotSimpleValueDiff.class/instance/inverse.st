@@ -1,3 +1,3 @@
-as yet unclassified
+converting
 inverse
 	^ self class left: right right: left

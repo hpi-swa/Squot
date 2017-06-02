@@ -1,2 +1,2 @@
-*Squot
+*Squot-content
 squotContentClassMarker

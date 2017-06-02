@@ -1,4 +1,4 @@
-Squot tracking
+Squot-trackable
 asSquotContent
 	"Answer a conserved form of me that is suitable to be stored in Snapshots."
 	self shouldBeImplemented.

@@ -1,3 +1,3 @@
-*squot-serializing
+*Squot-trackable
 squotPreferredSerializer
 	^ SquotCypressCodeSerializer

@@ -1,4 +1,4 @@
-*Squot-comparing
+*Squot-diff-manipulation
 squotAdjustToResemble: aSquotDiffNode
 	"Answer a patch with the active operations from aSquotDiffNode."
 	| selectedOperations |

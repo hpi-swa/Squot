@@ -1,4 +1,4 @@
-*Squot
+*Squot-trackable
 asSquotContent
 	self flag: #hack.
 	^ MCSnapshot fromDefinitions: (Array streamContents: [:stream |

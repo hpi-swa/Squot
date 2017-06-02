@@ -1,3 +1,3 @@
-*Squot-comparing
+*Squot-diff-testing
 squotHasChanges
 	^ self isEmpty not

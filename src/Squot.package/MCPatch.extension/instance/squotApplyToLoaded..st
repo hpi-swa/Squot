@@ -1,4 +1,4 @@
-*Squot-patching
+*Squot-diff-patching
 squotApplyToLoaded: aPackageInfo
 	| loader |
 	loader := MCPackageLoader new.

@@ -1,4 +1,4 @@
-*Squot
+*Squot-content-diff
 squotDiffAgainst: other
 	^ other
 		ifNil: [SquotDiffOfEqualObjects instance]

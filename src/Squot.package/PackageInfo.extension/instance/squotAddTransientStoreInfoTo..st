@@ -1,4 +1,4 @@
-*squot
+*Squot-trackable
 squotAddTransientStoreInfoTo: aDictionary
 	| monticelloPackage |
 	super squotAddTransientStoreInfoTo: aDictionary.

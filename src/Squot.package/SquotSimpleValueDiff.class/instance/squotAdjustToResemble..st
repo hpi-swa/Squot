@@ -1,4 +1,4 @@
-copying
+manipulation
 squotAdjustToResemble: aSquotDiffNode
 	^ aSquotDiffNode isActive
 		ifTrue: [self]

@@ -1,6 +1,6 @@
 {
 	"class" : {
-		 },
+		"absentPrototypeForSquot" : "jr 6/2/2017 16:03" },
 	"instance" : {
 		"asSquotContent" : "jr 4/6/2017 14:48",
 		"asSquotContentWith:andCopy:" : "jr 4/6/2017 23:54",

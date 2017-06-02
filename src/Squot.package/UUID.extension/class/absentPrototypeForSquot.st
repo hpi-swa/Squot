@@ -1,0 +1,3 @@
+*Squot
+absentPrototypeForSquot
+	^ self nilUUID

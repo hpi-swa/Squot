@@ -7,7 +7,7 @@ removeCommonAncestorIfReachableFromOtherCommonAncestors: aCommonAncestorVersion
 	otherAncestors := commonAncestors copyWithout: aCommonAncestorVersion.
 	self newMarker
 		traverseHistoryFromOrigin: aCommonAncestorVersion
-		andOthers: otherAncestors.
+		andOthers: otherAncestors asArray.
 	(aCommonAncestorVersion reachableFromOther)
 		ifTrue: [commonAncestors remove: aCommonAncestorVersion].
 	otherAncestors

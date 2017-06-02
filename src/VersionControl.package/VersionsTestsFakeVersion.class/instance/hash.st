@@ -1,3 +1,3 @@
 accessing
-internalId
+hash
 	^ self number

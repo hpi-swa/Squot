@@ -2,4 +2,4 @@
 squotDiffAgainst: other
 	^ other
 		ifNil: [SquotDiffOfEqualObjects instance]
-		ifNotNil: [other squotAbsentContent squotDiffAgainst: other]
+		ifNotNil: [(other squotDiffAgainst: other squotAbsentContent) squotInverseDiff]

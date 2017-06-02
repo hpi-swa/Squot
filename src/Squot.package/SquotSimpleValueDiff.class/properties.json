@@ -4,12 +4,12 @@
 		 ],
 	"classtraitcomposition" : "TSquotDiffContent classTrait",
 	"classvars" : [
-		"UnchangedPlaceholder" ],
-	"commentStamp" : "jr 4/10/2017 23:46",
+		 ],
+	"commentStamp" : "jr 6/1/2017 11:59",
 	"instvars" : [
-		"changedInstVars",
-		"changedVariablePart" ],
-	"name" : "SquotMetaobjectDiff",
+		"left",
+		"right" ],
+	"name" : "SquotSimpleValueDiff",
 	"pools" : [
 		 ],
 	"super" : "Object",

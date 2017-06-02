@@ -1,0 +1,3 @@
+DataStream
+insideASegment
+	^ false

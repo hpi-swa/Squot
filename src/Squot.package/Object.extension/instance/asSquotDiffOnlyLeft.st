@@ -1,3 +1,4 @@
-*Squot
+*Squot-content-diffing
 asSquotDiffOnlyLeft
-	^ SquotArtifactDiff left: self right: nil
+	"As a diffable artifact content, answer a diff from me to 'nothing'."
+	^ self squotDiffAgainst: self squotAbsentContent

@@ -2,6 +2,7 @@
 	"class" : {
 		 },
 	"instance" : {
+		"applyDiff:" : "jr 6/2/2017 15:13",
 		"createMaterializedInstance" : "jr 4/7/2017 00:40",
 		"diffInstVarsAgainst:" : "jr 4/9/2017 23:06",
 		"diffInstVarsAgainstThoseOf:" : "jr 4/9/2017 22:12",
@@ -10,6 +11,9 @@
 		"initialize" : "jr 4/5/2017 23:42",
 		"initializeFrom:andItsCopy:with:" : "jr 4/6/2017 23:48",
 		"materializeAs:with:" : "jr 4/7/2017 12:59",
+		"postCopy" : "jr 6/2/2017 15:14",
+		"privateApplyDiff:" : "jr 6/2/2017 14:39",
+		"squotAbsentContent" : "jr 6/2/2017 15:50",
 		"squotContentClassMarker" : "jr 4/7/2017 12:00",
 		"squotDiffAgainst:" : "jr 4/9/2017 21:54",
 		"squotMaterializeWith:" : "jr 4/7/2017 11:57",

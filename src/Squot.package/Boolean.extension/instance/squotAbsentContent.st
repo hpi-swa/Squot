@@ -1,0 +1,3 @@
+*Squot
+squotAbsentContent
+	^ nil asSquotContent

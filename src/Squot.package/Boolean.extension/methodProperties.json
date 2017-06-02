@@ -1,8 +1,10 @@
 {
 	"class" : {
-		 },
+		"absentPrototypeForSquot" : "jr 6/2/2017 15:51" },
 	"instance" : {
 		"asSquotContent" : "jr 4/7/2017 00:08",
 		"asSquotContentWith:andCopy:" : "jr 4/7/2017 00:08",
+		"squotAbsentContent" : "jr 6/2/2017 15:26",
 		"squotContentClassMarker" : "jr 4/7/2017 11:59",
+		"squotDiffAgainst:" : "jr 6/2/2017 15:26",
 		"squotMaterializeWith:" : "jr 4/7/2017 11:59" } }

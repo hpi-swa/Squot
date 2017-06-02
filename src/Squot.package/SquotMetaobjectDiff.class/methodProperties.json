@@ -4,9 +4,14 @@
 		"onlyLeft:" : "jr 4/9/2017 22:19",
 		"onlyRight:" : "jr 4/9/2017 22:54" },
 	"instance" : {
+		"applyToInstVars:" : "jr 6/2/2017 14:39",
+		"applyToVariablePart:" : "jr 6/2/2017 14:51",
+		"asSquotHierarchicalDiff" : "jr 6/1/2017 11:54",
 		"changedInstVars" : "jr 4/9/2017 21:56",
 		"changedVariablePart" : "jr 4/9/2017 21:56",
 		"diff:against:" : "jr 4/9/2017 22:10",
 		"initialize" : "jr 4/9/2017 21:57",
-		"onlyRight:" : "jr 4/9/2017 22:55",
-		"squotHasChanges" : "jr 4/9/2017 22:52" } }
+		"onlyRight:" : "jr 6/1/2017 11:56",
+		"squotApplyTo:" : "jr 6/1/2017 13:39",
+		"squotHasChanges" : "jr 4/9/2017 22:52",
+		"update:in:with:" : "jr 6/2/2017 14:47" } }

@@ -7,6 +7,8 @@
 		"createSomeTreeEntries" : "CamilloBruni 9/3/2012 18:53",
 		"createSomeTrees" : "MaxLeske 2/28/2012 16:40",
 		"setUp" : "CamilloBruni 8/30/2012 14:09",
+		"testEncodingWithDefaultUtf8" : "jr 6/3/2017 12:10",
+		"testEncodingWithLatin1" : "jr 6/3/2017 12:10",
 		"testHashWithGpgSignature" : "jr 5/26/2017 19:41",
 		"testInitializeWithEverything" : "CamilloBruni 9/3/2012 18:59",
 		"testNearestMergeBaseFar" : "jr 5/23/2017 11:30",

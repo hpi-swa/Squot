@@ -1,3 +1,3 @@
 private configuration
-defaultValueForConfigOption: aString 
-	^ nil
+defaultValueForConfigOption: aString
+	^ ConfigDefaults at: aString ifAbsent: nil

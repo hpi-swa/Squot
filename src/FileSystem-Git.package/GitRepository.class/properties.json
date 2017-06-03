@@ -3,7 +3,7 @@
 	"classinstvars" : [
 		 ],
 	"classvars" : [
-		 ],
+		"ConfigDefaults" ],
 	"commentStamp" : "<historical>",
 	"instvars" : [
 		"reference",

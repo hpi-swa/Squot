@@ -1,8 +1,8 @@
 actions
 actionBranchPush
 	| historian branchName repository gitRepository |
-	self branchSelection ifNil: [^ self].
-	historian := self branchSelection historian.
+	self hasBranchSelection ifFalse: [^ self].
+	historian := selectedHistorian.
 	branchName := historian name.
 	repository := self projectSelection repository.
 	gitRepository := repository gitRepository.

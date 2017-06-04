@@ -7,7 +7,7 @@ menuBranchListHook: aMenu
 		{'Switch to this branch'. #actionBranchSwitch}
 	}.
 	activeBranchName := self projectSelection loadedHistorian shortName.
-	self branchSelection historian ~= self projectSelection loadedHistorian ifTrue:
+	selectedHistorian ~= self projectSelection loadedHistorian ifTrue:
 		[aMenu addList: {
 			{'Merge branch into ', activeBranchName. #actionBranchMerge. 'Merge this branch into your active branch ', activeBranchName}.
 		}].
@@ -20,7 +20,7 @@ menuBranchListHook: aMenu
 		{'Rename branch'. #actionBranchRename}.
 		{'Remove branch'. #actionBranchRemove}.
 	}.
-	self branchSelection historian hasUpstreamHistorian ifTrue:
+	selectedHistorian hasUpstreamHistorian ifTrue:
 		[aMenu add: 'Remove upstream branch at the remote'
 			help: 'Push the deletion of the remote branch'
 			action: #actionBranchRemoveUpstream].

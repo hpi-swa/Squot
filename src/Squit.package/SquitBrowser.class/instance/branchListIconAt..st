@@ -1,6 +1,6 @@
 ui
 branchListIconAt: anIndex
 	anIndex > 1 ifFalse: [^ nil].
-	(self branchList at: anIndex) historian = self projectSelection loadedHistorian
+	anIndex - 1 = indexOfActiveHistorianInBranchList
 		ifTrue: [^ ToolIcons testGreen].
 	^ ToolIcons blank

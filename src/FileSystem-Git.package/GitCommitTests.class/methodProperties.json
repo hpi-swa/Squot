@@ -11,10 +11,6 @@
 		"testEncodingWithLatin1" : "jr 6/3/2017 12:10",
 		"testHashWithGpgSignature" : "jr 5/26/2017 19:41",
 		"testInitializeWithEverything" : "CamilloBruni 9/3/2012 18:59",
-		"testNearestMergeBaseFar" : "jr 5/23/2017 11:30",
-		"testNearestMergeBaseIsNearest" : "jr 5/23/2017 11:48",
-		"testNearestMergeBaseNone" : "jr 5/23/2017 11:30",
-		"testNearestMergeBaseOneStep" : "jr 5/23/2017 11:30",
 		"testPrintOn" : "MaxLeske 6/27/2010 19:55",
 		"testRetrievingParents" : "MaxLeske 2/26/2012 15:40",
 		"testWritingSameCommitTwice" : "CamilloBruni 9/3/2012 18:59" } }

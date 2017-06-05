@@ -6,5 +6,9 @@ actionBranchRemove
 	(UIManager confirm: 'Really delete branch ', selectedHistorian name, '?')
 		ifFalse: [^ self].
 	self projectSelection repository delete: selectedHistorian.
-	commitSelection := nil.
-	self refresh.
+	self branchSelection: (self branchList
+			after: selectedHistorian shortName
+			ifAbsent: [self branchList
+						before: selectedHistorian shortName
+						ifAbsent: self projectSelection loadedHistorian shortName]).
+	self loadBranchList.

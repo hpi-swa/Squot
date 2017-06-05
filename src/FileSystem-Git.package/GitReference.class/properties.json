@@ -1,0 +1,14 @@
+{
+	"category" : "FileSystem-Git-Plumbing-Core",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "jr 6/5/2017 23:07",
+	"instvars" : [
+		 ],
+	"name" : "GitReference",
+	"pools" : [
+		 ],
+	"super" : "Association",
+	"type" : "normal" }

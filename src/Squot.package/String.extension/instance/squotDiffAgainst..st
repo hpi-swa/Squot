@@ -1,3 +1,3 @@
 *Squot-content-diff
 squotDiffAgainst: otherValue
-	^ otherValue squotDiffAgainstString: self
+	^  HuntMcilroyDiff new file1: self; file2: (otherValue ifNil: [String empty]); yourself

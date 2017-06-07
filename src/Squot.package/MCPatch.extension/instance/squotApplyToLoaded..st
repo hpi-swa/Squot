@@ -1,6 +1,7 @@
 *Squot-diff-patching
-squotApplyToLoaded: aPackageInfo
+squotApplyToLoaded: aPackageInfoOrClass
 	| loader |
 	loader := MCPackageLoader new.
 	self applyTo: loader.
-	loader loadWithNameLike: aPackageInfo packageName.
+	loader loadWithNameLike: aPackageInfoOrClass name.
+	^ aPackageInfoOrClass

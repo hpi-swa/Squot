@@ -1,0 +1,14 @@
+{
+	"category" : "Squot-Metaobjects",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"collection" ],
+	"name" : "SquotHashedCollectionShadow",
+	"pools" : [
+		 ],
+	"super" : "SquotMetaobject",
+	"type" : "normal" }

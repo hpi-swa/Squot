@@ -9,7 +9,8 @@
 		"rootObject",
 		"rootCopy",
 		"rootMetaobject",
-		"convertedObjects" ],
+		"convertedObjects",
+		"copiedObjects" ],
 	"name" : "SquotMetaobjectBuilder",
 	"pools" : [
 		 ],

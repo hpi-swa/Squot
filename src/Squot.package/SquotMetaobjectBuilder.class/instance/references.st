@@ -1,0 +1,3 @@
+DeepCopier
+references
+	^ copiedObjects

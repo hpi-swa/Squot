@@ -4,7 +4,7 @@ baseSnapshot
 	| baseVersionSnapshot |
 	baseVersionSnapshot := (self baseVersion ifNil: [^ SquotSnapshot empty]) lazySnapshot.
 	self addGlobalObjectsToStore: baseVersionSnapshot.
-	self loadedHistorian version ~= self baseVersion
+	self lastLoadedHistorian version ~= self baseVersion
 		ifTrue: [^ baseVersionSnapshot].
 	^ baseVersionSnapshot createNewBuilder
 		addAll: (self previouslySavedArtifacts

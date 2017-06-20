@@ -1,0 +1,3 @@
+*Squot
+hasSquotShadowName
+	^ false

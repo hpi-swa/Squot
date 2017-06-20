@@ -1,3 +1,5 @@
 capturing
 capture: anObject
-	^ anObject captureWithSquot: self
+	state
+		ifNotNil: [^ anObject captureWithSquot: self]
+		ifNil: [^ self beginCapturingFrom: anObject]

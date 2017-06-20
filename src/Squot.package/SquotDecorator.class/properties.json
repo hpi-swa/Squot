@@ -1,0 +1,14 @@
+{
+	"category" : "Squot-Internal",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"decoratedObject" ],
+	"name" : "SquotDecorator",
+	"pools" : [
+		 ],
+	"super" : "ProtoObject",
+	"type" : "normal" }

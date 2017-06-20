@@ -1,0 +1,19 @@
+{
+	"class" : {
+		 },
+	"instance" : {
+		"=" : "jr 6/20/2017 13:42",
+		"asExplorerString" : "jr 6/20/2017 17:15",
+		"basicInspect" : "jr 6/20/2017 13:41",
+		"decoratorClass" : "jr 6/20/2017 13:31",
+		"doesNotUnderstand:" : "jr 6/20/2017 13:28",
+		"instVarAt:" : "jr 6/20/2017 13:36",
+		"instVarAt:put:" : "jr 6/20/2017 13:35",
+		"perform:withArguments:" : "jr 6/20/2017 16:36",
+		"primitiveFailed" : "jr 6/20/2017 13:42",
+		"printOn:" : "jr 6/20/2017 13:43",
+		"printString" : "jr 6/20/2017 13:44",
+		"printStringLimitedTo:" : "jr 6/20/2017 13:57",
+		"respondsTo:" : "jr 6/20/2017 13:30",
+		"undecorated" : "jr 6/20/2017 16:12",
+		"yourself" : "jr 6/20/2017 13:40" } }

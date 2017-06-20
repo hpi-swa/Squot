@@ -7,10 +7,16 @@
 	"commentStamp" : "jr 4/7/2017 16:31",
 	"instvars" : [
 		"rootObject",
-		"rootCopy",
 		"rootMetaobject",
 		"convertedObjects",
-		"copiedObjects" ],
+		"copiedObjects",
+		"toBeVisited",
+		"visited",
+		"decoratedObjects",
+		"objectNameMapping",
+		"state",
+		"currentObjectName",
+		"enumeratedObject" ],
 	"name" : "SquotObjectCapturer",
 	"pools" : [
 		 ],

@@ -1,0 +1,14 @@
+{
+	"category" : "Squot-Shadows",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "SquotDictionarySlot",
+	"pools" : [
+		 ],
+	"super" : "SquotShadowSlot",
+	"type" : "normal" }

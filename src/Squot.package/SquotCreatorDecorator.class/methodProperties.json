@@ -1,0 +1,8 @@
+{
+	"class" : {
+		"on:creator:slot:" : "jr 6/20/2017 16:08" },
+	"instance" : {
+		"creator" : "jr 6/20/2017 16:16",
+		"creatorSlot" : "jr 6/20/2017 15:35",
+		"decorated:withCreator:slot:" : "jr 6/20/2017 16:16",
+		"printOn:" : "jr 6/20/2017 16:32" } }

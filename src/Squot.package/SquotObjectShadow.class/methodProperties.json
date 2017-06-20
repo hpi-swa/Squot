@@ -3,7 +3,9 @@
 		 },
 	"instance" : {
 		"addInstVarNamed:withContent:" : "jr 6/17/2017 20:11",
+		"addInstVarNamed:withValue:with:" : "jr 6/20/2017 13:12",
 		"addVariableSlotAt:withContent:" : "jr 6/17/2017 20:23",
+		"addVariableSlotAt:withValue:with:" : "jr 6/20/2017 13:13",
 		"applyDiff:with:" : "jr 6/12/2017 18:22",
 		"basicSizeOfMaterializedInstance" : "jr 6/18/2017 13:19",
 		"captureWIthSquot:" : "jr 6/20/2017 00:25",
@@ -16,7 +18,7 @@
 		"hasSquotShadowSlots" : "jr 6/17/2017 22:47",
 		"includesSlot:" : "jr 6/17/2017 23:05",
 		"initialize" : "jr 6/17/2017 20:10",
-		"initializeFrom:with:" : "jr 6/20/2017 01:03",
+		"initializeFrom:with:" : "jr 6/20/2017 13:19",
 		"materializeAs:with:" : "jr 6/18/2017 01:04",
 		"originalClass" : "jr 6/12/2017 18:45",
 		"postCopy" : "jr 6/17/2017 21:58",

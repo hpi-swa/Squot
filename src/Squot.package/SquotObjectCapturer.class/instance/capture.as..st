@@ -1,9 +1,11 @@
-converting
+capturing
 capture: anObject as: shadowObjectFactory
-	convertedObjects at: anObject
-		ifPresent: [:it | ^ it]
-		ifAbsent: [ | newShadow |
-			newShadow := shadowObjectFactory new.
-			convertedObjects at: anObject put: newShadow.
-			newShadow initializeFrom: anObject with: self.
-			^ newShadow]
+	| shadow |
+	state == #enumerating
+		ifTrue: [^ self enumerate: anObject shadowFactory: shadowObjectFactory].
+	shadow := convertedObjects at: anObject.
+	(visited includes: anObject) ifTrue: [^ shadow].
+	visited add: anObject.
+	^ shadow
+		initializeFrom: anObject with: self;
+		yourself

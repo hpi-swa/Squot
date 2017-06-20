@@ -1,0 +1,15 @@
+{
+	"category" : "Squot-Shadows",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"creatorSlot",
+		"creator" ],
+	"name" : "SquotCreatorDecorator",
+	"pools" : [
+		 ],
+	"super" : "SquotDecorator",
+	"type" : "normal" }

@@ -1,6 +1,0 @@
-{
-	"category" : "Squot-Interfaces",
-	"comment" : "My users are the #content of SquotArtifactDiffs, or intermediate objects during comparisons.
-They understand methods to test if there are differences at all, and to retrieve a hierarchical diff.",
-	"commentStamp" : "jr 4/10/2017 23:35",
-	"name" : "TSquotDiffContent" }

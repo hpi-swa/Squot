@@ -1,5 +1,4 @@
 {
 	"category" : "Squot-Serialization",
-	"comment" : "My users fulfill the roles of both SquotSerializer and SquotDeserializer.",
 	"commentStamp" : "jr 3/8/2017 17:21",
 	"name" : "TSquotCodec" }

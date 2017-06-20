@@ -1,0 +1,17 @@
+{
+	"category" : "Squot-Diffs",
+	"classinstvars" : [
+		 ],
+	"classtraitcomposition" : "TSquotDiff classTrait",
+	"classvars" : [
+		 ],
+	"commentStamp" : "jr 6/18/2017 00:40",
+	"instvars" : [
+		"left",
+		"right" ],
+	"name" : "SquotObjectReplacement",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"traitcomposition" : "TSquotDiff",
+	"type" : "normal" }

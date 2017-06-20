@@ -1,0 +1,14 @@
+{
+	"category" : "Squot-Diffs",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "jr 6/18/2017 00:17",
+	"instvars" : [
+		 ],
+	"name" : "SquotSlotRemoval",
+	"pools" : [
+		 ],
+	"super" : "SquotSlotDiff",
+	"type" : "normal" }

@@ -1,0 +1,15 @@
+{
+	"category" : "Squot-Shadows",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"keys",
+		"values" ],
+	"name" : "SquotDictionaryShadow",
+	"pools" : [
+		 ],
+	"super" : "SquotObjectShadow",
+	"type" : "normal" }

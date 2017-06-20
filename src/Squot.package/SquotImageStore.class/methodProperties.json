@@ -26,8 +26,8 @@
 		"loadMonticelloSnapshot:from:replacing:" : "jr 3/6/2017 14:01",
 		"loadObject:from:replacing:" : "jr 2/16/2017 01:18",
 		"materialize:replacing:" : "jr 4/7/2017 16:04",
-		"materializeMetaobject:from:replacing:" : "jr 4/7/2017 16:09",
-		"materializeMetaobject:like:" : "jr 4/7/2017 16:09",
+		"materializeShadow:from:replacing:" : "jr 6/17/2017 19:50",
+		"materializeShadow:like:" : "jr 6/17/2017 19:49",
 		"materializerFor:" : "jr 4/7/2017 16:20",
 		"mcSnapshotForSingleClass:" : "jr 2/2/2017 16:03",
 		"metadataForObjectAt:" : "jr 5/13/2017 20:52",
@@ -40,4 +40,4 @@
 		"restore:from:" : "jr 4/7/2017 16:20",
 		"restoreObjectFrom:" : "jr 1/28/2017 00:16",
 		"restoreToSnapshot:" : "jr 5/1/2017 18:29",
-		"store:at:in:" : "jr 3/5/2017 17:29" } }
+		"store:at:in:" : "jr 6/17/2017 20:59" } }

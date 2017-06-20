@@ -2,7 +2,7 @@
 	"category" : "Squot-Diffs",
 	"classinstvars" : [
 		"instance" ],
-	"classtraitcomposition" : "TSquotDiffContent classTrait",
+	"classtraitcomposition" : "TSquotDiff classTrait",
 	"classvars" : [
 		 ],
 	"commentStamp" : "jr 4/10/2017 23:42",
@@ -12,5 +12,5 @@
 	"pools" : [
 		 ],
 	"super" : "Object",
-	"traitcomposition" : "TSquotDiffContent",
+	"traitcomposition" : "TSquotDiff",
 	"type" : "normal" }

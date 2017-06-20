@@ -1,0 +1,15 @@
+{
+	"class" : {
+		 },
+	"instance" : {
+		"captureAndRestore:" : "jr 6/20/2017 01:30",
+		"captureAndRestoreWithoutEqualityTest:" : "jr 6/20/2017 01:30",
+		"setUp" : "jr 6/20/2017 01:24",
+		"testArrayOfIntegers" : "jr 6/20/2017 01:25",
+		"testBooleans" : "jr 6/20/2017 01:26",
+		"testCyclicReferences" : "jr 6/20/2017 01:28",
+		"testDictionary" : "jr 6/20/2017 01:36",
+		"testEmptyObject" : "jr 6/20/2017 01:34",
+		"testNil" : "jr 6/20/2017 01:29",
+		"testPoint" : "jr 6/20/2017 01:30",
+		"testRectangle" : "jr 6/20/2017 01:30" } }

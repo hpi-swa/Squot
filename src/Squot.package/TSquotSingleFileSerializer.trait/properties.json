@@ -1,5 +1,4 @@
 {
 	"category" : "Squot-Serialization",
-	"comment" : "My users are SquotSerializers that write to a single file per artifact.",
 	"commentStamp" : "jr 3/8/2017 17:21",
 	"name" : "TSquotSingleFileSerializer" }

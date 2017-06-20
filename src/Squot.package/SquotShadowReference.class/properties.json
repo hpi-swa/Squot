@@ -1,0 +1,14 @@
+{
+	"category" : "Squot-Diffs",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "jr 6/18/2017 00:19",
+	"instvars" : [
+		 ],
+	"name" : "SquotShadowReference",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }

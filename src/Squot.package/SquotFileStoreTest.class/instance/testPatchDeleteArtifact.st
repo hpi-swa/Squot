@@ -3,7 +3,7 @@ testPatchDeleteArtifact
 	| object snapshotWithArtifact snapshotWithoutArtifact artifactReference metadata patch |
 	snapshotWithArtifact := SquotSnapshot builder
 		add: (SquotArtifact new
-			content: (object := 'a text');
+			content: (object := 'a text') captureWithSquot;
 			path: 'aText';
 			initializeDefaultStoreInfoFor: object;
 			validatePathFor: object;

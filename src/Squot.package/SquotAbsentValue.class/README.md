@@ -1,0 +1,1 @@
+I am a placeholder for an absent object in diffs, most prominently SquotSimpleValueDiff.

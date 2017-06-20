@@ -1,0 +1,3 @@
+accessing
+originalClass
+	^ value class

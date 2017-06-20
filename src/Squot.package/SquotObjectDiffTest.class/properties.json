@@ -1,0 +1,14 @@
+{
+	"category" : "Squot-Diffs-Tests",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "SquotObjectDiffTest",
+	"pools" : [
+		 ],
+	"super" : "TestCase",
+	"type" : "normal" }

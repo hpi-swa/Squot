@@ -1,3 +1,3 @@
-*Squot-content-serialization
+*Squot-shadow-serialization
 squotWrite: anArtifact with: aSerializer
 	^ aSerializer writeDefinitions: self definitions

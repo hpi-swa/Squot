@@ -1,0 +1,3 @@
+comparing
+diffClass
+	^ SquotObjectDiff

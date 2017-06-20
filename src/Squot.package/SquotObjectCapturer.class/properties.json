@@ -1,0 +1,18 @@
+{
+	"category" : "Squot-Shadows",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "jr 4/7/2017 16:31",
+	"instvars" : [
+		"rootObject",
+		"rootCopy",
+		"rootMetaobject",
+		"convertedObjects",
+		"copiedObjects" ],
+	"name" : "SquotObjectCapturer",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }

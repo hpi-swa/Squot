@@ -1,0 +1,12 @@
+{
+	"class" : {
+		 },
+	"instance" : {
+		"testArrayOfIntegers" : "jr 6/18/2017 00:41",
+		"testBooleans" : "jr 6/18/2017 00:41",
+		"testEmptyObjects" : "jr 6/17/2017 22:11",
+		"testObjects" : "jr 6/18/2017 01:01",
+		"testPoints" : "jr 6/18/2017 01:02",
+		"testRectangles" : "jr 6/18/2017 00:49",
+		"testReferenceSwap" : "jr 6/18/2017 00:42",
+		"testSmallIntegers" : "jr 6/18/2017 11:57" } }

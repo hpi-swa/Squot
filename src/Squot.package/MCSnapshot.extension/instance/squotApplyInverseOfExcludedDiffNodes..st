@@ -1,4 +1,4 @@
-*Squot-content-diff
+*Squot-shadow-diffing
 squotApplyInverseOfExcludedDiffNodes: aSquotDiffNode
 	"Answer a snapshot that is me subtracted by the excluded operations in the given hierarchical diff"
 	| operations subtractingPatch |

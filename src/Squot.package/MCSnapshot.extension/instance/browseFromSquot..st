@@ -1,4 +1,4 @@
-*Squot-content-tools
+*Squot-shadow-tools
 browseFromSquot: aSquotArtifact
 	^ (MCSnapshotBrowser forSnapshot: self)
 		show

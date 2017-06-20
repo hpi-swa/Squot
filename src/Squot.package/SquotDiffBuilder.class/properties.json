@@ -1,0 +1,15 @@
+{
+	"category" : "Squot-Diffs",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "jr 6/15/2017 17:33",
+	"instvars" : [
+		"comparedObjects",
+		"absentShadows" ],
+	"name" : "SquotDiffBuilder",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }

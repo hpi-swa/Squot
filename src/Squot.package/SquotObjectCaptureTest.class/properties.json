@@ -1,0 +1,14 @@
+{
+	"category" : "Squot-Diffs-Tests",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"capturer" ],
+	"name" : "SquotObjectCaptureTest",
+	"pools" : [
+		 ],
+	"super" : "TestCase",
+	"type" : "normal" }

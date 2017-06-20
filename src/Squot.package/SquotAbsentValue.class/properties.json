@@ -1,0 +1,16 @@
+{
+	"category" : "Squot-Diffs",
+	"classinstvars" : [
+		 ],
+	"classtraitcomposition" : "TSquotTrackableObject classTrait + TSquotDiffableShadow classTrait",
+	"classvars" : [
+		"Instance" ],
+	"commentStamp" : "jr 6/14/2017 16:24",
+	"instvars" : [
+		 ],
+	"name" : "SquotAbsentValue",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"traitcomposition" : "TSquotTrackableObject + TSquotDiffableShadow",
+	"type" : "normal" }

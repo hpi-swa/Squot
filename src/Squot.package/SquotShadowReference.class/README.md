@@ -1,0 +1,1 @@
+I am a reference to another shadow object in the same graph (like an identifier or name).

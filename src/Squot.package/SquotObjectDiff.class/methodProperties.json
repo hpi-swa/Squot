@@ -1,0 +1,27 @@
+{
+	"class" : {
+		"left:right:" : "jr 4/9/2017 21:55",
+		"left:right:with:" : "jr 6/17/2017 22:28",
+		"onlyLeft:" : "jr 4/9/2017 22:19" },
+	"instance" : {
+		"addSlotOnlyRight:with:" : "jr 6/18/2017 12:10",
+		"apply:to:in:with:" : "jr 6/12/2017 18:40",
+		"applyToInstVars:with:" : "jr 6/12/2017 18:39",
+		"applyToSlots:with:" : "jr 6/18/2017 12:04",
+		"applyToVariablePart:with:" : "jr 6/14/2017 17:03",
+		"asSquotHierarchicalDiff" : "jr 6/12/2017 16:54",
+		"asSquotHierarchicalDiffWith:" : "jr 6/12/2017 16:54",
+		"changedInstVars" : "jr 4/9/2017 21:56",
+		"changedVariablePart" : "jr 4/9/2017 21:56",
+		"diff:against:with:" : "jr 6/17/2017 23:44",
+		"diffSlot:withCorrespondingSlotIn:with:" : "jr 6/17/2017 23:47",
+		"initialize" : "jr 4/9/2017 21:57",
+		"slotChanges" : "jr 6/17/2017 23:41",
+		"squotApplyTo:" : "jr 6/12/2017 18:21",
+		"squotApplyTo:with:" : "jr 6/17/2017 20:59",
+		"squotApplyToLoaded:" : "jr 6/16/2017 12:12",
+		"squotApplyToLoaded:with:" : "jr 6/16/2017 12:13",
+		"squotChangeAsStringOrText" : "jr 6/12/2017 18:01",
+		"squotHasChanges" : "jr 6/17/2017 23:45",
+		"update:in:with:" : "jr 6/2/2017 14:47",
+		"update:in:with:with:" : "jr 6/14/2017 16:33" } }

@@ -2,7 +2,7 @@ private snapshot building
 store: anObject at: path in: aSnapshotBuilder
 	| artifact metadata |
 	artifact := SquotArtifact new
-		content: anObject asSquotContent;
+		content: anObject captureWithSquot;
 		path: path;
 		yourself.
 	metadata := (additionalInfo at: path) copy.

@@ -1,1 +1,0 @@
-My users are the #content of SquotArtifacts and support computing changes between two artifacts (diff).

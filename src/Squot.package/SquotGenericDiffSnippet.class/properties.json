@@ -1,0 +1,14 @@
+{
+	"category" : "Squot-Diffs",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "SquotGenericDiffSnippet",
+	"pools" : [
+		 ],
+	"super" : "Association",
+	"type" : "normal" }

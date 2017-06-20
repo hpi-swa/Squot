@@ -1,0 +1,14 @@
+{
+	"category" : "Squot-Shadows",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "SquotCompiledCodeShadow",
+	"pools" : [
+		 ],
+	"super" : "SquotObjectShadow",
+	"type" : "normal" }

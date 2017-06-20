@@ -1,0 +1,14 @@
+as yet unclassified
+apply: aDiff toLoaded: anObject
+	| existing deferred patched |
+	anObject shallowCopy == anObject ifFalse:
+		"do not remember primitive values here"
+		[existing := patchedObjects at: anObject
+			ifAbsentPut: [deferred := SquotPlaceholder new]].
+	(existing notNil and: [existing ~~ deferred]) ifTrue: [^ existing].
+	[patched := aDiff squotApplyToLoaded: anObject with: self.
+	(deferred notNil and: [patched ~~ patched shallowCopy])
+		ifTrue: [deferred becomeForward: patched]]
+	ensure: [(patched isNil and: [deferred notNil])
+			ifTrue: [patchedObjects removeKey: anObject]].
+	^ patched

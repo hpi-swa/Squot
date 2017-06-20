@@ -1,0 +1,14 @@
+{
+	"category" : "Squot-Shadows",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "jr 6/18/2017 01:14",
+	"instvars" : [
+		"owner" ],
+	"name" : "SquotPlaceholder",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }

@@ -1,8 +1,4 @@
 {
 	"category" : "Squot-Interfaces",
-	"comment" : "I document the messages that let objects control how Squot handles them.
-
-Object implements most of the messages defined here, so you do not need to use this Trait.
-It suffices to override the appropriate methods.",
-	"commentStamp" : "jr 4/7/2017 17:13",
+	"commentStamp" : "jr 6/17/2017 21:04",
 	"name" : "TSquotTrackableObject" }

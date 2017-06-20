@@ -1,4 +1,4 @@
-*Squot-content-diff
+*Squot-shadow-diffing
 squotDiffAgainst: otherSnapshot withBase: baseSnapshot
 	| merger |
 	[merger := MCThreeWayMerger 

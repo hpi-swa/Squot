@@ -1,0 +1,14 @@
+{
+	"category" : "Squot-Diffs",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"nodes" ],
+	"name" : "SquotMetaobjectDiffNodesBuilder",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }

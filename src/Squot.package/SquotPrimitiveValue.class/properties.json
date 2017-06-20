@@ -1,0 +1,16 @@
+{
+	"category" : "Squot-Shadows",
+	"classinstvars" : [
+		 ],
+	"classtraitcomposition" : "TSquotDiffableShadow classTrait",
+	"classvars" : [
+		 ],
+	"commentStamp" : "jr 6/15/2017 16:54",
+	"instvars" : [
+		"value" ],
+	"name" : "SquotPrimitiveValue",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"traitcomposition" : "TSquotDiffableShadow",
+	"type" : "normal" }

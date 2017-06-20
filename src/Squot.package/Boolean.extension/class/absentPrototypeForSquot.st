@@ -1,3 +1,3 @@
 *Squot
 absentPrototypeForSquot
-	^ nil
+	^ SquotAbsentValue instance

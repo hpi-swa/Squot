@@ -1,0 +1,16 @@
+{
+	"category" : "Squot-Shadows",
+	"classinstvars" : [
+		 ],
+	"classtraitcomposition" : "TSquotDiffable classTrait",
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "SquotShadowSlot",
+	"pools" : [
+		 ],
+	"super" : "Association",
+	"traitcomposition" : "TSquotDiffable",
+	"type" : "normal" }

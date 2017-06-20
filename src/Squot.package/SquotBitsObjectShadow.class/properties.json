@@ -1,0 +1,14 @@
+{
+	"category" : "Squot-Shadows",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "SquotBitsObjectShadow",
+	"pools" : [
+		 ],
+	"super" : "SquotPrimitiveValue",
+	"type" : "normal" }

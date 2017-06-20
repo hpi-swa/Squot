@@ -1,0 +1,2 @@
+My users are shadows that support computing changes between them.
+When the shadow of an object is not diffable the captured object can only be replaced by another during patching operations, but not be modified in-place.

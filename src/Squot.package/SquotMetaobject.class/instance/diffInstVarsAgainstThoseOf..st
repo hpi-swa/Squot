@@ -1,3 +1,0 @@
-comparing
-diffInstVarsAgainstThoseOf: otherMetaobject
-	^ otherMetaobject diffInstVarsAgainst: instVars

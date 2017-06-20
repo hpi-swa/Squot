@@ -1,9 +1,13 @@
 {
 	"class" : {
-		 },
+		"squotDiffClass" : "jr 6/15/2017 17:49" },
 	"instance" : {
 		"asSquotHierarchicalDiff" : "jr 5/29/2017 23:27",
+		"asSquotHierarchicalDiffWith:" : "jr 6/12/2017 17:42",
 		"squotAdjustToResemble:" : "jr 5/30/2017 00:31",
 		"squotApplyTo:" : "jr 5/30/2017 00:30",
+		"squotApplyTo:with:" : "jr 6/18/2017 12:34",
 		"squotApplyToLoaded:" : "jr 6/7/2017 14:04",
+		"squotApplyToLoaded:with:" : "jr 6/16/2017 12:15",
+		"squotChangeAsStringOrText" : "jr 6/12/2017 17:49",
 		"squotHasChanges" : "jr 5/30/2017 00:30" } }

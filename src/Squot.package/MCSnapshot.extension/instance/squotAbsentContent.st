@@ -1,3 +1,3 @@
-*Squot-content-diff
+*Squot-shadow-diffing
 squotAbsentContent
 	^ MCSnapshot empty

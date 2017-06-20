@@ -1,0 +1,15 @@
+{
+	"category" : "Squot-Diffs",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"patchedObjects",
+		"absentShadows" ],
+	"name" : "SquotMetaobjectPatcher",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }

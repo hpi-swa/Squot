@@ -1,0 +1,16 @@
+{
+	"category" : "Squot-Diffs",
+	"classinstvars" : [
+		 ],
+	"classtraitcomposition" : "TSquotDiff classTrait",
+	"classvars" : [
+		 ],
+	"commentStamp" : "jr 6/18/2017 00:15",
+	"instvars" : [
+		 ],
+	"name" : "SquotSlotDiff",
+	"pools" : [
+		 ],
+	"super" : "Association",
+	"traitcomposition" : "TSquotDiff",
+	"type" : "normal" }

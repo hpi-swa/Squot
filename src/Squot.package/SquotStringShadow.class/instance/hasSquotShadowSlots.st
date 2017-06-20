@@ -1,0 +1,3 @@
+Squot-shadow
+hasSquotShadowSlots
+	^ false

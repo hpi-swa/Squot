@@ -23,6 +23,6 @@ testTrackingWorkspaceMorph
 	self assert: 'This is a sample.' equals: workspace contents.
 	self assert: workspace == systemWindow model.
 	self assert: workspace == (workspace bindingOf: #This).
-	self assert: 'I will be deleted after saving' == (workspace bindingOf: #toBeDeleted).
+	self assert: 'I will be deleted after saving' equals: (workspace bindingOf: #toBeDeleted).
 	self assert: (workspace bindingOf: #newVar) isNil.
 	systemWindow delete.

@@ -1,0 +1,8 @@
+{
+	"class" : {
+		 },
+	"instance" : {
+		"apply:to:" : "jr 6/17/2017 20:15",
+		"apply:toLoaded:" : "jr 6/17/2017 20:15",
+		"initialize" : "jr 6/12/2017 18:21",
+		"materialize:" : "jr 6/16/2017 13:33" } }

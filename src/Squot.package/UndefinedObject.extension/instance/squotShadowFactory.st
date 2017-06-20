@@ -1,0 +1,3 @@
+*Squot-trackable
+squotShadowFactory
+	^ SquotPrimitiveValue

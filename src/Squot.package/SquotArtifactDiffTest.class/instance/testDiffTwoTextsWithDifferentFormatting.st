@@ -3,7 +3,7 @@ testDiffTwoTextsWithDifferentFormatting
 	| diff text1 text2 emphasisDiff |
 	text1 := 'foo' asText.
 	text2 := 'foo' asText allBold.
-	diff := text1 asSquotContent squotDiffAgainst: text2 asSquotContent.
+	diff := text1 captureWithSquot squotDiffAgainst: text2 captureWithSquot.
 	self deny: (diff changedInstVars includesKey: #string).
 	self assert: (diff changedInstVars includesKey: #runs).
 	self assert:

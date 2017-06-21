@@ -3,9 +3,9 @@ readFrom: aStream
 	"Read author, email and timeStamp from aStream.
 	Also accept streams only containing the name, or only name and email."
 	| secondsSince1970 sign zoneOffset |
-	self name: (aStream upTo: $<) withBlanksTrimmed.
+	self name: (aStream upTo: $<) allButLast.
 	aStream atEnd ifTrue: [^ self].
-	self email: (aStream upTo: $>) withBlanksTrimmed.
+	self email: (aStream upTo: $>).
 	aStream skipSeparators.
 	aStream atEnd ifTrue: [^ self].
 	secondsSince1970 := Integer readFrom: aStream.

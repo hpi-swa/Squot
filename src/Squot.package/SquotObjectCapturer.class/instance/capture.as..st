@@ -3,7 +3,7 @@ capture: anObject as: shadowObjectFactory
 	| shadow |
 	state == #enumerating
 		ifTrue: [^ self enumerate: anObject shadowFactory: shadowObjectFactory].
-	shadow := convertedObjects at: anObject.
+	shadow := convertedObjects at: capturedObject.
 	(visited includes: anObject) ifTrue: [^ shadow].
 	visited add: anObject.
 	^ shadow

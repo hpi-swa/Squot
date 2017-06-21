@@ -4,13 +4,13 @@
 	"instance" : {
 		"beginCapturingFrom:" : "jr 6/21/2017 17:47",
 		"capture:" : "jr 6/21/2017 17:37",
-		"capture:as:" : "jr 6/20/2017 17:36",
+		"capture:as:" : "jr 6/21/2017 17:32",
 		"capture:asValueOfSlot:" : "jr 6/21/2017 14:01",
 		"captureBits:" : "jr 6/20/2017 00:40",
 		"capturePrimitiveValue:" : "jr 6/17/2017 21:39",
 		"convertRoot:" : "jr 6/17/2017 19:46",
 		"convertRoot:as:" : "jr 6/15/2017 15:33",
-		"enumerate:shadowFactory:" : "jr 6/20/2017 16:37",
+		"enumerate:shadowFactory:" : "jr 6/21/2017 17:46",
 		"follow:" : "jr 6/21/2017 17:37",
 		"followReferences" : "jr 6/20/2017 16:33",
 		"initialize" : "jr 6/21/2017 17:21",
@@ -20,5 +20,5 @@
 		"project" : "jr 6/20/2017 00:35",
 		"projectChangeSet" : "jr 6/20/2017 00:52",
 		"references" : "jr 6/8/2017 15:00",
-		"replace:with:" : "jr 6/17/2017 20:27",
+		"replace:with:" : "jr 6/21/2017 17:22",
 		"rootName" : "jr 6/21/2017 00:53" } }

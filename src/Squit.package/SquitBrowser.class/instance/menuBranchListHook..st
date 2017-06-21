@@ -6,7 +6,10 @@ menuBranchListHook: aMenu
 	selectedHistorian isRemoteTrackingHistorian
 		ifFalse: [aMenu addList: {
 			{'Switch to this branch'. #actionBranchSwitch}
-		}].
+		}]
+		ifTrue: [aMenu add: 'Create new branch and switch to it'
+				help: 'Create a new branch at the same commit as this branch and switch to the new branch'
+				action: #actionBranchCreateAndSwitch].
 	activeBranchName := self projectSelection loadedHistorian shortName.
 	selectedHistorian ~= self projectSelection loadedHistorian ifTrue:
 		[aMenu addList: {

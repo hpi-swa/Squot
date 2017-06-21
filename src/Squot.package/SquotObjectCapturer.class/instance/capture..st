@@ -1,4 +1,4 @@
-capturing
+capturing dispatch
 capture: anObject
 	state
 		ifNotNil: [^ anObject captureWithSquot: self]

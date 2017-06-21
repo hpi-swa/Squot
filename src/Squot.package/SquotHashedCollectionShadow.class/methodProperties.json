@@ -1,0 +1,10 @@
+{
+	"class" : {
+		 },
+	"instance" : {
+		"createMaterializedInstance" : "jr 6/21/2017 18:00",
+		"initializeFrom:with:" : "jr 6/21/2017 18:06",
+		"initializeHashedItems:with:" : "jr 6/21/2017 18:12",
+		"materializeAs:with:" : "jr 6/21/2017 17:59",
+		"metaSlotName" : "jr 6/21/2017 17:53",
+		"relevantInstVarNamesOf:" : "jr 6/21/2017 17:52" } }

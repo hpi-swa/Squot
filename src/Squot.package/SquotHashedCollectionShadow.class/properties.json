@@ -6,10 +6,9 @@
 		 ],
 	"commentStamp" : "",
 	"instvars" : [
-		"keys",
-		"values" ],
-	"name" : "SquotDictionaryShadow",
+		 ],
+	"name" : "SquotHashedCollectionShadow",
 	"pools" : [
 		 ],
-	"super" : "SquotHashedCollectionShadow",
+	"super" : "SquotObjectShadow",
 	"type" : "normal" }

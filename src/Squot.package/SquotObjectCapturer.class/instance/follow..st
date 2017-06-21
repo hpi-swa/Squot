@@ -1,9 +1,14 @@
 private
 follow: aDecoratedObject
-	objectNameMapping at: aDecoratedObject undecorated
-		ifPresent: [:name | state == #enumerating ifTrue: [^ self] "already followed this"]
-		ifAbsentPut: [aDecoratedObject creator
-					ifNil: [#()]
-					ifNotNil: [:creator | (objectNameMapping at: creator undecorated) ,
-										{aDecoratedObject creatorSlot key}]].
-	self capture: aDecoratedObject.
+	| undecorated |
+	undecorated := aDecoratedObject undecorated.
+	state == #enumerating ifTrue:
+		[(visited includes: undecorated) ifTrue: [^ self].
+		visited add: undecorated.
+		objectNameMapping at: undecorated
+			ifAbsentPut: [self newNameFor: aDecoratedObject]].
+	capturedObject := aDecoratedObject undecorated.
+	self capture:
+		(replacedObjects
+			at: undecorated
+			ifAbsent: [aDecoratedObject]).

@@ -17,6 +17,10 @@ menuBranchListHook: aMenu
 			{'Push branch'. #actionBranchPush}.
 			{'Set upstream branch of this branch'. #actionSetUpstreamBranch}
 		}].
+	selectedHistorian hasUpstreamHistorian ifTrue:
+		[aMenu add: 'Remove upstream branch at the remote'
+			help: 'Push the deletion of the remote branch'
+			action: #actionBranchRemoveUpstream].
 	aMenu addLine.
 	selectedHistorian isRemoteTrackingHistorian
 		ifFalse: [aMenu addList: {
@@ -25,8 +29,4 @@ menuBranchListHook: aMenu
 	aMenu addList: {
 		{'Remove branch'. #actionBranchRemove}.
 	}.
-	selectedHistorian hasUpstreamHistorian ifTrue:
-		[aMenu add: 'Remove upstream branch at the remote'
-			help: 'Push the deletion of the remote branch'
-			action: #actionBranchRemoveUpstream].
 	^ aMenu

@@ -2,9 +2,9 @@
 	"class" : {
 		 },
 	"instance" : {
-		"createMaterializedInstance" : "jr 6/21/2017 18:00",
+		"createMaterializedInstance" : "jr 6/22/2017 00:13",
 		"initializeFrom:with:" : "jr 6/21/2017 18:06",
-		"initializeHashedItems:with:" : "jr 6/21/2017 18:12",
-		"materializeAs:with:" : "jr 6/21/2017 17:59",
-		"metaSlotName" : "jr 6/21/2017 17:53",
+		"initializeHashedItems:with:" : "jr 6/22/2017 00:13",
+		"itemSlots" : "jr 6/22/2017 00:14",
+		"materializeAs:with:" : "jr 6/22/2017 00:14",
 		"relevantInstVarNamesOf:" : "jr 6/21/2017 17:52" } }

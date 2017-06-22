@@ -1,7 +1,6 @@
 as yet unclassified
 diffKeysAndValuesAgainstThoseOf: rightDictionaryShadow in: dictionaryDiff with: aDiffBuilder
 	^ dictionaryDiff
-		diffKeys: keys
-		andValues: values
+		diffKeysAndValues: itemSlots
 		againstThoseOf: rightDictionaryShadow
 		with: aDiffBuilder

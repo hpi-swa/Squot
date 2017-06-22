@@ -1,3 +1,0 @@
-hashed slots
-metaSlotName
-	^ #'-associations'

@@ -1,3 +1,3 @@
 rematerializing
 createMaterializedInstance
-	^ originalClass new: (slots at: self metaSlotName) size
+	^ originalClass new: itemSlots size

@@ -5,7 +5,7 @@ testDictionariesWithComplexKeys
 	key2 := SquotObjectForDiffTests new var1: nil; var2: key1.
 	dict := Dictionary newFrom: {key1 -> 'value'. key2 -> key1}.
 	shadow := capturer capture: dict.
-	associationShadows := shadow slots at: shadow metaSlotName.
+	associationShadows := shadow itemSlots.
 	indexOfFirstAssociation := associationShadows
 		findFirst: [:whose | (whose slots at: 'value') undecorated = 'value' captureWithSquot].
 	indexOfSecondAssociation := 3 - indexOfFirstAssociation.

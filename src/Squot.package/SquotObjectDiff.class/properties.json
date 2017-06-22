@@ -8,8 +8,6 @@
 	"commentStamp" : "jr 6/17/2017 22:59",
 	"instvars" : [
 		"originalClass",
-		"changedInstVars",
-		"changedVariablePart",
 		"slotChanges" ],
 	"name" : "SquotObjectDiff",
 	"pools" : [

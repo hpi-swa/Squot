@@ -3,7 +3,6 @@ beginCapturingFrom: anObject
 	| decorated |
 	[state := #enumerating.
 	toBeVisited removeAll.
-	objectNameMapping removeAll.
 	convertedObjects removeAll.
 	visited removeAll.
 	decorated := SquotCreatorDecorator on: anObject creator: nil slot: nil.

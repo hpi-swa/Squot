@@ -2,9 +2,8 @@ private
 enumerate: anObject shadowFactory: shadowObjectFactory
 	| newShadow |
 	anObject ~~ capturedObject ifTrue:
-		[objectNameMapping
-			at: anObject
-			ifAbsentPut: (objectNameMapping at: capturedObject)].
+		[objectRegistry nameOf: anObject
+			ifAbsentAssign: [objectRegistry nameOf: capturedObject]].
 	(convertedObjects includesKey: anObject) ifTrue: [^ self].
 	newShadow := shadowObjectFactory new.
 	convertedObjects at: capturedObject put: newShadow.

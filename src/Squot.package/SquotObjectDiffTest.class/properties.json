@@ -6,7 +6,8 @@
 		 ],
 	"commentStamp" : "",
 	"instvars" : [
-		 ],
+		"capturer",
+		"objectRegistry" ],
 	"name" : "SquotObjectDiffTest",
 	"pools" : [
 		 ],

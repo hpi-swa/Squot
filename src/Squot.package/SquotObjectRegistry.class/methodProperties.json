@@ -1,0 +1,10 @@
+{
+	"class" : {
+		 },
+	"instance" : {
+		"add:of:asCreatorOf:" : "jr 6/22/2017 01:08",
+		"assign:to:" : "jr 6/22/2017 01:08",
+		"creatorOf:ifAbsentPut:of:" : "jr 6/22/2017 01:20",
+		"initialize" : "jr 6/22/2017 01:26",
+		"nameOf:" : "jr 6/22/2017 01:38",
+		"nameOf:ifAbsentAssign:" : "jr 6/22/2017 01:15" } }

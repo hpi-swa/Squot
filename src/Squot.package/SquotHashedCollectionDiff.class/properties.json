@@ -6,9 +6,9 @@
 		 ],
 	"commentStamp" : "",
 	"instvars" : [
-		 ],
-	"name" : "SquotDictionaryDiff",
+		"itemChanges" ],
+	"name" : "SquotHashedCollectionDiff",
 	"pools" : [
 		 ],
-	"super" : "SquotHashedCollectionDiff",
+	"super" : "SquotObjectDiff",
 	"type" : "normal" }

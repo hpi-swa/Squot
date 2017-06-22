@@ -1,4 +1,4 @@
-as yet unclassified
+patching
 squotApplyToLoaded: anObject with: aMetaobjectPatcher
 	"Modify anObject such that it matches what I model"
 	self shouldBeImplemented.

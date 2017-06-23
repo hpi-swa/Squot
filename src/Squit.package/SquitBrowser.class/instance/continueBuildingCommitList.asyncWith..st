@@ -1,6 +1,5 @@
 caching
 continueBuildingCommitList: anOrderedCollection asyncWith: aHistoryWalker
-	commitListBuildProcess ifNotNil: [commitListBuildProcess terminate].
 	commitListBuildProcess := 
 	[aHistoryWalker continueDo: [:each | anOrderedCollection add: each].
 	cachedCommitList := anOrderedCollection.

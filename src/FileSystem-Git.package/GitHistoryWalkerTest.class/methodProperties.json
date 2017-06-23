@@ -2,10 +2,11 @@
 	"class" : {
 		 },
 	"instance" : {
-		"addCommit:time:withParents:" : "jr 4/9/2017 00:05",
+		"addCommit:time:withParents:" : "jr 5/26/2017 00:15",
 		"addCommit:withParents:" : "jr 10/23/2016 01:54",
 		"expectedFailures" : "jr 4/9/2017 00:35",
 		"setUp" : "jr 4/8/2017 23:31",
+		"testMultipleVisitsToExcludedCommitAndUnchronologicalAuthorTimeStamps" : "jr 5/26/2017 00:18",
 		"testRevListChronologicalOrder" : "jr 4/9/2017 00:32",
 		"testRevListTopoOrder" : "jr 4/9/2017 00:33",
 		"testRevListWithMerge" : "jr 4/8/2017 23:38",

@@ -6,13 +6,12 @@
 		 ],
 	"commentStamp" : "jr 5/22/2017 21:00",
 	"instvars" : [
-		"seen",
 		"searchFrontier",
 		"sourceVersions",
-		"sinkVersions",
 		"versionList",
 		"versionBlock",
-		"stopRequested" ],
+		"stopRequested",
+		"markedVersions" ],
 	"name" : "VersionHistoryWalker",
 	"pools" : [
 		 ],

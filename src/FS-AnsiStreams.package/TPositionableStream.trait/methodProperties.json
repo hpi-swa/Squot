@@ -3,4 +3,5 @@
 		 },
 	"instance" : {
 		"back" : "jr 3/7/2017 17:08",
-		"errorCantGoBack" : "jr 3/7/2017 17:03" } }
+		"errorCantGoBack" : "jr 3/7/2017 17:03",
+		"reset" : "jr 6/7/2017 13:03" } }

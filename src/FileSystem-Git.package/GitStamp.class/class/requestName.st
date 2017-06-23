@@ -4,5 +4,5 @@ requestName
 	((Smalltalk class canUnderstand: #isHeadless) and: [ Smalltalk isHeadless ])
 		ifTrue: [ self error: 'Please set the default name using GitStamp defaultName:' ].
 	^UIManager default 
-		request: 'Please provide your full name to identify your actions.'
+		request: 'Please provide your full name for the authorship information of your Git commits.'
 		initialAnswer: 'Firstname Lastname'

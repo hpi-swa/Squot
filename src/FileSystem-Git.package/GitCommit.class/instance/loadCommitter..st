@@ -1,3 +1,3 @@
 loading
 loadCommitter: aString
-	self committer: (GitStamp fromString: aString)
+	self committer: (GitStamp fromString: (self tryDecodeString: aString))

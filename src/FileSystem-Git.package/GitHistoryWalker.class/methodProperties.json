@@ -3,10 +3,7 @@
 		 },
 	"instance" : {
 		"excludeAncestorsOfAll:" : "jr 4/12/2017 16:59",
-		"idOf:" : "jr 5/22/2017 23:46",
-		"initializeSearchFrontier" : "jr 5/22/2017 23:42",
 		"revisions" : "jr 5/22/2017 23:43",
-		"sinkCommits" : "jr 5/22/2017 23:43",
-		"sinkCommits:" : "jr 5/22/2017 23:43",
+		"shouldVisit:before:" : "jr 5/26/2017 00:22",
 		"sourceCommits" : "jr 5/22/2017 23:43",
 		"sourceCommits:" : "jr 5/22/2017 23:43" } }

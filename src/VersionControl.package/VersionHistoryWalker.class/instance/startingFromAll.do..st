@@ -1,5 +1,5 @@
 history walking
 startingFromAll: aCollectionOfVersions do: aBlock
 	versionBlock := aBlock.
-	searchFrontier addAll: aCollectionOfVersions.
+	aCollectionOfVersions do: [:each | self addStart: each].
 	self performSearch.

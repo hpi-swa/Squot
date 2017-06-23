@@ -7,9 +7,9 @@ findBaseVersionOf: originVersion andAnyOf: aCollection
 	originVersion isNil ifTrue: [^ nil].
 	markedOrigin := self marked: originVersion.
 	markedOthers := aCollection collect: [:each | self marked: each].
-	commonAncestors := self newMarker
+	commonAncestors addAll: (self newMarker
 		traverseHistoryFromOrigin: markedOrigin
 		andOthers: markedOthers;
-		commonAncestors.
+		commonAncestors).
 	self removeCommonAncestorsReachableFromOtherCommonAncestors.
 	^ (self commonAncestors ifEmpty: [^ nil]) anyOne

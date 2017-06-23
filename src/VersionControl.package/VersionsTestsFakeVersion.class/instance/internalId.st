@@ -1,3 +1,3 @@
 accessing
 internalId
-	^ self identityHash
+	^ self number

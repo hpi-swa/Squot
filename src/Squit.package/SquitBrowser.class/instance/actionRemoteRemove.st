@@ -9,5 +9,7 @@ actionRemoteRemove
 	selection ifNil: [^ self].
 	oldBranchSelection := self branchSelection.
 	gitRepository removeRemoteNamed: selection.
-	self changed: #branchList.
-	oldBranchSelection ~= self branchSelection ifTrue: [self refresh].
+	self loadBranchList.
+	selectedHistorian version ifNil: "selected remote-tracking branch was deleted"
+		[selectedHistorian := self projectSelection loadedHistorian.
+		self branchSelectionChanged].

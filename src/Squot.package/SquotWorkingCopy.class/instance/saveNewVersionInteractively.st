@@ -7,7 +7,7 @@ saveNewVersionInteractively
 	tool := SquotSaveVersionDialog new
 		parentVersions: self parentVersions;
 		originalArtifacts: baseSnapshot;
-		proposeArtifacts: (loadedSnapshot := store captureSnapshot);
+		proposeArtifacts: (loadedSnapshot := self currentSnapshot);
 		controllerForIgnores: self;
 		yourself.
 	ToolBuilder default in: [:builder | | view |
@@ -22,9 +22,10 @@ saveNewVersionInteractively
 		with: [:version | version
 					message: tool message asString;
 					author: self defaultAuthor.
-				version parents addAll: additionalParents.
+				version parents: self parentVersions.
 				self shouldNotStoreMetadata ifTrue: [version doNotStoreMetadata]].
-	additionalParents := OrderedCollection new.
+	self loadedVersion: newVersion.
+	self resetAdditionalParents.
 	previousSnapshot := finalSnapshot.
 	previousVersionId := newVersion internalId.
 	self cacheNewMonticelloVersions: finalSnapshot message: tool message.

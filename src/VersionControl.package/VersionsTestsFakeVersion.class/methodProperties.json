@@ -1,11 +1,16 @@
 {
 	"class" : {
-		"describedAs:withParents:" : "jr 4/24/2017 15:56",
+		"number:describedAs:withParents:" : "jr 5/25/2017 23:33",
 		"withParents:" : "jr 4/24/2017 15:48" },
 	"instance" : {
-		"internalId" : "jr 5/22/2017 21:19",
+		"=" : "jr 6/2/2017 12:01",
+		"hash" : "jr 6/2/2017 12:01",
+		"internalId" : "jr 6/2/2017 12:01",
+		"number" : "jr 5/25/2017 23:33",
+		"number:" : "jr 5/25/2017 23:33",
 		"parents" : "jr 4/24/2017 15:48",
 		"parents:" : "jr 4/24/2017 15:48",
 		"printOn:" : "jr 4/24/2017 15:57",
 		"text" : "jr 4/24/2017 15:56",
-		"text:" : "jr 4/24/2017 15:56" } }
+		"text:" : "jr 4/24/2017 15:56",
+		"timeStamp" : "jr 5/25/2017 23:36" } }

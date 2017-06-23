@@ -2,7 +2,6 @@
 	"category" : "VersionControl-Algorithms-Tests",
 	"classinstvars" : [
 		 ],
-	"classtraitcomposition" : "TVersionsTestCaseProducingFakeVersions classTrait",
 	"classvars" : [
 		 ],
 	"commentStamp" : "",
@@ -12,6 +11,5 @@
 	"name" : "VersionsMergeBaseTests",
 	"pools" : [
 		 ],
-	"super" : "TestCase",
-	"traitcomposition" : "TVersionsTestCaseProducingFakeVersions",
+	"super" : "VersionsTestCase",
 	"type" : "normal" }

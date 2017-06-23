@@ -23,7 +23,6 @@ expandRef: name
 		havePackedRefs ifFalse: [
 				packedRefs := self packedRefs. 
 				havePackedRefs := true ].
-		packedRefs ifNotNil: [
-			(self packedRefs includesKey: prefix , name) ifTrue: [^ prefix, name]]].
+		(packedRefs includesRef: prefix , name) ifTrue: [^ prefix, name]].
 	self flag: 'raise exception instead of answering nil?'.
 	^ nil

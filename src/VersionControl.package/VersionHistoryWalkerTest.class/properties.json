@@ -2,7 +2,6 @@
 	"category" : "VersionControl-Algorithms-Tests",
 	"classinstvars" : [
 		 ],
-	"classtraitcomposition" : "TVersionsTestCaseProducingFakeVersions classTrait",
 	"classvars" : [
 		 ],
 	"commentStamp" : "",
@@ -11,6 +10,5 @@
 	"name" : "VersionHistoryWalkerTest",
 	"pools" : [
 		 ],
-	"super" : "TestCase",
-	"traitcomposition" : "TVersionsTestCaseProducingFakeVersions",
+	"super" : "VersionsTestCase",
 	"type" : "normal" }

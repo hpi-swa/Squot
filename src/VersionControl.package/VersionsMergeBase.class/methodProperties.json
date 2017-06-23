@@ -5,9 +5,10 @@
 	"instance" : {
 		"commonAncestors" : "jr 5/14/2017 19:55",
 		"findBaseVersionOf:and:" : "jr 5/14/2017 20:15",
-		"findBaseVersionOf:andAnyOf:" : "jr 5/14/2017 20:19",
+		"findBaseVersionOf:andAnyOf:" : "jr 6/2/2017 12:05",
 		"initialize" : "jr 5/14/2017 19:24",
 		"marked:" : "jr 5/14/2017 20:03",
 		"newMarker" : "jr 5/14/2017 20:20",
-		"removeCommonAncestorsReachableFromOtherCommonAncestors" : "jr 5/16/2017 17:51",
+		"removeCommonAncestorIfReachableFromOtherCommonAncestors:" : "jr 6/2/2017 13:56",
+		"removeCommonAncestorsReachableFromOtherCommonAncestors" : "jr 6/2/2017 13:01",
 		"version" : "jr 5/14/2017 19:56" } }

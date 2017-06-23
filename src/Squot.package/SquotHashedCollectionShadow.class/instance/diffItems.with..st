@@ -12,7 +12,8 @@ diffItems: leftItemSlots with: aDiffBuilder
 		(SquotSlotRemoval newFrom: (left at: each))].
 	(right keys difference: addedNames)
 		do: [:each | | slotDiff |
-			slotDiff := (aDiffBuilder left: (left at: each) right: (right at: each))
-				asSquotSlotDiffWithKey: each.
+			slotDiff := (aDiffBuilder
+				leftSlot: (left associationAt: each)
+				rightSlot: (right associationAt: each)).
 			slotDiff squotHasChanges ifTrue: [changes add: slotDiff]].
 	^ changes

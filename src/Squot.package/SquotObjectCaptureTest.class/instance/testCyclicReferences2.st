@@ -6,5 +6,5 @@ testCyclicReferences2
 	a var2: b.
 	shadowOfA := capturer capture: a.
 	shadowOfB := (shadowOfA slots at: 'var2').
-	self assert: (shadowOfB slots at: 'var2') undecorated == shadowOfA.
+	self assert: (shadowOfB slots at: 'var2') undecorated == shadowOfA undecorated.
 	self assert: (shadowOfB name includes: 'var2').

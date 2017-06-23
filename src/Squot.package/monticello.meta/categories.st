@@ -2,6 +2,7 @@ SystemOrganization addCategory: #'Squot-Interfaces'!
 SystemOrganization addCategory: #'Squot-Core'!
 SystemOrganization addCategory: #'Squot-Shadows'!
 SystemOrganization addCategory: #'Squot-Diffs'!
+SystemOrganization addCategory: #'Squot-Diffs-Hierarchical'!
 SystemOrganization addCategory: #'Squot-Internal'!
 SystemOrganization addCategory: #'Squot-FileSystemStore'!
 SystemOrganization addCategory: #'Squot-Serialization'!

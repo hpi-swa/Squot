@@ -1,0 +1,18 @@
+{
+	"category" : "Squot-Diffs",
+	"classinstvars" : [
+		 ],
+	"classtraitcomposition" : "TSquotDiff classTrait",
+	"classvars" : [
+		 ],
+	"commentStamp" : "jr 6/22/2017 14:05",
+	"instvars" : [
+		"diffs",
+		"startObjectName",
+		"shadows" ],
+	"name" : "SquotObjectGraphDiff",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"traitcomposition" : "TSquotDiff",
+	"type" : "normal" }

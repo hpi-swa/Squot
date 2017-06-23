@@ -1,13 +1,13 @@
 diffing low-level
 transformingFrom: leftObjectShadow to: rightShadow
-	"Answer a diff that would transform leftMetaobject into rightShadow"
-	| diff finished |
-	diff := (comparedObjects at: leftObjectShadow ifAbsentPut: [Dictionary new])
-		at: rightShadow
+	"Answer a diff that would transform leftObjectShadow into rightShadow"
+	| diff |
+	diff := (comparedObjects at: leftObjectShadow undecorated ifAbsentPut: [Dictionary new])
+		at: rightShadow undecorated
 		ifPresent: [:existing | ^ existing]
 		ifAbsentPut: [leftObjectShadow diffClass new].
-	[diff diff: leftObjectShadow against: rightShadow with: self.
-	finished := true]
-	ensure: [finished == true
-			ifFalse: [(comparedObjects at: leftObjectShadow) removeKey: rightShadow]].
+	objectDiffs at: leftObjectShadow undecorated put: diff.
+	diff diff: leftObjectShadow against: rightShadow with: self.
+	diff squotHasChanges ifTrue:
+		[resultPatch addDiff: diff forObjectNamed: (shadowNames at: leftObjectShadow)].
 	^ diff

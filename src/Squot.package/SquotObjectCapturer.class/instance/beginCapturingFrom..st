@@ -12,5 +12,7 @@ beginCapturingFrom: anObject
 	visited removeAll.
 	self follow: anObject.
 	self followReferences. "fill shadows with captured values"
-	^ convertedObjects at: anObject]
+	^ SquotNameDecorator
+		on: (convertedObjects at: anObject)
+		withName: (objectRegistry nameOf: anObject ifAbsent: [nil])]
 	ensure: [state := nil]

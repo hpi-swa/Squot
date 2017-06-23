@@ -5,4 +5,4 @@ testCyclicReferences
 	subject at: 1 put: subject.
 	shadow := capturer capture: subject.
 	self assert: shadow slots size = 1.
-	self assert: (shadow slots at: 1) value == shadow.
+	self assert: (shadow slots at: 1) value undecorated == shadow undecorated.

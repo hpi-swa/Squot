@@ -1,6 +1,6 @@
 testing
 testObjects
-	| a b c shadow1OfC shadow2OfC diff |
+	| a b c shadow1OfC shadow2OfC diff diffForC diffForB |
 	a := SquotObjectForDiffTests new var1: nil; var2: nil.
 	b := SquotObjectForDiffTests new var1: 1; var2: 2.
 	c := SquotObjectForDiffTests new var1: a; var2: b.
@@ -9,8 +9,11 @@ testObjects
 	shadow2OfC := c captureWithSquot.
 	diff := shadow1OfC squotDiffAgainst: shadow2OfC.
 	self assert: diff squotHasChanges.
-	self assert: diff slotChanges keys asArray = #('var2').
-	self assert: (diff slotChanges associationAt: 'var2') class == SquotSlotDiff
-		description: 'Ordinary objects should be patched'.
-	self assert: (diff slotChanges at: 'var2') class == SquotObjectDiff.
-	self assert: (diff slotChanges at: 'var2') slotChanges keys asArray = #('var1').
+	diffForC := diff diffForObjectNamed: diff startObjectName ifAbsent: [].
+	self assert: diffForC isNil.
+	diffForB := diff diffForObjectNamed: (shadow1OfC slots at: 'var2') name.
+	self assert: diffForB slotChanges keys asArray = #('var1').
+	self assert: (diffForB slotChanges associationAt: 'var1') class == SquotSlotReassignment.
+	self assert: (diffForB slotChanges associationAt: 'var1') replacementShadow = 3 captureWithSquot.
+	self assert: (diff diffForObjectNamed: (shadow1OfC slots at: 'var1') name ifAbsent: []) isNil.
+	

@@ -7,7 +7,7 @@ capture: anObject asValueOfSlot: aShadowSlot
 				ifAbsentPut: [aShadowSlot] of: [enumeratedObject].
 			decorated := SquotCreatorDecorator on: anObject creator: enumeratedObject slot: aShadowSlot.
 			^ toBeVisited add: decorated].
-	name := objectRegistry nameOf: anObject.
+	name := objectRegistry nameOf: anObject ifAbsent: [nil].
 	shadow := convertedObjects at: anObject.
 	toBeVisited add: (namedObject := SquotNameDecorator on: anObject withName: name).
 	aShadowSlot value: (namedShadow := SquotNameDecorator on: shadow withName: name).

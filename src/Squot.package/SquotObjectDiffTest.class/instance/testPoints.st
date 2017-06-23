@@ -1,10 +1,12 @@
 testing
 testPoints
 	"Points should be treated as immutable value-objects, even though they strictly are not."
-	| diff |
-	diff := (1@2) captureWithSquot squotDiffAgainst: (3@4) captureWithSquot.
+	| point diff pointDiff |
+	diff := self diff: (point := 1@2) against: 3@4.
 	self assert: diff squotHasChanges.
-	self assert: (diff slotChanges associationAt: 'x') class == SquotSlotReassignment.
-	self assert: (diff slotChanges at: 'x') value value = 3.
-	self assert: (diff slotChanges associationAt: 'y') class == SquotSlotReassignment.
-	self assert: (diff slotChanges at: 'y') value value = 4.
+	pointDiff := diff diffForObjectNamed: (objectRegistry nameOf: point)
+					ifAbsent: [self fail: 'Point should have a diff'].
+	self assert: (pointDiff slotChanges associationAt: 'x') class == SquotSlotReassignment.
+	self assert: (pointDiff slotChanges associationAt: 'x') replacementShadow value = 3.
+	self assert: (pointDiff slotChanges associationAt: 'y') class == SquotSlotReassignment.
+	self assert: (pointDiff slotChanges associationAt: 'y') replacementShadow value = 4.

@@ -4,4 +4,4 @@ patch: original to: target
 	| diff shadowOfOriginal |
 	shadowOfOriginal := capturer capture: original.
 	diff := shadowOfOriginal squotDiffAgainst: (capturer capture: target).
-	^ diff squotApplyToLoaded: original
+	^ patcher apply: diff toLoaded: original

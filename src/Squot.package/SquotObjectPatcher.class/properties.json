@@ -7,8 +7,9 @@
 	"commentStamp" : "",
 	"instvars" : [
 		"patchedObjects",
-		"absentShadows" ],
-	"name" : "SquotMetaobjectPatcher",
+		"absentShadows",
+		"objectRegistry" ],
+	"name" : "SquotObjectPatcher",
 	"pools" : [
 		 ],
 	"super" : "Object",

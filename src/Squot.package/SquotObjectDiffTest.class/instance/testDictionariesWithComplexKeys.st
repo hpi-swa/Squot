@@ -1,6 +1,6 @@
 testing
 testDictionariesWithComplexKeys
-	| dict diff key1 key2 |
+	| dict diff key1 key2 key2Diff changedAssocDiff |
 	key1 := SquotObjectForDiffTests new var1: 1; var2: 2.
 	key2 := SquotObjectForDiffTests new var1: nil; var2: key1.
 	dict := Dictionary newFrom: {key1 -> 'value'. key2 -> key1}.
@@ -9,5 +9,11 @@ testDictionariesWithComplexKeys
 		[key2 var1: 3.
 		dict at: key1 put: 'new value'].
 	self assert: diff squotHasChanges.
-	self flag: 'TODO: assert something about the change to key2'.
-	self flag: 'TODO: assert something about the change of value in the second association'.
+	key2Diff := diff
+		diffForObjectNamed: (objectRegistry nameOf: key2)
+		ifAbsent: [self fail: 'no diff for changed key object'].
+	self assert: (key2Diff slotChanges associationAt: 'var1') replacementShadow value == 3.
+	changedAssocDiff := diff
+		diffForObjectNamed: (objectRegistry nameOf: (dict associationAt: key1) value)
+		ifAbsent: [self fail: 'no diff for changed association'].
+	self assert: (changedAssocDiff slotChanges associationAt: 'value') replacementShadow string = 'new value'.

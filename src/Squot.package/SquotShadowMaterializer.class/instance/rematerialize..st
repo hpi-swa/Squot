@@ -1,4 +1,4 @@
 converting
-rematerialize: aMetaobject
-	convertedObjects at: aMetaobject ifPresent: [:it | ^ it].
-	^ convertedObjects at: aMetaobject put: (aMetaobject squotMaterializeWith: self)
+rematerialize: aShadow
+	^ convertedObjects at: aShadow undecorated
+		ifAbsentPut: [aShadow squotMaterializeWith: self]

@@ -8,8 +8,13 @@
 		"testArrayOfIntegers" : "jr 6/20/2017 01:25",
 		"testBooleans" : "jr 6/20/2017 01:26",
 		"testCyclicReferences" : "jr 6/20/2017 01:28",
+		"testCyclicReferences2" : "jr 6/21/2017 18:17",
+		"testDictionariesWithComplexKeys" : "jr 6/25/2017 14:12",
+		"testDictionariesWithSharedAssociations" : "jr 6/25/2017 14:18",
 		"testDictionary" : "jr 6/20/2017 01:36",
 		"testEmptyObject" : "jr 6/20/2017 01:34",
+		"testIdentityReplacedObject" : "jr 6/24/2017 13:26",
 		"testNil" : "jr 6/20/2017 01:29",
 		"testPoint" : "jr 6/20/2017 01:30",
-		"testRectangle" : "jr 6/20/2017 01:30" } }
+		"testRectangle" : "jr 6/20/2017 01:30",
+		"testSet" : "jr 6/25/2017 14:06" } }

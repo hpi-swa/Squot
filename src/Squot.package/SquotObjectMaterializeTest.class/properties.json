@@ -4,7 +4,7 @@
 		 ],
 	"classvars" : [
 		 ],
-	"commentStamp" : "",
+	"commentStamp" : "jr 6/24/2017 00:07",
 	"instvars" : [
 		"capturer",
 		"materializer" ],

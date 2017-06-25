@@ -11,4 +11,4 @@ capture: anObject asValueOfSlot: aShadowSlot
 	shadow := convertedObjects at: anObject.
 	toBeVisited add: (namedObject := SquotNameDecorator on: anObject withName: name).
 	aShadowSlot value: (namedShadow := SquotNameDecorator on: shadow withName: name).
-	^ namedShadow
+	^ aShadowSlot

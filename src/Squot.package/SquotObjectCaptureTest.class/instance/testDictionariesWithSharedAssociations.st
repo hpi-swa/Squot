@@ -6,4 +6,4 @@ testDictionariesWithSharedAssociations
 	shadow := capturer capture: {dict1. dict2}.
 	dict1Shadow := shadow slots at: 1.
 	dict2Shadow := shadow slots at: 2.
-	self assert: (dict2Shadow itemSlots at: 1) undecorated == (dict1Shadow itemSlots at: 1) undecorated.
+	self assert: (dict2Shadow itemSlots at: 1) value undecorated == (dict1Shadow itemSlots at: 1) value undecorated.

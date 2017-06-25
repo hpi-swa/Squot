@@ -1,8 +1,8 @@
 converting
-rematerialize: anObject from: aMetaobject
+rematerialize: anObject from: aShadow
 	| materializedObject |
-	convertedObjects at: aMetaobject put: anObject.
-	materializedObject := (aMetaobject materializeAs: anObject with: self)
+	convertedObjects at: aShadow put: anObject.
+	materializedObject := (aShadow materializeAs: anObject with: self)
 		comeFullyUpOnReload: self.
 	anObject becomeForward: materializedObject.
 	^ anObject

@@ -2,8 +2,8 @@ comparing
 diffItems: leftItemSlots with: aDiffBuilder
 	| changes left right addedNames removedNames |
 	changes := Dictionary new.
-	left := Dictionary newFrom: (leftItemSlots collect: [:each | each name -> each]).
-	right := Dictionary newFrom: (itemSlots collect: [:each | each name -> each]).
+	left := Dictionary newFrom: (leftItemSlots collect: [:each | each value name -> each value]).
+	right := Dictionary newFrom: (itemSlots collect: [:each | each value name -> each value]).
 	addedNames := right keys difference: left keys.
 	removedNames := left keys difference: right keys.
 	addedNames do: [:each | changes add:

@@ -1,0 +1,1 @@
+Tests that different editions of objects are compared correctly.

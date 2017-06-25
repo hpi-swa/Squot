@@ -1,10 +1,9 @@
 Squot-diff-converting
 squotChangeAsStringOrText
-	^ (changedInstVars
-		ifEmpty: ['']
-		ifNotEmpty: ['"changed variables:"', String cr,
-				(changedInstVars keys joinSeparatedBy: String cr), String cr]),
-	(changedVariablePart
-		ifNil: ['']
-		ifNotNil: [String cr, '"changed indices:"', String cr,
-				(changedVariablePart keys joinSeparatedBy: String cr)])
+	^ Text streamContents: [:stream |
+		(slotChanges groupBy: [:each | each slotShadowType])
+			keysAndValuesDo: [:type :slotDiffs |
+				stream withAttribute: TextEmphasis italic do:
+					[type printHeadlineForChangesTextOn: stream]; cr.
+				slotDiffs do: [:each | stream nextPutAll: each hierarchicalDiffTitle; cr].
+				stream cr]]

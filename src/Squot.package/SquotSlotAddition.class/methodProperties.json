@@ -3,6 +3,9 @@
 		"key:newSlot:" : "jr 6/22/2017 12:01" },
 	"instance" : {
 		"applyToSlots:with:" : "jr 6/18/2017 12:11",
+		"asSquotHierarchicalDiffWith:" : "jr 6/25/2017 21:50",
+		"hierarchicalDiffTitle" : "jr 6/25/2017 21:51",
 		"printDescriptionOn:" : "jr 6/18/2017 11:51",
+		"slotShadowType" : "jr 6/25/2017 21:57",
 		"slotToBeAdded" : "jr 6/18/2017 12:11",
 		"squotHasChanges" : "jr 6/17/2017 23:29" } }

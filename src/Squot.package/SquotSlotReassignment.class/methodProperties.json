@@ -3,6 +3,9 @@
 		"key:leftShadow:rightShadow:" : "jr 6/22/2017 14:50" },
 	"instance" : {
 		"applyToSlots:with:" : "jr 6/20/2017 00:50",
+		"asSquotHierarchicalDiffWith:" : "jr 6/25/2017 21:51",
+		"hierarchicalDiffTitle" : "jr 6/25/2017 21:51",
 		"printDescriptionOn:" : "jr 6/18/2017 11:50",
 		"replacementShadow" : "jr 6/20/2017 00:50",
+		"slotShadowType" : "jr 6/25/2017 22:01",
 		"squotHasChanges" : "jr 6/18/2017 01:31" } }

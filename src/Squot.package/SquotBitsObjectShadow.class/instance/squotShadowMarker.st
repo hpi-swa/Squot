@@ -1,0 +1,2 @@
+Squot-shadow
+squotShadowMarker

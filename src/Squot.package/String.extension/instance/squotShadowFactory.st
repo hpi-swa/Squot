@@ -1,3 +1,0 @@
-*Squot-trackable
-squotShadowFactory
-	^ SquotStringShadow

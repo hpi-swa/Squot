@@ -2,4 +2,13 @@
 	"class" : {
 		 },
 	"instance" : {
-		"initializeFrom:with:" : "jr 6/20/2017 00:41" } }
+		"applySequenceDiff:with:" : "jr 6/27/2017 16:59",
+		"initializeFrom:with:" : "jr 6/27/2017 16:56",
+		"postCopy" : "jr 6/27/2017 16:59",
+		"privateApplySequenceDiff:with:" : "jr 6/27/2017 17:00",
+		"squotDiffAgainst:" : "jr 6/27/2017 17:02",
+		"squotDiffAgainst:with:" : "jr 6/27/2017 17:03",
+		"squotMaterializeWith:" : "jr 6/27/2017 17:03",
+		"squotShadowMarker" : "jr 6/27/2017 17:04",
+		"squotWith:diffFromSequence:" : "jr 6/27/2017 17:04",
+		"writeTo:" : "jr 6/27/2017 17:06" } }

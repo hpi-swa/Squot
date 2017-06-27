@@ -1,3 +1,3 @@
 initialize-release
-initializeFrom: aPrimitiveObject with: aContentCapturer
-	value := aPrimitiveObject copy.
+initializeFrom: aBitsObject with: aContentCapturer
+	value := aBitsObject copy.

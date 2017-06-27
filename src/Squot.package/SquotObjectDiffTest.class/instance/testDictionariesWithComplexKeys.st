@@ -14,6 +14,6 @@ testDictionariesWithComplexKeys
 		ifAbsent: [self fail: 'no diff for changed key object'].
 	self assert: (key2Diff slotChanges associationAt: 'var1') replacementShadow value == 3.
 	changedAssocDiff := diff
-		diffForObjectNamed: (objectRegistry nameOf: (dict associationAt: key1) value)
+		diffForObjectNamed: (objectRegistry nameOf: (dict associationAt: key1))
 		ifAbsent: [self fail: 'no diff for changed association'].
-	self assert: (changedAssocDiff slotChanges associationAt: 'value') replacementShadow string = 'new value'.
+	self assert: (changedAssocDiff slotChanges associationAt: 'value') replacementShadow value = 'new value'.

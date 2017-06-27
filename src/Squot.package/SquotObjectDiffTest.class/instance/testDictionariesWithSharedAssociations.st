@@ -13,7 +13,7 @@ testDictionariesWithSharedAssociations
 		diffForObjectNamed: (objectRegistry nameOf: dict2)
 		ifAbsent: [self fail: 'no diff for dict2'].
 	self assert: dict2Diff itemChanges size == 1.
-	self assert: dict2Diff itemChanges associations anyOne slotToBeAdded name =
+	self assert: dict2Diff itemChanges associations anyOne slotToBeAdded association name =
 		(objectRegistry nameOf: (dict1 associationAt: #b)).
 	changedAssocDiff := diff
 		diffForObjectNamed: (objectRegistry nameOf: (dict1 associationAt: #a))

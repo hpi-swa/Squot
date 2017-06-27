@@ -12,9 +12,9 @@ testSet
 	self assert: setDiff itemChanges size == 2. "addition, removal"
 	addition := setDiff itemChanges associations detect: [:each | each class == SquotSlotAddition]
 		ifNone: [self fail: 'no item addition'].
-	self assert: addition slotToBeAdded value == 3.
+	self assert: addition slotToBeAdded value value == 3.
 	removal := setDiff itemChanges associations detect: [:each | each class == SquotSlotRemoval]
 		ifNone: [self fail: 'no item removal'].
-	self assert: removal value == 1.
+	self assert: removal value value == 1.
 	stringHolderDiff := diff diffForObjectNamed: (objectRegistry nameOf: stringHolder)
 		ifAbsent: [self fail: 'no diff for changed item'].

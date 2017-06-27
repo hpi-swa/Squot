@@ -15,7 +15,7 @@ testDictionary
 	dictDiff itemChanges size == 2. "add 'fuu', remove 'foo'"
 	addition := dictDiff itemChanges associations detect: [:each | each class == SquotSlotAddition]
 		ifNone: [self fail: 'no association addition'].
-	self assert: addition slotToBeAdded name = (objectRegistry nameOf: (dict associationAt: 'fuu')).
+	self assert: addition slotToBeAdded association name = (objectRegistry nameOf: (dict associationAt: 'fuu')).
 	removal := dictDiff itemChanges associations detect: [:each | each class == SquotSlotRemoval]
 		ifNone: [self fail: 'no association removal'].
 	self assert: removal value name = (objectRegistry nameOf: removedAssociation).

@@ -4,9 +4,9 @@ testObjects
 	a := SquotObjectForDiffTests new var1: nil; var2: nil.
 	b := SquotObjectForDiffTests new var1: 1; var2: 2.
 	c := SquotObjectForDiffTests new var1: a; var2: b.
-	shadow1OfC := c captureWithSquot.
+	shadow1OfC := capturer capture: c.
 	b var1: 3.
-	shadow2OfC := c captureWithSquot.
+	shadow2OfC := capturer capture: c.
 	diff := shadow1OfC squotDiffAgainst: shadow2OfC.
 	self assert: diff squotHasChanges.
 	diffForC := diff diffForObjectNamed: diff startObjectName ifAbsent: [].

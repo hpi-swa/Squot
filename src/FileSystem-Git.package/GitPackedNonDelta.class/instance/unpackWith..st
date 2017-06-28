@@ -1,3 +1,3 @@
 processing
 unpackWith: aPackFileUnpacker
-	self store.
+	self storeAsLoose.

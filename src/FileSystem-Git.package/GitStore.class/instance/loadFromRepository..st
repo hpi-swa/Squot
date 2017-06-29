@@ -2,6 +2,7 @@ internal
 loadFromRepository: aPath
 	"try to load the given path from the repositry into our cache"
 	|currentGitTree|
+	self logMessage: 'loadFromRepository: ', aPath printString.
 	currentGitTree := self loadGitTreeAt: aPath parent.
 	"path doesn't exist in the repository either"
 	currentGitTree ifNil: [ ^ self ].
@@ -11,4 +12,5 @@ loadFromRepository: aPath
 			entry isInFileMode ifTrue: [ | blob |
 				blob := entry object.
 				self updateCacheAt: aPath with: blob]]
-		ifAbsent: ["nothing to be loaded here"]
+		ifAbsent: ["nothing to be loaded here"
+			self logMessage: 'No entry at ', aPath printString].

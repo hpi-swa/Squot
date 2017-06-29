@@ -4,7 +4,9 @@ markCreated: aPath inTree: aTree
 
 	treeMap
 		at: aPath parent
-		ifAbsentPut: [ self newTreeFrom: aTree ].
+		ifAbsentPut:
+			[aTree isEmpty ifTrue: [self logMessage: 'For a created entry, putting empty tree at ', aPath parent printString].
+			self newTreeFrom: aTree].
 	
 	(createdPaths
 		at: aPath parent

@@ -12,13 +12,19 @@ loadGitTreeAt: aPath
 	basePath isRoot ifFalse: [self updateCacheAt: basePath with: currentGitTree].
 	remainingPath isEmpty ifTrue: [^ currentGitTree].
 	(remainingPath withParents reject: [ :path | path isRoot]) do: [ :path |
-		currentGitTree isTree ifFalse: [ ^ nil ]. 
+		currentGitTree isTree ifFalse:
+			[self logMessage: 'No tree found at ', aPath printString, ' because this is not a tree: ', (basePath resolve: path parent) printString printString.
+			^ nil ]. 
 		currentGitTree
 			entryAt: path basename
 			ifPresent: [ :entry | 
 				entry isInDirectoryMode
 					ifTrue: [currentGitTree := entry object.
 						self updateCacheAt: (basePath resolve: path) with: currentGitTree]
-					ifFalse: [^ nil]]
-			ifAbsent: [ ^ nil ] ].
+					ifFalse:
+						[self logMessage: 'No tree found at ', aPath printString, ' because this entry is not in dir mode: ', (basePath resolve: path) printString printString.
+						^ nil]]
+			ifAbsent:
+				[self logMessage: 'No tree found at ', aPath printString, ' because this entry does not exist: ', (basePath resolve: path) printString printString.
+				^ nil ] ].
 	^ currentGitTree

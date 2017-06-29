@@ -1,4 +1,4 @@
-actions
+actions on working copies
 actionProjectRename
 	| name |
 	name := UIManager default

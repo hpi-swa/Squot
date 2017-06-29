@@ -1,4 +1,4 @@
-actions
+actions on branches
 actionBranchCreateAndSwitch
 	| newHistorian |
 	self hasBranchSelection ifFalse: [^ self].

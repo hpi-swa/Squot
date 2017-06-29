@@ -2,6 +2,7 @@
 	"class" : {
 		 },
 	"instance" : {
+		"applyTo:" : "jr 6/29/2017 16:56",
 		"content" : "jr 4/10/2017 22:49",
 		"diff:against:" : "jr 4/24/2017 00:17",
 		"initialize" : "jr 4/10/2017 22:50",

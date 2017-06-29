@@ -1,5 +1,5 @@
 actions on branches
-actionBranchSwitch
+actionBranchSwitchMoveOver
 	self hasBranchSelection ifFalse: [^ self].
-	self projectSelection switchTo: selectedHistorian.
+	self projectSelection switchAndMoveUnsavedChangesOverTo: selectedHistorian.
 	self loadBranchList; changed: #branchList.

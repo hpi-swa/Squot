@@ -1,4 +1,4 @@
-actions
+actions on working copies
 actionRemoteRemove
 	| selection gitRepository oldBranchSelection |
 	gitRepository := self projectSelection repository gitRepository.

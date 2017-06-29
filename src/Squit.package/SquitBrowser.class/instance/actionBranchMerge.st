@@ -1,4 +1,4 @@
-actions
+actions on branches
 actionBranchMerge
 	| mergeHistorian mergeHeadCommit |
 	self hasProjectSelection ifFalse: [^ self].

@@ -1,3 +1,3 @@
-ui menu
+actions on versions
 actionCommitMergeIntoMemory
 	self projectSelection mergeVersionWithLoadedObjects: self commitSelection

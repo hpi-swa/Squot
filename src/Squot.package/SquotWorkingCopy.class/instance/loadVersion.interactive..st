@@ -4,6 +4,6 @@ loadVersion: aVersion interactive: shouldBeInteractiveBoolean
 	If there are unsaved changes in me and shouldBeInteractiveBoolean is true,
 	let the user confirm the operation."
 	shouldBeInteractiveBoolean ifTrue: [^ self loadVersionInteractively: aVersion].
-	self store restoreToSnapshot: aVersion snapshot.
+	self loadSnapshot: aVersion snapshot.
 	self loadedHistorian version: aVersion.
 	self loadedVersion: aVersion.

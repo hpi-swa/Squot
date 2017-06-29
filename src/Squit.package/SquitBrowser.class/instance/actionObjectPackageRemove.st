@@ -1,4 +1,4 @@
-actions
+actions on working copies
 actionObjectPackageRemove
 	| packageNames selection |
 	packageNames := self projectSelection store objectPaths sorted.

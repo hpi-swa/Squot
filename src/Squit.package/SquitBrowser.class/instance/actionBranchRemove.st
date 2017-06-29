@@ -1,4 +1,4 @@
-actions
+actions on branches
 actionBranchRemove
 	self hasBranchSelection ifFalse: [^ self].
 	selectedHistorian = self projectSelection loadedHistorian

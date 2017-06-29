@@ -1,4 +1,4 @@
-actions
+ui
 modelWakeUp
 	offeredToAddFirstProject ifNil:
 		[offeredToAddFirstProject := true.

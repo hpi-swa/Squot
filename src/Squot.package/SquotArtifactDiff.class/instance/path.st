@@ -1,0 +1,3 @@
+accessing
+path
+	^ right path

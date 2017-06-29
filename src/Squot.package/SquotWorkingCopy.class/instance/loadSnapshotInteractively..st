@@ -10,5 +10,5 @@ loadSnapshotInteractively: aSnapshot
 			to: aSnapshot
 			title: 'Selected changes to load'
 			ifCanceled: [^ false]).
-	store restoreToSnapshot: effectiveSnapshot.
+	self loadSnapshot: effectiveSnapshot.
 	^ true

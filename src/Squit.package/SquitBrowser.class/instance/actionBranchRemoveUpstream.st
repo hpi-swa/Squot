@@ -1,4 +1,4 @@
-actions
+actions on branches
 actionBranchRemoveUpstream
 	| localHistorian remoteBranchName remoteName |
 	self hasBranchSelection ifFalse: [^ self].

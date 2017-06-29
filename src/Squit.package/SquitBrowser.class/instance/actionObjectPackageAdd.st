@@ -1,4 +1,4 @@
-actions
+actions on working copies
 actionObjectPackageAdd
 	| selection subPath |
 	selection := self choosePackagesFromCategories ifEmpty: [^ self].

@@ -1,4 +1,4 @@
-actions
+actions on branches
 actionBranchPush
 	| historian branchName repository gitRepository |
 	self hasBranchSelection ifFalse: [^ self].

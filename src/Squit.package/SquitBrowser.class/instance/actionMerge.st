@@ -1,4 +1,4 @@
-actions
+actions on versions
 actionMerge
 	| mergeHeadCommit |
 	self hasProjectSelection ifFalse: [^ self].

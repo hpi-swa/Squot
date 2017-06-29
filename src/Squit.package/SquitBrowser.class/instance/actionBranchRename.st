@@ -1,4 +1,4 @@
-actions
+actions on branches
 actionBranchRename
 	| newHistorian newName oldHistorian oldName |
 	self hasBranchSelection ifFalse: [^ self].

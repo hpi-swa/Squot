@@ -1,28 +1,19 @@
 ui menu
 menuCommitListHook: aMenu
 	<menuCommitList>
-	| activeBranchName isMenuOnActiveBranch |
+	| activeBranchName isMenuOnActiveBranch onlyOnInactiveBranch commands |
 	activeBranchName := self projectSelection loadedHistorian shortName.
 	isMenuOnActiveBranch := selectedHistorian = self projectSelection loadedHistorian.
-	aMenu addList: {
-		{'Checkout commit'. #actionCommitSelectionCheckout. 'Checkout this commit.'}
+	onlyOnInactiveBranch := selectedHistorian ~= self projectSelection loadedHistorian.
+	commands := 
+		{{'Checkout objects'. #actionCommitSelectionCheckout. 'Checkout objects from this commit. You will be able to select what will actually be loaded.', String cr, 'NOTE: unless you change the selection, your uncommitted changes will be reverted, so that what is loaded matches the objects in this commit!'}.
+		{'Merge objects'. #actionCommitMergeIntoMemory. 'Merge objects from this commit with the loaded ones. You may use this to pick objects or changes from this commit without discarding your uncommitted changes.'}.
+		'-'.
+		{'Merge into active branch ', activeBranchName. #actionMerge. 'Merge the changes up to this commit into the active branch. Fast-forwards if this is a descendant of the head of the active branch, otherwise creates a merge commit.'. onlyOnInactiveBranch}.
+		{'Reset active branch ''', activeBranchName, ''' to this commit'. #actionBranchResetLoadedToCommit. 'Reset the currently active branch to the selected commit'. onlyOnInactiveBranch}.
+		{'Reset branch ''', selectedHistorian shortName, ''' to this commit'. #actionBranchResetToCommit}.
+		{'Create new branch at this commit'. #actionBranchAdd}.
+		{'Tag commit'. #actionCommitTag}.
 	}.
-	isMenuOnActiveBranch ifFalse:
-		[aMenu add: 'Reset active branch ''', activeBranchName, ''' to this commit'
-			help: 'Reset the currently active branch to the selected commit'
-			action: #actionBranchResetLoadedToCommit].
-	aMenu addList: {
-		{'Reset branch ''', selectedHistorian shortName, ''' to this commit'. #actionBranchResetToCommit. ''}.
-	}.
-	isMenuOnActiveBranch ifFalse:
-		[aMenu add: 'Merge this into active branch ', activeBranchName
-			help: 'Merge the changes up to this commit into the active branch. Fast-forwards if this is a descendant of the head of the active branch, otherwise creates a merge commit.'
-			action: #actionMerge].
-	aMenu addList: {
-		{'Create new branch at this commit'. #actionBranchAdd. ''}.
-		{'Tag commit'. #actionCommitTag. ''}.
-	}.
-	aMenu addList: {
-		{'Merge this into memory'. #actionCommitMergeIntoMemory. ''}.
-	}.
+	self buildMenu: aMenu from: commands.
 	^ aMenu

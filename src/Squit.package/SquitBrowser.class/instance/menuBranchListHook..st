@@ -23,9 +23,5 @@ menuBranchListHook: aMenu
 		{'Rename branch'. #actionBranchRename. nil. onlyLocal}.
 		{'Remove branch'. #actionBranchRemove}}.
 	
-	commands do: [:each |
-		each = '-'
-			ifTrue: [aMenu addLine]
-			ifFalse: [(each at: 4 ifAbsent: [true])
-					ifTrue: [aMenu addList: {each first: (3 min: each size)}]]].
+	self buildMenu: aMenu from: commands.
 	^ aMenu

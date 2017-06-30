@@ -6,4 +6,4 @@ storeOn: aStream
 		self saveKey: key value: value to: aStream ] ].
 	aStream 
 		nextPut: Character lf asInteger;
-		nextPutAll: message
+		nextPutAll: (self tryEncodeString: message)

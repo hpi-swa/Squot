@@ -1,5 +1,5 @@
 actions on versions
 actionBranchAdd
 	self commitSelection ifNil: [^ self].
-	self createNewBranchAt: self commitSelection ifCanceled: [^ self].
-	self refresh.
+	selectedHistorian := self createNewBranchAt: self commitSelection ifCanceled: [^ self].
+	self branchSelectionChanged.

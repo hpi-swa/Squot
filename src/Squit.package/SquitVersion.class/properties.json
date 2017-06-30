@@ -2,6 +2,7 @@
 	"category" : "Squit-Core",
 	"classinstvars" : [
 		 ],
+	"classtraitcomposition" : "TSquotVersion classTrait",
 	"classvars" : [
 		 ],
 	"commentStamp" : "jr 2/5/2017 22:40",
@@ -12,4 +13,5 @@
 	"pools" : [
 		 ],
 	"super" : "Object",
+	"traitcomposition" : "TSquotVersion",
 	"type" : "normal" }

@@ -9,3 +9,5 @@ restoreToSnapshot: aSnapshot
 				self restoreObjectFrom: each.
 				restoredPaths add: each path]
 			displayingProgress: 'Loading objects into memory'].
+	(self objectPaths copyWithoutAll: restoredPaths)
+		do: [:path | self remove: (self objectAt: path)].

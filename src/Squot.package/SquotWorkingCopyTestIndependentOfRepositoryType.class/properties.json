@@ -1,0 +1,16 @@
+{
+	"category" : "Squot-Tests",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "jr 6/30/2017 22:24",
+	"instvars" : [
+		"workingCopy",
+		"repository",
+		"store" ],
+	"name" : "SquotWorkingCopyTestIndependentOfRepositoryType",
+	"pools" : [
+		 ],
+	"super" : "TestCase",
+	"type" : "normal" }

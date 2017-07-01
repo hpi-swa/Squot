@@ -6,7 +6,7 @@ detectGitHubRemote: aBlock ifNone: noneBlock
 	gitRepository := repository gitRepository.
 	remoteName := gitRepository remoteNames
 		detect: [:each |
-			((gitRepository remoteUrl: each) includesSubString: 'github.com')
+			((gitRepository remoteUrl: each) includesSubstring: 'github.com')
 			and: [aBlock value: each]]
 		ifNone: [^ noneBlock value].
 	^ remoteName

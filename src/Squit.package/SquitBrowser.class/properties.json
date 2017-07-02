@@ -19,7 +19,8 @@
 		"commitListBuildProcess",
 		"selectedHistorian",
 		"indexOfActiveHistorianInBranchList",
-		"branchList" ],
+		"branchList",
+		"commitToDiffAgainst" ],
 	"name" : "SquitBrowser",
 	"pools" : [
 		 ],

@@ -36,6 +36,7 @@
 		"ensureGitDirectories" : "CamilloBruni 9/2/2012 12:14",
 		"exists" : "MaxLeske 6/24/2012 11:43",
 		"expandRef:" : "jr 6/5/2017 18:48",
+		"flushCaches" : "jr 7/2/2017 19:14",
 		"followSymbolicRef:" : "jr 1/12/2017 17:08",
 		"gitDirectories" : "jr 3/2/2017 17:35",
 		"gitInitialize" : "CamilloBruni 9/2/2012 12:14",

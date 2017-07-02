@@ -11,7 +11,7 @@ actionBranchPush
 		do: 	[self projectSelection repository
 			exportToUpstream: historian
 			ifNone: [
-				self offerToSetUpstreamBranchOf: branchName
+				self offerToSetUpstreamBranchOf: historian shortName
 					in: gitRepository
 					ifCanceled: [^ self].
 				^ self actionBranchPush "try again"]]

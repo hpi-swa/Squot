@@ -8,7 +8,8 @@
 	"instvars" : [
 		"rootObject",
 		"rootMetaobject",
-		"convertedObjects" ],
+		"convertedObjects",
+		"objectRegistry" ],
 	"name" : "SquotShadowMaterializer",
 	"pools" : [
 		 ],

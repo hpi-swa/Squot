@@ -7,7 +7,8 @@
 	"commentStamp" : "jr 6/24/2017 00:07",
 	"instvars" : [
 		"capturer",
-		"materializer" ],
+		"materializer",
+		"objectRegistry" ],
 	"name" : "SquotObjectMaterializeTest",
 	"pools" : [
 		 ],

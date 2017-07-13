@@ -1,0 +1,20 @@
+{
+	"class" : {
+		 },
+	"instance" : {
+		"add:of:asCreatorOf:" : "jr 6/27/2017 17:34",
+		"addShadow:of:" : "jr 6/27/2017 18:05",
+		"assign:to:" : "jr 6/27/2017 17:33",
+		"creatorOf:ifAbsentPut:of:" : "jr 6/27/2017 17:52",
+		"delegateRegistry" : "jr 6/27/2017 17:33",
+		"delegateRegistry:" : "jr 6/27/2017 17:33",
+		"initialize" : "jr 6/27/2017 17:25",
+		"nameOf:" : "jr 6/27/2017 17:43",
+		"nameOf:ifAbsent:" : "jr 6/27/2017 17:43",
+		"nameOf:ifAbsentAssign:" : "jr 6/27/2017 18:48",
+		"objectAt:" : "jr 6/27/2017 18:52",
+		"shadowAt:" : "jr 6/27/2017 18:52",
+		"startName" : "jr 6/27/2017 18:01",
+		"startName:" : "jr 6/27/2017 18:01",
+		"startObject" : "jr 6/27/2017 18:45",
+		"startShadow" : "jr 6/27/2017 18:08" } }

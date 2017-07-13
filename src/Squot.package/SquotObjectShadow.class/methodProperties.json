@@ -6,7 +6,7 @@
 		"addInstVarNamed:withValue:with:" : "jr 6/20/2017 13:12",
 		"addVariableSlotAt:withContent:" : "jr 6/17/2017 20:23",
 		"addVariableSlotAt:withValue:with:" : "jr 6/20/2017 13:13",
-		"applyDiff:with:" : "jr 6/12/2017 18:22",
+		"applyDiff:with:" : "jr 6/27/2017 19:01",
 		"basicSizeOfMaterializedInstance" : "jr 6/18/2017 13:19",
 		"captureWIthSquot:" : "jr 6/20/2017 00:25",
 		"createMaterializedInstance" : "jr 6/18/2017 13:18",

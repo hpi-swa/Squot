@@ -14,7 +14,8 @@
 		"state",
 		"enumeratedObject",
 		"capturedObject",
-		"replacedObjects" ],
+		"replacedObjects",
+		"objectGraph" ],
 	"name" : "SquotObjectCapturer",
 	"pools" : [
 		 ],

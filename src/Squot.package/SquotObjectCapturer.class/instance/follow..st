@@ -6,7 +6,7 @@ follow: aDecoratedObject
 		[(visited includes: undecorated) ifTrue: [^ self].
 		visited add: undecorated.
 		undecorated shouldHaveNameAssignedBySquot
-			ifTrue: [objectRegistry nameOf: undecorated
+			ifTrue: [objectGraph nameOf: undecorated
 					ifAbsentAssign: [self newNameFor: aDecoratedObject]]].
 	capturedObject := aDecoratedObject undecorated.
 	self capture:

@@ -1,3 +1,3 @@
 patching
-applyDiff: aMetaobjectDiff with: aDiffBuilder
-	^ self copy privateApplyDiff: aMetaobjectDiff with: aDiffBuilder
+applyDiff: aDiff with: aDiffBuilder
+	^ self copy privateApplyDiff: aDiff with: aDiffBuilder

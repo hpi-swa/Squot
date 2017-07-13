@@ -1,8 +1,8 @@
 testing
-patchFrom: original to: target
+patchedFrom: original to: target
 	| diff materializer patched shadowOfOriginal |
 	shadowOfOriginal := capturer capture: original.
 	diff := shadowOfOriginal squotDiffAgainst: (capturer capture: target).
-	patched := diff squotApplyTo: shadowOfOriginal.
+	patched := patcher apply: diff to: shadowOfOriginal.
 	materializer := SquotShadowMaterializer new.
-	^ materializer rematerializeRoot: patched
+	^ materializer rematerialize: patched

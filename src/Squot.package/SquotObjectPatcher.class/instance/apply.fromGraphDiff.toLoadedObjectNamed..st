@@ -1,5 +1,5 @@
 as yet unclassified
 apply: aDiff fromGraphDiff: anObjectGraphDiff toLoadedObjectNamed: name
 	| target |
-	target := objectRegistry at: name.
+	target := patchedObjectGraph objectAt: name.
 	self apply: aDiff toLoaded: target.

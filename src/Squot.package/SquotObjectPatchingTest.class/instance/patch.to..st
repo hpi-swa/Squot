@@ -1,7 +1,7 @@
 testing
 patch: original to: target
 	"Modify original to be like target"
-	| diff shadowOfOriginal |
-	shadowOfOriginal := capturer capture: original.
-	diff := shadowOfOriginal squotDiffAgainst: (capturer capture: target).
-	^ patcher apply: diff toLoaded: original
+	| diff originalGraph |
+	originalGraph := capturer captureGraph: original.
+	diff := originalGraph startShadow squotDiffAgainst: (capturer capture: target).
+	^ patcher apply: diff toLoadedGraph: originalGraph

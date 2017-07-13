@@ -2,7 +2,8 @@
 	"class" : {
 		 },
 	"instance" : {
-		"initialize" : "jr 4/7/2017 00:31",
+		"initialize" : "jr 7/6/2017 15:29",
+		"registry:" : "jr 7/6/2017 15:29",
 		"rematerialize:" : "jr 6/25/2017 13:59",
 		"rematerialize:from:" : "jr 6/24/2017 13:24",
 		"rematerializeRoot:" : "jr 4/7/2017 00:41" } }

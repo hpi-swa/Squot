@@ -1,0 +1,17 @@
+{
+	"category" : "Squot-Shadows",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "jr 6/27/2017 18:01",
+	"instvars" : [
+		"objects",
+		"shadows",
+		"startName",
+		"delegateRegistry" ],
+	"name" : "SquotObjectGraph",
+	"pools" : [
+		 ],
+	"super" : "SquotObjectRegistry",
+	"type" : "normal" }

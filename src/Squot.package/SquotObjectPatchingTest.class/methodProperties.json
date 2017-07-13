@@ -2,13 +2,13 @@
 	"class" : {
 		 },
 	"instance" : {
-		"patch:to:" : "jr 6/25/2017 14:27",
-		"patchFrom:to:" : "jr 6/22/2017 01:48",
+		"patch:to:" : "jr 6/27/2017 18:52",
+		"patchedFrom:to:" : "jr 6/27/2017 17:22",
 		"setUp" : "jr 6/25/2017 14:30",
-		"testArrayGrow" : "jr 6/14/2017 17:02",
-		"testArrayShrink" : "jr 6/14/2017 17:03",
+		"testArrayGrow" : "jr 6/27/2017 17:21",
+		"testArrayShrink" : "jr 6/27/2017 17:21",
 		"testArraySwap" : "jr 6/15/2017 15:49",
-		"testCyclicReferences" : "jr 6/15/2017 14:28",
-		"testNestedArray" : "jr 6/15/2017 15:35",
+		"testCyclicReferences" : "jr 6/27/2017 17:21",
+		"testNestedArray" : "jr 6/27/2017 17:21",
 		"testTypeChange" : "jr 6/15/2017 16:23",
 		"testUnchangedObjectsAreKept" : "jr 6/15/2017 15:53" } }

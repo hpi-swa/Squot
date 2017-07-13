@@ -2,9 +2,12 @@
 	"class" : {
 		 },
 	"instance" : {
-		"apply:fromGraphDiff:toLoadedObjectNamed:" : "jr 6/25/2017 14:47",
+		"apply:fromGraphDiff:toLoadedObjectNamed:" : "jr 6/27/2017 18:52",
 		"apply:to:" : "jr 6/17/2017 20:15",
 		"apply:toLoaded:" : "jr 6/17/2017 20:15",
+		"apply:toLoadedGraph:" : "jr 6/27/2017 18:44",
 		"initialize" : "jr 6/12/2017 18:21",
 		"materialize:" : "jr 6/16/2017 13:33",
-		"registry:" : "jr 6/25/2017 14:47" } }
+		"materialize:in:" : "jr 7/6/2017 13:04",
+		"registry:" : "jr 6/25/2017 14:47",
+		"shadowOf:" : "jr 6/27/2017 18:57" } }

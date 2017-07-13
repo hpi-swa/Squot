@@ -8,6 +8,7 @@
 	"instvars" : [
 		"patchedObjects",
 		"absentShadows",
+		"patchedObjectGraph",
 		"objectRegistry" ],
 	"name" : "SquotObjectPatcher",
 	"pools" : [

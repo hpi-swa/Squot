@@ -1,8 +1,12 @@
 {
 	"class" : {
 		"delimiter" : "jr 5/8/2017 19:32",
+		"from:" : "jr 7/15/2017 13:40",
 		"fromPath:" : "jr 5/8/2017 19:31",
 		"fromReference:" : "jr 3/11/2017 00:59",
 		"fromString:" : "jr 3/11/2017 01:00" },
 	"instance" : {
-		 } }
+		"resolve:" : "jr 7/15/2017 13:41",
+		"resolvePath:" : "jr 7/15/2017 13:41",
+		"resolveReference:" : "jr 7/15/2017 13:42",
+		"resolveString:" : "jr 7/15/2017 13:41" } }

@@ -5,8 +5,9 @@ menuCommitListHook: aMenu
 	activeBranchName := self projectSelection loadedHistorian shortName.
 	isMenuOnActiveBranch := selectedHistorian = self projectSelection loadedHistorian.
 	onlyOnInactiveBranch := selectedHistorian ~= self projectSelection loadedHistorian.
-	commands := 
-		{{'Checkout objects'. #actionCommitSelectionCheckout. 'Checkout objects from this commit. You will be able to select what will actually be loaded.', String cr, 'NOTE: unless you change the selection, your uncommitted changes will be reverted, so that what is loaded matches the objects in this commit!'}.
+	commands := {
+		{'Switch to this commit on a new branch'. #actionCommitSwitchNewBranch. 'Create a new branch at this commit, stash away uncommitted changes and checkout the new branch.'}.
+		{'Checkout objects'. #actionCommitSelectionCheckout. 'Checkout objects from this commit. You will be able to select what will actually be loaded.', String cr, 'NOTE: unless you change the selection, your uncommitted changes will be reverted, so that what is loaded matches the objects in this commit!'}.
 		{'Merge objects'. #actionCommitMergeIntoMemory. 'Merge objects from this commit with the loaded ones. You may use this to pick objects or changes from this commit without discarding your uncommitted changes.'}.
 		'-'.
 		{'Compare with parent commit'. #actionCommitDiffWithParent}.

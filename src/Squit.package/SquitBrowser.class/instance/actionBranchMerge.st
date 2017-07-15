@@ -1,9 +1,9 @@
-actions
+actions on branches
 actionBranchMerge
 	| mergeHistorian mergeHeadCommit |
 	self hasProjectSelection ifFalse: [^ self].
 	self hasBranchSelection ifFalse: [^ self].
-	mergeHistorian := self branchSelection historian.
+	mergeHistorian := selectedHistorian.
 	mergeHeadCommit := mergeHistorian version.
 	[self mergeVersionIntoActiveBranch: mergeHeadCommit]
 		on: SquotInitialLogMessageRequested

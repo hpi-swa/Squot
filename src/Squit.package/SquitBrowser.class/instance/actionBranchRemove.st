@@ -1,10 +1,14 @@
-actions
+actions on branches
 actionBranchRemove
-	self branchSelection ifNil: [^ self].
-	self branchSelection historian = self projectSelection loadedHistorian
+	self hasBranchSelection ifFalse: [^ self].
+	selectedHistorian = self projectSelection loadedHistorian
 		ifTrue: [^ self inform: 'Cannot delete the active branch, switch to another branch before.'].
-	(UIManager confirm: 'Really delete branch ', self branchSelection historian name, '?')
+	(UIManager confirm: 'Really delete branch ', selectedHistorian name, '?')
 		ifFalse: [^ self].
-	self projectSelection repository delete: self branchSelection historian.
-	commitSelection := nil.
-	self refresh.
+	self projectSelection repository delete: selectedHistorian.
+	self branchSelection: (self branchList
+			after: selectedHistorian shortName
+			ifAbsent: [self branchList
+						before: selectedHistorian shortName
+						ifAbsent: self projectSelection loadedHistorian shortName]).
+	self loadBranchList.

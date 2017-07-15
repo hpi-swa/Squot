@@ -1,0 +1,15 @@
+{
+	"category" : "FileSystem-Git-Plumbing-Core",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "jr 6/5/2017 23:06",
+	"instvars" : [
+		"packedRefsFile",
+		"refsDictionary" ],
+	"name" : "GitPackedRefs",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }

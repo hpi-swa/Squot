@@ -11,5 +11,5 @@ mergeVersionIntoActiveBranch: mergeHeadCommit
 	[self actionCommit] on: SquotInitialLogMessageRequested
 		do: [:request | request isNested
 			ifTrue: [request pass]
-			ifFalse: [request resume: 'Merge branch ', self branchSelection historian shortName]].
+			ifFalse: [request resume: 'Merge branch ', selectedHistorian shortName]].
 	self refresh.

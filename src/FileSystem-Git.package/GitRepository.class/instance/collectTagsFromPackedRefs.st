@@ -1,14 +1,9 @@
 private
 collectTagsFromPackedRefs
-	| tags packedRefs |
+	| tags |
 	tags := Dictionary new.
-	
-	packedRefs := self packedRefs. 
-	packedRefs ifNotNil: [
-		packedRefs keysAndValuesDo: [ :refName :refHash | 
-			(refName includesSubString: 'tags') ifTrue: [
-				tags
-					at: refName
-					put: (self objectNamed: refHash) ] ] ].
-	
+	(self packedRefs prefixedWith: 'refs/tags/') do: [:each |
+		tags
+			at: each name
+			put: (self objectNamed: each signature)].
 	^ tags

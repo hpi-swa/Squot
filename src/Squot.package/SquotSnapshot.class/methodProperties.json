@@ -12,6 +12,7 @@
 		"artifactsDo:" : "jr 1/27/2017 15:16",
 		"containsArtifactAt:" : "jr 4/18/2017 00:08",
 		"createNewBuilder" : "jr 1/31/2017 12:12",
+		"diffsAgainst:" : "jr 6/29/2017 18:00",
 		"includesObjectAt:" : "jr 5/31/2017 18:02",
 		"initialize" : "jr 1/27/2017 15:18",
 		"initializeWith:" : "jr 1/27/2017 15:20",
@@ -19,5 +20,5 @@
 		"pathOf:" : "jr 1/27/2017 15:14",
 		"paths" : "jr 5/31/2017 18:00",
 		"resolve:" : "jr 1/27/2017 15:11",
-		"resolvePath:" : "jr 1/27/2017 15:12",
+		"resolvePath:" : "jr 7/15/2017 13:39",
 		"resolveString:" : "jr 1/27/2017 15:11" } }

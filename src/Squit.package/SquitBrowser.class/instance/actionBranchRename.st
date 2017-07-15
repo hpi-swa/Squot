@@ -1,8 +1,8 @@
-actions
+actions on branches
 actionBranchRename
 	| newHistorian newName oldHistorian oldName |
-	self branchSelection ifNil: [^ self].
-	oldHistorian := self branchSelection historian.
+	self hasBranchSelection ifFalse: [^ self].
+	oldHistorian := selectedHistorian.
 	oldName := oldHistorian name.
 	newName := UIManager default request: 'New branch name' initialAnswer: oldName.
 	(newName = oldName or: [newName isEmpty])

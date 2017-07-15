@@ -1,4 +1,5 @@
-actions
+actions on versions
 actionBranchResetToCommit
-	self branchSelection historian version: self commitSelection.
-	self refresh.
+	self hasBranchSelection ifFalse: [^ self].
+	selectedHistorian version: self commitSelection.
+	self changed: #commitList.

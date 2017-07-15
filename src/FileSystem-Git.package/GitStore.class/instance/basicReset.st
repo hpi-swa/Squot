@@ -7,4 +7,4 @@ basicReset
 		reference deleteAll].
 	self repository: repository.
 	self initializeWithCache: cache.
-	
+	self logMessage: 'basicReset to ', (revision ifNil: ['(orphaned)'] ifNotNil: [revision typeCode, ' ', revision hexHash]).

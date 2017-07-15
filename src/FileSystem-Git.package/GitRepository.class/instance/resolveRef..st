@@ -23,8 +23,7 @@ resolveRef: name
 		havePackedRefs ifFalse: [
 				packedRefs := self packedRefs. 
 				havePackedRefs := true ].
-		packedRefs ifNotNil: [
-			self packedRefs at: prefix , name 
-					ifPresent: [ :result | ^ result ] ] ].
+		packedRefs at: prefix , name 
+					ifPresent: [ :result | ^ result ] ].
 	self flag: 'raise exception instead of answering nil?'.
 	^ nil

@@ -9,4 +9,4 @@ storeFixedKeysOn: aStream
 	self saveKey: 'object' value: self object hexHash to: aStream.
 	self saveKey: 'type' value: self object typeCode to: aStream.
 	self saveKey: 'tag' value: self name to: aStream.
-	self saveKey: 'tagger' value: self tagger printString to: aStream.
+	self saveKey: 'tagger' value: (self tryEncodeString: self tagger printString) to: aStream.

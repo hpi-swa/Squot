@@ -1,4 +1,4 @@
-enumerating
+accessing-objects
 headerOfLooseObjectNamed: aHexHash ifAbsent: aBlock
 	| stream |
 	stream :=

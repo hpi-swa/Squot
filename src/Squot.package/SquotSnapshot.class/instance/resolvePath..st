@@ -1,3 +1,3 @@
 FileSystem
 resolvePath: aPath
-	^ self artifactAt: (aPath printWithDelimiter: $/)
+	^ self artifactAt: (SquotPath fromPath: aPath)

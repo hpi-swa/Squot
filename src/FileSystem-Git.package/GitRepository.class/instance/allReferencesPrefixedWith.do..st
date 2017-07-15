@@ -5,7 +5,5 @@ allReferencesPrefixedWith: prefixString do: aBlock
 	visited := Set new.
 	self allLooseReferencesPrefixedWith: prefixString do: [:each | aBlock value: each.
 		visited add: each].
-	self packedRefs ifNotNil: [:packedRefs |
-		(packedRefs keys difference: visited)
-			select: [:each | each beginsWith: prefixString]
-			thenDo: aBlock].
+	(((self packedRefs prefixedWith: prefixString)
+		collect: [:each | each name]) difference: visited) do: aBlock.

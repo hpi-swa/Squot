@@ -8,7 +8,6 @@
 	"instvars" : [
 		"projectIndex",
 		"commitSelection",
-		"branchIndex",
 		"objectIndex",
 		"objectCache",
 		"commitForCache",
@@ -17,7 +16,11 @@
 		"offeredToAddFirstProject",
 		"repositoryExists",
 		"cachedCommitList",
-		"commitListBuildProcess" ],
+		"commitListBuildProcess",
+		"selectedHistorian",
+		"indexOfActiveHistorianInBranchList",
+		"branchList",
+		"commitToDiffAgainst" ],
 	"name" : "SquitBrowser",
 	"pools" : [
 		 ],

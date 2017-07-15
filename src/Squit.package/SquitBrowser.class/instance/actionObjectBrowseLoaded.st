@@ -1,4 +1,4 @@
-actions
+actions on objects
 actionObjectBrowseLoaded
 	| path liveObject |
 	path := self objectSelection artifact path.

@@ -11,5 +11,5 @@ loadFrom: aStream
 						nextPutAll: (aStream upTo: Character lf asInteger)]].
 		self loadKey: key value: value asString].
 	aStream next.
-	message := aStream upToEnd asString.
+	message := self tryDecodeString: aStream upToEnd asString.
 	^self

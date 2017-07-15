@@ -1,0 +1,10 @@
+{
+	"class" : {
+		 },
+	"instance" : {
+		"packedRefsTestContents" : "jr 6/5/2017 17:43",
+		"packedRefsTestFile" : "jr 6/5/2017 17:44",
+		"setUp" : "jr 6/5/2017 17:45",
+		"testDelete" : "jr 6/5/2017 22:20",
+		"testPrefixed" : "jr 6/5/2017 19:27",
+		"testRefs" : "jr 6/5/2017 19:23" } }

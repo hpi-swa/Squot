@@ -1,4 +1,4 @@
-actions
+actions on working copies
 actionProjectClone
 	| workingCopy remoteUrl |
 	remoteUrl := UIManager default request: 'URL to clone from:'.

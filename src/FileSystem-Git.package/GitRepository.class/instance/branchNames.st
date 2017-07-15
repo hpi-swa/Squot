@@ -6,11 +6,8 @@ branchNames
 		[looseBranchNames := self headsDir allFiles
 			collect: [:each | self refFromFile: each relativeTo: self headsDir]].
 	packedRefs := self packedRefs.
-	packedRefs ifNil: [^ looseBranchNames].
-	packedBranchNames := OrderedCollection new.
-	packedRefs keysAndValuesDo: [:refName :refSignature | 
-		(refName beginsWith: 'refs/heads/') ifTrue: [ | branchName |
-			branchName := refName allButFirst: 'refs/heads/' size.
-			(looseBranchNames includes: branchName)
-				ifFalse: [packedBranchNames add: branchName]]].
+	packedBranchNames := ((packedRefs
+		select: [:each | each name beginsWith: 'refs/heads/'])
+		collect: [:each | each name allButFirst: 'refs/heads/' size])
+		difference: looseBranchNames.
 	^ looseBranchNames, packedBranchNames

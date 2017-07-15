@@ -3,7 +3,8 @@
 	"classinstvars" : [
 		 ],
 	"classvars" : [
-		 ],
+		"LogMessages",
+		"LogMutex" ],
 	"commentStamp" : "CamilloBruni 8/1/2011 18:33",
 	"instvars" : [
 		"revision",

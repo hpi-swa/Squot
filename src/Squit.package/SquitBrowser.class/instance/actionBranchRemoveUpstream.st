@@ -1,8 +1,8 @@
-actions
+actions on branches
 actionBranchRemoveUpstream
 	| localHistorian remoteBranchName remoteName |
-	self branchSelection ifNil: [^ self].
-	localHistorian := self branchSelection historian.
+	self hasBranchSelection ifFalse: [^ self].
+	localHistorian := selectedHistorian.
 	remoteName := localHistorian upstreamRemoteName.
 	remoteBranchName := localHistorian upstreamHistorianName.
 	(self isUpstreamRemoteSupported: localHistorian)

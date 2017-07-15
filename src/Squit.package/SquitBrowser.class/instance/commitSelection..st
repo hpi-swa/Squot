@@ -1,4 +1,7 @@
 ui
 commitSelection: anObject
 	commitSelection := anObject.
-	self refresh.
+	self commitSelectionChanged.
+	commitToDiffAgainst ifNotNil:
+		[self compareVersions: commitSelection with: commitToDiffAgainst.
+		commitToDiffAgainst := nil]

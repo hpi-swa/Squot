@@ -3,7 +3,7 @@
 		"isAbstract" : "MaxLeske 9/4/2012 21:55" },
 	"instance" : {
 		"isKeyValid:" : "MaxLeske 2/26/2012 10:29",
-		"loadFrom:" : "jr 5/26/2017 19:50",
+		"loadFrom:" : "jr 6/3/2017 12:01",
 		"loadKey:value:" : "MaxLeske 2/26/2012 10:28",
 		"loadValidKey:value:" : "MaxLeske 2/26/2012 11:24",
 		"mergeBaseWithAnyOf:" : "jr 5/23/2017 11:48",
@@ -13,7 +13,9 @@
 		"properties:" : "tonyg 2/25/2010 16:23",
 		"saveKey:value:to:" : "jr 5/26/2017 19:45",
 		"storeFixedKeysOn:" : "MaxLeske 6/24/2012 11:15",
-		"storeOn:" : "jr 4/13/2017 18:01",
+		"storeOn:" : "jr 7/1/2017 00:37",
+		"tryDecodeString:" : "jr 6/3/2017 12:00",
+		"tryEncodeString:" : "jr 7/1/2017 00:36",
 		"validKeys" : "MaxLeske 2/26/2012 10:30",
 		"validate" : "MaxLeske 9/4/2012 21:12",
 		"validateMessage" : "MaxLeske 9/4/2012 21:13" } }

@@ -14,4 +14,4 @@ addPackageInfoForDirectory: directoryReference at: relativePath
 					ifFalse: [^ self "loaded a different 'branch'"]]].
 	store
 		addLoadedPackageInfoNamed: packageInfo name
-		at: (SquotPath fromPath: relativePath)
+		at: (SquotPath fromPath: (FSPath root resolve: relativePath))

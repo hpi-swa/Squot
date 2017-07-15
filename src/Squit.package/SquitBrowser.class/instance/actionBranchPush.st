@@ -1,8 +1,8 @@
-actions
+actions on branches
 actionBranchPush
 	| historian branchName repository gitRepository |
-	self branchSelection ifNil: [^ self].
-	historian := self branchSelection historian.
+	self hasBranchSelection ifFalse: [^ self].
+	historian := selectedHistorian.
 	branchName := historian name.
 	repository := self projectSelection repository.
 	gitRepository := repository gitRepository.
@@ -11,7 +11,7 @@ actionBranchPush
 		do: 	[self projectSelection repository
 			exportToUpstream: historian
 			ifNone: [
-				self offerToSetUpstreamBranchOf: branchName
+				self offerToSetUpstreamBranchOf: historian shortName
 					in: gitRepository
 					ifCanceled: [^ self].
 				^ self actionBranchPush "try again"]]

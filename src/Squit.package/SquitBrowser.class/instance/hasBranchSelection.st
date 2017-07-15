@@ -1,3 +1,3 @@
 ui
 hasBranchSelection
-	^ self branchSelection notNil
+	^ selectedHistorian notNil

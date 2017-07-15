@@ -1,4 +1,4 @@
-actions
+actions on working copies
 actionRemoteAdd
 	| name url gitRepository isHttp |
 	self projectSelection ifNil: [^ self].

@@ -7,4 +7,5 @@ deleteRef: refPath
 	refFile := self baseDir resolve: expandedRef.
 	refFile isDirectory ifTrue: [self error: 'Incomplete reference: ', expandedRef].
 	refFile ensureDeleted.
+	self packedRefs delete: refPath.
 	(self reflogFileForReference: expandedRef) ensureDeleted.

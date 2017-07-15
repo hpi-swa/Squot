@@ -1,11 +1,12 @@
 caching
 rebuildCommitList
 	| list count walker |
+	commitListBuildProcess ifNotNil: [commitListBuildProcess terminate].
 	self hasBranchSelection ifFalse: [^ cachedCommitList := #()].
 	list := OrderedCollection new.
 	count := 0.
 	(walker := SquotHistoryWalker new)
-		startingFrom: self branchSelection historian version
+		startingFrom: selectedHistorian version
 		do: [:each |
 			count := count + 1.
 			list add: each.

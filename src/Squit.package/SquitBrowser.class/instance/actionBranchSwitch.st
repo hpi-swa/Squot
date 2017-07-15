@@ -1,5 +1,5 @@
-actions
+actions on branches
 actionBranchSwitch
-	self branchSelection ifNil: [^ self].
-	self projectSelection loadedHistorian: self branchSelection historian.
-	self refresh.
+	self hasBranchSelection ifFalse: [^ self].
+	self projectSelection switchTo: selectedHistorian.
+	self activeBranchChanged.

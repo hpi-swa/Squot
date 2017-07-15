@@ -112,4 +112,7 @@
 		"upstreamRefOfBranchNamed:" : "jr 4/26/2017 22:59",
 		"upstreamRemoteOfBranchNamed:" : "jr 4/26/2017 13:49",
 		"validate" : "CamilloBruni 8/9/2011 16:58",
+		"workingCopyDir" : "jr 7/11/2017 18:14",
+		"workingCopyDirDo:ifBare:" : "jr 7/11/2017 18:13",
+		"workingCopyDirDo:ifBareOrAbsent:" : "jr 7/11/2017 18:18",
 		"workingDir" : "MaxLeske 6/24/2012 11:37" } }

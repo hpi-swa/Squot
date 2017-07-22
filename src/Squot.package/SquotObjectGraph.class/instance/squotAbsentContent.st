@@ -1,3 +1,3 @@
 Squot-shadow-diffing
 squotAbsentContent
-	 ^ self class new
+	 ^ self class withSingleShadow: (self startShadow squotAbsentContent)

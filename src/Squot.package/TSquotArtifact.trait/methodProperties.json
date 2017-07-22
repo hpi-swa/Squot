@@ -12,6 +12,7 @@
 		"ifAbsent:" : "jr 5/30/2017 00:46",
 		"ifPresent:" : "jr 5/30/2017 00:46",
 		"ifPresent:ifAbsent:" : "jr 5/30/2017 00:46",
+		"isLoadable" : "jr 7/23/2017 00:13",
 		"isPresent" : "jr 5/30/2017 00:46",
 		"mergeDiffWith:basedOn:" : "jr 5/28/2017 19:13",
 		"reverseDiffContentAgainst:" : "jr 5/28/2017 18:50",

@@ -1,4 +1,4 @@
 converting
 topNodes
 	right isLoadable ifFalse: [^ #()].
-	^ {SquotDiffNode title: 'Add ', right path content: self children: #()}
+	^ (right absentCopy diffAgainst: right) topNodes

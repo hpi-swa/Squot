@@ -2,17 +2,19 @@ accessing
 cachedSnapshotOf: aVersion ifAbsentPut: aBlock
 	"Keep last four versions in most recently used order.
 	Two for switching branches plus two temporary stash commits for each."
-	| index |
+	| index snapshot |
 	(cachedSnapshots ifNil: [cachedSnapshots := Array with: aVersion -> aBlock value]).
 	index := cachedSnapshots findFirst: [:each | each key = aVersion].
-	index == 0 ifTrue:
-		[cachedSnapshots at: cachedSnapshots size put: aVersion -> aBlock value.
-		index := cachedSnapshots size].
-	index > 1 ifTrue:
-		[(WriteStream on: (Array new: cachedSnapshots size)) in: [:stream |
-			stream nextPut: (cachedSnapshots at: index).
+	index == 0
+		ifTrue: [snapshot := aBlock value]
+		ifFalse: [snapshot := (cachedSnapshots at: index) value].
+	[index ~~ 1 ifTrue:
+		[(LimitedWriteStream on: (Array new: 4)) in: [:stream |
+			stream setLimit: 4 limitBlock: [cachedSnapshots := stream contents. ^ snapshot].
+			stream nextPut: aVersion -> snapshot.
 			cachedSnapshots withIndexDo: [:each :eachIndex |
 				eachIndex ~~ index ifTrue: [stream nextPut: each]].
-			cachedSnapshots := stream contents]].
-	self assert: cachedSnapshots first key = aVersion.
-	^ cachedSnapshots first value
+			cachedSnapshots := stream contents]]]
+	ensure:
+		[self assert: cachedSnapshots first key = aVersion.
+		^ snapshot]

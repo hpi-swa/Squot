@@ -5,8 +5,10 @@ loadVersion: aVersion interactive: shouldBeInteractiveBoolean
 	let the user confirm the operation."
 	| patch |
 	shouldBeInteractiveBoolean ifTrue: [^ self loadVersionInteractively: aVersion ifCanceled: []].
-	patch := aVersion patchRelativeToBase: self lazySnapshot.
+	UIManager default informUser: 'Loading version ', aVersion asString during:
+	[patch := aVersion patchRelativeToBase: self lazySnapshot.
 	self addGlobalObjectsToStore: patch.
-	store applyPatch: patch.
+	UIManager default informUser: 'Loading objects' during:
+	[store applyPatch: patch]].
 	self loadedHistorian version: aVersion.
 	self loadedVersion: aVersion.

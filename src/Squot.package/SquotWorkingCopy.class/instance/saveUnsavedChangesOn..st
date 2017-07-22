@@ -6,7 +6,8 @@ saveUnsavedChangesOn: stashHistorian
 	previousStashedVersion := stashHistorian version.
 	stashHistorian version: fromHistorian version.
 	self loadedHistorian: stashHistorian.
-	self saveNewVersionMessage: 'WIP on ', fromHistorian shortName
-		interactive: false.
+	UIManager default informUser: 'Stashing unsaved changes' during:
+	[self saveNewVersionMessage: 'WIP on ', fromHistorian shortName
+		interactive: false].
 	self loadedHistorian: fromHistorian.
 	^ previousStashedVersion

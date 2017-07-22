@@ -8,7 +8,8 @@ switchAndMoveUnsavedChangesOverTo: aHistorian
 		unsaved := self patchRelativeToBase: self baseSnapshot].
 	self loadedHistorian: aHistorian.
 	self loadVersion: aHistorian version interactive: false.
-	store applyPatch: unsaved.
+	UIManager default informUser: 'Restoring stashed changes' during:
+	[store applyPatch: unsaved].
 	previousStashedVersion
 		ifNil: [self repository delete: stashHistorian]
 		ifNotNil: [stashHistorian version: previousStashedVersion].

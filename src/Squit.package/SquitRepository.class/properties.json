@@ -11,7 +11,8 @@
 		"versionsCache",
 		"filesystemsCache",
 		"leastRecentlyRequestedFilesystems",
-		"credentials" ],
+		"credentials",
+		"cachedSnapshots" ],
 	"name" : "SquitRepository",
 	"pools" : [
 		 ],

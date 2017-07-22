@@ -1,5 +1,5 @@
 private
 currentSnapshot
 	^ snapshotBlock
-		ifNil: [store captureSnapshot]
+		ifNil: [self lazySnapshot]
 		ifNotNil: [snapshotBlock value]

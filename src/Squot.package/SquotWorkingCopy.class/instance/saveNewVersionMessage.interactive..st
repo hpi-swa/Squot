@@ -5,7 +5,7 @@ saveNewVersionMessage: aString interactive: shouldBeInteractiveBoolean
 	in the new snapshot."
 	| newVersion patch capturedArtifacts |
 	shouldBeInteractiveBoolean ifTrue: [^ self saveNewVersionInteractivelyIfCanceled: []].
-	patch := self lazySnapshot patchRelativeToBase: self baseSnapshot.
+	patch := self currentSnapshot patchRelativeToBase: self baseSnapshot.
 	[newVersion := loadedHistorian createNewVersionFromPatch: patch
 		with: [:version | version message: aString]]
 	on: SquotArtifactsWereCaptured doAndResume: [:captured |

@@ -5,9 +5,10 @@ switchAndMoveUnsavedChangesOverTo: aHistorian
 	self withCurrentSnapshot:
 		[stashHistorian := self repository historianForTemporaryVersions.
 		previousStashedVersion := self saveUnsavedChangesOn: stashHistorian.
-		unsaved := self patchRelativeToBase: self baseSnapshot].
-	self loadedHistorian: aHistorian.
-	self loadVersion: aHistorian version interactive: false.
+		UIManager default informUser: 'Computing unsaved changes' during:
+		[unsaved := self patchRelativeToBase: self baseSnapshot].
+		self loadedHistorian: aHistorian.
+		self loadVersion: aHistorian version interactive: false].
 	UIManager default informUser: 'Restoring stashed changes' during:
 	[store applyPatch: unsaved].
 	previousStashedVersion

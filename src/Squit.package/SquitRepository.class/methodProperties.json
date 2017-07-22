@@ -5,6 +5,7 @@
 	"instance" : {
 		"=" : "jr 4/14/2017 00:55",
 		"addCredentialsFor:user:password:" : "jr 4/12/2017 14:21",
+		"cachedSnapshotOf:ifAbsentPut:" : "jr 7/23/2017 01:24",
 		"cloneFrom:" : "jr 5/23/2017 14:22",
 		"convertToCurrentVersion:refStream:" : "jr 4/12/2017 14:20",
 		"createNewVersion:with:" : "jr 2/5/2017 22:46",
@@ -19,7 +20,7 @@
 		"exportVersionAt:to:" : "jr 1/26/2017 14:03",
 		"extension:ifPresent:ifAbsent:" : "jr 3/6/2017 19:41",
 		"filesystemExtension" : "jr 3/6/2017 19:42",
-		"flushCaches" : "jr 7/2/2017 19:15",
+		"flushCaches" : "jr 7/22/2017 22:28",
 		"gitRepository" : "jr 1/11/2017 18:14",
 		"hash" : "jr 4/14/2017 00:55",
 		"historianForTemporaryVersions" : "jr 6/29/2017 17:13",

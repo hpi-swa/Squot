@@ -4,6 +4,6 @@ withCurrentSnapshot: aBlock
 	| currentSnapshot |
 	currentSnapshot := nil.
 	snapshotBlock ifNotNil: ["reentrant send" ^ aBlock value].
-	snapshotBlock := [currentSnapshot ifNil: [currentSnapshot := store captureSnapshot]].
+	snapshotBlock := [currentSnapshot ifNil: [currentSnapshot := self lazySnapshot]].
 	aBlock ensure:
 		[snapshotBlock := nil].

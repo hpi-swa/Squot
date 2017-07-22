@@ -1,4 +1,4 @@
-ansi gettable
+as yet unclassified
 skip: anInteger
 	isBinary
 		ifTrue: [position := position + anInteger min: handle size max: 0]

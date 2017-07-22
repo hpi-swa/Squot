@@ -10,11 +10,9 @@ loadBranchList
 			ifNotNil: [:project | | historians localHistorians |
 				localHistorians := project repository historians sort: [:a :b | a name <= b name].
 				historians := localHistorians, project repository remoteHistorians.
-				indexOfActiveHistorianInBranchList := historians indexOf: project loadedHistorian.
-				indexOfActiveHistorianInBranchList = 0
-					ifTrue: [historians := historians copyWithFirst: project loadedHistorian.
-						indexOfActiveHistorianInBranchList := 1].
+				(historians includes: project loadedHistorian) ifFalse:
+					[historians := historians copyWithFirst: project loadedHistorian].
 				historians collect: [:historian | historian shortName]]).
 	list ~= branchList ifTrue:
 		[branchList := list.
-		self changed: #branchList].
+		self activeBranchChanged].

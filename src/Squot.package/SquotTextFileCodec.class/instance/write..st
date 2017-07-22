@@ -1,5 +1,5 @@
 Squot serialization
 write: anArtifact
 	self atPathOf: anArtifact writeStreamDo: [:stream |
-		anArtifact content writeTo: stream.
+		anArtifact shadowOfTrackedObject writeTo: stream.
 		stream truncate].

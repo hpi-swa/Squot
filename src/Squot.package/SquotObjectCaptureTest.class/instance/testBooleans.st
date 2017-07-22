@@ -1,7 +1,7 @@
 testing
 testBooleans
 	| shadow |
-	shadow := capturer capture: true.
+	shadow := capturer captureStandalone: true.
 	self assert: shadow value == true.
-	shadow := capturer capture: false.
+	shadow := capturer captureStandalone: false.
 	self assert: shadow value == false.

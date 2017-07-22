@@ -7,7 +7,7 @@ diffsAgainst: aSnapshot
 	diffs := commonArtifacts collect: [:path |
 		(myArtifacts at: path) diffAgainst: (otherArtifacts at: path)].
 	additions := (otherArtifacts keys copyWithoutAll: myArtifacts keys)
-		collect: [:path | (otherArtifacts at: path) absentCopy diffAgainst: (otherArtifacts at: path)].
+		collect: [:path | SquotArtifactAddition of: (otherArtifacts at: path)].
 	removals := (myArtifacts keys copyWithoutAll: otherArtifacts keys)
-		collect: [:path | (myArtifacts at: path) diffAgainst: (myArtifacts at: path) absentCopy].
+		collect: [:path | SquotArtifactRemoval of: (myArtifacts at: path)].
 	^ diffs, additions, removals

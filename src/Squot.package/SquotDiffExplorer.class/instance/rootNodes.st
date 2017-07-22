@@ -1,5 +1,6 @@
 ui diff tree
 rootNodes
+	self flag: 'TODO: refactor to use patches'.
 	rootNodes ifNotNil: [^ rootNodes].
 	rootNodes := OrderedCollection new.
 	artifactDiffs := Dictionary new.

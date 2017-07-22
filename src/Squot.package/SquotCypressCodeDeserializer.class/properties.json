@@ -6,7 +6,8 @@
 		 ],
 	"commentStamp" : "jr 4/7/2017 16:58",
 	"instvars" : [
-		"fileUtils" ],
+		"fileUtils",
+		"cypressReader" ],
 	"name" : "SquotCypressCodeDeserializer",
 	"pools" : [
 		 ],

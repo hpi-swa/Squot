@@ -2,10 +2,11 @@
 	"class" : {
 		"key:newSlot:" : "jr 6/22/2017 12:01" },
 	"instance" : {
-		"applyToSlots:with:" : "jr 6/18/2017 12:11",
-		"asSquotHierarchicalDiffWith:" : "jr 6/25/2017 21:50",
+		"asSquotHierarchicalDiffWith:" : "jr 7/21/2017 02:48",
 		"hierarchicalDiffTitle" : "jr 6/25/2017 21:51",
 		"printDescriptionOn:" : "jr 6/18/2017 11:51",
 		"slotShadowType" : "jr 6/25/2017 21:57",
 		"slotToBeAdded" : "jr 6/18/2017 12:11",
+		"squotApplyTo:with:" : "jr 7/16/2017 00:32",
+		"squotApplyToLoaded:with:" : "jr 7/16/2017 23:47",
 		"squotHasChanges" : "jr 6/17/2017 23:29" } }

@@ -1,3 +1,6 @@
 accessing
 content
-	^ object captureWithSquot
+	^ shadow ifNil:
+		[SquotActiveSlotOverrides
+			value: storeInfo
+			during: [shadow := store capture: object]]

@@ -1,5 +1,6 @@
 accessing
 storeInfo
-	^ storeInfo copy
+	store activateObjectRegistryDuring:
+	[^ storeInfo copy
 		in: [:copy | object squotRemoveTransientStoreInfoFrom: copy];
-		yourself
+		yourself]

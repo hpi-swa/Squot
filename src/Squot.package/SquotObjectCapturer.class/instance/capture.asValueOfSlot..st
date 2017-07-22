@@ -1,14 +1,20 @@
 capturing
 capture: anObject asValueOfSlot: aShadowSlot
-	| name shadow namedObject namedShadow |
+	| captureObject name namedObject |
 	state == #enumerating
 		ifTrue: [ | decorated |
-			objectGraph creatorOf: anObject
-				ifAbsentPut: [aShadowSlot] of: [enumeratedObject].
-			decorated := SquotCreatorDecorator on: anObject creator: enumeratedObject slot: aShadowSlot.
-			^ toBeVisited add: decorated].
-	name := objectGraph nameOf: anObject ifAbsent: [nil].
-	shadow := convertedObjects at: anObject.
-	toBeVisited add: (namedObject := SquotNameDecorator on: anObject withName: name).
-	aShadowSlot value: (namedShadow := SquotNameDecorator on: shadow withName: name).
-	^ aShadowSlot
+			captureObject := self replacementForSlot: aShadowSlot in: enumeratedObject
+				ifFound: [:replacement | replacement]
+				ifNone: [anObject].
+			decorated := SquotCreatorDecorator on: captureObject
+						creator: enumeratedObject slot: aShadowSlot.
+			objectGraph creatorOf: captureObject
+						ifAbsentPut: [aShadowSlot] of: [enumeratedObject].
+			name := captureObject shouldHaveNameAssignedBySquot
+				ifTrue: [objectGraph nameOf: captureObject undecorated
+						ifAbsentAssign: [self newNameFor: decorated]].
+			namedObject := SquotNameDecorator on: captureObject withName: name.
+			aShadowSlot value: namedObject.
+			toBeVisited add: decorated.
+			slotsToConvert add: aShadowSlot.
+			^ aShadowSlot].

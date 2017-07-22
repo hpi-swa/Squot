@@ -2,15 +2,12 @@ tests
 testPatchDeleteArtifact
 	| object snapshotWithArtifact snapshotWithoutArtifact artifactReference metadata patch |
 	snapshotWithArtifact := SquotSnapshot builder
-		add: (SquotArtifact new
-			content: (object := 'a text') captureWithSquot;
-			path: 'aText';
-			initializeDefaultStoreInfoFor: object;
-			validatePathFor: object;
-			yourself);
+		add: (SquotImageStore new
+				add: (object := 'a string') at: 'aString.txt';
+				artifactAt: 'aString.txt');
 		buildSnapshot.
 	fileStore restoreToSnapshot: snapshotWithArtifact.
-	artifactReference := fileStore directory resolve: 'aText'.
+	artifactReference := fileStore directory resolve: 'aString.txt'.
 	self assert: artifactReference exists description: 'artifacts should exist'.
 	self assert: (metadata := fileStore metadataForObjectAt: artifactReference) isPresent
 		description: 'metadata should exist'.

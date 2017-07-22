@@ -1,15 +1,16 @@
 testing
 testCyclicReferences
-	| original target patched |
-	original := Array new: 2.
-	original
-		at: 1 put: original;
+	| array original target |
+	array := Array new: 2.
+	array
+		at: 1 put: array;
 		at: 2 put: 2.
-	target := Array new: 2.
-	target
-		at: 1 put: target;
-		at: 2 put: 3.
-	patched := self patchedFrom: original to: target.
-	"cannot use assert:equals: or = to compare the results (endless recursion)"
-	self assert: (patched at: 1) == patched.
-	self assert: 3 equals: (patched at: 2).
+	original := capturer capture: array.
+	array at: 2 put: 3.
+	target := capturer capture: array.
+	"make up a new working copy"
+	array := SquotShadowMaterializer new rematerialize: original startShadow.
+	self assert: 2 equals: (array at: 2).
+	self patch: array to: target startObject.
+	self assert: (array at: 1) == array.
+	self assert: 3 equals: (array at: 2).

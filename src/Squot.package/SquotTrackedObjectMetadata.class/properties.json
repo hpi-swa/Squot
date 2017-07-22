@@ -1,0 +1,14 @@
+{
+	"category" : "Squot-Core",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "jr 7/16/2017 12:01",
+	"instvars" : [
+		 ],
+	"name" : "SquotTrackedObjectMetadata",
+	"pools" : [
+		 ],
+	"super" : "Dictionary",
+	"type" : "normal" }

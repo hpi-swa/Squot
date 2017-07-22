@@ -1,11 +1,11 @@
 *Squot-trackable
-squotAddTransientStoreInfoTo: aDictionary
+squotAddTransientStoreInfoTo: aTrackableObjectMetadata
 	| monticelloPackage |
-	super squotAddTransientStoreInfoTo: aDictionary.
+	super squotAddTransientStoreInfoTo: aTrackableObjectMetadata.
 	(monticelloPackage := self mcPackage) hasWorkingCopy
-		ifTrue: [aDictionary at: #environment
+		ifTrue: [aTrackableObjectMetadata at: #environment
 				put: (monticelloPackage workingCopy environment)]
 		ifFalse: [ | newWorkingCopy |
 			newWorkingCopy := monticelloPackage workingCopy.
 			newWorkingCopy environment: Environment current.
-			aDictionary at: #environment put: newWorkingCopy environment].
+			aTrackableObjectMetadata at: #environment put: newWorkingCopy environment].

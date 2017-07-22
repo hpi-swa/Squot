@@ -1,3 +1,3 @@
 patching
-privateApplyDiff: aSquotObjectDiff with: aDiffBuilder
-	aSquotObjectDiff applyToSlots: slots with: aDiffBuilder.
+privateApplyDiff: aSquotObjectDiff with: aPatcher
+	aSquotObjectDiff applyTo: self with: aPatcher.

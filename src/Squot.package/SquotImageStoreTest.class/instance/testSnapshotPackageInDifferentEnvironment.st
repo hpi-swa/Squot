@@ -17,7 +17,7 @@ testSnapshotPackageInDifferentEnvironment
 	snapshot := imageStore captureSnapshot.
 	self assert: ((snapshot artifacts detect: [:each | each path endsWith: '.package']
 				ifNone: [self fail: 'No artifact for the package generated'])
-			content definitions includes: class asClassDefinition)
+			packageArtifactDefinitions includes: class asClassDefinition)
 		description: 'ImageStore must find the class'.]
 	ensure: [workingCopy unregister.
 		classFactory delete: class.

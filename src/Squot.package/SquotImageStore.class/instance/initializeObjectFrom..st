@@ -5,3 +5,4 @@ initializeObjectFrom: anArtifact
 	anArtifact isLoadable ifFalse: [^ self].
 	loadedObject := (self materializerFor: anArtifact) materialize: anArtifact replacing: nil.
 	self add: loadedObject copiedFromArtifact: anArtifact.
+	^ loadedObject

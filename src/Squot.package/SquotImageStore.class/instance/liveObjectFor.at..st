@@ -1,7 +1,5 @@
 private
 liveObjectFor: anObject at: aPath
-	| metadata |
-	metadata := (additionalInfo at: aPath) copy.
-	^ (SquotLiveObject on: anObject at: aPath)
-		storeInfo: metadata;
+	^ (SquotLiveObject on: anObject at: aPath in: self)
+		storeInfo: (additionalInfo at: aPath);
 		yourself

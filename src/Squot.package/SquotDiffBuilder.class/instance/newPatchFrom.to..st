@@ -1,13 +1,12 @@
 diffing high-level
 newPatchFrom: leftShadow to: rightShadow
+	| fallbackName |
 	resultPatch := SquotObjectGraphDiff new.
 	visited := IdentitySet new.
-	leftShadow hasSquotShadowName
-		ifTrue: [shadowNames at: leftShadow undecorated put: leftShadow name]
-		ifFalse: [| newName | newName := #().
-			shadowNames at: leftShadow undecorated put: newName].
-	resultPatch startObjectName: (shadowNames at: leftShadow).
-	self transformingFrom: leftShadow to: rightShadow.
+	fallbackName := #().
+	self rememberNameOf: leftShadow orAssume: [fallbackName].
+	self rememberNameOf: rightShadow orAssume: [fallbackName].
 	self addToBeVisitedLeft: leftShadow right: rightShadow.
 	self followReferences.
+	resultPatch startObjectName: (shadowNames at: leftShadow undecorated).
 	^ resultPatch

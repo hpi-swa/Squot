@@ -1,3 +1,3 @@
-as yet unclassified
+Object
 primitiveFailed
 	^ self withArgs: #() executeMethod: (Object >> #primitiveFailed)

@@ -1,5 +1,5 @@
 testing
 testNil
 	| shadow |
-	shadow := capturer capture: nil.
+	shadow := capturer captureStandalone: nil.
 	self assert: shadow value == nil.

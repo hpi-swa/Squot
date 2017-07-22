@@ -8,6 +8,7 @@
 	"commentStamp" : "jr 4/7/2017 16:29",
 	"instvars" : [
 		"originalClass",
+		"capturedClass",
 		"slots",
 		"instVars",
 		"variableSizePart" ],

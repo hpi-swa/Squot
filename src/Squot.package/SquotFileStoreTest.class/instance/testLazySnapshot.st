@@ -19,5 +19,5 @@ testLazySnapshot
 	watchedTextFile := spyingFs referenceTo: textFile path.
 	self deny: (spyingFs store wasOpened: watchedTextFile).
 	"until the content of the artifact is accessed"
-	self assert: 'Hello world' equals: lazyArtifact content.
+	self assert: 'Hello world' equals: (SquotImageStore new restoreObjectFrom: lazyArtifact).
 	self assert: (spyingFs store wasOpened: watchedTextFile).

@@ -1,15 +1,14 @@
 switching historians
 switchAndMoveUnsavedChangesOverTo: aHistorian
-	| fromHistorian stashHistorian previousStashedVersion unsavedDiffs unsavedArtifacts |
+	| fromHistorian stashHistorian previousStashedVersion unsaved |
 	fromHistorian := self loadedHistorian.
 	self withCurrentSnapshot:
-		[unsavedArtifacts := self currentSnapshot artifacts.
-		stashHistorian := self repository historianForTemporaryVersions.
+		[stashHistorian := self repository historianForTemporaryVersions.
 		previousStashedVersion := self saveUnsavedChangesOn: stashHistorian.
-		unsavedDiffs := self diffsForUnsavedChanges].
+		unsaved := self patchRelativeToBase: self baseSnapshot].
 	self loadedHistorian: aHistorian.
 	self loadVersion: aHistorian version interactive: false.
-	self restoreUnsavedChangesFromDiffs: unsavedDiffs andArtifacts: unsavedArtifacts.
+	store applyPatch: unsaved.
 	previousStashedVersion
 		ifNil: [self repository delete: stashHistorian]
 		ifNotNil: [stashHistorian version: previousStashedVersion].

@@ -6,7 +6,7 @@
 		"tearDown" : "jr 2/9/2017 11:51",
 		"testDeleteArtifact" : "jr 2/9/2017 14:28",
 		"testDeleteMethod" : "jr 2/9/2017 12:04",
-		"testLazySnapshot" : "jr 5/28/2017 14:45",
-		"testPatchDeleteArtifact" : "jr 6/18/2017 13:34",
-		"testPatchDeleteFolderArtifact" : "jr 5/29/2017 23:43",
-		"testPatchDeleteMethod" : "jr 5/29/2017 23:44" } }
+		"testLazySnapshot" : "jr 7/22/2017 12:44",
+		"testPatchDeleteArtifact" : "jr 7/22/2017 02:25",
+		"testPatchDeleteFolderArtifact" : "jr 7/22/2017 02:29",
+		"testPatchDeleteMethod" : "jr 7/22/2017 01:33" } }

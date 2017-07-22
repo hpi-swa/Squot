@@ -15,7 +15,9 @@
 		"enumeratedObject",
 		"capturedObject",
 		"replacedObjects",
-		"objectGraph" ],
+		"objectGraph",
+		"slotValueReplacements",
+		"slotsToConvert" ],
 	"name" : "SquotObjectCapturer",
 	"pools" : [
 		 ],

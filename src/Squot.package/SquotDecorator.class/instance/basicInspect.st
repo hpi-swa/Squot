@@ -1,3 +1,3 @@
-as yet unclassified
+Object
 basicInspect
 	^ self withArgs: #() executeMethod: (Object >> #basicInspect)

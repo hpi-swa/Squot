@@ -4,8 +4,10 @@
 	"instance" : {
 		"add:" : "jr 1/31/2017 12:16",
 		"addAll:" : "jr 1/31/2017 12:16",
-		"applyDiff:" : "jr 5/31/2017 13:25",
+		"applyDiff:toObjectAt:" : "jr 7/16/2017 02:31",
 		"applyPatch:" : "jr 5/31/2017 13:21",
 		"artifactAt:" : "jr 1/31/2017 14:12",
+		"artifacts" : "jr 7/16/2017 03:01",
 		"buildSnapshot" : "jr 1/31/2017 12:19",
-		"initialize" : "jr 1/31/2017 12:16" } }
+		"initialize" : "jr 1/31/2017 12:16",
+		"removeAt:" : "jr 7/16/2017 02:17" } }

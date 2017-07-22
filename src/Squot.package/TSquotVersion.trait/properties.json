@@ -1,4 +1,6 @@
 {
 	"category" : "Squot-Core",
+	"classtraitcomposition" : "TSquotObjectContainer classTrait",
 	"commentStamp" : "",
-	"name" : "TSquotVersion" }
+	"name" : "TSquotVersion",
+	"traitcomposition" : "TSquotObjectContainer" }

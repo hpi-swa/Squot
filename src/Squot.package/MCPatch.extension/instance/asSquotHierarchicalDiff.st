@@ -15,13 +15,16 @@ asSquotHierarchicalDiff
 			detect: [:any | ('is*Definition' match: any) and:
 						[(each definition perform: any) == true]]
 			ifNone: ['other']].
-	topNodes := (byClass associations collect: [:eachClassAndOperations |
-			SquotDiffNode title: eachClassAndOperations key content: nil
-				children: (eachClassAndOperations value
-					collect: [:each | SquotDiffNode
-						title: each squotDiffNodeSummary
-						content: each
-						children: #()])]) ,
+	topNodes := ((byClass associations
+			collect: [:eachClassAndOperations |
+				SquotDiffNode title: eachClassAndOperations key content: nil
+					children: ((eachClassAndOperations value
+						collect: [:each | SquotDiffNode
+							title: each squotDiffNodeSummary
+							content: each
+							children: #()])
+						sort: [:a :b | a title <= b title])])
+			sort: [:a :b | a title <= b title]) ,
 		(byClassification associations collect: [:eachClassificationAndOperations |
 			| classification |
 			classification := eachClassificationAndOperations key.

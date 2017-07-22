@@ -1,3 +1,3 @@
 as yet unclassified
 shadowOf: anObject
-	^ patchedObjectGraph shadowAt: (patchedObjectGraph nameOf: anObject)
+	^ patchedObjectGraph shadowAt: (patchedObjectGraph nameOf: anObject undecorated)

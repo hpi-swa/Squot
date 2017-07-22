@@ -18,11 +18,12 @@ testMergeWithConflicts
 		packageArtifact := firstSnapshot artifactAt: packagePath.
 		newSnapshot := firstSnapshot createNewBuilder
 			add: (packageArtifact copyWithDifferentContent:
-				(MCSnapshot fromDefinitions: packageArtifact content definitions,
+				(self artifactContentFromMCDefinitions:
+					(packageArtifact packageArtifactDefinitions,
 					{MCMethodDefinition className: sampleClass name
 						selector: #conflictMethod category: 'conflict methods'
 						timeStamp: 'whatever'
-						source: (thirdMethodSource := 'conflictMethod ^ 2')}));
+						source: (thirdMethodSource := 'conflictMethod ^ 2')})));
 			buildSnapshot.
 		otherHistorian := repository historianNamed: 'other'.
 		otherHistorian version: firstVersion.
@@ -35,15 +36,15 @@ testMergeWithConflicts
 		on: SquotSelectionOfChangesRequested do: [:request | | packageDiff conflictNode |
 			"make sure the second and third method edition are in the patch"
 			packageDiff := request patch diffAt: packagePath.
-			packageDiff left content definitions
+			packageDiff left packageArtifactDefinitions
 				detect: [:each | each source = 'conflictMethod ^ 1']
 				ifNone: [self fail: 'loaded edition of conflictMethod not on the left side'].
 			"the second method should be there as well"
-			packageDiff right content definitions
+			packageDiff right packageArtifactDefinitions
 				detect: [:each | each source = 'conflictMethod ^ 2']
 				ifNone: [self fail: 'remote edition of conflictMethod not on the right side'].
 			"resolve conflict"
-			self assert: (packageDiff base content definitions
+			self assert: (packageDiff base packageArtifactDefinitions
 				noneSatisfy: [:each | each source beginsWith: 'conflictMethod']).
 			conflictNode := packageDiff topNodes first children first.
 			self assert: (conflictNode title beginsWith: 'conflictMethod').

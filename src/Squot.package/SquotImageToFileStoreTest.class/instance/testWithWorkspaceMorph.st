@@ -1,6 +1,8 @@
 tests
 testWithWorkspaceMorph
+	<timeout: 10>
 	| workspace systemWindow bindings workspaceArtifact restoredSystemWindow |
+	self flag: 'TODO: remove greater timeout once the graphs are cleansed'.
 	workspace := Workspace new.
 	systemWindow := workspace openLabel: 'Workspace for ', self selector.
 	workspace contents: 'This is a sample.'.
@@ -13,9 +15,11 @@ testWithWorkspaceMorph
 	"assert files"
 	(fileStore directory / 'sample workspace.morph') exists.
 	(fileStore directory / 'sample workspace.morph.squot-content') exists.
-	"restore"
+	"restore in different image store"
 	workspaceArtifact := fileStore captureSnapshot artifactAt: 'sample workspace.morph'.
-	restoredSystemWindow := (imageStore materializerFor: workspaceArtifact) materialize: workspaceArtifact replacing: nil.
+	restoredSystemWindow := SquotWorkingCopy newOnObjectMemory
+		loadArtifact: workspaceArtifact;
+		objectAt: workspaceArtifact path.
 	restoredSystemWindow openAsIs.
 	self assert: systemWindow label equals: restoredSystemWindow label.
 	self assert: workspace contents equals: restoredSystemWindow model contents.

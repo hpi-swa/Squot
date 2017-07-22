@@ -1,3 +1,3 @@
-as yet unclassified
+accessing
 decoratorClass
 	^ self withArgs: #() executeMethod: (Object >> #class)

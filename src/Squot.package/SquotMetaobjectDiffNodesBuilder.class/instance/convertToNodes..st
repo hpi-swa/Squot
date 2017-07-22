@@ -6,7 +6,7 @@ convertToNodes: aMetaobjectDiff
 	[nodes
 		at: aMetaobjectDiff
 		put: (newNodes := aMetaobjectDiff asSquotHierarchicalDiffWith: self).
-	deferredDiff ifNotNil: [deferredDiff becomeForward: newNodes]]
+	deferredDiff ifNotNil: [deferredDiff becomeForward: newNodes copyHash: false]]
 	ensure: [(deferredDiff notNil and: [newNodes isNil])
 			ifTrue: [nodes removeKey: aMetaobjectDiff]].
 	^ newNodes

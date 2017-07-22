@@ -4,5 +4,5 @@ loadObject: storedObject from: anArtifact replacing: anObject
 	self flag: #hack. "could be dangerous!"
 	loadedObject := storedObject copy.
 	loadedObject haltIfNil.
-	anObject ifNotNil: [anObject becomeForward: loadedObject].
+	anObject ifNotNil: [anObject becomeForward: loadedObject copyHash: false].
 	^ loadedObject

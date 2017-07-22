@@ -1,0 +1,17 @@
+{
+	"category" : "Squot-for-Packages",
+	"classinstvars" : [
+		 ],
+	"classtraitcomposition" : "TSquotDiffableShadow classTrait",
+	"classvars" : [
+		 ],
+	"commentStamp" : "jr 7/21/2017 23:38",
+	"instvars" : [
+		"snapshot",
+		"packageName" ],
+	"name" : "SquotPackageShadow",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"traitcomposition" : "TSquotDiffableShadow",
+	"type" : "normal" }

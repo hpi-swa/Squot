@@ -1,0 +1,14 @@
+{
+	"category" : "Squot-Diffs",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "SquotArtifactAddition",
+	"pools" : [
+		 ],
+	"super" : "SquotArtifactDiff",
+	"type" : "normal" }

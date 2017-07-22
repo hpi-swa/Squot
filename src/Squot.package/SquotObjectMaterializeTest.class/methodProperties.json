@@ -2,9 +2,9 @@
 	"class" : {
 		 },
 	"instance" : {
-		"captureAndRestore:" : "jr 6/20/2017 01:30",
-		"captureAndRestoreWithoutEqualityTest:" : "jr 6/20/2017 01:30",
-		"setUp" : "jr 7/6/2017 15:28",
+		"captureAndRestore:" : "jr 7/20/2017 22:10",
+		"captureAndRestoreWithoutEqualityTest:" : "jr 7/20/2017 22:09",
+		"setUp" : "jr 7/16/2017 23:28",
 		"testArrayOfIntegers" : "jr 6/20/2017 01:25",
 		"testBooleans" : "jr 6/20/2017 01:26",
 		"testCyclicReferences" : "jr 6/20/2017 01:28",
@@ -17,5 +17,5 @@
 		"testNil" : "jr 6/20/2017 01:29",
 		"testPoint" : "jr 6/20/2017 01:30",
 		"testRectangle" : "jr 6/20/2017 01:30",
-		"testSameReferencedInstance" : "jr 7/6/2017 15:23",
+		"testReplacedObject2" : "jr 7/20/2017 16:53",
 		"testSet" : "jr 6/25/2017 14:06" } }

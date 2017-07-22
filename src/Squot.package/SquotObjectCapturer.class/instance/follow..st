@@ -4,11 +4,8 @@ follow: aDecoratedObject
 	undecorated := aDecoratedObject undecorated.
 	state == #enumerating ifTrue:
 		[(visited includes: undecorated) ifTrue: [^ self].
-		visited add: undecorated.
-		undecorated shouldHaveNameAssignedBySquot
-			ifTrue: [objectGraph nameOf: undecorated
-					ifAbsentAssign: [self newNameFor: aDecoratedObject]]].
-	capturedObject := aDecoratedObject undecorated.
+		visited add: undecorated].
+	capturedObject := undecorated.
 	self capture:
 		(replacedObjects
 			at: undecorated

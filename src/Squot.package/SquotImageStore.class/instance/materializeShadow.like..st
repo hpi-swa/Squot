@@ -1,3 +1,5 @@
 private materializing
 materializeShadow: objectShadow like: anObject
-	^ SquotShadowMaterializer new rematerializeRoot: objectShadow
+	^ SquotShadowMaterializer new
+		registry: self objectRegistry;
+		rematerialize: objectShadow

@@ -5,6 +5,6 @@ squotDiffAgainst: otherShadow with: aDiffBuilder
 		ifTrue: [^ aDiffBuilder onlyLeft: self].
 	otherShadow hasSquotShadowSlots
 		ifFalse: [^ aDiffBuilder replacing: self with: otherShadow].
-	originalClass = otherShadow originalClass
-		ifFalse: [^ aDiffBuilder migrating: self to: otherShadow].
+	originalClass ~= otherShadow originalClass
+		ifTrue: [^ aDiffBuilder migrating: self to: otherShadow].
 	^ aDiffBuilder transformingFrom: self to: otherShadow

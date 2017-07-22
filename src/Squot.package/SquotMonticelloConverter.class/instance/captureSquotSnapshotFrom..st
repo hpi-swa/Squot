@@ -4,10 +4,5 @@ captureSquotSnapshotFrom: aMCVersionInfo
 	mcVersion := monticelloRepository versionWithInfo: aMCVersionInfo.
 	mcVersion ifNil: [^ nil].
 	^ SquotSnapshot builder
-		add: (SquotArtifact new
-			content: mcVersion snapshot;
-			path: mcVersion package name, '.package';
-			in: [:artifact | artifact
-				initializeDefaultStoreInfoFor: mcVersion package packageInfo];
-			yourself);
+		add: (mcVersion snapshot asSquotArtifactForPackage: mcVersion package packageInfo);
 		buildSnapshot

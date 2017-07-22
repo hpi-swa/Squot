@@ -7,7 +7,7 @@
 		 ],
 	"commentStamp" : "jr 1/5/2017 14:10",
 	"instvars" : [
-		 ],
+		"stream" ],
 	"name" : "SquotSmartRefStreamSerializer",
 	"pools" : [
 		 ],

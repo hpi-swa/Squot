@@ -4,5 +4,7 @@ initialize
 	copiedObjects := IdentityDictionary new.
 	objectRegistry := SquotObjectRegistry new.
 	replacedObjects := IdentityDictionary new.
-	toBeVisited := Heap sortBlock: [:a :b | a name size <= b name size].
+	slotValueReplacements := IdentityDictionary new.
+	toBeVisited := LinkedList new.
 	visited := IdentitySet new.
+	slotsToConvert := OrderedCollection new.

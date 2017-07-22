@@ -16,7 +16,7 @@ testMergeVersionWithLoadedObjects
 		packageArtifact := firstSnapshot artifactAt: packagePath.
 		newSnapshot := firstSnapshot createNewBuilder
 			add: (packageArtifact copyWithDifferentContent:
-				(MCSnapshot fromDefinitions: packageArtifact content definitions,
+				(self artifactContentFromMCDefinitions: packageArtifact content definitions,
 					{MCMethodDefinition className: sampleClass name
 						selector: #anotherMethod category: 'methods of second version'
 						timeStamp: 'whatever' source: 'anotherMethod ^ self'}));

@@ -1,10 +1,12 @@
 {
 	"class" : {
-		 },
+		"key:removedSlot:" : "jr 7/17/2017 00:01" },
 	"instance" : {
-		"applyToSlots:with:" : "jr 6/18/2017 12:09",
 		"asSquotHierarchicalDiffWith:" : "jr 6/25/2017 21:51",
 		"hierarchicalDiffTitle" : "jr 6/25/2017 21:51",
 		"printDescriptionOn:" : "jr 6/18/2017 11:51",
 		"slotShadowType" : "jr 6/25/2017 22:09",
+		"slotToBeRemoved" : "jr 7/17/2017 00:03",
+		"squotApplyTo:with:" : "jr 7/20/2017 22:48",
+		"squotApplyToLoaded:with:" : "jr 7/17/2017 00:05",
 		"squotHasChanges" : "jr 6/17/2017 23:29" } }

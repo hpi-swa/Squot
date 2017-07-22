@@ -6,10 +6,9 @@
 		 ],
 	"commentStamp" : "jr 6/24/2017 13:21",
 	"instvars" : [
-		"rootObject",
-		"rootMetaobject",
 		"convertedObjects",
-		"objectRegistry" ],
+		"objectRegistry",
+		"objectGraph" ],
 	"name" : "SquotShadowMaterializer",
 	"pools" : [
 		 ],

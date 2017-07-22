@@ -6,7 +6,5 @@ computeDiffsFromLeftToRight
 				diff := leftArtifact diffAgainst: myArtifact.
 				diff hasChanges
 					ifTrue: [diffs at: path put: diff]]
-			ifAbsent: [
-				diff := leftArtifact diffAgainst: (SquotAbsentArtifact newFrom: leftArtifact).
-				diffs at: path put: diff].
+			ifAbsent: [diffs at: path put: (SquotArtifactRemoval of: leftArtifact)].
 		ProgressNotification signal]

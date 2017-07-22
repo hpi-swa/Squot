@@ -2,6 +2,7 @@
 	"category" : "Squot-FileSystemStore",
 	"classinstvars" : [
 		 ],
+	"classtraitcomposition" : "TSquotObjectContainer classTrait",
 	"classvars" : [
 		"DefaultDeserializerRegistry" ],
 	"commentStamp" : "jr 1/27/2017 14:35",
@@ -14,4 +15,5 @@
 	"pools" : [
 		 ],
 	"super" : "Object",
+	"traitcomposition" : "TSquotObjectContainer",
 	"type" : "normal" }

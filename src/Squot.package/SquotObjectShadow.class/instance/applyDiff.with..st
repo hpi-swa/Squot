@@ -1,3 +1,3 @@
 patching
-applyDiff: aDiff with: aDiffBuilder
-	^ self copy privateApplyDiff: aDiff with: aDiffBuilder
+applyDiff: aDiff with: aPatcher
+	^ self copy privateApplyDiff: aDiff with: aPatcher

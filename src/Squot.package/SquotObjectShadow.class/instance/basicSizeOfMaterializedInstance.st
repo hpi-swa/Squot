@@ -1,3 +1,3 @@
 rematerializing
 basicSizeOfMaterializedInstance
-	^ ((self variableSlots detectMax: #key) ifNil: [^ 0]) key
+	^ ((self variableSlots detectMax: #index) ifNil: [^ 0]) index

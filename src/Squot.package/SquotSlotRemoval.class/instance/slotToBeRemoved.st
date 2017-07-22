@@ -1,0 +1,3 @@
+accessing
+slotToBeRemoved
+	^ self value

@@ -1,4 +1,4 @@
 switching historians
 diffsFromUnsavedChangesVersion: aVersion
 	aVersion ifNil: [^ #()].
-	^ aVersion parents first snapshot diffsAgainst: aVersion snapshot
+	^ (aVersion patchRelativeToBase: aVersion parents first) diffs

@@ -17,7 +17,7 @@ testCreateCommit
 		with: [:version | version message: 'This is a test commit'].
 	"assertions about the Squit objects"
 	newSnapshot := newVersion snapshot.
-	self assert: 'hollaboo' equals: (newSnapshot artifactAt: 'README.md') content.
+	self assert: 'hollaboo' equals: (SquotImageStore new restoreObjectFrom: (newSnapshot artifactAt: 'README.md')).
 	self assert: newVersion parents asArray = {oldMasterVersion}.
 	self assert: 'This is a test commit' equals: newVersion message.
 	"assertions about the git contents"

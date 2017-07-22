@@ -3,6 +3,8 @@ SystemOrganization addCategory: #'Squot-Core'!
 SystemOrganization addCategory: #'Squot-Shadows'!
 SystemOrganization addCategory: #'Squot-Diffs'!
 SystemOrganization addCategory: #'Squot-Diffs-Hierarchical'!
+SystemOrganization addCategory: #'Squot-Patching'!
+SystemOrganization addCategory: #'Squot-for-Packages'!
 SystemOrganization addCategory: #'Squot-Internal'!
 SystemOrganization addCategory: #'Squot-FileSystemStore'!
 SystemOrganization addCategory: #'Squot-Serialization'!
@@ -13,6 +15,7 @@ SystemOrganization addCategory: #'Squot-Tools-Support'!
 SystemOrganization addCategory: #'Squot-Monticello-Converter'!
 SystemOrganization addCategory: #'Squot-InMemoryRepository'!
 SystemOrganization addCategory: #'Squot-Tests'!
+SystemOrganization addCategory: #'Squot-Shadows-Tests'!
 SystemOrganization addCategory: #'Squot-Diffs-Tests'!
 SystemOrganization addCategory: #'Squot-Tests-Tools'!
 SystemOrganization addCategory: #'Squot-Monticello-Converter-Tests'!

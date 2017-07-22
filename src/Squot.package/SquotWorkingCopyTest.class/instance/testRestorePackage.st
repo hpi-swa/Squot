@@ -10,9 +10,8 @@ testRestorePackage
 	workingCopy add: packageInfo at: 'src'.
 	workingCopy saveNewVersionMessage: 'first version' interactive: false.
 	firstVersion := workingCopy baseVersion.
-	changeLogSuppressor suppressChangeNotificationsDuring: [
-		anotherClass := classFactory newClassInCategory: sampleClass category.
-		sampleClass compile: 'addedMethod ^ self' classified: 'methods of second version'].
+	anotherClass := classFactory newClassInCategory: sampleClass category.
+	sampleClass compileSilently: 'addedMethod ^ self' classified: 'methods of second version'.
 	anotherClassName := anotherClass name. "when unloaded, the class is renamed"
 	addedMethod := sampleClass >> #addedMethod.
 	workingCopy saveNewVersionMessage: 'second version' interactive: false.
@@ -32,4 +31,6 @@ testRestorePackage
 	self assert: (packageInfo includesClassNamed: anotherClassName) description: 'restore new class'.
 	self assert: ((anotherClass := store environment at: anotherClassName) isKindOf: Class).
 	self deny: anotherClass isObsolete.
-	self assert: addedMethod equals: sampleClass >> addedMethod selector description: 'restore addedMethod'.
+	self assert: addedMethod getSource asString
+		equals: (sampleClass >> addedMethod selector) getSource asString
+		description: 'restore addedMethod'.

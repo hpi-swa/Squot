@@ -7,4 +7,4 @@ testRetrievePackage
 	snapshot := fileStore captureSnapshot.
 	artifact := snapshot artifactAt: 'src/', packageInfo packageName, '.package'.
 	self assert: packageInfo class name equals: (artifact storeInfo at: #objectClassName).
-	self assert: (artifact content isKindOf: MCSnapshot).
+	self assert: (artifact shadowOfTrackedObject isKindOf: SquotPackageShadow).

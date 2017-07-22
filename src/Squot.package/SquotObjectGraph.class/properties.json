@@ -2,16 +2,19 @@
 	"category" : "Squot-Shadows",
 	"classinstvars" : [
 		 ],
+	"classtraitcomposition" : "TSquotDiffableShadow classTrait",
 	"classvars" : [
 		 ],
 	"commentStamp" : "jr 6/27/2017 18:01",
 	"instvars" : [
 		"objects",
 		"shadows",
+		"delegateRegistry",
 		"startName",
-		"delegateRegistry" ],
+		"startShadow" ],
 	"name" : "SquotObjectGraph",
 	"pools" : [
 		 ],
 	"super" : "SquotObjectRegistry",
+	"traitcomposition" : "TSquotDiffableShadow",
 	"type" : "normal" }

@@ -1,0 +1,27 @@
+{
+	"class" : {
+		 },
+	"instance" : {
+		"add:toSlotOverridesOf:" : "jr 7/16/2017 12:23",
+		"asSquotTrackedObjectMetadata" : "jr 7/22/2017 17:30",
+		"copyIgnoredInstanceVariables:" : "jr 7/20/2017 13:36",
+		"copySlotOverrides:" : "jr 7/16/2017 17:24",
+		"ignoreInstanceVariable:in:" : "jr 7/20/2017 12:09",
+		"ignoreInstanceVariables:in:" : "jr 7/20/2017 11:53",
+		"ignoredInstanceVariables" : "jr 7/20/2017 11:50",
+		"ignoredInstanceVariablesIn:" : "jr 7/20/2017 11:46",
+		"initializeInstVarNamed:of:with:" : "jr 7/16/2017 12:23",
+		"materializer" : "jr 7/16/2017 12:27",
+		"materializer:" : "jr 7/16/2017 12:28",
+		"mergeWith:" : "jr 7/16/2017 12:04",
+		"objectClass:" : "jr 7/16/2017 12:28",
+		"objectClassName" : "jr 7/16/2017 12:26",
+		"postCopy" : "jr 7/20/2017 13:36",
+		"replaceObjectNamesWithProperReferences" : "jr 7/20/2017 13:25",
+		"replaceObjectNamesWithReferencesInDictionaryKeys:" : "jr 7/20/2017 13:19",
+		"replaceObjectReferencesByNamesInDictionaryKeys:" : "jr 7/20/2017 13:23",
+		"replaceObjectReferencesByTheirNames" : "jr 7/20/2017 13:24",
+		"serializer" : "jr 7/16/2017 12:27",
+		"serializer:" : "jr 7/16/2017 12:28",
+		"slotOverrideFor:in:ifFound:ifNone:" : "jr 7/16/2017 13:50",
+		"slotOverrides" : "jr 7/16/2017 12:21" } }

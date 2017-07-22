@@ -11,8 +11,7 @@ testRestoreClass
 		do: [:e | e resume: (PackageInfo named: classFactory packageName)].
 	workingCopy saveNewVersionMessage: 'first version' interactive: false.
 	firstVersion := workingCopy baseVersion.
-	SystemChangeNotifier uniqueInstance doSilently:
-	[sampleClass compile: 'addedMethod ^ self' classified: 'methods of second version'].
+	sampleClass compileSilently: 'addedMethod ^ self' classified: 'methods of second version'.
 	addedMethod := sampleClass >> #addedMethod.
 	workingCopy saveNewVersionMessage: 'second version' interactive: false.
 	latestVersion := workingCopy baseVersion.

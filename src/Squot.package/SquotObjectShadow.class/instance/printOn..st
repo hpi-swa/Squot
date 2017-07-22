@@ -1,3 +1,3 @@
 printing
 printOn: aStream
-	aStream nextPutAll: 'shadow of a '; nextPutAll: originalClass name.
+	aStream nextPutAll: 'shadow of a '; nextPutAll: capturedClass name.

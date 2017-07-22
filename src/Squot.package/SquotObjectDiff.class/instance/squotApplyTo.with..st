@@ -1,5 +1,6 @@
 patching
-squotApplyTo: aMetaobject with: aDiffBuilder
+squotApplyTo: aShadow with: aPatcher
 	"Apply my changes to aContentObject (the representation of an object in a snapshot)
 	and answer the result."
-	^ (aMetaobject ifNil: [originalClass absentPrototypeForSquot captureWithSquot]) applyDiff: self with: aDiffBuilder
+	^ (aShadow ifNil: [self squotAbsentPrototypeOfRight captureWithSquot])
+		applyDiff: self with: aPatcher

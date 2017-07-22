@@ -1,3 +1,3 @@
-as yet unclassified
+Object
 printString
 	^ self withArgs: #() executeMethod: (Object >> #printString)

@@ -1,0 +1,1 @@
+Tests cases where the materializer should reuse existing resident objects.

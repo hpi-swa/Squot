@@ -15,7 +15,7 @@ rootNodes
 					rootNodes add:
 						(SquotDiffNode title: path content: nil children: nodes)]]
 			ifAbsent: [ | diff |
-				diff := originalArtifact diffAgainst: (SquotAbsentArtifact newFrom: originalArtifact).
+				diff := SquotArtifactRemoval of: originalArtifact.
 				artifactDiffs at: path put: diff.
 				diff topNodes ifNotEmpty: [:nodes |
 					rootNodes add:
@@ -23,7 +23,7 @@ rootNodes
 		ProgressNotification signal: (progress := progress + progressStep) extra: nil].
 	(proposed keys reject: [:each | original includesKey: each]) do: [:path | | proposedArtifact diff |
 		proposedArtifact := proposed at: path.
-		diff := proposedArtifact absentCopy diffAgainst: proposedArtifact.
+		diff := SquotArtifactAddition of: proposedArtifact.
 		artifactDiffs at: path put: diff.
 		diff topNodes ifNotEmpty: [:nodes |
 			rootNodes add:

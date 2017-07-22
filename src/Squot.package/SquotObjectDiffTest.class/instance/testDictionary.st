@@ -18,7 +18,7 @@ testDictionary
 	self assert: addition slotToBeAdded association name = (objectRegistry nameOf: (dict associationAt: 'fuu')).
 	removal := dictDiff itemChanges associations detect: [:each | each class == SquotSlotRemoval]
 		ifNone: [self fail: 'no association removal'].
-	self assert: removal value name = (objectRegistry nameOf: removedAssociation).
+	self assert: removal slotToBeRemoved value name = (objectRegistry nameOf: removedAssociation).
 	assocDiff := diff diffForObjectNamed: (objectRegistry nameOf: (dict associationAt: 1))
 		ifAbsent: [self fail: 'no diff for changed association'].
 	self assert: (assocDiff slotChanges at: 'value') value = 3.

@@ -1,4 +1,7 @@
 adding
 addShadow: aShadow of: anObject
-	shadows at: (self nameOf: anObject ifAbsent: [^ aShadow]) put: aShadow.
+	| name |
+	name := self nameOf: anObject ifAbsent: [^ aShadow].
+	shadows at: name put: aShadow.
+	self answer: name whenAskedForTheNameOf: aShadow.
 	^ aShadow

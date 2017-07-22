@@ -1,3 +1,3 @@
-as yet unclassified
+delegating
 doesNotUnderstand: aMessage
 	^ aMessage sendTo: decoratedObject

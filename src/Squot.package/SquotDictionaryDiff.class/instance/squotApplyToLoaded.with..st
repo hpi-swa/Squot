@@ -1,5 +1,6 @@
 patching
-squotApplyToLoaded: anObject with: aMetaobjectPatcher
-	"Modify anObject such that it matches what I model"
-	self notYetImplemented.
-	^ anObject
+squotApplyToLoaded: aDictionary with: aPatcher
+	super squotApplyToLoaded: aDictionary with: aPatcher.
+	itemChanges associationsDo: [:each |
+		each squotApplyToLoaded: aDictionary with: aPatcher].
+	^ aDictionary

@@ -1,18 +1,20 @@
 Squot deserialization
 fillContentOf: anArtifact from: aDirectory
-	| classOfStoredObject isClass cypressReader packageDirectory packageName snapshot |
+	| classOfStoredObject isClass packageDirectory packageName snapshot |
 	self flag: 'magic constant PackageInfo'.
 	classOfStoredObject := anArtifact storeInfo at: #objectClassName ifAbsent: ['PackageInfo'].
 	isClass := classOfStoredObject endsWith: ' class'.
-	cypressReader := MCFileTreeStCypressReaderWithSettableFileUtils on: aDirectory.
-	cypressReader fileUtils: fileUtils.
-	fileUtils directory: aDirectory.
+	isClass
+		ifTrue: [self initializeCypressReaderToReadClassFrom: aDirectory]
+		ifFalse: [self initializeCypressReaderToReadPackageFrom: aDirectory].
 	packageDirectory := isClass ifTrue: [aDirectory parent] ifFalse: [aDirectory].
 	packageName := packageDirectory basename first: packageDirectory basename size - '.package' size.
-	cypressReader packageDirectory: packageDirectory pathString.
 	snapshot := isClass
 		ifFalse: [cypressReader snapshot]
 		ifTrue: [ | className | className := classOfStoredObject substrings first.
 			MCSnapshot fromDefinitions: (cypressReader definitions
 				select: [:each | (each respondsTo: #className) and: [each className = className]])].
-	anArtifact content: snapshot squotWithSortedDefinitions.
+	anArtifact content: (SquotObjectGraph withSingleShadow:
+		(SquotPackageShadow
+			forPackageNamed: packageName
+			withSnapshot: snapshot squotWithSortedDefinitions)).

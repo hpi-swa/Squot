@@ -1,3 +1,5 @@
 as yet unclassified
-materialize: aMetaobject in: anObject
-	^ aMetaobject materializeAs: anObject with: self
+materialize: aShadow in: anObject
+	| materializedObject |
+	materializedObject := aShadow materializeAs: anObject undecorated with: self.
+	patchedObjectGraph addShadow: aShadow of: materializedObject.

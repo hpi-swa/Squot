@@ -9,7 +9,9 @@
 	"instvars" : [
 		"object",
 		"path",
-		"storeInfo" ],
+		"storeInfo",
+		"shadow",
+		"store" ],
 	"name" : "SquotLiveObject",
 	"pools" : [
 		 ],

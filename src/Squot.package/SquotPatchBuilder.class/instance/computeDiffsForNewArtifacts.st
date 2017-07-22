@@ -1,8 +1,7 @@
 public
 computeDiffsForNewArtifacts
 	(rightArtifacts keys reject: [:each | leftArtifacts includesKey: each])
-		do: [:path | | rightArtifact diff |
+		do: [:path | | rightArtifact |
 			rightArtifact := rightArtifacts at: path.
-			diff := rightArtifact absentCopy diffAgainst: rightArtifact.
-			diffs at: path put: diff.
+			diffs at: path put: (SquotArtifactAddition of: rightArtifact).
 			ProgressNotification signal].

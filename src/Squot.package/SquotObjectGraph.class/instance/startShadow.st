@@ -1,3 +1,3 @@
 accessing
 startShadow
-	^ shadows at: self startName
+	^ startShadow ifNil: [self shadowNamed: startName]

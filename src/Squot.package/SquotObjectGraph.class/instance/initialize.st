@@ -1,5 +1,6 @@
 initialize-release
 initialize
 	super initialize.
-	objects := Dictionary new.
+	objects := WeakValueDictionary new.
 	shadows := Dictionary new.
+	delegateRegistry := SquotObjectRegistry new.

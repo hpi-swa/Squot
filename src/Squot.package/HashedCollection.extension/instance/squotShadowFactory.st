@@ -1,3 +1,3 @@
-*Squot-trackable
+*Squot-trackable-capturing
 squotShadowFactory
 	^ SquotHashedCollectionShadow

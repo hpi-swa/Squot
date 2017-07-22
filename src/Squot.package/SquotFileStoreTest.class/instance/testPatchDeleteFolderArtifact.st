@@ -1,14 +1,10 @@
 tests
 testPatchDeleteFolderArtifact
 	| object snapshotWithArtifact snapshotWithoutArtifact artifactReference metadata patch |
-	object := PackageInfo new packageName: 'Foo'; yourself.
+	object := PackageInfo new packageName: 'Foo'.
 	snapshotWithArtifact := SquotSnapshot builder
-		add: (SquotArtifact new
-			content: (MCSnapshot fromDefinitions: {MCClassDefinition name: #Foo superclassName: #Object category: 'Foo' instVarNames: #() comment: ''});
-			path: 'Foo.package';
-			initializeDefaultStoreInfoFor: object;
-			validatePathFor: object;
-			yourself);
+		add: ((MCSnapshot fromDefinitions: {MCClassDefinition name: #Foo superclassName: #Object category: 'Foo' instVarNames: #() comment: ''})
+			asSquotArtifactForPackage: object);
 		buildSnapshot.
 	fileStore restoreToSnapshot: snapshotWithArtifact.
 	artifactReference := fileStore directory resolve: 'Foo.package'.

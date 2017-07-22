@@ -2,8 +2,9 @@
 	"class" : {
 		 },
 	"instance" : {
+		"findOrCreateAndRematerialize:" : "jr 7/18/2017 14:54",
 		"initialize" : "jr 7/6/2017 15:29",
+		"materialize:in:" : "jr 7/20/2017 21:58",
+		"objectGraph:" : "jr 7/16/2017 19:21",
 		"registry:" : "jr 7/6/2017 15:29",
-		"rematerialize:" : "jr 6/25/2017 13:59",
-		"rematerialize:from:" : "jr 6/24/2017 13:24",
-		"rematerializeRoot:" : "jr 4/7/2017 00:41" } }
+		"rematerialize:" : "jr 7/16/2017 19:51" } }

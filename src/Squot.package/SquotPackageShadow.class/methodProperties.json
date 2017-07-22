@@ -1,0 +1,16 @@
+{
+	"class" : {
+		"forPackageNamed:withSnapshot:" : "jr 7/22/2017 00:01" },
+	"instance" : {
+		"asMCSnapshot" : "jr 7/22/2017 17:26",
+		"copyWithSnapshot:" : "jr 7/22/2017 00:08",
+		"definitions" : "jr 7/22/2017 00:27",
+		"diffWithLeftSnapshot:" : "jr 7/22/2017 00:47",
+		"packageName:snapshot:" : "jr 7/22/2017 00:00",
+		"squotAbsentContent" : "jr 7/22/2017 00:00",
+		"squotDiffAgainst:with:" : "jr 7/22/2017 00:44",
+		"squotDiffAgainst:withBase:with:" : "jr 7/21/2017 23:45",
+		"squotMaterializeWith:" : "jr 7/21/2017 23:55",
+		"squotMaterializeWith:from:replacing:" : "jr 7/21/2017 23:47",
+		"squotWrite:with:" : "jr 7/22/2017 02:05",
+		"withPackageDiffPatchApplied:" : "jr 7/22/2017 00:08" } }

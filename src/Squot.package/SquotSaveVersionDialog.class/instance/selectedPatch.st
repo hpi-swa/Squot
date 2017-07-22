@@ -5,8 +5,10 @@ selectedPatch
 	"Answer a patch that describes all selected DiffNodes."
 	rootNodesByArtifact := Dictionary withAll:
 		(diffRootNodes collect: [:each | (diffs at: each title) -> each]).
-	adjustedDiffs := diffs collect: [:each |
-		rootNodesByArtifact at: each
-			ifPresent: [:node | each adjustedBy: node]
-			ifAbsent: [each]].
+	adjustedDiffs := diffs
+		collect: [:each |
+			rootNodesByArtifact at: each
+				ifPresent: [:node | each adjustedBy: node]
+				ifAbsent: [each]]
+		thenSelect: [:each | each hasChanges].
 	^ SquotPatch with: adjustedDiffs

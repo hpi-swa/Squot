@@ -9,6 +9,7 @@
 		"applyDiff:toShadowNamed:with:" : "jr 7/16/2017 00:55",
 		"assign:to:" : "jr 7/16/2017 00:41",
 		"assign:toShadow:" : "jr 7/20/2017 23:39",
+		"browseFromSquot:" : "jr 7/22/2017 23:58",
 		"creatorOf:ifAbsentPut:of:" : "jr 6/27/2017 17:52",
 		"delegateRegistry" : "jr 6/27/2017 17:33",
 		"delegateRegistry:" : "jr 7/21/2017 01:30",

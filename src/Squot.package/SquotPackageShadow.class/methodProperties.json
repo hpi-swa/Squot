@@ -3,6 +3,7 @@
 		"forPackageNamed:withSnapshot:" : "jr 7/22/2017 00:01" },
 	"instance" : {
 		"asMCSnapshot" : "jr 7/22/2017 17:26",
+		"browseFromSquot:" : "jr 7/22/2017 23:59",
 		"copyWithSnapshot:" : "jr 7/22/2017 00:08",
 		"definitions" : "jr 7/22/2017 00:27",
 		"diffWithLeftSnapshot:" : "jr 7/22/2017 00:47",

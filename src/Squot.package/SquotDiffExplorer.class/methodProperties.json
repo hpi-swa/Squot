@@ -1,9 +1,7 @@
 {
 	"class" : {
-		"from:to:" : "jr 3/15/2017 17:00" },
+		"from:to:" : "jr 7/23/2017 02:03" },
 	"instance" : {
-		"addOriginalArtifacts:" : "jr 2/14/2017 16:53",
-		"addProposedArtifacts:" : "jr 2/14/2017 16:53",
 		"browseChangedArtifactOfSelectedNode" : "jr 7/1/2017 22:31",
 		"browseOriginalArtifactOfSelectedNode" : "jr 7/1/2017 22:30",
 		"buildWith:" : "jr 7/1/2017 22:28",
@@ -12,17 +10,13 @@
 		"diffNodeMenu:shifted:" : "jr 4/26/2017 17:38",
 		"diffNodeMenuHook:" : "jr 7/1/2017 22:32",
 		"diffText" : "jr 4/26/2017 15:58",
+		"from:to:" : "jr 7/23/2017 02:05",
 		"hasChildren:" : "jr 4/26/2017 15:59",
-		"initialize" : "jr 7/1/2017 22:28",
 		"inspectChangedArtifactOfSelectedNode" : "jr 7/1/2017 22:32",
 		"inspectOriginalArtifactOfSelectedNode" : "jr 4/26/2017 18:04",
 		"inspectSelectedDiffContent" : "jr 4/26/2017 17:56",
 		"nodeLabelOf:" : "jr 4/26/2017 15:56",
 		"openLabel:" : "jr 7/1/2017 22:22",
-		"original" : "jr 2/14/2017 16:55",
-		"original:" : "jr 2/14/2017 16:55",
-		"proposed" : "jr 2/14/2017 16:55",
-		"proposed:" : "jr 2/14/2017 16:55",
-		"rootNodes" : "jr 7/16/2017 02:51",
+		"rootNodes" : "jr 7/23/2017 02:01",
 		"selectNode:" : "jr 4/26/2017 17:36",
 		"selectedNode" : "jr 4/26/2017 15:57" } }

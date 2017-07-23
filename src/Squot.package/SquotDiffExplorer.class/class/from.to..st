@@ -1,6 +1,5 @@
 instance creation
-from: baseSnapshot to: loadedSnapshot
+from: baseContainer to: targetContainer
 	^ self new
-		addOriginalArtifacts: (baseSnapshot artifacts select: [:each | each isLoadable]);
-		addProposedArtifacts: (loadedSnapshot artifacts select: [:each | each isLoadable]);
+		from: baseContainer to: targetContainer;
 		yourself

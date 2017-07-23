@@ -6,8 +6,6 @@
 		 ],
 	"commentStamp" : "jr 7/1/2017 23:04",
 	"instvars" : [
-		"original",
-		"proposed",
 		"rootNodes",
 		"artifactDiffs",
 		"selectedNode" ],

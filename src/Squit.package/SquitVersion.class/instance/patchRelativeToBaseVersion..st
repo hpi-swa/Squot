@@ -7,7 +7,7 @@ patchRelativeToBaseVersion: baseSquitVersion
 	paths := diff keys collect: [:each | SquotPath fromPath: each].
 	mine := self lazySnapshot artifacts.
 	bases := baseSquitVersion lazySnapshot artifacts.
-	myChangedArtifactPaths := paths intersection: (self lazySnapshot artifacts keys).
+	myChangedArtifactPaths := paths intersection: mine keys.
 	baseChangedArtifactPaths := paths intersection: (baseSquitVersion lazySnapshot artifacts keys).
 	deletedPaths := baseChangedArtifactPaths difference: myChangedArtifactPaths.
 	diffs := Dictionary new.

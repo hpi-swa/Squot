@@ -2,11 +2,7 @@ accessing
 markCreated: aPath inTree: aTree
 	aPath = FSPath root ifTrue: [ ^ self ].
 
-	treeMap
-		at: aPath parent
-		ifAbsentPut:
-			[aTree isEmpty ifTrue: [self logMessage: 'For a created entry, putting empty tree at ', aPath parent printString].
-			self newTreeFrom: aTree].
+	self copiedTreeForModification: aTree at: aPath parent.
 	
 	(createdPaths
 		at: aPath parent

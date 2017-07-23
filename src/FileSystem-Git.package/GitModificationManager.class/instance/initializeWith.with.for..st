@@ -4,6 +4,7 @@ initializeWith: aRepository with: aCache for: aRevision
 	repository := aRepository.
 	cache := aCache.
 	treeMap := Dictionary new.
+	copiedTrees := nil.
 	createdPaths := Dictionary new.
 	deletedPaths := Dictionary new.
 	treeMap

@@ -13,7 +13,8 @@
 		"treeMap",
 		"storedObjects",
 		"hasChanges",
-		"pendingPathsForEntryUpdate" ],
+		"pendingPathsForEntryUpdate",
+		"copiedTrees" ],
 	"name" : "GitModificationManager",
 	"pools" : [
 		 ],

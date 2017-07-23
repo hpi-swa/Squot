@@ -8,7 +8,7 @@ processCreationOf: entries from: entryPath
 			childTree := (self treeAt: directory).
 			"don't process empty trees for now"
 			childTree isEmpty ifFalse: [
-				tree := (self treeAt: entryPath) 
+				tree := (self copiedTreeForModificationAt: entryPath)
 					putEntry: (GitTreeEntry
 						directoryNamed: directory basename
 						hash: childTree hash

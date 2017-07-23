@@ -6,7 +6,7 @@ updateIntermediateEntries
 		whileTrue: [current := pendingPathsForEntryUpdate removeFirst.
 			(current ~= last and: [current isRoot not and: [(deletedPaths includes: current) not]]) ifTrue: [
 				tree := self treeAt: current.
-				parentTree := self treeAt: current parent.
+				parentTree := self copiedTreeForModificationAt: current parent.
 				tree isEmpty
 					ifFalse: [parentTree entryAt: current basename
 							ifPresent: [:entry | entry entryHash ~= tree hash

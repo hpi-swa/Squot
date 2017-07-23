@@ -14,5 +14,5 @@ processBlobAt: path in: tree
 		hash: blob hash
 		in: repository.
 		
-	tree putEntry: entry.
+	(self copiedTreeForModification: tree at: path parent) putEntry: entry.
 	pendingPathsForEntryUpdate add: path parent. "need to update the ancestor trees later"

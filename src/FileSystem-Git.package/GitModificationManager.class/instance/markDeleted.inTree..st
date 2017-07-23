@@ -9,7 +9,8 @@ markDeleted: aPath inTree: aTree
 	"forget aPath's trees and subtrees so they do not get reused"
 	treeMap keysAndValuesRemove: [:eachPath :tree | aPath contains: eachPath].
 	treeMap removeKey: aPath ifAbsent: [].
-	aTree removeEntryAt: aPath basename ifAbsent: [].
+	(self copiedTreeForModification: aTree at: aPath parent)
+		removeEntryAt: aPath basename ifAbsent: [].
 	
 	"collect a list of deleted paths"
 	(deletedPaths

@@ -13,6 +13,7 @@
 		"setUp" : "jr 2/1/2017 14:41",
 		"targetClass" : "jr 1/26/2017 17:21",
 		"tearDown" : "jr 5/22/2017 23:55",
+		"testDiffWithParent" : "jr 7/23/2017 02:41",
 		"testMergeVersionWithLoadedObjects" : "jr 7/22/2017 01:36",
 		"testMergeWithConflicts" : "jr 7/21/2017 03:09",
 		"testMergeWithConflictsChooseRemote" : "jr 5/29/2017 00:17",

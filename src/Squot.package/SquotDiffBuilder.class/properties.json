@@ -6,14 +6,15 @@
 		 ],
 	"commentStamp" : "jr 6/22/2017 13:38",
 	"instvars" : [
-		"comparedObjects",
 		"absentShadows",
 		"objectDiffs",
 		"shadowNames",
 		"toBeVisited",
 		"visited",
 		"diffedPair",
-		"resultPatch" ],
+		"resultPatch",
+		"objectsWithChanges",
+		"referrers" ],
 	"name" : "SquotDiffBuilder",
 	"pools" : [
 		 ],

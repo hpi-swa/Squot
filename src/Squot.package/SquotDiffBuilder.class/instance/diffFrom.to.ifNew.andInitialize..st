@@ -1,12 +1,12 @@
 private diffing
 diffFrom: leftShadow to: rightShadow ifNew: newBlock andInitialize: initBlock
-	| diff |
-	diff := (comparedObjects at: leftShadow undecorated ifAbsentPut: [Dictionary new])
-		at: rightShadow undecorated
+	| diff left |
+	left := leftShadow undecorated.
+	diff := objectDiffs at: left
 		ifPresent: [:existing | ^ existing]
 		ifAbsentPut: newBlock.
-	objectDiffs at: leftShadow undecorated put: diff.
 	initBlock cull: diff cull: leftShadow cull: rightShadow.
 	diff squotHasChanges ifTrue:
-		[resultPatch addDiff: diff forObjectNamed: (shadowNames at: leftShadow undecorated ifAbsent: nil)].
+		[resultPatch addDiff: diff forObjectNamed: (shadowNames at: left ifAbsent: nil).
+		self noteChanged: left].
 	^ diff

@@ -2,7 +2,7 @@ diffing high-level
 newPatchFrom: leftShadow to: rightShadow base: baseShadow
 	| fallbackName |
 	resultPatch := SquotObjectGraphDiff new.
-	visited := IdentitySet new.
+	self initialize.
 	fallbackName := #().
 	self rememberNameOf: leftShadow orAssume: [fallbackName].
 	self rememberNameOf: rightShadow orAssume: [fallbackName].

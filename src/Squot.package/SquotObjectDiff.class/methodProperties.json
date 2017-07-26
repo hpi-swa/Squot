@@ -5,6 +5,7 @@
 		"onlyLeft:" : "jr 4/9/2017 22:19" },
 	"instance" : {
 		"addSlotOnlyRight:with:" : "jr 6/22/2017 12:01",
+		"addTransitiveChangeIn:" : "jr 7/27/2017 00:17",
 		"applyTo:with:" : "jr 7/20/2017 22:40",
 		"asSquotHierarchicalDiff" : "jr 6/12/2017 16:54",
 		"asSquotHierarchicalDiffWith:" : "jr 7/21/2017 02:29",

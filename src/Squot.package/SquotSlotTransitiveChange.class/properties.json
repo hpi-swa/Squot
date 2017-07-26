@@ -1,0 +1,14 @@
+{
+	"category" : "Squot-Diffs",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "jr 7/26/2017 21:45",
+	"instvars" : [
+		 ],
+	"name" : "SquotSlotTransitiveChange",
+	"pools" : [
+		 ],
+	"super" : "SquotSlotDiff",
+	"type" : "normal" }

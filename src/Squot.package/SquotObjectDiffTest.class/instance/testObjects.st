@@ -10,7 +10,11 @@ testObjects
 	diff := shadow1OfC squotDiffAgainst: shadow2OfC.
 	self assert: diff squotHasChanges.
 	diffForC := diff diffForObjectNamed: diff startObjectName ifAbsent: [].
-	self assert: diffForC isNil.
+	self assert: (diffForC slotChanges associationAt: 'var2') class == SquotSlotTransitiveChange.
+	self assert: (diff diffForObjectNamed: (objectRegistry nameOf: a) ifAbsent: []) isNil
+		description: 'no diff for a'.
+	self deny: (diffForC slotChanges includesKey: 'var1')
+		description: 'no transitive change for a'.
 	diffForB := diff diffForObjectNamed: (shadow1OfC slots at: 'var2') name.
 	self assert: diffForB slotChanges keys asArray = #('var1').
 	self assert: (diffForB slotChanges associationAt: 'var1') class == SquotSlotReassignment.

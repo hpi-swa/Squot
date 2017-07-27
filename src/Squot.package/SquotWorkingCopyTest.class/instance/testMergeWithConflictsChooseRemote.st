@@ -1,10 +1,11 @@
 tests
 testMergeWithConflictsChooseRemote
-	| sampleClass packagePath firstVersion secondMethodSource secondVersion  thirdMethodSource thirdVersion otherHistorian |
+	| sampleClass packagePath firstVersion secondMethodSource secondVersion  thirdMethodSource thirdVersion otherHistorian packageInfo |
 	"create a base version"
 	classFactory cleanUp.
 	sampleClass := classFactory newClass.
-	workingCopy add: (PackageInfo named: classFactory packageName) at: 'src'.
+	packageInfo := PackageInfo named: classFactory packageName.
+	workingCopy add: packageInfo at: 'src'.
 	packagePath := (workingCopy store pathsOf: (PackageInfo named: classFactory packageName)) anyOne.
 	workingCopy saveNewVersionMessage: 'first version' interactive: false.
 	firstVersion := workingCopy baseVersion.
@@ -17,11 +18,12 @@ testMergeWithConflictsChooseRemote
 		packageArtifact := firstSnapshot artifactAt: packagePath.
 		newSnapshot := firstSnapshot createNewBuilder
 			add: (packageArtifact copyWithDifferentContent:
-				(MCSnapshot fromDefinitions: packageArtifact content definitions,
+				((MCSnapshot fromDefinitions: packageArtifact packageArtifactDefinitions,
 					{MCMethodDefinition className: sampleClass name
 						selector: #conflictMethod category: 'conflict methods'
 						timeStamp: 'whatever'
-						source: (thirdMethodSource := 'conflictMethod ^ 2')}));
+						source: (thirdMethodSource := 'conflictMethod ^ 2')})
+					asSquotArtifactForPackage: packageInfo) content);
 			buildSnapshot.
 		otherHistorian := repository historianNamed: 'other'.
 		otherHistorian version: firstVersion.

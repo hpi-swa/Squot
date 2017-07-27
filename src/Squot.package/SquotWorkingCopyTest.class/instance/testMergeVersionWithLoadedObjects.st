@@ -1,12 +1,13 @@
 tests
 testMergeVersionWithLoadedObjects
-	| sampleClass packagePath firstVersion addedMethodSource secondVersion |
+	| sampleClass packagePath firstVersion addedMethodSource secondVersion packageInfo |
 	"create a base version"
 	classFactory cleanUp.
 	sampleClass := classFactory newClass.
 	sampleClass compile: 'firstMethod ^ self' classified: 'methods of first version'.
-	workingCopy add: (PackageInfo named: classFactory packageName) at: 'src'.
-	packagePath := (workingCopy store pathsOf: (PackageInfo named: classFactory packageName)) anyOne.
+	packageInfo := PackageInfo named: classFactory packageName.
+	workingCopy add: packageInfo at: 'src'.
+	packagePath := (workingCopy store pathsOf: (packageInfo)) anyOne.
 	workingCopy saveNewVersionMessage: 'first version' interactive: false.
 	firstVersion := workingCopy baseVersion.
 	"create unsaved changes"
@@ -16,10 +17,11 @@ testMergeVersionWithLoadedObjects
 		packageArtifact := firstSnapshot artifactAt: packagePath.
 		newSnapshot := firstSnapshot createNewBuilder
 			add: (packageArtifact copyWithDifferentContent:
-				(self artifactContentFromMCDefinitions: packageArtifact content definitions,
+				((MCSnapshot fromDefinitions: packageArtifact packageArtifactDefinitions,
 					{MCMethodDefinition className: sampleClass name
 						selector: #anotherMethod category: 'methods of second version'
-						timeStamp: 'whatever' source: 'anotherMethod ^ self'}));
+						timeStamp: 'whatever' source: 'anotherMethod ^ self'})
+					asSquotArtifactForPackage: packageInfo) content);
 			buildSnapshot.
 		secondVersion := workingCopy loadedHistorian createNewVersion: newSnapshot
 			with: [:newVersion | newVersion message: 'second version']].
@@ -30,9 +32,9 @@ testMergeVersionWithLoadedObjects
 		on: SquotSelectionOfChangesRequested do: [:request | | packageDiff |
 			"make sure the unsaved method does not appear in the diff (will not be changed)"
 			packageDiff := request patch diffAt: packagePath.
-			self assert: (packageDiff content operations
+			self assert: (packageDiff diffOfTrackedObject operations
 				noneSatisfy: [:each | each definition isMethodDefinition and: [each fromSource asString = addedMethodSource]]).
-			self assert: packageDiff content conflicts isEmpty.
+			self assert: packageDiff diffOfTrackedObject conflicts isEmpty.
 			request resume: request patch "all of it"]]
 		valueSupplyingAnswers: {{'*'. #default}}.
 	self assert: addedMethodSource

@@ -1,13 +1,17 @@
 {
 	"class" : {
 		"forPackageNamed:leftSnapshot:rightSnapshot:" : "jr 7/22/2017 00:46",
+		"forPackageNamed:leftSnapshot:rightSnapshot:baseSnapshot:" : "jr 7/27/2017 23:13",
 		"forPackageNamed:withPatch:" : "jr 7/22/2017 00:15" },
 	"instance" : {
 		"asMonticelloPatch" : "jr 7/22/2017 17:24",
 		"asSquotHierarchicalDiff" : "jr 7/22/2017 00:02",
 		"asSquotHierarchicalDiffWith:" : "jr 7/22/2017 00:02",
+		"conflicts" : "jr 7/27/2017 23:34",
 		"copyWithPatch:" : "jr 7/22/2017 00:05",
+		"operations" : "jr 7/27/2017 23:23",
 		"packageName:leftSnapshot:rightSnapshot:" : "jr 7/22/2017 00:47",
+		"packageName:leftSnapshot:rightSnapshot:baseSnapshot:" : "jr 7/27/2017 23:21",
 		"packageName:patch:" : "jr 7/22/2017 00:05",
 		"squotAdjustToResemble:" : "jr 7/22/2017 00:03",
 		"squotApplyTo:" : "jr 7/22/2017 00:07",

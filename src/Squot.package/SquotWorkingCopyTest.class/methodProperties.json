@@ -2,7 +2,6 @@
 	"class" : {
 		"isAbstract" : "jr 1/26/2017 17:27" },
 	"instance" : {
-		"artifactContentFromMCDefinitions:" : "jr 7/21/2017 03:08",
 		"assertVersion:containsClass:" : "jr 7/21/2017 02:59",
 		"assertVersion:containsMethod:" : "jr 7/21/2017 02:59",
 		"nameForTestEnvironment" : "jr 1/26/2017 14:56",
@@ -14,10 +13,10 @@
 		"targetClass" : "jr 1/26/2017 17:21",
 		"tearDown" : "jr 5/22/2017 23:55",
 		"testDiffWithParent" : "jr 7/23/2017 02:41",
-		"testMergeVersionWithLoadedObjects" : "jr 7/22/2017 01:36",
-		"testMergeWithConflicts" : "jr 7/21/2017 03:09",
-		"testMergeWithConflictsChooseRemote" : "jr 5/29/2017 00:17",
-		"testMergeWithoutConflicts" : "jr 5/28/2017 20:14",
+		"testMergeVersionWithLoadedObjects" : "jr 7/27/2017 23:33",
+		"testMergeWithConflicts" : "jr 7/27/2017 23:31",
+		"testMergeWithConflictsChooseRemote" : "jr 7/27/2017 23:27",
+		"testMergeWithoutConflicts" : "jr 7/27/2017 23:25",
 		"testRestoreClass" : "jr 7/22/2017 01:36",
 		"testRestorePackage" : "jr 7/22/2017 12:42",
 		"testSwitchBranch" : "jr 7/15/2017 16:01",

@@ -1,29 +1,28 @@
 tests
 testDeleteMethod
-	| snapshotWithMethod snapshotWithoutMethod methodFile |
+	| sampleMethod sampleClass snapshotWithMethod snapshotWithoutMethod methodFile |
+	sampleMethod := self class >> self selector.
+	sampleClass := sampleMethod methodClass.
 	snapshotWithMethod := SquotSnapshot builder
-		add: (SquotArtifact new
-			content: (MCSnapshot
-				fromDefinitions: {self class asClassDefinition.
-					(self class >> self selector) methodReference asMethodDefinition});
-			path: 'src';
-			initializeDefaultStoreInfoFor: self class;
-			validatePathFor: self class;
-			yourself);
+		add: (((MCSnapshot
+				fromDefinitions: {sampleClass asClassDefinition.
+					sampleMethod methodReference asMethodDefinition})
+				asSquotArtifactForPackage: sampleClass package)
+				path: 'src';
+				initializeDefaultStoreInfoFor: sampleClass;
+				validatePathFor: sampleClass;
+				yourself);
 		buildSnapshot.
 	fileStore restoreToSnapshot: snapshotWithMethod.
 	methodFile := fileStore directory
-			resolve: 'src/', self class package name, '.package/', 
-				self class name, '.class/instance/', self selector, '.st'.
+			resolve: 'src/', sampleClass package name, '.package/', 
+				sampleClass name, '.class/instance/', sampleMethod selector, '.st'.
 	self assert: methodFile exists description: 'method exists'.
 	snapshotWithoutMethod := SquotSnapshot builder
-		add: (SquotArtifact new
-			content: (MCSnapshot
-				fromDefinitions: {self class asClassDefinition});
-			path: 'src';
-			initializeDefaultStoreInfoFor: self class;
-			validatePathFor: self class;
-			yourself);
+		add: (snapshotWithMethod artifacts anyOne copyWithDifferentContent:
+				((MCSnapshot
+					fromDefinitions: {sampleClass asClassDefinition})
+					asSquotArtifactForPackage: sampleClass package) content);
 		buildSnapshot.
 	fileStore restoreToSnapshot: snapshotWithoutMethod.
 	self deny: methodFile exists description: 'method should not exist'.

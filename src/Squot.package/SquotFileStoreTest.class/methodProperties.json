@@ -5,7 +5,7 @@
 		"setUp" : "jr 3/2/2017 17:39",
 		"tearDown" : "jr 2/9/2017 11:51",
 		"testDeleteArtifact" : "jr 2/9/2017 14:28",
-		"testDeleteMethod" : "jr 2/9/2017 12:04",
+		"testDeleteMethod" : "jr 7/28/2017 00:41",
 		"testLazySnapshot" : "jr 7/22/2017 12:44",
 		"testPatchDeleteArtifact" : "jr 7/22/2017 02:25",
 		"testPatchDeleteFolderArtifact" : "jr 7/22/2017 02:29",

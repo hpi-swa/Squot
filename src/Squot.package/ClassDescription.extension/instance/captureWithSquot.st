@@ -1,6 +1,7 @@
 *Squot-trackable
 captureWithSquot
-	self flag: #hack.
-	^ MCSnapshot fromDefinitions: (Array streamContents: [:stream |
-		stream nextPutAll: self classDefinitions.
-		self selectorsDo: [:each | stream nextPut: (MethodReference class: self selector: each) asMethodDefinition]])
+	^ SquotClassShadow
+		forPackageNamed: self category
+		withSnapshot: (MCSnapshot fromDefinitions: (Array streamContents: [:stream |
+			stream nextPutAll: self classDefinitions.
+			self selectorsDo: [:each | stream nextPut: (MethodReference class: self selector: each) asMethodDefinition]]))

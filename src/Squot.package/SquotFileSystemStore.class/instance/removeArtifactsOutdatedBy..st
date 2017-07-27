@@ -1,4 +1,5 @@
 private
 removeArtifactsOutdatedBy: aSnapshot
-	self flag: 'TODO: create a way to keep unchanged artifacts'.
-	self artifactReferencesDo: [:each | each delete"All?"].
+	(aSnapshot patchRelativeToBase: self)
+		paths collect: [:each | self resolve: each]
+			thenDo: [:each | (each exists and: [each ~= directory]) ifTrue: [each deleteAll]].

@@ -26,4 +26,6 @@ testRestoreClass
 		workingCopy loadVersion: latestVersion interactive: false].
 	self deny: sampleClass isObsolete.
 	self assert: firstMethod isInstalled description: 'keep firstMethod'.
-	self assert: addedMethod equals: sampleClass >> addedMethod selector description: 'restore addedMethod'.
+	self assert: addedMethod getSource asString
+		equals: (sampleClass >> addedMethod selector) getSource asString
+		description: 'restore addedMethod'.

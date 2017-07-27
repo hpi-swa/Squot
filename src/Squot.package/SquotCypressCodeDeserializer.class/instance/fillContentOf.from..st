@@ -15,6 +15,6 @@ fillContentOf: anArtifact from: aDirectory
 			MCSnapshot fromDefinitions: (cypressReader definitions
 				select: [:each | (each respondsTo: #className) and: [each className = className]])].
 	anArtifact content: (SquotObjectGraph withSingleShadow:
-		(SquotPackageShadow
+		((isClass ifTrue: [SquotClassShadow] ifFalse: [SquotPackageShadow])
 			forPackageNamed: packageName
 			withSnapshot: snapshot squotWithSortedDefinitions)).

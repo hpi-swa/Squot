@@ -17,7 +17,7 @@
 		"testMergeWithConflicts" : "jr 7/27/2017 23:31",
 		"testMergeWithConflictsChooseRemote" : "jr 7/27/2017 23:27",
 		"testMergeWithoutConflicts" : "jr 7/27/2017 23:25",
-		"testRestoreClass" : "jr 7/22/2017 01:36",
+		"testRestoreClass" : "jr 7/28/2017 00:03",
 		"testRestorePackage" : "jr 7/22/2017 12:42",
 		"testSwitchBranch" : "jr 7/15/2017 16:01",
 		"testSwitchBranchAndMoveOverUnsavedChanges" : "jr 7/15/2017 15:40",

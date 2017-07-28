@@ -2,7 +2,7 @@ commands
 wantAll: gitSignatures capabilities: capabilities
 	| contents response |
 	
-	contents := String streamContents: [ :s|
+	contents := ByteArray streamContents: [ :s|
 		outputStream := s.
 		writer := GitProtocolWriter on: outputStream.
 		writer 

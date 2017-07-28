@@ -16,6 +16,8 @@ copy: sourcePath ifAbsent: absentBlock to: destinationPath ifPresent: presentBlo
 		
 	out := aFilesystem writeStreamOn: destinationPath.
 	buffer := ByteArray new: 1024.
+	in binary.
+	out binary.
 	
 	[ in atEnd ]
 		whileFalse: [ 

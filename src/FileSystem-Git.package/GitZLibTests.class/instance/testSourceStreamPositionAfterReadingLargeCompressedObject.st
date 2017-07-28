@@ -3,7 +3,7 @@ testSourceStreamPositionAfterReadingLargeCompressedObject
 	| zipped encodedStream endlessStream zlibBufferSize counter complex complexReader zipReader zipper afterZipped |
 	"create a compressed stream that is longer than the buffer of the InflateStream implementation"
 	zipper := ZLibWriteStream on: ByteArray new.
-	zipper nextPutAll: '0'; close.
+	zipper nextPut: $0 asInteger; close.
 	encodedStream := zipper encodedStream contents readStream.
 	endlessStream := EndlessStream on: encodedStream.
 	zlibBufferSize := (GitZLibReadStream on: endlessStream) sourceLimit.

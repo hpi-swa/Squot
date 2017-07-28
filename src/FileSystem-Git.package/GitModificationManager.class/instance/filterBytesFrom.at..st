@@ -3,7 +3,7 @@ filterBytesFrom: aFileStream at: path
 	| crlf |
 	aFileStream binary.
 	(self shouldTreatFileAsBinary: aFileStream at: path) ifTrue: [^ aFileStream contents].
-	crlf := String crlf as: ByteArray.
+	crlf := String crlf asByteArray.
 	^ ByteArray streamContents: [:stream |
 		[aFileStream atEnd] whileFalse:
 			[stream nextPutAll: (aFileStream upToAnyOf: crlf).

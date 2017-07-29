@@ -1,3 +1,3 @@
 Squot-diff-testing
 squotHasChanges
-	^ self value squotHasChanges
+	self subclassResponsibility

@@ -2,9 +2,9 @@
 	"class" : {
 		"key:" : "jr 7/27/2017 00:28" },
 	"instance" : {
+		"applyTo:with:" : "jr 7/29/2017 21:38",
 		"asSquotHierarchicalDiffWith:" : "jr 7/26/2017 23:59",
 		"hierarchicalDiffTitle" : "jr 7/26/2017 23:58",
 		"printDescriptionOn:" : "jr 7/26/2017 23:58",
 		"squotApplyTo:with:" : "jr 7/26/2017 23:58",
-		"squotApplyToLoaded:with:" : "jr 7/26/2017 23:57",
 		"squotHasChanges" : "jr 7/26/2017 23:56" } }

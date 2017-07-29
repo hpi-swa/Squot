@@ -1,3 +1,3 @@
 patching
-squotApplyTo: aShadow with: aPatcher
+applyTo: aShadow with: aPatcher
 	^ self slotToBeRemoved removeFrom: aShadow with: aPatcher

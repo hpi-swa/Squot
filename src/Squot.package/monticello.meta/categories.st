@@ -2,6 +2,7 @@ SystemOrganization addCategory: #'Squot-Interfaces'!
 SystemOrganization addCategory: #'Squot-Core'!
 SystemOrganization addCategory: #'Squot-Shadows'!
 SystemOrganization addCategory: #'Squot-Diffs'!
+SystemOrganization addCategory: #'Squot-Diffs-Generic'!
 SystemOrganization addCategory: #'Squot-Diffs-Hierarchical'!
 SystemOrganization addCategory: #'Squot-Patching'!
 SystemOrganization addCategory: #'Squot-for-Packages'!

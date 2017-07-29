@@ -2,5 +2,9 @@
 	"class" : {
 		 },
 	"instance" : {
+		"addAssociation:" : "jr 7/29/2017 22:23",
+		"addAssociation:with:" : "jr 7/30/2017 00:17",
 		"diffClass" : "jr 6/12/2017 13:05",
-		"initializeHashedItems:with:" : "jr 6/27/2017 16:52" } }
+		"initializeHashedItems:with:" : "jr 7/29/2017 23:59",
+		"materializeItemsIn:with:" : "jr 7/29/2017 23:12",
+		"removeAssociation:" : "jr 7/29/2017 22:25" } }

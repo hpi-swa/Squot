@@ -7,6 +7,7 @@
 		"diff:againstItselfAfter:" : "jr 6/22/2017 10:34",
 		"expectedFailures" : "jr 7/26/2017 23:16",
 		"setUp" : "jr 6/22/2017 01:09",
+		"testAddObjects" : "jr 7/29/2017 18:07",
 		"testArrayOfDifferentlyTypedObjects" : "jr 7/29/2017 17:12",
 		"testArrayOfIntegers" : "jr 6/23/2017 23:49",
 		"testBooleans" : "jr 7/21/2017 01:51",
@@ -14,7 +15,7 @@
 		"testDeepChanges" : "jr 7/26/2017 23:30",
 		"testDeepChanges2" : "jr 7/26/2017 23:31",
 		"testDictionariesWithComplexKeys" : "jr 6/27/2017 17:13",
-		"testDictionariesWithSharedAssociations" : "jr 6/27/2017 17:10",
+		"testDictionariesWithSharedAssociations" : "jr 7/30/2017 00:12",
 		"testDictionary" : "jr 7/17/2017 00:03",
 		"testEmptyObjects" : "jr 6/17/2017 22:11",
 		"testEqualRectangles" : "jr 7/20/2017 16:54",
@@ -24,5 +25,5 @@
 		"testRectangles" : "jr 6/23/2017 23:52",
 		"testReferenceSwap" : "jr 6/23/2017 23:51",
 		"testReplacedObject2" : "jr 7/20/2017 16:59",
-		"testSet" : "jr 7/17/2017 00:04",
+		"testSet" : "jr 7/30/2017 00:13",
 		"testSmallIntegers" : "jr 7/21/2017 01:52" } }

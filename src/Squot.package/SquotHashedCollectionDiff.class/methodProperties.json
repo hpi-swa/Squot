@@ -2,6 +2,8 @@
 	"class" : {
 		 },
 	"instance" : {
+		"addTransitiveChangeIn:" : "jr 7/30/2017 00:06",
+		"applyTo:with:" : "jr 7/29/2017 22:06",
 		"diff:against:with:" : "jr 6/22/2017 13:06",
 		"diffItems:againstThoseOf:with:" : "jr 6/22/2017 13:05",
 		"itemChanges" : "jr 6/25/2017 22:25",

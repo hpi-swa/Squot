@@ -8,6 +8,6 @@ materializeGraph: anObjectGraph from: anArtifact replacing: anObject
 		rematerialize: anObjectGraph startShadow].
 	anObject ifNotNil:
 		[self haltIf: anObject ~~ materializedObject.
-		anObject become: materializedObject.
+		anObject becomeForward: materializedObject.
 		^ anObject].
 	^ materializedObject

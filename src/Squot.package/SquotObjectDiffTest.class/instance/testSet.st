@@ -9,7 +9,6 @@ testSet
 		stringHolder contents: 'fooo'].
 	self assert: diff squotHasChanges.
 	setDiff := diff diffForObjectNamed: diff startObjectName.
-	self assert: setDiff itemChanges size == 2. "addition, removal"
 	addition := setDiff itemChanges associations detect: [:each | each class == SquotSlotAddition]
 		ifNone: [self fail: 'no item addition'].
 	self assert: addition slotToBeAdded value value == 3.

@@ -5,3 +5,5 @@ testCyclicReferences
 	subject at: 1 put: subject.
 	restored := self captureAndRestoreWithoutEqualityTest: subject.
 	self assert: (restored at: 1) == restored.
+	self assert: (capturer objectGraph nameOf: subject)
+		equals: (materializer objectGraph nameOf: restored).

@@ -17,6 +17,8 @@
 		"initialize" : "jr 7/16/2017 16:14",
 		"insideASegment" : "jr 6/1/2017 13:16",
 		"mapUniClasses" : "jr 6/8/2017 15:06",
+		"nameOf:" : "jr 7/29/2017 23:01",
+		"nameOf:ifAbsent:" : "jr 7/29/2017 23:02",
 		"newNameFor:" : "jr 6/27/2017 17:49",
 		"objectGraph" : "jr 6/27/2017 17:54",
 		"project" : "jr 6/20/2017 00:35",

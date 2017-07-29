@@ -1,4 +1,6 @@
 rematerializing
 materializeAs: aHashedCollection with: aMaterializer
-	itemSlots do: [:each | each materializeIn: aHashedCollection with: aMaterializer].
-	^ aHashedCollection
+	| collection |
+	collection := super materializeAs: aHashedCollection with: aMaterializer.
+	self materializeItemsIn: aHashedCollection with: aMaterializer.
+	^ collection

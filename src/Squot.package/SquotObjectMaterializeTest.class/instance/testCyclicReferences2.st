@@ -6,3 +6,7 @@ testCyclicReferences2
 	a var2: b.
 	restored := self captureAndRestoreWithoutEqualityTest: a.
 	self assert: restored var2 var2 == restored.
+	self assert: (capturer objectGraph nameOf: a)
+		equals: (materializer objectGraph nameOf: restored).
+	self assert: (capturer objectGraph nameOf: a var2)
+		equals: (materializer objectGraph nameOf: restored var2).

@@ -2,7 +2,6 @@
 	"class" : {
 		 },
 	"instance" : {
+		"addTransitiveChangeIn:" : "jr 7/30/2017 00:06",
 		"asSquotHierarchicalDiff" : "jr 6/25/2017 21:32",
-		"asSquotHierarchicalDiffWith:" : "jr 7/21/2017 02:47",
-		"squotApplyToLoaded:" : "jr 6/25/2017 21:33",
-		"squotApplyToLoaded:with:" : "jr 7/16/2017 23:45" } }
+		"asSquotHierarchicalDiffWith:" : "jr 7/21/2017 02:47" } }

@@ -1,4 +1,4 @@
 accessing
 newNameFragment
-	"Because dictionary slots capture Associations and these can have arbitrarily complex keys, and have an identity, answer something unique..."
-	^ UUID new
+	"The associations do not have an ordering in general (they do have for OrderedDictionary, but we do not specialize for it here)."
+	^ 'an Association'

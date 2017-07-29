@@ -1,4 +1,4 @@
-accessing
+as yet unclassified
 newNameFragment
-	"Because hashed collection slots capture objects only by themselves, answer something unique..."
-	^ UUID new
+	"There are no wrappers around hashed collection items and they do not have indices..."
+	^ 'item'

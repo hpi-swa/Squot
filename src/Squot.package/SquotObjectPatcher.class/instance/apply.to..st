@@ -2,7 +2,7 @@ as yet unclassified
 apply: aDiff to: aShadow
 	| patched placeholder |
 	patchedObjects at: aShadow undecorated
-		ifPresent: [:it | ^ it]
+		ifPresent: [:it | self isThisEverCalled. ^ it]
 		ifAbsentPut: [placeholder := SquotPlaceholder new].
 	patched := aDiff squotApplyTo: aShadow with: self.
 	patchedObjects at: aShadow put: patched.

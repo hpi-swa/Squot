@@ -3,9 +3,8 @@
 		"absentPrototypeForSquot" : "jr 6/2/2017 15:51",
 		"squotRelevantInstVars" : "jr 7/16/2017 13:02" },
 	"instance" : {
-		"absentPrototypeForSquot" : "jr 6/16/2017 14:15",
+		"absentPrototypeForSquot" : "jr 7/29/2017 17:05",
 		"asSquotDiffOnlyLeft" : "jr 6/2/2017 16:31",
-		"asSquotDiffOnlyRight" : "jr 6/2/2017 16:31",
 		"asSquotSlotDiffWithKey:" : "jr 6/18/2017 12:26",
 		"browseFromSquot:" : "jr 5/13/2017 21:40",
 		"captureWithSquot" : "jr 7/16/2017 00:16",
@@ -16,7 +15,6 @@
 		"squotAddTransientStoreInfoTo:" : "jr 7/16/2017 18:57",
 		"squotCaptureSlotsIn:with:" : "jr 7/16/2017 11:38",
 		"squotInitializeStoreInfo:" : "jr 7/16/2017 12:29",
-		"squotMaterializeWith:from:replacing:" : "jr 4/24/2017 20:32",
 		"squotPreferredMaterializer" : "jr 4/7/2017 16:44",
 		"squotPreferredSerializer" : "jr 1/5/2017 14:35",
 		"squotRelevantInstVars" : "jr 7/20/2017 11:45",

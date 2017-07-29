@@ -1,6 +1,6 @@
 testing
 testArraySwap
-	| original target |
+	| a b original target |
 	a := 'foo' copy.
 	b := 'bar' copy.
 	original := {a. b}.

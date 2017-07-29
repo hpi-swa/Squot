@@ -7,6 +7,7 @@
 		"diff:againstItselfAfter:" : "jr 6/22/2017 10:34",
 		"expectedFailures" : "jr 7/26/2017 23:16",
 		"setUp" : "jr 6/22/2017 01:09",
+		"testArrayOfDifferentlyTypedObjects" : "jr 7/29/2017 17:12",
 		"testArrayOfIntegers" : "jr 6/23/2017 23:49",
 		"testBooleans" : "jr 7/21/2017 01:51",
 		"testCyclicReferences" : "jr 6/25/2017 22:22",

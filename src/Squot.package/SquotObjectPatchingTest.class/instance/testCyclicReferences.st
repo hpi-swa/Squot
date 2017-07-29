@@ -10,6 +10,7 @@ testCyclicReferences
 	target := capturer capture: array.
 	"make up a new working copy"
 	array := SquotShadowMaterializer new rematerialize: original startShadow.
+	self assert: (array at: 1) == array.
 	self assert: 2 equals: (array at: 2).
 	self patch: array to: target startObject.
 	self assert: (array at: 1) == array.

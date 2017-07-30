@@ -4,5 +4,5 @@ capture: anObject
 		at: anObject
 		put: (SquotObjectCapturer new
 			registry: self objectRegistry;
-			capture: anObject;
+			captureGraph: anObject;
 			objectGraph)

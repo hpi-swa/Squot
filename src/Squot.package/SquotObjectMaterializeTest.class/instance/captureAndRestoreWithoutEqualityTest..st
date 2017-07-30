@@ -1,7 +1,7 @@
 testing
 captureAndRestoreWithoutEqualityTest: anObject
 	| restored graph |
-	graph := capturer capture: anObject.
+	graph := capturer captureGraph: anObject.
 	restored := materializer
 		sourceGraph: graph;
 		targetGraph: SquotMutableObjectGraph new;

@@ -6,9 +6,9 @@
 		 ],
 	"commentStamp" : "",
 	"instvars" : [
-		"objects" ],
-	"name" : "SquotObjectGraph2",
+		"graphForStorage" ],
+	"name" : "SquotObjectRegistry",
 	"pools" : [
 		 ],
-	"super" : "SquotShadowGraph",
+	"super" : "Object",
 	"type" : "normal" }

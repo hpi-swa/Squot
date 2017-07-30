@@ -10,5 +10,5 @@
 	"name" : "SquotMutableObjectGraph",
 	"pools" : [
 		 ],
-	"super" : "SquotObjectGraph2",
+	"super" : "SquotObjectGraph",
 	"type" : "normal" }

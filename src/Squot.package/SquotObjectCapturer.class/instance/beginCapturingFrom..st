@@ -17,5 +17,5 @@ beginCapturingFrom: anObject
 	state := nil.
 	self convertSlotValues. "redirect slots from live objects to shadows"
 	objectGraph startShadow: (convertedObjects at: anObject).
-	^ objectGraph as: SquotObjectGraph2]
+	^ objectGraph as: SquotObjectGraph]
 	ensure: [state := nil]

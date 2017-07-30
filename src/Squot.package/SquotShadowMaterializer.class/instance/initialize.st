@@ -1,5 +1,5 @@
 initialize-release
 initialize
 	convertedObjects := IdentityDictionary new.
-	objectRegistry := SquotObjectRegistry2 new.
+	objectRegistry := SquotObjectRegistry new.
 	targetGraph := SquotMutableObjectGraph new.

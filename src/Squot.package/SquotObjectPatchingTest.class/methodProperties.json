@@ -4,7 +4,7 @@
 	"instance" : {
 		"patch:to:" : "jr 7/30/2017 13:19",
 		"patchedFrom:to:" : "jr 7/30/2017 15:04",
-		"setUp" : "jr 7/30/2017 02:02",
+		"setUp" : "jr 7/30/2017 22:04",
 		"testAddObjects" : "jr 7/30/2017 02:22",
 		"testArrayGrow" : "jr 6/27/2017 17:21",
 		"testArrayShrink" : "jr 6/27/2017 17:21",

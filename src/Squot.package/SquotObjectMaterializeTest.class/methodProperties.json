@@ -4,7 +4,7 @@
 	"instance" : {
 		"captureAndRestore:" : "jr 7/20/2017 22:10",
 		"captureAndRestoreWithoutEqualityTest:" : "jr 7/30/2017 15:04",
-		"setUp" : "jr 7/30/2017 02:02",
+		"setUp" : "jr 7/30/2017 22:04",
 		"testArrayOfIntegers" : "jr 6/20/2017 01:25",
 		"testBooleans" : "jr 6/20/2017 01:26",
 		"testCyclicReferences" : "jr 7/29/2017 23:51",

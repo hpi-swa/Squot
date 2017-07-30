@@ -1,5 +1,5 @@
 running
 setUp
-	objectRegistry := SquotObjectRegistry2 new.
+	objectRegistry := SquotObjectRegistry new.
 	capturer := SquotObjectCapturer new.
 	capturer registry: objectRegistry.

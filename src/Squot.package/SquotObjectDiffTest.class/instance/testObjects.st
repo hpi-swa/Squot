@@ -9,7 +9,7 @@ testObjects
 	shadow2OfC := capturer captureStandalone: c.
 	diff := shadow1OfC squotDiffAgainst: shadow2OfC.
 	self assert: diff squotHasChanges.
-	diffForC := diff diffForObjectNamed: diff startObjectName ifAbsent: [].
+	diffForC := diff startDiff.
 	self assert: (diffForC slotChanges associationAt: 'var2') class == SquotSlotTransitiveChange.
 	self assert: (diff diffForObjectNamed: (objectRegistry nameOf: a) ifAbsent: []) isNil
 		description: 'no diff for a'.

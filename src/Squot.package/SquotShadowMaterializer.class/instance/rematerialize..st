@@ -4,5 +4,8 @@ rematerialize: aShadow
 		ifAbsentPut: [ | materialized |
 			materialized := self findOrCreateAndRematerialize: aShadow.
 			materialized shouldHaveNameAssignedBySquot ifTrue:
-				[targetGraph ifNotNil: [targetGraph assign: (sourceGraph nameOf: aShadow undecorated) to: materialized]].
+				[(targetGraph notNil and: [sourceGraph notNil]) ifTrue:
+					[targetGraph
+						assign: (sourceGraph nameOf: aShadow undecorated)
+						to: materialized]].
 			materialized]

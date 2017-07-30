@@ -1,6 +1,6 @@
 private
 beginCapturingFrom: anObject
-	| decorated nameOfAnObject |
+	| decorated |
 	[objectGraph := SquotMutableObjectGraph new.
 	objectGraph delegateRegistry: objectRegistry.
 	state := #enumerating.
@@ -9,14 +9,13 @@ beginCapturingFrom: anObject
 	visited removeAll.
 	slotsToConvert removeAll.
 	decorated := SquotCreatorDecorator on: anObject creator: nil slot: nil.
-	objectGraph nameOf: anObject ifAbsentAssign: [self newNameFor: decorated].
+	anObject shouldHaveNameAssignedBySquot
+		ifTrue: [objectGraph assign: (objectRegistry nameOf: anObject ifAbsent: [self newNameFor: decorated]) to: anObject]
+		ifFalse: [objectGraph assign: objectGraph class anonymousObjectName to: anObject].
 	toBeVisited add: decorated.
 	self followReferences. "give names to objects and create shadows"
-	state := #capturing.
-	visited removeAll.
-	toBeVisited add: anObject.
+	state := nil.
 	self convertSlotValues. "redirect slots from live objects to shadows"
-	nameOfAnObject := objectGraph nameOf: anObject ifAbsent: [nil].
 	objectGraph startShadow: (convertedObjects at: anObject).
 	^ objectGraph as: SquotObjectGraph2]
 	ensure: [state := nil]

@@ -4,7 +4,7 @@ withSingleShadow: aShadow
 		delegateRegistry: SquotActiveObjectRegistry value;
 		assign: (SquotActiveObjectRegistry value
 				ifNotNil: [SquotActiveObjectRegistry nameOf: aShadow]
-				ifNil: [SquotObjectCapturer new rootName])
+				ifNil: [self anonymousObjectName])
 		toShadow: aShadow;
 		startShadow: aShadow;
 		as: self

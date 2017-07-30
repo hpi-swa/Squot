@@ -8,4 +8,5 @@
 		"squotAddTransientStoreInfoTo:" : "jr 7/22/2017 00:16",
 		"squotPreferredSerializer" : "jr 1/24/2017 14:13",
 		"squotRemoveTransientStoreInfoFrom:" : "jr 3/5/2017 17:24",
-		"squotRewritePath:with:" : "jr 1/25/2017 17:26" } }
+		"squotRewritePath:with:" : "jr 1/25/2017 17:26",
+		"squotShouldKeepIdentity" : "jr 7/30/2017 13:54" } }

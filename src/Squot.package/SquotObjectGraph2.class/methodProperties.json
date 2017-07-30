@@ -2,9 +2,11 @@
 	"class" : {
 		 },
 	"instance" : {
+		"applyDiff:toStartObjectWith:" : "jr 7/30/2017 17:43",
 		"asShadowGraph" : "jr 7/30/2017 01:37",
 		"initialize" : "jr 7/30/2017 01:04",
 		"objectNamed:" : "jr 7/30/2017 01:03",
 		"objectNamed:ifAbsent:" : "jr 7/30/2017 01:03",
 		"postCopy" : "jr 7/30/2017 01:03",
-		"startObject" : "jr 7/30/2017 01:03" } }
+		"startObject" : "jr 7/30/2017 01:03",
+		"startObjectIfAbsent:" : "jr 7/30/2017 18:00" } }

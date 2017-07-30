@@ -1,7 +1,10 @@
 testing
 patch: original to: target
 	"Modify original to be like target"
-	| diff originalGraph |
+	| diff originalGraph targetGraph |
 	originalGraph := capturer captureGraph: original.
-	diff := originalGraph squotDiffAgainst: (capturer captureGraph: target).
+	original become: target.
+	[targetGraph := capturer captureGraph: original]
+	ensure: [target become: original].
+	diff := originalGraph squotDiffAgainst: targetGraph.
 	^ (patcher apply: diff toLoadedGraph: originalGraph mutableCopy) startObject

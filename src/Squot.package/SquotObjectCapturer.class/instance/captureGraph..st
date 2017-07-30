@@ -1,9 +1,3 @@
-capturing dispatch
+public capturing
 captureGraph: anObject
-	| previousState |
-	state
-		ifNotNil: [previousState := state.
-			[state := nil.
-			^ self capture: anObject]
-			ensure: [state := previousState]]
-		ifNil: [^ self capture: anObject]
+	^ self beginCapturingFrom: anObject

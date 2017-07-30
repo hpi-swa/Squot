@@ -1,3 +1,3 @@
-capturing
+public capturing
 captureStandalone: anObject
-	^ (self capture: anObject) startShadow
+	^ (self captureGraph: anObject) startShadow

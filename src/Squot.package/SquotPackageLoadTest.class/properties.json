@@ -1,0 +1,22 @@
+{
+	"category" : "Squot-Tests",
+	"classinstvars" : [
+		 ],
+	"classtraitcomposition" : "TTestCaseSuppressingProgressDisplay classTrait",
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"imageStore",
+		"materializer",
+		"objectRegistry",
+		"classFactory",
+		"class",
+		"className",
+		"package" ],
+	"name" : "SquotPackageLoadTest",
+	"pools" : [
+		 ],
+	"super" : "TestCase",
+	"traitcomposition" : "TTestCaseSuppressingProgressDisplay",
+	"type" : "normal" }

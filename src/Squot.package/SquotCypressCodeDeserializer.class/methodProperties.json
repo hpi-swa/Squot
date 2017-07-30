@@ -2,7 +2,7 @@
 	"class" : {
 		"canReadObjectSerializedBy:" : "jr 1/18/2017 16:29" },
 	"instance" : {
-		"fillContentOf:from:" : "jr 7/28/2017 00:15",
+		"fillContentOf:from:" : "jr 7/30/2017 02:08",
 		"initialize" : "jr 1/18/2017 17:17",
 		"initializeCypressReaderToReadClassFrom:" : "jr 7/22/2017 02:19",
 		"initializeCypressReaderToReadPackageFrom:" : "jr 7/22/2017 02:18",

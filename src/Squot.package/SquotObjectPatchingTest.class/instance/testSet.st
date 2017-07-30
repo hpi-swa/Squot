@@ -11,7 +11,8 @@ testSet
 	diff := graphBefore squotDiffAgainst: graphAfter.
 	"when"
 	materializer := SquotShadowMaterializer new.
-	materializer objectGraph: graphBefore copy.
+	materializer sourceGraph: graphBefore.
+	materializer targetGraph: graphBefore asShadowGraph mutableCopy.
 	newSet := materializer rematerialize: graphBefore startShadow.
 	removedItem := newSet detect: [:each | each = 'foo'].
 	newLoadedGraph := materializer objectGraph.

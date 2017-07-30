@@ -1,0 +1,3 @@
+copying
+mutableCopy
+	^ self copy

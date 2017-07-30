@@ -2,17 +2,17 @@
 	"class" : {
 		 },
 	"instance" : {
-		"patch:to:" : "jr 7/20/2017 23:31",
-		"patchedFrom:to:" : "jr 7/20/2017 22:45",
-		"setUp" : "jr 6/25/2017 14:30",
-		"testAddObjects" : "jr 7/29/2017 22:31",
+		"patch:to:" : "jr 7/30/2017 02:31",
+		"patchedFrom:to:" : "jr 7/30/2017 02:23",
+		"setUp" : "jr 7/30/2017 02:02",
+		"testAddObjects" : "jr 7/30/2017 02:22",
 		"testArrayGrow" : "jr 6/27/2017 17:21",
 		"testArrayShrink" : "jr 6/27/2017 17:21",
 		"testArraySwap" : "jr 7/29/2017 17:16",
 		"testCyclicReferences" : "jr 7/29/2017 17:18",
-		"testDictionary" : "jr 7/29/2017 23:55",
+		"testDictionary" : "jr 7/30/2017 02:21",
 		"testNestedArray" : "jr 6/27/2017 17:21",
 		"testReplacedObject2" : "jr 7/20/2017 17:02",
-		"testSet" : "jr 7/29/2017 22:51",
+		"testSet" : "jr 7/30/2017 02:21",
 		"testTypeChange" : "jr 6/15/2017 16:23",
 		"testUnchangedObjectsAreKept" : "jr 6/15/2017 15:53" } }

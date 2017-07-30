@@ -14,7 +14,8 @@ testDictionary
 	diff := graphBefore squotDiffAgainst: graphAfter.
 	"when"
 	materializer := SquotShadowMaterializer new.
-	materializer objectGraph: graphBefore copy.
+	materializer sourceGraph: graphBefore.
+	materializer targetGraph: graphBefore asShadowGraph mutableCopy.
 	newDict := materializer rematerialize: graphBefore startShadow.
 	changedAssociation := newDict associationAt: 1.
 	removedAssociation := newDict associationAt: 'foo'.

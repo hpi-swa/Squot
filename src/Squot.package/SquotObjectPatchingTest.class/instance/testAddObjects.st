@@ -7,7 +7,8 @@ testAddObjects
 	graphAfter := capturer captureGraph: object.
 	diff := graphBefore squotDiffAgainst: graphAfter.
 	materializer := SquotShadowMaterializer new.
-	materializer objectGraph: graphBefore copy.
+	materializer sourceGraph: graphBefore.
+	materializer targetGraph: graphBefore asShadowGraph mutableCopy.
 	newObject := materializer rematerialize: graphBefore startShadow.
 	newLoadedGraph := materializer objectGraph.
 	diff squotApplyToLoaded: newLoadedGraph.

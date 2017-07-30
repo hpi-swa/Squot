@@ -4,7 +4,8 @@ materializeGraph: anObjectGraph from: anArtifact replacing: anObject
 	(self environmentForLoadedArtifact: anArtifact) beCurrentDuring:
 	[materializedObject := SquotShadowMaterializer new
 		registry: self objectRegistry;
-		objectGraph: anObjectGraph;
+		sourceGraph: anObjectGraph;
+		targetGraph: anObjectGraph mutableCopy;
 		rematerialize: anObjectGraph startShadow].
 	anObject ifNotNil:
 		[self haltIf: anObject ~~ materializedObject.

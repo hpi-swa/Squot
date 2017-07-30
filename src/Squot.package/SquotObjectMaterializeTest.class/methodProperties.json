@@ -3,8 +3,8 @@
 		 },
 	"instance" : {
 		"captureAndRestore:" : "jr 7/20/2017 22:10",
-		"captureAndRestoreWithoutEqualityTest:" : "jr 7/20/2017 22:09",
-		"setUp" : "jr 7/16/2017 23:28",
+		"captureAndRestoreWithoutEqualityTest:" : "jr 7/30/2017 02:48",
+		"setUp" : "jr 7/30/2017 02:02",
 		"testArrayOfIntegers" : "jr 6/20/2017 01:25",
 		"testBooleans" : "jr 6/20/2017 01:26",
 		"testCyclicReferences" : "jr 7/29/2017 23:51",

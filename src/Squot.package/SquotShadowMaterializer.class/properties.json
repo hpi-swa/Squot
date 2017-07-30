@@ -8,7 +8,8 @@
 	"instvars" : [
 		"convertedObjects",
 		"objectRegistry",
-		"objectGraph" ],
+		"sourceGraph",
+		"targetGraph" ],
 	"name" : "SquotShadowMaterializer",
 	"pools" : [
 		 ],

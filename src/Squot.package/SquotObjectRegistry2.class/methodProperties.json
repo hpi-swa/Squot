@@ -1,0 +1,14 @@
+{
+	"class" : {
+		 },
+	"instance" : {
+		"add:of:asCreatorOf:" : "jr 7/30/2017 01:56",
+		"answer:whenAskedForTheNameOf:" : "jr 7/30/2017 01:57",
+		"assign:to:" : "jr 7/30/2017 01:57",
+		"creatorOf:ifAbsentPut:of:" : "jr 7/30/2017 01:55",
+		"initialize" : "jr 7/30/2017 01:40",
+		"nameOf:" : "jr 7/30/2017 01:55",
+		"nameOf:ifAbsent:" : "jr 7/30/2017 01:56",
+		"nameOf:ifAbsentAssign:" : "jr 7/30/2017 01:56",
+		"objectNamed:" : "jr 7/30/2017 01:56",
+		"objectNamed:ifAbsent:" : "jr 7/30/2017 01:56" } }

@@ -1,3 +1,3 @@
 initialize-release
 objectGraph
-	^ objectGraph
+	^ targetGraph

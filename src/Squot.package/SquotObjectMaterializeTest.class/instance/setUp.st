@@ -1,6 +1,6 @@
 testing
 setUp
-	objectRegistry := SquotObjectRegistry new.
+	objectRegistry := SquotObjectRegistry2 new.
 	capturer := SquotObjectCapturer new.
 	capturer registry: objectRegistry.
 	materializer := SquotShadowMaterializer new.

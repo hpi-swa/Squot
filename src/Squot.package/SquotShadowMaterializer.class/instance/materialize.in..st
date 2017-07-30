@@ -2,8 +2,8 @@ converting
 materialize: aShadow in: anObject
 	| materializedObject |
 	convertedObjects at: aShadow undecorated put: anObject.
-	(anObject shouldHaveNameAssignedBySquot and: [objectGraph notNil]) ifTrue:
-		[objectRegistry nameOf: anObject ifAbsentAssign: [objectGraph nameOf: aShadow]].
+	(anObject shouldHaveNameAssignedBySquot and: [sourceGraph notNil]) ifTrue:
+		[objectRegistry nameOf: anObject ifAbsentAssign: [sourceGraph nameOf: aShadow]].
 	materializedObject := (aShadow materializeAs: anObject with: self)
 		comeFullyUpOnReload: self.
 	"self haltIf: (anObject ~~ materializedObject

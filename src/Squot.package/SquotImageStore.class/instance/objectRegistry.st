@@ -1,3 +1,3 @@
 private
 objectRegistry
-	^ objectRegistry ifNil: [objectRegistry := SquotObjectRegistry new]
+	^ objectRegistry ifNil: [objectRegistry := SquotObjectRegistry2 new]

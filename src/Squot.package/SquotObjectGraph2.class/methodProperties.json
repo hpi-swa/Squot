@@ -1,0 +1,10 @@
+{
+	"class" : {
+		 },
+	"instance" : {
+		"asShadowGraph" : "jr 7/30/2017 01:37",
+		"initialize" : "jr 7/30/2017 01:04",
+		"objectNamed:" : "jr 7/30/2017 01:03",
+		"objectNamed:ifAbsent:" : "jr 7/30/2017 01:03",
+		"postCopy" : "jr 7/30/2017 01:03",
+		"startObject" : "jr 7/30/2017 01:03" } }

@@ -1,7 +1,7 @@
 private
 beginCapturingFrom: anObject
 	| decorated nameOfAnObject |
-	[objectGraph := SquotObjectGraph new.
+	[objectGraph := SquotMutableObjectGraph new.
 	objectGraph delegateRegistry: objectRegistry.
 	state := #enumerating.
 	toBeVisited removeAll.
@@ -18,5 +18,5 @@ beginCapturingFrom: anObject
 	self convertSlotValues. "redirect slots from live objects to shadows"
 	nameOfAnObject := objectGraph nameOf: anObject ifAbsent: [nil].
 	objectGraph startShadow: (convertedObjects at: anObject).
-	^ objectGraph]
+	^ objectGraph as: SquotObjectGraph2]
 	ensure: [state := nil]

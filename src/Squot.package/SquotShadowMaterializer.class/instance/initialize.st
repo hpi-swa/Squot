@@ -1,4 +1,4 @@
 initialize-release
 initialize
 	convertedObjects := IdentityDictionary new.
-	objectRegistry := SquotObjectRegistry new.
+	objectRegistry := SquotObjectRegistry2 new.

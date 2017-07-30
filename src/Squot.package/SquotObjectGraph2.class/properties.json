@@ -1,0 +1,14 @@
+{
+	"category" : "Squot-Shadows",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"objects" ],
+	"name" : "SquotObjectGraph2",
+	"pools" : [
+		 ],
+	"super" : "SquotShadowGraph",
+	"type" : "normal" }

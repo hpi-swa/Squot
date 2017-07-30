@@ -1,7 +1,7 @@
 *Squot-shadow
 asSquotArtifactForPackage: aPackageInfo
 	^ SquotArtifact new
-		content: (SquotObjectGraph withSingleShadow:
+		content: (SquotShadowGraph withSingleShadow:
 			(SquotPackageShadow
 				forPackageNamed: aPackageInfo packageName
 				withSnapshot: self));

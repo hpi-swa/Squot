@@ -3,7 +3,7 @@
 		 },
 	"instance" : {
 		"beginCapturingFrom:" : "jr 8/2/2017 15:31",
-		"capture:" : "jr 7/30/2017 15:05",
+		"capture:" : "jr 8/2/2017 16:57",
 		"capture:as:" : "jr 7/30/2017 14:06",
 		"capture:asValueOfSlot:" : "jr 7/30/2017 14:07",
 		"captureBits:" : "jr 6/20/2017 00:40",
@@ -11,7 +11,7 @@
 		"capturePrimitiveValue:" : "jr 6/17/2017 21:39",
 		"captureStandalone:" : "jr 7/30/2017 15:04",
 		"convertSlotValues" : "jr 7/16/2017 16:20",
-		"enumerate:shadowFactory:" : "jr 7/20/2017 17:45",
+		"enumerate:shadowFactory:" : "jr 8/2/2017 16:39",
 		"follow:" : "jr 8/2/2017 15:26",
 		"followReferences" : "jr 6/20/2017 16:33",
 		"initialize" : "jr 8/2/2017 15:31",

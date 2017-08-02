@@ -1,3 +1,10 @@
 capturing
 capture: anObject
-	^ anObject captureWithSquot: self
+	| shadow decoratedShadow |
+	shadow := anObject captureWithSquot: self.
+	decoratedShadow := SquotNameDecorator
+			on: shadow
+			withName: (objectGraph nameOf: capturedObject ifAbsent: []).
+	convertedObjects at: capturedObject put: decoratedShadow.
+	objectGraph addShadow: shadow of: capturedObject.
+	^ shadow

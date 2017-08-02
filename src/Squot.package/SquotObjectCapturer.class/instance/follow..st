@@ -2,8 +2,7 @@ private
 follow: aDecoratedObject
 	| undecorated |
 	undecorated := aDecoratedObject undecorated.
-	(visited includes: undecorated) ifTrue: [^ self].
-	visited add: undecorated.
+	(convertedObjects includesKey: undecorated) ifTrue: [^ self].
 	capturedObject := undecorated.
 	self capture:
 		(replacedObjects

@@ -2,7 +2,7 @@
 	"class" : {
 		 },
 	"instance" : {
-		"beginCapturingFrom:" : "jr 7/30/2017 22:04",
+		"beginCapturingFrom:" : "jr 8/2/2017 15:31",
 		"capture:" : "jr 7/30/2017 15:05",
 		"capture:as:" : "jr 7/30/2017 14:06",
 		"capture:asValueOfSlot:" : "jr 7/30/2017 14:07",
@@ -12,9 +12,9 @@
 		"captureStandalone:" : "jr 7/30/2017 15:04",
 		"convertSlotValues" : "jr 7/16/2017 16:20",
 		"enumerate:shadowFactory:" : "jr 7/20/2017 17:45",
-		"follow:" : "jr 7/30/2017 14:07",
+		"follow:" : "jr 8/2/2017 15:26",
 		"followReferences" : "jr 6/20/2017 16:33",
-		"initialize" : "jr 7/30/2017 22:03",
+		"initialize" : "jr 8/2/2017 15:31",
 		"insideASegment" : "jr 6/1/2017 13:16",
 		"mapUniClasses" : "jr 6/8/2017 15:06",
 		"nameOf:" : "jr 7/29/2017 23:01",

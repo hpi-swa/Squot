@@ -6,7 +6,6 @@ beginCapturingFrom: anObject
 	state := #enumerating.
 	toBeVisited removeAll.
 	convertedObjects removeAll.
-	visited removeAll.
 	slotsToConvert removeAll.
 	decorated := SquotCreatorDecorator on: anObject creator: nil slot: nil.
 	anObject shouldHaveNameAssignedBySquot

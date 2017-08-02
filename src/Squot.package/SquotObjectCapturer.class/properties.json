@@ -9,7 +9,6 @@
 		"convertedObjects",
 		"copiedObjects",
 		"toBeVisited",
-		"visited",
 		"objectRegistry",
 		"state",
 		"enumeratedObject",

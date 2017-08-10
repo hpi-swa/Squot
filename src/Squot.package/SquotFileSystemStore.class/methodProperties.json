@@ -9,7 +9,7 @@
 	"instance" : {
 		"/" : "jr 1/27/2017 15:07",
 		"add:" : "jr 7/19/2017 17:46",
-		"applyDiff:toObjectAt:" : "jr 7/16/2017 02:28",
+		"applyDiff:toObjectAt:" : "jr 8/10/2017 19:31",
 		"applyPatch:" : "jr 5/31/2017 13:26",
 		"artifactReferencesDo:" : "jr 1/29/2017 21:57",
 		"artifacts" : "jr 7/16/2017 02:34",

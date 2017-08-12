@@ -9,9 +9,7 @@
 	"instvars" : [
 		"originalClass",
 		"capturedClass",
-		"slots",
-		"instVars",
-		"variableSizePart" ],
+		"slots" ],
 	"name" : "SquotObjectShadow",
 	"pools" : [
 		 ],

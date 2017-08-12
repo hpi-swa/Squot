@@ -10,7 +10,6 @@
 		"copiedObjects",
 		"toBeVisited",
 		"objectRegistry",
-		"state",
 		"enumeratedObject",
 		"capturedObject",
 		"replacedObjects",

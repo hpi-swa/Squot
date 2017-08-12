@@ -9,10 +9,13 @@ capture: anObject asValueOfSlot: aShadowSlot
 	objectGraph creatorOf: captureObject
 				ifAbsentPut: [aShadowSlot] of: [enumeratedObject].
 	name := captureObject shouldHaveNameAssignedBySquot
-		ifTrue: [objectGraph nameOf: captureObject undecorated
+		ifTrue: [objectGraph nameOf: captureObject
 				ifAbsentAssign: [self newNameFor: decorated]].
-	namedObject := SquotNameDecorator on: captureObject withName: name.
-	aShadowSlot value: namedObject.
-	toBeVisited add: decorated.
-	slotsToConvert add: aShadowSlot.
+	convertedObjects at: captureObject
+		ifPresent: [:existingShadow | aShadowSlot value: existingShadow]
+		ifAbsent:
+			[namedObject := SquotNameDecorator on: captureObject withName: name.
+			aShadowSlot value: namedObject.
+			toBeVisited add: decorated.
+			slotsToConvert add: aShadowSlot].
 	^ aShadowSlot

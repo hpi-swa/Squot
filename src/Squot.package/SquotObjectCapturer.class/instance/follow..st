@@ -4,6 +4,7 @@ follow: aDecoratedObject
 	undecorated := aDecoratedObject undecorated.
 	(convertedObjects includesKey: undecorated) ifTrue: [^ self].
 	capturedObject := undecorated.
+	capturedObjectWithReferrer := aDecoratedObject.
 	self capture:
 		(replacedObjects
 			at: undecorated

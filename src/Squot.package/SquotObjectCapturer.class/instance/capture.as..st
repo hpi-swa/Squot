@@ -4,7 +4,7 @@ capture: anObject as: shadowObjectFactory
 	anObject ~~ capturedObject
 		ifTrue: [objectGraph answer: (objectGraph nameOf: capturedObject)
 				whenAskedForTheNameOf: anObject].
-	(convertedObjects includesKey: anObject) ifTrue: [^ self].
+	convertedObjects at: anObject ifPresent: [:existing | ^ existing].
 	newShadow := shadowObjectFactory new.
 	self rememberAsShadowOfCapturedObject: newShadow.
 	enumeratedObject := anObject.

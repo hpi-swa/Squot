@@ -5,7 +5,8 @@ capture: anObject asValueOfSlot: aShadowSlot
 		ifFound: [:replacement | replacement]
 		ifNone: [anObject].
 	decorated := SquotCreatorDecorator on: captureObject
-				creator: enumeratedObject slot: aShadowSlot.
+				creator: (enumeratedObject squotDecoratedLike: capturedObjectWithReferrer)
+				slot: aShadowSlot.
 	objectGraph creatorOf: captureObject
 				ifAbsentPut: [aShadowSlot] of: [enumeratedObject].
 	name := captureObject shouldHaveNameAssignedBySquot

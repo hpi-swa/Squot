@@ -4,7 +4,7 @@ captureWithSquot: aCapturer
 	| replacementOrSelf |
 	self class isImmediateClass ifTrue: [^ aCapturer capturePrimitiveValue: self].
 	self class isBits ifTrue: [^ aCapturer captureBits: self].
-	replacementOrSelf := self objectForDataStream: aCapturer.
+	replacementOrSelf := self squotReplacementFor: aCapturer.
 	^ aCapturer
 		capture: replacementOrSelf
 		as: replacementOrSelf squotShadowFactory

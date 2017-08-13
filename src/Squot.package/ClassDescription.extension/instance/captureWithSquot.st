@@ -1,5 +1,6 @@
 *Squot-trackable
 captureWithSquot
+	self isMeta ifTrue: [^ super captureWithSquot].
 	^ SquotClassShadow
 		forPackageNamed: self category
 		withSnapshot: (MCSnapshot fromDefinitions: (Array streamContents: [:stream |

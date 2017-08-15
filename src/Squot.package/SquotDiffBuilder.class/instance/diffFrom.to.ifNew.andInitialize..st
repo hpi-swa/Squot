@@ -7,6 +7,6 @@ diffFrom: leftShadow to: rightShadow ifNew: newBlock andInitialize: initBlock
 		ifAbsentPut: newBlock.
 	initBlock cull: diff cull: leftShadow cull: rightShadow.
 	diff squotHasChanges ifTrue:
-		[resultPatch addDiff: diff forObjectNamed: (shadowNames at: left ifAbsent: nil).
+		[graphDiff addDiff: diff forObjectNamed: (shadowNames at: left ifAbsent: nil).
 		self noteChanged: left].
 	^ diff

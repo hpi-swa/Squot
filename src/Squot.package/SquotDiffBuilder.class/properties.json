@@ -12,9 +12,9 @@
 		"toBeVisited",
 		"visited",
 		"diffedPair",
-		"resultPatch",
 		"objectsWithChanges",
-		"referrers" ],
+		"referrers",
+		"graphDiff" ],
 	"name" : "SquotDiffBuilder",
 	"pools" : [
 		 ],

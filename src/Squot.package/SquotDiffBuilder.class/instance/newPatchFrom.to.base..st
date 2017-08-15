@@ -1,7 +1,7 @@
 diffing high-level
 newPatchFrom: leftShadow to: rightShadow base: baseShadow
 	| fallbackName |
-	resultPatch := SquotObjectGraphDiff new.
+	graphDiff := SquotObjectGraphDiff new.
 	self initialize.
 	fallbackName := ({rightShadow. leftShadow} detect: #hasSquotShadowName ifNone: [])
 		ifNotNil: [:shadow | shadow name]
@@ -11,5 +11,5 @@ newPatchFrom: leftShadow to: rightShadow base: baseShadow
 	self rememberNameOf: baseShadow orAssume: [fallbackName].
 	self addToBeVisitedLeft: leftShadow right: rightShadow base: baseShadow.
 	self followReferences.
-	resultPatch startObjectName: (shadowNames at: leftShadow undecorated).
-	^ resultPatch
+	graphDiff startObjectName: (shadowNames at: leftShadow undecorated).
+	^ graphDiff

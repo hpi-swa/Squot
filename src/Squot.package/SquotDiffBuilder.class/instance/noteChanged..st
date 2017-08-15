@@ -4,8 +4,8 @@ noteChanged: anUndecoratedShadow
 	(objectsWithChanges ifAbsentAdd: anUndecoratedShadow)
 		ifFalse: [^ self].
 	name := shadowNames at: anUndecoratedShadow.
-	resultPatch diffForObjectNamed: name
-		ifAbsent: [resultPatch addDiff: (objectDiffs at: anUndecoratedShadow) forObjectNamed: name].
+	graphDiff diffForObjectNamed: name
+		ifAbsent: [graphDiff addDiff: (objectDiffs at: anUndecoratedShadow) forObjectNamed: name].
 	(referrers removeKey: anUndecoratedShadow ifAbsent: #())
 		do: [:each |
 			self noteChangedReferrer: each key

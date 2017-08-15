@@ -3,7 +3,7 @@ left: leftShadow right: rightShadow base: baseShadow
 	"Answer a diff that would transform leftShadow into rightShadow"
 	| names |
 	diffedPair ifNil: ["top invocation"
-		^ self newPatchFrom: leftShadow to: rightShadow base: baseShadow].
+		^ self startFromLeft: leftShadow right: rightShadow base: baseShadow].
 	self rememberNameOf: leftShadow;
 		rememberNameOf: rightShadow;
 		rememberNameOf: baseShadow.

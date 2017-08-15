@@ -2,7 +2,7 @@ diffing high-level
 left: leftShadow right: rightShadow
 	"Answer a diff that would transform leftShadow into rightShadow"
 	diffedPair ifNil: ["top invocation"
-		^ self newPatchFrom: leftShadow to: rightShadow].
+		^ self startFromLeft: leftShadow right: rightShadow].
 	self rememberNameOf: leftShadow;
 		rememberNameOf: rightShadow.
 	(shadowNames at: leftShadow undecorated ifAbsent: [1])

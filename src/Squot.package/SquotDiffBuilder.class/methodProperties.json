@@ -12,7 +12,6 @@
 		"left:right:" : "jr 8/15/2017 19:38",
 		"left:right:base:" : "jr 8/15/2017 19:39",
 		"leftSlot:rightSlot:" : "jr 7/27/2017 00:07",
-		"migrating:to:" : "jr 6/17/2017 22:17",
 		"noteChanged:" : "jr 8/15/2017 19:03",
 		"noteChangedReferrer:via:to:" : "jr 7/27/2017 00:03",
 		"onlyLeft:" : "jr 6/15/2017 17:25",
@@ -21,5 +20,4 @@
 		"rememberNameOf:orAssume:" : "jr 7/21/2017 00:42",
 		"replacing:with:" : "jr 7/21/2017 02:23",
 		"startFromLeft:right:" : "jr 8/15/2017 19:38",
-		"startFromLeft:right:base:" : "jr 8/15/2017 19:39",
-		"transformingFrom:to:" : "jr 7/21/2017 00:11" } }
+		"startFromLeft:right:base:" : "jr 8/15/2017 19:39" } }

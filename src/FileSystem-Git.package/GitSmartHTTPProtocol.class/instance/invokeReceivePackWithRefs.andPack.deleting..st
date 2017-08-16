@@ -9,8 +9,7 @@ invokeReceivePackWithRefs: updateAssociations andPack: aPackFile deleting: delet
 			previousReferences: refs
 			serverCapabilities: (refs at: #capabilities)
 			pack: aPackFile].
-	response := self client httpPost: (self urlForService: 'git-receive-pack')
-		content: contents type: 'application/x-git-receive-pack-request'.
+	response := self postToReceivePack: contents.
 	response isSuccess ifFalse: [
 		(response code = 401
 			ifTrue: [GitRemoteAuthenticationFailed]

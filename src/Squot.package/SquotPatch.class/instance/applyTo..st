@@ -1,3 +1,3 @@
 applying
-applyDiffsTo: anObjectContainer
+applyTo: anObjectContainer
 	diffs do: [:each | anObjectContainer applyDiff: each].

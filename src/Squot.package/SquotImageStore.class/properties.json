@@ -2,7 +2,7 @@
 	"category" : "Squot-Core",
 	"classinstvars" : [
 		 ],
-	"classtraitcomposition" : "TSquotObjectContainer classTrait",
+	"classtraitcomposition" : "TSquotMutableObjectContainer classTrait",
 	"classvars" : [
 		 ],
 	"commentStamp" : "jr 1/27/2017 14:37",
@@ -17,5 +17,5 @@
 	"pools" : [
 		 ],
 	"super" : "Object",
-	"traitcomposition" : "TSquotObjectContainer",
+	"traitcomposition" : "TSquotMutableObjectContainer",
 	"type" : "normal" }

@@ -1,3 +1,3 @@
 patching
 applyPatch: aPatch
-	aPatch applyDiffsTo: self.
+	aPatch applyTo: self.

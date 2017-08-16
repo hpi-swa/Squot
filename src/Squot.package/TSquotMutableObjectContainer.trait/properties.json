@@ -1,0 +1,6 @@
+{
+	"category" : "Squot-Interfaces",
+	"classtraitcomposition" : "TSquotObjectContainer classTrait",
+	"commentStamp" : "",
+	"name" : "TSquotMutableObjectContainer",
+	"traitcomposition" : "TSquotObjectContainer" }

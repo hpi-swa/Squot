@@ -1,6 +1,7 @@
 private materializing
 loadMonticelloPackageSnapshot: anMCSnapshot from: anArtifact replacing: aPackageInfo
 	| packageDirectory packageName pathElements mcPackage packageSnapshot patch loader |
+	self isThisEverCalled.
 	self assert: ((aPackageInfo isKindOf: PackageInfo) or: [aPackageInfo isNil]).
 	packageDirectory := (pathElements := anArtifact path squotPathSegments) last.
 	packageName := packageDirectory allButLast: '.package' size.

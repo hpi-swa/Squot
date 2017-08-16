@@ -1,7 +1,7 @@
 patching
 squotApplyToLoaded: anObject with: aPatcher
-	| shadow |
-	shadow := (aPatcher shadowOf: anObject) copy.
-	self applyTo: shadow with: aPatcher.
-	aPatcher materialize: shadow in: anObject.
-	^ anObject
+	| shadow patchedShadow patchedObject |
+	shadow := aPatcher shadowOf: anObject.
+	patchedShadow := shadow applyDiff: self with: aPatcher.
+	patchedObject := aPatcher materialize: patchedShadow in: anObject.
+	^ patchedObject

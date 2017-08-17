@@ -3,6 +3,5 @@ forObjectAt: aFileReference
 	| metadataFile |
 	metadataFile := (aFileReference isDirectory
 		ifTrue: [self referenceToMetadataFileForDirectory: aFileReference]
-		ifFalse: ["for single files"
-			aFileReference parent / (aFileReference basename, self metadataFileName)]).
+		ifFalse: [self referenceToMetadataFileForFile: aFileReference]).
 	^ self on: metadataFile

@@ -4,5 +4,5 @@ generateTableOfContentsFor: aSnapshot in: aDirectory
 	toc := self class tableOfContentsClass new.
 	aSnapshot artifactsDo: [:each |
 		each wantsToBeInTableOfContents
-			ifTrue: [ toc at: each path put: (each storeInfo at: #serializer) ]].
+			ifTrue: [self add: each toTableOfContents: toc]].
 	self writeTableOfContents: toc into: aDirectory / self class tocFileName.

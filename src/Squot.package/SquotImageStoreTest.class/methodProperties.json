@@ -9,6 +9,7 @@
 		"snapshotClass:at:" : "jr 3/6/2017 14:33",
 		"snapshotPackage:at:" : "jr 1/27/2017 16:10",
 		"tearDown" : "jr 3/6/2017 14:27",
+		"testAddNewObjectsFromArtifact" : "jr 8/18/2017 13:01",
 		"testApplyPatch" : "jr 7/21/2017 17:44",
 		"testFiles" : "jr 3/8/2017 17:49",
 		"testIgnoredInstanceVariables" : "jr 7/20/2017 13:08",

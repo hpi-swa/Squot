@@ -3,4 +3,4 @@ actionObjectMerge
 	self projectSelection
 		mergeArtifactInteractively: self objectSelection artifact
 		from: self commitSelection
-		ifCanceled: [].
+		ifCanceled: [^ self].

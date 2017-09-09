@@ -1,5 +1,6 @@
 Pur historian
 version: aVersion
+	aVersion ifNil: [repository delete: self. ^ self].
 	gitRepository
 		updateRef: self expandedName
 		to: aVersion hexHash

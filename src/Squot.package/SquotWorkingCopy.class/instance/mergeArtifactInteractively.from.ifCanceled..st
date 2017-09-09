@@ -17,5 +17,7 @@ mergeArtifactInteractively: anArtifact from: aVersion ifCanceled: cancelBlock
 		patch := SquotPatch with:
 			(self mergeDiffsFromBaseToMe: patchToMe
 				fromBaseToOther: patchToAnArtifact
-				withBaseArtifacts: base artifacts myArtifacts: {myArtifact} theirArtifacts: {anArtifact}).
+				withBaseArtifacts: base artifacts
+				myArtifacts: (Dictionary newFrom: {myArtifact path -> myArtifact})
+				theirArtifacts: (Dictionary newFrom: {anArtifact path -> anArtifact})).
 		self loadPatchInteractively: patch ifCanceled: [^ cancelBlock value]].

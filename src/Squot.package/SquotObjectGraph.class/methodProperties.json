@@ -5,6 +5,7 @@
 		"applyDiff:toObjectNamed:with:" : "jr 8/16/2017 23:35",
 		"applyDiff:toStartObjectWith:" : "jr 7/30/2017 17:43",
 		"asShadowGraph" : "jr 7/30/2017 01:37",
+		"captureWithSquot:" : "jr 9/9/2017 13:58",
 		"evictObjectNames" : "jr 8/17/2017 22:16",
 		"initialize" : "jr 7/30/2017 01:04",
 		"objectNamed:" : "jr 7/30/2017 01:03",

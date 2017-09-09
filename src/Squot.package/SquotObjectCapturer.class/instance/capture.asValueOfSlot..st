@@ -3,7 +3,7 @@ capture: anObject asValueOfSlot: aShadowSlot
 	| captureObject name namedObject decorated |
 	captureObject := self replacementForSlot: aShadowSlot in: enumeratedObject
 		ifFound: [:replacement | replacement]
-		ifNone: [anObject].
+		ifNone: [anObject undecorated].
 	decorated := SquotCreatorDecorator on: captureObject
 				creator: (enumeratedObject squotDecoratedLike: capturedObjectWithReferrer)
 				slot: aShadowSlot.

@@ -10,7 +10,7 @@ rematerialize: aShadow
 	aShadow hasSquotShadowName ifTrue:
 		[patchedObjectGraph
 			assign: aShadow name to: object;
-			assign: aShadow name toShadow: aShadow].
+			assign: aShadow name toShadow: aShadow undecorated].
 	object squotShouldKeepIdentity ifTrue:
 		[patchedObjects at: aShadow undecorated put: object].
 	^ object

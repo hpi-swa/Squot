@@ -12,7 +12,7 @@
 		"storeInfo",
 		"shadow",
 		"store" ],
-	"name" : "SquotLiveObject",
+	"name" : "SquotLiveArtifact",
 	"pools" : [
 		 ],
 	"super" : "Object",

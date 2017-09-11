@@ -24,7 +24,7 @@
 		"includesObjectAt:" : "jr 3/8/2017 17:48",
 		"initialize" : "jr 1/27/2017 17:07",
 		"initializeObjectFrom:" : "jr 7/22/2017 11:59",
-		"liveObjectFor:at:" : "jr 7/16/2017 17:15",
+		"liveObjectFor:at:" : "jr 9/11/2017 21:19",
 		"loadMonticelloClassSnapshot:from:replacing:" : "jr 8/16/2017 14:53",
 		"loadMonticelloPackageSnapshot:from:replacing:" : "jr 8/16/2017 14:53",
 		"loadMonticelloSnapshot:from:replacing:" : "jr 3/6/2017 14:01",

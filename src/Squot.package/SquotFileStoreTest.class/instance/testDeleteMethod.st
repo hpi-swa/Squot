@@ -9,15 +9,14 @@ testDeleteMethod
 					sampleMethod methodReference asMethodDefinition})
 				asSquotArtifactForPackage: sampleClass package)
 				path: 'src';
-				initializeDefaultStoreInfoFor: sampleClass;
-				validatePathFor: sampleClass;
+				initializeDefaultStoreInfoFor: sampleClass package;
 				yourself);
 		buildSnapshot.
 	fileStore restoreToSnapshot: snapshotWithMethod.
 	methodFile := fileStore directory
 			resolve: 'src/', sampleClass package name, '.package/', 
 				sampleClass name, '.class/instance/', sampleMethod selector, '.st'.
-	self assert: methodFile exists description: 'method exists'.
+	self assert: methodFile exists description: 'method file not created by restoreToSnapshot'.
 	snapshotWithoutMethod := SquotSnapshot builder
 		add: (snapshotWithMethod artifacts anyOne copyWithDifferentContent:
 				((MCSnapshot

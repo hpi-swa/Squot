@@ -7,8 +7,8 @@ testMergeWithConflicts
 	sampleClass compile: 'firstMethod ^ self' classified: 'methods of first version'.
 	packageInfo := PackageInfo named: classFactory packageName.
 	workingCopy add: packageInfo at: 'src'.
-	packagePath := (workingCopy store pathsOf: packageInfo) anyOne.
 	workingCopy saveNewVersionMessage: 'first version' interactive: false.
+	packagePath := (workingCopy store pathsOf: packageInfo) anyOne.
 	firstVersion := workingCopy baseVersion.
 	"create first merge parent"
 	sampleClass compile: (secondMethodSource := 'conflictMethod ^ 1') classified: 'conflict methods'.

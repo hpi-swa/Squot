@@ -1,3 +1,5 @@
 deserialization registry
 addDeserializerFactory: aDeserializerFactory
-	DefaultDeserializerRegistry add: aDeserializerFactory.
+	(DefaultDeserializerRegistry includes: aDeserializerFactory) ifFalse:
+		[DefaultDeserializerRegistry :=
+			DefaultDeserializerRegistry copyWith: aDeserializerFactory].

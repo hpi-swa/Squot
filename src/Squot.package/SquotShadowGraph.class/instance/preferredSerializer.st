@@ -1,0 +1,3 @@
+serializing
+preferredSerializer
+	^ self startShadow squotPreferredSerializer

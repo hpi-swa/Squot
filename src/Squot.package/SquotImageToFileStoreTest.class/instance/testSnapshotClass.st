@@ -2,7 +2,7 @@ tests
 testSnapshotClass
 	| class classPackageName testSelector classDirectory |
 	class := self class.
-	classPackageName := 'Squot'.
+	classPackageName := class category.
 	testSelector := thisContext selector.
 	self snapshotClass: class at: 'src'.
 	self assert: (fileStore / 'src') isDirectory.

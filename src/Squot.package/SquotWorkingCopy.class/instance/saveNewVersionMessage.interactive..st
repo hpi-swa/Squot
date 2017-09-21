@@ -6,8 +6,10 @@ saveNewVersionMessage: aString interactive: shouldBeInteractiveBoolean
 	| newVersion patch capturedArtifacts |
 	shouldBeInteractiveBoolean ifTrue: [^ self saveNewVersionInteractivelyIfCanceled: []].
 	patch := self currentSnapshot patchRelativeToBase: self baseSnapshot.
-	[newVersion := loadedHistorian createNewVersionFromPatch: patch
+	[[newVersion := loadedHistorian createNewVersionFromPatch: patch
 		with: [:version | version message: aString]]
+	on: SquotPathChanged doAndResume: [:changed |
+		store moveObjectAt: changed previousPath to: changed newPath]]
 	on: SquotArtifactsWereCaptured doAndResume: [:captured |
 		capturedArtifacts := captured artifacts].
 	self loadedVersion: newVersion.

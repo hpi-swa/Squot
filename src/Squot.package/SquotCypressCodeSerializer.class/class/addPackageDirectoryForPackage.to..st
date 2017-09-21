@@ -1,3 +1,3 @@
 as yet unclassified
-addPackageDirectoryForPackage: aPackageInfo to: pathElements
-	^ pathElements, {aPackageInfo packageName, '.package'} joinSeparatedBy: $/
+addPackageDirectoryForPackage: aPackageShadow to: pathElements
+	^ pathElements, {aPackageShadow packageName, '.package'} joinSeparatedBy: $/

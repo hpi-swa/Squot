@@ -1,12 +1,12 @@
 as yet unclassified
-rewritePath: pathString ofClass: aClass
+rewritePath: pathString ofClass: aClassShadow
 	"Append package and class directory if necessary."
 	| elements |
 	elements := pathString squotPathSegments.
 	elements size < 2
-		ifTrue: [^ self addPackageAndClassDirectoryForClass: aClass to: elements].
+		ifTrue: [^ self addPackageAndClassDirectoryForClass: aClassShadow to: elements].
 	((elements at: elements size - 1) endsWith: '.package')
-		ifFalse: [^ self addPackageAndClassDirectoryForClass: aClass to: elements].
-	(elements last = (aClass name, '.class'))
-		ifFalse: [^ self addPackageAndClassDirectoryForClass: aClass to: elements].
+		ifFalse: [^ self addPackageAndClassDirectoryForClass: aClassShadow to: elements].
+	(elements last = (aClassShadow className, '.class'))
+		ifFalse: [^ self addPackageAndClassDirectoryForClass: aClassShadow to: elements].
 	^ pathString

@@ -14,7 +14,7 @@ captureLazySnapshot
 				thenDo: [:eachArtifact | builder add: eachArtifact.
 					addedPaths add: eachArtifact path.
 					e addArtifactAt: eachArtifact path
-						serializedBy: PackageInfo squotPreferredSerializer name].
+						serializedBy: PackageInfo basicNew squotShadowFactory basicNew squotPreferredSerializer name].
 			e pass].
 	builder add: (unrecordedFiles := SquotUnrecordedFilesArtifact new
 		rootDirectory: directory;

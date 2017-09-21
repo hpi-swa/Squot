@@ -15,8 +15,8 @@ testSnapshotPackageInDifferentEnvironment
 		description: 'Monticello must find the class'.
 	imageStore add: workingCopy package packageInfo at: 'src'.
 	snapshot := imageStore captureSnapshot.
-	self assert: ((snapshot artifacts detect: [:each | each path endsWith: '.package']
-				ifNone: [self fail: 'No artifact for the package generated'])
+	self assert: ((snapshot artifacts at: 'src' 
+				ifAbsent: [self fail: 'No artifact for the package generated'])
 			packageArtifactDefinitions includes: class asClassDefinition)
 		description: 'ImageStore must find the class'.]
 	ensure: [workingCopy unregister.

@@ -3,10 +3,10 @@ testDeleteArtifact
 	| object snapshotWithArtifact snapshotWithoutArtifact artifactReference |
 	snapshotWithArtifact := SquotSnapshot builder
 		add: (SquotArtifact new
-			content: (object := 1 @ 2);
+			content: (SquotShadowGraph
+				withSingleShadow: 	(object := 1 @ 2) captureWithSquot);
 			path: 'aPoint';
 			initializeDefaultStoreInfoFor: object;
-			validatePathFor: object;
 			yourself);
 		buildSnapshot.
 	fileStore restoreToSnapshot: snapshotWithArtifact.

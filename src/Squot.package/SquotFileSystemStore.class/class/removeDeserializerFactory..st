@@ -1,3 +1,4 @@
 deserialization registry
 removeDeserializerFactory: aDeserializerFactory
-	DefaultDeserializerRegistry remove: aDeserializerFactory.
+	DefaultDeserializerRegistry :=
+		DefaultDeserializerRegistry copyWithout: aDeserializerFactory.

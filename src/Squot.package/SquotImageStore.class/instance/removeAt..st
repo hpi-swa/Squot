@@ -4,4 +4,5 @@ removeAt: path
 	| object |
 	object := objects removeKey: path ifAbsent: [^ self].
 	(paths at: object) remove: path.
+	(paths at: object) ifEmpty: [paths removeKey: object].
 	additionalInfo removeKey: path ifAbsent: [].

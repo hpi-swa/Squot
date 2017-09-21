@@ -2,7 +2,7 @@ tests
 testRetrieveClass
 	| class classPackageName testSelector artifact snapshot |
 	class := self class.
-	classPackageName := 'Squot'.
+	classPackageName := class category.
 	testSelector := thisContext selector.
 	self snapshotClass: class at: 'src'.
 	snapshot := fileStore captureSnapshot.

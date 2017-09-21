@@ -1,7 +1,7 @@
 class initialization
 initialize
-	"self initialize"
-	DefaultDeserializerRegistry ifNil: [DefaultDeserializerRegistry := IdentitySet new].
+	"DefaultDeserializerRegistry := #().
+	self initialize"
 	self addDeserializerFactory: SquotSmartRefStreamDeserializer.
 	self addDeserializerFactory: SquotCypressCodeDeserializer.
 	self addDeserializerFactory: SquotStonFileCodec.

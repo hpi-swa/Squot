@@ -20,7 +20,7 @@
 		"materializeWith:replacing:" : "jr 5/28/2017 14:33",
 		"mergeStoreInfo:" : "jr 7/16/2017 12:04",
 		"path" : "jr 1/27/2017 15:03",
-		"path:" : "jr 1/27/2017 15:03",
+		"path:" : "jr 9/21/2017 22:20",
 		"postCopy" : "jr 5/28/2017 14:34",
 		"postCopyWithoutContent" : "jr 2/16/2017 00:40",
 		"printOn:" : "jr 2/1/2017 15:16",
@@ -28,6 +28,6 @@
 		"storeInfo" : "jr 1/27/2017 15:03",
 		"storeInfo:" : "jr 1/27/2017 15:03",
 		"storeWith:" : "jr 1/31/2017 13:54",
-		"validatePathFor:" : "jr 1/28/2017 00:57",
+		"validatePath" : "jr 9/20/2017 21:00",
 		"wantsToBeInTableOfContents" : "jr 1/31/2017 13:34",
 		"writeWith:" : "jr 5/28/2017 14:34" } }

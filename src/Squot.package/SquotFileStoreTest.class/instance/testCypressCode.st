@@ -10,7 +10,6 @@ testCypressCode
 				asSquotArtifactForPackage: samplePackage)
 				path: 'src';
 				initializeDefaultStoreInfoFor: samplePackage;
-				validatePathFor: samplePackage;
 				yourself).
 	methodFile := fileStore directory
 			resolve: 'src/', samplePackage name, '.package/', 

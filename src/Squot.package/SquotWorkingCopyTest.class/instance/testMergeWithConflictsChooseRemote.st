@@ -6,8 +6,8 @@ testMergeWithConflictsChooseRemote
 	sampleClass := classFactory newClass.
 	packageInfo := PackageInfo named: classFactory packageName.
 	workingCopy add: packageInfo at: 'src'.
-	packagePath := (workingCopy store pathsOf: (PackageInfo named: classFactory packageName)) anyOne.
 	workingCopy saveNewVersionMessage: 'first version' interactive: false.
+	packagePath := (workingCopy store pathsOf: (PackageInfo named: classFactory packageName)) anyOne.
 	firstVersion := workingCopy baseVersion.
 	"create first merge parent"
 	sampleClass compile: (secondMethodSource := 'conflictMethod ^ 1') classified: 'conflict methods'.

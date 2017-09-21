@@ -4,7 +4,7 @@ testTrackingAClass
 	SystemChangeNotifier uniqueInstance doSilently:
 		[class := classFactory newClass.
 		class compileSilently: 'firstMethod ^ self' classified: 'methods of first version'].
-	[workingCopy add: class at: 'src']
+	[workingCopy add: class at: 'src/', class category, '.package/', class name, '.class']
 		on: SquotClassWithoutPackageException
 		do: [:e | e resume: (PackageInfo named: classFactory packageName)].
 	versionBeforeSave := workingCopy loadedHistorian version.

@@ -10,9 +10,8 @@ testRestorePackageThatLivesInAnotherEnvironment
 		package := MCPackage named: classFactory packageName.
 		imageStore add: (PackageInfo named: classFactory packageName) at: 'src'].
 	snapshot := imageStore captureSnapshot.
-	self assert: ((packageArtifact := snapshot artifacts
-				detect: [:each | each path endsWith: '.package']
-				ifNone: [self fail: 'No artifact for the package generated'])
+	self assert: ((packageArtifact := snapshot artifacts at: 'src'
+				ifAbsent: [self fail: 'No artifact for the package generated'])
 			packageArtifactDefinitions includes: class asClassDefinition)
 		description: 'ImageStore must find the class'.
 	self assert: testEnvironment

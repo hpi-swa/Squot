@@ -4,6 +4,4 @@
 	"instance" : {
 		"squotAddTransientStoreInfoTo:" : "jr 4/7/2017 16:40",
 		"squotInitializeStoreInfo:" : "jr 4/7/2017 16:41",
-		"squotPreferredMaterializer" : "jr 4/7/2017 16:43",
-		"squotPreferredSerializer" : "jr 4/7/2017 16:46",
 		"squotRemoveTransientStoreInfoFrom:" : "jr 4/7/2017 16:40" } }

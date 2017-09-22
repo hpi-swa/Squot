@@ -1,3 +1,3 @@
 private metadata access
 metadataFor: anArtifact
-	^ SquotObjectMetadata forObjectAt: (directory resolve: anArtifact path)
+	^ SquotObjectMetadataFile forObjectAt: (directory resolve: anArtifact path)

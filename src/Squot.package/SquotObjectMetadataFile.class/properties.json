@@ -8,7 +8,7 @@
 	"instvars" : [
 		"metadataFile",
 		"metadata" ],
-	"name" : "SquotObjectMetadata",
+	"name" : "SquotObjectMetadataFile",
 	"pools" : [
 		 ],
 	"super" : "Object",

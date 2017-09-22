@@ -1,5 +1,7 @@
 deserialization registry
 addDeserializerFactory: aDeserializerFactory
-	(DefaultDeserializerRegistry includes: aDeserializerFactory) ifFalse:
+	(DefaultDeserializerRegistry ifNotNil: [:it | it includes: aDeserializerFactory]) ifFalse:
 		[DefaultDeserializerRegistry :=
-			DefaultDeserializerRegistry copyWith: aDeserializerFactory].
+			DefaultDeserializerRegistry
+				ifNil: [Array with: aDeserializerFactory]
+				ifNotNil: [:registry | registry copyWith: aDeserializerFactory]].

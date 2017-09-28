@@ -1,8 +1,8 @@
 {
 	"class" : {
-		"addDeserializerFactory:" : "jr 9/22/2017 09:03",
+		"addDeserializerFactory:" : "jr 9/28/2017 10:16",
 		"inDirectory:" : "jr 1/29/2017 22:41",
-		"initialize" : "jr 9/21/2017 21:06",
+		"initialize" : "jr 9/28/2017 10:16",
 		"removeDeserializerFactory:" : "jr 9/21/2017 21:08",
 		"tableOfContentsClass" : "jr 5/31/2017 13:54",
 		"tocFileName" : "fn 4/23/2017 19:13" },

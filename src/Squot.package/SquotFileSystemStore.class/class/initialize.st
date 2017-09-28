@@ -1,6 +1,6 @@
 class initialization
 initialize
-	"DefaultDeserializerRegistry := #().
+	"DefaultDeserializerRegistry := nil.
 	self initialize"
 	self addDeserializerFactory: SquotSmartRefStreamDeserializer.
 	self addDeserializerFactory: SquotCypressCodeDeserializer.

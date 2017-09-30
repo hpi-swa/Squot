@@ -1,7 +1,6 @@
 diffing high-level
 startFromLeft: leftShadow right: rightShadow
 	| fallbackName |
-	graphDiff := SquotObjectGraphDiff new.
 	self initialize.
 	fallbackName := ({rightShadow. leftShadow} detect: #hasSquotShadowName ifNone: [])
 		ifNotNil: [:shadow | shadow name]

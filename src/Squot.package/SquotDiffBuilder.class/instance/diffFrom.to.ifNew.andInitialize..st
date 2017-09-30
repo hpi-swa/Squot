@@ -1,6 +1,7 @@
 private diffing
 diffFrom: leftShadow to: rightShadow ifNew: newBlock andInitialize: initBlock
 	| diff left |
+	diffedPair := leftShadow -> rightShadow.
 	left := leftShadow undecorated.
 	diff := objectDiffs at: left
 		ifPresent: [:existing | ^ existing]

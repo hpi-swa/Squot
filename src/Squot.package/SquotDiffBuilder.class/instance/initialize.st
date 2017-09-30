@@ -6,3 +6,4 @@ initialize
 	visited := IdentitySet new.
 	referrers := IdentityDictionary new.
 	objectsWithChanges := IdentitySet new.
+	graphDiff := SquotObjectGraphDiff new.

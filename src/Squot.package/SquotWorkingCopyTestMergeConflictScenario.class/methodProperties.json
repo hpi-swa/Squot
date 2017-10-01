@@ -1,0 +1,15 @@
+{
+	"class" : {
+		 },
+	"instance" : {
+		"assertConflictMethodHasNotChanged:" : "jr 10/1/2017 01:15",
+		"createBaseVersion" : "jr 10/1/2017 01:24",
+		"createFirstMergeParent" : "jr 10/1/2017 01:49",
+		"createSecondMergeParent" : "jr 10/1/2017 01:23",
+		"firstVersion" : "jr 10/1/2017 01:02",
+		"merge" : "jr 10/1/2017 01:54",
+		"packageInfo" : "jr 10/1/2017 01:02",
+		"packagePath" : "jr 10/1/2017 01:02",
+		"secondVersion" : "jr 10/1/2017 01:02",
+		"setUp" : "jr 10/1/2017 01:42",
+		"thirdVersion" : "jr 10/1/2017 01:02" } }

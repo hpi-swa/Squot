@@ -1,0 +1,12 @@
+{
+	"class" : {
+		"forTestCase:" : "jr 10/1/2017 01:43" },
+	"instance" : {
+		"classFactory" : "jr 10/1/2017 00:57",
+		"initializeForTestCase:" : "jr 10/1/2017 01:43",
+		"newStore" : "jr 10/1/2017 00:59",
+		"newWorkingCopy" : "jr 10/1/2017 01:13",
+		"repository" : "jr 10/1/2017 00:57",
+		"setUp" : "jr 10/1/2017 01:42",
+		"store" : "jr 10/1/2017 00:57",
+		"workingCopy" : "jr 10/1/2017 00:57" } }

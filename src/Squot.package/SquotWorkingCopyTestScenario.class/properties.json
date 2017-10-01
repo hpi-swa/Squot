@@ -1,0 +1,17 @@
+{
+	"category" : "Squot-Tests",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"workingCopy",
+		"classFactory",
+		"repository",
+		"store" ],
+	"name" : "SquotWorkingCopyTestScenario",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }

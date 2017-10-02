@@ -1,7 +1,8 @@
 {
 	"class" : {
-		"of:" : "jr 7/16/2017 10:56" },
+		"of:" : "jr 10/2/2017 19:59" },
 	"instance" : {
 		"applyToContainer:" : "jr 7/16/2017 02:36",
 		"needsChoice" : "jr 7/22/2017 23:55",
-		"topNodes" : "jr 9/9/2017 14:10" } }
+		"right" : "jr 10/2/2017 19:58",
+		"topNodes" : "jr 10/2/2017 19:56" } }

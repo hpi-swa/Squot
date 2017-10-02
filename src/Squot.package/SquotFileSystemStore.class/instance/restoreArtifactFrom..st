@@ -1,7 +1,7 @@
 private
 restoreArtifactFrom: aFileOrDirectory
 	| artifact artifactClass metadata deserializer |
-	aFileOrDirectory exists ifFalse: [^ SquotAbsentArtifact at: (self pathOf: aFileOrDirectory)].
+	"self assert: aFileOrDirectory exists"
 	metadata := self metadataForObjectAt: aFileOrDirectory.
 	metadata isPresent ifFalse: [(SquotNoMetadataFileFound for: aFileOrDirectory) signal].
 	artifactClass := metadata artifactClass.

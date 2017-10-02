@@ -2,7 +2,6 @@
 	"class" : {
 		 },
 	"instance" : {
-		"absent:" : "jr 7/29/2017 17:06",
 		"addToBeVisitedLeft:right:" : "jr 6/22/2017 16:42",
 		"addToBeVisitedLeft:right:base:" : "jr 7/27/2017 23:04",
 		"diffFrom:to:ifNew:andInitialize:" : "jr 9/30/2017 19:46",
@@ -14,7 +13,6 @@
 		"leftSlot:rightSlot:" : "jr 8/17/2017 18:03",
 		"noteChanged:" : "jr 8/15/2017 19:03",
 		"noteChangedReferrer:via:to:" : "jr 7/27/2017 00:03",
-		"onlyLeft:" : "jr 6/15/2017 17:25",
 		"reassignSlot:to:" : "jr 6/23/2017 23:34",
 		"rememberNameOf:" : "jr 7/21/2017 00:29",
 		"rememberNameOf:orAssume:" : "jr 7/21/2017 00:42",

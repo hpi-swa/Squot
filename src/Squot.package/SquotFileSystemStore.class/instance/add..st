@@ -1,5 +1,8 @@
 adding and removing
 add: anArtifact
 	self store: anArtifact.
-	self addToTableOfContents: anArtifact.
+	self shouldStoreMetadata ifTrue:
+		[self tableOfContents
+			add: anArtifact;
+			fileOut].
 	^ anArtifact

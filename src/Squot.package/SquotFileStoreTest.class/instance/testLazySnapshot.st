@@ -7,7 +7,7 @@ testLazySnapshot
 	hollowArtifact := SquotArtifact new path: (SquotPath fromReference: textFile); yourself.
 	hollowArtifact storeInfo at: #serializer put: SquotTextFileCodec name.
 	hollowSnapshot := SquotSnapshot builder add: hollowArtifact; buildSnapshot.
-	fileStore generateTableOfContentsFor: hollowSnapshot in: fileStore directory.
+	fileStore tableOfContents add: hollowArtifact; fileOut.
 	fileStore storeSquotMetadataFor: hollowArtifact.
 	"when"
 	spyingFs := FileSystem store: (SquotFSStoreSpy on: textFile fileSystem store).

@@ -1,3 +1,4 @@
-private
+private metadata access
 tableOfContents
-	^ SquotTableOfContentsFile on: self tableOfContentsReference
+	^ tableOfContentsDuringTransaction ifNil:
+		[SquotTableOfContentsFile on: self tableOfContentsReference]

@@ -1,3 +1,4 @@
 patching
 applyPatch: aPatch
-	aPatch applyTo: self displayingProgress: 'Writing objects to files'.
+	self openTableOfContentsDuring:
+		[aPatch applyTo: self displayingProgress: 'Writing objects to files']

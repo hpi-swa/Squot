@@ -10,7 +10,8 @@
 		"deserializers",
 		"directory",
 		"shouldStoreMetadata",
-		"capturedArtifacts" ],
+		"capturedArtifacts",
+		"tableOfContentsDuringTransaction" ],
 	"name" : "SquotFileSystemStore",
 	"pools" : [
 		 ],

@@ -2,10 +2,7 @@
 	"class" : {
 		 },
 	"instance" : {
-		"addArtifactAt:serializedBy:" : "jr 4/13/2017 19:12",
+		"add:" : "jr 10/3/2017 00:17",
 		"defaultAction" : "jr 4/13/2017 18:54",
-		"initialize" : "jr 5/31/2017 13:56",
-		"rootDirectory" : "jr 4/13/2017 18:19",
-		"rootDirectory:" : "jr 4/13/2017 18:19",
-		"store:" : "jr 4/13/2017 18:32",
-		"tableOfContents" : "jr 4/13/2017 19:12" } }
+		"tableOfContents" : "jr 4/13/2017 19:12",
+		"tableOfContents:" : "jr 10/3/2017 00:09" } }

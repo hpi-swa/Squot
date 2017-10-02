@@ -7,14 +7,12 @@ captureSnapshot
 	'Reading objects from files' displaySequentialProgress:
 	[[self artifactsDo: [:each | builder add: each.
 		addedPaths add: each path]]
-		on: SquotNoTableOfContentsFound do: [:e |
-			(self packageDirectoriesIn: directory)
-				collect: 	[:eachDirectory | self restorePackageFrom: eachDirectory]
-				thenDo: [:eachArtifact | builder add: eachArtifact.
-					addedPaths add: eachArtifact path.
-					e addArtifactAt: eachArtifact path
-						serializedBy: PackageInfo basicNew squotShadowFactory basicNew squotPreferredSerializer name].
-			e pass]].
+	on: SquotNoTableOfContentsFound doAndPass: [:e |
+		(self packageDirectoriesIn: directory)
+			collect: 	[:eachDirectory | self restorePackageFrom: eachDirectory]
+			thenDo: [:eachArtifact | builder add: eachArtifact.
+				addedPaths add: eachArtifact path.
+				e add: eachArtifact]]].
 	builder add: (unrecordedFiles := SquotUnrecordedFilesArtifact new
 		rootDirectory: directory;
 		yourself).

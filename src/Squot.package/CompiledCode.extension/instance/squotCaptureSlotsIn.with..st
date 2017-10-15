@@ -1,7 +1,7 @@
 *Squot-trackable-capturing
 squotCaptureSlotsIn: anObjectShadow with: aCapturer
-	self addInstVarNamed: #header withValue: self header with: aCapturer.
-	self addInstVarNamed: #literals withValue: self literals with: aCapturer.
+	anObjectShadow addInstVarNamed: #header withValue: self header with: aCapturer.
+	anObjectShadow addInstVarNamed: #literals withValue: self literals with: aCapturer.
 	self initialPC to: self basicSize do: [:index |
 		anObjectShadow
 			addVariableSlotAt: index

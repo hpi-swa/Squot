@@ -2,7 +2,9 @@
 	"class" : {
 		"of:" : "jr 10/2/2017 19:59" },
 	"instance" : {
+		"adjustedBy:" : "jr 10/15/2017 17:57",
 		"applyToContainer:" : "jr 7/16/2017 02:36",
 		"needsChoice" : "jr 7/22/2017 23:55",
 		"right" : "jr 10/2/2017 19:58",
+		"squotChangeAsStringOrText" : "jr 10/15/2017 17:55",
 		"topNodes" : "jr 10/2/2017 19:56" } }

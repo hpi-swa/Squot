@@ -8,4 +8,5 @@
 		"newWorkingCopy" : "jr 1/26/2017 17:05",
 		"setUp" : "jr 6/30/2017 22:15",
 		"tearDown" : "jr 6/30/2017 22:16",
-		"testDiscardUnsavedChanges" : "jr 6/30/2017 22:21" } }
+		"testDiscardUnsavedChanges" : "jr 6/30/2017 22:21",
+		"testUnnecessaryMergeIsCanceled" : "jr 10/15/2017 21:45" } }

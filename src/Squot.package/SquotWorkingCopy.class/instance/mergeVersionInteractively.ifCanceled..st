@@ -7,7 +7,9 @@ mergeVersionInteractively: aVersion ifCanceled: cancelBlock
 		ifNoCommonAncestor: ["the versions have no common base version, fall back to load"
 			self loadVersionInteractively: aVersion ifCanceled: [^ cancelBlock value].
 			^ self addParentVersion: aVersion]
-		ifAncestor: [^ self inform: 'Merge version already is an ancestor of the head of the active branch ', loadedHistorian name, '.']
+		ifAncestor:
+			[self inform: 'Merge version already is an ancestor of the head of the active branch ', loadedHistorian name, '.'.
+			^ cancelBlock value]
 		ifDescendant: [fastForwardPossible := true].
 	self flag: 'TODO: if there are multiple merge-bases, resolve conflicts recursively below'.
 	mergePatch := self patchForMergeWith: aVersion basedOn: mergeBases anyOne.

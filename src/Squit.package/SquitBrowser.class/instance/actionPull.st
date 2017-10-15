@@ -32,9 +32,10 @@ actionPull
 			(previousVersion mergeBaseWith: remoteVersion) = remoteVersion
 				ifTrue: ["already merged" ^ self inform:
 					'Already up-to-date. Your local branch is ahead of the remote branch']].
-	[self mergeVersionIntoActiveBranch: remoteVersion]
-		on: SquotInitialLogMessageRequested
-		do: [:request | request resume:
-			'Merge branch ''', (repository historianNamed: remoteRef) shortName,
-			''' of ', remoteUrl].
-	self refresh.
+	[self mergeVersionIntoActiveBranch: remoteVersion
+		ifCanceled: [^ self]]
+	on: SquotInitialLogMessageRequested
+	do: [:request | request resume:
+		'Merge branch ''', (repository historianNamed: remoteRef) shortName,
+		''' of ', remoteUrl].
+	self selectActiveHistorian.

@@ -1,3 +1,3 @@
 converting
 squotChangeAsStringOrText
-	^ diffContent squotChangeAsStringOrText
+	^ 'change ', left path, ': ', diffContent squotChangeAsStringOrText

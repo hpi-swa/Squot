@@ -2,6 +2,10 @@ switching historians
 switchAndMoveUnsavedChangesOverTo: aHistorian
 	| fromHistorian stashHistorian previousStashedVersion unsaved |
 	fromHistorian := self loadedHistorian.
+	fromHistorian version = aHistorian version ifTrue:
+		["nothing needs to be modified in the store"
+		self loadedHistorian: aHistorian.
+		^ self].
 	self withCurrentSnapshot:
 		[stashHistorian := self repository historianForTemporaryVersions.
 		previousStashedVersion := self saveUnsavedChangesOn: stashHistorian.

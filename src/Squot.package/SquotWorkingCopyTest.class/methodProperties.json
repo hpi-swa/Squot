@@ -16,7 +16,7 @@
 		"testDiffWithParent" : "jr 7/23/2017 02:41",
 		"testMergeRemovalAndChange" : "jr 10/21/2017 16:33",
 		"testMergeVersionWithLoadedObjects" : "jr 9/22/2017 01:01",
-		"testMergeWithAddedArtifactOnBothSides" : "jr 10/21/2017 16:33",
+		"testMergeWithAddedArtifactOnBothSides" : "jr 10/31/2017 16:51",
 		"testMergeWithConflicts" : "jr 10/1/2017 01:53",
 		"testMergeWithConflictsChooseRemote" : "jr 9/22/2017 01:02",
 		"testMergeWithoutConflicts" : "jr 9/22/2017 01:02",

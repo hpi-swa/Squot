@@ -1,6 +1,6 @@
 tests
 testSwitchBranchAndMoveOverUnsavedChangesInAddedArtifact
-	| text originalHistorian otherHistorian |
+	| text originalHistorian otherHistorian hadConflicts |
 	"given"
 	self workingCopy saveNewVersionMessage: 'empty base version' interactive: false.
 	originalHistorian := workingCopy loadedHistorian.
@@ -13,6 +13,11 @@ testSwitchBranchAndMoveOverUnsavedChangesInAddedArtifact
 		add: (text := Text fromString: 'added text') at: 'text';
 		saveNewVersionMessage: 'add text' interactive: false.
 	text replaceFrom: 1 to: text size with: 'changed text'.
-	workingCopy switchAndMoveUnsavedChangesOverTo: otherHistorian.
-	self halt. "what to expect?"
-	"Git solution: offer the choice between all or nothing"
+	hadConflicts := false.
+	[workingCopy switchAndMoveUnsavedChangesOverTo: otherHistorian]
+	on: SquotConflictResolutionRequested doAndResume: [:request |
+		hadConflicts := true.
+		self assert: request patch hasConflicts.
+		(request patch diffs detect: #hasConflicts) chooseRight].
+	self assert: hadConflicts description: 'should have detected a conflict'.
+	self assert: 'changed text' equals: (workingCopy objectAt: 'text') string.

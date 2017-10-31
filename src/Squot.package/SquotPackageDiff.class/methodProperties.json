@@ -5,6 +5,7 @@
 		"forPackageNamed:withPatch:" : "jr 7/22/2017 00:15" },
 	"instance" : {
 		"asMonticelloPatch" : "jr 7/22/2017 17:24",
+		"asSquotConflicts" : "jr 10/31/2017 21:47",
 		"asSquotHierarchicalDiff" : "jr 7/22/2017 00:02",
 		"asSquotHierarchicalDiffWith:" : "jr 7/22/2017 00:02",
 		"conflicts" : "jr 7/27/2017 23:34",
@@ -13,6 +14,7 @@
 		"packageName:leftSnapshot:rightSnapshot:" : "jr 7/22/2017 00:47",
 		"packageName:leftSnapshot:rightSnapshot:baseSnapshot:" : "jr 7/27/2017 23:21",
 		"packageName:patch:" : "jr 7/22/2017 00:05",
+		"patch" : "jr 10/31/2017 22:57",
 		"squotAdjustToResemble:" : "jr 7/22/2017 00:03",
 		"squotApplyTo:" : "jr 7/22/2017 00:07",
 		"squotApplyTo:with:" : "jr 7/22/2017 00:09",
@@ -20,5 +22,6 @@
 		"squotApplyToLoaded:with:" : "jr 7/22/2017 00:11",
 		"squotChangeAsStringOrText" : "jr 7/22/2017 16:45",
 		"squotHasChanges" : "jr 7/22/2017 00:11",
+		"squotHasConflicts" : "jr 10/31/2017 21:48",
 		"squotInverseDiff" : "jr 7/22/2017 00:13",
 		"squotNewTargetInstance" : "jr 10/2/2017 21:39" } }

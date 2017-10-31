@@ -17,7 +17,7 @@ testMergeWithAddedArtifactOnBothSides
 		ifCanceled: [self fail: 'This code should not be reached']]
 	on: SquotSelectionOfChangesRequested do: [:request | | diff |
 		diff := request patch diffAt: 'added'.
-		self assert: diff squotHasConflicts.
+		self assert: diff hasConflicts.
 		diff content startDiff chooseRight.
 		request resume]
 	] valueSupplyingAnswers: {{'*'. #default}}.

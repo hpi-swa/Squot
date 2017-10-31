@@ -1,0 +1,12 @@
+{
+	"class" : {
+		"left:right:" : "jr 10/19/2017 19:31" },
+	"instance" : {
+		"asSquotHierarchicalDiff" : "jr 10/19/2017 21:11",
+		"asSquotHierarchicalDiffWith:" : "jr 10/19/2017 21:16",
+		"chooseLeft" : "jr 10/19/2017 20:09",
+		"chooseRight" : "jr 10/19/2017 20:09",
+		"left:right:" : "jr 10/19/2017 20:09",
+		"resetChoice" : "jr 10/19/2017 20:09",
+		"squotApplyTo:with:" : "jr 10/19/2017 22:26",
+		"squotApplyToLoaded:with:" : "jr 10/19/2017 20:12" } }

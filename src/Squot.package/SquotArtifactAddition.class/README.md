@@ -1,0 +1,1 @@
+I record the addition of a new artifact.

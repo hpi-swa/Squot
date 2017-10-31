@@ -1,0 +1,14 @@
+{
+	"category" : "Squot-Diffs-Generic",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "jr 10/19/2017 19:24",
+	"instvars" : [
+		 ],
+	"name" : "SquotSlotConflict",
+	"pools" : [
+		 ],
+	"super" : "SquotSlotDiff",
+	"type" : "normal" }

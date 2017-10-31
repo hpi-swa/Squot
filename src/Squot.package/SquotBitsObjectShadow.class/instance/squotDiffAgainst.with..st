@@ -1,6 +1,7 @@
 Squot-shadow-diffing
 squotDiffAgainst: otherShadow with: aDiffBuilder
-	"Answer an object that describes the differences between me and otherContent."
 	^ (value species = otherShadow value species)
-		ifTrue: [otherShadow squotWith: aDiffBuilder diffFromSequence: value]
+		ifTrue: [aDiffBuilder diffFrom: self to: otherShadow
+				ifNew: [otherShadow squotWith: aDiffBuilder diffFromSequence: value]
+				andInitialize: []]
 		ifFalse: [aDiffBuilder replacing: self with: otherShadow]

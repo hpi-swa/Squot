@@ -1,3 +1,3 @@
 Squot-shadow-patching
 privateApplySequenceDiff: aDiffPatch with: aPatcher
-	aDiffPatch applyTo: value.
+	value := aDiffPatch applyTo: value.

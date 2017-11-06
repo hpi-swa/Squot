@@ -7,5 +7,6 @@ SmalltalkCISpec {
       #platforms : [ #squeak ],
       #useLatestMetacello : true
     }
-  ]
+  ],
+  #preTesting : 'patchCompiledMethod.st'
 }

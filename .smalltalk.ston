@@ -7,5 +7,10 @@ SmalltalkCISpec {
       #platforms : [ #squeak ],
       #useLatestMetacello : true
     }
-  ]
+  ],
+  #testing : {
+    #coverage : {
+      #packages : [ 'FS-*', 'FileSystem-Git', 'Squit', 'Squot', 'VersionControl' ]
+    }
+  }
 }

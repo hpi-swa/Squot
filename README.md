@@ -1,4 +1,4 @@
-# Squot [![Build Status][travis_badge]][travis]
+# Squot [![Build Status][travis_badge]][travis] [![Coverage Status][coveralls_badge]][coveralls]
 Squeak Object Tracker - Version control for arbitrary objects in Squeak, currently with Git storage
 
 This repository also contains a variant of the FileSystem library,
@@ -74,5 +74,7 @@ Here a do-it for Windows users (requires OSProcess):
 OSProcess command: 'cmd /C start /D "', (squitRepository gitRepository repository baseDir pathString), '" gitk --all'.
 ```
 
+[coveralls]: https://coveralls.io/github/hpi-swa/Squot?branch=master
+[coveralls_badge]: https://coveralls.io/repos/github/hpi-swa/Squot/badge.svg?branch=master
 [travis]: https://travis-ci.org/hpi-swa/Squot
 [travis_badge]: https://travis-ci.org/hpi-swa/Squot.svg?branch=master

@@ -1,6 +1,6 @@
 tests
 testSwitchAndMoveOverToBranchAtSameVersion
-	| trackedObject originalHistorian otherHistorian |
+	| trackedObject originalHistorian otherHistorian contentsBeforeSwitch |
 	"given"
 	trackedObject := ValueHolder new contents: 'This is a test'.
 	workingCopy add: trackedObject at: 'tracked'.
@@ -16,7 +16,10 @@ testSwitchAndMoveOverToBranchAtSameVersion
 		description: 'Unsaved changes not preserved'.
 	"when"
 	trackedObject contents: 'Other changes'.
+	contentsBeforeSwitch := trackedObject contents.
 	workingCopy switchAndMoveUnsavedChangesOverTo: originalHistorian.
 	"then"
 	self assert: 'Other changes' = trackedObject contents
 		description: 'Unsaved changes not preserved'.
+	self assert: contentsBeforeSwitch == trackedObject contents
+		description: 'no patching should have occurred'.

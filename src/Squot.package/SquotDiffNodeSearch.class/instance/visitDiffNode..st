@@ -1,0 +1,3 @@
+visiting
+visitDiffNode: aDiffNode
+	self subclassResponsibility

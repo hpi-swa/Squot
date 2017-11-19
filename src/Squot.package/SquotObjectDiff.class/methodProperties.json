@@ -11,6 +11,8 @@
 		"diff:against:with:" : "jr 7/15/2017 23:21",
 		"diffSlot:withCorrespondingSlotIn:with:" : "jr 7/17/2017 00:02",
 		"initialize" : "jr 6/25/2017 21:45",
+		"initializeSquotDiffNodes:with:" : "jr 11/18/2017 22:41",
+		"newSquotDiffNodes" : "jr 11/18/2017 22:29",
 		"postCopy" : "jr 9/9/2017 12:48",
 		"printOn:" : "jr 6/25/2017 14:49",
 		"privateAdjustToResemble:" : "jr 9/9/2017 12:55",

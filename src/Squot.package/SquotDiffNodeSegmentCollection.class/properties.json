@@ -6,10 +6,9 @@
 		 ],
 	"commentStamp" : "",
 	"instvars" : [
-		"nodes",
-		"graphDiff" ],
-	"name" : "SquotMetaobjectDiffNodesBuilder",
+		"collection" ],
+	"name" : "SquotDiffNodeSegmentCollection",
 	"pools" : [
 		 ],
-	"super" : "Object",
+	"super" : "SquotDiffNodeSearch",
 	"type" : "normal" }

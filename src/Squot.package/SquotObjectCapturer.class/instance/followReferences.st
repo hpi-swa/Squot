@@ -1,4 +1,4 @@
 private
 followReferences
 	[toBeVisited isEmpty] whileFalse:
-		[self follow: toBeVisited removeFirst].
+		[self follow: toBeVisited removeFirst element].

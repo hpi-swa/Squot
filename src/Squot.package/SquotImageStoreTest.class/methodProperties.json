@@ -2,19 +2,16 @@
 	"class" : {
 		 },
 	"instance" : {
-		"createTestEnvironment" : "jr 1/27/2017 16:08",
 		"nameForTestEnvironment" : "jr 1/27/2017 16:02",
 		"newPackageInfoFor:" : "jr 3/5/2017 16:55",
-		"setUp" : "jr 2/2/2017 14:41",
+		"setUp" : "jr 10/15/2017 00:22",
 		"snapshotClass:at:" : "jr 3/6/2017 14:33",
 		"snapshotPackage:at:" : "jr 1/27/2017 16:10",
-		"tearDown" : "jr 3/6/2017 14:27",
+		"tearDown" : "jr 10/15/2017 01:12",
 		"testAddNewObjectsFromArtifact" : "jr 8/18/2017 13:01",
 		"testApplyPatch" : "jr 7/21/2017 17:44",
 		"testFiles" : "jr 3/8/2017 17:49",
 		"testIgnoredInstanceVariables" : "jr 7/20/2017 13:08",
 		"testRestoreClass" : "jr 9/20/2017 21:20",
 		"testRestorePackage" : "jr 9/22/2017 01:05",
-		"testRestorePackageThatLivesInAnotherEnvironment" : "jr 9/22/2017 01:07",
-		"testSnapshotAndRestoreText" : "jr 1/27/2017 16:04",
-		"testSnapshotPackageInDifferentEnvironment" : "jr 9/22/2017 01:07" } }
+		"testSnapshotAndRestoreText" : "jr 1/27/2017 16:04" } }

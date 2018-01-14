@@ -13,3 +13,4 @@ SystemOrganization addCategory: #'FileSystem-Git-Notifications'!
 SystemOrganization addCategory: #'FileSystem-Git-Monticello'!
 SystemOrganization addCategory: #'FileSystem-Git-Monticello-Tests'!
 SystemOrganization addCategory: #'FileSystem-Git-Help'!
+SystemOrganization addCategory: #'FileSystem-Git'!

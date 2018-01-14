@@ -17,6 +17,6 @@ capture: anObject asValueOfSlot: aShadowSlot
 		ifAbsent:
 			[namedObject := SquotNameDecorator on: captureObject withName: name.
 			aShadowSlot value: namedObject.
-			toBeVisited add: decorated.
+			toBeVisited add: (SquotSearchFrontierLink newFrom: decorated).
 			slotsToConvert add: aShadowSlot].
 	^ aShadowSlot

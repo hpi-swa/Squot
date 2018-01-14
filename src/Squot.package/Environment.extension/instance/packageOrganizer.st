@@ -1,0 +1,3 @@
+*Squot
+packageOrganizer
+	^ info packages

@@ -14,7 +14,7 @@ testTrackingWorkspaceMorph
 	workingCopy saveNewVersionMessage: 'add workspace' interactive: false.
 	"modify bindings and properties"
 	workspace contents: 'Changed contents'.
-	workspace bindings
+	bindings
 		at: #newVar put: 25;
 		removeKey: #toBeDeleted.
 	"restore"

@@ -10,4 +10,5 @@ logMessage: aString
 	(LogMutex ifNil: [LogMutex := Mutex new]) critical:
 		[LogMessages ifNil: [LogMessages := LinkedList new].
 		LogMessages size >= maxLogSize ifTrue: [LogMessages removeFirst].
-		LogMessages add: DateAndTime now printString, String cr, aString]
+		LogMessages add:
+			(GitStoreLogMessage newFrom: DateAndTime now printString, String cr, aString)]

@@ -1,0 +1,14 @@
+{
+	"category" : "FileSystem-Git",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"message" ],
+	"name" : "GitStoreLogMessage",
+	"pools" : [
+		 ],
+	"super" : "Link",
+	"type" : "normal" }

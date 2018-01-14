@@ -2,7 +2,7 @@ running
 setUp
 	classFactory := ClassFactoryForTestCase new.
 	createdClasses := OrderedCollection new.
-	testEnvironment := self createTestEnvironment.
+	testEnvironment := self class environment.
 	imageStore := SquotImageStore new
 		environment: testEnvironment;
 		yourself.

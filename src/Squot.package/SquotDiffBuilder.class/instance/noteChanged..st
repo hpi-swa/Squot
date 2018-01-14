@@ -1,8 +1,10 @@
 private diffing
 noteChanged: anUndecoratedShadow
-	| name |
-	(objectsWithChanges ifAbsentAdd: anUndecoratedShadow)
-		ifFalse: [^ self].
+	| name numberOfObjectsWithChangesBefore |
+	numberOfObjectsWithChangesBefore := objectsWithChanges size.
+	objectsWithChanges add: anUndecoratedShadow.
+	numberOfObjectsWithChangesBefore ~= objectsWithChanges size
+		ifFalse: ["was already present in the set" ^ self].
 	name := shadowNames at: anUndecoratedShadow.
 	graphDiff diffForObjectNamed: name
 		ifAbsent: [graphDiff addDiff: (objectDiffs at: anUndecoratedShadow) forObjectNamed: name].

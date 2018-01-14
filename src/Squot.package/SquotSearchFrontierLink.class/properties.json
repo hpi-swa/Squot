@@ -1,0 +1,14 @@
+{
+	"category" : "Squot-Internal",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"element" ],
+	"name" : "SquotSearchFrontierLink",
+	"pools" : [
+		 ],
+	"super" : "Link",
+	"type" : "normal" }

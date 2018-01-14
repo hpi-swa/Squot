@@ -12,6 +12,7 @@ menuCommitListHook: aMenu
 		'-'.
 		{'Compare with parent commit'. #actionCommitDiffWithParent}.
 		{'Compare with next selected commit'. #actionCommitDiffWithNextSelected. 'The next commit you select will be the origin of a diff against this commit.'}.
+		{'Compare with working copy'. #actionCommitDiffWithWorkingCopy}.
 		'-'.
 		{'Merge into active branch ', activeBranchName. #actionMerge. 'Merge the changes up to this commit into the active branch. Fast-forwards if this is a descendant of the head of the active branch, otherwise creates a merge commit.'. onlyOnInactiveBranch}.
 		{'Reset active branch ''', activeBranchName, ''' to this commit'. #actionBranchResetLoadedToCommit. 'Reset the currently active branch to the selected commit'. onlyOnInactiveBranch}.

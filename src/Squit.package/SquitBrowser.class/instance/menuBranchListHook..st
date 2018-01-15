@@ -1,6 +1,6 @@
 ui menu
 menuBranchListHook: aMenu
-	<menuBranchList>
+	<menuBranchListShifted: false>
 	| commands activeBranchName onlyActive onlyInactive onlyLocal onlyRemote onlyWithUpstream |
 	self hasBranchSelection ifFalse: [^ aMenu].
 	activeBranchName := self projectSelection loadedHistorian shortName.
@@ -21,7 +21,9 @@ menuBranchListHook: aMenu
 		{'Remove upstream branch at the remote'. #actionBranchRemoveUpstream. 'Push the deletion of the remote branch'. onlyWithUpstream}.
 		'-'.
 		{'Rename branch'. #actionBranchRename. nil. onlyLocal}.
-		{'Remove branch'. #actionBranchRemove}}.
+		{'Remove branch'. #actionBranchRemove}.
+		'-'.
+		{'Compare with working copy'. #actionBranchDiffWithWorkingCopy}}.
 	
 	self buildMenu: aMenu from: commands.
 	^ aMenu

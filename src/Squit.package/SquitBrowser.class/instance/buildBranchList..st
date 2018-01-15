@@ -5,6 +5,6 @@ buildBranchList: builder
 		list: #branchList;
 		getSelected: #branchSelection;
 		setSelected: #branchSelection:;
-		menu: #branchListMenu:;
+		menu: #branchListMenu:shifted:;
 		icon: #branchListIconAt:;
 		frame: (LayoutFrame fractions: (0@0.5 corner: 1@1))

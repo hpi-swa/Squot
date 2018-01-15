@@ -11,7 +11,13 @@ actionCommitCherryPick
 			values: parentVersions
 			title: 'Pick changes in comparison to which parent?'].
 	workingCopy := self projectSelection.
-	workingCopy cherryPickInteractivelyFromVersion: pickedVersion withParent: parentVersion
+	[workingCopy cherryPickInteractivelyFromVersion: pickedVersion
+		withParent: parentVersion
 		ifLoadCanceled: [^ self]
 		ifSaveCanceled: [:revertBlock |
-			(UIManager default confirm: 'Revert picked changes?') ifTrue: [revertBlock value]].
+			(UIManager default confirm: 'Revert picked changes?') ifTrue: [revertBlock value]]]
+	on: SquotInitialLogMessageRequested
+	do: [:request | request resume:
+		pickedVersion message,
+		String cr, String cr,
+		'(cherry-picked from commit ', pickedVersion internalId, ')'].

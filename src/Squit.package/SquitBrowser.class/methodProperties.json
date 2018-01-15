@@ -27,7 +27,7 @@
 		"actionBranchSwitchMoveOver" : "jr 7/15/2017 14:51",
 		"actionClearSearch" : "fn 4/11/2017 18:49",
 		"actionCommit" : "jr 5/30/2017 19:16",
-		"actionCommitCherryPick" : "jr 1/15/2018 22:57",
+		"actionCommitCherryPick" : "jr 1/15/2018 23:33",
 		"actionCommitDiffWithNextSelected" : "jr 7/2/2017 19:30",
 		"actionCommitDiffWithParent" : "jr 7/23/2017 01:59",
 		"actionCommitMergeIntoMemory" : "jr 5/30/2017 19:19",

@@ -5,6 +5,7 @@
 		"asMCPatch" : "jr 7/22/2017 17:24",
 		"asSquotHierarchicalDiff" : "jr 7/21/2017 02:21",
 		"asSquotHierarchicalDiffWith:" : "jr 6/12/2017 17:00",
+		"initializeSquotDiffNodes:with:" : "jr 11/19/2017 20:52",
 		"newSquotDiffNodes" : "jr 11/19/2017 20:50",
 		"squotAdjustToResemble:" : "jr 5/1/2017 22:09",
 		"squotApplyTo:" : "jr 5/29/2017 23:45",

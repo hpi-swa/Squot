@@ -1,3 +1,3 @@
-ui diff tree
+initialize-release
 from: leftContainer to: rightContainer
-	artifactDiffs := (rightContainer patchRelativeToBase: leftContainer) diffs.
+	self fromPatch: (rightContainer patchRelativeToBase: leftContainer).

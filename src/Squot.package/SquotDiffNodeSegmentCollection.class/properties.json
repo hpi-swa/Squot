@@ -1,0 +1,14 @@
+{
+	"category" : "Squot-Diffs-Hierarchical",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"collection" ],
+	"name" : "SquotDiffNodeSegmentCollection",
+	"pools" : [
+		 ],
+	"super" : "SquotDiffNodeSearch",
+	"type" : "normal" }

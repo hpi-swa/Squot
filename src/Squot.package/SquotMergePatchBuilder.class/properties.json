@@ -1,0 +1,19 @@
+{
+	"category" : "Squot-Diffs",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"diffs",
+		"leftArtifacts",
+		"rightArtifacts",
+		"baseArtifacts",
+		"fromBaseToIncoming",
+		"fromBaseToExisting" ],
+	"name" : "SquotMergePatchBuilder",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }

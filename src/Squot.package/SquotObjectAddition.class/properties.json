@@ -1,0 +1,14 @@
+{
+	"category" : "Squot-Diffs-Generic",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"addedObject" ],
+	"name" : "SquotObjectAddition",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }

@@ -1,0 +1,15 @@
+{
+	"category" : "Squot-Diffs-Hierarchical",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"visitedNodes",
+		"upcomingNodes" ],
+	"name" : "SquotDiffNodeSearch",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }

@@ -1,10 +1,9 @@
 {
 	"class" : {
-		 },
+		"printHeadlineForChangesTextOn:" : "jr 10/31/2017 20:54" },
 	"instance" : {
 		"addTo:with:" : "jr 7/16/2017 00:36",
 		"instVarName" : "jr 6/17/2017 20:02",
 		"lookupIn:" : "jr 7/16/2017 15:33",
 		"materializeIn:with:" : "jr 9/9/2017 13:31",
-		"printHeadlineForChangesTextOn:" : "jr 6/25/2017 21:56",
 		"removeFrom:with:" : "jr 9/9/2017 14:20" } }

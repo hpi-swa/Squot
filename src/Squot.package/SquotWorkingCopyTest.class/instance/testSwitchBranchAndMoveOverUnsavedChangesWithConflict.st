@@ -1,7 +1,9 @@
 tests
 testSwitchBranchAndMoveOverUnsavedChangesWithConflict
-	| trackedObject class originalHistorian otherHistorian |
-	"given"
+	| trackedObject class originalHistorian otherHistorian hadConflict |
+	"given
+	initial version <otherHistorian ---- change a <originalHistorian ---- (stashed)
+	  `--- (unsaved)"
 	class := classFactory newClass.
 	class compileSilently: 'savedMethod ^ 1' classified: 'safe'.
 	class compileSilently: 'a ^ 1' classified: 'to be changed'.
@@ -20,6 +22,15 @@ testSwitchBranchAndMoveOverUnsavedChangesWithConflict
 	workingCopy switchTo: otherHistorian.
 	class compileSilently: 'a ^ 4' classified: 'unsaved'.
 	"switch back, trying to move over changes"
-	workingCopy switchAndMoveUnsavedChangesOverTo: originalHistorian.
+	hadConflict := false.
+	[workingCopy switchAndMoveUnsavedChangesOverTo: originalHistorian]
+	on: SquotConflictResolutionRequested doAndResume: [:request | | conflict |
+		hadConflict := true.
+		self assert: request patch hasConflicts.
+		conflict := request patch diffs detect: #hasConflicts.
+		self assert: 'a ^ 3' equals: ((conflict left shadowOfTrackedObject asMCSnapshot definitions detect: [:each | each isMethodDefinition and: [each selector == #a]]) source withBlanksCondensed withLineEndings: ' ').
+		self assert: 'a ^ 4' equals: ((conflict right shadowOfTrackedObject asMCSnapshot definitions detect: [:each | each isMethodDefinition and: [each selector == #a]]) source withBlanksCondensed withLineEndings: ' ').
+		conflict := conflict content diffs detect: [:each | each squotHasConflicts].
+		conflict patch chooseRight].
+	self assert: hadConflict.
 	self assert: 'a ^ 4' equals: ((class >> #a) getSource asString withLineEndings: ' ') withBlanksCondensed description: 'moved over changes'.
-	self flag: 'TODO: maybe this should rather trigger a merge of the unsaved changes'.

@@ -1,0 +1,10 @@
+{
+	"class" : {
+		"key:leftDiff:rightDiff:" : "jr 10/19/2017 19:26" },
+	"instance" : {
+		"hasConflicts" : "jr 10/31/2017 21:58",
+		"initialize" : "jr 10/19/2017 19:24",
+		"leftSlotDiff" : "jr 10/19/2017 19:24",
+		"leftSlotDiff:" : "jr 10/19/2017 19:26",
+		"rightSlotDiff" : "jr 10/19/2017 19:24",
+		"rightSlotDiff:" : "jr 10/19/2017 19:26" } }

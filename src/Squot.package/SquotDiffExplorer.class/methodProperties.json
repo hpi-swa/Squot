@@ -1,5 +1,6 @@
 {
 	"class" : {
+		"forPatch:" : "jr 10/31/2017 18:20",
 		"from:to:" : "jr 7/23/2017 02:03" },
 	"instance" : {
 		"browseChangedArtifactOfSelectedNode" : "jr 7/1/2017 22:31",
@@ -10,12 +11,14 @@
 		"diffNodeMenu:shifted:" : "jr 4/26/2017 17:38",
 		"diffNodeMenuHook:" : "jr 7/1/2017 22:32",
 		"diffText" : "jr 4/26/2017 15:58",
-		"from:to:" : "jr 7/23/2017 02:05",
+		"from:to:" : "jr 10/31/2017 18:16",
+		"fromPatch:" : "jr 10/31/2017 18:16",
 		"hasChildren:" : "jr 4/26/2017 15:59",
 		"inspectChangedArtifactOfSelectedNode" : "jr 7/1/2017 22:32",
 		"inspectOriginalArtifactOfSelectedNode" : "jr 4/26/2017 18:04",
 		"inspectSelectedDiffContent" : "jr 4/26/2017 17:56",
-		"nodeLabelOf:" : "jr 4/26/2017 15:56",
+		"nodeLabelOf:" : "jr 1/15/2018 21:28",
+		"open" : "jr 10/31/2017 18:24",
 		"openLabel:" : "jr 7/1/2017 22:22",
 		"rootNodes" : "jr 7/23/2017 02:01",
 		"selectNode:" : "jr 4/26/2017 17:36",

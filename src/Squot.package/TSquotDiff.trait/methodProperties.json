@@ -2,8 +2,11 @@
 	"class" : {
 		 },
 	"instance" : {
+		"asSquotConflicts" : "jr 10/19/2017 19:20",
 		"asSquotHierarchicalDiff" : "jr 4/10/2017 23:51",
 		"asSquotHierarchicalDiffWith:" : "jr 6/12/2017 17:01",
+		"initializeSquotDiffNodes:with:" : "jr 1/14/2018 23:10",
+		"newSquotDiffNodes" : "jr 1/14/2018 23:06",
 		"squotAdjustToResemble:" : "jr 5/1/2017 22:08",
 		"squotAdjustToResemble:updating:" : "jr 7/22/2017 17:05",
 		"squotApplyTo:" : "jr 5/29/2017 20:17",
@@ -11,5 +14,6 @@
 		"squotApplyToLoaded:" : "jr 6/7/2017 14:44",
 		"squotApplyToLoaded:with:" : "jr 6/27/2017 18:54",
 		"squotHasChanges" : "jr 4/9/2017 22:42",
+		"squotHasConflicts" : "jr 10/31/2017 21:44",
 		"squotInverseDiff" : "jr 6/2/2017 16:39",
 		"squotNewTargetInstance" : "jr 10/2/2017 21:33" } }

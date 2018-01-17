@@ -1,0 +1,15 @@
+{
+	"category" : "Squot-Diffs",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "jr 10/21/2017 16:04",
+	"instvars" : [
+		"base",
+		"choice" ],
+	"name" : "SquotArtifactConflict",
+	"pools" : [
+		 ],
+	"super" : "SquotArtifactDiff",
+	"type" : "normal" }

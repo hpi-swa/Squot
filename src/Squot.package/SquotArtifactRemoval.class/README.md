@@ -1,0 +1,1 @@
+I record the removal of an existing artifact.

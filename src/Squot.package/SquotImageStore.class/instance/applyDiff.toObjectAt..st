@@ -11,3 +11,4 @@ applyDiff: anArtifactDiff toObjectAt: path
 		ifAbsent: [environment].
 	objectEnvironment beCurrentDuring: 
 		[anArtifactDiff applyToLoaded: (graph ifNil: [object])].
+	graph ifNotNil: [objects at: path put: graph startObject].

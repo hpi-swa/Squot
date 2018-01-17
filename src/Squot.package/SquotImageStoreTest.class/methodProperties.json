@@ -4,9 +4,11 @@
 	"instance" : {
 		"nameForTestEnvironment" : "jr 1/27/2017 16:02",
 		"newPackageInfoFor:" : "jr 3/5/2017 16:55",
+		"performTest" : "",
 		"setUp" : "jr 10/15/2017 00:22",
 		"snapshotClass:at:" : "jr 3/6/2017 14:33",
 		"snapshotPackage:at:" : "jr 1/27/2017 16:10",
+		"suppressProgressDisplayDuring:" : "",
 		"tearDown" : "jr 10/15/2017 01:12",
 		"testAddNewObjectsFromArtifact" : "jr 8/18/2017 13:01",
 		"testApplyPatch" : "jr 7/21/2017 17:44",

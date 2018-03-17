@@ -3,7 +3,6 @@
 		"key:leftShadow:rightShadow:" : "jr 6/22/2017 14:50" },
 	"instance" : {
 		"applyTo:with:" : "jr 7/29/2017 21:43",
-		"asSquotHierarchicalDiffWith:" : "jr 7/21/2017 02:39",
 		"hierarchicalDiffTitle" : "jr 6/25/2017 21:51",
 		"initializeSquotDiffNode:with:" : "jr 11/18/2017 22:39",
 		"printDescriptionOn:" : "jr 6/18/2017 11:50",

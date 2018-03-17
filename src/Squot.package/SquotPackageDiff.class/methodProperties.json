@@ -6,8 +6,6 @@
 	"instance" : {
 		"asMonticelloPatch" : "jr 7/22/2017 17:24",
 		"asSquotConflicts" : "jr 10/31/2017 21:47",
-		"asSquotHierarchicalDiff" : "jr 7/22/2017 00:02",
-		"asSquotHierarchicalDiffWith:" : "jr 7/22/2017 00:02",
 		"conflicts" : "jr 7/27/2017 23:34",
 		"copyWithPatch:" : "jr 7/22/2017 00:05",
 		"initializeSquotDiffNodes:with:" : "jr 11/19/2017 20:52",

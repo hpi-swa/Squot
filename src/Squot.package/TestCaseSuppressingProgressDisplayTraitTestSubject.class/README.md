@@ -1,0 +1,1 @@
+I provide sample tests for TestCaseSuppressingProgressDisplayTraitTest.

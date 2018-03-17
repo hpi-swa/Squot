@@ -1,0 +1,1 @@
+I am a PluggableTreeItemNode that changes the appearance of nodes for deselected changes.

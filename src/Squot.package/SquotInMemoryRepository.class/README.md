@@ -1,11 +1,5 @@
-I am the simulation of a repository. All my versions and historians stay in object memory.
+I am a simple implementation of a repository. All my versions and historians stay in object memory. Used for testing purposes.
 
 Instance Variables
-	historians:		<Object>
-	versions:		<Object>
-
-historians
-	- xxxxx
-
-versions
-	- xxxxx
+	historians:		<Dictionary>
+	versions:		<Set>

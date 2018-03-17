@@ -1,0 +1,1 @@
+TSquotObjectContainer that is open to amendments, such as adding or removing TSquotArtifacts or applying a patch. Typically, Squot Stores are mutable object containers.

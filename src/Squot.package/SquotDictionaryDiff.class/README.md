@@ -1,0 +1,1 @@
+I specialize in the differences between Dictionaries. I send the proper messages to SquotDictionaryShadow to perform my duties.

@@ -5,7 +5,7 @@
 	"classtraitcomposition" : "TSquotVersion classTrait",
 	"classvars" : [
 		 ],
-	"commentStamp" : "jr 2/5/2017 22:40",
+	"commentStamp" : "jr 3/17/2018 20:35",
 	"instvars" : [
 		"repository",
 		"commit" ],

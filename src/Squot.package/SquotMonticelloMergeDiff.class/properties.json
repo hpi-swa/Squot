@@ -5,7 +5,7 @@
 	"classtraitcomposition" : "TSquotDiff classTrait",
 	"classvars" : [
 		 ],
-	"commentStamp" : "jr 5/29/2017 00:37",
+	"commentStamp" : "jr 3/17/2018 19:17",
 	"instvars" : [
 		"operations",
 		"conflicts" ],

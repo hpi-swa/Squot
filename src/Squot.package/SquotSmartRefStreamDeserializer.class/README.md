@@ -1,0 +1,1 @@
+I deserialize what SquotSmartRefStreamSerializer serialized, using SmartRefStream.

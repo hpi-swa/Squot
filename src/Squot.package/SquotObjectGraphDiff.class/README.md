@@ -1,4 +1,4 @@
-I am the result of diffing two graphs of named object shadows.
+I am the result of comparing two graphs of object shadows.
 
 Instance Variables
 	diffs:		<Dictionary> ObjectDiffs by name of the transformed object

@@ -5,7 +5,7 @@
 	"classtraitcomposition" : "TSquotLocalHistorian classTrait",
 	"classvars" : [
 		 ],
-	"commentStamp" : "",
+	"commentStamp" : "jr 3/17/2018 19:58",
 	"instvars" : [
 		"name",
 		"version",

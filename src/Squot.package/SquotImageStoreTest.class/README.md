@@ -1,4 +1,4 @@
-I test an aspect of the SquotImageStore.
+I test the SquotImageStore.
 
 Instance Variables
 	imageStore:		the store under test

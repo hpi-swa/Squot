@@ -1,0 +1,1 @@
+Something that can be compared to other similar objects with Squot.

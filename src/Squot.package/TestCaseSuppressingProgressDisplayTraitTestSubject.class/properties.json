@@ -5,7 +5,7 @@
 	"classtraitcomposition" : "TTestCaseSuppressingProgressDisplay classTrait",
 	"classvars" : [
 		 ],
-	"commentStamp" : "",
+	"commentStamp" : "jr 3/17/2018 20:17",
 	"instvars" : [
 		 ],
 	"name" : "TestCaseSuppressingProgressDisplayTraitTestSubject",

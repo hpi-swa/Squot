@@ -1,3 +1,1 @@
-I write objects as a SmartRefStream.
-
-Instance Variables
+I write objects to files with a SmartRefStream.

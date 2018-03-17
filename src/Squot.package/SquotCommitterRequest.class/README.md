@@ -1,0 +1,1 @@
+I am signalled when an object needs to know the current committer.

@@ -1,1 +1,1 @@
-I am a collection of ArtifactDiffs, like a Snapshot, but with diffs.
+I am a collection of ArtifactDiffs, structured like a Snapshot, but with diffs inside.

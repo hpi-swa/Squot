@@ -1,0 +1,1 @@
+Dynamic variable to access the currently relevant registry of objects to look them up by name.

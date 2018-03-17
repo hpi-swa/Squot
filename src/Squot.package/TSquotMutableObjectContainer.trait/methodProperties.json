@@ -2,5 +2,7 @@
 	"class" : {
 		 },
 	"instance" : {
+		"add:" : "jr 3/17/2018 16:00",
 		"applyDiff:" : "jr 8/16/2017 15:26",
-		"applyPatch:" : "jr 8/16/2017 15:31" } }
+		"applyPatch:" : "jr 8/16/2017 15:31",
+		"removeAt:" : "jr 3/17/2018 16:01" } }

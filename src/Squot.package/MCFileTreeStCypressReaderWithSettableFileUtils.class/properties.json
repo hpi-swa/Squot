@@ -4,7 +4,7 @@
 		 ],
 	"classvars" : [
 		 ],
-	"commentStamp" : "",
+	"commentStamp" : "jr 3/17/2018 19:35",
 	"instvars" : [
 		"fileUtils" ],
 	"name" : "MCFileTreeStCypressReaderWithSettableFileUtils",

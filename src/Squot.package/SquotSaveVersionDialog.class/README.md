@@ -1,15 +1,6 @@
-I am a tool to let a user edit the properties of a new Version.
+I am a tool that lets a user edit the properties of a new Version.
 
 Instance Variables
-	canceled:		<Object>
-	changeChooser:		<Object>
-	message:		<Object>
-
-canceled
-	- xxxxx
-
-changeChooser
-	- xxxxx
-
-message
-	- xxxxx
+	canceled:		<Boolean or nil> the operation is assumed to be cancelled unless #accept has been called and this is false
+	changeChooser:	<SquotChangedArtifactsChooser>
+	message:		<String> log message for the new version

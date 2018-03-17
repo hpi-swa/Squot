@@ -4,4 +4,4 @@ initializeSquotDiffNode: aDiffNode with: aDiffNodesBuilder
 	aDiffNode
 		title: self hierarchicalDiffTitle;
 		content: self;
-		children: (aDiffNodesBuilder convertToNodes: self value).
+		children: #().

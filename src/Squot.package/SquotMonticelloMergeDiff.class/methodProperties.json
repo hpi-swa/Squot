@@ -3,12 +3,10 @@
 		"operations:conflicts:" : "jr 5/28/2017 20:03" },
 	"instance" : {
 		"asMCPatch" : "jr 7/22/2017 17:25",
-		"asSquotHierarchicalDiff" : "jr 5/28/2017 22:56",
-		"asSquotHierarchicalDiffWith:" : "jr 6/12/2017 17:01",
 		"chooseRight" : "jr 10/31/2017 23:00",
 		"conflicts" : "jr 5/29/2017 00:08",
 		"initializeSquotDiffNodes:with:" : "jr 1/14/2018 23:13",
-		"newSquotDiffNodes" : "jr 1/14/2018 23:11",
+		"newSquotDiffNodes" : "jr 3/17/2018 23:38",
 		"operations" : "jr 5/29/2017 00:08",
 		"operations:conflicts:" : "jr 5/28/2017 20:03",
 		"squotAdjustToResemble:" : "jr 5/29/2017 00:27",

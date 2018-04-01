@@ -3,8 +3,6 @@
 		"left:right:" : "jr 6/1/2017 12:48" },
 	"instance" : {
 		"asSquotConflicts" : "jr 10/19/2017 19:52",
-		"asSquotHierarchicalDiff" : "jr 6/1/2017 12:00",
-		"asSquotHierarchicalDiffWith:" : "jr 6/12/2017 17:01",
 		"asSquotSlotDiffWithKey:" : "jr 6/22/2017 14:50",
 		"initializeSquotDiffNodes:with:" : "jr 3/17/2018 14:22",
 		"inverse" : "jr 6/1/2017 13:09",

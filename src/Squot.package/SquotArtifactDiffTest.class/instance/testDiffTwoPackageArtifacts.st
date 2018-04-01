@@ -1,41 +1,43 @@
 testing
 testDiffTwoPackageArtifacts
-	| classNode diff snapshot1 snapshot2 titles scriptNode |
-	snapshot1 := SquotArtifact new content: (MCSnapshot fromDefinitions: {
-		MCClassDefinition name: #Foo superclassName: #Object category: 'Foo'
-			instVarNames: #(a b c) comment: 'Foo'.
-		MCMethodDefinition className: #Foo selector: #aaa category: 'accessing'
-			timeStamp: 'JohnWayne 4/10/2017 20:26' source:
+	| package classNode diff snapshot1 snapshot2 titles scriptNode |
+	package := PackageInfo new packageName: 'Foo'.
+	snapshot1 := (MCSnapshot fromDefinitions: {
+			MCClassDefinition name: #Foo superclassName: #Object category: 'Foo'
+				instVarNames: #(a b c) comment: 'Foo'.
+			MCMethodDefinition className: #Foo selector: #aaa category: 'accessing'
+				timeStamp: 'JohnWayne 4/10/2017 20:26' source:
 'aaa
 	^ a'.
-		MCMethodDefinition className: #Foo selector: #bbb category: 'accessing'
-			timeStamp: 'JohnWayne 4/10/2017 20:26' source:
+			MCMethodDefinition className: #Foo selector: #bbb category: 'accessing'
+				timeStamp: 'JohnWayne 4/10/2017 20:26' source:
 'bbb
 	^ b'.
-		MCMethodDefinition className: #Foo selector: #ccc category: 'accessing'
-			timeStamp: 'JohnWayne 4/10/2017 20:26' source:
+			MCMethodDefinition className: #Foo selector: #ccc category: 'accessing'
+				timeStamp: 'JohnWayne 4/10/2017 20:26' source:
 'ccc
 	^ c'.
-		MCPreambleDefinition script: 'Transcript show: #Foo1' packageName: 'Foo'.}).
-	snapshot2 := SquotArtifact new content: (MCSnapshot fromDefinitions: {
-		MCClassDefinition name: #Foo superclassName: #Object category: 'Foo'
-			instVarNames: #(a c) comment: 'Foo without c'.
-		MCMethodDefinition className: #Foo selector: #aaa category: 'accessing'
-			timeStamp: 'JohnWayne 4/10/2017 20:26' source:
+			MCPreambleDefinition script: 'Transcript show: #Foo1' packageName: 'Foo'.})
+		asSquotArtifactForPackage: package.
+	snapshot2 := (MCSnapshot fromDefinitions: {
+			MCClassDefinition name: #Foo superclassName: #Object category: 'Foo'
+				instVarNames: #(a c) comment: 'Foo without c'.
+			MCMethodDefinition className: #Foo selector: #aaa category: 'accessing'
+				timeStamp: 'JohnWayne 4/10/2017 20:26' source:
 'aaa
 	^ a'.
-		MCMethodDefinition className: #Foo selector: #bbb category: 'accessing'
-			timeStamp: 'JohnWayne 4/10/2017 20:26' source:
+			MCMethodDefinition className: #Foo selector: #bbb category: 'accessing'
+				timeStamp: 'JohnWayne 4/10/2017 20:26' source:
 'bbb
 	^ c'.
-		MCMethodDefinition className: #Foo selector: #postCopy category: 'accessing'
-			timeStamp: 'JohnWayne 4/10/2017 20:26' source:
+			MCMethodDefinition className: #Foo selector: #postCopy category: 'accessing'
+				timeStamp: 'JohnWayne 4/10/2017 20:26' source:
 'postCopy
 	a := a copy.
 	c := c copy.'.
-		MCPreambleDefinition script: 'Transcript show: #Foo2' packageName: 'Foo'.}).
+			MCPreambleDefinition script: 'Transcript show: #Foo2' packageName: 'Foo'.})
+		asSquotArtifactForPackage: package.
 	diff := snapshot1 diffAgainst: snapshot2.
-	self assert: (diff content isKindOf: MCPatch).
 	self assert: diff topNodes size = 2.
 	self assert: (classNode := diff topNodes detect: [:each | each title = 'Foo'] ifNone: []) notNil.
 	self assert: classNode children size = 4.

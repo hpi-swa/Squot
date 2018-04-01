@@ -1,6 +1,12 @@
 sudo: false
 language: smalltalk
-smalltalk: Squeak-trunk
+smalltalk:
+    - Squeak-5.1
+    - Squeak-trunk
 os:
   - linux
   - osx
+
+matrix:
+    allow_failures:
+        - smalltalk: Squeak-trunk

@@ -4,4 +4,4 @@ actionProjectRemove
 	(UIManager confirm: 'Really delete project ', self projectSelection name, '?')
 		ifFalse: [^ self].
 	self projectSelection unregister.
-	self refresh.
+	self projectIndex: (self projectIndex min: self projectList size).

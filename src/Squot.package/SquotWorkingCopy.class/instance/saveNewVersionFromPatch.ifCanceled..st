@@ -9,12 +9,13 @@ saveNewVersionFromPatch: aPatch ifCanceled: cancelBlock
 	tool requestSelectedChangesWithTitle: 'Select changes and message for the new version'.
 	tool accepted ifFalse: [^ cancelBlock value].
 	selectedPatch := tool selectedPatch.
-	[newVersion := loadedHistorian createNewVersionFromPatch: selectedPatch
-		with: [:version | version
-					message: tool message asString;
-					author: self defaultAuthor.
-				version parents: self parentVersions.
-				self shouldNotStoreMetadata ifTrue: [version doNotStoreMetadata]]]
+	[self handlePathChangesDuring:
+		[newVersion := loadedHistorian createNewVersionFromPatch: selectedPatch
+			with: [:version | version
+						message: tool message asString;
+						author: self defaultAuthor.
+					version parents: self parentVersions.
+					self shouldNotStoreMetadata ifTrue: [version doNotStoreMetadata]]]]
 		on: SquotArtifactsWereCaptured
 		doAndResume: [:captured | capturedArtifacts := captured artifacts].
 	self loadedVersion: newVersion.

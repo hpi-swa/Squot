@@ -1,3 +1,3 @@
 accessing
 left
-	self error: 'Cannot access original object of an addition'.
+	self error: 'There is no original edition of the object'.

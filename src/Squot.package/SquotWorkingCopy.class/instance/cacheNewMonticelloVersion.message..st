@@ -6,7 +6,7 @@ cacheNewMonticelloVersion: aPackageInfoDiff message: messageText
 	self flag: #FIXME. "this does not work for 'branched' packages"
 	[mcWorkingCopy := MCWorkingCopy forPackageNamed: packageName]
 		on: NotFound do: [^ self].
-	patch := aPackageInfoDiff diffOfTrackedObject asMonticelloPatch.
+	patch := aPackageInfoDiff asMonticelloPatch.
 	patch isEmpty ifTrue: [^ self].
 	mcSnapshot := aPackageInfoDiff right shadowOfTrackedObject asMCSnapshot.
 	version := mcWorkingCopy

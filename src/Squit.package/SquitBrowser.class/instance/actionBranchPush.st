@@ -2,6 +2,8 @@ actions on branches
 actionBranchPush
 	| historian branchName repository gitRepository |
 	self hasBranchSelection ifFalse: [^ self].
+	selectedHistorian isRemoteTrackingHistorian ifTrue:
+		[^ self inform: 'You should not push a remote-tracking branch. Push a local branch instead.'].
 	historian := selectedHistorian.
 	branchName := historian name.
 	repository := self projectSelection repository.

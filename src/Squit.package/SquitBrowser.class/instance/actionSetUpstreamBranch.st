@@ -4,7 +4,7 @@ actionSetUpstreamBranch
 	self hasBranchSelection ifFalse: [^ self].
 	localHistorian := selectedHistorian.
 	localBranchName := localHistorian shortName.
-	gitRepository := self projectSelection repository gitRepository.
+	gitRepository := localHistorian repository gitRepository.
 	self requestAndSetUpstreamBranchOf: localBranchName
 		in: gitRepository
 		ifCanceled: [^ self].

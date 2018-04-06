@@ -1,8 +1,8 @@
 user requests
-choosePackagesFromCategories
+choosePackagesFromCategoriesFor: aWorkingCopy
 	"self new choosePackagesFromCategories"
 	| packageNames selection alreadyTrackedPackageNames |
-	alreadyTrackedPackageNames := self packagesInCurrentStore.
+	alreadyTrackedPackageNames := self packagesIn: aWorkingCopy.
 	packageNames := self categoriesPlusPrefixes reject: [:each |
 		alreadyTrackedPackageNames anySatisfy: [:tracked | each beginsWith: tracked]].
 	selection := UIManager default

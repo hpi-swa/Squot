@@ -1,14 +1,17 @@
 actions on branches
 actionBranchPush
-	| historian branchName repository gitRepository |
+	| historian branchName workingCopy repository gitRepository |
 	self hasBranchSelection ifFalse: [^ self].
+	selectedHistorian isRemoteTrackingHistorian ifTrue:
+		[^ self inform: 'You should not push a remote-tracking branch. Push a local branch instead.'].
 	historian := selectedHistorian.
 	branchName := historian name.
-	repository := self projectSelection repository.
+	workingCopy := self projectSelection.
+	repository := workingCopy repository.
 	gitRepository := repository gitRepository.
 	self checkTrackedBranchOrOfferChange: historian ifUnsupported: [^ self].
 	[self handlingCredentialsOf: historian
-		do: 	[self projectSelection repository
+		do: 	[workingCopy repository
 			exportToUpstream: historian
 			ifNone: [
 				self offerToSetUpstreamBranchOf: historian shortName

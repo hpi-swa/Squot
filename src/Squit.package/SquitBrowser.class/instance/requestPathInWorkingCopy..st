@@ -1,17 +1,17 @@
 actions
-requestPathInWorkingCopy
+requestPathInWorkingCopy: aWorkingCopy
 	| version subPath gitRepository rootDirectory |
-	gitRepository := self projectSelection repository gitRepository repository.
+	gitRepository := aWorkingCopy repository gitRepository repository.
 	gitRepository workingCopyDirDo: [:workingCopyDir |
 			subPath := self chooseSubdirectory: workingCopyDir ifCanceled: [^ nil]]
 		ifBareOrAbsent: ["choose from existing directories"
-			version := self projectSelection loadedHistorian version.
+			version := aWorkingCopy loadedHistorian version.
 			version
 				ifNil: [subPath := UIManager default
 						request: 'Enter the relative path in the working copy for the package'
 						initialAnswer: 'src']
 				ifNotNil: [rootDirectory := SquitRepositoryFilesystemExtension new
-						repository: self projectSelection repository;
+						repository: aWorkingCopy repository;
 						forVersion: version.
 					subPath := self chooseSubdirectory: rootDirectory ifCanceled: [^ nil]]].
 	subPath ifNotEmpty: [

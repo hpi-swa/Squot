@@ -18,4 +18,6 @@ patchRelativeToBaseVersion: baseSquitVersion
 				ifAbsent: [SquotArtifactAddition of: (mine at: each)])].
 	deletedPaths do: [:each |
 		diffs at: each put: (SquotArtifactRemoval of: (bases at: each))].
+	diffs keysAndValuesRemove: [:path :eachDiff |
+		eachDiff hasChanges not "tree changed, but serialized objects did not..."].
 	^ SquotPatch with: diffs

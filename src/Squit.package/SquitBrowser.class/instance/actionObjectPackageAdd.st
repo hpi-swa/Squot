@@ -1,7 +1,8 @@
 actions on working copies
 actionObjectPackageAdd
-	| selection subPath |
-	selection := self choosePackagesFromCategories ifEmpty: [^ self].
-	subPath := self requestPathInWorkingCopy.
+	| workingCopy selection subPath |
+	workingCopy := self projectSelection.
+	selection := (self choosePackagesFromCategoriesFor: workingCopy) ifEmpty: [^ self].
+	subPath := self requestPathInWorkingCopy: workingCopy.
 	subPath ifNil: [^ self].
-	selection do: [:each | self projectSelection addPackageNamed: each at: subPath]
+	selection do: [:each | workingCopy addPackageNamed: each at: subPath]

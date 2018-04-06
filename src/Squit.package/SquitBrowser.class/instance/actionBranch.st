@@ -7,5 +7,6 @@ actionBranch
 		caseOf: 
 		{[#switchMoveOver] -> [self actionBranchSwitchMoveOver].
 		[#switchClean] -> [self actionBranchSwitch].
-		[#stayAtCurrent] -> []}.
+		[#stayAtCurrent] -> [].
+		[nil] -> []}.
 	self branchSelectionChanged.

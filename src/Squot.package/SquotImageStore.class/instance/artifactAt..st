@@ -1,3 +1,3 @@
 accessing
 artifactAt: path
-	^ self liveObjectFor: (self objectAt: path) at: path
+	^ self liveArtifactFor: (self objectAt: path) at: path

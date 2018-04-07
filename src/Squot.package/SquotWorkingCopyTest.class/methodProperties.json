@@ -13,6 +13,7 @@
 		"setUp" : "jr 10/31/2017 23:46",
 		"targetClass" : "jr 1/26/2017 17:21",
 		"tearDown" : "jr 5/22/2017 23:55",
+		"testAddMultiplePackagesToSameFolder" : "jr 4/7/2018 17:10",
 		"testDiffWithParent" : "jr 7/23/2017 02:41",
 		"testMergeRemovalAndChange" : "jr 10/21/2017 16:33",
 		"testMergeVersionWithLoadedObjects" : "jr 9/22/2017 01:01",

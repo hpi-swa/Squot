@@ -12,7 +12,8 @@
 		"repositoryDirectory",
 		"repository",
 		"store",
-		"changeLogSuppressor" ],
+		"changeLogSuppressor",
+		"scenario" ],
 	"name" : "SquotWorkingCopyTest",
 	"pools" : [
 		 ],

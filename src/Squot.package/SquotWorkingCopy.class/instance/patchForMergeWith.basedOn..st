@@ -4,8 +4,8 @@ patchForMergeWith: mergeVersion basedOn: baseVersion
 	baseVersion to mergeVersion into my objects."
 	| diffs mine theirs bases fromBaseToMe fromBaseToMergeVersion |
 	mine := store artifacts.
-	theirs := mergeVersion lazyArtifacts.
-	bases := baseVersion lazyArtifacts.
+	theirs := mergeVersion artifacts.
+	bases := baseVersion artifacts.
 	'Diffing for merge' displaySequentialProgress:
 	[fromBaseToMergeVersion := mergeVersion patchRelativeToBase: baseVersion.
 	ProgressNotification signal: 1/4.

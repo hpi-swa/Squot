@@ -1,0 +1,14 @@
+{
+	"category" : "Squot-Tests-Tools",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "jr 4/7/2018 19:42",
+	"instvars" : [
+		"packageName" ],
+	"name" : "SquotClassFactoryForTestCase",
+	"pools" : [
+		 ],
+	"super" : "ClassFactoryForTestCase",
+	"type" : "normal" }

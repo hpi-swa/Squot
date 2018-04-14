@@ -11,7 +11,7 @@ mergePatches
 					ifAbsent: [mergingDiff := ((leftArtifacts at: eachPath)
 								diffAgainst: (rightArtifacts at: eachPath)) asConflicts]]
 			ifFalse: [mergingDiff := existingDiff inConflictWith: incomingDiff
-					"e.g., removal vs. change"].			
-		diffs at: eachPath put: mergingDiff].
+					"e.g., removal vs. change"].
+		mergingDiff hasChanges ifTrue: [diffs at: eachPath put: mergingDiff]].
 	(fromBaseToIncoming paths difference: commonPaths)
 		do: [:eachPath | diffs at: eachPath put: (fromBaseToIncoming diffAt: eachPath)].

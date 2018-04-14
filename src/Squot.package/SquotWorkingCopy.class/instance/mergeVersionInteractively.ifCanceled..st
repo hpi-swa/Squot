@@ -11,7 +11,10 @@ mergeVersionInteractively: aVersion ifCanceled: cancelBlock
 			^ cancelBlock value]
 		ifDescendant: [fastForwardPossible := true].
 	self flag: 'TODO: if there are multiple merge-bases, resolve conflicts recursively below'.
-	mergePatch := self patchForMergeWith: aVersion basedOn: mergeBases anyOne.
+	mergePatch := SquotMergePatchBuilder new
+		patchFrom: self currentSnapshot
+		to: aVersion
+		base: mergeBases anyOne.
 	self loadPatchInteractively: mergePatch ifCanceled: [^ cancelBlock value].
 	fastForwardPossible
 		ifTrue: 

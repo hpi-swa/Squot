@@ -21,6 +21,7 @@
 		"testMergeWithAddedArtifactOnBothSides" : "jr 10/31/2017 21:35",
 		"testMergeWithConflicts" : "jr 10/1/2017 01:53",
 		"testMergeWithConflictsChooseRemote" : "jr 9/22/2017 01:02",
+		"testMergeWithRemovedArtifactOnBothSides" : "jr 4/15/2018 00:06",
 		"testMergeWithoutConflicts" : "jr 9/22/2017 01:02",
 		"testRestoreClass" : "jr 7/28/2017 00:03",
 		"testRestorePackage" : "jr 7/22/2017 12:42",

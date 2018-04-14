@@ -4,7 +4,7 @@ mergeArtifactInteractively: anArtifact from: aVersion ifCanceled: cancelBlock
 	| mergeBases mergeBase myArtifacts base patchToMe patchToAnArtifact patch |
 	self temporarilySaveChangesDuring:
 		[mergeBases := self checkMergeBasesWith: aVersion
-			ifNoCommonAncestor: [^ self loadArtifactInteractively: anArtifact ifCanceled: []]
+			ifNoCommonAncestor: [{SquotSnapshot empty}]
 			ifAncestor: [^ self inform: 'The version already is an ancestor of the active branch tip.']
 			ifDescendant: [].
 		self flag: 'TODO: if there are multiple merge-bases, resolve conflicts recursively below'.

@@ -16,6 +16,7 @@
 		"testAddMultiplePackagesToSameFolder" : "jr 4/7/2018 17:10",
 		"testDiffWithParent" : "jr 7/23/2017 02:41",
 		"testMergeRemovalAndChange" : "jr 10/21/2017 16:33",
+		"testMergeSingleArtifact" : "jr 4/15/2018 01:07",
 		"testMergeTwoOrphanedVersions" : "jr 4/7/2018 22:45",
 		"testMergeVersionWithLoadedObjects" : "jr 9/22/2017 01:01",
 		"testMergeWithAddedArtifactOnBothSides" : "jr 10/31/2017 21:35",

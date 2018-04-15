@@ -1,8 +1,7 @@
 {
 	"class" : {
 		"forPackageNamed:leftSnapshot:rightSnapshot:" : "jr 7/22/2017 00:46",
-		"forPackageNamed:leftSnapshot:rightSnapshot:baseSnapshot:" : "jr 7/27/2017 23:13",
-		"forPackageNamed:withPatch:" : "jr 7/22/2017 00:15" },
+		"forPackageNamed:leftSnapshot:rightSnapshot:baseSnapshot:" : "jr 7/27/2017 23:13" },
 	"instance" : {
 		"asMonticelloPatch" : "jr 7/22/2017 17:24",
 		"asSquotConflicts" : "jr 10/31/2017 21:47",
@@ -23,5 +22,4 @@
 		"squotChangeAsStringOrText" : "jr 7/22/2017 16:45",
 		"squotHasChanges" : "jr 7/22/2017 00:11",
 		"squotHasConflicts" : "jr 10/31/2017 21:48",
-		"squotInverseDiff" : "jr 7/22/2017 00:13",
 		"squotNewTargetInstance" : "jr 10/2/2017 21:39" } }

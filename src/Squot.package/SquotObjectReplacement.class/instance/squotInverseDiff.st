@@ -1,3 +1,0 @@
-converting
-squotInverseDiff
-	^ self inverse

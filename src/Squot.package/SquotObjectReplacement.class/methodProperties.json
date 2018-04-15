@@ -3,9 +3,7 @@
 		"left:right:" : "jr 6/1/2017 12:48" },
 	"instance" : {
 		"asSquotConflicts" : "jr 10/19/2017 19:52",
-		"asSquotSlotDiffWithKey:" : "jr 6/22/2017 14:50",
 		"initializeSquotDiffNodes:with:" : "jr 3/17/2018 14:22",
-		"inverse" : "jr 6/1/2017 13:09",
 		"left" : "jr 6/1/2017 12:44",
 		"left:" : "jr 6/1/2017 12:44",
 		"newSquotDiffNodes" : "jr 3/17/2018 14:21",
@@ -18,5 +16,4 @@
 		"squotApplyToLoaded:with:" : "jr 10/19/2017 21:39",
 		"squotChangeAsStringOrText" : "jr 6/2/2017 15:33",
 		"squotHasChanges" : "jr 6/1/2017 12:44",
-		"squotInverseDiff" : "jr 6/2/2017 16:40",
 		"squotNewTargetInstance" : "jr 10/2/2017 21:39" } }

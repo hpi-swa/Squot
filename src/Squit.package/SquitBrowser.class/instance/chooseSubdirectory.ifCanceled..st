@@ -5,6 +5,7 @@ chooseSubdirectory: aDirectoryReference ifCanceled: aBlock
 		modalFolderSelector: (FSFileDirectoryAdapter on: aDirectoryReference).
 	fileDirectory ifNil: [^ aBlock value].
 	chosenDirectory := fileDirectory asFSReference.
-	(aDirectoryReference contains: chosenDirectory) ifFalse: [^ aBlock value].
+	(chosenDirectory = aDirectoryReference
+		or: [aDirectoryReference contains: chosenDirectory]) ifFalse: [^ aBlock value].
 	subPath := chosenDirectory relativeTo: aDirectoryReference.
 	^ SquotPath from: subPath

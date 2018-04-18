@@ -1,4 +1,4 @@
-I test functionality of the working copy that should not depend on the type of repository.
+I test functionality of the working copy that should not depend on the repository type.
 
 Instance Variables
 	workingCopy 		SquotWorkingCopy on which the tests will be run

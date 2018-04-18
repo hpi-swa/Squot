@@ -1,7 +1,5 @@
-I contain Object metadata that is relevant to Squot, for example about serialization.
+I encapsulate access to the a file containing SquotTrackedObjectMetadata that is relevant to Squot, for example about serialization.
 
 Instance Variables
-	metadata:		<Object>
-
-metadata
-	- xxxxx
+	metadataFile:	<FSReference>
+	metadata:		<SquotTrackedObjectMetadata>

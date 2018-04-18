@@ -4,9 +4,10 @@
 		 ],
 	"classvars" : [
 		 ],
-	"commentStamp" : "",
+	"commentStamp" : "jr 3/17/2018 19:06",
 	"instvars" : [
-		"nodes" ],
+		"nodes",
+		"graphDiff" ],
 	"name" : "SquotMetaobjectDiffNodesBuilder",
 	"pools" : [
 		 ],

@@ -1,1 +1,1 @@
-My users fulfill the roles of both SquotSerializer and SquotDeserializer.
+My users can fill the roles of both SquotSerializer and SquotDeserializer.

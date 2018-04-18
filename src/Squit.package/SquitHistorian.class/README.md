@@ -1,15 +1,6 @@
-I am a Pur local historian for a Git reference (used mostly for branches).
+I am a local historian for a Git reference (used mostly for branches).
 
 Instance Variables
-	gitRepository:		<Object>
-	referenceName:		<Object>
-	repository:		<Object>
-
-gitRepository
-	- xxxxx
-
-referenceName
-	- xxxxx
-
-repository
-	- xxxxx
+	repository:		<SquitReposiotry> high-level repository object for Squot
+	gitRepository:		<GitRepository> low-level repository object
+	referenceName:		<String> name of the ref represented by me

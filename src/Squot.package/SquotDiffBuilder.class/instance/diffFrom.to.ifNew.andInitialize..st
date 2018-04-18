@@ -1,4 +1,4 @@
-private diffing
+diffing low-level
 diffFrom: leftShadow to: rightShadow ifNew: newBlock andInitialize: initBlock
 	| diff left |
 	diffedPair := leftShadow -> rightShadow.

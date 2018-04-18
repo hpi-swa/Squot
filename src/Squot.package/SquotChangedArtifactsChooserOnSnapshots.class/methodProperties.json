@@ -7,7 +7,7 @@
 		"addToEffectiveUnlessIgnored:" : "jr 5/1/2017 21:23",
 		"initialize" : "jr 5/1/2017 21:19",
 		"initializeSelectedChangesWithProposedChanges" : "jr 5/1/2017 21:20",
-		"originalOf:" : "jr 5/1/2017 21:20",
+		"originalOf:" : "jr 10/2/2017 21:58",
 		"proposedOf:" : "jr 5/1/2017 21:20",
 		"put:withIncludedChangesFrom:into:" : "jr 5/30/2017 00:02",
 		"putProposed:withoutExcludedChangesFrom:into:" : "jr 5/1/2017 21:21",

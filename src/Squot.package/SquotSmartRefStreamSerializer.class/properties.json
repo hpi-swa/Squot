@@ -5,7 +5,7 @@
 	"classtraitcomposition" : "TSquotSingleFileSerializer classTrait",
 	"classvars" : [
 		 ],
-	"commentStamp" : "jr 1/5/2017 14:10",
+	"commentStamp" : "jr 3/17/2018 19:29",
 	"instvars" : [
 		"stream" ],
 	"name" : "SquotSmartRefStreamSerializer",

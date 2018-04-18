@@ -3,5 +3,5 @@ artifacts
 	| artifactsDictionary |
 	artifactsDictionary := Dictionary new.
 	self objectsWithPathsDo: [:each :path |
-		artifactsDictionary at: path put: (self liveObjectFor: each at: path)].
+		artifactsDictionary at: path put: (self liveArtifactFor: each at: path)].
 	^ artifactsDictionary

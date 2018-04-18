@@ -8,3 +8,4 @@ loadPatchInteractively: aPatch ifCanceled: cancelBlock
 			title: 'Selected changes to load'
 			ifCanceled: cancelBlock).
 	store applyPatch: effectivePatch.
+	^ effectivePatch

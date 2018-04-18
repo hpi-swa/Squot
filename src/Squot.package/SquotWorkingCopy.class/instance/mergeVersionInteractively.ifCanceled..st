@@ -4,13 +4,17 @@ mergeVersionInteractively: aVersion ifCanceled: cancelBlock
 	| mergeBases fastForwardPossible mergePatch |
 	fastForwardPossible := false.
 	mergeBases := self checkMergeBasesWith: aVersion
-		ifNoCommonAncestor: ["the versions have no common base version, fall back to load"
-			self loadVersionInteractively: aVersion ifCanceled: [^ cancelBlock value].
-			^ self addParentVersion: aVersion]
-		ifAncestor: [^ self inform: 'Merge version already is an ancestor of the head of the active branch ', loadedHistorian name, '.']
+		ifNoCommonAncestor: ["the versions have no common base version"
+			{SquotSnapshot empty}]
+		ifAncestor:
+			[self inform: 'Merge version already is an ancestor of the head of the active branch ', loadedHistorian name, '.'.
+			^ cancelBlock value]
 		ifDescendant: [fastForwardPossible := true].
 	self flag: 'TODO: if there are multiple merge-bases, resolve conflicts recursively below'.
-	mergePatch := self patchForMergeWith: aVersion basedOn: mergeBases anyOne.
+	mergePatch := SquotMergePatchBuilder new
+		patchFrom: self currentSnapshot
+		to: aVersion
+		base: mergeBases anyOne.
 	self loadPatchInteractively: mergePatch ifCanceled: [^ cancelBlock value].
 	fastForwardPossible
 		ifTrue: 

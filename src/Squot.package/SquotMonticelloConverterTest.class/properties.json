@@ -5,7 +5,7 @@
 	"classtraitcomposition" : "TSnapshotAssertionsForMonticello classTrait + TTestCaseSuppressingProgressDisplay classTrait",
 	"classvars" : [
 		 ],
-	"commentStamp" : "",
+	"commentStamp" : "jr 3/17/2018 20:40",
 	"instvars" : [
 		"converter",
 		"repository" ],

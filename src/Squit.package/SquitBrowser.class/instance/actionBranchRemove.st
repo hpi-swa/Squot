@@ -10,5 +10,5 @@ actionBranchRemove
 			after: selectedHistorian shortName
 			ifAbsent: [self branchList
 						before: selectedHistorian shortName
-						ifAbsent: self projectSelection loadedHistorian shortName]).
+						ifAbsent: [self projectSelection loadedHistorian shortName]]).
 	self loadBranchList.

@@ -1,25 +1,25 @@
 {
 	"class" : {
-		"left:right:" : "jr 4/9/2017 21:55",
-		"onlyLeft:" : "jr 4/9/2017 22:19" },
+		"left:right:" : "jr 10/2/2017 20:01" },
 	"instance" : {
 		"addSlotOnlyRight:with:" : "jr 6/22/2017 12:01",
 		"addTransitiveChangeIn:" : "jr 7/27/2017 00:17",
 		"applyTo:with:" : "jr 7/29/2017 21:29",
-		"asSquotHierarchicalDiff" : "jr 6/12/2017 16:54",
-		"asSquotHierarchicalDiffWith:" : "jr 7/21/2017 02:29",
 		"diff:against:with:" : "jr 7/15/2017 23:21",
 		"diffSlot:withCorrespondingSlotIn:with:" : "jr 7/17/2017 00:02",
 		"initialize" : "jr 6/25/2017 21:45",
+		"initializeSquotDiffNodes:with:" : "jr 11/18/2017 22:41",
+		"newSquotDiffNodes" : "jr 11/18/2017 22:29",
 		"postCopy" : "jr 9/9/2017 12:48",
 		"printOn:" : "jr 6/25/2017 14:49",
 		"privateAdjustToResemble:" : "jr 9/9/2017 12:55",
 		"slotChanges" : "jr 6/17/2017 23:41",
-		"squotAbsentPrototypeOfRight" : "jr 8/15/2017 17:41",
 		"squotAdjustToResemble:" : "jr 9/9/2017 13:21",
 		"squotApplyTo:" : "jr 6/25/2017 14:28",
 		"squotApplyTo:with:" : "jr 7/30/2017 17:38",
 		"squotApplyToLoaded:" : "jr 6/25/2017 14:28",
-		"squotApplyToLoaded:with:" : "jr 8/17/2017 00:16",
-		"squotChangeAsStringOrText" : "jr 6/25/2017 22:09",
-		"squotHasChanges" : "jr 6/17/2017 23:45" } }
+		"squotApplyToLoaded:with:" : "jr 10/21/2017 15:39",
+		"squotChangeAsStringOrText" : "jr 10/31/2017 20:50",
+		"squotHasChanges" : "jr 6/17/2017 23:45",
+		"squotHasConflicts" : "jr 10/31/2017 21:59",
+		"squotNewTargetInstance" : "jr 10/2/2017 21:32" } }

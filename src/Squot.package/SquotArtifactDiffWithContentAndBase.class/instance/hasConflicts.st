@@ -1,0 +1,3 @@
+testing
+hasConflicts
+	^ diffContent hasConflicts

@@ -2,8 +2,8 @@
 	"class" : {
 		 },
 	"instance" : {
-		"applyDiff:toObjectNamed:with:" : "jr 8/16/2017 23:35",
-		"applyDiff:toStartObjectWith:" : "jr 7/30/2017 17:43",
+		"applyDiff:toObjectNamed:with:" : "jr 10/2/2017 21:41",
+		"applyDiff:toStartObjectWith:" : "jr 10/24/2017 23:46",
 		"asShadowGraph" : "jr 7/30/2017 01:37",
 		"captureWithSquot:" : "jr 9/9/2017 13:58",
 		"evictObjectNames" : "jr 8/17/2017 22:16",
@@ -11,5 +11,4 @@
 		"objectNamed:" : "jr 7/30/2017 01:03",
 		"objectNamed:ifAbsent:" : "jr 7/30/2017 01:03",
 		"postCopy" : "jr 7/30/2017 01:03",
-		"startObject" : "jr 7/30/2017 01:03",
-		"startObjectIfAbsent:" : "jr 7/30/2017 18:00" } }
+		"startObject" : "jr 7/30/2017 01:03" } }

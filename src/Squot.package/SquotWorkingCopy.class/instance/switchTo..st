@@ -6,6 +6,6 @@ switchTo: aHistorian
 		[stashHistorian := self repository historianForTemporaryVersionsOn: fromHistorian.
 		self saveUnsavedChangesOn: stashHistorian.
 		self loadedHistorian: aHistorian.
-		self loadVersion: aHistorian version interactive: false].
-	stashHistorian := self repository historianForTemporaryVersionsOn: aHistorian.
-	self restoreUnsavedChangesFrom: stashHistorian.
+		stashHistorian := self repository historianForTemporaryVersionsOn: aHistorian.
+		self privateLoadVersion: (stashHistorian version ifNil: [aHistorian version]).
+		self loadedVersion: aHistorian version].

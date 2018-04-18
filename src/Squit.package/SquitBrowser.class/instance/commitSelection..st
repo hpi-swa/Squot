@@ -1,4 +1,4 @@
-ui
+accessing
 commitSelection: anObject
 	commitSelection := anObject.
 	self commitSelectionChanged.

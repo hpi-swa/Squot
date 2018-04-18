@@ -1,12 +1,8 @@
 as yet unclassified
-convertToNodes: aMetaobjectDiff
-	| existing deferredDiff newNodes |
-	existing := nodes at: aMetaobjectDiff ifAbsentPut: [deferredDiff := SquotPlaceholder new].
-	(existing notNil and: [existing ~~ deferredDiff]) ifTrue: [^ existing].
-	[nodes
-		at: aMetaobjectDiff
-		put: (newNodes := aMetaobjectDiff asSquotHierarchicalDiffWith: self).
-	deferredDiff ifNotNil: [deferredDiff becomeForward: newNodes copyHash: false]]
-	ensure: [(deferredDiff notNil and: [newNodes isNil])
-			ifTrue: [nodes removeKey: aMetaobjectDiff]].
+convertToNodes: aDiff
+	| newNodes |
+	nodes at: aDiff
+		ifPresent: [:nodes | ^ nodes]
+		ifAbsentPut: [newNodes := aDiff newSquotDiffNodes].
+	newNodes ifNotEmpty: [aDiff initializeSquotDiffNodes: newNodes with: self].
 	^ newNodes

@@ -2,6 +2,3 @@ I collect Artifacts to bundle them into a Snapshot. I am mostly here to let Snap
 
 Instance Variables
 	root:		<Object>
-
-root
-	- xxxxx

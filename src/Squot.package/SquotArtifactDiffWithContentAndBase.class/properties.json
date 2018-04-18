@@ -4,7 +4,7 @@
 		 ],
 	"classvars" : [
 		 ],
-	"commentStamp" : "",
+	"commentStamp" : "jr 10/21/2017 16:02",
 	"instvars" : [
 		"base" ],
 	"name" : "SquotArtifactDiffWithContentAndBase",

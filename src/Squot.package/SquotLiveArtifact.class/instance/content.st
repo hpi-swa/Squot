@@ -1,6 +1,7 @@
 accessing
 content
 	^ shadow ifNil:
-		[SquotActiveSlotOverrides
+		[SquotCurrentMetadata
 			value: storeInfo
-			during: [shadow := (store capture: object) asShadowGraph]]
+			during: 
+				[shadow := (store capture: object) asShadowGraph]]

@@ -1,9 +1,11 @@
 user requests
 chooseSubdirectory: aDirectoryReference ifCanceled: aBlock
-	| path |
-	path := SquitSubFolderList
+	| fileDirectory chosenDirectory subPath |
+	fileDirectory := SquitSubFolderList
 		modalFolderSelector: (FSFileDirectoryAdapter on: aDirectoryReference).
-	path ifNil: [^ aBlock value].
-	(path pathName beginsWith: aDirectoryReference pathString)
-		ifFalse: [^ aBlock value].
-	^ path pathName allButFirst: aDirectoryReference pathString size
+	fileDirectory ifNil: [^ aBlock value].
+	chosenDirectory := fileDirectory asFSReference.
+	(chosenDirectory = aDirectoryReference
+		or: [aDirectoryReference contains: chosenDirectory]) ifFalse: [^ aBlock value].
+	subPath := chosenDirectory relativeTo: aDirectoryReference.
+	^ SquotPath from: subPath

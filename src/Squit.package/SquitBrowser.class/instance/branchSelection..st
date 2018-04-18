@@ -1,5 +1,5 @@
 ui
-branchSelection: aGitReference
-	(aGitReference isNil or: [aGitReference = '-- Branches --']) ifTrue: [^ self].
-	selectedHistorian := self projectSelection repository historianNamed: aGitReference.
+branchSelection: aString
+	(aString isNil or: [aString = '-- Branches --']) ifTrue: [^ self].
+	selectedHistorian := self projectSelection repository historianNamed: aString.
 	self branchSelectionChanged.

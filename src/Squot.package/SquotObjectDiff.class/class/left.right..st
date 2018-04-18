@@ -1,5 +1,5 @@
 instance creation
-left: leftMetaobject right: rightMetaobject
+left: leftShadow right: rightShadow
 	^ self new
-		diff: leftMetaobject against: rightMetaobject;
+		diff: leftShadow against: rightShadow;
 		yourself

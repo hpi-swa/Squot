@@ -1,9 +1,10 @@
 actions on working copies
 actionProjectRename
-	| name |
+	| workingCopy name |
+	workingCopy := self projectSelection.
 	name := UIManager default
 		request: 'Enter new project name:'
-		initialAnswer: self projectSelection name.
+		initialAnswer: workingCopy name.
 	name ifEmpty: [^ self].
-	self projectSelection name: name.
+	workingCopy name: name.
 	self refresh.

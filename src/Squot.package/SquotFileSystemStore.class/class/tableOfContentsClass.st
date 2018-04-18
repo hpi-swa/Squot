@@ -1,3 +1,0 @@
-accessing
-tableOfContentsClass
-	^ OrderedDictionary

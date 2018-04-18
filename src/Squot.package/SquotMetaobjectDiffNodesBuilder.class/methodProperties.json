@@ -2,5 +2,7 @@
 	"class" : {
 		 },
 	"instance" : {
-		"convertToNodes:" : "jr 7/20/2017 21:58",
+		"convertDiffOf:" : "jr 3/17/2018 23:34",
+		"convertToNodes:" : "jr 11/18/2017 22:41",
+		"graphDiff:" : "jr 11/18/2017 23:39",
 		"initialize" : "jr 6/12/2017 16:56" } }

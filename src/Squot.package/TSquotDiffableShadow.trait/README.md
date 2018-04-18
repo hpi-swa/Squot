@@ -1,2 +1,2 @@
-My users are shadows that support computing changes between them.
-When the shadow of an object is not diffable the captured object can only be replaced by another during patching operations, but not be modified in-place.
+TSquotShadow that supports computing changes between itself and another one.
+If the shadow of an object is not diffable, the captured live object can only be replaced altogether during patching operations, but it cannot be modified in-place.

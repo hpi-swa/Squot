@@ -1,4 +1,4 @@
-patching
+private
 removeFilesFrom: artifactPath
 	| reference |
 	reference := directory resolve: artifactPath.

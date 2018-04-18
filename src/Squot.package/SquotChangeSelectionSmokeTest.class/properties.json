@@ -1,0 +1,15 @@
+{
+	"category" : "Squot-Diffs-Tests",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "jr 3/17/2018 20:12",
+	"instvars" : [
+		"selectionTool",
+		"view" ],
+	"name" : "SquotChangeSelectionSmokeTest",
+	"pools" : [
+		 ],
+	"super" : "TestCase",
+	"type" : "normal" }

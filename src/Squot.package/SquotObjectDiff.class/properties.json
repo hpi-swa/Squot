@@ -5,7 +5,7 @@
 	"classtraitcomposition" : "TSquotDiff classTrait",
 	"classvars" : [
 		"UnchangedPlaceholder" ],
-	"commentStamp" : "jr 6/17/2017 22:59",
+	"commentStamp" : "jr 3/17/2018 18:59",
 	"instvars" : [
 		"originalClass",
 		"slotChanges",

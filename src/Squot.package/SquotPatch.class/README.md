@@ -1,1 +1,2 @@
-I am a collection of ArtifactDiffs, like a Snapshot, but with diffs.
+I contain the differences between two object containers, such as SquotSnapshot.
+Like an object conatiner, my contents are accessible by paths. But I do not contain artifacts, rather I contain the diffs between such artifacts, subinstances of SquotArtifactDiff.

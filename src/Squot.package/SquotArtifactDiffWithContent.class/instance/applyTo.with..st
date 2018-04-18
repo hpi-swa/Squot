@@ -1,3 +1,3 @@
 patching
-applyTo: aSnapshotContent with: aDiffBuilder
-	^ diffContent squotApplyTo: aSnapshotContent with: aDiffBuilder
+applyTo: aSnapshotContent with: aPatcher
+	^ diffContent squotApplyTo: aSnapshotContent with: aPatcher

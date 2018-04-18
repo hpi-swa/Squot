@@ -1,0 +1,1 @@
+I am signalled when the template for a new version's log message is needed. By handling and resuming notification, calling tools can influence the initiallly displayed log message.

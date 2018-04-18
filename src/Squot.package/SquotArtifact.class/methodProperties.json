@@ -3,11 +3,11 @@
 		 },
 	"instance" : {
 		"=" : "jr 5/28/2017 14:32",
+		"asMonticelloPatch" : "jr 4/4/2018 21:53",
 		"browse" : "jr 5/30/2017 00:47",
 		"capture" : "jr 7/16/2017 03:06",
 		"content" : "jr 1/27/2017 15:03",
 		"content:" : "jr 1/27/2017 15:03",
-		"contentOfSameTypeAs:" : "jr 5/28/2017 14:32",
 		"convertToCurrentVersion:refStream:" : "jr 7/16/2017 12:06",
 		"copyWithDifferentContent:" : "jr 2/16/2017 00:40",
 		"copyWithInverseOfExcludedDiffNodesApplied:" : "jr 5/28/2017 14:32",
@@ -16,7 +16,6 @@
 		"initialize" : "jr 7/16/2017 12:02",
 		"initializeDefaultStoreInfoFor:" : "jr 2/21/2017 21:35",
 		"isLoadable" : "jr 3/8/2017 16:17",
-		"isPresent" : "jr 5/29/2017 13:44",
 		"materializeWith:replacing:" : "jr 5/28/2017 14:33",
 		"mergeStoreInfo:" : "jr 7/16/2017 12:04",
 		"path" : "jr 1/27/2017 15:03",
@@ -28,6 +27,6 @@
 		"storeInfo" : "jr 1/27/2017 15:03",
 		"storeInfo:" : "jr 1/27/2017 15:03",
 		"storeWith:" : "jr 1/31/2017 13:54",
-		"validatePath" : "jr 9/20/2017 21:00",
+		"validatePath" : "jr 4/7/2018 16:14",
 		"wantsToBeInTableOfContents" : "jr 1/31/2017 13:34",
 		"writeWith:" : "jr 5/28/2017 14:34" } }

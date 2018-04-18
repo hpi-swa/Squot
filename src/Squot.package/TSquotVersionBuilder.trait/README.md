@@ -1,1 +1,1 @@
-I define messages that the object that is used to create a new Version should understand.
+I define messages that a builder used to create a new Version should understand.

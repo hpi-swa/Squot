@@ -1,18 +1,19 @@
 {
 	"class" : {
 		"forPackageNamed:leftSnapshot:rightSnapshot:" : "jr 7/22/2017 00:46",
-		"forPackageNamed:leftSnapshot:rightSnapshot:baseSnapshot:" : "jr 7/27/2017 23:13",
-		"forPackageNamed:withPatch:" : "jr 7/22/2017 00:15" },
+		"forPackageNamed:leftSnapshot:rightSnapshot:baseSnapshot:" : "jr 7/27/2017 23:13" },
 	"instance" : {
 		"asMonticelloPatch" : "jr 7/22/2017 17:24",
-		"asSquotHierarchicalDiff" : "jr 7/22/2017 00:02",
-		"asSquotHierarchicalDiffWith:" : "jr 7/22/2017 00:02",
+		"asSquotConflicts" : "jr 10/31/2017 21:47",
 		"conflicts" : "jr 7/27/2017 23:34",
 		"copyWithPatch:" : "jr 7/22/2017 00:05",
+		"initializeSquotDiffNodes:with:" : "jr 11/19/2017 20:52",
+		"newSquotDiffNodes" : "jr 11/19/2017 20:49",
 		"operations" : "jr 7/27/2017 23:23",
 		"packageName:leftSnapshot:rightSnapshot:" : "jr 7/22/2017 00:47",
 		"packageName:leftSnapshot:rightSnapshot:baseSnapshot:" : "jr 7/27/2017 23:21",
 		"packageName:patch:" : "jr 7/22/2017 00:05",
+		"patch" : "jr 10/31/2017 22:57",
 		"squotAdjustToResemble:" : "jr 7/22/2017 00:03",
 		"squotApplyTo:" : "jr 7/22/2017 00:07",
 		"squotApplyTo:with:" : "jr 7/22/2017 00:09",
@@ -20,4 +21,5 @@
 		"squotApplyToLoaded:with:" : "jr 7/22/2017 00:11",
 		"squotChangeAsStringOrText" : "jr 7/22/2017 16:45",
 		"squotHasChanges" : "jr 7/22/2017 00:11",
-		"squotInverseDiff" : "jr 7/22/2017 00:13" } }
+		"squotHasConflicts" : "jr 10/31/2017 21:48",
+		"squotNewTargetInstance" : "jr 10/2/2017 21:39" } }

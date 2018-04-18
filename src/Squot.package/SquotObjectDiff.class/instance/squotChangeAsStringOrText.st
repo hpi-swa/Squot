@@ -1,7 +1,7 @@
 Squot-diff-converting
 squotChangeAsStringOrText
 	^ Text streamContents: [:stream |
-		(slotChanges groupBy: [:each | each slotShadowType])
+		(slotChanges associations groupBy: [:each | each slotShadowType])
 			keysAndValuesDo: [:type :slotDiffs |
 				stream withAttribute: TextEmphasis italic do:
 					[type printHeadlineForChangesTextOn: stream]; cr.

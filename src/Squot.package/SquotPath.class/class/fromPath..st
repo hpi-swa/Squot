@@ -1,3 +1,5 @@
 converting
 fromPath: aFSPath
-	^ aFSPath printWithDelimiter: self delimiter
+	^ aFSPath isWorkingDirectory
+		ifTrue: ['']
+		ifFalse: [aFSPath printWithDelimiter: self delimiter]

@@ -1,11 +1,5 @@
-I am a Pur local repository version for a Git commit. Basically, I am an adapter.
+I am a local repository version for a Git commit. Basically, I am an adapter for GitCommit.
 
 Instance Variables
-	commit:		<Object>
-	repository:		<Object>
-
-commit
-	- xxxxx
-
-repository
-	- xxxxx
+	commit:		<GitCommit>
+	repository:		<SquitRepository>

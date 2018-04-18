@@ -1,0 +1,14 @@
+{
+	"category" : "Squot-Diffs",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"patch" ],
+	"name" : "SquotConflictResolutionRequested",
+	"pools" : [
+		 ],
+	"super" : "Notification",
+	"type" : "normal" }

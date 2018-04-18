@@ -1,8 +1,6 @@
 as yet unclassified
 rematerialize: aShadow
 	| object |
-	patchedObjects at: aShadow undecorated
-		ifPresent: [:it | ^ it].
 	aShadow hasSquotShadowName ifTrue:
 		[object := patchedObjectGraph objectNamed: aShadow name ifAbsent: []].
 	object ifNil: [object := materializer rematerialize: aShadow.
@@ -11,6 +9,4 @@ rematerialize: aShadow
 		[patchedObjectGraph
 			assign: aShadow name to: object;
 			assign: aShadow name toShadow: aShadow undecorated].
-	object squotShouldKeepIdentity ifTrue:
-		[patchedObjects at: aShadow undecorated put: object].
 	^ object

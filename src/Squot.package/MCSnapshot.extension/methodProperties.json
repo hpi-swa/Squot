@@ -4,13 +4,8 @@
 	"instance" : {
 		"asSquotArtifactForPackage:" : "jr 7/30/2017 02:07",
 		"browseFromSquot:" : "jr 5/13/2017 21:40",
-		"squotAbsentContent" : "jr 8/15/2017 17:50",
 		"squotApplyInverseOfExcludedDiffNodes:" : "jr 4/18/2017 00:04",
-		"squotDiffAgainst:" : "jr 4/9/2017 21:48",
-		"squotDiffAgainst:with:" : "jr 7/21/2017 00:35",
 		"squotDiffAgainst:withBase:" : "jr 5/28/2017 19:56",
-		"squotMaterializeWith:" : "jr 7/21/2017 01:13",
-		"squotMaterializeWith:from:replacing:" : "jr 4/7/2017 16:01",
 		"squotShadowMarker" : "jr 6/17/2017 22:34",
 		"squotWithSortedDefinitions" : "jr 2/16/2017 01:42",
 		"squotWrite:with:" : "jr 1/29/2017 21:03" } }

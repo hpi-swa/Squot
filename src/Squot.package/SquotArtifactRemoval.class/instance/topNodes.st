@@ -2,4 +2,4 @@ converting
 topNodes
 	left isLoadable ifFalse: [^ #()].
 	self flag: #stub.
-	^ {SquotDiffNode title: 'remove ', right path content: self children: #()}
+	^ {SquotDiffNode title: 'remove ', left path content: self children: #()}

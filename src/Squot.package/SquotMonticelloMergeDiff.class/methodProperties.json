@@ -3,9 +3,10 @@
 		"operations:conflicts:" : "jr 5/28/2017 20:03" },
 	"instance" : {
 		"asMCPatch" : "jr 7/22/2017 17:25",
-		"asSquotHierarchicalDiff" : "jr 5/28/2017 22:56",
-		"asSquotHierarchicalDiffWith:" : "jr 6/12/2017 17:01",
+		"chooseRight" : "jr 10/31/2017 23:00",
 		"conflicts" : "jr 5/29/2017 00:08",
+		"initializeSquotDiffNodes:with:" : "jr 1/14/2018 23:13",
+		"newSquotDiffNodes" : "jr 3/17/2018 23:38",
 		"operations" : "jr 5/29/2017 00:08",
 		"operations:conflicts:" : "jr 5/28/2017 20:03",
 		"squotAdjustToResemble:" : "jr 5/29/2017 00:27",
@@ -14,4 +15,5 @@
 		"squotApplyToLoaded:" : "jr 6/1/2017 11:26",
 		"squotApplyToLoaded:with:" : "jr 6/16/2017 12:17",
 		"squotHasChanges" : "jr 5/29/2017 00:05",
-		"squotHasConflicts" : "jr 7/27/2017 23:34" } }
+		"squotHasConflicts" : "jr 7/27/2017 23:34",
+		"squotNewTargetInstance" : "jr 10/2/2017 21:35" } }

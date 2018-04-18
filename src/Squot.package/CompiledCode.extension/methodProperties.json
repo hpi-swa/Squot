@@ -1,5 +1,7 @@
 {
 	"class" : {
-		"squotCaptureSlotsIn:with:" : "jr 7/20/2017 16:08" },
+		 },
 	"instance" : {
+		"captureWithSquot:" : "jr 10/15/2017 16:28",
+		"squotCaptureSlotsIn:with:" : "jr 10/15/2017 16:31",
 		"squotShadowFactory" : "jr 6/20/2017 00:22" } }

@@ -1,0 +1,1 @@
+I supply tests for SquotWorkingCopyTest subclasses that use a file-based repository.

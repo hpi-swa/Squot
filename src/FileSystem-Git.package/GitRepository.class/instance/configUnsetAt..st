@@ -2,6 +2,7 @@ public-configuration
 configUnsetAt: aNameString
 	| file currentSection delete inDeleteSection lines unsetParts |
 	file := self configFile.
+	file exists ifFalse: [^ self].
 	lines := file readStreamDo: [:stream | stream contents lines asOrderedCollection].
 	unsetParts := aNameString splitBy: '.'.
 	delete := OrderedCollection new.

@@ -1,5 +1,6 @@
 running
 tearDown
+	scenario ifNotNil: [scenario tearDown].
 	SystemChangeNotifier uniqueInstance doSilently:
 		[classFactory cleanUp.
 		workingCopy unload].

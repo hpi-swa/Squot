@@ -1,0 +1,19 @@
+{
+	"class" : {
+		"leftDiff:rightDiff:" : "jr 10/18/2017 10:11" },
+	"instance" : {
+		"applyTo:" : "jr 10/19/2017 00:16",
+		"applyToContainer:" : "jr 10/21/2017 16:32",
+		"base" : "jr 10/19/2017 00:16",
+		"chooseLeft" : "jr 10/19/2017 00:13",
+		"chooseRight" : "jr 10/19/2017 00:13",
+		"hasChanges" : "jr 10/19/2017 00:19",
+		"hasConflicts" : "jr 10/31/2017 19:52",
+		"leftDiff" : "jr 10/18/2017 10:11",
+		"leftDiff:" : "jr 10/18/2017 10:12",
+		"needsChoice" : "jr 10/19/2017 00:21",
+		"resetChoice" : "jr 10/19/2017 00:14",
+		"rightDiff" : "jr 10/18/2017 10:11",
+		"rightDiff:" : "jr 10/18/2017 10:12",
+		"squotChangeAsStringOrText" : "jr 10/31/2017 21:11",
+		"topNodes" : "jr 10/31/2017 21:30" } }

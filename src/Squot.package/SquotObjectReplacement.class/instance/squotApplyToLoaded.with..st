@@ -1,3 +1,3 @@
 patching
 squotApplyToLoaded: anObject with: aMetaobjectPatcher
-	^ aMetaobjectPatcher materialize: right
+	^ aMetaobjectPatcher rematerialize: right

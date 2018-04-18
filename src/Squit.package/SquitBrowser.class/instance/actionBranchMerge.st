@@ -5,7 +5,9 @@ actionBranchMerge
 	self hasBranchSelection ifFalse: [^ self].
 	mergeHistorian := selectedHistorian.
 	mergeHeadCommit := mergeHistorian version.
-	[self mergeVersionIntoActiveBranch: mergeHeadCommit]
-		on: SquotInitialLogMessageRequested
-		do: [:request | request resume: 'Merge branch ''', mergeHistorian shortName,
-			''' into ', self projectSelection loadedHistorian shortName].
+	[self mergeVersionIntoActiveBranch: mergeHeadCommit
+		ifCanceled: [^ self]]
+	on: SquotInitialLogMessageRequested
+	do: [:request | request resume: 'Merge branch ''', mergeHistorian shortName,
+		''' into ', self projectSelection loadedHistorian shortName].
+	self selectActiveHistorian.

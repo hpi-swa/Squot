@@ -2,7 +2,6 @@
 	"class" : {
 		"left:right:" : "jr 4/9/2017 21:46" },
 	"instance" : {
-		"applyOnTopOf:" : "jr 5/29/2017 01:03",
 		"applyTo:" : "jr 5/30/2017 00:40",
 		"applyToContainer:" : "jr 7/16/2017 02:26",
 		"base" : "jr 5/29/2017 00:57",
@@ -19,5 +18,4 @@
 		"needsChoice" : "jr 10/18/2017 10:16",
 		"originalOrAddedArtifact" : "jr 10/2/2017 23:46",
 		"path" : "jr 7/16/2017 02:25",
-		"right" : "jr 4/9/2017 23:13",
-		"withApplied:" : "jr 8/14/2017 10:31" } }
+		"right" : "jr 4/9/2017 23:13" } }

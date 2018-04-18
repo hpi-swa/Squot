@@ -3,6 +3,7 @@
 	"classinstvars" : [
 		 ],
 	"classvars" : [
+		"SelfUpdateBranch",
 		"UpdateWorkingCopy" ],
 	"commentStamp" : "jr 3/17/2018 20:31",
 	"instvars" : [

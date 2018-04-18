@@ -64,7 +64,7 @@
 		"actionRemoteAdd" : "jr 4/7/2018 00:15",
 		"actionRemoteRemove" : "jr 6/5/2017 16:56",
 		"actionSelfUpdate" : "fn 4/15/2017 10:53",
-		"actionSelfUpdateSetBranch" : "jr 4/18/2018 22:37",
+		"actionSelfUpdateSetBranch" : "jr 4/18/2018 22:42",
 		"actionSetUpstreamBranch" : "jr 4/7/2018 00:17",
 		"actionSettings" : "fn 4/12/2017 09:51",
 		"actionSquotWorkingCopyExplore" : "fn 4/24/2017 18:33",

@@ -1,4 +1,5 @@
 class initialization
 initialize
-	super initialize.
-	self registerInWorldMenu
+	"SquitBrowser initialize"
+	self registerInWorldMenu.
+	self initializeSelfUpdate.

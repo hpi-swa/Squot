@@ -1,4 +1,4 @@
-user requests
+as yet unclassified
 categoriesPlusPrefixes
 	^ (SystemOrganizer default categories gather: [:each | | eachSplitted |
 		eachSplitted := each splitBy: '-'.

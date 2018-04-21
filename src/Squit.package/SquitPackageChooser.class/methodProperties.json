@@ -1,0 +1,23 @@
+{
+	"class" : {
+		"chooseFor:" : "TB 4/22/2018 00:45" },
+	"instance" : {
+		"accept" : "TB 4/22/2018 00:47",
+		"buildButtons:" : "TB 4/22/2018 00:59",
+		"buildPackageList:for:index:frame:" : "TB 4/22/2018 01:07",
+		"buildWith:" : "TB 4/22/2018 01:06",
+		"categoriesPlusPrefixes" : "TB 4/22/2018 00:37",
+		"chooseFor:" : "TB 4/22/2018 00:51",
+		"closed" : "TB 4/22/2018 00:51",
+		"hasTrackedSelection" : "TB 4/22/2018 00:14",
+		"hasUntrackedSelection" : "TB 4/22/2018 00:14",
+		"initialExtent" : "TB 4/22/2018 01:06",
+		"packagesIn:" : "TB 4/22/2018 01:04",
+		"selectionTracked" : "TB 4/22/2018 00:14",
+		"selectionTracked:" : "TB 4/22/2018 00:57",
+		"selectionUntracked" : "TB 4/22/2018 00:55",
+		"selectionUntracked:" : "TB 4/22/2018 00:58",
+		"trackSelected" : "TB 4/22/2018 01:05",
+		"trackedPackages" : "TB 4/22/2018 00:44",
+		"untrackSelected" : "TB 4/22/2018 01:05",
+		"untrackedPackages" : "TB 4/22/2018 00:45" } }

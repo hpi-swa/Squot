@@ -1,0 +1,18 @@
+{
+	"category" : "Squit-UI",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"selectionTracked",
+		"trackedPackages",
+		"untrackedPackages",
+		"applyChanges",
+		"selectionUntracked" ],
+	"name" : "SquitPackageChooser",
+	"pools" : [
+		 ],
+	"super" : "Model",
+	"type" : "normal" }

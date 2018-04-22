@@ -1,4 +1,4 @@
-as yet unclassified
+choosing packages
 categoriesPlusPrefixes
 	^ (SystemOrganizer default categories gather: [:each | | eachSplitted |
 		eachSplitted := each splitBy: '-'.

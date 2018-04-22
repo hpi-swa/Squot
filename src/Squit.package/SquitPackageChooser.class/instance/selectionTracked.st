@@ -1,4 +1,4 @@
-as yet unclassified
+accessing
 selectionTracked
 
 	^ selectionTracked ifNil: [0]

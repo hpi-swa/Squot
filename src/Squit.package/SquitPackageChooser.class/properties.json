@@ -9,8 +9,10 @@
 		"selectionTracked",
 		"trackedPackages",
 		"untrackedPackages",
-		"applyChanges",
-		"selectionUntracked" ],
+		"selectionUntracked",
+		"stopTrackList",
+		"startTrackList",
+		"acceptChanges" ],
 	"name" : "SquitPackageChooser",
 	"pools" : [
 		 ],

@@ -1,9 +1,24 @@
-as yet unclassified
+actions
 trackSelected
 
-	| package |
+	| package conflictingPackages |
 	package := (self untrackedPackages at: self selectionUntracked).
-	self untrackedPackages remove: package.
-	self trackedPackages add: package.
+	
+	conflictingPackages := self trackedPackages select: [:p | p beginsWith: package].
+	
+	conflictingPackages ifNotEmpty: [
+		(UIManager confirm: 'To add this package, we will first remove ',
+			(conflictingPackages joinSeparatedBy: ', '),
+			', because the new packages is a prefix/super package for these.', String cr,
+			'(Otherwise the package contents will be duplicated)') ifFalse: [^ self]].
+	
+	self trackedPackages
+		removeAll: conflictingPackages;
+		add: package.
+	
+	self updateUntrackedPackages.
+	
 	self changed: #trackedPackages.
-	self changed: #untrackedPackages
+	self changed: #untrackedPackages.
+	self changed: #hasUntrackedSelection.
+	self changed: #hasTrackedSelection

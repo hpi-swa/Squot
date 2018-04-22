@@ -1,4 +1,4 @@
-as yet unclassified
+choosing packages
 packagesIn: aWorkingCopy
 	^ (aWorkingCopy store objectPaths
 		select: [:each | each endsWith: '.package'])

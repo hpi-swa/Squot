@@ -1,9 +1,9 @@
-as yet unclassified
+toolbuilder
 buildButtons: builder
 
 	^ builder pluggablePanelSpec new
 		layout: #vertical;
-		frame: (0.4 @ 0 corner: 0.6 @ 1);
+		frame: (LayoutFrame fractions: (0.5 @ 0 corner: 0.5 @ 1) offsets: (self buttonWidth / -2 @ 0 corner: self buttonWidth / 2 @ 0));
 		children: {
 			builder pluggableActionButtonSpec new
 				model: self;

@@ -1,4 +1,4 @@
-actions
+choosing packages
 requestPathInWorkingCopy: aWorkingCopy
 	| version subPath gitRepository rootDirectory |
 	gitRepository := aWorkingCopy repository gitRepository repository.

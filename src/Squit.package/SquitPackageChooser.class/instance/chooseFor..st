@@ -1,17 +1,24 @@
-as yet unclassified
+choosing packages
 chooseFor: aWorkingCopy
+	"returns true if any changes were made"
 
-	applyChanges := true.
+	| originalPackages addedPackages removedPackages subPath |
+	acceptChanges := false.
 	trackedPackages := self packagesIn: aWorkingCopy.
-	untrackedPackages := self categoriesPlusPrefixes reject: [:each |
-		trackedPackages anySatisfy: [:tracked | each beginsWith: tracked]].
+	originalPackages := trackedPackages copy.
+	self updateUntrackedPackages.
 	
 	ToolBuilder open: self.
+	acceptChanges ifFalse: [^ false].
 	
-	applyChanges ifFalse: [^ #()].
-	self halt.
-	^ #()
+	removedPackages := originalPackages reject: [:package | self trackedPackages includes: package].
+	addedPackages := self trackedPackages reject: [:package | originalPackages includes: package].
+	(removedPackages isEmpty and: [addedPackages isEmpty]) ifTrue: [^ false].
 	
-	"selection := selection reject: [:each |
-		selection anySatisfy: [:other | (each beginsWith: other) and: [each size ~~ other size]]].
-	^ selection"
+	addedPackages ifNotEmpty: [
+		subPath := self requestPathInWorkingCopy: aWorkingCopy.
+		subPath ifNil: [^ false]].
+	
+	removedPackages do: [:each | aWorkingCopy remove: (self objectForPackageName: each from: aWorkingCopy)].
+	addedPackages do: [:each | aWorkingCopy addPackageNamed: each at: subPath].
+	^ true

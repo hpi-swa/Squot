@@ -9,8 +9,7 @@ menuProjectListHook: aMenu
 	}.
 	aMenu addLine.
 	aMenu addList: {
-		{'Start tracking packages'. #actionObjectPackageAdd. 'Add new packages to this project.'}.
-		{'Stop tracking packages'. #actionObjectPackageRemove. 'Remove packages from this project.'}.
+		{'Change tracked packages'. #actionChooseTrackedPackages. 'Add or remove packages for this project.'}
 	}.
 	aMenu addLine.
 	aMenu addList: {

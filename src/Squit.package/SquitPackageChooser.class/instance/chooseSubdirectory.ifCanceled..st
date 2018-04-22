@@ -1,4 +1,4 @@
-user requests
+choosing packages
 chooseSubdirectory: aDirectoryReference ifCanceled: aBlock
 	| fileDirectory chosenDirectory subPath |
 	fileDirectory := SquitSubFolderList

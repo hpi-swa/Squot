@@ -1,4 +1,5 @@
-as yet unclassified
+actions
 accept
 
+	acceptChanges := true.
 	self changed: #close

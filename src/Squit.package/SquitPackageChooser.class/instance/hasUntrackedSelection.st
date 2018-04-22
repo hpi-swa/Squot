@@ -1,4 +1,4 @@
 accessing
 hasUntrackedSelection
 
-	^ self selectionUntracked > 0 and: [self untrackedPackages notEmpty]
+	^ self selectionUntracked > 1 and: [self untrackedPackages notEmpty]

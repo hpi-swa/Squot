@@ -1,6 +1,7 @@
 accessing
 selectionUntracked: aNumber
 
-	selectionUntracked := aNumber.
-	self changed: #selectionUntracked.
-	self changed: #hasUntrackedSelection
+	aNumber ~= 1 ifTrue: [
+		selectionUntracked := aNumber.
+		self changed: #selectionUntracked.
+		self changed: #hasUntrackedSelection]

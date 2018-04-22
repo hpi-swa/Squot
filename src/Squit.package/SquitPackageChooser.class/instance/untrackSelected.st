@@ -2,12 +2,12 @@ actions
 untrackSelected
 
 	| package |
-	package := (self trackedPackages at: self selectionTracked).
+	package := (self trackedPackagesWithTitle at: self selectionTracked).
 	self trackedPackages remove: package.
 	
 	self updateUntrackedPackages.
 	
-	self changed: #trackedPackages.
-	self changed: #untrackedPackages.
+	self changed: #trackedPackagesWithTitle.
+	self changed: #untrackedPackagesWithTitle.
 	self changed: #hasTrackedSelection.
 	self changed: #hasUntrackedSelection

@@ -1,6 +1,7 @@
 accessing
 selectionTracked: aNumber
 
-	selectionTracked := aNumber.
-	self changed: #selectionTracked.
-	self changed: #hasTrackedSelection
+	aNumber ~= 1 ifTrue: [
+		selectionTracked := aNumber.
+		self changed: #selectionTracked.
+		self changed: #hasTrackedSelection]

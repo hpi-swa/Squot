@@ -1,4 +1,4 @@
 accessing
 hasTrackedSelection
 
-	^ self selectionTracked > 0 and: [self trackedPackages notEmpty]
+	^ self selectionTracked > 1 and: [self trackedPackages notEmpty]

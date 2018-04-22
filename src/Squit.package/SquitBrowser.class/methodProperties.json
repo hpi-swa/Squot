@@ -91,7 +91,6 @@
 		"buildWith:" : "fn 4/11/2017 18:23",
 		"checkTrackedBranchOrOfferChange:ifUnsupported:" : "jr 5/10/2017 13:31",
 		"chooseOneRemoteFrom:" : "jr 4/26/2017 14:25",
-		"choosePackagesFromCategoriesFor:" : "TB 4/22/2018 00:45",
 		"chooseRemotesFrom:" : "jr 4/26/2017 14:01",
 		"chooseableRemoteNamesFrom:" : "jr 4/26/2017 13:38",
 		"commitList" : "jr 6/5/2017 00:23",

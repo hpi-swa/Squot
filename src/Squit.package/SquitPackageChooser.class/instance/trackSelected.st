@@ -18,7 +18,7 @@ trackSelected
 	
 	self updateUntrackedPackages.
 	
-	self changed: #trackedPackages.
-	self changed: #untrackedPackages.
+	self changed: #trackedPackagesWithTitle.
+	self changed: #untrackedPackagesWithTitle.
 	self changed: #hasUntrackedSelection.
 	self changed: #hasTrackedSelection

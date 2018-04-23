@@ -2,6 +2,7 @@
 	"class" : {
 		"leftDiff:rightDiff:" : "jr 10/18/2017 10:11" },
 	"instance" : {
+		"adjustedBy:" : "jr 4/23/2018 23:39",
 		"applyTo:" : "jr 10/19/2017 00:16",
 		"applyToContainer:" : "jr 10/21/2017 16:32",
 		"base" : "jr 10/19/2017 00:16",

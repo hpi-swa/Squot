@@ -8,7 +8,7 @@ switchAndMoveUnsavedChangesOverTo: aHistorian
 		self loadedHistorian: aHistorian.
 		^ self].
 	self withCurrentSnapshot:
-		[stashHistorian := self repository historianForTemporaryVersions.
+		[stashHistorian := self repository historianForTemporaryVersionsOn: fromHistorian.
 		previousStashedVersion := self saveUnsavedChangesOn: stashHistorian.
 		UIManager default informUser: 'Computing unsaved changes' during:
 		[unsaved := self patchRelativeToBase: self baseSnapshot.
@@ -31,6 +31,4 @@ switchAndMoveUnsavedChangesOverTo: aHistorian
 				title: 'Merge conflicts with unsaved changes';
 				signal].
 		store applyPatch: patch]].
-	previousStashedVersion
-		ifNil: [self repository delete: self repository historianForTemporaryVersions]
-		ifNotNil: [self repository historianForTemporaryVersions version: previousStashedVersion].
+	self repository clearTemporaryVersionsOn: fromHistorian. "changes have been moved over"

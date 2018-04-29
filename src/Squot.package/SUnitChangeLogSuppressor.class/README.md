@@ -1,4 +1,1 @@
-I try to prevent cluttering of the changes file during tests by suppressing some change notifications and output to the changes file, or at least marking the beginning and end of such messages during tests.
-
-Instance Variables
-	hasLoggedStart:		<Boolean>
+I try to prevent cluttering of the changes file during tests by suppressing some change notifications.

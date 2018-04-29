@@ -1,7 +1,8 @@
 tests
 testMergeWithConflicts
 	| scenario |
-	scenario := SquotWorkingCopyTestMergeConflictScenario forTestCase: self.
+	self suppressChangeNotificationsDuring:
+	[scenario := SquotWorkingCopyTestMergeConflictScenario forTestCase: self.
 	"merge the version of the other historian"
 	[[scenario merge]
 	on: SquotSelectionOfChangesRequested do: [:request | | packageDiff conflictNode |
@@ -27,6 +28,6 @@ testMergeWithConflicts
 		self assert: (conflictNode title beginsWith: 'conflictMethod').
 		conflictNode chooseLeft.
 		request resume: request patch updateFromNodes]
-	] valueSupplyingAnswers: {{'*'. #default}}.
+	] valueSupplyingAnswers: {{'*'. #default}}].
 	scenario assertConflictMethodHasNotChanged: self.
 	self assert: scenario secondVersion equals: workingCopy lastLoadedHistorian version.

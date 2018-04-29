@@ -2,7 +2,7 @@
 	"category" : "Squot-Tests",
 	"classinstvars" : [
 		 ],
-	"classtraitcomposition" : "TTestCaseSuppressingProgressDisplay classTrait",
+	"classtraitcomposition" : "TTestCaseSuppressingProgressDisplay classTrait + TTestCaseThatCreatesClassesOrMethods classTrait",
 	"classvars" : [
 		 ],
 	"commentStamp" : "jr 3/17/2018 20:01",
@@ -16,5 +16,5 @@
 	"pools" : [
 		 ],
 	"super" : "TestCase",
-	"traitcomposition" : "TTestCaseSuppressingProgressDisplay",
+	"traitcomposition" : "TTestCaseSuppressingProgressDisplay + TTestCaseThatCreatesClassesOrMethods",
 	"type" : "normal" }

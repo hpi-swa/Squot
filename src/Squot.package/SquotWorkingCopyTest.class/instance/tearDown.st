@@ -1,7 +1,7 @@
 running
 tearDown
 	scenario ifNotNil: [scenario tearDown].
-	SystemChangeNotifier uniqueInstance doSilently:
+	self suppressChangeNotificationsDuring:
 		[classFactory cleanUp.
 		workingCopy unload].
 	(MCWorkingCopy allManagers
@@ -10,5 +10,4 @@ tearDown
 	Environment current packageOrganizer unregisterPackageNamed: classFactory packageName.
 	(repository respondsTo: #close) ifTrue: [repository close].
 	(store respondsTo: #close) ifTrue: [store close].
-	changeLogSuppressor tearDown.
 	workingCopy repository delete: workingCopy loadedHistorian.

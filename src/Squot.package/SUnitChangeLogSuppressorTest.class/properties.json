@@ -4,11 +4,11 @@
 		 ],
 	"classvars" : [
 		 ],
-	"commentStamp" : "jr 4/29/2018 17:16",
+	"commentStamp" : "",
 	"instvars" : [
-		"hasLoggedStart" ],
-	"name" : "SUnitChangeLogSuppressor",
+		"changeLogSuppressor" ],
+	"name" : "SUnitChangeLogSuppressorTest",
 	"pools" : [
 		 ],
-	"super" : "Object",
+	"super" : "TestCase",
 	"type" : "normal" }

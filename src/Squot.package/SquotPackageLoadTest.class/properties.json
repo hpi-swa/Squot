@@ -2,7 +2,7 @@
 	"category" : "Squot-Tests",
 	"classinstvars" : [
 		 ],
-	"classtraitcomposition" : "TTestCaseSuppressingProgressDisplay classTrait",
+	"classtraitcomposition" : "TTestCaseSuppressingProgressDisplay classTrait + TTestCaseThatCreatesClassesOrMethods classTrait",
 	"classvars" : [
 		 ],
 	"commentStamp" : "",
@@ -13,10 +13,11 @@
 		"classFactory",
 		"class",
 		"className",
-		"package" ],
+		"package",
+		"changeLogSuppressor" ],
 	"name" : "SquotPackageLoadTest",
 	"pools" : [
 		 ],
 	"super" : "TestCase",
-	"traitcomposition" : "TTestCaseSuppressingProgressDisplay",
+	"traitcomposition" : "TTestCaseSuppressingProgressDisplay + TTestCaseThatCreatesClassesOrMethods",
 	"type" : "normal" }

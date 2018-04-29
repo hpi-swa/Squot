@@ -1,8 +1,0 @@
-{
-	"class" : {
-		 },
-	"instance" : {
-		"logChangeEnd" : "jr 1/31/2017 17:12",
-		"logChangeStartIfNotDoneAlready" : "jr 1/31/2017 17:11",
-		"suppressChangeNotificationsDuring:" : "jr 1/31/2017 17:09",
-		"tearDown" : "jr 1/31/2017 17:12" } }

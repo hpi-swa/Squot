@@ -6,9 +6,9 @@
 		 ],
 	"commentStamp" : "",
 	"instvars" : [
-		"patch" ],
+		 ],
 	"name" : "SquotConflictResolutionRequested",
 	"pools" : [
 		 ],
-	"super" : "Notification",
+	"super" : "SquotSelectionOfChangesRequested",
 	"type" : "normal" }

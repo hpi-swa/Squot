@@ -28,6 +28,7 @@ switchAndMoveUnsavedChangesOverTo: aHistorian
 		patch hasConflicts ifTrue:
 			[patch := SquotConflictResolutionRequested new
 				patch: patch;
+				title: 'Merge conflicts with unsaved changes';
 				signal].
 		store applyPatch: patch]].
 	previousStashedVersion

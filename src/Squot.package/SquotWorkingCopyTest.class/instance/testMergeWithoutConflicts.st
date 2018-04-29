@@ -49,7 +49,6 @@ testMergeWithoutConflicts
 	self assert: secondMethod
 		equals: sampleClass >> #secondMethod
 		description: 'second method unchanged after merge'.
-	self assert: thirdMethod source
-		equals: (sampleClass >> #thirdMethod) getSource asString
+	self assert: (sampleClass includesSelector: #thirdMethod)
 		description: 'third method loaded after merge'.
 	self assert: secondVersion equals: workingCopy lastLoadedHistorian version.

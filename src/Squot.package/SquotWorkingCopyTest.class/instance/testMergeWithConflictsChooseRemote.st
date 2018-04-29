@@ -42,7 +42,6 @@ testMergeWithConflictsChooseRemote
 			conflictNode chooseRight.
 			request resume: request patch updateFromNodes]]
 		valueSupplyingAnswers: {{'*'. #default}}].
-	self assert: thirdMethodSource
-		equals: (sampleClass >> #conflictMethod) getSource asString
+	self assert: sampleClass new conflictMethod = 2
 		description: 'conflict method updated after merge'.
 	self assert: secondVersion equals: workingCopy lastLoadedHistorian version.

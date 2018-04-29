@@ -28,7 +28,6 @@
 		"cherryPickInteractivelyFromVersion:withParent:ifLoadCanceled:ifSaveCanceled:" : "jr 1/15/2018 22:55",
 		"currentSnapshot" : "jr 4/14/2018 20:02",
 		"defaultAuthor" : "jr 2/20/2017 11:36",
-		"diffsFromUnsavedChangesVersion:" : "jr 7/21/2017 01:36",
 		"discardUnsavedChanges" : "jr 6/30/2017 22:02",
 		"findDirectoryWithPackages:ifNone:" : "jr 3/7/2017 00:08",
 		"findPackagesWithoutTableOfContentsIn:" : "jr 3/11/2017 00:53",

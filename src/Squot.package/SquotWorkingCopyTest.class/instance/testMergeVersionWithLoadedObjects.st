@@ -1,6 +1,6 @@
 tests
 testMergeVersionWithLoadedObjects
-	| sampleClass packagePath firstVersion addedMethodSource secondVersion packageInfo |
+	| sampleClass packagePath firstVersion addedMethod secondVersion packageInfo |
 	"create a base version"
 	classFactory cleanUp.
 	self suppressChangeNotificationsDuring: [sampleClass := classFactory newClass].
@@ -11,7 +11,8 @@ testMergeVersionWithLoadedObjects
 	packagePath := (workingCopy store pathsOf: packageInfo) anyOne.
 	firstVersion := workingCopy baseVersion.
 	"create unsaved changes"
-	sampleClass compileSilently: (addedMethodSource := 'addedMethod ^ self') classified: 'unsaved methods'.
+	addedMethod := sampleClass compileSilently: 'addedMethod ^ self' classified: 'unsaved methods'.
+	addedMethod := sampleClass >> addedMethod.
 	"create a yet unloaded followup version"
 	firstVersion snapshot in: [:firstSnapshot | | packageArtifact newSnapshot |
 		packageArtifact := firstSnapshot artifactAt: packagePath.
@@ -34,11 +35,11 @@ testMergeVersionWithLoadedObjects
 			"make sure the unsaved method does not appear in the diff (will not be changed)"
 			packageDiff := request patch diffAt: packagePath.
 			self assert: (packageDiff diffOfTrackedObject operations
-				noneSatisfy: [:each | each definition isMethodDefinition and: [each fromSource asString = addedMethodSource]]).
+				noneSatisfy: [:each | each definition isMethodDefinition and: [each definition selector = addedMethod selector]]).
 			self assert: packageDiff diffOfTrackedObject conflicts isEmpty.
 			request resume: request patch "all of it"]]
 		valueSupplyingAnswers: {{'*'. #default}}].
-	self assert: addedMethodSource
-		equals: (sampleClass >> #addedMethod) getSource asString
+	self assert: addedMethod
+		equals: sampleClass >> #addedMethod
 		description: 'unsaved method unchanged after merge'.
 	self assert: firstVersion equals: workingCopy loadedVersion.

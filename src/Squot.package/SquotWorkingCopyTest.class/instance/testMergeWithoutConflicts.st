@@ -1,6 +1,6 @@
 tests
 testMergeWithoutConflicts
-	| sampleClass packagePath firstVersion secondMethodSource secondVersion  thirdMethodSource thirdVersion otherHistorian packageInfo |
+	| sampleClass packagePath firstVersion secondMethod secondVersion  thirdMethod thirdVersion otherHistorian packageInfo |
 	"create a base version"
 	self suppressChangeNotificationsDuring: [sampleClass := classFactory newClass].
 	sampleClass compileSilently: 'firstMethod ^ self' classified: 'methods of first version'.
@@ -10,7 +10,8 @@ testMergeWithoutConflicts
 	packagePath := (workingCopy store pathsOf: (PackageInfo named: classFactory packageName)) anyOne.
 	firstVersion := workingCopy baseVersion.
 	"create first merge parent"
-	sampleClass compileSilently: (secondMethodSource := 'secondMethod ^ self') classified: 'methods of second version'.
+	secondMethod := sampleClass compileSilently: 'secondMethod ^ self' classified: 'methods of second version'.
+	secondMethod := sampleClass >> secondMethod.
 	workingCopy saveNewVersionMessage: 'second version' interactive: false.
 	secondVersion := workingCopy baseVersion.
 	"create second merge parent"
@@ -18,10 +19,10 @@ testMergeWithoutConflicts
 		packageArtifact := firstSnapshot artifactAt: packagePath.
 		newSnapshot := firstSnapshot createNewBuilder
 			add: (((MCSnapshot fromDefinitions: packageArtifact packageArtifactDefinitions,
-					{MCMethodDefinition className: sampleClass name
+					{thirdMethod := MCMethodDefinition className: sampleClass name
 						selector: #thirdMethod category: 'methods of third version'
 						timeStamp: 'whatever'
-						source: (thirdMethodSource := 'thirdMethod ^ self')})
+						source: 'thirdMethod ^ self'})
 					asSquotArtifactForPackage: packageInfo)
 					path: packagePath);
 			buildSnapshot.
@@ -37,18 +38,18 @@ testMergeWithoutConflicts
 		on: SquotSelectionOfChangesRequested do: [:request |
 			"make sure the third method will be added"
 			(request patch diffAt: packagePath) diffOfTrackedObject operations
-				detect: [:each | each definition isMethodDefinition and: [each toSource asString = thirdMethodSource]]
+				detect: [:each | each definition isMethodDefinition and: [each toSource asString = thirdMethod source]]
 				ifNone: [self fail: 'third method not in the patch'].
 			"the second method should not be modified"
 			self deny: ((request patch diffAt: packagePath) diffOfTrackedObject
 					operations anySatisfy: [:each |
-					each definition isMethodDefinition and: [each fromSource asString = secondMethodSource]]).
+					each definition isMethodDefinition and: [each definition selector = secondMethod selector]]).
 			request resume: request patch "accept all changes"]]
 		valueSupplyingAnswers: {{'*'. #default}}].
-	self assert: secondMethodSource
-		equals: (sampleClass >> #secondMethod) getSource asString
+	self assert: secondMethod
+		equals: sampleClass >> #secondMethod
 		description: 'second method unchanged after merge'.
-	self assert: thirdMethodSource
+	self assert: thirdMethod source
 		equals: (sampleClass >> #thirdMethod) getSource asString
 		description: 'third method loaded after merge'.
 	self assert: secondVersion equals: workingCopy lastLoadedHistorian version.

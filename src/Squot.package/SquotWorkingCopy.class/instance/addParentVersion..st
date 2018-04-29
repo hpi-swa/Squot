@@ -1,6 +1,7 @@
 creating new versions
 addParentVersion: aVersion
 	loadedHistorian version ifNil:
-		[loadedHistorian version: aVersion.
+		["We are on a fresh branch, but we have just adopted a parent."
+		loadedHistorian version: aVersion.
 		^ self loadedVersion: aVersion].
-	(additionalParents ifNil: [self resetAdditionalParents]) add: aVersion.
+	self additionalParents add: aVersion.

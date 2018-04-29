@@ -6,4 +6,3 @@ loadVersion: aVersion interactive: shouldBeInteractiveBoolean
 	shouldBeInteractiveBoolean ifTrue: [^ self loadVersionInteractively: aVersion ifCanceled: []].
 	self privateLoadVersion: aVersion.
 	self loadedHistorian version: aVersion.
-	self loadedVersion: aVersion.

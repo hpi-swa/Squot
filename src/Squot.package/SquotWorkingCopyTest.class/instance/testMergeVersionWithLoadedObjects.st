@@ -40,4 +40,4 @@ testMergeVersionWithLoadedObjects
 	self assert: addedMethodSource
 		equals: (sampleClass >> #addedMethod) getSource asString
 		description: 'unsaved method unchanged after merge'.
-	self assert: secondVersion equals: workingCopy lastLoadedHistorian version.
+	self assert: firstVersion equals: workingCopy loadedVersion.

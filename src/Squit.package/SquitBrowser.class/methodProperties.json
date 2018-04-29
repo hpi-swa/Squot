@@ -128,7 +128,7 @@
 		"menuCommitListHook:" : "jr 1/15/2018 23:36",
 		"menuObjectListHook:" : "jr 6/30/2017 23:29",
 		"menuProjectListHook:" : "jr 5/11/2017 12:55",
-		"mergeVersionIntoActiveBranch:ifCanceled:" : "jr 10/15/2017 21:28",
+		"mergeVersionIntoActiveBranch:ifCanceled:" : "jr 4/28/2018 19:41",
 		"modelWakeUp" : "fn 4/26/2017 16:19",
 		"objectCache" : "fn 4/11/2017 18:39",
 		"objectCacheRefresh" : "jr 5/31/2017 16:41",

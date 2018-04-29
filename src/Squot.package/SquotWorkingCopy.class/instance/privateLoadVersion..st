@@ -6,4 +6,5 @@ privateLoadVersion: aVersion
 	[patch := aVersion patchRelativeToBase: self lazySnapshot.
 	self addGlobalObjectsToStore: patch.
 	UIManager default informUser: 'Loading objects' during:
-	[store applyPatch: patch]].
+	[store applyPatch: patch].
+	self loadedVersion: aVersion].

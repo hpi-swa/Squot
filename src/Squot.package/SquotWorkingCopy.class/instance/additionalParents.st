@@ -1,4 +1,4 @@
 accessing
 additionalParents
 
-	^ additionalParents
+	^ additionalParents ifNil: [additionalParents := OrderedCollection new]

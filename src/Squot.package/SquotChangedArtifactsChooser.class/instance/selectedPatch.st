@@ -9,4 +9,4 @@ selectedPatch
 		rootNodesByArtifact at: each
 			ifPresent: [:node | self adjustedDiff: each byExclusionsBelow: node]
 			ifAbsent: [each]].
-	^ SquotPatch with: adjustedDiffs
+	^ SquotPatch with: (adjustedDiffs select: [:each | each hasChanges])

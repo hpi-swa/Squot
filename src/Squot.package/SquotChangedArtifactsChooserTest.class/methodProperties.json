@@ -1,0 +1,10 @@
+{
+	"class" : {
+		 },
+	"instance" : {
+		"closeDialogPossiblyOpenedDuring:timeoutMsecs:" : "jr 4/23/2018 23:28",
+		"resolveArtifactConflict:" : "jr 4/23/2018 23:41",
+		"testAcceptArtifactAddition" : "jr 4/23/2018 23:31",
+		"testRejectArtifactAddition" : "jr 4/23/2018 23:36",
+		"testResolveArtifactConflictChooseLeft" : "jr 4/23/2018 23:44",
+		"testResolveArtifactConflictChooseRight" : "jr 4/23/2018 23:43" } }

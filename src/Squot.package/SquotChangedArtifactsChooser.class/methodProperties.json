@@ -2,14 +2,13 @@
 	"class" : {
 		"on:" : "jr 5/1/2017 20:59" },
 	"instance" : {
-		"accept" : "jr 5/29/2017 00:40",
+		"accept" : "jr 4/23/2018 23:11",
 		"accepted" : "jr 3/5/2017 16:01",
 		"activateSelectedNode" : "jr 4/26/2017 17:52",
 		"addIgnoredArtifacts:" : "jr 2/14/2017 16:56",
 		"adjustedDiff:byExclusionsBelow:" : "jr 5/1/2017 21:51",
 		"buildWith:" : "jr 5/1/2017 21:18",
 		"cancel" : "jr 5/1/2017 21:03",
-		"changedArtifactsMenuHook:shifted:" : "jr 2/16/2017 01:37",
 		"childNodesOf:" : "jr 4/26/2017 16:00",
 		"chooserWidgetSpecs:" : "jr 4/26/2017 18:03",
 		"controllerForIgnores" : "jr 2/14/2017 16:55",
@@ -31,4 +30,4 @@
 		"rootNodes" : "jr 5/1/2017 21:29",
 		"selectNode:" : "jr 4/26/2017 17:36",
 		"selectedNode" : "jr 4/26/2017 15:57",
-		"selectedPatch" : "jr 5/30/2017 00:16" } }
+		"selectedPatch" : "jr 4/23/2018 23:33" } }

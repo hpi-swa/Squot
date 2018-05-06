@@ -1,5 +1,5 @@
 copying
 adjustedBy: aDiffNode 
 	"Can only exclude or include removal wholly."
-	aDiffNode isActive ifFalse: [^ SquotDiffOfEqualObjects instance].
+	aDiffNode children first isActive ifFalse: [^ SquotDiffOfEqualObjects instance].
 	^ self

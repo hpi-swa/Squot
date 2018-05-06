@@ -1,35 +1,12 @@
-I am a tool that allows the user to pick changes to compose a Snapshot.
+I am a tool that allows the user to pick changes to manipulate a SquotPatch.
+
+To allow for clean canceling, the artifactDiffs are not changed immediately when the SquotDiffNodes displayed herein are manipulated.
+Only after the changes are #accepted, the #selectedPatch will contain the adjusted diffs.
 
 Instance Variables
 	canceled:		<Boolean>
 	controllerForIgnores:		<Object> delegate for ignore state modifications
-	effective:		<Dictionary> effective artifacts in the composed snapshot
 	ignored:		<Dictionary> ignored artifacts
-	list:		<SequenceableCollection> list of associations from effective, for display
-	original:		<Dictionary> original artifacts before any changes (left side of a diff)
-	proposed:		<Dictionary> proposed artifacts after any changes (right side of a diff)
-	selectedIndex:		<Integer> index of the selected list element
-
-canceled
-	- xxxxx
-
-controllerForIgnores
-	- xxxxx
-
-effective
-	- xxxxx
-
-ignored
-	- xxxxx
-
-list
-	- xxxxx
-
-original
-	- xxxxx
-
-proposed
-	- xxxxx
-
-selectedIndex
-	- xxxxx
+	artifactDiffs:	<Dictionary> the artifact differences from the patch to be manipulated
+	rootNodes:		<SequenceableCollection> list of tree roots of SquotDiffNode trees
+	selectedNode:		<SquotDiffNode> the currently selected node

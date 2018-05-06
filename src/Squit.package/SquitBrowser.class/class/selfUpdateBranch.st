@@ -1,3 +1,4 @@
 accessing
 selfUpdateBranch
-	^ SelfUpdateBranch
+	^ SelfUpdateBranch ifNil:
+		[self initializeSelfUpdate. SelfUpdateBranch]

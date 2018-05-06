@@ -1,4 +1,4 @@
-user requests
+choosing packages
 categoriesPlusPrefixes
 	^ (SystemOrganizer default categories gather: [:each | | eachSplitted |
 		eachSplitted := each splitBy: '-'.

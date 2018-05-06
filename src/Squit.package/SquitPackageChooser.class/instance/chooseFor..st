@@ -11,14 +11,14 @@ chooseFor: aWorkingCopy
 	ToolBuilder open: self.
 	acceptChanges ifFalse: [^ false].
 	
-	removedPackages := originalPackages reject: [:package | self trackedPackages includes: package].
-	addedPackages := self trackedPackages reject: [:package | originalPackages includes: package].
+	removedPackages := originalPackages copyWithoutAll: self trackedPackages.
+	addedPackages := self trackedPackages copyWithoutAll: originalPackages.
 	(removedPackages isEmpty and: [addedPackages isEmpty]) ifTrue: [^ false].
 	
 	addedPackages ifNotEmpty: [
 		subPath := self requestPathInWorkingCopy: aWorkingCopy.
 		subPath ifNil: [^ false]].
 	
-	removedPackages do: [:each | aWorkingCopy remove: (self objectForPackageName: each from: aWorkingCopy)].
+	removedPackages do: [:each | aWorkingCopy removePackageNamed: each].
 	addedPackages do: [:each | aWorkingCopy addPackageNamed: each at: subPath].
 	^ true

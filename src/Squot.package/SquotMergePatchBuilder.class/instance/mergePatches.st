@@ -7,5 +7,5 @@ mergePatches
 		incomingDiff := fromBaseToIncoming diffAt: eachPath.
 		mergingDiff := existingDiff mergeWith: incomingDiff.
 		mergingDiff hasChanges ifTrue: [diffs at: eachPath put: mergingDiff]].
-	(fromBaseToIncoming paths difference: commonPaths)
+	(fromBaseToIncoming paths copyWithoutAll: commonPaths)
 		do: [:eachPath | diffs at: eachPath put: (fromBaseToIncoming diffAt: eachPath)].

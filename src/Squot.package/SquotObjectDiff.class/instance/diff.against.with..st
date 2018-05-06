@@ -5,5 +5,5 @@ diff: leftObjectShadow against: rightShadow with: aDiffBuilder
 	slotChanges := Dictionary new.
 	leftObjectShadow slots associationsDo: [:eachSlot |
 		self diffSlot: eachSlot withCorrespondingSlotIn: rightShadow slots with: aDiffBuilder].
-	(rightShadow slots keys difference: leftObjectShadow slots keys) do: [:eachKey |
+	(rightShadow slots keys copyWithoutAll: leftObjectShadow slots keys) do: [:eachKey |
 		self addSlotOnlyRight: (rightShadow slots associationAt: eachKey) with: aDiffBuilder].

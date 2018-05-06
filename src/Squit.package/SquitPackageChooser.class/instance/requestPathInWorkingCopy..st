@@ -8,7 +8,7 @@ requestPathInWorkingCopy: aWorkingCopy
 			version := aWorkingCopy loadedHistorian version.
 			version
 				ifNil: [subPath := UIManager default
-						request: 'Enter the relative path in the working copy for the package'
+						request: 'Enter the relative path in the working copy for the added packages'
 						initialAnswer: 'src']
 				ifNotNil: [rootDirectory := SquitRepositoryFilesystemExtension new
 						repository: aWorkingCopy repository;

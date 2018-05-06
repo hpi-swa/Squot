@@ -2,7 +2,7 @@ actions
 trackSelected
 
 	| package conflictingPackages |
-	package := (self untrackedPackages at: self selectionUntracked).
+	package := (self untrackedPackagesWithTitle at: self selectionUntracked).
 	
 	conflictingPackages := self trackedPackages select: [:p | p beginsWith: package].
 	

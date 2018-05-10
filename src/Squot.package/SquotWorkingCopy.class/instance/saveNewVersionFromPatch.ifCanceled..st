@@ -1,6 +1,7 @@
 creating new versions
 saveNewVersionFromPatch: aPatch ifCanceled: cancelBlock
-	| selectedPatch tool newVersion capturedArtifacts |
+	"Interactively create a new version. Let the user pick changes from aPatch."
+	| selectedPatch tool newVersion |
 	tool := SquotSaveVersionDialog new
 		parentVersions: self parentVersions;
 		patch: aPatch;
@@ -9,18 +10,8 @@ saveNewVersionFromPatch: aPatch ifCanceled: cancelBlock
 	tool requestSelectedChangesWithTitle: 'Select changes and message for the new version'.
 	tool accepted ifFalse: [^ cancelBlock value].
 	selectedPatch := tool selectedPatch.
-	[self handlePathChangesDuring:
-		[newVersion := loadedHistorian createNewVersionFromPatch: selectedPatch
-			with: [:version | version
-						message: tool message asString;
-						author: self defaultAuthor.
-					version parents: self parentVersions.
-					self shouldNotStoreMetadata ifTrue: [version doNotStoreMetadata]]]]
-		on: SquotArtifactsWereCaptured
-		doAndResume: [:captured | capturedArtifacts := captured artifacts].
-	self loadedVersion: newVersion.
-	self cacheSavedArtifacts: (capturedArtifacts ifNil: [Dictionary new]).
-	self resetAdditionalParents.
-	previousSnapshot := nil.
-	previousVersionId := newVersion internalId.
+	newVersion := self
+		saveNewVersionFromPatch: selectedPatch
+		message: tool message asString.
 	self cacheNewMonticelloVersions: selectedPatch message: tool message.
+	^ newVersion

@@ -1,4 +1,4 @@
-switching historians
+private switching historians
 mergeTemporaryVersionsOn: aHistorian
 	| stashHistorian  |
 	(self repository hasTemporaryVersionsOn: aHistorian) ifFalse: [^ self].

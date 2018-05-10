@@ -1,0 +1,16 @@
+private switching historians
+temporarilySaveChangesOn: aHistorian
+	"Saves currently unsaved changes on another historian for temporary versions on aHistorian. Answer the resulting snapshot."
+	| stashHistorian unsaved temporarySnapshot |
+	stashHistorian := self repository historianForTemporaryVersionsOn: aHistorian.
+	UIManager default informUser: 'Computing unsaved changes' during:
+		[unsaved := self patchRelativeToBase: self baseSnapshot.
+		temporarySnapshot := SquotSnapshot builder
+			addAll: self baseSnapshot artifacts;
+			applyPatch: unsaved;
+			buildSnapshot].
+	"for added safety, also save a temporary version in the repository"
+	UIManager default informUser: 'Saving yet-unsaved changes temporarily' during:
+		[self saveChanges: unsaved on: stashHistorian
+			message: 'Unsaved changes on ', aHistorian shortName].
+	^ temporarySnapshot

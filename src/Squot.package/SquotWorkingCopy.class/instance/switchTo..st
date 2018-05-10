@@ -1,10 +1,9 @@
 switching historians
 switchTo: aHistorian
-	| fromHistorian stashHistorian |
+	| fromHistorian |
 	fromHistorian := self loadedHistorian.
 	self withCurrentSnapshot:
-		[stashHistorian := self repository historianForTemporaryVersionsOn: fromHistorian.
-		self saveUnsavedChangesOn: stashHistorian.
+		[self temporarilySaveChangesOn: fromHistorian.
 		self loadedHistorian: aHistorian.
 		self privateLoadVersion: aHistorian version].
 	self withCurrentSnapshot: [self mergeTemporaryVersionsOn: aHistorian].

@@ -108,7 +108,7 @@
 		"compareVersions:with:" : "jr 7/23/2017 02:20",
 		"contents" : "fn 4/14/2017 22:39",
 		"continueBuildingCommitList:asyncWith:" : "jr 6/5/2017 00:50",
-		"createNewBranchAt:ifCanceled:" : "jr 4/7/2018 00:49",
+		"createNewBranchAt:ifCanceled:" : "pre 5/13/2018 13:58",
 		"detectGitHubRemote:ifNone:" : "jr 7/1/2017 17:56",
 		"detectGitHubUsernameIfNone:" : "jr 5/13/2017 15:02",
 		"handlingCredentialsOf:do:ifCanceled:" : "jr 5/21/2017 23:54",

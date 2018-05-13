@@ -10,5 +10,6 @@
 		"testCreateCommit" : "jr 7/22/2017 12:01",
 		"testDefaultAuthor" : "jr 2/20/2017 22:27",
 		"testGetMasterSnapshot" : "jr 7/22/2017 12:03",
+		"testGetReferenceWithInvalidName" : "pre 5/13/2018 13:59",
 		"testInstantiation" : "jr 1/11/2017 17:50",
 		"testIsAvailable" : "jr 6/21/2017 15:46" } }

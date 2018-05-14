@@ -8,7 +8,11 @@ handlingCredentialsOf: aHistorian do: aBlock ifCanceled: cancelBlock
 				ifCanceled: cancelBlock.
 		e resume: credentials]
 	on: GitRemoteAuthenticationFailed do: [:e | | message |
-		message := 'Authentication with the remote failed. Please check your credentials.'.
+		message := 'Authentication with the remote failed for some reason.'.
+		e responseBody ifNotEmpty: [
+			message := message , String crlf , 
+				'The following might give a hint of what has happened:' , String crlf , 
+				e responseBody].
 		((self remoteUrlOf: aHistorian) includesSubstring: 'github.com')
-			ifTrue: [message := message, ' If you have two-factor authentification enabled, you must use a personal access token instead of your GitHub login password.'].
+			ifTrue: [message := message, String crlf , 'Also: If you have two-factor authentification enabled, you must use a personal access token instead of your GitHub login password.'].
 		self inform: message]

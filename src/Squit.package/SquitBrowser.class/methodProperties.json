@@ -111,7 +111,7 @@
 		"createNewBranchAt:ifCanceled:" : "jr 4/7/2018 00:49",
 		"detectGitHubRemote:ifNone:" : "jr 7/1/2017 17:56",
 		"detectGitHubUsernameIfNone:" : "jr 5/13/2017 15:02",
-		"handlingCredentialsOf:do:ifCanceled:" : "pre 5/14/2018 16:06",
+		"handlingCredentialsOf:do:ifCanceled:" : "pre 5/14/2018 16:12",
 		"hasBranchSelection" : "jr 6/4/2017 22:36",
 		"hasCommitSelection" : "jr 4/27/2017 17:04",
 		"hasObjectSelection" : "jr 5/13/2017 17:40",

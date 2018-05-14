@@ -1,4 +1,4 @@
-as yet unclassified
+exceptionInstantiator
 signal: signalText with: responseBody
 
 	^ self new

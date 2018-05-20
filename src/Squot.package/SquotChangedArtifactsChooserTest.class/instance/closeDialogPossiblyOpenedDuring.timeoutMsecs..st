@@ -1,4 +1,4 @@
-as yet unclassified
+utilities
 closeDialogPossiblyOpenedDuring: aBlock timeoutMsecs: millisecondsInteger
 	| semaphore previousWorldMorphs worldMorphs dialog |
 	semaphore := Semaphore new.

@@ -1,4 +1,4 @@
-as yet unclassified
+testing
 testRejectArtifactAddition
 	| path artifact diffs patch acceptReturned
 	 |

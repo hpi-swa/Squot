@@ -1,4 +1,4 @@
-as yet unclassified
+testing
 testResolveArtifactConflictChooseLeft
 	| path artifact diffs patch |
 	path := 'conflicted-artifact'.

@@ -3,14 +3,14 @@ testMergeWithConflictsChooseRemote
 	| sampleClass packagePath firstVersion secondMethodSource secondVersion  thirdMethodSource thirdVersion otherHistorian packageInfo |
 	"create a base version"
 	classFactory cleanUp.
-	sampleClass := classFactory newClass.
+	self suppressChangeNotificationsDuring: [sampleClass := classFactory newClass].
 	packageInfo := PackageInfo named: classFactory packageName.
 	workingCopy add: packageInfo at: 'src'.
 	workingCopy saveNewVersionMessage: 'first version' interactive: false.
 	packagePath := (workingCopy store pathsOf: (PackageInfo named: classFactory packageName)) anyOne.
 	firstVersion := workingCopy baseVersion.
 	"create first merge parent"
-	sampleClass compile: (secondMethodSource := 'conflictMethod ^ 1') classified: 'conflict methods'.
+	sampleClass compileSilently: (secondMethodSource := 'conflictMethod ^ 1') classified: 'conflict methods'.
 	workingCopy saveNewVersionMessage: 'second version' interactive: false.
 	secondVersion := workingCopy baseVersion.
 	"create second merge parent"
@@ -30,7 +30,8 @@ testMergeWithConflictsChooseRemote
 		thirdVersion := otherHistorian createNewVersion: newSnapshot
 			with: [:newVersion | newVersion message: 'third version']].
 	"merge the version of the other historian"
-	[[workingCopy
+	self suppressChangeNotificationsDuring:
+	[[[workingCopy
 		mergeVersionInteractively: thirdVersion
 		ifCanceled: [self fail: 'this code should not be reached']]
 		on: SquotSelectionOfChangesRequested do: [:request | | packageDiff conflictNode |
@@ -40,8 +41,7 @@ testMergeWithConflictsChooseRemote
 			self assert: (conflictNode title beginsWith: 'conflictMethod').
 			conflictNode chooseRight.
 			request resume: request patch updateFromNodes]]
-		valueSupplyingAnswers: {{'*'. #default}}.
-	self assert: thirdMethodSource
-		equals: (sampleClass >> #conflictMethod) getSource asString
+		valueSupplyingAnswers: {{'*'. #default}}].
+	self assert: sampleClass new conflictMethod = 2
 		description: 'conflict method updated after merge'.
 	self assert: secondVersion equals: workingCopy lastLoadedHistorian version.

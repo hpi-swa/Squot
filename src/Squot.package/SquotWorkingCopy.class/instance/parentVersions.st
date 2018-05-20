@@ -1,8 +1,8 @@
 creating new versions
 parentVersions
 	| mainParent |
-	additionalParents ifNil: [self resetAdditionalParents].
 	mainParent := loadedHistorian version.
-	mainParent ifNil: [^ additionalParents].
+	mainParent ifNil: [^ self additionalParents asArray].
+	additionalParents ifNil: [^ Array with: mainParent].
 	^ {mainParent}, (additionalParents copyWithout: mainParent)
 	

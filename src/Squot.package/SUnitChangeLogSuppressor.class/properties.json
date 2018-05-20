@@ -1,16 +1,14 @@
 {
-	"category" : "Squot-Tests",
+	"category" : "Squot-Tests-Tools",
 	"classinstvars" : [
 		 ],
-	"classtraitcomposition" : "TCanSuppressChangeNotifications classTrait",
 	"classvars" : [
 		 ],
-	"commentStamp" : "jr 3/17/2018 20:00",
+	"commentStamp" : "jr 4/29/2018 17:16",
 	"instvars" : [
 		"hasLoggedStart" ],
 	"name" : "SUnitChangeLogSuppressor",
 	"pools" : [
 		 ],
 	"super" : "Object",
-	"traitcomposition" : "TCanSuppressChangeNotifications",
 	"type" : "normal" }

@@ -27,7 +27,7 @@ newSquotDiffNodes
 				title: each key
 				content: nil
 				children: (each value collect: [:pair | pair value])].
-	rest := operationNodes difference: nodesWithClass.
+	rest := operationNodes copyWithoutAll: nodesWithClass.
 	nodesByClassification :=
 		(rest groupBy: [:each "definition -> node" |
 			each key class allSelectors

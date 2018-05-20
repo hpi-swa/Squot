@@ -3,12 +3,12 @@ switchAndMoveUnsavedChangesOverTo: aHistorian
 	| fromHistorian stashHistorian previousStashedVersion unsaved temporarySnapshot patch |
 	fromHistorian := self loadedHistorian.
 	(fromHistorian version = aHistorian version
-	and: [(self repository historianForTemporaryVersionsOn: aHistorian) version isNil]) ifTrue:
+	and: [(self repository hasTemporaryVersionsOn: aHistorian) not]) ifTrue:
 		["nothing needs to be modified in the store"
 		self loadedHistorian: aHistorian.
 		^ self].
 	self withCurrentSnapshot:
-		[stashHistorian := self repository historianForTemporaryVersions.
+		[stashHistorian := self repository historianForTemporaryVersionsOn: fromHistorian.
 		previousStashedVersion := self saveUnsavedChangesOn: stashHistorian.
 		UIManager default informUser: 'Computing unsaved changes' during:
 		[unsaved := self patchRelativeToBase: self baseSnapshot.
@@ -17,9 +17,8 @@ switchAndMoveUnsavedChangesOverTo: aHistorian
 			in: [:builder | unsaved applyTo: builder];
 			buildSnapshot].
 		self loadedHistorian: aHistorian.
-		stashHistorian := self repository historianForTemporaryVersionsOn: aHistorian.
-		self privateLoadVersion: (stashHistorian version ifNil: [aHistorian version]).
-		self loadedVersion: aHistorian version].
+		self privateLoadVersion: aHistorian version].
+	self withCurrentSnapshot: [self mergeTemporaryVersionsOn: aHistorian].
 	UIManager default informUser: 'Restoring unsaved changes' during:
 	[self withCurrentSnapshot:
 		[patch := SquotMergePatchBuilder new
@@ -29,8 +28,7 @@ switchAndMoveUnsavedChangesOverTo: aHistorian
 		patch hasConflicts ifTrue:
 			[patch := SquotConflictResolutionRequested new
 				patch: patch;
+				title: 'Merge conflicts with unsaved changes';
 				signal].
 		store applyPatch: patch]].
-	previousStashedVersion
-		ifNil: [self repository delete: self repository historianForTemporaryVersions]
-		ifNotNil: [self repository historianForTemporaryVersions version: previousStashedVersion].
+	self repository clearTemporaryVersionsOn: fromHistorian. "changes have been moved over"

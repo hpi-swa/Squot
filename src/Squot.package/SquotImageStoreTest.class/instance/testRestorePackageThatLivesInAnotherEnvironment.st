@@ -5,7 +5,7 @@ testRestorePackageThatLivesInAnotherEnvironment
 	another environment."
 	[imageStore environment: self class environment.
 	testEnvironment beCurrentDuring:
-		[class := classFactory newClass.
+		[self suppressChangeNotificationsDuring: [class := classFactory newClass].
 		className := class name.
 		package := MCPackage named: classFactory packageName.
 		imageStore add: (PackageInfo named: classFactory packageName) at: 'src'].
@@ -18,7 +18,7 @@ testRestorePackageThatLivesInAnotherEnvironment
 		identical: (MCWorkingCopy forPackage: package) environment
 		description: 'prerequisite: MCWorkingCopy environment'.
 	classFactory delete: class. "so it can be restored from the snapshot"
-	imageStore restoreToSnapshot: snapshot.
+	self suppressChangeNotificationsDuring: [imageStore restoreToSnapshot: snapshot].
 	self assert: (testEnvironment hasClassNamed: className)
 		description: 'reloaded class in correct environment'.
 	self deny: (Environment current hasClassNamed: className)

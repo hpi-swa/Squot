@@ -9,7 +9,7 @@ newSquotDiffNodes
 			classOperation
 				ifNil: [eachGroup]
 				ifNotNil: [{classOperation}, (eachGroup copyWithout: classOperation)]].
-	rest := operations difference: operationsWithClass.
+	rest := operations copyWithoutAll: operationsWithClass.
 	byClassification := rest groupBy: [:each |
 		each definition class allSelectors
 			detect: [:any | ('is*Definition' match: any) and:

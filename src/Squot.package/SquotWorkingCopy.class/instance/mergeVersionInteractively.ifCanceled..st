@@ -3,7 +3,7 @@ mergeVersionInteractively: aVersion ifCanceled: cancelBlock
 	"Let the user choose artifact editions to load from aVersion and add the version as parent version."
 	| mergeBases fastForwardPossible mergePatch |
 	fastForwardPossible := false.
-	mergeBases := self checkMergeBasesWith: aVersion
+	mergeBases := self checkMergeBasesOfHeadVersionWith: aVersion
 		ifNoCommonAncestor: ["the versions have no common base version"
 			{SquotSnapshot empty}]
 		ifAncestor:

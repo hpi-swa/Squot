@@ -7,7 +7,7 @@ baseSnapshot
 			lazySnapshot select: [:each | each isLoadable].
 	self addGlobalObjectsToStore: baseVersionSnapshot.
 	self flag: #FIXME. "when Squeak crashes, the lastLoadedHistorian might be ahead of the actual saved image state"
-	self lastLoadedHistorian version ~= self baseVersion
+	self loadedVersion ~= self baseVersion
 		ifTrue: [^ baseVersionSnapshot].
 	^ baseVersionSnapshot createNewBuilder
 		addAll: (self previouslySavedArtifacts

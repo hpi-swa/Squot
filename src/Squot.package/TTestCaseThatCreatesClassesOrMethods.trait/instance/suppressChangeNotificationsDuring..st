@@ -1,0 +1,3 @@
+change log suppressing
+suppressChangeNotificationsDuring: aBlock
+	^ self changeLogSuppressor suppressChangeNotificationsDuring: aBlock

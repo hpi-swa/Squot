@@ -6,6 +6,6 @@ loadPatchInteractively: aPatch ifCanceled: cancelBlock
 	effectivePatch :=
 		(self selectFromPatch: aPatch
 			title: 'Selected changes to load'
-			ifCanceled: cancelBlock).
+			ifCanceled: [^ cancelBlock value]).
 	store applyPatch: effectivePatch.
 	^ effectivePatch

@@ -2,7 +2,7 @@
 	"category" : "Squot-Tests",
 	"classinstvars" : [
 		 ],
-	"classtraitcomposition" : "TTestCaseSuppressingProgressDisplay classTrait",
+	"classtraitcomposition" : "TTestCaseSuppressingProgressDisplay classTrait + TTestCaseThatCreatesClassesOrMethods classTrait",
 	"classvars" : [
 		 ],
 	"commentStamp" : "jr 1/27/2017 16:13",
@@ -10,10 +10,11 @@
 		"class",
 		"imageStore",
 		"fileStore",
-		"createdClasses" ],
+		"createdClasses",
+		"changeLogSuppressor" ],
 	"name" : "SquotImageToFileStoreTest",
 	"pools" : [
 		 ],
 	"super" : "TestCase",
-	"traitcomposition" : "TTestCaseSuppressingProgressDisplay",
+	"traitcomposition" : "TTestCaseSuppressingProgressDisplay + TTestCaseThatCreatesClassesOrMethods",
 	"type" : "normal" }

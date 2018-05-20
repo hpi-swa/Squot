@@ -3,8 +3,9 @@
 		 },
 	"instance" : {
 		"capturePackage" : "jr 7/30/2017 17:08",
+		"changeLogSuppressor" : "jr 4/29/2018 16:50",
 		"checkRestoredPackage" : "jr 7/30/2017 16:54",
-		"setUp" : "jr 7/30/2017 17:11",
+		"setUp" : "jr 4/29/2018 16:51",
 		"tearDown" : "jr 7/30/2017 16:43",
 		"testLoadedAndTracked" : "jr 7/30/2017 17:09",
 		"testLoadedAndUntracked" : "jr 7/30/2017 17:13",

@@ -2,7 +2,4 @@
 	"class" : {
 		 },
 	"instance" : {
-		"initialize" : "jr 2/1/2017 14:15",
-		"logChangeEnd" : "jr 2/1/2017 14:22",
-		"logChangeStartIfNotDoneAlready" : "jr 2/1/2017 14:22",
-		"tearDown" : "jr 2/1/2017 14:22" } }
+		"suppressChangeNotificationsDuring:" : "jr 4/29/2018 17:20" } }

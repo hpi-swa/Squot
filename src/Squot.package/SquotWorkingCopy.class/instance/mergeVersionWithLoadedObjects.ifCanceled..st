@@ -1,7 +1,17 @@
 loading and unloading
 mergeVersionWithLoadedObjects: aVersion ifCanceled: cancelBlock
-	"Create a temporary version that saves all unsaved changes on the lastLoadedHistorian,
-	merge it with aVersion and go back to the original historian without the temp version."
-	self temporarilySaveChangesDuring: [
-		self mergeVersionInteractively: aVersion ifCanceled: [^ cancelBlock value];	
-			loadedVersion: aVersion].
+	"Merge objects with those from aVersion, but do not record the merge in history."
+	| mergeBases mergePatch |
+	mergeBases := self checkMergeBasesOfLoadedVersionWith: aVersion
+		ifNoCommonAncestor: ["the versions have no common base version"
+			{SquotSnapshot empty}]
+		ifAncestor:
+			[self inform: 'Your objects are descendants of this version already.'.
+			^ cancelBlock value]
+		ifDescendant: ["fast forward"].
+	self flag: 'TODO: if there are multiple merge-bases, resolve conflicts recursively below'.
+	mergePatch := SquotMergePatchBuilder new
+		patchFrom: self currentSnapshot
+		to: aVersion
+		base: mergeBases anyOne.
+	self loadPatchInteractively: mergePatch ifCanceled: [^ cancelBlock value].

@@ -7,6 +7,7 @@ mergeVersionIntoActiveBranch: mergeHeadCommit ifCanceled: cancelBlock
 		ifCanceled: [^ cancelBlock value].
 	selectedProject loadedHistorian version
 		 ifNil: ["new branch that got an ancestor now"
+			self isThisEverCalled: 'branch adoption by SquitBrowser'. "cf. #mergeVersionInteractively:ifCanceled: and #addParentVersion:"
 			selectedProject loadedHistorian version: mergeHeadCommit.
 			selectedProject loadedVersion: mergeHeadCommit.
 			^ self].

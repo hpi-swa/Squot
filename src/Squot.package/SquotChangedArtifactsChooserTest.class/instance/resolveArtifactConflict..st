@@ -1,4 +1,4 @@
-as yet unclassified
+utilities
 resolveArtifactConflict: unaryBlock
 	| conflictNode acceptReturned |
 	conflictNode := SquotDiffNodeSearchForChoiceNeeded new

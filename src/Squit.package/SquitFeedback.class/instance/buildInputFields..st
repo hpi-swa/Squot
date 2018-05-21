@@ -8,7 +8,7 @@ buildInputFields: builder
 		setText: #actionTitle:;
 		help: 'A feedback title...';
 		frame: (0@0 corner: 1@0.1).
-	builder pluggableInputFieldSpec new
+	builder pluggableTextSpec new
 		model: self;
 		getText: #actionMessage;
 		editText: #actionMessage:;

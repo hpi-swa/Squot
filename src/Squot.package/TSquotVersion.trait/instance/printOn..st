@@ -1,8 +1,8 @@
 printing
 printOn: aStream
 	aStream
-		nextPutAll: 'commit ';
-		nextPutAll: self shortId;
+		nextPutAll: self class name asString;
+		print: self internalId;
 		space;
 		nextPut: $";
 		nextPutAll: (self message contractTo: 60);

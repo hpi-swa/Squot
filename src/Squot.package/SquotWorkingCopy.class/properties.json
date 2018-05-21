@@ -5,7 +5,7 @@
 	"classtraitcomposition" : "TSquotMutableObjectContainer classTrait",
 	"classvars" : [
 		 ],
-	"commentStamp" : "jr 1/26/2017 14:45",
+	"commentStamp" : "jr 5/21/2018 22:00",
 	"instvars" : [
 		"name",
 		"store",

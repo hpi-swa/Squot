@@ -14,6 +14,4 @@ saveNewVersionFromPatch: aPatch message: aString
 	self loadedVersion: newVersion.
 	self cacheSavedArtifacts: (capturedArtifacts ifNil: [Dictionary new]).
 	self resetAdditionalParents.
-	previousSnapshot := nil.
-	previousVersionId := newVersion internalId.
 	^ newVersion

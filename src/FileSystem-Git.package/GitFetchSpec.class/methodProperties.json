@@ -1,0 +1,11 @@
+{
+	"class" : {
+		"fromString:forRemote:" : "jr 5/27/2018 18:24" },
+	"instance" : {
+		"errorRemoteTrackingBranchDoesNotMatch" : "jr 5/27/2018 22:12",
+		"remote" : "jr 5/27/2018 18:22",
+		"remote:" : "jr 5/27/2018 18:22",
+		"remoteBranchOf:" : "jr 5/27/2018 22:14",
+		"remoteName" : "jr 5/27/2018 19:20",
+		"remoteRefPattern" : "jr 5/27/2018 18:33",
+		"trackingRefPattern" : "jr 5/27/2018 18:33" } }

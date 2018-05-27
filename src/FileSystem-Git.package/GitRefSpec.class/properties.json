@@ -1,0 +1,16 @@
+{
+	"category" : "FileSystem-Git-Plumbing-Core",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "jr 5/27/2018 18:21",
+	"instvars" : [
+		"leftRefPattern",
+		"rightRefPattern",
+		"destructiveUpdatesAllowed" ],
+	"name" : "GitRefSpec",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }

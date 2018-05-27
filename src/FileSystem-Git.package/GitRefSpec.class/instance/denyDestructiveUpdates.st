@@ -1,0 +1,4 @@
+accessing
+denyDestructiveUpdates
+
+	destructiveUpdatesAllowed := false.

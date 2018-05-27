@@ -1,4 +1,4 @@
-as yet unclassified
+testing
 testConfigRead
 	(repository baseDir / 'config') ensureDeleted.
 	self assert: (repository configAt: 'remote.origin.url' ifAbsent: [42]) = 42.

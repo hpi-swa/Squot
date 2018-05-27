@@ -1,11 +1,11 @@
 testing
-testGetConfigSections
+testRemoteNamedWithoutUrl
+	| remote |
 	(repository baseDir / 'config') ensureDeleted.
 	(repository baseDir / 'config') writeStreamDo: [:stream | stream nextPutAll: 
 '[remote "origin"]
-	url = http://localhost/git/FileSystem-Git.git
 	fetch = +refs/heads/*:refs/remotes/testserver/*
-
-[core]
-	bare = true'].
-	self assert: #('core' 'remote') asSet equals: repository configSections asSet.
+'].
+	remote := repository remoteNamed: 'origin'.
+	self assert: 'origin' equals: remote name;
+		assert: remote url isNil.

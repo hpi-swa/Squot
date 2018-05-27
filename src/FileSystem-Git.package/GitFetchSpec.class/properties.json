@@ -1,0 +1,14 @@
+{
+	"category" : "FileSystem-Git-Plumbing-Core",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "jr 5/27/2018 18:23",
+	"instvars" : [
+		"remote" ],
+	"name" : "GitFetchSpec",
+	"pools" : [
+		 ],
+	"super" : "GitRefSpec",
+	"type" : "normal" }

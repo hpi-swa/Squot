@@ -3,6 +3,7 @@
 		"name:url:" : "jr 5/27/2018 18:20" },
 	"instance" : {
 		"=" : "jr 5/27/2018 20:57",
+		"addDefaultFetchSpec" : "jr 5/27/2018 22:32",
 		"addFetchSpecString:" : "jr 5/27/2018 20:47",
 		"addTo:" : "jr 5/27/2018 19:45",
 		"fetchSpecs" : "jr 5/27/2018 20:50",

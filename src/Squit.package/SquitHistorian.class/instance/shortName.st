@@ -1,5 +1,6 @@
 accessing
 shortName
+	"Answers the more colloquial branch name without refs/heads or refs/remotes/."
 	| shortHeadRef shortRemoteRef |
 	(referenceName beginsWith: 'refs/heads/')
 		ifTrue: [shortHeadRef := referenceName allButFirst: 'refs/heads/' size.

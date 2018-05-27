@@ -13,6 +13,7 @@
 		"testDefaultAuthor" : "jr 5/27/2018 16:26",
 		"testGetMasterSnapshot" : "jr 7/22/2017 12:03",
 		"testHistorianSetUpstreamBranch" : "jr 5/27/2018 17:29",
+		"testHistorianSetUpstreamBranchWithBogusRemoteTrackingBranch" : "jr 5/27/2018 23:18",
 		"testInstantiation" : "jr 1/11/2017 17:50",
 		"testIsAvailable" : "jr 5/27/2018 16:27",
 		"testRemoteTrackingHistorianRemoteName" : "jr 5/27/2018 16:37",

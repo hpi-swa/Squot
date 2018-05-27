@@ -2,4 +2,7 @@
 	"class" : {
 		 },
 	"instance" : {
-		"testEqualityAndHash" : "jr 5/27/2018 20:58" } }
+		"shouldNotFindRef:" : "jr 5/27/2018 23:09",
+		"testEqualityAndHash" : "jr 5/27/2018 20:58",
+		"testFindTrackingBranch" : "jr 5/27/2018 22:55",
+		"testFindTrackingBranchWithoutMatchingFetchSpec" : "jr 5/27/2018 23:09" } }

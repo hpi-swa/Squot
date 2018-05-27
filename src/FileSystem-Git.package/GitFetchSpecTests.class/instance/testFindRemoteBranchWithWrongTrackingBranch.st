@@ -1,8 +1,5 @@
 testing
 testFindRemoteBranchWithWrongTrackingBranch
-	| fetchSpec badInvocation error |
+	| fetchSpec |
 	fetchSpec := GitFetchSpec fromString: '+refs/heads/*:refs/remotes/origin/*' forRemote: nil.
-	badInvocation := [fetchSpec remoteBranchOf: 'refs/remotes/bogus/mybranch'].
-	error := self exception: Error raisedBy: badInvocation.
-	self shouldNotBeATypeError: error.
-	
+	self shouldNotFindRef: [fetchSpec remoteBranchOf: 'refs/remotes/bogus/mybranch'].

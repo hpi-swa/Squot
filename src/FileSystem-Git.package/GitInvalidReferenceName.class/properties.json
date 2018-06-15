@@ -1,5 +1,5 @@
 {
-	"category" : "Squot-Core",
+	"category" : "FileSystem-Git-Plumbing-Exceptions",
 	"classinstvars" : [
 		 ],
 	"classvars" : [
@@ -7,8 +7,8 @@
 	"commentStamp" : "",
 	"instvars" : [
 		"validationReport" ],
-	"name" : "SquotIllegalReferenceName",
+	"name" : "GitInvalidReferenceName",
 	"pools" : [
 		 ],
-	"super" : "Error",
+	"super" : "GitError",
 	"type" : "normal" }

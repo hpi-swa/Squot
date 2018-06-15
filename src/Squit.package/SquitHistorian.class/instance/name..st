@@ -1,4 +1,4 @@
 accessing
 name: aString
-	self validateReferenceName: aString.
+	GitReference validateReferenceName: aString.
 	referenceName := aString

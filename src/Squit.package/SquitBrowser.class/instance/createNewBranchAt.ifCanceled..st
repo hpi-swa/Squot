@@ -5,9 +5,7 @@ createNewBranchAt: aVersion ifCanceled: cancelBlock
 	workingCopy := self projectSelection.
 	name := UIManager default request: 'New branch name'.
 	(name isNil or: [name isEmpty]) ifTrue: [^ cancelBlock value].
-	[newHistorian := workingCopy repository historianNamed: name]
-		on: SquotIllegalReferenceName 
-		do: [:e | e defaultAction. cancelBlock value].
+	newHistorian := self newHistorianFor: workingCopy repository named: name onError: cancelBlock.
 	newHistorian version ifNotNil:
 		[newHistorian version = aVersion
 			ifTrue: ["nothing to be changed here" ^ newHistorian]

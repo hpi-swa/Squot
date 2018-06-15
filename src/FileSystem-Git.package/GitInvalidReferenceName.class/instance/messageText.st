@@ -1,0 +1,4 @@
+printing
+messageText
+
+	^ self validationReport 

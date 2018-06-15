@@ -8,6 +8,7 @@ handlingCredentialsOf: aHistorian do: aBlock ifCanceled: cancelBlock
 				ifCanceled: cancelBlock.
 		e resume: credentials]
 	on: GitRemoteAuthenticationFailed do: [:e | | message |
+		e signal.
 		message := 'Authentication with the remote failed. Please check your credentials.'.
 		((self remoteUrlOf: aHistorian) includesSubstring: 'github.com')
 			ifTrue: [message := message, ' If you have two-factor authentification enabled, you must use a personal access token instead of your GitHub login password.'].

@@ -10,5 +10,6 @@ Instance Variables
 	additionalParents:	<OrderedCollection> additional parent versions of the next version to be saved (for merges)
 	lastLoadedHistorian: <TSquotLocalHistorian> private historian used to mark the latest version that was loaded or saved using this working copy.
 	snapshotBlock:		<Block> used to capture a snapshot. See #withCurrentSnapshot:
+	loadedVersion:		<TSquotVersion> latest version that was loaded or saved using this working copy.
 	previousVersionId:	<Object> deprecated. Will be removed in a future release.
 	previousSnapshot:	<Object> deprecated. Will be removed in a future release.

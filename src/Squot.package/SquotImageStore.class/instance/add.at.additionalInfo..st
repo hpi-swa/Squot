@@ -9,4 +9,5 @@ add: anObject at: aPath additionalInfo: aDictionary
 	objects at: pathString put: anObject.
 	(paths at: anObject ifAbsentPut: [Set new]) add: pathString.
 	additionalInfo at: pathString put: aDictionary.
+	self appendToLoadOrder: pathString.
 	^ pathString

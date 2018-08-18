@@ -6,8 +6,8 @@ captureSnapshot
 	self activateObjectRegistryDuring:
 		['Snapshotting objects in memory' displayProgressFrom: 0 to: objects size during:
 		[:progress | | done | done := 0.
-		objects keysAndValuesDo: [:path :object |
-			self store: object at: path in: builder.
+		loadOrder do: [:eachPath |
+			self store: (objects at: eachPath) at: eachPath in: builder.
 			done := done + 1.
 			progress value: done]]].
 	^ builder buildSnapshot

@@ -1,0 +1,6 @@
+{
+	"class" : {
+		 },
+	"instance" : {
+		"testBuilderPreservesLoadOrder" : "jr 8/18/2018 15:37",
+		"testNewBuilderPreservesLoadOrder" : "jr 8/18/2018 16:46" } }

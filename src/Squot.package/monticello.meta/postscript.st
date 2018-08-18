@@ -7,4 +7,5 @@
 SquotArtifact allSubInstancesDo: [:each | each convertToCurrentVersion: nil refStream: nil].
 
 SquotLiveArtifact allSubInstancesDo: [:each | each convertToCurrentVersion: nil refStream: nil].
-SquotImageStore allSubInstancesDo: [:each | each convertToCurrentVersion: nil refStream: nil].'!
+SquotImageStore allSubInstancesDo: [:each | each convertToCurrentVersion: nil refStream: nil].
+"08/18/2018 upgrade object containers to remember the preferred loading order of artifacts"'!

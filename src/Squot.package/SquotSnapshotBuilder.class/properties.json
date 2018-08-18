@@ -5,9 +5,10 @@
 	"classtraitcomposition" : "TSquotMutableObjectContainer classTrait",
 	"classvars" : [
 		 ],
-	"commentStamp" : "jr 3/17/2018 18:57",
+	"commentStamp" : "jr 8/18/2018 15:39",
 	"instvars" : [
-		"artifacts" ],
+		"artifacts",
+		"loadOrder" ],
 	"name" : "SquotSnapshotBuilder",
 	"pools" : [
 		 ],

@@ -4,6 +4,7 @@
 	"instance" : {
 		"computeDiffsForNewArtifacts" : "jr 7/16/2017 02:50",
 		"computeDiffsFromLeftToRight" : "jr 7/16/2017 02:49",
+		"computeLoadOrderDiffFrom:to:" : "jr 8/18/2018 21:58",
 		"displayProgress:during:" : "jr 4/29/2018 20:44",
 		"initialize" : "jr 5/28/2017 18:11",
-		"patchFrom:to:" : "jr 6/27/2017 18:39" } }
+		"patchFrom:to:" : "jr 8/18/2018 21:58" } }

@@ -15,6 +15,7 @@
 		"testApplyPatch" : "jr 7/21/2017 17:44",
 		"testFiles" : "jr 3/8/2017 17:49",
 		"testIgnoredInstanceVariables" : "jr 7/20/2017 13:08",
+		"testRemoveAlsoRemovesFromLoadOrder" : "jr 9/16/2018 00:03",
 		"testRestoreAdheresToTheLoadOrder" : "jr 8/18/2018 18:35",
 		"testRestoreClass" : "jr 4/7/2018 18:20",
 		"testRestorePackage" : "jr 4/29/2018 16:41",

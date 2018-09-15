@@ -6,7 +6,8 @@
 		 ],
 	"commentStamp" : "jr 4/14/2018 20:20",
 	"instvars" : [
-		"diffs" ],
+		"diffs",
+		"loadOrderDiff" ],
 	"name" : "SquotPatch",
 	"pools" : [
 		 ],

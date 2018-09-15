@@ -24,6 +24,8 @@
 		"guessSerializerForArtifact:in:" : "jr 9/20/2017 19:37",
 		"initialize" : "jr 3/8/2017 16:47",
 		"initializeWith:" : "jr 1/27/2017 15:07",
+		"loadOrder" : "jr 8/18/2018 23:45",
+		"loadOrder:" : "jr 8/18/2018 23:24",
 		"metadataFor:" : "jr 9/22/2017 09:09",
 		"metadataForObjectAt:" : "jr 9/22/2017 09:09",
 		"openTableOfContentsDuring:" : "jr 10/3/2017 00:49",

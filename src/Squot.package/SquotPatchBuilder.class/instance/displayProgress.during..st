@@ -1,4 +1,4 @@
-public
+private
 displayProgress: progressText during: aBlock
 	| progress progressStep |
 	progressText displaySequentialProgress:

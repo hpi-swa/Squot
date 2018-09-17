@@ -1,6 +1,6 @@
 results
 selectedPatch
-	| adjustedDiffs rootNodesByArtifact |
+	| adjustedDiffs rootNodesByArtifact patchBuilder |
 	self accepted ifFalse: [^ SquotPatch empty].
 	"Answer a patch that describes all selected DiffNodes."
 	rootNodesByArtifact := Dictionary withAll:
@@ -9,4 +9,8 @@ selectedPatch
 		rootNodesByArtifact at: each
 			ifPresent: [:node | self adjustedDiff: each byExclusionsBelow: node]
 			ifAbsent: [each]].
-	^ SquotPatch with: (adjustedDiffs select: [:each | each hasChanges])
+	patchBuilder := SquotPatch builder.
+	adjustedDiffs
+		select: [:each | each hasChanges]
+		thenDo: [:each | patchBuilder addDiff: each].
+	^ patchBuilder buildPatch

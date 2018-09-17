@@ -1,3 +1,3 @@
 comparing
 patchRelativeToBase: objectContainer
-	^ SquotPatchBuilder new patchFrom: objectContainer to: self
+	^ SquotPatch builder patchFrom: objectContainer to: self

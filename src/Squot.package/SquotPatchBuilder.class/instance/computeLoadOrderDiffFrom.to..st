@@ -1,6 +1,5 @@
-public
+private
 computeLoadOrderDiffFrom: leftObjectContainer to: rightObjectContainer
-	^ GenericDiff squotDiffClass new
-		file1: leftObjectContainer loadOrder;
-		file2: rightObjectContainer loadOrder;
-		diff
+	originalLoadOrder := leftObjectContainer loadOrder.
+	patchedLoadOrder := rightObjectContainer loadOrder.
+	^ self computeLoadOrderDiff

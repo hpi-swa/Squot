@@ -1,10 +1,11 @@
 public
-diffPath: path from: leftArtifactsDictionary to: rightArtifactsDictionary
+diffPath: path from: leftObjectContainer to: rightObjectContainer
+	"Add the difference between two objects at the same path."
 	self addDiff:
-		(leftArtifactsDictionary at: path
+		(leftObjectContainer artifactAt: path
 			ifPresent: [:leftArtifact | | rightArtifact |
-				rightArtifact := rightArtifactsDictionary at: path ifAbsent: [].
+				rightArtifact := rightObjectContainer artifactAt: path ifAbsent: [].
 				rightArtifact
 					ifNotNil: [leftArtifact diffAgainst: rightArtifact]
 					ifNil: [SquotArtifactRemoval of: leftArtifact]]
-			ifAbsent: [SquotArtifactAddition of: (rightArtifactsDictionary at: path)])
+			ifAbsent: [SquotArtifactAddition of: (rightObjectContainer artifactAt: path)])

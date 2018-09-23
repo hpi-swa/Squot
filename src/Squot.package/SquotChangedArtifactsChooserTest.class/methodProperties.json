@@ -4,7 +4,7 @@
 	"instance" : {
 		"closeDialogPossiblyOpenedDuring:timeoutMsecs:" : "jr 4/23/2018 23:28",
 		"resolveArtifactConflict:" : "jr 4/23/2018 23:41",
-		"testAcceptArtifactAddition" : "jr 4/23/2018 23:31",
-		"testRejectArtifactAddition" : "jr 4/23/2018 23:36",
-		"testResolveArtifactConflictChooseLeft" : "jr 4/23/2018 23:44",
-		"testResolveArtifactConflictChooseRight" : "jr 4/23/2018 23:43" } }
+		"testAcceptArtifactAddition" : "jr 9/23/2018 17:23",
+		"testRejectArtifactAddition" : "jr 9/23/2018 17:24",
+		"testResolveArtifactConflictChooseLeft" : "jr 9/23/2018 17:25",
+		"testResolveArtifactConflictChooseRight" : "jr 9/23/2018 17:26" } }

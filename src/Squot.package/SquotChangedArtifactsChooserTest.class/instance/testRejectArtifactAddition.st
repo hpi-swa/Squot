@@ -1,13 +1,9 @@
 testing
 testRejectArtifactAddition
-	| path artifact diffs patch acceptReturned
-	 |
+	| path artifact patch acceptReturned |
 	path := 'conflicted-artifact'.
 	artifact := SquotArtifact new path: path; content: SquotArtifactContentMock new.
-	diffs := Dictionary new
-		add: path -> (SquotArtifactAddition of: artifact);
-		yourself.
-	patch := SquotPatch with: diffs.
+	patch := SquotPatch builder addArtifact: artifact; buildPatch.
 	selectionTool := SquotChangedArtifactsChooser on: patch.
 	self assert: selectionTool rootNodes size = 1.
 	selectionTool selectNode: selectionTool rootNodes first children first.

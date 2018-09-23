@@ -7,4 +7,4 @@ patchFrom: leftObjectContainer to: rightObjectContainer base: baseObjectContaine
 	fromBaseToIncoming := rightObjectContainer patchRelativeToBase: baseObjectContainer.
 	fromBaseToExisting := leftObjectContainer patchRelativeToBase: baseObjectContainer.
 	self mergePatches.
-	^ SquotPatch with: diffs
+	^ SquotPatch new initializeWith: diffs; yourself

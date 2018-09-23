@@ -1,6 +1,6 @@
 tests
 testApplyPatch
-	| className category packageInfo packageArtifactBeforePatch packageArtifactAfterPatch snapshotBefore patch diffs class hashMethodBeforePatch |
+	| className category packageInfo packageArtifactBeforePatch packageArtifactAfterPatch snapshotBefore patch class hashMethodBeforePatch |
 	className := classFactory newName asSymbol.
 	category := classFactory defaultCategory.
 	packageInfo := self newPackageInfoFor: classFactory packageName.
@@ -24,7 +24,9 @@ testApplyPatch
 				timeStamp: ''
 				source: 'hash ^ 0'})
 		asSquotArtifactForPackage: packageInfo.
-	snapshotBefore := SquotSnapshot with: {packageArtifactBeforePatch}.
+	snapshotBefore := SquotSnapshot builder
+		add: packageArtifactBeforePatch;
+		buildSnapshot.
 	packageArtifactAfterPatch := (MCSnapshot fromDefinitions:
 			{MCClassDefinition name: className
 					superclassName: #Object
@@ -45,9 +47,9 @@ testApplyPatch
 					timeStamp: ''
 					source: '= other ^ false'})
 			asSquotArtifactForPackage: packageInfo.
-	diffs := Dictionary new.
-	diffs at: packageArtifactAfterPatch path put: (packageArtifactBeforePatch diffAgainst: packageArtifactAfterPatch).
-	patch := SquotPatch with: diffs.
+	patch := SquotPatch builder
+		diff: packageArtifactBeforePatch against: packageArtifactAfterPatch;
+		buildPatch.
 	imageStore restoreToSnapshot: snapshotBefore.
 	packageInfo := imageStore objectAt: packageArtifactBeforePatch path.
 	packageInfo workingCopy unregister. "clean up immediately..."

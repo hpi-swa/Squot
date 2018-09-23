@@ -1,6 +1,6 @@
 public
 buildPatch
-	| patch |
-	patch := SquotPatch with: diffs.
-	patch loadOrderDiff: self computeLoadOrderDiff.
-	^ patch
+	^ SquotPatch new
+		initializeWith: diffs;
+		loadOrderDiff: self computeLoadOrderDiff;
+		yourself

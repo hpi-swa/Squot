@@ -10,13 +10,11 @@ mergeArtifactInteractively: anArtifact from: aVersion ifCanceled: cancelBlock
 		self flag: 'TODO: if there are multiple merge-bases, resolve conflicts recursively below'.
 		mergeBase := mergeBases anyOne.
 		base := (mergeBase artifactAt: anArtifact path
-				ifPresent: [:baseArtifact | SquotSnapshot with: {baseArtifact}]
-				ifAbsent: [SquotSnapshot empty]).
-		myArtifactSnapshot := self artifactAt: anArtifact path
-			ifPresent: [:loadedArtifact | SquotSnapshot with: {loadedArtifact}]
-			ifAbsent: [SquotSnapshot empty].
+				ifPresent: [:baseArtifact | self newSnapshotBuilder add: baseArtifact; buildSnapshot]
+				ifAbsent: [self lazySnapshot]).
+		myArtifactSnapshot := self lazySnapshot.
 		patch := SquotMergePatchBuilder new
 			patchFrom: myArtifactSnapshot
-			to: (SquotSnapshot with: {anArtifact})
+			to: (self newSnapshotBuilder add: anArtifact; buildSnapshot)
 			base: base.
 		self loadPatchInteractively: patch ifCanceled: [^ cancelBlock value]].

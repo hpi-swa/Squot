@@ -3,10 +3,11 @@
 		 },
 	"instance" : {
 		"closeDialogPossiblyOpenedDuring:timeoutMsecs:" : "jr 4/23/2018 23:28",
+		"newToolOn:" : "jr 10/2/2018 23:56",
 		"resolveArtifactConflict:" : "jr 4/23/2018 23:41",
-		"testAcceptArtifactAddition" : "jr 9/23/2018 17:23",
-		"testPreservesLoadOrderChanges" : "jr 9/23/2018 22:20",
-		"testRejectArtifactAddition" : "jr 9/23/2018 17:24",
-		"testResolveArtifactConflictChooseLeft" : "jr 9/23/2018 17:25",
-		"testResolveArtifactConflictChooseRight" : "jr 9/23/2018 17:26",
-		"testSelectedPatchIsIdempotentWithoutChangingNodes" : "jr 9/23/2018 21:57" } }
+		"testAcceptArtifactAddition" : "jr 10/2/2018 23:56",
+		"testPreservesLoadOrderChanges" : "jr 10/2/2018 23:56",
+		"testRejectArtifactAddition" : "jr 10/2/2018 23:56",
+		"testResolveArtifactConflictChooseLeft" : "jr 10/2/2018 23:56",
+		"testResolveArtifactConflictChooseRight" : "jr 10/2/2018 23:56",
+		"testSelectedPatchIsIdempotentWithoutChangingNodes" : "jr 10/2/2018 23:57" } }

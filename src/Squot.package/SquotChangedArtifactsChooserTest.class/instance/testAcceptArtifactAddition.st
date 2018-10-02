@@ -4,7 +4,7 @@ testAcceptArtifactAddition
 	path := 'conflicted-artifact'.
 	artifact := SquotArtifact new path: path; content: SquotArtifactContentMock new.
 	patch := SquotPatch builder addArtifact: artifact; buildPatch.
-	selectionTool := SquotChangedArtifactsChooser on: patch.
+	selectionTool := self newToolOn: patch.
 	self assert: selectionTool rootNodes size = 1.
 	self closeDialogPossiblyOpenedDuring: [selectionTool accept. acceptReturned := true]
 		timeoutMsecs: 5.

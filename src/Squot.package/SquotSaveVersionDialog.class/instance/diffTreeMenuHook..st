@@ -3,10 +3,10 @@ diffTreeMenuHook: aMenu
 	<menuDiffTree>
 	self diffSelectedNode ifNotNil:
 		[self selectedDiffNodeIsIncluded
-			ifTrue: [aMenu add: 'Exclude this change from the new version' action: #actionExcludeDiffNode]
-			ifFalse: [aMenu add: 'Include this change in the new version' action: #actionIncludeDiffNode].
+			ifTrue: [aMenu add: 'Exclude this change from the new version' action: #deactivateSelectedNode]
+			ifFalse: [aMenu add: 'Include this change in the new version' action: #actiaveSelectedNode].
 		aMenu add: 'Inspect diff' action: #actionInspectDiffContent.
-		(diffs includesKey: self diffSelectedNode title) ifTrue:
+		(editedPatch paths includes: self diffSelectedNode title) ifTrue:
 			[aMenu add: 'Inspect original edition' action: #actionInspectOriginalArtifactFromDiff.
 			aMenu add: 'Inspect proposed edition' action: #actionInspectProposedArtifactFromDiff]].
 	^ aMenu

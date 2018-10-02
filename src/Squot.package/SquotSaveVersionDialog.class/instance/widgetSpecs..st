@@ -4,12 +4,12 @@ widgetSpecs: builder
 		name: 'Diff';
 		model: self;
 		nodeClass: SquotDiffNodeTreeWrapper;
-		roots: #diffRoots;
+		roots: #rootNodes;
 		label: #diffTitleOf:;
 		"help: #diffTextFor:;"
 		getSelectedPath: #diffSelectedPath;
 		getSelected: #diffSelectedNode;
-		setSelected: #diffSelect:;
+		setSelected: #selectNode:;
 		getChildren: #diffChildrenOf:;
 		hasChildren: #diffHasChildren:;
 		menu: #diffTreeMenu:;

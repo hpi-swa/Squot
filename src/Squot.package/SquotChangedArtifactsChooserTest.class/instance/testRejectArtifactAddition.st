@@ -4,7 +4,7 @@ testRejectArtifactAddition
 	path := 'conflicted-artifact'.
 	artifact := SquotArtifact new path: path; content: SquotArtifactContentMock new.
 	patch := SquotPatch builder addArtifact: artifact; buildPatch.
-	selectionTool := SquotChangedArtifactsChooser on: patch.
+	selectionTool := self newToolOn: patch.
 	self assert: selectionTool rootNodes size = 1.
 	selectionTool selectNode: selectionTool rootNodes first children first.
 	selectionTool deactivateSelectedNode.

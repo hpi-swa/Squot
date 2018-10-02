@@ -7,7 +7,7 @@ testSelectedPatchIsIdempotentWithoutChangingNodes
 		buildPatch.
 	self assert: patch diffs size = 2;
 		assert: (patch loadOrderDiff applyTo: #('1' '2')) = #('1' '2'). "no changes"
-	selectionTool := SquotChangedArtifactsChooser on: patch.
+	selectionTool := self newToolOn: patch.
 	selectionTool rootNodes. "generate nodes"
 	"when"
 	selectionTool accept.

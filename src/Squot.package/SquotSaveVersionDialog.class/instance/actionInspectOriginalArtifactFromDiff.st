@@ -1,3 +1,3 @@
 ui
 actionInspectOriginalArtifactFromDiff
-	(diffs at: self diffSelectedNode title) left explore.
+	(editedPatch diffAt: self diffSelectedNode title) left explore.

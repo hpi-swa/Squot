@@ -10,8 +10,7 @@
 		"ignored",
 		"canceled",
 		"rootNodes",
-		"artifactDiffs",
-		"loadOrderDiffChunksWithSnippets",
+		"editedPatch",
 		"selectedNode" ],
 	"name" : "SquotChangedArtifactsChooser",
 	"pools" : [

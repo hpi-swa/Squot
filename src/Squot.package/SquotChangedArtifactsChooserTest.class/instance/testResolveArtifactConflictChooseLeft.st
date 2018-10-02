@@ -10,8 +10,8 @@ testResolveArtifactConflictChooseLeft
 						left: artifact
 						right: (artifact copy content: SquotArtifactContentMock new)));
 		buildPatch.
-	selectionTool := self newToolOn: patch.
-	self assert: selectionTool rootNodes size = 1.
-	self assert: selectionTool rootNodes anyOne anyChildNeedsChoice.
-	self resolveArtifactConflict: [:conflictNode | selectionTool deactivateSelectedNode].
-	self assert: (selectionTool selectedPatch diffAt: path) isRemoval.
+	tool := self newToolOn: patch.
+	self assert: tool rootNodes size = 1.
+	self assert: tool rootNodes anyOne anyChildNeedsChoice.
+	self resolveArtifactConflict: [:conflictNode | tool deactivateSelectedNode].
+	self assert: (tool selectedPatch diffAt: path) isRemoval.

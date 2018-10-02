@@ -6,9 +6,9 @@
 		 ],
 	"commentStamp" : "",
 	"instvars" : [
-		"selectionTool" ],
+		 ],
 	"name" : "SquotChangedArtifactsChooserTest",
 	"pools" : [
 		 ],
-	"super" : "TestCase",
+	"super" : "SquotDiffExplorerTest",
 	"type" : "normal" }

@@ -24,12 +24,12 @@
 		"diffHasChildren:" : "jr 4/17/2017 00:58",
 		"diffSelectedNode" : "jr 4/17/2017 01:05",
 		"diffText" : "jr 4/17/2017 01:50",
-		"diffTitleOf:" : "jr 4/17/2017 23:25",
 		"diffTreeMenu:" : "jr 4/17/2017 02:13",
 		"diffTreeMenuHook:" : "jr 10/3/2018 00:01",
 		"initialize" : "jr 4/18/2017 00:51",
 		"message" : "jr 2/17/2017 17:03",
 		"message:" : "jr 2/17/2017 17:03",
+		"nodeLabelOf:" : "jr 10/3/2018 00:47",
 		"parentVersions:" : "jr 2/17/2017 19:34",
 		"patch:" : "jr 10/3/2018 00:20",
 		"requestSelectedChangesWithTitle:" : "jr 5/29/2017 13:07",
@@ -40,4 +40,4 @@
 		"synthesizedLoadOrderCollectionFrom:" : "jr 10/3/2018 00:03",
 		"synthesizedOriginalLoadOrderFrom:" : "jr 10/3/2018 00:02",
 		"synthesizedSelectedLoadOrderFrom:" : "jr 10/3/2018 00:02",
-		"widgetSpecs:" : "jr 10/2/2018 23:59" } }
+		"widgetSpecs:" : "jr 10/3/2018 00:47" } }

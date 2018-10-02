@@ -4,11 +4,10 @@
 		 ],
 	"classvars" : [
 		 ],
-	"commentStamp" : "jr 3/17/2018 20:12",
+	"commentStamp" : "",
 	"instvars" : [
-		"selectionTool",
-		"view" ],
-	"name" : "SquotChangeSelectionSmokeTest",
+		"tool" ],
+	"name" : "SquotDiffExplorerTest",
 	"pools" : [
 		 ],
 	"super" : "TestCase",

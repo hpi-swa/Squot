@@ -1,3 +1,3 @@
 actions
 inspectOriginalArtifactOfSelectedNode
-	(artifactDiffs at: self selectedNode title) left explore.
+	(patch diffAt: self selectedNode title) left explore.

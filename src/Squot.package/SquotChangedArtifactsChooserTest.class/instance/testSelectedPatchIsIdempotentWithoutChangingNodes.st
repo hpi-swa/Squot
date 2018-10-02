@@ -7,11 +7,11 @@ testSelectedPatchIsIdempotentWithoutChangingNodes
 		buildPatch.
 	self assert: patch diffs size = 2;
 		assert: (patch loadOrderDiff applyTo: #('1' '2')) = #('1' '2'). "no changes"
-	selectionTool := self newToolOn: patch.
-	selectionTool rootNodes. "generate nodes"
+	tool := self newToolOn: patch.
+	tool rootNodes. "generate nodes"
 	"when"
-	selectionTool accept.
-	selectedPatch := selectionTool selectedPatch.
+	tool accept.
+	selectedPatch := tool selectedPatch.
 	"then"
 	self assert: selectedPatch diffs size = 2;
 		assert: (selectedPatch loadOrderDiff applyTo: #('1' '2')) = #('1' '2'). "no changes"

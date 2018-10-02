@@ -2,12 +2,12 @@
 	"class" : {
 		 },
 	"instance" : {
-		"closeDialogPossiblyOpenedDuring:timeoutMsecs:" : "jr 4/23/2018 23:28",
-		"newToolOn:" : "jr 10/2/2018 23:56",
-		"resolveArtifactConflict:" : "jr 4/23/2018 23:41",
-		"testAcceptArtifactAddition" : "jr 10/2/2018 23:56",
-		"testPreservesLoadOrderChanges" : "jr 10/2/2018 23:56",
-		"testRejectArtifactAddition" : "jr 10/2/2018 23:56",
-		"testResolveArtifactConflictChooseLeft" : "jr 10/2/2018 23:56",
-		"testResolveArtifactConflictChooseRight" : "jr 10/2/2018 23:56",
-		"testSelectedPatchIsIdempotentWithoutChangingNodes" : "jr 10/2/2018 23:57" } }
+		"newToolOn:" : "jr 10/3/2018 00:30",
+		"performUiInteractionTestsOnNode:inTree:" : "jr 10/3/2018 00:41",
+		"performUiTestsOnToolBuiltBy:" : "jr 10/3/2018 00:45",
+		"testAcceptArtifactAddition" : "jr 10/3/2018 00:35",
+		"testPreservesLoadOrderChanges" : "jr 10/3/2018 00:35",
+		"testRejectArtifactAddition" : "jr 10/3/2018 00:35",
+		"testResolveArtifactConflictChooseLeft" : "jr 10/3/2018 00:35",
+		"testResolveArtifactConflictChooseRight" : "jr 10/3/2018 00:35",
+		"testSelectedPatchIsIdempotentWithoutChangingNodes" : "jr 10/3/2018 00:35" } }

@@ -13,6 +13,8 @@
 		"diffPath:from:to:" : "jr 9/23/2018 18:12",
 		"displayProgress:during:" : "jr 4/29/2018 20:44",
 		"initialize" : "jr 9/17/2018 22:46",
+		"newLoadOrder:" : "jr 9/23/2018 22:19",
+		"originalLoadOrder:" : "jr 10/2/2018 23:07",
 		"patchFrom:to:" : "jr 9/17/2018 22:23",
 		"removeArtifact:" : "jr 9/17/2018 22:13",
 		"startingFrom:" : "jr 9/17/2018 22:35",

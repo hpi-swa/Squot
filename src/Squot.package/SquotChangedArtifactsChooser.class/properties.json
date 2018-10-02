@@ -11,6 +11,7 @@
 		"canceled",
 		"rootNodes",
 		"artifactDiffs",
+		"loadOrderDiffChunksWithSnippets",
 		"selectedNode" ],
 	"name" : "SquotChangedArtifactsChooser",
 	"pools" : [

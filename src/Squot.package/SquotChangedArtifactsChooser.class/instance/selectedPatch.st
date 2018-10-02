@@ -13,4 +13,7 @@ selectedPatch
 	adjustedDiffs
 		select: [:each | each hasChanges]
 		thenDo: [:each | patchBuilder addDiff: each].
+	patchBuilder
+		originalLoadOrder: self synthesizedOriginalLoadOrder;
+		newLoadOrder: self synthesizedSelectedLoadOrder.
 	^ patchBuilder buildPatch

@@ -11,7 +11,7 @@
 		"actionInspectOriginalArtifactFromDiff" : "jr 10/2/2018 23:54",
 		"actionInspectProposedArtifactFromDiff" : "jr 10/2/2018 23:54",
 		"activateSelectedNode" : "jr 10/3/2018 00:01",
-		"adjustLoadOrder:" : "jr 10/3/2018 00:02",
+		"adjustLoadOrder:" : "jr 10/3/2018 15:10",
 		"buildButtonBar:" : "fn 4/26/2017 21:10",
 		"buildWith:" : "fn 4/11/2017 15:28",
 		"buttonHeight" : "jr 2/17/2017 18:54",
@@ -37,7 +37,4 @@
 		"selectNode:" : "jr 10/2/2018 23:59",
 		"selectedDiffNodeIsIncluded" : "jr 4/17/2017 23:29",
 		"selectedPatch" : "jr 10/3/2018 00:02",
-		"synthesizedLoadOrderCollectionFrom:" : "jr 10/3/2018 00:03",
-		"synthesizedOriginalLoadOrderFrom:" : "jr 10/3/2018 00:02",
-		"synthesizedSelectedLoadOrderFrom:" : "jr 10/3/2018 00:02",
 		"widgetSpecs:" : "jr 10/3/2018 00:47" } }

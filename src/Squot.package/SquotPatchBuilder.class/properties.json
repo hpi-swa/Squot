@@ -10,7 +10,8 @@
 		"leftArtifacts",
 		"rightArtifacts",
 		"originalLoadOrder",
-		"patchedLoadOrder" ],
+		"patchedLoadOrder",
+		"loadOrderDiff" ],
 	"name" : "SquotPatchBuilder",
 	"pools" : [
 		 ],

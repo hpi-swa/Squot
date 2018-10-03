@@ -7,6 +7,7 @@
 		"performUiTestsOnToolBuiltBy:" : "jr 10/3/2018 00:45",
 		"testAcceptArtifactAddition" : "jr 10/3/2018 00:35",
 		"testPreservesLoadOrderChanges" : "jr 10/3/2018 00:35",
+		"testPreservesLoadOrderChanges2" : "jr 10/3/2018 14:52",
 		"testRejectArtifactAddition" : "jr 10/3/2018 00:35",
 		"testResolveArtifactConflictChooseLeft" : "jr 10/3/2018 00:35",
 		"testResolveArtifactConflictChooseRight" : "jr 10/3/2018 00:35",

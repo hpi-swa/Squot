@@ -6,7 +6,7 @@
 		"accepted" : "jr 3/5/2017 16:01",
 		"activateSelectedNode" : "jr 4/26/2017 17:52",
 		"addIgnoredArtifacts:" : "jr 2/14/2017 16:56",
-		"adjustLoadOrder:" : "jr 10/2/2018 23:51",
+		"adjustLoadOrder:" : "jr 10/3/2018 15:11",
 		"adjustedDiff:byExclusionsBelow:" : "jr 5/1/2017 21:51",
 		"buildWith:" : "jr 5/1/2017 21:18",
 		"cancel" : "jr 5/1/2017 21:03",
@@ -31,7 +31,4 @@
 		"rootNodes" : "jr 10/2/2018 23:45",
 		"selectNode:" : "jr 4/26/2017 17:36",
 		"selectedNode" : "jr 4/26/2017 15:57",
-		"selectedPatch" : "jr 10/2/2018 23:47",
-		"synthesizedLoadOrderCollectionFrom:" : "jr 10/2/2018 23:51",
-		"synthesizedOriginalLoadOrderFrom:" : "jr 10/2/2018 23:53",
-		"synthesizedSelectedLoadOrderFrom:" : "jr 10/2/2018 23:52" } }
+		"selectedPatch" : "jr 10/2/2018 23:47" } }

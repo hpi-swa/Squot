@@ -23,6 +23,7 @@ menuProjectListHook: aMenu
 	}.
 	aMenu addLine.
 	aMenu addList: {
+		{'Browse working copy'. #actionBrowseWorkingCopy}.
 		{'Explore SquotWorkingCopy'. #actionSquotWorkingCopyExplore}.
 	}.
 	^ aMenu

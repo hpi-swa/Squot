@@ -6,9 +6,10 @@
 		 ],
 	"commentStamp" : "",
 	"instvars" : [
-		 ],
-	"name" : "SquotChangedArtifactsChooserTest",
+		"workingCopy",
+		"browser" ],
+	"name" : "SquotWorkingCopyBrowserTest",
 	"pools" : [
 		 ],
-	"super" : "SquotDiffExplorerTest",
+	"super" : "TestCase",
 	"type" : "normal" }

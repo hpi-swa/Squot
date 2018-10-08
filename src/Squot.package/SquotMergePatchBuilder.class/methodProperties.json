@@ -2,9 +2,11 @@
 	"class" : {
 		 },
 	"instance" : {
+		"buildPatch" : "jr 10/8/2018 21:12",
 		"computeDiffsForNewArtifacts" : "jr 7/16/2017 02:50",
 		"computeDiffsFromLeftToRight" : "jr 7/16/2017 02:49",
 		"displayProgress:during:" : "jr 4/29/2018 20:42",
-		"initialize" : "jr 5/28/2017 18:11",
+		"initialize" : "jr 9/23/2018 18:20",
+		"mergeLoadOrders" : "jr 10/8/2018 21:39",
 		"mergePatches" : "jr 4/29/2018 20:41",
-		"patchFrom:to:base:" : "jr 9/23/2018 17:45" } }
+		"patchFrom:to:base:" : "jr 10/8/2018 21:05" } }

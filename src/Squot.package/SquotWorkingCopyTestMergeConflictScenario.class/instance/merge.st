@@ -4,4 +4,4 @@ merge
 	Senders should handle SquotSelectionOfChangesRequested"
 	self workingCopy
 		mergeVersionInteractively: thirdVersion
-		ifCanceled: [self fail: 'this code should not be reached'].
+		ifCanceled: [testCase fail: 'this code should not be reached'].

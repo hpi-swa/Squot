@@ -23,5 +23,5 @@ buildButtonBar: builder
 		label: 'Commit';
 		action: #actionCommit.
 	
-	buttonBar children addAll: {cancelButton. commitButton}.
+	buttonBar children addAll: {commitButton. cancelButton}.
 	^ buttonBar

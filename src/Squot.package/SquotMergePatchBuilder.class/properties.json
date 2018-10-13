@@ -11,7 +11,11 @@
 		"rightArtifacts",
 		"baseArtifacts",
 		"fromBaseToIncoming",
-		"fromBaseToExisting" ],
+		"fromBaseToExisting",
+		"leftLoadOrder",
+		"rightLoadOrder",
+		"baseLoadOrder",
+		"loadOrderPatch" ],
 	"name" : "SquotMergePatchBuilder",
 	"pools" : [
 		 ],

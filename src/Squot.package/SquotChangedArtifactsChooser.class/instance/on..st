@@ -1,3 +1,3 @@
 initialize-release
 on: aPatch
-	artifactDiffs := aPatch diffs.
+	editedPatch := aPatch.

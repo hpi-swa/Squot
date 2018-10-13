@@ -1,0 +1,18 @@
+{
+	"category" : "Squot-Diffs-Tests",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"path",
+		"hasChanges",
+		"isAddition",
+		"isRemoval",
+		"topNodes" ],
+	"name" : "SquotArtifactDiffMock",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }

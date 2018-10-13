@@ -1,3 +1,5 @@
 instance creation
 empty
-	^ self with: {}
+	^ self new
+		initializeWith: {};
+		yourself

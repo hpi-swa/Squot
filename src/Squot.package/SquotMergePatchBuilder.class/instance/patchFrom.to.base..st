@@ -7,4 +7,8 @@ patchFrom: leftObjectContainer to: rightObjectContainer base: baseObjectContaine
 	fromBaseToIncoming := rightObjectContainer patchRelativeToBase: baseObjectContainer.
 	fromBaseToExisting := leftObjectContainer patchRelativeToBase: baseObjectContainer.
 	self mergePatches.
-	^ SquotPatch with: diffs
+	leftLoadOrder := leftObjectContainer loadOrder.
+	rightLoadOrder := rightObjectContainer loadOrder.
+	baseLoadOrder := baseObjectContainer loadOrder.
+	self mergeLoadOrders.
+	^ self buildPatch

@@ -1,9 +1,10 @@
 public
 patchFrom: leftObjectContainer to: rightObjectContainer
 	self initialize.
-	leftArtifacts := leftObjectContainer artifacts.
+	self startingFrom: leftObjectContainer.
 	rightArtifacts := rightObjectContainer artifacts.
 	self displayProgress: 'Diffing objects' during:
 		[self computeDiffsFromLeftToRight;
 			computeDiffsForNewArtifacts].
-	^ SquotPatch with: diffs
+	patchedLoadOrder := rightObjectContainer loadOrder.
+	^ self buildPatch

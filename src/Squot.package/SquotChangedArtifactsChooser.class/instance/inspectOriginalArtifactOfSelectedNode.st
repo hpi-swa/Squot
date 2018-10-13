@@ -1,3 +1,3 @@
 operations
 inspectOriginalArtifactOfSelectedNode
-	(artifactDiffs at: self selectedNode title) left explore.
+	(editedPatch diffAt: self selectedNode title) left explore.

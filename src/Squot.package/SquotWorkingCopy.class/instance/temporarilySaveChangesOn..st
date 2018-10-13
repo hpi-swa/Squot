@@ -5,10 +5,9 @@ temporarilySaveChangesOn: aHistorian
 	stashHistorian := self repository historianForTemporaryVersionsOn: aHistorian.
 	UIManager default informUser: 'Computing unsaved changes' during:
 		[unsaved := self patchRelativeToBase: self baseSnapshot.
-		temporarySnapshot := SquotSnapshot builder
-			addAll: self baseSnapshot artifacts;
-			applyPatch: unsaved;
-			buildSnapshot].
+		temporarySnapshot := self baseSnapshot createNewBuilder
+													applyPatch: unsaved;
+													buildSnapshot].
 	"for added safety, also save a temporary version in the repository"
 	UIManager default informUser: 'Saving yet-unsaved changes temporarily' during:
 		[self saveChanges: unsaved on: stashHistorian

@@ -1,0 +1,17 @@
+{
+	"category" : "Squot-Tests-Tools",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"path",
+		"isLoadable",
+		"storeInfo",
+		"materializeBlock" ],
+	"name" : "SquotArtifactMock",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }

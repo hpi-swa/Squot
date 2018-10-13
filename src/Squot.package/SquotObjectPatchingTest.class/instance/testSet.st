@@ -1,6 +1,6 @@
 testing
 testSet
-	| set graphBefore graphAfter diff newSet removedItem materializer newLoadedGraph |
+	| set graphBefore graphAfter diff newSet removedItem newLoadedGraph |
 	"given"
 	set := Set newFrom: {1. 'foo'. StringHolder new contents: 'old'}.
 	graphBefore := capturer captureGraph: set.
@@ -10,12 +10,9 @@ testSet
 	graphAfter := capturer captureGraph: set.
 	diff := graphBefore squotDiffAgainst: graphAfter.
 	"when"
-	materializer := SquotShadowMaterializer new.
-	materializer sourceGraph: graphBefore.
-	materializer targetGraph: graphBefore asShadowGraph mutableCopy.
-	newSet := materializer rematerialize: graphBefore startShadow.
+	newLoadedGraph := self rematerializeAsNewGraph: graphBefore.
+	newSet := newLoadedGraph startObject.
 	removedItem := newSet detect: [:each | each = 'foo'].
-	newLoadedGraph := materializer objectGraph.
 	diff squotApplyToLoaded: newLoadedGraph.
 	"then"
 	self assert: (newSet includes: 1).

@@ -8,7 +8,8 @@
 	"instvars" : [
 		"capturer",
 		"objectRegistry",
-		"patcher" ],
+		"patcher",
+		"materializedObject" ],
 	"name" : "SquotObjectPatchingTest",
 	"pools" : [
 		 ],

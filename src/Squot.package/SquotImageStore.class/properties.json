@@ -5,14 +5,15 @@
 	"classtraitcomposition" : "TSquotMutableObjectContainer classTrait",
 	"classvars" : [
 		 ],
-	"commentStamp" : "jr 1/27/2017 14:37",
+	"commentStamp" : "jr 8/18/2018 16:53",
 	"instvars" : [
 		"objects",
 		"paths",
 		"environment",
 		"additionalInfo",
 		"objectRegistry",
-		"objectGraphs" ],
+		"objectGraphs",
+		"loadOrder" ],
 	"name" : "SquotImageStore",
 	"pools" : [
 		 ],

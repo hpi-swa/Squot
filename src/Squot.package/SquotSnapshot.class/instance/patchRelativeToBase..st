@@ -1,5 +1,5 @@
 comparing
 patchRelativeToBase: objectContainer
-	^ SquotPatchBuilder new
+	^ SquotPatch builder
 		patchFrom: (objectContainer ifNil: [SquotSnapshot empty])
 		to: self

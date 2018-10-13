@@ -1,7 +1,8 @@
 loading and unloading
 loadArtifactInteractively: anArtifact ifCanceled: cancelBlock
 	"Load a single artifact, replacing the currently loaded one."
-	| diff patch |
-	diff := self diffObjectAt: anArtifact path against: anArtifact.
-	patch := SquotPatch with: (Dictionary newFrom: {anArtifact path -> diff}).
+	| patch |
+	patch := self newPatchBuilder
+		updateArtifactTo: anArtifact;
+		buildPatch.
 	^ self loadPatchInteractively: patch ifCanceled: [cancelBlock value]

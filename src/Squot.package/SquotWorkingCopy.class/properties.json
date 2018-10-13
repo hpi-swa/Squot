@@ -18,7 +18,8 @@
 		"additionalParents",
 		"lastLoadedHistorian",
 		"snapshotBlock",
-		"loadedVersion" ],
+		"loadedVersion",
+		"newVersionMessage" ],
 	"name" : "SquotWorkingCopy",
 	"pools" : [
 		 ],

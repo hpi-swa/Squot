@@ -1,17 +1,14 @@
 creating new versions
 saveNewVersionFromPatch: aPatch ifCanceled: cancelBlock
 	"Interactively create a new version. Let the user pick changes from aPatch."
-	| selectedPatch tool newVersion |
-	tool := SquotSaveVersionDialog new
-		parentVersions: self parentVersions;
-		patch: aPatch;
-		controllerForIgnores: self;
-		yourself.
-	tool requestSelectedChangesWithTitle: 'Select changes and message for the new version'.
-	tool accepted ifFalse: [^ cancelBlock value].
-	selectedPatch := tool selectedPatch.
+	| selectedPatch newVersion message |
+	selectedPatch := self selectFromPatch: aPatch
+						forSaveWithTitle: 'Select changes and message for the new version'
+						ifCanceled: [^ cancelBlock value].
+	message := self newVersionMessage.
 	newVersion := self
 		saveNewVersionFromPatch: selectedPatch
-		message: tool message asString.
-	self cacheNewMonticelloVersions: selectedPatch message: tool message.
+		message: message.
+	self cacheNewMonticelloVersions: selectedPatch message: message.
+	self resetNewVersionMessage.
 	^ newVersion

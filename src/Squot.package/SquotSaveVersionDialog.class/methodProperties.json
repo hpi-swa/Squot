@@ -2,7 +2,7 @@
 	"class" : {
 		"themeProperties" : "jr 10/14/2018 00:52" },
 	"instance" : {
-		"accept" : "jr 4/18/2017 00:20",
+		"accept" : "jr 10/14/2018 01:30",
 		"acceptColor" : "jr 10/14/2018 00:50",
 		"accepted" : "jr 2/18/2017 00:33",
 		"actionCancel" : "fn 4/11/2017 16:01",
@@ -23,13 +23,14 @@
 		"canceled:" : "jr 2/17/2017 17:03",
 		"controllerForIgnores:" : "jr 4/18/2017 00:20",
 		"deactivateSelectedNode" : "jr 10/3/2018 00:00",
+		"defaultMessage" : "jr 10/14/2018 01:24",
 		"diffChildrenOf:" : "jr 4/17/2017 01:01",
 		"diffHasChildren:" : "jr 4/17/2017 00:58",
 		"diffSelectedNode" : "jr 4/17/2017 01:05",
 		"diffText" : "jr 4/17/2017 01:50",
 		"diffTreeMenu:" : "jr 4/17/2017 02:13",
 		"diffTreeMenuHook:" : "jr 10/13/2018 23:59",
-		"initialize" : "jr 10/13/2018 23:52",
+		"initialize" : "jr 10/14/2018 01:24",
 		"message" : "jr 2/17/2017 17:03",
 		"message:" : "jr 2/17/2017 17:03",
 		"nodeLabelOf:" : "jr 10/3/2018 00:47",
@@ -40,4 +41,5 @@
 		"selectNode:" : "jr 10/2/2018 23:59",
 		"selectedDiffNodeIsIncluded" : "jr 4/17/2017 23:29",
 		"selectedPatch" : "jr 10/3/2018 00:02",
+		"updateMessageFromViews" : "jr 10/14/2018 01:30",
 		"widgetSpecs:" : "jr 10/3/2018 00:47" } }

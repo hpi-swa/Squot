@@ -1,15 +1,18 @@
 {
 	"class" : {
-		"on:" : "jr 5/1/2017 20:59" },
+		"on:" : "jr 5/1/2017 20:59",
+		"themeProperties" : "jr 10/14/2018 00:58" },
 	"instance" : {
 		"accept" : "jr 4/23/2018 23:11",
+		"acceptColor" : "jr 10/14/2018 00:57",
 		"accepted" : "jr 3/5/2017 16:01",
 		"activateSelectedNode" : "jr 4/26/2017 17:52",
 		"addIgnoredArtifacts:" : "jr 2/14/2017 16:56",
 		"adjustLoadOrder:" : "jr 10/3/2018 15:11",
 		"adjustedDiff:byExclusionsBelow:" : "jr 5/1/2017 21:51",
-		"buildWith:" : "jr 5/1/2017 21:18",
+		"buildWith:" : "jr 10/14/2018 00:57",
 		"cancel" : "jr 5/1/2017 21:03",
+		"cancelColor" : "jr 10/14/2018 00:56",
 		"childNodesOf:" : "jr 4/26/2017 16:00",
 		"chooserWidgetSpecs:" : "jr 4/26/2017 18:03",
 		"controllerForIgnores" : "jr 2/14/2017 16:55",

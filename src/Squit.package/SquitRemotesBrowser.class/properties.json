@@ -1,0 +1,15 @@
+{
+	"category" : "Squit-UI",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"workingCopy",
+		"selectedRemoteName" ],
+	"name" : "SquitRemotesBrowser",
+	"pools" : [
+		 ],
+	"super" : "Model",
+	"type" : "normal" }

@@ -1,0 +1,16 @@
+{
+	"class" : {
+		 },
+	"instance" : {
+		"addRemote" : "jr 10/14/2018 22:16",
+		"buildWith:" : "jr 10/14/2018 22:11",
+		"continueAddRemote:" : "jr 10/14/2018 22:13",
+		"gitRepository" : "jr 10/14/2018 22:07",
+		"isAnyRemoteSelected" : "jr 10/14/2018 22:00",
+		"labelString" : "jr 10/14/2018 22:10",
+		"remotesLabels" : "jr 10/14/2018 22:12",
+		"removeSelectedRemote" : "jr 10/14/2018 22:06",
+		"selectedRemoteName" : "jr 10/14/2018 22:00",
+		"selectedRemoteName:" : "jr 10/14/2018 22:01",
+		"workingCopy" : "jr 10/14/2018 21:56",
+		"workingCopy:" : "jr 10/14/2018 21:56" } }

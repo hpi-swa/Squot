@@ -1,0 +1,3 @@
+accessing
+hasBeenAccepted
+	^ accepted == true

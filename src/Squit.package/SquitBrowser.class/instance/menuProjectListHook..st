@@ -14,7 +14,7 @@ menuProjectListHook: aMenu
 	aMenu addLine.
 	aMenu addList: {
 		{'Add remote'. #actionRemoteAdd}.
-		{'Remove remote'. #actionRemoteRemove}
+		{'Manage remotes'. #actionManageRemotes}.
 	}.
 	aMenu addLine.
 	aMenu addList: {

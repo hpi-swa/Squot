@@ -1,0 +1,3 @@
+accessing
+accept
+	accepted := true.

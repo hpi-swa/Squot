@@ -17,5 +17,7 @@ menuObjectListHook: aMenu
 			squitBrowserSupplementObjectMenu: aMenu].
 	self buildMenu: aMenu from: {
 		{'Explore'. #actionObjectExplore. 'Explore internal SquotArtifact object.'}.
+		'-'.
+		{'Untrack'. #actionObjectUntrack. 'Remove this object from the working copy.'. onlyWhenLoaded}.
 	}.
 	^ aMenu

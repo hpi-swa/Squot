@@ -2,12 +2,12 @@ tests
 testCanHandleMissingMCVersions
 	| package versionInfos first second mcSnapshots theVersions mcRepo snapshots squotVersions previous historian |
 	"given"
-	package := MCPackage named: #Plonk.
+	package := MCPackage named: classFactory packageName.
 	mcSnapshots := {
 		MCSnapshot fromDefinitions: {
 			MCClassDefinition name: #Griffle
 				superclassName: #Object
-				category: 'Plonk-Tests-Data' 
+				category: package name, '-Tests-Data' 
 				instVarNames: #()
 				classVarNames: #()
 				poolDictionaryNames: #()
@@ -16,7 +16,7 @@ testCanHandleMissingMCVersions
 		MCSnapshot fromDefinitions: {
 			MCClassDefinition name: #Griffle
 				superclassName: #Object
-				category: 'Plonk-Tests-Data' 
+				category: package name, '-Tests-Data' 
 				instVarNames: #(a)
 				classVarNames: #()
 				poolDictionaryNames: #()
@@ -25,28 +25,24 @@ testCanHandleMissingMCVersions
 		MCSnapshot fromDefinitions: {
 			MCClassDefinition name: #Griffle
 				superclassName: #Object
-				category: 'Plonk-Tests-Data' 
+				category: package name, '-Tests-Data' 
 				instVarNames: #(a b)
 				classVarNames: #()
 				poolDictionaryNames: #()
 				classInstVarNames: #()
 				comment:  ''}}.
-	versionInfos := {(first := MCVersionInfo name: 'Plonk-squot.1' id: UUID new
+	versionInfos := {(first := MCVersionInfo name: package name, '-squot.1' id: UUID new
 			message: 'first' date: Date today time: Time now author: 'squot' ancestors: #()).
-		(second := MCVersionInfo name: 'Plonk-squit.2' id: UUID new message: 'second'
+		(second := MCVersionInfo name: package name, '-squit.2' id: UUID new message: 'second'
 			date: Date today time: Time now author: 'squit' ancestors: {first}).
-		MCVersionInfo name: 'Plonk-squit.3' id: UUID new message: 'third'
+		MCVersionInfo name: package name, '-squit.3' id: UUID new message: 'third'
 			date: Date today time: Time now author: 'squit' ancestors: {second}}.
 	theVersions := versionInfos with: mcSnapshots collect: [:info :snapshot |
 		MCVersion package: package info: info snapshot: snapshot].
 	mcRepo := MCDictionaryRepository new.
 	(theVersions copyWithout: theVersions second) do: [:each | mcRepo storeVersion: each].
 	snapshots := mcSnapshots collect: [:each | SquotSnapshot builder
-		add: (SquotArtifact new
-			content: each;
-			path: package name, '.package';
-			initializeDefaultStoreInfoFor: package packageInfo;
-			yourself);
+		add: (each asSquotArtifactForPackage: package packageInfo);
 		buildSnapshot].
 	squotVersions := versionInfos
 		with: snapshots

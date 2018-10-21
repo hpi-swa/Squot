@@ -2,28 +2,25 @@ tests
 testDetectsMissingTrait
 	| package versionInfo mcSnapshot theVersion mcRepo historian snapshot squotVersion |
 	"given"
-	package := MCPackage named: #Plonk.
+	package := MCPackage named: classFactory packageName.
 	mcSnapshot := MCSnapshot fromDefinitions: {
 		MCTraitDefinition name: #Griffle
 			traitComposition: ''
-			category: 'Plonk-Tests-Data'
+			category: package name, '-Tests-Data'
 			comment:  ''
 			commentStamp: ''.
 		MCTraitDefinition name: #TraitThatIsGoingToBeMissing
 			traitComposition: ''
-			category: 'Plonk-Tests-Data'
+			category: package name, '-Tests-Data'
 			comment:  ''
 			commentStamp: ''}.
-	versionInfo := MCVersionInfo name: 'Plonk-squot.1' id: UUID new message: 'hooray' date: Date today time: Time now author: 'squot' ancestors: #().
+	versionInfo := MCVersionInfo name: package name, '-squot.1' id: UUID new message: 'hooray' date: Date today time: Time now author: 'squot' ancestors: #().
 	theVersion := MCVersion package: package info: versionInfo snapshot: mcSnapshot.
 	mcRepo := MCDictionaryRepository new.
 	mcRepo storeVersion: theVersion.
 	snapshot := SquotSnapshot builder
-		add: (SquotArtifact new
-			content: (MCSnapshot fromDefinitions: mcSnapshot definitions allButLast);
-			path: package name, '.package';
-			initializeDefaultStoreInfoFor: package packageInfo;
-			yourself);
+		add: ((MCSnapshot fromDefinitions: mcSnapshot definitions allButLast)
+				asSquotArtifactForPackage: package packageInfo);
 		buildSnapshot.
 	squotVersion := repository createNewVersion: snapshot
 		with: [:version | version message: 'hooray'; author: 'squot';

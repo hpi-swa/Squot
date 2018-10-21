@@ -5,6 +5,10 @@ menuObjectListHook: aMenu
 	(selected := self objectSelection) ifNil: [^ aMenu].
 	onlyWhenLoaded := self projectSelection includesObjectAt: selected artifact path.
 	onlyWhenLoadable := selected artifact isLoadable.
+	aMenu addTitle: selected printString, String cr,
+		(onlyWhenLoaded
+			ifTrue: [(self projectSelection objectAt: selected artifact path) printString]
+			ifFalse: ['(not loaded)']).
 	commands := {
 		{'Browse edition in selected version'. #actionObjectBrowse. 'Try to open '}.
 		{'Browse loaded'. #actionObjectBrowseLoaded. 'Try to open the loaded edition of the selected object'. onlyWhenLoaded}.

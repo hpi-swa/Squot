@@ -5,5 +5,5 @@ printOn: aStream
 		nextPutAll: self shortId;
 		space;
 		nextPut: $";
-		nextPutAll: (self message contractTo: 60);
+		nextPutAll: self message;
 		nextPut: $".

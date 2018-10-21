@@ -1,3 +1,3 @@
-*Squot-Tests
+converting
 packageArtifactDefinitions
 	^ self shadowOfTrackedObject definitions

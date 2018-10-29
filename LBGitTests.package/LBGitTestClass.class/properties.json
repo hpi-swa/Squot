@@ -1,0 +1,15 @@
+{
+	"category" : "LBGitTests",
+	"classinstvars" : [
+		"static" ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"foo",
+		"bar" ],
+	"name" : "LBGitTestClass",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }

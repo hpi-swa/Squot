@@ -1,4 +1,4 @@
 accessing
-foo: anObject
+foo: aFoo
 
-	foo := anObject.
+	foo := aFoo.

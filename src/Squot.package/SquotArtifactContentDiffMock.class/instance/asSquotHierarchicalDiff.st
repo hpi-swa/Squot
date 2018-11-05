@@ -1,0 +1,3 @@
+converting
+asSquotHierarchicalDiff
+	^ topNodes ifNil: [#()]

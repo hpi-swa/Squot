@@ -1,0 +1,6 @@
+converting
+asDiffTree
+	^ SquotMergeDiffNode
+		title: right squotConflictText
+		content: self
+		children: #()

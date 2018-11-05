@@ -1,17 +1,19 @@
 testing
 testResolveArtifactConflictChooseLeft
-	| path artifact patch |
+	| left right path artifact patch conflictNode |
 	path := 'conflicted-artifact'.
-	artifact := SquotArtifact new path: path; content: SquotArtifactContentMock new.
+	artifact := SquotArtifact new path: path; content: (left := SquotArtifactContentMock new).
+	left diffBlock: [:otherMock | SquotArtifactContentDiffMock new].
 	patch := SquotPatch builder
 		addDiff: (SquotArtifactConflict
 					leftDiff: (SquotArtifactRemoval of: artifact)
-					rightDiff: (SquotArtifactDiff
+					rightDiff: (SquotArtifactDiffWithContent
 						left: artifact
-						right: (artifact copy content: SquotArtifactContentMock new)));
+						right: (artifact copy content: (right := SquotArtifactContentMock new))));
 		buildPatch.
-	tool := self newToolOn: patch.
+	self openToolAndTestOnPatch: patch.
 	self assert: tool rootNodes size = 1.
-	self assert: tool rootNodes anyOne anyChildNeedsChoice.
-	self resolveArtifactConflict: [:conflictNode | tool deactivateSelectedNode].
+	(conflictNode := tool rootNodes anyOne) resetChoice.
+	self assert: conflictNode anyChildNeedsChoice.
+	self resolveArtifactConflict: [:aNode | tool deactivateSelectedNode].
 	self assert: (tool selectedPatch diffAt: path) isRemoval.

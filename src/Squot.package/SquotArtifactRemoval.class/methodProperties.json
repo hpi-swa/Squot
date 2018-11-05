@@ -4,6 +4,7 @@
 	"instance" : {
 		"adjustedBy:" : "jr 4/23/2018 23:39",
 		"applyToContainer:" : "jr 7/16/2017 02:36",
+		"asDiffTree" : "jr 11/5/2018 20:54",
 		"asMonticelloPatch" : "jr 4/4/2018 22:49",
 		"isRemoval" : "jr 10/4/2017 20:11",
 		"mergeWith:" : "jr 4/15/2018 12:15",
@@ -11,5 +12,6 @@
 		"mergeWithRemoval:" : "jr 4/15/2018 12:13",
 		"needsChoice" : "jr 7/22/2017 23:55",
 		"right" : "jr 10/2/2017 19:58",
-		"squotChangeAsStringOrText" : "jr 10/15/2017 17:55",
+		"squotChangeAsStringOrText" : "jr 11/5/2018 21:20",
+		"squotConflictText" : "jr 11/5/2018 22:05",
 		"topNodes" : "jr 10/2/2017 19:56" } }

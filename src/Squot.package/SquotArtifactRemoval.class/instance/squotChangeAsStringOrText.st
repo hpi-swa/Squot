@@ -1,3 +1,3 @@
 converting
 squotChangeAsStringOrText
-	^ 'remove ', left path, ': ', left content startShadow printString
+	^ 'remove ', left path, ': ', left content squotSummaryText

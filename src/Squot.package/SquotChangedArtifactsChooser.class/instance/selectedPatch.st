@@ -4,7 +4,7 @@ selectedPatch
 	self accepted ifFalse: [^ SquotPatch empty].
 	"Answer a patch that describes all selected DiffNodes."
 	rootNodesByArtifact := Dictionary withAll:
-		(rootNodes collect: [:each | (editedPatch diffAt: each title) -> each]).
+		(rootNodes collect: [:each | each content -> each]).
 	adjustedDiffs := editedPatch diffs collect: [:each |
 		rootNodesByArtifact at: each
 			ifPresent: [:node | self adjustedDiff: each byExclusionsBelow: node]

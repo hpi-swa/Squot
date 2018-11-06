@@ -8,7 +8,7 @@
 	"instvars" : [
 		"nodes",
 		"graphDiff" ],
-	"name" : "SquotMetaobjectDiffNodesBuilder",
+	"name" : "SquotDiffTreeBuilder",
 	"pools" : [
 		 ],
 	"super" : "Object",

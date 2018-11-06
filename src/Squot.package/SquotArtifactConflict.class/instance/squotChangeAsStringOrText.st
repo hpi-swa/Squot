@@ -1,7 +1,7 @@
 converting
 squotChangeAsStringOrText
-	^ (Text string: 'one side: ' attribute: TextEmphasis bold)
+	^ (Text string: 'working copy: ' attribute: TextEmphasis bold)
 		append: left squotChangeAsStringOrText;
 		append: String cr;
-		append: (Text string: 'other side: ' attribute: TextEmphasis bold);
+		append: (Text string: 'other edition: ' attribute: TextEmphasis bold);
 		append: right squotChangeAsStringOrText

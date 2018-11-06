@@ -8,7 +8,7 @@
 		"testAcceptArtifactAddition" : "jr 10/3/2018 00:35",
 		"testPreservesLoadOrderChanges" : "jr 10/3/2018 00:35",
 		"testPreservesLoadOrderChanges2" : "jr 10/3/2018 14:52",
-		"testRejectArtifactAddition" : "jr 10/3/2018 00:35",
+		"testRejectArtifactAddition" : "jr 11/6/2018 08:12",
 		"testResolveArtifactConflictChooseLeft" : "jr 11/5/2018 21:49",
 		"testResolveArtifactConflictChooseRight" : "jr 11/5/2018 21:52",
 		"testResolveArtifactConflictWithIncomingRemoval" : "jr 11/5/2018 22:04",

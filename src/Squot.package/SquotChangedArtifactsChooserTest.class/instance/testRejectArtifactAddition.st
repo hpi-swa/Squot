@@ -6,7 +6,7 @@ testRejectArtifactAddition
 	patch := SquotPatch builder addArtifact: artifact; buildPatch.
 	tool := self newToolOn: patch.
 	self assert: tool rootNodes size = 1.
-	tool selectNode: tool rootNodes first children first.
+	tool selectNode: tool rootNodes first.
 	tool deactivateSelectedNode.
 	self closeDialogPossiblyOpenedDuring: [tool accept. acceptReturned := true]
 		timeoutMsecs: 5.

@@ -2,7 +2,7 @@
 	"class" : {
 		"of:" : "jr 10/2/2017 19:59" },
 	"instance" : {
-		"adjustedBy:" : "jr 4/23/2018 23:39",
+		"adjustedBy:" : "jr 11/6/2018 08:13",
 		"applyToContainer:" : "jr 7/16/2017 02:36",
 		"asDiffTree" : "jr 11/5/2018 20:54",
 		"asMonticelloPatch" : "jr 4/4/2018 22:49",
@@ -14,4 +14,4 @@
 		"right" : "jr 10/2/2017 19:58",
 		"squotChangeAsStringOrText" : "jr 11/5/2018 21:20",
 		"squotConflictText" : "jr 11/5/2018 22:05",
-		"topNodes" : "jr 10/2/2017 19:56" } }
+		"topNodes" : "jr 11/6/2018 08:11" } }

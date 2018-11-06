@@ -2,7 +2,7 @@
 	"class" : {
 		"of:" : "jr 10/2/2017 19:59" },
 	"instance" : {
-		"adjustedBy:" : "jr 4/23/2018 23:39",
+		"adjustedBy:" : "jr 11/6/2018 08:12",
 		"applyToContainer:" : "jr 7/20/2017 14:02",
 		"asDiffTree" : "jr 11/5/2018 20:55",
 		"asMonticelloPatch" : "jr 4/4/2018 21:51",
@@ -13,4 +13,4 @@
 		"mergeWithRemoval:" : "jr 4/15/2018 13:57",
 		"needsChoice" : "jr 7/22/2017 23:55",
 		"squotChangeAsStringOrText" : "jr 9/9/2017 14:12",
-		"topNodes" : "jr 9/9/2017 14:10" } }
+		"topNodes" : "jr 11/6/2018 08:11" } }

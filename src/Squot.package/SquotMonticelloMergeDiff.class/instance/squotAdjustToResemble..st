@@ -1,7 +1,8 @@
 copying
 squotAdjustToResemble: aSquotDiffNode
 	| activeNodes remainingConflictNodes operationNodes |
-	activeNodes := aSquotDiffNode withAllChildren select: [:each | each isActive].
+	activeNodes := (aSquotDiffNode withAllChildren copyWithout: aSquotDiffNode)
+						select: [:each | each isActive].
 	remainingConflictNodes := activeNodes select: [:each | each needsChoice].
 	operationNodes := activeNodes copyWithoutAll: remainingConflictNodes.
 	^ self class

@@ -1,1 +1,0 @@
-(name 'LBGitTests-LB.2' message 'empty' id '7704d208-a693-304d-a119-287ad83b5375' date '29 October 2018' time '5:58:19.935336 pm' author 'LB' ancestors ((name 'LBGitTests-LB.1' message 'Super duper commit' id 'f4a7e01e-82c2-0547-91fa-8370249c3110' date '29 October 2018' time '5:54:29.840336 pm' author 'LB' ancestors () stepChildren ())) stepChildren ())

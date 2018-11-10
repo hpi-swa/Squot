@@ -5,12 +5,16 @@
 	"instance" : {
 		"/" : "jr 4/23/2017 23:06",
 		"asFSReference" : "jr 4/6/2018 21:44",
+		"containingDirectory" : "jr 11/10/2018 23:05",
 		"createDirectory:" : "jr 6/29/2017 16:06",
 		"directoryNamed:" : "jr 4/23/2017 23:10",
 		"directoryNames" : "jr 4/23/2017 23:09",
 		"entries" : "jr 4/23/2017 23:23",
+		"fileEntries" : "jr 11/10/2018 23:25",
 		"isRemoteDirectory" : "jr 4/23/2017 23:14",
-		"pathName" : "jr 4/23/2017 23:28",
+		"localName" : "jr 11/10/2018 23:24",
+		"pathName" : "jr 11/10/2018 23:15",
 		"pathParts" : "jr 4/23/2017 23:22",
+		"printOn:" : "jr 11/10/2018 23:13",
 		"reference:" : "jr 4/23/2017 23:03",
 		"sleep" : "jr 4/23/2017 23:29" } }

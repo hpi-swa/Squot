@@ -4,11 +4,11 @@
 		 ],
 	"classvars" : [
 		 ],
-	"commentStamp" : "jr 3/17/2018 20:44",
+	"commentStamp" : "",
 	"instvars" : [
 		 ],
-	"name" : "SquitSubFolderList",
+	"name" : "SquitSubFolderChooserDialog",
 	"pools" : [
 		 ],
-	"super" : "FileList2",
+	"super" : "DirectoryChooserDialog",
 	"type" : "normal" }

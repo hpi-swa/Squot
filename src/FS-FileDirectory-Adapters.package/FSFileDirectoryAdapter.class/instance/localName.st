@@ -1,0 +1,3 @@
+enumeration
+localName
+	^ reference basename

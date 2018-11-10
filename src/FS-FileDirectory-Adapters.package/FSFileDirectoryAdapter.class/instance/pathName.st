@@ -1,3 +1,7 @@
 path access
 pathName
-	^ reference pathString
+	| string |
+	string := reference pathString.
+	^ (string endsWith: '/')
+		ifTrue: [string allButLast]
+		ifFalse: [string]

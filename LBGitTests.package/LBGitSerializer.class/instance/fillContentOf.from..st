@@ -4,5 +4,4 @@ fillContentOf: anArtifact from: aFileOrDirectoryReference
 	self halt.
 	anArtifact content: 
 		(SquotShadowGraph withSingleShadow:
-			(aFileOrDirectoryReference readStreamDo: [:stream | stream binary contents])
-				captureWithSquot undecorated)
+			(LBGitFileShadow new content: (aFileOrDirectoryReference readStreamDo: [:stream | stream binary contents])))

@@ -1,10 +1,12 @@
 {
 	"class" : {
-		 },
+		"on:" : "LB 11/10/2018 14:18" },
 	"instance" : {
 		"browseFromSquot:" : "LB 11/10/2018 12:00",
-		"captureWithSquot" : "LB 11/10/2018 12:19",
+		"captureWithSquot" : "LB 11/10/2018 14:16",
 		"captureWithSquot:" : "LB 11/10/2018 12:14",
+		"path" : "LB 11/10/2018 14:18",
+		"path:" : "LB 11/10/2018 14:18",
 		"squotAddTransientStoreInfoTo:" : "LB 11/10/2018 12:11",
 		"squotRemoveTransientStoreInfoFrom:" : "LB 11/10/2018 12:29",
 		"squotShadowFactory" : "LB 11/10/2018 12:18",

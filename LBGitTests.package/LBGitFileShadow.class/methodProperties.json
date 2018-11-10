@@ -1,9 +1,11 @@
 {
 	"class" : {
-		 },
+		"of:" : "LB 11/10/2018 14:22" },
 	"instance" : {
 		"content" : "LB 11/10/2018 12:41",
 		"content:" : "LB 11/10/2018 13:14",
+		"path" : "LB 11/10/2018 14:16",
+		"path:" : "LB 11/10/2018 14:16",
 		"squotDiffAgainst:with:" : "LB 11/10/2018 13:25",
 		"squotDiffAgainst:withBase:with:" : "LB 11/10/2018 13:07",
 		"squotPreferredSerializer" : "LB 11/10/2018 13:41",

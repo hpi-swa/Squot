@@ -2,6 +2,7 @@
 	"class" : {
 		 },
 	"instance" : {
-		"fillContentOf:from:" : "LB 11/10/2018 14:03",
+		"atPathOf:writeStreamDo:" : "LB 11/10/2018 14:12",
+		"fillContentOf:from:" : "LB 11/10/2018 14:12",
 		"version" : "LB 11/10/2018 13:33",
 		"write:" : "LB 11/10/2018 13:37" } }

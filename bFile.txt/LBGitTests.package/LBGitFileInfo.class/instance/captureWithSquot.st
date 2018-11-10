@@ -1,4 +1,4 @@
 as yet unclassified
 captureWithSquot
 
-	^ self squotShadowFactory new
+	^ self squotShadowFactory of: self

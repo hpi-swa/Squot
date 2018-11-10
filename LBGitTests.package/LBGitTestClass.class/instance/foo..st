@@ -1,4 +1,4 @@
 accessing
-foo: aFoo
+foo: aFo
 
-	foo := aFoo.
+	foo := aFo.

@@ -1,0 +1,16 @@
+{
+	"category" : "LBGitTests",
+	"classinstvars" : [
+		 ],
+	"classtraitcomposition" : "TSquotDiffableShadow classTrait",
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "LBGitFileShadow",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"traitcomposition" : "TSquotDiffableShadow",
+	"type" : "normal" }

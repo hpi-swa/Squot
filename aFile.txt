@@ -1,1 +1,1 @@
-I uploaded text stuff from git
+I downloaded text stuff from git

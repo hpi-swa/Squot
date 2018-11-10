@@ -1,4 +1,0 @@
-SquotTrackedObjectMetadata {
-	#objectClassName : #LBGitFileInfo,
-	#serializer : #LBGitSerializer
-}

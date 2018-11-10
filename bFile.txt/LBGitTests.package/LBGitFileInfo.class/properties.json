@@ -6,7 +6,8 @@
 		 ],
 	"commentStamp" : "",
 	"instvars" : [
-		"path" ],
+		"path",
+		"rootDirectory" ],
 	"name" : "LBGitFileInfo",
 	"pools" : [
 		 ],

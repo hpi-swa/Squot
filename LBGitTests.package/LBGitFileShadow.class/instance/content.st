@@ -1,4 +1,4 @@
 as yet unclassified
 content
 
-	^ (FileStream fileNamed: self path) binary contents
+	^ (self rootDirectory resolve: self path) readStream binary contents

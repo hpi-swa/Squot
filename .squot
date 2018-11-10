@@ -1,6 +1,5 @@
 OrderedDictionary {
 	'LBGitTests.package' : #SquotCypressCodeSerializer,
 	'LBOtherGitTests.package' : #SquotCypressCodeSerializer,
-	'bFile.txt\/LBGitTests.package\/LBGitFileInfo.class' : #SquotCypressCodeSerializer,
-	'cFile.txt' : #LBGitSerializer
+	'bFile.txt\/LBGitTests.package\/LBGitFileInfo.class' : #SquotCypressCodeSerializer
 }

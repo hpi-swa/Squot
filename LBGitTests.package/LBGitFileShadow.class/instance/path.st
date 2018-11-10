@@ -1,4 +1,4 @@
 accessing
 path
 
-	^ path
+	^ self fileInfo path

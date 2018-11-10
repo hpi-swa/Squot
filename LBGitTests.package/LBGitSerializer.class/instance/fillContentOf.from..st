@@ -6,5 +6,5 @@ fillContentOf: anArtifact from: aFileOrDirectoryReference
 	aFileOrDirectoryReference path do: [:each | path := path,'/',each].
 	anArtifact content: 
 		(SquotShadowGraph withSingleShadow:
-			(LBGitFileShadow new path: path;
+			((LBGitFileShadow of: (LBGitFileInfo onGitReference: aFileOrDirectoryReference))
 			content: (aFileOrDirectoryReference readStreamDo: [:stream | stream binary contents])))

@@ -1,4 +1,4 @@
 as yet unclassified
 squotRemoveTransientStoreInfoFrom: aDictionary
-
-	self shouldBeImplemented.
+	
+	self flag: #TODO. "What does it do?".

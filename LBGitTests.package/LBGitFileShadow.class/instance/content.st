@@ -1,4 +1,4 @@
 as yet unclassified
 content
 
-	^ content ifNil: [content := '']
+	^ (FileStream fileNamed: self path) binary contents

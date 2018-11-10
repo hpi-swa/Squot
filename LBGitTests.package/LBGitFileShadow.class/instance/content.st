@@ -1,4 +1,6 @@
 as yet unclassified
 content
 
-	^ self reference readStream binary contents
+	^ self reference exists 
+		ifTrue:  [self reference readStream binary contents]
+		ifFalse: [nil]

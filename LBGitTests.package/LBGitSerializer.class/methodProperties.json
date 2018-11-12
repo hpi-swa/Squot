@@ -1,6 +1,6 @@
 {
 	"class" : {
-		 },
+		"initialize" : "LB 11/12/2018 20:53" },
 	"instance" : {
 		"atPathOf:writeStreamDo:" : "LB 11/10/2018 14:12",
 		"fillContentOf:from:" : "LB 11/10/2018 16:42",

@@ -1,5 +1,0 @@
-OrderedDictionary {
-	'LBGitTests.package' : #SquotCypressCodeSerializer,
-	'LBOtherGitTests.package' : #SquotCypressCodeSerializer,
-	'cFile.txt' : #LBGitSerializer
-}

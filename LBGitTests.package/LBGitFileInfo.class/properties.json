@@ -1,0 +1,15 @@
+{
+	"category" : "LBGitTests",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"path",
+		"rootDirectory" ],
+	"name" : "LBGitFileInfo",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }

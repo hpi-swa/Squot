@@ -20,8 +20,8 @@
 		"testAddingSingleDirectoryFails" : "CamilloBruni 9/3/2012 18:48",
 		"testAddingWithReload" : "MaxLeske 8/12/2011 08:54",
 		"testAllegedMerge" : "jr 2/26/2017 00:17",
-		"testBranchMessageAndTag" : "MaxLeske 8/12/2011 08:57",
-		"testBranching" : "CamilloBruni 9/3/2012 16:45",
+		"testBranchMessageAndTag" : "pre 11/14/2018 16:51",
+		"testBranching" : "pre 11/14/2018 16:51",
 		"testCommitting" : "CamilloBruni 7/15/2011 16:21",
 		"testCommittingCreateAndDelete" : "MaxLeske 8/12/2011 08:53",
 		"testCommittingWithReload" : "CamilloBruni 7/15/2011 16:22",
@@ -64,5 +64,5 @@
 		"testResetWithDeletions" : "CamilloBruni 7/15/2011 15:58",
 		"testRevisionChange" : "CamilloBruni 7/15/2011 16:25",
 		"testRevisionChangeWithReload" : "CamilloBruni 8/1/2011 16:44",
-		"testTagging" : "jr 10/23/2016 00:37",
-		"testTags" : "CamilloBruni 9/3/2012 18:24" } }
+		"testTagging" : "pre 11/14/2018 16:31",
+		"testTags" : "pre 11/14/2018 16:32" } }

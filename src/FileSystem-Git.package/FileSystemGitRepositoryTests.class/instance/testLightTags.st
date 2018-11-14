@@ -4,7 +4,7 @@ testLightTags
 	master := basicRepository resolveRef: 'refs/heads/master'.
 	branch1 := basicRepository resolveRef: 'refs/heads/branch1'.
 	basicRepository 
-		updateRef: basicRepository tagsDir / 'version 4.3alpha' to: master;
+		updateRef: basicRepository tagsDir / 'version4.3alpha' to: master;
 		updateRef: basicRepository tagsDir / 'fail' to: branch1.
 		
 	tags := repository tags.

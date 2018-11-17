@@ -1,3 +1,3 @@
 converting
 squotChangeAsStringOrText
-	^ 'add ', right path, ': ', right content startShadow printString
+	^ (Text fromString: 'add ', right path, ': ') append: right squotSummaryText

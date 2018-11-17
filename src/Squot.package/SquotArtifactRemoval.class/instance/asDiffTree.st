@@ -1,3 +1,7 @@
 converting
 asDiffTree
-	^ SquotDiffNode title: self path, ' (removed)' content: self children: self topNodes
+	| title |
+	title := (self path isEmpty
+		ifTrue: [left printString]
+		ifFalse: [self path]), ' (removed)'.
+	^ SquotDiffNode title: title content: self children: self topNodes

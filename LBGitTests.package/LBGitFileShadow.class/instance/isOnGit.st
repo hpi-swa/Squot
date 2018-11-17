@@ -1,0 +1,4 @@
+accessing
+isOnGit
+
+	^ isOnGit

@@ -2,16 +2,13 @@
 	"category" : "LBGitTests",
 	"classinstvars" : [
 		 ],
-	"classtraitcomposition" : "TSquotDiffableShadow classTrait",
 	"classvars" : [
 		 ],
 	"commentStamp" : "",
 	"instvars" : [
-		"fileInfo",
-		"isOnGit" ],
-	"name" : "LBGitFileShadow",
+		 ],
+	"name" : "NoneExistent",
 	"pools" : [
 		 ],
 	"super" : "Object",
-	"traitcomposition" : "TSquotDiffableShadow",
 	"type" : "normal" }

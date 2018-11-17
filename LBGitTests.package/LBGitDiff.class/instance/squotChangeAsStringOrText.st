@@ -2,8 +2,8 @@ as yet unclassified
 squotChangeAsStringOrText
 
 	^ 
-'Left:
+'New Value:
 ', self left, '
 
-Right:
+Old Value:
 ', self right.

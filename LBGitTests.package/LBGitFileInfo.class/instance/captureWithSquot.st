@@ -1,4 +1,6 @@
 as yet unclassified
 captureWithSquot
 
-	^ self squotShadowFactory of: self
+	^ (self squotShadowFactory of: self)
+		isOnGit: false;
+		yourself 

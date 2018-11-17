@@ -2,5 +2,9 @@ as yet unclassified
 content
 
 	^ self reference exists 
-		ifTrue:  [self reference readStream binary contents]
+		ifTrue:  [| stream content |
+			stream := self reference readStream binary.
+			content := stream contents.
+			stream close.
+			content]
 		ifFalse: [nil]

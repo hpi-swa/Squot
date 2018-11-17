@@ -16,7 +16,8 @@ selectFromPatch: aPatch forSaveWithTitle: titleString ifCanceled: cancelBlock
 		yourself.
 	message ifNotEmpty: [tool message: message].
 	tool requestSelectedChangesWithTitle: titleString.
-	self newVersionMessage: tool message asString.
+	tool messageWasChanged ifTrue:
+		[self newVersionMessage: tool message asString].
 	^ tool accepted
 		ifTrue: [	tool selectedPatch]
 		ifFalse: [cancelBlock value]

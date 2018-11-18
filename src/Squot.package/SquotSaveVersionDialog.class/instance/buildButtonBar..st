@@ -15,7 +15,7 @@ buildButtonBar: builder
 	cancelButton
 		model: self;
 		label: 'Cancel';
-		action: #actionCancel;
+		action: #cancel;
 		color: self cancelColor.
 		
 	commitButton := builder pluggableButtonSpec new.

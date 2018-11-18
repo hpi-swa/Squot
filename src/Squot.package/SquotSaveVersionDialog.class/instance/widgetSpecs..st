@@ -6,13 +6,11 @@ widgetSpecs: builder
 		nodeClass: SquotDiffNodeTreeWrapper;
 		roots: #rootNodes;
 		label: #nodeLabelOf:;
-		"help: #diffTextFor:;"
-		getSelectedPath: #diffSelectedPath;
-		getSelected: #diffSelectedNode;
+		getSelected: #selectedNode;
 		setSelected: #selectNode:;
-		getChildren: #diffChildrenOf:;
-		hasChildren: #diffHasChildren:;
-		menu: #diffTreeMenu:;
+		getChildren: #childNodesOf:;
+		hasChildren: #hasChildren:;
+		menu: #diffNodeMenu:shifted:;
 		frame: (0@0 corner: 0.4@0.7).
 	builder pluggableTextSpec new
 		name: 'diff text for selected item';

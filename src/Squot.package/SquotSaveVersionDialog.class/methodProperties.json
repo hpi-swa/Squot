@@ -5,9 +5,10 @@
 		"accept" : "jr 11/18/2018 00:32",
 		"actionCommit" : "fn 4/11/2017 16:01",
 		"activateNodeCommandLabel" : "jr 11/18/2018 00:58",
-		"buildButtonBar:" : "jr 11/18/2018 00:33",
-		"buildWith:" : "fn 4/11/2017 15:28",
+		"buildButtonBar:" : "jr 11/18/2018 01:39",
+		"buildDiffPane:" : "jr 11/18/2018 01:33",
 		"cancel" : "jr 11/18/2018 00:44",
+		"chooserWidgetSpecs:" : "jr 11/18/2018 01:21",
 		"deactivateNodeCommandLabel" : "jr 11/18/2018 00:59",
 		"defaultMessage" : "jr 10/14/2018 01:24",
 		"initialize" : "jr 11/18/2018 00:50",
@@ -19,4 +20,5 @@
 		"parentVersions:" : "jr 2/17/2017 19:34",
 		"patch:" : "jr 10/3/2018 00:20",
 		"updateMessageFromViews" : "jr 10/14/2018 01:30",
-		"widgetSpecs:" : "jr 11/18/2018 00:54" } }
+		"widgetSpecs:" : "jr 11/18/2018 01:32",
+		"windowLabel" : "jr 11/18/2018 01:29" } }

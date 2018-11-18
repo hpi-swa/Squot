@@ -1,16 +1,16 @@
 {
 	"class" : {
 		"on:in:" : "LB 11/10/2018 15:56",
-		"on:in:git:" : "LB 11/13/2018 17:02",
-		"onGitReference:" : "LB 11/13/2018 17:02" },
+		"onGitReference:" : "LB 11/17/2018 12:19" },
 	"instance" : {
 		"browseFromSquot:" : "LB 11/10/2018 12:00",
-		"captureWithSquot" : "LB 11/14/2018 20:02",
+		"captureWithSquot" : "LB 11/18/2018 13:28",
 		"captureWithSquot:" : "LB 11/10/2018 12:14",
-		"gitDirectory" : "LB 11/13/2018 17:01",
-		"gitDirectory:" : "LB 11/13/2018 17:01",
+		"content" : "LB 11/18/2018 12:56",
+		"content:" : "LB 11/18/2018 13:32",
 		"path" : "LB 11/10/2018 14:18",
 		"path:" : "LB 11/10/2018 14:18",
+		"reference" : "LB 11/18/2018 12:35",
 		"rootDirectory" : "LB 11/10/2018 16:10",
 		"rootDirectory:" : "LB 11/10/2018 16:10",
 		"squotAddTransientStoreInfoTo:" : "LB 11/10/2018 12:11",

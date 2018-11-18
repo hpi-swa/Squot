@@ -1,4 +1,4 @@
-as yet unclassified
+accessing
 gitReference
 
-	^ self gitDirectory resolve: self path
+	^ gitReference

@@ -2,7 +2,6 @@ as yet unclassified
 onGitReference: aFSReference
 
 	| workingReference gitReference path |
-	self halt.
 	workingReference := aFSReference fileSystem repository repository instVarNamed: #reference.
 	gitReference := aFSReference parent.
 	path := ''.

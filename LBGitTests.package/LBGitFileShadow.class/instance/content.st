@@ -1,6 +1,7 @@
 as yet unclassified
 content
 
+	self shouldNotImplement.
 	^ self reference exists 
 		ifTrue:  [| stream content |
 			stream := self reference readStream binary.

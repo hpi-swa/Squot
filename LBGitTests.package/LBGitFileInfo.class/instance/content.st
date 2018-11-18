@@ -1,8 +1,8 @@
 as yet unclassified
-gitContent
+content
 
 	| stream content |
-	stream := self gitReference readStream binary.
+	stream := self reference readStream binary.
 	content := stream contents.
 	stream close.
 	^ content

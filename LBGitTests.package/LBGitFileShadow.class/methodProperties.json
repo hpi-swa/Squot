@@ -1,24 +1,20 @@
 {
 	"class" : {
-		"new" : "LB 11/14/2018 20:41",
-		"of:" : "LB 11/10/2018 16:18" },
+		 },
 	"instance" : {
-		"content" : "LB 11/13/2018 17:51",
-		"content:" : "LB 11/13/2018 17:31",
+		"content" : "LB 11/18/2018 13:20",
+		"content:" : "LB 11/18/2018 13:20",
 		"fileInfo" : "LB 11/10/2018 15:57",
 		"fileInfo:" : "LB 11/10/2018 15:57",
-		"gitContent" : "LB 11/13/2018 17:08",
-		"gitDirectory" : "LB 11/13/2018 17:00",
-		"gitReference" : "LB 11/13/2018 17:00",
-		"isOnGit" : "LB 11/14/2018 19:54",
-		"isOnGit:" : "LB 11/14/2018 19:54",
+		"gitContent" : "LB 11/18/2018 13:13",
+		"gitReference" : "LB 11/18/2018 12:22",
+		"gitReference:" : "LB 11/18/2018 12:22",
 		"path" : "LB 11/10/2018 15:57",
 		"reference" : "LB 11/10/2018 16:10",
-		"rootDirectory" : "LB 11/10/2018 15:57",
-		"squotDiffAgainst:with:" : "LB 11/13/2018 17:12",
+		"squotDiffAgainst:with:" : "LB 11/18/2018 13:31",
 		"squotDiffAgainst:withBase:with:" : "LB 11/10/2018 13:07",
-		"squotMaterializeWith:" : "LB 11/14/2018 22:39",
+		"squotMaterializeWith:" : "LB 11/18/2018 12:40",
 		"squotPreferredSerializer" : "LB 11/10/2018 13:41",
 		"squotWith:diffFromSequence:" : "LB 11/10/2018 13:26",
 		"value" : "LB 11/10/2018 13:09",
-		"writeTo:" : "LB 11/10/2018 13:29" } }
+		"writeTo:" : "LB 11/18/2018 13:28" } }

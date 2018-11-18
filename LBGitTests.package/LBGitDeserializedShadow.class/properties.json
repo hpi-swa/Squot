@@ -1,15 +1,14 @@
 {
 	"category" : "LBGitTests",
 	"classinstvars" : [
-		"static" ],
+		 ],
 	"classvars" : [
 		 ],
 	"commentStamp" : "",
 	"instvars" : [
-		"foo",
-		"bar" ],
-	"name" : "LBGitTestClass",
+		 ],
+	"name" : "LBGitDeserializedShadow",
 	"pools" : [
 		 ],
-	"super" : "Object",
+	"super" : "LBGitFileShadow",
 	"type" : "normal" }

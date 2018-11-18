@@ -6,10 +6,9 @@
 		 ],
 	"commentStamp" : "",
 	"instvars" : [
-		"fee",
-		"boar" ],
-	"name" : "LBGTCNumeroDos",
+		 ],
+	"name" : "LBGitSerializedShadow",
 	"pools" : [
 		 ],
-	"super" : "Object",
+	"super" : "LBGitFileShadow",
 	"type" : "normal" }

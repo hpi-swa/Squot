@@ -1,3 +1,3 @@
 initialize-release
 on: aPatch
-	editedPatch := aPatch.
+	editedPatch := aPatch copy.

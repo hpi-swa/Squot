@@ -16,7 +16,7 @@ newSquotDiffNodes
 				children: #()
 				onInclude: [operations add: each operation.
 							conflicts remove: each ifAbsent: []]
-				onExclude: [operations remove: each operation.
+				onExclude: [operations remove: each operation ifAbsent: [].
 							conflicts remove: each ifAbsent: []]
 				onReset: [operations remove: each operation ifAbsent: [].
 							conflicts add: each])]].

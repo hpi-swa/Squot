@@ -37,10 +37,10 @@ testMergeWithConflictsChooseRemote
 		on: SquotSelectionOfChangesRequested do: [:request | | packageDiff conflictNode |
 			"make sure the second and third method edition are in the patch"
 			packageDiff := request patch diffAt: packagePath.
-			conflictNode := packageDiff topNodes first children first.
+			conflictNode := packageDiff asDiffTree children first children first.
 			self assert: (conflictNode title beginsWith: 'conflictMethod').
 			conflictNode chooseRight.
-			request resume: request patch updateFromNodes]]
+			request resume: request patch]]
 		valueSupplyingAnswers: {{'*'. #default}}].
 	self assert: sampleClass new conflictMethod = 2
 		description: 'conflict method updated after merge'.

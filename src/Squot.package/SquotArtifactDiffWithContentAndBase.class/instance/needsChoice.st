@@ -1,3 +1,3 @@
 testing
 needsChoice
-	^ topNodes anySatisfy: [:anyTop | anyTop anyChildNeedsChoice]
+	^ self topNodes anySatisfy: [:anyTop | anyTop anyChildNeedsChoice]

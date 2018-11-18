@@ -1,5 +1,5 @@
 copying
 privateAdjustedBy: aDiffNode
-	diffContent := diffContent squotAdjustToResemble: aDiffNode.
-	topNodes := aDiffNode children.
-	aDiffNode areAllChildrenActive ifFalse: [right := right copyWithDiffApplied: self].
+	aDiffNode isActive ifFalse: [^ SquotDiffOfEqualObjects instance].
+	aDiffNode areAllChildrenActive ifFalse: [right := left copyWithDiffApplied: self].
+	^ self

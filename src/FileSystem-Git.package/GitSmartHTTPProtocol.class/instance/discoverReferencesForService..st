@@ -9,7 +9,7 @@ discoverReferencesForService: aServiceName
 					self applyCredentials.
 					^ self discoverReferencesForService: aServiceName].
 			GitRemoteAuthenticationFailed signal: 'Could not query Git HTTP repository. Server responded: ', 
-				response status].
+				response status with: response content].
 	(self isSmartResponse: response) ifFalse: [self fallbackToDumbProtocol].
 	reader := GitProtocolReader on: response content.
 	^ refs := self fetchRefsFrom: response content readStream.

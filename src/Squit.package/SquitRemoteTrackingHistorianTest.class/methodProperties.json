@@ -1,0 +1,9 @@
+{
+	"class" : {
+		 },
+	"instance" : {
+		"testRemoteTrackingHistorianRemoteName" : "jr 11/21/2018 20:52",
+		"testRemoteTrackingHistorianRemoteRef" : "jr 11/21/2018 20:53",
+		"testRemoteTrackingHistorianRemoteRefWithNonDefaultFetchSpec" : "jr 11/21/2018 20:53",
+		"testRemoteTrackingHistorianThatDoNotExist" : "jr 11/21/2018 20:53",
+		"testRemoteTrackingHistorianWithoutRemote" : "jr 11/21/2018 20:53" } }

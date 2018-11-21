@@ -1,10 +1,12 @@
 {
 	"class" : {
 		"name:target:" : "pre 6/15/2018 16:23",
-		"validateReferenceName:" : "pre 6/15/2018 15:50" },
+		"validateReferenceName:" : "pre 6/15/2018 15:50",
+		"zeroSignature" : "jr 11/21/2018 21:32" },
 	"instance" : {
 		"isSymbolic" : "jr 6/5/2017 18:08",
 		"name" : "jr 6/5/2017 18:08",
 		"name:signature:" : "jr 6/5/2017 18:09",
+		"shortName" : "jr 11/21/2018 21:15",
 		"signature" : "jr 6/5/2017 18:08",
 		"signature:" : "jr 6/5/2017 18:10" } }

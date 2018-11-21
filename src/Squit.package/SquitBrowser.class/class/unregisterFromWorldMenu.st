@@ -1,4 +1,4 @@
-as yet unclassified
+world menu
 unregisterFromWorldMenu
 	"self unregisterFromWorldMenu"
 	(self environment valueOf: #TheWorldMenu) ifNotNil:

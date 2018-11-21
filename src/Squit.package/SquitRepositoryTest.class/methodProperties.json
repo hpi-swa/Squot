@@ -1,24 +1,10 @@
 {
 	"class" : {
-		"resources" : "jr 3/16/2017 17:55" },
+		 },
 	"instance" : {
-		"createReadmeCommit" : "jr 5/27/2018 16:26",
-		"createRemoteTrackingBranchForMaster" : "jr 5/27/2018 16:37",
-		"createRemoteTrackingBranchForMasterWithFetchSpec:" : "jr 5/27/2018 17:23",
-		"repositoryForTests" : "jr 3/8/2017 16:42",
-		"repositoryPathForTests" : "jr 3/8/2017 16:39",
-		"setUp" : "jr 5/27/2018 16:26",
-		"tearDown" : "jr 3/8/2017 17:51",
 		"testCreateCommit" : "jr 5/27/2018 16:26",
 		"testDefaultAuthor" : "jr 5/27/2018 16:26",
 		"testGetMasterSnapshot" : "jr 7/22/2017 12:03",
 		"testGetReferenceWithInvalidName" : "pre 6/15/2018 15:51",
-		"testHistorianSetUpstreamBranch" : "jr 5/27/2018 17:29",
-		"testHistorianSetUpstreamBranchWithBogusRemoteTrackingBranch" : "jr 5/27/2018 23:18",
 		"testInstantiation" : "jr 1/11/2017 17:50",
-		"testIsAvailable" : "jr 5/27/2018 16:27",
-		"testRemoteTrackingHistorianRemoteName" : "jr 5/27/2018 16:37",
-		"testRemoteTrackingHistorianRemoteRef" : "jr 5/27/2018 16:37",
-		"testRemoteTrackingHistorianRemoteRefWithNonDefaultFetchSpec" : "jr 5/27/2018 17:25",
-		"testRemoteTrackingHistorianThatDoNotExist" : "jr 5/27/2018 21:14",
-		"testRemoteTrackingHistorianWithoutRemote" : "jr 5/27/2018 21:20" } }
+		"testIsAvailable" : "jr 5/27/2018 16:27" } }

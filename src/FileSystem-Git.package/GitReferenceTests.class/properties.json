@@ -1,14 +1,14 @@
 {
-	"category" : "FileSystem-Git-Remote",
+	"category" : "FileSystem-Git-Plumbing-Tests",
 	"classinstvars" : [
 		 ],
 	"classvars" : [
 		 ],
 	"commentStamp" : "",
 	"instvars" : [
-		"responseBody" ],
-	"name" : "GitRemoteError",
+		 ],
+	"name" : "GitReferenceTests",
 	"pools" : [
 		 ],
-	"super" : "Error",
+	"super" : "GitTestCase",
 	"type" : "normal" }

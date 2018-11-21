@@ -6,9 +6,12 @@
 		 ],
 	"commentStamp" : "",
 	"instvars" : [
-		 ],
-	"name" : "SquitRepositoryTest",
+		"gitRepository",
+		"fsGitRepository",
+		"squitRepository",
+		"master" ],
+	"name" : "SquitTest",
 	"pools" : [
 		 ],
-	"super" : "SquitTest",
+	"super" : "TestCase",
 	"type" : "normal" }

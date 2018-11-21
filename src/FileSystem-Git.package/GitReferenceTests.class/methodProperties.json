@@ -1,0 +1,9 @@
+{
+	"class" : {
+		 },
+	"instance" : {
+		"refNamed:" : "jr 11/21/2018 21:15",
+		"testShortName" : "jr 11/21/2018 21:16",
+		"testShortNameOfRemoteTrackingBranch" : "jr 11/21/2018 21:18",
+		"testShortNameOfRemoteTrackingBranchWithHierarchy" : "jr 11/21/2018 21:18",
+		"testShortNameWithHierarchy" : "jr 11/21/2018 21:16" } }

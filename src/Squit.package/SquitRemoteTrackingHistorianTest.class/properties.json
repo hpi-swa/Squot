@@ -1,14 +1,14 @@
 {
-	"category" : "FileSystem-Git-Remote",
+	"category" : "Squit-Tests",
 	"classinstvars" : [
 		 ],
 	"classvars" : [
 		 ],
 	"commentStamp" : "",
 	"instvars" : [
-		"responseBody" ],
-	"name" : "GitRemoteError",
+		 ],
+	"name" : "SquitRemoteTrackingHistorianTest",
 	"pools" : [
 		 ],
-	"super" : "Error",
+	"super" : "SquitTest",
 	"type" : "normal" }

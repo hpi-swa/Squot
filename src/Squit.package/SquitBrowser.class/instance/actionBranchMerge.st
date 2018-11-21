@@ -8,6 +8,6 @@ actionBranchMerge
 	[self mergeVersionIntoActiveBranch: mergeHeadCommit
 		ifCanceled: [^ self]]
 	on: SquotInitialLogMessageRequested
-	do: [:request | request resume: 'Merge branch ''', mergeHistorian shortName,
-		''' into ', self projectSelection loadedHistorian shortName].
+	do: [:request | request resume:
+			(mergeHistorian messageWhenMergingInto: self projectSelection loadedHistorian)].
 	self selectActiveHistorian.

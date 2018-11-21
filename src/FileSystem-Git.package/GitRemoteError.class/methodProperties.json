@@ -1,5 +1,7 @@
 {
 	"class" : {
-		 },
+		"signal:with:" : "pre 5/14/2018 16:03" },
 	"instance" : {
-		 } }
+		"initialize" : "pre 5/14/2018 16:02",
+		"responseBody" : "pre 5/14/2018 16:02",
+		"responseBody:" : "pre 5/14/2018 16:02" } }

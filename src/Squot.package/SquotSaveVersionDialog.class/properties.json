@@ -9,9 +9,9 @@
 		"message",
 		"canceled",
 		"diffRootNodes",
-		"diffs",
 		"selectedDiffNode",
-		"controllerForIgnores" ],
+		"controllerForIgnores",
+		"editedPatch" ],
 	"name" : "SquotSaveVersionDialog",
 	"pools" : [
 		 ],

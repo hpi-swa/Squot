@@ -11,9 +11,16 @@ It uses the package FileSystem-Git (also included here) to browse and manipulate
 
 ## Installation instructions
 
-You will need a Squeak trunk image that is newer than 2017-03-12. The image's version number should be at about 17037 or higher.
+For Squeak 5.2 (and newer) just evaluate the following snippet:
 
-First install the latest [Metacello](//github.com/dalehenrich/metacello-work), then you can use the following code to load Squot and all its prerequisites:
+```Smalltalk
+Installer installGitInfrastructure.
+```
+
+For older images, make sure that you have system updates newer than 2017-03-12. The image's version number should be at about 17037 or higher.
+
+There, install the latest [Metacello](//github.com/dalehenrich/metacello-work) first.
+Then, use the following snippet to load Squot and all its dependencies:
 
 ```smalltalk
 Metacello new

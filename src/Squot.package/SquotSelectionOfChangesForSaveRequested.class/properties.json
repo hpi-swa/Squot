@@ -1,0 +1,14 @@
+{
+	"category" : "Squot-Tools",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"message" ],
+	"name" : "SquotSelectionOfChangesForSaveRequested",
+	"pools" : [
+		 ],
+	"super" : "SquotSelectionOfChangesRequested",
+	"type" : "normal" }

@@ -2,12 +2,12 @@ tests
 testAcceptsCorrectConversionWithMultipleVersions
 	| package versionInfos first mcSnapshots theVersions mcRepo snapshots squotVersions previous historian |
 	"given"
-	package := MCPackage named: #Plonk.
+	package := MCPackage named: classFactory packageName.
 	mcSnapshots := {
 		MCSnapshot fromDefinitions: {
 			MCClassDefinition name: #Griffle
 				superclassName: #Object
-				category: 'Plonk-Tests-Data' 
+				category: package name, '-Tests-Data' 
 				instVarNames: #()
 				classVarNames: #()
 				poolDictionaryNames: #()
@@ -21,7 +21,7 @@ testAcceptsCorrectConversionWithMultipleVersions
 		MCSnapshot fromDefinitions: {
 			MCClassDefinition name: #Griffle
 				superclassName: #Object
-				category: 'Plonk-Tests-Data' 
+				category: package name, '-Tests-Data' 
 				instVarNames: #()
 				classVarNames: #()
 				poolDictionaryNames: #()
@@ -32,20 +32,16 @@ testAcceptsCorrectConversionWithMultipleVersions
 				category: 'initialize-release'
 				timeStamp: 'today'
 				source: 'initialize Transcript show: 1 + 1'}}.
-	versionInfos := {(first := MCVersionInfo name: 'Plonk-squot.1' id: UUID new
+	versionInfos := {(first := MCVersionInfo name: package name, '-squot.1' id: UUID new
 			message: 'hooray' date: Date today time: Time now author: 'squot' ancestors: #()).
-		MCVersionInfo name: 'Plonk-squot.2' id: UUID new message: 'next'
+		MCVersionInfo name: package name, '-squot.2' id: UUID new message: 'next'
 			date: Date today time: Time now author: 'squit' ancestors: {first}}.
 	theVersions := versionInfos with: mcSnapshots collect: [:info :snapshot |
 		MCVersion package: package info: info snapshot: snapshot].
 	mcRepo := MCDictionaryRepository new.
 	theVersions do: [:each | mcRepo storeVersion: each].
 	snapshots := mcSnapshots collect: [:each | SquotSnapshot builder
-		add: (SquotArtifact new
-			content: each;
-			path: package name, '.package';
-			initializeDefaultStoreInfoFor: package packageInfo;
-			yourself);
+		add: (each asSquotArtifactForPackage: package packageInfo);
 		buildSnapshot].
 	squotVersions := versionInfos
 		with: snapshots

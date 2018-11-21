@@ -1,0 +1,15 @@
+{
+	"category" : "Squot-Tools-Tests",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"workingCopy",
+		"browser" ],
+	"name" : "SquotWorkingCopyBrowserTest",
+	"pools" : [
+		 ],
+	"super" : "TestCase",
+	"type" : "normal" }

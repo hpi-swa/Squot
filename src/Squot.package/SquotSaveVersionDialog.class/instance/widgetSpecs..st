@@ -1,15 +1,15 @@
 ui toolbuilder
 widgetSpecs: builder
 	^{builder pluggableTreeSpec new
-		name: 'Diff';
+		name: 'hierarchical diff';
 		model: self;
 		nodeClass: SquotDiffNodeTreeWrapper;
-		roots: #diffRoots;
-		label: #diffTitleOf:;
+		roots: #rootNodes;
+		label: #nodeLabelOf:;
 		"help: #diffTextFor:;"
 		getSelectedPath: #diffSelectedPath;
 		getSelected: #diffSelectedNode;
-		setSelected: #diffSelect:;
+		setSelected: #selectNode:;
 		getChildren: #diffChildrenOf:;
 		hasChildren: #diffHasChildren:;
 		menu: #diffTreeMenu:;

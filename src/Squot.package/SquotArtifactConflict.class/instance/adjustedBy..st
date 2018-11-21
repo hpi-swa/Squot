@@ -1,5 +1,5 @@
 copying
 adjustedBy: aDiffNode
-	^ aDiffNode children first isActive
+	^ aDiffNode isActive
 		ifTrue: [self rightDiff]
 		ifFalse: [self leftDiff]

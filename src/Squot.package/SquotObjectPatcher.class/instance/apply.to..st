@@ -4,8 +4,5 @@ apply: aDiff to: aShadow
 	patchedObjects at: aShadow undecorated ifPresent: [:it | ^ it].
 	patched := aDiff squotApplyTo: aShadow with: self.
 	patchedObjects at: aShadow undecorated put: patched.
-	(patched hasSquotShadowName and: [patched name ~= (patchedObjectGraph nameOf: aShadow undecorated)])
-		ifTrue: [patchedObjectGraph
-				assign: patched name
-				toShadow: patched undecorated].
+	self addToGraph: patched.
 	^ patched

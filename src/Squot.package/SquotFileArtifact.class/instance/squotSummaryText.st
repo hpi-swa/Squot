@@ -1,0 +1,3 @@
+tools
+squotSummaryText
+	^ self content

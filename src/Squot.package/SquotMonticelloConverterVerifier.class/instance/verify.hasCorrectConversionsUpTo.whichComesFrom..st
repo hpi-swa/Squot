@@ -12,6 +12,6 @@ verify: aHistorian hasCorrectConversionsUpTo: aMCVersion whichComesFrom: aMCRepo
 	'Verifying ' displaySequentialProgress:
 	[[pendingVersions notEmpty]
 		whileTrue: [ | nextVersion | nextVersion := pendingVersions removeFirst.
-			ProgressNotification signal: (nVerifiedVersions / nVersions) extra: nextVersion asString.
+			ProgressNotification signal: (nVerifiedVersions / nVersions) extra: (nextVersion printStringLimitedTo: 100).
 			self verify: nextVersion.
 			nVerifiedVersions := nVerifiedVersions + 1]].

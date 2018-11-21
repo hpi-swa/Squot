@@ -7,12 +7,14 @@ buildWith: builder
 		label: 'accept' translated;
 		help: 'accept the selected changes' translated;
 		action: #accept;
+		color: #acceptColor;
 		yourself.
 	cancelButton := builder pluggableButtonSpec new
 		model: self;
 		label: 'cancel' translated;
 		help: 'discard selection and abort' translated;
 		action: #cancel;
+		color: #cancelColor;
 		yourself.
 	mainWidgetsPanel := builder pluggablePanelSpec new
 		children: mainWidgets;

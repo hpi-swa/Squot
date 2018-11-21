@@ -2,9 +2,18 @@
 	"class" : {
 		 },
 	"instance" : {
+		"configFileContents" : "jr 5/27/2018 19:10",
 		"setUp" : "jr 1/14/2017 01:17",
+		"testAddRemote" : "jr 5/27/2018 19:19",
 		"testConfigRead" : "jr 12/13/2016 18:41",
-		"testConfigWrite" : "jr 4/12/2017 11:34",
+		"testConfigSubsectionWithPrefix" : "jr 5/27/2018 15:43",
+		"testConfigWrite" : "jr 5/27/2018 19:09",
+		"testFetchSpecOfTrackingBranch" : "jr 5/27/2018 19:05",
 		"testGetConfigSectionSubkeys" : "jr 4/12/2017 13:44",
 		"testGetConfigSections" : "jr 4/12/2017 11:40",
+		"testRemoteNamed" : "jr 5/27/2018 20:02",
+		"testRemoteNamedNew" : "jr 5/27/2018 21:03",
+		"testRemoteNamedWithoutUrl" : "jr 5/27/2018 21:04",
+		"testSetUpstreamGivenRemoteTrackingBranch" : "jr 5/27/2018 21:23",
+		"testSetUpstreamGivenRemoteTrackingBranchWithoutRemote" : "jr 5/27/2018 22:05",
 		"testUnset" : "jr 4/13/2017 23:22" } }

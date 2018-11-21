@@ -7,9 +7,10 @@ loadBranchList
 	list := #('-- Branches --'),
 		(self projectSelection
 			ifNil: [#()]
-			ifNotNil: [:project | | historians localHistorians |
+			ifNotNil: [:project | | historians localHistorians remoteHistorians |
 				localHistorians := project repository historians sort: [:a :b | a name <= b name].
-				historians := localHistorians, project repository remoteHistorians.
+				remoteHistorians := project repository remoteHistorians sort: [:a :b | a name <= b name].
+				historians := localHistorians, remoteHistorians.
 				(historians includes: project loadedHistorian) ifFalse:
 					[historians := historians copyWithFirst: project loadedHistorian].
 				historians collect: [:historian | historian shortName]]).

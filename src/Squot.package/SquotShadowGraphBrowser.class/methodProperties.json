@@ -1,0 +1,18 @@
+{
+	"class" : {
+		"openOn:" : "jr 5/10/2018 20:00" },
+	"instance" : {
+		"buildWith:" : "jr 5/10/2018 20:03",
+		"graph" : "jr 5/10/2018 19:35",
+		"graph:" : "jr 5/10/2018 19:35",
+		"graphChanged" : "jr 5/11/2018 00:04",
+		"initialize" : "jr 5/10/2018 19:52",
+		"inspectLiveObject" : "jr 5/10/2018 20:09",
+		"inspectName" : "jr 5/10/2018 20:06",
+		"inspectShadow" : "jr 5/10/2018 20:06",
+		"liveObjects" : "jr 5/10/2018 20:11",
+		"objectNames" : "jr 5/10/2018 20:11",
+		"selectedIndex" : "jr 5/10/2018 19:56",
+		"selectedIndex:" : "jr 5/10/2018 19:53",
+		"selectedShadow" : "jr 5/10/2018 20:10",
+		"shadowObjects" : "jr 5/10/2018 20:10" } }

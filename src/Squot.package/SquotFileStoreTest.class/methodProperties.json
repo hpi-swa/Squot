@@ -10,6 +10,7 @@
 		"testDeleteArtifact" : "jr 9/20/2017 21:11",
 		"testDeleteMethod" : "jr 9/20/2017 23:01",
 		"testLazySnapshot" : "jr 10/3/2017 00:36",
+		"testLoadOrderIsPreserved" : "jr 8/18/2018 18:17",
 		"testPatchDeleteArtifact" : "jr 7/22/2017 02:25",
 		"testPatchDeleteFolderArtifact" : "jr 7/22/2017 02:29",
 		"testPatchDeleteMethod" : "jr 7/22/2017 01:33",

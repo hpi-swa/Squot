@@ -3,7 +3,7 @@ testFullTags
 	| commit tags tag|
 	commit := basicRepository objectNamed: (basicRepository resolveRef: 'refs/heads/branch1').
 	[[ tag := GitTag
-		named: 'version 4.3alpha'
+		named: 'version4.3alpha'
 		for: commit
 		message: 'PGP encrypted string'
 		in: basicRepository ] 

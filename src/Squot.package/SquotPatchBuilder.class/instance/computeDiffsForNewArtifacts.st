@@ -1,4 +1,4 @@
-public
+private
 computeDiffsForNewArtifacts
 	(rightArtifacts keys reject: [:each | leftArtifacts includesKey: each])
 		do: [:path | | rightArtifact |

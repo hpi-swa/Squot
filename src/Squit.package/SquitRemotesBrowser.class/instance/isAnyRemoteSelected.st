@@ -1,0 +1,3 @@
+testing
+isAnyRemoteSelected
+	^ selectedRemoteName notNil

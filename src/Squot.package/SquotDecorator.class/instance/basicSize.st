@@ -1,3 +1,4 @@
 Object
 basicSize
-	^ self withArgs: #() executeMethod: (Object >> #basicSize)
+	<primitive: 62>
+	^ 0

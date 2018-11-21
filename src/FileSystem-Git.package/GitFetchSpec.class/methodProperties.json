@@ -1,0 +1,12 @@
+{
+	"class" : {
+		"fromString:forRemote:" : "jr 5/27/2018 18:24" },
+	"instance" : {
+		"mapRef:from:to:ifNotMatched:" : "jr 5/27/2018 23:05",
+		"remote" : "jr 5/27/2018 18:22",
+		"remote:" : "jr 5/27/2018 18:22",
+		"remoteBranchOf:" : "jr 5/27/2018 23:13",
+		"remoteName" : "jr 5/27/2018 19:20",
+		"remoteRefPattern" : "jr 5/27/2018 18:33",
+		"trackingRefOf:" : "jr 5/27/2018 23:07",
+		"trackingRefPattern" : "jr 5/27/2018 18:33" } }

@@ -1,0 +1,16 @@
+{
+	"category" : "Squot-Tools",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"graph",
+		"shadows",
+		"selectedIndex" ],
+	"name" : "SquotShadowGraphBrowser",
+	"pools" : [
+		 ],
+	"super" : "Model",
+	"type" : "normal" }

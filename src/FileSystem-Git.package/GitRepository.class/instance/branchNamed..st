@@ -1,3 +1,4 @@
 public-accessing-objects
 branchNamed: aString
-	^ self objectNamed: (self resolveRef: (self headsDir / aString) fullName)
+	self validateReferenceOrReferenceName: aString.
+	^ self objectNamed: (self resolveRef: 'refs/heads/', aString)

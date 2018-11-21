@@ -2,7 +2,7 @@
 	"class" : {
 		"builder" : "jr 1/27/2017 15:21",
 		"empty" : "jr 2/15/2017 17:31",
-		"with:" : "jr 1/27/2017 15:22" },
+		"with:" : "jr 9/23/2018 18:34" },
 	"instance" : {
 		"applyPatch:" : "jr 5/31/2017 13:19",
 		"artifactAt:" : "jr 1/29/2017 21:35",
@@ -10,12 +10,17 @@
 		"artifacts" : "jr 2/14/2017 17:06",
 		"artifacts:" : "jr 1/31/2017 12:19",
 		"artifactsDo:" : "jr 1/27/2017 15:16",
-		"createNewBuilder" : "jr 1/31/2017 12:12",
+		"artifactsInLoadOrder" : "jr 8/18/2018 18:13",
+		"artifactsInLoadOrderDo:" : "jr 8/18/2018 17:35",
+		"createNewBuilder" : "jr 9/23/2018 22:24",
 		"includesObjectAt:" : "jr 5/31/2017 18:02",
-		"initialize" : "jr 1/27/2017 15:18",
-		"initializeWith:" : "jr 1/27/2017 15:20",
-		"patchRelativeToBase:" : "jr 6/27/2017 18:38",
+		"initialize" : "jr 8/18/2018 15:32",
+		"initializeWith:" : "jr 8/18/2018 18:35",
+		"loadOrder" : "jr 8/18/2018 16:52",
+		"loadOrder:" : "jr 8/18/2018 15:40",
+		"patchRelativeToBase:" : "jr 9/17/2018 22:52",
+		"paths" : "jr 9/23/2018 17:51",
 		"resolve:" : "jr 1/27/2017 15:11",
 		"resolvePath:" : "jr 7/15/2017 13:39",
 		"resolveString:" : "jr 1/27/2017 15:11",
-		"select:" : "jr 10/2/2017 23:43" } }
+		"select:" : "jr 9/23/2018 22:26" } }

@@ -1,3 +1,4 @@
 converting
 squotChangeAsStringOrText
-	^ 'change ', left path, ': ', diffContent squotChangeAsStringOrText
+	^ (Text fromString: 'change ', left path, ': ', String cr)
+		append: diffContent squotChangeAsStringOrText

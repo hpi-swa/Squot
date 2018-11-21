@@ -1,8 +1,8 @@
 ui
 accept
+	self updateMessageFromViews.
+	(self messageWasChanged not
+			and: [(self confirm: 'Do you really want to commit without a proper commit message?') not])
+		ifTrue: [^ self].
 	canceled := false.
-	self dependents
-		select: [:each | (each respondsTo: #getTextSelector)
-				and: [each getTextSelector == #message]]
-		thenDo: [:each | each accept].
 	self topView ifNotNil: #delete.

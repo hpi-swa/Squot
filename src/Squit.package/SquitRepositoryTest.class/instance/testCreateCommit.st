@@ -21,7 +21,7 @@ testCreateCommit
 	self assert: newVersion parents asArray = {oldMasterVersion}.
 	self assert: 'This is a test commit' equals: newVersion message.
 	"assertions about the git contents"
-	gitMaster := (gitRepository branchNamed: 'master').
+	gitMaster := (fsGitRepository branchNamed: 'master').
 	commit := gitMaster revision.
 	self assert: 'This is a test commit' equals: commit message.
 	self assert: 'hollaboo' equals: ((gitMaster / 'README.md') readStreamDo: [:s | s contents asString]).

@@ -1,0 +1,14 @@
+{
+	"category" : "Squot-Tests-Tools",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"topNodes" ],
+	"name" : "SquotArtifactContentDiffMock",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }

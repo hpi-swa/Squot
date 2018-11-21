@@ -1,0 +1,4 @@
+toolbuilder
+buttonWidth
+
+	^ 40

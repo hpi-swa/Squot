@@ -8,7 +8,7 @@ actionBranchRename
 	newName := UIManager default request: 'New branch name' initialAnswer: oldName.
 	(newName = oldName or: [newName isEmpty])
 		ifTrue: [^ self].
-	newHistorian := oldHistorian repository historianNamed: newName.
+	newHistorian := self newHistorianFor: oldHistorian repository named: newName onError: [^ self].
 	newHistorian version notNil ifTrue:
 		[UIManager default inform: 'Branch ', newName, ' already exists!'.
 		^ self].

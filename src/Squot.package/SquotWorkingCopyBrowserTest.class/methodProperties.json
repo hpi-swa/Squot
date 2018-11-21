@@ -1,0 +1,10 @@
+{
+	"class" : {
+		 },
+	"instance" : {
+		"setUp" : "jr 10/3/2018 15:28",
+		"testCannotMoveDownLastObjectInLoadOrder" : "jr 10/3/2018 15:38",
+		"testCannotMoveUpFirstObjectInLoadOrder" : "jr 10/3/2018 15:37",
+		"testDisplaying" : "jr 10/3/2018 15:32",
+		"testMoveDownInLoadOrder" : "jr 10/3/2018 15:38",
+		"testMoveUpInLoadOrder" : "jr 10/3/2018 15:36" } }

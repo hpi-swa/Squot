@@ -1,0 +1,4 @@
+accessing
+rightRefPattern
+
+	^ rightRefPattern

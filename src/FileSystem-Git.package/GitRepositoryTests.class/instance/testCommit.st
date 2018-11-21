@@ -20,7 +20,7 @@ testCommit
 		tagger: self defaultStamp
 		in: repository.
 	GitLightweightTag 
-		named: 'light tag' 
+		named: 'light-tag' 
 		for: commit 
 		in: repository.
 	repository updateRef: 'HEAD' to: commit hexHash

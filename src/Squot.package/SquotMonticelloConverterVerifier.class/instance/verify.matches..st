@@ -8,7 +8,7 @@ verify: aVersion matches: aMCVersion
 		select: [:each | (each isKindOf: MCTraitDefinition) and: [each comment isEmpty]])
 		collect: [:each | each className] as: Set.
 	artifactSnapshot := MCSnapshot
-		fromDefinitions: (packageArtifact content definitions
+		fromDefinitions: (packageArtifact packageArtifactDefinitions
 			collect: [:each |
 				((each isKindOf: MCTraitDefinition) and: [mcTraits includes: each className])
 					ifTrue: [each copy instVarNamed: 'comment' put: ''; yourself]

@@ -1,6 +1,9 @@
 printing
 printOn: aStream
-	super printOn: aStream.
-	aStream nextPut: $(;
-		print: self message;
-		nextPut: $).
+	aStream
+		nextPutAll: 'commit ';
+		nextPutAll: self shortId;
+		space;
+		nextPut: $";
+		nextPutAll: self message;
+		nextPut: $".

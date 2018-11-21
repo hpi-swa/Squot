@@ -1,3 +1,7 @@
 copying
 select: aBlock
-	^ self species with: (artifacts select: aBlock)
+	| snapshotBuilder |
+	snapshotBuilder := self species builder.
+	self artifactsInLoadOrderDo: [:each |
+		(aBlock value: each) ifTrue: [snapshotBuilder add: each]].
+	^ snapshotBuilder buildSnapshot

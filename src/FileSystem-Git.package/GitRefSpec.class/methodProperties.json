@@ -1,0 +1,16 @@
+{
+	"class" : {
+		"fromString:" : "jr 5/27/2018 18:05" },
+	"instance" : {
+		"=" : "jr 5/27/2018 20:07",
+		"allowDestructiveUpdates" : "jr 5/27/2018 18:04",
+		"areDestructiveUpdatesAllowed" : "jr 5/27/2018 18:04",
+		"denyDestructiveUpdates" : "jr 5/27/2018 18:05",
+		"hash" : "jr 5/27/2018 20:43",
+		"initialize" : "jr 5/27/2018 17:56",
+		"leftRefPattern" : "jr 5/27/2018 18:04",
+		"leftRefPattern:" : "jr 5/27/2018 18:04",
+		"parseString:" : "jr 5/27/2018 18:02",
+		"printOn:" : "jr 5/27/2018 19:17",
+		"rightRefPattern" : "jr 5/27/2018 18:04",
+		"rightRefPattern:" : "jr 5/27/2018 18:04" } }

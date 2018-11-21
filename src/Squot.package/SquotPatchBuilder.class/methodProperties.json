@@ -2,8 +2,21 @@
 	"class" : {
 		 },
 	"instance" : {
+		"addArtifact:" : "jr 10/3/2018 14:53",
+		"addDiff:" : "jr 10/3/2018 14:57",
+		"buildPatch" : "jr 9/23/2018 17:44",
 		"computeDiffsForNewArtifacts" : "jr 7/16/2017 02:50",
-		"computeDiffsFromLeftToRight" : "jr 7/16/2017 02:49",
-		"displayProgress:during:" : "jr 5/31/2017 16:11",
-		"initialize" : "jr 5/28/2017 18:11",
-		"patchFrom:to:" : "jr 6/27/2017 18:39" } }
+		"computeDiffsFromLeftToRight" : "jr 9/17/2018 22:15",
+		"computeLoadOrderDiff" : "jr 10/3/2018 14:55",
+		"computeLoadOrderDiffFrom:to:" : "jr 10/3/2018 14:55",
+		"diff:against:" : "jr 9/23/2018 17:29",
+		"diffPath:from:to:" : "jr 9/23/2018 18:12",
+		"displayProgress:during:" : "jr 4/29/2018 20:44",
+		"initialize" : "jr 10/3/2018 14:54",
+		"newLoadOrder:" : "jr 10/3/2018 14:53",
+		"originalLoadOrder:" : "jr 10/3/2018 14:53",
+		"patchFrom:to:" : "jr 9/17/2018 22:23",
+		"removeArtifact:" : "jr 9/17/2018 22:13",
+		"startingFrom:" : "jr 10/3/2018 14:53",
+		"updateArtifactTo:" : "jr 9/23/2018 18:12",
+		"useLoadOrderChangesFrom:" : "jr 10/3/2018 15:10" } }

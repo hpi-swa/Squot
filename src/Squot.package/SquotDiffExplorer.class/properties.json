@@ -7,8 +7,8 @@
 	"commentStamp" : "jr 7/1/2017 23:04",
 	"instvars" : [
 		"rootNodes",
-		"artifactDiffs",
-		"selectedNode" ],
+		"selectedNode",
+		"patch" ],
 	"name" : "SquotDiffExplorer",
 	"pools" : [
 		 ],

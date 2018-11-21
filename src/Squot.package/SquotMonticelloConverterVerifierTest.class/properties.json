@@ -9,7 +9,8 @@
 	"instvars" : [
 		"converter",
 		"repository",
-		"verifier" ],
+		"verifier",
+		"classFactory" ],
 	"name" : "SquotMonticelloConverterVerifierTest",
 	"pools" : [
 		 ],

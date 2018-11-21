@@ -5,6 +5,6 @@ browseFromSquot: aSquotLiveObject
 		at: #environment
 		ifAbsent: [Environment current].
 	environment beCurrentDuring:
-	[^ ClassListBrowser new
-		initForClassesNamed: (self classes collect: [:each | each name])
-		title: 'Classes in package ', self packageName]
+	[^ ClassListBrowser
+		newOnClassesNamed: (self classes collect: [:each | each name])
+		label: 'Classes in package ', self packageName]

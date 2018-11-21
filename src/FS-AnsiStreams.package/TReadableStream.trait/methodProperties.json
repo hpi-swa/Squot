@@ -4,9 +4,11 @@
 	"instance" : {
 		"collectionSpecies" : "jr 3/7/2017 16:49",
 		"do:" : "jr 6/7/2017 12:49",
+		"next:into:startingAt:" : "jr 10/13/2018 23:09",
 		"nextLine" : "jr 6/7/2017 12:55",
 		"nextMatchFor:" : "jr 6/7/2017 12:57",
 		"peekFor:" : "jr 6/7/2017 13:05",
+		"readInto:startingAt:count:" : "jr 10/13/2018 23:08",
 		"skip:" : "jr 6/7/2017 13:09",
 		"skipTo:" : "jr 6/7/2017 12:58",
 		"upTo:" : "jr 6/7/2017 13:14",

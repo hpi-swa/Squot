@@ -6,3 +6,4 @@ removeAt: path
 	(paths at: object) remove: path.
 	(paths at: object) ifEmpty: [paths removeKey: object].
 	additionalInfo removeKey: path ifAbsent: [].
+	loadOrder remove: path ifAbsent: [].

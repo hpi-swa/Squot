@@ -1,0 +1,21 @@
+{
+	"class" : {
+		"newOn:" : "jr 8/14/2018 10:29" },
+	"instance" : {
+		"artifactsList" : "jr 10/3/2018 01:27",
+		"buildWith:" : "jr 10/26/2018 23:32",
+		"dragFromObjectList:" : "jr 8/14/2018 10:53",
+		"dropOnObjectList:at:" : "jr 10/17/2018 10:40",
+		"editLoadOrder:" : "jr 10/3/2018 01:31",
+		"isFirstArtifactSelected" : "jr 10/3/2018 01:26",
+		"isLastArtifactSelected" : "jr 10/3/2018 01:26",
+		"labelString" : "jr 8/14/2018 10:32",
+		"moveDownInLoadOrder" : "jr 10/3/2018 01:33",
+		"moveUpInLoadOrder" : "jr 10/3/2018 01:33",
+		"objectLabels" : "jr 8/14/2018 10:53",
+		"selectedObject" : "jr 8/14/2018 10:54",
+		"selectedObjectIndex" : "jr 8/14/2018 10:30",
+		"selectedObjectIndex:" : "jr 8/14/2018 10:24",
+		"wantsDropOnObjectList:dragTransferType:source:" : "jr 8/14/2018 11:20",
+		"workingCopy" : "jr 8/14/2018 10:24",
+		"workingCopy:" : "jr 8/14/2018 10:24" } }

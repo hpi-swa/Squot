@@ -15,13 +15,15 @@ buildButtonBar: builder
 	cancelButton
 		model: self;
 		label: 'Cancel';
-		action: #actionCancel.
+		action: #actionCancel;
+		color: self cancelColor.
 		
 	commitButton := builder pluggableButtonSpec new.
 	commitButton
 		model: self;
 		label: 'Commit';
-		action: #actionCommit.
+		action: #actionCommit;
+		color: self acceptColor.
 	
-	buttonBar children addAll: {cancelButton. commitButton}.
+	buttonBar children addAll: {commitButton. cancelButton}.
 	^ buttonBar

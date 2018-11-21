@@ -1,0 +1,3 @@
+accessing
+remoteRefPattern
+	^ self leftRefPattern

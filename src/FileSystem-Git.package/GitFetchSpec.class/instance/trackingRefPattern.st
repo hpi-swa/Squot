@@ -1,0 +1,3 @@
+accessing
+trackingRefPattern
+	^ self rightRefPattern

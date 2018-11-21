@@ -5,7 +5,7 @@
 	"classtraitcomposition" : "TSquotMutableObjectContainer classTrait",
 	"classvars" : [
 		 ],
-	"commentStamp" : "jr 1/26/2017 14:45",
+	"commentStamp" : "jr 6/22/2018 22:42",
 	"instvars" : [
 		"name",
 		"store",
@@ -17,7 +17,9 @@
 		"shouldStoreMetadata",
 		"additionalParents",
 		"lastLoadedHistorian",
-		"snapshotBlock" ],
+		"snapshotBlock",
+		"loadedVersion",
+		"newVersionMessage" ],
 	"name" : "SquotWorkingCopy",
 	"pools" : [
 		 ],

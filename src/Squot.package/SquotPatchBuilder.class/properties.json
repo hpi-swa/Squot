@@ -8,7 +8,10 @@
 	"instvars" : [
 		"diffs",
 		"leftArtifacts",
-		"rightArtifacts" ],
+		"rightArtifacts",
+		"originalLoadOrder",
+		"patchedLoadOrder",
+		"loadOrderDiff" ],
 	"name" : "SquotPatchBuilder",
 	"pools" : [
 		 ],

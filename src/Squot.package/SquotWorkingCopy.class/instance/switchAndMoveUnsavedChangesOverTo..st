@@ -1,6 +1,6 @@
 switching historians
 switchAndMoveUnsavedChangesOverTo: aHistorian
-	| fromHistorian stashHistorian previousStashedVersion unsaved temporarySnapshot patch |
+	| fromHistorian temporarySnapshot patch |
 	fromHistorian := self loadedHistorian.
 	(fromHistorian version = aHistorian version
 	and: [(self repository hasTemporaryVersionsOn: aHistorian) not]) ifTrue:
@@ -8,14 +8,7 @@ switchAndMoveUnsavedChangesOverTo: aHistorian
 		self loadedHistorian: aHistorian.
 		^ self].
 	self withCurrentSnapshot:
-		[stashHistorian := self repository historianForTemporaryVersionsOn: fromHistorian.
-		previousStashedVersion := self saveUnsavedChangesOn: stashHistorian.
-		UIManager default informUser: 'Computing unsaved changes' during:
-		[unsaved := self patchRelativeToBase: self baseSnapshot.
-		temporarySnapshot := SquotSnapshot builder
-			addAll: self baseSnapshot artifacts;
-			in: [:builder | unsaved applyTo: builder];
-			buildSnapshot].
+		[temporarySnapshot := self temporarilySaveChangesOn: fromHistorian.
 		self loadedHistorian: aHistorian.
 		self privateLoadVersion: aHistorian version].
 	self withCurrentSnapshot: [self mergeTemporaryVersionsOn: aHistorian].

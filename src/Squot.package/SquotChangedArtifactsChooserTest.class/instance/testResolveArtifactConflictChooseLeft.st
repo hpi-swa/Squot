@@ -1,18 +1,19 @@
-as yet unclassified
+testing
 testResolveArtifactConflictChooseLeft
-	| path artifact diffs patch |
+	| left right path artifact patch conflictNode |
 	path := 'conflicted-artifact'.
-	artifact := SquotArtifact new path: path; content: SquotArtifactContentMock new.
-	diffs := Dictionary new
-		add: path -> (SquotArtifactConflict
-			leftDiff: (SquotArtifactRemoval of: artifact)
-			rightDiff: (SquotArtifactDiff
-				left: artifact
-				right: (artifact copy content: SquotArtifactContentMock new)));
-		yourself.
-	patch := SquotPatch with: diffs.
-	selectionTool := SquotChangedArtifactsChooser on: patch.
-	self assert: selectionTool rootNodes size = 1.
-	self assert: selectionTool rootNodes anyOne anyChildNeedsChoice.
-	self resolveArtifactConflict: [:conflictNode | selectionTool deactivateSelectedNode].
-	self assert: (selectionTool selectedPatch diffAt: path) isRemoval.
+	artifact := SquotArtifact new path: path; content: (left := SquotArtifactContentMock new).
+	left diffBlock: [:otherMock | SquotArtifactContentDiffMock new].
+	patch := SquotPatch builder
+		addDiff: (SquotArtifactConflict
+					leftDiff: (SquotArtifactRemoval of: artifact)
+					rightDiff: (SquotArtifactDiffWithContent
+						left: artifact
+						right: (artifact copy content: (right := SquotArtifactContentMock new))));
+		buildPatch.
+	self openToolAndTestOnPatch: patch.
+	self assert: tool rootNodes size = 1.
+	(conflictNode := tool rootNodes anyOne) resetChoice.
+	self assert: conflictNode anyChildNeedsChoice.
+	self resolveArtifactConflict: [:aNode | tool deactivateSelectedNode].
+	self assert: (tool selectedPatch diffAt: path) isRemoval.

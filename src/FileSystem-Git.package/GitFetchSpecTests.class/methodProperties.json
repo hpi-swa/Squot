@@ -1,0 +1,15 @@
+{
+	"class" : {
+		 },
+	"instance" : {
+		"assert:equalsAndHasSameHashAs:" : "jr 5/27/2018 20:45",
+		"shouldNotFindRef:" : "jr 5/27/2018 23:13",
+		"testEqualityAndHash" : "jr 5/27/2018 20:45",
+		"testFindRemoteBranch" : "jr 5/27/2018 18:35",
+		"testFindRemoteBranchWithAddedSuffix" : "jr 5/27/2018 23:10",
+		"testFindRemoteBranchWithRemovedSuffix" : "jr 5/27/2018 22:10",
+		"testFindRemoteBranchWithSuffix" : "jr 5/27/2018 21:51",
+		"testFindRemoteBranchWithWrongTrackingBranch" : "jr 5/27/2018 23:11",
+		"testFindRemoteBranchWithWrongTrackingBranchSuffix" : "jr 5/27/2018 23:11",
+		"testFindRemoteBranchWithoutWildcard" : "jr 5/27/2018 21:53",
+		"testFindRemoteBranchWithoutWildcardWithWrongTrackingBranch" : "jr 5/27/2018 23:11" } }

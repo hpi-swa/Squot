@@ -1,3 +1,6 @@
 snapshot
 buildSnapshot
-	^ SquotSnapshot new artifacts: artifacts; yourself
+	^ SquotSnapshot new
+		artifacts: artifacts;
+		loadOrder: loadOrder asArray;
+		yourself

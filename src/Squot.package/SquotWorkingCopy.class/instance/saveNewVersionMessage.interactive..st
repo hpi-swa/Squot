@@ -3,12 +3,11 @@ saveNewVersionMessage: aString interactive: shouldBeInteractiveBoolean
 	"Create a new version and update my historian.
 	If interactive, let the user review and edit the set of changes to be included
 	in the new snapshot."
-	| newVersion patch capturedArtifacts |
-	shouldBeInteractiveBoolean ifTrue: [^ self saveNewVersionInteractivelyIfCanceled: []].
-	patch := self currentSnapshot patchRelativeToBase: self baseSnapshot.
-	[self handlePathChangesDuring: [newVersion := loadedHistorian createNewVersionFromPatch: patch
-		with: [:version | version message: aString]]]
-	on: SquotArtifactsWereCaptured doAndResume: [:captured |
-		capturedArtifacts := captured artifacts].
-	self loadedVersion: newVersion.
-	self cacheSavedArtifacts: (capturedArtifacts ifNil: [Dictionary new]).
+	| newVersion patch |
+	patch := self patchRelativeToBase: self baseSnapshot.
+	shouldBeInteractiveBoolean ifTrue:
+		[^ self saveNewVersionFromPatch: patch ifCanceled: []].
+	newVersion := self
+		saveNewVersionFromPatch: patch
+		message: aString.
+	^ newVersion

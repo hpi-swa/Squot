@@ -1,4 +1,4 @@
-as yet unclassified
+testing
 testGetConfigSections
 	(repository baseDir / 'config') ensureDeleted.
 	(repository baseDir / 'config') writeStreamDo: [:stream | stream nextPutAll: 

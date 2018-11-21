@@ -9,7 +9,8 @@
 		"workingCopy",
 		"classFactory",
 		"repository",
-		"store" ],
+		"store",
+		"testCase" ],
 	"name" : "SquotWorkingCopyTestScenario",
 	"pools" : [
 		 ],

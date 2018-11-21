@@ -1,0 +1,14 @@
+{
+	"category" : "FileSystem-Git-Plumbing-Exceptions",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"validationReport" ],
+	"name" : "GitInvalidReferenceName",
+	"pools" : [
+		 ],
+	"super" : "GitError",
+	"type" : "normal" }

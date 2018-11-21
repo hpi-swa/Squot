@@ -3,9 +3,11 @@
 		"resources" : "jr 11/21/2018 20:51" },
 	"instance" : {
 		"createReadmeCommit" : "jr 11/21/2018 20:55",
-		"createRemoteTrackingBranchForMaster" : "jr 11/21/2018 20:50",
+		"createRemoteTrackingBranchForMaster" : "jr 11/21/2018 21:48",
 		"createRemoteTrackingBranchForMasterWithFetchSpec:" : "jr 11/21/2018 20:50",
+		"master" : "jr 11/21/2018 21:46",
 		"repositoryForTests" : "jr 11/21/2018 20:49",
 		"repositoryPathForTests" : "jr 11/21/2018 20:49",
 		"setUp" : "jr 11/21/2018 20:56",
-		"tearDown" : "jr 11/21/2018 20:49" } }
+		"tearDown" : "jr 11/21/2018 20:49",
+		"trackingBranchForRemote:branch:hash:" : "jr 11/21/2018 21:42" } }

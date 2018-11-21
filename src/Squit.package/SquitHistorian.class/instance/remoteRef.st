@@ -5,4 +5,6 @@ remoteRef
 	| expandedRef |
 	expandedRef := self expandedName.
 	^ (gitRepository fetchSpecOfTrackingBranch: expandedRef) ifNotNil: [:fetchSpec |
-			fetchSpec remoteBranchOf: expandedRef]
+			GitReference
+				name: (fetchSpec remoteBranchOf: expandedRef)
+				target: (self version ifNil: [GitReference zeroSignature] ifNotNil: [:v | v hexHash])]

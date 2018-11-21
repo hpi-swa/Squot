@@ -3,4 +3,5 @@
 		 },
 	"instance" : {
 		"testHistorianSetUpstreamBranch" : "jr 11/21/2018 20:54",
-		"testHistorianSetUpstreamBranchWithBogusRemoteTrackingBranch" : "jr 11/21/2018 20:54" } }
+		"testHistorianSetUpstreamBranchWithBogusRemoteTrackingBranch" : "jr 11/21/2018 20:54",
+		"testMergeMessage" : "jr 11/21/2018 21:46" } }

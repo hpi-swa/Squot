@@ -1,4 +1,4 @@
-tests
+test data
 createRemoteTrackingBranchForMasterWithFetchSpec: aString
 	| remoteTrackingHistorian |
 	remoteTrackingHistorian := self createRemoteTrackingBranchForMaster.

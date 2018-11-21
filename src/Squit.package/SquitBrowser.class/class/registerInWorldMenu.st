@@ -1,4 +1,4 @@
-as yet unclassified
+world menu
 registerInWorldMenu
 	(self environment valueOf: #TheWorldMenu) ifNotNil: [:worldMenu |
 		worldMenu registerOpenCommand: (Array 

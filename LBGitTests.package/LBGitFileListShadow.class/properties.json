@@ -6,11 +6,8 @@
 		 ],
 	"commentStamp" : "",
 	"instvars" : [
-		"ownerSnapshot",
-		"rootDirectory",
-		"trackedFiles",
-		"content" ],
-	"name" : "LBGitRecordedFilesArtifact",
+		"paths" ],
+	"name" : "LBGitFileListShadow",
 	"pools" : [
 		 ],
 	"super" : "Object",

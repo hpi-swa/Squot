@@ -7,4 +7,5 @@ collectFilesOf: aGitTreeEntrySet
 		each isInDirectoryMode 
 			ifTrue: [(self collectFilesOf: (each object entries)) do: [:eachSub | result add: each entryName,'/', eachSub]]
 			ifFalse: [result add: each entryName] ].
+	result := result reject: [:each | self isSquotFile: each].
 	^ result

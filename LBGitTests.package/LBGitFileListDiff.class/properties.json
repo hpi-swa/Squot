@@ -2,16 +2,19 @@
 	"category" : "LBGitTests",
 	"classinstvars" : [
 		 ],
+	"classtraitcomposition" : "TSquotDiff classTrait",
 	"classvars" : [
 		 ],
 	"commentStamp" : "",
 	"instvars" : [
-		"ownerSnapshot",
-		"rootDirectory",
-		"trackedFiles",
-		"content" ],
-	"name" : "LBGitRecordedFilesArtifact",
+		"left",
+		"right",
+		"added",
+		"removed",
+		"stayed" ],
+	"name" : "LBGitFileListDiff",
 	"pools" : [
 		 ],
 	"super" : "Object",
+	"traitcomposition" : "TSquotDiff",
 	"type" : "normal" }

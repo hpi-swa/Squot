@@ -1,0 +1,14 @@
+{
+	"category" : "LBGitTests",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "LBGitArtifactReplacementDiff",
+	"pools" : [
+		 ],
+	"super" : "SquotArtifactDiff",
+	"type" : "normal" }

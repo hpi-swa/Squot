@@ -1,4 +1,6 @@
 as yet unclassified
 exclude
-	super exclude.
+	choice == #left ifTrue: [^ self].
+	isActive := false.
+	excludeBlock value.
 	choice := #left.

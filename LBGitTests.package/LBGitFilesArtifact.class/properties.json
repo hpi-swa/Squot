@@ -1,0 +1,16 @@
+{
+	"category" : "LBGitTests",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"ownerSnapshot",
+		"rootDirectory",
+		"trackedFiles" ],
+	"name" : "LBGitFilesArtifact",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }

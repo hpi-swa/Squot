@@ -13,7 +13,8 @@
 		"removed",
 		"stayed",
 		"modified",
-		"diffs" ],
+		"diffs",
+		"target" ],
 	"name" : "LBGitFileListDiff",
 	"pools" : [
 		 ],

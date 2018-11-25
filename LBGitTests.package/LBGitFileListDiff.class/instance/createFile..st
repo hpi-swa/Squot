@@ -1,8 +1,9 @@
-as yet unclassified
+applying
 createFile: aPath
 
-	| gitReference workingReference |
-	gitReference := self gitReferenceOn: aPath.
-	workingReference := self workingReferenceOn: aPath.
+	| sourceReference targetReference |
+	sourceReference := self sourceReferenceOn: aPath.
+	sourceReference exists ifFalse: [^ self].
+	targetReference := self targetReferenceOn: aPath.
 	self flag: #TODO. "Do ensure the file does NOT exist workingReference ensureFile."
-	gitReference copyTo: workingReference.
+	sourceReference copyTo: targetReference.

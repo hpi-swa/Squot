@@ -1,4 +1,4 @@
-accessing
+applying
 updateFile: aPath
 
 	self 

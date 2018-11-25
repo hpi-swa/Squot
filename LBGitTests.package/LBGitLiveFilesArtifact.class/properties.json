@@ -1,0 +1,14 @@
+{
+	"category" : "LBGitTests",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "LBGitLiveFilesArtifact",
+	"pools" : [
+		 ],
+	"super" : "LBGitFilesArtifact",
+	"type" : "normal" }

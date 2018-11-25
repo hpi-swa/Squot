@@ -6,12 +6,9 @@
 		 ],
 	"commentStamp" : "",
 	"instvars" : [
-		"ownerSnapshot",
-		"rootDirectory",
-		"trackedFiles",
-		"content" ],
+		 ],
 	"name" : "LBGitRecordedFilesArtifact",
 	"pools" : [
 		 ],
-	"super" : "Object",
+	"super" : "LBGitFilesArtifact",
 	"type" : "normal" }

@@ -1,7 +1,7 @@
-as yet unclassified
+applying
 deleteFile: aPath
 
-	| workingReference |
-	workingReference := self workingReferenceOn: aPath.
-	workingReference exists
-		ifTrue: [workingReference delete]
+	| targetReference |
+	targetReference := self targetReferenceOn: aPath.
+	targetReference exists
+		ifTrue: [targetReference delete]

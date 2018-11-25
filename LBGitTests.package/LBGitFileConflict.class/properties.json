@@ -1,0 +1,15 @@
+{
+	"category" : "LBGitTests",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"leftChange",
+		"rightChange" ],
+	"name" : "LBGitFileConflict",
+	"pools" : [
+		 ],
+	"super" : "LBGitFileDiff",
+	"type" : "normal" }

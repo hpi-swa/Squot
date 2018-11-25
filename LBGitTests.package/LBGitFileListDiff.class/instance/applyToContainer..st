@@ -1,6 +1,6 @@
-as yet unclassified
+applying
 applyToContainer: anObjectContainer
 
-	self added do: [:each | self createFile: each].
-	self modified do: [:each | self updateFile: each].
-	self removed do: [:each | self deleteFile: each].
+	(anObjectContainer class canUnderstand: #directory)
+		ifTrue: [self target: anObjectContainer directory].
+	self diffs do: [:each | each applyWith: self].

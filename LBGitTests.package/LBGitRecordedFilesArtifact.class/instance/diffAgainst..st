@@ -1,4 +1,4 @@
-as yet unclassified
-diffAgainst: otherRecordedFilesArtifact
+diffing
+diffAgainst: otherFilesArtifact
 
-	^ LBGitFileListDiff left: self right: otherRecordedFilesArtifact
+	^ otherFilesArtifact reverseDiffAgainstRecordedFiles: self

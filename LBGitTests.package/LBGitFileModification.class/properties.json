@@ -1,0 +1,14 @@
+{
+	"category" : "LBGitTests",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "LBGitFileModification",
+	"pools" : [
+		 ],
+	"super" : "LBGitFileDiff",
+	"type" : "normal" }

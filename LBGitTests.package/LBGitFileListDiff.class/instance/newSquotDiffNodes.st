@@ -5,4 +5,5 @@ newSquotDiffNodes
 	"Allocating the nodes and initializing them is separated to facilitate cycle breaking
 	when graphs of changed objects are converted to diff nodes. If all related diffs form
 	a tree structure, you may also fully initialize the nodes here already."
-	^ (1 to: (self added size + self removed size + self changedFiles)) collect: [:each | SquotDiffNode new] as: Array
+	self deprecated.
+	^ (1 to: (self added size + self removed size + self modified size)) collect: [:each | SquotDiffNode new] as: Array

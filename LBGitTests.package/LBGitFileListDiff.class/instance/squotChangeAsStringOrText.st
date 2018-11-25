@@ -1,7 +1,5 @@
 as yet unclassified
 squotChangeAsStringOrText
 
-	| result |
-	result := self added inject: '' into: [:total :each | total, 'added: ', each, Character cr].
-	result := result, (self removed inject: '' into: [:total :each | total, 'deleted: ', each, Character cr]).
-	^ result
+	^ self diffs inject: 'Tracked file changes
+	' into: [:total :each | total, Character tab, each title, Character cr]

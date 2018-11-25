@@ -8,6 +8,7 @@ initializeSquotDiffNodes: aCollection with: aSquotDiffNodesBuilder
 	you may implement this method to do nothing."
 	| index |
 	index := 1.
+	self deprecated.
 	self added do: [:each | (aCollection at: index)
 		title: 'added: ', each
 		content: self
@@ -15,6 +16,11 @@ initializeSquotDiffNodes: aCollection with: aSquotDiffNodesBuilder
 		index := index + 1.].
 	self removed do: [:each | (aCollection at: index)
 		title: 'deleted: ', each
+		content: self
+		children: Array empty.
+		index := index + 1.].
+	self modified do: [:each | (aCollection at: index)
+		title: 'modified:  ', each
 		content: self
 		children: Array empty.
 		index := index + 1.].

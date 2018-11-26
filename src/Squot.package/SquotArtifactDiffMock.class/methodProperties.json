@@ -2,12 +2,17 @@
 	"class" : {
 		"path:" : "jr 9/23/2018 21:46" },
 	"instance" : {
-		"adjustedBy:" : "jr 11/5/2018 21:00",
+		"=" : "jr 11/26/2018 21:09",
 		"asDiffTree" : "jr 11/18/2018 02:17",
 		"beAddition" : "jr 9/23/2018 21:50",
 		"beRemoval" : "jr 9/23/2018 21:50",
+		"copiedFrom" : "jr 11/26/2018 21:07",
+		"copiedFrom:" : "jr 11/26/2018 21:05",
+		"copy" : "jr 11/26/2018 21:04",
 		"hasChanges" : "jr 9/23/2018 21:47",
 		"hasChanges:" : "jr 9/23/2018 21:48",
+		"hasConflicts" : "jr 11/26/2018 22:48",
+		"hash" : "jr 11/26/2018 21:07",
 		"isAddition" : "jr 9/23/2018 21:48",
 		"isRemoval" : "jr 9/23/2018 21:50",
 		"path" : "jr 9/23/2018 21:47",

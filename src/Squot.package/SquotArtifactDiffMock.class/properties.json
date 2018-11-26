@@ -10,7 +10,9 @@
 		"hasChanges",
 		"isAddition",
 		"isRemoval",
-		"topNodes" ],
+		"topNodes",
+		"copiedFrom",
+		"hasConflicts" ],
 	"name" : "SquotArtifactDiffMock",
 	"pools" : [
 		 ],

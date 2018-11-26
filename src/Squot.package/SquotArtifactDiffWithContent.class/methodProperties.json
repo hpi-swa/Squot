@@ -2,7 +2,6 @@
 	"class" : {
 		 },
 	"instance" : {
-		"adjustedBy:" : "jr 4/23/2018 23:37",
 		"applyTo:" : "jr 5/29/2017 20:27",
 		"applyTo:with:" : "jr 10/2/2017 23:33",
 		"applyToLoaded:" : "jr 5/4/2017 13:28",
@@ -15,7 +14,6 @@
 		"hasChanges" : "jr 5/1/2017 21:41",
 		"needsChoice" : "jr 5/29/2017 00:33",
 		"postCopy" : "jr 11/18/2018 01:58",
-		"privateAdjustedBy:" : "jr 11/18/2018 02:54",
 		"privateAsConflicts" : "jr 11/18/2018 02:26",
 		"squotChangeAsStringOrText" : "jr 11/18/2018 00:04",
 		"squotConflictText" : "jr 11/5/2018 22:02",

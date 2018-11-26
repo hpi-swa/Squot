@@ -1,3 +1,4 @@
 OrderedDictionary {
+	'BaselineOfLBGit.package' : #SquotCypressCodeSerializer,
 	'LBGit.package' : #SquotCypressCodeSerializer
 }

@@ -1,6 +1,4 @@
 as yet unclassified
 displayText
 
-	^ 'Recorded files: <to be implemented>
-	example.pdf
-	beispiel.png'
+	^'Recorded files: (', (self trackedFiles keys inject: '' into: [:sum :each | sum, each, ', ']) ,')'

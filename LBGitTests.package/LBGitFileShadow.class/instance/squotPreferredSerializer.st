@@ -1,4 +1,0 @@
-Squot-shadow
-squotPreferredSerializer
-	
-	^ LBGitSerializer

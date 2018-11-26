@@ -1,4 +1,0 @@
-accessing
-paths
-
-	^ paths

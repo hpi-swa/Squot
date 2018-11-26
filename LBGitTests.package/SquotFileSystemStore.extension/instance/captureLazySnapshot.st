@@ -5,12 +5,10 @@ captureLazySnapshot
 	builder := SquotSnapshot builder.
 	addedPaths := Set new.
 	[self artifactReferencesDo: [:each | | lazyArtifact |
-		self isThisEverCalled: 'A non package file and stuff'.
 		lazyArtifact := self createLazyArtifactForObjectAt: each.
 		builder add: lazyArtifact.
 		addedPaths add: each path]]
 	on: SquotNoTableOfContentsFound doAndPass: [:e |
-		self isThisEverCalled: 'The package file and stuff'.
 		(self packageDirectoriesIn: directory)
 			collect: 	[:eachDirectory | self createLazyArtifactForObjectAt: eachDirectory]
 			thenDo: [:eachArtifact | builder add: eachArtifact.

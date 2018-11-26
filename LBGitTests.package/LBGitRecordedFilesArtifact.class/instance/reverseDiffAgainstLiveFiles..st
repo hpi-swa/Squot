@@ -1,4 +1,5 @@
 diffing
 reverseDiffAgainstLiveFiles: otherFilesArtifact
 
-	^ self halt
+	otherFilesArtifact initializeOn: self.
+	^ LBGitFileListDiff left: otherFilesArtifact right: self

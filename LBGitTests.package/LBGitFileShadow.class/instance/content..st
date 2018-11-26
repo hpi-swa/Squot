@@ -1,8 +1,0 @@
-as yet unclassified
-content: aByteArray
-
-	self shouldNotImplement.
-	"content := aByteArray."
-	self reference writeStream binary 
-		nextPutAll: aByteArray;
-		close.

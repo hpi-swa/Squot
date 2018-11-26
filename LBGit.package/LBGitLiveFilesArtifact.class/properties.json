@@ -1,5 +1,5 @@
 {
-	"category" : "LBGitTests",
+	"category" : "LBGit",
 	"classinstvars" : [
 		 ],
 	"classvars" : [
@@ -7,8 +7,8 @@
 	"commentStamp" : "",
 	"instvars" : [
 		 ],
-	"name" : "LBGitFileRemoval",
+	"name" : "LBGitLiveFilesArtifact",
 	"pools" : [
 		 ],
-	"super" : "LBGitFileDiff",
+	"super" : "LBGitFilesArtifact",
 	"type" : "normal" }

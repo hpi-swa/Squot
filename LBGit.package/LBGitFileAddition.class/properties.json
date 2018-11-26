@@ -1,14 +1,13 @@
 {
-	"category" : "LBGitTests",
+	"category" : "LBGit",
 	"classinstvars" : [
 		 ],
 	"classvars" : [
 		 ],
 	"commentStamp" : "",
 	"instvars" : [
-		"leftChange",
-		"rightChange" ],
-	"name" : "LBGitFileConflict",
+		 ],
+	"name" : "LBGitFileAddition",
 	"pools" : [
 		 ],
 	"super" : "LBGitFileDiff",

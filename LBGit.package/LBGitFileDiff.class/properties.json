@@ -1,14 +1,15 @@
 {
-	"category" : "LBGitTests",
+	"category" : "LBGit",
 	"classinstvars" : [
 		 ],
 	"classvars" : [
 		 ],
 	"commentStamp" : "",
 	"instvars" : [
-		 ],
-	"name" : "LBGitFileAddition",
+		"path",
+		"parent" ],
+	"name" : "LBGitFileDiff",
 	"pools" : [
 		 ],
-	"super" : "LBGitFileDiff",
+	"super" : "Object",
 	"type" : "normal" }

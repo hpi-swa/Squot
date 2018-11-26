@@ -1,14 +1,13 @@
 {
-	"category" : "LBGitTests",
+	"category" : "LBGit",
 	"classinstvars" : [
 		 ],
 	"classvars" : [
 		 ],
 	"commentStamp" : "",
 	"instvars" : [
-		"path",
-		"parent" ],
-	"name" : "LBGitFileDiff",
+		 ],
+	"name" : "LBGitVoid",
 	"pools" : [
 		 ],
 	"super" : "Object",

@@ -1,15 +1,14 @@
 {
-	"category" : "LBGitTests",
+	"category" : "LBGit",
 	"classinstvars" : [
 		 ],
 	"classvars" : [
 		 ],
 	"commentStamp" : "",
 	"instvars" : [
-		"path",
-		"treeEntry" ],
-	"name" : "LBGitFileMetadata",
+		 ],
+	"name" : "LBGitFileRemoval",
 	"pools" : [
 		 ],
-	"super" : "Object",
+	"super" : "LBGitFileDiff",
 	"type" : "normal" }

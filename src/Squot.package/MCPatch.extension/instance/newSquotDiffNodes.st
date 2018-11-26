@@ -45,5 +45,7 @@ newSquotDiffNodes
 										content: each
 										children: #()
 										onInclude: [operations add: each]
-										onExclude: [operations remove: each]])]).
+										onExclude: [operations remove: each]])
+				onInclude: []
+				onExclude: []]).
 	^ topNodes

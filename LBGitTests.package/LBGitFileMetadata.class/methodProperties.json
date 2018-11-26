@@ -2,8 +2,11 @@
 	"class" : {
 		"onTreeEntry:" : "LB 11/25/2018 15:17" },
 	"instance" : {
+		"contentChangesTo:" : "LB 11/25/2018 17:26",
+		"contents" : "LB 11/25/2018 17:29",
 		"entryHash" : "LB 11/25/2018 15:14",
-		"hasChangesTo:" : "LB 11/25/2018 15:14",
+		"gitChangesTo:" : "LB 11/25/2018 17:02",
+		"hasChangesTo:" : "LB 11/25/2018 17:27",
 		"path" : "LB 11/25/2018 15:29",
 		"path:" : "LB 11/25/2018 15:29",
 		"treeEntry" : "LB 11/25/2018 15:14",

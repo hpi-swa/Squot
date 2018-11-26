@@ -12,4 +12,3 @@ diff: leftArtifact against: rightArtifact
 	self stayed: (self stayed difference: self modified).
 	self
 		createDiffs.
-	self halt.

@@ -2,9 +2,11 @@
 	"class" : {
 		 },
 	"instance" : {
-		"collectTrackedFiles" : "LB 11/25/2018 15:36",
+		"allFiles" : "LB 11/25/2018 17:19",
+		"collectTrackedFiles" : "LB 11/26/2018 16:06",
 		"diffAgainst:" : "LB 11/25/2018 14:10",
 		"initializeOn:" : "LB 11/25/2018 14:43",
+		"pathAndMetadataFor:" : "LB 11/25/2018 17:21",
 		"printOn:" : "LB 11/25/2018 13:44",
 		"reverseDiffAgainstLiveFiles:" : "LB 11/25/2018 14:07",
-		"reverseDiffAgainstRecordedFiles:" : "LB 11/25/2018 14:45" } }
+		"reverseDiffAgainstRecordedFiles:" : "LB 11/26/2018 16:06" } }

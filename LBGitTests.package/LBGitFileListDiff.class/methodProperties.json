@@ -1,16 +1,16 @@
 {
 	"class" : {
 		"empty" : "LB 11/25/2018 14:13",
-		"left:right:" : "LB 11/22/2018 15:36" },
+		"left:right:" : "LB 11/26/2018 16:06" },
 	"instance" : {
 		"added" : "LB 11/22/2018 11:17",
 		"added:" : "LB 11/22/2018 11:17",
-		"adjustedBy:" : "LB 11/22/2018 15:13",
-		"applyToContainer:" : "LB 11/25/2018 16:41",
+		"adjustedBy:" : "LB 11/26/2018 16:04",
+		"applyToContainer:" : "LB 11/26/2018 16:06",
 		"createDiffs" : "LB 11/23/2018 15:20",
 		"createFile:" : "LB 11/25/2018 16:57",
 		"deleteFile:" : "LB 11/25/2018 15:55",
-		"diff:against:" : "LB 11/25/2018 13:25",
+		"diff:against:" : "LB 11/26/2018 16:06",
 		"diffAdded" : "LB 11/23/2018 18:52",
 		"diffAt:" : "LB 11/25/2018 16:14",
 		"diffModified" : "LB 11/23/2018 18:52",
@@ -26,7 +26,7 @@
 		"left" : "LB 11/22/2018 11:14",
 		"left:" : "LB 11/22/2018 11:14",
 		"leftReferenceOn:" : "LB 11/23/2018 16:31",
-		"mergeWith:" : "LB 11/25/2018 16:33",
+		"mergeWith:" : "LB 11/26/2018 16:06",
 		"mergeWithRemoval:" : "LB 11/22/2018 12:19",
 		"modified" : "LB 11/23/2018 13:28",
 		"modified:" : "LB 11/23/2018 13:28",
@@ -49,4 +49,5 @@
 		"targetReferenceOn:" : "LB 11/25/2018 16:46",
 		"topNodes" : "LB 11/23/2018 15:22",
 		"updateFile:" : "LB 11/23/2018 18:56",
+		"workingDirectory" : "LB 11/26/2018 15:35",
 		"workingReferenceOn:" : "LB 11/22/2018 15:29" } }

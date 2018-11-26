@@ -4,3 +4,6 @@ asDiffTree
 		title: right squotConflictText
 		content: self
 		children: #()
+		onInclude: []
+		onExclude: []
+		onReset: []

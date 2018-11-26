@@ -2,10 +2,9 @@
 	"class" : {
 		"leftDiff:rightDiff:" : "jr 10/18/2017 10:11" },
 	"instance" : {
-		"adjustedBy:" : "jr 11/5/2018 21:02",
 		"applyTo:" : "jr 10/19/2017 00:16",
 		"applyToContainer:" : "jr 10/21/2017 16:32",
-		"asDiffTree" : "jr 11/5/2018 22:00",
+		"asDiffTree" : "jr 11/26/2018 20:56",
 		"base" : "jr 10/19/2017 00:16",
 		"chooseLeft" : "jr 10/19/2017 00:13",
 		"chooseRight" : "jr 10/19/2017 00:13",

@@ -16,4 +16,5 @@ handlingCredentialsOf: aHistorian do: aBlock ifCanceled: cancelBlock
 		((self remoteUrlOf: aHistorian) includesSubstring: 'github.com')
 			ifTrue: [message := message, String cr , 'Also please note: If you have two-factor authentification enabled,'
 				, String cr, 'you must use a personal access token instead of your GitHub login password.'].
-		self inform: message]
+		(UIManager default confirm: message trueChoice: 'OK' translated falseChoice: 'Debug')
+			= false ifTrue: [ToolSet debugError: e]]

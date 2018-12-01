@@ -1,4 +1,4 @@
-actions
+private
 checkTrackedBranchOrOfferChange: aHistorian ifUnsupported: unsupportedBlock
 	| remoteUrl |
 	remoteUrl := self remoteUrlOf: aHistorian.

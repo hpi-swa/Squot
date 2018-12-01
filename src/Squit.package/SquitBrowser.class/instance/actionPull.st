@@ -18,9 +18,10 @@ actionPull
 		remoteName := localHistorian upstreamRemoteName.
 		remoteUrl := gitRepository repository remoteUrl: remoteName.
 		remoteRef := localHistorian upstreamHistorianName].
-	self handlingCredentialsOf: localHistorian
-		do: [repository importFromUpstream: remoteName]
-		ifCanceled: [^ self].
+	self withRemoteErrorHandlingDo:
+		[self handlingCredentialsOf: localHistorian
+			do: [repository importFromUpstream: remoteName]
+			ifCanceled: [^ self]].
 	remoteTrackingRef := gitRepository repository refName: remoteRef forRemote: remoteName.
 	remoteTrackingHistorian := repository historianNamed: remoteTrackingRef.
 	remoteVersion := remoteTrackingHistorian version.

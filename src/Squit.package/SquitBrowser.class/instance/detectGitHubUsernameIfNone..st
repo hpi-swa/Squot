@@ -1,4 +1,4 @@
-actions
+private
 detectGitHubUsernameIfNone: noneBlock
 	self detectGitHubRemote: [:each | | url credentials |
 			url := self projectSelection repository gitRepository remoteUrl: each.

@@ -4,12 +4,11 @@
 		 ],
 	"classvars" : [
 		 ],
-	"commentStamp" : "",
+	"commentStamp" : "jr 12/1/2018 22:54",
 	"instvars" : [
-		"responseBody",
-		"remote" ],
-	"name" : "GitRemoteError",
+		 ],
+	"name" : "GitRemoteResourceNotFound",
 	"pools" : [
 		 ],
-	"super" : "Error",
+	"super" : "GitRemoteError",
 	"type" : "normal" }

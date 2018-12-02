@@ -1,6 +1,5 @@
 {
 	"class" : {
-		"signal:with:" : "pre 5/14/2018 16:03",
 		"signal:with:remote:" : "jr 12/1/2018 23:08" },
 	"instance" : {
 		"initialize" : "pre 5/14/2018 16:02",

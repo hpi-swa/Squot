@@ -1,0 +1,16 @@
+SmalltalkCISpec {
+  #loading : [
+    SCIMetacelloLoadSpec {
+      #baseline : 'LBGit',
+      #platforms : [ #squeak ],
+      #directory : 'packages',
+      #load : [ 'tests' ]
+    }
+  ],
+  
+  #testing: {
+     #coverage: {
+      #packages: [ 'LBGit' ]
+     }
+   }
+}

@@ -1,0 +1,4 @@
+accessing
+treeEntry
+
+	^ treeEntry

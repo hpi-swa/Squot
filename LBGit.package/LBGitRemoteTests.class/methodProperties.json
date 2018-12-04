@@ -1,0 +1,25 @@
+{
+	"class" : {
+		 },
+	"instance" : {
+		"commit:" : "LB 12/4/2018 13:43",
+		"commitDummyFileAddition" : "LB 12/4/2018 13:43",
+		"createDummyFile" : "LB 12/4/2018 13:49",
+		"deleteDummyFile" : "LB 12/4/2018 13:38",
+		"dummyContents" : "LB 12/4/2018 13:47",
+		"dummyContents2" : "LB 12/4/2018 13:47",
+		"dummyFile" : "LB 12/2/2018 13:56",
+		"gitReference" : "LB 12/4/2018 14:10",
+		"reference" : "LB 12/2/2018 13:40",
+		"reference:" : "LB 12/2/2018 13:40",
+		"setUp" : "LB 12/4/2018 14:33",
+		"tearDown" : "LB 12/2/2018 13:52",
+		"testCommitAddsFile" : "LB 12/4/2018 13:39",
+		"testCommitAddsFileContent" : "LB 12/4/2018 14:46",
+		"testCommitDeletesFile" : "LB 12/4/2018 13:43",
+		"testCommitUpdatesFile" : "LB 12/4/2018 14:44",
+		"testInitialTrackedFilesArtifact" : "LB 12/2/2018 13:51",
+		"testWorking" : "LB 12/2/2018 12:58",
+		"workingCopy" : "LB 12/2/2018 12:54",
+		"workingCopy:" : "LB 12/2/2018 12:54",
+		"writeToDummyFile:" : "LB 12/4/2018 13:49" } }

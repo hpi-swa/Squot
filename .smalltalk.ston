@@ -3,7 +3,7 @@ SmalltalkCISpec {
     SCIMetacelloLoadSpec {
       #baseline : 'LBGit',
       #platforms : [ #squeak ],
-      #directory : 'packages',
+      #directory : '',
       #load : [ 'tests' ]
     }
   ],

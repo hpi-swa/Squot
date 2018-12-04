@@ -1,5 +1,5 @@
 as yet unclassified
-preLoad
+postLoad
 
  	[GitStamp defaultName.
 	GitStamp defaultEmail] on: GitStampNameRequest do: 

@@ -1,4 +1,0 @@
-applying
-isRemoval
-
-	^ true

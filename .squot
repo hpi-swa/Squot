@@ -1,6 +1,6 @@
 OrderedDictionary {
 	'BaselineOfLBGit.package' : #SquotCypressCodeSerializer,
 	'LBGit-Core.package' : #SquotCypressCodeSerializer,
-	'LBGit-Tests.package' : #SquotCypressCodeSerializer,
-	'LBGit.package' : #SquotCypressCodeSerializer
+	'LBGit-Extensions.package' : #SquotCypressCodeSerializer,
+	'LBGit-Tests.package' : #SquotCypressCodeSerializer
 }

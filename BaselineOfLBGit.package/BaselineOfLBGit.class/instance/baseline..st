@@ -4,5 +4,7 @@ baseline: spec
 	spec for: #common do: [
 		spec 
 			package: 'LBGit';
-			group: 'default' with: #('LBGit')
+			package: 'LBGit-Tests' with: [spec requires: #('LBGit')];
+			group: 'default' with: #('LBGit');
+			group: 'tests' with: #('LBGit-Tests')
 		].

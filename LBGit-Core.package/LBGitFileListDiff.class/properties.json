@@ -1,0 +1,23 @@
+{
+	"category" : "LBGit-Core",
+	"classinstvars" : [
+		 ],
+	"classtraitcomposition" : "TSquotDiff classTrait",
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"left",
+		"right",
+		"added",
+		"removed",
+		"stayed",
+		"modified",
+		"diffs",
+		"target" ],
+	"name" : "LBGitFileListDiff",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"traitcomposition" : "TSquotDiff",
+	"type" : "normal" }

@@ -1,6 +1,6 @@
 as yet unclassified
 isSquotFile: aPath
 
-	^ (aPath includesSubString: '.squot')
-		or: [aPath includesSubString: '.package']
+	^ (aPath includesSubstring: '.squot')
+		or: [aPath includesSubstring: '.package']
 		or: [self ownerSnapshot includesObjectAt: aPath]

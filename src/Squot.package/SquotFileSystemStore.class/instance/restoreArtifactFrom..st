@@ -1,6 +1,6 @@
 private
 restoreArtifactFrom: aFileOrDirectory
-	| artifact artifactClass metadata deserializer |
+	| artifact artifactClass metadata |
 	"self assert: aFileOrDirectory exists"
 	metadata := self metadataForObjectAt: aFileOrDirectory.
 	metadata isPresent ifFalse: [(SquotNoMetadataFileFound for: aFileOrDirectory) signal].
@@ -8,10 +8,5 @@ restoreArtifactFrom: aFileOrDirectory
 	artifact := artifactClass new.
 	artifact path: (self pathOf: aFileOrDirectory).
 	metadata applyTo: artifact.
-	deserializer := self deserializers detect: [:each |
-		each canReadObjectSerializedBy:
-			(artifact storeInfo at: #serializer
-				ifAbsent: [(self guessSerializerForArtifact: artifact in: aFileOrDirectory)
-						ifNil: [(SquotCannotFindSerializer for: aFileOrDirectory) signal]])].
-	deserializer new fillContentOf: artifact from: aFileOrDirectory.
+	self deserialize: artifact in: aFileOrDirectory.
 	^ artifact

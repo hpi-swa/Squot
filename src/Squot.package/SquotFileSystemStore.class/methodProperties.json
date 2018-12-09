@@ -20,7 +20,7 @@
 		"deserializers" : "jr 1/27/2017 14:33",
 		"directory" : "jr 1/27/2017 15:07",
 		"doNotStoreMetadata" : "jr 3/7/2017 17:38",
-		"findDirectoryWithPackages:ifNone:" : "jr 4/13/2017 18:47",
+		"findDirectoryWithPackages:ifNone:" : "jr 12/9/2018 12:26",
 		"guessSerializerForArtifact:in:" : "jr 9/20/2017 19:37",
 		"initialize" : "jr 3/8/2017 16:47",
 		"initializeWith:" : "jr 1/27/2017 15:07",

@@ -4,9 +4,9 @@ findDirectoryWithPackages: directoryReference ifNone: absentBlock
 	FSSelectVisitor breadthFirst: directoryReference select:
 		[:each |
 			(each basename = '.filetree' 
-			and: [each reference parent directories anySatisfy:
+			and: [each reference parent parent directories anySatisfy:
 					[:any | any basename endsWith: '.package']])
-			ifTrue: [^ each reference parent].
+			ifTrue: [^ each reference parent parent].
 			false].
 	"look for .project"
 	(directoryReference / '.project') exists ifTrue:

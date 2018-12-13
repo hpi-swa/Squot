@@ -7,7 +7,8 @@
 	"commentStamp" : "",
 	"instvars" : [
 		"otherWorkingCopy",
-		"browser" ],
+		"browser",
+		"token" ],
 	"name" : "LBGitRemoteTests",
 	"pools" : [
 		 ],

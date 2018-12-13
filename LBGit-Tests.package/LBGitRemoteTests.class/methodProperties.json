@@ -2,13 +2,15 @@
 	"class" : {
 		 },
 	"instance" : {
-		"branchName" : "LB 12/8/2018 13:32",
+		"branchName" : "LB 12/13/2018 17:42",
 		"browser" : "LB 12/8/2018 16:12",
 		"browser:" : "LB 12/8/2018 16:12",
 		"commitOtherMessaged:" : "LB 12/10/2018 09:50",
 		"createBranch" : "LB 12/8/2018 15:28",
 		"credentials" : "LB 12/13/2018 16:35",
 		"deleteBranch" : "LB 12/8/2018 14:42",
+		"generateToken" : "LB 12/13/2018 17:50",
+		"initialize" : "LB 12/13/2018 17:36",
 		"otherCommit" : "LB 12/10/2018 09:48",
 		"otherReference" : "LB 12/8/2018 15:23",
 		"otherWorkingCopy" : "LB 12/8/2018 15:18",
@@ -32,4 +34,6 @@
 		"testPushUpdatesFile" : "LB 12/8/2018 17:05",
 		"testReadmeExists" : "LB 12/8/2018 15:53",
 		"testSetupSuccess" : "LB 12/8/2018 16:59",
+		"token" : "LB 12/13/2018 17:34",
+		"token:" : "LB 12/13/2018 17:34",
 		"transferMessaged:" : "LB 12/8/2018 15:46" } }

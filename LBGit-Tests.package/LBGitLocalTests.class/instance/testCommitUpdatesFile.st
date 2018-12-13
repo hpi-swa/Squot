@@ -3,7 +3,7 @@ testCommitUpdatesFile
 
 	self commitDummyFileAddition.
 	self writeToDummyFile: self dummyContents2.
-	self commit: 'Changed dummy file'.
+	self commitMessaged: 'Changed dummy file'.
 
 	self 
 		assert: 	self dummyContents2

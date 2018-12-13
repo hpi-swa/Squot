@@ -1,12 +1,13 @@
 running
-setUp
-	
+setUp 
+	<timeout: 20>
 	super setUp.
-	self reference: FileSystem memory / 'LBGitTests'.
-	self reference ensureDirectory.
-	self workingCopy: SquotWorkingCopy newOnObjectMemory.
-	self workingCopy 
-		name: 'LBGitTestWorkingCopy';
-		store: SquotImageStore new;
-		repository: (SquitRepository new initializeInDirectory: self reference );
-		loadedHistorian: (self workingCopy repository historianNamed: 'master').
+	self 
+		setUpAdditionalWorkingCopy;
+		suppressProgressDisplayDuring: [self 
+			setUpRemoteFor: self workingCopy;
+			setUpRemoteFor: self otherWorkingCopy;
+			createBranch].
+	self workingCopy register.
+	self otherWorkingCopy register.
+	self browser: LBGitSquitBrowserForTests new.

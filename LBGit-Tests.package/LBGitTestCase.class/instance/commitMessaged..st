@@ -1,5 +1,5 @@
-as yet unclassified
-commit: aString
+actions
+commitMessaged: aString
 
 	self workingCopy 
 		saveNewVersionMessage: aString 

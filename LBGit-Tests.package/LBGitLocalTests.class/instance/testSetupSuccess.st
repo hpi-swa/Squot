@@ -1,4 +1,4 @@
 tests
-testWorking
+testSetupSuccess
 	
 	self assert: true.

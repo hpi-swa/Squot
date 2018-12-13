@@ -1,4 +1,4 @@
 as yet unclassified
 hasChanges 
 
-	^ self squotHasChanges 
+	^ self diffs notEmpty

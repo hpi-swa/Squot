@@ -1,0 +1,10 @@
+{
+	"class" : {
+		 },
+	"instance" : {
+		"testCommitAddsFile" : "LB 12/7/2018 17:53",
+		"testCommitAddsFileContent" : "LB 12/4/2018 14:46",
+		"testCommitDeletesFile" : "LB 12/8/2018 13:13",
+		"testCommitUpdatesFile" : "LB 12/8/2018 13:06",
+		"testInitialTrackedFilesArtifact" : "LB 12/7/2018 17:53",
+		"testSetupSuccess" : "LB 12/8/2018 15:40" } }

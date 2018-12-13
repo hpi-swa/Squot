@@ -1,5 +1,5 @@
 accessing
 credentials
 
-	^ {SmalltalkCI getEnv: 'GITUSERNAME'.
-	SmalltalkCI getEnv: 'GITPASSWORD'}
+	^ {(SmalltalkCI getEnv: 'GITUSERNAME') ifNil: [NeedGitCredentials new signal].
+	(SmalltalkCI getEnv: 'GITPASSWORD') ifNil: [NeedGitCredentials new signal]}

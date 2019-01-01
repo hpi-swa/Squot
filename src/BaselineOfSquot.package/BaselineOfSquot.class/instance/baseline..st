@@ -54,6 +54,6 @@ baseline: spec
 				spec requires: #('FileSystem-Git' 'Squot' 'FS-FileDirectory-Adapters' ). ].
 		spec 
 			group: 'FileSystemGit' with: #('FileSystem-Git' );
-			group: 'FileSystem' with: #('FS-Core' 'FS-Disk' 'FS-Memory' 'FS-AnsiStreams' );
+			group: 'FileSystem' with: #('FS-Core' 'FS-Disk' 'FS-Memory' 'FS-AnsiStreams' 'FS-FileDirectoryAdapters' );
 			group: 'tests' with: #('Squit' 'FS-Tests-Core' 'FS-Tests-Disk' 'FS-Tests-Memory' 'FS-Tests-AnsiStreams');
 			group: 'default' with: #('Squit' 'Squot'). ].

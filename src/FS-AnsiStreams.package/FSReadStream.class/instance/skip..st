@@ -5,6 +5,6 @@ skip: anInteger
 		ifFalse: [anInteger timesRepeat: [
 				self atEnd ifTrue: [^ self].
 				self converter nextFromStream: self].
-			anInteger negative timesRepeat: [
+			anInteger negated timesRepeat: [
 				self atStart ifTrue: [^ self].
 				self converter backFromStream: self]]

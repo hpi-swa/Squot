@@ -10,6 +10,7 @@ createFile: aPath
 	inputStream := sourceReference readStream binary.
 	content := inputStream contents.
 	inputStream close.
+	targetReference parent ensureDirectory.
 	targetReference writeStream binary nextPutAll: content; close.
 	"targetReference fileSystem copyFrom: inputStream to: targetReference path.
 	inputStream close."

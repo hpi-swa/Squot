@@ -1,4 +1,4 @@
 as yet unclassified
 gitReferenceOn: aPath
 
-	^ self rightReferenceOn: aPath.
+	^ self rightReferenceOn: aPath

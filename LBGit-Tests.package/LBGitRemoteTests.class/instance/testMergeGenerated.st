@@ -11,5 +11,5 @@ testMergeGenerated
 		createDummyFile.
 	self transferMessaged: 'Added dummy1'.
 	self 	
-		assert: (self otherCommit tree entries includesKey: self dummyFile);
-		assert: (self otherCommit tree entries includesKey: self dummyFile2).
+		assert: (self otherCommit tree includesEntryNamed: self dummyFile);
+		assert: (self otherCommit tree includesEntryNamed: self dummyFile2).

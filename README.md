@@ -1,4 +1,4 @@
-# SmalltalkGitTesting
+# SmalltalkGitTesting 
 
 You can load it by:
 ```smalltalk

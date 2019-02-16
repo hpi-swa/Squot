@@ -6,6 +6,7 @@
 		 ],
 	"commentStamp" : "jr 12/2/2016 00:00",
 	"instvars" : [
+		"remote",
 		"url",
 		"refs",
 		"credentials" ],

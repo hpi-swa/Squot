@@ -13,7 +13,7 @@ invokeReceivePackWithRefs: updateAssociations andPack: aPackFile deleting: delet
 	response isSuccess ifFalse: [
 		(response code = 401
 			ifTrue: [GitRemoteAuthenticationFailed]
-			ifFalse: [GitRemoteError]) signal: response status].
+			ifFalse: [GitRemoteError]) signal: response status with: nil remote: remote].
 	responseReader := GitProtocolReader on: response contentStream.
 	report := responseReader readReceivePackResponse.
 	report hasErrors ifTrue: [self error: 'Not all references could be updated.'].

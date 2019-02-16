@@ -31,7 +31,9 @@ Metacello new
 
 ## Usage instructions
 
-Squot uses an ImageStore to remember objects (including packages) that should be tracked.
+After installing Squot, you will find a "Git Browser" in the Apps menu. With this tool you can create projects (in-image working copies) that can contain multiple objects, including packages. Each object is stored at or under a path. When you checkout the Git repository in the file system, an object's path is its relative path in the working copy. From the Git Browser, you can create new commits, synchronize with remote repositories (fetch, pull, push), manage and merge branches, switch between them, and compare different versions.
+
+Internally, Squot uses an ImageStore to remember objects (including packages) that should be tracked.
 A WorkingCopy combines such a store with a repository, for example a SquitRepository (a Git repository).
 
 Terminology note: Squot is based on an abstraction for version control systems named Pur.
@@ -52,7 +54,7 @@ workingCopy loadCurrentVersionInteractively.
 
 Note that Monticello versions will be created in the package cache repository
 whenever you save a new version (commit) that modifies the code of a package.
-These are for backup purposes until Squot and Squit are sufficiently stable.
+These were originally for backup purposes until Squot and Squit became sufficiently stable.
 
 ## Converting Monticello history
 
@@ -72,9 +74,8 @@ SquotMonticelloConverterVerifier
 
 ## Goodies
 
-Because Squot does not yet include a sufficient set of tools to manipulate a
-Git repository, you may want to create a button that opens gitk or another
-program on the repository.
+Because Squot does not yet include a nice visualization of the commit graph, 
+you may want to create a button that opens gitk or another program on the repository.
 
 Here a do-it for Windows users (requires OSProcess):
 ```smalltalk

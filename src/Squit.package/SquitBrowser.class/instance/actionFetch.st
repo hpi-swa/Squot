@@ -7,7 +7,8 @@ actionFetch
 	remoteNames := self chooseRemotesFrom: gitRepository.
 	remoteNames ifNil: [^ self].
 	remoteNames ifEmpty: [UIManager default inform: 'Nothing selected.'. ^ self].
-	self handlingCredentialsOf: workingCopy loadedHistorian
-		do: [repository importFromAll: remoteNames]
-		ifCanceled: [^ self].
+	self withRemoteErrorHandlingDo:
+		[self handlingCredentialsOf: workingCopy loadedHistorian
+			do: [repository importFromAll: remoteNames]
+			ifCanceled: [^ self]].
 	self refresh.

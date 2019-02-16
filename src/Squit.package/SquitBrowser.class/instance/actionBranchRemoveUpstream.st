@@ -9,8 +9,9 @@ actionBranchRemoveUpstream
 		ifFalse: [^ self inform: 'The remote is unsupported, therefore the upstream branch cannot be removed from the remote.'].
 	(UIManager confirm: 'Really delete branch ', remoteBranchName, ' at the remote ', remoteName, '?')
 		ifFalse: [^ self].
-	self handlingCredentialsOf: localHistorian
-		do: [self projectSelection repository
-			removeRemoteRef: remoteBranchName from: remoteName]
-		ifCanceled: [^ self].
+	self withRemoteErrorHandlingDo:
+		[self handlingCredentialsOf: localHistorian
+			do: [self projectSelection repository
+				removeRemoteRef: remoteBranchName from: remoteName]
+			ifCanceled: [^ self]].
 	self refresh.

@@ -2,11 +2,12 @@
 	"class" : {
 		 },
 	"instance" : {
-		"addCommit:time:withParents:" : "jr 5/26/2017 00:15",
+		"addCommit:time:committedAt:withParents:" : "jr 2/13/2019 23:03",
+		"addCommit:time:withParents:" : "jr 2/13/2019 23:11",
 		"addCommit:withParents:" : "jr 10/23/2016 01:54",
 		"expectedFailures" : "jr 4/9/2017 00:35",
 		"setUp" : "jr 4/8/2017 23:31",
-		"testMultipleVisitsToExcludedCommitAndUnchronologicalAuthorTimeStamps" : "jr 5/26/2017 00:18",
+		"testMultipleVisitsToExcludedCommitAndUnchronologicalAuthorTimeStamps" : "jr 2/13/2019 23:09",
 		"testRevListChronologicalOrder" : "jr 4/9/2017 00:32",
 		"testRevListTopoOrder" : "jr 4/9/2017 00:33",
 		"testRevListWithMerge" : "jr 4/8/2017 23:38",

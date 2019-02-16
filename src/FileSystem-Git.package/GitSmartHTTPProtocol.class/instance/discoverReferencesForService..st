@@ -8,8 +8,14 @@ discoverReferencesForService: aServiceName
 				ifTrue: ["try again with credentials"
 					self applyCredentials.
 					^ self discoverReferencesForService: aServiceName].
-			GitRemoteAuthenticationFailed signal: 'Could not query Git HTTP repository. Server responded: ', 
-				response status with: response content].
+			(response code caseOf: {
+				[401] -> [GitRemoteAuthenticationFailed].
+				[403] -> [GitRemoteAuthenticationFailed].
+				[404] -> [GitRemoteResourceNotFound]
+			} otherwise: [GitRemoteError]) signal: 'Could not query Git HTTP repository. Server responded: ', 
+				response status
+				with: response content
+				remote: remote].
 	(self isSmartResponse: response) ifFalse: [self fallbackToDumbProtocol].
 	reader := GitProtocolReader on: response content.
 	^ refs := self fetchRefsFrom: response content readStream.

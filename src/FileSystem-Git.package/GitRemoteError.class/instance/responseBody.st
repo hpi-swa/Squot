@@ -1,4 +1,4 @@
 accessing
 responseBody
 	
-	^ responseBody
+	^ responseBody ifNil: ['']

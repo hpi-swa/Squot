@@ -1,7 +1,9 @@
 {
 	"class" : {
-		"signal:with:" : "pre 5/14/2018 16:03" },
+		"signal:with:remote:" : "jr 12/1/2018 23:08" },
 	"instance" : {
 		"initialize" : "pre 5/14/2018 16:02",
-		"responseBody" : "pre 5/14/2018 16:02",
+		"remote" : "jr 12/1/2018 23:11",
+		"remote:" : "jr 12/1/2018 23:11",
+		"responseBody" : "jr 12/2/2018 00:29",
 		"responseBody:" : "pre 5/14/2018 16:02" } }

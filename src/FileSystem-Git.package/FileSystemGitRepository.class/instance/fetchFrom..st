@@ -1,20 +1,26 @@
 git porcelain
 fetchFrom: aRemoteName
-	| url fetchConfig localRemoteRefPattern packFile protocol remoteRefPattern remoteRefs wantRefs wantSignatures packFileData |
-	url := (repository remoteConfigFor: aRemoteName option: 'url') asUrl.
-	fetchConfig := repository remoteConfigFor: aRemoteName option: 'fetch'.
-	fetchConfig ifNil: [fetchConfig := '+refs/heads/*:refs/remotes/', aRemoteName, '/*'].
-	(fetchConfig splitBy: ':') in: [:parts | remoteRefPattern := parts first. localRemoteRefPattern := parts second].
-	remoteRefPattern := remoteRefPattern allButFirst: 1. "+"
+	| remote url fetchSpec packFile protocol remoteRefs wantRefs wantSignatures packFileData |
+	remote := repository remoteNamed: aRemoteName.
+	url := remote url.
+	fetchSpec := remote fetchSpecs
+		ifEmpty: [GitFetchSpec
+					fromString: '+refs/heads/*:refs/remotes/', aRemoteName, '/*'
+					forRemote: remote]
+		ifNotEmpty: [:fetchSpecs | fetchSpecs first].
+	self flag: #todo. "regard all fetch specs, not just the first one"
 	protocol := GitAbstractProtocol url: url.
-	protocol withOpenConnection: [
-		remoteRefs := protocol refs.
-		wantRefs := remoteRefs keys select: [:each | remoteRefPattern match: each].
-		wantSignatures := wantRefs collect: [:each | remoteRefs at: each].
-		packFileData := protocol wantAll: wantSignatures.
-		packFile := GitPackFile readFrom: packFileData readStream].
+	protocol
+		remote: remote;
+		withOpenConnection:
+			[remoteRefs := protocol refs.
+			wantRefs := remoteRefs keys select: [:each | fetchSpec remoteRefPattern match: each].
+			wantSignatures := wantRefs collect: [:each | remoteRefs at: each].
+			packFileData := protocol wantAll: wantSignatures.
+			packFile := GitPackFile readFrom: packFileData readStream].
 	packFile repository: repository.
 	packFile unpack.
-	wantRefs do: [:each | repository
-		updateRef: (repository refName: each forRemote: aRemoteName)
-		to: (remoteRefs at: each)].
+	wantRefs do:
+		[:each | repository
+					updateRef: (remote trackingRefOf: each)
+					to: (remoteRefs at: each)].

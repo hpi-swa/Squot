@@ -10,15 +10,16 @@ actionBranchPush
 	repository := workingCopy repository.
 	gitRepository := repository gitRepository.
 	self checkTrackedBranchOrOfferChange: historian ifUnsupported: [^ self].
-	[self handlingCredentialsOf: historian
-		do: 	[workingCopy repository
-			exportToUpstream: historian
-			ifNone: [
-				self offerToSetUpstreamBranchOf: historian shortName
-					in: gitRepository
-					ifCanceled: [^ self].
-				^ self actionBranchPush "try again"]]
-		ifCanceled: [^ self]]
+	[self withRemoteErrorHandlingDo:
+		[self handlingCredentialsOf: historian
+			do: 	[workingCopy repository
+				exportToUpstream: historian
+				ifNone: [
+					self offerToSetUpstreamBranchOf: historian shortName
+						in: gitRepository
+						ifCanceled: [^ self].
+					^ self actionBranchPush "try again"]]
+			ifCanceled: [^ self]]]
 	on: GitNonFastForwardPushUpdatesDetected do: [:e |
 		(self confirm: 'Warning: the tip of your branch is behind its remote counterpart. Do you want to force the push anyway?')
 			ifTrue: [e proceedWithForcedPush]

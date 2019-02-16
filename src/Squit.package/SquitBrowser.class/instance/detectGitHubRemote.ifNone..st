@@ -1,4 +1,4 @@
-actions
+private
 detectGitHubRemote: aBlock ifNone: noneBlock
 	| gitRepository remoteName repository |
 	self hasProjectSelection ifFalse: [^ noneBlock value].

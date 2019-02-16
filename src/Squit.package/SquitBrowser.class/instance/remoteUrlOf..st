@@ -1,4 +1,4 @@
-actions
+private
 remoteUrlOf: aHistorian
 	| gitRepository localBranchName remoteName repository |
 	repository := aHistorian repository.

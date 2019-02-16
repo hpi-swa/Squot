@@ -1,0 +1,7 @@
+{
+	"class" : {
+		 },
+	"instance" : {
+		"testRewriteEmptyPathAddsPackageDirectory" : "jr 2/16/2019 17:40",
+		"testRewritePathAddsPackageDirectory" : "jr 2/16/2019 17:40",
+		"testRewritePathWithPackageAlreadyIncluded" : "jr 2/16/2019 17:41" } }

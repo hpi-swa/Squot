@@ -1,0 +1,14 @@
+{
+	"category" : "SquotTonel-Core",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "TonelReaderForFileSystem",
+	"pools" : [
+		 ],
+	"super" : "TonelReader",
+	"type" : "normal" }

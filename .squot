@@ -14,5 +14,7 @@ OrderedDictionary {
 	'src\/FS-Tests-Memory.package' : #SquotCypressCodeSerializer,
 	'src\/FS-Tests-Disk.package' : #SquotCypressCodeSerializer,
 	'src\/FS-Tests-AnsiStreams.package' : #SquotCypressCodeSerializer,
-	'src\/BaselineOfSquot.package' : #SquotCypressCodeSerializer
+	'src\/BaselineOfSquot.package' : #SquotCypressCodeSerializer,
+	'src\/SquotTonel-Core.package' : #SquotCypressCodeSerializer,
+	'src\/SquotTonel-Tests.package' : #SquotCypressCodeSerializer
 }

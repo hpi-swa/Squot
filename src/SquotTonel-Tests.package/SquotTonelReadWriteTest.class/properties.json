@@ -1,0 +1,19 @@
+{
+	"category" : "SquotTonel-Tests",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"rootDirectory",
+		"serializer",
+		"sampleClass",
+		"samplePackage",
+		"sampleArtifactPath",
+		"deserializer" ],
+	"name" : "SquotTonelReadWriteTest",
+	"pools" : [
+		 ],
+	"super" : "TestCase",
+	"type" : "normal" }

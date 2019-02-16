@@ -8,6 +8,8 @@ baseline: spec
 		spec baseline: 'FileTree' with: [
 				spec
 					repository: 'github://dalehenrich/filetree:squeak4.3/repository'. ].
+		spec baseline: 'Tonel'
+			with: [spec 	repository: 'github://j4yk/tonel:squeak/'].
 		spec 
 			package: 'SqueakSSL-Core' with: [
 				spec
@@ -51,9 +53,14 @@ baseline: spec
 			package: 'FileSystem-Git' with: [
 				spec requires: #('FS-Core' 'FS-Disk' 'FS-Memory' 'FS-AnsiStreams' 'FS-Tests-Core' 'Pharo-compatibility' 'INIFile' 'VersionControl' ). ];
 			package: 'Squit' with: [
-				spec requires: #('FileSystem-Git' 'Squot' 'FS-FileDirectory-Adapters' ). ].
+				spec requires: #('FileSystem-Git' 'Squot' 'FS-FileDirectory-Adapters' ). ];
+			package: 'SquotTonel-Core' with:
+				[spec requires: #('Squot' 'FS-Core' 'Tonel')];
+			package: 'SquotTonel-Tests' with:
+				[spec requires: #('SquotTonel-Core')].
 		spec 
 			group: 'FileSystemGit' with: #('FileSystem-Git' );
 			group: 'FileSystem' with: #('FS-Core' 'FS-Disk' 'FS-Memory' 'FS-AnsiStreams' 'FS-FileDirectory-Adapters' );
-			group: 'tests' with: #('Squit' 'FS-Tests-Core' 'FS-Tests-Disk' 'FS-Tests-Memory' 'FS-Tests-AnsiStreams');
-			group: 'default' with: #('Squit' 'Squot'). ].
+			group: 'FileSystemTests' with: #('FS-Tests-Core' 'FS-Tests-Disk' 'FS-Tests-Memory' 'FS-Tests-AnsiStreams');
+			group: 'tests' with: #('Squot' 'Squit' 'FileSystemTests' 'SquotTonel-Tests');
+			group: 'default' with: #('Squit' 'Squot' 'SquotTonel-Core'). ].

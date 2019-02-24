@@ -1,7 +1,7 @@
 Pur store
 captureLazySnapshot
 	"read the table of contents and create lazy loading artifacts from the entries"
-	| builder addedPaths unrecordedFiles snapshot |
+	| builder addedPaths unrecordedFiles |
 	builder := SquotSnapshot builder.
 	addedPaths := Set new.
 	[self artifactReferencesDo: [:each | | lazyArtifact |
@@ -14,9 +14,10 @@ captureLazySnapshot
 			thenDo: [:eachArtifact | builder add: eachArtifact.
 				addedPaths add: eachArtifact path.
 				e add: eachArtifact]].
-	builder add: (unrecordedFiles := SquotUnrecordedFilesArtifact new
+	builder add: (unrecordedFiles := LBGitRecordedFilesArtifact new
 		rootDirectory: directory;
 		yourself).
-	snapshot := builder buildSnapshot.
-	unrecordedFiles ownerSnapshot: snapshot.
-	^ snapshot
+	builder buildSnapshot
+		in: [:snapshot |
+			unrecordedFiles ownerSnapshot: snapshot.
+			^ snapshot].

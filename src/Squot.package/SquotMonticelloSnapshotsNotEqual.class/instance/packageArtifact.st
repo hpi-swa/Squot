@@ -1,0 +1,4 @@
+accessing
+packageArtifact
+
+	^ packageArtifact

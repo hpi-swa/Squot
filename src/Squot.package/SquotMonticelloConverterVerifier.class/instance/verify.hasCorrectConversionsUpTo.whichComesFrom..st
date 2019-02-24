@@ -9,9 +9,10 @@ verify: aHistorian hasCorrectConversionsUpTo: aMCVersion whichComesFrom: aMCRepo
 	mcPackage := aMCVersion package.
 	nVersions := self countVersions: historian.
 	nVerifiedVersions := 0.
-	'Verifying ' displaySequentialProgress:
-	[[pendingVersions notEmpty]
-		whileTrue: [ | nextVersion | nextVersion := pendingVersions removeFirst.
-			ProgressNotification signal: (nVerifiedVersions / nVersions) extra: (nextVersion printStringLimitedTo: 100).
-			self verify: nextVersion.
-			nVerifiedVersions := nVerifiedVersions + 1]].
+	monticelloRepository cacheAllFileNamesDuring:
+		['Verifying ' displaySequentialProgress:
+		[[pendingVersions notEmpty]
+			whileTrue: [ | nextVersion | nextVersion := pendingVersions removeFirst.
+				ProgressNotification signal: (nVerifiedVersions / nVersions) extra: (nextVersion printStringLimitedTo: 100).
+				self verify: nextVersion.
+				nVerifiedVersions := nVerifiedVersions + 1]]].

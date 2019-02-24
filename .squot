@@ -17,6 +17,5 @@ OrderedDictionary {
 	'src\/BaselineOfSquot.package' : #SquotCypressCodeSerializer,
 	'BaselineOfLBGit.package' : #SquotCypressCodeSerializer,
 	'LBGit-Core.package' : #SquotCypressCodeSerializer,
-	'LBGit-Extensions.package' : #SquotCypressCodeSerializer,
 	'LBGit-Tests.package' : #SquotCypressCodeSerializer
 }

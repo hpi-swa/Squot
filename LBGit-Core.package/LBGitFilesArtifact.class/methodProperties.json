@@ -1,0 +1,24 @@
+{
+	"class" : {
+		"path" : "LB 12/7/2018 18:14" },
+	"instance" : {
+		"collectTrackedFiles" : "LB 11/25/2018 13:34",
+		"diffAgainst:" : "LB 11/25/2018 13:35",
+		"diffContentAgainstThatOf:" : "LB 11/25/2018 13:36",
+		"displayText" : "LB 11/26/2018 16:25",
+		"isLoadable" : "LB 11/25/2018 13:22",
+		"isSquotFile:" : "LB 12/7/2018 18:16",
+		"ownerSnapshot" : "LB 11/20/2018 15:14",
+		"ownerSnapshot:" : "LB 11/20/2018 15:14",
+		"path" : "LB 12/7/2018 18:14",
+		"reverseDiffAgainstLiveFiles:" : "LB 11/25/2018 14:05",
+		"reverseDiffAgainstRecordedFiles:" : "LB 11/25/2018 14:06",
+		"reverseDiffAgainstUnrecordedFiles:" : "LB 11/20/2018 15:02",
+		"reverseDiffContentAgainst:" : "LB 11/22/2018 11:04",
+		"rootDirectory" : "LB 11/20/2018 10:17",
+		"rootDirectory:" : "LB 12/4/2018 14:32",
+		"storeInfo" : "LB 12/13/2018 16:25",
+		"trackedFiles" : "LB 11/22/2018 15:46",
+		"trackedFiles:" : "LB 11/20/2018 15:12",
+		"wantsToBeInTableOfContents" : "LB 11/20/2018 10:11",
+		"workingDirectory" : "LB 12/13/2018 17:00" } }

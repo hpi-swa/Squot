@@ -1,0 +1,17 @@
+{
+	"category" : "LBGit-Tests",
+	"classinstvars" : [
+		 ],
+	"classtraitcomposition" : "TTestCaseSuppressingProgressDisplay classTrait",
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"workingCopy",
+		"reference" ],
+	"name" : "LBGitTestCase",
+	"pools" : [
+		 ],
+	"super" : "TestCase",
+	"traitcomposition" : "TTestCaseSuppressingProgressDisplay",
+	"type" : "normal" }

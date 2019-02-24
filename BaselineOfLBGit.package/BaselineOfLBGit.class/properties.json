@@ -1,0 +1,14 @@
+{
+	"category" : "BaselineOfLBGit",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "BaselineOfLBGit",
+	"pools" : [
+		 ],
+	"super" : "BaselineOf",
+	"type" : "normal" }

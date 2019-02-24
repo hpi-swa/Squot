@@ -1,0 +1,14 @@
+{
+	"category" : "LBGit-Tests",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"projectSelection" ],
+	"name" : "LBGitSquitBrowserForTests",
+	"pools" : [
+		 ],
+	"super" : "SquitBrowser",
+	"type" : "normal" }

@@ -1,0 +1,14 @@
+{
+	"category" : "LBGit-Tests",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "LBGitLocalTests",
+	"pools" : [
+		 ],
+	"super" : "LBGitTestCase",
+	"type" : "normal" }

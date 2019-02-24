@@ -1,0 +1,15 @@
+{
+	"category" : "LBGit-Core",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"path",
+		"treeEntry" ],
+	"name" : "LBGitFileMetadata",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }

@@ -7,6 +7,7 @@ copy: aPath toReference: destRef
 	[
 	inputStream := self readStreamOn: path.
 	inputStream ifNil: [ store signalFileDoesNotExist: path ].
+	inputStream binary.
 	destRef filesystem copyFrom: inputStream to: destRef path 
 	
 		] ensure: [ inputStream ifNotNil: [ inputStream close ]]

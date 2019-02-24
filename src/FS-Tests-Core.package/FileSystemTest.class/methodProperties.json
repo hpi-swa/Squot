@@ -12,6 +12,7 @@
 		"testChangeDirectoryString" : "cwp 3/29/2011 16:34",
 		"testChildrenAt" : "cwp 2/26/2011 18:19",
 		"testCopy" : "lr 7/13/2010 15:19",
+		"testCopyBinary" : "jr 2/24/2019 20:44",
 		"testCopyDestExists" : "CamilloBruni 1/20/2012 13:23",
 		"testCopySourceDoesntExist" : "jr 3/5/2017 13:16",
 		"testCreateDirectoryExists" : "cwp 11/17/2009 16:56",

@@ -1,8 +1,0 @@
-{
-	"class" : {
-		"isAbstract" : "cwp 10/29/2009 23:08" },
-	"instance" : {
-		"assertVisitedIs:" : "cwp 11/16/2009 10:46",
-		"setUp" : "jr 3/2/2017 17:38",
-		"visitDirectory:" : "cwp 10/29/2009 21:54",
-		"visitFile:" : "cwp 10/29/2009 21:54" } }

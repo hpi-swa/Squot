@@ -1,9 +1,0 @@
-{
-	"class" : {
-		 },
-	"instance" : {
-		"createFilesystem" : "jr 3/2/2017 17:38",
-		"expectedFailures" : "fn 3/16/2017 08:35",
-		"testDefaultWorkingDirectory" : "IgorStasenko 8/17/2011 17:01",
-		"testEqual" : "cwp 7/24/2009 00:40",
-		"testIsDirectory" : "cwp 2/18/2011 17:01" } }

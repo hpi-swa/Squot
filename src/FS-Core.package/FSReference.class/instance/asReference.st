@@ -1,3 +1,0 @@
-converting
-asReference
-	^ self

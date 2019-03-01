@@ -1,4 +1,4 @@
-dummy file
+dummy files
 writeToDummyFile: anObject
 
 	self 

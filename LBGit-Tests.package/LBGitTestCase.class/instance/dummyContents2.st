@@ -1,4 +1,4 @@
-dummy file
+dummy files
 dummyContents2
 
 	^ 'These are new

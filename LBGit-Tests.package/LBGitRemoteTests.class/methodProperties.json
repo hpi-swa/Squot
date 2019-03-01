@@ -35,6 +35,7 @@
 		"testPushAddsFileInNewFolder" : "LB 2/13/2019 15:10",
 		"testPushAddsFileToTree" : "LB 12/10/2018 09:48",
 		"testPushDeletedFile" : "LB 12/8/2018 17:02",
+		"testPushImageRegression" : "LB 3/1/2019 15:49",
 		"testPushUpdatesFile" : "LB 12/8/2018 17:05",
 		"testReadmeExists" : "LB 12/8/2018 15:53",
 		"testSetupSuccess" : "LB 12/8/2018 16:59",

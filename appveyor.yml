@@ -6,7 +6,10 @@ environment:
   CYG_MIRROR: http://cygwin.mirror.constant.com
   SCI_RUN: /cygdrive/c/smalltalkCI-master/run.sh
   matrix:
-    - SMALLTALK: Squeak-trunk
+    - SMALLTALK: Squeak64-trunk
+    - SMALLTALK: Squeak32-trunk
+    - SMALLTALK: Squeak64-5.2
+    - SMALLTALK: Squeak32-5.2
 
 platform:
   - x86

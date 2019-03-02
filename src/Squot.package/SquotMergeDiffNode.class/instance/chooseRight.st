@@ -1,3 +1,3 @@
 resolving conflicts
 chooseRight
-	choice := #right.
+	self include.

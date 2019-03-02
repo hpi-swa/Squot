@@ -1,0 +1,3 @@
+SquotPatch
+diffs
+	^ diffs

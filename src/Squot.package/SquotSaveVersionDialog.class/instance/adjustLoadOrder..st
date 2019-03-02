@@ -1,3 +1,0 @@
-private
-adjustLoadOrder: aPatchBuilder
-	aPatchBuilder useLoadOrderChangesFrom: editedPatch.

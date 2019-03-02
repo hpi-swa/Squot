@@ -5,3 +5,4 @@ asDiffTree
 		ifTrue: [left printString]
 		ifFalse: [self path]).
 	^ SquotDiffNode title: title content: self children: self topNodes
+		onInclude: [] onExclude: []

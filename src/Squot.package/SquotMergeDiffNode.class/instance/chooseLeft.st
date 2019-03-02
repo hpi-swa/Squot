@@ -1,3 +1,3 @@
 resolving conflicts
 chooseLeft
-	choice := #left.
+	self exclude.

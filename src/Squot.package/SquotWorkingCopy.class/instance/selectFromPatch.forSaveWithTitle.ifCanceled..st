@@ -9,9 +9,8 @@ selectFromPatch: aPatch forSaveWithTitle: titleString ifCanceled: cancelBlock
 	ifNotNil: [:selectedPatch |
 				self newVersionMessage: signal message.
 				^ selectedPatch].
-	tool := SquotSaveVersionDialog new
+	tool := (SquotSaveVersionDialog on: aPatch)
 		parentVersions: self parentVersions;
-		patch: aPatch;
 		controllerForIgnores: self;
 		yourself.
 	message ifNotEmpty: [tool message: message].

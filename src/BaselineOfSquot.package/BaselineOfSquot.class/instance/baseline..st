@@ -47,4 +47,4 @@ baseline: spec
 		spec 
 			group: 'FileSystemGit' with: #('FileSystem-Git' );
 			group: 'default' with: #('Squit' 'Squot' 'SquotTonel-Core');
-			group: 'default' with: #('default' 'SquotTonel-Tests'). ].
+			group: 'tests' with: #('default' 'SquotTonel-Tests'). ].

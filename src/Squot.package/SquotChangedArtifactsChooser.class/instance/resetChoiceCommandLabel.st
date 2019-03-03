@@ -1,3 +1,3 @@
 ui diff tree
 resetChoiceCommandLabel
-	^ 'Choose this edition'
+	^ 'Reset conflict resolution choice'

@@ -16,5 +16,7 @@
 		"testResolveArtifactConflictChooseLeft" : "jr 11/5/2018 21:49",
 		"testResolveArtifactConflictChooseRight" : "jr 11/5/2018 21:52",
 		"testResolveArtifactConflictWithIncomingRemoval" : "jr 11/5/2018 22:04",
+		"testResolveConflictInArtifactChooseLeft" : "jr 3/3/2019 02:36",
+		"testResolveConflictInArtifactChooseRight" : "jr 3/3/2019 02:36",
 		"testResolveThenResetArtifactConflict" : "jr 11/26/2018 22:56",
 		"testSelectedPatchIsIdempotentWithoutChangingNodes" : "jr 10/3/2018 00:35" } }

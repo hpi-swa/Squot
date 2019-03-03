@@ -10,5 +10,5 @@
 	"name" : "SquotMonticelloConversionProblem",
 	"pools" : [
 		 ],
-	"super" : "Exception",
+	"super" : "Error",
 	"type" : "normal" }

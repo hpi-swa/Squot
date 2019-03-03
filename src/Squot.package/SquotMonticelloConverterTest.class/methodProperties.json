@@ -11,4 +11,5 @@
 		"testConvertOneVersion" : "jr 2/23/2017 12:55",
 		"testConvertThreeVersions" : "jr 2/8/2017 15:23",
 		"testConvertTwoVersions" : "jr 2/23/2017 12:56",
-		"testConvertVersionsWithRemoval" : "jr 2/8/2017 23:47" } }
+		"testConvertVersionsWithRemoval" : "jr 2/8/2017 23:47",
+		"testDeletionsAgainstMissingVersion" : "jr 2/24/2019 11:36" } }

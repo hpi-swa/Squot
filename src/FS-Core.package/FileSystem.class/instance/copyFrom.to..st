@@ -6,7 +6,7 @@ copyFrom: inputStream to: destPath
 		ifTrue: [ store signalFileExists: destPath ].
 	^ [ 
 	out := self writeStreamOn: destPath.
-	buffer := (out isBinary ifTrue: [ByteArray] ifFalse: [String]) new: 1024.
+	buffer := ByteArray new: 1024.
 	[ inputStream atEnd ]
 		whileFalse: [ 
 			buffer := inputStream nextInto: buffer.

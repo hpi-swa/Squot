@@ -15,5 +15,7 @@ verify: aVersion matches: aMCVersion
 					ifFalse: [each]]
 			as: aMCVersion snapshot definitions species).
 	(patch := artifactSnapshot patchRelativeToBase: mcSnapshot) isEmpty
-		ifFalse: [
-			SquotMonticelloConversionProblem signal: 'Snapshots do not match']
+		ifFalse:
+			[SquotMonticelloSnapshotsNotEqual
+				signalMismatchBetween: aVersion and: aMCVersion
+				artifact: packageArtifact withMonticelloSnapshot: artifactSnapshot]

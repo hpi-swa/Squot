@@ -1,6 +1,10 @@
 sudo: false
 language: smalltalk
-smalltalk: Squeak-trunk
+smalltalk:
+  - Squeak64-trunk
+  - Squeak32-trunk
+  - Squeak64-5.2
+  - Squeak32-5.2
 os:
   - linux
   - osx

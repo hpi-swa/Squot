@@ -1,0 +1,14 @@
+{
+	"category" : "SquotTonel-Tests",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "SquotTonelPackageLocatorTest",
+	"pools" : [
+		 ],
+	"super" : "SquotArtifactLocatorTest",
+	"type" : "normal" }

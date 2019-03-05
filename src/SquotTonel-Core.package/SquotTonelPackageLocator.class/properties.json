@@ -1,0 +1,14 @@
+{
+	"category" : "SquotTonel-Core",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "SquotTonelPackageLocator",
+	"pools" : [
+		 ],
+	"super" : "SquotArtifactLocator",
+	"type" : "normal" }

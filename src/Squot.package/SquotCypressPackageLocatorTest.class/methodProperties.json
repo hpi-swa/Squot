@@ -1,0 +1,8 @@
+{
+	"class" : {
+		 },
+	"instance" : {
+		"classUnderTest" : "jr 3/5/2019 23:09",
+		"testFindsMultiplePackages" : "jr 3/5/2019 23:32",
+		"testFindsPackageInSubdirectory" : "jr 3/5/2019 23:10",
+		"testFindsPackageUnderRoot" : "jr 3/5/2019 23:09" } }

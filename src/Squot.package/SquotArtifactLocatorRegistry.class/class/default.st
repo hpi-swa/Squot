@@ -1,3 +1,5 @@
 accessing
 default
-	^ Default
+	^ Default ifNil:
+		[SquotArtifactLocatorRegistry initialize.
+		Default]

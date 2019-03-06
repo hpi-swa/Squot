@@ -1,5 +1,5 @@
 class initialization
 initialize
 	"SquotArtifactLocatorRegistry initialize"
-	Default := self new.
-	Current := Default.
+	Default ifNil: [Default := self new].
+	Current ifNil: [Current := Default].

@@ -16,20 +16,9 @@ newSquotDiffNodes
 						[(each definition perform: any) == true]]
 			ifNone: ['other']].
 	topNodes := ((byClass associations
-			collect: [:eachClassAndOperations | | children |
-				SquotDiffNode
-					title: eachClassAndOperations key
-					content: nil
-					children: (children := (eachClassAndOperations value
-						collect: [:each | SquotDiffNode
-							title: each squotDiffNodeSummary
-							content: each
-							children: #()
-							onInclude: [operations add: each]
-							onExclude: [operations remove: each]])
-						sort: [:a :b | a title <= b title])
-					onInclude: []
-					onExclude: []])
+			collect: [:eachClassAndOperations |
+						self squotDiffNodeForClass: eachClassAndOperations key
+							operations: eachClassAndOperations value])
 			sort: [:a :b | a title <= b title]) ,
 		(byClassification associations collect: [:eachClassificationAndOperations |
 			| classification |

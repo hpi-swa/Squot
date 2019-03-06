@@ -10,7 +10,7 @@ testFindsMultiplePackages
 	(rootDirectory / 'NoPackageExtension') ensureDirectory.
 	(rootDirectory / 'NoPackageExtension' / '.filetree') ensureFile.
 	"when"
-	packageDirectories := locator locateArtifactsForClass: PackageInfo in: rootDirectory.
+	packageDirectories := fileStore findCypressPackageDirectories.
 	"then"
 	self assert: (packageDirectories includes: rootDirectory / 'X.package');
 		assert: (packageDirectories includes: rootDirectory / 'Y.package');

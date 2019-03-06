@@ -1,8 +1,8 @@
-artifact locating
-locateArtifactsForClass: aClass in: aDirectory
+*SquotTonel-Core-guessing
+findTonelPackageDirectories
 	"Look for directories with package.st"
 	| searchDirectories packageDirectories |
-	searchDirectories := OrderedCollection with: aDirectory.
+	searchDirectories := OrderedCollection with: directory.
 	packageDirectories := OrderedCollection new.
 	[searchDirectories notEmpty] whileTrue:
 		[searchDirectories removeFirst entries

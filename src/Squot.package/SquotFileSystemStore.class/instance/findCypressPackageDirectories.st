@@ -1,8 +1,8 @@
-artifact locating
-locateArtifactsForClass: aClass in: aDirectory
+guessing
+findCypressPackageDirectories
 	"Look for *.package directories with .filetree files"
 	| searchDirectories packageDirectories |
-	searchDirectories := OrderedCollection with: aDirectory.
+	searchDirectories := OrderedCollection with: directory.
 	packageDirectories := OrderedCollection new.
 	[searchDirectories notEmpty] whileTrue:
 		[searchDirectories removeFirst entries

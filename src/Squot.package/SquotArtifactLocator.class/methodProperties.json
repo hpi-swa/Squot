@@ -1,7 +1,0 @@
-{
-	"class" : {
-		"register" : "jr 3/5/2019 22:33" },
-	"instance" : {
-		"=" : "jr 3/5/2019 23:17",
-		"hash" : "jr 3/5/2019 23:17",
-		"locateArtifactsForClass:in:" : "jr 3/5/2019 22:31" } }

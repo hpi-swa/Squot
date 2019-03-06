@@ -1,5 +1,8 @@
 accessing
 storeInfo
-	storeInfo ifEmpty: [storeInfoBlock value].
-	storeInfo ifNotEmpty: [storeInfoBlock := nil].
+	| evaluated |
+	storeInfo ifEmpty: [evaluated := storeInfoBlock value].
+	storeInfo
+		ifNotEmpty: [storeInfoBlock := nil]
+		ifEmpty: [^ evaluated].
 	^ storeInfo

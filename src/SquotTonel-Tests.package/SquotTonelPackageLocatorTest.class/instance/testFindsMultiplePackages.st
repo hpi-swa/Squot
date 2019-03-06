@@ -8,7 +8,7 @@ testFindsMultiplePackages
 	"decoys"
 	(rootDirectory / 'WithoutPackageSt') ensureDirectory.
 	"when"
-	packageDirectories := locator locateArtifactsForClass: PackageInfo in: rootDirectory.
+	packageDirectories := fileStore findTonelPackageDirectories.
 	"then"
 	self assert: (packageDirectories includes: rootDirectory / 'X');
 		assert: (packageDirectories includes: rootDirectory / 'Y');

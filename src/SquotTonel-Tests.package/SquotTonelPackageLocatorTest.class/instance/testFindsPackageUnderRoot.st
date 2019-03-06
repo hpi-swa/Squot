@@ -3,5 +3,5 @@ testFindsPackageUnderRoot
 	| packageDirectories |
 	(rootDirectory / 'Xyz') ensureDirectory.
 	(rootDirectory / 'Xyz' / 'package.st') ensureFile.
-	packageDirectories := locator locateArtifactsForClass: PackageInfo in: rootDirectory.
+	packageDirectories := fileStore findTonelPackageDirectories.
 	self assert: (packageDirectories includes: rootDirectory / 'Xyz').

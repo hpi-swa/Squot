@@ -1,5 +1,6 @@
 private package finding
 findDirectoryWithPackages: directoryReference ifNone: absentBlock
+	self deprecated.
 	"look for .filetree"
 	FSSelectVisitor breadthFirst: directoryReference select:
 		[:each |
@@ -9,6 +10,7 @@ findDirectoryWithPackages: directoryReference ifNone: absentBlock
 			ifTrue: [^ each reference parent parent].
 			false].
 	"look for .project"
+	self flag: #TODO. "move this to the package locator, then remove this method"
 	(directoryReference / '.project') exists ifTrue:
 		[ | project srcDirectoryString |
 		directoryReference / '.project' readStreamDo:

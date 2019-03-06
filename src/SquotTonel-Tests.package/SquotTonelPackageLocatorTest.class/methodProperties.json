@@ -2,7 +2,6 @@
 	"class" : {
 		 },
 	"instance" : {
-		"classUnderTest" : "jr 3/5/2019 23:22",
-		"testFindsMultiplePackages" : "jr 3/5/2019 23:33",
-		"testFindsPackageInSubdirectory" : "jr 3/5/2019 23:30",
-		"testFindsPackageUnderRoot" : "jr 3/5/2019 23:23" } }
+		"testFindsMultiplePackages" : "jr 3/6/2019 21:51",
+		"testFindsPackageInSubdirectory" : "jr 3/6/2019 21:51",
+		"testFindsPackageUnderRoot" : "jr 3/6/2019 21:51" } }

@@ -4,16 +4,9 @@ captureLazySnapshot
 	| builder addedPaths unrecordedFiles snapshot |
 	builder := SquotSnapshot builder.
 	addedPaths := Set new.
-	[self artifactReferencesDo: [:each | | lazyArtifact |
-		lazyArtifact := self createLazyArtifactForObjectAt: each.
-		builder add: lazyArtifact.
-		addedPaths add: each path]]
-	on: SquotNoTableOfContentsFound doAndPass: [:e |
-		(self packageDirectoriesIn: directory)
-			collect: 	[:eachDirectory | self createLazyArtifactForObjectAt: eachDirectory]
-			thenDo: [:eachArtifact | builder add: eachArtifact.
-				addedPaths add: eachArtifact path.
-				e add: eachArtifact]].
+	self lazyArtifactsDo:
+		[:each |	builder add: each.
+				addedPaths add: each path].
 	builder add: (unrecordedFiles := SquotUnrecordedFilesArtifact new
 		rootDirectory: directory;
 		yourself).

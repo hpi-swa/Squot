@@ -20,6 +20,7 @@
 		"deserializers" : "jr 1/27/2017 14:33",
 		"directory" : "jr 1/27/2017 15:07",
 		"doNotStoreMetadata" : "jr 3/7/2017 17:38",
+		"doStoreMetadata" : "jr 3/7/2019 08:41",
 		"findCypressPackageDirectories" : "jr 3/6/2019 21:44",
 		"findCypressPackages" : "jr 3/6/2019 22:47",
 		"findDeserializerFor:in:" : "jr 12/9/2018 17:38",

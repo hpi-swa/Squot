@@ -6,7 +6,8 @@
 		 ],
 	"commentStamp" : "",
 	"instvars" : [
-		"topNodes" ],
+		"topNodes",
+		"applyBlock" ],
 	"name" : "SquotArtifactContentDiffMock",
 	"pools" : [
 		 ],

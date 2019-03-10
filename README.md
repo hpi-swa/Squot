@@ -1,4 +1,4 @@
-# Squot [![Build Status][travis_badge]][travis]
+# Squot [![MacOS/Linux Build Status][travis_badge]][travis] [![Windows Build Status][appveyor_badge]][appveyor]
 Squeak Object Tracker - Version control for arbitrary objects in Squeak, currently with Git storage
 
 This repository also contains a variant of the FileSystem library,
@@ -82,5 +82,7 @@ Here a do-it for Windows users (requires OSProcess):
 OSProcess command: 'cmd /C start /D "', (squitRepository gitRepository repository baseDir pathString), '" gitk --all'.
 ```
 
+[appveyor]: https://ci.appveyor.com/project/hpi-swa/squot/branch/master
+[appveyor_badge]: https://ci.appveyor.com/api/projects/status/hg2d0tbiij1bm052/branch/master?svg=true
 [travis]: https://travis-ci.org/hpi-swa/Squot
 [travis_badge]: https://travis-ci.org/hpi-swa/Squot.svg?branch=master

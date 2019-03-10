@@ -24,10 +24,10 @@ testMergeWithConflicts
 		"resolve conflict"
 		self assert: (packageDiff base packageArtifactDefinitions
 			noneSatisfy: [:each | each source beginsWith: 'conflictMethod']).
-		conflictNode := packageDiff topNodes first children first.
+		conflictNode := packageDiff asDiffTree children first children first.
 		self assert: (conflictNode title beginsWith: 'conflictMethod').
 		conflictNode chooseLeft.
-		request resume: request patch updateFromNodes]
+		request resume: request patch]
 	] valueSupplyingAnswers: {{'*'. #default}}].
 	scenario assertConflictMethodHasNotChanged: self.
 	self assert: scenario secondVersion equals: workingCopy lastLoadedHistorian version.

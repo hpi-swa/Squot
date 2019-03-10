@@ -4,14 +4,14 @@ diffNodeMenuHook: aMenu
 	self selectedNode ifNil: [^ aMenu].
 	self selectedNode offersChoice
 		ifTrue: [aMenu
-			add: 'Choose this edition' action: #activateSelectedNode;
-			add: 'Choose already loaded edition' action: #deactivateSelectedNode;
-			add: 'Reset choice' action: #resetChoiceForSelectedNode]
+			add: self chooseRightCommandLabel action: #activateSelectedNode;
+			add: self chooseLeftCommandLabel action: #deactivateSelectedNode;
+			add: self resetChoiceCommandLabel action: #resetChoiceForSelectedNode]
 		ifFalse: [self selectedNode isActive
-			ifTrue: [aMenu add: 'Skip this change' action: #deactivateSelectedNode]
-			ifFalse: [aMenu add: 'Consider this change' action: #activateSelectedNode]].
+			ifTrue: [aMenu add: self deactivateNodeCommandLabel action: #deactivateSelectedNode]
+			ifFalse: [aMenu add: self activateNodeCommandLabel action: #activateSelectedNode]].
 	aMenu add: 'Inspect diff' action: #inspectSelectedDiffContent.
 	(editedPatch paths includes: self selectedNode title) ifTrue:
-		[aMenu add: 'Inspect currently loaded edition' action: #inspectOriginalArtifactOfSelectedNode.
-		aMenu add: 'Inspect edition that is available to be loaded' action: #inspectProposedArtifactOfSelectedNode].
+		[aMenu add: self inspectOriginalArtifactCommandLabel action: #inspectOriginalArtifactOfSelectedNode.
+		aMenu add: self inspectProposedArtifactCommandLabel action: #inspectProposedArtifactOfSelectedNode].
 	^ aMenu

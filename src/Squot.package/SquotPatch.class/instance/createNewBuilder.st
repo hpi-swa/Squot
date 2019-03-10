@@ -1,7 +1,7 @@
-mutating
+copying
 createNewBuilder
 	| builder |
 	builder := self species builder.
-	diffs do: [:each | builder addDiff: each].
+	self diffsDo: [:each | builder addDiff: each copy].
 	builder loadOrderDiff: loadOrderDiff.
 	^ builder

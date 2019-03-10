@@ -6,12 +6,20 @@ newSquotDiffNodes
 			nodes nextPut: each definition -> (SquotDiffNode
 				title: each squotDiffNodeSummary
 				content: each
-				children: #())].
+				children: #()
+				onInclude: [operations add: each]
+				onExclude: [operations remove: each])].
 		conflicts do: [:each |
 			nodes nextPut: each definition -> (SquotMergeDiffNode
 				title: each operation squotDiffNodeSummary
 				content: each
-				children: #())]].
+				children: #()
+				onInclude: [operations add: each operation.
+							conflicts remove: each ifAbsent: []]
+				onExclude: [operations remove: each operation ifAbsent: [].
+							conflicts remove: each ifAbsent: []]
+				onReset: [operations remove: each operation ifAbsent: [].
+							conflicts add: each])]].
 	nodesWithClass := operationNodes select: [:each "definition -> node" |
 		each key respondsTo: #isCodeDefinition].
 	classNodes :=
@@ -26,7 +34,9 @@ newSquotDiffNodes
 			SquotDiffNode
 				title: each key
 				content: nil
-				children: (each value collect: [:pair | pair value])].
+				children: (each value collect: [:pair | pair value])
+				onInclude: []
+				onExclude: []].
 	rest := operationNodes copyWithoutAll: nodesWithClass.
 	nodesByClassification :=
 		(rest groupBy: [:each "definition -> node" |
@@ -41,6 +51,8 @@ newSquotDiffNodes
 					ifTrue: [selector]
 					ifFalse: [selector copyFrom: 3 to: selector size - 'Definition' size])
 				content: nil
-				children: (each value collect: [:pair | pair value])].
+				children: (each value collect: [:pair | pair value])
+				onInclude: []
+				onExclude: []].
 	topNodes := classNodes, nodesByClassification.
 	^ topNodes

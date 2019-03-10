@@ -1,3 +1,3 @@
 accessing
 topNodes
-	^ topNodes
+	^ diffContent asSquotHierarchicalDiff

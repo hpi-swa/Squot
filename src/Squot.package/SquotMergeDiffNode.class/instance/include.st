@@ -1,4 +1,6 @@
 as yet unclassified
 include
-	super include.
-	self chooseRight.
+	choice == #right ifTrue: [^ self].
+	isActive := true.
+	includeBlock value.
+	choice := #right.

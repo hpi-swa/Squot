@@ -1,14 +1,17 @@
 {
 	"class" : {
-		 },
+		"title:content:children:onInclude:onExclude:" : "jr 11/18/2018 02:44",
+		"title:content:children:onInclude:onExclude:onReset:" : "jr 11/18/2018 02:44" },
 	"instance" : {
+		"choice" : "jr 11/18/2018 02:44",
 		"chooseBase" : "jr 5/28/2017 23:41",
-		"chooseLeft" : "jr 5/28/2017 23:41",
-		"chooseRight" : "jr 5/28/2017 23:41",
-		"effectiveContent" : "jr 5/28/2017 23:59",
-		"exclude" : "jr 5/29/2017 01:36",
-		"include" : "jr 5/29/2017 01:37",
+		"chooseLeft" : "jr 11/18/2018 11:32",
+		"chooseRight" : "jr 11/18/2018 11:32",
+		"exclude" : "jr 11/24/2018 21:54",
+		"include" : "jr 11/24/2018 21:54",
 		"isActive" : "jr 5/29/2017 01:21",
 		"needsChoice" : "jr 5/29/2017 00:00",
 		"offersChoice" : "jr 5/29/2017 01:34",
-		"resetChoice" : "jr 5/28/2017 23:41" } }
+		"resetBlock" : "jr 11/18/2018 02:44",
+		"resetBlock:" : "jr 11/18/2018 02:44",
+		"resetChoice" : "jr 11/18/2018 02:45" } }

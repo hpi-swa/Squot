@@ -2,9 +2,8 @@
 	"class" : {
 		"of:" : "jr 10/2/2017 19:59" },
 	"instance" : {
-		"adjustedBy:" : "jr 11/6/2018 08:12",
 		"applyToContainer:" : "jr 7/20/2017 14:02",
-		"asDiffTree" : "jr 11/17/2018 22:26",
+		"asDiffTree" : "jr 11/18/2018 02:17",
 		"asMonticelloPatch" : "jr 4/4/2018 21:51",
 		"isAddition" : "jr 9/17/2018 22:43",
 		"mergeWith:" : "jr 4/15/2018 12:15",

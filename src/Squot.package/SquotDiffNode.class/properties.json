@@ -9,7 +9,9 @@
 		"title",
 		"content",
 		"children",
-		"isActive" ],
+		"isActive",
+		"includeBlock",
+		"excludeBlock" ],
 	"name" : "SquotDiffNode",
 	"pools" : [
 		 ],

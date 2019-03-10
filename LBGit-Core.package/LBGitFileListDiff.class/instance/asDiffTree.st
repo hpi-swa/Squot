@@ -5,3 +5,5 @@ asDiffTree
 		title: LBGitFilesArtifact path
 		content: self 
 		children: self topNodes
+		onInclude: [] 
+		onExclude: []

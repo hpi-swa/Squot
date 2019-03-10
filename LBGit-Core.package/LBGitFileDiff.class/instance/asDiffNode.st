@@ -1,7 +1,9 @@
 as yet unclassified
 asDiffNode
 
- ^ SquotDiffNode
+ 	^ SquotDiffNode
 		title: self title
 		content: self
 		children: #()
+		onInclude: [] 
+		onExclude: []

@@ -5,9 +5,8 @@
 	"instance" : {
 		"added" : "LB 11/22/2018 11:17",
 		"added:" : "LB 11/22/2018 11:17",
-		"adjustedBy:" : "LB 11/26/2018 16:04",
 		"applyToContainer:" : "LB 11/26/2018 16:06",
-		"asDiffTree" : "LB 12/13/2018 17:42",
+		"asDiffTree" : "LB 3/10/2019 16:57",
 		"createDiffs" : "LB 11/23/2018 15:20",
 		"createFile:" : "LB 3/1/2019 15:57",
 		"deleteFile:" : "LB 11/25/2018 15:55",
@@ -22,7 +21,6 @@
 		"gitReferenceOn:" : "LB 2/13/2019 14:04",
 		"hasChanges" : "LB 12/8/2018 14:18",
 		"hasConflicts" : "LB 12/8/2018 14:18",
-		"initializeSquotDiffNodes:with:" : "LB 11/23/2018 15:24",
 		"isAddition" : "LB 12/7/2018 18:25",
 		"isFileModified:" : "LB 11/25/2018 15:20",
 		"isRemoval" : "LB 12/7/2018 18:24",

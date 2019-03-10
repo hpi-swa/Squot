@@ -1,7 +1,10 @@
 tests
 testFindsPackageInSubdirectory
-	| packageDirectories |
+	| artifactsFound |
 	(rootDirectory / 'src' / 'Xyz.package') ensureDirectory.
 	(rootDirectory / 'src' / 'Xyz.package' / '.filetree') ensureFile.
-	packageDirectories := fileStore findCypressPackageDirectories.
-	self assert: (packageDirectories includes: rootDirectory / 'src' / 'Xyz.package').
+	artifactsFound := SquotFileSearchForArtifacts new
+		visit: rootDirectory with: fileStore cypressPackageLocator;
+		runSearch;
+		artifactsFound.
+	self assert: (artifactsFound anySatisfy: [:each | each path = 'src/Xyz.package']).

@@ -1,6 +1,6 @@
 tests
 testFindsMultiplePackages
-	| packageDirectories |
+	| artifactsFound |
 	"given"
 	#('X.package' 'Y.package')
 		do: [:each | (rootDirectory / each) ensureDirectory.
@@ -10,8 +10,11 @@ testFindsMultiplePackages
 	(rootDirectory / 'NoPackageExtension') ensureDirectory.
 	(rootDirectory / 'NoPackageExtension' / '.filetree') ensureFile.
 	"when"
-	packageDirectories := fileStore findCypressPackageDirectories.
+	artifactsFound := SquotFileSearchForArtifacts new
+		visit: rootDirectory with: fileStore cypressPackageLocator;
+		runSearch;
+		artifactsFound.
 	"then"
-	self assert: (packageDirectories includes: rootDirectory / 'X.package');
-		assert: (packageDirectories includes: rootDirectory / 'Y.package');
-		assert: packageDirectories size = 2.
+	self assert: (artifactsFound anySatisfy: [:each | each path = 'X.package']);
+		assert: (artifactsFound anySatisfy: [:each | each path = 'Y.package']);
+		assert: artifactsFound size = 2.

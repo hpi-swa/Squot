@@ -1,7 +1,10 @@
 tests
 testFindsPackageUnderRoot
-	| packageDirectories |
+	| artifactsFound |
 	(rootDirectory / 'Xyz') ensureDirectory.
 	(rootDirectory / 'Xyz' / 'package.st') ensureFile.
-	packageDirectories := fileStore findTonelPackageDirectories.
-	self assert: (packageDirectories includes: rootDirectory / 'Xyz').
+	artifactsFound := SquotFileSearchForArtifacts new
+		visit: rootDirectory with: fileStore tonelPackageLocator;
+		runSearch;
+		artifactsFound.
+	self assert: (artifactsFound anySatisfy: [:each | each path = 'Xyz']).

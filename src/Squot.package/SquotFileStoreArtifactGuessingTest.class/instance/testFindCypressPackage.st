@@ -4,8 +4,7 @@ testFindCypressPackage
 	packageDir := fileStore directory / 'src' / 'Test.package'.
 	packageDir ensureDirectory.
 	(packageDir / '.filetree') ensureFile.
-	self assert: (fileStore findCypressPackageDirectories includes: packageDir);
-		assert: ((snapshot := fileStore captureLazySnapshot)
+	self assert: ((snapshot := fileStore captureLazySnapshot)
 					includesObjectAt: 'src/Test.package');
 		assert: SquotCypressCodeSerializer name
 		equals: ((snapshot artifactAt: 'src/Test.package') storeInfo serializer);

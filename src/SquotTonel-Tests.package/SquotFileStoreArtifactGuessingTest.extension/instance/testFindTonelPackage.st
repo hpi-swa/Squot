@@ -4,8 +4,7 @@ testFindTonelPackage
 	packageDir := fileStore directory / 'src' / 'Test'.
 	packageDir ensureDirectory.
 	(packageDir / 'package.st') ensureFile.
-	self assert: (fileStore findTonelPackageDirectories includes: packageDir);
-		assert: ((snapshot := fileStore captureLazySnapshot)
+	self assert: ((snapshot := fileStore captureLazySnapshot)
 					includesObjectAt: 'src/Test');
 		assert: SquotTonelSerializer name
 		equals: ((snapshot artifactAt: 'src/Test') storeInfo serializer);

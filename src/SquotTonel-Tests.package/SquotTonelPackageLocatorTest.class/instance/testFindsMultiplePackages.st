@@ -1,6 +1,6 @@
 tests
 testFindsMultiplePackages
-	| packageDirectories |
+	| artifactsFound |
 	"given"
 	#('X' 'Y')
 		do: [:each | (rootDirectory / each) ensureDirectory.
@@ -8,8 +8,11 @@ testFindsMultiplePackages
 	"decoys"
 	(rootDirectory / 'WithoutPackageSt') ensureDirectory.
 	"when"
-	packageDirectories := fileStore findTonelPackageDirectories.
+	artifactsFound := SquotFileSearchForArtifacts new
+		visit: rootDirectory with: fileStore tonelPackageLocator;
+		runSearch;
+		artifactsFound.
 	"then"
-	self assert: (packageDirectories includes: rootDirectory / 'X');
-		assert: (packageDirectories includes: rootDirectory / 'Y');
-		assert: packageDirectories size = 2.
+	self assert: (artifactsFound anySatisfy: [:each | each path = 'X']);
+		assert: (artifactsFound anySatisfy: [:each | each path = 'Y']);
+		assert: artifactsFound size = 2.

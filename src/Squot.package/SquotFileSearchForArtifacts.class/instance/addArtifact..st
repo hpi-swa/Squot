@@ -1,4 +1,4 @@
-as yet unclassified
+directing
 addArtifact: anArtifact
 	artifactsFound add: anArtifact.
 	^ anArtifact

@@ -1,4 +1,4 @@
-as yet unclassified
+searching
 searchNext
 	| association fileOrDirectory locators |
 	association := searchFrontier removeFirst.

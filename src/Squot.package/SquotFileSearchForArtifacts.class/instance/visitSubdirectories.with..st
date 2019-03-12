@@ -1,4 +1,4 @@
-as yet unclassified
+directing
 visitSubdirectories: aFileOrDirectory with: anArtifactLocator
 	aFileOrDirectory entries
 		select: [:each | each isDirectory]

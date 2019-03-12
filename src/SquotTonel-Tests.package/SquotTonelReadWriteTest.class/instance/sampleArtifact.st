@@ -1,4 +1,4 @@
-as yet unclassified
+test data
 sampleArtifact
 	| sampleMethod definitions |
 	sampleMethod := self class >> self selector.

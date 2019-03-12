@@ -1,4 +1,4 @@
-as yet unclassified
+directing
 visit: aFileOrDirectory with: anArtifactLocator
 	(searchFrontier
 		detect: [:each | each key = aFileOrDirectory]

@@ -1,4 +1,4 @@
-as yet unclassified
+test data
 sampleArtifactWithoutTimestamps
 	| artifact |
 	artifact := self sampleArtifact.

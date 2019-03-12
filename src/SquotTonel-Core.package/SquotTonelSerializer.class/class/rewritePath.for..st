@@ -1,10 +1,11 @@
 path rewriting
-rewritePath: path for: aPackageShadow
+rewritePath: path for: anObjectGraph
 	"Append package directory if necessary."
-	| elements |
+	| elements packageName |
 	elements := path squotPathSegments.
-	(elements notEmpty and: [elements last = aPackageShadow packageName])
+	packageName := anObjectGraph startShadow packageName.
+	(elements notEmpty and: [elements last = packageName])
 		ifTrue: [^ path]
 		ifFalse: [^ path
-					ifEmpty: [aPackageShadow packageName]
-					ifNotEmpty: [path, SquotPath delimiter, aPackageShadow packageName]]
+					ifEmpty: [packageName]
+					ifNotEmpty: [path, SquotPath delimiter, packageName]]

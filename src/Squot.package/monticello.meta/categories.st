@@ -22,5 +22,6 @@ SystemOrganization addCategory: #'Squot-Diffs-Tests'!
 SystemOrganization addCategory: #'Squot-Tests-Tools'!
 SystemOrganization addCategory: #'Squot-Tools-Tests'!
 SystemOrganization addCategory: #'Squot-Monticello-Converter-Tests'!
+SystemOrganization addCategory: #'Squot-FileTestRepository'!
 SystemOrganization addCategory: #'Squot-InMemoryRepository-Tests'!
 SystemOrganization addCategory: #'Squot-Serialization-Tests'!

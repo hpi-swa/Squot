@@ -1,0 +1,17 @@
+{
+	"category" : "Squot-FileTestRepository",
+	"classinstvars" : [
+		 ],
+	"classtraitcomposition" : "TSquotLocalHistorian classTrait",
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"repository",
+		"name" ],
+	"name" : "SquotFileTestHistorian",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"traitcomposition" : "TSquotLocalHistorian",
+	"type" : "normal" }

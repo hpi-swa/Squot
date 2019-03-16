@@ -4,8 +4,9 @@ rewritePath: path for: anObjectGraph
 	| elements packageName |
 	elements := path squotPathSegments.
 	packageName := anObjectGraph startShadow packageName.
-	(elements notEmpty and: [elements last = packageName])
-		ifTrue: [^ path]
-		ifFalse: [^ path
-					ifEmpty: [packageName]
-					ifNotEmpty: [path, SquotPath delimiter, packageName]]
+	elements ifEmpty: [^ packageName].
+	(elements last = packageName) ifTrue: [^ path].
+	(elements last beginsWith: packageName)
+		ifTrue: [^ elements allButLast, {packageName}
+					joinSeparatedBy: SquotPath delimiter asString]
+		ifFalse: [^ path, SquotPath delimiter, packageName]

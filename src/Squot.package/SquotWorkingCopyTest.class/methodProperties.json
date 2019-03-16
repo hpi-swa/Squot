@@ -34,8 +34,8 @@
 		"testSwitchBranchAndMoveOverUnsavedChangesInAddedArtifact" : "jr 10/31/2017 21:13",
 		"testSwitchBranchAndMoveOverUnsavedChangesWithConflict" : "jr 4/29/2018 17:04",
 		"testSwitchToBranchAtSameVersion" : "jr 11/18/2017 18:35",
-		"testTrackingAClass" : "jr 4/29/2018 16:36",
-		"testTrackingAPackage" : "jr 4/29/2018 16:37",
+		"testTrackingAClass" : "jr 3/16/2019 20:02",
+		"testTrackingAPackage" : "jr 3/16/2019 20:02",
 		"testTrackingText" : "jr 1/26/2017 16:03",
 		"testTrackingWorkspaceMorph" : "jr 7/22/2017 14:11",
 		"workingCopy" : "jr 9/21/2017 20:58" } }

@@ -12,7 +12,9 @@ testTrackingAPackage
 	latestVersion := workingCopy baseVersion.
 	self assert: versionBeforeSave ~= latestVersion description: 'new version'.
 	self assert: (latestVersion parents isEmpty) description: 'ancestry'.
-	self assert: workingCopy loadedHistorian version == latestVersion description: 'stable version'.
+	self assert: latestVersion
+		equals: workingCopy loadedHistorian version
+		description: 'stable version'.
 	self assertVersion: latestVersion containsPackage: packageInfo.
 	self assertVersion: latestVersion containsClass: sampleClass.
 	self assertVersion: latestVersion containsMethod: sampleClass >> #firstMethod.
@@ -27,7 +29,9 @@ testTrackingAPackage
 	latestVersion := workingCopy baseVersion.
 	self assert: versionBeforeSave ~= latestVersion description: 'new version'.
 	self assert: (latestVersion parents includes: versionBeforeSave) description: 'ancestry'.
-	self assert: workingCopy loadedHistorian version == latestVersion description: 'stable version'.
+	self assert: latestVersion
+		equals: workingCopy loadedHistorian version
+		description: 'stable version'.
 	self assertVersion: latestVersion containsPackage: packageInfo.
 	self assertVersion: latestVersion containsClass: anotherClass.
 	self assertVersion: latestVersion containsMethod: anotherClass >> #addedMethod.

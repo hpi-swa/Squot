@@ -1,3 +1,3 @@
 private
 copyTreeTo: aDirectory
-	(self directory / 'tree') copyAllTo: aDirectory.
+	self snapshotDirectory copyAllTo: aDirectory.

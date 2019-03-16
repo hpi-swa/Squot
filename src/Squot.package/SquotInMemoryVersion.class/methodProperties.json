@@ -2,11 +2,13 @@
 	"class" : {
 		 },
 	"instance" : {
+		"=" : "jr 3/16/2019 21:28",
 		"author" : "jr 2/9/2017 18:09",
 		"author:" : "jr 2/4/2017 02:46",
 		"authoringTimeStamp:" : "jr 2/5/2017 23:32",
 		"committer" : "jr 2/9/2017 18:10",
 		"committer:" : "jr 2/4/2017 02:46",
+		"hash" : "jr 3/16/2019 21:28",
 		"initialize" : "jr 2/4/2017 01:55",
 		"internalId" : "jr 2/4/2017 01:55",
 		"lazySnapshot" : "jr 5/29/2017 01:06",

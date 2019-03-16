@@ -15,5 +15,5 @@
 		"write:" : "jr 5/9/2017 18:24",
 		"writeClass:" : "jr 7/27/2017 23:53",
 		"writeDefinitions:" : "jr 1/29/2017 21:08",
-		"writeMCSnapshot:from:" : "jr 7/22/2017 02:05",
+		"writeMCSnapshot:forPackageNamed:from:" : "jr 3/16/2019 23:35",
 		"writePackage:" : "jr 7/22/2017 02:03" } }

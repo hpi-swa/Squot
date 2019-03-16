@@ -1,4 +1,4 @@
-testing
+tests
 testRewritePathForEmptyPath
 	| path serializerClass |
 	serializerClass := SquotCypressCodeSerializer.

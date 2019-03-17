@@ -1,6 +1,10 @@
 {
 	"class" : {
-		"squotRelevantInstVars" : "jr 7/16/2017 13:02" },
+		"squotAllSerializers" : "jr 3/17/2019 00:42",
+		"squotRelevantInstVars" : "jr 7/16/2017 13:02",
+		"squotSmartRefStreamSerializer" : "jr 3/17/2019 00:45",
+		"squotSpecializedSerializers" : "jr 3/17/2019 00:53",
+		"squotStonSerializer" : "jr 3/17/2019 00:46" },
 	"instance" : {
 		"browseFromSquot:" : "jr 5/13/2017 21:40",
 		"captureWithSquot" : "jr 7/16/2017 00:16",

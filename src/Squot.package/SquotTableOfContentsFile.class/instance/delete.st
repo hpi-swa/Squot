@@ -1,0 +1,3 @@
+writing
+delete
+	file ensureDeleted.

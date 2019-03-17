@@ -69,7 +69,7 @@
 		"actionSelfUpdate" : "fn 4/15/2017 10:53",
 		"actionSelfUpdateSetBranch" : "jr 4/18/2018 22:42",
 		"actionSetUpstreamBranch" : "jr 4/7/2018 00:17",
-		"actionSettings" : "jr 3/16/2019 15:48",
+		"actionSettings" : "jr 3/17/2019 12:54",
 		"actionSquotWorkingCopyExplore" : "fn 4/24/2017 18:33",
 		"activeBranchChanged" : "jr 10/14/2017 23:18",
 		"addModelItemsToWindowMenu:" : "jr 4/18/2018 22:35",
@@ -169,5 +169,6 @@
 		"shiftedMenuBranchListHook:" : "jr 1/13/2018 00:33",
 		"stepAt:in:" : "fn 4/11/2017 18:00",
 		"timeOfLastListUpdate" : "fn 4/11/2017 18:00",
+		"toggleMetadata" : "jr 3/17/2019 22:07",
 		"wantsSteps" : "fn 4/11/2017 17:58",
 		"withRemoteErrorHandlingDo:" : "jr 12/1/2018 23:51" } }

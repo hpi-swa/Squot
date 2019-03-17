@@ -1,3 +1,3 @@
-ui diff tree
+ui labels
 deactivateNodeCommandLabel
 	^ 'Skip this change'

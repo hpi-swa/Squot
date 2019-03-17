@@ -1,3 +1,3 @@
-ui diff tree
+ui labels
 inspectOriginalArtifactCommandLabel
 	^ 'Inspect currently loaded edition'

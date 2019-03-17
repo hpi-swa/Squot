@@ -1,4 +1,4 @@
-operations
+actions
 deactivateSelectedNode
 	| selectedNode nodesToExclude |
 	selectedNode := self selectedNode.

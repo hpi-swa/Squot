@@ -1,3 +1,3 @@
-operations
+actions
 inspectSelectedDiffContent
 	self selectedNode inspectContent.

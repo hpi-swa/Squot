@@ -1,4 +1,4 @@
-ui
+actions
 accept
 	self updateMessageFromViews.
 	(self messageWasChanged not

@@ -1,4 +1,4 @@
-ui diff tree
+ui menus
 diffNodeMenuHook: aMenu
 	<menuSquotDiffNode>
 	self selectedNode ifNil: [^ aMenu].

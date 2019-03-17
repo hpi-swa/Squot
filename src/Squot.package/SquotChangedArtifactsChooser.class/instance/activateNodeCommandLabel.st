@@ -1,3 +1,3 @@
-ui diff tree
+ui labels
 activateNodeCommandLabel
 	^ 'Choose this edition'

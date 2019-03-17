@@ -1,4 +1,4 @@
-operations
+actions
 resetChoiceForSelectedNode
 	| selectedNode |
 	selectedNode := self selectedNode.

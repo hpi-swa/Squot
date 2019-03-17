@@ -1,3 +1,3 @@
-ui diff tree
+ui labels
 resetChoiceCommandLabel
 	^ 'Reset conflict resolution choice'

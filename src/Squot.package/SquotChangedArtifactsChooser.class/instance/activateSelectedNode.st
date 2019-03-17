@@ -1,4 +1,4 @@
-operations
+actions
 activateSelectedNode
 	| selectedNode nodesToInclude |
 	selectedNode := self selectedNode.

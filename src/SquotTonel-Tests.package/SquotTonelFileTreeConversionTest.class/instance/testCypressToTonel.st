@@ -15,7 +15,7 @@ testCypressToTonel
 	self deny: ((workingCopy baseVersion snapshotDirectory / 'src') entries
 					includes: classFactory packageName, '.package')
 		description: 'Cypress directory still exists'.
-	self deny: originalPath equals: newPath.
+	self deny: originalPath = newPath description: ['Package path should have changed'].
 	self assert: directoryDepth
 		equals: (newPath occurrencesOf: $/)
 		description: 'Profileration of subdirectories'.

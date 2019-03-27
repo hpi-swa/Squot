@@ -2,12 +2,14 @@
 	"class" : {
 		"path" : "LB 12/7/2018 18:14" },
 	"instance" : {
+		"capture" : "LB 3/27/2019 18:25",
 		"collectTrackedFiles" : "LB 11/25/2018 13:34",
 		"diffAgainst:" : "LB 11/25/2018 13:35",
 		"diffContentAgainstThatOf:" : "LB 11/25/2018 13:36",
 		"displayText" : "LB 11/26/2018 16:25",
 		"isLoadable" : "LB 11/25/2018 13:22",
 		"isSquotFile:" : "LB 12/7/2018 18:16",
+		"materializeWith:replacing:" : "LB 3/27/2019 18:27",
 		"ownerSnapshot" : "LB 11/20/2018 15:14",
 		"ownerSnapshot:" : "LB 11/20/2018 15:14",
 		"path" : "LB 12/7/2018 18:14",
@@ -18,7 +20,7 @@
 		"rootDirectory" : "LB 11/20/2018 10:17",
 		"rootDirectory:" : "LB 12/4/2018 14:32",
 		"squotSummaryText" : "LB 2/24/2019 16:03",
-		"storeInfo" : "LB 12/13/2018 16:25",
+		"storeInfo" : "LB 3/27/2019 18:28",
 		"trackedFiles" : "LB 11/22/2018 15:46",
 		"trackedFiles:" : "LB 11/20/2018 15:12",
 		"wantsToBeInTableOfContents" : "LB 11/20/2018 10:11",

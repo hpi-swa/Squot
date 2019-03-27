@@ -1,4 +1,4 @@
 as yet unclassified
 storeInfo
 
-	^ Dictionary new
+	^ SquotTrackedObjectMetadata new

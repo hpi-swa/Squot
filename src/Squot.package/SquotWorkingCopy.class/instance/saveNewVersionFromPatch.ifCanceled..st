@@ -10,9 +10,8 @@ saveNewVersionFromPatch: aPatch ifCanceled: cancelBlock
 		selectedPatch := signalSelectedPatch.
 		message := SquotInitialLogMessageRequested new signal ifNil: 'Empty commit message'.]
 	ifNil: [| tool |
-		tool := SquotSaveVersionDialog new
+		tool := (SquotSaveVersionDialog on: aPatch)
 			parentVersions: self parentVersions;
-			patch: aPatch;
 			controllerForIgnores: self;
 			yourself.
 		tool requestSelectedChangesWithTitle: 'Select changes and message for the new version'.

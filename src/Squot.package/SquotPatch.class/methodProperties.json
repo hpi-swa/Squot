@@ -5,7 +5,7 @@
 		"with:" : "jr 9/23/2018 17:43" },
 	"instance" : {
 		"applyTo:" : "jr 8/18/2018 23:41",
-		"applyTo:displayingProgress:" : "jr 8/18/2018 23:39",
+		"applyTo:displayingProgress:" : "LB 3/27/2019 18:55",
 		"applyToLoadOrder:" : "jr 8/18/2018 23:35",
 		"artifacts" : "jr 10/2/2017 23:45",
 		"browse" : "jr 10/31/2017 18:22",
@@ -21,5 +21,5 @@
 		"initialize" : "jr 5/1/2017 19:47",
 		"initializeWith:" : "jr 5/1/2017 20:52",
 		"loadOrderDiff" : "jr 8/18/2018 21:51",
-		"loadOrderDiff:" : "jr 8/18/2018 21:51",
+		"loadOrderDiff:" : "LB 3/27/2019 18:22",
 		"paths" : "jr 5/28/2017 22:57" } }

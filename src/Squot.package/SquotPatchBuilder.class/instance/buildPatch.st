@@ -1,6 +1,6 @@
-public
+accessing
 buildPatch
 	^ SquotPatch new
-		initializeWith: (diffs reject: [:each | each hasChanges not]);
+		initializeFrom: base to: patched withDiffs: (diffs reject: [:each | each hasChanges not]);
 		loadOrderDiff: self computeLoadOrderDiff;
 		yourself

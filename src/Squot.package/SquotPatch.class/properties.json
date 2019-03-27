@@ -6,6 +6,8 @@
 		 ],
 	"commentStamp" : "jr 4/14/2018 20:20",
 	"instvars" : [
+		"base",
+		"patched",
 		"diffs",
 		"loadOrderDiff" ],
 	"name" : "SquotPatch",

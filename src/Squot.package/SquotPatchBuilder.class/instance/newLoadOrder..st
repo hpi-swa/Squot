@@ -1,4 +1,4 @@
-public
+accessing
 newLoadOrder: aCollection
-	patchedLoadOrder removeAll; addAll: aCollection.
+	patchedLoadOrder := aCollection.
 	loadOrderDiff := nil.

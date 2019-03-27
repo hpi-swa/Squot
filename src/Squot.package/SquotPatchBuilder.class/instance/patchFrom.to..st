@@ -1,10 +1,9 @@
-public
+accessing
 patchFrom: leftObjectContainer to: rightObjectContainer
 	self initialize.
 	self startingFrom: leftObjectContainer.
-	rightArtifacts := rightObjectContainer artifacts.
+	self goingTo: rightObjectContainer.
 	self displayProgress: 'Diffing objects' during:
 		[self computeDiffsFromLeftToRight;
 			computeDiffsForNewArtifacts].
-	patchedLoadOrder := rightObjectContainer loadOrder.
 	^ self buildPatch

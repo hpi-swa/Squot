@@ -1,0 +1,3 @@
+accessing
+newLoadOrder
+	^ patchedLoadOrder asOrderedCollection

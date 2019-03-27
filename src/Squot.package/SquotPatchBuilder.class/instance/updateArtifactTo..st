@@ -1,4 +1,4 @@
-public
+accessing
 updateArtifactTo: anArtifact
 	"Have an object with the same path patched to become the given one."
 	^ self addDiff:

@@ -1,4 +1,4 @@
-public
+accessing
 diffPath: path from: leftObjectContainer to: rightObjectContainer
 	"Add the difference between two objects at the same path."
 	self addDiff:

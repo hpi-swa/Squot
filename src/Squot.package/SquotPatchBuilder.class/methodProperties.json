@@ -4,7 +4,7 @@
 	"instance" : {
 		"addArtifact:" : "jr 10/3/2018 14:53",
 		"addDiff:" : "jr 10/3/2018 14:57",
-		"buildPatch" : "jr 3/27/2019 21:48",
+		"buildPatch" : "jr 3/30/2019 12:31",
 		"computeDiffsForNewArtifacts" : "jr 7/16/2017 02:50",
 		"computeDiffsFromLeftToRight" : "jr 9/17/2018 22:15",
 		"computeLoadOrderDiff" : "jr 10/3/2018 14:55",
@@ -15,7 +15,7 @@
 		"diffs" : "jr 11/26/2018 21:22",
 		"diffsDo:" : "jr 3/27/2019 22:52",
 		"displayProgress:during:" : "jr 4/29/2018 20:44",
-		"goingTo:" : "jr 3/27/2019 21:45",
+		"goingTo:" : "jr 3/30/2019 12:36",
 		"initialize" : "jr 10/3/2018 14:54",
 		"loadOrderDiff" : "jr 11/26/2018 21:22",
 		"loadOrderDiff:" : "jr 11/18/2018 02:06",
@@ -28,5 +28,5 @@
 		"resetAt:" : "jr 11/26/2018 22:39",
 		"startingFrom:" : "jr 3/27/2019 21:40",
 		"updateArtifactTo:" : "jr 9/23/2018 18:12",
-		"updateRightArtifacts" : "jr 3/27/2019 22:00",
+		"updateRightArtifacts" : "jr 3/30/2019 12:38",
 		"useLoadOrderChangesFrom:" : "jr 10/3/2018 15:10" } }

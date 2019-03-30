@@ -2,4 +2,4 @@ initialize-release
 goingTo: rightObjectContainer
 	patched := rightObjectContainer.
 	rightArtifacts := rightObjectContainer artifacts.
-	patchedLoadOrder := rightObjectContainer loadOrder.
+	patchedLoadOrder := rightObjectContainer loadOrder asOrderedCollection.

@@ -12,7 +12,8 @@
 		"isRemoval",
 		"topNodes",
 		"copiedFrom",
-		"hasConflicts" ],
+		"hasConflicts",
+		"right" ],
 	"name" : "SquotArtifactDiffMock",
 	"pools" : [
 		 ],

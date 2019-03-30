@@ -9,6 +9,7 @@
 		"copiedFrom" : "jr 11/26/2018 21:07",
 		"copiedFrom:" : "jr 11/26/2018 21:05",
 		"copy" : "jr 11/26/2018 21:04",
+		"createArtifactMock" : "jr 3/30/2019 12:34",
 		"hasChanges" : "jr 9/23/2018 21:47",
 		"hasChanges:" : "jr 9/23/2018 21:48",
 		"hasConflicts" : "jr 11/26/2018 22:48",
@@ -17,6 +18,8 @@
 		"isRemoval" : "jr 9/23/2018 21:50",
 		"path" : "jr 9/23/2018 21:47",
 		"path:" : "jr 9/23/2018 21:46",
+		"right" : "jr 3/30/2019 12:34",
+		"right:" : "jr 3/30/2019 12:33",
 		"setUpTreeRoot:toEditPatch:" : "jr 3/3/2019 02:01",
 		"topNodes" : "jr 9/23/2018 21:55",
 		"updateRightArtifact" : "jr 3/9/2019 15:37" } }

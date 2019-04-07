@@ -1,3 +1,3 @@
 patching
-applyTo: aSnapshotContent
-	^ diffContent squotApplyTo: aSnapshotContent
+applyTo: aShadowGraph
+	^ diffContent squotApplyTo: aShadowGraph

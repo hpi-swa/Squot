@@ -1,3 +1,5 @@
 accessing
 startShadow
-	^ startShadow ifNil: [self shadowNamed: startName]
+	^ startShadow ifNil:
+		[(self shadowNamed: startName)
+			withSquotObjectName: startName]

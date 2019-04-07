@@ -8,4 +8,5 @@ testFindCypressPackage
 					includesObjectAt: 'src/Test.package');
 		assert: SquotCypressCodeSerializer name
 		equals: ((snapshot artifactAt: 'src/Test.package') storeInfo serializer);
-		assert: (snapshot artifactAt: 'src/Test.package') content startShadow class = SquotPackageShadow.
+		assert: ((snapshot artifactAt: 'src/Test.package') content startShadow respondsTo: #packageName)
+		description: 'not a SquotPackageShadow'.

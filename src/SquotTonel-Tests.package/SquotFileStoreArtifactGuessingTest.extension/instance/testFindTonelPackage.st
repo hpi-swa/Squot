@@ -8,4 +8,5 @@ testFindTonelPackage
 					includesObjectAt: 'src/Test');
 		assert: SquotTonelSerializer name
 		equals: ((snapshot artifactAt: 'src/Test') storeInfo serializer);
-		assert: ((snapshot artifactAt: 'src/Test') shadowOfTrackedObject class =  SquotPackageShadow).
+		assert: ((snapshot artifactAt: 'src/Test') shadowOfTrackedObject respondsTo: #packageName)
+		description: 'not a SquotPackageShadow'.

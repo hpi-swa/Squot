@@ -34,6 +34,7 @@ Metacello new
 After installing Squot, you will find a "Git Browser" in the Apps menu. With this tool you can create projects (in-image working copies) that can contain multiple objects, including packages. Each object is stored at or under a path. When you checkout the Git repository in the file system, an object's path is its relative path in the working copy. From the Git Browser, you can create new commits, synchronize with remote repositories (fetch, pull, push), manage and merge branches, switch between them, and compare different versions.
 
 ### Gettings Started with an Existing Remote Project 
+
 1. Open the Git Browser. Depending on your Squeak version, you can find it under Apps or under Tools. If this is the first time you open it, it might ask you, whether you want to add your first project now. You can decline for now, as we do not want to add a new project.
 
 2. The pane at the top left pane is the list of projects which are currently managed through Squot. We will now add a project by opening the contex menu of the list and selecting either "Clone Project" directly or "New project..." > "Clone Project".
@@ -56,6 +57,7 @@ After installing Squot, you will find a "Git Browser" in the Apps menu. With thi
 
 
 ### Committing to a Project
+
 1. Before committing, first check whether you are on the branch you do want to commit to in the list of branches.
 
 2. Then simply click the button labeled "commit".
@@ -68,6 +70,7 @@ After installing Squot, you will find a "Git Browser" in the Apps menu. With thi
 
 
 ### Notes on Pushing to Github
+
 Please note that when you push to Github and you have two-factor-authentication activated, you can not use your ordinary password. You will have to generate a personal access token in the corresponding [settings page](https://github.com/settings/tokens). 
 
 

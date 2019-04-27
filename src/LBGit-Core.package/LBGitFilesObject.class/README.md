@@ -1,0 +1,1 @@
+I am an Object for the sole purpose of being stored in an object store to be able to create an artifact for me.

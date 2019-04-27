@@ -4,7 +4,7 @@ artifacts
 	artifactsDictionary := Dictionary new.
 	self objectsWithPathsDo: [:each :path |
 		artifactsDictionary at: path put: (self liveArtifactFor: each at: path)].
-	artifactsDictionary at: LBGitFilesArtifact path put: 
+	artifactsDictionary at: '' put: 
 		(LBGitLiveFilesArtifact new
 			ownerSnapshot: self;
 			yourself).

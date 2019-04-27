@@ -5,8 +5,3 @@ initialize
 	additionalInfo := Dictionary new. "path -> Dictionary"
 	loadOrder := OrderedCollection new. "paths"
 	environment := Environment current.
-	
-	self 
-		add: LBGitFilesObject new 
-		at: LBGitFilesArtifact path
-		additionalInfo: SquotTrackedObjectMetadata new.

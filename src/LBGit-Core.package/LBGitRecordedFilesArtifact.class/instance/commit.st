@@ -1,4 +1,6 @@
 as yet unclassified
 commit 
 
-	^ self rootDirectory fileSystem store revision
+	^ self isInGit
+		ifTrue: [self rootDirectory fileSystem store revision]
+		ifFalse: [nil]

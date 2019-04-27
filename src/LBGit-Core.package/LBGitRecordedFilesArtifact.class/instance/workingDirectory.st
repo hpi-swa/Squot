@@ -1,4 +1,6 @@
 as yet unclassified
 workingDirectory 
 
-	^ self rootDirectory fileSystem repository repository workingDir
+	^ self isInGit
+		ifTrue: [self rootDirectory fileSystem repository repository workingDir]
+		ifFalse: [self rootDirectory].

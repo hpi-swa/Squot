@@ -4,9 +4,10 @@
 	"instance" : {
 		"collectFilesOf:" : "LB 11/25/2018 15:16",
 		"collectTrackedFiles" : "LB 12/2/2018 14:23",
-		"commit" : "LB 11/20/2018 16:28",
+		"commit" : "LB 4/27/2019 19:58",
 		"diffAgainst:" : "LB 11/25/2018 14:06",
+		"isInGit" : "LB 4/27/2019 19:58",
 		"printOn:" : "LB 11/25/2018 13:44",
 		"reverseDiffAgainstLiveFiles:" : "LB 11/26/2018 16:15",
 		"reverseDiffAgainstRecordedFiles:" : "LB 11/25/2018 14:08",
-		"workingDirectory" : "LB 12/13/2018 17:01" } }
+		"workingDirectory" : "LB 4/27/2019 19:57" } }

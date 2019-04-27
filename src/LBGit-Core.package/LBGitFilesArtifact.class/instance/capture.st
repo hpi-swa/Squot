@@ -1,4 +1,5 @@
 as yet unclassified
 capture
 
-	^ self "hopefully already captured?"
+	"There is no difference between a 'live' and 'snaphshot' file list'"
+	^ self 

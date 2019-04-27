@@ -6,4 +6,5 @@ setUp
 	imageStore := SquotImageStore new
 		environment: testEnvironment;
 		yourself.
+	imageStore removeAt: LBGitFilesArtifact path.
 	changeLogSuppressor := SUnitChangeLogSuppressor new.

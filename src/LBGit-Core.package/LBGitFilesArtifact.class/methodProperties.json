@@ -2,11 +2,13 @@
 	"class" : {
 		"path" : "LB 12/7/2018 18:14" },
 	"instance" : {
+		"=" : "LB 4/27/2019 16:05",
 		"capture" : "LB 3/27/2019 18:25",
 		"collectTrackedFiles" : "LB 11/25/2018 13:34",
 		"diffAgainst:" : "LB 11/25/2018 13:35",
 		"diffContentAgainstThatOf:" : "LB 11/25/2018 13:36",
 		"displayText" : "LB 11/26/2018 16:25",
+		"hash" : "LB 4/27/2019 16:04",
 		"isLoadable" : "LB 11/25/2018 13:22",
 		"isSquotFile:" : "LB 12/7/2018 18:16",
 		"materializeWith:replacing:" : "LB 3/27/2019 18:27",

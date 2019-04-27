@@ -28,7 +28,7 @@
 		"initialize" : "jr 8/18/2018 15:47",
 		"initializeObjectFrom:" : "jr 7/22/2017 11:59",
 		"liveArtifactFor:at:" : "jr 4/7/2018 15:53",
-		"loadOrder" : "jr 8/18/2018 16:21",
+		"loadOrder" : "LB 4/27/2019 18:53",
 		"loadOrder:" : "jr 9/16/2018 00:20",
 		"materialize:replacing:" : "jr 4/7/2017 16:04",
 		"materializeGraph:from:replacing:" : "jr 7/30/2017 02:58",

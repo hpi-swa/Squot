@@ -1,4 +1,7 @@
 accessing
 artifacts
-
-	^ (self loadOrder with: self artifactsInLoadOrder collect: [:path :artifact | path -> artifact]) asDictionary
+	| artifactsDictionary |
+	artifactsDictionary := Dictionary new.
+	self objectsWithPathsDo: [:each :path |
+		artifactsDictionary at: path put: (self liveArtifactFor: each at: path)].
+	^ artifactsDictionary

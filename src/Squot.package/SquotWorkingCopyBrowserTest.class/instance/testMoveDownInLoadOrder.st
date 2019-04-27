@@ -9,5 +9,5 @@ testMoveDownInLoadOrder
 	"when"
 	browser moveDownInLoadOrder.
 	"then"
-	self assert: {'1'. LBGitFilesArtifact path. '2'.} equals: workingCopy loadOrder asArray;
-		assert: {'1'. LBGitFilesArtifact path. '2'.} equals: browser objectLabels asArray.
+	self assert: self swappedLoadOrder equals: workingCopy loadOrder asArray;
+		assert: self swappedLoadOrder equals: browser objectLabels asArray.

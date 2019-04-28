@@ -19,5 +19,5 @@ captureLazySnapshot
 		yourself).
 	builder buildSnapshot
 		in: [:snapshot |
-			unrecordedFiles ownerSnapshot: snapshot.
+			unrecordedFiles objectContainer: snapshot.
 			^ snapshot].

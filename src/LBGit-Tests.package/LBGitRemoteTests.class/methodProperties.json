@@ -9,6 +9,7 @@
 		"createBranch" : "LB 12/8/2018 15:28",
 		"credentials" : "LB 12/13/2018 16:35",
 		"deleteBranch" : "LB 12/8/2018 14:42",
+		"expectedFailures" : "LB 4/28/2019 13:53",
 		"generateToken" : "LB 12/13/2018 17:50",
 		"initialize" : "LB 2/13/2019 16:51",
 		"otherCommit" : "LB 12/10/2018 09:48",

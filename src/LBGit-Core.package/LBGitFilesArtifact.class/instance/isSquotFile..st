@@ -3,4 +3,4 @@ isSquotFile: aPath
 
 	^ (aPath includesSubstring: '.squot')
 		or: [aPath includesSubstring: '.package']
-		or: [self ownerSnapshot includesObjectAt: aPath]
+		or: [self objectContainer includesObjectAt: aPath]

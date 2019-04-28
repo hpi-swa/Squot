@@ -1,4 +1,4 @@
 as yet unclassified
 squotSummaryText
 
-	^ 'Files managed by squot'
+	^ 'Files stored outside of Squeak'

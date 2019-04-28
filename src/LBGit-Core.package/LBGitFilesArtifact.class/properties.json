@@ -6,9 +6,9 @@
 		 ],
 	"commentStamp" : "",
 	"instvars" : [
-		"ownerSnapshot",
 		"rootDirectory",
-		"trackedFiles" ],
+		"trackedFiles",
+		"objectContainer" ],
 	"name" : "LBGitFilesArtifact",
 	"pools" : [
 		 ],

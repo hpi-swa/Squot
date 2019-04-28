@@ -1,4 +1,4 @@
 as yet unclassified
 wantsToBeInTableOfContents
-	"I want to be always created"
+	"I always want to be newly created"
 	^ false

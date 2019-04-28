@@ -1,4 +1,7 @@
 as yet unclassified
 hash
 
-	^ self instanceVariableValues fold: [:total :each | total bitXor: each]
+	^  ((self class hash
+		bitXor: self objectContainer hash)
+		bitXor: self rootDirectory hash)
+		bitXor: trackedFiles

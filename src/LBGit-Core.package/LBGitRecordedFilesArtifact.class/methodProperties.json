@@ -2,7 +2,8 @@
 	"class" : {
 		 },
 	"instance" : {
-		"collectFilesOf:" : "LB 11/25/2018 15:16",
+		"collectFilesOf:" : "LB 4/28/2019 13:21",
+		"collectFilesOf:in:" : "LB 4/28/2019 13:25",
 		"collectTrackedFiles" : "LB 4/28/2019 11:06",
 		"commit" : "LB 4/27/2019 19:58",
 		"diffAgainst:" : "LB 11/25/2018 14:06",

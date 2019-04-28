@@ -1,0 +1,4 @@
+comparing
+reverseDiffAgainstLiveFiles: otherFilesArtifact
+	
+	^ self reverseDiffAgainstRecordedFiles: otherFilesArtifact

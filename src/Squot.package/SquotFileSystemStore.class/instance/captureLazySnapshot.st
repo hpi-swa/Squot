@@ -14,7 +14,7 @@ captureLazySnapshot
 			thenDo: [:eachArtifact | builder add: eachArtifact.
 				addedPaths add: eachArtifact path.
 				e add: eachArtifact]].
-	builder add: (unrecordedFiles := LBGitRecordedFilesArtifact new
+	builder add: (unrecordedFiles := SquotTrackedFilesArtifact new
 		rootDirectory: directory;
 		yourself).
 	builder buildSnapshot

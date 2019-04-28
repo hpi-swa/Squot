@@ -4,4 +4,4 @@ as yet unclassified
 	^ self class = otherObject class 
 		and: [self objectContainer = otherObject objectContainer]
 		and: [self rootDirectory = otherObject rootDirectory]
-		and: [trackedFiles = otherObject instVarNamed: #trackedFiles]
+		and: [trackedFiles = (otherObject instVarNamed: #trackedFiles)]

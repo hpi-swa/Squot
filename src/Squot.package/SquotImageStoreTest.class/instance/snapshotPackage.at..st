@@ -2,5 +2,5 @@ utilities
 snapshotPackage: aPackageInfo at: pathString
 	^ SquotImageStore new
 		add: aPackageInfo at: pathString;
-		removeAt: LBGitFilesArtifact path;
+		removeAt: SquotFilesArtifact path;
 		captureSnapshot

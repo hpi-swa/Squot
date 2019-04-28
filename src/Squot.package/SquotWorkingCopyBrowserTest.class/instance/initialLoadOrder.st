@@ -1,4 +1,4 @@
 testing
 initialLoadOrder
 	
-	^ {LBGitFilesArtifact path. '1'. '2'. }
+	^ {SquotFilesArtifact path. '1'. '2'. }

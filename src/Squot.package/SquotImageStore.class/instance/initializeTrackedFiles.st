@@ -2,6 +2,6 @@ initialize-release
 initializeTrackedFiles
 
 	self 
-		add: LBGitFilesObject new
-		at: LBGitFilesArtifact path
+		add: SquotFilesObject new
+		at: SquotFilesArtifact path
 		additionalInfo: SquotTrackedObjectMetadata new.

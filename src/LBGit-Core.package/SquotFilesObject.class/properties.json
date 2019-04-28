@@ -1,0 +1,14 @@
+{
+	"category" : "LBGit-Core",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "LB 4/28/2019 10:52",
+	"instvars" : [
+		 ],
+	"name" : "SquotFilesObject",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }

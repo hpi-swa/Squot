@@ -1,7 +1,7 @@
 private
 liveArtifactFor: anObject at: aPath
 
-	aPath = LBGitFilesArtifact path ifTrue: 
+	aPath = SquotFilesArtifact path ifTrue: 
 		[^ (LBGitLiveFilesArtifact new
 			objectContainer: self;
 			yourself)].

@@ -1,5 +1,5 @@
 as yet unclassified
 diffContentAgainstThatOf: anArtifact
 	"Double dispatch with reverseDiffContentAgainst:"
-	self deprecated.
-	^ anArtifact reverseDiffContentAgainst: self content
+	"Only used for SquotArtifactDiffWithContent, which should never occur on me, I have no content"
+	self shouldNotImplement.

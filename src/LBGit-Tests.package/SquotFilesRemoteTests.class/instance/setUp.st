@@ -10,4 +10,4 @@ setUp
 			createBranch].
 	self workingCopy register.
 	self otherWorkingCopy register.
-	self browser: LBGitSquitBrowserForTests new.
+	self browser: SquotFilesBrowserForTests new.

@@ -6,12 +6,9 @@
 		 ],
 	"commentStamp" : "",
 	"instvars" : [
-		"otherWorkingCopy",
-		"browser",
-		"token",
-		"remainingAttempts" ],
-	"name" : "LBGitRemoteTests",
+		"projectSelection" ],
+	"name" : "SquotFilesBrowserForTests",
 	"pools" : [
 		 ],
-	"super" : "LBGitTestCase",
+	"super" : "SquitBrowser",
 	"type" : "normal" }

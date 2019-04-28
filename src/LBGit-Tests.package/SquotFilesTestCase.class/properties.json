@@ -9,7 +9,7 @@
 	"instvars" : [
 		"workingCopy",
 		"reference" ],
-	"name" : "LBGitTestCase",
+	"name" : "SquotFilesTestCase",
 	"pools" : [
 		 ],
 	"super" : "TestCase",

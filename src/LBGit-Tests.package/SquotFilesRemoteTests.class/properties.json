@@ -6,9 +6,12 @@
 		 ],
 	"commentStamp" : "",
 	"instvars" : [
-		 ],
-	"name" : "LBGitLocalTests",
+		"otherWorkingCopy",
+		"browser",
+		"token",
+		"remainingAttempts" ],
+	"name" : "SquotFilesRemoteTests",
 	"pools" : [
 		 ],
-	"super" : "LBGitTestCase",
+	"super" : "SquotFilesTestCase",
 	"type" : "normal" }

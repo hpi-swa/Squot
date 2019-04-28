@@ -2,7 +2,6 @@
 	"category" : "LBGit-Core",
 	"classinstvars" : [
 		 ],
-	"classtraitcomposition" : "TSquotDiff classTrait",
 	"classvars" : [
 		 ],
 	"commentStamp" : "",
@@ -19,5 +18,4 @@
 	"pools" : [
 		 ],
 	"super" : "Object",
-	"traitcomposition" : "TSquotDiff",
 	"type" : "normal" }

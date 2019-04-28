@@ -1,6 +1,7 @@
 as yet unclassified
 isSquotFile: aPath
 
-	^ (aPath includesSubstring: '.squot')
+	^ (aPath = SquotFileSystemStore tocFileName)
+		or: [aPath includesSubstring: 'squot-table-of-contents']
 		or: [aPath includesSubstring: '.package']
 		or: [self objectContainer includesObjectAt: aPath]

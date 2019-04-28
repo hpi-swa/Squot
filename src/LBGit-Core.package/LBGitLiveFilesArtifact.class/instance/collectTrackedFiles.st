@@ -2,6 +2,6 @@ collecting tracked files
 collectTrackedFiles 
 
 	self trackedFiles: 
-		((self allFiles
+		(((self allFiles
 			collect: [:each | self pathAndMetadataFor: each])
-			reject: [:each | self isSquotFile: each key]) asDictionary
+			reject: [:each | self isSquotFile: each key]) as: Dictionary)

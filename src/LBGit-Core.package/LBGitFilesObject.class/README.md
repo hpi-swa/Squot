@@ -1,1 +1,1 @@
-I am an Object for the sole purpose of being stored in an object store to be able to create an artifact for me.
+I am an Object for the sole purpose of being stored in an object store, in order to be able to create an artifact for me. I act as a placeholder, only documenting that what is tracked is a file list. 

@@ -6,7 +6,7 @@
 		 ],
 	"commentStamp" : "",
 	"instvars" : [
-		"path",
+		"reference",
 		"treeEntry" ],
 	"name" : "LBGitFileMetadata",
 	"pools" : [

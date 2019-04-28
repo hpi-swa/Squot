@@ -2,10 +2,10 @@ as yet unclassified
 contents
 
 	| stream content |
-	^ (self path notNil and: [self path exists]) 
+	^ (self reference notNil and: [self reference exists]) 
 		ifFalse: [nil]
 		ifTrue: 
-			[stream := self path readStream binary.
+			[stream := self reference readStream binary.
 			content := stream contents.
 			stream close.
 			content]

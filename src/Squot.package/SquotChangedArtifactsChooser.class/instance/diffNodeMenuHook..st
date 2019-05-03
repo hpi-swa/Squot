@@ -15,7 +15,9 @@ diffNodeMenuHook: aMenu
 			add: 'Move up in load order' action: #moveUpSelectedInLoadOrder;
 			add: 'Move down in load order' action: #moveDownSelectedInLoadOrder].
 	aMenu addLine.
-	aMenu add: 'Inspect diff' action: #inspectSelectedDiffContent.
+	aMenu add: 'Inspect diff (i)' action: #inspectSelectedDiffContent.
+	self selectedNode content ifNotNil:
+		[aMenu add: 'Browse full (b)' action: #browseDiffContent. "Only for code objects?!"].
 	(editedPatch paths includes: self selectedNode title) ifTrue:
 		[aMenu add: self inspectOriginalArtifactCommandLabel action: #inspectOriginalArtifactOfSelectedNode.
 		aMenu add: self inspectProposedArtifactCommandLabel action: #inspectProposedArtifactOfSelectedNode].

@@ -1,3 +1,3 @@
 ui labels
 chooseRightCommandLabel
-	^ 'Choose this edition'
+	^ 'Choose this edition (x)'

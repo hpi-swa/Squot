@@ -1,3 +1,3 @@
 ui labels
 activateNodeCommandLabel
-	^ 'Choose this edition'
+	^ 'Choose this edition (x)'

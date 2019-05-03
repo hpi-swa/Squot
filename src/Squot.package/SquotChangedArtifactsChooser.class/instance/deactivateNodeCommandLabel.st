@@ -1,3 +1,3 @@
 ui labels
 deactivateNodeCommandLabel
-	^ 'Skip this change'
+	^ 'Skip this change (x)'

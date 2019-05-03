@@ -33,23 +33,23 @@ Metacello new
 
 After installing Squot, you will find a "Git Browser" in the Apps menu. With this tool you can create projects (in-image working copies) that can contain multiple objects, including packages. Each object is stored at or under a path. When you checkout the Git repository in the file system, an object's path is its relative path in the working copy. From the Git Browser, you can create new commits, synchronize with remote repositories (fetch, pull, push), manage and merge branches, switch between them, and compare different versions.
 
-### Gettings Started with an Existing Remote Project 
+### Getting Started with an Existing Remote Project 
 
-1. Open the Git Browser. Depending on your Squeak version, you can find it under Apps or under Tools. If this is the first time you open it, it might ask you, whether you want to add your first project now. You can decline for now, as we do not want to add a new project.
+1. Open the Git Browser. Depending on your Squeak version, you can find it under Apps or under Tools. If this is the first time you open it, it might ask you whether you want to add your first project now. You can decline for now, as we do not want to add a new (empty) project.
 
-2. The pane at the top left pane is the list of projects which are currently managed through Squot. We will now add a project by opening the contex menu of the list and selecting either "Clone Project" directly or "New project..." > "Clone Project".
+2. The pane at the top left pane is the list of projects which are currently managed through Squot. We will now clone an existing project by opening the context menu of the list and selecting either "Clone Project" directly or "New project..." > "Clone Project".
 
 3. A wizard opens which will guide us through the steps to clone the project.
 
 4. First, it asks for an URL to clone from. We use the https URL of our repository for that. For Github projects you can find the https URL on the project main page after clicking on the button labeled "Clone or download" (You might have to select "Use HTTPS").
 
-5. Second, we can enter a project name which helps us remember our project.
+5. Second, we can enter a project name which helps us remember our project. It will be displayed in the projects list.
 
-6. Third, we have to select a folder in which Squot can store a file-based version of the repository. You should create a dedicated folder for that even if you will not work with the working copy in the filesystem.
+6. Third, we have to select a folder in which Squot can store the Git repository. You should create a dedicated folder for that even if you will not work with the working copy in the filesystem.
 
 7. We have now provided all necessary details and Squot will go ahead and clone the project for us.
 
-8. As soon as Squot finished cloning, we have the repository in the system but we do not yet have the objects loaded from the repository. For that to happen, we have to click on "Checkout objects" in the context menu on the topmost commit in the list of commits, which is the pane on the top right of the git browser.
+8. As soon as Squot finished cloning, we have the repository on the disk and registered in the system, but we do not yet have the objects loaded from the repository into Squeak. For that to happen, we have to click on "Checkout objects" in the context menu on the topmost commit in the list of commits, which is the pane on the top right of the git browser.
 
 9.  We are now presented with a list of changes to be loaded through the checkout. If you have no special requirements for loading the packages, you can simply click the "accept" button.
 
@@ -71,7 +71,7 @@ After installing Squot, you will find a "Git Browser" in the Apps menu. With thi
 
 ### Notes on Pushing to Github
 
-Please note that when you push to Github and you have two-factor-authentication activated, you can not use your ordinary password. You will have to generate a personal access token in the corresponding [settings page](https://github.com/settings/tokens). 
+Please note that when you push to Github and you have two-factor-authentication activated, you can not use your ordinary password. You will have to generate a personal access token in the corresponding [settings page](https://github.com/settings/tokens). When Squot asks you for the password of the remote, enter the personal access token instead.
 
 
 ### Details on the Inner Workings of Squot

@@ -1,0 +1,7 @@
+{
+	"class" : {
+		 },
+	"instance" : {
+		"testAdditionalParentsWhenSavedNonInteractively" : "jr 5/4/2019 00:50",
+		"testSnapshotIncludesLoadOrder" : "jr 5/4/2019 00:52",
+		"testUnnecessaryMergeIsCanceled" : "jr 5/4/2019 00:52" } }

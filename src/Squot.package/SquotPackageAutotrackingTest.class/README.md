@@ -1,0 +1,1 @@
+I test how working copies automatically start tracking objects in certain cases.

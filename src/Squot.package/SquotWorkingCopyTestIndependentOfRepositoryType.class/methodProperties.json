@@ -1,15 +1,9 @@
 {
 	"class" : {
-		 },
+		"isAbstract" : "jr 5/4/2019 00:53" },
 	"instance" : {
 		"newRepository" : "jr 6/30/2017 22:14",
 		"newStore" : "jr 1/29/2017 22:20",
 		"newWorkingCopy" : "jr 1/26/2017 17:05",
 		"setUp" : "jr 6/30/2017 22:15",
-		"tearDown" : "jr 6/30/2017 22:16",
-		"testAdditionalParentsWhenSavedNonInteractively" : "jr 5/21/2018 21:31",
-		"testDiscardUnsavedChanges" : "jr 6/30/2017 22:21",
-		"testSnapshotIncludesLoadOrder" : "jr 9/15/2018 19:45",
-		"testSwitchToRestoresUnsavedChanges" : "jr 3/4/2019 23:37",
-		"testSwitchToRestoresUnsavedChangesOnly" : "jr 3/4/2019 23:38",
-		"testUnnecessaryMergeIsCanceled" : "jr 10/15/2017 21:45" } }
+		"tearDown" : "jr 6/30/2017 22:16" } }

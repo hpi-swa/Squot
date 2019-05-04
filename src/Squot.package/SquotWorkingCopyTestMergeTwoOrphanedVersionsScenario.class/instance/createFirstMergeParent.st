@@ -7,3 +7,5 @@ createFirstMergeParent
 	workingCopy add: packageInfo1 at: packagePath1.
 	workingCopy saveNewVersionMessage: 'first version' interactive: false.
 	firstVersion := workingCopy baseVersion.
+	Environment current packageOrganizer unregisterPackageNamed: classFactory packageName.
+	classFactory cleanUp.

@@ -9,6 +9,7 @@ mergeArtifactInteractively: anArtifact from: aVersion ifCanceled: cancelBlock
 			ifDescendant: [].
 		self flag: 'TODO: if there are multiple merge-bases, resolve conflicts recursively below'.
 		mergeBase := mergeBases anyOne.
+		self addGlobalObjectsToStore: (SquotSnapshot builder add: anArtifact; buildSnapshot).
 		base := (mergeBase artifactAt: anArtifact path
 				ifPresent: [:baseArtifact | self newSnapshotBuilder add: baseArtifact; buildSnapshot]
 				ifAbsent: [self lazySnapshot]).

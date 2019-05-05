@@ -25,7 +25,6 @@
 		"retryTest" : "LB 2/13/2019 16:48",
 		"setUp" : "LB 4/28/2019 16:14",
 		"setUpAdditionalWorkingCopy" : "LB 12/8/2018 15:24",
-		"setUpRemote" : "LB 12/8/2018 15:31",
 		"setUpRemoteFor:" : "LB 12/8/2018 16:56",
 		"tearDown" : "LB 12/8/2018 17:35",
 		"testMergeGenerated" : "LB 2/13/2019 15:10",

@@ -1,0 +1,15 @@
+{
+	"category" : "LBGit-Core",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"path",
+		"parent" ],
+	"name" : "SquotFileDiff",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }

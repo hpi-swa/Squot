@@ -4,10 +4,10 @@ testCannotMoveDownLastObjectInLoadOrder
 	workingCopy
 		add: Object new at: '1';
 		add: Object new at: '2'.
-	self assert: #('1' '2') equals: workingCopy loadOrder asArray.
-	browser selectedObjectIndex: 2.
+	self assert: self initialLoadOrder equals: workingCopy loadOrder asArray.
+	browser selectedObjectIndex: workingCopy loadOrder size.
 	"when"
 	browser moveDownInLoadOrder.
 	"then"
-	self assert: #('1' '2') equals: workingCopy loadOrder asArray;
-		assert: #('1' '2') equals: browser objectLabels asArray.
+	self assert: self initialLoadOrder equals: workingCopy loadOrder asArray;
+		assert: self initialLoadOrder equals: browser objectLabels asArray.

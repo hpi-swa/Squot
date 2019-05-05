@@ -1,0 +1,28 @@
+{
+	"class" : {
+		 },
+	"instance" : {
+		"commit" : "LB 12/8/2018 13:13",
+		"commitDummyFileAddition" : "LB 12/8/2018 13:05",
+		"commitMessaged:" : "LB 12/8/2018 13:05",
+		"createDummyFile" : "LB 12/4/2018 13:49",
+		"createDummyImage" : "LB 3/1/2019 15:35",
+		"deleteDummyFile" : "LB 12/4/2018 13:38",
+		"dummyContents" : "LB 12/8/2018 13:03",
+		"dummyContents2" : "LB 12/4/2018 13:47",
+		"dummyFile" : "LB 12/2/2018 13:56",
+		"dummyFile2" : "LB 12/10/2018 09:47",
+		"dummyImage" : "LB 3/1/2019 15:33",
+		"dummyImageContents" : "LB 3/1/2019 15:34",
+		"gitReference" : "LB 12/4/2018 14:10",
+		"makeWorkingCopyAt:" : "LB 12/8/2018 15:15",
+		"performTest" : "",
+		"reference" : "LB 12/2/2018 13:40",
+		"reference:" : "LB 12/2/2018 13:40",
+		"setUp" : "LB 12/8/2018 15:15",
+		"suppressProgressDisplayDuring:" : "",
+		"tearDown" : "LB 12/8/2018 14:37",
+		"workingCopy" : "LB 12/2/2018 12:54",
+		"workingCopy:" : "LB 12/8/2018 13:45",
+		"write:to:in:" : "LB 2/13/2019 15:02",
+		"writeToDummyFile:" : "LB 12/10/2018 09:45" } }

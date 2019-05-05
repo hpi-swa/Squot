@@ -51,9 +51,12 @@ baseline: spec
 			package: 'FileSystem-Git' with: [
 				spec requires: #('FS-Core' 'FS-Disk' 'FS-Memory' 'FS-AnsiStreams' 'FS-Tests-Core' 'Pharo-compatibility' 'INIFile' 'VersionControl' ). ];
 			package: 'Squit' with: [
-				spec requires: #('FileSystem-Git' 'Squot' 'FS-FileDirectory-Adapters' ). ].
+				spec requires: #('FileSystem-Git' 'Squot' 'FS-FileDirectory-Adapters' ). ];
+			package: 'LBGit-Core';
+			package: 'LBGit-Tests' with: [
+				spec requires: #('LBGit-Core'). ].
 		spec 
 			group: 'FileSystemGit' with: #('FileSystem-Git' );
 			group: 'FileSystem' with: #('FS-Core' 'FS-Disk' 'FS-Memory' 'FS-AnsiStreams' 'FS-FileDirectory-Adapters' );
-			group: 'tests' with: #('Squit' 'FS-Tests-Core' 'FS-Tests-Disk' 'FS-Tests-Memory' 'FS-Tests-AnsiStreams');
-			group: 'default' with: #('Squit' 'Squot'). ].
+			group: 'tests' with: #('Squit' 'FS-Tests-Core' 'FS-Tests-Disk' 'FS-Tests-Memory' 'FS-Tests-AnsiStreams' 'LBGit-Tests');
+			group: 'default' with: #('Squit' 'Squot' 'LBGit-Core'). ].

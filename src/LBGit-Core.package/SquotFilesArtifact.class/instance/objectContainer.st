@@ -1,0 +1,4 @@
+accessing
+objectContainer
+
+	^ objectContainer

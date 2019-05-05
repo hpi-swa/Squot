@@ -5,3 +5,5 @@ initialize
 	additionalInfo := Dictionary new. "path -> Dictionary"
 	loadOrder := OrderedCollection new. "paths"
 	environment := Environment current.
+	
+	self initializeTrackedFiles.

@@ -14,5 +14,8 @@ OrderedDictionary {
 	'src\/FS-Tests-Memory.package' : #SquotCypressCodeSerializer,
 	'src\/FS-Tests-Disk.package' : #SquotCypressCodeSerializer,
 	'src\/FS-Tests-AnsiStreams.package' : #SquotCypressCodeSerializer,
-	'src\/BaselineOfSquot.package' : #SquotCypressCodeSerializer
+	'src\/BaselineOfSquot.package' : #SquotCypressCodeSerializer,
+	'src\/LBGit-Core.package' : #SquotCypressCodeSerializer,
+	'src\/LBGit-Tests.package' : #SquotCypressCodeSerializer,
+	'src\/BaselineOfLBGit.package' : #SquotCypressCodeSerializer
 }

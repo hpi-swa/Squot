@@ -1,0 +1,14 @@
+{
+	"category" : "LBGit-Tests",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "SquotFilesLocalTests",
+	"pools" : [
+		 ],
+	"super" : "SquotFilesTestCase",
+	"type" : "normal" }

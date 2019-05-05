@@ -15,4 +15,4 @@ testCherryPickOfOrphanedVersion
 	do: [:request | request resume]
 	] valueSupplyingAnswers: {{'*'. #default}}].
 	"then"
-	self assert: workingCopy artifacts size = 2.
+	self assert: workingCopy artifacts size = 3. "The two test categories and the tracked files artifact"

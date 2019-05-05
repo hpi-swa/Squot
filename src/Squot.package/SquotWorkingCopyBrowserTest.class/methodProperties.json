@@ -2,9 +2,11 @@
 	"class" : {
 		 },
 	"instance" : {
+		"initialLoadOrder" : "LB 4/28/2019 16:11",
 		"setUp" : "jr 10/3/2018 15:28",
-		"testCannotMoveDownLastObjectInLoadOrder" : "jr 10/3/2018 15:38",
-		"testCannotMoveUpFirstObjectInLoadOrder" : "jr 10/3/2018 15:37",
+		"swappedLoadOrder" : "LB 4/27/2019 17:43",
+		"testCannotMoveDownLastObjectInLoadOrder" : "LB 4/27/2019 17:42",
+		"testCannotMoveUpFirstObjectInLoadOrder" : "LB 4/27/2019 17:01",
 		"testDisplaying" : "jr 10/3/2018 15:32",
-		"testMoveDownInLoadOrder" : "jr 10/3/2018 15:38",
-		"testMoveUpInLoadOrder" : "jr 10/3/2018 15:36" } }
+		"testMoveDownInLoadOrder" : "LB 4/27/2019 17:44",
+		"testMoveUpInLoadOrder" : "LB 4/27/2019 17:43" } }

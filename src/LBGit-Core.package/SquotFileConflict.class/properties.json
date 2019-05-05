@@ -1,0 +1,15 @@
+{
+	"category" : "LBGit-Core",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"leftChange",
+		"rightChange" ],
+	"name" : "SquotFileConflict",
+	"pools" : [
+		 ],
+	"super" : "SquotFileDiff",
+	"type" : "normal" }

@@ -1,0 +1,17 @@
+{
+	"category" : "LBGit-Tests",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"otherWorkingCopy",
+		"browser",
+		"token",
+		"remainingAttempts" ],
+	"name" : "SquotFilesRemoteTests",
+	"pools" : [
+		 ],
+	"super" : "SquotFilesTestCase",
+	"type" : "normal" }

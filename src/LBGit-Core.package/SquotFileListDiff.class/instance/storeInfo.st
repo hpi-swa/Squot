@@ -1,0 +1,4 @@
+applying
+storeInfo
+
+	^ SquotTrackedObjectMetadata new

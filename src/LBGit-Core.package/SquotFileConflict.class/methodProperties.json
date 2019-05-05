@@ -2,13 +2,17 @@
 	"class" : {
 		"left:right:" : "LB 11/25/2018 16:22" },
 	"instance" : {
-		"applyWith:" : "LB 11/25/2018 16:47",
-		"asDiffNode" : "LB 3/10/2019 17:01",
+		"applyWith:" : "LB 5/5/2019 12:05",
+		"asDiffNode" : "LB 5/5/2019 12:07",
 		"body" : "LB 11/25/2018 16:35",
-		"choice" : "LB 11/25/2018 16:47",
-		"isConflict" : "LB 12/8/2018 14:17",
+		"choice" : "LB 5/5/2019 12:07",
+		"choice:" : "LB 5/5/2019 12:04",
+		"chooseLeft" : "LB 5/5/2019 12:05",
+		"chooseRight" : "LB 5/5/2019 12:05",
+		"isConflict" : "LB 5/5/2019 12:07",
 		"leftChange" : "LB 11/25/2018 16:22",
 		"leftChange:" : "LB 11/25/2018 16:22",
+		"resetChoice" : "LB 5/5/2019 12:06",
 		"rightChange" : "LB 11/25/2018 16:22",
 		"rightChange:" : "LB 11/25/2018 16:22",
 		"title" : "LB 11/25/2018 16:20" } }

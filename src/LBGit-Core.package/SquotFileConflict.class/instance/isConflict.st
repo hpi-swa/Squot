@@ -1,4 +1,4 @@
 as yet unclassified
 isConflict 
 
-	^ true
+	^ self choice = nil

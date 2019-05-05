@@ -5,6 +5,6 @@ asDiffNode
 		title: self title
 		content: self
 		children: #()
-		onInclude: [] 
-		onExclude: []
-		onReset: []
+		onInclude: [self chooseRight] 
+		onExclude: [self chooseLeft]
+		onReset: [self resetChoice]

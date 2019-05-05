@@ -1,4 +1,0 @@
-accessing
-fileStore
-
-	^ fileStore

@@ -1,7 +1,6 @@
 OrderedDictionary {
 	'src\/VersionControl.package' : #SquotCypressCodeSerializer,
 	'src\/Pharo-compatibility.package' : #SquotCypressCodeSerializer,
-	'src\/FS-Core.package' : #SquotCypressCodeSerializer,
 	'src\/FS-Memory.package' : #SquotCypressCodeSerializer,
 	'src\/FS-Disk.package' : #SquotCypressCodeSerializer,
 	'src\/FS-AnsiStreams.package' : #SquotCypressCodeSerializer,

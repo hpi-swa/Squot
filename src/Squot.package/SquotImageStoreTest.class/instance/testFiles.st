@@ -1,14 +1,10 @@
 tests
 testFiles
-	| vmBinaryArtifact snapshot |
-	vmBinaryArtifact := (SquotFileArtifact for: FSLocator vmBinary asFileReference)
-			path: 'vm';
-			yourself.
+	"ImageStore cannot store files"
+	| filesArtifact snapshot |
+	filesArtifact := SquotUnrecordedFilesArtifact new.
 	snapshot := SquotSnapshot builder
-		add: vmBinaryArtifact;
+		add: filesArtifact;
 		buildSnapshot.
 	imageStore restoreToSnapshot: snapshot.
 	self deny: (imageStore includesObjectAt: 'vm').
-	"self shouldnt: [imageStore objectAt: 'vm'] raise: Error.
-	self assert: ((imageStore objectAt: 'vm') isKindOf: SquotFileArtifact).
-	self assert: vmBinaryArtifact equals: (imageStore objectAt: 'vm')."

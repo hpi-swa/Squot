@@ -1,4 +1,0 @@
-accessing
-ignoredPaths
-
-	^ ignoredPaths

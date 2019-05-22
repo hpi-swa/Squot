@@ -1,3 +1,3 @@
 serializing
 squotWrite: anArtifact with: aSerializer
-	^ aSerializer writeMCSnapshot: snapshot from: anArtifact
+	^ aSerializer writeMCSnapshot: snapshot forPackageNamed: packageName from: anArtifact

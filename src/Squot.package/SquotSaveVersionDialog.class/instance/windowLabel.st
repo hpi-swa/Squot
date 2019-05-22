@@ -1,3 +1,3 @@
-ui toolbuilder
+ui labels
 windowLabel
 	^ 'New version'

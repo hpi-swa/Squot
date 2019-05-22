@@ -10,6 +10,7 @@ chooserWidgetSpecs: builder
 		setSelected: #selectNode:;
 		getChildren: #childNodesOf:;
 		hasChildren: #hasChildren:;
+		keyPress: #diffKey:from:event:;
 		menu: #diffNodeMenu:shifted:;
 		frame: (0@0 corner: 0.4@1);
 		yourself.

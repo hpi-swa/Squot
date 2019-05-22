@@ -1,0 +1,3 @@
+actions
+editGlobalAuthorInfo
+	SquitSettings open

@@ -1,3 +1,3 @@
-ui diff tree
+ui labels
 activateNodeCommandLabel
-	^ 'Include this change in the new version'
+	^ 'Include this change in the new version (x)'

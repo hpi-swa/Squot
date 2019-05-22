@@ -8,6 +8,8 @@
 		"testAcceptArtifactAddition" : "jr 10/3/2018 00:35",
 		"testAcceptArtifactChange" : "jr 11/26/2018 21:09",
 		"testAcceptArtifactRemoval" : "jr 11/26/2018 20:55",
+		"testMoveDownInLoadOrder" : "jr 4/8/2019 20:43",
+		"testMoveUpInLoadOrder" : "jr 4/8/2019 20:42",
 		"testPreservesLoadOrderChanges" : "jr 10/3/2018 00:35",
 		"testPreservesLoadOrderChanges2" : "jr 10/3/2018 14:52",
 		"testRejectArtifactAddition" : "jr 11/6/2018 08:12",
@@ -16,5 +18,7 @@
 		"testResolveArtifactConflictChooseLeft" : "jr 11/5/2018 21:49",
 		"testResolveArtifactConflictChooseRight" : "jr 11/5/2018 21:52",
 		"testResolveArtifactConflictWithIncomingRemoval" : "jr 11/5/2018 22:04",
+		"testResolveConflictInArtifactChooseLeft" : "jr 3/9/2019 23:31",
+		"testResolveConflictInArtifactChooseRight" : "jr 3/9/2019 23:31",
 		"testResolveThenResetArtifactConflict" : "jr 11/26/2018 22:56",
 		"testSelectedPatchIsIdempotentWithoutChangingNodes" : "jr 10/3/2018 00:35" } }

@@ -9,9 +9,12 @@ menuProjectListWorkingCopyHook: aMenu
 		{'Remove project'. #actionProjectRemove}.
 	}.
 	aMenu addLine.
-	aMenu addList: {
-		{'Change tracked packages'. #actionChooseTrackedPackages. 'Add or remove packages for this project.'}
-	}.
+	aMenu
+		addList: {
+			{'Change tracked packages'. #actionChooseTrackedPackages. 'Add or remove packages for this project.'}
+		};
+		add: 'Set package storage format...'
+		subMenu: (ToolBuilder default build: self packageFormatMenuSpec).
 	aMenu addLine.
 	aMenu addList: {
 		{'Add remote'. #actionRemoteAdd}.

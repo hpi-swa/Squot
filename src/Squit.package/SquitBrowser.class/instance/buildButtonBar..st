@@ -64,7 +64,7 @@ buildButtonBar: builder
 		model: self;
 		label: 'Settings';
 		action: #actionSettings;
-		help: 'Edit your global Git settings.'.
+		help: 'Edit your Git settings.'.
 
 	feedbackButton := builder pluggableActionButtonSpec new.
 	feedbackButton

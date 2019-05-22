@@ -1,0 +1,15 @@
+{
+	"category" : "Squot-FileSystemStore",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"detectBlock",
+		"name" ],
+	"name" : "SquotArtifactLocator",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }

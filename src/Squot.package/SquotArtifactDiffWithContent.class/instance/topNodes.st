@@ -1,3 +1,3 @@
 accessing
 topNodes
-	^ diffContent asSquotHierarchicalDiff
+	^ diffContent asSquotHierarchicalDiff, self metadataTreeNodes

@@ -1,0 +1,16 @@
+{
+	"category" : "Squot-Serialization-Tests",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"rootDirectory",
+		"locator",
+		"fileStore" ],
+	"name" : "SquotArtifactLocatorTest",
+	"pools" : [
+		 ],
+	"super" : "TestCase",
+	"type" : "normal" }

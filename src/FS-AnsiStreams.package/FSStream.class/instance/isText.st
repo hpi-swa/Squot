@@ -1,3 +1,0 @@
-ansi
-isText
-	^ isBinary not

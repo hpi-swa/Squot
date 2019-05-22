@@ -14,5 +14,7 @@
 		"testPatchDeleteArtifact" : "jr 7/22/2017 02:25",
 		"testPatchDeleteFolderArtifact" : "jr 7/22/2017 02:29",
 		"testPatchDeleteMethod" : "jr 7/22/2017 01:33",
+		"testPatchFileTreeWithoutMetadata" : "jr 3/7/2019 08:42",
+		"testReadArtifactWithoutMetadata" : "jr 3/12/2019 22:05",
 		"testStringAsTextfile" : "jr 8/17/2017 19:25",
 		"testStringDefaultEncoding" : "jr 8/18/2017 12:41" } }

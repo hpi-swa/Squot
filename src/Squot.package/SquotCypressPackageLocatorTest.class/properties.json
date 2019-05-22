@@ -1,0 +1,14 @@
+{
+	"category" : "Squot-Serialization-Tests",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "SquotCypressPackageLocatorTest",
+	"pools" : [
+		 ],
+	"super" : "SquotArtifactLocatorTest",
+	"type" : "normal" }

@@ -1,0 +1,1 @@
+I test how working copies deal with unsaved changes.

@@ -1,0 +1,14 @@
+{
+	"category" : "Squot-FileTestRepository",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "SquotFileTestRepositoryWorkingCopyTest",
+	"pools" : [
+		 ],
+	"super" : "SquotWorkingCopyTest",
+	"type" : "normal" }

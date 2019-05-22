@@ -1,0 +1,16 @@
+{
+	"category" : "Squot-FileTestRepository",
+	"classinstvars" : [
+		 ],
+	"classtraitcomposition" : "TSquotLocalRepository classTrait",
+	"classvars" : [
+		 ],
+	"commentStamp" : "jr 3/16/2019 19:56",
+	"instvars" : [
+		"directory" ],
+	"name" : "SquotFileTestRepository",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"traitcomposition" : "TSquotLocalRepository",
+	"type" : "normal" }

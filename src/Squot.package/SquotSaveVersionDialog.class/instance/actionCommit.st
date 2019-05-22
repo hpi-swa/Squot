@@ -1,3 +1,3 @@
-ui toolbuilder
+actions
 actionCommit
 	self accept

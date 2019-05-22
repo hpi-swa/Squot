@@ -1,10 +1,13 @@
 as yet unclassified
 rewritePath: pathString ofPackage: aPackageShadow
 	"Append package directory if necessary."
-	| elements |
+	| elements packageName |
 	elements := pathString squotPathSegments.
-	(elements notEmpty and: [elements last endsWith: '.package'])
-		ifFalse: [^ self
-				addPackageDirectoryForPackage: aPackageShadow
-				to: elements].
-	^ pathString
+	elements ifEmpty:
+		[^ self addPackageDirectoryForPackage: aPackageShadow to: elements].
+	packageName := aPackageShadow packageName.
+	elements last = (packageName, '.package') ifTrue: [^ pathString].
+	(elements last beginsWith: packageName) ifTrue:
+		[^ self addPackageDirectoryForPackage: aPackageShadow
+			to: elements allButLast].
+	^ self addPackageDirectoryForPackage: aPackageShadow to: elements

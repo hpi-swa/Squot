@@ -2,11 +2,14 @@
 	"class" : {
 		 },
 	"instance" : {
+		"=" : "jr 3/16/2019 18:55",
 		"artifacts" : "jr 5/28/2017 16:09",
+		"hash" : "jr 3/16/2019 18:55",
 		"isAncestorOf:" : "jr 6/30/2017 23:37",
 		"lazyArtifacts" : "jr 5/28/2017 16:09",
+		"lazySnapshot" : "jr 3/16/2019 18:31",
 		"loadOrder" : "jr 8/18/2018 17:01",
 		"mergeBaseWith:" : "jr 5/26/2017 22:00",
 		"mergeBasesWith:" : "jr 6/30/2017 23:37",
 		"parentSnapshot" : "jr 5/31/2017 13:18",
-		"printOn:" : "jr 11/17/2018 23:42" } }
+		"printOn:" : "jr 3/16/2019 18:13" } }

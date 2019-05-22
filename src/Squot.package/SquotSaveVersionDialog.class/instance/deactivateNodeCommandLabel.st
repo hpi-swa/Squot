@@ -1,3 +1,3 @@
-ui diff tree
+ui labels
 deactivateNodeCommandLabel
-	^ 'Exclude this change from the new version'
+	^ 'Exclude this change from the new version (x)'

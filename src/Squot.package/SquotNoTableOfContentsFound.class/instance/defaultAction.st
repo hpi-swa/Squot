@@ -1,3 +1,0 @@
-exceptionDescription
-defaultAction
-	self resume

@@ -1,4 +1,4 @@
-testing
+tests
 testRewritePathWithPackageAlreadyIncluded
 	| path serializerClass |
 	serializerClass := SquotCypressCodeSerializer.

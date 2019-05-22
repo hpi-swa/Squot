@@ -8,6 +8,8 @@ baseline: spec
 		spec baseline: 'FileTree' with: [
 				spec
 					repository: 'github://dalehenrich/filetree:squeak4.3/repository'. ].
+		spec baseline: 'Tonel'
+			with: [spec 	repository: 'github://j4yk/tonel:squeak/'].
 		spec 
 			package: 'SqueakSSL-Core' with: [
 				spec
@@ -28,32 +30,21 @@ baseline: spec
 				spec
 					repository: 'http://www.squeaksource.com/DiffMerge';
 					file: 'DiffMerge-tonyg.12'. ];
-			package: 'FS-Core';
-			package: 'FS-Disk' with: [
-				spec requires: #('FS-Core' ). ];
-			package: 'FS-Memory' with: [
-				spec requires: #('FS-Core' ). ];
-			package: 'FS-AnsiStreams' with: [
-				spec requires: #('FS-Core' ). ];
-			package: 'FS-Tests-Core';
-			package: 'FS-Tests-Disk' with: [
-				spec requires: #('FS-Tests-Core' ). ];
-			package: 'FS-Tests-Memory' with: [
-				spec requires: #('FS-Tests-Core' ). ];
-			package: 'FS-Tests-AnsiStreams' with: [
-				spec requires: #('FS-Tests-Core' ). ];
-			package: 'FS-FileDirectory-Adapters' with: [
-				spec requires: #('FS-Core'). ];
+			baseline: 'FileSystem' with:
+				[spec repository: 'github://j4yk/Squeak-FileSystem:master/src'];
 			package: 'VersionControl';
 			package: 'Squot' with: [
-				spec requires: #('FS-Core' 'Ston' 'DiffMerge' 'VersionControl' ). ];
+				spec requires: #('FileSystem' 'Ston' 'DiffMerge' 'VersionControl' ). ];
 			package: 'Pharo-compatibility';
 			package: 'FileSystem-Git' with: [
-				spec requires: #('FS-Core' 'FS-Disk' 'FS-Memory' 'FS-AnsiStreams' 'FS-Tests-Core' 'Pharo-compatibility' 'INIFile' 'VersionControl' ). ];
+				spec requires: #('FileSystem' 'Pharo-compatibility' 'INIFile' 'VersionControl' ). ];
 			package: 'Squit' with: [
-				spec requires: #('FileSystem-Git' 'Squot' 'FS-FileDirectory-Adapters' ). ].
+				spec requires: #('FileSystem-Git' 'Squot'). ];
+			package: 'SquotTonel-Core' with:
+				[spec requires: #('Squot' 'FileSystem' 'Tonel')];
+			package: 'SquotTonel-Tests' with:
+				[spec requires: #('SquotTonel-Core')].
 		spec 
 			group: 'FileSystemGit' with: #('FileSystem-Git' );
-			group: 'FileSystem' with: #('FS-Core' 'FS-Disk' 'FS-Memory' 'FS-AnsiStreams' 'FS-FileDirectory-Adapters' );
-			group: 'tests' with: #('Squit' 'FS-Tests-Core' 'FS-Tests-Disk' 'FS-Tests-Memory' 'FS-Tests-AnsiStreams');
-			group: 'default' with: #('Squit' 'Squot'). ].
+			group: 'default' with: #('Squit' 'Squot' 'SquotTonel-Core');
+			group: 'tests' with: #('default' 'SquotTonel-Tests'). ].

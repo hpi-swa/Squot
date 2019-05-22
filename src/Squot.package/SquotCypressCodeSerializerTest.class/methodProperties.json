@@ -4,4 +4,5 @@
 	"instance" : {
 		"testRewritePathForEmptyPath" : "jr 5/8/2017 19:49",
 		"testRewritePathForOrdinaryPath" : "jr 5/8/2017 19:49",
-		"testRewritePathWithPackageAlreadyIncluded" : "jr 5/8/2017 19:50" } }
+		"testRewritePathWithPackageAlreadyIncluded" : "jr 5/8/2017 19:50",
+		"testRewriteTonelPath" : "jr 3/17/2019 00:10" } }

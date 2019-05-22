@@ -1,4 +1,4 @@
-ui diff tree
+ui menus
 diffNodeMenuHook: aMenu
 	<menuSquotDiffNode>
 	self selectedNode ifNil: [^ aMenu].
@@ -10,7 +10,14 @@ diffNodeMenuHook: aMenu
 		ifFalse: [self selectedNode isActive
 			ifTrue: [aMenu add: self deactivateNodeCommandLabel action: #deactivateSelectedNode]
 			ifFalse: [aMenu add: self activateNodeCommandLabel action: #activateSelectedNode]].
-	aMenu add: 'Inspect diff' action: #inspectSelectedDiffContent.
+	(self selectedNode content respondsTo: #asDiffTree) ifTrue:
+		[aMenu
+			add: 'Move up in load order' action: #moveUpSelectedInLoadOrder;
+			add: 'Move down in load order' action: #moveDownSelectedInLoadOrder].
+	aMenu addLine.
+	aMenu add: 'Inspect diff (i)' action: #inspectSelectedDiffContent.
+	self selectedNode content ifNotNil:
+		[aMenu add: 'Browse full (b)' action: #browseDiffContent. "Only for code objects?!"].
 	(editedPatch paths includes: self selectedNode title) ifTrue:
 		[aMenu add: self inspectOriginalArtifactCommandLabel action: #inspectOriginalArtifactOfSelectedNode.
 		aMenu add: self inspectProposedArtifactCommandLabel action: #inspectProposedArtifactOfSelectedNode].

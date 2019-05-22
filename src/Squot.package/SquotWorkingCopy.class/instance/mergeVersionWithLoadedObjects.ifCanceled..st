@@ -10,6 +10,7 @@ mergeVersionWithLoadedObjects: aVersion ifCanceled: cancelBlock
 			^ cancelBlock value]
 		ifDescendant: ["fast forward"].
 	self flag: 'TODO: if there are multiple merge-bases, resolve conflicts recursively below'.
+	self addGlobalObjectsToStore: aVersion.
 	mergePatch := SquotMergePatchBuilder new
 		patchFrom: self currentSnapshot
 		to: aVersion

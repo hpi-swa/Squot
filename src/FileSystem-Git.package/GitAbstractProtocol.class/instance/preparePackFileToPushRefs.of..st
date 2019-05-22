@@ -1,15 +1,15 @@
 private
 preparePackFileToPushRefs: updateAssociations of: aRepository 
 	| creator packFile historyWalker remoteRefs mergeBases commits |
-	packFile := GitPackFile new repository: aRepository; yourself.
-	creator := GitPackFileCreator on: packFile.
-	remoteRefs := refs copy. remoteRefs removeKey: #capabilities. self flag: #hack.
-	mergeBases := ((updateAssociations
-		gather: [:each | each value allMergeBasesWithAnyOf: remoteRefs values])
-		asSet asArray
-		select: [:each | each notNil]).
 	'Packing Git objects' displaySequentialProgress:
-		[commits := (historyWalker := GitHistoryWalker new)
+		[packFile := GitPackFile new repository: aRepository; yourself.
+		creator := GitPackFileCreator on: packFile.
+		remoteRefs := refs copy. remoteRefs removeKey: #capabilities. self flag: #hack.
+		mergeBases := ((updateAssociations
+			gather: [:each | each value allMergeBasesWithAnyOf: remoteRefs values])
+			asSet asArray
+			select: [:each | each notNil]).
+		commits := (historyWalker := GitHistoryWalker new)
 				excludeAncestorsOfAll: mergeBases;
 				startingFromAll: (updateAssociations collect: [:each | each value]).
 		commits

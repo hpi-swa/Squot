@@ -5,7 +5,6 @@ baseSnapshot
 	baseVersionSnapshot :=
 		(self baseVersion ifNil: [^ SquotSnapshot empty])
 			lazySnapshot select: [:each | each isLoadable].
-	self addGlobalObjectsToStore: baseVersionSnapshot.
 	self loadedVersion ~= self baseVersion
 		ifTrue: [^ baseVersionSnapshot].
 	^ baseVersionSnapshot createNewBuilder

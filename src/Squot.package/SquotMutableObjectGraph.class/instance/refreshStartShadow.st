@@ -1,3 +1,3 @@
 patching
 refreshStartShadow
-	startShadow := self shadowNamed: startName.
+	self startShadow: (self shadowNamed: startName).

@@ -2,6 +2,7 @@
 	"class" : {
 		"forPackageNamed:withSnapshot:" : "jr 7/22/2017 00:01" },
 	"instance" : {
+		"=" : "jr 3/12/2019 21:58",
 		"asBaseDiffLeft:withRight:with:" : "jr 7/27/2017 23:18",
 		"asMCSnapshot" : "jr 7/22/2017 17:26",
 		"asMonticelloPatch" : "jr 4/4/2018 21:56",
@@ -10,6 +11,7 @@
 		"definitions" : "jr 7/22/2017 00:27",
 		"diffWithLeftSnapshot:" : "jr 7/22/2017 00:47",
 		"diffWithLeftSnapshot:andBase:with:" : "jr 7/27/2017 23:19",
+		"hash" : "jr 3/12/2019 22:01",
 		"packageName" : "jr 9/20/2017 21:06",
 		"packageName:snapshot:" : "jr 7/22/2017 00:00",
 		"squotDiffAgainst:with:" : "jr 7/22/2017 00:44",
@@ -17,5 +19,5 @@
 		"squotMaterializeWith:" : "jr 7/21/2017 23:55",
 		"squotPreferredSerializer" : "jr 9/20/2017 19:39",
 		"squotRewritePath:with:" : "jr 9/20/2017 21:02",
-		"squotWrite:with:" : "jr 7/22/2017 02:05",
+		"squotWrite:with:" : "jr 3/16/2019 23:33",
 		"withPackageDiffPatchApplied:" : "jr 7/22/2017 00:08" } }

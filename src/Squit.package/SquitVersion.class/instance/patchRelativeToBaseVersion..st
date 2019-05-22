@@ -10,7 +10,7 @@ patchRelativeToBaseVersion: baseSquitVersion
 	myChangedArtifactPaths := changedPaths intersection: mySnapshot paths.
 	baseChangedArtifactPaths := changedPaths intersection: baseSnapshot paths.
 	deletedPaths := baseChangedArtifactPaths copyWithoutAll: myChangedArtifactPaths.
-	patchBuilder := baseSquitVersion newPatchBuilder.
+	patchBuilder := baseSquitVersion newPatchBuilder goingTo: self.
 	myChangedArtifactPaths do: [:each |
 		patchBuilder diffPath: each from: baseSnapshot to: mySnapshot].
 	deletedPaths do: [:each | patchBuilder removeArtifact: (baseSnapshot artifactAt: each)].

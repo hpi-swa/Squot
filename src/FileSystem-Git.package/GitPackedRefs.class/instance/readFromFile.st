@@ -1,8 +1,11 @@
 reading and writing
 readFromFile
+	| lastName |
+	lastName := nil.
 	packedRefsFile exists ifFalse: [^ self].
 	refsDictionary := Dictionary new.
+	peeledRefsDictionary := Dictionary new.
 	packedRefsFile readStreamDo: [:stream |
 		stream text.
 		[stream atEnd] whileFalse:
-			[self readNextLineFrom: stream]]
+			[lastName := self readNextLineFrom: stream previousRefName: lastName]].

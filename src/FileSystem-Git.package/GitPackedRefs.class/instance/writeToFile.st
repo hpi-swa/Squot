@@ -8,5 +8,10 @@ writeToFile
 			stream nextPutAll: (refsDictionary at: eachRef);
 				nextPut: Character space;
 				nextPutAll: eachRef;
-				nextPut: Character lf].
+				nextPut: Character lf.
+			(peeledRefsDictionary at: eachRef) ~= (refsDictionary at: eachRef)
+				ifTrue: [stream
+							nextPut: $^;
+							nextPutAll: (peeledRefsDictionary at: eachRef);
+							nextPut: Character lf]].
 		stream truncate: stream position].

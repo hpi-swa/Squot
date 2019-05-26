@@ -5,7 +5,8 @@
 		"packedRefsTestContents" : "jr 5/26/2019 22:46",
 		"packedRefsTestFile" : "jr 6/5/2017 17:44",
 		"setUp" : "jr 6/5/2017 17:45",
-		"testDelete" : "jr 5/26/2019 22:52",
+		"testDelete" : "jr 6/5/2017 22:20",
 		"testPeeledRefs" : "jr 5/26/2019 23:13",
 		"testPrefixed" : "jr 5/26/2019 22:47",
+		"testReadWriteReadRoundtrip" : "jr 5/26/2019 23:33",
 		"testRefs" : "jr 5/26/2019 22:47" } }

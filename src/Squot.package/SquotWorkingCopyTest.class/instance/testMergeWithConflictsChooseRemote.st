@@ -44,4 +44,4 @@ testMergeWithConflictsChooseRemote
 		valueSupplyingAnswers: {{'*'. #default}}].
 	self assert: sampleClass new conflictMethod = 2
 		description: 'conflict method updated after merge'.
-	self assert: secondVersion equals: workingCopy lastLoadedHistorian version.
+	self assert: secondVersion equals: workingCopy loadedVersion.

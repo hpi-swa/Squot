@@ -51,4 +51,4 @@ testMergeWithoutConflicts
 		description: 'second method unchanged after merge'.
 	self assert: (sampleClass includesSelector: #thirdMethod)
 		description: 'third method loaded after merge'.
-	self assert: secondVersion equals: workingCopy lastLoadedHistorian version.
+	self assert: secondVersion equals: workingCopy loadedVersion.

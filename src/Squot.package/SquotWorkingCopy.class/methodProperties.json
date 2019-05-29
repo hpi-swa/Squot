@@ -67,7 +67,6 @@
 		"printOn:" : "jr 4/15/2017 14:18",
 		"privateLoadVersion:" : "jr 5/4/2019 02:36",
 		"register" : "jr 4/9/2017 14:15",
-		"registerPackagesInStore" : "jr 4/27/2017 13:15",
 		"registerPackagesInStore:" : "jr 5/4/2019 02:56",
 		"remove:" : "jr 2/26/2017 01:29",
 		"removeAt:" : "jr 4/7/2018 20:03",

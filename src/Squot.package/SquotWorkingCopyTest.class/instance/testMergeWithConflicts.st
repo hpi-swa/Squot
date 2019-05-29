@@ -30,4 +30,4 @@ testMergeWithConflicts
 		request resume: request patch]
 	] valueSupplyingAnswers: {{'*'. #default}}].
 	scenario assertConflictMethodHasNotChanged: self.
-	self assert: scenario secondVersion equals: workingCopy loadedHistorian.
+	self assert: scenario secondVersion equals: workingCopy loadedVersion.

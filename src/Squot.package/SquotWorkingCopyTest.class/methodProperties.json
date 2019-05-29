@@ -21,7 +21,7 @@
 		"testMergeTwoOrphanedVersions" : "jr 4/29/2018 16:56",
 		"testMergeVersionWithLoadedObjects" : "jr 4/29/2018 17:34",
 		"testMergeWithAddedArtifactOnBothSides" : "jr 10/31/2017 21:35",
-		"testMergeWithConflicts" : "jr 5/29/2019 23:38",
+		"testMergeWithConflicts" : "jr 5/30/2019 00:26",
 		"testMergeWithConflictsChooseRemote" : "jr 5/29/2019 23:36",
 		"testMergeWithRemovedArtifactOnBothSides" : "jr 4/15/2018 00:06",
 		"testMergeWithoutConflicts" : "jr 5/29/2019 23:36",

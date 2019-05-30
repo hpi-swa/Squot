@@ -1,0 +1,1 @@
+SystemOrganization addCategory: #'Squot-CoAuthorsExtension'!

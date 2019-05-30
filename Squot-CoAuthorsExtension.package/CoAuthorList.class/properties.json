@@ -1,0 +1,15 @@
+{
+	"category" : "Squot-CoAuthorsExtension",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		"Instance" ],
+	"commentStamp" : "",
+	"instvars" : [
+		"list",
+		"listIndex" ],
+	"name" : "CoAuthorList",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }

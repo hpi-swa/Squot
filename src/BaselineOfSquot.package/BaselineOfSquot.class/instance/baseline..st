@@ -31,7 +31,9 @@ baseline: spec
 					repository: 'http://www.squeaksource.com/DiffMerge';
 					file: 'DiffMerge-tonyg.12'. ];
 			baseline: 'FileSystem' with:
-				[spec repository: 'github://j4yk/Squeak-FileSystem:master/src'];
+				[spec
+					repository: 'github://j4yk/Squeak-FileSystem:master/src';
+					loads: #('default' 'tests')];
 			package: 'VersionControl';
 			package: 'Squot' with: [
 				spec requires: #('FileSystem' 'Ston' 'DiffMerge' 'VersionControl' ). ];

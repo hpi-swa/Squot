@@ -1,6 +1,9 @@
 public
 buildPatch
+	self updatePatchedArtifacts.
 	^ SquotPatch new
-		initializeWith: (diffs reject: [:each | each hasChanges not]);
+		initializeFrom: existingContainer
+		to: patchedContainer
+		withDiffs: (diffs reject: [:each | each hasChanges not]);
 		loadOrderDiff: loadOrderPatch;
 		yourself

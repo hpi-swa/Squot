@@ -2,6 +2,9 @@
 	"class" : {
 		 },
 	"instance" : {
+		"diffAgainst:" : "jr 6/8/2019 12:37",
+		"diffBlock" : "jr 6/8/2019 12:37",
+		"diffBlock:" : "jr 6/8/2019 12:37",
 		"isLoadable" : "jr 8/18/2018 18:27",
 		"isLoadable:" : "jr 8/18/2018 18:27",
 		"materializeBlock" : "jr 8/18/2018 18:30",

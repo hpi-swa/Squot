@@ -15,7 +15,10 @@
 		"leftLoadOrder",
 		"rightLoadOrder",
 		"baseLoadOrder",
-		"loadOrderPatch" ],
+		"loadOrderPatch",
+		"baseContainer",
+		"existingContainer",
+		"patchedContainer" ],
 	"name" : "SquotMergePatchBuilder",
 	"pools" : [
 		 ],

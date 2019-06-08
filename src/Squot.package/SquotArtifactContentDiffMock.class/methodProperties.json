@@ -3,6 +3,8 @@
 		 },
 	"instance" : {
 		"asSquotHierarchicalDiff" : "jr 11/5/2018 21:34",
+		"hasConflicts" : "jr 6/8/2019 00:06",
+		"hasConflicts:" : "jr 6/8/2019 00:06",
 		"onApply:" : "jr 3/9/2019 22:51",
 		"squotApplyTo:" : "jr 3/9/2019 23:03",
 		"squotChangeAsStringOrText" : "jr 11/5/2018 21:36",

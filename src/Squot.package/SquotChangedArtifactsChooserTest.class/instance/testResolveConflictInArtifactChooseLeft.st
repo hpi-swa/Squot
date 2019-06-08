@@ -13,6 +13,7 @@ testResolveConflictInArtifactChooseLeft
 											onInclude: [choice := #right]
 											onExclude: [choice := #left]
 											onReset: [choice := nil]));
+				hasConflicts: true;
 				onApply: [:diff :target | patchedContent := SquotArtifactContentMock new];
 				yourself].
 	originalPatch := SquotPatch builder

@@ -9,7 +9,8 @@
 		"path",
 		"isLoadable",
 		"storeInfo",
-		"materializeBlock" ],
+		"materializeBlock",
+		"diffBlock" ],
 	"name" : "SquotArtifactMock",
 	"pools" : [
 		 ],

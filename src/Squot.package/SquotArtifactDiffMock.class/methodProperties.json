@@ -3,6 +3,7 @@
 		"path:" : "jr 9/23/2018 21:46" },
 	"instance" : {
 		"=" : "jr 11/26/2018 21:09",
+		"asConflicts" : "jr 6/8/2019 12:43",
 		"asDiffTree" : "jr 11/18/2018 02:17",
 		"beAddition" : "jr 9/23/2018 21:50",
 		"beRemoval" : "jr 9/23/2018 21:50",
@@ -13,6 +14,7 @@
 		"hasChanges" : "jr 9/23/2018 21:47",
 		"hasChanges:" : "jr 9/23/2018 21:48",
 		"hasConflicts" : "jr 11/26/2018 22:48",
+		"hasConflicts:" : "jr 6/8/2019 12:44",
 		"hash" : "jr 11/26/2018 21:07",
 		"isAddition" : "jr 9/23/2018 21:48",
 		"isRemoval" : "jr 9/23/2018 21:50",

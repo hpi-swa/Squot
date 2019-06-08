@@ -1,0 +1,14 @@
+{
+	"category" : "Squot-Diffs-Tests",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "SquotPatchTest",
+	"pools" : [
+		 ],
+	"super" : "TestCase",
+	"type" : "normal" }

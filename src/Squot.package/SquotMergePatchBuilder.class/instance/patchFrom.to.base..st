@@ -2,6 +2,9 @@ public
 patchFrom: leftObjectContainer to: rightObjectContainer base: baseObjectContainer
 	| base |
 	self initialize.
+	baseContainer := baseObjectContainer.
+	existingContainer := leftObjectContainer.
+	patchedContainer := rightObjectContainer.
 	leftArtifacts := leftObjectContainer artifacts.
 	rightArtifacts := rightObjectContainer artifacts.
 	base := baseObjectContainer ifNil: [SquotSnapshot empty].

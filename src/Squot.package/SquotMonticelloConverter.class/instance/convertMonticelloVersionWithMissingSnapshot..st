@@ -4,7 +4,10 @@ convertMonticelloVersionWithMissingSnapshot: aMCVersionInfo
 	| newVersion |
 	self assert: aMCVersionInfo ancestors size = 1
 		description: 'cannot guess which snapshot to use when there are multiple parents'.
-	newVersion := squotRepository createNewVersionFromPatch: SquotPatch empty
+	newVersion := squotRepository
+		createNewVersionFromPatch:
+			(SquotPatch noChangesTo:
+				(self squotVersionForMonticelloVersionInfo: aMCVersionInfo ancestors first))
 		with: [:version | version
 			initializeClean;
 			parents: (aMCVersionInfo ancestors

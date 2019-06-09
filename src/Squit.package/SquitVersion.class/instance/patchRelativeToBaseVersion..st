@@ -2,7 +2,7 @@ comparing
 patchRelativeToBaseVersion: baseSquitVersion
 	"compute tree diff, then deduce object diffs"
 	| diff changedPaths mySnapshot baseSnapshot myChangedArtifactPaths baseChangedArtifactPaths deletedPaths patchBuilder |
-	self = baseSquitVersion ifTrue: [^ SquotPatch empty].
+	self = baseSquitVersion ifTrue: [^ SquotPatch noChangesTo: self].
 	diff := GitDiffCreator new diffTrees: baseSquitVersion commit tree and: self commit tree.
 	changedPaths := diff keys collect: [:each | SquotPath fromPath: each].
 	mySnapshot := self lazySnapshot.

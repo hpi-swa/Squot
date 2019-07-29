@@ -1,3 +1,3 @@
 patching
-squotApplyToLoaded: anObject with: aMetaobjectPatcher
-	^ aMetaobjectPatcher rematerialize: right
+squotApplyToLoaded: anObject with: aPatcher
+	^ aPatcher rematerialize: right

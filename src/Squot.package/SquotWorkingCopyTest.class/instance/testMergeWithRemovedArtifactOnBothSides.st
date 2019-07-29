@@ -21,10 +21,10 @@ testMergeWithRemovedArtifactOnBothSides
 	"when"
 	[[self workingCopy mergeVersionInteractively: rightVersion
 		ifCanceled: [self fail: 'This code should not be reached']]
-	on: SquotSelectionOfChangesRequested do: [:request | 
+	on: SquotMergeRequested do: [:request | 
 		"then"
-		self deny: (request patch includesDiffAt: 'to-be-removed').
-		self deny: request patch hasConflicts.
+		self deny: (request merge includesDiffAt: 'to-be-removed').
+		self deny: request merge hasConflicts.
 		request resume]
 	] valueSupplyingAnswers: {{'*'. #default}}.
 	self deny: (self workingCopy includesObjectAt: 'to-be-removed').

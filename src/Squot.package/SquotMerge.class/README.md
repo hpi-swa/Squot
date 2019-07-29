@@ -1,0 +1,1 @@
+Coordinates the merge of another version into a working copy.

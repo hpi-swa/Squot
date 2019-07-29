@@ -5,9 +5,9 @@ testMergeWithConflicts
 	[scenario := SquotWorkingCopyTestMergeConflictScenario forTestCase: self.
 	"merge the version of the other historian"
 	[[scenario merge]
-	on: SquotSelectionOfChangesRequested do: [:request | | packageDiff conflictNode |
+	on: SquotMergeRequested do: [:request | | packageDiff conflictNode |
 		"make sure the second and third method edition are in the patch"
-		packageDiff := request patch diffAt: scenario packagePath.
+		packageDiff := request merge diffAt: scenario packagePath.
 		self assert: (packageDiff left packageArtifactDefinitions
 				anySatisfy: [:each | (each source beginsWith: 'conflictMethod')
 							and:  [each source withBlanksTrimmed endsWith: '^ 1']])
@@ -27,7 +27,7 @@ testMergeWithConflicts
 		conflictNode := packageDiff asDiffTree children first children first.
 		self assert: (conflictNode title beginsWith: 'conflictMethod').
 		conflictNode chooseLeft.
-		request resume: request patch]
+		request setHandled]
 	] valueSupplyingAnswers: {{'*'. #default}}].
 	scenario assertConflictMethodHasNotChanged: self.
 	self assert: scenario secondVersion equals: workingCopy loadedVersion.

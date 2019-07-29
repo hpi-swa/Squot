@@ -1,0 +1,14 @@
+{
+	"category" : "Squot-Merging",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "jr 7/28/2019 15:02",
+	"instvars" : [
+		 ],
+	"name" : "SquotCannotAbortMerge",
+	"pools" : [
+		 ],
+	"super" : "Error",
+	"type" : "normal" }

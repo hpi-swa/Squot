@@ -1,0 +1,10 @@
+{
+	"class" : {
+		 },
+	"instance" : {
+		"testResolveArtifactConflictChooseLeft" : "jr 7/22/2019 23:20",
+		"testResolveArtifactConflictChooseRight" : "jr 7/23/2019 00:00",
+		"testResolveArtifactConflictWithIncomingRemoval" : "jr 7/22/2019 23:16",
+		"testResolveConflictInArtifactChooseLeft" : "jr 6/8/2019 00:07",
+		"testResolveConflictInArtifactChooseRight" : "jr 3/9/2019 23:31",
+		"testResolveThenResetArtifactConflict" : "jr 7/23/2019 00:35" } }

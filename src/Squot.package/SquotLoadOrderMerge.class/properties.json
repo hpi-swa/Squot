@@ -1,0 +1,18 @@
+{
+	"category" : "Squot-Merging",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "jr 7/28/2019 00:00",
+	"instvars" : [
+		"workingLoadOrder",
+		"incomingLoadOrder",
+		"baseLoadOrder",
+		"conflicts",
+		"loadOrderPatch" ],
+	"name" : "SquotLoadOrderMerge",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }

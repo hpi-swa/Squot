@@ -1,0 +1,22 @@
+{
+	"class" : {
+		"into:merge:basedOn:" : "jr 7/22/2019 21:13" },
+	"instance" : {
+		"baseContainer" : "jr 6/9/2019 03:02",
+		"baseContainer:" : "jr 6/9/2019 03:04",
+		"buildPatch" : "jr 7/23/2019 00:29",
+		"computeDifferences" : "jr 7/22/2019 22:51",
+		"conflictAt:" : "jr 7/23/2019 00:31",
+		"conflicts" : "jr 7/22/2019 21:34",
+		"createNewBuilder" : "jr 7/22/2019 22:54",
+		"diffAt:" : "jr 7/22/2019 22:19",
+		"diffs" : "jr 7/28/2019 12:50",
+		"diffsDo:" : "jr 7/22/2019 23:00",
+		"hasConflicts" : "jr 7/22/2019 21:08",
+		"includesDiffAt:" : "jr 7/28/2019 11:01",
+		"incomingContainer" : "jr 6/9/2019 03:02",
+		"incomingContainer:" : "jr 6/9/2019 03:05",
+		"initialize" : "jr 7/22/2019 22:51",
+		"resolvedPatch" : "jr 7/28/2019 01:26",
+		"workingCopy" : "jr 6/9/2019 03:02",
+		"workingCopy:" : "jr 6/9/2019 03:05" } }

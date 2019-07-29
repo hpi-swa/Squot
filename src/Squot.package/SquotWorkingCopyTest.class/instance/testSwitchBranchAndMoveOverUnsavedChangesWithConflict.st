@@ -25,10 +25,10 @@ testSwitchBranchAndMoveOverUnsavedChangesWithConflict
 	hadConflict := false.
 	self suppressChangeNotificationsDuring:
 	[[workingCopy switchAndMoveUnsavedChangesOverTo: originalHistorian]
-	on: SquotConflictResolutionRequested doAndResume: [:request | | conflict |
+	on: SquotMergeRequested doAndResume: [:request | | conflict |
 		hadConflict := true.
-		self assert: request patch hasConflicts.
-		conflict := request patch diffs detect: #hasConflicts.
+		self assert: request merge hasConflicts.
+		conflict := request merge diffs detect: #hasConflicts.
 		self assert: 'a ^ 3' equals: ((conflict left shadowOfTrackedObject asMCSnapshot definitions detect: [:each | each isMethodDefinition and: [each selector == #a]]) source withBlanksCondensed withLineEndings: ' ').
 		self assert: 'a ^ 4' equals: ((conflict right shadowOfTrackedObject asMCSnapshot definitions detect: [:each | each isMethodDefinition and: [each selector == #a]]) source withBlanksCondensed withLineEndings: ' ').
 		conflict := conflict content diffs detect: [:each | each squotHasConflicts].

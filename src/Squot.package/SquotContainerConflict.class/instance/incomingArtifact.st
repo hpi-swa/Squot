@@ -1,0 +1,3 @@
+accessing
+incomingArtifact
+	^ incoming right

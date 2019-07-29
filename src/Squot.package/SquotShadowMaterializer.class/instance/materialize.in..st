@@ -3,7 +3,7 @@ materialize: aShadow in: anObject
 	| materializedObject |
 	convertedObjects at: aShadow undecorated put: anObject.
 	(anObject shouldHaveNameAssignedBySquot and: [sourceGraph notNil]) ifTrue:
-		[objectRegistry nameOf: anObject ifAbsentAssign: [sourceGraph nameOf: aShadow]].
+		[objectRegistry nameOf: anObject ifAbsentAssign: [sourceGraph nameOf: aShadow undecorated]].
 	materializedObject := (aShadow materializeAs: anObject with: self)
 		squotReactivateWith: self.
 	"self haltIf: (anObject ~~ materializedObject

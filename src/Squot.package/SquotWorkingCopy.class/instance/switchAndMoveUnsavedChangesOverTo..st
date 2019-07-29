@@ -1,6 +1,6 @@
 switching historians
 switchAndMoveUnsavedChangesOverTo: aHistorian
-	| fromHistorian temporarySnapshot patch |
+	| fromHistorian temporarySnapshot merge |
 	fromHistorian := self loadedHistorian.
 	(fromHistorian version = aHistorian version
 	and: [(self repository hasTemporaryVersionsOn: aHistorian) not]) ifTrue:
@@ -14,14 +14,15 @@ switchAndMoveUnsavedChangesOverTo: aHistorian
 	self withCurrentSnapshot: [self mergeTemporaryVersionsOn: aHistorian].
 	UIManager default informUser: 'Restoring unsaved changes' during:
 	[self withCurrentSnapshot:
-		[patch := SquotMergePatchBuilder new
-			patchFrom: self currentSnapshot
-			to: temporarySnapshot
-			base: fromHistorian version.
-		patch hasConflicts ifTrue:
-			[patch := SquotConflictResolutionRequested new
-				patch: patch;
-				title: 'Merge conflicts with unsaved changes';
-				signal].
-		store applyPatch: patch]].
+		[merge := SquotMerge into: self
+			merge: temporarySnapshot
+			basedOn: fromHistorian version.
+		merge hasConflicts
+			ifTrue:
+				[[self selectFromMerge: merge title: 'Merge conflicts with unsaved changes'
+					ifCancelled:
+						[self inform: 'Cannot abort this merge. But you could choose to exclude all changes to discard them.'.
+						SquotCannotAbortMerge signal]]
+					on: SquotCannotAbortMerge do: [:ex | ex retry]].
+		store applyPatch: merge resolvedPatch]].
 	self repository clearTemporaryVersionsOn: fromHistorian. "changes have been moved over"

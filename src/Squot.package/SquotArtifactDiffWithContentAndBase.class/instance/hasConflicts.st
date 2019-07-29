@@ -1,3 +1,0 @@
-testing
-hasConflicts
-	^ diffContent hasConflicts

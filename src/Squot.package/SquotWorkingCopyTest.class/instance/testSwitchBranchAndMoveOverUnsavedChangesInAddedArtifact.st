@@ -15,9 +15,9 @@ testSwitchBranchAndMoveOverUnsavedChangesInAddedArtifact
 	text replaceFrom: 1 to: text size with: 'changed text'.
 	hadConflicts := false.
 	[workingCopy switchAndMoveUnsavedChangesOverTo: otherHistorian]
-	on: SquotConflictResolutionRequested doAndResume: [:request |
+	on: SquotMergeRequested doAndResume: [:request |
 		hadConflicts := true.
-		self assert: request patch hasConflicts.
-		(request patch diffs detect: #hasConflicts) chooseRight].
+		self assert: request merge hasConflicts.
+		request merge conflicts do: #chooseIncoming].
 	self assert: hadConflicts description: 'should have detected a conflict'.
 	self assert: 'changed text' equals: (workingCopy objectAt: 'text') string.

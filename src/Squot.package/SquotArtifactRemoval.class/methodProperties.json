@@ -10,6 +10,8 @@
 		"mergeWithDiff:" : "jr 4/15/2018 13:10",
 		"mergeWithRemoval:" : "jr 4/15/2018 12:13",
 		"needsChoice" : "jr 7/22/2017 23:55",
+		"resolveConflictByPatching:" : "jr 7/23/2019 00:25",
+		"resolveConflictWith:" : "jr 7/23/2019 00:20",
 		"right" : "jr 10/2/2017 19:58",
 		"squotChangeAsStringOrText" : "jr 11/17/2018 22:34",
 		"squotConflictText" : "jr 11/5/2018 22:05",

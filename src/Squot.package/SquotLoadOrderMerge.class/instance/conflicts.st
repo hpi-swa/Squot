@@ -1,4 +1,3 @@
 accessing
 conflicts
-
-	^ conflicts
+	^ containerConflicts "no element merges"

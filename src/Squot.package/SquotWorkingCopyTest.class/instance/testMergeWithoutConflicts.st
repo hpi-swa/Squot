@@ -37,11 +37,11 @@ testMergeWithoutConflicts
 		ifCanceled: [self fail: 'this code should not be reached']]
 		on: SquotMergeRequested do: [:request |
 			"make sure the third method will be added"
-			(request merge diffAt: packagePath) diffOfTrackedObject operations
+			(request merge mergeAt: packagePath) diffOfTrackedObject operations
 				detect: [:each | each definition isMethodDefinition and: [each toSource asString = thirdMethod source]]
 				ifNone: [self fail: 'third method not in the patch'].
 			"the second method should not be modified"
-			self deny: ((request merge diffAt: packagePath) diffOfTrackedObject
+			self deny: ((request merge mergeAt: packagePath) diffOfTrackedObject
 					operations anySatisfy: [:each |
 					each definition isMethodDefinition and: [each definition selector = secondMethod selector]]).
 			request resume "accept all changes"]]

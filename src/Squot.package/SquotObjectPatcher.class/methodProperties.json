@@ -10,6 +10,7 @@
 		"initialize" : "jr 6/12/2017 18:21",
 		"materialize:in:" : "jr 9/9/2017 13:14",
 		"nameOf:" : "jr 7/30/2017 00:17",
+		"nameOf:ifAbsent:" : "jr 8/4/2019 00:32",
 		"registry:" : "jr 6/25/2017 14:47",
 		"rematerialize:" : "jr 10/21/2017 15:28",
 		"shadowNamed:" : "jr 7/16/2017 01:44",

@@ -1,0 +1,3 @@
+private
+privateResolvedPatch
+	^ self subclassResponsibility

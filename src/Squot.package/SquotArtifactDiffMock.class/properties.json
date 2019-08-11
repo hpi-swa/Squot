@@ -13,7 +13,8 @@
 		"topNodes",
 		"copiedFrom",
 		"hasConflicts",
-		"right" ],
+		"right",
+		"mergeBlock" ],
 	"name" : "SquotArtifactDiffMock",
 	"pools" : [
 		 ],

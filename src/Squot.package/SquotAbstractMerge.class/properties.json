@@ -1,0 +1,16 @@
+{
+	"category" : "Squot-Merging",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "jr 7/30/2019 01:08",
+	"instvars" : [
+		"base",
+		"working",
+		"incoming" ],
+	"name" : "SquotAbstractMerge",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }

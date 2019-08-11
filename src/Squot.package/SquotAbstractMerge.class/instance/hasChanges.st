@@ -1,0 +1,3 @@
+testing
+hasChanges
+	^ self subclassResponsibility

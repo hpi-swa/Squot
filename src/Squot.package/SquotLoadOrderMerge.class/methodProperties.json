@@ -2,16 +2,11 @@
 	"class" : {
 		 },
 	"instance" : {
-		"autoResolveConflicts:" : "jr 7/28/2019 10:41",
-		"baseLoadOrder" : "jr 7/22/2019 21:29",
-		"baseLoadOrder:" : "jr 7/22/2019 21:29",
-		"collectConflictsFrom:" : "jr 7/28/2019 10:59",
-		"conflicts" : "jr 7/22/2019 21:29",
-		"conflicts:" : "jr 7/22/2019 21:29",
-		"incomingLoadOrder" : "jr 7/22/2019 21:29",
-		"incomingLoadOrder:" : "jr 7/22/2019 21:29",
-		"initialize" : "jr 7/22/2019 21:36",
-		"mergeLoadOrders" : "jr 7/28/2019 01:13",
-		"resolveConflict:with:" : "jr 7/28/2019 10:40",
-		"workingLoadOrder" : "jr 7/22/2019 21:29",
-		"workingLoadOrder:" : "jr 7/22/2019 21:29" } }
+		"autoResolveConflicts" : "jr 7/30/2019 20:56",
+		"collectConflicts" : "jr 7/30/2019 20:54",
+		"collectModifications" : "jr 7/30/2019 21:22",
+		"computeDifferences" : "jr 7/30/2019 21:43",
+		"conflicts" : "jr 7/30/2019 21:24",
+		"initialize" : "jr 8/3/2019 21:33",
+		"privateResolvedPatch" : "jr 7/30/2019 02:16",
+		"resolveConflict:with:" : "jr 7/30/2019 02:14" } }

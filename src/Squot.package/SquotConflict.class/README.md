@@ -1,0 +1,1 @@
+A conflict in a state-based three-way merge.

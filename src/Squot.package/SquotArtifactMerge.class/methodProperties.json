@@ -1,0 +1,21 @@
+{
+	"class" : {
+		 },
+	"instance" : {
+		"asDiffTree" : "jr 8/4/2019 20:50",
+		"base:" : "jr 7/30/2019 21:51",
+		"computeDifferences" : "",
+		"conflicts" : "jr 7/30/2019 00:50",
+		"diffTreeChildren" : "jr 8/10/2019 18:17",
+		"diffTreeNodeTitle" : "jr 8/4/2019 20:51",
+		"elementMerges" : "jr 8/3/2019 20:56",
+		"graphMerge" : "jr 7/29/2019 22:49",
+		"graphMerge:" : "jr 7/29/2019 22:49",
+		"hasChanges" : "jr 7/29/2019 23:57",
+		"hasConflicts" : "jr 7/30/2019 00:45",
+		"incoming:" : "jr 7/30/2019 21:50",
+		"initialize" : "jr 7/30/2019 01:06",
+		"modifications" : "jr 7/30/2019 01:37",
+		"path" : "jr 8/4/2019 20:47",
+		"privateResolvedPatch" : "jr 8/4/2019 00:23",
+		"working:" : "jr 7/30/2019 21:50" } }

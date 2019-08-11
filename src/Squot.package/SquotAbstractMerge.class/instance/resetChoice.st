@@ -1,0 +1,3 @@
+merging
+resetChoice
+	self subclassResponsibility.

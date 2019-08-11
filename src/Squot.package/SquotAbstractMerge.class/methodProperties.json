@@ -1,0 +1,22 @@
+{
+	"class" : {
+		"into:merge:basedOn:" : "jr 7/30/2019 01:47" },
+	"instance" : {
+		"base" : "jr 7/30/2019 00:53",
+		"base:" : "jr 7/30/2019 00:53",
+		"chooseIncoming" : "jr 7/30/2019 00:53",
+		"chooseWorking" : "jr 7/30/2019 00:53",
+		"computeDifferences" : "jr 7/30/2019 01:24",
+		"conflicts" : "jr 7/30/2019 00:52",
+		"hasChanges" : "jr 7/30/2019 00:53",
+		"hasConflicts" : "jr 7/30/2019 01:56",
+		"incoming" : "jr 7/30/2019 00:53",
+		"incoming:" : "jr 7/30/2019 00:53",
+		"modifications" : "jr 7/30/2019 00:55",
+		"modifies:" : "jr 7/30/2019 02:02",
+		"object" : "jr 8/3/2019 21:57",
+		"privateResolvedPatch" : "jr 7/30/2019 01:20",
+		"resetChoice" : "jr 7/30/2019 00:53",
+		"resolvedPatch" : "jr 7/30/2019 01:20",
+		"working" : "jr 7/30/2019 00:53",
+		"working:" : "jr 7/30/2019 00:53" } }

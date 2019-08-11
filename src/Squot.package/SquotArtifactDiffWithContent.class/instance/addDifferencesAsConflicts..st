@@ -1,0 +1,3 @@
+merging
+addDifferencesAsConflicts: anArtifactMerge 
+	diffContent addModificationsAsConflicts: anArtifactMerge graphMerge.

@@ -1,0 +1,16 @@
+{
+	"category" : "Squot-Merging-Tests",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"object",
+		"hasConflicts",
+		"hasChanges" ],
+	"name" : "SquotObjectMergeMock",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }

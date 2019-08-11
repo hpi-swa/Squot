@@ -1,0 +1,3 @@
+accessing
+incomingModification
+	^ self subclassResponsibility

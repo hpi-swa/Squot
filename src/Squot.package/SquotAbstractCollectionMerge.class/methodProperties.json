@@ -1,0 +1,24 @@
+{
+	"class" : {
+		 },
+	"instance" : {
+		"addMerge:" : "jr 8/3/2019 21:29",
+		"addModification:" : "jr 7/30/2019 01:53",
+		"at:" : "jr 7/30/2019 01:53",
+		"conflictAt:" : "jr 7/30/2019 01:12",
+		"conflictAt:ifAbsent:" : "jr 7/30/2019 01:13",
+		"conflicts" : "jr 7/30/2019 21:25",
+		"conflictsAt:" : "jr 7/30/2019 01:50",
+		"containerConflicts" : "jr 7/30/2019 01:11",
+		"containerModifications" : "jr 7/30/2019 01:44",
+		"elementMerges" : "jr 7/30/2019 01:51",
+		"hasChanges" : "jr 7/30/2019 01:57",
+		"hasConflicts" : "jr 8/3/2019 21:19",
+		"includesModificationAt:" : "jr 7/30/2019 02:01",
+		"initialize" : "jr 7/30/2019 02:03",
+		"keyOf:" : "jr 7/30/2019 01:22",
+		"keyOf:ifAbsent:" : "jr 7/30/2019 01:22",
+		"mergeAt:" : "jr 7/30/2019 01:16",
+		"modificationAt:ifAbsent:" : "jr 7/30/2019 01:54",
+		"modificationsAt:" : "jr 7/30/2019 01:49",
+		"modifies:" : "jr 7/30/2019 02:02" } }

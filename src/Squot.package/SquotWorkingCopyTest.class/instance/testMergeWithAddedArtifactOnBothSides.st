@@ -15,10 +15,10 @@ testMergeWithAddedArtifactOnBothSides
 	"merge the version of the other historian"
 	[[self workingCopy mergeVersionInteractively: rightVersion
 		ifCanceled: [self fail: 'This code should not be reached']]
-	on: SquotMergeRequested do: [:request | | diff |
-		diff := request merge diffAt: 'added'.
-		self assert: diff content hasConflicts.
-		diff content startDiff chooseRight.
+	on: SquotMergeRequested do: [:request | | merge |
+		merge := request merge mergeAt: 'added'.
+		self assert: merge hasConflicts.
+		(merge graphMerge conflictAt: (self workingCopy artifactAt: 'added') content startName) chooseIncoming.
 		request resume]
 	] valueSupplyingAnswers: {{'*'. #default}}.
 	self assert: #right equals: (self workingCopy objectAt: 'added') contents.

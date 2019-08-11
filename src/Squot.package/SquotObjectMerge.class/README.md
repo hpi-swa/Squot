@@ -1,0 +1,1 @@
+The three-way merge of editions of a SquotObjectShadow.

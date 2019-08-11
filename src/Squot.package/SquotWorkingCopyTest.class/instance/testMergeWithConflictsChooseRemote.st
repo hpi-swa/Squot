@@ -36,7 +36,7 @@ testMergeWithConflictsChooseRemote
 		ifCanceled: [self fail: 'this code should not be reached']]
 		on: SquotMergeRequested do: [:request | | packageDiff conflictNode |
 			"make sure the second and third method edition are in the patch"
-			packageDiff := request merge diffAt: packagePath.
+			packageDiff := request merge mergeAt: packagePath.
 			conflictNode := packageDiff asDiffTree children first children first.
 			self assert: (conflictNode title beginsWith: 'conflictMethod').
 			conflictNode chooseRight.

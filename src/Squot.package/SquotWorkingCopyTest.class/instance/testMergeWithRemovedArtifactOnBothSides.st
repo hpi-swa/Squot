@@ -23,7 +23,7 @@ testMergeWithRemovedArtifactOnBothSides
 		ifCanceled: [self fail: 'This code should not be reached']]
 	on: SquotMergeRequested do: [:request | 
 		"then"
-		self deny: (request merge includesDiffAt: 'to-be-removed').
+		self deny: (request merge modifies: (baseVersion artifactAt: 'to-be-removed')).
 		self deny: request merge hasConflicts.
 		request resume]
 	] valueSupplyingAnswers: {{'*'. #default}}.

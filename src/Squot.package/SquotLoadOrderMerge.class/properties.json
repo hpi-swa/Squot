@@ -6,13 +6,9 @@
 		 ],
 	"commentStamp" : "jr 7/28/2019 00:00",
 	"instvars" : [
-		"workingLoadOrder",
-		"incomingLoadOrder",
-		"baseLoadOrder",
-		"conflicts",
-		"loadOrderPatch" ],
+		"diff3merge" ],
 	"name" : "SquotLoadOrderMerge",
 	"pools" : [
 		 ],
-	"super" : "Object",
+	"super" : "SquotAbstractCollectionMerge",
 	"type" : "normal" }

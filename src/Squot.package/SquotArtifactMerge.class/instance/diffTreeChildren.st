@@ -1,0 +1,3 @@
+converting
+diffTreeChildren
+	^ graphMerge asSquotHierarchicalDiff, self metadataDiffNodes

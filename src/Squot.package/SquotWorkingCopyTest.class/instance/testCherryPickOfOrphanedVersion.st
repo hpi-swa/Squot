@@ -8,7 +8,7 @@ testCherryPickOfOrphanedVersion
 	on: SquotMergeRequested do: [:request |
 		self deny: request merge hasConflicts
 			description: 'there should be no conflicts'.
-		self assert: (request merge diffs allSatisfy: [:each | each isRemoval not])
+		self deny: (request merge resolvedPatch diffs anySatisfy: [:each | each isRemoval])
 			description: 'nothing should be removed'.
 		request resume]
 	on: SquotSelectionOfChangesForSaveRequested

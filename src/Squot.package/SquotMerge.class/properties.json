@@ -6,15 +6,10 @@
 		 ],
 	"commentStamp" : "jr 7/22/2019 22:16",
 	"instvars" : [
-		"workingCopy",
-		"incomingContainer",
-		"baseContainer",
-		"patchBuilder",
-		"containerConflicts",
-		"objectConflicts",
-		"loadOrderConflicts" ],
+		"loadOrderConflicts",
+		"loadOrderMerge" ],
 	"name" : "SquotMerge",
 	"pools" : [
 		 ],
-	"super" : "Object",
+	"super" : "SquotAbstractCollectionMerge",
 	"type" : "normal" }

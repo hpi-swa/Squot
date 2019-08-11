@@ -1,7 +1,5 @@
 accessing
 conflicts
-	^ Set new
-		addAll: containerConflicts;
-		addAll: objectConflicts;
-		addAll: loadOrderConflicts;
+	^ super conflicts
+		addAll: loadOrderMerge conflicts;
 		yourself

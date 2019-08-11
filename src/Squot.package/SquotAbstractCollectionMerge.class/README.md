@@ -1,0 +1,1 @@
+A state-based three-way merge of some kind of collection. It can have conflicts about whether elements are part of the final collection or not. The elements can undergo merges themselves.

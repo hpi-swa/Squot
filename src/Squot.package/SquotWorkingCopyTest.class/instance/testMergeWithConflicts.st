@@ -7,7 +7,7 @@ testMergeWithConflicts
 	[[scenario merge]
 	on: SquotMergeRequested do: [:request | | packageDiff conflictNode |
 		"make sure the second and third method edition are in the patch"
-		packageDiff := request merge diffAt: scenario packagePath.
+		packageDiff := request merge mergeAt: scenario packagePath.
 		self assert: (packageDiff left packageArtifactDefinitions
 				anySatisfy: [:each | (each source beginsWith: 'conflictMethod')
 							and:  [each source withBlanksTrimmed endsWith: '^ 1']])

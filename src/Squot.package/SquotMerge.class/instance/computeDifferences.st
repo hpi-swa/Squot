@@ -1,22 +1,17 @@
 private
 computeDifferences
-	| fromBaseToExisting fromBaseToIncoming commonPaths orderMerge |
-	fromBaseToIncoming := incomingContainer patchRelativeToBase: baseContainer.
-	fromBaseToExisting := workingCopy patchRelativeToBase: baseContainer.
+	| fromBaseToExisting fromBaseToIncoming commonPaths |
+	fromBaseToIncoming := incoming patchRelativeToBase: base.
+	fromBaseToExisting := working patchRelativeToBase: base.
 	commonPaths := fromBaseToIncoming commonPathsWith: fromBaseToExisting.
-	commonPaths do: [:eachPath | | existingDiff incomingDiff mergingDiff |
+	commonPaths do: [:eachPath | | existingDiff incomingDiff artifactMerge |
 		existingDiff := fromBaseToExisting diffAt: eachPath.
 		incomingDiff := fromBaseToIncoming diffAt: eachPath.
-		mergingDiff := existingDiff mergeWith: incomingDiff.
-		mergingDiff isConflict
-			ifTrue: [containerConflicts at: mergingDiff path put: mergingDiff]
-			ifFalse: [mergingDiff hasChanges ifTrue: [patchBuilder addDiff: mergingDiff]]].
+		artifactMerge := existingDiff mergeWith: incomingDiff.
+		artifactMerge isConflict
+			ifTrue: [containerConflicts at: artifactMerge path put: artifactMerge]
+			ifFalse: [artifactMerge hasChanges ifTrue: [self addMerge: artifactMerge]]].
 	(fromBaseToIncoming paths copyWithoutAll: commonPaths)
-		do: [:eachPath | patchBuilder addDiff: (fromBaseToIncoming diffAt: eachPath)].
-	orderMerge := SquotLoadOrderMerge new
-		workingLoadOrder: workingCopy loadOrder;
-		incomingLoadOrder: incomingContainer loadOrder;
-		baseLoadOrder: baseContainer loadOrder;
-		mergeLoadOrders;
-		yourself.
-	loadOrderConflicts := orderMerge conflicts.
+		do: [:eachPath | self addModification: (fromBaseToIncoming diffAt: eachPath)].
+	loadOrderMerge := SquotLoadOrderMerge
+		into: working loadOrder merge: incoming loadOrder basedOn: base loadOrder.

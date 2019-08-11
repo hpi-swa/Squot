@@ -1,3 +1,3 @@
 comparing
 squotDiffAgainst: aShadowGraph
-	^ diffBlock value: aShadowGraph
+	^ (diffBlock ifNil: [self defaultCompareBlock]) cull: aShadowGraph cull: self

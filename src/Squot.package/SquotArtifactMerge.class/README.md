@@ -1,0 +1,1 @@
+The merge of three editions of a single artifact.

@@ -18,18 +18,18 @@ testResolveThenResetArtifactConflict
 		basedOn: (SquotSnapshot builder
 					add: artifact;
 					buildSnapshot).
-	self openToolAndTestOnPatch: merge.
+	self openToolAndTestOn: merge.
 	self assert: tool rootNodes size = 1.
 	conflictNode := tool rootNodes anyOne.
 	conflictNode resetChoice.
 	self assert: conflictNode needsChoice.
 	conflictNode include.
 	tool accept.
-	self assert: (tool selectedPatch diffAt: path) right content = (merge conflictAt: path) incomingArtifact content.
+	self assert: (self resultDiffAt: path) right content = (merge conflictAt: path) incomingArtifact content.
 	self deny: conflictNode needsChoice.
 	conflictNode exclude.
 	tool accept.
-	self deny: (tool selectedPatch includesDiffAt: path) "no changes to working copy".
+	self deny: (self resultIncludesDiffAt: path) "no changes to working copy".
 	self deny: conflictNode needsChoice.
 	conflictNode resetChoice.
 	self assert: conflictNode needsChoice.

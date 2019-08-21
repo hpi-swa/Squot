@@ -6,9 +6,9 @@
 		 ],
 	"commentStamp" : "",
 	"instvars" : [
-		"tool" ],
+		 ],
 	"name" : "SquotDiffExplorerTest",
 	"pools" : [
 		 ],
-	"super" : "TestCase",
+	"super" : "SquotDiffTreeToolTestCase",
 	"type" : "normal" }

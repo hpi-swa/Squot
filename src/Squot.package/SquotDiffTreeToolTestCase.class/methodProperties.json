@@ -1,0 +1,7 @@
+{
+	"class" : {
+		"isAbstract" : "jr 8/14/2019 22:21" },
+	"instance" : {
+		"performUiInteractionTestsOnNode:inTree:" : "jr 11/5/2018 21:42",
+		"performUiTestsOnToolBuiltBy:" : "jr 10/3/2018 00:44",
+		"resolveArtifactConflict:" : "jr 10/3/2018 00:36" } }

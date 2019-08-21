@@ -1,4 +1,9 @@
 Squot-shadow-diffing
-squotDiffAgainst: otherContent withBase: baseContent
+squotDiffAgainst: incomingGraph withBase: baseGraph
 	"Answer an object that describes the merge between me and otherContent based on baseContent."
-	^ self squotDiffAgainst: otherContent withBase: baseContent with: SquotDiffBuilder new
+	"New name suggestions:
+	mergeWith: incomingGraph basedOn: baseGraph (there are no different kinds of graphs)"
+	^ SquotObjectGraphMerge
+		into: self
+		merge: incomingGraph
+		basedOn: baseGraph

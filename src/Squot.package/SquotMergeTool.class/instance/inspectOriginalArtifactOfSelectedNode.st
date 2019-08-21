@@ -1,0 +1,3 @@
+actions
+inspectOriginalArtifactOfSelectedNode
+	self selectedNode content working explore.

@@ -3,14 +3,11 @@
 		 },
 	"instance" : {
 		"addToBeVisitedLeft:right:" : "jr 6/22/2017 16:42",
-		"addToBeVisitedLeft:right:base:" : "jr 7/27/2017 23:04",
-		"diffFrom:to:basedOn:ifNew:andInitialize:" : "jr 10/25/2017 00:10",
 		"diffFrom:to:ifNew:andInitialize:" : "jr 9/30/2017 19:46",
-		"follow:" : "jr 7/27/2017 23:08",
+		"follow:" : "jr 8/14/2019 22:08",
 		"followReferences" : "jr 6/22/2017 13:49",
 		"initialize" : "jr 9/30/2017 19:47",
 		"left:right:" : "jr 8/15/2017 19:38",
-		"left:right:base:" : "jr 8/15/2017 19:39",
 		"leftSlot:rightSlot:" : "jr 8/17/2017 18:03",
 		"noteChanged:" : "jr 8/15/2017 19:03",
 		"noteChangedReferrer:via:to:" : "jr 7/27/2017 00:03",
@@ -18,5 +15,4 @@
 		"rememberNameOf:" : "jr 7/21/2017 00:29",
 		"rememberNameOf:orAssume:" : "jr 7/21/2017 00:42",
 		"replacing:with:" : "jr 8/4/2019 00:08",
-		"startFromLeft:right:" : "jr 9/30/2017 19:47",
-		"startFromLeft:right:base:" : "jr 8/15/2017 19:39" } }
+		"startFromLeft:right:" : "jr 9/30/2017 19:47" } }

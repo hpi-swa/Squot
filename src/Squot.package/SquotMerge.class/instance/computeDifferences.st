@@ -12,6 +12,8 @@ computeDifferences
 			ifTrue: [containerConflicts at: artifactMerge path put: artifactMerge]
 			ifFalse: [artifactMerge hasChanges ifTrue: [self addMerge: artifactMerge]]].
 	(fromBaseToIncoming paths copyWithoutAll: commonPaths)
-		do: [:eachPath | self addModification: (fromBaseToIncoming diffAt: eachPath)].
+		do: [:eachPath | | diff |
+			diff := fromBaseToIncoming diffAt: eachPath.
+			diff addToMerge: self modifying: (working artifactAt: eachPath ifAbsent: [])].
 	loadOrderMerge := SquotLoadOrderMerge
 		into: working loadOrder merge: incoming loadOrder basedOn: base loadOrder.

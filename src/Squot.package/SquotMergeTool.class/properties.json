@@ -1,0 +1,14 @@
+{
+	"category" : "Squot-Tools",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "SquotMergeTool",
+	"pools" : [
+		 ],
+	"super" : "SquotChangedArtifactsChooser",
+	"type" : "normal" }

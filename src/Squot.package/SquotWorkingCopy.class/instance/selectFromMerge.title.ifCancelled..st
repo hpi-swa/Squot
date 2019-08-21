@@ -8,7 +8,7 @@ selectFromMerge: aMerge title: aString ifCancelled: aBlock
 			signal;
 			yourself.
 	mergeRequest wasHandled ifTrue: [^ aMerge].
-	tool := SquotChangedArtifactsChooser on: aMerge.
+	tool := SquotMergeTool on: aMerge.
 	"tool addIgnoredArtifacts: self ignoredArtifacts."
 	tool controllerForIgnores: self.
 	tool requestSelectedChangesWithTitle: aString.

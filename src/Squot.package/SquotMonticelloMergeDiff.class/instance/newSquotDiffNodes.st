@@ -14,12 +14,9 @@ newSquotDiffNodes
 				title: each operation squotDiffNodeSummary
 				content: each
 				children: #()
-				onInclude: [operations add: each operation.
-							conflicts remove: each ifAbsent: []]
-				onExclude: [operations remove: each operation ifAbsent: [].
-							conflicts remove: each ifAbsent: []]
-				onReset: [operations remove: each operation ifAbsent: [].
-							conflicts add: each])]].
+				onInclude: [each chooseRemote]
+				onExclude: [each chooseLocal]
+				onReset: [each clearChoice])]].
 	nodesWithClass := operationNodes select: [:each "definition -> node" |
 		each key respondsTo: #isCodeDefinition].
 	classNodes :=

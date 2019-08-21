@@ -1,5 +1,5 @@
 testing
 includesModificationAt: key
-	^ (containerConflicts includesKey: key)
-		or: [(containerModifications includesKey: key)
-			or: [elementMerges includesKey: key]]
+	^ (containerConflicts at: key ifAbsent:
+		[containerModifications at: key ifAbsent:
+			[elementMerges at: key ifAbsent: [^ false]]]) hasChanges

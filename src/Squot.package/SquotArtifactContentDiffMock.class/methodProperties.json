@@ -3,11 +3,15 @@
 		 },
 	"instance" : {
 		"asSquotHierarchicalDiff" : "jr 11/5/2018 21:34",
+		"defaultApplyBlock" : "jr 8/21/2019 20:57",
 		"hasConflicts" : "jr 6/8/2019 00:06",
 		"hasConflicts:" : "jr 6/8/2019 00:06",
+		"id" : "jr 8/21/2019 20:49",
+		"id:" : "jr 8/21/2019 20:51",
 		"onApply:" : "jr 3/9/2019 22:51",
-		"squotApplyTo:" : "jr 3/9/2019 23:03",
+		"squotApplyTo:" : "jr 8/21/2019 20:55",
 		"squotChangeAsStringOrText" : "jr 11/5/2018 21:36",
 		"squotHasChanges" : "jr 11/5/2018 21:48",
 		"topNodes" : "jr 11/5/2018 21:35",
-		"topNodes:" : "jr 11/5/2018 21:35" } }
+		"topNodes:" : "jr 11/5/2018 21:35",
+		"whenAppliedTo:return:" : "jr 8/21/2019 20:57" } }

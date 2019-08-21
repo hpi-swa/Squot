@@ -1,4 +1,6 @@
 comparing
 diffWithLeftSnapshot: leftMCSnapshot andBase: baseMCSnapshot with: aDiffBuilder
-	^ SquotPackageDiff forPackageNamed: packageName
-		leftSnapshot: leftMCSnapshot rightSnapshot: snapshot baseSnapshot: baseMCSnapshot
+	^ (SquotPackageDiff forPackageNamed: packageName
+		leftSnapshot: leftMCSnapshot rightSnapshot: snapshot baseSnapshot: baseMCSnapshot)
+		incoming: self;
+		yourself

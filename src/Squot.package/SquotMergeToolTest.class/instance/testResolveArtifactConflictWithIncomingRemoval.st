@@ -12,9 +12,9 @@ testResolveArtifactConflictWithIncomingRemoval
 		basedOn: (SquotSnapshot builder
 					add: artifact;
 					buildSnapshot).
-	self openToolAndTestOnPatch: merge.
+	self openToolAndTestOn: merge.
 	self assert: tool rootNodes size = 1.
 	(conflictNode := tool rootNodes anyOne) resetChoice.
 	self assert: conflictNode anyChildNeedsChoice.
 	self resolveArtifactConflict: [:aNode | tool activateSelectedNode].
-	self assert: (tool selectedPatch diffAt: path) isRemoval.
+	self assert: (self resultDiffAt: path) isRemoval.

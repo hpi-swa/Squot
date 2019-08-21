@@ -30,8 +30,7 @@
 		"shadows" : "jr 5/10/2018 19:54",
 		"squotDiffAgainst:" : "",
 		"squotDiffAgainst:with:" : "jr 7/15/2017 23:15",
-		"squotDiffAgainst:withBase:" : "",
-		"squotDiffAgainst:withBase:with:" : "jr 7/27/2017 23:10",
+		"squotDiffAgainst:withBase:" : "jr 8/13/2019 17:27",
 		"squotMaterializeWith:" : "",
 		"squotMaterializeWith:from:replacing:" : "jr 7/16/2017 18:09",
 		"squotRewritePath:with:" : "jr 4/7/2018 16:06",
@@ -40,4 +39,5 @@
 		"squotWrite:with:" : "jr 7/22/2017 01:25",
 		"startName" : "jr 7/20/2017 23:30",
 		"startShadow" : "jr 4/7/2019 22:38",
-		"startShadow:" : "jr 4/7/2019 21:33" } }
+		"startShadow:" : "jr 4/7/2019 21:33",
+		"startShadowReference" : "jr 8/14/2019 17:51" } }

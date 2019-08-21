@@ -1,0 +1,3 @@
+testing
+hasChanges
+	^ choice ~= #working

@@ -4,4 +4,5 @@ privateResolvedPatch
 		left: working;
 		right: incoming;
 		diffContent: graphMerge resolvedPatch;
+		updateRightArtifact;
 		yourself

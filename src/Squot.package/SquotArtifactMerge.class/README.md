@@ -1,1 +1,1 @@
-The merge of three editions of a single artifact.
+The merge of three editions of a single artifact. Contains merges for all the parts of an artifact, such as the object graph and the metadata.

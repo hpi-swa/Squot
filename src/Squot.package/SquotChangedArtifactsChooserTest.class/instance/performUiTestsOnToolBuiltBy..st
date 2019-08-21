@@ -1,4 +1,4 @@
-testing
+tests
 performUiTestsOnToolBuiltBy: aToolBuilder
 	super performUiTestsOnToolBuiltBy: aToolBuilder.
 	tool accept.

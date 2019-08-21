@@ -1,0 +1,15 @@
+{
+	"category" : "Squot-Capturing",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"getBlock",
+		"setBlock" ],
+	"name" : "SquotGeneralPurposeObjectReference",
+	"pools" : [
+		 ],
+	"super" : "SquotObjectReference",
+	"type" : "normal" }

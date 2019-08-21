@@ -1,8 +1,7 @@
 private
 autoResolveConflicts
-	"If the right side of a conflict in the load order includes only added elements that
-	are not present in the left load order, then the left and the right chunk of the conflict
-	will be concatenated. Otherwise, only the right side is taken... Beware!"
+	"Resolves conflicts by first using all elements of the working copy and then appending 
+	the elements in the incoming container, ensuring that each one gets added only once."
 	| leftSet paths |
 	leftSet := working asSet.
 	paths := OrderedCollection new.
@@ -10,15 +9,11 @@ autoResolveConflicts
 		[:each |
 		each key == #conflict
 			ifTrue:
-				[(leftSet includesAnyOf: each value right)
-					ifTrue:
-						[paths addAll: each value right.
-						self resolveConflict: each with: [each value right]]
-					ifFalse:
-						[paths
-							addAll: each value left;
-							addAll: each value right.
-						self resolveConflict: each with: [each value left, each value right]]]
+				[ | added |
+				added := OrderedCollection new.
+				paths addAll: (added addAll: (each value left copyWithoutAll: paths));
+					addAll: (added addAll: (each value right copyWithoutAll: paths)).
+				self resolveConflict: each with: [added]]
 			ifFalse: [paths addAll: each value]].
 	^ GenericDiff squotDiffClass new
 		file1: working;

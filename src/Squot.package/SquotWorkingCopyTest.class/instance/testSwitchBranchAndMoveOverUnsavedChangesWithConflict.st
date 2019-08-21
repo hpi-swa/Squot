@@ -25,13 +25,12 @@ testSwitchBranchAndMoveOverUnsavedChangesWithConflict
 	hadConflict := false.
 	self suppressChangeNotificationsDuring:
 	[[workingCopy switchAndMoveUnsavedChangesOverTo: originalHistorian]
-	on: SquotMergeRequested doAndResume: [:request | | conflict |
+	on: SquotMergeRequested doAndResume: [:request | | merge |
 		hadConflict := true.
 		self assert: request merge hasConflicts.
-		conflict := request merge diffs detect: #hasConflicts.
-		self assert: 'a ^ 3' equals: ((conflict left shadowOfTrackedObject asMCSnapshot definitions detect: [:each | each isMethodDefinition and: [each selector == #a]]) source withBlanksCondensed withLineEndings: ' ').
-		self assert: 'a ^ 4' equals: ((conflict right shadowOfTrackedObject asMCSnapshot definitions detect: [:each | each isMethodDefinition and: [each selector == #a]]) source withBlanksCondensed withLineEndings: ' ').
-		conflict := conflict content diffs detect: [:each | each squotHasConflicts].
-		conflict patch chooseRight]].
+		merge := request merge elementMerges detect: #hasConflicts.
+		self assert: 'a ^ 3' equals: ((merge working shadowOfTrackedObject asMCSnapshot definitions detect: [:each | each isMethodDefinition and: [each selector == #a]]) source withBlanksCondensed withLineEndings: ' ').
+		self assert: 'a ^ 4' equals: ((merge incoming shadowOfTrackedObject asMCSnapshot definitions detect: [:each | each isMethodDefinition and: [each selector == #a]]) source withBlanksCondensed withLineEndings: ' ').
+		merge := merge chooseIncoming]].
 	self assert: hadConflict.
 	self assert: 'a ^ 4' equals: ((class >> #a) getSource asString withLineEndings: ' ') withBlanksCondensed description: 'moved over changes'.

@@ -1,4 +1,3 @@
 patching
 squotApplyTo: aSquotArtifactContentMock
-	applyBlock ifNil: [^ SquotArtifactContentMock new].
-	^ applyBlock value: self value: aSquotArtifactContentMock
+	^ (applyBlock ifNil: [self defaultApplyBlock]) value: self value: aSquotArtifactContentMock

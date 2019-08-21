@@ -1,0 +1,16 @@
+{
+	"category" : "Squot-Diffs",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"toBeVisited",
+		"visited",
+		"guide" ],
+	"name" : "SquotGraphWalk",
+	"pools" : [
+		 ],
+	"super" : "Stream",
+	"type" : "normal" }

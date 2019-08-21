@@ -1,4 +1,4 @@
 resolving conflicts
 chooseRight
-	operations := operations, (conflicts collect: [:each | each operation]).
-	conflicts := #().
+	self deprecated: 'Use chooseIncoming instead'.
+	self chooseIncoming.

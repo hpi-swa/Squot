@@ -1,3 +1,3 @@
 testing
 squotHasChanges
-	^ operations notEmpty or: [conflicts notEmpty]
+	^ operations notEmpty or: [conflicts anySatisfy: [:each | each remoteChosen]]

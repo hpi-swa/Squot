@@ -18,9 +18,9 @@ testResolveArtifactConflictChooseRight
 		basedOn: (SquotSnapshot builder
 					add: artifact;
 					buildSnapshot).
-	self openToolAndTestOnPatch: merge.
+	self openToolAndTestOn: merge.
 	self assert: tool rootNodes size = 1.
 	(conflictNode := tool rootNodes anyOne) resetChoice.
 	self assert: conflictNode anyChildNeedsChoice.
 	self resolveArtifactConflict: [:aNode | tool activateSelectedNode].
-	self assert: (tool selectedPatch diffAt: path) right content = right.
+	self assert: (tool selectedPatch resolvedPatch diffAt: path) right content = right.

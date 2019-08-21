@@ -7,6 +7,9 @@
 		 ],
 	"commentStamp" : "jr 7/21/2017 23:43",
 	"instvars" : [
+		"working",
+		"incoming",
+		"base",
 		"packageName",
 		"patch" ],
 	"name" : "SquotPackageDiff",

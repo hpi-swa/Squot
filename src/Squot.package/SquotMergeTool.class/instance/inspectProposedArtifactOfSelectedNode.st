@@ -1,0 +1,3 @@
+actions
+inspectProposedArtifactOfSelectedNode
+	self selectedNode content incoming explore.

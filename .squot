@@ -1,10 +1,10 @@
 OrderedDictionary {
-	'src\/VersionControl.package' : #SquotCypressCodeSerializer,
-	'src\/Pharo-compatibility.package' : #SquotCypressCodeSerializer,
 	'src\/Squot.package' : #SquotCypressCodeSerializer,
+	'src\/Pharo-compatibility.package' : #SquotCypressCodeSerializer,
+	'src\/SquotTonel-Core.package' : #SquotCypressCodeSerializer,
+	'src\/BaselineOfSquot.package' : #SquotCypressCodeSerializer,
 	'src\/FileSystem-Git.package' : #SquotCypressCodeSerializer,
 	'src\/Squit.package' : #SquotCypressCodeSerializer,
-	'src\/BaselineOfSquot.package' : #SquotCypressCodeSerializer,
-	'src\/SquotTonel-Core.package' : #SquotCypressCodeSerializer,
-	'src\/SquotTonel-Tests.package' : #SquotCypressCodeSerializer
+	'src\/SquotTonel-Tests.package' : #SquotCypressCodeSerializer,
+	'src\/VersionControl.package' : #SquotCypressCodeSerializer
 }

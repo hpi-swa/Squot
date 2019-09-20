@@ -1,7 +1,7 @@
 loading and unloading
 mergeArtifactInteractively: anArtifact from: aVersion ifCanceled: cancelBlock
 	"Merge a single artifact with the currently loaded one."
-	| mergeBases mergeBase myArtifactSnapshot base patch |
+	| mergeBases mergeBase base merge |
 	self temporarilySaveChangesDuring:
 		[mergeBases := self checkMergeBasesOfLoadedVersionWith: aVersion
 			ifNoCommonAncestor: [{SquotSnapshot empty}]
@@ -13,9 +13,8 @@ mergeArtifactInteractively: anArtifact from: aVersion ifCanceled: cancelBlock
 		base := (mergeBase artifactAt: anArtifact path
 				ifPresent: [:baseArtifact | self newSnapshotBuilder add: baseArtifact; buildSnapshot]
 				ifAbsent: [self lazySnapshot]).
-		myArtifactSnapshot := self lazySnapshot.
-		patch := SquotMergePatchBuilder new
-			patchFrom: myArtifactSnapshot
-			to: (self newSnapshotBuilder add: anArtifact; buildSnapshot)
-			base: base.
-		self loadPatchInteractively: patch ifCanceled: [^ cancelBlock value]].
+		merge := SquotMerge
+			into: self
+			merge: (self newSnapshotBuilder add: anArtifact; buildSnapshot)
+			basedOn: base.
+		self mergeInteractively: merge ifCanceled: [^ cancelBlock value]].

@@ -1,8 +1,8 @@
 helpers
 assertDiffAgainstItselfHasNoChanges: anObject
 	| leftShadow rightShadow diff |
-	leftShadow := capturer captureGraph: anObject.
-	rightShadow := capturer captureGraph: anObject.
+	leftShadow := capturer captureStandalone: anObject.
+	rightShadow := capturer captureStandalone: anObject.
 	diff := leftShadow squotDiffAgainst: rightShadow.
 	self deny: diff squotHasChanges.
 	^ diff

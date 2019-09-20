@@ -1,0 +1,14 @@
+{
+	"category" : "Squot-Diffs",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"diffBuilder" ],
+	"name" : "SquotDiffGuide",
+	"pools" : [
+		 ],
+	"super" : "SquotGraphGuide",
+	"type" : "normal" }

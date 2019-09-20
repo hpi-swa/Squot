@@ -1,5 +1,6 @@
 accessing
 startShadowReference
-	^ SquotGeneralPurposeObjectReference
+	^ (SquotGeneralPurposeObjectReference
 		get: [self startShadow]
-		set: [:aShadow | self notYetImplemented]
+		set: [:aShadow | self notYetImplemented])
+		inGraph: self

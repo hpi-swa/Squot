@@ -1,3 +1,3 @@
 merging
 resolution
-	^ SquotObjectReplacement left: nil right: (self instVarNamed: choice)
+	^ SquotObjectReplacement left: left right: (self instVarNamed: choice)

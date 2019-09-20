@@ -1,0 +1,16 @@
+{
+	"category" : "Squot-Diffs",
+	"classinstvars" : [
+		 ],
+	"classtraitcomposition" : "TSquotAddition classTrait",
+	"classvars" : [
+		 ],
+	"commentStamp" : "jr 9/20/2019 21:48",
+	"instvars" : [
+		"addedObject" ],
+	"name" : "SquotObjectAddition",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"traitcomposition" : "TSquotAddition",
+	"type" : "normal" }

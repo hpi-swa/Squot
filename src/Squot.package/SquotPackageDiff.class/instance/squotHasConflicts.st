@@ -1,4 +1,4 @@
 Squot-diff-testing
 squotHasConflicts
-	self deprecated: 'Should use ', SquotMonticelloMergeDiff name, ' instead'.
+	self flag: #stub. "should have a PackageMerge class"
 	^ patch squotHasConflicts

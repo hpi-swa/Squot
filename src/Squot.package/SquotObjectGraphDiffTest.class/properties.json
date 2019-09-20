@@ -1,0 +1,15 @@
+{
+	"category" : "Squot-Diffs-Tests",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "jr 9/20/2019 20:46",
+	"instvars" : [
+		"capturer",
+		"objectRegistry" ],
+	"name" : "SquotObjectGraphDiffTest",
+	"pools" : [
+		 ],
+	"super" : "TestCase",
+	"type" : "normal" }

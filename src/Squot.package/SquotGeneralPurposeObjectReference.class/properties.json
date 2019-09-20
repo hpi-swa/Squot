@@ -2,6 +2,7 @@
 	"category" : "Squot-Capturing",
 	"classinstvars" : [
 		 ],
+	"classtraitcomposition" : "TSquotObjectReference classTrait",
 	"classvars" : [
 		 ],
 	"commentStamp" : "",
@@ -11,5 +12,6 @@
 	"name" : "SquotGeneralPurposeObjectReference",
 	"pools" : [
 		 ],
-	"super" : "SquotObjectReference",
+	"super" : "Object",
+	"traitcomposition" : "TSquotObjectReference",
 	"type" : "normal" }

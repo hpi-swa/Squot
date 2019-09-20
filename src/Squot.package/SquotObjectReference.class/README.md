@@ -1,1 +1,0 @@
-A reference from one object to another. Allows to get (introspect) and set (reflect on) the target value.

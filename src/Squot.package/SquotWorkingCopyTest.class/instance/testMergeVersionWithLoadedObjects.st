@@ -31,13 +31,14 @@ testMergeVersionWithLoadedObjects
 	self suppressChangeNotificationsDuring:
 	[[[workingCopy mergeVersionWithLoadedObjects: secondVersion
 			ifCanceled: [self fail: 'should not reach here']]
-		on: SquotSelectionOfChangesRequested do: [:request | | packageDiff |
+		on: SquotMergeRequested do: [:request | | packageMerge packageDiff |
 			"make sure the unsaved method does not appear in the diff (will not be changed)"
-			packageDiff := request patch diffAt: packagePath.
+			packageMerge := request merge mergeAt: packagePath.
+			self deny: packageMerge hasConflicts.
+			packageDiff := packageMerge resolvedPatch.
 			self assert: (packageDiff diffOfTrackedObject operations
 				noneSatisfy: [:each | each definition isMethodDefinition and: [each definition selector = addedMethod selector]]).
-			self assert: packageDiff diffOfTrackedObject conflicts isEmpty.
-			request resume: request patch "all of it"]]
+			request resume]]
 		valueSupplyingAnswers: {{'*'. #default}}].
 	self assert: addedMethod
 		equals: sampleClass >> #addedMethod

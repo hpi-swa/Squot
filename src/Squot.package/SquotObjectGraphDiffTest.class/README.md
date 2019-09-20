@@ -1,0 +1,1 @@
+Tests that different editions of object graphs are compared correctly.

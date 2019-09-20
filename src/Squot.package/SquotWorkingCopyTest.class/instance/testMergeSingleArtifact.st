@@ -31,10 +31,10 @@ testMergeSingleArtifact
 	self suppressChangeNotificationsDuring:
 	[[[self workingCopy mergeArtifactInteractively: rightArtifact from: rightVersion
 		ifCanceled: [self fail: 'This code should not be reached']]
-	on: SquotSelectionOfChangesRequested do: [:request | 
+	on: SquotMergeRequested do: [:request | 
 		"then"
-		self assert: (request patch includesDiffAt: rightArtifact path).
-		self deny: (request patch includesDiffAt: 'unrelated').
+		self assert: (request merge modifies: rightArtifact).
+		self deny: (request merge includesModificationAt: 'unrelated').
 		request resume]
 	] valueSupplyingAnswers: {{'*'. #default}}].
 	self assert: 'something else' = (class organization categoryOfElement: #mergeMe).

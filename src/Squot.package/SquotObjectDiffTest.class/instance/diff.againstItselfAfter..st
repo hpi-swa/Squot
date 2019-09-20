@@ -1,7 +1,7 @@
 helpers
 diff: anObject againstItselfAfter: aBlock
 	| leftShadow rightShadow |
-	leftShadow := capturer captureGraph: anObject.
+	leftShadow := capturer captureStandalone: anObject.
 	aBlock value.
-	rightShadow := capturer captureGraph: anObject.
+	rightShadow := capturer captureStandalone: anObject.
 	^ leftShadow squotDiffAgainst: rightShadow

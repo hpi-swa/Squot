@@ -1,13 +1,11 @@
 testing
 testRectangles
-	| diff rect rectDiff origin corner |
+	| rect rectDiff origin corner |
 	origin := 1@2.
 	corner := 3@4.
 	rect := (origin corner: corner).
-	diff := self diff: rect against: (5@6 corner: 7@8).
-	self assert: diff squotHasChanges.
-	rectDiff := diff diffForObjectNamed: (objectRegistry nameOf: rect)
-					ifAbsent: [self fail: 'Points should be reassigned not patched'].
+	rectDiff := self diff: rect against: (5@6 corner: 7@8).
+	self assert: rectDiff squotHasChanges.
 	self assert: (rectDiff slotChanges associationAt: 'origin') class == SquotSlotReassignment
 		description: 'Points should be reassigned, not modified'.
 	self assert: ((rectDiff slotChanges associationAt: 'origin') replacementShadow slots at: 'x') value = 5.

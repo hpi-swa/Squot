@@ -1,8 +1,8 @@
 helpers
 diff: left against: right
 	| leftShadow rightShadow |
-	leftShadow := capturer captureGraph: left.
+	leftShadow := capturer captureStandalone: left.
 	left become: right.
-	[rightShadow := capturer captureGraph: left]
+	[rightShadow := capturer captureStandalone: left]
 	ensure: [right become: left].
 	^ leftShadow squotDiffAgainst: rightShadow

@@ -1,0 +1,1 @@
+I am a stub that does not merge anything and never has changes (null object).

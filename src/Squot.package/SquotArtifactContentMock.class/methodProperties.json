@@ -10,8 +10,6 @@
 		"id" : "jr 8/15/2019 14:21",
 		"id:" : "jr 8/15/2019 14:21",
 		"initialize" : "jr 7/30/2019 00:43",
-		"mergeBlock" : "jr 8/14/2019 23:36",
-		"mergeBlock:" : "jr 8/14/2019 23:36",
 		"nameOf:" : "jr 7/30/2019 00:44",
 		"nameOf:ifAbsent:" : "jr 7/30/2019 00:45",
 		"nameOf:is:" : "jr 7/30/2019 00:43",
@@ -21,5 +19,4 @@
 		"squotSummaryText" : "jr 11/5/2018 21:20",
 		"whenComparedReturnMock" : "jr 7/29/2019 23:51",
 		"whenComparedWith:return:" : "jr 7/29/2019 23:46",
-		"whenMergedReturn:" : "jr 8/15/2019 00:18",
-		"whenMergedReturnMock" : "jr 8/14/2019 23:39" } }
+		"whenMergedReturn:" : "jr 8/15/2019 00:18" } }

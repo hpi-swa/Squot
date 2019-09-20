@@ -16,13 +16,15 @@ testRestoreClass
 	latestVersion := workingCopy baseVersion.
 	
 	self suppressChangeNotificationsDuring:
-		[workingCopy loadVersion: firstVersion interactive: false].
+		[SquotChangeSetTestCleanup removeNewChangeSetsNamedLike: sampleClassName
+			after: [workingCopy loadVersion: firstVersion interactive: false]].
 	self deny: sampleClass isObsolete.
 	self assert: firstMethod isInstalled description: 'keep firstMethod'.
 	self deny: addedMethod isInstalled description: 'remove addedMethod'.
 	
 	self suppressChangeNotificationsDuring:
-		[workingCopy loadVersion: latestVersion interactive: false].
+		[SquotChangeSetTestCleanup removeNewChangeSetsNamedLike: sampleClassName
+			after: [workingCopy loadVersion: latestVersion interactive: false]].
 	self deny: sampleClass isObsolete.
 	self assert: firstMethod isInstalled description: 'keep firstMethod'.
 	self assert: addedMethod getSource asString

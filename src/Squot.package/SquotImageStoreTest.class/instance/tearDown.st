@@ -8,3 +8,5 @@ tearDown
 		createdClasses do: [:each | classFactory delete: each].
 		testEnvironment allClassesAndTraits do: [:each | classFactory delete: each].
 		testEnvironment destroy].
+	ChangeSet removeChangeSetsNamedSuchThat:
+		[:each | each beginsWith: classFactory packageName].

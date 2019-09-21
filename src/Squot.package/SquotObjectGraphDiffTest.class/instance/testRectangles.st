@@ -8,5 +8,5 @@ testRectangles
 	diff := self diff: rect against: (5@6 corner: 7@8).
 	self assert: diff squotHasChanges;
 		assert: (diff diffForObjectNamed: (objectRegistry nameOf: rect) 	ifAbsent: []) notNil;
-		assert: (diff diffForObjectNamed: (objectRegistry nameOf: rect origin ifAbsent: []) ifAbsent: []) isNil;
-		assert: (diff diffForObjectNamed: (objectRegistry nameOf: rect corner ifAbsent: []) ifAbsent: []) isNil.
+		deny: (diff diffForObjectNamed: (objectRegistry nameOf: rect origin ifAbsent: []) ifAbsent: []) isModification;
+		deny: (diff diffForObjectNamed: (objectRegistry nameOf: rect corner ifAbsent: []) ifAbsent: []) isModification.

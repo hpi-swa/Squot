@@ -1,4 +1,4 @@
 Squot-shadow-diffing
-squotDiffAgainst: otherContent
+squotDiffAgainst: aGraph
 	"Answer an object that describes the differences between me and otherContent."
-	^ self squotDiffAgainst: otherContent with: SquotDiffBuilder new
+	^ self squotDiffAgainst: aGraph with: SquotDiffBuilder new

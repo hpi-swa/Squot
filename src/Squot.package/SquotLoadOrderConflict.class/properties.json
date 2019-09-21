@@ -6,10 +6,9 @@
 		 ],
 	"commentStamp" : "jr 7/28/2019 01:01",
 	"instvars" : [
-		"diff3conflict",
-		"resolution" ],
+		"diff3conflict" ],
 	"name" : "SquotLoadOrderConflict",
 	"pools" : [
 		 ],
-	"super" : "Object",
+	"super" : "SquotConflict",
 	"type" : "normal" }

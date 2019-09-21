@@ -1,3 +1,3 @@
-testing
+tests
 testRectangle
-	self captureAndRestore: (1@2 corner: 3@4).
+	self captureRestoreAndCompare: (1@2 corner: 3@4).

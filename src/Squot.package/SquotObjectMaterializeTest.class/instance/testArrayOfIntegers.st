@@ -1,3 +1,3 @@
-testing
+tests
 testArrayOfIntegers
-	self captureAndRestore: #(1 2 3)
+	self captureRestoreAndCompare: #(1 2 3)

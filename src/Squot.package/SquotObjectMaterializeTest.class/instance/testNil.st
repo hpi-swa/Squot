@@ -1,3 +1,3 @@
-testing
+tests
 testNil
-	self captureAndRestore: nil
+	self captureInValueHolderThenRestoreAndCompare: nil

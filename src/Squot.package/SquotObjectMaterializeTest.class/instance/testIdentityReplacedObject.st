@@ -1,5 +1,5 @@
-testing
+tests
 testIdentityReplacedObject
 	| binding |
 	binding := Smalltalk globals bindingOf: #Smalltalk.
-	self captureAndRestore: binding.
+	self captureRestoreAndCompare: binding.

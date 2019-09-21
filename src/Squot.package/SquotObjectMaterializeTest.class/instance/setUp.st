@@ -1,4 +1,4 @@
-testing
+tests
 setUp
 	objectRegistry := SquotObjectRegistry new.
 	capturer := SquotObjectCapturer new.

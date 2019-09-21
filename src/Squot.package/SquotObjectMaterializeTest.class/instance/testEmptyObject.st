@@ -1,5 +1,5 @@
-testing
+tests
 testEmptyObject
 	| restored |
-	restored := self captureAndRestoreWithoutEqualityTest: Object new.
+	restored := self captureAndRestore: Object new.
 	self assert: restored class == Object.

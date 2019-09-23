@@ -1,3 +1,3 @@
 *Squot-diff-patching
-squotApplyTo: file
-	^ self diff applyTo: file
+squotApplyTo: sequenceShadow
+	^ sequenceShadow applySequenceDiff: self diff

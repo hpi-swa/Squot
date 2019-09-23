@@ -9,7 +9,8 @@
 		"patchedObjects",
 		"patchedObjectGraph",
 		"objectRegistry",
-		"materializer" ],
+		"materializer",
+		"sourceGraph" ],
 	"name" : "SquotObjectPatcher",
 	"pools" : [
 		 ],

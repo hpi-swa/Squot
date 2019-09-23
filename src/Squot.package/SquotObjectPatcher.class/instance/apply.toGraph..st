@@ -1,6 +1,6 @@
 as yet unclassified
 apply: aGraphDiff toGraph: anObjectGraph
 	patchedObjectGraph := anObjectGraph.
+	sourceGraph := aGraphDiff right.
 	aGraphDiff squotApplyTo: anObjectGraph with: self.
-	anObjectGraph startShadow: (patchedObjects at: anObjectGraph startShadow undecorated).
 	^ anObjectGraph

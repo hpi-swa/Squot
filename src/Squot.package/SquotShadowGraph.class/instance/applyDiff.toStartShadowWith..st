@@ -1,5 +1,6 @@
 patching
 applyDiff: aDiff toStartShadowWith: aPatcher
-	^ aPatcher
-		apply: aDiff
-		to: self startShadow
+	^ startShadow :=
+		aPatcher
+			apply: aDiff
+			to: self startShadow

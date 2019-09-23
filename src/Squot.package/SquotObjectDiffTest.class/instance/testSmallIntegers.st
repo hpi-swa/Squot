@@ -1,8 +1,4 @@
 testing
 testSmallIntegers
-	| diff |
-	diff := 1 captureWithSquot squotDiffAgainst: 1 captureWithSquot.
-	self deny: diff squotHasChanges.
-	diff := 1 captureWithSquot squotDiffAgainst: 2 captureWithSquot.
-	self assert: diff squotHasChanges.
-	self assert: diff startDiff right = 2 captureWithSquot.
+	self assert: 1 captureWithSquot = 1 captureWithSquot;
+		assert: 1 captureWithSquot ~= 2 captureWithSquot.

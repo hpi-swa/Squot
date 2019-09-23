@@ -2,7 +2,7 @@ public converting
 rematerialize: aShadow
 	^ convertedObjects at: aShadow undecorated
 		ifAbsentPut: [ | materialized name |
-			self assert: (aShadow hasSquotShadowName not or: [sourceGraph includes: aShadow undecorated])
+			self assert: (aShadow hasSquotShadowName not or: [sourceGraph includesObjectNamed: aShadow name])
 				description: 'Source graph does not contain shadow. Where does it come from?'.
 			materialized := self findOrCreateAndRematerialize: aShadow.
 			name := sourceGraph nameOf: aShadow undecorated ifAbsent: [].

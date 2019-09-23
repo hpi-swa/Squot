@@ -1,0 +1,17 @@
+{
+	"category" : "Squot-Diffs-Tests",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"capturer",
+		"objectRegistry",
+		"patcher",
+		"materializedObject" ],
+	"name" : "SquotShadowPatchingTest",
+	"pools" : [
+		 ],
+	"super" : "TestCase",
+	"type" : "normal" }

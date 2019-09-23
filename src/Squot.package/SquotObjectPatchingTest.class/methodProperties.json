@@ -3,7 +3,7 @@
 		 },
 	"instance" : {
 		"patch:to:" : "jr 7/30/2017 13:19",
-		"patchedFrom:to:" : "jr 9/16/2018 01:36",
+		"patchedFrom:to:" : "jr 9/23/2019 19:30",
 		"rematerializeAsNewGraph:" : "jr 9/16/2018 01:42",
 		"setUp" : "jr 7/30/2017 22:04",
 		"testAddObjects" : "jr 9/16/2018 01:03",
@@ -12,7 +12,7 @@
 		"testArraySwap" : "jr 7/29/2017 17:16",
 		"testCyclicReferences" : "jr 9/16/2018 01:39",
 		"testDictionary" : "jr 9/16/2018 01:37",
-		"testNestedArray" : "jr 6/27/2017 17:21",
+		"testNestedArray" : "jr 9/23/2019 19:29",
 		"testReplacedObject2" : "jr 7/20/2017 17:02",
 		"testSet" : "jr 9/16/2018 01:38",
 		"testTypeChange" : "jr 6/15/2017 16:23",

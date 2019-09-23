@@ -1,0 +1,3 @@
+accessing
+addTo: anObjectShadow
+	self subclassResponsibility

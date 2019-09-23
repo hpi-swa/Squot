@@ -1,3 +1,3 @@
 converting
 newSquotDiffNodes
-	^ (elementMerges at: working startShadow undecorated) newSquotDiffNodes
+	^ self mergeOfStartObject newSquotDiffNodes

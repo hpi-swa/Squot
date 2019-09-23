@@ -5,5 +5,5 @@ patched: anObject asIn: aBlock
 	aBlock value.
 	changedGraph := (capturer captureGraph: anObject) asShadowGraph.
 	diff := originalGraph squotDiffAgainst: changedGraph.
-	patched := patcher apply: diff toGraph: originalGraph mutableCopy.
+	patched := diff squotApplyTo: originalGraph mutableCopy.
 	^ patched

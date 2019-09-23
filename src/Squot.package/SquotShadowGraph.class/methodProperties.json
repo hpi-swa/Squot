@@ -4,8 +4,9 @@
 		"withSingleShadow:" : "jr 9/20/2017 21:14" },
 	"instance" : {
 		"=" : "jr 3/16/2019 20:28",
+		"applyDiff:toShadowNamed:" : "jr 9/23/2019 23:08",
 		"applyDiff:toShadowNamed:with:" : "jr 9/18/2019 19:49",
-		"applyDiff:toStartShadowWith:" : "jr 9/22/2019 10:19",
+		"applyDiff:toStartShadowWith:" : "jr 7/30/2017 17:36",
 		"as:" : "jr 7/30/2017 02:07",
 		"asMonticelloPatch" : "jr 4/4/2018 21:53",
 		"asShadowGraph" : "jr 7/30/2017 01:37",

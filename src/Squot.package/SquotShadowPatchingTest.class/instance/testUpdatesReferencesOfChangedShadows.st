@@ -1,15 +1,6 @@
 tests
 testUpdatesReferencesOfChangedShadows
-	| source sharedObject patchedGraph patchedShadowOfSharedObject |
-	sharedObject := ValueHolder new contents: 1; yourself.
-	source := Array with: sharedObject with: (Array with: sharedObject).
-	patchedGraph := self patched: source asIn: [sharedObject contents: 2].
-	self assert: 
-			((patchedShadowOfSharedObject := 
-				patchedGraph shadowNamed: (objectRegistry nameOf: sharedObject))
-				slots at: 'contents') = 2 captureWithSquot
-		description: 'not patched correctly';
-		assert:
+	self assert:
 			(patchedGraph startShadow slots at: 1) value undecorated
 				== patchedShadowOfSharedObject
 		description: 'references not updated';

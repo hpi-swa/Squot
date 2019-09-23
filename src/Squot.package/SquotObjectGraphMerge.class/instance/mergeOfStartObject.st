@@ -1,3 +1,3 @@
 accessing
 mergeOfStartObject
-	^ elementMerges at: working startShadow undecorated
+	^ elementMerges at: working startName

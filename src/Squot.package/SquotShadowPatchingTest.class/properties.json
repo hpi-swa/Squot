@@ -8,8 +8,11 @@
 	"instvars" : [
 		"capturer",
 		"objectRegistry",
-		"patcher",
-		"materializedObject" ],
+		"materializedObject",
+		"sharedObject",
+		"patchedGraph",
+		"nameOfSharedObject",
+		"patchedShadowOfSharedObject" ],
 	"name" : "SquotShadowPatchingTest",
 	"pools" : [
 		 ],

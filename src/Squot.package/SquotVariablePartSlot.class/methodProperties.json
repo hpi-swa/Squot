@@ -2,6 +2,7 @@
 	"class" : {
 		"printHeadlineForChangesTextOn:" : "jr 10/31/2017 20:55" },
 	"instance" : {
+		"addTo:" : "jr 9/23/2019 23:24",
 		"addTo:with:" : "jr 7/20/2017 22:42",
 		"diffToBaseIndexedSlot:" : "jr 9/18/2019 20:14",
 		"index" : "jr 6/17/2017 20:02",

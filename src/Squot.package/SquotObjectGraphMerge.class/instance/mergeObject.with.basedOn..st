@@ -2,16 +2,17 @@ private
 mergeObject: workingObject with: incomingObject basedOn: baseObject
 	"Trigger merge of these object editions and record the merge.
 	Also note when an object has been added or removed, possibly creating conflicts."
-	| object merge |
+	| object name merge |
 	object := workingObject ifNil: [incomingObject ifNil: [baseObject]].
-	(elementMerges includesKey: object) ifTrue: [^ self].
+	name := self keyOf: object ifAbsent: [^ self "value objects are not merged"].
+	(elementMerges includesKey: name) ifTrue: [^ self "already done"].
 	workingObject
 		ifNil:
 			[baseObject
 				ifNil: ["incoming additon"
-					(incoming nameOf: incomingObject ifAbsent: []) ifNotNil:
-						[:name | containerModifications at: name put:
-									(SquotObjectAddition of: incomingObject)]]
+					containerModifications
+						at: name
+						put: (SquotObjectAddition of: incomingObject)]
 				ifNotNil: ["working removal" self notYetImplemented]]
 		ifNotNil:
 			[incomingObject
@@ -20,4 +21,4 @@ mergeObject: workingObject with: incomingObject basedOn: baseObject
 					["merge editions"
 					baseObject ifNil: [self notYetImplemented].
 					merge := workingObject squotMergeWith: incomingObject basedOn: baseObject.
-					merge hasChanges ifTrue: [elementMerges at: object put: merge]]].
+					merge hasChanges ifTrue: [elementMerges at: name put: merge]]].

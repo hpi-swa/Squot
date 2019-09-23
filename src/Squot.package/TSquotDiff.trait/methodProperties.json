@@ -2,6 +2,7 @@
 	"class" : {
 		 },
 	"instance" : {
+		"applyToShadowNamed:inGraph:" : "jr 9/23/2019 23:52",
 		"asSquotConflicts" : "jr 10/19/2017 19:20",
 		"initializeSquotDiffNodes:with:" : "jr 1/14/2018 23:10",
 		"newSquotDiffNodes" : "jr 1/14/2018 23:06",

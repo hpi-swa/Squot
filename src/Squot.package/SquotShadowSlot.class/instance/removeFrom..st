@@ -1,0 +1,3 @@
+accessing
+removeFrom: anObjectShadow
+	self subclassResponsibility

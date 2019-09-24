@@ -1,3 +1,3 @@
-as yet unclassified
+diffing low-level
 reassignSlot: leftSlot to: rightSlot
 	^ leftSlot squotDiffAgainst: rightSlot

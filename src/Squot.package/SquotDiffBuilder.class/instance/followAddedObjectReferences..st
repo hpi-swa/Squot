@@ -1,7 +1,9 @@
 private
 followAddedObjectReferences: aShadow
 	aShadow squotOutgoingReferences
-		do: [:each | | name leftShadow |
-			(name := (right nameOf: each value ifAbsent: [])) ifNotNil:
-				[(leftShadow := left shadowNamed: name ifAbsent: []) ifNotNil:
-					[self addToBeVisitedLeft: leftShadow right: each value]]].
+		do: [:each | | name leftShadowOrNil |
+			(name := (right nameOf: each value undecorated ifAbsent: [])) ifNotNil:
+				[leftShadowOrNil := left shadowNamed: name ifAbsent: [].
+				leftShadowOrNil
+					ifNil: [self addedObject: each value withName: name]
+					ifNotNil: [self addToBeVisitedLeft: leftShadowOrNil right: each value]]].

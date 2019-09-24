@@ -7,6 +7,7 @@
 		"diff:againstItselfAfter:" : "jr 7/30/2017 15:04",
 		"setUp" : "jr 7/30/2017 22:04",
 		"testAddObjects" : "jr 9/13/2019 12:22",
+		"testAddSubgraph" : "jr 9/24/2019 00:30",
 		"testArrayOfDifferentlyTypedObjects" : "jr 9/18/2019 20:37",
 		"testArrayOfIntegers" : "jr 9/13/2019 11:29",
 		"testCyclicReferences" : "jr 6/25/2017 22:22",

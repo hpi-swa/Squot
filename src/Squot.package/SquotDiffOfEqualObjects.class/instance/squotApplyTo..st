@@ -1,4 +1,4 @@
 patching
 squotApplyTo: aContentObject
-	"no changes, no operation"
-	^ aContentObject
+	self shouldNotImplement.
+	"This should not have been added to a patch in the first place"

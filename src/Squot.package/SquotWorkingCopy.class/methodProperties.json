@@ -26,7 +26,7 @@
 		"checkMergeBasesOfLoadedVersionWith:ifNoCommonAncestor:ifAncestor:ifDescendant:" : "jr 4/29/2018 12:07",
 		"cherryPickInteractivelyFromVersion:withParent:ifLoadCanceled:ifSaveCanceled:" : "jr 7/28/2019 12:49",
 		"cherryPickTemporaryVersion:" : "jr 8/29/2019 20:14",
-		"currentSnapshot" : "jr 4/14/2018 20:02",
+		"currentSnapshot" : "jr 9/19/2019 06:04",
 		"defaultAuthor" : "jr 2/20/2017 11:36",
 		"discardUnsavedChanges" : "jr 6/30/2017 22:02",
 		"flushPreviouslySavedArtifacts" : "jr 5/31/2017 17:41",
@@ -94,4 +94,4 @@
 		"temporarilySaveChangesOn:" : "jr 8/18/2018 17:06",
 		"unload" : "jr 1/26/2017 17:38",
 		"unregister" : "fn 4/11/2017 11:57",
-		"withCurrentSnapshot:" : "jr 7/22/2017 19:46" } }
+		"withCurrentSnapshot:" : "jr 9/19/2019 06:06" } }

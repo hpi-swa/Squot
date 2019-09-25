@@ -16,7 +16,6 @@
 		"previouslySavedArtifacts",
 		"shouldStoreMetadata",
 		"additionalParents",
-		"snapshotBlock",
 		"loadedVersion",
 		"newVersionMessage" ],
 	"name" : "SquotWorkingCopy",

@@ -1,6 +1,6 @@
 private
 currentSnapshot
 	"See #withCurrentSnapshot:"
-	^ snapshotBlock
+	^ SquotCurrentWorkingCopySnapshotBlock value
 		ifNil: [self lazySnapshot]
-		ifNotNil: [snapshotBlock value]
+		ifNotNil: [SquotCurrentWorkingCopySnapshotBlock value value]

@@ -39,7 +39,6 @@
 		"loadCurrentVersionInteractively" : "jr 5/28/2017 16:18",
 		"loadOrder" : "jr 8/18/2018 17:00",
 		"loadOrder:" : "jr 8/18/2018 17:00",
-		"loadPatch:" : "jr 7/22/2019 21:09",
 		"loadPatchInteractively:ifCanceled:" : "jr 5/4/2019 02:37",
 		"loadSnapshot:" : "jr 6/29/2017 16:40",
 		"loadVersion:interactive:" : "jr 4/28/2018 19:09",

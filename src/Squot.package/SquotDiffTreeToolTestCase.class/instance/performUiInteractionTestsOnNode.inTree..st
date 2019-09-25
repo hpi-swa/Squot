@@ -4,3 +4,5 @@ performUiInteractionTestsOnNode: aSquotDiffNode inTree: treeView
 	treeView expandAll.
 	tool nodeLabelOf: aSquotDiffNode.
 	self assert: (tool diffText isString or: [tool diffText isText]).
+	treeView getMenu: false.
+	treeView getMenu: true.

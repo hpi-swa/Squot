@@ -1,3 +1,0 @@
-testing
-hasChanges
-	^ resolution hasChanges

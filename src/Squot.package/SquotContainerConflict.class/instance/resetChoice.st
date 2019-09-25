@@ -1,3 +1,0 @@
-converting
-resetChoice
-	resolution := nil.

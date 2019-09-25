@@ -6,12 +6,9 @@
 		 ],
 	"commentStamp" : "jr 7/23/2019 00:38",
 	"instvars" : [
-		"base",
-		"working",
-		"incoming",
-		"resolution" ],
+		 ],
 	"name" : "SquotContainerConflict",
 	"pools" : [
 		 ],
-	"super" : "Object",
+	"super" : "SquotConflict",
 	"type" : "normal" }

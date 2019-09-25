@@ -1,5 +1,5 @@
 Squot-diff-patching
-squotApplyTo: aContentObject
-	"Apply my changes to aContentObject (the representation of an object in a snapshot)
-	and answer the result."
+squotApplyTo: aShadow
+	"Apply my changes to aShadow (the captured representation of an object) and answer 
+	the result."
 	self shouldBeImplemented

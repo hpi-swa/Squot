@@ -1,0 +1,3 @@
+converting
+squotChangeAsStringOrText
+	^ self subclassResponsibility

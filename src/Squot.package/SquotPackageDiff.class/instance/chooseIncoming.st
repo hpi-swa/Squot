@@ -1,3 +1,0 @@
-merging
-chooseIncoming
-	patch chooseIncoming.

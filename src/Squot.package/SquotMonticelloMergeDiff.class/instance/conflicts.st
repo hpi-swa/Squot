@@ -1,3 +1,0 @@
-accessing
-conflicts
-	^ conflicts copy

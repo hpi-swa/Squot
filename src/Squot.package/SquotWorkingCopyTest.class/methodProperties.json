@@ -24,7 +24,7 @@
 		"testMergeWithConflicts" : "jr 9/18/2019 21:56",
 		"testMergeWithConflictsChooseRemote" : "jr 8/14/2019 19:43",
 		"testMergeWithRemovedArtifactOnBothSides" : "jr 8/3/2019 21:46",
-		"testMergeWithoutConflicts" : "jr 8/14/2019 19:52",
+		"testMergeWithoutConflicts" : "jr 9/25/2019 21:54",
 		"testRemovePackage" : "jr 3/4/2019 22:32",
 		"testRestoreClass" : "jr 9/20/2019 20:34",
 		"testRestorePackage" : "jr 4/29/2018 16:33",

@@ -1,0 +1,3 @@
+converting
+newSquotDiffNodes
+	^ self subclassResponsibility

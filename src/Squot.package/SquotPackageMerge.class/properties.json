@@ -1,0 +1,14 @@
+{
+	"category" : "Squot-Packages",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "SquotPackageMerge",
+	"pools" : [
+		 ],
+	"super" : "SquotAbstractCollectionMerge",
+	"type" : "normal" }

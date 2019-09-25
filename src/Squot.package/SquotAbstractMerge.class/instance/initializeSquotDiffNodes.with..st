@@ -1,0 +1,3 @@
+converting
+initializeSquotDiffNodes: aCollection with: aSquotDiffNodesBuilder
+	self subclassResponsibility.

@@ -9,7 +9,6 @@
 	"instvars" : [
 		"working",
 		"incoming",
-		"base",
 		"packageName",
 		"patch" ],
 	"name" : "SquotPackageDiff",

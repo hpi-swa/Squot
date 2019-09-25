@@ -1,4 +1,4 @@
 comparing
 = other
 	^ other packageName = packageName
-		and: [(other diffWithLeftSnapshot: snapshot) squotHasChanges not]
+		and: [(other diffToBase: self withSnapshot: snapshot) squotHasChanges not]

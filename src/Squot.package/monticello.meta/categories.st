@@ -23,6 +23,7 @@ SystemOrganization addCategory: #'Squot-Shadows-Tests'!
 SystemOrganization addCategory: #'Squot-Diffs-Tests'!
 SystemOrganization addCategory: #'Squot-Merging-Tests'!
 SystemOrganization addCategory: #'Squot-Tests-Tools'!
+SystemOrganization addCategory: #'Squot-Packages-Tests'!
 SystemOrganization addCategory: #'Squot-Tools-Tests'!
 SystemOrganization addCategory: #'Squot-Monticello-Converter-Tests'!
 SystemOrganization addCategory: #'Squot-FileTestRepository'!

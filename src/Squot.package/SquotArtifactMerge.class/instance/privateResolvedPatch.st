@@ -1,6 +1,6 @@
 private
 privateResolvedPatch
-	^ SquotArtifactDiffWithContent new
+	^ SquotArtifactModification new
 		left: working;
 		right: incoming;
 		diffContent: graphMerge resolvedPatch;

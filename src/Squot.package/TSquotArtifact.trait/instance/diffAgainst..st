@@ -1,3 +1,3 @@
 comparing
 diffAgainst: anArtifact
-	^ SquotArtifactDiffWithContent left: self right: anArtifact
+	^ SquotArtifactModification left: self right: anArtifact

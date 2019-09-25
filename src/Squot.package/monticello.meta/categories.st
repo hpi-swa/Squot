@@ -17,6 +17,7 @@ SystemOrganization addCategory: #'Squot-Tools'!
 SystemOrganization addCategory: #'Squot-Tools-Support'!
 SystemOrganization addCategory: #'Squot-Monticello-Converter'!
 SystemOrganization addCategory: #'Squot-InMemoryRepository'!
+SystemOrganization addCategory: #'Squot-Deprecated'!
 SystemOrganization addCategory: #'Squot-Tests'!
 SystemOrganization addCategory: #'Squot-Shadows-Tests'!
 SystemOrganization addCategory: #'Squot-Diffs-Tests'!
@@ -27,3 +28,4 @@ SystemOrganization addCategory: #'Squot-Monticello-Converter-Tests'!
 SystemOrganization addCategory: #'Squot-FileTestRepository'!
 SystemOrganization addCategory: #'Squot-InMemoryRepository-Tests'!
 SystemOrganization addCategory: #'Squot-Serialization-Tests'!
+SystemOrganization addCategory: #'Squot-Help'!

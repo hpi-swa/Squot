@@ -7,7 +7,7 @@ SystemOrganization addCategory: #'Squot-Diffs-Generic'!
 SystemOrganization addCategory: #'Squot-Diffs-Hierarchical'!
 SystemOrganization addCategory: #'Squot-Merging'!
 SystemOrganization addCategory: #'Squot-Patching'!
-SystemOrganization addCategory: #'Squot-for-Packages'!
+SystemOrganization addCategory: #'Squot-Packages'!
 SystemOrganization addCategory: #'Squot-Internal'!
 SystemOrganization addCategory: #'Squot-FileSystemStore'!
 SystemOrganization addCategory: #'Squot-Serialization'!

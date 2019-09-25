@@ -1,17 +1,20 @@
 tests
 testMergeWithAddedArtifactOnBothSides
-	| baseVersion leftVersion rightVersion |
+	| baseVersion leftVersion rightVersion leftName rightName |
 	self workingCopy saveNewVersionMessage: 'empty base version' interactive: false.
 	baseVersion := self workingCopy loadedHistorian version.
 	self workingCopy add: (ValueHolder new contents: #right) at: 'added';
 		saveNewVersionMessage: 'right-side version' interactive: false.
 	rightVersion := self workingCopy loadedHistorian version.
+	rightName := store objectRegistry nameOf: (self workingCopy objectAt: 'added').
 	self workingCopy loadedHistorian version: baseVersion.
 	self workingCopy discardUnsavedChanges.
 	self deny: (self workingCopy includesObjectAt: 'added').
 	self workingCopy add: (ValueHolder new contents: #left) at: 'added';
 		saveNewVersionMessage: 'left-side version' interactive: false.
 	leftVersion := self workingCopy loadedHistorian version.
+	leftName := store objectRegistry nameOf: (self workingCopy objectAt: 'added').
+	self assert: leftName ~= rightName.
 	"merge the version of the other historian"
 	[[self workingCopy mergeVersionInteractively: rightVersion
 		ifCanceled: [self fail: 'This code should not be reached']]
@@ -21,4 +24,6 @@ testMergeWithAddedArtifactOnBothSides
 		(merge graphMerge conflictAt: (self workingCopy artifactAt: 'added') content startName) chooseIncoming.
 		request resume]
 	] valueSupplyingAnswers: {{'*'. #default}}.
-	self assert: #right equals: (self workingCopy objectAt: 'added') contents.
+	self assert: #right equals: (self workingCopy objectAt: 'added') contents;
+		assert: rightName equals:
+			(store objectRegistry nameOf: (self workingCopy objectAt: 'added')).

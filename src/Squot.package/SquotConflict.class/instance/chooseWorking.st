@@ -1,3 +1,4 @@
 merging
 chooseWorking
-	self subclassResponsibility.
+	"Do not change the working copy."
+	resolution := SquotDiffOfEqualObjects instance.

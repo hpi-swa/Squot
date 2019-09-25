@@ -1,3 +1,3 @@
 merging
 chooseIncoming
-	self subclassResponsibility.
+	resolution := working squotDiffAgainst: incoming.

@@ -1,3 +1,3 @@
 merging
 resetChoice
-	self subclassResponsibility.
+	resolution := nil.

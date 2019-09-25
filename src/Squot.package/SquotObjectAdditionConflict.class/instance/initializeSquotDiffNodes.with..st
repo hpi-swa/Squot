@@ -1,4 +1,4 @@
-Squot-diff-converting
+converting
 initializeSquotDiffNodes: aCollection with: aDiffNodesBuilder
 	aCollection do: [:each | each
 		title: 'conflicting addition'

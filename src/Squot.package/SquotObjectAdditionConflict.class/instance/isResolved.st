@@ -1,3 +1,0 @@
-testing
-isResolved
-	^ choice notNil

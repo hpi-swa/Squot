@@ -20,7 +20,7 @@
 		"testMergeSingleArtifact" : "jr 9/19/2019 19:42",
 		"testMergeTwoOrphanedVersions" : "jr 8/4/2019 00:35",
 		"testMergeVersionWithLoadedObjects" : "jr 9/19/2019 19:47",
-		"testMergeWithAddedArtifactOnBothSides" : "jr 8/3/2019 23:18",
+		"testMergeWithAddedArtifactOnBothSides" : "jr 9/25/2019 23:53",
 		"testMergeWithConflicts" : "jr 9/18/2019 21:56",
 		"testMergeWithConflictsChooseRemote" : "jr 8/14/2019 19:43",
 		"testMergeWithRemovedArtifactOnBothSides" : "jr 8/3/2019 21:46",

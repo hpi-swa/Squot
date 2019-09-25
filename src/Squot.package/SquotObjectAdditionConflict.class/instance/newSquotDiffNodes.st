@@ -1,3 +1,3 @@
-Squot-diff-converting
+converting
 newSquotDiffNodes
 	^ Array with: SquotMergeDiffNode new

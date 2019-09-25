@@ -1,3 +1,3 @@
 merging
 chooseIncoming
-	self chooseRight
+	resolution := SquotObjectReplacement left: working right: incoming.

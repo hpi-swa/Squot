@@ -1,1 +1,1 @@
-I implement the SquotDiffContent interface to represent no difference at all. Like a null object.
+I simply respond that there are no changes. I must not be recorded in patches as I don't support being applied to any objects.

@@ -3,8 +3,6 @@ squotApplyTo: anObjectGraph
 	| newGraph |
 	newGraph := anObjectGraph mutableCopy.
 	diffs keysAndValuesDo:
-		[:name :diff | newGraph
-			assign: name
-			toShadow: (newGraph applyDiff: diff toShadowNamed: name) undecorated].
-	newGraph startShadow: (newGraph shadowNamed: newGraph startName).
+		[:name :diff | newGraph applyDiff: diff toShadowNamed: name].
+	newGraph refreshStartShadow.
 	^ newGraph asShadowGraph

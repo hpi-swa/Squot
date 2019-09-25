@@ -2,12 +2,5 @@
 	"class" : {
 		"instance" : "jr 4/9/2017 22:43" },
 	"instance" : {
-		"asSquotConflicts" : "jr 3/17/2018 23:47",
 		"hasChanges" : "jr 7/22/2017 02:44",
-		"initializeSquotDiffNodes:with:" : "jr 3/17/2018 23:47",
-		"newSquotDiffNodes" : "jr 3/17/2018 23:47",
-		"squotApplyTo:" : "jr 9/25/2019 16:41",
-		"squotApplyTo:with:" : "jr 9/25/2019 16:41",
-		"squotApplyToLoaded:" : "jr 9/25/2019 16:41",
-		"squotApplyToLoaded:with:" : "jr 9/25/2019 16:41",
 		"squotHasChanges" : "jr 4/9/2017 22:43" } }

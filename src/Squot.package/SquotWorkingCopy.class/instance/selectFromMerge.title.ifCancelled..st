@@ -13,5 +13,5 @@ selectFromMerge: aMerge title: aString ifCancelled: aBlock
 	tool controllerForIgnores: self.
 	tool requestSelectedChangesWithTitle: aString.
 	^ tool accepted
-		ifTrue: [aMerge resolvedPatch: tool selectedPatch]
+		ifTrue: [aMerge]
 		ifFalse: [aBlock value]

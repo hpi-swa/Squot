@@ -1,3 +1,3 @@
-accessing
+patching
 removeFrom: anObjectShadow
 	self subclassResponsibility

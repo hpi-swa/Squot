@@ -6,6 +6,6 @@ patchedFrom: original to: target
 	shadowOfOriginal := capturer captureGraph: original.
 	objectRegistry assign: (objectRegistry nameOf: original) to: target.
 	diff := shadowOfOriginal squotDiffAgainst: (capturer captureGraph: target).
-	patched := patcher apply: diff toGraph: shadowOfOriginal mutableCopy.
+	patched := diff squotApplyTo: shadowOfOriginal mutableCopy.
 	materializer := SquotShadowMaterializer new.
 	^ materializedObject := materializer rematerializeGraph: patched

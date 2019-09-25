@@ -3,10 +3,10 @@
 		 },
 	"instance" : {
 		"add:of:asCreatorOf:" : "jr 7/30/2017 01:26",
-		"addShadow:of:" : "jr 5/10/2018 23:20",
+		"addShadow:of:" : "jr 9/25/2019 14:40",
 		"answer:whenAskedForTheNameOf:" : "jr 7/28/2019 11:03",
 		"assign:to:" : "jr 7/30/2017 01:27",
-		"assign:toShadow:" : "jr 7/30/2017 01:27",
+		"assign:toShadow:" : "jr 9/25/2019 14:50",
 		"creatorOf:ifAbsentPut:of:" : "jr 7/30/2017 01:34",
 		"ifNecessaryAssignNameToShadow:" : "jr 4/8/2018 00:37",
 		"mutableCopy" : "jr 7/30/2017 02:58",

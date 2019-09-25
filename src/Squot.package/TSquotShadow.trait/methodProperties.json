@@ -2,6 +2,7 @@
 	"class" : {
 		 },
 	"instance" : {
+		"canHaveNameAssignedBySquot" : "jr 9/25/2019 14:43",
 		"sameIn:asIn:ifAbsent:" : "jr 9/7/2019 11:53",
 		"squotMaterializeWith:" : "jr 7/20/2017 21:48",
 		"squotPreferredSerializer" : "jr 9/20/2017 19:38",

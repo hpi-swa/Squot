@@ -1,0 +1,3 @@
+testing
+squotHasChanges
+	^ self hasChanges

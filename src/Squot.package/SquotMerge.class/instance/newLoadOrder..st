@@ -1,0 +1,3 @@
+merging
+newLoadOrder: aSequenceableCollection
+	loadOrderMerge newLoadOrder: aSequenceableCollection.

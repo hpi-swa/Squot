@@ -35,16 +35,16 @@ testMergeWithoutConflicts
 	[[[workingCopy
 		mergeVersionInteractively: thirdVersion
 		ifCanceled: [self fail: 'this code should not be reached']]
-		on: SquotSelectionOfChangesRequested do: [:request |
+		on: SquotMergeRequested do: [:request |
 			"make sure the third method will be added"
-			(request patch diffAt: packagePath) diffOfTrackedObject operations
+			(request merge mergeAt: packagePath) mergeOfTrackedObject resolvedPatch operations
 				detect: [:each | each definition isMethodDefinition and: [each toSource asString = thirdMethod source]]
 				ifNone: [self fail: 'third method not in the patch'].
 			"the second method should not be modified"
-			self deny: ((request patch diffAt: packagePath) diffOfTrackedObject
+			self deny: ((request merge mergeAt: packagePath) mergeOfTrackedObject resolvedPatch
 					operations anySatisfy: [:each |
 					each definition isMethodDefinition and: [each definition selector = secondMethod selector]]).
-			request resume: request patch "accept all changes"]]
+			request resume "accept all changes"]]
 		valueSupplyingAnswers: {{'*'. #default}}].
 	self assert: secondMethod
 		equals: sampleClass >> #secondMethod

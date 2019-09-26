@@ -1,0 +1,14 @@
+{
+	"category" : "Squot-Tests-Tools",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "SquotChangeSetTestCleanup",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }

@@ -4,6 +4,6 @@ squotApplyToLoaded: anObjectGraph with: aPatcher
 	diffForStart := self startDiff.
 	anObjectGraph applyDiff: diffForStart toStartObjectWith: aPatcher.
 	diffs keysAndValuesDo: [:name :diff | diff ~~ diffForStart ifTrue: 
-		[anObjectGraph applyDiff: diff toObjectNamed: name with: aPatcher]].
+		[diff applyToObjectNamed: name inGraph: anObjectGraph with: aPatcher]].
 	anObjectGraph refreshStartShadow.
 	^ anObjectGraph

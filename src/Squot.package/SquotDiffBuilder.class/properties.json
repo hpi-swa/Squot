@@ -6,6 +6,8 @@
 		 ],
 	"commentStamp" : "jr 10/1/2017 02:20",
 	"instvars" : [
+		"left",
+		"right",
 		"absentShadows",
 		"objectDiffs",
 		"shadowNames",

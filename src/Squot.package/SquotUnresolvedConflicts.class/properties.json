@@ -1,0 +1,14 @@
+{
+	"category" : "Squot-Diffs",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"merge" ],
+	"name" : "SquotUnresolvedConflicts",
+	"pools" : [
+		 ],
+	"super" : "Error",
+	"type" : "normal" }

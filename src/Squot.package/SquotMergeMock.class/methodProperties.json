@@ -1,0 +1,21 @@
+{
+	"class" : {
+		 },
+	"instance" : {
+		"asSquotHierarchicalDiff" : "jr 8/21/2019 21:36",
+		"base" : "jr 8/21/2019 23:49",
+		"base:" : "jr 8/21/2019 23:49",
+		"choice" : "jr 8/21/2019 21:12",
+		"chooseIncoming" : "jr 8/21/2019 21:03",
+		"chooseWorking" : "jr 8/15/2019 00:42",
+		"diffTreeNodes:" : "jr 8/21/2019 21:36",
+		"hasChanges" : "jr 8/15/2019 00:43",
+		"hasConflicts" : "jr 8/21/2019 21:16",
+		"hasConflicts:" : "jr 8/15/2019 00:19",
+		"incoming" : "jr 8/21/2019 23:48",
+		"incoming:" : "jr 8/21/2019 23:48",
+		"resetChoice" : "jr 8/21/2019 21:12",
+		"resolvedPatch" : "jr 8/21/2019 23:59",
+		"squotChangeAsStringOrText" : "jr 8/21/2019 21:04",
+		"working" : "jr 8/21/2019 23:49",
+		"working:" : "jr 8/21/2019 23:49" } }

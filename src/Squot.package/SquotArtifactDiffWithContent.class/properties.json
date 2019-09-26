@@ -1,15 +1,14 @@
 {
-	"category" : "Squot-Diffs",
+	"category" : "Squot-Deprecated",
 	"classinstvars" : [
 		 ],
 	"classvars" : [
 		 ],
-	"commentStamp" : "jr 3/17/2018 14:27",
+	"commentStamp" : "jr 9/25/2019 16:29",
 	"instvars" : [
-		"diffContent",
-		"topNodes" ],
+		 ],
 	"name" : "SquotArtifactDiffWithContent",
 	"pools" : [
 		 ],
-	"super" : "SquotArtifactDiff",
+	"super" : "SquotArtifactModification",
 	"type" : "normal" }

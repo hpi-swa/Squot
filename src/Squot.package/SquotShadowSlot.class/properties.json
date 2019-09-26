@@ -2,7 +2,7 @@
 	"category" : "Squot-Shadows",
 	"classinstvars" : [
 		 ],
-	"classtraitcomposition" : "TSquotDiffable classTrait",
+	"classtraitcomposition" : "TSquotDiffable classTrait + TSquotObjectReference classTrait",
 	"classvars" : [
 		 ],
 	"commentStamp" : "jr 6/22/2017 00:45",
@@ -12,5 +12,5 @@
 	"pools" : [
 		 ],
 	"super" : "Association",
-	"traitcomposition" : "TSquotDiffable",
+	"traitcomposition" : "TSquotDiffable + TSquotObjectReference",
 	"type" : "normal" }

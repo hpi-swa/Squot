@@ -1,0 +1,3 @@
+merging
+chooseWorking
+	self subclassResponsibility.

@@ -1,8 +1,3 @@
-as yet unclassified
+diffing low-level
 reassignSlot: leftSlot to: rightSlot
-	leftSlot value = rightSlot value
-		ifTrue: [^ SquotDiffOfEqualObjects instance].
-	^ SquotSlotReassignment
-		key: leftSlot key
-		leftShadow: leftSlot value
-		rightShadow: rightSlot value
+	^ leftSlot squotDiffAgainst: rightSlot

@@ -2,7 +2,7 @@ ui diff tree
 diffNodeMenuHook: aMenu
 	<menuSquotDiffNode>
 	self selectedNode ifNil: [^ aMenu].
-	(patch paths includes: self selectedNode title) ifTrue:
+	self selectedNode isArtifactNode ifTrue:
 		[aMenu add: 'Browse original edition' action: #browseOriginalArtifactOfSelectedNode.
 		aMenu add: 'Browse changed edition' action: #browseChangedArtifactOfSelectedNode.
 		aMenu add: 'Inspect original edition' action: #inspectOriginalArtifactOfSelectedNode.

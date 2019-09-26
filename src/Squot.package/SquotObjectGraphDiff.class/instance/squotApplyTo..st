@@ -1,5 +1,8 @@
 Squot-diff-patching
 squotApplyTo: anObjectGraph
-	^ SquotObjectPatcher new
-		registry: anObjectGraph;
-		apply: self toGraph: anObjectGraph mutableCopy
+	| newGraph |
+	newGraph := anObjectGraph mutableCopy.
+	diffs keysAndValuesDo:
+		[:name :diff | newGraph applyDiff: diff toShadowNamed: name].
+	newGraph refreshStartShadow.
+	^ newGraph asShadowGraph

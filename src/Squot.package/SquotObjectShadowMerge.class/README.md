@@ -1,0 +1,1 @@
+Three-way merge of SquotObjectShadows.

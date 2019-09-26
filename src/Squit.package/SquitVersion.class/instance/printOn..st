@@ -5,5 +5,5 @@ printOn: aStream
 		nextPutAll: self shortId;
 		space;
 		nextPut: $";
-		nextPutAll: self message;
+		nextPutAll: (self message copyUpTo: Character cr);
 		nextPut: $".

@@ -1,7 +1,7 @@
 loading and unloading
 mergeVersionInteractively: aVersion ifCanceled: cancelBlock
 	"Let the user choose artifact editions to load from aVersion and add the version as parent version."
-	| mergeBases fastForwardPossible mergePatch |
+	| mergeBases fastForwardPossible merge |
 	fastForwardPossible := false.
 	mergeBases := self checkMergeBasesOfHeadVersionWith: aVersion
 		ifNoCommonAncestor: ["the versions have no common base version"
@@ -12,11 +12,10 @@ mergeVersionInteractively: aVersion ifCanceled: cancelBlock
 		ifDescendant: [fastForwardPossible := true].
 	self flag: 'TODO: if there are multiple merge-bases, resolve conflicts recursively below'.
 	self addGlobalObjectsToStore: aVersion.
-	mergePatch := SquotMergePatchBuilder new
-		patchFrom: self currentSnapshot
-		to: aVersion
-		base: mergeBases anyOne.
-	self loadPatchInteractively: mergePatch ifCanceled: [^ cancelBlock value].
+	merge := SquotMerge into: self
+		merge: aVersion
+		basedOn: mergeBases anyOne.
+	self mergeInteractively: merge ifCanceled: [^ cancelBlock value].
 	fastForwardPossible
 		ifTrue: 
 			[loadedHistorian version: aVersion.

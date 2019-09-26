@@ -1,0 +1,14 @@
+{
+	"category" : "Squot-Shadows-Tests",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "jr 9/20/2019 21:52",
+	"instvars" : [
+		 ],
+	"name" : "SquotShadowGraphTest",
+	"pools" : [
+		 ],
+	"super" : "TestCase",
+	"type" : "normal" }

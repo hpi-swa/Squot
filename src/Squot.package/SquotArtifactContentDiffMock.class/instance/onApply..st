@@ -1,3 +1,3 @@
-patching
+configuring
 onApply: aBlock
 	applyBlock := aBlock.

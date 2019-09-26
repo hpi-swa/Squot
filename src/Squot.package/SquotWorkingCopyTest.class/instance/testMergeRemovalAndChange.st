@@ -17,11 +17,11 @@ testMergeRemovalAndChange
 	"when"
 	[[self workingCopy mergeVersionInteractively: rightVersion
 		ifCanceled: [self fail: 'This code should not be reached']]
-	on: SquotSelectionOfChangesRequested do: [:request | | conflict |
+	on: SquotMergeRequested do: [:request | | conflict |
 		"then"
-		conflict := (request patch diffAt: 'text').
-		self assert: conflict needsChoice.
-		conflict chooseRight. "the changed text"
+		conflict := request merge conflictAt: 'text'.
+		self assert: conflict isResolved not.
+		conflict chooseIncoming. "the changed text"
 		request resume]
 	] valueSupplyingAnswers: {{'*'. #default}}.
 	self assert: 'Changed text' equals: (self workingCopy objectAt: 'text') string.

@@ -19,7 +19,6 @@ testTrackingWorkspaceMorph
 		removeKey: #toBeDeleted.
 	"restore"
 	previousOwner := systemWindow owner.
-	ObjectExplorer openOn: systemWindow.
 	workingCopy loadVersion: workingCopy baseVersion interactive: false.
 	"assert equal to previous state"
 	systemWindow owner == previousOwner

@@ -1,0 +1,12 @@
+{
+	"class" : {
+		"of:" : "jr 9/7/2019 12:04" },
+	"instance" : {
+		"addedObject" : "jr 9/7/2019 12:03",
+		"addedObject:" : "jr 9/7/2019 12:03",
+		"applyToObjectNamed:inGraph:with:" : "jr 9/25/2019 19:16",
+		"applyToShadowNamed:inGraph:" : "jr 9/25/2019 18:54",
+		"checkName:" : "jr 9/25/2019 18:54",
+		"object" : "jr 9/7/2019 12:13",
+		"printOn:" : "jr 9/7/2019 12:12",
+		"squotHasChanges" : "jr 9/25/2019 19:18" } }

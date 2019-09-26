@@ -1,3 +1,5 @@
-comparing
+merging
 mergeDiffWith: otherArtifact basedOn: baseArtifact
-	^ SquotArtifactDiffWithContentAndBase left: self right: otherArtifact base: baseArtifact
+	"New name suggestions:
+	mergeWith: otherArtifact basedOn: baseArtifact"
+	^ SquotArtifactMerge into: self merge: otherArtifact basedOn: baseArtifact

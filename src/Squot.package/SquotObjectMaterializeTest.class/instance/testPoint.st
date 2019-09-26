@@ -1,3 +1,3 @@
-testing
+tests
 testPoint
-	self captureAndRestore: 1@2.
+	self captureRestoreAndCompare: 1@2.

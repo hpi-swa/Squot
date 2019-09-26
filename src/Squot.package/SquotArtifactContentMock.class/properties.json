@@ -6,7 +6,10 @@
 		 ],
 	"commentStamp" : "",
 	"instvars" : [
-		"diffBlock" ],
+		"id",
+		"diffBlock",
+		"mergeBlock",
+		"names" ],
 	"name" : "SquotArtifactContentMock",
 	"pools" : [
 		 ],

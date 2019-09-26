@@ -1,0 +1,14 @@
+{
+	"category" : "Squot-Merging",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "jr 7/28/2019 01:01",
+	"instvars" : [
+		"diff3conflict" ],
+	"name" : "SquotLoadOrderConflict",
+	"pools" : [
+		 ],
+	"super" : "SquotConflict",
+	"type" : "normal" }

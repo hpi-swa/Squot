@@ -1,0 +1,15 @@
+{
+	"category" : "Squot-Capturing",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "jr 9/20/2019 21:51",
+	"instvars" : [
+		"graph",
+		"valueName" ],
+	"name" : "SquotObjectReferenceInGraph",
+	"pools" : [
+		 ],
+	"super" : "SquotDecorator",
+	"type" : "normal" }

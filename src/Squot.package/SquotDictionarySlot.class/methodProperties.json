@@ -2,9 +2,13 @@
 	"class" : {
 		"printHeadlineForChangesTextOn:" : "jr 10/31/2017 20:53" },
 	"instance" : {
+		"addTo:" : "jr 9/23/2019 23:20",
 		"addTo:with:" : "jr 7/30/2017 00:19",
 		"association" : "jr 6/20/2017 17:48",
+		"diffToBaseDictionarySlot:" : "jr 9/18/2019 20:35",
 		"lookupIn:" : "jr 7/16/2017 15:37",
 		"materializeIn:with:" : "jr 7/29/2017 23:14",
 		"newNameFragment" : "jr 7/30/2017 00:42",
-		"removeFrom:with:" : "jr 7/29/2017 22:24" } }
+		"removeFrom:" : "jr 9/25/2019 20:24",
+		"removeFrom:with:" : "jr 7/29/2017 22:24",
+		"squotDiffAgainst:" : "jr 9/18/2019 20:26" } }

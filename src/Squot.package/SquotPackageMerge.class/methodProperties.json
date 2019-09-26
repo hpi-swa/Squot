@@ -1,0 +1,14 @@
+{
+	"class" : {
+		 },
+	"instance" : {
+		"chooseIncoming" : "jr 9/25/2019 21:20",
+		"chooseWorking" : "jr 9/25/2019 21:20",
+		"computeDifferences" : "jr 9/25/2019 21:43",
+		"initializeSquotDiffNodes:with:" : "jr 9/25/2019 21:50",
+		"keyOf:ifAbsent:" : "jr 9/25/2019 21:43",
+		"modifications" : "jr 9/25/2019 22:32",
+		"newSquotDiffNodes" : "jr 9/25/2019 21:49",
+		"privateResolvedPatch" : "jr 9/25/2019 21:35",
+		"resetChoice" : "jr 9/25/2019 21:21",
+		"squotChangeAsStringOrText" : "jr 9/25/2019 22:22" } }

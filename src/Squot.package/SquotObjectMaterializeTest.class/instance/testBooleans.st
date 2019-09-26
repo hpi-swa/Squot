@@ -1,4 +1,4 @@
-testing
+tests
 testBooleans
-	self captureAndRestore: true;
-		captureAndRestore: false.
+	self captureInValueHolderThenRestoreAndCompare: true;
+		captureInValueHolderThenRestoreAndCompare: false.

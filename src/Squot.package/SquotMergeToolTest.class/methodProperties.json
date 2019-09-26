@@ -1,0 +1,23 @@
+{
+	"class" : {
+		 },
+	"instance" : {
+		"diffAt:in:" : "jr 8/15/2019 03:02",
+		"includesDiffAt:in:" : "jr 8/15/2019 01:22",
+		"newToolOn:" : "jr 8/14/2019 23:05",
+		"openToolAndTestOnPatch:" : "jr 8/15/2019 00:51",
+		"patchAddingArtifactAt:" : "jr 8/14/2019 22:59",
+		"patchChangingArtifactAt:" : "jr 8/22/2019 00:00",
+		"patchRemovingArtifactAt:" : "jr 8/15/2019 00:35",
+		"patchWithLoadOrderChange" : "jr 8/15/2019 01:01",
+		"patchWithLoadOrderChangeRegression1" : "jr 8/15/2019 01:11",
+		"patchWithTwoChangedArtifacts" : "jr 8/22/2019 00:03",
+		"patchedLoadOrderAfter:" : "jr 8/15/2019 01:08",
+		"resultDiffAt:" : "jr 8/15/2019 03:02",
+		"resultLoadOrder" : "jr 8/15/2019 01:06",
+		"testResolveArtifactConflictChooseLeft" : "jr 8/15/2019 01:44",
+		"testResolveArtifactConflictChooseRight" : "jr 8/15/2019 03:02",
+		"testResolveArtifactConflictWithIncomingRemoval" : "jr 8/15/2019 12:45",
+		"testResolveConflictInArtifactChooseLeft" : "jr 8/21/2019 23:41",
+		"testResolveConflictInArtifactChooseRight" : "jr 8/21/2019 23:52",
+		"testResolveThenResetArtifactConflict" : "jr 8/15/2019 12:45" } }

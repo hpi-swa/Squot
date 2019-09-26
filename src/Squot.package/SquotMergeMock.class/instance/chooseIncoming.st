@@ -1,0 +1,3 @@
+merging
+chooseIncoming
+	choice := #incoming.

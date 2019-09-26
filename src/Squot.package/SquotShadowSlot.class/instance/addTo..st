@@ -1,0 +1,3 @@
+patching
+addTo: anObjectShadow
+	self subclassResponsibility

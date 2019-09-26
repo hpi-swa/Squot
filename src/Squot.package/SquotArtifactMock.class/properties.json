@@ -10,7 +10,10 @@
 		"isLoadable",
 		"storeInfo",
 		"materializeBlock",
-		"diffBlock" ],
+		"diffBlock",
+		"mergeBlock",
+		"diffContentBlock",
+		"content" ],
 	"name" : "SquotArtifactMock",
 	"pools" : [
 		 ],

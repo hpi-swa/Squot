@@ -1,12 +1,7 @@
 {
 	"class" : {
-		 },
+		"shouldInheritSelectors" : "jr 8/14/2019 23:02" },
 	"instance" : {
-		"closeDialogPossiblyOpenedDuring:timeoutMsecs:" : "jr 4/23/2018 23:28",
 		"newToolOn:" : "jr 10/3/2018 00:30",
-		"openToolAndTestOnPatch:" : "jr 10/3/2018 00:45",
-		"performUiInteractionTestsOnNode:inTree:" : "jr 11/5/2018 21:42",
-		"performUiTestsOnToolBuiltBy:" : "jr 10/3/2018 00:44",
-		"resolveArtifactConflict:" : "jr 10/3/2018 00:36",
 		"testTextAddition" : "jr 10/15/2017 20:37",
 		"testTextRemoval" : "jr 10/15/2017 20:37" } }

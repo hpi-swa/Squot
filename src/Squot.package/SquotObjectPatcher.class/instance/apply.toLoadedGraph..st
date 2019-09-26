@@ -3,7 +3,8 @@ apply: aGraphDiff toLoadedGraph: anObjectGraph
 	patchedObjectGraph := anObjectGraph.
 	materializer := SquotShadowMaterializer new
 		registry: patchedObjectGraph;
-		targetGraph: anObjectGraph;
+		sourceGraph: aGraphDiff right;
+		targetGraph: patchedObjectGraph;
 		yourself.
-	aGraphDiff squotApplyToLoaded: anObjectGraph with: self.
-	^ anObjectGraph
+	aGraphDiff squotApplyToLoaded: patchedObjectGraph with: self.
+	^ patchedObjectGraph

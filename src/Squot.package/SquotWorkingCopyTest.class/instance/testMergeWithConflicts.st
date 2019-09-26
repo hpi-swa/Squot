@@ -5,21 +5,21 @@ testMergeWithConflicts
 	[scenario := SquotWorkingCopyTestMergeConflictScenario forTestCase: self.
 	"merge the version of the other historian"
 	[[scenario merge]
-	on: SquotSelectionOfChangesRequested do: [:request | | packageDiff conflictNode |
+	on: SquotMergeRequested do: [:request | | packageDiff conflictNode |
 		"make sure the second and third method edition are in the patch"
-		packageDiff := request patch diffAt: scenario packagePath.
-		self assert: (packageDiff left packageArtifactDefinitions
+		packageDiff := request merge mergeAt: scenario packagePath.
+		self assert: (packageDiff working packageArtifactDefinitions
 				anySatisfy: [:each | (each source beginsWith: 'conflictMethod')
 							and:  [each source withBlanksTrimmed endsWith: '^ 1']])
 			description: ['loaded edition of conflictMethod not on the left side', String cr,
-				'found only: ', (packageDiff left packageArtifactDefinitions
+				'found only: ', (packageDiff working packageArtifactDefinitions
 					inject: String cr into: [:all :each | all, each source, String cr])].
 		"the second method should be there as well"
-		self assert: (packageDiff right packageArtifactDefinitions
+		self assert: (packageDiff incoming packageArtifactDefinitions
 				anySatisfy: [:each | (each source beginsWith: 'conflictMethod')
 							and: [each source withBlanksTrimmed endsWith: '^ 2']])
 			description: ['remote edition of conflictMethod not on the right side', String cr,
-				'found only: ', (packageDiff right packageArtifactDefinitions
+				'found only: ', (packageDiff incoming packageArtifactDefinitions
 					inject: String cr into: [:all :each | all, each source, String cr])].
 		"resolve conflict"
 		self assert: (packageDiff base packageArtifactDefinitions
@@ -27,7 +27,7 @@ testMergeWithConflicts
 		conflictNode := packageDiff asDiffTree children first children first.
 		self assert: (conflictNode title beginsWith: 'conflictMethod').
 		conflictNode chooseLeft.
-		request resume: request patch]
+		request setHandled]
 	] valueSupplyingAnswers: {{'*'. #default}}].
 	scenario assertConflictMethodHasNotChanged: self.
 	self assert: scenario secondVersion equals: workingCopy loadedVersion.

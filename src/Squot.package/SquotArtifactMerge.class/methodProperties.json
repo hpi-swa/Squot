@@ -1,0 +1,28 @@
+{
+	"class" : {
+		 },
+	"instance" : {
+		"asDiffTree" : "jr 8/15/2019 00:23",
+		"base:" : "jr 7/30/2019 21:51",
+		"chooseIncoming" : "jr 8/14/2019 20:29",
+		"chooseWorking" : "jr 8/14/2019 21:35",
+		"computeDifferences" : "jr 8/14/2019 18:49",
+		"conflicts" : "jr 7/30/2019 00:50",
+		"diffTreeChildren" : "jr 8/10/2019 18:17",
+		"diffTreeNodeTitle" : "jr 8/4/2019 20:51",
+		"elementMerges" : "jr 8/3/2019 20:56",
+		"graphMerge" : "jr 7/29/2019 22:49",
+		"graphMerge:" : "jr 7/29/2019 22:49",
+		"hasChanges" : "jr 7/29/2019 23:57",
+		"hasConflicts" : "jr 7/30/2019 00:45",
+		"incoming:" : "jr 7/30/2019 21:50",
+		"initialize" : "jr 7/30/2019 01:06",
+		"mergeOfTrackedObject" : "jr 8/14/2019 19:50",
+		"metadataDiffNodes" : "jr 8/14/2019 19:26",
+		"modifications" : "jr 7/30/2019 01:37",
+		"path" : "jr 8/4/2019 20:47",
+		"privateResolvedPatch" : "jr 9/25/2019 16:30",
+		"resetChoice" : "jr 8/14/2019 21:35",
+		"setUpTreeRoot:toEditMerge:" : "jr 8/15/2019 00:31",
+		"squotChangeAsStringOrText" : "jr 8/21/2019 21:02",
+		"working:" : "jr 7/30/2019 21:50" } }

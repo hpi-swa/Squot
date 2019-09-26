@@ -2,6 +2,7 @@
 	"class" : {
 		"key:removedSlot:" : "jr 7/17/2017 00:01" },
 	"instance" : {
+		"applyTo:" : "jr 9/23/2019 23:19",
 		"applyTo:with:" : "jr 7/29/2017 21:29",
 		"hierarchicalDiffTitle" : "jr 6/25/2017 21:51",
 		"printDescriptionOn:" : "jr 6/18/2017 11:51",

@@ -1,0 +1,3 @@
+testing
+hasConflicts
+	^ graphMerge hasConflicts

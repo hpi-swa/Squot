@@ -1,0 +1,11 @@
+{
+	"class" : {
+		 },
+	"instance" : {
+		"computeDifferences" : "jr 8/22/2019 00:38",
+		"conflicts" : "jr 7/30/2019 21:23",
+		"keyOf:ifAbsent:" : "jr 7/30/2019 21:21",
+		"mergeAt:" : "jr 8/3/2019 21:24",
+		"newLoadOrder" : "jr 8/15/2019 13:57",
+		"newLoadOrder:" : "jr 8/15/2019 13:58",
+		"privateResolvedPatch" : "jr 7/30/2019 02:10" } }

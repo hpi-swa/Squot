@@ -1,5 +1,4 @@
 comparing
-squotDiffAgainst: otherMetaobject
+squotDiffAgainst: otherShadow
 	"Answer an object that describes the differences between me and otherMetaobject."
-	^ SquotDiffBuilder new
-		left: self right: otherMetaobject
+	^ otherShadow diffToBaseObjectShadow: self

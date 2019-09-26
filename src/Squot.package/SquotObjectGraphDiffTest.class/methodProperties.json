@@ -1,0 +1,25 @@
+{
+	"class" : {
+		 },
+	"instance" : {
+		"assertDiffAgainstItselfHasNoChanges:" : "jr 7/30/2017 15:04",
+		"diff:against:" : "jr 9/13/2019 12:26",
+		"diff:againstItselfAfter:" : "jr 7/30/2017 15:04",
+		"setUp" : "jr 7/30/2017 22:04",
+		"testAddObjects" : "jr 9/13/2019 12:22",
+		"testAddSubgraph" : "jr 9/24/2019 00:30",
+		"testArrayOfDifferentlyTypedObjects" : "jr 9/18/2019 20:37",
+		"testArrayOfIntegers" : "jr 9/13/2019 11:29",
+		"testCyclicReferences" : "jr 6/25/2017 22:22",
+		"testDeepChanges" : "jr 7/26/2017 23:30",
+		"testDeepChanges2" : "jr 7/26/2017 23:31",
+		"testDeepChanges3" : "jr 8/17/2017 17:52",
+		"testDictionariesWithComplexKeys" : "jr 6/27/2017 17:13",
+		"testDictionariesWithSharedAssociations" : "jr 7/30/2017 00:12",
+		"testDictionary" : "jr 9/13/2019 11:50",
+		"testIdentityReplacedObject" : "jr 7/30/2017 13:16",
+		"testObjects" : "jr 9/13/2019 11:19",
+		"testRectangles" : "jr 9/21/2019 21:51",
+		"testReferenceSwap" : "jr 9/13/2019 11:44",
+		"testReplacedObject2" : "jr 7/20/2017 16:59",
+		"testSet" : "jr 9/13/2019 11:37" } }

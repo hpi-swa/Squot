@@ -5,8 +5,9 @@ SystemOrganization addCategory: #'Squot-Shadows'!
 SystemOrganization addCategory: #'Squot-Diffs'!
 SystemOrganization addCategory: #'Squot-Diffs-Generic'!
 SystemOrganization addCategory: #'Squot-Diffs-Hierarchical'!
+SystemOrganization addCategory: #'Squot-Merging'!
 SystemOrganization addCategory: #'Squot-Patching'!
-SystemOrganization addCategory: #'Squot-for-Packages'!
+SystemOrganization addCategory: #'Squot-Packages'!
 SystemOrganization addCategory: #'Squot-Internal'!
 SystemOrganization addCategory: #'Squot-FileSystemStore'!
 SystemOrganization addCategory: #'Squot-Serialization'!
@@ -16,12 +17,16 @@ SystemOrganization addCategory: #'Squot-Tools'!
 SystemOrganization addCategory: #'Squot-Tools-Support'!
 SystemOrganization addCategory: #'Squot-Monticello-Converter'!
 SystemOrganization addCategory: #'Squot-InMemoryRepository'!
+SystemOrganization addCategory: #'Squot-Deprecated'!
 SystemOrganization addCategory: #'Squot-Tests'!
 SystemOrganization addCategory: #'Squot-Shadows-Tests'!
 SystemOrganization addCategory: #'Squot-Diffs-Tests'!
+SystemOrganization addCategory: #'Squot-Merging-Tests'!
 SystemOrganization addCategory: #'Squot-Tests-Tools'!
+SystemOrganization addCategory: #'Squot-Packages-Tests'!
 SystemOrganization addCategory: #'Squot-Tools-Tests'!
 SystemOrganization addCategory: #'Squot-Monticello-Converter-Tests'!
 SystemOrganization addCategory: #'Squot-FileTestRepository'!
 SystemOrganization addCategory: #'Squot-InMemoryRepository-Tests'!
 SystemOrganization addCategory: #'Squot-Serialization-Tests'!
+SystemOrganization addCategory: #'Squot-Help'!

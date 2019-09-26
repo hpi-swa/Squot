@@ -1,0 +1,17 @@
+{
+	"category" : "Squot-Capturing",
+	"classinstvars" : [
+		 ],
+	"classtraitcomposition" : "TSquotObjectReference classTrait",
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"getBlock",
+		"setBlock" ],
+	"name" : "SquotGeneralPurposeObjectReference",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"traitcomposition" : "TSquotObjectReference",
+	"type" : "normal" }

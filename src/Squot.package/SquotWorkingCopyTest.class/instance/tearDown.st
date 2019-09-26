@@ -8,6 +8,8 @@ tearDown
 		detect: [:each | each packageName = classFactory packageName] ifNone: [])
 		ifNotNil: [:createdWorkingCopy | createdWorkingCopy unregister].
 	Environment current packageOrganizer unregisterPackageNamed: classFactory packageName.
+	ChangeSet removeChangeSetsNamedSuchThat:
+		[:each | each beginsWith: classFactory packageName].
 	(repository respondsTo: #close) ifTrue: [repository close].
 	(store respondsTo: #close) ifTrue: [store close].
 	workingCopy repository delete: workingCopy loadedHistorian.

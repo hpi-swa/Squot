@@ -3,8 +3,20 @@
 		 },
 	"instance" : {
 		"asShadowGraph" : "jr 4/7/2019 22:06",
+		"defaultCompareBlock" : "jr 7/29/2019 23:47",
+		"defaultMergeBlock" : "jr 8/14/2019 23:37",
 		"diffBlock" : "jr 11/5/2018 21:25",
 		"diffBlock:" : "jr 11/5/2018 21:25",
-		"squotDiffAgainst:" : "jr 11/5/2018 21:26",
-		"squotDiffAgainst:withBase:" : "jr 3/3/2019 01:42",
-		"squotSummaryText" : "jr 11/5/2018 21:20" } }
+		"id" : "jr 8/15/2019 14:21",
+		"id:" : "jr 8/15/2019 14:21",
+		"initialize" : "jr 7/30/2019 00:43",
+		"nameOf:" : "jr 7/30/2019 00:44",
+		"nameOf:ifAbsent:" : "jr 7/30/2019 00:45",
+		"nameOf:is:" : "jr 7/30/2019 00:43",
+		"printOn:" : "jr 8/15/2019 14:22",
+		"squotDiffAgainst:" : "jr 7/29/2019 23:49",
+		"squotDiffAgainst:withBase:" : "jr 8/14/2019 23:38",
+		"squotSummaryText" : "jr 11/5/2018 21:20",
+		"whenComparedReturnMock" : "jr 7/29/2019 23:51",
+		"whenComparedWith:return:" : "jr 7/29/2019 23:46",
+		"whenMergedReturn:" : "jr 8/15/2019 00:18" } }

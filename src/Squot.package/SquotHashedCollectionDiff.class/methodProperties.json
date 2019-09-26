@@ -4,7 +4,9 @@
 	"instance" : {
 		"addTransitiveChangeIn:" : "jr 7/30/2017 00:06",
 		"applyTo:with:" : "jr 7/29/2017 22:06",
+		"diff:against:" : "jr 9/18/2019 20:18",
 		"diff:against:with:" : "jr 6/22/2017 13:06",
+		"diffItems:againstThoseOf:" : "jr 9/18/2019 20:18",
 		"diffItems:againstThoseOf:with:" : "jr 6/22/2017 13:05",
 		"itemChanges" : "jr 6/25/2017 22:25",
 		"postCopy" : "jr 11/18/2018 02:02",

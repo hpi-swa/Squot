@@ -1,0 +1,1 @@
+I capture an indexed variable in an object.

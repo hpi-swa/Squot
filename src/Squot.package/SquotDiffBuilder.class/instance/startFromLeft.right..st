@@ -2,6 +2,7 @@ diffing high-level
 startFromLeft: leftShadow right: rightShadow
 	| fallbackName |
 	self initialize.
+	graphDiff left: left; right: right.
 	fallbackName := ({rightShadow. leftShadow} detect: #hasSquotShadowName ifNone: [])
 		ifNotNil: [:shadow | shadow name]
 		ifNil: [SquotObjectCapturer new rootName].

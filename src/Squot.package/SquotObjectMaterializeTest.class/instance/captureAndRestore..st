@@ -1,7 +1,6 @@
-testing
+tests
 captureAndRestore: anObject
-	| shadow restored |
-	shadow := capturer captureStandalone: anObject.
-	restored := materializer rematerialize: shadow.
-	self assert: anObject equals: restored.
+	| graph restored |
+	graph := capturer captureGraph: anObject.
+	restored := materializer rematerializeGraph: graph asShadowGraph.
 	^ restored

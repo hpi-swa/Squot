@@ -2,6 +2,7 @@
 	"class" : {
 		 },
 	"instance" : {
+		"addAssociation:" : "jr 9/23/2019 23:23",
 		"addAssociation:with:" : "jr 5/11/2018 00:23",
 		"diffClass" : "jr 6/12/2017 13:05",
 		"initializeHashedItems:with:" : "jr 7/29/2017 23:59",

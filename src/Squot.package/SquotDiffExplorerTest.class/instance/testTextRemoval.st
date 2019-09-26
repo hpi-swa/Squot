@@ -1,4 +1,4 @@
-testing
+tests
 testTextRemoval
 	| patch snapshotWithText |
 	snapshotWithText := SquotImageStore new

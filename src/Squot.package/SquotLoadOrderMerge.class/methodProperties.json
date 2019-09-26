@@ -1,0 +1,14 @@
+{
+	"class" : {
+		 },
+	"instance" : {
+		"autoResolveConflicts" : "jr 8/15/2019 14:03",
+		"collectConflicts" : "jr 9/21/2019 13:46",
+		"collectModifications" : "jr 7/30/2019 21:22",
+		"computeDifferences" : "jr 7/30/2019 21:43",
+		"conflicts" : "jr 7/30/2019 21:24",
+		"initialize" : "jr 8/3/2019 21:33",
+		"newLoadOrder" : "jr 8/15/2019 13:57",
+		"newLoadOrder:" : "jr 8/15/2019 13:58",
+		"privateResolvedPatch" : "jr 7/30/2019 02:16",
+		"resolveConflict:with:" : "jr 7/30/2019 02:14" } }

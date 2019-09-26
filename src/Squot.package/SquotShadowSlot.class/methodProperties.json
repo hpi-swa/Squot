@@ -2,6 +2,14 @@
 	"class" : {
 		 },
 	"instance" : {
+		"addTo:" : "jr 9/23/2019 23:19",
+		"addTo:with:" : "jr 9/23/2019 23:20",
 		"lookupIn:" : "jr 7/16/2017 15:32",
 		"newNameFragment" : "jr 6/21/2017 17:05",
-		"squotDiffAgainst:with:" : "jr 6/22/2017 13:46" } }
+		"removeFrom:" : "jr 9/23/2019 23:19",
+		"removeFrom:with:" : "jr 9/23/2019 23:20",
+		"sameIn:ifAbsent:" : "jr 9/1/2019 12:08",
+		"squotDiffAgainst:" : "jr 9/18/2019 20:24",
+		"squotDiffAgainst:with:" : "jr 6/22/2017 13:46",
+		"value" : "jr 9/1/2019 12:06",
+		"value:" : "jr 9/1/2019 12:06" } }

@@ -1,0 +1,14 @@
+{
+	"category" : "Squot-Merging",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"diffs" ],
+	"name" : "SquotObjectGraphMerge",
+	"pools" : [
+		 ],
+	"super" : "SquotAbstractCollectionMerge",
+	"type" : "normal" }

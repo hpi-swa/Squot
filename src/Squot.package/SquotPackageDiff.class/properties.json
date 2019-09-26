@@ -1,17 +1,19 @@
 {
-	"category" : "Squot-for-Packages",
+	"category" : "Squot-Packages",
 	"classinstvars" : [
 		 ],
-	"classtraitcomposition" : "TSquotDiff classTrait",
+	"classtraitcomposition" : "TSquotDiff classTrait + TSquotModification classTrait",
 	"classvars" : [
 		 ],
 	"commentStamp" : "jr 7/21/2017 23:43",
 	"instvars" : [
+		"working",
+		"incoming",
 		"packageName",
 		"patch" ],
 	"name" : "SquotPackageDiff",
 	"pools" : [
 		 ],
 	"super" : "Object",
-	"traitcomposition" : "TSquotDiff",
+	"traitcomposition" : "TSquotDiff + TSquotModification",
 	"type" : "normal" }

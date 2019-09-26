@@ -1,3 +1,3 @@
 mocking
 diffAgainst: aSquotArtifactMock 
-	^ diffBlock value: aSquotArtifactMock
+	^ diffBlock cull: aSquotArtifactMock cull: self

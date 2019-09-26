@@ -1,6 +1,7 @@
 capturing
 capture: anObject as: shadowObjectFactory
 	| newShadow |
+	"if capturedObject is replaced by anObject for capturing, remember the capturedObject's name"
 	anObject ~~ capturedObject
 		ifTrue: [objectGraph answer: (objectGraph nameOf: capturedObject)
 				whenAskedForTheNameOf: anObject].

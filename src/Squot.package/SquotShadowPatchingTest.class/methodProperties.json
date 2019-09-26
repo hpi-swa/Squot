@@ -1,0 +1,9 @@
+{
+	"class" : {
+		 },
+	"instance" : {
+		"expectedFailures" : "jr 9/23/2019 18:52",
+		"patched:asIn:" : "jr 9/23/2019 23:35",
+		"setUp" : "jr 9/23/2019 23:45",
+		"testPatchesShadowsCorrectly" : "jr 9/23/2019 23:44",
+		"testUpdatesReferencesOfChangedShadows" : "jr 9/23/2019 23:45" } }

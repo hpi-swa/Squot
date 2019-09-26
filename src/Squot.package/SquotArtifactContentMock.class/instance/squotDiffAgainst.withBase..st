@@ -1,3 +1,3 @@
 comparing
 squotDiffAgainst: rightShadowGraph withBase: baseShadowGraph
-	^ diffBlock value: rightShadowGraph value: baseShadowGraph
+	^ (mergeBlock ifNil: [self defaultMergeBlock]) cull: rightShadowGraph cull: baseShadowGraph cull: self

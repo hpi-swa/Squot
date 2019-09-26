@@ -34,13 +34,13 @@ testMergeWithConflictsChooseRemote
 	[[[workingCopy
 		mergeVersionInteractively: thirdVersion
 		ifCanceled: [self fail: 'this code should not be reached']]
-		on: SquotSelectionOfChangesRequested do: [:request | | packageDiff conflictNode |
+		on: SquotMergeRequested do: [:request | | packageMerge conflictNode |
 			"make sure the second and third method edition are in the patch"
-			packageDiff := request patch diffAt: packagePath.
-			conflictNode := packageDiff asDiffTree children first children first.
+			packageMerge := request merge mergeAt: packagePath.
+			conflictNode := packageMerge asDiffTree children first children first.
 			self assert: (conflictNode title beginsWith: 'conflictMethod').
 			conflictNode chooseRight.
-			request resume: request patch]]
+			request resume]]
 		valueSupplyingAnswers: {{'*'. #default}}].
 	self assert: sampleClass new conflictMethod = 2
 		description: 'conflict method updated after merge'.

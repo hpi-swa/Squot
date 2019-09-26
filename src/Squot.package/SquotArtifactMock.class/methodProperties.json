@@ -2,15 +2,23 @@
 	"class" : {
 		 },
 	"instance" : {
-		"diffAgainst:" : "jr 6/8/2019 12:37",
-		"diffBlock" : "jr 6/8/2019 12:37",
+		"content" : "jr 7/30/2019 01:03",
+		"defaultMergeBlock" : "jr 8/4/2019 00:37",
+		"diffAgainst:" : "jr 7/29/2019 23:28",
 		"diffBlock:" : "jr 6/8/2019 12:37",
+		"diffContentAgainstThatOf:" : "jr 7/29/2019 23:42",
 		"isLoadable" : "jr 8/18/2018 18:27",
 		"isLoadable:" : "jr 8/18/2018 18:27",
 		"materializeBlock" : "jr 8/18/2018 18:30",
 		"materializeBlock:" : "jr 8/18/2018 18:30",
 		"materializeWith:replacing:" : "jr 8/18/2018 18:32",
+		"mergeBlock" : "jr 7/29/2019 23:17",
+		"mergeBlock:" : "jr 7/29/2019 23:17",
+		"mergeWithoutBaseWith:" : "jr 7/29/2019 23:56",
 		"path" : "jr 8/18/2018 18:25",
 		"path:" : "jr 8/18/2018 18:25",
 		"storeInfo" : "jr 8/18/2018 18:28",
-		"storeInfo:" : "jr 8/18/2018 18:27" } }
+		"storeInfo:" : "jr 8/18/2018 18:27",
+		"whenComparedWith:return:" : "jr 7/29/2019 23:30",
+		"whenContentComparedWith:return:" : "jr 7/29/2019 23:44",
+		"whenMergeWith:return:" : "jr 7/29/2019 23:27" } }

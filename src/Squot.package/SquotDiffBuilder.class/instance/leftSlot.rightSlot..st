@@ -1,12 +1,16 @@
-as yet unclassified
+diffing low-level
 leftSlot: leftSlot rightSlot: rightSlot
 	"If the slot values refer to different origin objects, record a reassignment,
 	otherwise queue the slot values to be visited to detect deep changes."
+	| rightName |
 	(objectsWithChanges includes: leftSlot value undecorated) ifFalse:
 		[(referrers at: leftSlot value undecorated ifAbsentPut: [OrderedCollection new])
 			add: diffedPair key -> leftSlot.
 		(referrers at: rightSlot value undecorated ifAbsentPut: [OrderedCollection new])
 			add: diffedPair value -> rightSlot].
+	rightSlot value sameIn: left asIn: right ifAbsent:
+		[rightName := right nameOf: rightSlot value undecorated ifAbsent: [].
+		self addedObject: rightSlot value withName: rightName].
 	^ (leftSlot value hasSquotShadowName not
 		or: [rightSlot value hasSquotShadowName not
 		or: [leftSlot value name ~= rightSlot value name]])

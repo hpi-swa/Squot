@@ -2,6 +2,7 @@
 	"category" : "Squot-Diffs-Generic",
 	"classinstvars" : [
 		 ],
+	"classtraitcomposition" : "TSquotModification classTrait",
 	"classvars" : [
 		 ],
 	"commentStamp" : "jr 7/26/2017 21:45",
@@ -11,4 +12,5 @@
 	"pools" : [
 		 ],
 	"super" : "SquotSlotDiff",
+	"traitcomposition" : "TSquotModification",
 	"type" : "normal" }

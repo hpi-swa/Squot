@@ -1,0 +1,3 @@
+accessing
+mergeOfTrackedObject
+	^ graphMerge mergeOfStartObject

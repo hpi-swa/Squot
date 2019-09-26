@@ -1,0 +1,23 @@
+{
+	"class" : {
+		 },
+	"instance" : {
+		"addConflict:" : "jr 7/30/2019 01:25",
+		"asSquotHierarchicalDiff" : "jr 8/14/2019 19:09",
+		"chooseIncoming" : "jr 8/14/2019 20:31",
+		"chooseWorking" : "jr 8/14/2019 21:36",
+		"computeDifferences" : "jr 9/2/2019 19:17",
+		"diffs" : "jr 7/30/2019 00:36",
+		"initialize" : "jr 8/3/2019 21:00",
+		"initializeSquotDiffNodes:with:" : "jr 9/23/2019 22:12",
+		"keyOf:ifAbsent:" : "jr 8/4/2019 00:18",
+		"mergeAt:" : "jr 9/23/2019 22:13",
+		"mergeObject:with:basedOn:" : "jr 9/23/2019 22:11",
+		"mergeOfStartObject" : "jr 9/23/2019 22:11",
+		"mergeStartReferencesToStart:" : "jr 9/2/2019 20:25",
+		"modifications" : "jr 7/30/2019 01:25",
+		"newSquotDiffNodes" : "jr 9/23/2019 22:12",
+		"privateResolvedPatch" : "jr 9/24/2019 00:11",
+		"resetChoice" : "jr 8/14/2019 21:36",
+		"show:nextAfter:" : "jr 9/20/2019 20:56",
+		"working:" : "jr 9/23/2019 22:19" } }

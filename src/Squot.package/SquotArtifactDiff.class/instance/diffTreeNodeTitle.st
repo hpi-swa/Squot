@@ -1,0 +1,5 @@
+converting
+diffTreeNodeTitle
+	^ (self path isEmpty
+		ifTrue: [self diffNodeFallbackTitle]
+		ifFalse: [self path]), ' (', self diffNodeOperationTitle, ')'

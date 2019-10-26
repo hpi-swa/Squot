@@ -1,3 +1,3 @@
 converting
 squotChangeAsStringOrText
-	^ ('Merge of ', base path) asText allBold
+	^ ('Merge of ', self object path) asText allBold

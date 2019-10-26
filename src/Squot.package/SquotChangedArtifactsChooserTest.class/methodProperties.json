@@ -1,6 +1,6 @@
 {
 	"class" : {
-		 },
+		"shouldInheritSelectors" : "jr 9/29/2019 22:19" },
 	"instance" : {
 		"diffAt:in:" : "jr 8/14/2019 23:26",
 		"includesDiffAt:in:" : "jr 8/15/2019 01:21",

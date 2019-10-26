@@ -4,9 +4,9 @@
 		 ],
 	"classvars" : [
 		 ],
-	"commentStamp" : "jr 7/23/2019 00:38",
+	"commentStamp" : "jr 10/26/2019 21:17",
 	"instvars" : [
-		 ],
+		"preparedResolution" ],
 	"name" : "SquotContainerConflict",
 	"pools" : [
 		 ],

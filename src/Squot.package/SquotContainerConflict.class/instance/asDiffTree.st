@@ -1,7 +1,9 @@
 converting
 asDiffTree
-	^ (SquotMergeDiffNode newFrom: incoming asDiffTree)
-		includeBlock: [self chooseIncoming];
-		excludeBlock: [self chooseWorking];
-		resetBlock: [self resetChoice];
-		yourself
+	^ SquotMergeDiffNode
+		title: self diffTreeNodeTitle
+		content: self
+		children: self diffTreeChildren
+		onInclude: [self chooseIncoming]
+		onExclude: [self chooseWorking]
+		onReset: [self resetChoice]

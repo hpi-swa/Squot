@@ -1,1 +1,0 @@
-It was tried to abort a merge but it is not allowed under the circumstances.

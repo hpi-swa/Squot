@@ -1,0 +1,3 @@
+*Squot
+browse
+	^ self browseFromSquot

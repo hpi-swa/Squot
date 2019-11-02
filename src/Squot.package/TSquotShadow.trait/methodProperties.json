@@ -2,6 +2,7 @@
 	"class" : {
 		 },
 	"instance" : {
+		"browseFromSquot:" : "jr 11/2/2019 22:54",
 		"canHaveNameAssignedBySquot" : "jr 9/25/2019 14:43",
 		"sameIn:asIn:ifAbsent:" : "jr 9/7/2019 11:53",
 		"squotMaterializeWith:" : "jr 7/20/2017 21:48",

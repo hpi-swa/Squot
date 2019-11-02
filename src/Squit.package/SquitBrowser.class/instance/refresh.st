@@ -2,6 +2,7 @@ ui
 refresh
 	Cursor wait showWhile:
 	[self changed: #projectList.
+	self changed: #projectIndex.
 	self loadBranchList.
 	self loadCommitList.
 	self changed: #hasProjectSelection.

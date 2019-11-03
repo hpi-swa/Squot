@@ -1,4 +1,4 @@
-tests
+test objects
 patchWithLoadOrderChange
 	| artifact1 artifact2 original merge |
 	artifact1 := SquotArtifact new path: '1'; content: SquotArtifactContentMock new; yourself.

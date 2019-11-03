@@ -1,4 +1,4 @@
-tests
+test objects
 patchChangingArtifactAt: path
 	| artifact changedArtifact |
 	artifact := SquotArtifact new path: path; content: SquotArtifactContentMock new.

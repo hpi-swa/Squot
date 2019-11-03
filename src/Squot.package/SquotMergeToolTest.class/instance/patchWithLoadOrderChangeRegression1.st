@@ -1,4 +1,4 @@
-tests
+test objects
 patchWithLoadOrderChangeRegression1
 	| artifacts newLoadOrder original merge |
 	newLoadOrder := #('16' '13' '3' '7' '4' '2' '5' '6' '15' '12' '14' '9' '11' '10' '8' '1').

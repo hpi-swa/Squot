@@ -1,4 +1,4 @@
-tests
+test objects
 patchWithLoadOrderChangeRegression1
 	| newLoadOrder patch patchBuilder base |
 	base := SquotSnapshot builder.

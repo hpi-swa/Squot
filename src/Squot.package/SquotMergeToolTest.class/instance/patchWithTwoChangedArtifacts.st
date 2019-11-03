@@ -1,4 +1,4 @@
-tests
+test objects
 patchWithTwoChangedArtifacts
 	| artifact1 artifact2 changedArtifact1 changedArtifact2 |
 	artifact1 := SquotArtifact new path: '1'; content: SquotArtifactContentMock new.

@@ -1,4 +1,4 @@
-tests
+test objects
 patchWithLoadOrderChange
 	| patch |
 	patch := SquotPatch builder

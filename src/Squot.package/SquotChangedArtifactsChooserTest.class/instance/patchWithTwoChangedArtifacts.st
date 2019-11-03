@@ -1,4 +1,4 @@
-tests
+test objects
 patchWithTwoChangedArtifacts
 	^ SquotPatch builder
 		addDiff: (SquotArtifactDiffMock path: '1');

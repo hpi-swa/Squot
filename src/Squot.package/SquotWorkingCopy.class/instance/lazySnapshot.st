@@ -1,4 +1,4 @@
-accessing stored objects
+accessing objects
 lazySnapshot
 	"Answer a new snapshot whose artifacts are captured on demand."
 	| artifacts builder |

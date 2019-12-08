@@ -1,3 +1,3 @@
-accessing stored objects
+accessing objects
 objectAt: path
 	^ store objectAt: path

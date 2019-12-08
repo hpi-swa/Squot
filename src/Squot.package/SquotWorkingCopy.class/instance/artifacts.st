@@ -1,3 +1,3 @@
-accessing stored objects
+accessing objects
 artifacts
-	^ store artifacts
+	^ store artifacts collect: [:each | SquotWorkingCopyArtifact wrapping: each in: self]

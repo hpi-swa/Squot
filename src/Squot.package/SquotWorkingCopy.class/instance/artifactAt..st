@@ -1,3 +1,3 @@
-accessing stored objects
+accessing objects
 artifactAt: path
-	^ store artifactAt: path
+	^ SquotWorkingCopyArtifact wrapping: (store artifactAt: path) in: self

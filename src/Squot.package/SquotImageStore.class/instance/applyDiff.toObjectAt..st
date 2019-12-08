@@ -1,11 +1,8 @@
 patching
 applyDiff: anArtifactDiff toObjectAt: path
 	| object graph objectEnvironment |
-	object := objects at: path.
-	graph :=
-		objectGraphs
-			ifNotNil: [objectGraphs at: object ifAbsentPut: [self capture: object]]
-			ifNil: [self capture: object].
+	object := self objectAt: path.
+	graph := self objectGraphs at: object ifAbsent: [self captureObjectGraphAt: path].
 	objectEnvironment := (additionalInfo at: path)
 		at: #environment
 		ifAbsent: [environment].

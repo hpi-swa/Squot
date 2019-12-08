@@ -1,10 +1,10 @@
 adding and removing
 add: anObject at: path
 	| tempArtifact repositoryPath |
-	tempArtifact := SquotArtifact new
+	(tempArtifact := SquotArtifact new)
 		path: path;
 		initializeDefaultStoreInfoFor: anObject;
-		content: (store capture: anObject);
+		content: (store capture: anObject withMetadata: tempArtifact storeInfo);
 		yourself. "use to validate the path"
 	repositoryPath := self validatePath: path for: tempArtifact.
 	^ store add: anObject at: repositoryPath

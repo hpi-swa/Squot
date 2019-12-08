@@ -1,4 +1,4 @@
-testing
+tests
 testPathInImageStoreIsCorrected
 	| class classPackageName |
 	class := self class.

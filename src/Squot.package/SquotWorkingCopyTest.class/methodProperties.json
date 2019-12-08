@@ -13,7 +13,6 @@
 		"setUp" : "jr 10/31/2017 23:46",
 		"targetClass" : "jr 1/26/2017 17:21",
 		"tearDown" : "jr 9/20/2019 20:30",
-		"testAddMultiplePackagesToSameFolder" : "jr 4/7/2018 17:10",
 		"testCherryPickOfOrphanedVersion" : "jr 8/4/2019 00:35",
 		"testDiffWithParent" : "jr 4/29/2018 17:14",
 		"testMergeRemovalAndChange" : "jr 7/28/2019 00:33",

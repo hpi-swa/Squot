@@ -3,7 +3,7 @@ testReadArtifactWithoutMetadata
 	| object originalSnapshot artifact metadataFile readSnapshot artifactReference metadata |
 	"given a file tree with artifacts but without their metadata"
 	originalSnapshot := (SquotImageStore new
-							add: (object := TestCase packageInfo) at: 'src';
+							add: (object := TestCase packageInfo) at: 'src/SUnit.package';
 							captureSnapshot).
 	artifact := originalSnapshot artifacts anyOne.
 	fileStore restoreToSnapshot: originalSnapshot.

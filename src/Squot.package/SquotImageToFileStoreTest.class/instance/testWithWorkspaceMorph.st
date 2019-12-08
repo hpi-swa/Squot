@@ -17,7 +17,7 @@ testWithWorkspaceMorph
 	(fileStore directory / 'sample workspace.morph.squot-content') exists.
 	"restore in different image store"
 	workspaceArtifact := fileStore captureSnapshot artifactAt: 'sample workspace.morph'.
-	restoredSystemWindow := SquotWorkingCopy newOnObjectMemory
+	restoredSystemWindow := SquotWorkingCopy forTestInMemory
 		loadArtifact: workspaceArtifact;
 		objectAt: workspaceArtifact path.
 	restoredSystemWindow openAsIs.

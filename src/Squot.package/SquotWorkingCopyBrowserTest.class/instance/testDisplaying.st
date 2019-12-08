@@ -1,4 +1,4 @@
-testing
+tests
 testDisplaying
 	| toolBuilder view |
 	"given"

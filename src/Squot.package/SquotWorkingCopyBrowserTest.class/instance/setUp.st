@@ -1,4 +1,4 @@
 running
 setUp
-	workingCopy := SquotWorkingCopy newOnObjectMemory.
+	workingCopy := SquotWorkingCopy forTestInMemory.
 	browser := SquotWorkingCopyBrowser newOn: workingCopy.

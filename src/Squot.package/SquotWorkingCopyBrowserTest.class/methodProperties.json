@@ -2,7 +2,7 @@
 	"class" : {
 		 },
 	"instance" : {
-		"setUp" : "jr 10/3/2018 15:28",
+		"setUp" : "jr 12/8/2019 16:27",
 		"testCannotMoveDownLastObjectInLoadOrder" : "jr 10/3/2018 15:38",
 		"testCannotMoveUpFirstObjectInLoadOrder" : "jr 10/3/2018 15:37",
 		"testDisplaying" : "jr 10/3/2018 15:32",

@@ -1,5 +1,6 @@
 {
 	"class" : {
+		"forTestInMemory" : "jr 12/8/2019 16:27",
 		"initialize" : "jr 5/24/2017 18:17",
 		"newOnObjectMemory" : "jr 4/9/2017 14:58",
 		"register:" : "fn 4/11/2017 11:35",

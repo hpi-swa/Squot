@@ -1,4 +1,4 @@
-testing
+tests
 testCannotMoveUpFirstObjectInLoadOrder
 	"given"
 	workingCopy

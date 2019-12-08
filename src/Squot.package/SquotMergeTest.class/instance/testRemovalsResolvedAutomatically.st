@@ -2,7 +2,7 @@ tests
 testRemovalsResolvedAutomatically
 	"When an artifact is removed in both versions, there should be no load order conflict."
 	| workingCopy merge |
-	workingCopy := SquotWorkingCopy newOnObjectMemory.
+	workingCopy := SquotWorkingCopy forTestInMemory.
 	"when"
 	merge := SquotMerge into: workingCopy
 		merge: 	SquotSnapshot empty

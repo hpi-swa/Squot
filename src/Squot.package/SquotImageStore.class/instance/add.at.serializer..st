@@ -4,5 +4,4 @@ add: anObject at: aPath serializer: aSerializerClass
 	| artifact |
 	artifact := self initializeArtifactFor: anObject at: aPath.
 	artifact liveStoreInfo serializer: aSerializerClass.
-	artifact validatePath.
 	^ self add: anObject at: artifact path additionalInfo: artifact liveStoreInfo

@@ -1,0 +1,14 @@
+{
+	"category" : "Squot-Tests",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "SquotPathNegotiationTest",
+	"pools" : [
+		 ],
+	"super" : "SquotWorkingCopyTestIndependentOfRepositoryType",
+	"type" : "normal" }

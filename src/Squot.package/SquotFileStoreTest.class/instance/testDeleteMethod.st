@@ -8,7 +8,7 @@ testDeleteMethod
 				fromDefinitions: {sampleClass asClassDefinition.
 					sampleMethod methodReference asMethodDefinition})
 				asSquotArtifactForPackage: sampleClass package)
-				path: 'src';
+				path: 'src/', sampleClass package name, '.package';
 				initializeDefaultStoreInfoFor: sampleClass package;
 				yourself);
 		buildSnapshot.

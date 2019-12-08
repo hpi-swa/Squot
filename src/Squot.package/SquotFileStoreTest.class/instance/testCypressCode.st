@@ -8,7 +8,7 @@ testCypressCode
 					sampleMethod methodReference asMethodDefinition}.
 	fileStore add: (((MCSnapshot fromDefinitions: definitions)
 				asSquotArtifactForPackage: samplePackage)
-				path: 'src';
+				path: 'src/', samplePackage name, '.package';
 				initializeDefaultStoreInfoFor: samplePackage;
 				yourself).
 	methodFile := fileStore directory

@@ -6,7 +6,7 @@
 		"registered" : "fn 4/11/2017 11:36",
 		"unregister:" : "jr 5/13/2017 14:46" },
 	"instance" : {
-		"add:at:" : "jr 1/26/2017 17:40",
+		"add:at:" : "jr 12/7/2019 22:18",
 		"addGlobalObjectsToStore:" : "jr 4/27/2017 13:15",
 		"addPackageNamed:at:" : "jr 4/9/2017 15:00",
 		"addParentVersion:" : "jr 11/17/2018 23:23",
@@ -54,6 +54,7 @@
 		"mergeVersionInteractively:ifCanceled:" : "jr 7/22/2019 21:44",
 		"mergeVersionWithLoadedObjects:ifCanceled:" : "jr 9/19/2019 19:44",
 		"metadataForObjectAt:" : "jr 5/13/2017 20:54",
+		"moveObjectAt:to:" : "jr 12/7/2019 22:55",
 		"name" : "jr 4/9/2017 14:20",
 		"name:" : "jr 4/9/2017 14:20",
 		"newSnapshotBuilder" : "jr 9/23/2018 18:45",
@@ -66,7 +67,7 @@
 		"printOn:" : "jr 4/15/2017 14:18",
 		"privateLoadVersion:" : "jr 5/4/2019 02:36",
 		"register" : "jr 4/9/2017 14:15",
-		"registerPackagesInStore:" : "jr 5/4/2019 02:56",
+		"registerPackagesInStore:" : "jr 12/3/2019 00:39",
 		"remove:" : "jr 2/26/2017 01:29",
 		"removeAt:" : "jr 4/7/2018 20:03",
 		"removePackageNamed:" : "jr 5/6/2018 18:46",
@@ -94,4 +95,5 @@
 		"temporarilySaveChangesOn:" : "jr 8/18/2018 17:06",
 		"unload" : "jr 1/26/2017 17:38",
 		"unregister" : "fn 4/11/2017 11:57",
+		"validatePath:for:" : "jr 12/7/2019 22:18",
 		"withCurrentSnapshot:" : "jr 9/19/2019 06:06" } }

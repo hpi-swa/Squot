@@ -1,0 +1,17 @@
+{
+	"category" : "Squot-Tests",
+	"classinstvars" : [
+		 ],
+	"classtraitcomposition" : "TSquotMutableObjectContainer classTrait",
+	"classvars" : [
+		 ],
+	"commentStamp" : "jr 12/2/2019 21:40",
+	"instvars" : [
+		"pathTransformationRules",
+		"objects" ],
+	"name" : "SquotMockStore",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"traitcomposition" : "TSquotMutableObjectContainer",
+	"type" : "normal" }

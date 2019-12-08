@@ -1,0 +1,12 @@
+{
+	"class" : {
+		 },
+	"instance" : {
+		"add:at:" : "jr 12/2/2019 22:22",
+		"artifacts" : "jr 12/3/2019 00:12",
+		"capture:" : "jr 12/2/2019 22:31",
+		"objectInOwnArtifact:" : "jr 12/2/2019 22:34",
+		"objects" : "jr 12/2/2019 22:22",
+		"pathTransformationRules" : "jr 12/2/2019 22:17",
+		"validatePath:for:" : "jr 12/2/2019 22:34",
+		"when:comesInValidatePathAs:" : "jr 12/2/2019 22:17" } }

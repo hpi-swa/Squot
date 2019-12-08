@@ -3,7 +3,7 @@ testSnapshotPackage
 	| sampleClass packageInfo packageDirectory classDirectory |
 	sampleClass := self class.
 	packageInfo := PackageOrganizer default packageOfClass: sampleClass.
-	self snapshotPackage: packageInfo at: 'src'.
+	self snapshotPackage: packageInfo at: 'src/Squot.package'.
 	packageDirectory := fileStore / 'src' / (packageInfo packageName, '.package').
 	self assert: packageDirectory isDirectory.
 	self assert: (packageDirectory / 'properties.json') isFile.

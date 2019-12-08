@@ -1,4 +1,4 @@
-accessing
+adding and removing
 moveObjectAt: oldPath to: newPath
 	| metadata object |
 	object := self objectAt: oldPath.

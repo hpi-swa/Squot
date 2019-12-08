@@ -4,9 +4,9 @@
 	"instance" : {
 		"activateObjectRegistryDuring:" : "jr 7/16/2017 19:16",
 		"add:" : "jr 7/16/2017 18:22",
-		"add:at:" : "jr 5/4/2019 02:26",
+		"add:at:" : "jr 12/3/2019 00:06",
 		"add:at:additionalInfo:" : "jr 5/4/2019 02:21",
-		"add:at:serializer:" : "jr 5/4/2019 02:26",
+		"add:at:serializer:" : "jr 12/3/2019 00:35",
 		"add:copiedFromArtifact:" : "jr 7/16/2017 18:56",
 		"addLoadedPackageInfoNamed:at:serializer:" : "jr 5/4/2019 02:50",
 		"appendToLoadOrder:" : "jr 8/18/2018 16:21",
@@ -48,4 +48,5 @@
 		"removeAt:" : "jr 9/15/2018 23:57",
 		"restore:from:" : "jr 7/22/2017 11:59",
 		"restoreObjectFrom:" : "jr 7/22/2017 11:59",
-		"restoreToSnapshot:" : "jr 8/18/2018 18:32" } }
+		"restoreToSnapshot:" : "jr 8/18/2018 18:32",
+		"validatePath:for:" : "jr 11/24/2019 17:52" } }

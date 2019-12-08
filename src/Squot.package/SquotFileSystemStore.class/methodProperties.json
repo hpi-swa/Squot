@@ -4,7 +4,8 @@
 		"inDirectory:" : "jr 1/29/2017 22:41",
 		"initialize" : "jr 9/28/2017 10:16",
 		"removeDeserializerFactory:" : "jr 9/21/2017 21:08",
-		"tocFileName" : "fn 4/23/2017 19:13" },
+		"tocFileName" : "fn 4/23/2017 19:13",
+		"validatePath:for:" : "jr 12/2/2019 23:40" },
 	"instance" : {
 		"/" : "jr 1/27/2017 15:07",
 		"add:" : "jr 10/2/2017 23:27",
@@ -55,9 +56,11 @@
 		"shouldStoreMetadata" : "jr 3/7/2017 17:39",
 		"store:" : "jr 1/31/2017 13:55",
 		"storeFile:" : "jr 1/31/2017 14:51",
-		"storeOrdinary:" : "jr 10/3/2017 00:48",
+		"storeOrdinary:" : "jr 12/2/2019 23:42",
 		"storeSquotMetadataFor:" : "jr 2/21/2017 13:54",
 		"storeUnrecordedFiles:" : "jr 3/7/2017 13:20",
 		"tableOfContents" : "jr 10/3/2017 00:46",
 		"tableOfContentsReference" : "jr 10/2/2017 22:34",
-		"tableOfContentsReferenceIn:" : "jr 10/2/2017 22:34" } }
+		"tableOfContentsReferenceIn:" : "jr 10/2/2017 22:34",
+		"validatePath:for:" : "jr 12/2/2019 23:39",
+		"validatePathOf:" : "jr 12/2/2019 23:44" } }

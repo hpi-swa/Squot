@@ -4,7 +4,7 @@ testSnapshotClass
 	class := self class.
 	classPackageName := class category.
 	testSelector := thisContext selector.
-	self snapshotClass: class at: 'src'.
+	self snapshotClass: class at: 'src/Squot-Tests.package/SquotImageToFileStoreTest.class'.
 	self assert: (fileStore / 'src') isDirectory.
 	classDirectory := fileStore / 'src' / (classPackageName, '.package') / (class name, '.class').
 	self assert: classDirectory isDirectory.

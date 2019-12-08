@@ -5,7 +5,7 @@
 	"classtraitcomposition" : "TSquotArtifact classTrait",
 	"classvars" : [
 		 ],
-	"commentStamp" : "jr 5/1/2017 20:30",
+	"commentStamp" : "jr 12/7/2019 22:16",
 	"instvars" : [
 		"object",
 		"path",

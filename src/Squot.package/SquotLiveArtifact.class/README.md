@@ -1,1 +1,3 @@
 I behave like an artifact, but represent a loaded, living object. When you ask an ImageStore for artifacts, it will return instances of me.
+
+I am supposed to be used during only a single unit of work. That means if you want to modify my object graph and want the changes be reflected in the #content of the live artifact, you have to get a new live artifact from the image store. I will only capture my object graph once, when you first ask for it.

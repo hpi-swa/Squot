@@ -5,5 +5,6 @@ rootNodes
 	editedPatch diffsDo: [:each | | root |
 		root := each asDiffTree.
 		each setUpTreeRoot: root toEditPatch: editedPatch.
+		root withAllChildren do: [:eachNode | eachNode workingCopy: workingCopy].
 		rootNodes add: root].
 	^ rootNodes

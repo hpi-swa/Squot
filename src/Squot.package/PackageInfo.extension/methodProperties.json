@@ -1,8 +1,12 @@
 {
 	"class" : {
-		"squotCypressSerializer" : "jr 3/17/2019 00:36" },
+		"squotCypressSerializer" : "jr 3/17/2019 00:36",
+		"squotEnvironmentInMetadata:" : "jr 12/22/2019 17:32",
+		"squotEnvironmentOf:" : "jr 12/22/2019 17:32",
+		"squotSetEnvironment:inMetadata:" : "jr 12/22/2019 17:32",
+		"squotSetEnvironmentOf:to:" : "jr 12/22/2019 17:24" },
 	"instance" : {
-		"browseFromSquot:" : "jr 5/27/2018 13:32",
+		"browseFromSquot:" : "jr 12/10/2019 00:33",
 		"captureWithSquot" : "jr 9/19/2017 09:14",
 		"captureWithSquot:" : "jr 6/27/2017 18:30",
 		"squotAddTransientStoreInfoTo:" : "jr 7/22/2017 00:16",

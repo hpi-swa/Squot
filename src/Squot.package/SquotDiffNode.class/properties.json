@@ -11,7 +11,9 @@
 		"children",
 		"isActive",
 		"includeBlock",
-		"excludeBlock" ],
+		"excludeBlock",
+		"artifactDiff",
+		"workingCopy" ],
 	"name" : "SquotDiffNode",
 	"pools" : [
 		 ],

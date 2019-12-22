@@ -1,0 +1,14 @@
+{
+	"category" : "Squot-Tools-Packages-Tests",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"trait" ],
+	"name" : "SquotMonticelloTraitDiffNodesTest",
+	"pools" : [
+		 ],
+	"super" : "SquotMonticelloDiffNodesTest",
+	"type" : "normal" }

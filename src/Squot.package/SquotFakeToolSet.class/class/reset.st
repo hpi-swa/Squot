@@ -1,0 +1,3 @@
+tests
+reset
+	BrowsedMethods := nil.

@@ -11,7 +11,8 @@
 		"canceled",
 		"rootNodes",
 		"editedPatch",
-		"selectedNode" ],
+		"selectedNode",
+		"workingCopy" ],
 	"name" : "SquotChangedArtifactsChooser",
 	"pools" : [
 		 ],

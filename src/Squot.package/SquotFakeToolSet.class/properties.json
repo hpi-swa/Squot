@@ -1,0 +1,14 @@
+{
+	"category" : "Squot-Tools-Packages-Tests",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		"BrowsedMethods" ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "SquotFakeToolSet",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }

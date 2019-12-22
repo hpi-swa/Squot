@@ -11,6 +11,7 @@ selectFromPatch: aPatch forSaveWithTitle: titleString ifCanceled: cancelBlock
 				^ selectedPatch].
 	tool := (SquotSaveVersionDialog on: aPatch)
 		parentVersions: self parentVersions;
+		workingCopy: self;
 		controllerForIgnores: self;
 		yourself.
 	message ifNotEmpty: [tool message: message].

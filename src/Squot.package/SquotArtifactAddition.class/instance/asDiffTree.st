@@ -1,8 +1,10 @@
 converting
 asDiffTree
-	| title |
+	| title node |
 	title := (self path isEmpty
 		ifTrue: [right printString]
 		ifFalse: [self path]), ' (added)'.
-	^ SquotDiffNode title: title content: self children: self topNodes
-		onInclude: [] onExclude: []
+	node := SquotDiffNode title: title content: self children: self topNodes
+		onInclude: [] onExclude: [].
+	node withAllChildren do: [:each | each artifactDiff: self].
+	^ node

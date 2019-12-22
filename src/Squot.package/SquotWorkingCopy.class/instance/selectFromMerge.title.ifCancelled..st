@@ -9,9 +9,10 @@ selectFromMerge: aMerge title: aString ifCancelled: aBlock
 			yourself.
 	mergeRequest wasHandled ifTrue: [^ aMerge].
 	tool := SquotMergeTool on: aMerge.
-	"tool addIgnoredArtifacts: self ignoredArtifacts."
-	tool controllerForIgnores: self.
-	tool requestSelectedChangesWithTitle: aString.
+	tool workingCopy: self;
+		"addIgnoredArtifacts: self ignoredArtifacts;"
+		controllerForIgnores: self;
+		requestSelectedChangesWithTitle: aString.
 	^ tool accepted
 		ifTrue: [aMerge]
 		ifFalse: [aBlock value]

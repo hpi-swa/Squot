@@ -1,0 +1,7 @@
+{
+	"class" : {
+		"reset" : "jr 11/3/2019 18:08",
+		"setBrowsed" : "jr 11/3/2019 18:08",
+		"wasBrowsed" : "jr 11/3/2019 18:08" },
+	"instance" : {
+		"browse" : "jr 12/10/2019 00:16" } }

@@ -1,8 +1,9 @@
 *Squot-diff-converting
 squotDiffNodeForClass: aSymbol operations: aCollection
-	^ SquotDiffNode
+	| node |
+	node := SquotDiffNode
 		title: aSymbol, (self squotDiffNodeClassSuffix: aCollection)
-		content: nil
+		content: (SquotPackageDiffClassChanges new className: aSymbol)
 		children: ((aCollection
 						collect: [:each | SquotDiffNode
 							title: each squotDiffNodeSummary
@@ -12,4 +13,6 @@ squotDiffNodeForClass: aSymbol operations: aCollection
 							onExclude: [operations remove: each]])
 						sort: [:a :b | a title <= b title])
 		onInclude: []
-		onExclude: []
+		onExclude: [].
+	node content diffTreeNode: node.
+	^ node

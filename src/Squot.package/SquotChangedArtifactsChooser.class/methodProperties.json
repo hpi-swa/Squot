@@ -10,7 +10,7 @@
 		"activateSelectedNode" : "jr 4/26/2017 17:52",
 		"addIgnoredArtifacts:" : "jr 2/14/2017 16:56",
 		"applyUserInterfaceTheme" : "jr 11/18/2018 00:41",
-		"browseDiffContent" : "jr 10/27/2019 09:54",
+		"browseDiffContent" : "jr 12/22/2019 18:37",
 		"buildButtonBar:" : "jr 11/18/2018 01:39",
 		"buildDiffPane:" : "jr 11/18/2018 01:32",
 		"buildWith:" : "jr 11/18/2018 01:29",
@@ -45,10 +45,12 @@
 		"requestSelectedChangesWithTitle:" : "jr 5/26/2017 21:41",
 		"resetChoiceCommandLabel" : "jr 3/3/2019 01:25",
 		"resetChoiceForSelectedNode" : "jr 5/29/2017 01:39",
-		"rootNodes" : "jr 3/3/2019 01:57",
+		"rootNodes" : "jr 12/22/2019 19:34",
 		"selectNode:" : "jr 4/26/2017 17:36",
 		"selectedDiffNodeIsIncluded" : "jr 11/18/2018 00:52",
 		"selectedNode" : "jr 4/26/2017 15:57",
 		"selectedPatch" : "jr 6/9/2019 01:57",
 		"widgetSpecs:" : "jr 11/18/2018 01:32",
-		"windowLabel" : "jr 11/18/2018 01:29" } }
+		"windowLabel" : "jr 11/18/2018 01:29",
+		"workingCopy" : "jr 11/3/2019 12:00",
+		"workingCopy:" : "jr 11/3/2019 12:00" } }

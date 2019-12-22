@@ -1,0 +1,14 @@
+{
+	"category" : "Squot-Tools-Tests",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		"Browsed" ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "SquotBrowseMockClass",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }

@@ -25,6 +25,7 @@ SystemOrganization addCategory: #'Squot-Merging-Tests'!
 SystemOrganization addCategory: #'Squot-Tests-Tools'!
 SystemOrganization addCategory: #'Squot-Packages-Tests'!
 SystemOrganization addCategory: #'Squot-Tools-Tests'!
+SystemOrganization addCategory: #'Squot-Tools-Packages-Tests'!
 SystemOrganization addCategory: #'Squot-Monticello-Converter-Tests'!
 SystemOrganization addCategory: #'Squot-FileTestRepository'!
 SystemOrganization addCategory: #'Squot-InMemoryRepository-Tests'!

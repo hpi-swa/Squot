@@ -1,0 +1,3 @@
+mocking
+setBrowsed
+	Browsed := true.

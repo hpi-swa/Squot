@@ -1,6 +1,7 @@
 converting
 asDiffTree
-	^ self hasConflicts
+	| node |
+	node := self hasConflicts
 		ifTrue: [SquotMergeDiffNode
 					title: self diffTreeNodeTitle
 					content: self
@@ -13,4 +14,6 @@ asDiffTree
 					content: self
 					children: self diffTreeChildren
 					onInclude: [self chooseIncoming]
-					onExclude: [self chooseWorking]]
+					onExclude: [self chooseWorking]].
+	node withAllChildren do: [:each | each artifactDiff: self].
+	^ node

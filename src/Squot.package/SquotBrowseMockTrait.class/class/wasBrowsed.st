@@ -1,0 +1,3 @@
+mocking
+wasBrowsed
+	^ Browsed == true

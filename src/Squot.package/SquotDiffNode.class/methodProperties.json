@@ -6,8 +6,11 @@
 		"accept:" : "jr 11/19/2017 19:26",
 		"addContentForInspectionTo:" : "jr 4/17/2017 02:28",
 		"anyChildNeedsChoice" : "jr 11/19/2017 19:05",
+		"artifactDiff" : "jr 12/22/2019 18:34",
+		"artifactDiff:" : "jr 12/22/2019 18:34",
 		"asStringOrText" : "jr 4/17/2017 02:02",
 		"balloonText" : "jr 4/17/2017 01:20",
+		"browseInWorkingCopy" : "jr 12/22/2019 20:11",
 		"children" : "jr 4/17/2017 01:01",
 		"children:" : "jr 11/18/2017 22:31",
 		"concatenatedChildrenTexts" : "jr 5/23/2017 14:09",
@@ -31,4 +34,6 @@
 		"title" : "jr 4/10/2017 23:00",
 		"title:" : "jr 11/18/2017 22:30",
 		"title:content:children:" : "jr 4/10/2017 23:00",
-		"withAllChildren" : "jr 11/19/2017 19:25" } }
+		"withAllChildren" : "jr 11/19/2017 19:25",
+		"workingCopy" : "jr 12/22/2019 18:36",
+		"workingCopy:" : "jr 12/22/2019 18:36" } }

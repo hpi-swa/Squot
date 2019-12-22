@@ -1,0 +1,19 @@
+{
+	"category" : "Squot-Tools-Packages-Tests",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"preparedWorkingCopy",
+		"classFactory",
+		"existingMethod",
+		"methodToBeRemoved",
+		"methodToBeAdded",
+		"rootNode" ],
+	"name" : "SquotMonticelloDiffNodesTest",
+	"pools" : [
+		 ],
+	"super" : "TestCase",
+	"type" : "normal" }

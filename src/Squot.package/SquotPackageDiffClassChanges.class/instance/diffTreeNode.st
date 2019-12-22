@@ -1,0 +1,4 @@
+accessing
+diffTreeNode
+
+	^ diffTreeNode

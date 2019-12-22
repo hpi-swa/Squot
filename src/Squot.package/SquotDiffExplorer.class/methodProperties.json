@@ -4,12 +4,13 @@
 		"from:to:" : "jr 7/23/2017 02:03" },
 	"instance" : {
 		"browseChangedArtifactOfSelectedNode" : "jr 12/22/2019 23:12",
+		"browseLoadedEditionOfSelectedNode" : "jr 12/23/2019 00:15",
 		"browseOriginalArtifactOfSelectedNode" : "jr 12/22/2019 23:12",
 		"buildWith:" : "jr 7/1/2017 22:28",
 		"childNodesOf:" : "jr 4/26/2017 16:00",
 		"chooserWidgetSpecs:" : "jr 4/26/2017 18:03",
 		"diffNodeMenu:shifted:" : "jr 4/26/2017 17:38",
-		"diffNodeMenuHook:" : "jr 9/26/2019 00:49",
+		"diffNodeMenuHook:" : "jr 12/23/2019 00:16",
 		"diffText" : "jr 4/26/2017 15:58",
 		"from:to:" : "jr 10/31/2017 18:16",
 		"fromPatch:" : "jr 10/3/2018 00:27",
@@ -20,6 +21,8 @@
 		"nodeLabelOf:" : "jr 1/15/2018 21:28",
 		"open" : "jr 10/31/2017 18:24",
 		"openLabel:" : "jr 7/1/2017 22:22",
-		"rootNodes" : "jr 11/6/2018 08:07",
+		"rootNodes" : "jr 12/23/2019 00:13",
 		"selectNode:" : "jr 4/26/2017 17:36",
-		"selectedNode" : "jr 4/26/2017 15:57" } }
+		"selectedNode" : "jr 4/26/2017 15:57",
+		"workingCopy" : "jr 12/23/2019 00:06",
+		"workingCopy:" : "jr 12/23/2019 00:06" } }

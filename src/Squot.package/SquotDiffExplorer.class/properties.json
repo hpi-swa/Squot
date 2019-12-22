@@ -8,7 +8,8 @@
 	"instvars" : [
 		"rootNodes",
 		"selectedNode",
-		"patch" ],
+		"patch",
+		"workingCopy" ],
 	"name" : "SquotDiffExplorer",
 	"pools" : [
 		 ],

@@ -1,3 +1,3 @@
 actions
 inspectChangedArtifactOfSelectedNode
-	(patch diffAt: self selectedNode title) right explore.
+	self selectedNode content right explore.

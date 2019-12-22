@@ -1,3 +1,3 @@
 actions
 browseOriginalArtifactOfSelectedNode
-	(patch diffAt: self selectedNode title) left browse.
+	self selectedNode content left browse.

@@ -1,3 +1,0 @@
-testing
-hasContent
-	^ content notNil

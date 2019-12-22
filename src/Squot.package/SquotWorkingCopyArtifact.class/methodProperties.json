@@ -2,6 +2,7 @@
 	"class" : {
 		"wrapping:in:" : "jr 12/7/2019 22:42" },
 	"instance" : {
+		"browse" : "jr 12/22/2019 23:59",
 		"doesNotUnderstand:" : "jr 12/7/2019 21:59",
 		"serializer:" : "jr 12/7/2019 22:55",
 		"storeArtifact" : "jr 12/7/2019 21:59",

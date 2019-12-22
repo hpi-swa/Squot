@@ -1,6 +1,6 @@
 running
 createBaseVersion
-	sampleClass := classFactory newClass.
+	SystemChangeNotifier uniqueInstance doSilently: [sampleClass := classFactory newClass].
 	sampleClass compileSilently: 'firstMethod ^ self' classified: 'methods of first version'.
 	packageInfo := PackageInfo named: classFactory packageName.
 	packagePath := (MCSnapshot empty asSquotArtifactForPackage: packageInfo) path.

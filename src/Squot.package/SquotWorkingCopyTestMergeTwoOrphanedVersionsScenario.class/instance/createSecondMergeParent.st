@@ -1,6 +1,6 @@
 running
 createSecondMergeParent
-	class2 := classFactory2 newClass.
+	SystemChangeNotifier uniqueInstance doSilently: [class2 := classFactory2 newClass].
 	class2 compileSilently: 'secondMethod ^ self' classified: 'methods of second version'.
 	packageInfo2 := PackageInfo named: classFactory2 packageName.
 	packagePath2 := (MCSnapshot empty asSquotArtifactForPackage: packageInfo2) path.

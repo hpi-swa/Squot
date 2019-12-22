@@ -1,6 +1,6 @@
 tests
 savePackage
-	class := classFactory newClass.
+	SystemChangeNotifier uniqueInstance doSilently: [class := classFactory newClass].
 	class compileSilently: 'a ^ 1'.
 	package := PackageInfo named: class category.
 	self trackPackage.

@@ -6,5 +6,6 @@ setUp
 			store: SquotImageStore new;
 			yourself.
 	classFactory := ClassFactoryForTestCase new.
-	classFactory newClass compileSilently: 'testMethod ^ 42'.
+	(SystemChangeNotifier uniqueInstance doSilently: [classFactory newClass])
+		compileSilently: 'testMethod ^ 42'.
 	workingCopy add: (PackageInfo named: classFactory packageName) at: 'src'.

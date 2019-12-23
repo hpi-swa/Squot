@@ -17,6 +17,9 @@ testRestorePackageThatLivesInAnotherEnvironment
 	self assert: testEnvironment
 		identical: (MCWorkingCopy forPackage: package) environment
 		description: 'prerequisite: MCWorkingCopy environment'.
+	self assert: testEnvironment
+		identical: (PackageInfo squotEnvironmentOf: (imageStore artifactAt: 'src'))
+		description: 'environment must be stored in metadata'.
 	classFactory delete: class. "so it can be restored from the snapshot"
 	self suppressChangeNotificationsDuring: [imageStore restoreToSnapshot: snapshot].
 	self assert: (testEnvironment hasClassNamed: className)

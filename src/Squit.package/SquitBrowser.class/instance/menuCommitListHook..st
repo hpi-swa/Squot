@@ -2,6 +2,7 @@ ui menu
 menuCommitListHook: aMenu
 	<menuCommitList>
 	| activeBranchName isMenuOnActiveBranch onlyOnInactiveBranch commands |
+	self hasProjectSelection ifFalse: [^ aMenu].
 	aMenu addTitle: (self commitSelection printStringLimitedTo: 50).
 	activeBranchName := self projectSelection loadedHistorian shortName.
 	isMenuOnActiveBranch := selectedHistorian = self projectSelection loadedHistorian.

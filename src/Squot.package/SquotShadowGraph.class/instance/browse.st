@@ -1,3 +1,3 @@
 tools
 browse
-	^ SquotShadowGraphBrowser openOn: self.
+	^ self startShadow browse

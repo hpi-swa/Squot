@@ -2,7 +2,6 @@
 	"class" : {
 		 },
 	"instance" : {
-		"asMCPatch" : "jr 7/22/2017 17:24",
 		"initializeSquotDiffNodes:with:" : "jr 11/19/2017 20:52",
 		"newSquotDiffNodes" : "jr 3/6/2019 23:12",
 		"squotApplyTo:" : "jr 5/29/2017 23:45",

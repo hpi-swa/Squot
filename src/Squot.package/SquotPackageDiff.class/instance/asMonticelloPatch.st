@@ -1,3 +1,3 @@
 converting
 asMonticelloPatch
-	^ patch asMCPatch
+	^ patch

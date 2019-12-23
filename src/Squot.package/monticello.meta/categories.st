@@ -4,7 +4,6 @@ SystemOrganization addCategory: #'Squot-Capturing'!
 SystemOrganization addCategory: #'Squot-Shadows'!
 SystemOrganization addCategory: #'Squot-Diffs'!
 SystemOrganization addCategory: #'Squot-Diffs-Generic'!
-SystemOrganization addCategory: #'Squot-Diffs-Hierarchical'!
 SystemOrganization addCategory: #'Squot-Merging'!
 SystemOrganization addCategory: #'Squot-Patching'!
 SystemOrganization addCategory: #'Squot-Packages'!

@@ -30,10 +30,13 @@ newSquotDiffNodes
 		associations collect: [:each "className -> (definition -> node)*" |
 			SquotDiffNode
 				title: each key
-				content: nil
+				content: (SquotPackageDiffClassChanges new className: each key)
 				children: (each value collect: [:pair | pair value])
 				onInclude: []
 				onExclude: []].
+	classNodes do:
+		[:each | each content "SquotPackageDiffClassChanges"
+			diffTreeNode: each].
 	rest := operationNodes copyWithoutAll: nodesWithClass.
 	nodesByClassification :=
 		(rest groupBy: [:each "definition -> node" |

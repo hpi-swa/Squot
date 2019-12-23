@@ -1,3 +1,3 @@
-*Squot-comparing
+*Squot-Tools-Diffs
 squotChangeAsStringOrText
 	^ self sourceText

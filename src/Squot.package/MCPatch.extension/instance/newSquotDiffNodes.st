@@ -1,4 +1,4 @@
-*Squot-diff-converting
+*Squot-Tools-Diffs
 newSquotDiffNodes
 	| byClass topNodes byClassification operationsWithClass rest |
 	operationsWithClass := operations select: [:each | each definition respondsTo: #isCodeDefinition].

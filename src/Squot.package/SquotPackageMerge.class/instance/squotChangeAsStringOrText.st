@@ -1,4 +1,4 @@
-converting
+*Squot-Tools
 squotChangeAsStringOrText
 	| text crcr |
 	text := Text new.

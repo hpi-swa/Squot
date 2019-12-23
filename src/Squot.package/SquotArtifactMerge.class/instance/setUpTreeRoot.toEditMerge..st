@@ -1,4 +1,4 @@
-converting
+*Squot-Tools
 setUpTreeRoot: aMergeNode toEditMerge: aMerge
 	aMergeNode
 		includeBlock: [self chooseIncoming];

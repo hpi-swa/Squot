@@ -1,4 +1,4 @@
-converting
+*Squot-Tools-Tests
 asSquotHierarchicalDiff
 	diffTreeNodes ifNotNil: [^ diffTreeNodes].
 	^ hasConflicts == false

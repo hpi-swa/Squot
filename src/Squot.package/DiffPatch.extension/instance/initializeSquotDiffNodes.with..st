@@ -1,4 +1,4 @@
-*Squot-diff-converting
+*Squot-Tools-Diffs
 initializeSquotDiffNodes: aCollection with: aDiffNodesBuilder
 	snippets with: aCollection do: [:eachSnippet :eachDiffNode |
 		eachDiffNode

@@ -1,4 +1,4 @@
-Squot-diff-converting
+*Squot-Tools-Diffs
 newSquotDiffNodes
 	"Answer new, uninitialized SquotDiffNodes that will later be initialized 
 	in #initializeSquotDiffNodes:with:"

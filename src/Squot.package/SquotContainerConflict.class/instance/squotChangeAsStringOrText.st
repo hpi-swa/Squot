@@ -1,4 +1,4 @@
-converting
+*Squot-Tools
 squotChangeAsStringOrText
 	^ (Text fromString: 'Conflict: ') allBold
 		append: working squotChangeAsStringOrText;

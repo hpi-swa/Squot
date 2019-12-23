@@ -1,3 +1,3 @@
-*Squot-diff-converting
+*Squot-Tools-Diffs
 newSquotDiffNodes
 	^ self diff newSquotDiffNodes

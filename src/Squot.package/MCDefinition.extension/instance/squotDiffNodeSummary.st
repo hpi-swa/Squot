@@ -1,3 +1,3 @@
-*Squot-diff-content
+*Squot-Tools
 squotDiffNodeSummary
 	^ self summary

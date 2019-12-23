@@ -1,4 +1,4 @@
-converting
+*Squot-Tools-Diffs
 initializeSquotDiffNode: aDiffNode with: aDiffNodesBuilder
 	self flag: #stub.
 	aDiffNode

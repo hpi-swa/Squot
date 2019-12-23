@@ -1,4 +1,4 @@
-converting
+*Squot-Tools
 diffTreeNodeTitle
 	^ (self path isEmpty
 		ifTrue: [working printString]

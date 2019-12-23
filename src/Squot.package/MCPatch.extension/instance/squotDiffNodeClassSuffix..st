@@ -1,4 +1,4 @@
-*Squot-diff-converting
+*Squot-Tools-Diffs
 squotDiffNodeClassSuffix: aCollection
 	| classChange |
 	aCollection ifEmpty: [^ ''].

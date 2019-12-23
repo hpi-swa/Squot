@@ -1,4 +1,4 @@
-converting
+*Squot-Tools-Diffs
 squotChangeAsStringOrText
 	self key isString
 		ifTrue: [^ self key, ' := ', self replacementShadow printString]

@@ -1,4 +1,4 @@
-converting
+*Squot-Tools
 squotChangeAsStringOrText
 	^ TextDiffBuilder
 		buildDisplayPatchFrom: (left ifNil: ['']) asString

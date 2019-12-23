@@ -1,4 +1,4 @@
-*Squot-diff-converting
+*Squot-Tools-Diffs
 squotDiffNodeForClass: aSymbol operations: aCollection
 	| node |
 	node := SquotDiffNode

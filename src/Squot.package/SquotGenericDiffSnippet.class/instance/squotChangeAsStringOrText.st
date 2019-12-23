@@ -1,3 +1,3 @@
-as yet unclassified
+converting
 squotChangeAsStringOrText
 	^ TextDiffBuilder buildDisplayPatchFrom: key to: value

@@ -1,4 +1,4 @@
-converting
+*Squot-Tools
 asDiffTree
 	| title node |
 	title := (self path isEmpty

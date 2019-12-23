@@ -1,4 +1,4 @@
-Squot-diff-converting
+*Squot-Tools
 squotChangeAsStringOrText
 	^ Text streamContents: [:stream |
 		(slotChanges associations groupBy: [:each | each slotShadowType])

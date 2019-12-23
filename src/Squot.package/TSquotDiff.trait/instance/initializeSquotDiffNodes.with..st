@@ -1,4 +1,4 @@
-Squot-diff-converting
+*Squot-Tools-Diffs
 initializeSquotDiffNodes: aCollection with: aSquotDiffNodesBuilder
 	"Initialize the previously allocated diff nodes in aCollection, using the builder to convert
 	the diffs of related objects."

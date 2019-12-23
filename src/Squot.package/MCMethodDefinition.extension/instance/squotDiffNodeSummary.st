@@ -1,3 +1,3 @@
-*Squot-comparing
+*Squot-Tools
 squotDiffNodeSummary
 	^ self selector

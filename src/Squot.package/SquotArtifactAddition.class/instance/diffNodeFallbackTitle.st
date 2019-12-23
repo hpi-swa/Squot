@@ -1,3 +1,3 @@
-converting
+*Squot-Tools
 diffNodeFallbackTitle
 	^ right printString

@@ -1,4 +1,4 @@
-converting
+*Squot-Tools
 asDiffTree
 	| node |
 	node := SquotDiffNode

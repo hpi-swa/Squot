@@ -1,4 +1,4 @@
-*Squot-comparing
+*Squot-Tools-Diffs
 squotChangeAsStringOrText
 	| sourceChanged |
 	sourceChanged := modification source ~= obsoletion source.

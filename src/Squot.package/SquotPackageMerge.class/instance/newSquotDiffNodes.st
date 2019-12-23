@@ -1,4 +1,4 @@
-converting
+*Squot-Tools
 newSquotDiffNodes
 	| operationNodes classNodes nodesWithClass rest nodesByClassification topNodes |
 	operationNodes := Array streamContents: [:nodes |

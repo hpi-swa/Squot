@@ -1,3 +1,3 @@
-tools
+*Squot-Tools
 browse
 	^ object browse

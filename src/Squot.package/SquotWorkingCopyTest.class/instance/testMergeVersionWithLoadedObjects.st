@@ -2,8 +2,9 @@ tests
 testMergeVersionWithLoadedObjects
 	| sampleClass packagePath firstVersion addedMethod secondVersion packageInfo |
 	"create a base version"
-	classFactory cleanUp.
-	self suppressChangeNotificationsDuring: [sampleClass := classFactory newClass].
+	self suppressChangeNotificationsDuring:
+		[classFactory cleanUp.
+		sampleClass := classFactory newClass].
 	sampleClass compileSilently: 'firstMethod ^ self' classified: 'methods of first version'.
 	packageInfo := PackageInfo named: classFactory packageName.
 	workingCopy add: packageInfo at: 'src'.

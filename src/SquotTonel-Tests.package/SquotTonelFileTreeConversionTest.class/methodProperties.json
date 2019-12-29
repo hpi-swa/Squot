@@ -3,6 +3,6 @@
 		 },
 	"instance" : {
 		"setUp" : "jr 12/23/2019 00:24",
-		"tearDown" : "jr 3/16/2019 22:05",
+		"tearDown" : "jr 12/23/2019 17:11",
 		"testCypressToTonel" : "jr 3/17/2019 11:56",
 		"testTonelToCypress" : "jr 3/17/2019 11:57" } }

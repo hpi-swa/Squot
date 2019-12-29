@@ -1,4 +1,4 @@
 running
 tearDown
-	classFactory cleanUp.
+	SystemChangeNotifier uniqueInstance  doSilently: [classFactory cleanUp].
 	super tearDown.

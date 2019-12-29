@@ -50,13 +50,15 @@ testApplyPatch
 	patch := SquotPatch builder
 		diff: packageArtifactBeforePatch against: packageArtifactAfterPatch;
 		buildPatch.
-	imageStore restoreToSnapshot: snapshotBefore.
+	self suppressChangeNotificationsDuring:
+		[imageStore restoreToSnapshot: snapshotBefore].
 	packageInfo := imageStore objectAt: packageArtifactBeforePatch path.
 	packageInfo workingCopy unregister. "clean up immediately..."
 	class := testEnvironment at: className.
 	hashMethodBeforePatch := class >> #hash.
 	"when"
-	imageStore applyPatch: patch.
+	self suppressChangeNotificationsDuring:
+		[imageStore applyPatch: patch].
 	"then"
 	packageInfo workingCopy unregister. "clean up immediately..."
 	self assert: class == (testEnvironment at: className).

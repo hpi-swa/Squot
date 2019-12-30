@@ -16,6 +16,8 @@
 		"createMaterializedInstance" : "jr 7/20/2017 18:07",
 		"diffClass" : "jr 6/17/2017 22:19",
 		"diffToBaseObjectShadow:" : "jr 9/16/2019 21:09",
+		"explorerContents" : "jr 12/30/2019 00:38",
+		"hasContentsInExplorer" : "jr 12/30/2019 00:44",
 		"includesSlot:" : "jr 6/17/2017 23:05",
 		"initialize" : "jr 8/11/2017 14:59",
 		"initializeFrom:with:" : "jr 7/20/2017 18:00",

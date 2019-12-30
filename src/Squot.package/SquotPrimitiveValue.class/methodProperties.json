@@ -5,6 +5,8 @@
 		"=" : "jr 6/17/2017 22:08",
 		"canHaveNameAssignedBySquot" : "jr 9/25/2019 14:50",
 		"diffClass" : "jr 7/15/2017 23:17",
+		"explorerContents" : "jr 12/30/2019 00:42",
+		"hasContentsInExplorer" : "jr 12/30/2019 00:47",
 		"hash" : "jr 6/17/2017 22:08",
 		"initializeFrom:with:" : "jr 6/15/2017 16:58",
 		"materializeAs:with:" : "jr 7/16/2017 22:30",

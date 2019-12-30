@@ -1,3 +1,3 @@
 *Squot-diff-testing
 squotHasChanges
-	^ self diffIndices notEmpty
+	^ (file1 hasEqualElements: file2) not

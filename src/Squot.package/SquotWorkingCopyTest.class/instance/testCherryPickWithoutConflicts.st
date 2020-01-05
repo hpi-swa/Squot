@@ -24,5 +24,5 @@ testCherryPickWithoutConflicts
 		assertSecondMethodUnmodifiedWith: self;
 		assertThirdMethodLoadedWith: self.
 	self assert: scenario secondVersion equals: workingCopy loadedVersion parents first;
-		deny: scenario thirdVersion equals: workingCopy loadedVersion;
+		deny: scenario thirdVersion = workingCopy loadedVersion;
 		assert: 'new version' equals: workingCopy loadedVersion message.

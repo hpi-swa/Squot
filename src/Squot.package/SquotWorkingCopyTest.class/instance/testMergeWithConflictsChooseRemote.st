@@ -1,48 +1,21 @@
 tests
 testMergeWithConflictsChooseRemote
-	| sampleClass packagePath firstVersion secondMethodSource secondVersion  thirdMethodSource thirdVersion otherHistorian packageInfo |
-	"create a base version"
 	self suppressChangeNotificationsDuring:
-		[classFactory cleanUp.
-		sampleClass := classFactory newClass].
-	packageInfo := PackageInfo named: classFactory packageName.
-	workingCopy add: packageInfo at: 'src'.
-	workingCopy saveNewVersionMessage: 'first version' interactive: false.
-	packagePath := (workingCopy store pathsOf: (PackageInfo named: classFactory packageName)) anyOne.
-	firstVersion := workingCopy baseVersion.
-	"create first merge parent"
-	sampleClass compileSilently: (secondMethodSource := 'conflictMethod ^ 1') classified: 'conflict methods'.
-	workingCopy saveNewVersionMessage: 'second version' interactive: false.
-	secondVersion := workingCopy baseVersion.
-	"create second merge parent"
-	firstVersion snapshot in: [:firstSnapshot | | packageArtifact newSnapshot |
-		packageArtifact := firstSnapshot artifactAt: packagePath.
-		newSnapshot := firstSnapshot createNewBuilder
-			add: (packageArtifact copyWithDifferentContent:
-				((MCSnapshot fromDefinitions: packageArtifact packageArtifactDefinitions,
-					{MCMethodDefinition className: sampleClass name
-						selector: #conflictMethod category: 'conflict methods'
-						timeStamp: 'whatever'
-						source: (thirdMethodSource := 'conflictMethod ^ 2')})
-					asSquotArtifactForPackage: packageInfo) content);
-			buildSnapshot.
-		otherHistorian := repository historianNamed: 'other'.
-		otherHistorian version: firstVersion.
-		thirdVersion := otherHistorian createNewVersion: newSnapshot
-			with: [:newVersion | newVersion message: 'third version']].
-	"merge the version of the other historian"
-	self suppressChangeNotificationsDuring:
-	[[[workingCopy
-		mergeVersionInteractively: thirdVersion
+	[scenario := SquotWorkingCopyTestMergeConflictScenario forTestCase: self.
+	[[workingCopy
+		mergeVersionInteractively: scenario thirdVersion
 		ifCanceled: [self fail: 'this code should not be reached']]
-		on: SquotMergeRequested do: [:request | | packageMerge conflictNode |
-			"make sure the second and third method edition are in the patch"
-			packageMerge := request merge mergeAt: packagePath.
-			conflictNode := packageMerge asDiffTree children first children first.
-			self assert: (conflictNode title beginsWith: 'conflictMethod').
-			conflictNode chooseRight.
+
+		on: SquotMergeRequested do: [:request |
+			scenario
+				assertConflictedMethodWorkingEditionPresentIn: request merge;
+				assertConflictedMethodIncomingEditionPresentIn: request merge;
+				assertThirdMethodWillBeAdded: request merge;
+				chooseIncomingEditionOfConflictedMethodIn: request merge.
 			request resume]]
 		valueSupplyingAnswers: {{'*'. #default}}].
-	self assert: sampleClass new conflictMethod = 2
-		description: 'conflict method updated after merge'.
-	self assert: secondVersion equals: workingCopy loadedVersion.
+	scenario
+		assertConflictMethodIncomingEditionLoaded;
+		assertThirdMethodLoaded.
+	"not saved yet"
+	self assert: scenario secondVersion equals: workingCopy loadedVersion.

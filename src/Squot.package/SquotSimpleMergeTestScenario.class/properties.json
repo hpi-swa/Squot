@@ -1,0 +1,22 @@
+{
+	"category" : "Squot-Tests",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "jr 1/5/2020 18:05",
+	"instvars" : [
+		"packageInfo",
+		"packagePath",
+		"firstVersion",
+		"secondVersion",
+		"thirdVersion",
+		"sampleClass",
+		"otherHistorian",
+		"secondMethod",
+		"thirdMethod" ],
+	"name" : "SquotSimpleMergeTestScenario",
+	"pools" : [
+		 ],
+	"super" : "SquotWorkingCopyTestScenario",
+	"type" : "normal" }

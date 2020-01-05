@@ -1,0 +1,4 @@
+accessing
+secondMethod
+
+	^ secondMethod

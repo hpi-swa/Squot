@@ -1,3 +1,0 @@
-running
-newStore
-	^ SquotImageStore new

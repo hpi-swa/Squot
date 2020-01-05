@@ -1,4 +1,4 @@
-running
+setUp
 createFirstMergeParent
 	sampleClass compileSilently: 'conflictMethod ^ 1'
 		classified: 'conflict methods'.

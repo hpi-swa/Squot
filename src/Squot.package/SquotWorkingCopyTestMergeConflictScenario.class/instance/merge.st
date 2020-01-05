@@ -1,4 +1,4 @@
-running
+setUp
 merge
 	"Initiate the merge of the prepared versions.
 	Senders should handle SquotSelectionOfChangesRequested"

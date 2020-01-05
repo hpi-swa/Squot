@@ -1,0 +1,4 @@
+accessing
+thirdMethod
+
+	^ thirdMethod

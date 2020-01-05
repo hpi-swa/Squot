@@ -1,4 +1,4 @@
-running
+setUp
 createSecondMergeParent
 	firstVersion snapshot
 		in: [:firstSnapshot | 
@@ -12,7 +12,13 @@ createSecondMergeParent
 									selector: #conflictMethod
 									category: 'conflict methods'
 									timeStamp: 'whatever'
-									source: (thirdMethodSource := 'conflictMethod ^ 2')})
+									source: ('conflictMethod ^ 2').
+								MCMethodDefinition
+									className: sampleClass name
+									selector: #thirdMethod
+									category: 'methods of third version'
+									timeStamp: 'whatever'
+									source: (thirdMethodSource := 'thirdMethod ^ self')})
 							asSquotArtifactForPackage: packageInfo);
 						 buildSnapshot.
 			otherHistorian := repository historianNamed: 'other'.

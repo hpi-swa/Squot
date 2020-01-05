@@ -1,5 +1,5 @@
 setUp
-createBaseVersion
+createFirstVersion
 	SystemChangeNotifier uniqueInstance doSilently: [sampleClass := classFactory newClass].
 	sampleClass compileSilently: 'firstMethod ^ self' classified: 'methods of first version'.
 	packageInfo := PackageInfo named: classFactory packageName.
@@ -7,3 +7,4 @@ createBaseVersion
 	workingCopy add: packageInfo at: packagePath.
 	workingCopy saveNewVersionMessage: 'first version' interactive: false.
 	firstVersion := workingCopy baseVersion.
+	^ firstVersion

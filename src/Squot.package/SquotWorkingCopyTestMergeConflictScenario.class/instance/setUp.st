@@ -1,4 +1,4 @@
-running
+setUp
 setUp
 	self createBaseVersion;
 		createFirstMergeParent;

@@ -1,0 +1,4 @@
+accessing
+sampleClass
+
+	^ sampleClass

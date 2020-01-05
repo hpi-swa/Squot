@@ -1,33 +1,20 @@
 tests
 testMergeWithConflicts
-	| scenario |
 	self suppressChangeNotificationsDuring:
 	[scenario := SquotWorkingCopyTestMergeConflictScenario forTestCase: self.
-	"merge the version of the other historian"
-	[[scenario merge]
-	on: SquotMergeRequested do: [:request | | packageDiff conflictNode |
-		"make sure the second and third method edition are in the patch"
-		packageDiff := request merge mergeAt: scenario packagePath.
-		self assert: (packageDiff working packageArtifactDefinitions
-				anySatisfy: [:each | (each source beginsWith: 'conflictMethod')
-							and:  [each source withBlanksTrimmed endsWith: '^ 1']])
-			description: ['loaded edition of conflictMethod not on the left side', String cr,
-				'found only: ', (packageDiff working packageArtifactDefinitions
-					inject: String cr into: [:all :each | all, each source, String cr])].
-		"the second method should be there as well"
-		self assert: (packageDiff incoming packageArtifactDefinitions
-				anySatisfy: [:each | (each source beginsWith: 'conflictMethod')
-							and: [each source withBlanksTrimmed endsWith: '^ 2']])
-			description: ['remote edition of conflictMethod not on the right side', String cr,
-				'found only: ', (packageDiff incoming packageArtifactDefinitions
-					inject: String cr into: [:all :each | all, each source, String cr])].
-		"resolve conflict"
-		self assert: (packageDiff base packageArtifactDefinitions
-			noneSatisfy: [:each | each source beginsWith: 'conflictMethod']).
-		conflictNode := packageDiff asDiffTree children first children first.
-		self assert: (conflictNode title beginsWith: 'conflictMethod').
-		conflictNode chooseLeft.
-		request setHandled]
+	[[workingCopy
+		mergeVersionInteractively: scenario thirdVersion
+		ifCanceled: [self fail: 'this code should not be reached']]
+	
+	on: SquotMergeRequested do: [:request |
+		scenario
+			assertConflictedMethodWorkingEditionPresentIn: request merge;
+			assertConflictedMethodIncomingEditionPresentIn: request merge;
+			assertThirdMethodWillBeAdded: request merge;
+			chooseWorkingEditionOfConflictedMethodIn: request merge.
+		request resume]
 	] valueSupplyingAnswers: {{'*'. #default}}].
-	scenario assertConflictMethodHasNotChanged: self.
+	scenario assertConflictMethodHasNotChanged;
+		assertThirdMethodLoaded.
+	"not saved yet"
 	self assert: scenario secondVersion equals: workingCopy loadedVersion.

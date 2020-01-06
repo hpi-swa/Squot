@@ -1,0 +1,19 @@
+{
+	"class" : {
+		 },
+	"instance" : {
+		"applyToWorkingCopy" : "jr 1/4/2020 19:20",
+		"applyToWorkingCopyInteractively" : "jr 1/5/2020 00:32",
+		"errorIncomplete:" : "jr 1/4/2020 19:33",
+		"extensions" : "jr 1/4/2020 22:43",
+		"extensions:" : "jr 1/4/2020 22:43",
+		"initialize" : "jr 1/4/2020 22:43",
+		"requestor" : "jr 1/5/2020 00:12",
+		"requestor:" : "jr 1/5/2020 00:12",
+		"resultPromise" : "jr 1/5/2020 01:25",
+		"title" : "jr 1/4/2020 22:52",
+		"title:" : "jr 1/4/2020 22:52",
+		"workingCopy" : "jr 1/4/2020 19:12",
+		"workingCopy:" : "jr 1/4/2020 19:12",
+		"workingCopySnapshot" : "jr 1/5/2020 01:34",
+		"workingCopySnapshot:" : "jr 1/5/2020 01:33" } }

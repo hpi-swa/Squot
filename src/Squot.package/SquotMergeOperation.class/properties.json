@@ -1,0 +1,17 @@
+{
+	"category" : "Squot-Core",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "jr 1/4/2020 22:39",
+	"instvars" : [
+		"mergeVersion",
+		"baseVersion",
+		"merge",
+		"mergeBases" ],
+	"name" : "SquotMergeOperation",
+	"pools" : [
+		 ],
+	"super" : "SquotWorkingCopyOperation",
+	"type" : "normal" }

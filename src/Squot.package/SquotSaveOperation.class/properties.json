@@ -1,0 +1,19 @@
+{
+	"category" : "Squot-Core",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "jr 1/4/2020 19:02",
+	"instvars" : [
+		"historian",
+		"additionalParentVersions",
+		"message",
+		"patch",
+		"author",
+		"committer" ],
+	"name" : "SquotSaveOperation",
+	"pools" : [
+		 ],
+	"super" : "SquotWorkingCopyOperation",
+	"type" : "normal" }

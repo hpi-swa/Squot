@@ -1,0 +1,3 @@
+accessing
+appliedPatch
+	^ merge resolvedPatch

@@ -1,0 +1,14 @@
+{
+	"category" : "Squot-Core",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		"EnableRefactoredCherryPick" ],
+	"commentStamp" : "jr 1/4/2020 19:37",
+	"instvars" : [
+		 ],
+	"name" : "SquotToggles",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }

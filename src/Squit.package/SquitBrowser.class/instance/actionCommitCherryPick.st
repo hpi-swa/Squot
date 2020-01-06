@@ -1,6 +1,8 @@
 actions on versions
 actionCommitCherryPick
 	| pickedVersion parentVersions parentVersion workingCopy |
+	(self hasProjectSelection and: [self hasCommitSelection]) ifFalse: [^ self].
+	SquotToggles enableRefactoredCherryPick ifTrue: [^ self actionCommitNewCherryPick].
 	pickedVersion := self commitSelection.
 	workingCopy := self projectSelection.
 	parentVersions := pickedVersion parents.

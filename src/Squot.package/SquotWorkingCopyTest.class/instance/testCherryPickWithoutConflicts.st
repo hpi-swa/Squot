@@ -1,28 +1,22 @@
 tests
 testCherryPickWithoutConflicts
-	scenario := SquotSimpleMergeTestScenario forTestCase: self.
+	| cherryPick merge |
 	"cherry pick the version of the other historian"
 	self suppressChangeNotificationsDuring:
-	[[[workingCopy
-		cherryPickInteractivelyFromVersion: scenario thirdVersion
-		withParent: scenario firstVersion
-		ifLoadCanceled: [self fail: 'this code should not be reached']
-		ifSaveCanceled: [self fail: 'this code should not be reached']]
-	
-		on: SquotMergeRequested do: [:request |
-			scenario
-				assertThirdMethodWillBeAdded: request merge with: self;
-				assertSecondMethodUnmodifiedBy: request merge with: self.
-			request resume "accept all changes"]
-		
-		on: SquotSelectionOfChangesRequested do:
-			[:request | request message: 'new version'; resume]]
-	
-		valueSupplyingAnswers: {{'*'. #default}}].
-	
+	[scenario := SquotSimpleMergeTestScenario forTestCase: self.
+	cherryPick := workingCopy newCherryPickOperation
+		pickedVersion: scenario thirdVersion;
+		relevantParentOfPickedVersion: scenario firstVersion;
+		message: 'new version'.
+	merge := cherryPick prepareMerge.
+	scenario
+		assertThirdMethodWillBeAdded: merge with: self;
+		assertSecondMethodUnmodifiedBy: merge with: self.
+	cherryPick applyMerge.
 	scenario
 		assertSecondMethodUnmodifiedWith: self;
 		assertThirdMethodLoadedWith: self.
+	cherryPick save].
 	self assert: scenario secondVersion equals: workingCopy loadedVersion parents first;
 		deny: scenario thirdVersion = workingCopy loadedVersion;
 		assert: 'new version' equals: workingCopy loadedVersion message.

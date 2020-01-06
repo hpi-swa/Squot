@@ -1,0 +1,18 @@
+{
+	"category" : "Squot-Core",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "jr 1/4/2020 22:40",
+	"instvars" : [
+		"pickedVersion",
+		"relevantParentOfPickedVersion",
+		"merge",
+		"loadedPatch",
+		"save" ],
+	"name" : "SquotCherryPickOperation",
+	"pools" : [
+		 ],
+	"super" : "SquotWorkingCopyOperation",
+	"type" : "normal" }

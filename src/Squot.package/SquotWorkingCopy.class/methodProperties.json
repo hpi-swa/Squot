@@ -58,6 +58,9 @@
 		"moveObjectAt:to:" : "jr 12/7/2019 22:55",
 		"name" : "jr 4/9/2017 14:20",
 		"name:" : "jr 4/9/2017 14:20",
+		"newCherryPickOperation" : "jr 1/4/2020 19:14",
+		"newMergeOperation" : "jr 1/5/2020 00:28",
+		"newSaveOperation" : "jr 1/4/2020 19:08",
 		"newSnapshotBuilder" : "jr 9/23/2018 18:45",
 		"newVersionMessage" : "jr 10/13/2018 23:51",
 		"newVersionMessage:" : "jr 10/13/2018 23:39",
@@ -97,4 +100,5 @@
 		"unload" : "jr 1/26/2017 17:38",
 		"unregister" : "fn 4/11/2017 11:57",
 		"validatePath:for:" : "jr 12/7/2019 22:18",
-		"withCurrentSnapshot:" : "jr 9/19/2019 06:06" } }
+		"withCurrentSnapshot:" : "jr 9/19/2019 06:06",
+		"withCurrentSnapshot:do:" : "jr 1/5/2020 01:31" } }

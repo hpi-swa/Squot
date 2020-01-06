@@ -12,7 +12,9 @@
 		"rootNodes",
 		"editedPatch",
 		"selectedNode",
-		"workingCopy" ],
+		"workingCopy",
+		"view",
+		"promise" ],
 	"name" : "SquotChangedArtifactsChooser",
 	"pools" : [
 		 ],

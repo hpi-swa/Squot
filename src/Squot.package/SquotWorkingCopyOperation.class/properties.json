@@ -1,0 +1,16 @@
+{
+	"category" : "Squot-Core",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "jr 1/4/2020 22:45",
+	"instvars" : [
+		"workingCopy",
+		"workingCopySnapshot",
+		"extensions" ],
+	"name" : "SquotWorkingCopyOperation",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }

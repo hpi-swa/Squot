@@ -1,0 +1,23 @@
+{
+	"class" : {
+		 },
+	"instance" : {
+		"applyMerge" : "jr 1/6/2020 23:02",
+		"applyToWorkingCopy" : "jr 1/7/2020 00:13",
+		"applyToWorkingCopyInteractively" : "jr 1/7/2020 00:15",
+		"loadedPatch" : "jr 1/4/2020 19:27",
+		"loadedPatch:" : "jr 1/4/2020 19:27",
+		"merge" : "jr 1/4/2020 19:27",
+		"merge:" : "jr 1/4/2020 19:27",
+		"message:" : "jr 1/6/2020 23:30",
+		"pickedVersion" : "jr 1/4/2020 19:19",
+		"pickedVersion:" : "jr 1/4/2020 19:19",
+		"prepareMerge" : "jr 1/7/2020 00:14",
+		"relevantParentOfPickedVersion" : "jr 1/4/2020 19:19",
+		"relevantParentOfPickedVersion:" : "jr 1/4/2020 19:19",
+		"revertMerge" : "jr 1/5/2020 01:38",
+		"save" : "jr 1/7/2020 00:08",
+		"saveOperation" : "jr 1/6/2020 23:31",
+		"validateAncestry" : "jr 1/6/2020 23:38",
+		"validateRequestor" : "jr 1/7/2020 00:04",
+		"validateSave" : "jr 1/6/2020 23:27" } }

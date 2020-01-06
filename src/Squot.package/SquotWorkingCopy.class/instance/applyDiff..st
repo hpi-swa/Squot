@@ -1,3 +1,3 @@
 patching
 applyDiff: anArtifactDiff
-	anArtifactDiff applyToContainer: store.
+	store applyDiff: anArtifactDiff.

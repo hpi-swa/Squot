@@ -2,4 +2,5 @@
 
 | changeRecord |
 changeRecord := Smalltalk globals at: #TEMP_Squot_ShadowedChangeRecord255 ifAbsent: [^ self].
-changeRecord fileIn.'!
+changeRecord fileIn.
+Smalltalk globals removeKey: #TEMP_Squot_ShadowedChangeRecord255.	'!

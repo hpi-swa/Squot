@@ -1,4 +1,5 @@
 accessing
 patch
 
-	^ patch
+	^ patch ifNil:
+		[patch := self workingCopy patchRelativeToBase: self workingCopy baseVersion]

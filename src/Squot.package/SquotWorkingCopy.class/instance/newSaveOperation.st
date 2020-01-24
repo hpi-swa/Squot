@@ -7,4 +7,5 @@ newSaveOperation
 		message: self newVersionMessage;
 		author: self defaultAuthor;
 		committer: self defaultAuthor;
+		shouldStoreMetadata: self shouldStoreMetadata;
 		yourself

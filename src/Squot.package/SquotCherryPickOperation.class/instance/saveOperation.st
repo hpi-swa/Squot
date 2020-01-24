@@ -1,3 +1,3 @@
 accessing
 saveOperation
-	^ save ifNil: [save := self workingCopy newSaveOperation]
+	^ save ifNil: [save := self workingCopy newInteractiveSaveOperation]

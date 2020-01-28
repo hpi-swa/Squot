@@ -1,5 +1,5 @@
-*Squot-Tools applying
-applyToWorkingCopyInteractively
+applying
+applyToWorkingCopy
 	"Compute merge, ask user which changes should be loaded, then do load them."
 	self prepare.
 	self chooseChanges

@@ -1,8 +1,8 @@
-*Squot-Tools applying
+applying
 chooseChanges
 	| tool |
 	tool := SquotMergeTool on: merge.
-	tool workingCopy: self;
+	tool workingCopy: self workingCopy;
 		"addIgnoredArtifacts: self ignoredArtifacts;"
 		controllerForIgnores: self.
 	^ (tool selectedChangesWithTitle: self title)

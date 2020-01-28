@@ -12,9 +12,9 @@ actionCommitNewCherryPick
 			chooseFrom: (parentVersions collect: #printString)
 			values: parentVersions
 			title: 'Pick changes in comparison to which parent?'].
-	(cherryPick := workingCopy newCherryPickOperation)
+	(cherryPick := workingCopy newInteractiveCherryPickOperation)
 		requestor: self;
 		pickedVersion: pickedVersion;
 		relevantParentOfPickedVersion: parentVersion.
-	cherryPick applyToWorkingCopyInteractively
+	cherryPick applyToWorkingCopy
 		whenRejected: [:reason | self inform: 'Cherry pick aborted: ', reason].

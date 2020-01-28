@@ -7,8 +7,8 @@
 	"commentStamp" : "",
 	"instvars" : [
 		 ],
-	"name" : "SquotInteractiveSave",
+	"name" : "SquotInteractiveMerge",
 	"pools" : [
 		 ],
-	"super" : "SquotSaveOperation",
+	"super" : "SquotMergeOperation",
 	"type" : "normal" }

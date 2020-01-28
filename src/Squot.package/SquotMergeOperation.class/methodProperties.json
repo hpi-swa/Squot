@@ -4,10 +4,8 @@
 	"instance" : {
 		"appliedPatch" : "jr 1/5/2020 01:13",
 		"applyToWorkingCopy" : "jr 1/6/2020 23:22",
-		"applyToWorkingCopyInteractively" : "jr 1/7/2020 00:10",
 		"baseVersion" : "jr 1/5/2020 00:29",
 		"baseVersion:" : "jr 1/5/2020 00:29",
-		"chooseChanges" : "jr 1/5/2020 03:34",
 		"merge" : "jr 1/4/2020 22:40",
 		"merge:" : "jr 1/4/2020 22:40",
 		"mergeVersion" : "jr 1/5/2020 00:29",

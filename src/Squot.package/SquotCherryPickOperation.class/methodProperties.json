@@ -3,9 +3,7 @@
 		 },
 	"instance" : {
 		"applyMerge" : "jr 1/6/2020 23:02",
-		"applyMergeInteractively" : "jr 1/19/2020 02:20",
 		"applyToWorkingCopy" : "jr 1/7/2020 00:13",
-		"applyToWorkingCopyInteractively" : "jr 1/19/2020 02:20",
 		"loadedPatch" : "jr 1/4/2020 19:27",
 		"loadedPatch:" : "jr 1/4/2020 19:27",
 		"merge" : "jr 1/4/2020 19:27",
@@ -15,12 +13,11 @@
 		"pickedVersion:" : "jr 1/4/2020 19:19",
 		"prepareMerge" : "jr 1/19/2020 01:44",
 		"privateNewMerge" : "jr 1/19/2020 01:43",
+		"privateNewSave" : "jr 1/26/2020 21:47",
 		"relevantParentOfPickedVersion" : "jr 1/4/2020 19:19",
 		"relevantParentOfPickedVersion:" : "jr 1/4/2020 19:19",
 		"revertMerge" : "jr 1/19/2020 02:19",
-		"save" : "jr 1/7/2020 00:08",
-		"saveInteractively" : "jr 1/21/2020 09:01",
-		"saveOperation" : "jr 1/19/2020 02:44",
+		"save" : "jr 1/26/2020 21:31",
+		"saveOperation" : "jr 1/26/2020 21:48",
 		"validateAncestry" : "jr 1/6/2020 23:38",
-		"validateRequestor" : "jr 1/7/2020 00:04",
-		"validateSave" : "jr 1/6/2020 23:27" } }
+		"validateSave" : "jr 1/26/2020 21:41" } }

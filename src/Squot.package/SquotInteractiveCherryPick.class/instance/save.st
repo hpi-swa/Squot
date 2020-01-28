@@ -1,10 +1,5 @@
-*Squot-Tools applying
-saveInteractively
-	self saveOperation message ifNil:
-		[self saveOperation 	message:
-			pickedVersion message,
-				String cr, String cr,
-				'(cherry-picked from commit ', pickedVersion internalId, ')'].
+applying
+save
 	^ (self saveOperation
 		patch: loadedPatch;
 		title: 'Select changes and message for the new version';

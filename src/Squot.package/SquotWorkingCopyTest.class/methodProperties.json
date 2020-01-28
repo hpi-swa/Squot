@@ -3,7 +3,6 @@
 		"isAbstract" : "jr 1/26/2017 17:27" },
 	"instance" : {
 		"addPackage" : "jr 1/26/2020 23:53",
-		"assertVersion:containsClass:" : "jr 7/21/2017 02:59",
 		"assertVersion:containsMethod:" : "jr 7/21/2017 02:59",
 		"changeLogSuppressor" : "jr 4/29/2018 16:50",
 		"classFactory" : "jr 10/1/2017 01:44",

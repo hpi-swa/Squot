@@ -2,7 +2,6 @@
 	"class" : {
 		 },
 	"instance" : {
-		"assertVersion:containsClass:" : "jr 7/21/2017 11:52",
 		"assertVersion:containsMethod:" : "jr 7/21/2017 11:52",
 		"assertVersion:doesNotContainMethod:" : "jr 7/21/2017 11:52",
 		"newRepository" : "jr 2/5/2017 23:47",

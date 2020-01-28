@@ -1,4 +1,9 @@
 actions
 actionCommit
-	self projectSelection saveNewVersionInteractivelyIfCanceled: [^ self].
-	self refresh.
+	SquotToggles enableRefactoredSave
+		ifTrue:
+			[(self projectSelection newInteractiveSaveOperation
+				title: 'Select changes and message for the new version';
+				applyToWorkingCopy)
+				then: [:result | self refresh]]
+		ifFalse: [self projectSelection saveNewVersionInteractivelyIfCanceled: [^ self]].

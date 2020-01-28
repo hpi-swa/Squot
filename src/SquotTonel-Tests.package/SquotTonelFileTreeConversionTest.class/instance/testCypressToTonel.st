@@ -4,14 +4,14 @@ testCypressToTonel
 	workingCopy artifacts anyOne serializer: SquotCypressCodeSerializer.
 	originalPath := workingCopy artifacts anyOne path.
 	directoryDepth := originalPath occurrencesOf: $/.
-	workingCopy saveNewVersionMessage: 'write as Cypress' interactive: false.
+	workingCopy saveVersionWithMessage: 'write as Cypress'.
 	self deny: ((workingCopy baseVersion snapshotDirectory / 'src') entries
 					includes: classFactory packageName)
 		description: 'Tonel directory exists'.
 	workingCopy artifacts anyOne serializer: SquotTonelSerializer.
 	self assert: 1 equals: workingCopy artifacts size description: 'duplicate artifacts'.
 	newPath := workingCopy artifacts anyOne path.
-	workingCopy saveNewVersionMessage: 'convert to Tonel' interactive: false.
+	workingCopy saveVersionWithMessage: 'convert to Tonel'.
 	self deny: ((workingCopy baseVersion snapshotDirectory / 'src') entries
 					includes: classFactory packageName, '.package')
 		description: 'Cypress directory still exists'.

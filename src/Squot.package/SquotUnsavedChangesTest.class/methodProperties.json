@@ -2,6 +2,6 @@
 	"class" : {
 		 },
 	"instance" : {
-		"testDiscardUnsavedChanges" : "jr 5/4/2019 00:51",
-		"testSwitchToRestoresUnsavedChanges" : "jr 5/4/2019 00:52",
-		"testSwitchToRestoresUnsavedChangesOnly" : "jr 5/4/2019 00:52" } }
+		"testDiscardUnsavedChanges" : "jr 1/26/2020 22:45",
+		"testSwitchToRestoresUnsavedChanges" : "jr 1/26/2020 22:45",
+		"testSwitchToRestoresUnsavedChangesOnly" : "jr 1/26/2020 22:46" } }

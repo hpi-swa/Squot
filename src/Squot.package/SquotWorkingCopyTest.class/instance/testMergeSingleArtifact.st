@@ -10,13 +10,13 @@ testMergeSingleArtifact
 	self workingCopy
 		add: (relevantObject := PackageInfo new packageName: classFactory packageName)
 		at: 'to-be-merged'.
-	self workingCopy saveNewVersionMessage: 'base version' interactive: false.
+	self workingCopy saveVersionWithMessage: 'base version'.
 	baseVersion := self workingCopy loadedHistorian version.
 	"right-side version"
 	unrelatedObject replaceFrom: 1 to: unrelatedObject size with: 'unrelated1'.
 	self suppressChangeNotificationsDuring:
 		[class organization classify: #mergeMe under: 'something else' logged: false].
-	self workingCopy saveNewVersionMessage: 'right-side version' interactive: false.
+	self workingCopy saveVersionWithMessage: 'right-side version'.
 	rightVersion := self workingCopy loadedHistorian version.
 	rightArtifact := rightVersion artifacts at:
 		(rightVersion artifacts keys detect: [:each | each beginsWith: 'to-be-merged']).
@@ -25,7 +25,7 @@ testMergeSingleArtifact
 	self suppressChangeNotificationsDuring: [self workingCopy discardUnsavedChanges].
 	class compileSilently: 'addedMethod ^ self' classified: 'should be kept'.
 	unrelatedObject replaceFrom: 1 to: unrelatedObject size with: 'unrelated2'.
-	self workingCopy saveNewVersionMessage: 'left-side version' interactive: false.
+	self workingCopy saveVersionWithMessage: 'left-side version'.
 	leftVersion := self workingCopy loadedHistorian version.
 	"when"
 	self suppressChangeNotificationsDuring:

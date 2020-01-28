@@ -11,7 +11,7 @@ testTrackingWorkspaceMorph
 	workspace setBindings: bindings.
 	"save"
 	workingCopy add: systemWindow at: 'sample workspace.morph'.
-	workingCopy saveNewVersionMessage: 'add workspace' interactive: false.
+	workingCopy saveVersionWithMessage: 'add workspace'.
 	"modify bindings and properties"
 	workspace contents: 'Changed contents'.
 	workspace bindings

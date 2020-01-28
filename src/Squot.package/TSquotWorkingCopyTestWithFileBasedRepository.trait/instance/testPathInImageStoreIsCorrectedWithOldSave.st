@@ -1,10 +1,11 @@
 tests
-testPathInImageStoreIsCorrected
+testPathInImageStoreIsCorrectedWithOldSave
 	| class classPackageName |
 	class := self class.
 	classPackageName := class category.
 	self workingCopy add: class at: 'src'.
-	self workingCopy saveVersionWithMessage: ''.
+	[self workingCopy saveNewVersionMessage: '' interactive: false]
+		on: Deprecation do: [:e | e resume].
 	self assert: (self
 		shouldnt:
 			[self workingCopy store

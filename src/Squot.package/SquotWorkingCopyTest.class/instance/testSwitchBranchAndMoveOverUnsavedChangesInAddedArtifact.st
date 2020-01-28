@@ -2,16 +2,16 @@ tests
 testSwitchBranchAndMoveOverUnsavedChangesInAddedArtifact
 	| text originalHistorian otherHistorian hadConflicts |
 	"given"
-	self workingCopy saveNewVersionMessage: 'empty base version' interactive: false.
+	self workingCopy saveVersionWithMessage: 'empty base version'.
 	originalHistorian := workingCopy loadedHistorian.
 	otherHistorian := repository historianNamed: 'other'.
 	otherHistorian version: originalHistorian version.
 	self workingCopy loadedHistorian: otherHistorian.
-	self workingCopy saveNewVersionMessage: 'still empty other version' interactive: false.
+	self workingCopy saveVersionWithMessage: 'still empty other version'.
 	self workingCopy
 		loadedHistorian: originalHistorian;
 		add: (text := Text fromString: 'added text') at: 'text';
-		saveNewVersionMessage: 'add text' interactive: false.
+		saveVersionWithMessage: 'add text'.
 	text replaceFrom: 1 to: text size with: 'changed text'.
 	hadConflicts := false.
 	[workingCopy switchAndMoveUnsavedChangesOverTo: otherHistorian]

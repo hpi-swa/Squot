@@ -4,7 +4,7 @@ testDiscardUnsavedChanges
 	"given"
 	trackedObject := StringHolder new contents: 'Tracked'; yourself.
 	workingCopy add: trackedObject at: 'tracked.txt'.
-	workingCopy saveNewVersionMessage: 'add something' interactive: false.
+	workingCopy saveVersionWithMessage: 'add something'.
 	trackedObject contents: 'Unsaved'.
 	addedObject := StringHolder new contents: 'Added'; yourself.
 	workingCopy add: addedObject at: 'added.txt'.

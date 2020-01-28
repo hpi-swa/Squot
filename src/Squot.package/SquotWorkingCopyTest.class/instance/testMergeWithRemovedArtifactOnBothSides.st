@@ -4,11 +4,11 @@ testMergeWithRemovedArtifactOnBothSides
 	| baseVersion leftVersion rightVersion |
 	self workingCopy
 		add: (ValueHolder new contents: #right) at: 'to-be-removed';
-		saveNewVersionMessage: 'base version' interactive: false.
+		saveVersionWithMessage: 'base version'.
 	baseVersion := self workingCopy loadedHistorian version.
 	self workingCopy
 		removeAt: 'to-be-removed';
-		saveNewVersionMessage: 'right-side version' interactive: false.
+		saveVersionWithMessage: 'right-side version'.
 	rightVersion := self workingCopy loadedHistorian version.
 	self deny: (rightVersion includesObjectAt: 'to-be-removed').
 	self workingCopy loadedHistorian version: baseVersion.
@@ -16,7 +16,7 @@ testMergeWithRemovedArtifactOnBothSides
 	self assert: (self workingCopy includesObjectAt: 'to-be-removed').
 	self workingCopy
 		removeAt: 'to-be-removed';
-		saveNewVersionMessage: 'left-side version' interactive: false.
+		saveVersionWithMessage: 'left-side version'.
 	leftVersion := self workingCopy loadedHistorian version.
 	"when"
 	[[self workingCopy mergeVersionInteractively: rightVersion

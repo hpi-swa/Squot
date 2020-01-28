@@ -1,17 +1,17 @@
 tests
 testMergeWithAddedArtifactOnBothSides
 	| baseVersion leftVersion rightVersion leftName rightName |
-	self workingCopy saveNewVersionMessage: 'empty base version' interactive: false.
+	self workingCopy saveVersionWithMessage: 'empty base version'.
 	baseVersion := self workingCopy loadedHistorian version.
 	self workingCopy add: (ValueHolder new contents: #right) at: 'added';
-		saveNewVersionMessage: 'right-side version' interactive: false.
+		saveVersionWithMessage: 'right-side version'.
 	rightVersion := self workingCopy loadedHistorian version.
 	rightName := store objectRegistry nameOf: (self workingCopy objectAt: 'added').
 	self workingCopy loadedHistorian version: baseVersion.
 	self workingCopy discardUnsavedChanges.
 	self deny: (self workingCopy includesObjectAt: 'added').
 	self workingCopy add: (ValueHolder new contents: #left) at: 'added';
-		saveNewVersionMessage: 'left-side version' interactive: false.
+		saveVersionWithMessage: 'left-side version'.
 	leftVersion := self workingCopy loadedHistorian version.
 	leftName := store objectRegistry nameOf: (self workingCopy objectAt: 'added').
 	self assert: leftName ~= rightName.

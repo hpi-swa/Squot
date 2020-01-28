@@ -5,14 +5,14 @@ testRestoreClass
 	sampleClass compileSilently: 'firstMethod ^ self' classified: 'methods of first version'.
 	sampleClassName := sampleClass name. "when unloaded, the class is renamed"
 	firstMethod := sampleClass >> #firstMethod.
-	[workingCopy add: sampleClass at: 'src']
+	[workingCopy add: sampleClass at: sampleClass package name, '/', sampleClass name]
 		on: SquotClassWithoutPackageException
 		do: [:e | e resume: (PackageInfo named: classFactory packageName)].
-	workingCopy saveNewVersionMessage: 'first version' interactive: false.
+	workingCopy saveVersionWithMessage: 'first version'.
 	firstVersion := workingCopy baseVersion.
 	sampleClass compileSilently: 'addedMethod ^ self' classified: 'methods of second version'.
 	addedMethod := sampleClass >> #addedMethod.
-	workingCopy saveNewVersionMessage: 'second version' interactive: false.
+	workingCopy saveVersionWithMessage: 'second version'.
 	latestVersion := workingCopy baseVersion.
 	
 	self suppressChangeNotificationsDuring:

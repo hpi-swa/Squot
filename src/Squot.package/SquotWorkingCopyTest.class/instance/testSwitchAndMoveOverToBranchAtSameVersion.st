@@ -4,7 +4,7 @@ testSwitchAndMoveOverToBranchAtSameVersion
 	"given"
 	trackedObject := ValueHolder new contents: 'This is a test'.
 	workingCopy add: trackedObject at: 'tracked'.
-	workingCopy saveNewVersionMessage: 'initial version' interactive: false.
+	workingCopy saveVersionWithMessage: 'initial version'.
 	trackedObject contents: 'Unsaved changes'.
 	originalHistorian := workingCopy loadedHistorian.
 	otherHistorian := repository historianNamed: 'other'.

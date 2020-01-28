@@ -8,5 +8,5 @@ createSecondMergeParent
 	workingCopy loadedHistorian: otherHistorian.
 	workingCopy artifacts copy do: [:each | workingCopy removeAt: each path].
 	workingCopy add: packageInfo2 at: packagePath2.
-	workingCopy saveNewVersionMessage: 'second version' interactive: false.
+	workingCopy saveVersionWithMessage: 'second version'.
 	secondVersion := workingCopy baseVersion.

@@ -3,10 +3,10 @@ testTrackingText
 	| text firstVersion latestVersion |
 	text := Text fromString: 'Original text'.
 	workingCopy add: text at: 'my text'.
-	workingCopy saveNewVersionMessage: 'add text' interactive: false.
+	workingCopy saveVersionWithMessage: 'add text'.
 	firstVersion := workingCopy baseVersion.
 	text replaceFrom: 1 to: text size with: 'New value'.
-	workingCopy saveNewVersionMessage: 'add text' interactive: false.
+	workingCopy saveVersionWithMessage: 'add text'.
 	text replaceFrom: 1 to: text size with: 'New, unsaved value'.
 	latestVersion := workingCopy baseVersion.
 	

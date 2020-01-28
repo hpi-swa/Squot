@@ -3,4 +3,5 @@
 		 },
 	"instance" : {
 		"testAddMultiplePackagesToSameFolder" : "jr 4/7/2018 17:10",
-		"testPathInImageStoreIsCorrected" : "jr 9/21/2017 20:57" } }
+		"testPathInImageStoreIsCorrected" : "jr 1/26/2020 22:59",
+		"testPathInImageStoreIsCorrectedWithOldSave" : "jr 1/26/2020 20:54" } }

@@ -7,5 +7,5 @@ saveChanges: aPatch on: stashHistorian message: aString
 	fromHistorian := self loadedHistorian.
 	stashHistorian version: fromHistorian version.
 	self loadedHistorian: stashHistorian.
-	[^ self saveNewVersionMessage: aString interactive: false]
-	ensure: [self loadedHistorian: fromHistorian].
+	[^ self saveVersionWithMessage: aString]
+		ensure: [self loadedHistorian: fromHistorian].

@@ -3,12 +3,11 @@ testTrackingAPackage
 	| sampleClass packageInfo anotherClass versionBeforeSave latestVersion |
 	self suppressChangeNotificationsDuring: [sampleClass := classFactory newClass].
 	sampleClass compileSilently: 'firstMethod ^ self' classified: 'methods of first version'.
-	packageInfo := PackageInfo named: classFactory packageName.
-	workingCopy add: packageInfo at: 'src/', packageInfo packageName, '.package'.
+	packageInfo := self addPackage.
 	versionBeforeSave := workingCopy loadedHistorian version.
 	self assert: versionBeforeSave isNil description: 'starting from an empty history'.
 	
-	workingCopy saveNewVersionMessage: 'first version' interactive: false.
+	workingCopy saveVersionWithMessage: 'first version'.
 	latestVersion := workingCopy baseVersion.
 	self assert: versionBeforeSave ~= latestVersion description: 'new version'.
 	self assert: (latestVersion parents isEmpty) description: 'ancestry'.
@@ -25,7 +24,7 @@ testTrackingAPackage
 	versionBeforeSave := workingCopy loadedHistorian version.
 	self assert: latestVersion equals: versionBeforeSave.
 	
-	workingCopy saveNewVersionMessage: 'second version' interactive: false.
+	workingCopy saveVersionWithMessage: 'second version'.
 	latestVersion := workingCopy baseVersion.
 	self assert: versionBeforeSave ~= latestVersion description: 'new version'.
 	self assert: (latestVersion parents includes: versionBeforeSave) description: 'ancestry'.

@@ -3,8 +3,8 @@ testUnnecessaryMergeIsCanceled
 	| firstVersion wasCanceled |
 	"given"
 	workingCopy
-		saveNewVersionMessage: 'first version' interactive: false;
-		saveNewVersionMessage: 'successor version' interactive: false.
+		saveVersionWithMessage: 'first version';
+		saveVersionWithMessage: 'successor version'.
 	firstVersion := workingCopy baseVersion parents first.
 	"when"
 	wasCanceled := false.

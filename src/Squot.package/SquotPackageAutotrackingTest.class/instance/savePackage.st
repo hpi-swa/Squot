@@ -4,6 +4,6 @@ savePackage
 	class compileSilently: 'a ^ 1'.
 	package := PackageInfo named: class category.
 	self trackPackage.
-	workingCopy saveNewVersionMessage: 'version with package' interactive: false.
+	workingCopy saveVersionWithMessage: 'version with package'.
 	path := self packagePath.
 	workingCopy removePackageNamed: package name. "untrack again"

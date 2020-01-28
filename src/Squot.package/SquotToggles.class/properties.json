@@ -3,7 +3,8 @@
 	"classinstvars" : [
 		 ],
 	"classvars" : [
-		"EnableRefactoredCherryPick" ],
+		"EnableRefactoredCherryPick",
+		"EnableRefactoredSave" ],
 	"commentStamp" : "jr 1/4/2020 19:37",
 	"instvars" : [
 		 ],

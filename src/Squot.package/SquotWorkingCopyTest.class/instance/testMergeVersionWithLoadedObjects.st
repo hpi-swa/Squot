@@ -6,9 +6,8 @@ testMergeVersionWithLoadedObjects
 		[classFactory cleanUp.
 		sampleClass := classFactory newClass].
 	sampleClass compileSilently: 'firstMethod ^ self' classified: 'methods of first version'.
-	packageInfo := PackageInfo named: classFactory packageName.
-	workingCopy add: packageInfo at: 'src'.
-	workingCopy saveNewVersionMessage: 'first version' interactive: false.
+	packageInfo := self addPackage.
+	workingCopy saveVersionWithMessage: 'first version'.
 	packagePath := (workingCopy store pathsOf: packageInfo) anyOne.
 	firstVersion := workingCopy baseVersion.
 	"create unsaved changes"

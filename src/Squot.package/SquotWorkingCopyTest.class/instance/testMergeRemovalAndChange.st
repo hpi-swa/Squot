@@ -3,16 +3,16 @@ testMergeRemovalAndChange
 	| text baseVersion leftVersion rightVersion |
 	"given"
 	self workingCopy add: (text := Text fromString: 'Base text') at: 'text'.
-	self workingCopy saveNewVersionMessage: 'base version' interactive: false.
+	self workingCopy saveVersionWithMessage: 'base version'.
 	baseVersion := self workingCopy loadedHistorian version.
 	text replaceFrom: 1 to: text size with: 'Changed text'.
-	self workingCopy saveNewVersionMessage: 'right-side version' interactive: false.
+	self workingCopy saveVersionWithMessage: 'right-side version'.
 	rightVersion := self workingCopy loadedHistorian version.
 	self workingCopy loadedHistorian version: baseVersion.
 	self workingCopy
 		discardUnsavedChanges;
 		remove: text.
-	self workingCopy saveNewVersionMessage: 'left-side version' interactive: false.
+	self workingCopy saveVersionWithMessage: 'left-side version'.
 	leftVersion := self workingCopy loadedHistorian version.
 	"when"
 	[[self workingCopy mergeVersionInteractively: rightVersion

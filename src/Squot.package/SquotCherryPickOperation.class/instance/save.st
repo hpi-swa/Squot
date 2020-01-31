@@ -1,6 +1,5 @@
 applying
 save
 	"Save the new version."
-	^ self saveOperation
-		patch: loadedPatch;
+	^ self prepareSave
 		applyToWorkingCopy

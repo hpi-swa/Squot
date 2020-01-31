@@ -16,4 +16,4 @@ testCherryPickOfOrphanedVersion
 	cherryPick applyMerge.
 	cherryPick save].
 	"then"
-	self assert: workingCopy artifacts size = 2. "Period or right bracket expected ->"
+	self assert: workingCopy artifacts size = 2.

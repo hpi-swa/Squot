@@ -25,4 +25,6 @@ createSecondMergeParent
 			otherHistorian version: firstVersion.
 			thirdVersion := otherHistorian
 						createNewVersion: newSnapshot
-						with: [:newVersion | newVersion message: 'third version']].
+						with: [:newVersion |
+							newVersion message: 'third version';
+								author: workingCopy defaultAuthor]].

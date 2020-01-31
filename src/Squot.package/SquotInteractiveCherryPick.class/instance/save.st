@@ -1,7 +1,6 @@
 applying
 save
-	^ (self saveOperation
-		patch: loadedPatch;
+	^ (self prepareSave
 		title: 'Select changes and message for the new version';
 		requestor: self requestor;
 		applyToWorkingCopy)

@@ -4,7 +4,7 @@ testOldCherryPickOfOrphanedVersion
 	self suppressChangeNotificationsDuring:
 	[scenario := SquotWorkingCopyTestMergeTwoOrphanedVersionsScenario forTestCase: self.
 	"when"
-	[[scenario cherryPick]
+	[[[scenario cherryPick] on: Deprecation do: [:e | e resume]]
 	on: SquotMergeRequested do: [:request |
 		self deny: request merge hasConflicts
 			description: 'there should be no conflicts'.

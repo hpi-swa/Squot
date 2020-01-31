@@ -1,6 +1,8 @@
 loading and unloading
 cherryPickInteractivelyFromVersion: aVersion withParent: parentVersion ifLoadCanceled: loadCancelingBlock ifSaveCanceled: saveCancelingUnaryBlock
 	| merge loadedPatch |
+	SquotToggles enableRefactoredCherryPick
+		ifTrue: [self deprecated: 'Use newCherryPickOperation instead'].
 	self addGlobalObjectsToStore: aVersion.
 	self withCurrentSnapshot:
 	[merge := SquotMerge into: self

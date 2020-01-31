@@ -1,6 +1,8 @@
 creating new versions
 selectFromPatch: aPatch forSaveWithTitle: titleString ifCanceled: cancelBlock
 	| tool signal message |
+	SquotToggles enableRefactoredSave ifTrue:
+		[self deprecated: 'Use newInteractiveSaveOperation instead'].
 	((signal := SquotSelectionOfChangesForSaveRequested new)
 		patch: aPatch;
 		title: titleString;

@@ -2,6 +2,8 @@ private creating new versions
 saveNewVersionFromPatch: aPatch message: aString
 	"Create a new version with the given message."
 	| newVersion capturedArtifacts |
+	SquotToggles enableRefactoredSave ifTrue:
+		[self deprecated: 'Use newSaveOperation and applyToWorkingCopy instead'].
 	[self handlePathChangesDuring:
 		[newVersion := loadedHistorian createNewVersionFromPatch: aPatch
 			with: [:version | version

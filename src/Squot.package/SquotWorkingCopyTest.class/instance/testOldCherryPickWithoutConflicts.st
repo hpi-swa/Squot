@@ -3,11 +3,12 @@ testOldCherryPickWithoutConflicts
 	scenario := SquotSimpleMergeTestScenario forTestCase: self.
 	"cherry pick the version of the other historian"
 	self suppressChangeNotificationsDuring:
-	[[[workingCopy
+	[[[[workingCopy
 		cherryPickInteractivelyFromVersion: scenario thirdVersion
 		withParent: scenario firstVersion
 		ifLoadCanceled: [self fail: 'this code should not be reached']
 		ifSaveCanceled: [self fail: 'this code should not be reached']]
+		on: Deprecation do: [:e | e resume]]
 	
 		on: SquotMergeRequested do: [:request |
 			scenario

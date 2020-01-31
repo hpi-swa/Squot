@@ -4,6 +4,8 @@ saveNewVersionMessage: aString interactive: shouldBeInteractiveBoolean
 	If interactive, let the user review and edit the set of changes to be included
 	in the new snapshot."
 	| newVersion patch |
+	SquotToggles enableRefactoredSave ifTrue:
+		[self deprecated: 'Use newSaveOperation or newInteractiveSaveOperation instead'].
 	patch := self patchRelativeToBase: self baseSnapshot.
 	shouldBeInteractiveBoolean ifTrue:
 		[^ self saveNewVersionFromPatch: patch ifCanceled: []].

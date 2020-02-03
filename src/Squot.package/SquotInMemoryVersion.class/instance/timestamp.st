@@ -1,4 +1,4 @@
 accessing
 timestamp
 
-	^ metadata at: #committer ifAbsent: []
+	^ metadata at: #timestamp ifAbsent: []

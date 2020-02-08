@@ -4,16 +4,13 @@
 		 ],
 	"classvars" : [
 		 ],
-	"commentStamp" : "jr 5/22/2017 21:00",
+	"commentStamp" : "jr 2/8/2020 15:25",
 	"instvars" : [
-		"searchFrontier",
-		"sourceVersions",
-		"versionList",
 		"versionBlock",
 		"stopRequested",
-		"markedVersions" ],
+		"versionList" ],
 	"name" : "VersionHistoryWalker",
 	"pools" : [
 		 ],
-	"super" : "Object",
+	"super" : "VersionHistoryWalk",
 	"type" : "normal" }

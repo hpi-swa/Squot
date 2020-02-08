@@ -1,0 +1,26 @@
+{
+	"class" : {
+		"new" : "jr 2/8/2020 17:12" },
+	"instance" : {
+		"addStart:" : "jr 2/8/2020 16:17",
+		"addStarts:" : "jr 2/8/2020 16:23",
+		"atEnd" : "jr 2/8/2020 17:46",
+		"contents" : "jr 2/8/2020 16:23",
+		"enqueueParentsOf:" : "jr 2/8/2020 15:17",
+		"errorNoMoreVersions" : "jr 2/8/2020 17:38",
+		"excludeAncestorsOf:" : "jr 2/8/2020 16:20",
+		"excludeAncestorsOfAll:" : "jr 2/8/2020 16:21",
+		"initialize" : "jr 2/8/2020 16:19",
+		"initializeSearchFrontier" : "jr 2/8/2020 15:17",
+		"marked:" : "jr 2/8/2020 15:17",
+		"next" : "jr 2/8/2020 17:45",
+		"nextPut:" : "jr 2/8/2020 16:37",
+		"peek" : "jr 2/8/2020 16:59",
+		"print:" : "jr 2/8/2020 16:53",
+		"print:maxDecimalPlaces:" : "jr 2/8/2020 16:54",
+		"printHtml:" : "jr 2/8/2020 16:54",
+		"printOn:" : "jr 2/8/2020 16:58",
+		"shouldVisit:before:" : "jr 2/8/2020 17:02",
+		"upTo:" : "jr 2/8/2020 17:21",
+		"upToAnyOf:" : "jr 2/8/2020 17:35",
+		"upToAnyOf:do:" : "jr 2/8/2020 17:32" } }

@@ -1,0 +1,17 @@
+{
+	"category" : "VersionControl-Algorithms",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "jr 2/8/2020 18:58",
+	"instvars" : [
+		"searchFrontier",
+		"sourceVersions",
+		"sinkVersions",
+		"markedVersions" ],
+	"name" : "VersionHistoryWalk",
+	"pools" : [
+		 ],
+	"super" : "Stream",
+	"type" : "normal" }

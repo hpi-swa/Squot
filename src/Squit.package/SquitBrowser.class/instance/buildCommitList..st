@@ -8,6 +8,9 @@ buildCommitList: builder
 		getSelected: #commitSelection;
 		setSelected: #commitSelection:;
 		menu: #commitListMenu:;
+		dragItem: #dragFromCommitList:;
+		dropAccept: #wantsCommitListDrop:type:from:;
+		dropItem: #dropOnCommitList:at:copyIndicated:;
 		keyPress: #commitListKey:from:;
 		columns: {
 				[:listMorph | (listMorph filteredItems collect: [:item |

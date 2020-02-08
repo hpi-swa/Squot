@@ -6,5 +6,8 @@ buildBranchList: builder
 		getSelected: #branchSelection;
 		setSelected: #branchSelection:;
 		menu: #branchListMenu:shifted:;
+		dragItem: #dragFromBranchList:;
+		dropAccept: #wantsBranchListDrop:type:from:;
+		dropItem: #dropOnBranchList:at:copyIndicated:;
 		icon: #branchListIconAt:;
 		frame: (LayoutFrame fractions: (0@0.5 corner: 1@1))

@@ -6,13 +6,11 @@ rebuildCommitList
 	list := OrderedCollection new.
 	count := 0.
 	(walker := SquotHistoryWalker new)
-		startingFrom: selectedHistorian version
-		do: [:each |
-			count := count + 1.
-			list add: each.
-			count > 30 ifTrue:
-				[cachedCommitList := list.
-				walker stop.
-				self continueBuildingCommitList: list asyncWith: walker.
-				^ self]].
+		nextPut: selectedHistorian version.
+	[walker atEnd or: [count > 30]]
+		whileFalse:
+			[list add: walker next.
+			count := count + 1].
 	cachedCommitList := list.
+	walker atEnd ifFalse:
+		[self continueBuildingCommitList: list asyncWith: walker].

@@ -21,6 +21,7 @@
 		"exportVersionAt:to:" : "jr 1/26/2017 14:03",
 		"extension:ifPresent:ifAbsent:" : "jr 3/6/2017 19:41",
 		"filesystemExtension" : "jr 3/6/2017 19:42",
+		"findVersionByString:" : "jr 2/8/2020 20:44",
 		"flushCaches" : "jr 7/22/2017 22:28",
 		"gitRepository" : "jr 1/11/2017 18:14",
 		"hasRemotes" : "jr 5/30/2019 01:20",

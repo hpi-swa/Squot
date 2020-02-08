@@ -1,4 +1,6 @@
 {
 	"category" : "Squot-Core",
+	"classtraitcomposition" : "TSquotConvertibleToVersion classTrait",
 	"commentStamp" : "jr 3/17/2018 17:43",
-	"name" : "TSquotLocalHistorian" }
+	"name" : "TSquotLocalHistorian",
+	"traitcomposition" : "TSquotConvertibleToVersion" }

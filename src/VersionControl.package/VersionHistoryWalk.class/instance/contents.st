@@ -3,7 +3,7 @@ contents
 	| newWalk |
 	newWalk := self class new
 		excludeAncestorsOfAll: sinkVersions;
-		addStarts: sourceVersions;
+		nextPutAll: sourceVersions;
 		yourself.
 	^ newWalk upToEnd
 		

@@ -16,5 +16,5 @@ invokeReceivePackWithRefs: updateAssociations andPack: aPackFile deleting: delet
 			ifFalse: [GitRemoteError]) signal: response status with: nil remote: remote].
 	responseReader := GitProtocolReader on: response contentStream.
 	report := responseReader readReceivePackResponse.
-	report hasErrors ifTrue: [self error: 'Not all references could be updated.'].
+	report hasErrors ifTrue: [self error: report asString].
 	^ report]

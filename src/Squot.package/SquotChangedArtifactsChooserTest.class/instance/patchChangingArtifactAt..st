@@ -1,3 +1,7 @@
 test objects
 patchChangingArtifactAt: path
-	^ SquotPatch builder addDiff: (SquotArtifactDiffMock path: path); buildPatch.
+	^ (SquotSnapshot builder 
+		add: (SquotArtifactMock new path: path; yourself);
+		newPatchBuilder)
+			addDiff: (SquotArtifactDiffMock path: path);
+			buildPatch

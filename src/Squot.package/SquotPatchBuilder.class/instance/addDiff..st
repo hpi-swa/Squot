@@ -6,7 +6,7 @@ addDiff: aDiff
 		ifTrue: [diffs at: aDiff path put: aDiff]
 		ifFalse: ["trying to apply a diff to a different base"
 				diffs at: aDiff path put:
-					(aDiff copy left: (base artifactAt: aDiff path); yourself)].
+					(aDiff rebaseOn: base)].
 	aDiff isAddition ifFalse: [(originalLoadOrder includes: aDiff path)
 								ifFalse: [originalLoadOrder add: aDiff path]].
 	aDiff isRemoval

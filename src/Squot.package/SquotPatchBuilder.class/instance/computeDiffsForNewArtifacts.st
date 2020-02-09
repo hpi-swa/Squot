@@ -4,4 +4,4 @@ computeDiffsForNewArtifacts
 		do: [:path | | rightArtifact |
 			rightArtifact := rightArtifacts at: path.
 			diffs at: path put: (SquotArtifactAddition of: rightArtifact).
-			ProgressNotification signal].
+			ProgressNotification signal: '' extra: path].

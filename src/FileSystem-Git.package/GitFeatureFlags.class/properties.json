@@ -1,0 +1,14 @@
+{
+	"category" : "FileSystem-Git-Core",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		"UseUnitOfWorkInterface" ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "GitFeatureFlags",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }

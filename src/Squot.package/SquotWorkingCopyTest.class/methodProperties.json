@@ -13,6 +13,7 @@
 		"setUp" : "jr 10/31/2017 23:46",
 		"targetClass" : "jr 1/26/2017 17:21",
 		"tearDown" : "jr 9/20/2019 20:30",
+		"testCherryPickDoesNotSaveUnrelatedChanges" : "jr 2/9/2020 02:32",
 		"testCherryPickOfOrphanedVersion" : "jr 1/31/2020 23:56",
 		"testCherryPickWithConflicts" : "jr 1/6/2020 23:31",
 		"testCherryPickWithConflictsChooseRemote" : "jr 1/6/2020 23:31",

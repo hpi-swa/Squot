@@ -11,6 +11,6 @@ rebuildCommitList
 		whileFalse:
 			[list add: walker next.
 			count := count + 1].
-	cachedCommitList := list.
+	cachedCommitList := self sortVersionsTopologically: list.
 	walker atEnd ifFalse:
 		[self continueBuildingCommitList: list asyncWith: walker].

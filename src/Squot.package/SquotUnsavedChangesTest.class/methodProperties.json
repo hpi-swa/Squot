@@ -2,6 +2,12 @@
 	"class" : {
 		 },
 	"instance" : {
-		"testDiscardUnsavedChanges" : "jr 1/26/2020 22:45",
-		"testSwitchToRestoresUnsavedChanges" : "jr 1/26/2020 22:45",
-		"testSwitchToRestoresUnsavedChangesOnly" : "jr 1/26/2020 22:46" } }
+		"addAnotherObject" : "jr 2/9/2020 01:50",
+		"assertAddedObjectWasRemoved" : "jr 2/9/2020 01:56",
+		"assertTrackedObjectStillChanged" : "jr 2/9/2020 01:52",
+		"assertTrackedObjectWasReset" : "jr 2/9/2020 01:53",
+		"changeTrackedObject" : "jr 2/9/2020 01:50",
+		"setUp" : "jr 2/9/2020 01:54",
+		"testDiscardUnsavedChanges" : "jr 2/9/2020 01:56",
+		"testSwitchToRestoresUnsavedChanges" : "jr 2/9/2020 01:55",
+		"testSwitchToRestoresUnsavedChangesOnly" : "jr 2/9/2020 01:56" } }

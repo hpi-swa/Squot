@@ -6,7 +6,9 @@
 		 ],
 	"commentStamp" : "jr 5/4/2019 00:54",
 	"instvars" : [
-		 ],
+		"trackedObject",
+		"addedObject",
+		"otherHistorian" ],
 	"name" : "SquotUnsavedChangesTest",
 	"pools" : [
 		 ],

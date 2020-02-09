@@ -10,4 +10,5 @@ registerPackagesInStore: aSnapshot
 			[store
 				addLoadedPackageInfoNamed: packageName
 				at: each path
-				serializer: (Environment current valueOf: each storeInfo serializer)]].
+				serializer: (Environment current valueOf: each storeInfo serializer)]]
+		displayingProgress: [:each | 'Searching for packages in ', each path].

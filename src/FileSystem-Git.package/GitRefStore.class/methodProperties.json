@@ -1,0 +1,15 @@
+{
+	"class" : {
+		"on:" : "jr 2/12/2020 23:10" },
+	"instance" : {
+		"branchNames" : "jr 2/13/2020 00:33",
+		"delete:" : "jr 2/13/2020 00:32",
+		"referencesDo:" : "jr 2/12/2020 23:51",
+		"referencesPrefixedWith:do:" : "jr 2/12/2020 22:07",
+		"repository" : "jr 2/12/2020 23:13",
+		"repository:" : "jr 2/12/2020 23:13",
+		"resolve:" : "jr 2/16/2020 01:18",
+		"tags" : "jr 2/13/2020 00:35",
+		"tagsDo:" : "jr 2/12/2020 22:10",
+		"targetOf:" : "jr 2/13/2020 00:56",
+		"updateRef:to:" : "jr 2/13/2020 00:40" } }

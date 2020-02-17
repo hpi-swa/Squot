@@ -1,0 +1,1 @@
+I am a proxy for GitRepository that keeps files open for repeated accessing.

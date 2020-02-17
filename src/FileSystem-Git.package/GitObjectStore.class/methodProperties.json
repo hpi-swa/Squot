@@ -1,0 +1,12 @@
+{
+	"class" : {
+		"on:" : "jr 2/12/2020 23:13" },
+	"instance" : {
+		"hasObject:" : "jr 2/12/2020 22:19",
+		"headerOfObjectNamed:ifAbsent:" : "jr 2/12/2020 21:32",
+		"objectNamed:ifAbsent:" : "jr 2/12/2020 21:32",
+		"objectNamesDo:" : "jr 2/16/2020 10:55",
+		"repository" : "jr 2/12/2020 23:13",
+		"repository:" : "jr 2/12/2020 23:13",
+		"streamObjectNamed:ifAbsent:" : "jr 2/12/2020 21:48",
+		"tagNames" : "jr 2/13/2020 00:27" } }

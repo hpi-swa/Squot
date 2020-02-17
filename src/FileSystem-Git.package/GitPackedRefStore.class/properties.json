@@ -1,0 +1,14 @@
+{
+	"category" : "FileSystem-Git-Plumbing-Core",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"packedRefs" ],
+	"name" : "GitPackedRefStore",
+	"pools" : [
+		 ],
+	"super" : "GitRefStore",
+	"type" : "normal" }

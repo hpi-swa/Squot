@@ -1,0 +1,21 @@
+{
+	"category" : "FileSystem-Git-Plumbing-Core",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "jr 2/12/2020 22:42",
+	"instvars" : [
+		"repository",
+		"objectStores",
+		"refStores",
+		"objectCache",
+		"refs",
+		"resolvedRefs",
+		"refLogs",
+		"config" ],
+	"name" : "GitUnitOfWork",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }

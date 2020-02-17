@@ -1,0 +1,14 @@
+{
+	"category" : "FileSystem-Git-Plumbing-Core",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"baseDir" ],
+	"name" : "GitLooseRefStore",
+	"pools" : [
+		 ],
+	"super" : "GitRefStore",
+	"type" : "normal" }

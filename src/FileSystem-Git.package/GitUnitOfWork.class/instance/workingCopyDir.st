@@ -1,0 +1,3 @@
+accessing
+workingCopyDir
+	^ repository workingCopyDir

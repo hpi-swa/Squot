@@ -1,0 +1,1 @@
+I am an abstract class that defines the interface to reading and writing Git objects. My instances are supposed to be transient (i. e. only used during one operation or unit of work).

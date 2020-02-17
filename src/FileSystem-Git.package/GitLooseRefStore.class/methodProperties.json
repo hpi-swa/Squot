@@ -1,0 +1,17 @@
+{
+	"class" : {
+		 },
+	"instance" : {
+		"allLooseReferencesPrefixedWith:do:" : "jr 2/12/2020 21:55",
+		"branchNames" : "jr 2/12/2020 23:04",
+		"collectTagsFromLooseRefs" : "jr 2/17/2020 20:26",
+		"delete:" : "jr 2/13/2020 00:17",
+		"followSymbolicRef:" : "jr 1/12/2017 17:08",
+		"includes:" : "jr 2/12/2020 23:33",
+		"refFromFile:relativeTo:" : "jr 4/12/2017 15:19",
+		"referencesDo:" : "jr 2/12/2020 23:46",
+		"referencesPrefixedWith:do:" : "jr 2/12/2020 23:47",
+		"repository:" : "jr 2/13/2020 00:17",
+		"tags" : "jr 2/13/2020 00:35",
+		"targetOf:" : "jr 2/13/2020 00:52",
+		"updateRef:to:" : "jr 2/13/2020 00:40" } }

@@ -1,6 +1,6 @@
 private
 packedObjectNamed: aHexHash
-	self 
+	^ self 
 		packedObjectNamed: aHexHash 
 		ifAbsent: [ 
 			GitObjectNotFoundError 

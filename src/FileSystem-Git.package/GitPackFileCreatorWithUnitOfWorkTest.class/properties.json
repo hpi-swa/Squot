@@ -1,0 +1,14 @@
+{
+	"category" : "FileSystem-Git-Plumbing-Tests",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"basicRepository" ],
+	"name" : "GitPackFileCreatorWithUnitOfWorkTest",
+	"pools" : [
+		 ],
+	"super" : "PackFileCreatorTests",
+	"type" : "normal" }

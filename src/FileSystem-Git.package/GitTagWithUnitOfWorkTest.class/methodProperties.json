@@ -1,0 +1,7 @@
+{
+	"class" : {
+		 },
+	"instance" : {
+		"setUp" : "jr 2/19/2020 23:26",
+		"testMakeLightTag" : "jr 2/19/2020 23:27",
+		"testReadingLightTag" : "jr 2/19/2020 23:28" } }

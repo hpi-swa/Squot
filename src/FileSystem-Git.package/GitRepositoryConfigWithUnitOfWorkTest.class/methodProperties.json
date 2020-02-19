@@ -1,0 +1,6 @@
+{
+	"class" : {
+		"shouldInheritSelectors" : "jr 2/19/2020 23:08" },
+	"instance" : {
+		"setUp" : "jr 2/19/2020 23:00",
+		"testGetConfigSections" : "jr 2/19/2020 23:15" } }

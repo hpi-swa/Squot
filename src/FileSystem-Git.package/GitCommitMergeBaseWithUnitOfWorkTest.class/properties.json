@@ -1,0 +1,14 @@
+{
+	"category" : "FileSystem-Git-Plumbing-Tests",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "GitCommitMergeBaseWithUnitOfWorkTest",
+	"pools" : [
+		 ],
+	"super" : "GitCommitMergeBaseTests",
+	"type" : "normal" }

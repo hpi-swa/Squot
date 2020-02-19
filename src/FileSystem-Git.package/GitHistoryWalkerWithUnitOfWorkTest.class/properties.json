@@ -1,0 +1,14 @@
+{
+	"category" : "FileSystem-Git-Plumbing-Tests",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "GitHistoryWalkerWithUnitOfWorkTest",
+	"pools" : [
+		 ],
+	"super" : "GitHistoryWalkerTest",
+	"type" : "normal" }

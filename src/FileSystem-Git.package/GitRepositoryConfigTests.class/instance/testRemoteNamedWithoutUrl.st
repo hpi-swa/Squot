@@ -1,8 +1,7 @@
 testing
 testRemoteNamedWithoutUrl
 	| remote |
-	(repository baseDir / 'config') ensureDeleted.
-	(repository baseDir / 'config') writeStreamDo: [:stream | stream nextPutAll: 
+	configFile writeStreamDo: [:stream | stream nextPutAll: 
 '[remote "origin"]
 	fetch = +refs/heads/*:refs/remotes/testserver/*
 '].

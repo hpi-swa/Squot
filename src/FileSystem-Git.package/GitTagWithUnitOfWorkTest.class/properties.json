@@ -1,0 +1,14 @@
+{
+	"category" : "FileSystem-Git-Plumbing-Tests",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "GitTagWithUnitOfWorkTest",
+	"pools" : [
+		 ],
+	"super" : "GitTagTests",
+	"type" : "normal" }

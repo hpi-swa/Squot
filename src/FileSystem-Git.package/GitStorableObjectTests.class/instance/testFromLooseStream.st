@@ -6,7 +6,7 @@ testFromLooseStream
 		thenDo: [ :each || object |
 			object := self buildMockFor: each.
 			object store.
-			stream := repository streamLooseObjectNamed: object hexHash.
+			stream := self looseObjectStream: object.
 			loadedObject := GitStorableObject fromLooseObjectStream: stream in: repository. 
 			self assert: loadedObject isNil not.
 			self assert: loadedObject class = (object class).

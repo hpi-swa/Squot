@@ -5,7 +5,7 @@ testRevWalkingWithMerge
 	commit2 := self addCommit: '2' withParents: {commit1 hexHash}.
 	commit3 := self addCommit: '3' withParents: {commit1 hexHash}.
 	commit4 := self addCommit: '4' withParents: {commit2 hexHash. commit3 hexHash}.
-	repository updateRef: repository headsDir / 'master' to: commit4 hexHash.
+	repository updateRef: 'refs/heads/master' to: commit4 hexHash.
 	GitFSCK validate: repository.
 	"when"
 	revisions := OrderedCollection new.

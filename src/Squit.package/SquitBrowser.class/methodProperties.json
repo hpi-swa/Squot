@@ -114,7 +114,7 @@
 		"detectGitHubRemote:ifNone:" : "jr 7/1/2017 17:56",
 		"detectGitHubUsernameIfNone:" : "jr 5/13/2017 15:02",
 		"editGlobalAuthorInfo" : "jr 3/16/2019 13:20",
-		"errorRemoteAuthenticationFailed:" : "jr 12/1/2018 23:51",
+		"errorRemoteAuthenticationFailed:" : "jr 2/19/2020 23:43",
 		"errorRemoteResourceNotFound:" : "jr 12/2/2018 00:23",
 		"getShouldRevertCherryPickedChanges" : "jr 1/5/2020 00:26",
 		"handlingCredentialsOf:do:ifCanceled:" : "jr 12/1/2018 23:46",

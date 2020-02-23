@@ -10,4 +10,4 @@ errorRemoteAuthenticationFailed: aGitRemoteError
 		ifTrue: [message := message, String cr , 'Also please note: If you have two-factor authentification enabled,'
 			, String cr, 'you must use a personal access token instead of your GitHub login password.'].
 	(UIManager default confirm: message trueChoice: 'OK' translated falseChoice: 'Debug')
-		= false ifTrue: [ToolSet debugError: aGitRemoteError]
+		= false ifTrue: [ToolSet handleError: aGitRemoteError]

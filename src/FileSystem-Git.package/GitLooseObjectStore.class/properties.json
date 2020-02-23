@@ -6,7 +6,7 @@
 		 ],
 	"commentStamp" : "jr 2/12/2020 21:31",
 	"instvars" : [
-		 ],
+		"baseDir" ],
 	"name" : "GitLooseObjectStore",
 	"pools" : [
 		 ],

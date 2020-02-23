@@ -1,3 +1,3 @@
 testing
 includes: aString
-	^ (repository baseDir resolve: aString) isFile
+	^ (baseDir resolve: aString) isFile

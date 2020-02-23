@@ -1,9 +1,10 @@
 private
 collectTagsFromLooseRefs
-	| tags |
+	| tags tagsDir |
 	tags := Dictionary new.
 	
-	repository tagsDir children do: [ :ref |
+	tagsDir := baseDir / 'refs' / 'tags'.
+	tagsDir children do: [ :ref |
 		ref readStreamDo: [ :stream |
 			tags 
 				at: ref basename

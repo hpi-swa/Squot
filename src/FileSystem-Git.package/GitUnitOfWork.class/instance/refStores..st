@@ -1,3 +1,4 @@
 accessing
-refStores: anObject
-	refStores := anObject
+refStores: aCollection
+	refStores := aCollection.
+	refStores do: [:each | each repository: self].

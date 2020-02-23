@@ -1,4 +1,6 @@
 accessing
 tags
-	repository tagsDir exists ifFalse: [^ Dictionary new].
+	| tagsDir |
+	tagsDir := baseDir / 'refs' / 'tags'.
+	tagsDir exists ifFalse: [^ Dictionary new].
 	^ self collectTagsFromLooseRefs

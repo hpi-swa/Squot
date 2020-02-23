@@ -1,5 +1,6 @@
 accessing
 branchNames
-	repository headsDir exists ifFalse: [^ #()].
-	^ repository headsDir allFiles
-		collect: [:each | self refFromFile: each relativeTo: repository headsDir]
+	| headsDir |
+	(headsDir := baseDir / 'refs' / 'heads') exists ifFalse: [^ #()].
+	^ headsDir allFiles
+		collect: [:each | self refFromFile: each relativeTo: headsDir]

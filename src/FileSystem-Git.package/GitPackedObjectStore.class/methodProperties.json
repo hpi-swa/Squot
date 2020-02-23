@@ -1,6 +1,7 @@
 {
 	"class" : {
-		"hasPacks:" : "jr 2/12/2020 23:17" },
+		"hasPacks:" : "jr 2/12/2020 23:17",
+		"packsDir:" : "jr 2/23/2020 22:51" },
 	"instance" : {
 		"hasPackedObject:" : "jr 6/28/2017 16:26",
 		"headerOfObjectNamed:ifAbsent:" : "jr 2/12/2020 23:37",
@@ -14,7 +15,6 @@
 		"packsDir" : "jr 2/12/2020 23:18",
 		"packsDir:" : "jr 2/12/2020 23:18",
 		"packsDo:" : "MaxLeske 8/12/2012 13:30",
-		"repository:" : "jr 2/12/2020 23:18",
 		"streamPackedObjectNamed:" : "MaxLeske 2/28/2012 20:20",
 		"streamPackedObjectNamed:ifAbsent:" : "jr 11/23/2016 18:48",
 		"tagNames" : "jr 2/13/2020 00:29" } }

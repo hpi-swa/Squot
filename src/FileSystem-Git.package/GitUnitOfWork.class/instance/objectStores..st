@@ -1,3 +1,4 @@
 accessing
-objectStores: anObject
-	objectStores := anObject
+objectStores: aCollection
+	objectStores := aCollection.
+	objectStores do: [:each | each repository: self].

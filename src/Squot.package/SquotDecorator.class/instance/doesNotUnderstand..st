@@ -1,3 +1,6 @@
 delegating
 doesNotUnderstand: aMessage
-	^ aMessage sendTo: decoratedObject
+	| answer |
+	^ (answer := aMessage sendTo: decoratedObject) == decoratedObject
+		ifTrue: [self]
+		ifFalse: [answer]

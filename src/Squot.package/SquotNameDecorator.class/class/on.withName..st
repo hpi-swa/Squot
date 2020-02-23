@@ -1,4 +1,4 @@
-as yet unclassified
+instance creation
 on: aShadow withName: aString
 	aString ifNil: [^ aShadow].
 	aShadow hasSquotShadowName ifTrue:

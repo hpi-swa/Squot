@@ -1,3 +1,6 @@
 Pur historian
 version
-	^ repository versionForCommit: (gitRepository objectReferenced: referenceName)
+	^ repository versionForCommit:
+		(GitFeatureFlags useUnitOfWorkInterface
+			ifTrue: [GitCurrentUnitOfWork value objectReferenced: referenceName]
+			ifFalse: [gitRepository objectReferenced: referenceName])

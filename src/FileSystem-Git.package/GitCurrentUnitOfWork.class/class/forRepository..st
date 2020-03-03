@@ -1,3 +1,3 @@
 accessing
 forRepository: aGitRepository
-	^ Registry at: aGitRepository ifAbsent: [self value]
+	^ Registry at: aGitRepository ifAbsent: []

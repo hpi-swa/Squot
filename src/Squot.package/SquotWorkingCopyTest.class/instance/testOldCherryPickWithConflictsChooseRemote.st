@@ -2,12 +2,7 @@ tests
 testOldCherryPickWithConflictsChooseRemote
 	self suppressChangeNotificationsDuring:
 	[scenario := SquotWorkingCopyTestMergeConflictScenario forTestCase: self.
-	[[[workingCopy
-		cherryPickInteractivelyFromVersion: scenario thirdVersion
-		withParent: scenario firstVersion
-		ifLoadCanceled: [self fail: 'this code should not be reached']
-		ifSaveCanceled: [self fail: 'this code should not be reached']]
-		on: Deprecation do: [:e | e resume]]
+	[[scenario cherryPick]
 	
 	on: SquotMergeRequested do: [:request | 
 		scenario

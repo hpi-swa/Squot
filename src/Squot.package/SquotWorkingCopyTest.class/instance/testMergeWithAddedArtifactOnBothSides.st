@@ -1,7 +1,8 @@
 tests
 testMergeWithAddedArtifactOnBothSides
 	| baseVersion leftVersion rightVersion leftName rightName |
-	self workingCopy saveVersionWithMessage: 'empty base version'.
+	repository withUnitOfWork:
+	[self workingCopy saveVersionWithMessage: 'empty base version'.
 	baseVersion := self workingCopy loadedHistorian version.
 	self workingCopy add: (ValueHolder new contents: #right) at: 'added';
 		saveVersionWithMessage: 'right-side version'.
@@ -26,4 +27,4 @@ testMergeWithAddedArtifactOnBothSides
 	] valueSupplyingAnswers: {{'*'. #default}}.
 	self assert: #right equals: (self workingCopy objectAt: 'added') contents;
 		assert: rightName equals:
-			(store objectRegistry nameOf: (self workingCopy objectAt: 'added')).
+			(store objectRegistry nameOf: (self workingCopy objectAt: 'added'))].

@@ -3,7 +3,8 @@ testSwitchToBranchAtSameVersion
 	| trackedObject originalHistorian otherHistorian |
 	"given"
 	trackedObject := ValueHolder new contents: 'This is a test'.
-	workingCopy add: trackedObject at: 'tracked'.
+	repository withUnitOfWork:
+	[workingCopy add: trackedObject at: 'tracked'.
 	workingCopy saveVersionWithMessage: 'initial version'.
 	trackedObject contents: 'Unsaved changes'.
 	originalHistorian := workingCopy loadedHistorian.
@@ -24,4 +25,4 @@ testSwitchToBranchAtSameVersion
 	workingCopy switchTo: otherHistorian.
 	"then"
 	self assert: 'Other changes' = trackedObject contents
-		description: 'Unsaved changes not preserved automatically'.
+		description: 'Unsaved changes not preserved automatically'].

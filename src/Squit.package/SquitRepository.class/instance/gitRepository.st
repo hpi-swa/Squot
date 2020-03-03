@@ -1,3 +1,5 @@
-Squit internal
+private
 gitRepository
-	^ gitRepository
+	^ GitFeatureFlags useUnitOfWorkInterface
+		ifTrue: [GitCurrentUnitOfWork for: gitRepository repository]
+		ifFalse: [gitRepository repository]

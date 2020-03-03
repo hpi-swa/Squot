@@ -5,7 +5,8 @@ testSwitchBranch
 	self suppressChangeNotificationsDuring: [class := classFactory newClass].
 	class compileSilently: 'savedMethod ^ 1' classified: 'safe'.
 	class compileSilently: 'a ^ 1' classified: 'to be changed'.
-	trackedObject := self addPackage.
+	repository withUnitOfWork:
+	[trackedObject := self addPackage.
 	workingCopy saveVersionWithMessage: 'initial version'.
 	originalHistorian := workingCopy loadedHistorian.
 	otherHistorian := repository historianNamed: 'other'.
@@ -20,5 +21,5 @@ testSwitchBranch
 	self assert: 'a ^ 1' equals: ((class >> #a) getSource asString withLineEndings: ' ') withBlanksCondensed description: 'loaded other version'.
 	"switch back and assert that we got the uncommitted changes back"
 	self suppressChangeNotificationsDuring: [workingCopy switchTo: originalHistorian].
-	self assert: 'a ^ 3' equals: ((class >> #a) getSource asString withLineEndings: ' ') withBlanksCondensed description: 'restored unsaved changes'.
+	self assert: 'a ^ 3' equals: ((class >> #a) getSource asString withLineEndings: ' ') withBlanksCondensed description: 'restored unsaved changes'].
 	

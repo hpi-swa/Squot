@@ -1,6 +1,6 @@
 remotes
 addRemote: name url: anUrl
-	^ repository addRemote:
+	^ self unitOfWork addRemote:
 		((GitRemote name: name url: anUrl)
 			addDefaultFetchSpec;
 			yourself)

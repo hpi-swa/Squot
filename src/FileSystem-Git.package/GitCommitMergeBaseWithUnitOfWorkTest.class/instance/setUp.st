@@ -1,5 +1,4 @@
 running
 setUp
 	super setUp.
-	repository := repository newUnitOfWork.
-	fakeTree repository: repository.
+	self assert: repository unitOfWork == repository. "converted in createFakeTree"

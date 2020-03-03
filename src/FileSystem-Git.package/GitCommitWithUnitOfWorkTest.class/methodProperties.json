@@ -2,4 +2,6 @@
 	"class" : {
 		 },
 	"instance" : {
-		"setUp" : "jr 2/19/2020 22:53" } }
+		"createSomeCommits" : "jr 2/29/2020 21:32",
+		"newEmptyRepository" : "jr 3/3/2020 21:22",
+		"setUp" : "jr 2/29/2020 21:33" } }

@@ -3,7 +3,8 @@ testTrackingAPackage
 	| sampleClass packageInfo anotherClass versionBeforeSave latestVersion |
 	self suppressChangeNotificationsDuring: [sampleClass := classFactory newClass].
 	sampleClass compileSilently: 'firstMethod ^ self' classified: 'methods of first version'.
-	packageInfo := self addPackage.
+	repository withUnitOfWork:
+	[packageInfo := self addPackage.
 	versionBeforeSave := workingCopy loadedHistorian version.
 	self assert: versionBeforeSave isNil description: 'starting from an empty history'.
 	
@@ -35,4 +36,4 @@ testTrackingAPackage
 	self assertVersion: latestVersion containsClass: anotherClass.
 	self assertVersion: latestVersion containsMethod: anotherClass >> #addedMethod.
 	self assertVersion: latestVersion containsClass: sampleClass.
-	self assertVersion: latestVersion containsMethod: sampleClass >> #firstMethod.
+	self assertVersion: latestVersion containsMethod: sampleClass >> #firstMethod].

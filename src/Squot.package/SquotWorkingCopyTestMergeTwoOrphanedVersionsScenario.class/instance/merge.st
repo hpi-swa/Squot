@@ -2,6 +2,7 @@ running
 merge
 	"Initiate the merge of the prepared versions.
 	Senders should handle SquotSelectionOfChangesRequested"
-	self workingCopy
-		mergeVersionInteractively: firstVersion
-		ifCanceled: [testCase fail: 'this code should not be reached'].
+	self repository withUnitOfWork:
+		[self workingCopy
+			mergeVersionInteractively: firstVersion
+			ifCanceled: [testCase fail: 'this code should not be reached']].

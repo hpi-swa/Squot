@@ -2,6 +2,7 @@
 	"class" : {
 		 },
 	"instance" : {
-		"setUp" : "jr 2/19/2020 23:26",
+		"setUp" : "jr 2/29/2020 21:32",
+		"setUpRepositoryObjects" : "jr 2/29/2020 21:30",
 		"testMakeLightTag" : "jr 2/19/2020 23:27",
 		"testReadingLightTag" : "jr 2/19/2020 23:28" } }

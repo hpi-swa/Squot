@@ -2,7 +2,8 @@ tests
 testOldCherryPickWithoutConflicts
 	scenario := SquotSimpleMergeTestScenario forTestCase: self.
 	"cherry pick the version of the other historian"
-	self suppressChangeNotificationsDuring:
+	repository withUnitOfWork:
+	[self suppressChangeNotificationsDuring:
 	[[[[workingCopy
 		cherryPickInteractivelyFromVersion: scenario thirdVersion
 		withParent: scenario firstVersion
@@ -26,4 +27,4 @@ testOldCherryPickWithoutConflicts
 		assertThirdMethodLoadedWith: self.
 	self assert: scenario secondVersion equals: workingCopy loadedVersion parents first;
 		deny: scenario thirdVersion = workingCopy loadedVersion;
-		assert: 'new version' equals: workingCopy loadedVersion message.
+		assert: 'new version' equals: workingCopy loadedVersion message].

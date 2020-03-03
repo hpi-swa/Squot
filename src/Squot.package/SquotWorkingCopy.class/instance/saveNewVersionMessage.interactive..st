@@ -6,10 +6,11 @@ saveNewVersionMessage: aString interactive: shouldBeInteractiveBoolean
 	| newVersion patch |
 	SquotToggles enableRefactoredSave ifTrue:
 		[self deprecated: 'Use newSaveOperation or newInteractiveSaveOperation instead'].
-	patch := self patchRelativeToBase: self baseSnapshot.
-	shouldBeInteractiveBoolean ifTrue:
-		[^ self saveNewVersionFromPatch: patch ifCanceled: []].
-	newVersion := self
-		saveNewVersionFromPatch: patch
-		message: aString.
-	^ newVersion
+	^ repository withUnitOfWork:
+		[patch := self patchRelativeToBase: self baseSnapshot.
+		shouldBeInteractiveBoolean ifTrue:
+			[^ self saveNewVersionFromPatch: patch ifCanceled: []].
+		newVersion := self
+			saveNewVersionFromPatch: patch
+			message: aString.
+		newVersion]

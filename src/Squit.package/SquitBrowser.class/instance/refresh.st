@@ -3,9 +3,10 @@ refresh
 	Cursor wait showWhile:
 	[self changed: #projectList.
 	self changed: #projectIndex.
-	self loadBranchList.
-	self activeBranchChanged.
-	self loadCommitList.
+	self withUnitOfWork:
+		[self loadBranchList.
+		self activeBranchChanged.
+		self loadCommitList].
 	self changed: #hasProjectSelection.
 	self changed: #hasBranchSelection.
 	self changed: #hasCommitSelection.

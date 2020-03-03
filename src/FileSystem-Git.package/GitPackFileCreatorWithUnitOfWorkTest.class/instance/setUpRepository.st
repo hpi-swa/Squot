@@ -1,6 +1,4 @@
 running
 setUpRepository
 	super setUpRepository.
-	basicRepository := repository.
-	repository := basicRepository newUnitOfWork.
-	
+	self assert: repository unitOfWork == repository. "converted by createSomeBlobs"

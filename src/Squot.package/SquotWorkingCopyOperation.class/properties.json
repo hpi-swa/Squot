@@ -8,7 +8,8 @@
 	"instvars" : [
 		"workingCopy",
 		"workingCopySnapshot",
-		"extensions" ],
+		"extensions",
+		"unitOfWork" ],
 	"name" : "SquotWorkingCopyOperation",
 	"pools" : [
 		 ],

@@ -1,13 +1,16 @@
 {
 	"class" : {
 		"existsIn:" : "jr 2/15/2020 22:26",
+		"on:" : "jr 2/27/2020 00:54",
+		"onFile:" : "jr 2/27/2020 00:53",
 		"packedRefsFileIn:" : "jr 2/15/2020 22:27" },
 	"instance" : {
 		"branchNames" : "jr 2/12/2020 23:05",
 		"collectTagsFromPackedRefs" : "jr 2/13/2020 00:31",
 		"delete:" : "jr 2/12/2020 23:30",
 		"includes:" : "jr 2/12/2020 23:33",
-		"packedRefs" : "jr 2/12/2020 22:35",
+		"packedRefs" : "jr 2/27/2020 00:53",
+		"packedRefsFile:" : "jr 2/27/2020 00:53",
 		"referencesDo:" : "jr 2/12/2020 23:50",
 		"referencesPrefixedWith:do:" : "jr 2/12/2020 23:52",
 		"tags" : "jr 2/13/2020 00:32",

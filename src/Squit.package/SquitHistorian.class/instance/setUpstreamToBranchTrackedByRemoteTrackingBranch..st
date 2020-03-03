@@ -1,5 +1,5 @@
 upstream historian
 setUpstreamToBranchTrackedByRemoteTrackingBranch: aRemoteTrackingHistorian
-	gitRepository
+	self gitRepository
 		setUpstreamOfBranchNamed: self shortName
 		toTrackedBranchOf: aRemoteTrackingHistorian expandedName.

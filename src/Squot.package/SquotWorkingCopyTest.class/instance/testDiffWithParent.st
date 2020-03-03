@@ -5,7 +5,8 @@ testDiffWithParent
 	sampleClass compileSilently: 'firstMethod ^ self' classified: 'methods of first version'.
 	packageInfo := self addPackage.
 	
-	workingCopy saveVersionWithMessage: 'first version'.
+	repository withUnitOfWork:
+	[workingCopy saveVersionWithMessage: 'first version'.
 	
 	self suppressChangeNotificationsDuring: [anotherClass := classFactory newClass].
 	anotherClass compileSilently: 'addedMethod ^ self' classified: 'methods of second version'.
@@ -13,4 +14,4 @@ testDiffWithParent
 	workingCopy saveVersionWithMessage: 'second version'.
 	latestVersion := workingCopy baseVersion.
 	patch := (latestVersion patchRelativeToBase: latestVersion parents first).
-	self assert: patch hasChanges.
+	self assert: patch hasChanges].

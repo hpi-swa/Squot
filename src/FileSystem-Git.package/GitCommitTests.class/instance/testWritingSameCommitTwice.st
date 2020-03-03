@@ -1,7 +1,7 @@
 tests
 testWritingSameCommitTwice
 	| commit newRepository tree blob treeEntry |
-	newRepository := GitRepository on: (FileSystem memory root).
+	newRepository := self newEmptyRepository.
 	blob := GitBlob bytes: 'ablob' in: newRepository.
 	treeEntry :=
 		GitTreeEntry 
@@ -18,6 +18,6 @@ testWritingSameCommitTwice
 		in: newRepository.
 	commit 
 		store.
-	newRepository updateRef: newRepository headsDir / 'master' to: commit hexHash.
+	newRepository updateRef: 'refs/heads/master' to: commit hexHash.
 	
-	self shouldnt: [ commit store ] raise: Exception.
+	self shouldnt: [ commit store ] raise: Error.

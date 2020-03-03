@@ -1,7 +1,8 @@
 tests
 testMergeVersionWithLoadedObjects
 	| sampleClass packagePath firstVersion addedMethod secondVersion packageInfo |
-	"create a base version"
+	repository withUnitOfWork:
+	["create a base version"
 	self suppressChangeNotificationsDuring:
 		[classFactory cleanUp.
 		sampleClass := classFactory newClass].
@@ -43,4 +44,4 @@ testMergeVersionWithLoadedObjects
 	self assert: addedMethod
 		equals: sampleClass >> #addedMethod
 		description: 'unsaved method unchanged after merge'.
-	self assert: firstVersion equals: workingCopy loadedVersion.
+	self assert: firstVersion equals: workingCopy loadedVersion].

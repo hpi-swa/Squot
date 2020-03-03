@@ -2,7 +2,8 @@ tests
 testMergeWithoutConflicts
 	scenario := SquotSimpleMergeTestScenario forTestCase: self.
 	"merge the version of the other historian"
-	self suppressChangeNotificationsDuring:
+	repository withUnitOfWork:
+	[self suppressChangeNotificationsDuring:
 	[[[workingCopy
 		mergeVersionInteractively: scenario thirdVersion
 		ifCanceled: [self fail: 'this code should not be reached']]
@@ -17,4 +18,4 @@ testMergeWithoutConflicts
 	scenario
 		assertSecondMethodUnmodifiedWith: self;
 		assertThirdMethodLoadedWith: self.
-	self assert: scenario secondVersion equals: workingCopy loadedVersion.
+	self assert: scenario secondVersion equals: workingCopy loadedVersion].

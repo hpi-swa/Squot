@@ -1,3 +1,3 @@
 accessing
 head
-	^ self filesystemOn: (repository headIfAbsent: [ nil ])
+	^ self filesystemOn: (self unitOfWork headIfAbsent: [ nil ])

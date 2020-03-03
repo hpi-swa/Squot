@@ -1,6 +1,7 @@
 running
 setUp
 	super setUp.
-	repository := repository newUnitOfWork.
+	self assert: basicRepository notNil. "see createSomeObjects"
+	repository := basicRepository newUnitOfWork.
 	emptyBlob repository: repository.
 	simpleTree repository: repository.

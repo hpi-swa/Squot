@@ -1,3 +1,3 @@
 converting
 unitOfWork
-	^ self newUnitOfWork
+	^ self currentUnitOfWork

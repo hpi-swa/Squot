@@ -8,4 +8,4 @@ prepareMerge
 		baseVersion: relevantParentOfPickedVersion;
 		title: 'Cherry-pick ', pickedVersion asString;
 		requestor: self.
-	^ merge prepare
+	^ self withUnitOfWork: [merge prepare]

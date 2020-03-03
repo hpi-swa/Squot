@@ -1,3 +1,5 @@
 initialize-release
 createFilesystem
-	^ (FileSystemGitRepository on: (FileSystem memory / 'testRepo.git')) head.
+	| repo |
+	repo := FileSystemGitRepository on: (FileSystem memory / 'testRepo.git').
+	^ repo withUnitOfWork: [repo head]

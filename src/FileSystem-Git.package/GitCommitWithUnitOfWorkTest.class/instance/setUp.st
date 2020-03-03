@@ -1,4 +1,5 @@
 running
 setUp
 	super setUp.
-	repository := repository newUnitOfWork.
+	self assert: basicRepository notNil. "see createSomeCommits"
+	repository := basicRepository newUnitOfWork.

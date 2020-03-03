@@ -2,7 +2,8 @@ tests
 testMergeRemovalAndChange
 	| text baseVersion leftVersion rightVersion |
 	"given"
-	self workingCopy add: (text := Text fromString: 'Base text') at: 'text'.
+	repository withUnitOfWork:
+	[self workingCopy add: (text := Text fromString: 'Base text') at: 'text'.
 	self workingCopy saveVersionWithMessage: 'base version'.
 	baseVersion := self workingCopy loadedHistorian version.
 	text replaceFrom: 1 to: text size with: 'Changed text'.
@@ -24,4 +25,4 @@ testMergeRemovalAndChange
 		conflict chooseIncoming. "the changed text"
 		request resume]
 	] valueSupplyingAnswers: {{'*'. #default}}.
-	self assert: 'Changed text' equals: (self workingCopy objectAt: 'text') string.
+	self assert: 'Changed text' equals: (self workingCopy objectAt: 'text') string].

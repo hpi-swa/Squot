@@ -2,10 +2,7 @@ tests
 testMergeWithConflicts
 	self suppressChangeNotificationsDuring:
 	[scenario := SquotWorkingCopyTestMergeConflictScenario forTestCase: self.
-	[[workingCopy
-		mergeVersionInteractively: scenario thirdVersion
-		ifCanceled: [self fail: 'this code should not be reached']]
-	
+	[[scenario merge]
 	on: SquotMergeRequested do: [:request |
 		scenario
 			assertConflictedMethodWorkingEditionPresentIn: request merge;

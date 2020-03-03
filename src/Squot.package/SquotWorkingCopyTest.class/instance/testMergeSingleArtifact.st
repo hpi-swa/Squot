@@ -3,7 +3,8 @@ testMergeSingleArtifact
 	"When a merge is performed for a single artifact, only this loaded artifact should change in the process."
 	| class relevantObject unrelatedObject baseVersion leftVersion rightVersion rightArtifact |
 	"given"
-	"base version"
+	repository withUnitOfWork:
+	["base version"
 	self workingCopy add: (unrelatedObject := Text fromString: 'unrelated') at: 'unrelated'.
 	(self suppressChangeNotificationsDuring: [class := classFactory newClass])
 		compileSilently: 'mergeMe ^ 1' classified: 'to-be-changed'.
@@ -39,4 +40,4 @@ testMergeSingleArtifact
 	] valueSupplyingAnswers: {{'*'. #default}}].
 	self assert: 'something else' = (class organization categoryOfElement: #mergeMe).
 	self assert: (class methodDictionary includesKey: #addedMethod).
-	self assert: 'unrelated2' equals: (self workingCopy objectAt: 'unrelated') asString.
+	self assert: 'unrelated2' equals: (self workingCopy objectAt: 'unrelated') asString].

@@ -1,3 +1,3 @@
 Pur repository
 delete: aHistorian
-	gitRepository repository deleteRef: aHistorian name.
+	self withUnitOfWork: [self gitRepository deleteRef: aHistorian name].

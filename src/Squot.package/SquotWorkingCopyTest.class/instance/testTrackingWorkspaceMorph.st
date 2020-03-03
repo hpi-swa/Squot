@@ -10,7 +10,8 @@ testTrackingWorkspaceMorph
 	bindings at: #toBeDeleted put: 'I will be deleted after saving'.
 	workspace setBindings: bindings.
 	"save"
-	workingCopy add: systemWindow at: 'sample workspace.morph'.
+	repository withUnitOfWork:
+	[workingCopy add: systemWindow at: 'sample workspace.morph'.
 	workingCopy saveVersionWithMessage: 'add workspace'.
 	"modify bindings and properties"
 	workspace contents: 'Changed contents'.
@@ -30,4 +31,4 @@ testTrackingWorkspaceMorph
 	self assert: workspace == (workspace bindingOf: #This) value.
 	self assert: 'I will be deleted after saving' equals: (workspace bindingOf: #toBeDeleted) value.
 	self deny: (workspace hasBindingOf: #newVar).
-	systemWindow delete.
+	systemWindow delete].

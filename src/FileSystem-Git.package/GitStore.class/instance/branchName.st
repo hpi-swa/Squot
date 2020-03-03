@@ -2,6 +2,6 @@ git-delegating
 branchName
 	| fullRef |
 	fullRef := revision
-		ifNil: [repository followSymbolicRef: repository headFile]
+		ifNil: [repository followSymbolicRefs: 'HEAD']
 		ifNotNil: [repository refTo: revision].
 	^ repository nameOf: fullRef in: 'refs/heads/'

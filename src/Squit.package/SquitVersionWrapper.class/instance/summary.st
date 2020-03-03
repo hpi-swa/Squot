@@ -3,7 +3,8 @@ summary
 	| message commitHash author committer parents timeStamp |
 	message := self item message.
 	commitHash := self item shortId.
-	parents := self item parents collect: [:each | each shortId].
+	self model "list widget" model "SquitBrowser" withUnitOfWork:
+		[parents := self item parents collect: [:each | each shortId]].
 	author := (self item metadata at: #author), ' <', (self item metadata at: #authorEmail), '>'.
 	committer := (self item metadata at: #committer), ' <', (self item metadata at: #committerEmail), '>'.
 	timeStamp := self item metadata at: #timestamp.

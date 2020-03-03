@@ -1,8 +1,6 @@
 loading
 loadParents
 	| unitOfWork |
-	GitFeatureFlags useUnitOfWorkInterface
-		ifTrue: [unitOfWork := self repository unitOfWork]
-		ifFalse: [unitOfWork := self repository].
+	unitOfWork := self currentUnitOfWork.
 	^ self basicParents collect: [ :parentHash |
 		unitOfWork objectNamed: parentHash ]

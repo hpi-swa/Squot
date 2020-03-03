@@ -4,14 +4,14 @@
 	"instance" : {
 		"additionalParentVersions" : "jr 1/4/2020 19:03",
 		"additionalParentVersions:" : "jr 1/4/2020 19:03",
-		"applyToWorkingCopy" : "jr 1/24/2020 23:10",
-		"author" : "jr 1/4/2020 19:03",
+		"applyToWorkingCopy" : "jr 3/2/2020 22:49",
+		"author" : "jr 2/24/2020 21:06",
 		"author:" : "jr 1/4/2020 19:03",
 		"capturedArtifacts" : "jr 1/24/2020 22:41",
 		"capturedArtifacts:" : "jr 1/24/2020 22:41",
-		"committer" : "jr 1/4/2020 19:07",
+		"committer" : "jr 2/24/2020 21:06",
 		"committer:" : "jr 1/4/2020 19:07",
-		"createVersion" : "jr 1/24/2020 22:40",
+		"createVersion" : "jr 2/26/2020 23:57",
 		"historian" : "jr 1/4/2020 19:03",
 		"historian:" : "jr 1/4/2020 19:03",
 		"initialize" : "jr 1/26/2020 21:40",
@@ -25,4 +25,4 @@
 		"shouldStoreMetadata" : "jr 1/24/2020 23:29",
 		"shouldStoreMetadata:" : "jr 1/24/2020 23:29",
 		"updateWorkingCopy" : "jr 1/24/2020 23:02",
-		"validate" : "jr 1/24/2020 23:19" } }
+		"validate" : "jr 2/26/2020 22:05" } }

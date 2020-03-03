@@ -2,7 +2,8 @@ tests
 testMergeWithRemovedArtifactOnBothSides
 	"When an artifact is removed in both branches, then merging them should let it stay removed without a conflict."
 	| baseVersion leftVersion rightVersion |
-	self workingCopy
+	repository withUnitOfWork:
+	[self workingCopy
 		add: (ValueHolder new contents: #right) at: 'to-be-removed';
 		saveVersionWithMessage: 'base version'.
 	baseVersion := self workingCopy loadedHistorian version.
@@ -27,4 +28,4 @@ testMergeWithRemovedArtifactOnBothSides
 		self deny: request merge hasConflicts.
 		request resume]
 	] valueSupplyingAnswers: {{'*'. #default}}.
-	self deny: (self workingCopy includesObjectAt: 'to-be-removed').
+	self deny: (self workingCopy includesObjectAt: 'to-be-removed')].

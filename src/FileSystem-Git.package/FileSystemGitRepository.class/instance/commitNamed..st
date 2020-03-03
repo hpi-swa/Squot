@@ -1,3 +1,7 @@
 accessing
 commitNamed: hexHash
-	^ self filesystemOn: (repository objectNamed: hexHash)
+	| repo |
+	repo := GitFeatureFlags useUnitOfWorkInterface
+		ifTrue: [GitCurrentUnitOfWork for: repository]
+		ifFalse: [repository].
+	^ self filesystemOn: (repo objectNamed: hexHash)

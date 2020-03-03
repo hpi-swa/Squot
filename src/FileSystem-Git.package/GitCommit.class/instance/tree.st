@@ -1,3 +1,3 @@
 public-accessing
 tree
-	^ tree ifNil: [tree := self repository objectNamed: treeHash]
+	^ tree ifNil: [tree := self currentUnitOfWork objectNamed: treeHash]

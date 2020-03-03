@@ -1,3 +1,3 @@
 accessing
 branchNames
-	^ repository branchNames
+	^ self unitOfWork branchNames

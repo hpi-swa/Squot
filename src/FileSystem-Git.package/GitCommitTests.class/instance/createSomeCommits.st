@@ -14,4 +14,4 @@ createSomeCommits
 	commits last parents: ((commits reversed allButFirst: 1) collect: [ :commit | commit hexHash ]).
 	commits second parents: (OrderedCollection with: commits first hexHash).
 	commits do: [ :commit | commit store ].
-	repository updateRef: repository headsDir / 'master' to: commits last hexHash
+	repository updateRef: 'refs/heads/master' to: commits last hexHash

@@ -4,6 +4,7 @@ objectCacheRefresh
 	objectCache := self commitSelection
 		ifNil: [#()]
 		ifNotNil: [:commit |
-			commitForCache := commit.
-			(commit lazyArtifacts values
-				collect: [:artifact | SquitArtifactWrapper on: artifact]) sorted]
+			self withUnitOfWork:
+				[commitForCache := commit.
+				(commit lazyArtifacts values
+					collect: [:artifact | SquitArtifactWrapper on: artifact]) sorted]]

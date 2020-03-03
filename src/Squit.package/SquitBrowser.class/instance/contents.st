@@ -1,4 +1,4 @@
 ui
 contents
 	self commitSelection ifNil: [^ ''].
-	^ self commitSelectionWrapped summary
+	^ self withUnitOfWork: [self commitSelectionWrapped summary]

@@ -4,6 +4,8 @@
 		"enableRefactoredCherryPick:" : "jr 1/4/2020 19:37",
 		"enableRefactoredSave" : "jr 1/24/2020 22:32",
 		"enableRefactoredSave:" : "jr 1/24/2020 22:32",
+		"ignoreMethodsInAssumeUnchanged" : "jr 2/26/2020 22:53",
+		"ignoreMethodsInAssumeUnchanged:" : "jr 2/26/2020 22:52",
 		"useUnitOfWorkInterface" : "jr 2/26/2020 21:20",
 		"useUnitOfWorkInterface:" : "jr 2/26/2020 21:19" },
 	"instance" : {

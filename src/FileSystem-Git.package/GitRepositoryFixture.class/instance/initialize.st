@@ -2,4 +2,6 @@ initialize-release
 initialize
 	repo := FileSystemGitRepository on: FileSystem memory root.
 	basicRepo := repo repository.
-	workingCopy := repo head.
+	GitFeatureFlags useUnitOfWorkInterface ifTrue:
+		[basicRepo := basicRepo newUnitOfWork].
+	workingCopy := repo withUnitOfWork: [repo head].

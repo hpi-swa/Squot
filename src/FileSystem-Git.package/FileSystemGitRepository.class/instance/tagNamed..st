@@ -1,3 +1,3 @@
 accessing
 tagNamed: aString
-	^ self filesystemOn: (repository tagNamed: aString)
+	^ self filesystemOn: (self unitOfWork tagNamed: aString)

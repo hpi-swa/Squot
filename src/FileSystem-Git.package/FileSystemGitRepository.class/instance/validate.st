@@ -1,3 +1,3 @@
 accessing
 validate
-	^ 	repository validate
+	^ self unitOfWork validate

@@ -1,3 +1,3 @@
 remotes
 remoteNames
-	^ repository configSubkeysAt: 'remote'
+	^ self unitOfWork configSubkeysAt: 'remote'

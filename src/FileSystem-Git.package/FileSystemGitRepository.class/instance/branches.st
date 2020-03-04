@@ -1,4 +1,4 @@
 accessing
 branches
-	^ repository branches collect: [ :commit | 
+	^ self unitOfWork branches collect: [ :commit | 
 		self filesystemOn: commit ]

@@ -4,10 +4,10 @@ cloneFrom: aStringOrUrl
 	url := aStringOrUrl asUrl.
 	self addRemote: 'origin' url: aStringOrUrl.
 	self fetchFrom: 'origin'.
-	repository allReferencesPrefixedWith: 'refs/remotes/origin'
+	self unitOfWork allReferencesPrefixedWith: 'refs/remotes/origin'
 		do: [:each | | branchName |
 			branchName := each allButFirst: 'refs/remotes/origin/' size.
-			repository
+			self unitOfWork
 				updateRef: 'refs/heads/', branchName
 				to: (repository resolveRef: each);
 				setUpstreamRemoteOfBranchNamed: branchName to: 'origin';

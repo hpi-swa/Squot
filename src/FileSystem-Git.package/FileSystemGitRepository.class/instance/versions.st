@@ -3,7 +3,7 @@ versions
 	| commits |
 	commits := OrderedCollection new.
 	self 
-		recursivelyCollectCommits: repository head
+		recursivelyCollectCommits: self unitOfWork head
 		into: commits
 		limit: nil.
 	self flag: #GitTodo. "this is not a good idea for large histories"

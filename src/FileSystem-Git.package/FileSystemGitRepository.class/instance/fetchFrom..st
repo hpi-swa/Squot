@@ -1,7 +1,7 @@
 git porcelain
 fetchFrom: aRemoteName
 	| remote url fetchSpec packFile protocol remoteRefs wantRefs wantSignatures packFileData |
-	remote := repository remoteNamed: aRemoteName.
+	remote := self unitOfWork remoteNamed: aRemoteName.
 	url := remote url.
 	fetchSpec := remote fetchSpecs
 		ifEmpty: [GitFetchSpec
@@ -18,9 +18,9 @@ fetchFrom: aRemoteName
 			wantSignatures := wantRefs collect: [:each | remoteRefs at: each].
 			packFileData := protocol wantAll: wantSignatures.
 			packFile := GitPackFile readFrom: packFileData readStream].
-	packFile repository: repository.
+	packFile repository: self unitOfWork.
 	packFile unpack.
 	wantRefs do:
-		[:each | repository
+		[:each | self unitOfWork
 					updateRef: (remote trackingRefOf: each)
 					to: (remoteRefs at: each)].

@@ -5,7 +5,8 @@ selfUpdate
 	SquotWorkingCopy registered
 		detect: [:each | | gitRepository |
 			(each repository respondsTo: #gitRepository)
-			and: [(gitRepository := each repository gitRepository) remoteNames
+			and: [gitRepository := each repository gitRepository.
+				each repository remoteNames
 					anySatisfy: [:remote | (gitRepository remoteUrl: remote) = self selfUpdateRepository]]]
 		ifFound: [:ownWorkingCopy |
 			"This is likely to be a Squot developer, so interactively load current version"

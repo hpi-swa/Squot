@@ -3,26 +3,27 @@ actionPull
 	"Pulls into the active (not the selected!) branch"
 	| gitRepository localHistorian localBranchName remoteName repository remoteRef remoteTrackingHistorian remoteTrackingRef remoteUrl remoteVersion previousVersion |
 	repository := self projectSelection repository.
-	gitRepository := repository gitRepository.
+	repository withUnitOfWork:
+	[gitRepository := repository gitRepository.
 	localHistorian := self projectSelection loadedHistorian.
 	self checkTrackedBranchOrOfferChange: localHistorian
 		ifUnsupported: [^ self].
 	localBranchName := localHistorian shortName.
 	remoteName := localHistorian upstreamRemoteName.
-	remoteUrl := gitRepository repository remoteUrl: remoteName.
+	remoteUrl := gitRepository remoteUrl: remoteName.
 	remoteRef := localHistorian upstreamHistorianName.
 	(remoteName isNil or: [remoteRef isNil]) ifTrue:
 		[self offerToSetUpstreamBranchOf: localBranchName
-			in: gitRepository
+			in: repository fsgitRepository
 			ifCanceled: [^ self].
 		remoteName := localHistorian upstreamRemoteName.
-		remoteUrl := gitRepository repository remoteUrl: remoteName.
+		remoteUrl := gitRepository remoteUrl: remoteName.
 		remoteRef := localHistorian upstreamHistorianName].
 	self withRemoteErrorHandlingDo:
 		[self handlingCredentialsOf: localHistorian
 			do: [repository importFromUpstream: remoteName]
 			ifCanceled: [^ self]].
-	remoteTrackingRef := gitRepository repository refName: remoteRef forRemote: remoteName.
+	remoteTrackingRef := gitRepository refName: remoteRef forRemote: remoteName.
 	remoteTrackingHistorian := repository historianNamed: remoteTrackingRef.
 	remoteVersion := remoteTrackingHistorian version.
 	previousVersion := localHistorian version.
@@ -39,4 +40,4 @@ actionPull
 	do: [:request | request resume:
 		'Merge branch ''', (repository historianNamed: remoteRef) shortName,
 		''' of ', remoteUrl].
-	self selectActiveHistorian.
+	self selectActiveHistorian].

@@ -4,7 +4,7 @@ detectGitHubRemote: aBlock ifNone: noneBlock
 	self hasProjectSelection ifFalse: [^ noneBlock value].
 	repository := self projectSelection repository.
 	gitRepository := repository gitRepository.
-	remoteName := gitRepository remoteNames
+	remoteName := repository remoteNames
 		detect: [:each |
 			((gitRepository remoteUrl: each) includesSubstring: 'github.com')
 			and: [aBlock value: each]]

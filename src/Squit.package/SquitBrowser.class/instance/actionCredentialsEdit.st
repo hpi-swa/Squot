@@ -2,8 +2,9 @@ actions
 actionCredentialsEdit
 	| repository gitRepository remoteUrls repositoryUrl oldUser oldPassword newUser newPassword |
 	repository := self projectSelection repository.
-	gitRepository := repository gitRepository.
-	remoteUrls := gitRepository remoteNames collect:
+	repository withUnitOfWork:
+	[gitRepository := repository fsgitRepository.
+	remoteUrls := repository remoteNames collect:
 		[:each | (gitRepository remoteUrl: each)]
 		thenSelect: [:each | each beginsWith: 'http'].
 	repositoryUrl := UIManager default
@@ -24,4 +25,4 @@ actionCredentialsEdit
 			ifNotEmpty: [newPassword := oldPassword]
 			ifEmpty: [^ self]].
 	repository addCredentialsFor: repositoryUrl user: newUser password: newPassword.
-	self inform: 'Credentials updated successfully.'
+	self inform: 'Credentials updated successfully.']

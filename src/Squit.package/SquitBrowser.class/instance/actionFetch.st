@@ -3,7 +3,8 @@ actionFetch
 	| workingCopy repository gitRepository remoteNames |
 	workingCopy := self projectSelection.
 	repository := workingCopy repository.
-	gitRepository := repository gitRepository.
+	repository withUnitOfWork:
+	[gitRepository := repository fsgitRepository.
 	remoteNames := self chooseRemotesFrom: gitRepository.
 	remoteNames ifNil: [^ self].
 	remoteNames ifEmpty: [UIManager default inform: 'Nothing selected.'. ^ self].
@@ -11,4 +12,4 @@ actionFetch
 		[self handlingCredentialsOf: workingCopy loadedHistorian
 			do: [repository importFromAll: remoteNames]
 			ifCanceled: [^ self]].
-	self refresh.
+	self refresh].

@@ -8,7 +8,7 @@ pushSelectedHistorianByDoing: aBlock
 	branchName := historian name.
 	workingCopy := self projectSelection.
 	repository := workingCopy repository.
-	gitRepository := repository gitRepository.
+	gitRepository := repository fsgitRepository.
 	[self withRemoteErrorHandlingDo:
 		[self handlingCredentialsOf: historian
 			do: 	[aBlock cull: gitRepository]

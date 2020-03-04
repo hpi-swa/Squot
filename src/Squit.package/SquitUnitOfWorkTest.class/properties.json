@@ -1,0 +1,14 @@
+{
+	"category" : "Squit-Tests",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "SquitUnitOfWorkTest",
+	"pools" : [
+		 ],
+	"super" : "SquitTest",
+	"type" : "normal" }

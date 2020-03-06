@@ -4,8 +4,8 @@ selfUpdate
 	"UpdateWorkingCopy := nil"
 	SquotWorkingCopy registered
 		detect: [:each | | gitRepository |
-			(each repository respondsTo: #gitRepository)
-			and: [gitRepository := each repository gitRepository.
+			(each repository respondsTo: #git)
+			and: [gitRepository := each repository git.
 				each repository remoteNames
 					anySatisfy: [:remote | (gitRepository remoteUrl: remote) = self selfUpdateRepository]]]
 		ifFound: [:ownWorkingCopy |

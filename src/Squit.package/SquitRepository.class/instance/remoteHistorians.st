@@ -1,7 +1,7 @@
 synchronizing
 remoteHistorians
 	^ Array streamContents: [:stream |
-		self gitRepository
+		self git
 			allReferencesPrefixedWith: 'refs/remotes/'
 			do: [:each | stream nextPut: (SquitHistorian new
 					repository: self;

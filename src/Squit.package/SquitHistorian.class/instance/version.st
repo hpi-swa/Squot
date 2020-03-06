@@ -1,4 +1,4 @@
 Pur historian
 version
 	^ repository versionForCommit:
-		(self gitRepository objectReferenced: referenceName)
+		(self git objectReferenced: referenceName)

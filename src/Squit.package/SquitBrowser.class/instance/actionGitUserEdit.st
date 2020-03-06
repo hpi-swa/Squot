@@ -2,7 +2,7 @@ actions
 actionGitUserEdit
 	| gitRepository defaultAuthor userName userEmail |
 	self withUnitOfWork:
-	[gitRepository := self projectSelection repository gitRepository.
+	[gitRepository := self projectSelection repository git.
 	defaultAuthor := self projectSelection repository defaultAuthor.
 
 	userName := UIManager default request: 'Git user name:' initialAnswer: defaultAuthor name.

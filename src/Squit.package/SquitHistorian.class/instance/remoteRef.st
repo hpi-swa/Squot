@@ -4,7 +4,7 @@ remoteRef
 	For example, the remoteRef of origin/master usually is refs/heads/master."
 	| expandedRef |
 	expandedRef := self expandedName.
-	^ (self gitRepository fetchSpecOfTrackingBranch: expandedRef) ifNotNil:
+	^ (self git fetchSpecOfTrackingBranch: expandedRef) ifNotNil:
 		[:fetchSpec |
 		GitReference
 			name: (fetchSpec remoteBranchOf: expandedRef)

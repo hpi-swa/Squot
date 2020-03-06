@@ -1,7 +1,7 @@
 choosing packages
 requestPathInWorkingCopy: aWorkingCopy
 	| version subPath gitRepository rootDirectory |
-	gitRepository := aWorkingCopy repository gitRepository.
+	gitRepository := aWorkingCopy repository git.
 	gitRepository workingCopyDirDo: [:workingCopyDir |
 			subPath := self chooseSubdirectory: workingCopyDir ifCanceled: [^ nil]]
 		ifBareOrAbsent: ["choose from existing directories"

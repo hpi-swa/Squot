@@ -11,7 +11,7 @@ createNewVersion: aSnapshot with: aBlock
 				ifNil: [OrderedCollection new]
 				ifNotNil: [:it | OrderedCollection with: it]);
 			in: aBlock].
-	self gitRepository
+	self git
 		updateRef: self expandedName
 		to: newVersion hexHash
 		message: 'commit: ', (newVersion message lineNumber: 1).

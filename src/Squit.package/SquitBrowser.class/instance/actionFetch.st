@@ -1,7 +1,8 @@
 actions
 actionFetch
 	| workingCopy repository gitRepository remoteNames |
-	workingCopy := self projectSelection.
+	self withUnitOfWork:
+	[workingCopy := self projectSelection.
 	repository := workingCopy repository.
 	repository withUnitOfWork:
 	[gitRepository := repository fsgitRepository.
@@ -12,4 +13,4 @@ actionFetch
 		[self handlingCredentialsOf: workingCopy loadedHistorian
 			do: [repository importFromAll: remoteNames]
 			ifCanceled: [^ self]].
-	self refresh].
+	self refresh]].

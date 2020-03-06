@@ -1,6 +1,7 @@
 actions on branches
 actionBranchPush
-	self pushSelectedHistorianByDoing:
+	self withUnitOfWork:
+	[self pushSelectedHistorianByDoing:
 		[:gitRepository |
 		self checkTrackedBranchOrOfferChange: selectedHistorian ifUnsupported: [^ self].
 		selectedHistorian repository
@@ -9,4 +10,4 @@ actionBranchPush
 				self offerToSetUpstreamBranchOf: selectedHistorian shortName
 					in: gitRepository
 					ifCanceled: [^ self].
-				^ self actionBranchPush "try again"]].
+				^ self actionBranchPush "try again"]]].

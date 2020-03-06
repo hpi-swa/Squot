@@ -1,3 +1,4 @@
 actions
 actionCommitSelectionCheckout
-	self projectSelection loadVersionInteractively: self commitSelection ifCanceled: [^ self].
+	self withUnitOfWork:
+	[self projectSelection loadVersionInteractively: self commitSelection ifCanceled: [^ self]].

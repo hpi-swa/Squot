@@ -1,7 +1,8 @@
 actions on versions
 actionCommitNewCherryPick
 	| pickedVersion parentVersions parentVersion workingCopy cherryPick |
-	pickedVersion := self commitSelection.
+	self withUnitOfWork:
+	[pickedVersion := self commitSelection.
 	workingCopy := self projectSelection.
 	self flag: #todo. "extract parent selection"
 	parentVersions := pickedVersion parents.
@@ -17,4 +18,4 @@ actionCommitNewCherryPick
 		pickedVersion: pickedVersion;
 		relevantParentOfPickedVersion: parentVersion.
 	cherryPick applyToWorkingCopy
-		whenRejected: [:reason | self inform: 'Cherry pick aborted: ', reason].
+		whenRejected: [:reason | self inform: 'Cherry pick aborted: ', reason]].

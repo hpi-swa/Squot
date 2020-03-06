@@ -3,7 +3,7 @@ actionPull
 	"Pulls into the active (not the selected!) branch"
 	| gitRepository localHistorian localBranchName remoteName repository remoteRef remoteTrackingHistorian remoteTrackingRef remoteUrl remoteVersion previousVersion |
 	repository := self projectSelection repository.
-	repository withUnitOfWork:
+	self withUnitOfWork:
 	[gitRepository := repository git.
 	localHistorian := self projectSelection loadedHistorian.
 	self checkTrackedBranchOrOfferChange: localHistorian

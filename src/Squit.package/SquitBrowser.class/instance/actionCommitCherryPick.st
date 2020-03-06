@@ -2,7 +2,8 @@ actions on versions
 actionCommitCherryPick
 	| pickedVersion parentVersions parentVersion workingCopy |
 	(self hasProjectSelection and: [self hasCommitSelection]) ifFalse: [^ self].
-	SquotToggles enableRefactoredCherryPick ifTrue: [^ self actionCommitNewCherryPick].
+	self withUnitOfWork:
+	[SquotToggles enableRefactoredCherryPick ifTrue: [^ self actionCommitNewCherryPick].
 	pickedVersion := self commitSelection.
 	workingCopy := self projectSelection.
 	parentVersions := pickedVersion parents.
@@ -22,4 +23,4 @@ actionCommitCherryPick
 	do: [:request | request resume:
 		pickedVersion message,
 		String cr, String cr,
-		'(cherry-picked from commit ', pickedVersion internalId, ')'].
+		'(cherry-picked from commit ', pickedVersion internalId, ')']].

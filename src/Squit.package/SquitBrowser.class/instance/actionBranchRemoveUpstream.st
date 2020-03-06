@@ -2,7 +2,8 @@ actions on branches
 actionBranchRemoveUpstream
 	| localHistorian remoteBranchName remoteName |
 	self hasBranchSelection ifFalse: [^ self].
-	localHistorian := selectedHistorian.
+	self withUnitOfWork:
+	[localHistorian := selectedHistorian.
 	remoteName := localHistorian upstreamRemoteName.
 	remoteBranchName := localHistorian upstreamHistorianName.
 	(self isUpstreamRemoteSupported: localHistorian)
@@ -14,4 +15,4 @@ actionBranchRemoveUpstream
 			do: [self projectSelection repository
 				removeRemoteRef: remoteBranchName from: remoteName]
 			ifCanceled: [^ self]].
-	self refresh.
+	self refresh].

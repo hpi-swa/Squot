@@ -1,7 +1,8 @@
 actions on versions
 actionBranchDiffWithWorkingCopy
-	(SquotDiffExplorer
+	self withUnitOfWork:
+	[(SquotDiffExplorer
 		from: selectedHistorian version
 		to: self projectSelection)
 	workingCopy: self projectSelection;
-	openLabel: 'Changes in working copy compared to branch ', selectedHistorian shortName.
+	openLabel: 'Changes in working copy compared to branch ', selectedHistorian shortName].

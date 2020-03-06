@@ -2,7 +2,8 @@ actions on branches
 actionBranchRename
 	| newHistorian newName oldHistorian oldName |
 	self hasBranchSelection ifFalse: [^ self].
-	oldHistorian := selectedHistorian.
+	self withUnitOfWork:
+	[oldHistorian := selectedHistorian.
 	oldHistorian isRemoteTrackingHistorian ifTrue: [^ self inform: 'To rename a remote branch, push a local branch to the remote under the new branch name, then remove the old branch from the remote.'].
 	oldName := oldHistorian shortName.
 	newName := UIManager default request: 'New branch name' initialAnswer: oldName.
@@ -17,4 +18,4 @@ actionBranchRename
 	self projectSelection loadedHistorian = oldHistorian ifTrue:
 		[self projectSelection loadedHistorian: newHistorian].
 	self selectedHistorian: newHistorian.
-	self loadBranchList.
+	self loadBranchList].

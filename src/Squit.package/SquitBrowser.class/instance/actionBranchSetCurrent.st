@@ -3,5 +3,6 @@ actionBranchSetCurrent
 	"Force the selected branch to be the loaded one, without really loading anything."
 	self hasProjectSelection ifFalse: [^ self].
 	self hasBranchSelection ifFalse: [^ self].
-	self projectSelection loadedHistorian: selectedHistorian.
-	self activeBranchChanged.
+	self withUnitOfWork:
+	[self projectSelection loadedHistorian: selectedHistorian.
+	self activeBranchChanged].

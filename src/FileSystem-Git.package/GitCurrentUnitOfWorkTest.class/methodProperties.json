@@ -1,0 +1,7 @@
+{
+	"class" : {
+		 },
+	"instance" : {
+		"testConcurrentScopesForSameRepository" : "jr 3/5/2020 22:49",
+		"testDynamicScope" : "jr 3/5/2020 22:19",
+		"testScopeForMultipleRepositories" : "jr 3/5/2020 22:21" } }

@@ -1,3 +1,3 @@
 initialize-release
 initialize
-	self initializeCaches.
+	cache := Dictionary new.

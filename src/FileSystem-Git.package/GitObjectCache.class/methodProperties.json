@@ -1,0 +1,11 @@
+{
+	"class" : {
+		 },
+	"instance" : {
+		"at:ifAbsent:" : "jr 3/10/2020 21:10",
+		"at:ifAbsentPut:" : "jr 3/10/2020 21:10",
+		"at:ifPresent:" : "jr 3/10/2020 21:11",
+		"at:put:" : "jr 3/10/2020 21:16",
+		"hashesWithObjectsDo:" : "jr 3/10/2020 21:08",
+		"initialize" : "jr 3/10/2020 21:11",
+		"keysAndValuesDo:" : "jr 3/10/2020 21:13" } }

@@ -8,5 +8,12 @@ Smalltalk globals removeKey: #TEMP_GitTreeEntryModes.
 
 "2020-03-10: turn objectCache from Dictionary into GitObjectCache. Just invalidate the cache."
 GitRepository allInstancesDo: [:each | each flushCaches].
-GitUnitOfWork allInstancesDo: [:each | each initializeCaches].
+GitPackedRefStore allInstancesDo:
+	[:each | 
+	(each instVarNamed: ''baseDir'') ifNil:
+		[each instVarNamed: ''baseDir'' put:
+			((each repository isKindOf: GitUnitOfWork)
+				ifTrue: [each repository repository]
+				ifFalse: [each repository]) baseDir]].
+GitUnitOfWork allInstancesDo: [:each | each flushCaches].
 '!

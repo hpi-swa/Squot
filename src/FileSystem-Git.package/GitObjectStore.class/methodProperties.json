@@ -2,6 +2,7 @@
 	"class" : {
 		"on:" : "jr 2/12/2020 23:13" },
 	"instance" : {
+		"flushCaches" : "jr 3/10/2020 21:57",
 		"hasObject:" : "jr 2/12/2020 22:19",
 		"headerOfObjectNamed:ifAbsent:" : "jr 2/12/2020 21:32",
 		"objectNamed:ifAbsent:" : "jr 2/12/2020 21:32",

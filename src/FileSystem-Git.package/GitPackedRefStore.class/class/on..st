@@ -1,3 +1,6 @@
 instance creation
 on: aGitRepository
-	^ self onFile: (self packedRefsFileIn: aGitRepository)
+	^ self new
+		baseDir: aGitRepository baseDir;
+		packedRefsFile: (self packedRefsFileIn: aGitRepository);
+		yourself

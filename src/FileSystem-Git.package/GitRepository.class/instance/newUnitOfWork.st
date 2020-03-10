@@ -11,6 +11,7 @@ newUnitOfWork
 		[refStores add: (GitPackedRefStore on: self)].
 	^ GitUnitOfWork new
 		repository: self;
+		objectCache: objectCache;
 		refStores: refStores;
 		objectStores: objectStores;
 		yourself

@@ -15,5 +15,9 @@ GitPackedRefStore allInstancesDo:
 			((each repository isKindOf: GitUnitOfWork)
 				ifTrue: [each repository repository]
 				ifFalse: [each repository]) baseDir]].
-GitUnitOfWork allInstancesDo: [:each | each flushCaches].
+GitUnitOfWork allInstancesDo:
+	[:each |
+		each
+			flushCaches;
+			convertToCurrentVersion: Dictionary new refStream: nil].
 '!

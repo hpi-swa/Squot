@@ -12,10 +12,11 @@ verifyDeltificationWithBaseAt: baseOffset
 
 	pack := self packFileForDeltificationBase.
 
-	baseSize := interpreter readBaseObjectSize.
-	finalSize := interpreter readFinalObjectSize.
-	baseObjectBytes := (pack objectAtOffset: baseOffset) unpackedBytes.
-	finalObjectBytes := interpreter runAgainst: baseObjectBytes.
+	pack repository withUnitOfWork:
+		[baseSize := interpreter readBaseObjectSize.
+		finalSize := interpreter readFinalObjectSize.
+		baseObjectBytes := (pack objectAtOffset: baseOffset) unpackedBytes.
+		finalObjectBytes := interpreter runAgainst: baseObjectBytes].
 	
 	result := baseObjectBytes size = baseSize.
 	^ result and: [ (finalObjectBytes size = finalSize) ]

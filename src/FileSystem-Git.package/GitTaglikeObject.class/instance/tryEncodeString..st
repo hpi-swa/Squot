@@ -1,5 +1,5 @@
 loading
 tryEncodeString: aByteString
-	[^ (TextConverter newForEncoding: repository configI18nCommitEncoding)
+	[^ (TextConverter newForEncoding: self currentUnitOfWork configI18nCommitEncoding)
 		encodeString: aByteString]
 	on: Error do: [^ aByteString].

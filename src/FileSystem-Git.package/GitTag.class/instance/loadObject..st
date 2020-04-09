@@ -1,3 +1,3 @@
 loading
 loadObject: aHexHash
-	self object: (self repository objectNamed: aHexHash)
+	self object: (self currentUnitOfWork objectNamed: aHexHash)

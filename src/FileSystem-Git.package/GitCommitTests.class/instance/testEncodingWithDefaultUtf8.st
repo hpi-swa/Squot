@@ -1,7 +1,7 @@
 tests
 testEncodingWithDefaultUtf8
 	| commit commitDataAsSqueakString utf8CommitData |
-	self assert: 'utf-8' equals: repository configI18nCommitEncoding.
+	self assert: 'utf-8' equals: repository unitOfWork configI18nCommitEncoding.
 	commitDataAsSqueakString := 'tree 0000000000000000000000000000000000000000
 parent 0000000000000000000000000000000000000000
 author Björn Thaddäus <björn.thaddäus@ü.de> 1495318660 +0200

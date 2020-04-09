@@ -9,10 +9,10 @@ testRevListChronologicalOrder
 	b2 := self addCommit: 'b2' time: first + 5 minutes withParents: {b1}.
 	b3 := self addCommit: 'b3' time: first + 6 minutes withParents: {b2}.
 	merge := self addCommit: 'merge' time: first + 10 minutes withParents: {a2. b3}.
-	repository updateRef: 'refs/heads/master' to: merge hexHash.
+	repository unitOfWork updateRef: 'refs/heads/master' to: merge hexHash.
 	GitFSCK validate: repository.
 	"when"
-	revList := historyWalker startingFrom: (repository branches at: 'master').
+	revList := historyWalker startingFrom: (repository unitOfWork branches at: 'master').
 	"then"
 	self assert: (revList asBag = {base. a1. a2. b1. b2. b3. merge} asBag)
 		description: 'correct bag of commits'.

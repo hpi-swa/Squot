@@ -8,10 +8,10 @@ testRevListTopoOrder
 	a2 := self addCommit: 'a2' time: first + 4 minutes withParents: {a1}.
 	b2 := self addCommit: 'b2' time: first + 5 minutes withParents: {b1}.
 	merge := self addCommit: 'merge' time: first + 10 minutes withParents: {a2. b2}.
-	repository updateRef: repository headsDir / 'master' to: merge hexHash.
+	repository unitOfWork updateRef: repository headsDir / 'master' to: merge hexHash.
 	GitFSCK validate: repository.
 	"when"
-	revList := historyWalker startingFrom: (repository branches at: 'master').
+	revList := historyWalker startingFrom: (repository unitOfWork branches at: 'master').
 	"then"
 	self assert: (revList asBag = {base. a1. a2. b1. b2. merge} asBag)
 		description: 'correct bag of commits'.

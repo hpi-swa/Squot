@@ -1,5 +1,5 @@
 storing
 updateTagRef
-	self repository 
+	self currentUnitOfWork 
 		updateRef: 'refs/tags/', self name
 		to: self hexHash

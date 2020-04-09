@@ -1,5 +1,3 @@
 helpers
 createSomeCommits
-	basicRepository := repository.
-	repository := basicRepository newUnitOfWork.
-	^ super createSomeCommits
+	^ repository withUnitOfWork: [super createSomeCommits]

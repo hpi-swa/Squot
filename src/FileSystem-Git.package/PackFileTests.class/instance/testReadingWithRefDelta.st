@@ -1,5 +1,4 @@
 tests
 testReadingWithRefDelta
-	self 
-		usePackWithRefDelta;
-		verifyReadingPackfile
+	self usePackWithRefDelta.
+	repository withUnitOfWork: [self verifyReadingPackfile].

@@ -21,4 +21,4 @@ setUpRepositoryObjects
 		tree: tree;
 		message: 'myCommit';
 		store.
-	repository updateRef: 'refs/heads/master' to: commit hexHash.
+	repository unitOfWork updateRef: 'refs/heads/master' to: commit hexHash.

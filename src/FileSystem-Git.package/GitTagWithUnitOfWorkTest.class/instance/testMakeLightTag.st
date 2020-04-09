@@ -1,4 +1,4 @@
 tests
 testMakeLightTag
-	GitLightweightTag named: 'testTag' for: repository head in: repository.	
-	self assert: (repository resolveRef: 'refs/tags/testTag') notNil.
+	GitLightweightTag named: 'testTag' for: repository unitOfWork head in: repository.	
+	self assert: (repository unitOfWork resolveRef: 'refs/tags/testTag') notNil.

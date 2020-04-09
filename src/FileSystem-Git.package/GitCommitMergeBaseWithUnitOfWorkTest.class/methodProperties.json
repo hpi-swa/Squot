@@ -2,5 +2,6 @@
 	"class" : {
 		 },
 	"instance" : {
-		"createFakeTree" : "jr 2/29/2020 21:12",
-		"setUp" : "jr 2/29/2020 21:12" } }
+		"createFakeTree" : "jr 4/6/2020 23:01",
+		"performTest" : "jr 4/6/2020 22:59",
+		"runCase" : "jr 4/6/2020 22:54" } }

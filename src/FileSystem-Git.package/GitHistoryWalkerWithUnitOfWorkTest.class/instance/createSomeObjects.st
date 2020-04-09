@@ -1,5 +1,3 @@
 helpers
 createSomeObjects
-	basicRepository := repository.
-	repository := basicRepository newUnitOfWork.
-	^ super createSomeObjects
+	^ repository withUnitOfWork: [super createSomeObjects]

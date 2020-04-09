@@ -2,6 +2,7 @@
 	"class" : {
 		"lastStoredRun" : "MaxLeske 2/28/2012 18:10" },
 	"instance" : {
+		"performTest" : "jr 4/6/2020 23:13",
 		"setUp" : "jr 2/16/2020 10:06",
 		"testAllReferences" : "jr 6/5/2017 19:07",
 		"testBranchNamesWithHierarchy" : "jr 6/5/2017 19:07",

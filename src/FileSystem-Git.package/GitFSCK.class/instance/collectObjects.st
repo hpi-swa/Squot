@@ -1,4 +1,4 @@
 validating
 collectObjects
-	all := repository allObjects.
+	all := repository unitOfWork allObjects.
 	all := all reject: [ :each| each species == GitTag]

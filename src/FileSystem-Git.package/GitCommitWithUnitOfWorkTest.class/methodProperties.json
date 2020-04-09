@@ -2,6 +2,7 @@
 	"class" : {
 		 },
 	"instance" : {
-		"createSomeCommits" : "jr 2/29/2020 21:32",
+		"createSomeCommits" : "jr 4/6/2020 23:03",
 		"newEmptyRepository" : "jr 3/3/2020 21:22",
-		"setUp" : "jr 2/29/2020 21:33" } }
+		"performTest" : "jr 4/6/2020 22:59",
+		"runCase" : "jr 4/6/2020 22:54" } }

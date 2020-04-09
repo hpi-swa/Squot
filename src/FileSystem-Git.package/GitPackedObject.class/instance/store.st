@@ -1,3 +1,3 @@
 public-accessing
 store
-	self repository storeObject: self
+	self currentUnitOfWork storeObject: self

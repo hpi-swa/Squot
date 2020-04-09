@@ -1,3 +1,3 @@
 accessing
 basicDeltaBase
-	^ deltaBase := self pack repository objectNamed: self deltaBaseName
+	^ deltaBase := self pack repository unitOfWork objectNamed: self deltaBaseName

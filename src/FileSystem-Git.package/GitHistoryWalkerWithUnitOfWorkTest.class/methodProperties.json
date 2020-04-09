@@ -2,5 +2,6 @@
 	"class" : {
 		 },
 	"instance" : {
-		"createSomeObjects" : "jr 2/29/2020 21:24",
-		"setUp" : "jr 2/29/2020 21:25" } }
+		"createSomeObjects" : "jr 4/6/2020 23:05",
+		"performTest" : "jr 4/6/2020 22:59",
+		"runCase" : "jr 4/6/2020 22:54" } }

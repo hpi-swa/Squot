@@ -4,13 +4,14 @@
 	"instance" : {
 		"addRemote" : "jr 10/14/2018 22:16",
 		"buildWith:" : "jr 10/14/2018 22:11",
-		"continueAddRemote:" : "jr 10/14/2018 22:13",
+		"continueAddRemote:" : "jr 4/11/2020 23:51",
 		"gitRepository" : "jr 3/4/2020 00:22",
 		"isAnyRemoteSelected" : "jr 10/14/2018 22:00",
 		"labelString" : "jr 10/14/2018 22:10",
-		"remotesLabels" : "jr 10/14/2018 22:12",
-		"removeSelectedRemote" : "jr 10/14/2018 22:06",
+		"remotesLabels" : "jr 4/11/2020 23:51",
+		"removeSelectedRemote" : "jr 4/11/2020 23:51",
 		"selectedRemoteName" : "jr 10/14/2018 22:00",
 		"selectedRemoteName:" : "jr 10/14/2018 22:01",
+		"withUnitOfWork:" : "jr 4/12/2020 00:06",
 		"workingCopy" : "jr 10/14/2018 21:56",
 		"workingCopy:" : "jr 10/14/2018 21:56" } }

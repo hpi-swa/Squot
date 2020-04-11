@@ -2,7 +2,8 @@ actions
 actionBranch
 	| nameSuggestion |
 	self hasBranchSelection ifFalse: [^ self].
-	nameSuggestion :=
+	self withUnitOfWork:
+	[nameSuggestion :=
 		(selectedHistorian isRemoteTrackingHistorian)
 			ifTrue: [selectedHistorian remoteRef shortName]
 			ifFalse: [''].
@@ -16,4 +17,4 @@ actionBranch
 		[#switchClean] -> [self actionBranchSwitch].
 		[#stayAtCurrent] -> [].
 		[nil] -> []}.
-	self branchSelectionChanged.
+	self branchSelectionChanged].

@@ -6,7 +6,7 @@ basicCommit: aMessage to: branchName
 	(commit := self prepareNewCommit)
 		message: aMessage;
 		store.
-	repository 
+	self unitOfWork 
 		updateRef: 'refs/heads/', branchName 
 		to: commit hexHash
 		message: 'commit: ', aMessage asString.

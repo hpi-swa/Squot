@@ -1,6 +1,6 @@
 private
 gitStoreOn: aGitCommit
 	^ GitStore memory
-		repository: self unitOfWork;
+		repository: repository;
 		revision: aGitCommit;
 		yourself

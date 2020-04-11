@@ -1,7 +1,8 @@
 git-delegating
 branchName
-	| fullRef |
+	| fullRef git |
+	git := self unitOfWork.
 	fullRef := revision
-		ifNil: [repository followSymbolicRefs: 'HEAD']
-		ifNotNil: [repository refTo: revision].
-	^ repository nameOf: fullRef in: 'refs/heads/'
+		ifNil: [git followSymbolicRefs: 'HEAD']
+		ifNotNil: [git refTo: revision].
+	^ git nameOf: fullRef in: 'refs/heads/'

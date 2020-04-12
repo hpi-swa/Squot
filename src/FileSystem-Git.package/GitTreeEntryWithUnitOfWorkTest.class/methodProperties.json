@@ -2,4 +2,6 @@
 	"class" : {
 		 },
 	"instance" : {
-		"setUp" : "jr 2/19/2020 23:26" } }
+		"performTest" : "jr 4/6/2020 22:59",
+		"runCase" : "jr 4/6/2020 22:54",
+		"unitOfWork" : "jr 4/12/2020 12:11" } }

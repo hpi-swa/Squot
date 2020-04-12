@@ -10,5 +10,5 @@ testLoadingHash
 	tree := GitTree entries: {treeEntry} in: repository.
 	tree store.
 	
-	self assert: (repository objectNamed: tree hexHash) entries anyOne entryHash = hash.
-	self assert: (repository objectNamed: tree hexHash) entries anyOne = treeEntry
+	self assert: (self unitOfWork objectNamed: tree hexHash) entries anyOne entryHash = hash.
+	self assert: (self unitOfWork objectNamed: tree hexHash) entries anyOne = treeEntry

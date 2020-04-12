@@ -14,7 +14,8 @@ setUp
 	
 	self setUpRepository.
 	
-	creator := GitPackFileCreator new
+	repository withUnitOfWork:
+	[creator := GitPackFileCreator new
 		repository: repository;
 		instVarNamed: 'sortedHashes' put: sortedHashes;
 		yourself.
@@ -22,4 +23,4 @@ setUp
 	ByteArray streamContents: [ :stream | 
 		creator 
 			writePackFileHeaderOn: stream;
-			writeObjectsOn: stream ].
+			writeObjectsOn: stream ]].

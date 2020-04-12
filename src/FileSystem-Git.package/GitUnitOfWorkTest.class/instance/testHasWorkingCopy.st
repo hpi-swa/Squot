@@ -1,6 +1,6 @@
 tests
 testHasWorkingCopy
-	repository configUnsetAt: 'core.bare'.
-	self assert: repository hasWorkingCopy. "it is not configured to be bare..."
-	repository configAt: 'core.bare' put: 'true'.
-	self deny: repository hasWorkingCopy.
+	self unitOfWork configUnsetAt: 'core.bare'.
+	self assert: self unitOfWork hasWorkingCopy. "it is not configured to be bare..."
+	self unitOfWork configAt: 'core.bare' put: 'true'.
+	self deny: self unitOfWork hasWorkingCopy.

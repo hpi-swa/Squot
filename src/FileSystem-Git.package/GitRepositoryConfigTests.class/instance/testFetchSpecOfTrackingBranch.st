@@ -1,12 +1,12 @@
-testing
+tests
 testFetchSpecOfTrackingBranch
 	| fetchSpec remote |
 	"given"
 	remote := GitRemote name: 'origin' url: ''.
 	remote addFetchSpecString: '+refs/heads/*:refs/remotes/origin/*'.
-	repository addRemote: remote.
+	self unitOfWork addRemote: remote.
 	"when"
-	fetchSpec := repository fetchSpecOfTrackingBranch: 'refs/remotes/origin/master'.
+	fetchSpec := self unitOfWork fetchSpecOfTrackingBranch: 'refs/remotes/origin/master'.
 	"then"
 	self assert: 'origin' equals: fetchSpec remoteName;
 		assert: 'refs/heads/*' equals: fetchSpec remoteRefPattern;

@@ -1,7 +1,7 @@
 tests
 testBranches
 	| branches |
-	branches := repository branches.
+	branches := self unitOfWork branches.
 	self assert: branches size = 3.
 	branches do: [ :each |
 		self assert: (each class = GitCommit).

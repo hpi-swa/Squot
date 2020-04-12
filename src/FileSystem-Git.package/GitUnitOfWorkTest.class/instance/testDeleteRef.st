@@ -1,4 +1,4 @@
 tests
 testDeleteRef
-	repository deleteRef: 'refs/heads/feature/x'.
-	self assert: (repository resolveRef: 'refs/heads/feature/x') isNil.
+	self unitOfWork deleteRef: 'refs/heads/feature/x'.
+	self assert: (self unitOfWork resolveRef: 'refs/heads/feature/x') isNil.

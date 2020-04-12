@@ -1,5 +1,5 @@
 tests
 testFollowSymbolicRefs
 	| followed |	
-	followed := repository followSymbolicRefs: 'HEAD'.
+	followed := self unitOfWork followSymbolicRefs: 'HEAD'.
 	self assert: 'refs/heads/master' equals: followed.

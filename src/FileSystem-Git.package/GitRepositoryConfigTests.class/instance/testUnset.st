@@ -1,4 +1,4 @@
-testing
+tests
 testUnset
 	configFile writeStreamDo: [:stream | stream nextPutAll: 
 '[remote "origin"]
@@ -8,7 +8,7 @@ testUnset
 	foo = bar
 [core]
 	bare = true'].
-	repository configUnsetAt: 'remote.origin.fetch'.
+	self unitOfWork configUnsetAt: 'remote.origin.fetch'.
 	self assert: ('[remote "origin"]
 	url = http://localhost/git/FileSystem-Git.git
 [remote "origin.bla"]
@@ -16,14 +16,14 @@ testUnset
 [core]
 	bare = true
 ' withLineEndings: String lf) equals: (configFile  readStreamDo: [:s | s contents]).
-	repository configUnsetAt: 'remote.origin.bla.foo'.
+	self unitOfWork configUnsetAt: 'remote.origin.bla.foo'.
 	self assert: ('[remote "origin"]
 	url = http://localhost/git/FileSystem-Git.git
 [remote "origin.bla"]
 [core]
 	bare = true
 ' withLineEndings: String lf) equals: (configFile readStreamDo: [:s | s contents]).
-	repository configUnsetAt: 'remote.origin'.
+	self unitOfWork configUnsetAt: 'remote.origin'.
 	self assert: ('[core]
 	bare = true
 ' withLineEndings: String lf) equals: (configFile readStreamDo: [:s | s contents]).

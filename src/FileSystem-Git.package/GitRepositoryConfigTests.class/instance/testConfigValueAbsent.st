@@ -1,3 +1,3 @@
-testing
+tests
 testConfigValueAbsent
-	self assert: (repository configAt: 'remote.origin.url' ifAbsent: [42]) = 42.
+	self assert: (self unitOfWork configAt: 'remote.origin.url' ifAbsent: [42]) = 42.

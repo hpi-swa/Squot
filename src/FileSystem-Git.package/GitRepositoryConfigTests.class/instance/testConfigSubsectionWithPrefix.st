@@ -1,4 +1,4 @@
-testing
+tests
 testConfigSubsectionWithPrefix
 	| remoteSubset |
 	configFile writeStreamDo: [:stream | stream nextPutAll: 
@@ -20,13 +20,13 @@ testConfigSubsectionWithPrefix
 	bare = true
 [corex]
 	should not be found = by prefix core'].
-	self assert: {} equals: (repository configSubsetWithPrefix: 'doesnotexist').
-	self assert: {'core.bare' -> 'true'} equals: (repository configSubsetWithPrefix: 'core').
+	self assert: {} equals: (self unitOfWork configSubsetWithPrefix: 'doesnotexist').
+	self assert: {'core.bare' -> 'true'} equals: (self unitOfWork configSubsetWithPrefix: 'core').
 	self assert: {'remote.origin.url' -> 'http://localhost/git/FileSystem-Git.git'.
 				'remote.origin.fetch' -> '+refs/heads/*:refs/remotes/testserver/*'} asSet
-		equals: (repository configSubsetWithPrefix: 'remote.origin') asSet.
-	self assert: {'a.b.c.d' -> 'true'} equals: (repository configSubsetWithPrefix: 'a.b').
-	remoteSubset := repository configSubsetWithPrefix: 'remote'.
+		equals: (self unitOfWork configSubsetWithPrefix: 'remote.origin') asSet.
+	self assert: {'a.b.c.d' -> 'true'} equals: (self unitOfWork configSubsetWithPrefix: 'a.b').
+	remoteSubset := self unitOfWork configSubsetWithPrefix: 'remote'.
 	self assert: (remoteSubset anySatisfy: [:each | each key = 'remote.origin.url']).
 	self assert: (remoteSubset anySatisfy: [:each | each key = 'remote.origin.fetch']).
 	self assert: (remoteSubset anySatisfy: [:each | each key = 'remote.backup.url']).

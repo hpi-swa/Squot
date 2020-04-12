@@ -1,8 +1,8 @@
 tests
 testWorkingCopyDir
-	repository configUnsetAt: 'core.bare'.
-	self assert: repository workingCopyDir = reference parent "memory:/".
-	self assert: repository hasWorkingCopy.
-	repository configAt: 'core.bare' put: 'true'.
-	self deny: repository hasWorkingCopy.
-	self should: [repository workingCopyDir] raise: GitError.
+	self unitOfWork configUnsetAt: 'core.bare'.
+	self assert: self unitOfWork workingCopyDir = reference parent "memory:/".
+	self assert: self unitOfWork hasWorkingCopy.
+	self unitOfWork configAt: 'core.bare' put: 'true'.
+	self deny: self unitOfWork hasWorkingCopy.
+	self should: [self unitOfWork workingCopyDir] raise: GitError.

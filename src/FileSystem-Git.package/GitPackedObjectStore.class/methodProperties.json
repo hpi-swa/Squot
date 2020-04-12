@@ -10,6 +10,7 @@
 		"headerOfPackedObjectNamed:ifAbsent:" : "jr 3/6/2017 23:06",
 		"objectNamed:" : "jr 2/17/2020 22:48",
 		"objectNamed:ifAbsent:" : "jr 2/17/2020 22:47",
+		"objectNamesDo:" : "jr 4/12/2020 11:40",
 		"pack" : "jr 2/23/2020 23:21",
 		"packedObjectNamed:" : "jr 2/17/2020 22:51",
 		"packedObjectNamed:ifAbsent:" : "jr 2/17/2020 21:30",

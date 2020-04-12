@@ -2,7 +2,7 @@
 	"class" : {
 		"shouldInheritSelectors" : "jr 4/6/2020 23:15" },
 	"instance" : {
-		"createSomeBlobs" : "jr 2/29/2020 21:18",
-		"setUp" : "jr 2/17/2020 23:20",
-		"setUpRepository" : "jr 2/29/2020 21:18",
+		"createSomeBlobs" : "jr 4/12/2020 10:56",
+		"performTest" : "jr 4/6/2020 22:59",
+		"runCase" : "jr 4/6/2020 22:54",
 		"testCreatorUsesUnitOfWork" : "jr 2/17/2020 23:29" } }

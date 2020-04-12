@@ -1,4 +1,4 @@
-testing
+tests
 testGetConfigSections
 	configFile writeStreamDo: [:stream | stream nextPutAll: 
 '[remote "origin"]
@@ -7,4 +7,4 @@ testGetConfigSections
 
 [core]
 	bare = true'].
-	self assert: #('core' 'remote') asSet equals: repository configSections asSet.
+	self assert: #('core' 'remote') asSet equals: self unitOfWork configSections asSet.

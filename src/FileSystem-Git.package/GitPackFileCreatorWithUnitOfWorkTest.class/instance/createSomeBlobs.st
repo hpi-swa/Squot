@@ -1,5 +1,3 @@
 running
 createSomeBlobs
-	basicRepository := repository.
-	repository := basicRepository newUnitOfWork.
-	^ super createSomeBlobs
+	^ repository withUnitOfWork: [super createSomeBlobs]

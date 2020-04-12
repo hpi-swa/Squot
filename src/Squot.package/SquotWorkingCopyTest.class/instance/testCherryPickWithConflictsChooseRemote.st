@@ -17,6 +17,7 @@ testCherryPickWithConflictsChooseRemote
 	scenario assertConflictMethodIncomingEditionLoaded;
 		assertThirdMethodLoaded.
 	cherryPick save].
-	self assert: scenario secondVersion equals: workingCopy loadedVersion parents first;
+	repository withUnitOfWork:
+	[self assert: scenario secondVersion equals: workingCopy loadedVersion parents first;
 		deny: scenario thirdVersion = workingCopy loadedVersion;
-		assert: 'new version' equals: workingCopy loadedVersion message.
+		assert: 'new version' equals: workingCopy loadedVersion message].

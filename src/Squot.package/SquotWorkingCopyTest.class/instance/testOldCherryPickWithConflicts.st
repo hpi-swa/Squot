@@ -16,8 +16,9 @@ testOldCherryPickWithConflicts
 		[:request | request message: 'new version'; resume]
 	
 	] valueSupplyingAnswers: {{'*'. #default}}].
-	scenario assertConflictMethodHasNotChanged;
+	repository withUnitOfWork:
+	[scenario assertConflictMethodHasNotChanged;
 		assertThirdMethodLoaded.
 	self assert: scenario secondVersion equals: workingCopy loadedVersion parents first;
 		deny: scenario thirdVersion = workingCopy loadedVersion;
-		assert: 'new version' equals: workingCopy loadedVersion message.
+		assert: 'new version' equals: workingCopy loadedVersion message].

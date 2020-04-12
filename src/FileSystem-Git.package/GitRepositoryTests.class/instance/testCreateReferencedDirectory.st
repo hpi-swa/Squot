@@ -14,7 +14,7 @@ testCreateReferencedDirectory
 	
 	self 
 		shouldnt: [repository gitInitialize]
-		raise: DirectoryExists
+		raise: FSDirectoryExists
 		description: 'The code should check if one of parent directories exists before trying to create it'.
 	self assert: (filesystem root / 'alpha') exists.
 	self assert: (filesystem root / 'alpha' / 'beta') exists.

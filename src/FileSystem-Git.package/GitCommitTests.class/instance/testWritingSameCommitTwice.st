@@ -16,8 +16,8 @@ testWritingSameCommitTwice
 		author: self defaultStamp
 		committer: self defaultStamp
 		in: newRepository.
-	commit 
-		store.
-	newRepository updateRef: 'refs/heads/master' to: commit hexHash.
+	newRepository withUnitOfWork:
+		[commit store.
+		newRepository unitOfWork updateRef: 'refs/heads/master' to: commit hexHash.
 	
-	self shouldnt: [ commit store ] raise: Error.
+		self shouldnt: [ commit store ] raise: Error].

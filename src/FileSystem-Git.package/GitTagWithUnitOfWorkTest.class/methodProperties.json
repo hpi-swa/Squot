@@ -2,8 +2,6 @@
 	"class" : {
 		 },
 	"instance" : {
-		"performTest" : "jr 4/6/2020 22:59",
-		"runCase" : "jr 4/6/2020 22:54",
 		"setUpRepositoryObjects" : "jr 4/6/2020 23:09",
 		"testMakeLightTag" : "jr 4/6/2020 23:10",
 		"testReadingLightTag" : "jr 4/6/2020 23:10" } }

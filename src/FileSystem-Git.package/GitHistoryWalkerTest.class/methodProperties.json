@@ -7,6 +7,7 @@
 		"addCommit:withParents:" : "jr 10/23/2016 01:54",
 		"createSomeObjects" : "jr 2/29/2020 21:22",
 		"expectedFailures" : "jr 4/9/2017 00:35",
+		"repository" : "jr 4/13/2020 21:25",
 		"setUp" : "jr 2/29/2020 21:22",
 		"testMultipleVisitsToExcludedCommitAndUnchronologicalAuthorTimeStamps" : "jr 2/13/2019 23:09",
 		"testRevListChronologicalOrder" : "jr 4/6/2020 23:05",

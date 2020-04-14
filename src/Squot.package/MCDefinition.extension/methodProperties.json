@@ -3,4 +3,7 @@
 		 },
 	"instance" : {
 		"browseFromSquotWorkingCopyArtifact:" : "jr 12/22/2019 20:12",
-		"squotDiffNodeSummary" : "jr 4/17/2017 01:42" } }
+		"squotAddToChangeSet:" : "jr 4/14/2020 14:42",
+		"squotDiffNodeSummary" : "jr 4/17/2017 01:42",
+		"squotIsInChangeSet:" : "jr 4/14/2020 14:22",
+		"squotRemoveFromChangeSet:" : "jr 4/14/2020 14:42" } }

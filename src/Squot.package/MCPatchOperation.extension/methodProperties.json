@@ -3,6 +3,10 @@
 		 },
 	"instance" : {
 		"browseFromSquotWorkingCopyArtifact:" : "jr 12/22/2019 20:26",
+		"ignoreInSquot" : "jr 4/14/2020 14:40",
+		"isCurrentlyIgnoredInSquot" : "jr 4/14/2020 14:18",
+		"squotAddDiffNodeMenuItems:for:" : "jr 4/14/2020 14:35",
 		"squotChangeAsStringOrText" : "jr 4/17/2017 01:17",
 		"squotDiffNodeSummary" : "jr 4/17/2017 01:41",
-		"squotToolsDiffNodeContent" : "jr 11/3/2019 12:08" } }
+		"squotToolsDiffNodeContent" : "jr 11/3/2019 12:08",
+		"unignoreInSquot" : "jr 4/14/2020 14:40" } }

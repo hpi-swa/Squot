@@ -3,6 +3,7 @@ prepare
 	"Compute merge."
 	^ self withUnitOfWorkActive:
 	[self validateAncestry.
+	self startUnitOfWork.
 	self workingCopy addGlobalObjectsToStore: mergeVersion.
 	('Merging for ', self title truncateWithElipsisTo: 80) displaySequentialProgress:
 		[self workingCopy withCurrentSnapshot: self workingCopySnapshot do:

@@ -2,7 +2,8 @@ applying
 applyToWorkingCopy
 	"Save the new version in the repository."
 	^ (self withUnitOfWorkActive:
-		[self validate.
+		[self startUnitOfWork.
+		self validate.
 		self chooseChanges])
 		then: [:patch |
 			[self patch: patch;

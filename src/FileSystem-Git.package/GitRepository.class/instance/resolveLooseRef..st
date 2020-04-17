@@ -1,6 +1,7 @@
 accessing-references
 resolveLooseRef: refPath
 	| target |
+	self privateDeprecatedUseUnitOfWork.
 	refPath exists ifFalse: [ ^ nil ].
 	target := refPath readStreamDo: [ :stream | stream contents asString ].
 	(target beginsWith: 'ref:') 

@@ -2,6 +2,7 @@ public-accessing-references
 deleteRef: refPath
 	"Deletes the (possibly symbolic) reference denoted by refPath and its reflog."
 	| refFile expandedRef |
+	self privateDeprecatedUseUnitOfWork.
 	expandedRef := self expandRef: refPath.
 	expandedRef ifNil: ["does not exist" ^ self].
 	refFile := self baseDir resolve: expandedRef.

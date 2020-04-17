@@ -1,5 +1,6 @@
 accessing-objects
 streamPackedObjectNamed: aHexHash
+	self privateDeprecatedUseUnitOfWork.
 	^ self 
 		streamPackedObjectNamed: aHexHash
 		ifAbsent: [ 

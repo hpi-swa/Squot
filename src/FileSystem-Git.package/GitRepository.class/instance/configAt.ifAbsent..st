@@ -1,6 +1,7 @@
 public-configuration
 configAt: aNameString ifAbsent: aBlock
 	| config key sectionHead subNames file sectionName |
+	self privateDeprecatedUseUnitOfWork.
 	file := self configFile.
 	file exists ifFalse: [^ aBlock value].
 	config := file readStreamDo: [:stream | stream ascii. INIFile readFrom: stream].

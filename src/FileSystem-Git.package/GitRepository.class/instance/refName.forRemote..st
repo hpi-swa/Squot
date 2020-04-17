@@ -1,6 +1,7 @@
 public-accessing-references
 refName: refName forRemote: remoteName
 	| branch |
+	self privateDeprecatedUseUnitOfWork.
 	self validateReferenceOrReferenceName: refName.
 	branch := (refName beginsWith: 'refs/heads/')
 		ifTrue: [refName allButFirst: 'refs/heads/' size]

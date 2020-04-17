@@ -1,6 +1,7 @@
 private
 basicUpdateRef: refPath to: aString
 	| pathReference |
+	self privateDeprecatedUseUnitOfWork.
 	self flag: 'rather make sure we never get strings in here...'.
 	pathReference := refPath isString 
 		ifTrue: [self baseDir resolve: refPath]

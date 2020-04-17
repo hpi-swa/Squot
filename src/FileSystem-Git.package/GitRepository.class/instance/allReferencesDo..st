@@ -3,6 +3,7 @@ allReferencesDo: aBlock
 	"Invoke aBlock with all references (as strings) in this repository.
 	References outside of the refsDir will come last."
 	| baseDir |
+	self privateDeprecatedUseUnitOfWork.
 	baseDir := self baseDir asAbsolute.
 	(FSSelectVisitor breadthFirst: baseDir / 'refs' select: [:each | each isFile])
 		do: [:each | aBlock value: (self refFromFile: each reference relativeTo: baseDir)].

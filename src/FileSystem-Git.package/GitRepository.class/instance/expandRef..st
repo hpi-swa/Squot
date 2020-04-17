@@ -8,7 +8,8 @@ expandRef: name
             4. otherwise, $GIT_DIR/refs/heads/<name> if exists;
             5. otherwise, $GIT_DIR/refs/remotes/<name> if exists;
             6. otherwise, $GIT_DIR/refs/remotes/<name>/HEAD if exists."
-	| havePackedRefs packedRefs basePath|	
+	| havePackedRefs packedRefs basePath |
+	self privateDeprecatedUseUnitOfWork.
 	havePackedRefs := false.
 	basePath := self baseDir .
 	packedRefs := nil.

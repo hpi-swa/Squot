@@ -1,6 +1,7 @@
 storing
 storeLooseObject: aGitStorableObject
 	| objectReference |
+	self privateDeprecatedUseUnitOfWork.
 	objectReference := (self referenceTo: aGitStorableObject).
 	objectReference exists ifTrue: [ ^ self ]. "prevent overwrites"
 	
@@ -8,4 +9,6 @@ storeLooseObject: aGitStorableObject
 		stream binary.
 		aGitStorableObject compressedOn: stream ].
 	aGitStorableObject ifNotPacked:
-		[objectCache at: aGitStorableObject hexHash put: aGitStorableObject].
+		[self assert:
+			(objectCache at: aGitStorableObject hexHash ifAbsentPut: aGitStorableObject)
+			= aGitStorableObject].

@@ -3,7 +3,8 @@
 	"classinstvars" : [
 		 ],
 	"classvars" : [
-		"UseUnitOfWorkInterface" ],
+		"UseUnitOfWorkInterface",
+		"WarnAboutUseOfDeprecatedMethods" ],
 	"commentStamp" : "",
 	"instvars" : [
 		 ],

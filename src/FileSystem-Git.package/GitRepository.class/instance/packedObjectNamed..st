@@ -1,5 +1,6 @@
 accessing-objects
 packedObjectNamed: aHexHash
+	self privateDeprecatedUseUnitOfWork.
 	self 
 		packedObjectNamed: aHexHash 
 		ifAbsent: [ 

@@ -1,6 +1,7 @@
 accessing-objects
 streamPackedObjectNamed: aHexHash ifAbsent: aBlock
 	| packedObject |
+	self privateDeprecatedUseUnitOfWork.
 	packedObject :=
 		self 
 			packedObjectNamed: aHexHash

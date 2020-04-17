@@ -8,6 +8,7 @@ resolveRef: name
             5. otherwise, $GIT_DIR/refs/remotes/<name> if exists;
             6. otherwise, $GIT_DIR/refs/remotes/<name>/HEAD if exists."
 	| havePackedRefs packedRefs basePath|
+	self privateDeprecatedUseUnitOfWork.
 	self validateReferenceOrReferenceName: name.
 	
 	havePackedRefs := false.

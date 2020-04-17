@@ -1,6 +1,7 @@
 public-accessing-objects
 tags
 	|  referencedObjects tags |
+	self privateDeprecatedUseUnitOfWork.
 	
 	tags := OrderedCollection new.
 	

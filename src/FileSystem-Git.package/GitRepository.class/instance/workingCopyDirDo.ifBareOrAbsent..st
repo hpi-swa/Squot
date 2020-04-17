@@ -1,5 +1,6 @@
 public-locations
 workingCopyDirDo: aBlock ifBareOrAbsent: absentBlock
+	self privateDeprecatedUseUnitOfWork.
 	^ self workingCopyDirDo: [:workingCopyDir |
 			workingCopyDir isDirectory ifFalse: [^ absentBlock value].
 			aBlock value: workingCopyDir]

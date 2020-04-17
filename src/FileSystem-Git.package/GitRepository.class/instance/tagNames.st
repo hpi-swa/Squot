@@ -1,6 +1,7 @@
 public-accessing-objects
 tagNames
 	| tagRefs tagNames packedRefs|
+	self privateDeprecatedUseUnitOfWork.
 	tagNames := OrderedCollection new.
 	tagRefs := self tagsDir children.
 	tagRefs do: [:ref | tagNames add: ref basename].

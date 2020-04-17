@@ -1,6 +1,7 @@
 private configuration
 configSubkeysAt: aNameString
 	| config subNames file hierarchicalSectionNames relevantSections |
+	self privateDeprecatedUseUnitOfWork.
 	file := self configFile.
 	file exists ifFalse: [^ #()].
 	config := file readStreamDo: [:stream | stream ascii. INIFile readFrom: stream].

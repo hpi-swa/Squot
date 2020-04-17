@@ -3,6 +3,7 @@ branches
 "Answers a dictionary of all GitCommit objects referenced in '/refs/heads'."
 
 	| dictionary |
+	self privateDeprecatedUseUnitOfWork.
 	dictionary := Dictionary new.
 	self allReferencesPrefixedWith: 'refs/heads/' do: [:each |
 		dictionary

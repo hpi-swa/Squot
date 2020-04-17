@@ -2,6 +2,7 @@ enumerating
 allLooseReferencesPrefixedWith: prefixString do: aBlock
 	"Invoke aBlock with all references (as strings) starting with prefixString in this repository."
 	| baseDir prefixDir |
+	self privateDeprecatedUseUnitOfWork.
 	baseDir := self baseDir asAbsolute.
 	prefixDir := baseDir resolve: prefixString.
 	prefixDir exists ifFalse: [^ self].

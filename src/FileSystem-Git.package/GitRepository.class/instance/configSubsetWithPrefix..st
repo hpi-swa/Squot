@@ -6,6 +6,7 @@ configSubsetWithPrefix: aString
 	all remotes. A collection is answered because some options can appear multiple times,
 	such as fetch refspecs."
 	| subset config sectionHead nameParts file |
+	self privateDeprecatedUseUnitOfWork.
 	subset := OrderedCollection new.
 	file := self configFile.
 	file exists ifFalse: [^ subset].

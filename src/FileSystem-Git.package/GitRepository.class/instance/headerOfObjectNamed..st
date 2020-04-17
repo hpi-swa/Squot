@@ -1,5 +1,6 @@
 public-accessing-objects
 headerOfObjectNamed: aHash
+	self privateDeprecatedUseUnitOfWork.
 	^ self
 		headerOfObjectNamed: aHash
 		ifAbsent: [ 

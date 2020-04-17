@@ -1,6 +1,7 @@
 accessing-references
 followSymbolicRefs: aString do: aBlock
 	| ref previousRefs |
+	self privateDeprecatedUseUnitOfWork.
 	previousRefs := OrderedCollection new: 1.
 	ref := aString.
 	[aBlock value: ref.

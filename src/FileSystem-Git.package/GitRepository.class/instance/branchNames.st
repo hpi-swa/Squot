@@ -1,6 +1,7 @@
 public-accessing-objects
 branchNames
 	| looseBranchNames packedRefs packedBranchNames |
+	self privateDeprecatedUseUnitOfWork.
 	looseBranchNames := #().
 	self headsDir exists ifTrue:
 		[looseBranchNames := self headsDir allFiles

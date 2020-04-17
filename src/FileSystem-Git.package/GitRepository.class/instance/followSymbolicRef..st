@@ -1,6 +1,7 @@
 public-accessing-references
 followSymbolicRef: symbolicRefFileReference
 	| target |
+	self privateDeprecatedUseUnitOfWork.
 	symbolicRefFileReference exists
 		ifFalse: [FileDoesNotExist signalWith: symbolicRefFileReference].
 	target := symbolicRefFileReference readStreamDo: [ :stream | stream contents asString ].

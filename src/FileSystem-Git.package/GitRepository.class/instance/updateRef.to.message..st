@@ -4,6 +4,7 @@ updateRef: refPath to: hexHash message: reflogMessageString
 	Symbolic references are resolved, so the non-symbolic reference is updated.
 	If the file denoted by refPath does not yet exist it will be created."
 	| target |
+	self privateDeprecatedUseUnitOfWork.
 	self validateReferenceOrReferenceName: refPath.
 	
 	target := [(self baseDir resolve: refPath) readStreamDo: [ :stream | stream contents withBlanksTrimmed ]]

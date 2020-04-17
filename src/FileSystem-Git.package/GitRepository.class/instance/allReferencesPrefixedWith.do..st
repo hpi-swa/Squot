@@ -2,6 +2,7 @@ public-accessing-references
 allReferencesPrefixedWith: prefixString do: aBlock
 	"Invoke aBlock with all references (as strings) starting with prefixString in this repository."
 	| visited |
+	self privateDeprecatedUseUnitOfWork.
 	visited := Set new.
 	self allLooseReferencesPrefixedWith: prefixString do: [:each | aBlock value: each.
 		visited add: each].

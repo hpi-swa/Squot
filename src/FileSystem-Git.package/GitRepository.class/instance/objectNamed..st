@@ -1,5 +1,6 @@
 public-accessing-objects
 objectNamed: aHash
+	self privateDeprecatedUseUnitOfWork.
 	aHash ifNil: [^ nil].
 	^ self 
 		objectNamed: aHash asHexHash 

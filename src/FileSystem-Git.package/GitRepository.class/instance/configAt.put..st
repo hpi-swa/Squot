@@ -1,6 +1,7 @@
 public-configuration
 configAt: aNameString put: value
 	| config key sectionHead subNames file sectionName |
+	self privateDeprecatedUseUnitOfWork.
 	file := self configFile.
 	config := file exists ifFalse: [INIFile new] ifTrue: [file readStreamDo: [:stream | stream ascii. INIFile readFrom: stream]].
 	subNames := aNameString splitBy: '.'.

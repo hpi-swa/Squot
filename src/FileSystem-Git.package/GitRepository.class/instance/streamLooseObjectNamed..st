@@ -1,5 +1,6 @@
 accessing-objects
 streamLooseObjectNamed: aHexHash
+	self privateDeprecatedUseUnitOfWork.
 	^ self 
 		streamLooseObjectNamed: aHexHash 
 		ifAbsent: [ GitObjectNotFoundError

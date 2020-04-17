@@ -1,6 +1,7 @@
 private configuration
 configSections
 	| config file |
+	self privateDeprecatedUseUnitOfWork.
 	file := self configFile.
 	file exists ifFalse: [^ Array empty].
 	config := file readStreamDo: [:stream | stream ascii. INIFile readFrom: stream].

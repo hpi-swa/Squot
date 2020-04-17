@@ -1,6 +1,7 @@
 private
 collectTagsFromLooseRefs
 	| tags |
+	self privateDeprecatedUseUnitOfWork.
 	tags := Dictionary new.
 	
 	self tagsDir children do: [ :ref |

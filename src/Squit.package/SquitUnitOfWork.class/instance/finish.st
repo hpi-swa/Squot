@@ -1,3 +1,4 @@
-scope activation
+unit of work
 finish
-	gitUnitOfWork finish.
+	super finish.
+	self numberOfClients = 0 ifTrue: [gitUnitOfWork finish].

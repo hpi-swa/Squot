@@ -6,10 +6,9 @@
 		"Registry" ],
 	"commentStamp" : "jr 2/26/2020 21:33",
 	"instvars" : [
-		"repository",
 		"gitUnitOfWork" ],
 	"name" : "SquitUnitOfWork",
 	"pools" : [
 		 ],
-	"super" : "Object",
+	"super" : "SquotBasicUnitOfWork",
 	"type" : "normal" }

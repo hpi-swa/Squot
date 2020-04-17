@@ -1,7 +1,7 @@
 applying
 createVersion
 	[self workingCopy handlePathChangesDuring: 
-		[self withUnitOfWork:
+		[self withUnitOfWorkActive:
 			[newVersion := historian createNewVersionFromPatch: patch
 				with: [:version | version
 							message: message;

@@ -1,6 +1,6 @@
 applying
 validate
-	self withUnitOfWork:
+	self withUnitOfWorkActive:
 		[historian ifNil: [self error: 'Historian to store to not configured'].
 		self patch ifNil: [self error: 'No changes to be saved'].
 		"Actually invoking the patch getter will compute a patch automatically and the patch can

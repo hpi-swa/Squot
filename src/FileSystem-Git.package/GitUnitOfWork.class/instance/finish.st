@@ -1,4 +1,6 @@
 finishing
 finish
-	self initialize.
+	objectStores do: [:each | each flushCaches].
+	refStores do: [:each | each flushCaches].
 	config := nil.
+	self initialize.

@@ -1,9 +1,10 @@
 applying
 prepareMerge
 	"Compute the merge and answer it (not the merge operation)."
-	^ self withUnitOfWork:
+	^ self withUnitOfWorkActive:
 		[self validateAncestry.
 		(merge := self privateNewMerge)
+			unitOfWork: self unitOfWork;
 			workingCopySnapshot: self workingCopySnapshot;
 			mergeVersion: pickedVersion;
 			baseVersion: relevantParentOfPickedVersion;

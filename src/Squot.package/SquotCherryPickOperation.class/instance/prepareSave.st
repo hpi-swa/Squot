@@ -1,7 +1,7 @@
 applying
 prepareSave
 	| patchBuilder |
-	^ self withUnitOfWork:
+	^ self withUnitOfWorkActive:
 	[patchBuilder := self workingCopy baseVersion newPatchBuilder.
 	loadedPatch diffsDo: [:each | patchBuilder addDiff: each].
 	self saveOperation

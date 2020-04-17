@@ -1,6 +1,7 @@
 applying
 withUnitOfWork: aBlock
+	"Activate unit of work in the dynamic environment while evaluating the block.
+	Finish the unit of work after the block has been evaluated."
 	SquotToggles useUnitOfWorkInterface ifFalse: [^ aBlock value].
-	unitOfWork ifNil: [unitOfWork := workingCopy repository unitOfWork].
-	unitOfWork == workingCopy repository ifTrue: [^ aBlock value].
-	^ unitOfWork activateDuring: aBlock
+	^ [self withUnitOfWorkActive: aBlock]
+		ensure: [self finishUnitOfWork]

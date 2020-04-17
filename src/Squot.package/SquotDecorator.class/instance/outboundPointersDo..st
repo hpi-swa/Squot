@@ -1,9 +1,5 @@
 tools - debugger
 outboundPointersDo: aBlock
-	| i |
 	aBlock value: (thisContext objectClass: self).
-	aBlock value: decoratedObject.
-	i := 2.
-	[aBlock value: (thisContext object: self instVarAt: i).
-	i := i + 1]
-		on: Error do: [:err | err return: nil].
+	1 to: (thisContext objectClass: self) instSize do: [:i | aBlock value: (thisContext object: self instVarAt: i)].
+	1 to: (thisContext objectSize: self) do: [:i | aBlock value: (thisContext object: self basicAt: i)].

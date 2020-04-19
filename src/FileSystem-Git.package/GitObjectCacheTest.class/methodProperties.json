@@ -1,0 +1,9 @@
+{
+	"class" : {
+		 },
+	"instance" : {
+		"setUp" : "jr 4/19/2020 21:40",
+		"tearDown" : "jr 4/19/2020 21:40",
+		"testAddedObjectsAreRetrievable" : "jr 4/19/2020 21:38",
+		"testCanHoldObjectExceedingTheThresholdShortly" : "jr 4/19/2020 21:47",
+		"testEvictsLargestObjects" : "jr 4/19/2020 21:48" } }

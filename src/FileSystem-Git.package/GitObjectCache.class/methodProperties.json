@@ -3,9 +3,11 @@
 		 },
 	"instance" : {
 		"at:ifAbsent:" : "jr 3/10/2020 21:10",
-		"at:ifAbsentPut:" : "jr 3/10/2020 21:10",
+		"at:ifAbsentPut:" : "jr 4/19/2020 21:45",
 		"at:ifPresent:" : "jr 3/10/2020 21:11",
-		"at:put:" : "jr 3/10/2020 21:16",
+		"at:put:" : "jr 4/19/2020 21:14",
 		"hashesWithObjectsDo:" : "jr 3/10/2020 21:08",
-		"initialize" : "jr 3/10/2020 21:11",
-		"keysAndValuesDo:" : "jr 3/10/2020 21:13" } }
+		"initialize" : "jr 4/19/2020 21:28",
+		"keysAndValuesDo:" : "jr 4/19/2020 21:12",
+		"sizeHeap" : "jr 4/19/2020 21:28",
+		"thresholdSize" : "jr 4/19/2020 21:24" } }

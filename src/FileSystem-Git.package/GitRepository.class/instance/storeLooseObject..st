@@ -10,5 +10,5 @@ storeLooseObject: aGitStorableObject
 		aGitStorableObject compressedOn: stream ].
 	aGitStorableObject ifNotPacked:
 		[self assert:
-			(objectCache at: aGitStorableObject hexHash ifAbsentPut: aGitStorableObject)
+			(objectCache at: aGitStorableObject hexHash ifAbsentPut: [aGitStorableObject])
 			= aGitStorableObject].

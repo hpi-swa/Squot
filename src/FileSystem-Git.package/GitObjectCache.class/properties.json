@@ -4,9 +4,11 @@
 		 ],
 	"classvars" : [
 		 ],
-	"commentStamp" : "",
+	"commentStamp" : "jr 4/19/2020 21:23",
 	"instvars" : [
-		"cache" ],
+		"cache",
+		"totalSize",
+		"objectsSortedBySize" ],
 	"name" : "GitObjectCache",
 	"pools" : [
 		 ],

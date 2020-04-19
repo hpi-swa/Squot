@@ -1,5 +1,7 @@
 {
 	"class" : {
+		"evictFromObjectCache" : "jr 4/19/2020 21:39",
+		"evictFromObjectCache:" : "jr 4/19/2020 21:39",
 		"useUnitOfWorkInterface" : "jr 2/9/2020 17:38",
 		"useUnitOfWorkInterface:" : "jr 2/9/2020 17:40",
 		"warnAboutUseOfDeprecatedMethods" : "jr 4/17/2020 11:49",

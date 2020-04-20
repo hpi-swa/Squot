@@ -2,10 +2,10 @@
 	"class" : {
 		 },
 	"instance" : {
-		"setUp" : "jr 4/20/2020 23:40",
+		"setUp" : "jr 4/20/2020 23:45",
 		"tearDown" : "jr 4/20/2020 23:41",
-		"testAddedObjectsAreRetrievable" : "jr 4/20/2020 23:40",
-		"testCanHoldFirstObjectExceedingTheThresholdShortly" : "jr 4/20/2020 23:40",
-		"testCanHoldObjectExceedingTheThresholdShortly" : "jr 4/20/2020 23:40",
-		"testEachStoredOnlyOnce" : "jr 4/20/2020 23:40",
-		"testEvictsLargestObjects" : "jr 4/20/2020 23:40" } }
+		"testAddedObjectsAreRetrievable" : "jr 4/20/2020 23:45",
+		"testCanHoldFirstObjectExceedingTheThresholdShortly" : "jr 4/20/2020 23:45",
+		"testCanHoldObjectExceedingTheThresholdShortly" : "jr 4/20/2020 23:45",
+		"testEachStoredOnlyOnce" : "jr 4/20/2020 23:45",
+		"testEvictsLargestObjects" : "jr 4/20/2020 23:45" } }

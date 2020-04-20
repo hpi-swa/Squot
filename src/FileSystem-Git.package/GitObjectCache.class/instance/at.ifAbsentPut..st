@@ -12,8 +12,16 @@ at: aHash ifAbsentPut: aBlock
 		sizeAndObject value == object ifTrue:
 			"don't remove the new object"
 			[self sizeHeap notEmpty
-				ifTrue: [	sizeAndObject := self sizeHeap removeFirst]
-				ifFalse: ["put it back" self sizeHeap add: sizeAndObject. ^ object]].
+				ifTrue: "put it back and remove another"
+					[| new |
+					new := sizeAndObject.
+					sizeAndObject := self sizeHeap removeFirst.
+					self sizeHeap add: new]
+				ifFalse: "just put it back and don't remove anything"
+					[self sizeHeap add: sizeAndObject.
+					^ object]].
 		cache removeKey: sizeAndObject value hexHash.
 		totalSize := totalSize - sizeAndObject key].
+	"self assert: objectsSortedBySize size = cache size.
+	self assert: totalSize = (objectsSortedBySize inject: 0 into: [:total :each | total + each key])."
 	^ object

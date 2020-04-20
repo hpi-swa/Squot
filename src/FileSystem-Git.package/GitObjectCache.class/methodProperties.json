@@ -2,14 +2,17 @@
 	"class" : {
 		 },
 	"instance" : {
-		"at:ifAbsent:" : "jr 3/10/2020 21:10",
-		"at:ifAbsentPut:" : "jr 4/20/2020 22:31",
-		"at:ifPresent:" : "jr 3/10/2020 21:11",
+		"at:ifAbsent:" : "jr 4/20/2020 23:28",
+		"at:ifAbsentPut:" : "jr 4/20/2020 23:35",
+		"at:ifPresent:" : "jr 4/20/2020 23:17",
 		"at:put:" : "jr 4/19/2020 21:14",
+		"checkSizeInvariant" : "jr 4/20/2020 22:34",
 		"defaultThresholdSize" : "jr 4/20/2020 21:17",
 		"hashesWithObjectsDo:" : "jr 3/10/2020 21:08",
-		"initialize" : "jr 4/20/2020 21:17",
+		"hit" : "jr 4/20/2020 23:15",
+		"initialize" : "jr 4/20/2020 23:35",
 		"keysAndValuesDo:" : "jr 4/19/2020 21:12",
+		"miss" : "jr 4/20/2020 23:15",
 		"sizeHeap" : "jr 4/19/2020 21:28",
 		"thresholdSize" : "jr 4/20/2020 21:17",
 		"thresholdSize:" : "jr 4/20/2020 21:28" } }

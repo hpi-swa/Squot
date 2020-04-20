@@ -1,7 +1,6 @@
 tests
 testEvictsLargestObjects
-	| blob1 blob2 cache repo blob3 |
-	cache := GitObjectCache new.
+	| blob1 blob2 repo blob3 |
 	cache thresholdSize: 100.
 	repo := Object new.
 	blob1 := GitBlob bytes: (ByteArray new: cache thresholdSize) in: repo.

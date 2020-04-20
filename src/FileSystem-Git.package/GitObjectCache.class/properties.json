@@ -8,8 +8,11 @@
 	"instvars" : [
 		"cache",
 		"totalSize",
-		"objectsSortedBySize",
-		"thresholdSize" ],
+		"thresholdSize",
+		"hits",
+		"misses",
+		"evictions",
+		"objectsSortedBySize" ],
 	"name" : "GitObjectCache",
 	"pools" : [
 		 ],

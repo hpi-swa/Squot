@@ -1,4 +1,5 @@
 running
 setUp
 	previousEvictSetting := GitFeatureFlags evictFromObjectCache.
-	GitFeatureFlags evictFromObjectCache: true.
+	GitFeatureFlags evictFromObjectCacheForTests: true.
+	cache := GitObjectCache new.

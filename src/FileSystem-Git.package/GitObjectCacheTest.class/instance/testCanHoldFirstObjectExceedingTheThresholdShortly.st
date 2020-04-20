@@ -1,7 +1,6 @@
 tests
 testCanHoldFirstObjectExceedingTheThresholdShortly
-	| blob1 blob2 cache repo |
-	cache := GitObjectCache new.
+	| blob1 blob2 repo |
 	cache thresholdSize: 100.
 	repo := Object new.
 	blob1 := GitBlob bytes: (ByteArray new: cache thresholdSize + 1) in: repo.

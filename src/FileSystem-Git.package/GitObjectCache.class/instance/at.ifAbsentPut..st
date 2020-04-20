@@ -3,6 +3,7 @@ at: aHash ifAbsentPut: aBlock
 	| object isNew size sizeAndObject |
 	isNew := false.
 	object := cache at: aHash ifAbsentPut: [isNew := true. aBlock value].
+	isNew ifTrue: [self miss] ifFalse: [self hit].
 	(isNew and: [GitFeatureFlags evictFromObjectCache]) ifFalse: [^ object].
 	size := object size.
 	totalSize := totalSize + size.
@@ -21,7 +22,7 @@ at: aHash ifAbsentPut: aBlock
 					[self sizeHeap add: sizeAndObject.
 					^ object]].
 		cache removeKey: sizeAndObject value hexHash.
-		totalSize := totalSize - sizeAndObject key].
-	"self assert: objectsSortedBySize size = cache size.
-	self assert: totalSize = (objectsSortedBySize inject: 0 into: [:total :each | total + each key])."
+		totalSize := totalSize - sizeAndObject key.
+		evictions := evictions + 1].
+	"self checkSizeInvariant."
 	^ object

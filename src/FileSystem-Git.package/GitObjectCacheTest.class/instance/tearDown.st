@@ -1,3 +1,5 @@
 running
 tearDown
-	GitFeatureFlags evictFromObjectCache: previousEvictSetting..
+	previousEvictSetting ifFalse:
+		[GitFeatureFlags evictFromObjectCache: previousEvictSetting].
+	cache checkSizeInvariant.

@@ -7,6 +7,7 @@ modes keysAndValuesDo: [:entry :modes |
 Smalltalk globals removeKey: #TEMP_GitTreeEntryModes.
 
 "2020-03-10: turn objectCache from Dictionary into GitObjectCache. Just invalidate the cache."
+"2020-04-20: changed structure of GitObjectCache and access in GitUnitOfWork"
 GitRepository allInstancesDo: [:each | each flushCaches].
 GitPackedRefStore allInstancesDo:
 	[:each | 

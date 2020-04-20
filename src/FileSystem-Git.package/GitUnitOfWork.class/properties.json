@@ -9,7 +9,6 @@
 		"repository",
 		"objectStores",
 		"refStores",
-		"objectCache",
 		"refs",
 		"resolvedRefs",
 		"refLogs",

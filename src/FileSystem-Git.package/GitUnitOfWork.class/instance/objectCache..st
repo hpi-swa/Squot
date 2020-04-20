@@ -1,3 +1,3 @@
 accessing
 objectCache: anObject
-	objectCache := anObject
+	^ self deprecated: 'Cache of the GitRepository is used instead'

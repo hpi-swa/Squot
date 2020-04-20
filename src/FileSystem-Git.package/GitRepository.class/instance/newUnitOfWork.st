@@ -13,7 +13,6 @@ newUnitOfWork
 	refStores do: [:each | each repository: self].
 	^ GitUnitOfWork new
 		repository: self;
-		objectCache: objectCache;
 		refStores: refStores;
 		objectStores: objectStores;
 		yourself

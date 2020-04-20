@@ -4,5 +4,5 @@ storeObject: anObject
 	^ self objectNamed: anObject hexHash
 		ifAbsent:
 			[objectStores first store: anObject.
-			self assert: (objectCache at: anObject hexHash ifAbsentPut: [anObject]) = anObject.
+			self assert: (self objectCache at: anObject hexHash ifAbsentPut: [anObject]) = anObject.
 			anObject]

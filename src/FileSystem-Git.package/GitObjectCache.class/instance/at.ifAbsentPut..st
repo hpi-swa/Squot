@@ -1,8 +1,9 @@
 accessing
 at: aHash ifAbsentPut: aBlock
-	| object size sizeAndObject |
-	object := cache at: aHash ifAbsentPut: aBlock.
-	GitFeatureFlags evictFromObjectCache ifFalse: [^ object].
+	| object isNew size sizeAndObject |
+	isNew := false.
+	object := cache at: aHash ifAbsentPut: [isNew := true. aBlock value].
+	(isNew and: [GitFeatureFlags evictFromObjectCache]) ifFalse: [^ object].
 	size := object size.
 	totalSize := totalSize + size.
 	self sizeHeap add: size -> object.

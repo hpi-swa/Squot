@@ -6,4 +6,5 @@
 		"tearDown" : "jr 4/19/2020 21:40",
 		"testAddedObjectsAreRetrievable" : "jr 4/19/2020 21:38",
 		"testCanHoldObjectExceedingTheThresholdShortly" : "jr 4/20/2020 21:28",
+		"testEachStoredOnlyOnce" : "jr 4/20/2020 22:09",
 		"testEvictsLargestObjects" : "jr 4/20/2020 21:36" } }

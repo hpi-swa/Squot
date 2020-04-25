@@ -3,7 +3,7 @@
 		"lastStoredRun" : "MaxLeske 2/28/2012 18:10" },
 	"instance" : {
 		"repository" : "jr 4/13/2020 21:25",
-		"setUp" : "jr 4/12/2020 17:00",
+		"setUp" : "jr 4/25/2020 17:19",
 		"testAllReferences" : "jr 4/12/2020 17:00",
 		"testBranchNamesWithHierarchy" : "jr 4/12/2020 17:00",
 		"testBranches" : "jr 4/12/2020 17:00",
@@ -12,7 +12,7 @@
 		"testExpandRef" : "jr 4/12/2020 17:03",
 		"testFollowSymbolicRefs" : "jr 4/12/2020 17:03",
 		"testHasWorkingCopy" : "jr 4/12/2020 17:04",
-		"testHeadFile" : "jr 4/12/2020 17:05",
+		"testHeadFile" : "jr 4/25/2020 17:22",
 		"testInverseReferenceLookup" : "jr 4/12/2020 17:05",
 		"testNew" : "MaxLeske 8/11/2011 22:58",
 		"testObjectNamed" : "jr 4/12/2020 16:59",

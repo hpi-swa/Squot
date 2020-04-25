@@ -5,6 +5,5 @@ shadowOf: anObject ifAbsentPut: shadowBlock
 	^ convertedObjects at: anObject
 		ifAbsentPut: [ | shadow |
 			shadow := shadowBlock value.
-			(objectGraph nameOf: anObject ifAbsent: []) ifNotNil: [:name |
-				objectGraph assign: name toShadow: shadow].
+			objectGraph addShadow: shadow of: anObject.
 			shadow]

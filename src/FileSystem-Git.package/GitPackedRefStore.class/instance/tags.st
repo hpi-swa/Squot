@@ -1,3 +1,0 @@
-accessing
-tags
-	^ self collectTagsFromPackedRefs

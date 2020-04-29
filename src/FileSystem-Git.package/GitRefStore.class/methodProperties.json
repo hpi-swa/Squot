@@ -2,7 +2,6 @@
 	"class" : {
 		"on:" : "jr 2/12/2020 23:10" },
 	"instance" : {
-		"branchNames" : "jr 2/13/2020 00:33",
 		"currentUnitOfWork" : "jr 4/6/2020 22:46",
 		"delete:" : "jr 2/13/2020 00:32",
 		"flushCaches" : "jr 3/10/2020 22:01",
@@ -12,8 +11,5 @@
 		"repository" : "jr 2/12/2020 23:13",
 		"repository:" : "jr 2/12/2020 23:13",
 		"resolve:" : "jr 4/29/2020 23:00",
-		"tagNames" : "jr 2/13/2020 00:27",
-		"tags" : "jr 2/13/2020 00:35",
-		"tagsDo:" : "jr 2/12/2020 22:10",
 		"targetOf:" : "jr 4/29/2020 23:00",
 		"updateRef:to:" : "jr 2/13/2020 00:40" } }

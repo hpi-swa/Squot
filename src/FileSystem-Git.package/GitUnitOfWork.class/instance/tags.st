@@ -2,8 +2,8 @@ accessing
 tags
 	|  referencedObjects tags |
 	referencedObjects := Dictionary new.
-	refStores do: [:each | each referencesPrefixedWith: 'refs/tags/' do: [:eachRef |
-			referencedObjects at: eachRef put: (self objectReferenced: eachRef)]].
+	self allReferencesPrefixedWith: 'refs/tags/' do: [:each |
+		referencedObjects at: each put: (self objectReferenced: each)].
 	tags := OrderedCollection new.
 	referencedObjects keysAndValuesDo: [ :name :object |
 		tags add: (object class = GitCommit

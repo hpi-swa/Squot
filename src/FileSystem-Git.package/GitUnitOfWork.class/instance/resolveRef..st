@@ -15,7 +15,8 @@ From the git-rev-parse manpage:
 		'refs/heads/'
 		'refs/remotes/'
 		"We don't do the last case (number 6) from the manual yet."
-	) do: [ :prefix |
-		refStores do: [:each | (each resolve: prefix, name) ifNotNil: [:hash | ^ hash]]].
+	) do: [ :prefix | | full |
+		full := self followSymbolicRefs: prefix, name.
+		refStores do: [:each | (each ref: full) ifNotNil: [:ref | ^ ref signature]]].
 	self flag: 'raise exception instead of answering nil?'.
 	^ nil

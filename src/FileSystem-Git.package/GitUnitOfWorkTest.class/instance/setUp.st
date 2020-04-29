@@ -48,4 +48,4 @@ setUp
 		updateRef: basicRepository headsDir / 'branch1' to: commit1 hexHash;
 		updateRef: basicRepository headsDir / 'master' to: commit2 hexHash;
 		updateRef: 'refs/heads/feature/x' to: commit2 hexHash;
-		activateDuring: [unitOfWork updateHeadToBranch: 'master'].
+		updateHeadToBranch: 'master'.

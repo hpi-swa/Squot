@@ -1,6 +1,7 @@
 accessing
 resolve: aString
 	| target |
+	self deprecated: 'The GitUnitOfWork should do the resolving by itself.'.
 	target := self targetOf: aString.
 	target ifNil: [^ nil "does not exist"].
 	(target beginsWith: 'ref:') 

@@ -18,7 +18,7 @@ fetchFrom: aRemoteName
 			wantSignatures := wantRefs collect: [:each | remoteRefs at: each].
 			packFileData := protocol wantAll: wantSignatures.
 			packFile := GitPackFile readFrom: packFileData readStream].
-	packFile repository: self unitOfWork.
+	packFile repository: repository.
 	packFile unpack.
 	wantRefs do:
 		[:each | self unitOfWork

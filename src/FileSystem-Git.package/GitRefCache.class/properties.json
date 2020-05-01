@@ -1,0 +1,16 @@
+{
+	"category" : "FileSystem-Git-Plumbing-Utilities",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "jr 5/1/2020 23:08",
+	"instvars" : [
+		"refs",
+		"symbolicRefs",
+		"resolvedRefs" ],
+	"name" : "GitRefCache",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }

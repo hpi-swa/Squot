@@ -26,5 +26,6 @@
 		"testResolveRef" : "jr 4/12/2020 17:06",
 		"testStoreObjectCommitNoAuthor" : "MaxLeske 2/28/2012 16:32",
 		"testStoreObjectCommitNoTree" : "MaxLeske 2/28/2012 16:32",
+		"testSymRefMultipleIndirection" : "jr 5/1/2020 19:54",
 		"testTags" : "jr 4/12/2020 17:06",
 		"testWorkingCopyDir" : "jr 4/12/2020 17:08" } }

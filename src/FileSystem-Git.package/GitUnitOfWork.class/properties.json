@@ -9,11 +9,9 @@
 		"repository",
 		"objectStores",
 		"refStores",
-		"refs",
-		"symbolicRefs",
-		"resolvedRefs",
 		"refLogs",
-		"config" ],
+		"config",
+		"refCache" ],
 	"name" : "GitUnitOfWork",
 	"pools" : [
 		 ],

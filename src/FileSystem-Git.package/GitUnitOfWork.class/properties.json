@@ -10,6 +10,7 @@
 		"objectStores",
 		"refStores",
 		"refs",
+		"symbolicRefs",
 		"resolvedRefs",
 		"refLogs",
 		"config" ],

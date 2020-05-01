@@ -14,7 +14,6 @@ expandRef: name
 		'refs/heads/'
 		'refs/remotes/'
 		"We don't do the last case (number 6) from the manual yet."
-	) do: [ :prefix |
-		refStores do: [:each | (each includes: prefix, name) ifTrue: [^ prefix, name]]].
+	) do: [ :prefix | (self refExists: prefix, name) ifTrue: [^ prefix, name]].
 	self flag: 'raise exception instead of answering nil?'.
 	^ nil

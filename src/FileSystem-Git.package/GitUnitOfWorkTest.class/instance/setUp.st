@@ -6,8 +6,8 @@ setUp
 		name: 'Homer Simpson';
 		email: 'homer@nuke.com';
 		yourself.
-	reference := (FileSystem memory / 'test.git').
-	unitOfWork := (repository := basicRepository := GitRepository on: reference) newUnitOfWork.
+	self createRepository.
+	unitOfWork := repository newUnitOfWork.
 
 	unitOfWork activateDuring:
 	[blob1 := (GitBlob bytes: 'testBlob' in: repository) store; yourself.
@@ -45,7 +45,7 @@ setUp
 		yourself].
 	
 	unitOfWork
-		updateRef: basicRepository headsDir / 'branch1' to: commit1 hexHash;
-		updateRef: basicRepository headsDir / 'master' to: commit2 hexHash;
+		updateRef: 'refs/heads/branch1' to: commit1 hexHash;
+		updateRef: 'refs/heads/master' to: commit2 hexHash;
 		updateRef: 'refs/heads/feature/x' to: commit2 hexHash;
 		updateHeadToBranch: 'master'.

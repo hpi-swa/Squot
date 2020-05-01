@@ -1,0 +1,15 @@
+{
+	"category" : "FileSystem-Git-Plumbing-Tests",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"refs",
+		"accesses" ],
+	"name" : "GitRefStoreMock",
+	"pools" : [
+		 ],
+	"super" : "GitRefStore",
+	"type" : "normal" }

@@ -1,0 +1,12 @@
+{
+	"class" : {
+		 },
+	"instance" : {
+		"runCase" : "jr 5/2/2020 00:30",
+		"setUp" : "jr 5/2/2020 00:33",
+		"tearDown" : "jr 5/2/2020 00:51",
+		"testClassDefinitionAndMethodDefinitionAreIndependent" : "jr 5/2/2020 00:40",
+		"testIgnoreClassDefinition" : "jr 5/2/2020 00:53",
+		"testIgnoreMethod" : "jr 5/2/2020 00:37",
+		"testIgnoreWholeClass" : "jr 5/2/2020 00:54",
+		"testNotIgnoredAfterWholeClassUnignored" : "jr 5/2/2020 00:47" } }

@@ -4,6 +4,8 @@ printOn: aStream
 	self message
 		ifNotNilDo: [ :msg|
 			aStream
-				nextPutAll: '(''';
-				nextPutAll: msg;
-				nextPutAll: ''')' ]
+				nextPutAll: '(';
+				nextPutAll: (integerHash ifNil: [''] ifNotNil: [integerHash asHexHash first: 7]);
+				space;
+				nextPutAll: (msg copyUpTo: Character cr);
+				nextPutAll: ')' ]

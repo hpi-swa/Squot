@@ -2,4 +2,5 @@
 	"class" : {
 		 },
 	"instance" : {
-		"newToolOn:" : "jr 11/18/2018 01:47" } }
+		"newToolOn:" : "jr 5/2/2020 01:49",
+		"performUiInteractionTestsOnNode:inTree:" : "jr 5/2/2020 01:15" } }

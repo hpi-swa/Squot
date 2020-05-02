@@ -1,8 +1,6 @@
 actions
 excludeMethodsThatAreAssumedUnchanged
-	| packageNodes changeSet |
-	changeSet := SquotIgnoredSmalltalkCode changeSet.
-	changeSet ifNil: [^ self].
+	| packageNodes |
 	packageNodes := rootNodes select: [:each | each content object shadowOfTrackedObject isKindOf: SquotPackageShadow].
 	packageNodes do: [:eachPackage |
 		eachPackage children do: [:eachClass |

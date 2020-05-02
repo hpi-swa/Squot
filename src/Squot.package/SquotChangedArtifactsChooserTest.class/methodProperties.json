@@ -3,7 +3,7 @@
 		"shouldInheritSelectors" : "jr 9/29/2019 22:19" },
 	"instance" : {
 		"includesDiffAt:in:" : "jr 8/15/2019 01:21",
-		"newToolOn:" : "jr 10/3/2018 00:30",
+		"newToolOn:" : "jr 5/2/2020 01:49",
 		"patchAddingArtifactAt:" : "jr 8/14/2019 22:26",
 		"patchChangingArtifactAt:" : "jr 2/9/2020 03:35",
 		"patchRemovingArtifactAt:" : "jr 2/9/2020 03:45",

@@ -7,15 +7,9 @@
 		 ],
 	"commentStamp" : "",
 	"instvars" : [
-		"packFile",
-		"repository",
-		"orderedHashes",
-		"hashDict",
-		"sortedHashes",
-		"indexFile",
-		"packFileChecksum",
-		"excludedHashes" ],
-	"name" : "GitPackFileCreator",
+		"packFileCreator",
+		"queue" ],
+	"name" : "GitPackFileExcluder",
 	"pools" : [
 		 ],
 	"super" : "Object",

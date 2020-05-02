@@ -20,9 +20,6 @@ actionCredentialsEdit
 	newUser := UIManager default request: 'Enter username' initialAnswer: oldUser.
 	newUser ifEmpty: [^ self].
 	newPassword := UIManager default requestPassword: 'Enter password:'.
-	newPassword ifEmpty: [
-		oldPassword "Keep old password if unchanged"
-			ifNotEmpty: [newPassword := oldPassword]
-			ifEmpty: [^ self]].
+	newPassword ifEmpty: [^ self].
 	repository addCredentialsFor: repositoryUrl user: newUser password: newPassword.
 	self inform: 'Credentials updated successfully.']

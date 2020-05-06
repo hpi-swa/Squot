@@ -129,3 +129,15 @@ OSProcess command: 'cmd /C start /D "', (squitRepository gitRepository repositor
 [appveyor_badge]: https://ci.appveyor.com/api/projects/status/hg2d0tbiij1bm052/branch/master?svg=true
 [travis]: https://travis-ci.org/hpi-swa/Squot
 [travis_badge]: https://travis-ci.org/hpi-swa/Squot.svg?branch=master
+
+## Squot and Metacello
+Due to the way Metacello handles versioning of Smalltalk projects, projects that are managed with Squot by default cannot be upgraded using Metacello.
+
+To fix this, add the following code to your `BaselineOf`:
+``` smalltalk
+projectClass
+  ^ Smalltalk
+    at: #MetacelloCypressBaselineProject
+    ifAbsent: [super projectClass]
+```
+Your project can then be upgraded using the same code used to install it.

@@ -1,9 +1,13 @@
 *Squot-Tools
 squotChangeAsStringOrText
-	| text crcr |
-	text := Text new.
-	crcr := String cr, String cr.
-	patch operations do: [:each |
-		text append: each squotChangeAsStringOrText]
-		separatedBy: [text append: crcr].
-	^ text
+	| text |
+	text := WriteStream on: (Text new: 100).
+	(self class modificationsGroupedByClass: patch operations)
+		keysAndValuesDo:
+			[:groupKey :items |
+			text nextPutAll: groupKey asText allBold;
+				cr; cr.
+			items do: [:each | text nextPutAll: each squotChangeAsStringOrText]
+				separatedBy: [text cr; cr].
+			text cr; cr].
+	^ text contents

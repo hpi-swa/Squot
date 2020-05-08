@@ -11,6 +11,6 @@ squotChangeAsStringOrText
 			text nextPutAll: groupKey asText allBold;
 				cr; cr.
 			items do: [:each | text nextPutAll: each squotChangeAsStringOrText]
-				separatedBy: [text cr; cr]
+				separatedBy: [text cr; cr].
 			text cr; cr].
 	^ text contents

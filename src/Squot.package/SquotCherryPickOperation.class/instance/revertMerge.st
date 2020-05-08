@@ -4,3 +4,4 @@ revertMerge
 	"Uses the snapshot previously captured in prepareMerge"
 	loadedPatch artifacts do:
 		[:each | workingCopy loadArtifact: (self workingCopySnapshot artifactAt: each path)].
+	workingCopy resetNewVersionMessage.

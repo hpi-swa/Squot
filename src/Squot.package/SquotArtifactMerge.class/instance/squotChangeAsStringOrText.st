@@ -1,3 +1,5 @@
 *Squot-Tools
 squotChangeAsStringOrText
-	^ ('Merge of ', self object path) asText allBold
+	^ ('Merge of ', self object path) asText allBold, '
+	
+', graphMerge squotChangeAsStringOrText

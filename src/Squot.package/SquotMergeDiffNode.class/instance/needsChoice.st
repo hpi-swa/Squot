@@ -1,3 +1,3 @@
 testing
 needsChoice
-	^ choice isNil
+	^ choice isNil and: [content hasConflicts]

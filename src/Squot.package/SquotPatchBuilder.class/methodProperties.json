@@ -25,9 +25,10 @@
 		"originalLoadOrder:" : "jr 10/3/2018 14:53",
 		"patchFrom:to:" : "jr 2/9/2020 17:22",
 		"paths" : "jr 11/26/2018 21:22",
+		"reinsertInLoadOrder:" : "jr 5/9/2020 00:01",
 		"removeArtifact:" : "jr 9/17/2018 22:13",
 		"resetAt:" : "jr 11/26/2018 22:39",
 		"startingFrom:" : "jr 3/27/2019 21:40",
 		"updateArtifactTo:" : "jr 9/23/2018 18:12",
-		"updateRightArtifacts" : "jr 3/30/2019 12:38",
+		"updateRightArtifacts" : "jr 5/9/2020 00:01",
 		"useLoadOrderChangesFrom:" : "jr 10/3/2018 15:10" } }

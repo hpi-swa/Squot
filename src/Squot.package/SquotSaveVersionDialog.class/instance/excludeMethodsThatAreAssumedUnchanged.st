@@ -13,4 +13,5 @@ excludeMethodsThatAreAssumedUnchanged
 				on: MessageNotUnderstood do:
 					[:error | error message selector == #isCurrentlyIgnoredInSquot
 						ifTrue: [error resume: false]
-						ifFalse: [error pass]]]].
+						ifFalse: [error pass]]].
+		eachPackage hasActiveChildren ifFalse: [eachPackage exclude]].

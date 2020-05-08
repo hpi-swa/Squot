@@ -15,10 +15,12 @@ diffKey: aChar from: view event: event
 		self browseDiffContent.
 		^ true].
 	aChar = $I ifTrue:
-		[self selectedNode content notNil ifTrue:
-			[self selectedNode content isCurrentlyIgnoredInSquot
-				ifTrue: [self unignoreSelectedNode]
-				ifFalse: [self ignoreSelectedNode].
-			^ true]].
+		[self selectedNode content ifNotNil: 
+			[:content |
+			(content respondsTo: #isCurrentlyIgnoredInSquot) ifTrue:
+				[content isCurrentlyIgnoredInSquot
+					ifTrue: [self unignoreSelectedNode]
+					ifFalse: [self ignoreSelectedNode].
+				^ true]]].
 	
 	^ false

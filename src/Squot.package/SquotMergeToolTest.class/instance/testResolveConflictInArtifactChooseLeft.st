@@ -21,7 +21,7 @@ testResolveConflictInArtifactChooseLeft
 			diffTreeNodes: (Array with:
 				(SquotMergeDiffNode
 					title: 'conflict'
-					content: nil
+					content: mergeMock
 					children: #()
 					onInclude: [mergeMock chooseIncoming]
 					onExclude: [mergeMock chooseWorking]

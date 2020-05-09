@@ -1,3 +1,3 @@
 Squot version
 message
-	^ commit message
+	^ commit message withSqueakLineEndings

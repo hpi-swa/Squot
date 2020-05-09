@@ -10,7 +10,7 @@ buildCommitList: builder
 		menu: #commitListMenu:;
 		dragItem: #dragFromCommitList:;
 		dropAccept: #wantsCommitListDrop:type:from:;
-		dropItem: #dropOnCommitList:at:copyIndicated:;
+		dropItem: #dropOnCommitList:on:copyIndicated:;
 		keyPress: #commitListKey:from:;
 		columns: {
 				[:listMorph | (listMorph filteredItems collect: [:item |

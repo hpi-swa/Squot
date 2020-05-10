@@ -1,6 +1,6 @@
 printing
 printOn: stream
-	self atEnd
+	searchFrontier isEmpty "do not use atEnd here to not modify the state"
 		ifTrue: [stream nextPutAll: 'a finished '; nextPutAll: self class name]
 		ifFalse:
 			[super printOn: stream.

@@ -1,3 +1,0 @@
-*Squot-Tools
-modificationsGroupedByClass
-	^ SquotPackageDiff modificationsGroupedByClass: containerModifications

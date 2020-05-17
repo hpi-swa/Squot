@@ -1,0 +1,3 @@
+*Squot-Tools
+actualClassInSquotWorkingCopy: aSquotWorkingCopyArtifact
+	^ self definition actualClassInSquotWorkingCopy: aSquotWorkingCopyArtifact

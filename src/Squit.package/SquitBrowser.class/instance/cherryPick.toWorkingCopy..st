@@ -16,5 +16,5 @@ cherryPick: pickedVersion toWorkingCopy: workingCopy
 		pickedVersion: pickedVersion;
 		relevantParentOfPickedVersion: parentVersion.
 	cherryPick applyToWorkingCopy
-		whenResolved: [self loadCommitList];
+		whenResolved: [self withUnitOfWork: [self loadCommitList]];
 		whenRejected: [:reason | self inform: 'Cherry pick aborted: ', reason]].

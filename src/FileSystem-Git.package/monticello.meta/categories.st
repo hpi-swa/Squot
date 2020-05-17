@@ -10,6 +10,4 @@ SystemOrganization addCategory: #'FileSystem-Git-Plumbing-Tests'!
 SystemOrganization addCategory: #'FileSystem-Git-Remote'!
 SystemOrganization addCategory: #'FileSystem-Git-Remote-Tests'!
 SystemOrganization addCategory: #'FileSystem-Git-Notifications'!
-SystemOrganization addCategory: #'FileSystem-Git-Monticello'!
-SystemOrganization addCategory: #'FileSystem-Git-Monticello-Tests'!
 SystemOrganization addCategory: #'FileSystem-Git-Help'!

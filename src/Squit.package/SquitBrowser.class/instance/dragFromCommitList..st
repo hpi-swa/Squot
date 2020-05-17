@@ -1,4 +1,4 @@
 drag and drop
-dragFromCommitList: index
+dragFromCommitList: aVersion
 	SquitSettings enableDragAndDrop ifFalse: [^ nil].
-	^ nil "not yet implemented"
+	^ aVersion

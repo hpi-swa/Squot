@@ -115,7 +115,7 @@
 		"detectGitHubRemote:ifNone:" : "jr 3/7/2020 00:08",
 		"detectGitHubUsernameIfNone:" : "jr 3/7/2020 00:08",
 		"dragFromBranchList:" : "jr 2/9/2020 00:08",
-		"dragFromCommitList:" : "jr 5/9/2020 14:29",
+		"dragFromCommitList:" : "jr 5/17/2020 22:13",
 		"dragFromObjectList:" : "jr 5/9/2020 14:29",
 		"dragFromProjectList:" : "jr 5/9/2020 14:29",
 		"dropOnBranchList:at:copyIndicated:" : "jr 5/9/2020 14:46",

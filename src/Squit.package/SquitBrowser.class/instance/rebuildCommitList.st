@@ -6,7 +6,7 @@ rebuildCommitList
 		[^ cachedCommitList := #()].
 	list := OrderedCollection new.
 	count := 0.
-	(walker := SquotHistoryWalker new)
+	(walker := selectedHistorian repository historyWalkClass new)
 		nextPut: selectedHistorian version.
 	[walker atEnd or: [count > 30]]
 		whileFalse:

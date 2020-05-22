@@ -31,7 +31,7 @@
 		"actionBranchSwitch" : "jr 3/7/2020 00:44",
 		"actionBranchSwitchMoveOver" : "jr 3/7/2020 00:44",
 		"actionBrowseWorkingCopy" : "jr 8/14/2018 10:25",
-		"actionChooseTrackedPackages" : "TB 4/22/2018 12:31",
+		"actionChooseTrackedPackages" : "jr 5/22/2020 15:42",
 		"actionClearSearch" : "fn 4/11/2017 18:49",
 		"actionCommit" : "jr 3/7/2020 00:56",
 		"actionCommitCherryPick" : "jr 5/9/2020 00:31",

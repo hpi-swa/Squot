@@ -1,4 +1,4 @@
 user requests
 actionChooseTrackedPackages
 	
-	^ SquitPackageChooser chooseFor: self projectSelection
+	^ self withUnitOfWork: [SquitPackageChooser chooseFor: self projectSelection]

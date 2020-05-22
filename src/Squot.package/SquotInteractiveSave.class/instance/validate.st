@@ -1,4 +1,8 @@
 applying
 validate
-	super validate.
-	"Might want to check less attributes in the future when they can be set interactively."
+	self withUnitOfWorkActive:
+		[historian ifNil: [self error: 'Historian to store to not configured'].
+		self patch ifNil: [self error: 'No changes to be saved'].
+		"Also see super validate. Do not check the message here, will be provided interactively."
+		self author ifNil: [self error: 'Author not configured'].
+		self committer ifNil: [self error: 'Committer not configured']].

@@ -20,5 +20,6 @@ testMergeWithAddedArtifactOnBothSides
 		self assert: diff hasConflicts.
 		diff content startDiff chooseRight.
 		request resume]
+	on: Warning do: [:e | e resume]
 	] valueSupplyingAnswers: {{'*'. #default}}.
 	self assert: #right equals: (self workingCopy objectAt: 'added') contents.

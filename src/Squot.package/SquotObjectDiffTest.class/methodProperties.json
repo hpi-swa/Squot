@@ -8,7 +8,7 @@
 		"expectedFailures" : "jr 7/26/2017 23:16",
 		"setUp" : "jr 7/30/2017 22:04",
 		"testAddObjects" : "jr 7/29/2017 18:07",
-		"testArrayOfDifferentlyTypedObjects" : "jr 7/29/2017 17:12",
+		"testArrayOfDifferentlyTypedObjects" : "jr 5/31/2020 01:59",
 		"testArrayOfIntegers" : "jr 10/1/2017 00:48",
 		"testBooleans" : "jr 7/21/2017 01:51",
 		"testCyclicReferences" : "jr 6/25/2017 22:22",

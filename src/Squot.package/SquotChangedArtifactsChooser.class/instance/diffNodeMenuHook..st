@@ -18,7 +18,8 @@ diffNodeMenuHook: aMenu
 	aMenu add: 'Inspect diff (i)' action: #inspectSelectedDiffContent.
 	self selectedNode content ifNotNil:
 		[
-		aMenu add: 'Browse full (b)' action: #browseDiffContent. "Only for code objects?!"
+		aMenu add: 'Browse full (b)' action: #browseWorkingCopyEdition.
+		aMenu add: self browseOtherEditionLabel action: #browseOtherEdition.
 		self addCustomMenuItemsOfSelectedNode: aMenu].
 	self selectedNode isArtifactNode ifTrue:
 		[aMenu add: self inspectOriginalArtifactCommandLabel action: #inspectOriginalArtifactOfSelectedNode.

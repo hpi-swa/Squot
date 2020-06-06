@@ -1,3 +1,0 @@
-actions
-browseChangedArtifactOfSelectedNode
-	self selectedNode content right browse.

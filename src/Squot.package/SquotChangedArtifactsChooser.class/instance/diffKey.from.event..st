@@ -12,7 +12,7 @@ diffKey: aChar from: view event: event
 		self inspectSelectedDiffContent. 
 		^ true].
 	aChar == $b ifTrue: [
-		self browseDiffContent.
+		self browseWorkingCopyEdition.
 		^ true].
 	aChar = $I ifTrue:
 		[self selectedNode content ifNotNil: 

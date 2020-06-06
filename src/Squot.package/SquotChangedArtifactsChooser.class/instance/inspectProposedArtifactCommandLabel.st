@@ -1,3 +1,3 @@
 ui labels
 inspectProposedArtifactCommandLabel
-	^ 'Inspect edition that is available to be loaded'
+	^ 'Inspect modified edition'

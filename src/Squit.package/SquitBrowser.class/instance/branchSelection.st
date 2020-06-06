@@ -1,3 +1,3 @@
 ui
 branchSelection
-	^ (selectedHistorian ifNil: [^ nil]) shortName
+	^ self withUnitOfWork: [(selectedHistorian ifNil: [^ nil]) shortName]

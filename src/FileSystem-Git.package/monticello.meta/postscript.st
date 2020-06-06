@@ -1,10 +1,10 @@
 (PackageInfo named: 'FileSystem-Git') postscript: '"code to be run after the loading of this package"
 "initialize GitTreeEntry mode inst var"
-modes := Smalltalk globals at: #TEMP_GitTreeEntryModes.
+modes := Smalltalk globals at: #TEMP_GitTreeEntryModes ifAbsent: [Dictionary new].
 modes keysAndValuesDo: [:entry :modes |
 	entry convertToCurrentVersion: modes refStream: nil].
 "clean up"
-Smalltalk globals removeKey: #TEMP_GitTreeEntryModes.
+Smalltalk globals removeKey: #TEMP_GitTreeEntryModes ifAbsent: [].
 
 "2020-03-10: turn objectCache from Dictionary into GitObjectCache. Just invalidate the cache."
 "2020-04-20: changed structure of GitObjectCache and access in GitUnitOfWork"

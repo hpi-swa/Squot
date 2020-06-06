@@ -85,7 +85,6 @@
 		"packsDo:" : "jr 2/23/2020 21:33",
 		"printOn:" : "jr 3/4/2020 23:57",
 		"privateDeprecatedUseUnitOfWork" : "jr 4/17/2020 12:01",
-		"privateUpdateObjectCache:" : "jr 3/10/2020 22:18",
 		"refExists:" : "jr 2/23/2020 21:33",
 		"refFromFile:relativeTo:" : "jr 2/23/2020 21:34",
 		"refName:forRemote:" : "jr 2/23/2020 21:34",

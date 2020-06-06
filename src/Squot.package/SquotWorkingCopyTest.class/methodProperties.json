@@ -28,7 +28,7 @@
 		"testMergeWithConflictsChooseRemote" : "jr 3/2/2020 23:02",
 		"testMergeWithRemovedArtifactOnBothSides" : "jr 3/2/2020 23:25",
 		"testMergeWithoutConflicts" : "jr 3/2/2020 23:05",
-		"testOldCherryPickOfOrphanedVersion" : "jr 1/26/2020 22:04",
+		"testOldCherryPickOfOrphanedVersion" : "jr 6/6/2020 15:41",
 		"testOldCherryPickWithConflicts" : "jr 4/12/2020 10:26",
 		"testOldCherryPickWithConflictsChooseRemote" : "jr 4/12/2020 10:26",
 		"testOldCherryPickWithoutConflicts" : "jr 3/3/2020 00:17",

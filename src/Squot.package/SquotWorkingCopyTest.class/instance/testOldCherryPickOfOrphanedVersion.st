@@ -12,7 +12,7 @@ testOldCherryPickOfOrphanedVersion
 			description: 'nothing should be removed'.
 		request resume]
 	on: SquotSelectionOfChangesForSaveRequested
-	do: [:request | request resume]
+	do: [:request | request message: 'new version'; resume]
 	] valueSupplyingAnswers: {{'*'. #default}}].
 	"then"
 	self assert: workingCopy artifacts size = 2.

@@ -7,4 +7,4 @@ chooseChanges
 		controllerForIgnores: self.
 	^ (tool selectedChangesWithTitle: self title)
 		then: [:ignored | merge resolvedPatch]
-		ifRejected: [:ignored | 'Merge was cancelled']
+		ifRejected: [:ignored | Promise new rejectWith: 'Merge was cancelled']

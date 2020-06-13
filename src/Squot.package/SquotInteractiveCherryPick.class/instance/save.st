@@ -9,4 +9,4 @@ save
 				[:reason |
 				self requestor getShouldRevertCherryPickedChanges ifTrue:
 					[self revertMerge "captured snapshot used here"].
-				'Save was cancelled']
+				Promise new rejectWith: 'Save was cancelled']

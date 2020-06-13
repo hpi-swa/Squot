@@ -17,4 +17,4 @@ chooseChanges
 		ifRejected: [:ignored |
 			tool messageWasChanged
 				ifTrue: [self workingCopy newVersionMessage: tool message asString].
-			'Save was canceled']
+			Promise new rejectWith: 'Save was cancelled']

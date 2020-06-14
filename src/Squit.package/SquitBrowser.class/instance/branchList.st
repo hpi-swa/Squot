@@ -1,4 +1,4 @@
 ui
 branchList
-	branchList ifNil: [self loadBranchList].
+	branchList ifNil: [self withUnitOfWork: [self loadBranchList]].
 	^ branchList

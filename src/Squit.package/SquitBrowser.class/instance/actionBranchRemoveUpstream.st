@@ -11,7 +11,7 @@ actionBranchRemoveUpstream
 	(UIManager confirm: 'Really delete branch ', remoteBranchName, ' at the remote ', remoteName, '?')
 		ifFalse: [^ self].
 	self withRemoteErrorHandlingDo:
-		[self handlingCredentialsOf: localHistorian
+		[self handlingCredentialsOf: localHistorian repository
 			do: [self projectSelection repository
 				removeRemoteRef: remoteBranchName from: remoteName]
 			ifCanceled: [^ self]].

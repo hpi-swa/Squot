@@ -20,7 +20,7 @@ actionPull
 		remoteUrl := gitRepository remoteUrl: remoteName.
 		remoteRef := localHistorian upstreamHistorianName].
 	self withRemoteErrorHandlingDo:
-		[self handlingCredentialsOf: localHistorian
+		[self handlingCredentialsOf: repository
 			do: [repository importFromUpstream: remoteName]
 			ifCanceled: [^ self]].
 	remoteTrackingRef := gitRepository refName: remoteRef forRemote: remoteName.

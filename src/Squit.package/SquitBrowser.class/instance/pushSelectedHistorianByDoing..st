@@ -10,7 +10,7 @@ pushSelectedHistorianByDoing: aBlock
 	repository := workingCopy repository.
 	gitRepository := repository fsgitRepository.
 	[self withRemoteErrorHandlingDo:
-		[self handlingCredentialsOf: historian
+		[self handlingCredentialsOf: repository
 			do: 	[aBlock cull: gitRepository]
 			ifCanceled: [^ self]]]
 	on: GitNonFastForwardPushUpdatesDetected do: [:e |

@@ -1,0 +1,14 @@
+{
+	"class" : {
+		"repository:remoteNames:" : "jr 6/18/2020 00:00" },
+	"instance" : {
+		"cancel" : "jr 6/18/2020 00:21",
+		"errorRemoteAuthenticationFailed:" : "jr 6/18/2020 00:18",
+		"errorRemoteResourceNotFound:" : "jr 6/18/2020 00:17",
+		"fetch" : "jr 6/18/2020 00:20",
+		"remoteNames" : "jr 6/17/2020 23:45",
+		"remoteNames:" : "jr 6/17/2020 23:45",
+		"requestAndStoreCredentialsFor:remoteUrl:" : "jr 6/17/2020 23:50",
+		"run" : "jr 6/18/2020 00:20",
+		"withCredentialsHandlingDo:" : "jr 6/17/2020 23:49",
+		"withRemoteErrorHandlingDo:" : "jr 6/17/2020 23:48" } }

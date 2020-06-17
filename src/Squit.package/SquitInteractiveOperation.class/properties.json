@@ -1,0 +1,17 @@
+{
+	"category" : "Squit-UI",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"promise",
+		"repository",
+		"unitOfWork",
+		"wasUnitOfWorkStarted" ],
+	"name" : "SquitInteractiveOperation",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }

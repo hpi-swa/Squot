@@ -1,3 +1,5 @@
 actions
 afterCloseContinueIn: anObject with: unarySelectorSymbol
-	self when: #closed send: unarySelectorSymbol to: anObject with: self.
+	promise := Promise new
+		whenResolved: [anObject perform: unarySelectorSymbol with: self];
+		yourself.

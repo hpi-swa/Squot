@@ -9,7 +9,8 @@
 		"remoteName",
 		"remoteUrl",
 		"accepted",
-		"workingCopy" ],
+		"workingCopy",
+		"promise" ],
 	"name" : "SquitAddRemote",
 	"pools" : [
 		 ],

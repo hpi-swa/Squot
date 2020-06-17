@@ -1,3 +1,4 @@
 private
 fallbackToDumbProtocol
-	self shouldBeImplemented "replace me with a GitDumbHTTPProtocol, reusing my client"
+	GitRemoteError signal: 'Repository is not a supported HTTP repository'.
+	"Could replace me with a GitDumbHTTPProtocol, reusing my client."

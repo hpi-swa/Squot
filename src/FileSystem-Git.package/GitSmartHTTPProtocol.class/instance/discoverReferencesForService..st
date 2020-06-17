@@ -17,6 +17,6 @@ discoverReferencesForService: aServiceName
 					response status
 					with: response content
 					remote: remote].
-		(self isSmartResponse: response) ifFalse: [self fallbackToDumbProtocol].
+		(self isSmartResponse: response) ifFalse: [^ self fallbackToDumbProtocol].
 		reader := GitProtocolReader on: response content.
 		^ refs := self fetchRefsFrom: response content readStream].

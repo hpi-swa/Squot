@@ -1,0 +1,3 @@
+displaying
+openAgain
+	self open.

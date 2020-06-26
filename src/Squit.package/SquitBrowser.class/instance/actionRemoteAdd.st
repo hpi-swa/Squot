@@ -5,4 +5,4 @@ actionRemoteAdd
 	(query := SquitAddRemote new)
 		workingCopy: workingCopy;
 		afterCloseContinueIn: self with: #actionRemoteAddContinue:.
-	ToolBuilder open: query.
+	query open.

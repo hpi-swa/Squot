@@ -7,5 +7,7 @@ errorRemoteResourceNotFound: aGitRemoteError
 			'The following might give a hint of what has happened:' , String cr , String cr, 
 			(aGitRemoteError responseBody contractTo: 200), String cr].
 	response := UIManager default confirm: message trueChoice: 'OK' translated falseChoice: 'Debug'.
-	response = false ifTrue: [ToolSet handleError: aGitRemoteError].
-	response ifNil: [self cancel].
+	response ifNil: [^ self cancel].
+	response
+		ifTrue: [promise rejectWith: aGitRemoteError]
+		ifFalse: [ToolSet handleError: aGitRemoteError].

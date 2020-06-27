@@ -5,8 +5,8 @@ applyToWorkingCopy
 		[self startUnitOfWork.
 		self validate.
 		self chooseChanges])
-		then: [:patch |
-			[self patch: patch;
+		then: [:aPatch |
+			[self patch: aPatch;
 				createVersion;
 				updateWorkingCopy.
 			"resolve with:" self newVersion]

@@ -7,8 +7,8 @@ applyToWorkingCopy
 		resolveWith:
 			(self chooseChanges
 				then:
-					[:merge | super applyToWorkingCopy.
-					self resultPromise resolveWith: merge];
+					[:aMerge | super applyToWorkingCopy.
+					self resultPromise resolveWith: aMerge];
 				ifRejected: [:reason | self resultPromise rejectWith: reason]);
 		whenResolved: [self finishUnitOfWork];
 		whenRejected: [self finishUnitOfWork].

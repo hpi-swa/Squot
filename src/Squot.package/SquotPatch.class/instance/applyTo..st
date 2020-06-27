@@ -1,5 +1,5 @@
 applying
 applyTo: anObjectContainer
 	self privateApplyTo: anObjectContainer
-		diffsDoing: [:diffs :apply | diffs do: apply
+		diffsDoing: [:changedKeys :apply | changedKeys do: apply
 			displayingProgress: [:each | 'Applying changes to ', each]].

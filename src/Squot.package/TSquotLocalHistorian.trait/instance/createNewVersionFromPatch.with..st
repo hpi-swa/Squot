@@ -6,7 +6,7 @@ createNewVersionFromPatch: aPatch with: aBlock
 	When aBlock returns normally, store the new version and update me to refer to it."
 	| newVersion |
 	newVersion := self repository createNewVersionFromPatch: aPatch
-		with: [:version | version
+		with: [:aVersion | aVersion
 			parents: (self version
 				ifNil: [OrderedCollection new]
 				ifNotNil: [:it | OrderedCollection with: it]);

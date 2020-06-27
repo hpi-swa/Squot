@@ -1,4 +1,4 @@
 applying
 applyTo: anObjectContainer displayingProgress: progressText
 	self privateApplyTo: anObjectContainer
-		diffsDoing: [:diffs :apply | diffs do: apply displayingProgress: progressText].
+		diffsDoing: [:changedKeys :apply | changedKeys do: apply displayingProgress: progressText].

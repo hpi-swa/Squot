@@ -1,7 +1,6 @@
 actions
 activateSelectedNode
-	| selectedNode nodesToInclude |
-	selectedNode := self selectedNode.
-	nodesToInclude := selectedNode withAllChildren.
+	| nodesToInclude |
+	nodesToInclude := self selectedNode withAllChildren.
 	nodesToInclude do: [:each | each include].
 	self changed: #rootNodes.

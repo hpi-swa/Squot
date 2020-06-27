@@ -10,8 +10,7 @@
 		"classFactory",
 		"existingMethod",
 		"methodToBeRemoved",
-		"methodToBeAdded",
-		"rootNode" ],
+		"methodToBeAdded" ],
 	"name" : "SquotMonticelloDiffNodesTest",
 	"pools" : [
 		 ],

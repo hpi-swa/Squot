@@ -4,8 +4,7 @@ loadBranchList
 	repositoryExists ifFalse:
 		[branchList := #('-- Repository disappeared --').
 		^ self changed: #branchList].
-	list := #('-- Branches --'),
-		(self projectSelection
+	list := self projectSelection
 			ifNil: [#()]
 			ifNotNil: [:project | | historians localHistorians remoteHistorians |
 				localHistorians := project repository historians sort: [:a :b | a name <= b name].
@@ -13,7 +12,7 @@ loadBranchList
 				historians := localHistorians, remoteHistorians.
 				(historians includes: project loadedHistorian) ifFalse:
 					[historians := historians copyWithFirst: project loadedHistorian].
-				historians collect: [:historian | historian shortName]]).
+				historians collect: [:historian | historian shortName]].
 	list ~= branchList ifTrue:
 		[branchList := list.
 		self activeBranchChanged].

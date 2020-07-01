@@ -1,0 +1,3 @@
+private
+retry
+	self requestRemoteDetails.

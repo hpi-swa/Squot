@@ -1,0 +1,15 @@
+{
+	"class" : {
+		 },
+	"instance" : {
+		"fetch" : "jr 7/1/2020 21:52",
+		"notifyRemoteAdded" : "jr 7/1/2020 21:41",
+		"notifyRollback" : "jr 7/1/2020 21:42",
+		"onQueryClose:" : "jr 7/1/2020 21:47",
+		"onRemoteAddedDo:" : "jr 7/1/2020 21:39",
+		"onRollbackDo:" : "jr 7/1/2020 21:40",
+		"requestFetchFromRemoteNamed:" : "jr 7/1/2020 21:26",
+		"requestRemoteDetails" : "jr 7/1/2020 21:32",
+		"retry" : "jr 7/1/2020 21:32",
+		"run" : "jr 7/1/2020 21:31",
+		"undo" : "jr 7/1/2020 21:54" } }

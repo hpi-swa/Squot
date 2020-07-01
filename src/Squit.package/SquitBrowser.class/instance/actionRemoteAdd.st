@@ -1,8 +1,8 @@
 actions on working copies
 actionRemoteAdd
-	| workingCopy query |
+	| workingCopy |
 	workingCopy := self projectSelection ifNil: [^ self].
-	(query := SquitAddRemote new)
-		workingCopy: workingCopy;
-		afterCloseContinueIn: self with: #actionRemoteAddContinue:.
-	query open.
+	(SquitInteractiveAddRemote new
+		repository: workingCopy repository;
+		run)
+			then: [:ignored | self refresh].

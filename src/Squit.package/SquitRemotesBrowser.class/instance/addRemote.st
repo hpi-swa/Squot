@@ -1,7 +1,17 @@
 actions
 addRemote
-	| query |
-	(query := SquitAddRemote new)
-		workingCopy: workingCopy;
-		afterCloseContinueIn: self with: #continueAddRemote:.
-	query open.
+	| previouslySelectedRemoteName |
+	previouslySelectedRemoteName := self selectedRemoteName.
+	SquitInteractiveAddRemote new
+		repository: workingCopy repository;
+		onRemoteAddedDo:
+			[:new |
+			Project current addDeferredUIMessage:
+				[self changed: #remotesLabels.
+				self selectedRemoteName: new remoteName]];
+		onRollbackDo:
+			[:rolledBack |
+			Project current addDeferredUIMessage:
+				[self changed: #remotesLabels.
+				self selectedRemoteName: previouslySelectedRemoteName]];
+		run

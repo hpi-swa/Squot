@@ -6,12 +6,11 @@
 		 ],
 	"commentStamp" : "",
 	"instvars" : [
-		"remoteName",
-		"remoteUrl",
-		"accepted",
-		"promise" ],
-	"name" : "SquitAddRemote",
+		"query",
+		"remoteAddedCallbacks",
+		"rollbackCallbacks" ],
+	"name" : "SquitInteractiveAddRemote",
 	"pools" : [
 		 ],
-	"super" : "Model",
+	"super" : "SquitInteractiveOperation",
 	"type" : "normal" }

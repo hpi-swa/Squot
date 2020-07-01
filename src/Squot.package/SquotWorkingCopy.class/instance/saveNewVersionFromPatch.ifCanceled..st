@@ -11,6 +11,5 @@ saveNewVersionFromPatch: aPatch ifCanceled: cancelBlock
 	newVersion := self
 		saveNewVersionFromPatch: selectedPatch
 		message: message.
-	self cacheNewMonticelloVersions: selectedPatch message: message.
 	self resetNewVersionMessage.
 	^ newVersion

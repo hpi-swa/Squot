@@ -1,6 +1,6 @@
 accessing
 configAt: aNameString put: value
-	| config key sectionHead subNames file sectionName |
+	| key sectionHead subNames file sectionName |
 	file := repository configFile.
 	config := file exists ifFalse: [INIFile new] ifTrue: [file readStreamDo: [:stream | stream ascii. INIFile readFrom: stream]].
 	subNames := aNameString splitBy: '.'.

@@ -19,25 +19,23 @@ actionPull
 		remoteName := localHistorian upstreamRemoteName.
 		remoteUrl := gitRepository remoteUrl: remoteName.
 		remoteRef := localHistorian upstreamHistorianName].
-	self withRemoteErrorHandlingDo:
-		[self handlingCredentialsOf: repository
-			do: [repository importFromUpstream: remoteName]
-			ifCanceled: [^ self]].
-	remoteTrackingRef := gitRepository refName: remoteRef forRemote: remoteName.
-	remoteTrackingHistorian := repository historianNamed: remoteTrackingRef.
-	remoteVersion := remoteTrackingHistorian version.
-	previousVersion := localHistorian version.
-	previousVersion
-		ifNil: ["new branch"]
-		ifNotNil: [remoteVersion = previousVersion
-				ifTrue: [^ self inform: 'Already up-to-date'].
-			(previousVersion mergeBaseWith: remoteVersion) = remoteVersion
-				ifTrue: ["already merged" ^ self inform:
-					'Already up-to-date. Your local branch is ahead of the remote branch']].
-	[self mergeVersionIntoActiveBranch: remoteVersion
-		ifCanceled: [^ self]]
-	on: SquotInitialLogMessageRequested
-	do: [:request | request resume:
-		'Merge branch ''', (repository historianNamed: remoteRef) shortName,
-		''' of ', remoteUrl].
-	self selectActiveHistorian].
+	(self fetchFrom: repository remoteNames: {remoteName}) then:
+		[:x |
+		remoteTrackingRef := gitRepository refName: remoteRef forRemote: remoteName.
+		remoteTrackingHistorian := repository historianNamed: remoteTrackingRef.
+		remoteVersion := remoteTrackingHistorian version.
+		previousVersion := localHistorian version.
+		previousVersion
+			ifNil: ["new branch"]
+			ifNotNil: [remoteVersion = previousVersion
+					ifTrue: [^ self inform: 'Already up-to-date'].
+				(previousVersion mergeBaseWith: remoteVersion) = remoteVersion
+					ifTrue: ["already merged" ^ self inform:
+						'Already up-to-date. Your local branch is ahead of the remote branch']].
+		[self mergeVersionIntoActiveBranch: remoteVersion
+			ifCanceled: [^ self]]
+		on: SquotInitialLogMessageRequested
+		do: [:request | request resume:
+			'Merge branch ''', (repository historianNamed: remoteRef) shortName,
+			''' of ', remoteUrl].
+		self selectActiveHistorian]].

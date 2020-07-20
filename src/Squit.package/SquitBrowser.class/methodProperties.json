@@ -30,6 +30,7 @@
 		"actionBranchSetCurrent" : "jr 3/7/2020 00:44",
 		"actionBranchSwitch" : "jr 3/7/2020 00:44",
 		"actionBranchSwitchMoveOver" : "jr 3/7/2020 00:44",
+		"actionBranchUnsetUpstream" : "jr 7/20/2020 13:02",
 		"actionBrowseWorkingCopy" : "jr 8/14/2018 10:25",
 		"actionChooseTrackedPackages" : "jr 5/22/2020 15:42",
 		"actionClearSearch" : "fn 4/11/2017 18:49",

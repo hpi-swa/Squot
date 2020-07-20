@@ -1,4 +1,4 @@
-accessing
+objects
 objectNamed: aHash
 	aHash ifNil: [self error: 'Undefined object hash'].
 	^ self objectCache at: aHash asHexHash

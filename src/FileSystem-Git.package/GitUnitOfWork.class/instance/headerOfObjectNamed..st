@@ -1,4 +1,4 @@
-private
+objects-private
 headerOfObjectNamed: aHash
 	^ self
 		headerOfObjectNamed: aHash

@@ -1,4 +1,4 @@
-accessing
+remotes
 fetchSpecOfTrackingBranch: remoteTrackingBranchString
 	"Answer the fetch spec that constitutes the given remote-tracking branch
 	or nil if no remote has a fitting fetch spec."

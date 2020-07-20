@@ -1,4 +1,4 @@
-accessing
+branches and tags
 tagNamed: aString
 	^ self tagNamed: aString ifAbsent: [ 
 		GitObjectNotFoundError 

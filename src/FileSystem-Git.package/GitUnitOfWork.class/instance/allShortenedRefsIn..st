@@ -1,4 +1,4 @@
-enumerating
+refs
 allShortenedRefsIn: aString
 	"Answer a collection of ref names that start with the given prefix, with the prefix removed from each ref."
 	| names prefix prefixLength |

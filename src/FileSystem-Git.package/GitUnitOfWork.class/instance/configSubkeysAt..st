@@ -1,4 +1,4 @@
-accessing
+configuration
 configSubkeysAt: aString
 	self flag: #stub.
 	^ [repository configSubkeysAt: aString]

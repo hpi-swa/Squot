@@ -1,4 +1,4 @@
-accessing
+refs
 resolveRef: name
 "Answers a hex hash or nil.
 From the git-rev-parse manpage:

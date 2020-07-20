@@ -1,4 +1,4 @@
-accessing
+branches and tags
 branchNamed: aString
 	| objectId |
 	repository validateReferenceOrReferenceName: aString.

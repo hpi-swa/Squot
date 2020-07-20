@@ -1,4 +1,4 @@
-accessing
+configuration
 configSubsetWithPrefix: aString
 	self flag: #stub.
 	^ [repository configSubsetWithPrefix: aString]

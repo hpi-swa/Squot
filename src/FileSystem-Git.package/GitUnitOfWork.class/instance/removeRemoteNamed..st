@@ -1,4 +1,4 @@
-accessing
+remotes
 removeRemoteNamed: remoteName
 	self configUnsetAt: 'remote.', remoteName.
 	self allReferencesPrefixedWith: 'refs/remotes/', remoteName

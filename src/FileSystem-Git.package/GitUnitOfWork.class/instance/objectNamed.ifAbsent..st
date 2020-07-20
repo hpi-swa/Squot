@@ -1,4 +1,4 @@
-accessing
+objects
 objectNamed: aHash ifAbsent: aBlock
 	^ [self objectNamed: aHash]
 		on: GitObjectNotFoundError do:

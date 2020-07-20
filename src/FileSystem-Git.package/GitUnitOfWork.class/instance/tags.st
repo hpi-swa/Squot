@@ -1,4 +1,4 @@
-accessing
+branches and tags
 tags
 	|  referencedObjects tags |
 	referencedObjects := Dictionary new.

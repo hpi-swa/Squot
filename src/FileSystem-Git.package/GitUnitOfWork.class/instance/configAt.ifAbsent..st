@@ -1,4 +1,4 @@
-accessing
+configuration
 configAt: aNameString ifAbsent: aBlock
 	| key sectionHead subNames file sectionName |
 	config ifNil:

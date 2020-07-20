@@ -1,4 +1,4 @@
-enumerating
+refs
 allReferencesDo: aBlock
 	"Invoke aBlock with all references (as strings) in this repository.
 	References outside of the refsDir will come last."

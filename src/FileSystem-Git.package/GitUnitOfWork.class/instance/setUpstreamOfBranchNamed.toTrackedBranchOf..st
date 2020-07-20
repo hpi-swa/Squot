@@ -1,4 +1,4 @@
-accessing
+remotes
 setUpstreamOfBranchNamed: branchNameString toTrackedBranchOf: remoteTrackingBranchString
 	| fetchSpec |
 	fetchSpec := self fetchSpecOfTrackingBranch: remoteTrackingBranchString.

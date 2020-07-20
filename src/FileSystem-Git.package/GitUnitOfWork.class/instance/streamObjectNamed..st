@@ -1,4 +1,4 @@
-accessing
+objects
 streamObjectNamed: aHexHash
 	self flag: #refactor. "methods should not return streams that keep files open"
 	objectStores do: [:each |

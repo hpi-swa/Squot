@@ -1,4 +1,4 @@
-accessing
+refs
 expandRef: name
 	"Answer the full name of a reference."
 "From the git-rev-parse manpage:

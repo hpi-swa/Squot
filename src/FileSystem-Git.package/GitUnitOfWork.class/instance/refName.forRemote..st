@@ -1,4 +1,4 @@
-accessing
+remotes
 refName: refName forRemote: remoteName
 	| branch |
 	repository validateReferenceOrReferenceName: refName.

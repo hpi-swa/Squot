@@ -1,4 +1,4 @@
-accessing
+refs
 updateRef: refPath to: hexHash message: reflogMessageString
 	"Updates the reference denoted by refPath to reference the object with the sha1 name in hexHash and adds an entry in the reflog.
 	Symbolic references are resolved, so the non-symbolic reference is updated.

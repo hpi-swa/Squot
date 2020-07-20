@@ -1,4 +1,4 @@
-accessing
+configuration
 configAt: aNameString put: value
 	| key sectionHead subNames file sectionName |
 	file := repository configFile.

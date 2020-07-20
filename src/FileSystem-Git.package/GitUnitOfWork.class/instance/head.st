@@ -1,4 +1,4 @@
-accessing
+branches and tags
 head
 	"Answers the GitCommit object referenced in / via 'HEAD'."
 	^ self headIfAbsent: [ 

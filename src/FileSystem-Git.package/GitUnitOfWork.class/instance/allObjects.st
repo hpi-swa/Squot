@@ -1,4 +1,4 @@
-accessing
+objects
 allObjects
 	"You should not use this, it can load a huge amount of data at once."
 	| all |

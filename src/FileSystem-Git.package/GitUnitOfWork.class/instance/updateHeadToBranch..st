@@ -1,4 +1,4 @@
-accessing
+branches and tags
 updateHeadToBranch: branchName
 "Updates the reference in 'HEAD' to branchName"
 	| fullBranchRef |

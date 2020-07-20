@@ -1,4 +1,4 @@
-accessing
+refs
 ref: aString
 	"Answer a GitReference or nil if none exists with that name."
 	^ refCache at: aString ifAbsentPut:

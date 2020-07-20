@@ -1,4 +1,4 @@
-accessing
+configuration
 configUnsetAt: aNameString
 	self flag: #stub.
 	[repository configUnsetAt: aNameString]

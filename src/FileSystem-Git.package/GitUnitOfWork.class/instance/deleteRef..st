@@ -1,4 +1,4 @@
-accessing
+refs
 deleteRef: refPath
 	"Deletes the (possibly symbolic) reference denoted by refPath and its reflog."
 	| expandedRef |

@@ -1,4 +1,4 @@
-storing
+objects
 storeObject: anObject
 	"Stores a GitStorableObject in the repository and answers it."
 	^ self objectNamed: anObject hexHash

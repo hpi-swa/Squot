@@ -1,4 +1,4 @@
-private
+remotes
 updateRef: refPath ofRemote: remoteName to: hexHash message: reflogMessageString
 	| refName |
 	refName := self refName: refPath forRemote: remoteName.

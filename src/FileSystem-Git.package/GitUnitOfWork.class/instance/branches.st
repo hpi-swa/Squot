@@ -1,4 +1,4 @@
-accessing
+branches and tags
 branches
 "Answers a dictionary of all GitCommit objects referenced in '/refs/heads'."
 

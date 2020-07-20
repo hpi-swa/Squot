@@ -1,4 +1,4 @@
-accessing
+remotes
 remoteNamed: aString
 	^ GitRemote new
 		name: aString;

@@ -1,4 +1,4 @@
-private
+refs-private
 reflogForReference: reference
 	^ refLogs
 		at: (repository reflogFileForReference: reference)

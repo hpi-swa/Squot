@@ -1,4 +1,4 @@
-accessing
+branches and tags
 headIfAbsent: aBlock
 "Answers the GitCommit object referenced in / via 'HEAD'."
 	

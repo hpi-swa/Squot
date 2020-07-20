@@ -1,4 +1,4 @@
-enumerating
+refs
 allReferencesPrefixedWith: prefixString do: aBlock
 	"Invoke aBlock with all references (as strings) starting with prefixString in this repository."
 	| visited |

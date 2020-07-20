@@ -1,4 +1,4 @@
-accessing
+objects
 objectReferenced: aString
 	"Answer the git object referenced by aString.
 	For example:

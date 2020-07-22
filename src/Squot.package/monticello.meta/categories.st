@@ -1,5 +1,6 @@
 SystemOrganization addCategory: #'Squot-Interfaces'!
 SystemOrganization addCategory: #'Squot-Core'!
+SystemOrganization addCategory: #'Squot-Exceptions'!
 SystemOrganization addCategory: #'Squot-Capturing'!
 SystemOrganization addCategory: #'Squot-Shadows'!
 SystemOrganization addCategory: #'Squot-Diffs'!

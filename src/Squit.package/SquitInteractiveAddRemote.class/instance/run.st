@@ -4,4 +4,4 @@ run
 	Project current addDeferredUIMessage:
 		[query := SquitAddRemote new.
 		self requestRemoteDetails].
-	^ promise
+	^ promise "will be resolved with a SquitAddRemote or rejected with #cancelled"

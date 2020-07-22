@@ -1,11 +1,10 @@
 actions
 actionSetUpstreamBranch
-	| gitRepository localBranchName localHistorian |
+	| localBranchName localHistorian |
 	self hasBranchSelection ifFalse: [^ self].
 	self withUnitOfWork:
 	[localHistorian := selectedHistorian.
 	localBranchName := localHistorian shortName.
-	gitRepository := localHistorian repository fsgitRepository.
 	self requestAndSetUpstreamBranchOf: localBranchName
-		in: gitRepository
+		in: localHistorian repository
 		ifCanceled: [^ self]].

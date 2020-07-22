@@ -1,0 +1,14 @@
+{
+	"category" : "Squot-Exceptions",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"historian" ],
+	"name" : "SquotCannotExportEmptyHistory",
+	"pools" : [
+		 ],
+	"super" : "Error",
+	"type" : "normal" }

@@ -7,6 +7,7 @@
 		"createNewVersion:with:" : "jr 3/7/2020 00:09",
 		"createNewVersionFromPatch:with:" : "jr 3/7/2020 00:09",
 		"expandedName" : "jr 5/27/2018 17:40",
+		"exportToUpstream" : "jr 7/22/2020 22:27",
 		"git" : "jr 3/7/2020 00:25",
 		"gitRepository" : "jr 3/7/2020 00:23",
 		"gitRepository:" : "jr 1/11/2017 18:05",
@@ -25,6 +26,7 @@
 		"shortName" : "jr 3/7/2020 00:10",
 		"untrackUpstream" : "jr 7/20/2020 13:06",
 		"upstreamHistorianName" : "jr 3/7/2020 00:10",
+		"upstreamRemote" : "jr 7/21/2020 16:08",
 		"upstreamRemoteName" : "jr 3/7/2020 00:10",
 		"version" : "jr 3/7/2020 00:10",
 		"version:" : "jr 3/7/2020 00:10" } }

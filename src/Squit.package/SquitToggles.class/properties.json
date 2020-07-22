@@ -1,0 +1,14 @@
+{
+	"category" : "Squit-Core",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		"AsyncActions" ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "SquitToggles",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }

@@ -16,7 +16,7 @@
 		"delete:" : "jr 3/7/2020 00:06",
 		"exists" : "jr 4/27/2017 15:47",
 		"expandShortRefName:" : "jr 3/7/2020 00:06",
-		"export:withName:toRemoteNamed:" : "jr 5/30/2019 01:30",
+		"export:withName:toRemoteNamed:" : "jr 7/23/2020 00:46",
 		"exportToUpstream:ifNone:" : "jr 4/12/2017 14:47",
 		"exportVersionAt:to:" : "jr 1/26/2017 14:03",
 		"extension:ifPresent:ifAbsent:" : "jr 3/6/2017 19:41",

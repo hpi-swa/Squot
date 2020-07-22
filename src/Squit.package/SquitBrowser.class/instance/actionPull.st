@@ -13,8 +13,7 @@ actionPull
 	remoteUrl := gitRepository remoteUrl: remoteName.
 	remoteRef := localHistorian upstreamHistorianName.
 	(remoteName isNil or: [remoteRef isNil]) ifTrue:
-		[self offerToSetUpstreamBranchOf: localBranchName
-			in: repository fsgitRepository
+		[self offerToSetUpstreamBranchOf: localHistorian
 			ifCanceled: [^ self].
 		remoteName := localHistorian upstreamRemoteName.
 		remoteUrl := gitRepository remoteUrl: remoteName.

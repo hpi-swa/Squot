@@ -1,13 +1,16 @@
 actions on branches
 actionBranchPush
+	SquitToggles asyncActions ifTrue:
+		[^ [self withUnitOfWork:
+			[self pushBranch]] fork].
 	self withUnitOfWork:
 	[self pushSelectedHistorianByDoing:
-		[:gitRepository |
-		self checkTrackedBranchOrOfferChange: selectedHistorian ifUnsupported: [^ self].
-		selectedHistorian repository
-			exportToUpstream: selectedHistorian
+		[:gitRepository | | historian |
+		historian := selectedHistorian.
+		self checkTrackedBranchOrOfferChange: historian ifUnsupported: [^ self].
+		historian repository
+			exportToUpstream: historian
 			ifNone: [
-				self offerToSetUpstreamBranchOf: selectedHistorian shortName
-					in: gitRepository
+				self offerToSetUpstreamBranchOf: historian
 					ifCanceled: [^ self].
 				^ self actionBranchPush "try again"]]].

@@ -1,7 +1,6 @@
 git protocol clients
 pushReferences: updateAssociations of: aRepository deleting: deleteRefs
 	| packFile |
-	self requestCredentials.
 	self client userAgent: 'git/2.0.5'.
 	UIManager default informUser: 'Pushing to ', url asString during:
 		[self withOpenConnection: [

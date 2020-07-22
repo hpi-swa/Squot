@@ -11,7 +11,7 @@
 		"fallbackToDumbProtocol" : "jr 6/17/2020 22:35",
 		"fetchRefsFrom:" : "jr 11/30/2016 18:13",
 		"ifAllUpToDate:andDeleted:do:" : "jr 5/10/2017 13:47",
-		"initialRequestTo:withService:" : "jr 12/1/2016 16:54",
+		"initialRequestTo:withService:" : "jr 7/20/2020 18:42",
 		"invokeReceivePackWithRefs:andPack:deleting:" : "jr 2/8/2020 19:16",
 		"isConnected" : "jr 12/3/2016 01:21",
 		"isSmartResponse:" : "jr 12/1/2016 23:40",
@@ -19,6 +19,6 @@
 		"outputStream" : "DamienCassou 1/29/2013 15:02",
 		"postForUploadPack:" : "jr 10/25/2016 17:05",
 		"postToReceivePack:" : "jr 8/15/2017 19:01",
-		"pushReferences:of:deleting:" : "jr 5/1/2020 17:27",
+		"pushReferences:of:deleting:" : "jr 7/20/2020 18:42",
 		"urlForService:" : "jr 10/25/2016 17:05",
 		"wantAll:capabilities:" : "jr 7/28/2017 14:38" } }

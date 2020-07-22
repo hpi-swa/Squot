@@ -1,3 +1,3 @@
 remotes
 remoteNames
-	^ self unitOfWork configSubkeysAt: 'remote'
+	^ self unitOfWork remoteNames

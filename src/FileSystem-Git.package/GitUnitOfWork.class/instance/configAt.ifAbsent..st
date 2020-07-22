@@ -1,10 +1,7 @@
 configuration
 configAt: aNameString ifAbsent: aBlock
-	| key sectionHead subNames file sectionName |
-	config ifNil:
-		[file := repository configFile.
-		file exists ifFalse: [^ aBlock value].
-		config := file readStreamDo: [:stream | stream ascii. INIFile readFrom: stream]].
+	| key sectionHead subNames sectionName |
+	self ensureConfigOr: [^ aBlock value].
 	subNames := aNameString splitBy: '.'.
 	self assert: (aNameString includes: $.) description: 'config key must include section'.
 	sectionHead := subNames first.

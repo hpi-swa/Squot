@@ -1,0 +1,15 @@
+{
+	"category" : "FileSystem-Git-Plumbing-Exceptions",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"repository",
+		"missingRef" ],
+	"name" : "GitRefDoesNotExistYet",
+	"pools" : [
+		 ],
+	"super" : "GitError",
+	"type" : "normal" }

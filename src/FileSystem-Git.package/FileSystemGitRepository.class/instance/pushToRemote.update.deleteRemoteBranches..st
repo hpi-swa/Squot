@@ -7,6 +7,11 @@ pushToRemote: remoteName update: aCollectionOfBranchNamesAndAssociations deleteR
 		each value == each
 			ifTrue: [(self unitOfWork expandRef: each) -> (self unitOfWork objectReferenced: each)]
 			ifFalse: [(self expandRemoteRef: each value) "remote name" -> (self unitOfWork objectReferenced: each key "local name")]].
+	(updateRefs detect: [:each | each value isNil] ifNone: []) ifNotNil:
+		[:badUpdate | GitRefDoesNotExistYet new
+			repository: repository;
+			missingRef: badUpdate key;
+			signal: 'Nothing to push for ', badUpdate key asString].
 	deleteRefs := aCollectionOfRemoteBranchNames collect: [:each | self expandRemoteRef: each].
 	protocol := GitAbstractProtocol url: url.
 	protocol remote: remote.

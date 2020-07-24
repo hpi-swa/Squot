@@ -2,7 +2,7 @@ actions
 mergeVersionIntoActiveBranch: mergeHeadCommit ifCanceled: cancelBlock
 	| selectedProject |
 	selectedProject := self projectSelection.
-	(self waitFor: (selectedProject future
+	(SquotGUI waitFor: (selectedProject future
 		mergeVersionInteractively: mergeHeadCommit
 		ifCanceled: [])) ifNil: [^ self].
 	selectedProject loadedHistorian version

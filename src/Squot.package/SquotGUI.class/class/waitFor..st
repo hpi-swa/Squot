@@ -1,4 +1,4 @@
-user requests
+user interface
 waitFor: aWaitable
 	"If this is run by the UI process, spawn a new UI process. When the waitable is signalled, terminate the new UI process and reinstante the process that ran this method as the UI process. This leaves the current project in control how the UI loop must be done (rather than duplicating and dictating that here.) Inspired by InstallerSqueakMap>>#update."
 	| answer |

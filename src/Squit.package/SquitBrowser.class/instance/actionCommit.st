@@ -6,7 +6,7 @@ actionCommit
 	self withUnitOfWork:
 	[SquotToggles enableRefactoredSave
 		ifTrue:
-			[self waitFor:
+			[SquotGUI waitFor:
 				((workingCopy newInteractiveSaveOperation
 						title: 'Select changes and message for the new version';
 						applyToWorkingCopy)

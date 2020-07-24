@@ -6,6 +6,6 @@ errorRemoteResourceNotFound: aGitRemoteError
 		message := message , String cr , 
 			'The following might give a hint of what has happened:' , String cr , String cr, 
 			(aGitRemoteError responseBody contractTo: 200), String cr].
-	(answer := UIManager default confirm: message trueChoice: 'OK' translated falseChoice: 'Debug')
+	(answer := SquotGUI confirm: message trueChoice: 'OK' translated falseChoice: 'Debug')
 		= false ifTrue: [ToolSet debugError: aGitRemoteError].
 	^ answer

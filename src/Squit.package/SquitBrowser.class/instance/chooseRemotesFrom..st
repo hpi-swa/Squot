@@ -8,7 +8,7 @@ chooseRemotesFrom: gitRepository
 			ifCanceled: [^ nil]].
 	selection := remoteNames size = 1
 		ifTrue: [remoteNames]
-		ifFalse: [UIManager default
+		ifFalse: [SquotGUI
 			chooseMultipleFrom: remoteNames
 			values: remoteNames
 			title: 'Choose Remotes (http only):'].

@@ -3,7 +3,9 @@
 		 },
 	"instance" : {
 		"cancel" : "jr 6/17/2020 23:51",
+		"confirm:" : "jr 7/24/2020 11:34",
 		"finish" : "jr 6/17/2020 23:44",
+		"inform:" : "jr 7/24/2020 11:34",
 		"initialize" : "jr 6/20/2020 17:06",
 		"newUnitOfWork" : "jr 6/17/2020 23:57",
 		"repository:" : "jr 6/20/2020 17:19",

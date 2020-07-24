@@ -1,7 +1,7 @@
 actions on working copies
 actionProjectClone
 	| workingCopy remoteUrl |
-	remoteUrl := UIManager default request: 'URL to clone from:' initialAnswer: Clipboard clipboardText.
+	remoteUrl := SquotGUI request: 'URL to clone from:' initialAnswer: Clipboard clipboardText.
 	(self isRemoteSupported: remoteUrl)
 		ifFalse: [^ self inform: 'This URL is not supported at the moment.'].
 	workingCopy := self addProjectIfCanceled: [^ self].

@@ -3,7 +3,7 @@ createNewBranchAt: aVersion initialName: aString ifCanceled: cancelBlock
 	"Create a new historian and answer it, or invoke the cancelBlock when the prompt for a branch name is canceled."
 	| name newHistorian workingCopy |
 	workingCopy := self projectSelection.
-	name := UIManager default request: 'New branch name' initialAnswer: aString.
+	name := SquotGUI request: 'New branch name' initialAnswer: aString.
 	(name isNil or: [name isEmpty]) ifTrue: [^ cancelBlock value].
 	newHistorian := self newHistorianFor: workingCopy repository named: name onError: cancelBlock.
 	newHistorian version ifNotNil:

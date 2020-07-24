@@ -7,7 +7,7 @@ cherryPick: pickedVersion toWorkingCopy: workingCopy
 	parentVersion := parentVersions size caseOf: {
 		[0] -> [nil].
 		[1] -> [pickedVersion parents anyOne]}
-	otherwise: [UIManager default
+	otherwise: [SquotGUI
 			chooseFrom: (parentVersions collect: #printString)
 			values: parentVersions
 			title: 'Pick changes in comparison to which parent?'].

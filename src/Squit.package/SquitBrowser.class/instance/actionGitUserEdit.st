@@ -5,8 +5,8 @@ actionGitUserEdit
 	[gitRepository := self projectSelection repository git.
 	defaultAuthor := self projectSelection repository defaultAuthor.
 
-	userName := UIManager default request: 'Git user name:' initialAnswer: defaultAuthor name.
+	userName := SquotGUI request: 'Git user name:' initialAnswer: defaultAuthor name.
 	userName ifNotEmpty: [gitRepository configAt: 'user.name' put: userName].
 
-	userEmail := UIManager default request: 'Git user email:' initialAnswer: defaultAuthor email.
+	userEmail := SquotGUI request: 'Git user email:' initialAnswer: defaultAuthor email.
 	userEmail ifNotEmpty: [gitRepository configAt: 'user.email' put: userEmail]].

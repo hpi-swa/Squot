@@ -7,5 +7,5 @@ actionFetch
 	gitRepository := repository fsgitRepository.
 	remoteNames := self chooseRemotesFrom: gitRepository.
 	remoteNames ifNil: [^ self].
-	remoteNames ifEmpty: [UIManager default inform: 'Nothing selected.'. ^ self].
+	remoteNames ifEmpty: [self inform: 'Nothing selected.'. ^ self].
 	self fetchFrom: repository remoteNames: remoteNames].

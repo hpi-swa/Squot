@@ -7,7 +7,7 @@ actionCredentialsEdit
 	remoteUrls := repository remoteNames collect:
 		[:each | (gitRepository remoteUrl: each)]
 		thenSelect: [:each | each beginsWith: 'http'].
-	repositoryUrl := UIManager default
+	repositoryUrl := SquotGUI
 			chooseFrom: remoteUrls
 			values: remoteUrls
 			title: 'Choose Remotes (http/s only):'.
@@ -17,9 +17,9 @@ actionCredentialsEdit
 			oldUser := credentials first.
 			oldPassword := credentials second]
 		ifNil: [oldUser := ''. oldPassword := ''].
-	newUser := UIManager default request: 'Enter username' initialAnswer: oldUser.
+	newUser := SquotGUI request: 'Enter username' initialAnswer: oldUser.
 	newUser ifEmpty: [^ self].
-	newPassword := UIManager default requestPassword: 'Enter password:'.
+	newPassword := SquotGUI requestPassword: 'Enter password:'.
 	newPassword ifEmpty: [^ self].
 	repository addCredentialsFor: repositoryUrl user: newUser password: newPassword.
 	self inform: 'Credentials updated successfully.']

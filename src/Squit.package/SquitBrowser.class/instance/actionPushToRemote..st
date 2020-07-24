@@ -4,7 +4,7 @@ actionPushToRemote: aString
 	[self pushSelectedHistorianByDoing:
 		[selectedHistorian repository
 			export: selectedHistorian
-			withName: (UIManager default
+			withName: (SquotGUI
 							request: 'Branch name at remote:'
 							initialAnswer: selectedHistorian shortName)
 			toRemoteNamed: aString]].

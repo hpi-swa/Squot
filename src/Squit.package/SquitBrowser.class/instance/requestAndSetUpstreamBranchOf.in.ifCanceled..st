@@ -6,9 +6,9 @@ requestAndSetUpstreamBranchOf: branchName in: squitRepository ifCanceled: cancel
 	remoteName ifNil: [^ cancelBlock value].
 	[git setUpstreamRemoteOfBranchNamed: branchName to: remoteName]
 		on: GitInvalidReferenceName
-		do: [:e | UIManager default inform: e validationReport. ^ cancelBlock value].
+		do: [:e | self inform: e validationReport. ^ cancelBlock value].
 	existingRemoteRef := git upstreamRefOfBranchNamed: branchName.
-	(remoteBranchName := UIManager default request: 'What is the name of the branch at the remote?' initialAnswer: (existingRemoteRef ifNil: [branchName]))
+	(remoteBranchName := SquotGUI request: 'What is the name of the branch at the remote?' initialAnswer: (existingRemoteRef ifNil: [branchName]))
 		ifEmpty: [^ cancelBlock value].
 	git setUpstreamRefOfBranchNamed: branchName to: (squitRepository fsgitRepository expandRemoteRef: remoteBranchName).
 	^ {remoteName. remoteBranchName}

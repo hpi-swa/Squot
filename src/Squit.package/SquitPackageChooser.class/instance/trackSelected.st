@@ -7,7 +7,7 @@ trackSelected
 	conflictingPackages := self trackedPackages select: [:p | p beginsWith: package].
 	
 	conflictingPackages ifNotEmpty: [
-		(UIManager confirm: 'To add this package, we will first remove ',
+		(self confirm: 'To add this package, we will first remove ',
 			(conflictingPackages joinSeparatedBy: ', '),
 			', because the new packages is a prefix/super package for these.', String cr,
 			'(Otherwise the package contents will be duplicated)') ifFalse: [^ self]].

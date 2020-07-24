@@ -1,0 +1,14 @@
+{
+	"category" : "Squot-Tools",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "jr 7/24/2020 00:22",
+	"instvars" : [
+		 ],
+	"name" : "SquotGUI",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }

@@ -10,7 +10,7 @@ actionCommitCherryPick
 	parentVersion := parentVersions size caseOf: {
 		[0] -> [nil].
 		[1] -> [pickedVersion parents anyOne]}
-	otherwise: [UIManager default
+	otherwise: [SquotGUI
 			chooseFrom: (parentVersions collect: #printString)
 			values: parentVersions
 			title: 'Pick changes in comparison to which parent?'].
@@ -18,7 +18,7 @@ actionCommitCherryPick
 		withParent: parentVersion
 		ifLoadCanceled: [^ self]
 		ifSaveCanceled: [:revertBlock |
-			(UIManager default confirm: 'Revert picked changes?') ifTrue: [revertBlock value]]]
+			(self confirm: 'Revert picked changes?') ifTrue: [revertBlock value]]]
 	on: SquotInitialLogMessageRequested
 	do: [:request | request resume:
 		pickedVersion message,

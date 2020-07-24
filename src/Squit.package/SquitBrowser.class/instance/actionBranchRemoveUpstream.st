@@ -8,7 +8,7 @@ actionBranchRemoveUpstream
 	remoteBranchName := localHistorian upstreamHistorianName.
 	(self isUpstreamRemoteSupported: localHistorian)
 		ifFalse: [^ self inform: 'The remote is unsupported, therefore the upstream branch cannot be removed from the remote.'].
-	(UIManager confirm: 'Really delete branch ', remoteBranchName, ' at the remote ', remoteName, '?')
+	(self confirm: 'Really delete branch ', remoteBranchName, ' at the remote ', remoteName, '?')
 		ifFalse: [^ self].
 	self withRemoteErrorHandlingDo:
 		[self handlingCredentialsOf: localHistorian repository

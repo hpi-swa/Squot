@@ -7,7 +7,7 @@ requestPathInWorkingCopy: aWorkingCopy
 		ifBareOrAbsent: ["choose from existing directories"
 			version := aWorkingCopy loadedHistorian version.
 			version
-				ifNil: [subPath := UIManager default
+				ifNil: [subPath := SquotGUI
 						request: 'Enter the relative path in the working copy for the added packages'
 						initialAnswer: 'src']
 				ifNotNil: [rootDirectory := SquitRepositoryFilesystemExtension new

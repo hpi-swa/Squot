@@ -1,0 +1,14 @@
+{
+	"category" : "Squit-UI",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "jr 7/24/2020 00:22",
+	"instvars" : [
+		 ],
+	"name" : "SquitGUI",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }

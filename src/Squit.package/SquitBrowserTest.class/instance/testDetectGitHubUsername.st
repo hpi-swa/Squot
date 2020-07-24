@@ -1,4 +1,4 @@
-as yet unclassified
+tests
 testDetectGitHubUsername
 	| workingCopy remoteUrl |
 	workingCopy := self addAndSelectTemporarySquitWorkingCopy.

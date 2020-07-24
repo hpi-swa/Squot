@@ -1,0 +1,3 @@
+defaults
+defaultResumeValue
+	^ nil

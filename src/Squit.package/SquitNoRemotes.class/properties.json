@@ -1,0 +1,14 @@
+{
+	"category" : "Squit-Exceptions",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"repository" ],
+	"name" : "SquitNoRemotes",
+	"pools" : [
+		 ],
+	"super" : "Notification",
+	"type" : "normal" }

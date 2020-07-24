@@ -2,7 +2,7 @@ user requests
 chooseOneRemoteFrom: gitRepository
 	| remoteNames selection |
 	remoteNames := self chooseableRemoteNamesFrom: gitRepository.
-	remoteNames ifEmpty: [^ self offerToAddRemoteTo: gitRepository].
+	remoteNames ifEmpty: [^ SquitNoRemotes new repository: gitRepository; signal].
 	selection := remoteNames size = 1
 		ifTrue: [remoteNames anyOne]
 		ifFalse: [UIManager default

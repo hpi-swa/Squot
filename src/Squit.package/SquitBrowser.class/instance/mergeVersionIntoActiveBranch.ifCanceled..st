@@ -2,9 +2,9 @@ actions
 mergeVersionIntoActiveBranch: mergeHeadCommit ifCanceled: cancelBlock
 	| selectedProject |
 	selectedProject := self projectSelection.
-	selectedProject
+	(self waitFor: (selectedProject future
 		mergeVersionInteractively: mergeHeadCommit
-		ifCanceled: [^ cancelBlock value].
+		ifCanceled: [])) ifNil: [^ self].
 	selectedProject loadedHistorian version
 		 ifNil: ["new branch that got an ancestor now"
 			self isThisEverCalled: 'branch adoption by SquitBrowser'. "cf. #mergeVersionInteractively:ifCanceled: and #addParentVersion:"

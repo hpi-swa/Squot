@@ -8,6 +8,8 @@ environment:
   matrix:
     - SMALLTALK: Squeak64-trunk
     - SMALLTALK: Squeak32-trunk
+    - SMALLTALK: Squeak64-5.3
+    - SMALLTALK: Squeak32-5.3
     - SMALLTALK: Squeak64-5.2
     - SMALLTALK: Squeak32-5.2
 

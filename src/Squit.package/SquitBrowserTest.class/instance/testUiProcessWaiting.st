@@ -5,7 +5,7 @@ testUiProcessWaiting
 	browser := SquitBrowser new.
 	promise := Promise new.
 	Project current
-		addDeferredUIMessage: [x := 13. promise resolve];
+		addDeferredUIMessage: [x := 13. promise resolveWith: nil];
 		addDeferredUIMessage: [(Delay forMilliseconds: 100) wait. x := 42].
 	[browser waitFor: promise]
 		on: AssertionFailure do: [:f | self fail: f messageText].

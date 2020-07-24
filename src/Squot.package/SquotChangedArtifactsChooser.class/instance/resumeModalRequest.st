@@ -7,4 +7,4 @@ resumeModalRequest
 			["Make sure we will notice in a new UI process when the view is closed."
 			self future resumeModalRequest].
 	"If we finally get here, the view was closed."
-	self accepted ifTrue: [promise resolve] ifFalse: [promise reject].
+	self accepted ifTrue: [promise resolveWith: self] ifFalse: [promise rejectWith: self].

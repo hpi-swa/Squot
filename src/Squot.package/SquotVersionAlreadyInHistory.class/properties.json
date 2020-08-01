@@ -1,0 +1,15 @@
+{
+	"category" : "Squot-Exceptions",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"historian",
+		"version" ],
+	"name" : "SquotVersionAlreadyInHistory",
+	"pools" : [
+		 ],
+	"super" : "Error",
+	"type" : "normal" }

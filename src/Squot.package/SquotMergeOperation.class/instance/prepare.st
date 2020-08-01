@@ -4,6 +4,8 @@ prepare
 	^ self withUnitOfWorkActive:
 	[self validateAncestry.
 	self startUnitOfWork.
+	baseVersion ifNil: [baseVersion := self findBaseVersion].
+	self flag: 'TODO: if there are multiple merge-bases, resolve conflicts recursively'.
 	self workingCopy addGlobalObjectsToStore: mergeVersion.
 	('Merging for ', self title truncateWithElipsisTo: 80) displaySequentialProgress:
 		[self workingCopy withCurrentSnapshot: self workingCopySnapshot do:

@@ -2,7 +2,7 @@ git porcelain
 fetchFrom: aRemoteName
 	| remote url fetchSpec packFile protocol remoteRefs wantRefs wantSignatures packFileData |
 	remote := self unitOfWork remoteNamed: aRemoteName.
-	url := remote url.
+	url := remote url ifNil: [(GitRemoteUndefined remote: remote) signal: 'No URL configured.'].
 	fetchSpec := remote fetchSpecs
 		ifEmpty: [GitFetchSpec
 					fromString: '+refs/heads/*:refs/remotes/', aRemoteName, '/*'

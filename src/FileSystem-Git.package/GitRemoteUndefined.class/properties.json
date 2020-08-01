@@ -1,0 +1,14 @@
+{
+	"category" : "FileSystem-Git-Plumbing-Exceptions",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"remote" ],
+	"name" : "GitRemoteUndefined",
+	"pools" : [
+		 ],
+	"super" : "GitError",
+	"type" : "normal" }

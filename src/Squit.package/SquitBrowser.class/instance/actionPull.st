@@ -1,8 +1,9 @@
 actions
 actionPull
 	"Pulls into the active (not the selected!) branch"
-	| localHistorian |
-	localHistorian := self projectSelection loadedHistorian.
+	| workingCopy |
+	self hasProjectSelection ifFalse: [^ self].
+	workingCopy := self projectSelection.
 	[self withUnitOfWork:
-		[self pullUpstream: localHistorian]]
+		[self pullUpstream: workingCopy]]
 		fork.

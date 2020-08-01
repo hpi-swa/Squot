@@ -1,4 +1,5 @@
 ui
 selectActiveHistorian
 	self hasProjectSelection ifFalse: [^ self].
-	self selectedHistorian: self projectSelection loadedHistorian.
+	self withUnitOfWork:
+		[self selectedHistorian: self projectSelection loadedHistorian].

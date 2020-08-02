@@ -8,4 +8,8 @@ errorRemoteResourceNotFound: aGitRemoteError
 			(aGitRemoteError responseBody contractTo: 200), String cr].
 	(answer := SquotGUI confirm: message trueChoice: 'OK' translated falseChoice: 'Debug')
 		= false ifTrue: [ToolSet debugError: aGitRemoteError].
+	answer = true "OK" ifTrue:
+		[(SquitBadRemote remote: aGitRemoteError remote)
+			cause: aGitRemoteError;
+			signal].
 	^ answer

@@ -1,10 +1,10 @@
 actions on branches
 pushBranch
-	| historian newUpstream newRemote |
+	| historian |
 	self hasBranchSelection ifFalse: [^ self].
 	historian := selectedHistorian.
 	[self withRemoteErrorHandlingDo:
-		[[self handlingCredentialsOf: historian repository
+		[self handlingCredentialsOf: historian repository
 			do:
 				[[historian exportToUpstream]
 					on: GitNonFastForwardPushUpdatesDetected do:
@@ -12,30 +12,14 @@ pushBranch
 							ifTrue: [ex proceedWithForcedPush]
 							ifFalse: [ex return]]
 					on: SquitUpstreamUndefined do:
-						[:ex |
-						[(newUpstream := self offerToSetUpstreamBranchOf: selectedHistorian)
-							ifNotNil: [ex retry]
-							ifNil: [ex return]]
-							on: SquitNoRemotes do:
-								[:noRemotes |
-								newRemote := self offerToAddRemoteTo: historian repository.
-								newRemote ifNil: [noRemotes return] ifNotNil: [noRemotes resume: newRemote]]]]
-			ifCanceled:
-				[newUpstream ifNotNil: [historian untrackUpstream].
-				newRemote ifNotNil: [historian git removeRemoteNamed: newRemote].
-				^ self]]
-
-			on: GitRemoteResourceNotFound do: "prompt, on OK retry setting new upstream"
-				[:error | | answer |
-				answer := self errorRemoteResourceNotFound: error.
-				newUpstream ifNotNil: [historian untrackUpstream].
-				newRemote ifNotNil: [historian git removeRemoteNamed: newRemote].
-				(answer notNil "OK" and: [newUpstream notNil]) ifTrue:
-					[error retry "Prompt again to add another remote"]]
-			on: GitRemoteAuthenticationFailed 	do: "already cancelled credentials prompt"
-				[:error |
-				newUpstream ifNotNil: [historian untrackUpstream].
-				newRemote ifNotNil: [historian git removeRemoteNamed: newRemote]]]]
+						[:e |
+						self inform: e historian shortName, ' has no upstream branch. Please set one, then push again.'.
+						Project current addDeferredUIMessage: [self actionSetUpstreamBranch]]]
+			ifCanceled: 	[^ self]]]
+		on: SquitBadRemote do:
+			[:e |
+			Project current addDeferredUIMessage: [self actionManageRemotes].
+			e resume]
 		on: SquitIllegalUseOfRemoteTrackingBranch do:
 			[self inform: 'You should not push a remote-tracking branch. Push a local branch instead.']
 		on: SquotCannotExportEmptyHistory do:

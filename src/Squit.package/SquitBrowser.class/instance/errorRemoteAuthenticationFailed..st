@@ -11,4 +11,5 @@ errorRemoteAuthenticationFailed: aGitRemoteError
 			, String cr, 'you must use a personal access token instead of your GitHub login password.'].
 	(answer := SquotGUI confirm: message trueChoice: 'Retry' translated falseChoice: 'Debug')
 		= false ifTrue: [ToolSet handleError: aGitRemoteError].
+	answer = true ifTrue: [aGitRemoteError retry].
 	^ answer

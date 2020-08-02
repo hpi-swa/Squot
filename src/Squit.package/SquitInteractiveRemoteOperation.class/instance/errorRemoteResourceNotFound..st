@@ -1,7 +1,7 @@
 error handling
 errorRemoteResourceNotFound: aGitRemoteError
 	| message answer |
-	message := 'No repository found at the remote URL. Maybe the URL is incorrect.'.
+	message := 'No repository found at the remote URL. Maybe the URL is incorrect. Please check the remote configuration.'.
 	aGitRemoteError responseBody ifNotEmpty: [
 		message := message , String cr , 
 			'The following might give a hint of what has happened:' , String cr , String cr, 

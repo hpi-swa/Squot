@@ -6,13 +6,10 @@
 		 ],
 	"commentStamp" : "",
 	"instvars" : [
-		"promise",
-		"workingCopy",
-		"repository",
-		"unitOfWork",
-		"wasUnitOfWorkStarted" ],
-	"name" : "SquitInteractiveOperation",
+		"localHistorian",
+		"patchLoadedDuringMerge" ],
+	"name" : "SquitInteractivePullFromUpstream",
 	"pools" : [
 		 ],
-	"super" : "Object",
+	"super" : "SquitInteractiveOperation",
 	"type" : "normal" }

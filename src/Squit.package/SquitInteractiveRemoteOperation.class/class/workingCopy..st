@@ -1,3 +1,0 @@
-instance creation
-workingCopy: aWorkingCopy
-	self subclassResponsibility

@@ -2,7 +2,8 @@ private
 merge
 	[patchLoadedDuringMerge := SquotGUI waitFor:
 		(self workingCopy newInteractiveMergeOperation
-			mergeVersion: localHistorian upstreamVersion;
+			mergeVersion: (localHistorian upstreamVersion ifNil:
+								[self inform: 'Upstream branch ''', localHistorian upstreamHistorianName, ''' does not exist.'. ^ nil]);
 			title: localHistorian upstreamMergeMessage;
 			prepare;
 			applyToWorkingCopy)]

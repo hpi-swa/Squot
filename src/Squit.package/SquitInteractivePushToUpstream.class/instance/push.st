@@ -4,7 +4,7 @@ push
 		handleRemoteErrorsWhile:
 			[self handlingCredentialsOf: repository
 				do:
-					[[localHistorian exportToUpstream]
+					[[self export]
 						on: GitNonFastForwardPushUpdatesDetected do:
 							[:ex | (self confirm: 'Warning: the tip of your branch is behind its remote counterpart. Do you want to force the push anyway?')
 								ifTrue: [ex proceedWithForcedPush]

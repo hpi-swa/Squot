@@ -10,7 +10,8 @@ actionCommit
 				((workingCopy newInteractiveSaveOperation
 						title: 'Select changes and message for the new version';
 						applyToWorkingCopy)
-					then: [:result | self refresh])]
+					then: [:result | self refresh]
+					ifRejected: [:reason | nil])]
 		ifFalse:
 			[self waitFor:
 				(workingCopy future saveNewVersionInteractivelyIfCanceled: [])]].

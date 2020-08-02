@@ -8,5 +8,7 @@ merge
 			applyToWorkingCopy)]
 		on: SquotVersionAlreadyInHistory do:
 			[self inform: 'Already on branch ', localHistorian shortName, ': ', localHistorian upstreamVersion.
-			^ nil].
+			^ nil]
+		on: BrokenPromise "cancelled" do:
+			[^ nil].
 	self workingCopy addParentVersion: localHistorian upstreamVersion.

@@ -7,6 +7,6 @@ pull
 	self merge ifNil: [^ self].
 	self workingCopy additionalParents size > 0
 		ifTrue:
-			[self save]
+			[self save ifNil: [^ self]]
 		ifFalse:
 			[self inform: 'Adopted ', localHistorian upstreamVersion].

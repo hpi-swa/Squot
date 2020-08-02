@@ -1,0 +1,14 @@
+{
+	"category" : "Squit-UI",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"originalRemote" ],
+	"name" : "SquitInteractiveEditRemote",
+	"pools" : [
+		 ],
+	"super" : "SquitInteractiveAddRemote",
+	"type" : "normal" }

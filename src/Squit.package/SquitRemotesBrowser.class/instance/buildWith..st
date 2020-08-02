@@ -18,7 +18,15 @@ buildWith: toolBuilder
 				model: self;
 				label: 'Add remote';
 				action: #addRemote;
-				frame: (LayoutFrame fractions: (0@1 corner: 0.5@1) offsets: (0@ -25 corner: 0@0));
+				frame: (LayoutFrame fractions: (0@1 corner: 1/3@1) offsets: (0@ -25 corner: 0@0));
+				yourself.
+			toolBuilder pluggableButtonSpec new
+				name: #editSelectedRemote;
+				model: self;
+				label: 'Edit selected';
+				enabled: #isAnyRemoteSelected;
+				action: #editSelectedRemote;
+				frame: (LayoutFrame fractions: (1/3@1 corner: 2/3@1) offsets: (0@ -25 corner: 0@0));
 				yourself.
 			toolBuilder pluggableButtonSpec new
 				name: #removeSelectedRemote;
@@ -26,5 +34,5 @@ buildWith: toolBuilder
 				label: 'Remove selected';
 				enabled: #isAnyRemoteSelected;
 				action: #removeSelectedRemote;
-				frame: (LayoutFrame fractions: (0.5@1 corner: 1@1) offsets: (0@ -25 corner: 0@0));
+				frame: (LayoutFrame fractions: (2/3@1 corner: 1@1) offsets: (0@ -25 corner: 0@0));
 				yourself.})

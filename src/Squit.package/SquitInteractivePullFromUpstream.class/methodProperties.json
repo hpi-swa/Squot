@@ -2,12 +2,12 @@
 	"class" : {
 		"workingCopy:" : "jr 8/1/2020 17:42" },
 	"instance" : {
-		"errorRemoteAuthenticationFailed:" : "jr 7/24/2020 11:33",
+		"errorRemoteAuthenticationFailed:" : "jr 8/2/2020 22:39",
 		"errorRemoteResourceNotFound:" : "jr 8/2/2020 15:23",
 		"errorRemoteUndefined:" : "jr 8/2/2020 15:25",
 		"fetchFromUpstream" : "jr 8/2/2020 11:33",
 		"handleRemoteErrorsWhile:afterErrorDo:" : "jr 8/2/2020 11:20",
-		"handlingCredentialsOf:do:ifCanceled:" : "jr 8/2/2020 14:29",
+		"handlingCredentialsOf:do:ifCanceled:" : "jr 8/2/2020 16:19",
 		"merge" : "jr 8/2/2020 11:36",
 		"pull" : "jr 8/2/2020 11:36",
 		"requestAndStoreCredentialsFor:remoteUrl:ifCanceled:" : "jr 7/24/2020 11:34",

@@ -9,6 +9,16 @@ errorRemoteAuthenticationFailed: aGitRemoteError
 	(aGitRemoteError remote url includesSubstring: 'github.com')
 		ifTrue: [message := message, String cr , 'Also please note: If you have two-factor authentification enabled,'
 			, String cr, 'you must use a personal access token instead of your GitHub login password.'].
-	(answer := SquotGUI confirm: message trueChoice: 'Retry' translated falseChoice: 'Debug')
-		= false ifTrue: [ToolSet handleError: aGitRemoteError].
+	answer := SquotGUI
+		chooseFrom:
+			{'Retry' translated. 'Change credentials' translated. 'Cancel' translated. 'Debug'} 
+		values: #(retry dropCredentials cancel debug)
+		title: message.
+	answer caseOf:
+		{[#retry] -> [aGitRemoteError retry].
+		[#cancel] -> [^ nil].
+		[#dropCredentials] ->
+			[self workingCopy repository removeCredentialsFor: aGitRemoteError remote url.
+			aGitRemoteError retry "will signal NeedGitCredentials"].
+		[#debug] -> [ToolSet handleError: aGitRemoteError]}.
 	^ answer

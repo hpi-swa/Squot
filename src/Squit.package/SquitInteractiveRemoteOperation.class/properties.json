@@ -6,9 +6,9 @@
 		 ],
 	"commentStamp" : "",
 	"instvars" : [
-		"patchLoadedDuringMerge" ],
-	"name" : "SquitInteractivePullFromUpstream",
+		"localHistorian" ],
+	"name" : "SquitInteractiveRemoteOperation",
 	"pools" : [
 		 ],
-	"super" : "SquitInteractiveRemoteOperation",
+	"super" : "SquitInteractiveOperation",
 	"type" : "normal" }

@@ -1,4 +1,4 @@
-private
+error handling
 errorRemoteAuthenticationFailed: aGitRemoteError
 	| message answer |
 	message := 'Authentication with the remote failed for some reason.'.
@@ -18,7 +18,7 @@ errorRemoteAuthenticationFailed: aGitRemoteError
 		{[#retry] -> [aGitRemoteError retry].
 		[#cancel] -> [^ nil].
 		[#dropCredentials] ->
-			[self workingCopy repository removeCredentialsFor: aGitRemoteError remote url.
+			[self repository removeCredentialsFor: aGitRemoteError remote url.
 			aGitRemoteError retry "will signal NeedGitCredentials"].
 		[#debug] -> [ToolSet handleError: aGitRemoteError]}.
 	^ answer

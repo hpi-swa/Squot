@@ -1,4 +1,4 @@
-private
+error handling
 handlingCredentialsOf: aRepository do: aBlock ifCanceled: cancelBlock
 	| urlOfAddedCredentials urlToRemoveCredentialsFrom |
 	[

@@ -1,4 +1,4 @@
-private
+error handling
 handleRemoteErrorsWhile: aBlock afterErrorDo: errorBlock.
 	aBlock
 		on: GitRemoteAuthenticationFailed 	do: 

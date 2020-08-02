@@ -1,4 +1,4 @@
-private
+error handling
 errorRemoteResourceNotFound: aGitRemoteError
 	| message answer |
 	message := 'No repository found at the remote URL. Maybe the URL is incorrect.'.

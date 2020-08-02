@@ -1,4 +1,4 @@
-private
+error handling
 requestAndStoreCredentialsFor: repository remoteUrl: remoteUrl ifCanceled: cancelBlock
 	| newUser newPassword |
 	newUser := SquotGUI request: 'Enter username'.

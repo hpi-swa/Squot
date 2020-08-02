@@ -1,3 +1,4 @@
-accessing
+initialize-release
 workingCopy: anObject
-	workingCopy := anObject
+	workingCopy := anObject.
+	repository := workingCopy repository.

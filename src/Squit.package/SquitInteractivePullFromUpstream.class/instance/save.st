@@ -6,5 +6,6 @@ save
 	SquotGUI waitFor:
 		(self workingCopy newInteractiveSaveOperation
 			title: 'Save the merge of ', localHistorian upstreamTrackingHistorian shortName;
+			message: 'Merge branch ''', (localHistorian repository historianNamed: localHistorian upstreamHistorianName) shortName, ''' of ', localHistorian upstreamRemote url, ' into ', localHistorian shortName;
 			patch: savePatch buildPatch;
 			applyToWorkingCopy).

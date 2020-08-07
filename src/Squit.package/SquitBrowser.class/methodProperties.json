@@ -22,7 +22,7 @@
 		"actionBranchMerge" : "jr 8/7/2020 18:39",
 		"actionBranchPush" : "jr 7/23/2020 22:47",
 		"actionBranchRemove" : "jr 7/24/2020 10:05",
-		"actionBranchRemoveUpstream" : "jr 7/24/2020 10:06",
+		"actionBranchRemoveUpstream" : "jr 8/7/2020 21:02",
 		"actionBranchRename" : "jr 7/24/2020 11:33",
 		"actionBranchResetLoadedToCommit" : "jr 3/7/2020 00:43",
 		"actionBranchResetToCommit" : "jr 3/7/2020 00:43",
@@ -61,7 +61,7 @@
 		"actionPackageInfoObjectEditPreamble" : "jr 5/13/2017 21:16",
 		"actionPackageInfoObjectEditPreambleOfRemoval" : "jr 5/13/2017 21:16",
 		"actionProjectAdd" : "jr 5/11/2017 14:09",
-		"actionProjectClone" : "jr 7/24/2020 11:33",
+		"actionProjectClone" : "jr 8/7/2020 21:03",
 		"actionProjectRemove" : "jr 7/24/2020 10:06",
 		"actionProjectRename" : "jr 7/24/2020 11:33",
 		"actionPull" : "jr 7/25/2020 01:02",
@@ -199,5 +199,4 @@
 		"wantsObjectListDrop:type:from:" : "jr 2/9/2020 00:08",
 		"wantsProjectListDrop:type:from:" : "jr 5/9/2020 14:28",
 		"wantsSteps" : "fn 4/11/2017 17:58",
-		"withRemoteErrorHandlingDo:" : "jr 12/1/2018 23:51",
 		"withUnitOfWork:" : "jr 6/27/2020 09:49" } }

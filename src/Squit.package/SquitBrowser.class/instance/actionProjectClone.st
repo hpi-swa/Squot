@@ -9,8 +9,9 @@ actionProjectClone
 	[workingCopy repository git branchNames
 		ifNotEmpty: [(self confirm: 'The selected local repository already contains commits!', String cr, 'Do you really want to set ', remoteUrl, ' as the origin remote ', String cr, 'and reset all local branches?')
 				ifFalse: [^ self refresh]].
-	self withRemoteErrorHandlingDo:
+	self handleRemoteErrorsWhile:
 		[self handlingCredentialsOf: workingCopy repository
 			do: [workingCopy repository cloneFrom: remoteUrl]
-			ifCanceled: []].
+			ifCanceled: []]
+		afterErrorDo: [].
 	self refresh].

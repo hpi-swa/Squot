@@ -10,5 +10,5 @@
 	"name" : "SquitInteractiveFetch",
 	"pools" : [
 		 ],
-	"super" : "SquitInteractiveOperation",
+	"super" : "SquitInteractiveRemoteOperation",
 	"type" : "normal" }

@@ -2,8 +2,7 @@ running
 run
 	remoteNames ifNil: [^ self error: 'Incompletely initialzed: Remote names missing'].
 	promise := Promise new.
-	Project current addDeferredUIMessage:
-		[self withRemoteErrorHandlingDo:
-			[self withCredentialsHandlingDo: 
-				[self fetch]]].
+	[self withActiveUnitOfWork:
+		[[self fetch ifNil: [promise reject] ifNotNil: [promise resolve]]
+			ifCurtailed: [promise reject]]] fork.
 	^ promise

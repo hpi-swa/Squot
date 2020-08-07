@@ -2,14 +2,7 @@
 	"class" : {
 		"repository:remoteNames:" : "jr 6/18/2020 00:00" },
 	"instance" : {
-		"abandoned" : "jr 6/24/2020 23:14",
-		"cancel" : "jr 6/18/2020 00:21",
-		"errorRemoteAuthenticationFailed:" : "jr 7/24/2020 11:34",
-		"errorRemoteResourceNotFound:" : "jr 7/24/2020 11:34",
-		"fetch" : "jr 7/24/2020 09:23",
+		"fetch" : "jr 8/7/2020 23:53",
 		"remoteNames" : "jr 6/17/2020 23:45",
 		"remoteNames:" : "jr 6/17/2020 23:45",
-		"requestAndStoreCredentialsFor:remoteUrl:" : "jr 7/24/2020 11:34",
-		"run" : "jr 6/24/2020 22:48",
-		"withCredentialsHandlingDo:" : "jr 7/24/2020 11:51",
-		"withRemoteErrorHandlingDo:" : "jr 6/24/2020 23:13" } }
+		"run" : "jr 8/7/2020 23:59" } }

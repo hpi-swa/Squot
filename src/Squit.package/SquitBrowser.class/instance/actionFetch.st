@@ -1,11 +1,6 @@
 actions
 actionFetch
-	| workingCopy repository gitRepository remoteNames |
-	self withUnitOfWork:
-	[workingCopy := self projectSelection.
-	repository := workingCopy repository.
-	gitRepository := repository fsgitRepository.
-	remoteNames := self chooseRemotesFrom: gitRepository.
-	remoteNames ifNil: [^ self].
-	remoteNames ifEmpty: [self inform: 'Nothing selected.'. ^ self].
-	self fetchFrom: repository remoteNames: remoteNames].
+	| workingCopy |
+	workingCopy := self projectSelection.
+	[self withUnitOfWork:
+		[self fetch: workingCopy]] fork.

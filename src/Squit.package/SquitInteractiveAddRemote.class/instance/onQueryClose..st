@@ -7,5 +7,5 @@ onQueryClose: aSquitAddRemote
 			url: aSquitAddRemote remoteUrl asString.
 		self notifyRemoteAdded.
 		(self requestFetchFromRemoteNamed: aSquitAddRemote remoteName)
-			then: [:x | self fetch]
-			ifRejected: [:x | promise resolveWith: aSquitAddRemote]].
+			ifTrue: [self fetch]
+			ifFalse: [promise resolveWith: aSquitAddRemote]].

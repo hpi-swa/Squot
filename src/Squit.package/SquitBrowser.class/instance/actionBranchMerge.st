@@ -1,6 +1,9 @@
 actions on branches
 actionBranchMerge
+	| historian workingCopy |
 	self hasProjectSelection ifFalse: [^ self].
 	self hasBranchSelection ifFalse: [^ self].
+	historian := selectedHistorian.
+	workingCopy := self projectSelection.
 	[self withUnitOfWork:
-		[self mergeBranch: selectedHistorian into: self projectSelection]] fork.
+		[self mergeBranch: historian into: workingCopy]] fork.

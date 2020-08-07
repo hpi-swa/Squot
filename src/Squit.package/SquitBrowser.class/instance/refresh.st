@@ -4,7 +4,10 @@ refresh
 	[self changed: #projectList.
 	self changed: #projectIndex.
 	self withUnitOfWork:
-		[self loadBranchList.
+		[self hasProjectSelection ifFalse:
+			[selectedHistorian := nil.
+			commitSelection := nil].
+		self loadBranchList.
 		self activeBranchChanged.
 		self loadCommitList.
 		self changed: #hasProjectSelection.

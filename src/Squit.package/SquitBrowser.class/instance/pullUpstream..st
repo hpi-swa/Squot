@@ -9,6 +9,8 @@ pullUpstream: aWorkingCopy
 			^ self]
 		on: SquitBadRemote do:
 			[:e |
-			Project current addDeferredUIMessage: [self actionManageRemotes].
+			Project current addDeferredUIMessage:
+				[self actionManageRemotes
+					selectedRemoteName: e remote name].
 			e resume].
 	^ Project current addDeferredUIMessage: [self refresh; selectActiveHistorian]

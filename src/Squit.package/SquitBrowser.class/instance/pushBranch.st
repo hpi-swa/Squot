@@ -10,7 +10,9 @@ pushBranch
 			Project current addDeferredUIMessage: [self actionSetUpstreamBranch]]
 		on: SquitBadRemote do:
 			[:e |
-			Project current addDeferredUIMessage: [self actionManageRemotes].
+			Project current addDeferredUIMessage:
+				[self actionManageRemotes
+					selectedRemoteName: e remote name].
 			e resume]]
 		on: SquitIllegalUseOfRemoteTrackingBranch do:
 			[self inform: 'You should not push a remote-tracking branch. Push a local branch instead.']

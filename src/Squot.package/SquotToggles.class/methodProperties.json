@@ -1,8 +1,6 @@
 {
 	"class" : {
 		"ignoreMethodsInAssumeUnchanged" : "jr 2/26/2020 22:53",
-		"ignoreMethodsInAssumeUnchanged:" : "jr 2/26/2020 22:52",
-		"useUnitOfWorkInterface" : "jr 2/26/2020 21:20",
-		"useUnitOfWorkInterface:" : "jr 2/26/2020 21:19" },
+		"ignoreMethodsInAssumeUnchanged:" : "jr 2/26/2020 22:52" },
 	"instance" : {
 		 } }

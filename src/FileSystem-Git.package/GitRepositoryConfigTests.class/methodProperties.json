@@ -18,6 +18,5 @@
 		"testRemoteNamedWithoutUrl" : "jr 4/12/2020 12:13",
 		"testSetUpstreamGivenRemoteTrackingBranch" : "jr 4/12/2020 12:13",
 		"testSetUpstreamGivenRemoteTrackingBranchWithoutRemote" : "jr 4/12/2020 12:13",
-		"testStateOfUnitOfWorkFlagDuringTest" : "jr 4/13/2020 21:49",
 		"testUnset" : "jr 4/12/2020 12:13",
 		"unitOfWork" : "jr 4/12/2020 12:11" } }

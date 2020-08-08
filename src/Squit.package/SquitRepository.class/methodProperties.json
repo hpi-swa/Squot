@@ -25,7 +25,7 @@
 		"findVersionByString:" : "jr 2/8/2020 20:44",
 		"flushCaches" : "jr 7/22/2017 22:28",
 		"fsgitRepository" : "jr 3/7/2020 00:11",
-		"git" : "jr 3/7/2020 00:12",
+		"git" : "jr 8/8/2020 16:27",
 		"gitRepository" : "jr 3/7/2020 00:11",
 		"hasRemotes" : "jr 5/30/2019 01:20",
 		"hash" : "jr 4/14/2017 00:55",
@@ -56,5 +56,5 @@
 		"versionAt:" : "jr 3/7/2020 00:06",
 		"versionForCommit:" : "jr 2/23/2017 17:45",
 		"withCredentialsDo:" : "jr 4/26/2017 14:08",
-		"withUnitOfWork:" : "jr 3/2/2020 22:53",
+		"withUnitOfWork:" : "jr 8/8/2020 16:32",
 		"workingTreeForCommitNamed:" : "jr 1/29/2017 22:37" } }

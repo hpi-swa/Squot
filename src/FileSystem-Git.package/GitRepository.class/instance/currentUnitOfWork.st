@@ -1,6 +1,5 @@
 public-accessing
 currentUnitOfWork
-	GitFeatureFlags useUnitOfWorkInterface ifFalse: [^ self].
 	^ (GitCurrentUnitOfWork forRepository: self)
 		ifNil: 
 			[GitFeatureFlags warnAboutUseOfDeprecatedMethods ifTrue:

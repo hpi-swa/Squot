@@ -2,7 +2,6 @@ public-accessing
 withUnitOfWork: aBlock
 	"The block can be a unit of work on its own, but may be embedded in a larger unit of work. Ensure that any unit of work is running."
 	| unit |
-	GitFeatureFlags useUnitOfWorkInterface ifFalse: [^ aBlock value].
 	unit := GitCurrentUnitOfWork forRepository: self.
 	^ unit
 		ifNil:

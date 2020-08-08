@@ -4,4 +4,4 @@ setUp
 	super setUp.
 	repoDir := FileSystem memory workingDirectory / 'repo'.
 	repository := GitRepository on: repoDir.
-	self createFakeTree.
+	repository withUnitOfWork: [self createFakeTree].

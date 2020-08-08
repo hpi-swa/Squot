@@ -2,7 +2,7 @@
 	"category" : "FileSystem-Git-Plumbing-Tests",
 	"classinstvars" : [
 		 ],
-	"classtraitcomposition" : "TGitTestCaseWithoutUnitOfWork classTrait",
+	"classtraitcomposition" : "TGitTestCaseWithUnitOfWork classTrait + TGitActiveUnitOfWorkDuringTest classTrait",
 	"classvars" : [
 		 ],
 	"commentStamp" : "",
@@ -12,5 +12,5 @@
 	"pools" : [
 		 ],
 	"super" : "GitTestCase",
-	"traitcomposition" : "TGitTestCaseWithoutUnitOfWork",
+	"traitcomposition" : "TGitTestCaseWithUnitOfWork + TGitActiveUnitOfWorkDuringTest",
 	"type" : "normal" }

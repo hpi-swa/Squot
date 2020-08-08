@@ -12,7 +12,7 @@
 		"testConfigWrite" : "jr 4/12/2020 12:12",
 		"testFetchSpecOfTrackingBranch" : "jr 4/12/2020 12:12",
 		"testGetConfigSectionSubkeys" : "jr 4/12/2020 12:12",
-		"testGetConfigSections" : "jr 4/12/2020 12:12",
+		"testGetConfigSections" : "jr 8/8/2020 16:52",
 		"testRemoteNamed" : "jr 4/12/2020 12:12",
 		"testRemoteNamedNew" : "jr 4/12/2020 12:13",
 		"testRemoteNamedWithoutUrl" : "jr 4/12/2020 12:13",

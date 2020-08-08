@@ -1,3 +1,0 @@
-accessing
-unitOfWork
-	^ self repository

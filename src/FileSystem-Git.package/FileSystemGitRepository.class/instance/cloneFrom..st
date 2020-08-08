@@ -9,7 +9,7 @@ cloneFrom: aStringOrUrl
 			branchName := each allButFirst: 'refs/remotes/origin/' size.
 			self unitOfWork
 				updateRef: 'refs/heads/', branchName
-				to: (repository resolveRef: each);
+				to: (self unitOfWork resolveRef: each);
 				setUpstreamRemoteOfBranchNamed: branchName to: 'origin';
 				setUpstreamRefOfBranchNamed: branchName
 				to: (self expandRemoteRef: branchName)].

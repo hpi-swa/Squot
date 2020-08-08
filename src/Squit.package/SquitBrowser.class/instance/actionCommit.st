@@ -4,14 +4,9 @@ actionCommit
 	self hasProjectSelection ifFalse: [^ self].
 	workingCopy := self projectSelection.
 	self withUnitOfWork:
-	[SquotToggles enableRefactoredSave
-		ifTrue:
-			[SquotGUI waitFor:
-				((workingCopy newInteractiveSaveOperation
-						title: 'Select changes and message for the new version';
-						applyToWorkingCopy)
-					then: [:result | self refresh]
-					ifRejected: [:reason | nil])]
-		ifFalse:
-			[self waitFor:
-				(workingCopy future saveNewVersionInteractivelyIfCanceled: [])]].
+		[SquotGUI waitFor:
+			((workingCopy newInteractiveSaveOperation
+					title: 'Select changes and message for the new version';
+					applyToWorkingCopy)
+				then: [:result | self refresh]
+				ifRejected: [:reason | nil])].

@@ -1,0 +1,10 @@
+{
+	"class" : {
+		 },
+	"instance" : {
+		"clone" : "jr 8/8/2020 01:07",
+		"createRepository" : "jr 8/8/2020 01:06",
+		"fetchAndSetUp" : "jr 8/8/2020 01:15",
+		"isRemoteSupported:" : "jr 5/11/2017 12:57",
+		"registerWorkingCopy" : "jr 8/8/2020 01:07",
+		"requestUrl" : "jr 8/8/2020 01:11" } }

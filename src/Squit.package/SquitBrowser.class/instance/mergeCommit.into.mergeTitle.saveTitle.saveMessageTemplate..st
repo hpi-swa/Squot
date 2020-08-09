@@ -9,7 +9,7 @@ mergeCommit: aVersion into: aWorkingCopy mergeTitle: mergeString saveTitle: save
 		on: SquotVersionAlreadyInHistory do:
 			[self inform: 'Already on branch ', aWorkingCopy loadedHistorian shortName, ': ', aVersion.
 			^ nil]
-		on: BrokenPromise "cancelled" do: [^ nil].
+		on: BrokenPromise "cancelled" do: [:e | e ifNotError: [^ nil]].
 	aWorkingCopy addParentVersion: aVersion.
 	aWorkingCopy additionalParents size > 0 ifFalse: [self inform: 'Adopted ', aVersion. ^ self].
 	savePatch := aWorkingCopy baseVersion newPatchBuilder.
@@ -20,5 +20,5 @@ mergeCommit: aVersion into: aWorkingCopy mergeTitle: mergeString saveTitle: save
 			message: messageString;
 			patch: savePatch buildPatch;
 			applyToWorkingCopy)]
-		on: BrokenPromise "cancelled" do: [^ nil].
+		on: BrokenPromise "cancelled" do: [:e | e ifNotError: [^ nil]].
 	Project current addDeferredUIMessage: [self selectActiveHistorian].

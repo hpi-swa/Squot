@@ -11,5 +11,5 @@ merge
 			[self inform: 'Already on branch ', localHistorian shortName, ': ', localHistorian upstreamVersion.
 			^ nil]
 		on: BrokenPromise "cancelled" do:
-			[^ nil].
+			[:e | e ifNotError: [^ nil]].
 	self workingCopy addParentVersion: localHistorian upstreamVersion.

@@ -9,4 +9,4 @@ save
 			message: 'Merge branch ''', (localHistorian repository historianNamed: localHistorian upstreamHistorianName) shortName, ''' of ', localHistorian upstreamRemote url, ' into ', localHistorian shortName;
 			patch: savePatch buildPatch;
 			applyToWorkingCopy)]
-		on: BrokenPromise "cancelled" do: [^ nil].
+		on: BrokenPromise "cancelled" do: [:e | e ifNotError: [^ nil]].

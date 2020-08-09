@@ -1,3 +1,3 @@
 forbid capturing
-captureWIthSquot: aContentCapturer
+captureWithSquot: aContentCapturer
 	self shouldNotImplement. "or rather, should not be called"

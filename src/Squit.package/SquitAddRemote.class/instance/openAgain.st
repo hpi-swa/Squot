@@ -1,3 +1,0 @@
-displaying
-openAgain
-	self open.

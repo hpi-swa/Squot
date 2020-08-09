@@ -8,7 +8,6 @@
 		"computeDiffsForNewArtifacts" : "jr 2/9/2020 17:22",
 		"computeDiffsFromLeftToRight" : "jr 2/9/2020 17:21",
 		"computeLoadOrderDiff" : "jr 10/3/2018 14:55",
-		"computeLoadOrderDiffFrom:to:" : "jr 10/3/2018 14:55",
 		"diff:against:" : "jr 9/23/2018 17:29",
 		"diffAt:" : "jr 11/26/2018 21:22",
 		"diffPath:from:to:" : "jr 9/23/2018 18:12",
@@ -22,7 +21,6 @@
 		"loadOrderDiff:" : "jr 8/15/2019 01:13",
 		"newLoadOrder" : "jr 3/17/2019 23:07",
 		"newLoadOrder:" : "jr 3/27/2019 22:33",
-		"originalLoadOrder:" : "jr 10/3/2018 14:53",
 		"patchFrom:to:" : "jr 2/9/2020 17:22",
 		"paths" : "jr 11/26/2018 21:22",
 		"reinsertInLoadOrder:" : "jr 5/9/2020 00:01",
@@ -30,5 +28,4 @@
 		"resetAt:" : "jr 11/26/2018 22:39",
 		"startingFrom:" : "jr 3/27/2019 21:40",
 		"updateArtifactTo:" : "jr 9/23/2018 18:12",
-		"updateRightArtifacts" : "jr 5/9/2020 00:01",
-		"useLoadOrderChangesFrom:" : "jr 10/3/2018 15:10" } }
+		"updateRightArtifacts" : "jr 5/9/2020 00:01" } }

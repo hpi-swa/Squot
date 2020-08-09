@@ -5,7 +5,6 @@
 		"addInstVarNamed:withValue:with:" : "jr 7/16/2017 11:32",
 		"addInstVarSlot:" : "jr 7/16/2017 00:34",
 		"addVariablePartSlot:" : "jr 7/20/2017 22:42",
-		"addVariableSlotAt:withContent:" : "jr 6/17/2017 20:23",
 		"addVariableSlotAt:withValue:with:" : "jr 7/16/2017 11:34",
 		"applyDiff:" : "jr 9/23/2019 23:17",
 		"applyDiff:with:" : "jr 7/15/2017 23:58",

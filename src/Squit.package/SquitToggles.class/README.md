@@ -1,0 +1,1 @@
+Feature toggles/flags for Git-specific behavior in Squot. Note that these are shown together with the Git flags from the FileSystem-Git package.

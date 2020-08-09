@@ -1,0 +1,1 @@
+Attempted an operation that is inappropriate for remote-tracking branches. For example, one must not pull or push remote-tracking branches. Instead, local branches that track a remote branch should be pulled or pushed. Remote-tracking branches only reflect the state of a remote repository according to the last fetch or push, so these branches should not be modified otherwise.

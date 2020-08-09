@@ -4,7 +4,7 @@
 		 ],
 	"classvars" : [
 		 ],
-	"commentStamp" : "",
+	"commentStamp" : "jr 8/9/2020 21:22",
 	"instvars" : [
 		"localHistorian" ],
 	"name" : "SquitInteractiveRemoteOperation",

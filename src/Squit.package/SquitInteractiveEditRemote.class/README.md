@@ -1,0 +1,1 @@
+I show users the current properties of a remote and allow users to change them.

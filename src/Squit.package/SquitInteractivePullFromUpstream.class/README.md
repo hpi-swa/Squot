@@ -1,0 +1,1 @@
+I pull from the tracked remote branch. In case of errors or missing credentials I prompt users how to proceed.

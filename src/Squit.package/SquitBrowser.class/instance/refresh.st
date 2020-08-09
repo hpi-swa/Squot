@@ -2,6 +2,7 @@ ui
 refresh
 	Cursor wait showWhile:
 	[self changed: #projectList.
+	(self projectIndex = 0 and: [self projectList size > 0]) ifTrue: [self projectIndex: 2].
 	self changed: #projectIndex.
 	self withUnitOfWork:
 		[self hasProjectSelection ifFalse:

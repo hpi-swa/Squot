@@ -6,3 +6,4 @@ actionProjectRemove
 		ifFalse: [^ self].
 	workingCopy unregister.
 	self projectIndex: (self projectIndex min: self projectList size).
+	self hasProjects ifFalse: [self refresh].

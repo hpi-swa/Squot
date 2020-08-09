@@ -7,11 +7,19 @@ ifNotError: aBlock
 	(nested isKindOf: Error)
 		ifTrue: [self pass]
 		ifFalse: [^ aBlock cull: nested].
-	"[BrokenPromise new promise: (Promise new rejectWith: 42); signal]
+	"[Promise new rejectWith: 42; wait]
 		on: BrokenPromise do: [:e | e ifNotError: []]" "expected: nil"
-	"[BrokenPromise new promise: (Promise new rejectWith: (Promise new rejectWith: 42)); signal]
+	"[((Promise new rejectWith: 42) then: [:x|] ifRejected: [:x | nil]) wait]
 		on: BrokenPromise do: [:e | e ifNotError: []]" "expected: nil"
-	"[BrokenPromise new promise: (Promise new rejectWith: (Error new messageText: 'Real error')); signal]
+	"[((Promise new rejectWith: 42) then: [:x|] ifRejected: [:x | x error]) wait]
+		on: BrokenPromise do: [:e | e ifNotError: []]" "expected: BrokenPromise signal (Squeak Trunk) or Error error (Squeak 5.3)"
+	"[((Promise new resolveWith: 42) then: [:x| x error] ifRejected: [:x |]) wait]
 		on: BrokenPromise do: [:e | e ifNotError: []]" "expected: BrokenPromise signal"
-	"[BrokenPromise new promise: (Promise new rejectWith: (Promise new rejectWith: (Error new messageText: 'Real error'))); signal]
-		on: BrokenPromise do: [:e | e ifNotError: []]" "expected: BrokenPromise signal"
+	"[(((Promise new resolveWith: 42) then: [:x| x error]) ifRejected: [:x |]) wait]
+		on: BrokenPromise do: [:e | e ifNotError: []]" "expected: nil"
+	"[[(self future error) wait]
+		on: BrokenPromise do: [:e | e ifNotError: []]] fork" "expected: BrokenPromise signal"
+	"[[((self future error) then: [:x |] ifRejected: [:x| nil]) wait]
+		on: BrokenPromise do: [:e | e ifNotError: []]] fork" "expected: nil"
+	"[[((self future error) then: [:x |]) wait]
+		on: BrokenPromise do: [:e | e ifNotError: []]] fork" "expected: BrokenPromise signal"

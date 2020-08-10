@@ -24,6 +24,7 @@ testMergeWithAddedArtifactOnBothSides
 		self assert: merge hasConflicts.
 		(merge graphMerge conflictAt: (self workingCopy artifactAt: 'added') content startName) chooseIncoming.
 		request resume]
+	on: Warning do: [:e | e resume]
 	] valueSupplyingAnswers: {{'*'. #default}}.
 	self assert: #right equals: (self workingCopy objectAt: 'added') contents;
 		assert: rightName equals:

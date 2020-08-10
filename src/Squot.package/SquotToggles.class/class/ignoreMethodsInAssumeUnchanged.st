@@ -4,4 +4,4 @@ ignoreMethodsInAssumeUnchanged
 		categoryList: #('Squot expert settings')
 		description: 'Put methods in that ChangeSet to always exclude them from commits'
 		type: #Boolean>
-	^ IgnoreMethodsInAssumeUnchanged ifNil: [false]
+	^ IgnoreMethodsInAssumeUnchanged ifNil: [true]

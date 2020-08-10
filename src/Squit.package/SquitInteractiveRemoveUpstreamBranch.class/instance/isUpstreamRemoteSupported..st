@@ -1,5 +1,5 @@
-actions
+private
 isUpstreamRemoteSupported: aHistorian
 	| remoteUrl |
-	remoteUrl := self remoteUrlOf: aHistorian.
+	remoteUrl := aHistorian upstreamRemote url.
 	^ self isRemoteSupported: remoteUrl

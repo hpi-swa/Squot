@@ -7,4 +7,5 @@
 		"errorRemoteUndefined:" : "jr 8/2/2020 23:53",
 		"handleRemoteErrorsWhile:afterErrorDo:" : "jr 8/2/2020 23:53",
 		"handlingCredentialsOf:do:ifCanceled:" : "jr 8/2/2020 23:53",
+		"isRemoteSupported:" : "jr 8/10/2020 22:08",
 		"requestAndStoreCredentialsFor:remoteUrl:ifCanceled:" : "jr 8/2/2020 23:53" } }

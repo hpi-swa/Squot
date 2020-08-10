@@ -1,0 +1,14 @@
+{
+	"category" : "Squit-UI",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "jr 8/10/2020 22:19",
+	"instvars" : [
+		"historian" ],
+	"name" : "SquitInteractiveRemoveUpstreamBranch",
+	"pools" : [
+		 ],
+	"super" : "SquitInteractiveRemoteOperation",
+	"type" : "normal" }

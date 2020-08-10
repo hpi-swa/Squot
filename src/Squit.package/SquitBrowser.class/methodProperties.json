@@ -149,7 +149,7 @@
 		"menuProjectListWorkingCopyHook:" : "jr 3/17/2019 12:23",
 		"mergeBranch:into:" : "jr 8/7/2020 18:41",
 		"mergeCommit:into:" : "jr 8/7/2020 18:36",
-		"mergeCommit:into:mergeTitle:saveTitle:saveMessageTemplate:" : "jr 8/9/2020 22:45",
+		"mergeCommit:into:mergeTitle:saveTitle:saveMessageTemplate:" : "jr 8/10/2020 22:41",
 		"modelWakeUp" : "fn 4/26/2017 16:19",
 		"newHistorianFor:named:onError:" : "jr 7/24/2020 10:14",
 		"objectCache" : "fn 4/11/2017 18:39",

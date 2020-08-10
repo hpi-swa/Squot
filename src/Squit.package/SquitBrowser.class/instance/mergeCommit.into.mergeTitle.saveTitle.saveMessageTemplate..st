@@ -1,7 +1,6 @@
 actions on branches
 mergeCommit: aVersion into: aWorkingCopy mergeTitle: mergeString saveTitle: saveString saveMessageTemplate: messageString
-	| loadedPatch savePatch |
-	[loadedPatch := SquotGUI waitFor: (aWorkingCopy newInteractiveMergeOperation
+	[SquotGUI waitFor: (aWorkingCopy newInteractiveMergeOperation
 		mergeVersion: aVersion;
 		title: mergeString;
 		prepare;
@@ -12,13 +11,11 @@ mergeCommit: aVersion into: aWorkingCopy mergeTitle: mergeString saveTitle: save
 		on: BrokenPromise "cancelled" do: [:e | e ifNotError: [^ nil]].
 	aWorkingCopy addParentVersion: aVersion.
 	aWorkingCopy additionalParents size > 0 ifFalse: [self inform: 'Adopted ', aVersion. ^ self].
-	savePatch := aWorkingCopy baseVersion newPatchBuilder.
-	loadedPatch diffsDo: [:each | savePatch addDiff: each].
+	self flag: #todo. "Try to exclude changes that were already unsaved in the working copy before the merge."
 	[SquotGUI waitFor:
 		(aWorkingCopy newInteractiveSaveOperation
 			title: saveString;
 			message: messageString;
-			patch: savePatch buildPatch;
 			applyToWorkingCopy)]
 		on: BrokenPromise "cancelled" do: [:e | e ifNotError: [^ nil]].
 	Project current addDeferredUIMessage: [self selectActiveHistorian].

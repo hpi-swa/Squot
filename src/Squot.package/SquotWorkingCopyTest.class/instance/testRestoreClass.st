@@ -6,9 +6,7 @@ testRestoreClass
 	sampleClassName := sampleClass name. "when unloaded, the class is renamed"
 	firstMethod := sampleClass >> #firstMethod.
 	repository withUnitOfWork:
-	[[workingCopy add: sampleClass at: sampleClass package name, '/', sampleClass name]
-		on: SquotClassWithoutPackageException
-		do: [:e | e resume: (PackageInfo named: classFactory packageName)].
+	[workingCopy add: sampleClass at: sampleClass package name, '/', sampleClass name.
 	workingCopy saveVersionWithMessage: 'first version'.
 	firstVersion := workingCopy baseVersion.
 	sampleClass compileSilently: 'addedMethod ^ self' classified: 'methods of second version'.

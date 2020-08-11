@@ -1,4 +1,0 @@
-accessing
-classWithoutPackage
-	
-	^ classWithoutPackage

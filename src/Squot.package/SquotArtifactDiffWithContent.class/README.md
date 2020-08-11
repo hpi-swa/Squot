@@ -1,1 +1,0 @@
-Old name of SquotArtifactModification.

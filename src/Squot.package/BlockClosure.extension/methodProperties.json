@@ -2,5 +2,4 @@
 	"class" : {
 		 },
 	"instance" : {
-		"on:doAndPass:" : "jr 10/3/2017 00:17",
 		"on:doAndResume:" : "jr 5/31/2017 18:21" } }

@@ -1,6 +1,5 @@
 {
 	"class" : {
-		"forPackageNamed:leftSnapshot:rightSnapshot:" : "jr 9/25/2019 22:32",
 		"left:withSnapshot:right:withSnapshot:" : "jr 9/25/2019 22:29",
 		"modificationsGroupedByClass:" : "jr 5/8/2020 21:46" },
 	"instance" : {
@@ -13,8 +12,6 @@
 		"object" : "jr 8/14/2019 19:43",
 		"operations" : "jr 7/27/2017 23:23",
 		"packageName" : "jr 1/26/2020 23:41",
-		"packageName:leftSnapshot:rightSnapshot:" : "jr 9/25/2019 22:28",
-		"packageName:patch:" : "jr 9/25/2019 22:28",
 		"patch" : "jr 10/31/2017 22:57",
 		"postCopy" : "jr 11/18/2018 02:00",
 		"squotApplyTo:" : "jr 7/22/2017 00:07",

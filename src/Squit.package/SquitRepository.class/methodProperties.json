@@ -18,7 +18,6 @@
 		"exists" : "jr 4/27/2017 15:47",
 		"expandShortRefName:" : "jr 3/7/2020 00:06",
 		"export:withName:toRemoteNamed:" : "jr 7/23/2020 00:46",
-		"exportToUpstream:ifNone:" : "jr 8/9/2020 19:43",
 		"extension:ifPresent:ifAbsent:" : "jr 3/6/2017 19:41",
 		"filesystemExtension" : "jr 3/6/2017 19:42",
 		"findVersionByString:" : "jr 2/8/2020 20:44",

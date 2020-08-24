@@ -1,5 +1,6 @@
 commit tests
 testTags
+	self withUnitOfWork: [:git |
 	self assert: workingCopy tagNames isEmpty.
 	
 	(workingCopy / 'afile') writeStreamDo: [ :stream | ].
@@ -12,10 +13,11 @@ testTags
 	self assert: workingCopy tagNames size = 2.
 	self assert: (workingCopy tagNames includes: 'tagNumberTwo').
 	
-	basicRepository 
-		updateRef: basicRepository tagsDir / 'tag3' 
+	fsRepository unitOfWork 
+		updateRef: 'refs/tags/tag3' 
 		to: workingCopy revisionHash;
-		updateRef: basicRepository tagsDir / 'sub' / 'tag4'
+		updateRef: 'refs/tags/sub/tag4'
 		to: workingCopy revisionHash.
 	self assert: workingCopy tagNames size = 4.
 	self assert: (workingCopy tagNames includesAllOf: #('tag1' 'tagNumberTwo' 'tag3' 'sub/tag4')).
+	].

@@ -9,6 +9,7 @@ setUp
 	reference := (FileSystem memory / 'test.git').
 	basicRepository := GitRepository on: reference.
 
+	basicRepository withUnitOfWork: [
 	blob1 := (GitBlob bytes: 'testBlob' in: basicRepository) store; yourself.
 	blob2 := (GitBlob bytes: 'second test Blob' in: basicRepository) store; yourself.
 	tree1 := GitTree 
@@ -46,9 +47,10 @@ setUp
 		store;
 		yourself.
 	
-	basicRepository
-		updateRef: basicRepository headsDir / 'branch1' to: commit1 hexHash;
-		updateRef: basicRepository headsDir / 'master' to: commit2 hexHash.	
-	GitFSCK validate: basicRepository.
+	basicRepository unitOfWork
+		updateRef: 'refs/heads/branch1' to: commit1 hexHash;
+		updateRef: 'refs/heads/master' to: commit2 hexHash.
+	].
+	basicRepository withUnitOfWork: [GitFSCK validate: basicRepository].
 	
 	repository := FileSystemGitRepository on: reference.

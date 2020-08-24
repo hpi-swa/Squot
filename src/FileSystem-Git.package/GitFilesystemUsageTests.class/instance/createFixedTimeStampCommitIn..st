@@ -2,7 +2,8 @@ helpers
 createFixedTimeStampCommitIn: anFSReference
 	| repository blob tree commit committer author |
 	repository := GitRepository on: anFSReference.
-	
+	repository withUnitOfWork: [
+		
 	blob := GitBlob bytes: 'blob1' in: repository.
 	blob store.
 	
@@ -35,5 +36,6 @@ createFixedTimeStampCommitIn: anFSReference
 	commit parents: OrderedCollection new.
 	commit store.
 
-	repository updateRef: repository headsDir / 'master' to: commit hexHash.
+	repository unitOfWork updateRef: 'refs/heads/master' to: commit hexHash.
 	GitFSCK validate: repository.
+	].

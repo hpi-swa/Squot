@@ -12,13 +12,17 @@ testDeletingDirectory
 	self assert: ref parent exists.
 	
 	self commit: 'added myDir'.
+	self withUnitOfWork: [:git |
 	self assert: ref exists.
 	self assert: ref parent exists.
 	
 	ref parent delete.
 	self deny: ref exists.
 	self deny: ref parent exists.
-	
+	].
+
 	self commit: 'removed myDir'.
+	self withUnitOfWork: [:git |
 	self deny: ref parent exists.
 	self deny: ref exists.
+	].

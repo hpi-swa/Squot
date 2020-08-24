@@ -10,6 +10,7 @@ testDeleting
 	self assert: ref exists.
 	
 	self commit: 'added myFile'.
+	self withUnitOfWork: [:git |
 	self assert: ref exists.
 	
 	ref delete.
@@ -22,3 +23,4 @@ testDeleting
 	self deny: ref parent exists.
 	self deny: (workingCopy / 'myDir' / 'anotherFile') exists.
 	self deny: ref exists.
+	].

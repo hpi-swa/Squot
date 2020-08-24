@@ -1,7 +1,7 @@
 tests
 testFullTags
 	| commit tags tag|
-	commit := basicRepository objectNamed: (basicRepository resolveRef: 'refs/heads/branch1').
+	commit := self unitOfWork objectNamed: (self unitOfWork resolveRef: 'refs/heads/branch1').
 	[[ tag := GitTag
 		named: 'version4.3alpha'
 		for: commit
@@ -11,7 +11,6 @@ testFullTags
 			do: [ :req | req resume: 'Homer Simpson' ]]
 				on: GitStampEmailRequest
 				do: [ :req | req resume: 'homer@nuke.com' ].
-			
 	tags := repository tags.
 	
 	self assert: tags size = 1.

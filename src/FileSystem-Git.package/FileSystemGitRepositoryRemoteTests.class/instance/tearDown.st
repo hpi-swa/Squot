@@ -1,4 +1,4 @@
 running
 tearDown
-	GitFSCK validate: basicRepository.
+	basicRepository withUnitOfWork: [GitFSCK validate: basicRepository].
 	super tearDown.

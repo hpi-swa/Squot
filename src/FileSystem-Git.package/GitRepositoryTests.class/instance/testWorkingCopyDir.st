@@ -1,11 +1,11 @@
 tests
 testWorkingCopyDir
-	repository configUnsetAt: 'core.bare'.
-	self assert: repository workingCopyDir = reference parent "memory:/".
-	repository
+	self unitOfWork configUnsetAt: 'core.bare'.
+	self assert: self unitOfWork workingCopyDir = reference parent "memory:/".
+	self unitOfWork
 		workingCopyDirDo: [:dir | self assert: dir = reference parent]
 		ifBare: [self fail: 'should not reach here'].
-	repository configAt: 'core.bare' put: 'true'.
-	repository
+	self unitOfWork configAt: 'core.bare' put: 'true'.
+	self unitOfWork
 		workingCopyDirDo: [:dir | self fail: 'should not reach here']
 		ifBare: [].

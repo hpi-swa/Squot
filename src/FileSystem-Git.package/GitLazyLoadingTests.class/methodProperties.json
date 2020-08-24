@@ -2,10 +2,10 @@
 	"class" : {
 		"lastStoredRun" : "CamilloBruni 8/1/2011 16:49" },
 	"instance" : {
-		"commit:" : "MaxLeske 10/18/2010 16:07",
+		"commit:" : "jr 8/23/2020 18:41",
 		"repository" : "jr 4/13/2020 21:25",
-		"setUp" : "MaxLeske 9/3/2012 20:58",
-		"tearDown" : "jr 2/23/2017 12:49",
-		"testBasicCommit" : "CamilloBruni 7/15/2011 15:59",
-		"testLazyLoading" : "CamilloBruni 8/1/2011 16:16",
-		"testLookup" : "CamilloBruni 7/15/2011 16:00" } }
+		"setUp" : "jr 8/23/2020 18:42",
+		"tearDown" : "jr 8/23/2020 18:45",
+		"testBasicCommit" : "jr 8/23/2020 18:44",
+		"testLazyLoading" : "jr 8/23/2020 18:45",
+		"testLookup" : "jr 8/23/2020 18:47" } }

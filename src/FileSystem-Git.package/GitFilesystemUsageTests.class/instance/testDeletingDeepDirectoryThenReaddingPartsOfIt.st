@@ -18,6 +18,7 @@ testDeletingDeepDirectoryThenReaddingPartsOfIt
 	self assert: ref2 parent exists.
 	
 	self commit: 'add directory hierarchy'.
+	self withUnitOfWork: [:git |
 	self assert: ref1 exists.
 	self assert: ref2 exists.
 	
@@ -36,7 +37,10 @@ testDeletingDeepDirectoryThenReaddingPartsOfIt
 	ref1 ensureFile.
 	self assert: ref1 exists.
 	self deny: ref2 exists description: 'old file reappeared'.
-	
+	].
+
 	self commit: 'added new myDir'.
+	self withUnitOfWork: [:git |
 	self assert: ref1 exists.
 	self deny: ref2 exists description: 'old file reappeared'.
+	].

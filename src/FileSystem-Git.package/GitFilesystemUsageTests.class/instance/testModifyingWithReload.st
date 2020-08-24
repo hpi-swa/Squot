@@ -3,6 +3,7 @@ testModifyingWithReload
 	| ref |	
 	self createSomeCommits.
 	ref := workingCopy / 'file1'.
+	self withUnitOfWork: [:git |
 	self assert: ref readStream contents asString = 'content'.
 	ref writeStreamDo: [ :stream | stream nextPutAll: 'changed it' ].
 	
@@ -10,3 +11,4 @@ testModifyingWithReload
 	workingCopy := fsRepository head.
 	ref := workingCopy / 'file1'.
 	self assert: ref readStream contents asString = 'changed it'
+	].

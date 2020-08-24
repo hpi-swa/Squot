@@ -3,8 +3,10 @@ testPush
 	<timeout: 20>
 	"when"
 	| remoteRefs |
+	self withUnitOfWork: [
 	repository addRemote: 'test' url: self remoteUrl.
 	repository push: { 'branch1' } toRemote: 'test'.
+	].
 	"then"
 	remoteRefs := (GitAbstractProtocol url: self remoteUrl) refs.
 	self assert: (remoteRefs includesKey: 'refs/heads/branch1').

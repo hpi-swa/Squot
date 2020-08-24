@@ -12,6 +12,7 @@ testDeletingDirectoryThenReaddingIt
 	self assert: ref parent exists.
 	
 	self commit: 'added myDir'.
+	self withUnitOfWork: [:git |
 	self assert: ref exists.
 	self assert: ref parent exists.
 	
@@ -22,16 +23,21 @@ testDeletingDirectoryThenReaddingIt
 	ref parent ensureDirectory.
 	self assert: ref parent exists.
 	self deny: ref exists description: 'old file reappeared'.
+	].
 	
 	self commit: 'removed myDir'.
 	"since the new directory was empty, it was not stored at all"
+	self withUnitOfWork: [:git |
 	self deny: ref exists description: 'old file reappeared'.
 	
 	ref parent ensureDirectory.
 	(ref parent / 'anotherFile') ensureFile.
 	self deny: ref exists description: 'old file reappeared'.
-	
+	].
+
 	self commit: 'added new myDir'.
+	self withUnitOfWork: [:git |
 	self assert: ref parent exists.
 	self assert: (ref parent / 'anotherFile') exists.
 	self deny: ref exists description: 'old file reappeared'.
+	].

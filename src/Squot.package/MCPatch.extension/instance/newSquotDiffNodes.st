@@ -1,7 +1,7 @@
 *Squot-Tools-Diffs
 newSquotDiffNodes
 	| byClass topNodes byClassification operationsWithClass rest |
-	operationsWithClass := operations select: [:each | each definition respondsTo: #isCodeDefinition].
+	operationsWithClass := operations select: [:each | (each definition respondsTo: #isCodeDefinition) or: (each definition respondsTo: #isTraitDefinition)].
 	byClass := (operationsWithClass groupBy: [:each | each definition className])
 		collect: [:eachGroup | | classOperation |
 			"lift class definition changes to the top of each group"

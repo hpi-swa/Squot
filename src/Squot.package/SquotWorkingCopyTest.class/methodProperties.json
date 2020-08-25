@@ -31,6 +31,7 @@
 		"testRemovePackage" : "jr 1/26/2020 23:54",
 		"testRestoreClass" : "jr 8/11/2020 23:40",
 		"testRestorePackage" : "jr 3/2/2020 23:24",
+		"testSaveTimestampIsNow" : "jr 8/25/2020 19:13",
 		"testSwitchAndMoveOverToBranchAtSameVersion" : "jr 3/2/2020 23:23",
 		"testSwitchBranch" : "jr 3/2/2020 23:23",
 		"testSwitchBranchAndMoveOverUnsavedChanges" : "jr 3/2/2020 23:37",

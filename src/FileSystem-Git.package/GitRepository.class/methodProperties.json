@@ -11,9 +11,6 @@
 		"configAt:ifAbsent:" : "jr 2/23/2020 21:29",
 		"configFile" : "jr 12/13/2016 17:45",
 		"configPartsFromSectionLabel:" : "jr 4/13/2017 23:04",
-		"configSectionLabelFromParts:" : "jr 2/23/2020 21:29",
-		"configSubsetWithPrefix:" : "jr 2/23/2020 21:29",
-		"configUnsetAt:" : "jr 2/23/2020 21:29",
 		"convertToCurrentVersion:refStream:" : "jr 3/22/2017 15:13",
 		"currentUnitOfWork" : "jr 8/8/2020 16:29",
 		"defaultValueForConfigOption:" : "jr 6/3/2017 12:08",
@@ -44,6 +41,4 @@
 		"unitOfWork" : "jr 2/29/2020 20:23",
 		"validateReferenceOrReferenceName:" : "pre 11/14/2018 16:50",
 		"withUnitOfWork:" : "jr 8/8/2020 16:30",
-		"workingCopyDir" : "jr 2/23/2020 21:37",
-		"workingCopyDirDo:ifBare:" : "jr 2/23/2020 21:37",
 		"workingDir" : "MaxLeske 6/24/2012 11:37" } }

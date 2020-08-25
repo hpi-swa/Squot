@@ -10,6 +10,6 @@ configSubkeysAt: aNameString
 			and: [each beginsWith: subNames]].
 	^ (relevantSections gather: [:sectionParts |
 		sectionParts = subNames
-			ifTrue: [(config section: ([repository flag: #stub; configSectionLabelFromParts: sectionParts] on: Deprecation do: [:w | w resume]))
+			ifTrue: [(config section: (self configSectionLabelFromParts: sectionParts))
 					associations collect: [:each | each key]]
 			ifFalse: [{sectionParts at: subNames size + 1}]]) asSet asArray

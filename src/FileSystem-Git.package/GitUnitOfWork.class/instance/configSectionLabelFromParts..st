@@ -1,7 +1,6 @@
-private configuration
+configuration-private
 configSectionLabelFromParts: aCollectionOfStrings
 	| key sectionHead |
-	self privateDeprecatedUseUnitOfWork.
 	sectionHead := aCollectionOfStrings first.
 	key := aCollectionOfStrings last.
 	^ aCollectionOfStrings size = 1

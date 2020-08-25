@@ -4,7 +4,8 @@ createVersion
 		[newVersion := historian createNewVersionFromPatch: patch
 			with: [:version | version
 						message: message;
-						author: author.
+						author: author;
+						timestamp: DateAndTime now.
 					version parents: self parentVersions.
 					shouldStoreMetadata ifFalse: [version doNotStoreMetadata]]]]
 		on: SquotArtifactsWereCaptured

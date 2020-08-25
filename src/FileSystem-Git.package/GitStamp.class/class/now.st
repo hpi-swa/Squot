@@ -1,6 +1,3 @@
 instance creation
 now
-	^ self new 
-		name: self defaultName; 
-		email: self defaultEmail;
-		yourself
+	^ self nowBy: self defaultName email: self defaultEmail

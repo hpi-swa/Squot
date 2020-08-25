@@ -15,7 +15,7 @@ buildVersion
 		message: (self message withLineEndings: String lf);
 		parents: (parents collect: [:each | each hexHash]);
 		author: author;
-		committer: committer;
+		committer: committer now;
 		store.
 	SquotArtifactsWereCaptured new artifacts: fsStore capturedArtifacts; signal.
 	^ repository versionForCommit: commit

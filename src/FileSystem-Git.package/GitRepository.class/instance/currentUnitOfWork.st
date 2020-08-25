@@ -4,5 +4,5 @@ currentUnitOfWork
 		ifNil: 
 			[GitFeatureFlags warnAboutUseOfDeprecatedMethods ifTrue:
 				[Warning signal: 'No active unit of work!'].
-			self flag: #todo. "creating a unit of work spontaneously is only a workaround"
+			"As a fail-operational measure, create an ad-hoc unit of work."
 			self newUnitOfWork]

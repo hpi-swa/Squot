@@ -16,16 +16,14 @@ createFixedTimeStampCommitIn: anFSReference
 		in: repository.
 	tree store.
 		
-	committer := (GitStamp new
-		email: 'mail@server.ext';
-		name: 'Homer Simpson';
-		timeStamp: (DateAndTime year: 2011 month: 06 day: 28 hour: 22 minute: 10) asTimeStamp;
-		yourself).
-	author := (GitStamp new
-		email: 'mail@server.ext';
-		name: 'Homer Simpson';
-		timeStamp: (DateAndTime year: 2010 month: 06 day: 27 hour: 21 minute: 11) asTimeStamp;
-		yourself). 
+	committer := GitStamp
+		name: 'Homer Simpson'
+		email: 'mail@server.ext'
+		timeStamp: (DateAndTime year: 2011 month: 06 day: 28 hour: 22 minute: 10) asTimeStamp.
+	author := GitStamp
+		name: 'Homer Simpson'
+		email: 'mail@server.ext'
+		timeStamp: (DateAndTime year: 2010 month: 06 day: 27 hour: 21 minute: 11) asTimeStamp.
 					
 	commit := GitCommit
 		withTree: tree

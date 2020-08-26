@@ -1,7 +1,12 @@
 {
 	"class" : {
-		"ensureDefaultValues" : "jr 1/14/2017 01:04",
-		"new" : "jr 1/14/2017 01:03" },
+		"ensureDefaultValues" : "jr 8/26/2020 23:39",
+		"name:email:timeStamp:" : "jr 8/26/2020 23:24",
+		"new" : "jr 8/26/2020 23:22",
+		"now" : "jr 8/26/2020 23:22",
+		"nowBy:email:" : "jr 8/26/2020 23:22",
+		"readFrom:" : "jr 8/26/2020 23:22" },
 	"instance" : {
 		"initialize" : "jr 1/14/2017 01:04",
-		"restorePreviousValues" : "jr 1/14/2017 00:49" } }
+		"restorePreviousValues" : "jr 1/14/2017 00:49",
+		"setName:email:timeStamp:" : "jr 8/26/2020 23:20" } }

@@ -2,10 +2,8 @@ running
 setUp
 	| commit1 commit2  blob1 blob2 tree1 tree2 stamp |
 	super setUp.
-	stamp := GitStamp new
-		name: 'Homer Simpson';
-		email: 'homer@nuke.com';
-		yourself.
+	stamp := GitStamp nowBy: 'Homer Simpson'
+		email: 'homer@nuke.com'.
 	reference := (FileSystem memory / 'test.git').
 	basicRepository := GitRepository on: reference.
 

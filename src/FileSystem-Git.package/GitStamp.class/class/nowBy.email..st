@@ -1,6 +1,3 @@
 instance creation
 nowBy: nameString email: emailString
-	^ self new 
-		setName: nameString
-		email: emailString;
-		yourself
+	^ self name: nameString email: emailString timeStamp: TimeStamp now

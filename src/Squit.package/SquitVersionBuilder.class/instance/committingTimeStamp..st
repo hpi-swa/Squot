@@ -1,4 +1,4 @@
 accessing
-committingTimeStamp: anObject
+committingTimeStamp: aDateAndTime
 
-	committer timeStamp: anObject
+	committer := committer atTime: aDateAndTime.

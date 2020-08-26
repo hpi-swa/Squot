@@ -3,7 +3,7 @@
 		"lastStoredRun" : "CamilloBruni 8/1/2011 16:49" },
 	"instance" : {
 		"repository" : "jr 4/13/2020 21:25",
-		"setUp" : "jr 8/17/2020 00:07",
+		"setUp" : "jr 8/26/2020 23:26",
 		"tearDown" : "jr 8/17/2020 00:08",
 		"testAddAndCommitting" : "jr 3/7/2017 17:17",
 		"testBranches" : "jr 3/6/2017 14:45",

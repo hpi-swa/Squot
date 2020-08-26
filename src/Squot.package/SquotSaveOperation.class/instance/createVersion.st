@@ -5,7 +5,7 @@ createVersion
 			with: [:version | version
 						message: message;
 						author: author;
-						timestamp: DateAndTime now.
+						timestamp: self timestamp.
 					version parents: self parentVersions.
 					shouldStoreMetadata ifFalse: [version doNotStoreMetadata]]]]
 		on: SquotArtifactsWereCaptured

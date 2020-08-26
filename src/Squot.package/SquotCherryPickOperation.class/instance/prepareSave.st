@@ -7,5 +7,6 @@ prepareSave
 	self saveOperation
 		patch: patchBuilder buildPatch;
 		author: pickedVersion author;
+		timestamp: pickedVersion timestamp;
 		unitOfWork: self unitOfWork;
 		yourself]

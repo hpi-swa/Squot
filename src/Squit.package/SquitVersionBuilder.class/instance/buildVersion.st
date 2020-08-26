@@ -3,6 +3,7 @@ buildVersion
 	"Create the commit and answer the SquitVersion for it"
 	| fs fsStore commit |
 	self assert: (patch notNil or: [snapshot notNil]).
+	self assert: (parents notNil and: [message notNil]).
 	fs := parents
 		ifEmpty: [repository orphanedWorkingDirectory]
 		ifNotEmpty: [repository workingTreeForCommitNamed: parents first hexHash].

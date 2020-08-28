@@ -1,4 +1,4 @@
 restoring
 restorePreviousValues
-	DefaultName := oldName.
-	DefaultEmail := oldEmail.
+	DefaultName := oldName ifNotNil: [oldName ifEmpty: []].
+	DefaultEmail := oldEmail ifNotNil: [oldEmail ifEmpty: []].

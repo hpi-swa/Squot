@@ -1,6 +1,6 @@
 {
 	"class" : {
-		"ensureDefaultValues" : "jr 8/26/2020 23:39",
+		"ensureDefaultValues" : "jr 8/28/2020 20:32",
 		"name:email:timeStamp:" : "jr 8/26/2020 23:24",
 		"new" : "jr 8/26/2020 23:22",
 		"now" : "jr 8/26/2020 23:22",
@@ -8,5 +8,5 @@
 		"readFrom:" : "jr 8/26/2020 23:22" },
 	"instance" : {
 		"initialize" : "jr 1/14/2017 01:04",
-		"restorePreviousValues" : "jr 1/14/2017 00:49",
+		"restorePreviousValues" : "jr 8/28/2020 20:37",
 		"setName:email:timeStamp:" : "jr 8/26/2020 23:20" } }

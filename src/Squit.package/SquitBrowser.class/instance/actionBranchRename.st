@@ -17,5 +17,5 @@ actionBranchRename
 	oldHistorian repository delete: oldHistorian.
 	self projectSelection loadedHistorian = oldHistorian ifTrue:
 		[self projectSelection loadedHistorian: newHistorian].
-	self selectedHistorian: newHistorian.
-	self loadBranchList].
+	self loadBranchList.
+	self selectedHistorian: newHistorian].

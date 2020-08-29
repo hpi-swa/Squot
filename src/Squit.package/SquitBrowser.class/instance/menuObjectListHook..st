@@ -23,5 +23,6 @@ menuObjectListHook: aMenu
 		{'Explore'. #actionObjectExplore. 'Explore internal SquotArtifact object.'}.
 		'-'.
 		{'Untrack'. #actionObjectUntrack. 'Remove this object from the working copy.'. onlyWhenLoaded}.
+		{'Add or remove packages'. #actionAddOrRemoveTrackedPackages. 'Add or remove packages for this project.'}.
 	}.
 	^ aMenu

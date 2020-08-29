@@ -8,6 +8,6 @@ actionBranchCreateAndSwitch
 		initialName: (selectedHistorian remoteRef shortName ifNil: [''])
 		ifCanceled: [^ self].
 	newHistorian setUpstreamToBranchTrackedByRemoteTrackingBranch: selectedHistorian.
-	self loadBranchList.
 	selectedHistorian := newHistorian.
+	self loadBranchList; branchSelectionChanged.
 	self actionBranchSwitch].

@@ -6,4 +6,4 @@ actionCommitSwitchNewBranch
 	[workingCopy := self projectSelection.
 	selectedHistorian := self createNewBranchAt: self commitSelection ifCanceled: [^ self].
 	workingCopy switchTo: selectedHistorian.
-	self activeBranchChanged].
+	self loadBranchList; branchSelectionChanged].

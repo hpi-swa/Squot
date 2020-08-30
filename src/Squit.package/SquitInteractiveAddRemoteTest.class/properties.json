@@ -1,0 +1,17 @@
+{
+	"category" : "Squit-UI-Tests",
+	"classinstvars" : [
+		 ],
+	"classtraitcomposition" : "TGitActiveUnitOfWorkDuringTest classTrait",
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"repository",
+		"operation" ],
+	"name" : "SquitInteractiveAddRemoteTest",
+	"pools" : [
+		 ],
+	"super" : "TestCase",
+	"traitcomposition" : "TGitActiveUnitOfWorkDuringTest",
+	"type" : "normal" }

@@ -1,5 +1,6 @@
 actions on branches
 push: aHistorian toRemoteNamed: aString
+	self flag: #remoteRepository.
 	[(SquitInteractivePush
 		historian: aHistorian
 		remote: (aHistorian repository git remoteNamed: aString)

@@ -1,6 +1,7 @@
 {
 	"class" : {
-		"forPackageNamed:withSnapshot:" : "jr 7/22/2017 00:01" },
+		"forPackageNamed:withSnapshot:" : "jr 7/22/2017 00:01",
+		"squotPreferredSerializer" : "jr 8/31/2020 23:27" },
 	"instance" : {
 		"=" : "jr 9/25/2019 22:25",
 		"asMCSnapshot" : "jr 7/22/2017 17:26",
@@ -23,7 +24,7 @@
 		"squotMaterializeWith:" : "jr 12/23/2019 12:21",
 		"squotMergeWith:basedOn:" : "jr 9/25/2019 20:59",
 		"squotOutgoingReferences" : "jr 8/14/2019 18:29",
-		"squotPreferredSerializer" : "jr 9/20/2017 19:39",
+		"squotPreferredSerializer" : "jr 8/31/2020 23:27",
 		"squotRewritePath:with:" : "jr 9/20/2017 21:02",
 		"squotWrite:with:" : "jr 3/16/2019 23:33",
 		"withPackageDiffPatchApplied:" : "jr 7/22/2017 00:08" } }

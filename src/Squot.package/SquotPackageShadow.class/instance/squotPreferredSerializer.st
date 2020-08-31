@@ -1,3 +1,3 @@
 Squot-shadow
 squotPreferredSerializer
-	^ SquotCypressCodeSerializer
+	^ self class squotPreferredSerializer

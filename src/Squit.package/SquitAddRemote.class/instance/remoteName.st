@@ -1,4 +1,4 @@
 accessing
 remoteName
 
-	^ remoteName ifNil: [String empty]
+	^ remoteName ifNil: [String empty] ifNotNil: [remoteName asString]

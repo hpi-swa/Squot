@@ -9,7 +9,7 @@
 		"validatePath:for:" : "jr 12/2/2019 23:40" },
 	"instance" : {
 		"/" : "jr 1/27/2017 15:07",
-		"add:" : "jr 10/2/2017 23:27",
+		"add:" : "jr 9/1/2020 00:11",
 		"applyDiff:toObjectAt:" : "jr 3/7/2019 09:09",
 		"applyPatch:" : "jr 2/9/2020 17:09",
 		"artifactLocators" : "jr 3/10/2019 21:45",
@@ -44,7 +44,7 @@
 		"readMetadata:" : "jr 3/10/2019 10:45",
 		"rememberArtifact:" : "jr 5/31/2017 17:25",
 		"removeArtifactsOutdatedBy:" : "jr 7/28/2017 00:41",
-		"removeAt:" : "jr 10/2/2017 23:27",
+		"removeAt:" : "jr 9/1/2020 00:03",
 		"removeFilesFrom:" : "jr 7/19/2017 18:27",
 		"resolve:" : "jr 1/27/2017 15:07",
 		"restoreToSnapshot:" : "jr 8/18/2018 18:10",

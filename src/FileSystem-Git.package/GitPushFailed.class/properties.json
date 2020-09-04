@@ -1,0 +1,14 @@
+{
+	"category" : "FileSystem-Git-Remote",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"report" ],
+	"name" : "GitPushFailed",
+	"pools" : [
+		 ],
+	"super" : "GitRemoteError",
+	"type" : "normal" }

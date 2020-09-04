@@ -2,10 +2,11 @@
 	"class" : {
 		 },
 	"instance" : {
+		"errorPushFailed:" : "jr 9/4/2020 20:15",
 		"errorRemoteAuthenticationFailed:" : "jr 8/7/2020 23:50",
 		"errorRemoteResourceNotFound:" : "jr 8/3/2020 00:14",
 		"errorRemoteUndefined:" : "jr 8/2/2020 23:53",
-		"handleRemoteErrorsWhile:afterErrorDo:" : "jr 8/2/2020 23:53",
+		"handleRemoteErrorsWhile:afterErrorDo:" : "jr 9/4/2020 20:11",
 		"handlingCredentialsOf:do:ifCanceled:" : "jr 8/2/2020 23:53",
 		"isRemoteSupported:" : "jr 8/10/2020 22:08",
 		"requestAndStoreCredentialsFor:remoteUrl:ifCanceled:" : "jr 8/2/2020 23:53" } }

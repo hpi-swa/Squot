@@ -5,7 +5,6 @@ loadCommitList
 			[cachedCommitList := #().
 			commitListBuildProcess ifNotNil: [commitListBuildProcess terminate].
 			^ self changed: #commitList].
-		selectedHistorian version = (cachedCommitList at: 1 ifAbsent: [])
-			ifTrue: [^ self].
-		self rebuildCommitList.
+		selectedHistorian version ~= (cachedCommitList at: 1 ifAbsent: [])
+			ifTrue: [self rebuildCommitList].
 		self changed: #commitList].

@@ -15,6 +15,7 @@ fetchFrom: aRemoteName
 		withOpenConnection:
 			[remoteRefs := protocol refs.
 			wantRefs := remoteRefs keys select: [:each | fetchSpec remoteRefPattern match: each].
+			wantRefs ifEmpty: [^ (GitNothingToFetch from: remote) signal].
 			wantSignatures := wantRefs collect: [:each | remoteRefs at: each].
 			packFileData := protocol wantAll: wantSignatures.
 			packFile := GitPackFile readFrom: packFileData readStream].

@@ -1,7 +1,7 @@
 choosing packages
 chooseSubdirectory: aDirectoryReference ifCanceled: aBlock
 	| fileDirectory chosenDirectory subPath |
-	fileDirectory := (SquitDirectoryInWorkingCopyChooser on: (FSFileDirectoryAdapter on: aDirectoryReference)) getUserResponse.
+	fileDirectory := SquitDirectoryInWorkingCopyChooser on: (FSFileDirectoryAdapter on: aDirectoryReference) message: 'Directory for added packages'.
 	fileDirectory ifNil: [^ aBlock value].
 	chosenDirectory := fileDirectory asFSReference.
 	(chosenDirectory = aDirectoryReference

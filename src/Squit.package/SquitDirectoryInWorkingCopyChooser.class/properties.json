@@ -1,0 +1,14 @@
+{
+	"category" : "Squit-UI-Support",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"workingCopyDirectory" ],
+	"name" : "SquitDirectoryInWorkingCopyChooser",
+	"pools" : [
+		 ],
+	"super" : "DirectoryChooserDialog",
+	"type" : "normal" }

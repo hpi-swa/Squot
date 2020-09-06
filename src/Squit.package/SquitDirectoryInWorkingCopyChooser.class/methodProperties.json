@@ -1,0 +1,11 @@
+{
+	"class" : {
+		"on:" : "jr 9/5/2020 19:09",
+		"on:message:" : "jr 9/5/2020 19:12" },
+	"instance" : {
+		"excludeGitRepositoryDirectory:from:" : "jr 9/6/2020 12:51",
+		"hasMoreDirectories:" : "jr 9/6/2020 13:00",
+		"rootDirectoryList" : "jr 9/6/2020 12:29",
+		"subDirectoriesOf:" : "jr 9/6/2020 12:49",
+		"workingCopyDirectory" : "jr 9/5/2020 19:08",
+		"workingCopyDirectory:" : "jr 9/5/2020 19:08" } }

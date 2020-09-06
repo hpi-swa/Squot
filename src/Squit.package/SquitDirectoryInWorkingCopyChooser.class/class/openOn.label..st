@@ -1,5 +1,5 @@
 instance creation
-on: aDirectory message: aString
+openOn: aDirectory label: aString
 	^ self new
 		workingCopyDirectory: aDirectory;
 		directory: aDirectory;

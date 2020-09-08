@@ -1,0 +1,17 @@
+{
+	"category" : "Squot-Packages-Tests",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"classFactory",
+		"sampleTrait",
+		"sampleMethod",
+		"sampleClassTraitMethod" ],
+	"name" : "SquotIgnoredSmalltalkCodeTraitsTest",
+	"pools" : [
+		 ],
+	"super" : "TestCase",
+	"type" : "normal" }

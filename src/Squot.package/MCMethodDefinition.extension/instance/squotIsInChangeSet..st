@@ -1,3 +1,3 @@
 *Squot-Tools
 squotIsInChangeSet: aChangeSet
-	^ (aChangeSet selectorsInClass: self fullClassName) includes: self selector
+	^ (aChangeSet selectorsInClass: (SquotIgnoredSmalltalkCode symbolInChangeSet: self fullClassName)) includes: self selector

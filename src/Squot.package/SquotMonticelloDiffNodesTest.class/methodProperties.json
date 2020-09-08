@@ -6,9 +6,11 @@
 		"rootNode" : "jr 1/26/2020 23:26",
 		"setUp" : "jr 1/26/2020 23:25",
 		"tearDown" : "jr 12/22/2019 22:36",
+		"testAllDefinitionsHaveConsistentGrouping" : "jr 9/8/2020 21:03",
 		"testClassBrowse" : "jr 12/22/2019 23:06",
 		"testClassDefinitionBrowse" : "jr 12/22/2019 23:06",
 		"testClassDefinitionTextDiff" : "jr 12/22/2019 23:04",
 		"testClassTextDiff" : "jr 12/22/2019 23:03",
+		"testGrouping" : "jr 9/8/2020 21:15",
 		"testMethodDefinitionBrowse" : "jr 12/22/2019 23:06",
 		"testMethodDefinitionTextDiff" : "jr 12/22/2019 23:06" } }

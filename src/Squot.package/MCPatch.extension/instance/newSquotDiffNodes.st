@@ -2,7 +2,7 @@
 newSquotDiffNodes
 	| byClass topNodes byClassification operationsWithClass rest |
 	operationsWithClass := operations select: [:each | each definition squotShouldGroupByClass].
-	byClass := (operationsWithClass groupBy: [:each | each definition className])
+	byClass := (operationsWithClass groupBy: [:each | each definition squotGroup])
 		collect: [:eachGroup | | classOperation |
 			"lift class definition changes to the top of each group"
 			classOperation := eachGroup detect: [:each | each definition isClassDefinition] ifNone: [].

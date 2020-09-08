@@ -1,26 +1,21 @@
 *Squot-Tools-Diffs
 newSquotDiffNodes
-	| byClass topNodes byClassification operationsWithClass rest |
-	operationsWithClass := operations select: [:each | each definition squotShouldGroupByClass].
-	byClass := (operationsWithClass groupBy: [:each | each definition squotGroup])
+	| groups topNodes |
+	groups := (operations groupBy: [:each | each definition squotGroup])
 		collect: [:eachGroup | | classOperation |
 			"lift class definition changes to the top of each group"
 			classOperation := eachGroup detect: [:each | each definition isClassDefinition] ifNone: [].
 			classOperation
 				ifNil: [eachGroup]
 				ifNotNil: [{classOperation}, (eachGroup copyWithout: classOperation)]].
-	rest := operations copyWithoutAll: operationsWithClass.
-	byClassification := rest groupBy: [:each |
-		each definition class allSelectors
-			detect: [:any | ('is*Definition' match: any) and:
-						[(each definition perform: any) == true]]
-			ifNone: ['other']].
-	topNodes := ((byClass associations
+	"Show classes before Organization and Scripts."
+	topNodes := (((groups associations select: [:each | each value first definition squotBelongsToClass])
 			collect: [:eachClassAndOperations |
 						self squotDiffNodeForClass: eachClassAndOperations key
 							operations: eachClassAndOperations value])
 			sort: [:a :b | a title <= b title]) ,
-		(byClassification associations collect: [:eachClassificationAndOperations |
+		((groups associations reject: [:each | each value first definition squotBelongsToClass]) collect: 
+			[:eachClassificationAndOperations |
 			| classification |
 			classification := eachClassificationAndOperations key.
 			SquotDiffNode

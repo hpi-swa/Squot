@@ -19,9 +19,7 @@ newSquotDiffNodes
 			| classification |
 			classification := eachClassificationAndOperations key.
 			SquotDiffNode
-				title: (classification = 'other'
-					ifTrue: [classification]
-					ifFalse: [classification copyFrom: 3 to: classification size - 'Definition' size])
+				title: classification
 				content: nil
 				children: (eachClassificationAndOperations value
 					collect: [:each | SquotDiffNode

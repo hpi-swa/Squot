@@ -1,0 +1,15 @@
+{
+	"category" : "Squot-Tools",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"totalSteps",
+		"doneSteps" ],
+	"name" : "SquotProgress",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }

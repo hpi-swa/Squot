@@ -1,10 +1,11 @@
 comparing
 patchRelativeToBaseVersion: baseSquitVersion
 	"compute tree diff, then deduce object diffs"
-	| diff changedPaths mySnapshot baseSnapshot myChangedArtifactPaths baseChangedArtifactPaths deletedPaths patchBuilder max progress |
+	| diff changedPaths mySnapshot baseSnapshot myChangedArtifactPaths baseChangedArtifactPaths deletedPaths patchBuilder |
 	self = baseSquitVersion ifTrue: [^ SquotPatch noChangesTo: self].
 	SquotGUI displayProgress: 'Diff ', baseSquitVersion shortId, '..', self shortId, ' ... ' during:
-		[diff := GitDiffCreator new
+		[:progress |
+		diff := GitDiffCreator new
 			diffTrees: baseSquitVersion commit tree and: self commit tree.
 		changedPaths := diff keys collect: [:each | SquotPath fromPath: each].
 		mySnapshot := self lazySnapshot.
@@ -13,13 +14,11 @@ patchRelativeToBaseVersion: baseSquitVersion
 		baseChangedArtifactPaths := changedPaths intersection: baseSnapshot paths.
 		deletedPaths := baseChangedArtifactPaths copyWithoutAll: myChangedArtifactPaths.
 		patchBuilder := baseSquitVersion newPatchBuilder goingTo: self.
-		progress := 0. max := myChangedArtifactPaths size + deletedPaths size.
+		progress totalSteps: myChangedArtifactPaths size + deletedPaths size.
 		myChangedArtifactPaths do: [:each |
-			SquotGUI updateProgress: progress / max text: each.
-			patchBuilder diffPath: each from: baseSnapshot to: mySnapshot.
-			progress := progress + 1].
+			progress stepWithText: each.
+			patchBuilder diffPath: each from: baseSnapshot to: mySnapshot].
 		deletedPaths do:
-			[:each | SquotGUI updateProgress: progress / max text: each.
-			patchBuilder removeArtifact: (baseSnapshot artifactAt: each).
-			progress := progress + 1].
+			[:each | progress stepWithText: each.
+			patchBuilder removeArtifact: (baseSnapshot artifactAt: each)].
 		^ patchBuilder buildPatch]

@@ -9,7 +9,7 @@ buildVersion
 		ifNotEmpty: [repository workingTreeForCommitNamed: parents first hexHash].
 	fsStore := SquotFileSystemStore inDirectory: fs root.
 	shouldStoreMetadata ifFalse: [fsStore doNotStoreMetadata].
-	UIManager default informUser: 'Serializing objects to Git' during:
+	SquotProgress displayStatus: 'Serializing objects to Git' during:
 	[snapshot ifNotNil: [fsStore restoreToSnapshot: snapshot].
 	patch ifNotNil: [fsStore applyPatch: patch]].
 	(commit := fs prepareNewCommit)

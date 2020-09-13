@@ -6,8 +6,8 @@ convertMonticelloHistoryUpTo: aMCVersion from: aMCRepository asNewHistorianNamed
 	versionInfos := aMCVersion info topologicalAncestors reverse.
 	squotRepository withUnitOfWork:
 		[monticelloRepository cacheAllFileNamesDuring:
-			[versionInfos
-				do: [:eachMCVersionInfo | self convertMonticelloVersion: eachMCVersionInfo]
-				displayingProgress: [:info | 'Converting ', info name]].
+			[SquotProgress display: [:info | 'Converting ', info name]
+				for: versionInfos
+				do: [:eachMCVersionInfo | self convertMonticelloVersion: eachMCVersionInfo]].
 		aRepository newHistorian: historianName version: (self squotVersionForMonticelloVersion: aMCVersion).
 		self cleanUpTemporaryHistorians].

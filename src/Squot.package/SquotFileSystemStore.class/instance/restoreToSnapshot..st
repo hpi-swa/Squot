@@ -3,8 +3,8 @@ restoreToSnapshot: aSnapshot
 	"read objects from aSnapshot and update/replace files"
 	| toc |
 	self removeArtifactsOutdatedBy: aSnapshot.
-	aSnapshot artifacts do: [:each | self store: each]
-		displayingProgress: 'Writing objects to files'.
+	SquotProgress display: 'Writing objects to files'
+		for: aSnapshot artifacts do: [:each | self store: each].
 	self shouldStoreMetadata ifTrue:
 		[toc := self tableOfContents.
 		toc removeAll.

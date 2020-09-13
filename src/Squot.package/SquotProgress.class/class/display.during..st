@@ -18,5 +18,4 @@ display: aString during: aBlock
 		progress stepWithText: '3'.
 		(Delay forMilliseconds: 500) wait]"
 	^ self new
-		display: aString during: aBlock;
-		yourself
+		display: aString during: aBlock

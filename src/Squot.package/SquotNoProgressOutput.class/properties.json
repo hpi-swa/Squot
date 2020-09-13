@@ -1,0 +1,14 @@
+{
+	"category" : "Squot-Tests-Tools",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "jr 9/13/2020 22:29",
+	"instvars" : [
+		 ],
+	"name" : "SquotNoProgressOutput",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }

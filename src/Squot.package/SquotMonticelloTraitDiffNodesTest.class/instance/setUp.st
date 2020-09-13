@@ -7,7 +7,8 @@ setUp
 	isolatedEnvironment importSelf. "at the time of writing this, PackageInfo looked at the bindings of the current environment instead of its declarations"
 	isolatedEnvironment beCurrentDuring:
 		[preparedWorkingCopy addPackageNamed: self fakeCategory at: self packagePath].
-	preparedWorkingCopy saveVersionWithMessage: 'init'.
+	self suppressProgressDisplayDuring:
+		[preparedWorkingCopy saveVersionWithMessage: 'init'].
 	trait := SquotBrowseMockTrait new.
 	trait setName: #TestTrait
 		andRegisterInCategory: self fakeCategory

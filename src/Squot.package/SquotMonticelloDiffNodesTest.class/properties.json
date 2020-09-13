@@ -2,6 +2,7 @@
 	"category" : "Squot-Tools-Packages-Tests",
 	"classinstvars" : [
 		 ],
+	"classtraitcomposition" : "TTestCaseSuppressingProgressDisplay classTrait",
 	"classvars" : [
 		 ],
 	"commentStamp" : "",
@@ -15,4 +16,5 @@
 	"pools" : [
 		 ],
 	"super" : "TestCase",
+	"traitcomposition" : "TTestCaseSuppressingProgressDisplay",
 	"type" : "normal" }

@@ -1,3 +1,3 @@
 *Squot-Tools
 topNodes
-	^ diffContent asSquotHierarchicalDiff, self metadataTreeNodes
+	^ diffContent asSquotHierarchicalDiff, self optionalMetadataNode

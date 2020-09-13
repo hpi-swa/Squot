@@ -1,12 +1,13 @@
 comparing
 diffTreeNodesRelativeToBase: baseTrackedObjectMetadata
-	| metadataNodes absent |
+	| metadataNodes absent hiddenProperties |
+	hiddenProperties := #(objectsReplacedByNames). "These properties are implementation details and changes to them should not be prevented by users."
 	metadataNodes := OrderedCollection new.
 	absent := Object new.
 	self keysAndValuesDo:
 		[:key :value | | leftValue |
 		leftValue := baseTrackedObjectMetadata at: key ifAbsent: [absent].
-		leftValue = value ifFalse:
+		(leftValue ~= value and: [(hiddenProperties includes: key) not]) ifTrue:
 			[metadataNodes add:
 				(leftValue == absent
 					ifTrue: [self diffTreeNodeForAdding: key with: value]

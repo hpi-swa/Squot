@@ -1,0 +1,1 @@
+I am the progress of some complex operation. The progress will be displayed on the current SquotProgressOutput.

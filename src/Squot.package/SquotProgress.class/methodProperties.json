@@ -1,7 +1,9 @@
 {
 	"class" : {
-		 },
+		"display:during:" : "jr 9/13/2020 21:35" },
 	"instance" : {
-		"stepWithText:" : "jr 9/13/2020 19:00",
+		"display:during:" : "jr 9/13/2020 21:50",
+		"outputOr:" : "jr 9/13/2020 21:48",
+		"stepWithText:" : "jr 9/13/2020 21:30",
 		"totalSteps:" : "jr 9/13/2020 18:53",
-		"update:text:" : "jr 9/13/2020 18:58" } }
+		"update:text:" : "jr 9/13/2020 21:49" } }

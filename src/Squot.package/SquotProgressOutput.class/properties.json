@@ -3,13 +3,12 @@
 	"classinstvars" : [
 		 ],
 	"classvars" : [
-		 ],
-	"commentStamp" : "jr 9/13/2020 21:45",
+		"Default" ],
+	"commentStamp" : "jr 9/13/2020 21:51",
 	"instvars" : [
-		"totalSteps",
-		"doneSteps" ],
-	"name" : "SquotProgress",
+		 ],
+	"name" : "SquotProgressOutput",
 	"pools" : [
 		 ],
-	"super" : "Object",
+	"super" : "DynamicVariable",
 	"type" : "normal" }

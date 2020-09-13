@@ -13,7 +13,8 @@
 		"patchedLoadOrder",
 		"loadOrderDiff",
 		"base",
-		"patched" ],
+		"patched",
+		"progress" ],
 	"name" : "SquotPatchBuilder",
 	"pools" : [
 		 ],

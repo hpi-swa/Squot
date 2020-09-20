@@ -20,3 +20,5 @@ testCypressToTonel
 		equals: (newPath occurrencesOf: $/)
 		description: 'Profileration of subdirectories'.
 	self assert: 1 equals: directoryDepth description: 'Too many subdirectories'.
+	(workingCopy baseVersion snapshotDirectory / 'src' / '.properties') readStreamDo:
+		[:stream | self assert: (stream upToEnd includesSubstring: '#tonel')].

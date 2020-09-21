@@ -2,4 +2,5 @@ private
 isFastForwardPossible
 	self assert: baseVersion notNil;
 		assert: mergeBases notNil.
-	^ mergeBases includes: baseVersion
+	self workingVersion ifNil: [^ false].
+	^ mergeBases includes: self workingVersion

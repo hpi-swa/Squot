@@ -4,6 +4,7 @@ prepare
 	^ self withUnitOfWorkActive:
 	[self validateAncestry.
 	self startUnitOfWork.
+	workingVersion := self workingCopy baseVersion.
 	mergeBases := self mergeBases.
 	baseVersion ifNil: [baseVersion := self findBaseVersion].
 	self flag: 'TODO: if there are multiple merge-bases, resolve conflicts recursively'.

@@ -20,6 +20,7 @@
 		"testCherryPickWithConflictsChooseRemote" : "jr 4/12/2020 10:23",
 		"testCherryPickWithoutConflicts" : "jr 4/12/2020 10:23",
 		"testDiffWithParent" : "jr 3/2/2020 22:55",
+		"testMergeFastForward" : "jr 9/22/2020 00:51",
 		"testMergeRemovalAndChange" : "jr 9/22/2020 00:18",
 		"testMergeSingleArtifact" : "jr 3/2/2020 23:35",
 		"testMergeTwoOrphanedVersions" : "jr 9/22/2020 00:23",

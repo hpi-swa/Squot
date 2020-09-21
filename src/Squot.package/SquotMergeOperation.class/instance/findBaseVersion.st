@@ -1,8 +1,6 @@
 private
 findBaseVersion
-	mergeBases := self workingVersion
-		ifNil: [#()]
-		ifNotNil: [:head | head mergeBasesWith: mergeVersion].
+	self assert: mergeBases notNil.
 	mergeBases ifEmpty: [^ SquotSnapshot empty "no commonalities"].
 	(mergeBases includes: mergeVersion) ifTrue:
 		[^ (SquotVersionAlreadyInHistory 

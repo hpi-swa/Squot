@@ -1,6 +1,6 @@
 tests
-testMergeRemovalAndChange
-	| text baseVersion leftVersion rightVersion operation merge conflict |
+testOldMergeRemovalAndChange
+	| text baseVersion leftVersion rightVersion |
 	"given"
 	repository withUnitOfWork:
 	[self workingCopy add: (text := Text fromString: 'Base text') at: 'text'.
@@ -15,17 +15,14 @@ testMergeRemovalAndChange
 		remove: text.
 	self workingCopy saveVersionWithMessage: 'left-side version'.
 	leftVersion := self workingCopy loadedHistorian version.
-	
 	"when"
-	merge := (operation := self workingCopy newMergeOperation)
-		mergeVersion: rightVersion;
-		prepare.
-	"then"
-	conflict := merge conflictAt: 'text'.
-	self assert: conflict isResolved not.
-	
-	"when"
-	conflict chooseIncoming. "the changed text"
-	operation applyToWorkingCopy.
-	"then"
+	[[self workingCopy mergeVersionInteractively: rightVersion
+		ifCanceled: [self fail: 'This code should not be reached']]
+	on: SquotMergeRequested do: [:request | | conflict |
+		"then"
+		conflict := request merge conflictAt: 'text'.
+		self assert: conflict isResolved not.
+		conflict chooseIncoming. "the changed text"
+		request resume]
+	] valueSupplyingAnswers: {{'*'. #default}}.
 	self assert: 'Changed text' equals: (self workingCopy objectAt: 'text') string].

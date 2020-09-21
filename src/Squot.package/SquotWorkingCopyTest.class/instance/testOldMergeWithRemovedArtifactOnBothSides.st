@@ -1,7 +1,7 @@
 tests
-testMergeWithRemovedArtifactOnBothSides
+testOldMergeWithRemovedArtifactOnBothSides
 	"When an artifact is removed in both branches, then merging them should let it stay removed without a conflict."
-	| baseVersion leftVersion rightVersion merge operation |
+	| baseVersion leftVersion rightVersion |
 	repository withUnitOfWork:
 	[self workingCopy
 		add: (ValueHolder new contents: #right) at: 'to-be-removed';
@@ -20,14 +20,12 @@ testMergeWithRemovedArtifactOnBothSides
 		saveVersionWithMessage: 'left-side version'.
 	leftVersion := self workingCopy loadedHistorian version.
 	"when"
-	merge := (operation := self workingCopy newMergeOperation)
-		mergeVersion: rightVersion;
-		prepare.
-	"then"
-	self deny: (merge modifies: (baseVersion artifactAt: 'to-be-removed')).
-	self deny: merge hasConflicts.
-	
-	"when"
-	operation applyToWorkingCopy.
-	"then"
+	[[self workingCopy mergeVersionInteractively: rightVersion
+		ifCanceled: [self fail: 'This code should not be reached']]
+	on: SquotMergeRequested do: [:request | 
+		"then"
+		self deny: (request merge modifies: (baseVersion artifactAt: 'to-be-removed')).
+		self deny: request merge hasConflicts.
+		request resume]
+	] valueSupplyingAnswers: {{'*'. #default}}.
 	self deny: (self workingCopy includesObjectAt: 'to-be-removed')].

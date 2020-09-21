@@ -2,15 +2,20 @@
 	"class" : {
 		 },
 	"instance" : {
+		"addParent" : "jr 9/22/2020 00:54",
 		"appliedPatch" : "jr 1/5/2020 01:13",
-		"applyToWorkingCopy" : "jr 4/17/2020 12:43",
+		"applyToWorkingCopy" : "jr 9/21/2020 23:57",
 		"baseVersion" : "jr 1/5/2020 00:29",
 		"baseVersion:" : "jr 1/5/2020 00:29",
-		"findBaseVersion" : "jr 8/1/2020 16:51",
+		"doNotAddParent" : "jr 9/21/2020 23:55",
+		"findBaseVersion" : "jr 9/21/2020 23:50",
+		"initialize" : "jr 9/21/2020 23:55",
+		"isFastForwardPossible" : "jr 9/22/2020 00:58",
 		"merge" : "jr 1/4/2020 22:40",
 		"merge:" : "jr 1/4/2020 22:40",
+		"mergeBases" : "jr 9/21/2020 23:49",
 		"mergeVersion" : "jr 1/5/2020 00:29",
 		"mergeVersion:" : "jr 1/5/2020 00:29",
-		"prepare" : "jr 9/13/2020 22:06",
+		"prepare" : "jr 9/22/2020 00:57",
 		"validateAncestry" : "jr 8/1/2020 16:48",
-		"workingVersion" : "jr 1/6/2020 23:14" } }
+		"workingVersion" : "jr 9/22/2020 00:57" } }

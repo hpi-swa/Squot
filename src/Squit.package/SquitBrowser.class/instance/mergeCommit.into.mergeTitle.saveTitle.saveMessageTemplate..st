@@ -9,8 +9,7 @@ mergeCommit: aVersion into: aWorkingCopy mergeTitle: mergeString saveTitle: save
 			[self inform: 'Already on branch ', aWorkingCopy loadedHistorian shortName, ': ', aVersion.
 			^ nil]
 		on: BrokenPromise "cancelled" do: [:e | e ifNotError: [^ nil]].
-	aWorkingCopy addParentVersion: aVersion.
-	aWorkingCopy additionalParents size > 0 ifFalse: [self inform: 'Adopted ', aVersion. ^ self].
+	aWorkingCopy loadedVersion = aVersion ifTrue: [self inform: 'Adopted ', aVersion. ^ self].
 	self flag: #todo. "Try to exclude changes that were already unsaved in the working copy before the merge."
 	[SquotGUI waitFor:
 		(aWorkingCopy newInteractiveSaveOperation

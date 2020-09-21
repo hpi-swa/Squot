@@ -9,7 +9,8 @@
 		"mergeVersion",
 		"baseVersion",
 		"merge",
-		"mergeBases" ],
+		"mergeBases",
+		"shouldAddParent" ],
 	"name" : "SquotMergeOperation",
 	"pools" : [
 		 ],

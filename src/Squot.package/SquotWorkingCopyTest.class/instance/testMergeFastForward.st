@@ -17,5 +17,6 @@ testMergeFastForward
 			prepare;
 			applyToWorkingCopy].
 	"Branch could be fast-forwarded."
-	self assert: advancedHistorian version equals: workingCopy loadedVersion;
-		assert: workingCopy additionalParents isEmpty.
+	repository withUnitOfWork:
+		[self assert: advancedHistorian version equals: workingCopy loadedVersion;
+		assert: workingCopy additionalParents isEmpty].

@@ -10,5 +10,5 @@
 	"name" : "SquotMergeToolTest",
 	"pools" : [
 		 ],
-	"super" : "SquotChangedArtifactsChooserTest",
+	"super" : "SquotChangesChooserTest",
 	"type" : "normal" }

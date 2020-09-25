@@ -1,5 +1,5 @@
 utilities
 newToolOn: patch
-	^ (SquotChangedArtifactsChooser on: patch)
+	^ (SquotChangesChooser on: patch)
 		workingCopy: workingCopy;
 		yourself

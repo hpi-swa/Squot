@@ -6,7 +6,7 @@ selectFromPatch: aPatch title: titleString ifCanceled: cancelBlock
 		title: titleString;
 		signal)
 	ifNotNil: [:selectedPatch | ^ selectedPatch].
-	tool := SquotChangedArtifactsChooser on: aPatch.
+	tool := SquotChangesChooser on: aPatch.
 	tool workingCopy: self;
 		"addIgnoredArtifacts: self ignoredArtifacts;"
 		controllerForIgnores: self;

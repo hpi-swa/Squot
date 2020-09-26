@@ -8,7 +8,7 @@
 		"browseOriginalObject" : "jr 6/6/2020 03:24",
 		"buildWith:" : "jr 7/1/2017 22:28",
 		"childNodesOf:" : "jr 4/26/2017 16:00",
-		"chooserWidgetSpecs:" : "jr 4/26/2017 18:03",
+		"chooserWidgetSpecs:" : "jr 9/26/2020 12:12",
 		"diffNodeMenu:shifted:" : "jr 4/26/2017 17:38",
 		"diffNodeMenuHook:" : "jr 6/6/2020 03:22",
 		"diffText" : "jr 4/26/2017 15:58",
@@ -24,5 +24,6 @@
 		"rootNodes" : "jr 12/23/2019 00:13",
 		"selectNode:" : "jr 4/26/2017 17:36",
 		"selectedNode" : "jr 4/26/2017 15:57",
+		"selectedNodePath:" : "jr 9/26/2020 15:20",
 		"workingCopy" : "jr 12/23/2019 00:06",
 		"workingCopy:" : "jr 12/23/2019 00:06" } }

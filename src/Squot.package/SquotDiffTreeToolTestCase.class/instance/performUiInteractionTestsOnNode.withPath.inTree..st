@@ -1,6 +1,7 @@
 utilities
-performUiInteractionTestsOnNode: aSquotDiffNode inTree: treeView 
-	tool selectNode: aSquotDiffNode.
+performUiInteractionTestsOnNode: aSquotDiffNode withPath: aCollection inTree: treeView 
+	tool selectNode: aSquotDiffNode;
+		selectedNodePath: aCollection.
 	treeView expandAll.
 	tool nodeLabelOf: aSquotDiffNode.
 	self assert: (tool diffText isString or: [tool diffText isText]).

@@ -11,7 +11,7 @@
 		"patchWithLoadOrderChangeRegression1" : "jr 8/15/2019 03:21",
 		"patchWithTwoChangedArtifacts" : "jr 2/9/2020 03:46",
 		"patchedLoadOrderAfter:" : "jr 8/15/2019 01:07",
-		"performUiInteractionTestsOnNode:inTree:" : "jr 10/3/2018 00:41",
+		"performUiInteractionTestsOnNode:withPath:inTree:" : "jr 9/26/2020 15:14",
 		"performUiTestsOnToolBuiltBy:" : "jr 10/3/2018 00:45",
 		"resultDiffAt:" : "jr 8/14/2019 23:26",
 		"resultIncludesDiffAt:" : "jr 8/15/2019 01:22",

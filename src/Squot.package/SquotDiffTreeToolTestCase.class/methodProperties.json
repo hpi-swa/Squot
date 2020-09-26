@@ -2,5 +2,5 @@
 	"class" : {
 		"isAbstract" : "jr 8/14/2019 22:21" },
 	"instance" : {
-		"performUiInteractionTestsOnNode:inTree:" : "jr 9/26/2019 00:40",
-		"performUiTestsOnToolBuiltBy:" : "jr 10/3/2018 00:44" } }
+		"performUiInteractionTestsOnNode:withPath:inTree:" : "jr 9/26/2020 15:14",
+		"performUiTestsOnToolBuiltBy:" : "jr 9/26/2020 15:18" } }

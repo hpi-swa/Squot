@@ -6,6 +6,6 @@ performUiTestsOnToolBuiltBy: aToolBuilder
 	tool rootNodes reverseDo: [:each | remaining add: (Array with: each)].
 	[remaining isEmpty] whileFalse:
 		[currentPath := remaining removeLast.
-		self performUiInteractionTestsOnNode: currentPath last withPath: currentPath inTree: treeView.
-		currentPath last children reverseDo:
-			[:each | remaining add: (currentPath copyWith: each)]].
+		self performUiInteractionTestsOnNode: currentPath first withPath: currentPath inTree: treeView.
+		currentPath first children reverseDo:
+			[:each | remaining add: (currentPath copyWithFirst: each)]].

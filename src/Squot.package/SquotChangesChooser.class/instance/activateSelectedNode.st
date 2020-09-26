@@ -4,5 +4,5 @@ activateSelectedNode
 	nodesToInclude := self selectedNode withAllChildren.
 	nodesToInclude do: [:each | each include].
 	ancestorNodes := selectedNodePath ifNil: [Array empty].
-	ancestorNodes allButLastDo: [:each | each include].
+	ancestorNodes allButFirstDo: [:each | each include].
 	self changed: #rootNodes.

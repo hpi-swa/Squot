@@ -1,0 +1,3 @@
+testing
+isLoaded
+	^ false

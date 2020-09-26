@@ -1,0 +1,1 @@
+I record the addition of a new artifact that will not be loaded into a working copy.

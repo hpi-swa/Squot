@@ -1,5 +1,7 @@
 I wrap a SquotArtifact that is not loaded in my working copy.
 
+There are two ways to get an unloaded artifact in the working copy: 1) Unload an artifact that is already loaded, 2) During a load or merge, accept, but not load, an artifact addition. Option 2 will result in a SquotArtifactAdditionWithoutLoad.
+
 Outside of my working copy you will find my artifact instead of me. That is my artifact is a regular part of snapshots of the working copy and it will participate normally in merges and the creation of new versions. But whenever some changes would be applied to the objects loaded in the working copy, no objects in the working copy will actually be modified or created. Just my shadow objects will be modified for the record instead.
 
 If I am removed from the working copy, the effect will be roughly equivalent to loading my artifact first and then removing it, except that its objects need not really be loaded, of course.

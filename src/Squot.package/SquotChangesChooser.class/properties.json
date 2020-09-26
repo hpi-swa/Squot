@@ -14,7 +14,8 @@
 		"selectedNode",
 		"workingCopy",
 		"view",
-		"promise" ],
+		"promise",
+		"selectedNodePath" ],
 	"name" : "SquotChangesChooser",
 	"pools" : [
 		 ],

@@ -8,6 +8,7 @@ chooserWidgetSpecs: builder
 		label: #nodeLabelOf:;
 		getSelected: #selectedNode;
 		setSelected: #selectNode:;
+		setSelectedPath: #selectedNodePath:;
 		getChildren: #childNodesOf:;
 		hasChildren: #hasChildren:;
 		keyPress: #diffKey:from:event:;

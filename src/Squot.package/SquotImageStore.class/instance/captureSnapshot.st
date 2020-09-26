@@ -1,6 +1,6 @@
 Pur store
 captureSnapshot
-	"serialize current objects if necessary and return a new snapshot"
+	"Capture current objects if necessary and return a new snapshot."
 	| builder |
 	builder := SquotSnapshot builder.
 	self activateObjectRegistryDuring:

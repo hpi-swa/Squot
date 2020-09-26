@@ -1,4 +1,4 @@
-*Squot-Packages-Tests
+*Squot-Tests-Packages
 testSmalltalkCodeMerge
 	"Covers the following nodes:
 	- conflicting organization modification

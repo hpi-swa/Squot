@@ -1,5 +1,5 @@
 {
-	"category" : "Squot-InMemoryRepository",
+	"category" : "Squot-Tests",
 	"classinstvars" : [
 		 ],
 	"classtraitcomposition" : "TSquotLocalRepository classTrait + TSquotUnitOfWork classTrait",

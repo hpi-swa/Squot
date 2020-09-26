@@ -1,5 +1,5 @@
 {
-	"category" : "Squot-Merging-Tests",
+	"category" : "Squot-Tests-Merging",
 	"classinstvars" : [
 		 ],
 	"classtraitcomposition" : "TTestCaseSuppressingProgressDisplay classTrait",

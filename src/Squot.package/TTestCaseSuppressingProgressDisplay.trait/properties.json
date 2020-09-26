@@ -1,4 +1,4 @@
 {
-	"category" : "Squot-Tests-Tools",
+	"category" : "Squot-Tests-Support",
 	"commentStamp" : "jr 3/17/2018 20:15",
 	"name" : "TTestCaseSuppressingProgressDisplay" }

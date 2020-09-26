@@ -1,4 +1,4 @@
-*Squot-Packages-Tests
+*Squot-Tests-Packages
 testSmalltalkCodeDiffs
 	| before after changedClass otherClass removedClass classA classB patch |
 	classFactory := ClassFactoryForTestCase new.

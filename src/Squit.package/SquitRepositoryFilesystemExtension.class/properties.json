@@ -1,8 +1,7 @@
 {
-	"category" : "Squit-Extensions",
+	"category" : "Squit-Core",
 	"classinstvars" : [
 		 ],
-	"classtraitcomposition" : "TSquotRepositoryFilesystemExtension classTrait",
 	"classvars" : [
 		 ],
 	"commentStamp" : "jr 3/17/2018 20:38",
@@ -12,5 +11,4 @@
 	"pools" : [
 		 ],
 	"super" : "Object",
-	"traitcomposition" : "TSquotRepositoryFilesystemExtension",
 	"type" : "normal" }

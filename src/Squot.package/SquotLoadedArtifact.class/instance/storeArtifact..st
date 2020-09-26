@@ -1,3 +1,3 @@
 accessing
 storeArtifact: anObject
-	storeArtifact := anObject
+	artifact := anObject

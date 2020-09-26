@@ -4,12 +4,11 @@
 		 ],
 	"classvars" : [
 		 ],
-	"commentStamp" : "jr 8/9/2020 21:05",
+	"commentStamp" : "jr 9/26/2020 18:08",
 	"instvars" : [
-		"storeArtifact",
-		"workingCopy" ],
+		 ],
 	"name" : "SquotLoadedArtifact",
 	"pools" : [
 		 ],
-	"super" : "Object",
+	"super" : "SquotWorkingCopyArtifact",
 	"type" : "normal" }

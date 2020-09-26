@@ -6,9 +6,10 @@
 		 ],
 	"commentStamp" : "jr 9/26/2020 18:08",
 	"instvars" : [
-		 ],
-	"name" : "SquotUnloadedArtifact",
+		"workingCopy",
+		"artifact" ],
+	"name" : "SquotWorkingCopyArtifact",
 	"pools" : [
 		 ],
-	"super" : "SquotWorkingCopyArtifact",
+	"super" : "Object",
 	"type" : "normal" }

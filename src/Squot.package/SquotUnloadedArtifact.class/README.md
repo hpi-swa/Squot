@@ -1,4 +1,4 @@
-I wrap an artifact that is not loaded in a working copy.
+I wrap a SquotArtifact that is not loaded in my working copy.
 
 Outside of my working copy you will find my artifact instead of me. That is my artifact is a regular part of snapshots of the working copy and it will participate normally in merges and the creation of new versions. But whenever some changes would be applied to the objects loaded in the working copy, no objects in the working copy will actually be modified or created. Just my shadow objects will be modified for the record instead.
 

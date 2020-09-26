@@ -4,4 +4,4 @@ artifacts
 	artifacts := Dictionary new.
 	artifacts addAll: self unloadedArtifacts.
 	artifacts addAll: store artifacts.
-	^ artifacts collect: [:each | SquotWorkingCopyArtifact wrapping: each in: self]
+	^ artifacts collect: [:each | SquotLoadedArtifact wrapping: each in: self]

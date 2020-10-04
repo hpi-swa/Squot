@@ -1,4 +1,6 @@
 patching
 applyToContainer: anObjectContainer
 	right := right capture.
-	^ anObjectContainer add: right
+	^ self willBeLoaded
+		ifTrue: [anObjectContainer add: right]
+		ifFalse: [anObjectContainer addUnloaded: right]

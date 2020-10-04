@@ -7,7 +7,7 @@
 		 ],
 	"commentStamp" : "jr 10/21/2017 15:58",
 	"instvars" : [
-		 ],
+		"willBeLoaded" ],
 	"name" : "SquotArtifactAddition",
 	"pools" : [
 		 ],

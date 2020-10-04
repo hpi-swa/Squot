@@ -5,6 +5,7 @@
 		"accept" : "jr 5/22/2020 15:51",
 		"actionCommit" : "fn 4/11/2017 16:01",
 		"activateNodeCommandLabel" : "jr 4/7/2019 22:30",
+		"addUnloadedArtifactMenuItems:" : "jr 10/4/2020 18:45",
 		"browseOtherEdition" : "jr 6/6/2020 01:04",
 		"browseOtherEditionLabel" : "jr 6/6/2020 00:48",
 		"buildButtonBar:" : "jr 11/18/2018 01:39",
@@ -20,6 +21,7 @@
 		"messageWasChanged" : "jr 11/17/2018 23:19",
 		"parentVersions:" : "jr 2/17/2017 19:34",
 		"rootNodes" : "jr 2/26/2020 22:57",
+		"toggleLoadSelectedNode" : "jr 10/4/2020 17:54",
 		"updateMessageFromViews" : "jr 10/14/2018 01:30",
 		"widgetSpecs:" : "jr 11/18/2018 01:32",
 		"windowLabel" : "jr 11/18/2018 01:29" } }

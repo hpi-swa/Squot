@@ -2,7 +2,7 @@
 	"class" : {
 		"of:" : "jr 10/2/2017 19:59" },
 	"instance" : {
-		"applyToContainer:" : "jr 7/20/2017 14:02",
+		"applyToContainer:" : "jr 10/4/2020 17:20",
 		"asDiffTree" : "jr 12/22/2019 23:23",
 		"diffNodeFallbackTitle" : "jr 10/26/2019 21:29",
 		"diffNodeOperationTitle" : "jr 10/26/2019 21:29",
@@ -14,4 +14,6 @@
 		"rebaseOn:" : "jr 2/9/2020 03:50",
 		"resolveConflictWith:" : "jr 7/27/2019 00:02",
 		"squotChangeAsStringOrText" : "jr 11/17/2018 22:35",
-		"topNodes" : "jr 11/6/2018 08:11" } }
+		"toggleWhetherToLoad" : "jr 10/4/2020 17:20",
+		"topNodes" : "jr 11/6/2018 08:11",
+		"willBeLoaded" : "jr 10/4/2020 17:19" } }

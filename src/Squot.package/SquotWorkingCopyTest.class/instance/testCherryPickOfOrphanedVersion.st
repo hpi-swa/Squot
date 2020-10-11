@@ -16,4 +16,6 @@ testCherryPickOfOrphanedVersion
 	cherryPick applyMerge.
 	cherryPick save].
 	"then"
-	self assert: workingCopy artifacts size = 2.
+	self assert:
+		(workingCopy artifacts keys includesAllOf:
+			(scenario firstVersion artifacts keys, scenario secondVersion artifacts keys)).

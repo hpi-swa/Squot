@@ -1,6 +1,6 @@
 {
 	"class" : {
-		"on:at:in:" : "jr 7/15/2017 23:52" },
+		"on:at:in:" : "jr 10/4/2020 23:12" },
 	"instance" : {
 		"browse" : "jr 12/23/2019 14:39",
 		"capture" : "jr 7/16/2017 03:06",
@@ -10,10 +10,11 @@
 		"liveStoreInfo" : "jr 5/4/2019 02:25",
 		"materializeWith:replacing:" : "jr 12/7/2019 22:26",
 		"objectGraph" : "jr 12/8/2019 21:26",
-		"on:at:in:" : "jr 7/15/2017 23:52",
+		"on:at:in:" : "jr 10/11/2020 23:47",
 		"path" : "jr 5/1/2017 20:53",
 		"printOn:" : "jr 12/30/2019 12:27",
 		"serializer:" : "jr 12/7/2019 22:40",
 		"serializerName" : "jr 9/20/2017 22:48",
+		"setObject:path:store:" : "jr 10/11/2020 23:47",
 		"storeInfo" : "jr 7/16/2017 17:14",
 		"storeInfo:" : "jr 5/1/2017 22:03" } }

@@ -4,7 +4,10 @@ menuObjectListHook: aMenu
 	| selected onlyWhenSelected onlyWhenLoaded onlyWhenLoadable commands |
 	selected := self objectSelection.
 	onlyWhenSelected := selected notNil.
-	onlyWhenLoaded := onlyWhenSelected and: [self projectSelection includesObjectAt: selected artifact path].
+	onlyWhenLoaded := onlyWhenSelected and:
+		[ | artifact |
+		artifact := self projectSelection artifactAt: selected artifact path ifAbsent: [].
+		artifact ifNil: [false] ifNotNil: [artifact isLoaded]].
 	onlyWhenLoadable := onlyWhenSelected and: [selected artifact isLoadable].
 	onlyWhenSelected ifTrue:
 		[aMenu addTitle: selected printString, String cr,

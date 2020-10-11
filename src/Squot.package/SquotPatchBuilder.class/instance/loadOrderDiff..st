@@ -1,4 +1,8 @@
 initialize-release
 loadOrderDiff: aDiffPatch
+	| includedAccordingToArtifacts |
 	loadOrderDiff := aDiffPatch.
-	patchedLoadOrder := aDiffPatch applyTo: originalLoadOrder.
+	includedAccordingToArtifacts := patchedLoadOrder asSet.
+	patchedLoadOrder :=
+		(aDiffPatch applyTo: originalLoadOrder)
+			select: [:each | includedAccordingToArtifacts includes: each].

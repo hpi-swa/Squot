@@ -6,5 +6,5 @@ privateLoadVersion: aVersion
 	[self addGlobalObjectsToStore: aVersion.
 	patch := aVersion patchRelativeToBase: self lazySnapshot.
 	SquotProgress displayStatus: 'Loading objects' during:
-	[store applyPatch: patch].
+	[self applyPatch: patch].
 	self loadedVersion: aVersion].

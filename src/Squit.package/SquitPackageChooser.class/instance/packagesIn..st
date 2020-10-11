@@ -2,7 +2,8 @@ choosing packages
 packagesIn: aWorkingCopy
 	^ OrderedCollection streamContents:
 		[:packageNames |
-		aWorkingCopy store objectsWithPathsDo:
-			[:object :path |
-			(object respondsTo: #packageName) ifTrue:
-				[packageNames nextPut: object packageName]]]
+		aWorkingCopy artifacts
+			select: [:each | each storeInfo objectClassName = PackageInfo name]
+			thenDo:
+				[:each |
+				packageNames nextPut: each shadowOfTrackedObject packageName]]

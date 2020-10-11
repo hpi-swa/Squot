@@ -1,5 +1,7 @@
 accessing objects
 artifactAt: path
 	| artifact |
-	artifact := store artifactAt: path ifAbsent: [self unloadedArtifacts at: path].
-	^ SquotLoadedArtifact wrapping: artifact in: self
+	artifact := store artifactAt: path ifAbsent: [].
+	^ artifact
+		ifNotNil: [SquotLoadedArtifact wrapping: artifact in: self]
+		ifNil: [SquotUnloadedArtifact wrapping: (self unloadedArtifacts at: path) in: self]

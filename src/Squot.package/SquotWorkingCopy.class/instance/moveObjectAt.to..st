@@ -7,3 +7,4 @@ moveObjectAt: oldPath to: newPath
 			self unloadedArtifacts
 				removeKey: oldPath;
 				at: newPath put: (artifact copy path: newPath; yourself)].
+	loadOrder replaceAll: oldPath with: newPath.

@@ -1,7 +1,7 @@
 patching
 applyDiff: aSquotArtifactModification toObjectAt: path
 	(store includesObjectAt: path)
-		ifTrue: [store applyDiff: aSquotArtifactModification toObjectAt: path]
+		ifTrue: [store applyDiff: aSquotArtifactModification]
 		ifFalse:
 			[(self unloadedArtifacts includesKey: path)
 				ifFalse: [^ (KeyNotFound key: path) signal].

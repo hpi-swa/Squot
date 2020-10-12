@@ -9,6 +9,7 @@ testTrackingAPackage
 	self assert: versionBeforeSave isNil description: 'starting from an empty history'.
 	
 	workingCopy saveVersionWithMessage: 'first version'.
+	self denyChangesInWorkingCopy.
 	latestVersion := workingCopy baseVersion.
 	self assert: versionBeforeSave ~= latestVersion description: 'new version'.
 	self assert: (latestVersion parents isEmpty) description: 'ancestry'.
@@ -26,6 +27,7 @@ testTrackingAPackage
 	self assert: latestVersion equals: versionBeforeSave.
 	
 	workingCopy saveVersionWithMessage: 'second version'.
+	self denyChangesInWorkingCopy.
 	latestVersion := workingCopy baseVersion.
 	self assert: versionBeforeSave ~= latestVersion description: 'new version'.
 	self assert: (latestVersion parents includes: versionBeforeSave) description: 'ancestry'.

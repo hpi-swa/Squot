@@ -5,6 +5,7 @@ testDiscardUnsavedChangeToUnloadedArtifact
 	firstSnapshot := SquotImageStore new add: object at: 'obj'; captureSnapshot.
 	workingCopy addUnloaded: (firstSnapshot artifactAt: 'obj').
 	workingCopy saveVersionWithMessage: 'add obj'.
+	self denyChangesInWorkingCopy.
 	repository withUnitOfWork:
 		[firstSnapshot := workingCopy baseVersion snapshot. "Repository might add objects automatically."].
 	object contents: 2.
@@ -14,6 +15,6 @@ testDiscardUnsavedChangeToUnloadedArtifact
 	"when"
 	workingCopy discardUnsavedChanges.
 	"then"
-	self deny: (firstSnapshot patchRelativeToBase: workingCopy) hasChanges;
+	self deny: (workingCopy patchRelativeToBase: firstSnapshot) hasChanges;
 		deny: (workingCopy artifactAt: 'obj') isLoaded;
 		deny: (store includesObjectAt: 'obj').

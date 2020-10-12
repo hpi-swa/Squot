@@ -17,6 +17,7 @@ testMergeTwoOrphanedVersions
 	"when"
 	operation applyToWorkingCopy].
 	"then"
-	self assert:
-		(workingCopy artifacts keys includesAllOf:
-			(scenario firstVersion artifacts keys, scenario secondVersion artifacts keys)).
+	repository withUnitOfWork:
+		[self assert:
+			(workingCopy artifacts keys includesAllOf:
+				(scenario firstVersion artifacts keys, scenario secondVersion artifacts keys))].

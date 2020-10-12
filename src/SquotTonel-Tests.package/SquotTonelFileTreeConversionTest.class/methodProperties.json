@@ -2,7 +2,8 @@
 	"class" : {
 		 },
 	"instance" : {
+		"package" : "jr 10/12/2020 23:12",
 		"setUp" : "jr 9/13/2020 22:59",
 		"tearDown" : "jr 12/23/2019 17:11",
-		"testCypressToTonel" : "jr 9/3/2020 22:24",
-		"testTonelToCypress" : "jr 9/3/2020 22:24" } }
+		"testCypressToTonel" : "jr 10/12/2020 23:11",
+		"testTonelToCypress" : "jr 10/12/2020 23:11" } }

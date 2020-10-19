@@ -10,4 +10,4 @@ testLoadOrderResolution
 		buildSnapshot.
 	"when"
 	merge := SquotMerge into: a merge: b basedOn: base.
-	self assert: #('a' 'b') equals: (merge resolvedPatch applyToLoadOrder: a loadOrder).
+	self assert: #('a' 'b') asBag = (merge resolvedPatch applyToLoadOrder: a loadOrder) asBag.

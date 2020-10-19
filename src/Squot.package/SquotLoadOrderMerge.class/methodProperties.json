@@ -2,13 +2,15 @@
 	"class" : {
 		 },
 	"instance" : {
-		"autoResolveConflicts" : "jr 8/15/2019 14:03",
-		"collectConflicts" : "jr 9/21/2019 13:46",
-		"collectModifications" : "jr 7/30/2019 21:22",
-		"computeDifferences" : "jr 7/30/2019 21:43",
+		"add:" : "jr 10/18/2020 14:44",
+		"applyDiff:" : "jr 10/18/2020 14:40",
+		"applyDiff:toObjectAt:" : "jr 10/18/2020 14:59",
+		"autoResolve:and:" : "jr 10/19/2020 21:27",
+		"computeDifferences" : "jr 10/18/2020 21:20",
 		"conflicts" : "jr 7/30/2019 21:24",
-		"initialize" : "jr 8/3/2019 21:33",
+		"detectContainerModifications" : "jr 10/18/2020 22:55",
+		"hasChanges" : "jr 10/19/2020 21:27",
 		"newLoadOrder" : "jr 8/15/2019 13:57",
 		"newLoadOrder:" : "jr 8/15/2019 13:58",
-		"privateResolvedPatch" : "jr 7/30/2019 02:16",
-		"resolveConflict:with:" : "jr 7/30/2019 02:14" } }
+		"privateResolvedPatch" : "jr 10/18/2020 22:47",
+		"removeAt:" : "jr 10/18/2020 14:44" } }

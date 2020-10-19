@@ -4,9 +4,9 @@
 		 ],
 	"classvars" : [
 		 ],
-	"commentStamp" : "jr 7/28/2019 00:00",
+	"commentStamp" : "jr 10/18/2020 21:27",
 	"instvars" : [
-		"diff3merge" ],
+		"resolvedPatch" ],
 	"name" : "SquotLoadOrderMerge",
 	"pools" : [
 		 ],

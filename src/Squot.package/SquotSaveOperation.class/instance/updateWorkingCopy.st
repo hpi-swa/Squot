@@ -9,3 +9,4 @@ updateWorkingCopy
 			addAsUnloadedFrom: newVersion thatAreNotIn: previousVersionOrNil;
 			resetAdditionalParents;
 			resetNewVersionMessage].
+	self workingCopy assertConsistentLoadOrder.

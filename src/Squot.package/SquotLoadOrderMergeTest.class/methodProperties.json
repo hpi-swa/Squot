@@ -1,0 +1,17 @@
+{
+	"class" : {
+		 },
+	"instance" : {
+		"testAdditionsInDifferentPlaces" : "jr 10/19/2020 21:35",
+		"testApplyAddition" : "jr 10/18/2020 14:38",
+		"testApplyAdditionAfterConflict" : "jr 10/18/2020 15:03",
+		"testApplyModificationDoesNothing" : "jr 10/18/2020 21:57",
+		"testApplyRemoval" : "jr 10/18/2020 14:39",
+		"testDifferentMoves" : "jr 10/18/2020 22:06",
+		"testDifferentMovesWithSizeChange" : "jr 10/18/2020 22:48",
+		"testEqualLoadOrders" : "jr 10/18/2020 21:58",
+		"testEquallyChangedLoadOrders" : "jr 10/18/2020 22:06",
+		"testIndependentAdditions" : "jr 10/18/2020 23:04",
+		"testIndependentRemovals" : "jr 10/18/2020 23:02",
+		"testUnilateralMoves" : "jr 10/18/2020 22:00",
+		"xxxtestAdditionsInDifferentPlacesButSameIndex" : "jr 10/19/2020 21:35" } }

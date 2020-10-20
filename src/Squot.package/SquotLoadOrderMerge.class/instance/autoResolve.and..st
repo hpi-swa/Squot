@@ -1,8 +1,8 @@
 private
 autoResolve: aCollection and: anIncomingCollection
 	"Resolve dependency changes and store result to be able to answer hasChanges later."
-	"Assumption: aCollection is based on working, anIncomingCollection is based on incoming and addition order conflicts have already been resolved in both."
-	| nodes edges index baseSubset output search visited inOutput |
+	"Assumption: aCollection is based on working, anIncomingCollection is based on incoming and additions and removals have have already been applied to both."
+	| nodes edges index baseSubset output search visited inOutput onPath |
 	(aCollection hasEqualElements: anIncomingCollection) ifTrue: "Trivial case"
 		[^ resolvedPatch := GenericDiff squotDiffClass new
 			file1: working;
@@ -35,24 +35,36 @@ autoResolve: aCollection and: anIncomingCollection
 				[assoc value = 1
 					ifTrue: [(edges at: (index at: each)) remove: assoc]
 					ifFalse: [assoc value: assoc value - 1]]]].
-	"return topological order of nodes&edges"
+	"Return topological order of nodes&edges, or find a cycle and turn it into a conflict."
 	visited := nodes collect: [:each | false].
 	output := OrderedCollection new.
 	inOutput := nodes collect: [:each | false].
+	onPath := nodes collect: [:each | false]. "for cycle detection"
 	search := OrderedCollection withAll: nodes.
 	[search isEmpty] whileFalse:
 		[ | current | current := search removeLast.
-		(visited at: (index at: current))
+		current == #output
 			ifTrue:
+				[current := search removeLast.
+				output add: current. "came back after the children".
+				inOutput at: (index at: current) put: true.
+				onPath at: (index at: current) put: false]
+			ifFalse: 
 				[(inOutput at: (index at: current)) ifFalse:
-					[output add: current. "came back after the children".
-					inOutput at: (index at: current) put: true]]
-			ifFalse:
-				[visited at: (index at: current) put: true.
-				((edges at: (index at: current)) reject: [:each | visited at: (index at: each key)])
-					ifEmpty: [search add: current "come back for output"]
-					ifNotEmpty: [:new | search add: current; "come back later"
-											addAll: (new collect: [:each | each key])]]].
+					[visited at: (index at: current) put: true.
+					(onPath at: (index at: current)) ifTrue:
+						[ | cyclePath | cyclePath := OrderedCollection new.
+						search overlappingPairsDo: [:a :b | b == #output ifTrue: [cyclePath add: a]].
+						cyclePath add: cyclePath first.
+						containerConflicts at: cyclePath put: SquotLoadOrderConflict new.
+						^ nil "abort, no resolved patch"].
+					(edges at: (index at: current))
+						ifEmpty: [search add: current; add: #output "come back for output"]
+						ifNotEmpty:
+							[:new |
+							onPath at: (index at: current) put: true.
+							search add: current; add: #output; "come back later"
+								addAll: (new collect: [:each | each key])]]]].
 	^ resolvedPatch := GenericDiff squotDiffClass new
 			file1: working;
 			file2: output reverseInPlace;

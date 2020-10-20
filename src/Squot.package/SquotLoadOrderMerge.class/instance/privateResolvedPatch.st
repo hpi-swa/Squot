@@ -1,22 +1,34 @@
 private
 privateResolvedPatch
-	| paths resolvedIncoming |
-	paths := OrderedCollection newFrom: working.
+	| resolvedWorking resolvedIncoming |
+	resolvedWorking := OrderedCollection newFrom: working.
 	containerModifications keysAndValuesDo: 
 		[:each :what |
-		what = #add ifTrue: [paths add: each beforeIndex: (incoming indexOf: each)].
-		what = #remove ifTrue: [paths remove: each]].
-	containerConflicts do:
-		[:each | | index |
-		index := working indexOf: each key.
-		index ~= each resolution ifTrue:
-			[paths remove: each key.
-			paths add: each key beforeIndex: each resolution]].
-	resolvedIncoming := incoming asOrderedCollection select: [:each | paths includes: each].
-	containerConflicts do:
-		[:each | | index |
-		index := incoming indexOf: each key.
-		index ~= each resolution ifTrue:
-			[resolvedIncoming remove: each key.
-			resolvedIncoming add: each key beforeIndex: each resolution]].
-	^ self autoResolve: paths and: resolvedIncoming
+		what = #add ifTrue:
+			[ | dependencies insertIndex |
+			dependencies := ((incoming copyUpTo: each) intersection: resolvedWorking) asSet.
+			insertIndex := 1.
+			[dependencies notEmpty] whileTrue:
+				[dependencies remove: (resolvedWorking at: insertIndex) ifAbsent: [].
+				insertIndex := insertIndex + 1].
+			resolvedWorking add: each beforeIndex: insertIndex].
+		what = #remove ifTrue: [resolvedWorking remove: each]].
+	containerConflicts do: [:each | each resolution ~= #working ifTrue:
+			["Use incoming order, but include all elements only contained in working."
+			| unique dependencies insertIndex newOrder |
+			unique := resolvedWorking copyWithoutAll: incoming.
+			newOrder := incoming intersection: resolvedWorking.
+			unique do:
+				[:eachUnique | self isThisEverCalled.
+				dependencies := (resolvedWorking copyUpTo: eachUnique) intersection: newOrder.
+				insertIndex := 1.
+				[dependencies notEmpty] whileTrue:
+					[dependencies remove: (newOrder at: insertIndex) ifAbsent: [].
+					insertIndex := insertIndex + 1].
+				newOrder add: eachUnique beforeIndex: insertIndex].
+			resolvedWorking := newOrder]].
+	resolvedIncoming := incoming asOrderedCollection select: [:each | resolvedWorking includes: each]. "This removes elements removed in the working copy."
+	containerConflicts do: [:each | each resolution ~= #incoming ifTrue:
+			["Use working order, but with all incoming additions."
+			resolvedIncoming := resolvedWorking]].
+	^ self autoResolve: resolvedWorking and: resolvedIncoming

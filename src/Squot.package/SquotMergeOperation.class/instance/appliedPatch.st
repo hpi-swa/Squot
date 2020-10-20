@@ -1,3 +1,3 @@
 accessing
 appliedPatch
-	^ merge resolvedPatch
+	^ appliedPatch

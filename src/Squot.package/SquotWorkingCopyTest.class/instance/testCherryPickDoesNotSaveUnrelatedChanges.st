@@ -24,6 +24,7 @@ testCherryPickDoesNotSaveUnrelatedChanges
 	cherryPick save].
 	self assert: scenario sampleClass new firstMethod = #changed
 		description: 'unsaved change should be unaffected by save'.
-	workingCopy discardUnsavedChanges.
+	self suppressChangeNotificationsDuring:
+		[workingCopy discardUnsavedChanges].
 	self deny: scenario sampleClass new firstMethod = #changed
 		description: 'Changes should have been discarded'.

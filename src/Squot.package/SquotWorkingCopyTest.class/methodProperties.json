@@ -17,7 +17,7 @@
 		"tearDown" : "jr 9/20/2019 20:30",
 		"testAddMultipleObjectsSuccessively" : "jr 10/19/2020 20:51",
 		"testAdditionNotLoaded" : "jr 10/4/2020 22:06",
-		"testCherryPickDoesNotSaveUnrelatedChanges" : "jr 2/9/2020 02:32",
+		"testCherryPickDoesNotSaveUnrelatedChanges" : "jr 10/24/2020 17:28",
 		"testCherryPickOfOrphanedVersion" : "jr 10/11/2020 23:07",
 		"testCherryPickWithConflicts" : "jr 4/12/2020 10:23",
 		"testCherryPickWithConflictsChooseRemote" : "jr 4/12/2020 10:23",

@@ -1,4 +1,4 @@
-tests
+tests merging
 testMergeRemovalAndChange
 	| text baseVersion leftVersion rightVersion operation merge conflict |
 	"given"

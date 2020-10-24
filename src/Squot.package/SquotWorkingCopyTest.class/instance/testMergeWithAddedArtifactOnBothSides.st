@@ -1,4 +1,4 @@
-tests
+tests merging
 testMergeWithAddedArtifactOnBothSides
 	| baseVersion leftVersion rightVersion leftName rightName operation versionMerge artifactMerge |
 	repository withUnitOfWork:

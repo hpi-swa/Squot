@@ -1,4 +1,4 @@
-tests
+tests cherry picking
 testCherryPickWithConflictsChooseRemote
 	| cherryPick merge |
 	self suppressChangeNotificationsDuring:

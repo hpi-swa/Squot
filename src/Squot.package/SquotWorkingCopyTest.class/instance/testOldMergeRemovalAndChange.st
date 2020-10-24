@@ -1,4 +1,4 @@
-tests
+tests merging deprecated
 testOldMergeRemovalAndChange
 	| text baseVersion leftVersion rightVersion |
 	"given"

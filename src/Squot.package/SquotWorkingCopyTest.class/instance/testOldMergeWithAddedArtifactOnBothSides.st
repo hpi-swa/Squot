@@ -1,4 +1,4 @@
-tests
+tests merging deprecated
 testOldMergeWithAddedArtifactOnBothSides
 	| baseVersion leftVersion rightVersion leftName rightName |
 	repository withUnitOfWork:

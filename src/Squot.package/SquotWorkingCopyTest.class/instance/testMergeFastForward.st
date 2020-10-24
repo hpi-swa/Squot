@@ -1,4 +1,4 @@
-tests
+tests merging
 testMergeFastForward
 	| advancedHistorian |
 	"given"

@@ -1,4 +1,4 @@
-tests
+tests merging deprecated
 testOldMergeTwoOrphanedVersions
 	"When merging two versions without ancestors, there is no base version. An empty snapshot should be assumed as the base, so nothing will be removed during the merge."
 	self suppressChangeNotificationsDuring:

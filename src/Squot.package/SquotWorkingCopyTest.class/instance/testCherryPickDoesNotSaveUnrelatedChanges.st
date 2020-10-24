@@ -1,4 +1,4 @@
-tests
+tests cherry picking
 testCherryPickDoesNotSaveUnrelatedChanges
 	| cherryPick merge |
 	"cherry pick the version of the other historian"

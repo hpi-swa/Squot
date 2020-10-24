@@ -1,4 +1,4 @@
-tests
+tests branch switching
 testSwitchBranchAndMoveOverUnsavedChangesInAddedArtifact
 	| text originalHistorian otherHistorian hadConflicts |
 	"given"

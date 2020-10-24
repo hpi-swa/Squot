@@ -1,4 +1,4 @@
-tests
+tests merging
 testMergeSingleArtifact
 	"When a merge is performed for a single artifact, only this loaded artifact should change in the process."
 	| class relevantObject unrelatedObject baseVersion leftVersion rightVersion rightArtifact |

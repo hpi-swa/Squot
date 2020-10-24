@@ -1,4 +1,4 @@
-tests
+tests merging
 testMergeVersionWithLoadedObjects
 	| sampleClass packagePath firstVersion addedMethod secondVersion packageInfo |
 	repository withUnitOfWork:

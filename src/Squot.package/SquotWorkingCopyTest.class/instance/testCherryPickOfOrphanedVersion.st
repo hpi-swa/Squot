@@ -1,4 +1,4 @@
-tests
+tests cherry picking
 testCherryPickOfOrphanedVersion
 	"When cherry-picking a version without ancestor, there is no base version. An empty snapshot should be assumed as the base, so nothing will be removed during the merge."
 	| cherryPick merge |

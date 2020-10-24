@@ -8,3 +8,4 @@ detectContainerModifications
 	(incomingAdditions copyWithoutAll: workingAdditions)
 		do: 	[:each | containerModifications at: each put: #add].
 	removals do: [:each | containerModifications at: each put: #remove].
+	"But working might have changes that conflict with the removal of items."

@@ -6,7 +6,9 @@ testAdditionAndUnrelatedConflicts
 	self assert: merge hasChanges;
 		assert: merge hasConflicts;
 		assert: #add equals: (merge modificationAt: 'x' ifAbsent: []).
-	merge chooseIncoming.
+	merge
+		chooseIncoming;
+		applyDiff: (SquotArtifactAddition of: (SquotArtifactMock path: 'x')).
 	self assert: merge hasChanges;
 		deny: merge hasConflicts;
 		assert: #('<' 'x' '>' '0') equals: (merge resolvedPatch applyTo: #('0' '<' '>')).

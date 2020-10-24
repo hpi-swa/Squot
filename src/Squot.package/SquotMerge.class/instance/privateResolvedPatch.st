@@ -4,7 +4,12 @@ privateResolvedPatch
 	| builder |
 	builder := SquotPatch builder.
 	builder startingFrom: working.
-	containerModifications do: [:each | builder addDiff: each].
+	loadOrderMerge resetAppliedDiffs.
+	containerModifications do:
+		[:each |
+		builder addDiff: each.
+		"Confirm additions and removals for the load order."
+		loadOrderMerge applyDiff: each].
 	containerConflicts do:
 		[:each |
 		builder addDiff: each resolution.

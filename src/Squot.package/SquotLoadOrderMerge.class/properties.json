@@ -4,9 +4,10 @@
 		 ],
 	"classvars" : [
 		 ],
-	"commentStamp" : "jr 10/20/2020 21:49",
+	"commentStamp" : "jr 10/24/2020 16:50",
 	"instvars" : [
-		"resolvedPatch" ],
+		"resolvedPatch",
+		"editedWorking" ],
 	"name" : "SquotLoadOrderMerge",
 	"pools" : [
 		 ],

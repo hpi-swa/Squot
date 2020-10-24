@@ -39,7 +39,7 @@ The relations form a directed, acyclic graph, therefore there is an automatic so
 
 Graph algorithm both detects cycles and finds eventual order (after additions and removals have been applied). O(n²):
 Initialize weighted directed graph with nodes. O(n)
-Increase edges from working and incoming orders. O(n²)
+Increase edges from working and incoming orders. O(n²) (number of relations is (n-1)*(n-2)/2 in both orders)
 	(Squot->Tonel. Squot->Squit. Squot->Baseline. Tonel->Squit. Tonel->Baseline. Squit->Baseline.
 	Baseline->Squot. Baseline->Squit. Baseline->Tonel. Squot->Squit(2). Squot->Tonel(2). Squit->Tonel).
 Decrease all edges implied by the original order O(n²):
@@ -47,11 +47,11 @@ Decrease all edges implied by the original order O(n²):
 That leaves: (Squot->Tonel(1). Squot->Squit(1). Tonel->Squit. Baseline->Squot. Baseline->Squit. Baseline->Tonel). The confirmed relations that are present in all three orders are still in the graph (here: Squot->Tonel. Squot->Squot).
 If both sides agreed on a new dependency, its edge will still have weight 2 in the graph now.
 The graph is always connected because the graphs derived from the input orders always are and nodes are either connected through confirmed relations or new relations.
-Find a topological order using depth first search O(n²) (since number of edges is in O(n²)):
+Find a topological order using depth first search O(n²):
 	Start with Squot (any node).
 	 Visit Tonel.
 	  Visit Squit. No outgoing edges from Squit, put in list.
-	  (If an edge had degree 2, the edge would not need to be visited multiple times because the target node is already on the list.)
+	  (If an edge had weight 2, the edge would not need to be visited multiple times because the target node is already on the list.)
 	  No more outgoing edges from Tonel, put in list.
 	 Visit Squit, already in list.
 	 No more outgoing edges from Squot, put in list.

@@ -1,4 +1,5 @@
 private
 computeDifferences
-	self detectContainerModifications.
+	self detectContainerModifications;
+		resetAppliedDiffs.
 	self resolvedPatch. self flag: #todo. "looks strange"

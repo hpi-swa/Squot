@@ -6,5 +6,6 @@ testDifferentMovesWithSizeChange
 	Therefore resolve to b c a."
 	self assert: merge hasChanges;
 		deny: merge hasConflicts;
-		assert: #remove equals: (merge modificationAt: 'x' ifAbsent: []);
-		assert: #('b' 'c' 'a') equals: (merge resolvedPatch applyTo: #('b' 'x' 'a' 'c')).
+		assert: #remove equals: (merge modificationAt: 'x' ifAbsent: []).
+	merge applyDiff: (SquotArtifactRemoval of: (SquotArtifactMock path: 'x')). "x was unchanged or deliberately dropped."
+	self assert: #('b' 'c' 'a') equals: (merge resolvedPatch applyTo: #('b' 'x' 'a' 'c')).

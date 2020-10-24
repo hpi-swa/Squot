@@ -2,7 +2,7 @@
 	"class" : {
 		 },
 	"instance" : {
-		"testAdditionAndUnrelatedConflicts" : "jr 10/20/2020 21:51",
+		"testAdditionAndUnrelatedConflicts" : "jr 10/24/2020 16:22",
 		"testAdditionsInDifferentPlaces" : "jr 10/20/2020 21:11",
 		"testAdditionsInDifferentPlacesButSameIndex" : "jr 10/20/2020 21:10",
 		"testApplyAddition" : "jr 10/18/2020 14:38",
@@ -11,10 +11,11 @@
 		"testApplyRemoval" : "jr 10/18/2020 14:39",
 		"testConflict" : "jr 10/20/2020 23:43",
 		"testDifferentMoves" : "jr 10/18/2020 22:06",
-		"testDifferentMovesWithSizeChange" : "jr 10/18/2020 22:48",
+		"testDifferentMovesWithSizeChange" : "jr 10/24/2020 16:24",
 		"testEqualLoadOrders" : "jr 10/20/2020 21:14",
 		"testEquallyChangedLoadOrders" : "jr 10/20/2020 21:14",
-		"testIndependentAdditions" : "jr 10/18/2020 23:04",
-		"testIndependentRemovals" : "jr 10/18/2020 23:02",
+		"testIndependentAdditions" : "jr 10/24/2020 16:28",
+		"testIndependentRemovals" : "jr 10/24/2020 16:29",
+		"testKeepChangesToRemovedAfterConflict" : "jr 10/24/2020 16:30",
 		"testMultipleConflicts" : "jr 10/20/2020 23:44",
 		"testUnilateralMoves" : "jr 10/18/2020 22:00" } }

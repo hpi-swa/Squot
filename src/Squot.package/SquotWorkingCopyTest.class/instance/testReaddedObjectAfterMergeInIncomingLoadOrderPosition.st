@@ -1,4 +1,4 @@
 tests merging
-testReddedObjectAfterMergeInIncomingLoadOrderPosition
+testReaddedObjectAfterMergeInIncomingLoadOrderPosition
 	scenario := SquotMergeRemovalAndChangeWithReorderingTestScenario forTestCase: self.
 	scenario testReaddedArtifactInIncomingLoadOrderPosition.

@@ -1,0 +1,14 @@
+{
+	"category" : "Squot-Tests",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "SquotMergeRemovalAndChangeWithReorderingTestScenario",
+	"pools" : [
+		 ],
+	"super" : "SquotMergeRemovalAndChangeTestScenario",
+	"type" : "normal" }

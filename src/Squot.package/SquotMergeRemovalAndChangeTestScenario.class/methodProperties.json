@@ -1,0 +1,11 @@
+{
+	"class" : {
+		 },
+	"instance" : {
+		"createBaseVersion" : "jr 10/24/2020 15:31",
+		"expectedObjectOrderAfterReadding" : "jr 10/24/2020 15:45",
+		"mergeAndReaddObject" : "jr 10/24/2020 15:21",
+		"prepareIncomingVersion" : "jr 10/24/2020 15:34",
+		"prepareWorkingVersion" : "jr 10/24/2020 15:37",
+		"setUp" : "jr 10/24/2020 15:37",
+		"testReaddedArtifactInIncomingLoadOrderPosition" : "jr 10/24/2020 15:45" } }

@@ -2,6 +2,7 @@ private
 privateResolvedPatch
 	| resolvedWorking resolvedIncoming |
 	resolvedWorking := editedWorking.
+	"If the incoming order is chosen, reorder elements accordingly and keep those which are not present in the incoming order."
 	containerConflicts do: [:each | each resolution ~= #working ifTrue:
 			[resolvedWorking := self copy: editedWorking withOrder: incoming]].
 	"Now prepare an incoming order to merge.

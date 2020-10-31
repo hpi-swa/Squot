@@ -5,16 +5,17 @@ privateResolvedPatch
 	builder := SquotPatch builder.
 	builder startingFrom: working.
 	loadOrderMerge resetAppliedDiffs.
-	containerModifications do:
+	(containerModifications select: [:each | each hasChanges]) do:
 		[:each |
 		builder addDiff: each.
 		"Confirm additions and removals for the load order."
 		loadOrderMerge applyDiff: each].
-	containerConflicts do:
+	(containerConflicts select: [:each | each hasChanges]) do:
 		[:each |
 		builder addDiff: each resolution.
 		"Artifacts might be readded even though they were removed from the working copy previously."
 		loadOrderMerge applyDiff: each resolution].
-	elementMerges do: [:each | builder addDiff: each resolvedPatch].
+	(elementMerges select: [:each | each hasChanges])
+		do: [:each | builder addDiff: each resolvedPatch].
 	builder loadOrderDiff: loadOrderMerge resolvedPatch.
 	^ builder buildPatch

@@ -4,13 +4,13 @@
 		 ],
 	"classvars" : [
 		 ],
-	"commentStamp" : "jr 10/31/2020 11:34",
+	"commentStamp" : "jr 10/31/2020 11:35",
 	"instvars" : [
 		"conflictObject",
 		"others",
 		"baseVersion",
 		"incomingVersion" ],
-	"name" : "SquotMergeRemovalAndChangeTestScenario",
+	"name" : "SquotMergeChangeAndRemovalTestScenario",
 	"pools" : [
 		 ],
 	"super" : "SquotWorkingCopyTestScenario",

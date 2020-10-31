@@ -1,0 +1,1 @@
+On the active branch an artifact was modified, on another branch it was removed.

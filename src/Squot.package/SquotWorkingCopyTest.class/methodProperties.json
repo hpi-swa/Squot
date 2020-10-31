@@ -24,6 +24,8 @@
 		"testCherryPickWithoutConflicts" : "jr 4/12/2020 10:23",
 		"testDiffWithParent" : "jr 3/2/2020 22:55",
 		"testDiscardUnsavedChangeToUnloadedArtifact" : "jr 10/12/2020 22:48",
+		"testKeptObjectAfterMergeInIncmoingLoadOrderPosition" : "jr 10/31/2020 14:35",
+		"testKeptObjectAfterMergeInSameLoadOrderPosition" : "jr 10/31/2020 14:27",
 		"testMergeFastForward" : "jr 9/22/2020 22:19",
 		"testMergeRemovalAndChange" : "jr 9/22/2020 00:18",
 		"testMergeSingleArtifact" : "jr 3/2/2020 23:35",

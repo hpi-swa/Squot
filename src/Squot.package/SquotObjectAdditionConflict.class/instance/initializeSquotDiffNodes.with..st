@@ -1,7 +1,7 @@
 *Squot-Tools
 initializeSquotDiffNodes: aCollection with: aDiffNodesBuilder
 	aCollection do: [:each | each
-		title: 'conflicting addition'
+		setTitle: 'conflicting addition'
 		content: self
 		children: Array new;
 		includeBlock: [];

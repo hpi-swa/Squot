@@ -1,6 +1,6 @@
 {
 	"class" : {
-		"title:content:children:onInclude:onExclude:" : "jr 11/18/2018 02:11" },
+		"title:content:children:onInclude:onExclude:" : "jr 11/1/2020 21:42" },
 	"instance" : {
 		"accept:" : "jr 11/19/2017 19:26",
 		"addContentForInspectionTo:" : "jr 4/17/2017 02:28",
@@ -34,9 +34,9 @@
 		"needsChoice" : "jr 5/29/2017 00:00",
 		"offersChoice" : "jr 5/29/2017 01:34",
 		"printOn:" : "jr 5/28/2017 15:01",
+		"setTitle:content:children:" : "jr 11/1/2020 21:42",
 		"title" : "jr 10/4/2020 17:43",
 		"title:" : "jr 11/18/2017 22:30",
-		"title:content:children:" : "jr 4/10/2017 23:00",
 		"unignore" : "jr 4/14/2020 17:14",
 		"withAllChildren" : "jr 11/19/2017 19:25",
 		"workingCopy" : "jr 12/22/2019 18:36",

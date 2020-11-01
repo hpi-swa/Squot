@@ -13,11 +13,13 @@
 		"conflicts" : "jr 7/30/2019 21:24",
 		"copy:withOrder:" : "jr 11/1/2020 19:38",
 		"detectContainerModifications" : "jr 10/24/2020 16:11",
-		"hasChanges" : "jr 10/24/2020 17:53",
+		"hasChanges" : "jr 11/1/2020 19:30",
 		"insert:into:afterPredecessorsIn:" : "jr 10/31/2020 15:00",
 		"newLoadOrder" : "jr 8/15/2019 13:57",
 		"newLoadOrder:" : "jr 8/15/2019 13:58",
 		"privateResolvedPatch" : "jr 10/31/2020 17:19",
 		"removeAt:" : "jr 10/24/2020 16:15",
 		"resetAppliedDiffs" : "jr 10/24/2020 17:03",
-		"resetResolution" : "jr 10/20/2020 22:54" } }
+		"resetChoice" : "jr 11/1/2020 20:29",
+		"resetResolution" : "jr 10/20/2020 22:54",
+		"squotChangeAsStringOrText" : "jr 11/1/2020 20:27" } }

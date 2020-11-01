@@ -2,19 +2,17 @@
 squotChangeAsStringOrText
 	| text |
 	text := WriteStream on: (Text new: 30).
-	containerConflicts ifNotEmpty:
-		[text nextPutAll: ('Conflicts:
-	
-' asText addAttribute: TextEmphasis italic).
-		containerConflicts do: [:each | text nextPutAll: each squotChangeAsStringOrText; cr]].
-	containerModifications ifNotEmpty:
-		[text nextPutAll: ('Modifications:
-
-' asText addAttribute: TextEmphasis italic).
-		containerModifications do: [:each | text nextPutAll: each squotChangeAsStringOrText; cr]].
-	elementMerges ifNotEmpty:
-		[text nextPutAll: ('Merges:
-
-' asText addAttribute: TextEmphasis italic).
-		elementMerges do: [:each | text nextPutAll: each squotChangeAsStringOrText; cr]].
+	({{containerConflicts. 'Conflicts:'}.
+	{containerModifications. 'Modifications:'}.
+	{elementMerges. 'Merges:'}}
+		select: [:eachPair | eachPair first notEmpty])
+		do: [:eachPair |
+			text nextPutAll: (eachPair second asText addAttribute: TextEmphasis italic);
+				cr; cr.
+			eachPair first do:
+				[:each |
+				text nextPutAll:
+					(each squotChangeAsStringOrText asText addAttribute: (TextIndent amount: 1));
+					cr]]
+		separatedBy: [text cr].
 	^ text contents

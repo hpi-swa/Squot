@@ -7,6 +7,7 @@
 		"applyDiff:" : "jr 10/18/2020 14:40",
 		"applyDiff:toObjectAt:" : "jr 10/24/2020 16:15",
 		"autoResolve:and:" : "jr 10/31/2020 15:54",
+		"browseFromSquotWorkingCopyArtifact:" : "jr 11/1/2020 20:42",
 		"chooseIncoming" : "jr 10/20/2020 22:20",
 		"chooseWorking" : "jr 10/20/2020 22:20",
 		"computeDifferences" : "jr 10/24/2020 17:04",

@@ -16,6 +16,8 @@
 		"testEqualLoadOrders" : "jr 10/20/2020 21:14",
 		"testEquallyChangedLoadOrders" : "jr 10/20/2020 21:14",
 		"testIndependentAdditions" : "jr 10/24/2020 16:28",
+		"testIndependentAdditions2" : "jr 11/1/2020 21:39",
+		"testIndependentAdditions3" : "jr 11/1/2020 21:39",
 		"testIndependentRemovals" : "jr 10/24/2020 16:29",
 		"testKeepChangesToRemovedAfterConflict" : "jr 10/24/2020 16:30",
 		"testMultipleConflicts" : "jr 10/20/2020 23:44",

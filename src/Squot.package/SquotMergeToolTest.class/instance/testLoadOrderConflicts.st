@@ -60,8 +60,3 @@ testLoadOrderConflicts
 		assert: (labels anySatisfy: [:each | each includesSubstring: (working pathsOf: removedIncoming) anyOne]);
 		assert: (labels anySatisfy: [:each | each includesSubstring: (working pathsOf: modifiedInSamePosition) anyOne]);
 		assert: (labels anySatisfy: [:each | each includesSubstring: 'load order']).
-	"self assert: 7 equals: tool rootNodes size.
-	(conflictNode := tool rootNodes anyOne) resetChoice.
-	self assert: conflictNode anyChildNeedsChoice.
-	self resolveArtifactConflict: [:aNode | tool deactivateSelectedNode].
-	self deny: (self resultIncludesDiffAt: path)" "nothing changes in working copy".

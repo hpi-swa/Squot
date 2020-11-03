@@ -4,3 +4,4 @@ initialize
 	originalLoadOrder := OrderedCollection new.
 	patchedLoadOrder := OrderedCollection new.
 	loadOrderDiff := nil.
+	loadOrderMerge := nil.

@@ -1,3 +1,4 @@
 merging
 newLoadOrder: aSequenceableCollection
-	loadOrderMerge newLoadOrder: aSequenceableCollection.
+	customizedLoadOrder := aSequenceableCollection.
+	loadOrderMerge newLoadOrder: customizedLoadOrder.

@@ -1,7 +1,7 @@
 *Squot-Tools
 addLoadOrderDiffTreeTo: aCollection 
 	self flag: #featureEnvy. "Move to SquotLoadOrderMerge"
-	loadOrderMerge hasConflicts ifFalse: [^ self].
+	loadOrderMerge hasChanges ifFalse: [^ self].
 	aCollection add: (loadOrderMerge hasConflicts
 		ifTrue:
 			[SquotMergeDiffNode
@@ -16,5 +16,7 @@ addLoadOrderDiffTreeTo: aCollection
 				title: 'Changed load order'
 				content: loadOrderMerge
 				children: #()
-				onInclude: [loadOrderMerge chooseIncoming]
-				onExclude: [loadOrderMerge chooseWorking]]).
+				onInclude:
+					[loadOrderMerge newLoadOrder: (customizedLoadOrder ifNil: [incoming loadOrder])]
+				onExclude:
+					[loadOrderMerge newLoadOrder: working loadOrder]]).

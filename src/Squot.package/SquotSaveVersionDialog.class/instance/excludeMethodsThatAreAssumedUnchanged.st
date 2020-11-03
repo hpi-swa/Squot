@@ -1,7 +1,7 @@
 actions
 excludeMethodsThatAreAssumedUnchanged
 	| packageNodes |
-	packageNodes := (rootNodes select: [:each | (each content object shadowOfTrackedObject isKindOf: SquotPackageShadow) and: [each content isModification]]).
+	packageNodes := ((rootNodes select: [:each | each artifactDiff notNil]) select: [:each | (each content object shadowOfTrackedObject isKindOf: SquotPackageShadow) and: [each content isModification]]).
 	packageNodes do: [:eachPackage |
 		eachPackage children do: [:eachClass |
 			[eachClass content isCurrentlyIgnoredInSquot

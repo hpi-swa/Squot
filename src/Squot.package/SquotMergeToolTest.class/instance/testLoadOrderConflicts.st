@@ -1,4 +1,4 @@
-tests
+tests load order
 testLoadOrderConflicts
 	| addedWorking addedIncoming addedBoth addedBothConflict
 	removedWorking removedIncoming removedBoth

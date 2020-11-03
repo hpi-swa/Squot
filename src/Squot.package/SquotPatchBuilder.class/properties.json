@@ -12,6 +12,7 @@
 		"originalLoadOrder",
 		"patchedLoadOrder",
 		"loadOrderDiff",
+		"loadOrderMerge",
 		"base",
 		"patched",
 		"progress" ],

@@ -5,3 +5,4 @@ startingFrom: anObjectContainer
 	originalLoadOrder := anObjectContainer loadOrder asOrderedCollection.
 	patchedLoadOrder := originalLoadOrder copy.
 	loadOrderDiff := nil.
+	loadOrderMerge := nil.

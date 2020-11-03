@@ -14,7 +14,8 @@
 		"copiedFrom",
 		"hasConflicts",
 		"right",
-		"mergeBlock" ],
+		"mergeBlock",
+		"willBeLoaded" ],
 	"name" : "SquotArtifactDiffMock",
 	"pools" : [
 		 ],

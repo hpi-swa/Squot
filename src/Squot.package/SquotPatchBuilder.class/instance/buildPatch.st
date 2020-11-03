@@ -4,5 +4,5 @@ buildPatch
 	self updateRightArtifacts.
 	^ SquotPatch new
 		initializeFrom: base to: patched withDiffs: (diffs reject: [:each | each hasChanges not]);
-		loadOrderDiff: self computeLoadOrderDiff;
+		loadOrderDiff: self loadOrderMerge resolvedPatch;
 		yourself

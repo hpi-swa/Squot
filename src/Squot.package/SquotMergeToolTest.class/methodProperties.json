@@ -4,6 +4,7 @@
 	"instance" : {
 		"diffAt:in:" : "jr 8/15/2019 03:02",
 		"includesDiffAt:in:" : "jr 8/15/2019 01:22",
+		"loadOrderHasChanges" : "jr 11/3/2020 16:44",
 		"newToolOn:" : "jr 5/2/2020 01:49",
 		"openToolAndTestOnPatch:" : "jr 8/15/2019 00:51",
 		"patchAddingArtifactAt:" : "jr 8/14/2019 22:59",
@@ -18,10 +19,10 @@
 		"resultDiffAt:" : "jr 8/15/2019 03:02",
 		"resultLoadOrder" : "jr 8/15/2019 01:06",
 		"testLoadOrderConflicts" : "jr 11/2/2020 14:29",
-		"testResolveArtifactConflictChooseLeft" : "jr 8/15/2019 01:44",
-		"testResolveArtifactConflictChooseRight" : "jr 8/15/2019 03:02",
-		"testResolveArtifactConflictWithIncomingRemoval" : "jr 8/15/2019 12:45",
+		"testResolveArtifactConflictChooseLeft" : "jr 11/3/2020 16:21",
+		"testResolveArtifactConflictChooseRight" : "jr 11/3/2020 16:22",
+		"testResolveArtifactConflictWithIncomingRemoval" : "jr 11/3/2020 16:22",
 		"testResolveConflictInArtifactChooseLeft" : "jr 5/9/2020 10:39",
 		"testResolveConflictInArtifactChooseRight" : "jr 5/9/2020 10:39",
-		"testResolveThenResetArtifactConflict" : "jr 8/15/2019 12:45",
+		"testResolveThenResetArtifactConflict" : "jr 11/3/2020 16:22",
 		"testSmalltalkCodeMerge" : "jr 9/29/2019 22:39" } }

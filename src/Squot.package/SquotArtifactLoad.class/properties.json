@@ -4,13 +4,11 @@
 		 ],
 	"classvars" : [
 		 ],
-	"commentStamp" : "jr 4/10/2017 23:49",
+	"commentStamp" : "jr 11/4/2020 12:58",
 	"instvars" : [
-		"left",
-		"right",
-		"leftIsLoaded" ],
-	"name" : "SquotArtifactDiff",
+		"willBeLoaded" ],
+	"name" : "SquotArtifactLoad",
 	"pools" : [
 		 ],
-	"super" : "Object",
+	"super" : "SquotArtifactDiff",
 	"type" : "normal" }

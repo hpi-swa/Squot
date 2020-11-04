@@ -2,9 +2,10 @@
 	"class" : {
 		"wrapping:" : "jr 9/26/2020 17:24" },
 	"instance" : {
+		"applyLoadStatusTo:" : "jr 11/4/2020 12:17",
 		"artifact" : "jr 9/26/2020 17:24",
 		"artifact:" : "jr 9/26/2020 17:24",
 		"isLoaded" : "jr 9/26/2020 21:02",
-		"load" : "jr 9/26/2020 21:01",
+		"load" : "jr 11/4/2020 14:29",
 		"printOn:" : "jr 10/4/2020 21:18",
 		"updatePath" : "jr 9/26/2020 18:29" } }

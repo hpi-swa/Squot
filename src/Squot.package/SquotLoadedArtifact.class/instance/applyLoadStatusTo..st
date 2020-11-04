@@ -1,0 +1,3 @@
+comparing
+applyLoadStatusTo: anArtifactDiff
+	anArtifactDiff leftIsLoaded.

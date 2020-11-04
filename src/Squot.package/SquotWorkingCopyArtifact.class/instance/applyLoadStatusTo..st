@@ -1,0 +1,3 @@
+comparing
+applyLoadStatusTo: anArtifactDiff
+	self subclassResponsibility

@@ -1,0 +1,3 @@
+accessing
+leftIsLoaded
+	leftIsLoaded := true.

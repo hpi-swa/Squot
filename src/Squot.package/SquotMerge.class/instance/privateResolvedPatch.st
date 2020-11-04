@@ -17,5 +17,5 @@ privateResolvedPatch
 		loadOrderMerge applyDiff: each resolution].
 	(elementMerges select: [:each | each hasChanges])
 		do: [:each | builder addDiff: each resolvedPatch].
-	builder loadOrderDiff: loadOrderMerge resolvedPatch.
+	builder newLoadOrder: (loadOrderMerge resolvedPatch applyTo: working loadOrder).
 	^ builder buildPatch

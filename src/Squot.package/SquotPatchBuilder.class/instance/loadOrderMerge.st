@@ -1,8 +1,6 @@
 SquotPatch
 loadOrderMerge
-	^ loadOrderMerge ifNil:
-		[self computeLoadOrderDiff.
-		diffs do: [:each | loadOrderMerge applyDiff: each].
-		loadOrderMerge privateResolvedPatch. self flag: #encapsulation.
-		loadOrderMerge chooseIncoming.
-		loadOrderMerge]
+	^ loadOrderMerge
+		ifNil: 
+			["Use a merge to get additions and removals applied correctly."
+			loadOrderMerge := self mergeNewLoadOrder: patchedLoadOrder].

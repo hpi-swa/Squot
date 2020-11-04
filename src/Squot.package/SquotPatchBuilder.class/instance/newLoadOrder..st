@@ -1,8 +1,5 @@
 accessing
 newLoadOrder: aCollection
-	patchedLoadOrder := aCollection.
-	loadOrderDiff := nil.
-	self loadOrderMerge newLoadOrder: aCollection.
-	diffs do: [:each | loadOrderMerge applyDiff: each].
-	loadOrderMerge privateResolvedPatch. self flag: #encapsulation.
-	loadOrderMerge chooseIncoming.
+	patchedLoadOrder := aCollection asOrderedCollection.
+	"Use a merge to get additions and removals applied correctly."
+	loadOrderMerge := self mergeNewLoadOrder: aCollection.

@@ -15,6 +15,8 @@
 		"diffsDo:" : "jr 3/27/2019 22:52",
 		"displayProgress:during:" : "jr 9/13/2020 21:52",
 		"goingTo:" : "jr 3/30/2019 12:36",
+		"hasChanges" : "jr 11/5/2020 16:17",
+		"hasLoadOrderChanges" : "jr 11/5/2020 16:18",
 		"includesDiffAt:" : "jr 7/28/2019 11:01",
 		"initialize" : "jr 11/3/2020 22:24",
 		"loadOrderMerge" : "jr 11/3/2020 22:40",

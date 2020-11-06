@@ -2,7 +2,7 @@ private
 addDiff: aDiff
 	aDiff hasChanges ifFalse: [^ self].
 	loadOrderMerge := nil.
-	(aDiff isAddition or: [aDiff isLoad or: [(base artifactAt: aDiff path) = aDiff left]])
+	(aDiff isBasedOn: base)
 		ifTrue: [diffs at: aDiff path put: aDiff]
 		ifFalse: ["trying to apply a diff to a different base"
 				diffs at: aDiff path put:

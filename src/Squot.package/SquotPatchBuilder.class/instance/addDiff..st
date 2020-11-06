@@ -1,6 +1,5 @@
 private
 addDiff: aDiff
-	aDiff hasChanges ifFalse: [^ self].
 	loadOrderMerge := nil.
 	(aDiff isBasedOn: base)
 		ifTrue: [diffs at: aDiff path put: aDiff]

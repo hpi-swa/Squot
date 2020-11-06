@@ -2,11 +2,13 @@
 	"class" : {
 		"on:at:in:" : "jr 10/4/2020 23:12" },
 	"instance" : {
+		"=" : "jr 11/6/2020 23:41",
 		"browse" : "jr 12/23/2019 14:39",
 		"capture" : "jr 7/16/2017 03:06",
 		"content" : "jr 12/8/2019 21:41",
 		"convertToCurrentVersion:refStream:" : "jr 7/22/2017 17:13",
 		"copyWithDifferentContent:" : "jr 7/16/2017 17:14",
+		"hash" : "jr 11/6/2020 23:42",
 		"liveStoreInfo" : "jr 5/4/2019 02:25",
 		"materializeWith:replacing:" : "jr 12/7/2019 22:26",
 		"objectGraph" : "jr 12/8/2019 21:26",

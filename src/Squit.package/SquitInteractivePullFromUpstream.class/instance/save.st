@@ -2,7 +2,7 @@ private
 save
 	| savePatch |
 	savePatch := self workingCopy baseVersion newPatchBuilder.
-	patchLoadedDuringMerge diffsDo: [:each | savePatch addDiff: each].
+	patchLoadedDuringMerge diffsDo: [:each | each hasChanges ifTrue: [savePatch addDiff: each]].
 	[SquotGUI waitFor:
 		(self workingCopy newInteractiveSaveOperation
 			title: 'Save the merge of ', localHistorian upstreamTrackingHistorian shortName;

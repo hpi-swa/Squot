@@ -2,10 +2,14 @@
 	"class" : {
 		"wrapping:in:" : "jr 9/26/2020 18:09" },
 	"instance" : {
+		"=" : "jr 11/6/2020 23:10",
 		"applyLoadStatusTo:" : "jr 11/4/2020 12:16",
+		"artifact" : "jr 11/6/2020 23:14",
+		"artifact:" : "jr 11/6/2020 23:14",
 		"browse" : "jr 9/26/2020 18:04",
 		"diffAgainst:" : "jr 11/4/2020 12:16",
 		"doesNotUnderstand:" : "jr 9/26/2020 18:04",
+		"hash" : "jr 11/6/2020 23:11",
 		"isLoaded" : "jr 9/26/2020 21:01",
 		"serializer:" : "jr 9/26/2020 18:29",
 		"setArtifact:workingCopy:" : "jr 9/26/2020 18:09",

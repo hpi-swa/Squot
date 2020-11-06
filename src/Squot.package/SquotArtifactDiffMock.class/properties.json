@@ -16,7 +16,8 @@
 		"right",
 		"mergeBlock",
 		"willBeLoaded",
-		"isLoad" ],
+		"isLoad",
+		"mayAffectArtifact" ],
 	"name" : "SquotArtifactDiffMock",
 	"pools" : [
 		 ],

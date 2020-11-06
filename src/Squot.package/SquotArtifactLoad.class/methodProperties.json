@@ -2,9 +2,9 @@
 	"class" : {
 		"of:" : "jr 11/5/2020 17:47" },
 	"instance" : {
-		"applyToContainer:" : "jr 11/6/2020 19:37",
+		"applyToContainer:" : "jr 11/7/2020 00:01",
 		"diffNodeOperationTitle" : "jr 11/4/2020 14:02",
-		"hasChanges" : "jr 11/5/2020 16:33",
+		"hasChanges" : "jr 11/7/2020 00:08",
 		"initialize" : "jr 11/4/2020 14:30",
 		"isBasedOn:" : "jr 11/5/2020 16:55",
 		"isLoad" : "jr 11/4/2020 14:11",
@@ -15,7 +15,7 @@
 		"needsChoice" : "jr 7/22/2017 23:55",
 		"rebaseOn:" : "jr 11/4/2020 14:06",
 		"resolveConflictWith:" : "jr 11/4/2020 14:06",
-		"setArtifact:" : "jr 11/5/2020 17:47",
+		"setArtifact:" : "jr 11/7/2020 00:00",
 		"squotChangeAsStringOrText" : "jr 11/4/2020 14:06",
 		"toggleWhetherToLoad" : "jr 10/4/2020 17:20",
 		"topNodes" : "jr 11/6/2018 08:11",

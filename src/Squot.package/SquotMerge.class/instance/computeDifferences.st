@@ -10,7 +10,7 @@ computeDifferences
 		artifactMerge := existingDiff mergeWith: incomingDiff.
 		artifactMerge isConflict
 			ifTrue: [containerConflicts at: artifactMerge path put: artifactMerge]
-			ifFalse: [artifactMerge hasChanges ifTrue: [self addMerge: artifactMerge]]].
+			ifFalse: [artifactMerge mayAffectArtifact ifTrue: [self addMerge: artifactMerge]]].
 	(fromBaseToIncoming paths copyWithoutAll: commonPaths)
 		do: [:eachPath | | diff |
 			diff := fromBaseToIncoming diffAt: eachPath.

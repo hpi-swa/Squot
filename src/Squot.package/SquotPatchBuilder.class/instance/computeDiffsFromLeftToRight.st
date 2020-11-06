@@ -5,5 +5,5 @@ computeDiffsFromLeftToRight
 		rightArtifacts at: path
 			ifPresent: [:myArtifact |
 				diff := leftArtifact diffAgainst: myArtifact.
-				self addDiff: diff]
+				diff mayAffectArtifact ifTrue: [self addDiff: diff]]
 			ifAbsent: [diffs at: path put: (SquotArtifactRemoval of: leftArtifact)]]

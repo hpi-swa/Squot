@@ -48,7 +48,7 @@ testApplyPatch
 					source: '= other ^ false'})
 			asSquotArtifactForPackage: packageInfo.
 	patch := snapshotBefore newPatchBuilder
-		diff: packageArtifactBeforePatch against: packageArtifactAfterPatch;
+		addDiff: (packageArtifactBeforePatch diffAgainst: packageArtifactAfterPatch);
 		buildPatch.
 	self suppressChangeNotificationsDuring:
 		[imageStore restoreToSnapshot: snapshotBefore].

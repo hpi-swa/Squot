@@ -2,7 +2,7 @@
 	"class" : {
 		 },
 	"instance" : {
-		"addArtifact:" : "jr 11/3/2020 22:24",
+		"addArtifact:" : "jr 11/7/2020 19:31",
 		"addDiff:" : "jr 11/7/2020 12:08",
 		"addLoadOrderDiffTreeTo:" : "jr 11/7/2020 11:46",
 		"buildPatch" : "jr 11/6/2020 23:23",
@@ -25,7 +25,7 @@
 		"newLoadOrder:" : "jr 11/7/2020 11:35",
 		"patchFrom:to:" : "jr 11/5/2020 17:53",
 		"paths" : "jr 11/26/2018 21:22",
-		"removeArtifact:" : "jr 9/17/2018 22:13",
+		"removeArtifact:" : "jr 11/7/2020 19:31",
 		"resetAt:" : "jr 11/7/2020 12:09",
 		"startingFrom:" : "jr 11/3/2020 22:25",
 		"startingFrom:goingTo:" : "jr 11/5/2020 17:53",

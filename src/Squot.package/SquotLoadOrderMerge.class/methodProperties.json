@@ -9,7 +9,7 @@
 		"browseFromSquotWorkingCopyArtifact:" : "jr 11/1/2020 20:42",
 		"chooseIncoming" : "jr 10/20/2020 22:20",
 		"chooseWorking" : "jr 10/20/2020 22:20",
-		"computeDifferences" : "jr 11/7/2020 10:45",
+		"computeDifferences" : "jr 11/7/2020 10:47",
 		"conflicts" : "jr 7/30/2019 21:24",
 		"copy:withOrder:" : "jr 11/1/2020 19:38",
 		"createDiffOrMergeTreeNodeWithWorkingOrder:incomingOrder:" : "jr 11/3/2020 21:15",
@@ -25,4 +25,5 @@
 		"resetResolution" : "jr 10/20/2020 22:54",
 		"resolveLoadOrders" : "jr 11/4/2020 00:20",
 		"resolveOrders:and:" : "jr 11/4/2020 00:09",
-		"squotChangeAsStringOrText" : "jr 11/1/2020 20:27" } }
+		"squotChangeAsStringOrText" : "jr 11/1/2020 20:27",
+		"working:" : "jr 11/7/2020 10:48" } }

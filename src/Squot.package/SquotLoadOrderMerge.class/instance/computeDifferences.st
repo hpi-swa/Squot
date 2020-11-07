@@ -1,4 +1,3 @@
 private
 computeDifferences
-	self resetAppliedDiffs;
-		detectConflicts.
+	self detectConflicts.

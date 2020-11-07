@@ -3,4 +3,7 @@ loadOrderMerge
 	^ loadOrderMerge
 		ifNil: 
 			["Use a merge to get additions and removals applied correctly."
-			loadOrderMerge := self mergeNewLoadOrder: patchedLoadOrder].
+			loadOrderMerge := SquotLoadOrderMerge
+				into: originalLoadOrder
+				merge: patchedLoadOrder copy
+				basedOn: originalLoadOrder "=> gets conflicts only through additions applied in different orders"].

@@ -2,7 +2,7 @@
 	"class" : {
 		 },
 	"instance" : {
-		"testAdditionAndUnrelatedConflicts" : "jr 10/24/2020 16:22",
+		"testAdditionAndUnrelatedConflicts" : "jr 11/7/2020 10:44",
 		"testAdditionAndUnrelatedConflicts2" : "jr 10/31/2020 17:25",
 		"testAdditionsInDifferentPlaces" : "jr 10/20/2020 21:11",
 		"testAdditionsInDifferentPlacesButSameIndex" : "jr 10/20/2020 21:10",
@@ -12,7 +12,7 @@
 		"testApplyRemoval" : "jr 10/18/2020 14:39",
 		"testConflict" : "jr 10/20/2020 23:43",
 		"testDifferentMoves" : "jr 10/18/2020 22:06",
-		"testDifferentMovesWithSizeChange" : "jr 10/24/2020 16:24",
+		"testDifferentMovesWithSizeChange" : "jr 11/7/2020 10:44",
 		"testEqualLoadOrders" : "jr 10/20/2020 21:14",
 		"testEquallyChangedLoadOrders" : "jr 10/20/2020 21:14",
 		"testIndependentAdditions" : "jr 10/24/2020 16:28",

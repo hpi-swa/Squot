@@ -4,6 +4,5 @@ add: aSquotArtifact
 	"Note the addition and insert after all items that precede it in the incoming order."
 	path := aSquotArtifact path.
 	self assert: (editedWorking includes: path) not.
-	containerModifications at: path put: #add.
 	self insert: path into: editedWorking afterPredecessorsIn: incoming.
 	self resetResolution

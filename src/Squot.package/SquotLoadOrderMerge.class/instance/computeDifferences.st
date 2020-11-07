@@ -1,5 +1,4 @@
 private
 computeDifferences
-	self detectContainerModifications;
-		resetAppliedDiffs;
+	self resetAppliedDiffs;
 		detectConflicts.

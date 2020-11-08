@@ -2,4 +2,13 @@
 	"class" : {
 		 },
 	"instance" : {
-		"testDiffTwoPackageArtifacts" : "jr 11/18/2018 02:19" } }
+		"applyDiffToWorkingCopy:" : "jr 11/7/2020 23:21",
+		"createWorkingCopyWithObjectAt:" : "jr 11/7/2020 23:16",
+		"testAdditionsAreLoadedByDefault" : "jr 11/7/2020 23:22",
+		"testAdditionsCanBeUnloaded" : "jr 11/7/2020 23:22",
+		"testDiffTwoPackageArtifacts" : "jr 11/18/2018 02:19",
+		"testLoadedWorkingCopyArtifactsWillBeLoaded" : "jr 11/7/2020 23:24",
+		"testLoadsCanBeDisabled" : "jr 11/7/2020 23:24",
+		"testLoadsWillBeLoaded" : "jr 11/7/2020 23:26",
+		"testUnloadedWorkingCopyArtifactRemovalsWillNotBeLoaded" : "jr 11/7/2020 23:27",
+		"testUnloadedWorkingCopyArtifactsWillNotBeLoaded" : "jr 11/7/2020 23:30" } }

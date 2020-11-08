@@ -1,4 +1,4 @@
-testing
+tests
 testDiffTwoPackageArtifacts
 	| package classNode diff diffTree snapshot1 snapshot2 titles scriptNode |
 	package := PackageInfo new packageName: 'Foo'.

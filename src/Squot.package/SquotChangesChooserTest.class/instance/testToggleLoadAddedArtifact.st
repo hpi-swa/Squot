@@ -4,6 +4,7 @@ testToggleLoadAddedArtifact
 	path := 'conflicted-artifact'.
 	tool := self newToolOn: (self patchAddingArtifactAt: path).
 	tool selectNode: tool rootNodes first.
+	self assert: (self treeViewMenuIncludesAction: #toggleLoadSelectedNode).
 	tool toggleLoadSelectedNode;
 		toggleLoadSelectedNode.
 	self deny: ('( * )' match: (tool nodeLabelOf: tool selectedNode) asString).

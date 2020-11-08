@@ -1,3 +1,3 @@
 testing
 willBeLoaded
-	^ true
+	^ (left respondsTo: #isLoaded) not or: [left isLoaded]

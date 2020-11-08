@@ -1,6 +1,7 @@
 merging
 resolvedPatch
 	| modifiedObject |
+	resolvedPatchBlock ifNotNil: [^ resolvedPatchBlock value].
 	modifiedObject := hasConflicts == false
 		ifTrue: [incoming]
 		ifFalse:

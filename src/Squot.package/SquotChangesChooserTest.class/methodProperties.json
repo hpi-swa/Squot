@@ -7,6 +7,7 @@
 		"newToolOn:" : "jr 9/25/2020 19:12",
 		"patchAddingArtifactAt:" : "jr 11/7/2020 10:55",
 		"patchChangingArtifactAt:" : "jr 2/9/2020 03:35",
+		"patchChangingUnloadedArtifactAt:" : "jr 11/8/2020 00:55",
 		"patchRemovingArtifactAt:" : "jr 11/7/2020 11:03",
 		"patchWithLoadOrderChange" : "jr 8/15/2019 03:15",
 		"patchWithLoadOrderChangeRegression1" : "jr 8/15/2019 03:21",
@@ -20,7 +21,7 @@
 		"testAcceptArtifactAddition" : "jr 11/3/2020 16:15",
 		"testAcceptArtifactChange" : "jr 8/21/2019 23:57",
 		"testAcceptArtifactRemoval" : "jr 11/3/2020 16:16",
-		"testDoNotLoadAddedArtifact" : "jr 10/3/2020 20:22",
+		"testDoNotLoadAddedArtifact" : "jr 11/8/2020 00:03",
 		"testLoadOrderNode" : "jr 11/3/2020 16:44",
 		"testMoveDownInLoadOrder" : "jr 8/15/2019 14:02",
 		"testMoveUpInLoadOrder" : "jr 8/15/2019 14:02",
@@ -30,4 +31,6 @@
 		"testRejectArtifactChange" : "jr 8/15/2019 00:42",
 		"testRejectArtifactRemoval" : "jr 11/3/2020 16:18",
 		"testSelectedPatchIsIdempotentWithoutChangingNodes" : "jr 8/15/2019 01:23",
-		"testToggleLoadAddedArtifact" : "jr 10/3/2020 20:21" } }
+		"testToggleLoadAddedArtifact" : "jr 11/8/2020 00:04",
+		"testUnloadedArtifactsDisplayedInBrackets" : "jr 11/8/2020 00:14",
+		"treeViewMenuIncludesAction:" : "jr 11/8/2020 00:03" } }

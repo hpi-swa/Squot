@@ -13,7 +13,7 @@ newSquotDiffNodes
 			collect: [:eachClassAndOperations |
 						self squotDiffNodeForClass: eachClassAndOperations key
 							operations: eachClassAndOperations value])
-			sort: [:a :b | a title <= b title]) ,
+			sort: [:a :b | a title asString <= b title asString]) ,
 		((groups associations reject: [:each | each value first definition squotBelongsToClass]) collect: 
 			[:eachClassificationAndOperations |
 			| classification |

@@ -2,8 +2,8 @@
 	"class" : {
 		"of:" : "jr 10/2/2017 19:59" },
 	"instance" : {
+		"adornedDiffNodeTitle:" : "jr 11/17/2020 17:54",
 		"applyToContainer:" : "jr 10/4/2020 17:20",
-		"asDiffTree" : "jr 12/22/2019 23:23",
 		"diffNodeFallbackTitle" : "jr 10/26/2019 21:29",
 		"diffNodeOperationTitle" : "jr 10/26/2019 21:29",
 		"isBasedOn:" : "jr 11/5/2020 16:54",

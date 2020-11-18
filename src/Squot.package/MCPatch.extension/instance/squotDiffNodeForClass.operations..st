@@ -11,7 +11,7 @@ squotDiffNodeForClass: aSymbol operations: aCollection
 							children: #()
 							onInclude: [operations add: each]
 							onExclude: [operations remove: each]])
-						sort: [:a :b | a title <= b title])
+						sort: [:a :b | a title asString <= b title asString])
 		onInclude: []
 		onExclude: [].
 	node content diffTreeNode: node.

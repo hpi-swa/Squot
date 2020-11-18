@@ -53,7 +53,7 @@ testLoadOrderConflicts
 				ensure: [modifiedInSamePosition contents: original]] value)
 		basedOn: base captureSnapshot.
 	self openToolAndTestOn: merge.
-	labels := tool rootNodes collect: [:each | tool nodeLabelOf: each].
+	labels := tool rootNodes collect: [:each | (tool nodeLabelOf: each) asString].
 	self assert: (labels anySatisfy: [:each | each includesSubstring: (incoming pathsOf: addedIncoming) anyOne]);
 		assert: (labels anySatisfy: [:each | each includesSubstring: (working pathsOf: addedBoth) anyOne]);
 		assert: (labels anySatisfy: [:each | each includesSubstring: (working pathsOf: addedBothConflict) anyOne]);

@@ -7,7 +7,7 @@ testLoadOrderNode
 		selectNode: tool rootNodes second;
 		moveUpSelectedInLoadOrder.
 	"then"
-	loadOrderNode := tool rootNodes detect: [:each | (tool nodeLabelOf: each) includesSubstring: 'load order'] ifNone: [].
+	loadOrderNode := tool rootNodes detect: [:each | (tool nodeLabelOf: each) asString includesSubstring: 'load order'] ifNone: [].
 	self assert: loadOrderNode notNil.
 	tool selectNode: loadOrderNode; deactivateSelectedNode; accept.
 	self deny: self loadOrderHasChanges.

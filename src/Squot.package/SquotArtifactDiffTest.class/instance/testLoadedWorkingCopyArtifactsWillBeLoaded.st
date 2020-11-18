@@ -3,7 +3,7 @@ testLoadedWorkingCopyArtifactsWillBeLoaded
 	| snapshot modification |
 	snapshot := self createWorkingCopyWithObjectAt: 'obj'.
 	(workingCopy objectAt: 'obj') contents: 2.
-	modification := SquotArtifactModification left: (workingCopy artifactAt: 'obj') right: snapshot.
+	modification := (workingCopy artifactAt: 'obj') diffAgainst: snapshot.
 	self assert: modification willBeLoaded;
 		applyDiffToWorkingCopy: modification;
 		assert: (workingCopy artifactAt: 'obj') isLoaded;

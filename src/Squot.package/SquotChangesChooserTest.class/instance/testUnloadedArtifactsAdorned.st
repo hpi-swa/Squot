@@ -1,10 +1,10 @@
 tests unloaded artifacts
-testUnloadedArtifactsDisplayedInBrackets
+testUnloadedArtifactsAdorned
 	| path acceptReturned mock |
 	path := 'artifact'.
 	tool := self newToolOn: (self patchChangingUnloadedArtifactAt: path).
 	tool selectNode: tool rootNodes first.
-	self assert: ('( * )' match: (tool nodeLabelOf: tool selectedNode) asString).
+	self assert: ('*(*not loaded*)' match: (tool nodeLabelOf: tool selectedNode) asString).
 	self closeDialogPossiblyOpenedDuring: [tool accept. acceptReturned := true]
 		timeoutMsecs: 5.
 	self assert: acceptReturned == true.

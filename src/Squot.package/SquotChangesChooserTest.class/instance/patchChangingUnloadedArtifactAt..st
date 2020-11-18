@@ -1,7 +1,12 @@
 test objects
 patchChangingUnloadedArtifactAt: path
+	| artifact changed |
+	artifact := SquotArtifactMock path: path.
+	changed := artifact copy.
+	artifact whenContentComparedWith: changed return: [SquotArtifactContentDiffMock new].
 	^ (SquotWorkingCopy forTestInMemory
-		addUnloaded: (SquotArtifactMock new path: path; yourself);
+		addUnloaded: artifact;
 		newPatchBuilder)
-			addDiff: ((SquotArtifactDiffMock path: path) willBeLoaded: false; yourself);
+			addDiff: (SquotArtifactModification left: artifact right: changed
+				"Note: not sending leftIsLoaded!");
 			buildPatch

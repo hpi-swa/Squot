@@ -1,3 +1,3 @@
 testing
 willBeLoaded
-	^ true "This is no artifact addition, something is already loaded."
+	^ willBeLoaded or: [self workingIsLoaded]

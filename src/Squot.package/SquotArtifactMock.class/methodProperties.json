@@ -4,10 +4,12 @@
 	"instance" : {
 		"capture" : "jr 10/18/2020 14:40",
 		"content" : "jr 7/30/2019 01:03",
+		"copyWithDiffApplied:" : "jr 11/18/2020 17:12",
 		"defaultMergeBlock" : "jr 8/4/2019 00:37",
 		"diffAgainst:" : "jr 7/29/2019 23:28",
 		"diffBlock:" : "jr 6/8/2019 12:37",
 		"diffContentAgainstThatOf:" : "jr 7/29/2019 23:42",
+		"diffContentAgainstThatOf:withBase:" : "jr 11/18/2020 17:23",
 		"isLoadable" : "jr 8/18/2018 18:27",
 		"isLoadable:" : "jr 8/18/2018 18:27",
 		"materializeBlock" : "jr 8/18/2018 18:30",

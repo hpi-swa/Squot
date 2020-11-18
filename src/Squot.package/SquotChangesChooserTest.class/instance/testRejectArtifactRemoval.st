@@ -3,7 +3,7 @@ testRejectArtifactRemoval
 	| path acceptReturned |
 	path := 'removed-artifact'.
 	tool := self newToolOn: (self patchRemovingArtifactAt: path).
-	self assert: #('removed-artifact (removed)' 'Changed load order') equals: (tool rootNodes collect: [:each | tool nodeLabelOf: each]) asArray.
+	self assert: #('removed-artifact (removed)' 'Changed load order') equals: (tool rootNodes collect: [:each | (tool nodeLabelOf: each) asString]) asArray.
 	tool selectNode: tool rootNodes first.
 	tool deactivateSelectedNode.
 	self closeDialogPossiblyOpenedDuring: [tool accept. acceptReturned := true]

@@ -10,9 +10,9 @@ diffNodeMenuHook: aMenu
 		ifFalse: [self selectedNode isActive
 			ifTrue: [aMenu add: self deactivateNodeCommandLabel action: #deactivateSelectedNode]
 			ifFalse: [aMenu add: self activateNodeCommandLabel action: #activateSelectedNode]].
+	self addUnloadedArtifactMenuItems: aMenu.
 	self selectedNode isArtifactNode ifTrue:
-		[self addUnloadedArtifactMenuItems: aMenu.
-		aMenu
+		[aMenu
 			add: 'Move up in load order' action: #moveUpSelectedInLoadOrder;
 			add: 'Move down in load order' action: #moveDownSelectedInLoadOrder].
 	aMenu addLine.

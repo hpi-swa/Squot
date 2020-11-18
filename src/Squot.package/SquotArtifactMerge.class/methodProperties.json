@@ -2,6 +2,7 @@
 	"class" : {
 		 },
 	"instance" : {
+		"adornedDiffNodeTitle:" : "jr 11/18/2020 18:14",
 		"asDiffTree" : "jr 12/22/2019 23:24",
 		"base:" : "jr 7/30/2019 21:51",
 		"chooseIncoming" : "jr 8/14/2019 20:29",
@@ -16,15 +17,16 @@
 		"hasChanges" : "jr 7/29/2019 23:57",
 		"hasConflicts" : "jr 7/30/2019 00:45",
 		"incoming:" : "jr 7/30/2019 21:50",
-		"initialize" : "jr 7/30/2019 01:06",
+		"initialize" : "jr 11/18/2020 18:14",
 		"mayAffectArtifact" : "jr 11/6/2020 23:38",
 		"mergeOfTrackedObject" : "jr 8/14/2019 19:50",
 		"metadataDiffNodes" : "jr 8/14/2019 19:26",
 		"modifications" : "jr 7/30/2019 01:37",
 		"path" : "jr 8/4/2019 20:47",
-		"privateResolvedPatch" : "jr 9/25/2019 16:30",
+		"privateResolvedPatch" : "jr 11/18/2020 19:05",
 		"resetChoice" : "jr 8/14/2019 21:35",
 		"setUpTreeRoot:toEditMerge:" : "jr 8/15/2019 00:31",
 		"squotChangeAsStringOrText" : "jr 5/8/2020 20:54",
-		"willBeLoaded" : "jr 10/4/2020 17:52",
-		"working:" : "jr 7/30/2019 21:50" } }
+		"willBeLoaded" : "jr 11/18/2020 18:16",
+		"working:" : "jr 7/30/2019 21:50",
+		"workingIsLoaded" : "jr 11/18/2020 19:04" } }

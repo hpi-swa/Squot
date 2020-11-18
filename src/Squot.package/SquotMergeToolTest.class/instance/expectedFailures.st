@@ -1,3 +1,6 @@
 failures
 expectedFailures
-	^ super expectedFailures, {#testUnloadedArtifactsAdorned "Merge targets are still assumed to be always loaded"}
+	^ super expectedFailures, {
+		"Merge targets are still assumed to be always loaded"
+		#testUnloadedArtifactsAdorned. #testLoadUnloadedArtifact. #testLoadUnloadedArtifactDuringModification. #testLeaveUnloadedArtifactUnloaded.
+	}

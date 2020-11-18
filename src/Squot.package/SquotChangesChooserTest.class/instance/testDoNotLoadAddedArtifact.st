@@ -6,7 +6,8 @@ testDoNotLoadAddedArtifact
 	tool selectNode: tool rootNodes first.
 	self assert: (self treeViewMenuIncludesAction: #toggleLoadSelectedNode).
 	tool toggleLoadSelectedNode.
-	self assert: ('do not load * (added)' match: (tool nodeLabelOf: tool selectedNode) asString).
+	self assert: ('do not load * (added)' match: (tool nodeLabelOf: tool selectedNode) asString);
+		assert: (self treeViewMenuIncludesAction: #toggleLoadSelectedNode).
 	self
 		closeDialogPossiblyOpenedDuring: 
 			[tool accept.

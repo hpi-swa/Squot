@@ -3,7 +3,7 @@
 		 },
 	"instance" : {
 		"diffAt:in:" : "jr 8/15/2019 03:02",
-		"expectedFailures" : "jr 11/18/2020 19:09",
+		"expectedFailures" : "jr 11/18/2020 21:02",
 		"includesDiffAt:in:" : "jr 8/15/2019 01:22",
 		"loadOrderHasChanges" : "jr 11/3/2020 16:44",
 		"newToolOn:" : "jr 5/2/2020 01:49",

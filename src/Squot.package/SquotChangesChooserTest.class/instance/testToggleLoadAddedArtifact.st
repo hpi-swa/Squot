@@ -7,7 +7,7 @@ testToggleLoadAddedArtifact
 	self assert: (self treeViewMenuIncludesAction: #toggleLoadSelectedNode).
 	tool toggleLoadSelectedNode;
 		toggleLoadSelectedNode.
-	self deny: ('( * )' match: (tool nodeLabelOf: tool selectedNode) asString).
+	self deny: ('do not load *' match: (tool nodeLabelOf: tool selectedNode) asString).
 	self closeDialogPossiblyOpenedDuring: [tool accept. acceptReturned := true]
 		timeoutMsecs: 5.
 	self assert: acceptReturned == true.

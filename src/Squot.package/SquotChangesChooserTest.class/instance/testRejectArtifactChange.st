@@ -9,4 +9,4 @@ testRejectArtifactChange
 	self closeDialogPossiblyOpenedDuring: [tool accept. acceptReturned := true]
 		timeoutMsecs: 5.
 	self assert: acceptReturned == true.
-	self deny: (self resultIncludesDiffAt: path).
+	self deny: (self resultHasChangesAt: path).

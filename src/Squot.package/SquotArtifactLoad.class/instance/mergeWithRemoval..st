@@ -1,3 +1,4 @@
-patching
+merging
 mergeWithRemoval: anArtifactRemoval
-	self shouldNotImplement. "I bear no changes except for loading an unchanged artifact."
+	"I simply say that the artifact was not loaded, not that there were changes. Therefore, the removal takes precedence."
+	^ anArtifactRemoval

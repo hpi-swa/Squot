@@ -6,24 +6,17 @@ patchChangingUnloadedArtifactAt: path
 		addUnloaded: artifact;
 		yourself.
 	changedArtifact := artifact copy.
-	diff := SquotArtifactDiffMock path: path.
+	contentDiff := SquotArtifactContentDiffMock new.
+	contentMerge := SquotGraphMergeMock resolvedPatch: contentDiff.
+	artifact
+		whenContentComparedWith: changedArtifact return: [contentDiff];
+		whenContentMergedWith: changedArtifact return: [contentMerge].
+	diff := SquotArtifactModification left: artifact right: changedArtifact.
 	artifact
 		whenComparedWith: changedArtifact return: [diff];
-		whenComparedWith: (workingCopy artifactAt: path) return: [SquotDiffOfEqualObjects instance];
-		whenComparedWith: artifact return: [SquotDiffOfEqualObjects instance].
-	contentDiff := SquotDiffMock new.
-	contentMerge := SquotGraphMergeMock resolvedPatch: contentDiff.
-	artifact whenContentComparedWith: changedArtifact return: [contentMerge].
-	diff whenMergedWith: (workingCopy artifactAt: path)
-		return: [SquotArtifactMerge
-					into: (workingCopy artifactAt: path)
-					merge: changedArtifact
-					basedOn: artifact]
-					"hasConflicts: false;
-					incoming: changedArtifact;
-					returnAsResolvedPatch: [diff];
-					willBeLoaded: false;
-					yourself]".
+		whenComparedWith: (workingCopy artifactAt: path) return: [(SquotArtifactLoad of: (workingCopy artifactAt: path)) toggleWhetherToLoad; yourself];
+		whenComparedWith: artifact return: [SquotDiffOfEqualObjects instance];
+		whenMergeWith: changedArtifact return: [SquotArtifactMerge into: (workingCopy artifactAt: path) merge: changedArtifact basedOn: artifact].
 	^ SquotMerge
 		into: workingCopy
 		merge: (SquotSnapshot builder add: changedArtifact; buildSnapshot)

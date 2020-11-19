@@ -1,3 +1,6 @@
-patching
+merging
 mergeWith: anArtifactDiff
-	self shouldNotImplement. "I bear no changes except for loading an unchanged artifact."
+	self assert: self left artifact "<-- difference to super method" = anArtifactDiff left.
+	self assert: self path = anArtifactDiff path.
+	"double dispatch"
+	^ anArtifactDiff mergeWithLoad: self

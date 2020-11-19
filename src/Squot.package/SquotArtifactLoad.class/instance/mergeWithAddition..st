@@ -1,3 +1,3 @@
-patching
+merging
 mergeWithAddition: anArtifactAddition
-	self shouldNotImplement. "I bear no changes except for loading an unchanged artifact."
+	self shouldNotImplement. "I say the artifact already existed, the addition says it did not."

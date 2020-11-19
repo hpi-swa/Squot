@@ -1,17 +1,11 @@
 test objects
 patchChangingArtifactAt: path
-	| artifact changedArtifact |
+	| artifact incoming |
 	artifact := SquotArtifact new path: path; content: SquotArtifactContentMock new.
-	changedArtifact := artifact copyWithDifferentContent: SquotArtifactContentMock new.
-	artifact content
-		whenComparedReturnMock;
-		whenComparedWith: artifact content
-		return: SquotDiffOfEqualObjects new;
-		whenMergedReturn: (SquotMergeMock new
-			hasConflicts: false;
-			working: artifact content;
-			incoming: changedArtifact content;
-			yourself).
-	^ SquotMerge into: (SquotSnapshot builder add: artifact; buildSnapshot)
-		merge: (SquotSnapshot builder add: changedArtifact; buildSnapshot)
-		basedOn: (SquotSnapshot builder add: artifact; buildSnapshot)
+	workingCopy := SquotWorkingCopy forTestInMemory.
+	workingCopy add: (ValueHolder new contents: 2; yourself) at: path.
+	incoming := workingCopy lazySnapshot artifactsDo: [:each | each capture].
+	(workingCopy objectAt: path) contents: 1.
+	^ SquotMerge into: workingCopy
+		merge: incoming
+		basedOn: workingCopy lazySnapshot

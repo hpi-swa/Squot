@@ -9,7 +9,7 @@
 		"diffAgainst:" : "jr 7/29/2019 23:28",
 		"diffBlock:" : "jr 6/8/2019 12:37",
 		"diffContentAgainstThatOf:" : "jr 7/29/2019 23:42",
-		"diffContentAgainstThatOf:withBase:" : "jr 11/18/2020 17:23",
+		"diffContentAgainstThatOf:withBase:" : "jr 11/19/2020 16:24",
 		"isLoadable" : "jr 8/18/2018 18:27",
 		"isLoadable:" : "jr 8/18/2018 18:27",
 		"materializeBlock" : "jr 8/18/2018 18:30",
@@ -17,6 +17,7 @@
 		"materializeWith:replacing:" : "jr 8/18/2018 18:32",
 		"mergeBlock" : "jr 7/29/2019 23:17",
 		"mergeBlock:" : "jr 7/29/2019 23:17",
+		"mergeDiffWith:basedOn:" : "jr 11/19/2020 16:13",
 		"mergeWithoutBaseWith:" : "jr 7/29/2019 23:56",
 		"path" : "jr 8/18/2018 18:25",
 		"path:" : "jr 8/18/2018 18:25",
@@ -27,4 +28,5 @@
 		"storeInfo:" : "jr 8/18/2018 18:27",
 		"whenComparedWith:return:" : "jr 7/29/2019 23:30",
 		"whenContentComparedWith:return:" : "jr 7/29/2019 23:44",
+		"whenContentMergedWith:return:" : "jr 11/19/2020 16:23",
 		"whenMergeWith:return:" : "jr 7/29/2019 23:27" } }

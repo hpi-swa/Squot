@@ -1,3 +1,3 @@
 testing
 workingIsLoaded
-	^ true "(working respondsTo: #isLoaded) and: [working isLoaded]"
+	^ (working respondsTo: #isLoaded) and: [working isLoaded]

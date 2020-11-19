@@ -1,7 +1,11 @@
 test objects
 patchChangingArtifactAt: path
-	^ (SquotSnapshot builder 
-		add: (SquotArtifactMock new path: path; yourself);
-		newPatchBuilder)
-			addDiff: (SquotArtifactDiffMock path: path);
-			buildPatch
+	| object changed |
+	workingCopy := SquotWorkingCopy forTestInMemory.
+	object := ValueHolder new contents: 1; yourself.
+	workingCopy add: object at: path.
+	changed := object copy.
+	changed contents: 2.
+	^ (SquotImageStore new add: changed at: path; captureSnapshot)
+		patchRelativeToBase:
+			workingCopy

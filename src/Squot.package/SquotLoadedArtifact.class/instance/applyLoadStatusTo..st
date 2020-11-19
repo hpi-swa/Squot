@@ -1,3 +1,3 @@
 comparing
 applyLoadStatusTo: anArtifactDiff
-	anArtifactDiff leftIsLoaded.
+	anArtifactDiff setLoadedInWorkingCopy.

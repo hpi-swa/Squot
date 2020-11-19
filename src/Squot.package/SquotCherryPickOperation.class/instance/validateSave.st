@@ -1,3 +1,3 @@
 applying
 validateSave
-	self saveOperation validate.
+	self saveOperation validateForCherryPick.

@@ -1,6 +1,6 @@
 *Squot-Tools
 adornedDiffNodeTitle: aString
-	^ leftIsLoaded
+	^ isLoadedInWorkingCopy
 		ifTrue: [super adornedDiffNodeTitle: aString]
 		ifFalse:
 			[self willBeLoaded

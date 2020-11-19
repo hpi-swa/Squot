@@ -5,5 +5,5 @@ privateResolvedPatch
 		right: incoming;
 		diffContent: graphMerge resolvedPatch;
 		updateRightArtifact;
-		leftIsLoaded;
+		setLoadedInWorkingCopy;
 		yourself

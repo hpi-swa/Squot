@@ -1,3 +1,3 @@
 testing
 willBeLoaded
-	^ willBeLoaded ifNil: [leftIsLoaded]
+	^ willBeLoaded ifNil: [isLoadedInWorkingCopy]

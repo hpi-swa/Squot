@@ -8,7 +8,7 @@
 	"instvars" : [
 		"left",
 		"right",
-		"leftIsLoaded" ],
+		"isLoadedInWorkingCopy" ],
 	"name" : "SquotArtifactDiff",
 	"pools" : [
 		 ],

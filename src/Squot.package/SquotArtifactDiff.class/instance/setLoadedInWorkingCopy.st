@@ -1,0 +1,3 @@
+accessing
+setLoadedInWorkingCopy
+	isLoadedInWorkingCopy := true.

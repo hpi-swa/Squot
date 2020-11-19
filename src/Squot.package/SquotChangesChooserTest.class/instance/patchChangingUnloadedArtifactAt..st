@@ -8,5 +8,5 @@ patchChangingUnloadedArtifactAt: path
 		addUnloaded: artifact;
 		newPatchBuilder)
 			addDiff: (SquotArtifactModification left: artifact right: changed
-				"Note: not sending leftIsLoaded!");
+				"Note: not sending setLoadedInWorkingCopy!");
 			buildPatch

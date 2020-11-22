@@ -4,16 +4,16 @@ testLeaveUnloadedArtifactUnloaded
 	| store artifact path patch acceptReturned |
 	workingCopy := SquotWorkingCopy forTestInMemory.
 	path := 'artifact'.
-	artifact := SquotArtifactMock path: path.
-	artifact whenComparedWith: artifact return: [SquotDiffOfEqualObjects instance].
 	store := SquotImageStore new.
-	store add: (ValueHolder new contents: 1) at: 'changed'.
+	store add: (ValueHolder new contents: 1) at: 'changed';
+		add: Object new at: path.
+	artifact := (store artifactAt: path) capture.
 	workingCopy addUnloaded: artifact;
 		addUnloaded: (store artifactAt: 'changed') capture;
 		saveVersionWithMessage: 'Add artifact'.
 	(store objectAt: 'changed') contents: 2.
 	workingCopy applyDiff: (((workingCopy artifactAt: 'changed') diffAgainst: (store artifactAt: 'changed'))).
-	patch := workingCopy lazySnapshot patchRelativeToBase: workingCopy baseVersion.
+	patch := self workingCopySavePatch.
 	tool := self newToolOn: patch.
 	self assert: (tool rootNodes noneSatisfy: [:each | each title asString includesSubstring: 'artifact']).
 	tool selectNode: tool rootNodes first.

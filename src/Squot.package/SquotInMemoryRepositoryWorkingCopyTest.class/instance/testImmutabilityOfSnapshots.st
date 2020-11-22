@@ -1,4 +1,4 @@
-testing
+tests
 testImmutabilityOfSnapshots
 	| firstVersion secondVersion |
 	self workingCopy

@@ -1,3 +1,4 @@
 accessing
 message: aString
-	self saveOperation message: aString.
+	message := aString.
+	save ifNotNil: [save message: aString].

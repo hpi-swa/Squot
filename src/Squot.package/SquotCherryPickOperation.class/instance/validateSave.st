@@ -1,3 +1,0 @@
-applying
-validateSave
-	self saveOperation validateForCherryPick.

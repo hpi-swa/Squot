@@ -2,7 +2,7 @@ private
 addDiff: aDiff
 	(aDiff isBasedOn: base)
 		ifTrue: [diffs at: aDiff path put: aDiff]
-		ifFalse: ["trying to apply a diff to a different base"
+		ifFalse: ["trying to apply a diff to a different base, happens when saving changes after merges (including cherry picks)"
 				diffs at: aDiff path put:
 					(aDiff rebaseOn: base)].
 	aDiff isAddition ifFalse: [(originalLoadOrder includes: aDiff path)

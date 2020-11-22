@@ -1,3 +1,3 @@
 comparing
 hash
-	^ artifact hash
+	^ workingCopy hash hashMultiply bitXor: artifact hash

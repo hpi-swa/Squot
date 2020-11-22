@@ -10,7 +10,8 @@
 		"relevantParentOfPickedVersion",
 		"merge",
 		"loadedPatch",
-		"save" ],
+		"save",
+		"message" ],
 	"name" : "SquotCherryPickOperation",
 	"pools" : [
 		 ],

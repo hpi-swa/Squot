@@ -9,7 +9,7 @@ createNewVersionFromPatch: aPatch with: aBlock
 		in: aBlock;
 		yourself.
 	version parents: version parents asArray. "ideally, freeze it"
-	version snapshot: (version parentSnapshot applyPatch: aPatch).
+	version snapshot: (version parentSnapshot applyPatch: aPatch) snapshot.
 	version metadata
 		at: #author ifAbsentPut: [SquotAuthorRequest signal];
 		at: #committer ifAbsentPut: [SquotCommitterRequest signal];

@@ -2,7 +2,7 @@
 	"class" : {
 		 },
 	"instance" : {
-		"=" : "jr 11/6/2020 23:58",
+		"=" : "jr 11/21/2020 01:11",
 		"browse" : "jr 12/23/2019 14:39",
 		"capture" : "jr 7/16/2017 03:06",
 		"content" : "jr 1/27/2017 15:03",
@@ -24,5 +24,6 @@
 		"putArtifactClassInStoreInfo" : "jr 3/8/2017 15:55",
 		"serializer:" : "jr 9/26/2020 18:18",
 		"shadowOfTrackedObject" : "jr 8/2/2020 15:31",
+		"snapshot" : "jr 11/22/2020 15:53",
 		"storeInfo" : "jr 1/27/2017 15:03",
 		"storeInfo:" : "jr 1/27/2017 15:03" } }

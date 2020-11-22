@@ -2,10 +2,8 @@
 	"class" : {
 		"wrapping:" : "jr 9/26/2020 17:24" },
 	"instance" : {
-		"=" : "jr 11/6/2020 23:14",
 		"applyLoadStatusTo:" : "jr 11/4/2020 12:17",
 		"diffAgainst:" : "jr 11/5/2020 18:05",
-		"hash" : "jr 11/6/2020 23:13",
 		"isLoaded" : "jr 9/26/2020 21:02",
 		"load" : "jr 11/4/2020 14:29",
 		"printOn:" : "jr 10/4/2020 21:18",

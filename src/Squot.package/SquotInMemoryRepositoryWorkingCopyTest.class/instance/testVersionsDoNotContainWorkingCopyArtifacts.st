@@ -1,4 +1,4 @@
-testing
+tests
 testVersionsDoNotContainWorkingCopyArtifacts
 	| firstVersion |
 	self workingCopy

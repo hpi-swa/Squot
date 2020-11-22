@@ -8,7 +8,9 @@
 		"testAdditionsCanBeUnloaded" : "jr 11/7/2020 23:22",
 		"testDiffTwoPackageArtifacts" : "jr 11/18/2020 19:06",
 		"testLoadedWorkingCopyArtifactsWillBeLoaded" : "jr 11/18/2020 18:29",
+		"testLoadedWorkingCopyArtifactsWillBeLoaded2" : "jr 11/22/2020 21:55",
 		"testLoadsCanBeDisabled" : "jr 11/7/2020 23:24",
 		"testLoadsWillBeLoaded" : "jr 11/7/2020 23:26",
 		"testUnloadedWorkingCopyArtifactRemovalsWillNotBeLoaded" : "jr 11/7/2020 23:27",
-		"testUnloadedWorkingCopyArtifactsWillNotBeLoaded" : "jr 11/7/2020 23:30" } }
+		"testUnloadedWorkingCopyArtifactsWillNotBeLoaded" : "jr 11/22/2020 21:57",
+		"testUnloadedWorkingCopyArtifactsWillNotBeLoaded2" : "jr 11/22/2020 21:57" } }

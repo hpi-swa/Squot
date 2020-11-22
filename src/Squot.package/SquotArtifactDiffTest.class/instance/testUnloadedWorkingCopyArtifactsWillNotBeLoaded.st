@@ -5,7 +5,7 @@ testUnloadedWorkingCopyArtifactsWillNotBeLoaded
 	(workingCopy objectAt: 'obj') contents: 2.
 	snapshot2 := (workingCopy artifactAt: 'obj') capture.
 	workingCopy removeAt: 'obj'; addUnloaded: snapshot2.
-	modification := SquotArtifactModification left: (workingCopy artifactAt: 'obj') right: snapshot1.
+	modification := (workingCopy artifactAt: 'obj') diffAgainst: snapshot1.
 	self deny: modification willBeLoaded;
 		applyDiffToWorkingCopy: modification;
 		deny: (workingCopy artifactAt: 'obj') isLoaded;

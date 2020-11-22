@@ -12,7 +12,7 @@
 		"computeDifferences" : "jr 11/7/2020 10:47",
 		"conflicts" : "jr 7/30/2019 21:24",
 		"copy:withOrder:" : "jr 11/1/2020 19:38",
-		"createDiffOrMergeTreeNodeWithWorkingOrder:incomingOrder:" : "jr 11/3/2020 21:15",
+		"createDiffOrMergeTreeNodeWithWorkingOrder:incomingOrder:" : "jr 11/23/2020 00:12",
 		"detectConflicts" : "jr 11/4/2020 00:18",
 		"hasChanges" : "jr 11/1/2020 19:30",
 		"insert:into:afterPredecessorsIn:" : "jr 10/31/2020 15:00",

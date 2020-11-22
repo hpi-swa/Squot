@@ -8,9 +8,10 @@ createDiffOrMergeTreeNodeWithWorkingOrder: workingLoadOrderBlock incomingOrder: 
 				onInclude: [self chooseIncoming]
 				onExclude: [self chooseWorking]
 				onReset: [self resetChoice]]
-		ifFalse: [SquotDiffNode
+		ifFalse: [SquotMergeDiffNode
 				title: 'Changed load order'
 				content: self
 				children: #()
 				onInclude: [self newLoadOrder: incomingLoadOrderBlock value]
-				onExclude: [self newLoadOrder: workingLoadOrderBlock value]].
+				onExclude: [self newLoadOrder: workingLoadOrderBlock value]
+				onReset: [self newLoadOrder: incomingLoadOrderBlock value]].

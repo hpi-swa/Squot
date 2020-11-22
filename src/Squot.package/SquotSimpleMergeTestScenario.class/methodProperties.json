@@ -3,8 +3,8 @@
 		 },
 	"instance" : {
 		"assertSecondMethodUnmodifiedBy:with:" : "jr 1/5/2020 18:34",
-		"assertSecondMethodUnmodifiedWith:" : "jr 1/5/2020 18:36",
-		"assertThirdMethodLoadedWith:" : "jr 1/5/2020 19:17",
+		"assertSecondMethodUnmodifiedWith:" : "jr 11/22/2020 21:37",
+		"assertThirdMethodLoadedWith:" : "jr 11/22/2020 21:37",
 		"assertThirdMethodWillBeAdded:with:" : "jr 1/5/2020 19:17",
 		"classFactory" : "jr 10/24/2020 15:13",
 		"createFirstVersion" : "jr 8/29/2020 15:37",
@@ -29,4 +29,6 @@
 		"thirdMethod" : "jr 1/5/2020 18:17",
 		"thirdMethod:" : "jr 1/5/2020 18:17",
 		"thirdVersion" : "jr 1/5/2020 18:17",
-		"thirdVersion:" : "jr 1/5/2020 18:17" } }
+		"thirdVersion:" : "jr 1/5/2020 18:17",
+		"unloadPackage" : "jr 11/22/2020 21:34",
+		"updateSampleClass" : "jr 11/22/2020 21:37" } }

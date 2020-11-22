@@ -1,3 +1,3 @@
-accessing
+testing
 willBeLoaded
-	^ willBeLoaded ifNil: [true]
+	^ willBeLoaded ifNil: [isLoadedInWorkingCopy]

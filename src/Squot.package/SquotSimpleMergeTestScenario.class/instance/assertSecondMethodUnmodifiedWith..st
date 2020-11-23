@@ -2,6 +2,5 @@ asserting
 assertSecondMethodUnmodifiedWith: aTestCase
 	self updateSampleClass.
 	aTestCase
-		assert: secondMethod
-		equals: sampleClass >> #secondMethod
+		assert: (secondMethod equivalentTo: sampleClass >> #secondMethod)
 		description: 'second method unchanged'.

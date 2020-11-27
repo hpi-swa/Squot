@@ -1,4 +1,4 @@
-tests
+tests merging deprecated
 testOldMergeWithConflictsChooseRemote
 	self suppressChangeNotificationsDuring:
 	[scenario := SquotWorkingCopyTestMergeConflictScenario forTestCase: self.

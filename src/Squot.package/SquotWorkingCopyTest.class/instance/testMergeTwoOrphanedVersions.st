@@ -1,4 +1,4 @@
-tests
+tests merging
 testMergeTwoOrphanedVersions
 	"When merging two versions without ancestors, there is no base version. An empty snapshot should be assumed as the base, so nothing will be removed during the merge."
 	| operation merge |
@@ -17,4 +17,7 @@ testMergeTwoOrphanedVersions
 	"when"
 	operation applyToWorkingCopy].
 	"then"
-	self assert: workingCopy artifacts size = 2.
+	repository withUnitOfWork:
+		[self assert:
+			(workingCopy artifacts keys includesAllOf:
+				(scenario firstVersion artifacts keys, scenario secondVersion artifacts keys))].

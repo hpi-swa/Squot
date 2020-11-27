@@ -1,3 +1,6 @@
 accessing objects
 metadataForObjectAt: path
-	^ store metadataForObjectAt: path
+	^ (self unloadedArtifacts
+			at: path
+			ifAbsent: [^ store metadataForObjectAt: path])
+		storeInfo

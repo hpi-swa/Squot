@@ -3,7 +3,7 @@ testRejectArtifactAddition
 	| path acceptReturned |
 	path := 'conflicted-artifact'.
 	tool := self newToolOn: (self patchAddingArtifactAt: path).
-	self assert: tool rootNodes size = 1.
+	self assert: #('conflicted-artifact (added)' 'Changed load order') equals: (tool rootNodes collect: [:each | (tool nodeLabelOf: each) asString]) asArray.
 	tool selectNode: tool rootNodes first.
 	tool deactivateSelectedNode.
 	self closeDialogPossiblyOpenedDuring: [tool accept. acceptReturned := true]

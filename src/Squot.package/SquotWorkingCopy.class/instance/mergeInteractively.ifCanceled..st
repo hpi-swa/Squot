@@ -5,5 +5,5 @@ mergeInteractively: aMerge ifCanceled: aBlock
 		title: 'Merge'
 		ifCancelled: [^ aBlock value].
 	resolvedPatch := aMerge resolvedPatch.
-	store applyPatch: resolvedPatch.
+	self applyPatch: resolvedPatch.
 	^ resolvedPatch

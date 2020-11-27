@@ -1,4 +1,4 @@
-adding and removing
+*Squot-Packages
 registerPackagesInStore: aSnapshot
 	| packageArtifacts |
 	packageArtifacts := aSnapshot artifacts select: [:each | each isLoadable and: [each storeInfo objectClassName = #PackageInfo]].
@@ -8,8 +8,8 @@ registerPackagesInStore: aSnapshot
 		self assert: (repository validatePath: each path for: each) = each path
 			description: 'Paths in the snapshot must already be valid'.
 		packageName := each content startShadow packageName.
-		(store includesObjectAt: each path) ifFalse:
-			[store
+		(self includesObjectAt: each path) ifFalse:
+			[self
 				addLoadedPackageInfoNamed: packageName
 				at: each path
 				serializer: (Environment current valueOf: each storeInfo serializer)]].

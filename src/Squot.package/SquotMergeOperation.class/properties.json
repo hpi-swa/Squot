@@ -11,7 +11,8 @@
 		"merge",
 		"mergeBases",
 		"shouldAddParent",
-		"workingVersion" ],
+		"workingVersion",
+		"appliedPatch" ],
 	"name" : "SquotMergeOperation",
 	"pools" : [
 		 ],

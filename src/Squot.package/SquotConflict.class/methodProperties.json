@@ -11,6 +11,7 @@
 		"incoming" : "jr 7/30/2019 01:35",
 		"incoming:" : "jr 7/30/2019 01:35",
 		"isConflict" : "jr 9/25/2019 23:29",
+		"isMerge" : "jr 11/18/2020 16:02",
 		"isResolved" : "jr 7/30/2019 01:56",
 		"key" : "jr 7/30/2019 01:55",
 		"key:" : "jr 7/30/2019 01:55",
@@ -18,6 +19,7 @@
 		"resetChoice" : "jr 9/25/2019 23:33",
 		"resolution" : "jr 7/30/2019 01:35",
 		"resolution:" : "jr 7/30/2019 01:35",
+		"squotChangeAsStringOrText" : "jr 11/1/2020 18:48",
 		"squotToolsDiffNodeContent" : "jr 11/3/2019 16:21",
 		"working" : "jr 7/30/2019 01:35",
 		"working:" : "jr 7/30/2019 01:35" } }

@@ -1,4 +1,4 @@
-tests
+tests merging deprecated
 testOldMergeWithoutConflicts
 	scenario := SquotSimpleMergeTestScenario forTestCase: self.
 	"merge the version of the other historian"

@@ -1,15 +1,15 @@
 private
 addDiff: aDiff
-	aDiff hasChanges ifFalse: [^ self].
-	loadOrderDiff := nil.
-	(aDiff isAddition or: [(base artifactAt: aDiff path) = aDiff left])
+	(aDiff isBasedOn: base)
 		ifTrue: [diffs at: aDiff path put: aDiff]
-		ifFalse: ["trying to apply a diff to a different base"
+		ifFalse: ["trying to apply a diff to a different base, happens when saving changes after merges (including cherry picks)"
 				diffs at: aDiff path put:
 					(aDiff rebaseOn: base)].
 	aDiff isAddition ifFalse: [(originalLoadOrder includes: aDiff path)
-								ifFalse: [originalLoadOrder add: aDiff path]].
+								ifFalse: [originalLoadOrder add: aDiff path.
+										loadOrderMerge := nil]].
 	aDiff isRemoval
-		ifTrue: [patchedLoadOrder remove: aDiff path ifAbsent: []]
 		ifFalse: [(patchedLoadOrder includes: aDiff path)
-					ifFalse: [patchedLoadOrder add: aDiff path]].
+					ifFalse:
+						[patchedLoadOrder add: aDiff path.
+						self updateLoadOrder]].

@@ -10,9 +10,9 @@ testClassDefinitionBrowse
 		to: isolatedEnvironment.
 	"when the class definition change node is browsed"
 	((self rootNode children detect:
-		[:each | each title includesSubstring: existingMethod classSymbol caseSensitive: true])
+		[:each | each title asString includesSubstring: existingMethod classSymbol caseSensitive: true])
 		children detect:
-			[:each | each title includesSubstring: existingMethod classSymbol
+			[:each | each title asString includesSubstring: existingMethod classSymbol
 						caseSensitive: true]) browseInWorkingCopy.
 	"then"
 	self assert: SquotBrowseMockClass wasBrowsed.

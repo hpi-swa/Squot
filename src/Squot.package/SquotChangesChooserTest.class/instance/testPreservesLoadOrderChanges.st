@@ -1,4 +1,4 @@
-tests
+tests load order
 testPreservesLoadOrderChanges
 	| selectedPatch |
 	tool := self newToolOn: self patchWithLoadOrderChange.

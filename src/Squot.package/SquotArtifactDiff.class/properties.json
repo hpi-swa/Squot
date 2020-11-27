@@ -7,7 +7,8 @@
 	"commentStamp" : "jr 4/10/2017 23:49",
 	"instvars" : [
 		"left",
-		"right" ],
+		"right",
+		"isLoadedInWorkingCopy" ],
 	"name" : "SquotArtifactDiff",
 	"pools" : [
 		 ],

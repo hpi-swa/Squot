@@ -1,6 +1,7 @@
 actions
 browseInWorkingCopy
 	self content ifNotNil:
-		[:object |
+		[:object | | path |
+		path := self artifactDiff ifNotNil: [:diff | diff path].
 		object browseFromSquotWorkingCopyArtifact:
-			(self workingCopy artifactAt: self artifactDiff path)].
+			(path ifNotNil: [self workingCopy artifactAt: path] ifNil: [])].

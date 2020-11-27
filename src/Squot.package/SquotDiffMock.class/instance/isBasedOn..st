@@ -1,0 +1,3 @@
+testing
+isBasedOn: anObjectContainer
+	^ true

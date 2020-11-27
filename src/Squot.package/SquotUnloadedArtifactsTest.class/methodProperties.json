@@ -1,0 +1,7 @@
+{
+	"class" : {
+		 },
+	"instance" : {
+		"testLazyArtifactsAreEvaluatedWhenAdded" : "jr 11/21/2020 16:13",
+		"testMergeWithLocalChangesToUnloadedArtifact" : "jr 11/27/2020 01:11",
+		"testMergeWithUnloadedArtifact" : "jr 11/27/2020 01:14" } }

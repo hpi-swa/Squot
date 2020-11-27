@@ -3,4 +3,4 @@ initialize
 	diffs := Dictionary new.
 	originalLoadOrder := OrderedCollection new.
 	patchedLoadOrder := OrderedCollection new.
-	loadOrderDiff := nil.
+	loadOrderMerge := nil.

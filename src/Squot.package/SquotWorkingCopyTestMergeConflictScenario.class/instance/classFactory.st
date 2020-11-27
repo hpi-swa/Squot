@@ -1,0 +1,4 @@
+accessing
+classFactory
+	
+	^ classFactory

@@ -11,7 +11,9 @@
 		"diffTreeNodes",
 		"incoming",
 		"working",
-		"base" ],
+		"base",
+		"willBeLoaded",
+		"resolvedPatchBlock" ],
 	"name" : "SquotMergeMock",
 	"pools" : [
 		 ],

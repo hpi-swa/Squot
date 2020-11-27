@@ -5,6 +5,7 @@
 		"setUp" : "jr 6/17/2017 19:58",
 		"testArrayOfIntegers" : "jr 7/20/2017 22:07",
 		"testBooleans" : "jr 9/25/2019 15:47",
+		"testCaptureAgainProducesEqualGraph" : "jr 11/1/2020 18:24",
 		"testCompiledMethod" : "jr 10/15/2017 16:49",
 		"testCyclicReferences" : "jr 7/20/2017 22:08",
 		"testCyclicReferences2" : "jr 7/20/2017 22:08",

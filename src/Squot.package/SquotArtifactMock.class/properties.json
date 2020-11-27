@@ -13,7 +13,8 @@
 		"diffBlock",
 		"mergeBlock",
 		"diffContentBlock",
-		"content" ],
+		"content",
+		"mergeContentBlock" ],
 	"name" : "SquotArtifactMock",
 	"pools" : [
 		 ],

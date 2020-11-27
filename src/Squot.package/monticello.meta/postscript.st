@@ -9,6 +9,10 @@ SquotArtifact allSubInstancesDo: [:each | each convertToCurrentVersion: nil refS
 SquotLiveArtifact allSubInstancesDo: [:each | each convertToCurrentVersion: nil refStream: nil].
 SquotImageStore allSubInstancesDo: [:each | each convertToCurrentVersion: nil refStream: nil].
 "2018-08-18 upgrade object containers to remember the preferred loading order of artifacts"
+"2020-09-26: Added variables to SquotWorkingCopy"
+SquotWorkingCopy allSubInstancesDo: [:each | each convertToCurrentVersion: nil refStream: nil].
+
 
 "2019-06-08 Clear caches after changing how SquotPackageShadows are decorated with names in snapshots"
-SquotWorkingCopy allInstancesDo: [:each | each flushPreviouslySavedArtifacts].'!
+SquotWorkingCopy allInstancesDo: [:each | each flushPreviouslySavedArtifacts].
+'!

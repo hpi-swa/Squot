@@ -1,1 +1,1 @@
-A conflict in the load orders of two containers. Temporary solution because more general facilities, such as tracking and merging a collection object, should be used to do this.
+A conflict in the load orders of two containers. See also SquotLoadOrderMerge.

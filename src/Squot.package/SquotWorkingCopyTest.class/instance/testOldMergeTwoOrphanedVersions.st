@@ -1,4 +1,4 @@
-tests
+tests merging deprecated
 testOldMergeTwoOrphanedVersions
 	"When merging two versions without ancestors, there is no base version. An empty snapshot should be assumed as the base, so nothing will be removed during the merge."
 	self suppressChangeNotificationsDuring:
@@ -13,4 +13,7 @@ testOldMergeTwoOrphanedVersions
 		request resume]
 	] valueSupplyingAnswers: {{'*'. #default}}].
 	"then"
-	self assert: workingCopy artifacts size = 2.
+	repository withUnitOfWork:
+		[self assert:
+			(workingCopy artifacts keys includesAllOf:
+				(scenario firstVersion artifacts keys, scenario secondVersion artifacts keys))].

@@ -1,4 +1,4 @@
-tests
+tests load order
 testMoveUpInLoadOrder
 	tool := self newToolOn: self patchWithTwoChangedArtifacts.
 	"when"

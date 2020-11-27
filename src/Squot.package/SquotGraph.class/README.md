@@ -1,0 +1,3 @@
+A directed graph of vertices (nodes) and weighted edges (relations of vertices). Weighted means that the same edge can appear multiple times in the graph.
+
+Implemented as an adjacency list in the instance variable "edges". The outgoing edges of a node are stored at the same index as the occurrence of the node in the instance variable "nodes". Each edge is an association of the target node and the weight (number of occurrences) of the edge.

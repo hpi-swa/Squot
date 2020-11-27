@@ -1,4 +1,4 @@
-tests
+tests merging
 testMergeWithConflictsChooseRemote
 	| operation |
 	self suppressChangeNotificationsDuring:

@@ -1,0 +1,14 @@
+{
+	"category" : "Squot-WorkingCopies",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "jr 9/26/2020 20:39",
+	"instvars" : [
+		 ],
+	"name" : "SquotUnloadedArtifact",
+	"pools" : [
+		 ],
+	"super" : "SquotWorkingCopyArtifact",
+	"type" : "normal" }

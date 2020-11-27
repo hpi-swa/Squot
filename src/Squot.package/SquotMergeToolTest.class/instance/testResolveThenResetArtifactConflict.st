@@ -19,7 +19,7 @@ testResolveThenResetArtifactConflict
 					add: artifact;
 					buildSnapshot).
 	self openToolAndTestOn: merge.
-	self assert: tool rootNodes size = 1.
+	self assert: #('conflicted-artifact (removed/changed)' 'Changed load order') equals: (tool rootNodes collect: [:each | (tool nodeLabelOf: each) asString]) asArray.
 	conflictNode := tool rootNodes anyOne.
 	conflictNode resetChoice.
 	self assert: conflictNode needsChoice.

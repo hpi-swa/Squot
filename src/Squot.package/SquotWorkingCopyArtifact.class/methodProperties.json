@@ -1,11 +1,21 @@
 {
 	"class" : {
-		"wrapping:in:" : "jr 12/7/2019 22:42" },
+		"wrapping:in:" : "jr 9/26/2020 18:09" },
 	"instance" : {
-		"browse" : "jr 12/22/2019 23:59",
-		"doesNotUnderstand:" : "jr 12/7/2019 21:59",
-		"serializer:" : "jr 12/7/2019 22:55",
-		"storeArtifact" : "jr 12/7/2019 21:59",
-		"storeArtifact:" : "jr 12/7/2019 21:59",
+		"=" : "jr 11/21/2020 01:16",
+		"applyLoadStatusTo:" : "jr 11/4/2020 12:16",
+		"artifact" : "jr 11/6/2020 23:14",
+		"artifact:" : "jr 11/6/2020 23:14",
+		"browse" : "jr 9/26/2020 18:04",
+		"capture" : "jr 11/20/2020 22:44",
+		"diffAgainst:" : "jr 11/4/2020 12:16",
+		"doesNotUnderstand:" : "jr 9/26/2020 18:04",
+		"hash" : "jr 11/6/2020 23:13",
+		"isLoaded" : "jr 9/26/2020 21:01",
+		"mergeWithoutBaseWith:" : "jr 11/22/2020 22:34",
+		"serializer:" : "jr 9/26/2020 18:29",
+		"setArtifact:workingCopy:" : "jr 9/26/2020 18:09",
+		"snapshot" : "jr 11/22/2020 15:57",
+		"updatePath" : "jr 9/26/2020 18:23",
 		"workingCopy" : "jr 12/7/2019 22:00",
 		"workingCopy:" : "jr 12/7/2019 22:00" } }

@@ -1,4 +1,4 @@
-tests
+tests merging
 testMergeWithoutConflicts
 	| operation merge |
 	scenario := SquotSimpleMergeTestScenario forTestCase: self.

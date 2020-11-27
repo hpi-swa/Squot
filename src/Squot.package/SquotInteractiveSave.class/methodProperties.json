@@ -2,6 +2,7 @@
 	"class" : {
 		 },
 	"instance" : {
-		"applyToWorkingCopy" : "jr 6/27/2020 10:32",
+		"applyToWorkingCopy" : "jr 11/19/2020 13:32",
 		"chooseChanges" : "jr 6/8/2020 21:21",
-		"validate" : "jr 5/22/2020 16:00" } }
+		"validate" : "jr 11/19/2020 13:02",
+		"validateForCherryPick" : "jr 11/19/2020 13:01" } }

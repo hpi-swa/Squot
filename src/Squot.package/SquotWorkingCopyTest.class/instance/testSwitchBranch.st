@@ -1,4 +1,4 @@
-tests
+tests branch switching
 testSwitchBranch
 	| trackedObject class originalHistorian otherHistorian |
 	"given"

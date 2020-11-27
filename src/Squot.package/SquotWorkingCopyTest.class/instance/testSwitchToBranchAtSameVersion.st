@@ -1,4 +1,4 @@
-tests
+tests branch switching
 testSwitchToBranchAtSameVersion
 	| trackedObject originalHistorian otherHistorian |
 	"given"

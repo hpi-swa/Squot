@@ -2,10 +2,13 @@
 	"class" : {
 		 },
 	"instance" : {
-		"computeDifferences" : "jr 8/22/2019 00:38",
+		"addLoadOrderDiffTreeTo:" : "jr 11/3/2020 21:58",
+		"computeDifferences" : "jr 11/27/2020 00:29",
 		"conflicts" : "jr 7/30/2019 21:23",
+		"customizedLoadOrder" : "jr 11/3/2020 20:50",
 		"keyOf:ifAbsent:" : "jr 7/30/2019 21:21",
+		"loadOrderMerge" : "jr 11/3/2020 16:27",
 		"mergeAt:" : "jr 8/3/2019 21:24",
 		"newLoadOrder" : "jr 8/15/2019 13:57",
-		"newLoadOrder:" : "jr 8/15/2019 13:58",
-		"privateResolvedPatch" : "jr 7/30/2019 02:10" } }
+		"newLoadOrder:" : "jr 11/3/2020 17:08",
+		"privateResolvedPatch" : "jr 11/6/2020 23:23" } }

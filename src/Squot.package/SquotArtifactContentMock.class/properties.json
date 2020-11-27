@@ -9,7 +9,8 @@
 		"id",
 		"diffBlock",
 		"mergeBlock",
-		"names" ],
+		"names",
+		"materializeBlock" ],
 	"name" : "SquotArtifactContentMock",
 	"pools" : [
 		 ],

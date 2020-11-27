@@ -1,4 +1,4 @@
-tests
+tests merging
 testMergeWithRemovedArtifactOnBothSides
 	"When an artifact is removed in both branches, then merging them should let it stay removed without a conflict."
 	| baseVersion leftVersion rightVersion merge operation |

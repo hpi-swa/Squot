@@ -1,3 +1,3 @@
 *Squot-Tools
 browse
-	^ storeArtifact browse
+	^ artifact browse

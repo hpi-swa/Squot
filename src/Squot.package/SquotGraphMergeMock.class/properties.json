@@ -6,7 +6,9 @@
 		 ],
 	"commentStamp" : "",
 	"instvars" : [
-		"hasChanges" ],
+		"hasChanges",
+		"patch",
+		"choice" ],
 	"name" : "SquotGraphMergeMock",
 	"pools" : [
 		 ],

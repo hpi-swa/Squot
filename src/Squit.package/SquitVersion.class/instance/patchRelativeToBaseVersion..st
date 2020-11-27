@@ -20,5 +20,5 @@ patchRelativeToBaseVersion: baseSquitVersion
 			patchBuilder diffPath: each from: baseSnapshot to: mySnapshot].
 		deletedPaths do:
 			[:each | progress stepWithText: each.
-			patchBuilder removeArtifact: (baseSnapshot artifactAt: each)].
+			patchBuilder addDiff: (SquotArtifactRemoval of: (baseSnapshot artifactAt: each))].
 		^ patchBuilder buildPatch]

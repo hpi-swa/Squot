@@ -1,0 +1,3 @@
+tests unloaded artifacts
+testLoadUnloadedArtifact
+	self shouldNotImplement

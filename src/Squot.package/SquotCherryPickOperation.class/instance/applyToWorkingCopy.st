@@ -2,7 +2,7 @@ applying
 applyToWorkingCopy
 	"Execute the cherry pick."
 	self withUnitOfWork:
-	[self validateAncestry; validateSave.
+	[self validate.
 	self workingCopy withCurrentSnapshot:
 		[self
 			prepareMerge;

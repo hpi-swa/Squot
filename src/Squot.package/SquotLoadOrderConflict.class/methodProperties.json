@@ -1,8 +1,6 @@
 {
 	"class" : {
-		"with:" : "jr 7/28/2019 01:03" },
+		 },
 	"instance" : {
-		"chooseIncoming" : "jr 9/20/2019 22:30",
-		"chooseWorking" : "jr 9/20/2019 22:31",
-		"diff3conflict" : "jr 7/28/2019 01:01",
-		"diff3conflict:" : "jr 9/20/2019 22:33" } }
+		"chooseIncoming" : "jr 10/19/2020 21:51",
+		"chooseWorking" : "jr 10/19/2020 21:51" } }

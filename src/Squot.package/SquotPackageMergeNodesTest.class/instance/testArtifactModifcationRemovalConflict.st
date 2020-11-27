@@ -22,5 +22,5 @@ testArtifactModifcationRemovalConflict
 	node := merge containerConflicts anyOne asDiffTree.
 	"then"
 	self assert: node content == (merge conflictAt: 'ChangedAndRemoved.package');
-		assert: 'ChangedAndRemoved.package (removed/changed)' equals: node title;
+		assert: 'ChangedAndRemoved.package (removed/changed)' equals: node title asString;
 		assert: node needsChoice.

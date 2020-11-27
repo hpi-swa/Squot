@@ -1,6 +1,6 @@
 instance creation
 wrapping: anArtifact in: aWorkingCopy
 	^ self new
-		storeArtifact: anArtifact;
+		setArtifact: anArtifact
 		workingCopy: aWorkingCopy;
 		yourself

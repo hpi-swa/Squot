@@ -1,4 +1,5 @@
 testing
 mayAffectArtifact
-	"Answer whether I might change anything about the artifact even if I should not change the snapshot of the objects themselves."
-	^ working ~= incoming
+	"Answer whether I might change anything about the artifact."
+	"Artifact loads are diffs, not merges, and they are the primary reason that this message exists."
+	^ self hasChanges

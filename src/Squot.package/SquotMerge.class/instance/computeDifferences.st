@@ -20,16 +20,12 @@ computeDifferences
 		do: [:eachPath | | diff |
 			diff := fromBaseToIncoming diffAt: eachPath.
 			diff addToMerge: self modifying: (working artifactAt: eachPath ifAbsent: [])].
-	self flag: #todo. "Workaround: the code commented-out below is more generic than the following workaround, but it is currently discouraged by bugs in object patching (which also happens when the patch is computed, see updateRightArtifacts)."
+
+	"Allow to load unloaded artifacts even if they are not affected otherwise by the merge."
 	((working artifacts select: [:each | (each respondsTo: #isLoaded) and: [each isLoaded not]]) reject: [:each | (commonPaths includes: each path) or: [fromBaseToIncoming includesDiffAt: each path]])
 		do: [:each | | diff |
-			diff := each diffAgainst: (incoming artifactAt: each path).
+			diff := each diffAgainst: each artifact.
 			diff mayAffectArtifact ifTrue: [diff addToMerge: self modifying: each]].
-	"directPatch := incoming patchRelativeToBase: working.
-	(directPatch paths copyWithoutAll: commonPaths, fromBaseToIncoming paths)
-		do: [:eachPath | | diff |
-			Artifacts that are different in incoming, although they weren't changed there.
-			diff := directPatch diffAt: eachPath.
-			diff addToMerge: self modifying: (working artifactAt: eachPath ifAbsent: [])]."
+
 	loadOrderMerge := SquotLoadOrderMerge
 		into: working loadOrder merge: incoming loadOrder basedOn: base loadOrder.

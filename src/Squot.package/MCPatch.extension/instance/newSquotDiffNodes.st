@@ -1,6 +1,7 @@
 *Squot-Tools-Diffs
 newSquotDiffNodes
 	| groups topNodes |
+	"Similar method: SquotPackageMerge>>newSquotDiffNodes"
 	groups := (operations groupBy: [:each | each definition squotGroup])
 		collect: [:eachGroup | | classOperation |
 			"lift class definition changes to the top of each group"

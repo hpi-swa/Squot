@@ -1,6 +1,7 @@
 *Squot-Tools-Diffs
 squotDiffNodeForClass: aSymbol operations: aCollection
 	| node |
+	"Similar method: SquotPackageMerge>>squotDiffNodeForClass: aSymbol operations: aCollection"
 	node := SquotDiffNode
 		title: aSymbol, (self squotDiffNodeClassSuffix: aCollection)
 		content: (SquotPackageDiffClassChanges new className: aSymbol)

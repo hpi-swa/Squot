@@ -1,5 +1,5 @@
-*Squot-Tools
-squotDiffNodeClassSuffix: aCollection
+private
+classSuffix: aCollection
 	| classChange |
 	aCollection ifEmpty: [^ ''].
 	classChange := aCollection first.

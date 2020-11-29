@@ -2,15 +2,16 @@
 	"class" : {
 		 },
 	"instance" : {
+		"addOperationOrConflict:" : "jr 11/29/2020 20:21",
 		"chooseIncoming" : "jr 9/25/2019 21:20",
 		"chooseWorking" : "jr 9/25/2019 21:20",
 		"computeDifferences" : "jr 9/25/2019 21:43",
 		"initializeSquotDiffNodes:with:" : "jr 9/25/2019 21:50",
 		"keyOf:ifAbsent:" : "jr 9/25/2019 21:43",
 		"modifications" : "jr 9/25/2019 22:32",
-		"newSquotDiffNodes" : "jr 11/28/2020 17:55",
+		"newSquotDiffNodes" : "jr 11/29/2020 20:30",
+		"operationsAndConflicts" : "jr 11/29/2020 20:16",
 		"privateResolvedPatch" : "jr 9/25/2019 21:35",
+		"removeOperationOrConflict:" : "jr 11/29/2020 20:23",
 		"resetChoice" : "jr 9/25/2019 21:21",
-		"squotChangeAsStringOrText" : "jr 5/17/2020 22:59",
-		"squotDiffNodeClassSuffix:" : "jr 11/28/2020 18:06",
-		"squotDiffNodeForClass:operations:" : "jr 11/28/2020 17:49" } }
+		"squotChangeAsStringOrText" : "jr 5/17/2020 22:59" } }

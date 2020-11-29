@@ -1,9 +1,8 @@
-*Squot-Tools
-squotDiffNodeForClass: aSymbol operations: aCollection
+private
+diffNodeForClass: aSymbol operationsAndConflicts: aCollection modifying: aSquotPackageMergeOrDiff
 	| node |
-	"Similar method: MCPatch>>squotDiffNodeForClass: aSymbol operations: aCollection"
 	node := SquotDiffNode
-		title: aSymbol, (self squotDiffNodeClassSuffix: aCollection)
+		title: aSymbol, (self classSuffix: aCollection)
 		content: (SquotPackageDiffClassChanges new className: aSymbol)
 		children: ((aCollection
 						collect: [:each |
@@ -19,8 +18,8 @@ squotDiffNodeForClass: aSymbol operations: aCollection
 											title: each squotDiffNodeSummary
 											content: each
 											children: #()
-											onInclude: [containerModifications at: (self keyOf: each definition) put: each]
-											onExclude: [containerModifications removeKey: (self keyOf: each definition)]]])
+											onInclude: [aSquotPackageMergeOrDiff addOperationOrConflict: each]
+											onExclude: [aSquotPackageMergeOrDiff removeOperationOrConflict: each]]])
 						sort: [:a :b | a title asString <= b title asString])
 		onInclude: []
 		onExclude: [].

@@ -1,5 +1,4 @@
 testing
 mayAffectArtifact
-	"Answer whether I might change anything about the artifact."
-	"Artifact loads are diffs, not merges, and they are the primary reason that this message exists."
+	"This message exists primarily because of artifact loads (they have no changes, but may still affect the artifact in the working copy). Merges imply that there are differences somewhere."
 	^ self hasChanges

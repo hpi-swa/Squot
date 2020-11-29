@@ -23,15 +23,9 @@ topNodesForMerge: aSquotPackageMerge
 			SquotDiffNode
 				title: classification
 				content: nil
-				children: (eachClassificationAndOperations value
-					collect:
-						[:each |
-						SquotDiffNode
-							title: each summary
-							content: each
-							children: #()
-							onInclude: [aSquotPackageMerge addOperationOrConflict: each]
-							onExclude: [aSquotPackageMerge removeOperationOrConflict: each]])
+				children:
+					(eachClassificationAndOperations value
+						collect: 	[:each | self nodeFor: each from: aSquotPackageMerge])
 				onInclude: []
 				onExclude: []]).
 	^ topNodes

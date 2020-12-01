@@ -2,6 +2,8 @@ loading and unloading
 mergeVersionInteractively: aVersion ifCanceled: cancelBlock
 	"Let the user choose artifact editions to load from aVersion and add the version as parent version."
 	| mergeBases fastForwardPossible merge |
+	SquotToggles warnAboutUseOfDeprecatedMethods ifTrue:
+		[self deprecated: 'Use newMergeOperation instead.'].
 	fastForwardPossible := false.
 	mergeBases := self checkMergeBasesOfHeadVersionWith: aVersion
 		ifNoCommonAncestor: ["the versions have no common base version"

@@ -1,3 +1,3 @@
 tests
 testObjectNamedNil
-	self assert: (repository objectNamed: nil) isNil.
+	self should: [self unitOfWork objectNamed: nil] raise: Error.

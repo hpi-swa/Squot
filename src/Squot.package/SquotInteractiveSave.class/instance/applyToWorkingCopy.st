@@ -3,8 +3,10 @@ applyToWorkingCopy
 	"Save the new version in the repository."
 	^ (self withUnitOfWorkActive:
 		[self startUnitOfWork.
-		self validate.
-		self chooseChanges])
+		patch ifNil: [patch := self computePatch].
+		self validate;
+			applyLoadStatusToPatchArtifacts: patch;
+			chooseChanges])
 		then: [:aPatch |
 			[self patch: aPatch;
 				createVersion;

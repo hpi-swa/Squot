@@ -1,4 +1,4 @@
-tests
+tests branch switching
 testSwitchBranchAndMoveOverUnsavedChangesWithConflict
 	| trackedObject class originalHistorian otherHistorian hadConflict |
 	"given

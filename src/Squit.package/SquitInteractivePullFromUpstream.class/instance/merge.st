@@ -12,4 +12,3 @@ merge
 			^ nil]
 		on: BrokenPromise "cancelled" do:
 			[:e | e ifNotError: [^ nil]].
-	self workingCopy addParentVersion: localHistorian upstreamVersion.

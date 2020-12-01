@@ -2,6 +2,7 @@
 	"category" : "Squot-Tests",
 	"classinstvars" : [
 		 ],
+	"classtraitcomposition" : "TTestCaseSuppressingProgressDisplay classTrait",
 	"classvars" : [
 		 ],
 	"commentStamp" : "jr 5/4/2019 00:54",
@@ -13,4 +14,5 @@
 	"pools" : [
 		 ],
 	"super" : "SquotWorkingCopyTestIndependentOfRepositoryType",
+	"traitcomposition" : "TTestCaseSuppressingProgressDisplay",
 	"type" : "normal" }

@@ -11,5 +11,5 @@ testAddingFile
 	self assert: (workingCopy / filename) exists.
 	self commit: 'a commit'.
 	
-	self assert: ref exists.
+	self withUnitOfWork: [:git | self assert: ref exists].
 	self assert: (workingCopy / filename) exists

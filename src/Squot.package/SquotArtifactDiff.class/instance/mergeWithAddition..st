@@ -1,4 +1,4 @@
-patching
+merging
 mergeWithAddition: anArtifactAddition
 	"Inverse case is in SquotArtifactAdditon>>#mergeWithDiff: and SquotArtifactAddition>>#mergeWithRemoval:"
 	"double dispatch, initiated by #mergeWith:"

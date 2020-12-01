@@ -11,9 +11,10 @@
 		"rightArtifacts",
 		"originalLoadOrder",
 		"patchedLoadOrder",
-		"loadOrderDiff",
+		"loadOrderMerge",
 		"base",
-		"patched" ],
+		"patched",
+		"progress" ],
 	"name" : "SquotPatchBuilder",
 	"pools" : [
 		 ],

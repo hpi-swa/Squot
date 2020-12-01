@@ -1,3 +1,3 @@
 running
 performTest
-	^ repository withUnitOfWork: [super performTest]
+	^ repository withUnitOfWork: [self suppressProgressDisplayDuring: [super performTest]]

@@ -12,6 +12,7 @@ testAddingMultipleDirectoriesFails
 	(workingCopy / dir2) createDirectory.
 	self assert: (workingCopy / dir2) exists.
 		
-	workingCopy commit: 'aCommit..'.
+	
+	self withUnitOfWork: [:git | workingCopy commit: 'aCommit..'].
 	"the commit should not have happened:"
 	self assert: sha1name = workingCopy name.

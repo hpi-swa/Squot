@@ -1,5 +1,5 @@
 as yet unclassified
 objectNamed: name
 	^ self value
-		ifNil: [NotFound signal: name]
+		ifNil: [NotFound signalFor: name]
 		ifNotNil: [:registry | registry objectNamed: name]

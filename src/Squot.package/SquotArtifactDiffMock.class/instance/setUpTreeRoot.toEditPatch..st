@@ -1,4 +1,4 @@
-converting
+*Squot-Tests-Tools
 setUpTreeRoot: aDiffNode toEditPatch: aPatchBuilder
 	aDiffNode
 		includeBlock: [aPatchBuilder addDiff: self];

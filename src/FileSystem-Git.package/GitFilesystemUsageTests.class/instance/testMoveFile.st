@@ -3,6 +3,7 @@ testMoveFile
 	| ref newref |	
 	self createSomeCommits.
 	ref := workingCopy / 'dir1' / 'file2'.
+	self withUnitOfWork: [:git |
 	self assert: ref isFile.
 	
 	workingCopy rename: ref to: (newref := workingCopy / 'newintermediate' / 'file2').
@@ -14,3 +15,4 @@ testMoveFile
 	self deny: ref exists.
 	self assert: newref readStream contents asString = 'more content'.
 	self assert: (fsRepository head referenceTo: newref) readStream contents asString = 'more content'.
+	].

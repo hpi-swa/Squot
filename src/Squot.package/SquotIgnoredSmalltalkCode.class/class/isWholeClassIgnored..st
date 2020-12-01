@@ -1,3 +1,3 @@
 testing
 isWholeClassIgnored: aSymbol
-	^ (self changeSet classChangeAt: aSymbol) includes: #remove
+	^ (self changeSet classChangeAt: (self symbolInChangeSet: aSymbol)) includes: #remove

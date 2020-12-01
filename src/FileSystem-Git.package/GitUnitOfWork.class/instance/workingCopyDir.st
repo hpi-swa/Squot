@@ -1,5 +1,4 @@
 accessing
 workingCopyDir
-	self flag: #stub.
-	^ [repository workingCopyDir]
-		on: Deprecation do: [:ex | ex resume]
+	self workingCopyDirDo: [:directory | ^ directory]
+		ifBare: [GitError signal: 'Repository does not have a working copy']

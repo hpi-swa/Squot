@@ -7,6 +7,8 @@ testTagging
 	
 	self assert: ref exists.
 	self assert: ref basename equals: 'myFirstTag'.
+	self withUnitOfWork: [:git |
 	self 
-		assert: (basicRepository objectNamed: ref readStream contents asString withBlanksTrimmed) message 
+		assert: (git objectNamed: ref readStream contents asString withBlanksTrimmed) message 
 		equals: 'a commit'
+	].

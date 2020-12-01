@@ -5,8 +5,10 @@ Initialize me with #repository: and either #patch: or #snapshot:, so I know whic
 Instance Variables
 	author:		<GitStamp>
 	committer:		<GitStamp>
+	commitTimestamp:	<DateAndTime> or nil
 	message:		<String>
 	parents:		<SequenceableCollection of SquitVersion>
 	repository:		<SquitRepository>
 	patch:			<SquotPatch>
+	shouldStoreMetadata:	<Boolean>
 	snapshot:		<SquotSnapshot>

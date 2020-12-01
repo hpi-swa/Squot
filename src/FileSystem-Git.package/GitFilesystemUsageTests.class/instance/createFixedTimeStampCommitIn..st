@@ -2,7 +2,8 @@ helpers
 createFixedTimeStampCommitIn: anFSReference
 	| repository blob tree commit committer author |
 	repository := GitRepository on: anFSReference.
-	
+	repository withUnitOfWork: [
+		
 	blob := GitBlob bytes: 'blob1' in: repository.
 	blob store.
 	
@@ -15,16 +16,14 @@ createFixedTimeStampCommitIn: anFSReference
 		in: repository.
 	tree store.
 		
-	committer := (GitStamp new
-		email: 'mail@server.ext';
-		name: 'Homer Simpson';
-		timeStamp: (DateAndTime year: 2011 month: 06 day: 28 hour: 22 minute: 10) asTimeStamp;
-		yourself).
-	author := (GitStamp new
-		email: 'mail@server.ext';
-		name: 'Homer Simpson';
-		timeStamp: (DateAndTime year: 2010 month: 06 day: 27 hour: 21 minute: 11) asTimeStamp;
-		yourself). 
+	committer := GitStamp
+		name: 'Homer Simpson'
+		email: 'mail@server.ext'
+		timeStamp: (DateAndTime year: 2011 month: 06 day: 28 hour: 22 minute: 10) asTimeStamp.
+	author := GitStamp
+		name: 'Homer Simpson'
+		email: 'mail@server.ext'
+		timeStamp: (DateAndTime year: 2010 month: 06 day: 27 hour: 21 minute: 11) asTimeStamp.
 					
 	commit := GitCommit
 		withTree: tree
@@ -35,5 +34,6 @@ createFixedTimeStampCommitIn: anFSReference
 	commit parents: OrderedCollection new.
 	commit store.
 
-	repository updateRef: repository headsDir / 'master' to: commit hexHash.
+	repository unitOfWork updateRef: 'refs/heads/master' to: commit hexHash.
 	GitFSCK validate: repository.
+	].

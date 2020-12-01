@@ -1,9 +1,7 @@
 utilities
 openToolAndTestOn: aPatch
-	| toolBuilder view |
-	tool := self newToolOn: aPatch.
-	toolBuilder := ToolBuilder default.
-	view := toolBuilder open: tool label: self selector.
+	| view |
+	view := self openToolOn: aPatch.
 	[self assert: tool rootNodes notEmpty.
 	self performUiTestsOnToolBuiltBy: toolBuilder]
-	ensure: [toolBuilder close: view].
+		ensure: [self closeTool: view].

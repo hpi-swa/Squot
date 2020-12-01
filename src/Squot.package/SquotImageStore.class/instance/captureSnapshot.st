@@ -1,13 +1,12 @@
 Pur store
 captureSnapshot
-	"serialize current objects if necessary and return a new snapshot"
+	"Capture current objects if necessary and return a new snapshot."
 	| builder |
 	builder := SquotSnapshot builder.
 	self activateObjectRegistryDuring:
-		['Snapshotting objects in memory' displayProgressFrom: 0 to: objects size during:
-		[:progress | | done | done := 0.
+		[SquotProgress display: 'Snapshotting objects in memory' during:
+		[:progress | progress totalSteps: objects size.
 		loadOrder do: [:eachPath |
-			builder add: (self capture: (objects at: eachPath) at: eachPath).
-			done := done + 1.
-			progress value: done]]].
+			progress stepWithText: nil.
+			builder add: (self capture: (objects at: eachPath) at: eachPath)]]].
 	^ builder buildSnapshot

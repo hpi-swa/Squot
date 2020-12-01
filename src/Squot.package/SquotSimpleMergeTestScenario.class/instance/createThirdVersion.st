@@ -21,5 +21,6 @@ createThirdVersion
 				createNewVersion: newSnapshot
 				with: [:newVersion |
 					newVersion message: 'third version';
-						author: workingCopy defaultAuthor].
+						author: workingCopy defaultAuthor;
+						timestamp: DateAndTime now - 1 minute].
 	^ thirdVersion

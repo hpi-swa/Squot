@@ -1,14 +1,16 @@
 tests
 testUnnecessaryMergeIsCanceled
-	| firstVersion wasCanceled |
+	| firstVersion |
 	"given"
 	workingCopy
 		saveVersionWithMessage: 'first version';
 		saveVersionWithMessage: 'successor version'.
 	firstVersion := workingCopy baseVersion parents first.
-	"when"
-	wasCanceled := false.
-	[workingCopy mergeVersionInteractively: firstVersion ifCanceled: [wasCanceled := true]]
-		valueSupplyingAnswers: {{'*'. #default}}.
-	"then"
-	self assert: wasCanceled.
+	self should:
+		"when"
+		[workingCopy newMergeOperation
+			mergeVersion: firstVersion;
+			prepare;
+			applyToWorkingCopy]
+		"then"
+		raise: SquotVersionAlreadyInHistory.

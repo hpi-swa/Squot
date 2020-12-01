@@ -3,5 +3,5 @@ mergeWithoutBaseWith: anArtifact
 	| merge diff |
 	merge := SquotArtifactMerge new working: self; incoming: anArtifact.
 	diff := self diffAgainst: anArtifact.
-	diff addDifferencesAsConflicts: merge.
+	diff mayAffectArtifact ifTrue: [diff addDifferencesAsConflicts: merge].
 	^ merge

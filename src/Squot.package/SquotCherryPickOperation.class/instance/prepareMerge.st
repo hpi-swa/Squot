@@ -5,6 +5,7 @@ prepareMerge
 		[self validateAncestry.
 		(merge := self privateNewMerge)
 			unitOfWork: self unitOfWork;
+			doNotAddParent;
 			workingCopySnapshot: self workingCopySnapshot;
 			mergeVersion: pickedVersion;
 			baseVersion: relevantParentOfPickedVersion;

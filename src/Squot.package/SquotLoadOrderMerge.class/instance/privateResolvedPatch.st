@@ -1,5 +1,11 @@
 private
 privateResolvedPatch
-	"Stub. Attempts to merge three load orders cleanly. But if there are conflicts, it will
-	guess some reasonable merged order which might as well be unreasonable."
-	^ self autoResolveConflicts
+	| resolution |
+	resolution := self resolveLoadOrders.
+	^ resolution second == #conflicts
+		ifTrue: [nil]
+		ifFalse:
+			[GenericDiff squotDiffClass new
+				file1: working;
+				file2: resolution first;
+				diff]

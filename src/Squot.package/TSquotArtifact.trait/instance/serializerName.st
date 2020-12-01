@@ -1,4 +1,4 @@
-serializing
+*Squot-FileSystemStore
 serializerName
 	^ self storeInfo serializer
 		ifNil: [ | serializer |

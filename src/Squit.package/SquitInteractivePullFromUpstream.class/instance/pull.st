@@ -5,8 +5,6 @@ pull
 	localHistorian := self workingCopy loadedHistorian.
 	self fetchFromUpstream ifNil: [^ self].
 	self merge ifNil: [^ self].
-	self workingCopy additionalParents size > 0
-		ifTrue:
-			[self save ifNil: [^ self]]
-		ifFalse:
-			[self inform: 'Adopted ', localHistorian upstreamVersion].
+	self workingCopy loadedVersion = localHistorian upstreamVersion
+		ifTrue: [self inform: 'Adopted ', localHistorian upstreamVersion]
+		ifFalse: [self save ifNil: [^ self]].

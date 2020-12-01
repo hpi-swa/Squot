@@ -1,5 +1,5 @@
 {
-	"category" : "Squot-Core",
+	"category" : "Squot-WorkingCopies",
 	"classinstvars" : [
 		 ],
 	"classvars" : [
@@ -11,6 +11,7 @@
 		"message",
 		"patch",
 		"author",
+		"timestamp",
 		"committer",
 		"newVersion",
 		"shouldStoreMetadata",

@@ -23,4 +23,4 @@ testCommit
 		named: 'light-tag' 
 		for: commit 
 		in: repository.
-	repository updateRef: 'HEAD' to: commit hexHash
+	self unitOfWork updateRef: 'HEAD' to: commit hexHash

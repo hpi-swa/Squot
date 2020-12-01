@@ -1,0 +1,3 @@
+testing
+hasLoadOrderChanges
+	^ loadOrderDiff squotHasChanges

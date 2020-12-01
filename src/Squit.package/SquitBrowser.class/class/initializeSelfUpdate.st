@@ -1,4 +1,4 @@
 class initialization
 initializeSelfUpdate
 	"SquitBrowser initializeSelfUpdate"
-	SelfUpdateBranch := 'master'.
+	SelfUpdateBranch := 'develop'.

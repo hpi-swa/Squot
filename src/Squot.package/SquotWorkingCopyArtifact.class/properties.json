@@ -1,13 +1,13 @@
 {
-	"category" : "Squot-Core",
+	"category" : "Squot-WorkingCopies",
 	"classinstvars" : [
 		 ],
 	"classvars" : [
 		 ],
-	"commentStamp" : "jr 8/9/2020 21:05",
+	"commentStamp" : "jr 9/26/2020 18:08",
 	"instvars" : [
-		"storeArtifact",
-		"workingCopy" ],
+		"workingCopy",
+		"artifact" ],
 	"name" : "SquotWorkingCopyArtifact",
 	"pools" : [
 		 ],

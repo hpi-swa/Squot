@@ -5,4 +5,4 @@ loadArtifact: anArtifact
 	patch := self newPatchBuilder
 		updateArtifactTo: anArtifact;
 		buildPatch.
-	store applyPatch: patch
+	self applyPatch: patch

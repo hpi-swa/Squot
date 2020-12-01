@@ -11,7 +11,7 @@ menuProjectListWorkingCopyHook: aMenu
 	aMenu addLine.
 	aMenu
 		addList: {
-			{'Change tracked packages'. #actionChooseTrackedPackages. 'Add or remove packages for this project.'}
+			{'Add or remove packages'. #actionAddOrRemoveTrackedPackages. 'Add or remove packages for this project.'}
 		};
 		add: 'Set package storage format...'
 		subMenu: (ToolBuilder default build: self packageFormatMenuSpec).

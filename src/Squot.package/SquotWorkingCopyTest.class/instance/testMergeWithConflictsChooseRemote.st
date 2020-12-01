@@ -1,16 +1,15 @@
-tests
+tests merging
 testMergeWithConflictsChooseRemote
+	| operation |
 	self suppressChangeNotificationsDuring:
 	[scenario := SquotWorkingCopyTestMergeConflictScenario forTestCase: self.
-	[[scenario merge]
-		on: SquotMergeRequested do: [:request |
-			scenario
-				assertConflictedMethodWorkingEditionPresentIn: request merge;
-				assertConflictedMethodIncomingEditionPresentIn: request merge;
-				assertThirdMethodWillBeAdded: request merge;
-				chooseIncomingEditionOfConflictedMethodIn: request merge.
-			request resume]]
-		valueSupplyingAnswers: {{'*'. #default}}].
+	operation := scenario merge.
+	scenario
+		assertConflictedMethodWorkingEditionPresentIn: operation merge;
+		assertConflictedMethodIncomingEditionPresentIn: operation merge;
+		assertThirdMethodWillBeAdded: operation merge;
+		chooseIncomingEditionOfConflictedMethodIn: operation merge.
+	operation applyToWorkingCopy].
 	scenario
 		assertConflictMethodIncomingEditionLoaded;
 		assertThirdMethodLoaded.

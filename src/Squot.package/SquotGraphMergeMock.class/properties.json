@@ -1,12 +1,14 @@
 {
-	"category" : "Squot-Merging-Tests",
+	"category" : "Squot-Tests-Merging",
 	"classinstvars" : [
 		 ],
 	"classvars" : [
 		 ],
 	"commentStamp" : "",
 	"instvars" : [
-		"hasChanges" ],
+		"hasChanges",
+		"patch",
+		"choice" ],
 	"name" : "SquotGraphMergeMock",
 	"pools" : [
 		 ],

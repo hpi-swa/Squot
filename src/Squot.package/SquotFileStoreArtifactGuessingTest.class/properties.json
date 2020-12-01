@@ -1,5 +1,5 @@
 {
-	"category" : "Squot-Tests",
+	"category" : "Squot-Tests-Files",
 	"classinstvars" : [
 		 ],
 	"classtraitcomposition" : "TTestCaseSuppressingProgressDisplay classTrait",

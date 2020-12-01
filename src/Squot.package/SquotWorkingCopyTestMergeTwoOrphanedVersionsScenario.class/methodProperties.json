@@ -2,10 +2,13 @@
 	"class" : {
 		 },
 	"instance" : {
+		"classFactory" : "jr 10/24/2020 15:13",
 		"createFirstMergeParent" : "jr 1/28/2020 23:05",
-		"createSecondMergeParent" : "jr 1/28/2020 23:05",
+		"createSecondMergeParent" : "jr 10/19/2020 20:37",
 		"firstVersion" : "jr 10/1/2017 01:02",
-		"merge" : "jr 3/2/2020 22:57",
+		"initializeForTestCase:" : "jr 10/24/2020 15:12",
+		"merge" : "jr 9/22/2020 00:31",
+		"oldMerge" : "jr 9/22/2020 00:19",
 		"secondVersion" : "jr 10/1/2017 01:02",
 		"setUp" : "jr 3/2/2020 22:52",
 		"tearDown" : "jr 4/8/2018 00:48" } }

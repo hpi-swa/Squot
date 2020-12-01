@@ -1,3 +1,3 @@
 *Squot-Tools
 newSquotDiffNodes
-	^ patch newSquotDiffNodes
+	^ SquotPackageDiffNodesFactory new topNodesForDiff: self

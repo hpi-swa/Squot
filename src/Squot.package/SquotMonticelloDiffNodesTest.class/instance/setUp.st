@@ -11,7 +11,7 @@ setUp
 	existingClass compileSilently: existingMethod selector. "empty method"
 	existingClass compileSilently: methodToBeRemoved selector. "empty method"
 	preparedWorkingCopy add: existingClass packageInfo at: self packagePath.
-	preparedWorkingCopy saveVersionWithMessage: 'init'.
+	self suppressProgressDisplayDuring: [preparedWorkingCopy saveVersionWithMessage: 'init'].
 	existingClass removeSelectorSilently: methodToBeRemoved selector.
 	existingClass compileSilently: methodToBeAdded selector. "empty method"
 	existingClass compileSilently: existingMethod selector, ' ^ #changed'.

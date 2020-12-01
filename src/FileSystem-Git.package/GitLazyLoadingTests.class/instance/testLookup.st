@@ -8,6 +8,7 @@ testLookup
 		'/dir2/dir2.1/file1' '/dir2/dir2.1/file2' '/dir2/dir2.1/file3').
 	directories := #('/dir1' '/dir2' '/dir2/dir2.1').
 	
+	repository withUnitOfWork: [
 	files do: [ :name |
 		ref := workingCopy root resolve: name.
 		self assert: ref exists.
@@ -23,3 +24,4 @@ testLookup
 	self assert: workingCopy root allEntries size = (files size + directories size + 1).
 	self assert: workingCopy root files size = 3.
 	self assert: workingCopy root directories size = 2
+	].

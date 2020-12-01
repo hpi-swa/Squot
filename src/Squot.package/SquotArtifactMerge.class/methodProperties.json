@@ -2,6 +2,7 @@
 	"class" : {
 		 },
 	"instance" : {
+		"adornedDiffNodeTitle:" : "jr 11/18/2020 18:14",
 		"asDiffTree" : "jr 12/22/2019 23:24",
 		"base:" : "jr 7/30/2019 21:51",
 		"chooseIncoming" : "jr 8/14/2019 20:29",
@@ -16,13 +17,19 @@
 		"hasChanges" : "jr 7/29/2019 23:57",
 		"hasConflicts" : "jr 7/30/2019 00:45",
 		"incoming:" : "jr 7/30/2019 21:50",
-		"initialize" : "jr 7/30/2019 01:06",
+		"initialize" : "jr 11/18/2020 18:14",
+		"mayAffectArtifact" : "jr 11/29/2020 22:18",
 		"mergeOfTrackedObject" : "jr 8/14/2019 19:50",
 		"metadataDiffNodes" : "jr 8/14/2019 19:26",
 		"modifications" : "jr 7/30/2019 01:37",
 		"path" : "jr 8/4/2019 20:47",
-		"privateResolvedPatch" : "jr 9/25/2019 16:30",
+		"privateResolvedPatch" : "jr 11/22/2020 21:09",
 		"resetChoice" : "jr 8/14/2019 21:35",
+		"setLoadedInWorkingCopy" : "jr 11/22/2020 22:35",
 		"setUpTreeRoot:toEditMerge:" : "jr 8/15/2019 00:31",
 		"squotChangeAsStringOrText" : "jr 5/8/2020 20:54",
-		"working:" : "jr 7/30/2019 21:50" } }
+		"squotToolsDiffNodeContent" : "jr 11/30/2020 00:56",
+		"toggleWhetherToLoad" : "jr 11/19/2020 16:19",
+		"willBeLoaded" : "jr 11/18/2020 18:16",
+		"working:" : "jr 11/22/2020 22:57",
+		"workingIsLoaded" : "jr 11/19/2020 16:27" } }

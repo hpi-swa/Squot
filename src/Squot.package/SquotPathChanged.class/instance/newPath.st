@@ -1,3 +1,0 @@
-accessing
-newPath
-	^ newPath

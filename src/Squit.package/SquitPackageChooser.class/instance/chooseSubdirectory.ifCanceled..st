@@ -1,8 +1,7 @@
 choosing packages
 chooseSubdirectory: aDirectoryReference ifCanceled: aBlock
 	| fileDirectory chosenDirectory subPath |
-	fileDirectory := SquitSubFolderList
-		modalFolderSelector: (FSFileDirectoryAdapter on: aDirectoryReference).
+	fileDirectory := SquitDirectoryInWorkingCopyChooser openOn: (FSFileDirectoryAdapter on: aDirectoryReference) label: 'Directory for added packages'.
 	fileDirectory ifNil: [^ aBlock value].
 	chosenDirectory := fileDirectory asFSReference.
 	(chosenDirectory = aDirectoryReference

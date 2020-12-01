@@ -14,7 +14,8 @@
 		"sampleClass",
 		"otherHistorian",
 		"secondMethod",
-		"thirdMethod" ],
+		"thirdMethod",
+		"classFactory" ],
 	"name" : "SquotSimpleMergeTestScenario",
 	"pools" : [
 		 ],

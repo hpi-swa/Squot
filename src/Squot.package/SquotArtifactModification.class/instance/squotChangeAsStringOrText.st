@@ -1,4 +1,4 @@
 *Squot-Tools
 squotChangeAsStringOrText
-	^ (Text fromString: 'change ', left path, ': ', String cr, String cr) allBold;
+	^ ((self adornedDiffNodeTitle: left path), ': ', String cr, String cr) asText allBold;
 		append: diffContent squotChangeAsStringOrText

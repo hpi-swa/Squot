@@ -4,13 +4,12 @@ testTrackingAClass
 	self suppressChangeNotificationsDuring: [class := classFactory newClass].
 	class compileSilently: 'firstMethod ^ self' classified: 'methods of first version'.
 	repository withUnitOfWork:
-	[[workingCopy add: class at: 'src/', class category, '.package/', class name, '.class']
-		on: SquotClassWithoutPackageException
-		do: [:e | e resume: (PackageInfo named: classFactory packageName)].
+	[workingCopy add: class at: 'src/', class category, '.package/', class name, '.class'.
 	versionBeforeSave := workingCopy loadedHistorian version.
 	self assert: versionBeforeSave isNil description: 'starting from empty history'.
 	
 	workingCopy saveVersionWithMessage: 'first version'.
+	self denyChangesInWorkingCopy.
 	latestVersion := workingCopy baseVersion.
 	self assert: versionBeforeSave ~= latestVersion description: 'new version'.
 	self assert: latestVersion parents isEmpty description: 'ancestry'.
@@ -25,6 +24,7 @@ testTrackingAClass
 	self assert: latestVersion equals: versionBeforeSave.
 	
 	workingCopy saveVersionWithMessage: 'second version'.
+	self denyChangesInWorkingCopy.
 	latestVersion := workingCopy baseVersion.
 	self assert: versionBeforeSave ~= latestVersion description: 'new version'.
 	self assert: (latestVersion parents includes: versionBeforeSave) description: 'ancestry'.

@@ -2,4 +2,5 @@
 	"class" : {
 		 },
 	"instance" : {
-		"testTemporaryAssignment" : "jr 1/14/2017 01:15" } }
+		"testTemporaryAssignment" : "jr 1/14/2017 01:15",
+		"testWorksAlsoWhenNoDefaultIsSet" : "jr 8/28/2020 20:38" } }

@@ -1,17 +1,18 @@
 {
 	"class" : {
-		 },
+		"repository:" : "jr 8/26/2020 22:34" },
 	"instance" : {
 		"author" : "jr 2/5/2017 22:43",
-		"author:" : "jr 2/8/2017 14:05",
-		"authoringTimeStamp:" : "jr 2/5/2017 22:49",
-		"buildVersion" : "jr 7/22/2017 19:31",
+		"author:" : "jr 8/26/2020 23:31",
+		"authoringTimeStamp:" : "jr 8/26/2020 23:09",
+		"buildVersion" : "jr 9/13/2020 21:59",
 		"committer" : "jr 2/5/2017 22:43",
 		"committer:" : "jr 2/20/2017 22:13",
-		"committingTimeStamp:" : "jr 2/5/2017 22:49",
+		"committingTimeStamp:" : "jr 8/30/2020 20:38",
 		"doNotStoreMetadata" : "jr 3/7/2017 17:37",
-		"initialize" : "jr 3/7/2017 17:37",
-		"initializeClean" : "jr 2/20/2017 22:33",
+		"initialize" : "jr 8/26/2020 22:34",
+		"initializeAuthorAndCommitter" : "jr 8/26/2020 22:35",
+		"initializeClean" : "jr 8/26/2020 23:16",
 		"message" : "jr 2/5/2017 22:43",
 		"message:" : "jr 2/5/2017 22:43",
 		"parents" : "jr 2/5/2017 22:43",
@@ -20,5 +21,8 @@
 		"patch:" : "jr 5/29/2017 15:08",
 		"repository" : "jr 2/5/2017 22:43",
 		"repository:" : "jr 2/5/2017 22:43",
+		"setRepository:" : "jr 8/26/2020 22:34",
 		"snapshot" : "jr 2/5/2017 22:43",
-		"snapshot:" : "jr 2/5/2017 22:43" } }
+		"snapshot:" : "jr 2/5/2017 22:43",
+		"timestamp" : "jr 8/25/2020 18:54",
+		"timestamp:" : "jr 8/25/2020 18:55" } }

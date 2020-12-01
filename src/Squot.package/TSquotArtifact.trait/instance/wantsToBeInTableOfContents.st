@@ -1,3 +1,3 @@
-serializing
+*Squot-FileSystemStore
 wantsToBeInTableOfContents
 	^ true

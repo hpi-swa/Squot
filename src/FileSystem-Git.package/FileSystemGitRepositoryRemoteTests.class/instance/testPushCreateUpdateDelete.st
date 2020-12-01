@@ -3,6 +3,7 @@ testPushCreateUpdateDelete
 	<timeout: 20>
 	| remoteRefs master |
 	"given"
+	self withUnitOfWork: [
 	repository addRemote: 'test' url: self remoteUrl.
 	"when"
 	repository push: { 'branch1' -> 'test/branch1'. 'master' -> 'test/branch2' } toRemote: 'test'.
@@ -20,3 +21,4 @@ testPushCreateUpdateDelete
 		equals: (remoteRefs at: 'refs/heads/test/oldmaster').
 	"finally"
 	repository pushToRemote: 'test' deleteRemoteBranches: { 'test/branch2'. 'test/oldmaster' }.
+	].

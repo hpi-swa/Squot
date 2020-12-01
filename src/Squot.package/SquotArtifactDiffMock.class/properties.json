@@ -1,5 +1,5 @@
 {
-	"category" : "Squot-Tests-Tools",
+	"category" : "Squot-Tests-Diffs",
 	"classinstvars" : [
 		 ],
 	"classvars" : [
@@ -14,7 +14,10 @@
 		"copiedFrom",
 		"hasConflicts",
 		"right",
-		"mergeBlock" ],
+		"mergeBlock",
+		"willBeLoaded",
+		"isLoad",
+		"mayAffectArtifact" ],
 	"name" : "SquotArtifactDiffMock",
 	"pools" : [
 		 ],

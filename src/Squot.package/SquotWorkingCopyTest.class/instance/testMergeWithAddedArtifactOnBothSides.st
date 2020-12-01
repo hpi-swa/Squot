@@ -1,6 +1,6 @@
-tests
+tests merging
 testMergeWithAddedArtifactOnBothSides
-	| baseVersion leftVersion rightVersion leftName rightName |
+	| baseVersion leftVersion rightVersion leftName rightName operation versionMerge artifactMerge |
 	repository withUnitOfWork:
 	[self workingCopy saveVersionWithMessage: 'empty base version'.
 	baseVersion := self workingCopy loadedHistorian version.
@@ -17,15 +17,13 @@ testMergeWithAddedArtifactOnBothSides
 	leftName := store objectRegistry nameOf: (self workingCopy objectAt: 'added').
 	self assert: leftName ~= rightName.
 	"merge the version of the other historian"
-	[[self workingCopy mergeVersionInteractively: rightVersion
-		ifCanceled: [self fail: 'This code should not be reached']]
-	on: SquotMergeRequested do: [:request | | merge |
-		merge := request merge mergeAt: 'added'.
-		self assert: merge hasConflicts.
-		(merge graphMerge conflictAt: (self workingCopy artifactAt: 'added') content startName) chooseIncoming.
-		request resume]
-	on: Warning do: [:e | e resume]
-	] valueSupplyingAnswers: {{'*'. #default}}.
+	versionMerge := (operation := self workingCopy newMergeOperation) 
+		mergeVersion: rightVersion;
+		prepare.
+	artifactMerge := versionMerge mergeAt: 'added'.
+	self assert: artifactMerge hasConflicts.
+	(artifactMerge graphMerge conflictAt: (self workingCopy artifactAt: 'added') content startName) chooseIncoming.
+	operation applyToWorkingCopy.
 	self assert: #right equals: (self workingCopy objectAt: 'added') contents;
 		assert: rightName equals:
 			(store objectRegistry nameOf: (self workingCopy objectAt: 'added'))].

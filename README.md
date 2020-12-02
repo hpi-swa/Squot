@@ -137,7 +137,7 @@ projectClass
 ```
 Your project can then be upgraded using the same code used to install it.
 
-[appveyor]: https://ci.appveyor.com/project/hpi-swa/squot/branch/master
-[appveyor_badge]: https://ci.appveyor.com/api/projects/status/hg2d0tbiij1bm052/branch/master?svg=true
+[appveyor]: https://ci.appveyor.com/project/hpi-swa/squot/branch/develop
+[appveyor_badge]: https://ci.appveyor.com/api/projects/status/hg2d0tbiij1bm052/branch/develop?svg=true
 [travis]: https://travis-ci.org/hpi-swa/Squot
-[travis_badge]: https://travis-ci.org/hpi-swa/Squot.svg?branch=master
+[travis_badge]: https://travis-ci.org/hpi-swa/Squot.svg?branch=develop

@@ -25,7 +25,7 @@ Then, use the following snippet to load Squot and all its dependencies:
 ```smalltalk
 Metacello new
   baseline: 'Squot';
-  repository: 'github://hpi-swa/Squot:master/src';
+  repository: 'github://hpi-swa/Squot:latest-release/src';
   load.
 ```
 

@@ -1,10 +1,13 @@
 Squot-shadow
 squotMaterializeWith: aMaterializer
-	| mcPackage |
+	| mcPackage packageInfo |
 	(PackageInfo squotEnvironmentInMetadata: SquotCurrentMetadata value)
 	beCurrentDuring:
 		[mcPackage := MCPackage named: packageName.
 		MCPackageLoader new
 			updatePackage: mcPackage withSnapshot: snapshot;
 			loadWithNameLike: packageName.
-		^ PackageInfo named: packageName]
+		packageInfo := PackageInfo named: packageName.
+		(SquotPackageInfoExtension of: packageInfo)
+			tonelProperties: tonelProperties copy.
+		^ packageInfo]

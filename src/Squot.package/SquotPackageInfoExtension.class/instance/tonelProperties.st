@@ -1,3 +1,3 @@
 accessing
 tonelProperties
-	^ tonelProperties
+	^ tonelProperties ifNil: [Dictionary new]

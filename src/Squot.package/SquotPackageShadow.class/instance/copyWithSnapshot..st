@@ -1,5 +1,7 @@
 patching
 copyWithSnapshot: aMCSnapshot
 	^ self copy
-		packageName: packageName snapshot: aMCSnapshot;
+		setPackageName: packageName
+		snapshot: aMCSnapshot
+		tonelProperties: tonelProperties;
 		yourself

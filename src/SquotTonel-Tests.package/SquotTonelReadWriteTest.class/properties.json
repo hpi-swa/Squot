@@ -4,14 +4,16 @@
 		 ],
 	"classvars" : [
 		 ],
-	"commentStamp" : "",
+	"commentStamp" : "jr 12/4/2020 20:42",
 	"instvars" : [
 		"rootDirectory",
 		"serializer",
 		"sampleClass",
 		"samplePackage",
 		"sampleArtifactPath",
-		"deserializer" ],
+		"deserializer",
+		"classFactory",
+		"changesFile" ],
 	"name" : "SquotTonelReadWriteTest",
 	"pools" : [
 		 ],

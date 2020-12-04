@@ -1,5 +1,5 @@
 instance creation
 forPackageNamed: aString withSnapshot: aMCSnapshot
 	^ self new
-		packageName: aString snapshot: aMCSnapshot;
+		setPackageName: aString snapshot: aMCSnapshot tonelProperties: Dictionary new;
 		yourself

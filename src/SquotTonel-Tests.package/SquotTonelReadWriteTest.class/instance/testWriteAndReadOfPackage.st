@@ -1,12 +1,13 @@
 tests
 testWriteAndReadOfPackage
-	| classFile readArtifact |
-	serializer write: self sampleArtifact.
+	| classFile original readArtifact |
+	original := self sampleArtifact.
+	serializer write: original.
 	classFile := rootDirectory
 		resolve: 'src/', samplePackage name, '/', sampleClass name, '.class.st'.
 	self assert: classFile exists description: 'class source not found'.
-	readArtifact := self sampleArtifact.
-	readArtifact content: nil.
+	readArtifact := original copyWithDifferentContent: nil.
+	classFactory cleanUp.
 	deserializer
 		fillContentOf: readArtifact
 		from: (rootDirectory resolve: sampleArtifactPath).
@@ -15,6 +16,6 @@ testWriteAndReadOfPackage
 		equals: readArtifact shadowOfTrackedObject packageName;
 		assert: (readArtifact shadowOfTrackedObject asMCSnapshot
 					patchRelativeToBase:
-						self sampleArtifactWithoutTimestamps shadowOfTrackedObject asMCSnapshot)
+						(self artifactWithoutTimestamps: original) shadowOfTrackedObject asMCSnapshot)
 						isEmpty;
-		deny: (readArtifact diffAgainst: self sampleArtifactWithoutTimestamps) hasChanges.
+		deny: (readArtifact diffAgainst: (self artifactWithoutTimestamps: original)) hasChanges.

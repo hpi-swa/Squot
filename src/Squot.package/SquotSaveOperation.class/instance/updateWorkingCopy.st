@@ -4,6 +4,7 @@ updateWorkingCopy
 	self withUnitOfWorkActive:
 		[previousVersionOrNil := self workingCopy loadedVersion.
 		self workingCopy
+			updateMetadataAfterSaving: newVersion;
 			loadedVersion: newVersion;
 			cacheSavedArtifacts: (self capturedArtifacts ifNil: [Dictionary new]);
 			addAsUnloadedFrom: newVersion thatAreNotIn: previousVersionOrNil;

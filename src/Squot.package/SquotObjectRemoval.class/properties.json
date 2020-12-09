@@ -1,0 +1,16 @@
+{
+	"category" : "Squot-Diffs",
+	"classinstvars" : [
+		 ],
+	"classtraitcomposition" : "TSquotRemoval classTrait + TSquotDiff classTrait",
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"object" ],
+	"name" : "SquotObjectRemoval",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"traitcomposition" : "TSquotRemoval + TSquotDiff",
+	"type" : "normal" }

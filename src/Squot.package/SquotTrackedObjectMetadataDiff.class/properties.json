@@ -1,0 +1,18 @@
+{
+	"category" : "Squot-Diffs",
+	"classinstvars" : [
+		 ],
+	"classtraitcomposition" : "TSquotModification classTrait + TSquotDiff classTrait",
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"left",
+		"right",
+		"diffs" ],
+	"name" : "SquotTrackedObjectMetadataDiff",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"traitcomposition" : "TSquotModification + TSquotDiff",
+	"type" : "normal" }

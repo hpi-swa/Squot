@@ -1,0 +1,9 @@
+{
+	"class" : {
+		"left:right:diffs:" : "jr 12/7/2020 22:29" },
+	"instance" : {
+		"left" : "jr 12/9/2020 22:59",
+		"right" : "jr 12/9/2020 22:59",
+		"setLeft:right:diffs:" : "jr 12/7/2020 22:30",
+		"squotApplyTo:" : "jr 12/8/2020 00:12",
+		"squotHasChanges" : "jr 12/7/2020 22:31" } }

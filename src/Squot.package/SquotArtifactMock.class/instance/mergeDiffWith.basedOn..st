@@ -1,3 +1,3 @@
 merging
 mergeDiffWith: otherArtifactOrMock basedOn: baseArtifactOrMock
-	^ (mergeBlock ifNil: [self defaultMergeBlock]) cull: otherArtifactOrMock cull: self cull: baseArtifactOrMock
+	^ self mergeWith: otherArtifactOrMock basedOn: baseArtifactOrMock

@@ -22,7 +22,7 @@ squotApplyTo: metadata
 				ifFalse: [self isThisEverCalled]].
 		diff isModification ifTrue:
 			[([path last selector == #at:] on: MessageNotUnderstood do: [:e | e message selector == #selector ifTrue: [e return: false] ifFalse: [e pass]])
-				ifTrue: [object at: path last argument put: diff addedObject]
+				ifTrue: [object at: path last argument put: diff right]
 				ifFalse: [path last isString
 							ifTrue: [thisContext object: object instVarAt: ((thisContext objectClass: object) instVarIndexFor: path last ifAbsent: [self error: 'Variable not found!']) put: diff incoming]
 							ifFalse: [thisContext object: object basicAt: path last put: diff incoming]]].

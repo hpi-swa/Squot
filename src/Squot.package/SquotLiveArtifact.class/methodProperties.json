@@ -4,9 +4,10 @@
 	"instance" : {
 		"=" : "jr 11/21/2020 01:34",
 		"browse" : "jr 12/23/2019 14:39",
-		"capture" : "jr 7/16/2017 03:06",
+		"capture" : "jr 12/13/2020 19:25",
 		"content" : "jr 12/8/2019 21:41",
 		"convertToCurrentVersion:refStream:" : "jr 7/22/2017 17:13",
+		"copyWithDiffApplied:" : "jr 12/13/2020 16:30",
 		"copyWithDifferentContent:" : "jr 7/16/2017 17:14",
 		"hash" : "jr 11/22/2020 18:05",
 		"liveStoreInfo" : "jr 5/4/2019 02:25",
@@ -20,6 +21,6 @@
 		"serializer:" : "jr 12/7/2019 22:40",
 		"serializerName" : "jr 9/20/2017 22:48",
 		"setObject:path:store:" : "jr 10/11/2020 23:47",
-		"snapshot" : "jr 11/22/2020 15:54",
+		"snapshot" : "jr 12/13/2020 19:31",
 		"storeInfo" : "jr 7/16/2017 17:14",
 		"storeInfo:" : "jr 5/1/2017 22:03" } }

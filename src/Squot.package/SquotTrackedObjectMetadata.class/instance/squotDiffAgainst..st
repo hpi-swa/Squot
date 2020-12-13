@@ -12,7 +12,7 @@ squotDiffAgainst: aTrackedObjectMetadata
 		encounter := upcoming removeLast.
 		left := encounter first. right := encounter second.
 		left ~= right ifTrue:
-			[(left outboundPointers isEmpty and: [right outboundPointers isEmpty])
+			[(left outboundPointers size = 1 and: [right outboundPointers size = 1])
 				ifTrue: [diffs at: (path at: encounter) put: (SquotObjectReplacement left: left right: right)]
 				ifFalse: [| leftClass rightClass leftSize rightSize |
 					((seen includes: left) or: [seen includes: right]) ifTrue: [self error: 'Multiple paths'].

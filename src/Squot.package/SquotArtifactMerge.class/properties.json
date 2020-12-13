@@ -7,7 +7,8 @@
 	"commentStamp" : "jr 8/13/2019 17:05",
 	"instvars" : [
 		"graphMerge",
-		"willBeLoaded" ],
+		"willBeLoaded",
+		"metadataMerge" ],
 	"name" : "SquotArtifactMerge",
 	"pools" : [
 		 ],

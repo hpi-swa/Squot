@@ -1,3 +1,7 @@
 converting
 snapshot
-	^ self copyWithDifferentContent: self content 
+	^ SquotArtifact new
+		path: path;
+		content: self content;
+		storeInfo: self storeInfo;
+		yourself.

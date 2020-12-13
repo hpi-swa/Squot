@@ -27,7 +27,7 @@
 		"findDeserializerFor:in:" : "jr 12/9/2018 17:38",
 		"forgeLazyArtifactAt:deserializerFactory:serializerFactory:objectClass:" : "jr 3/6/2019 22:55",
 		"guessArtifacts" : "jr 3/10/2019 21:46",
-		"guessMetadataForArtifact:at:" : "jr 3/10/2019 22:13",
+		"guessMetadataForArtifact:at:" : "jr 12/13/2020 22:03",
 		"guessSerializerForArtifact:in:" : "jr 3/6/2019 22:53",
 		"initialize" : "jr 3/8/2017 16:47",
 		"initializeWith:" : "jr 1/27/2017 15:07",

@@ -1,3 +1,4 @@
 accessing
 mergeStoreInfo: otherStoreInfo
-	storeInfo mergeWith: otherStoreInfo.
+	self deprecated: 'Use updateStoreInfo: instead'.
+	self updateStoreInfo: otherStoreInfo.

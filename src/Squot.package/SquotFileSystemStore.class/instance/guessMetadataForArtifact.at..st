@@ -15,4 +15,4 @@ guessMetadataForArtifact: anArtifact at: aFileOrDirectory
 									chooseFrom: (possibleArtifacts collect: [:each | each storeInfo serializer])
 									values: (possibleArtifacts collect: #storeInfo)
 									title: 'Which serializer fits best with the artifact at ', anArtifact path, '?']].
-	anArtifact mergeStoreInfo: foundMetadata.
+	anArtifact updateStoreInfo: foundMetadata.

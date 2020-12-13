@@ -17,7 +17,7 @@
 		"initializeDefaultStoreInfoFor:" : "jr 2/21/2017 21:35",
 		"isLoadable" : "jr 3/8/2017 16:17",
 		"materializeWith:replacing:" : "jr 5/28/2017 14:33",
-		"mergeStoreInfo:" : "jr 7/16/2017 12:04",
+		"mergeStoreInfo:" : "jr 12/13/2020 21:59",
 		"path" : "jr 1/27/2017 15:03",
 		"path:" : "jr 8/11/2020 23:46",
 		"postCopy" : "jr 5/28/2017 14:34",
@@ -29,4 +29,5 @@
 		"shadowOfTrackedObject" : "jr 8/2/2020 15:31",
 		"snapshot" : "jr 11/22/2020 15:53",
 		"storeInfo" : "jr 1/27/2017 15:03",
-		"storeInfo:" : "jr 1/27/2017 15:03" } }
+		"storeInfo:" : "jr 1/27/2017 15:03",
+		"updateStoreInfo:" : "jr 12/13/2020 21:58" } }

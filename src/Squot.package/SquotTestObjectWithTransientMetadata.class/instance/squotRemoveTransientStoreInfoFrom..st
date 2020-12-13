@@ -1,0 +1,4 @@
+tracking
+squotRemoveTransientStoreInfoFrom: aTrackedObjectMetadata
+	super squotRemoveTransientStoreInfoFrom: aTrackedObjectMetadata.
+	aTrackedObjectMetadata removeKey: #transient.

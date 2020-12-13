@@ -1,0 +1,1 @@
+I am an example of an object that uses transient metadata while the object is loaded.

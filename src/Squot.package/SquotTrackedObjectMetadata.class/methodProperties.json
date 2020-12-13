@@ -3,6 +3,7 @@
 		 },
 	"instance" : {
 		"=" : "jr 11/6/2020 23:51",
+		"absorbDiff:" : "jr 12/13/2020 21:51",
 		"add:toSlotOverridesOf:" : "jr 7/16/2017 12:23",
 		"asSquotTrackedObjectMetadata" : "jr 7/22/2017 17:30",
 		"copyIgnoredInstanceVariables:" : "jr 7/20/2017 13:36",
@@ -19,7 +20,7 @@
 		"initializeInstVarNamed:of:with:" : "jr 7/16/2017 12:23",
 		"materializer" : "jr 7/16/2017 12:27",
 		"materializer:" : "jr 7/16/2017 12:28",
-		"mergeWith:" : "jr 7/16/2017 12:04",
+		"mergeWith:" : "jr 12/13/2020 22:53",
 		"objectClass:" : "jr 7/16/2017 12:28",
 		"objectClassName" : "jr 7/16/2017 12:26",
 		"postCopy" : "jr 8/10/2017 19:19",
@@ -32,4 +33,5 @@
 		"slotOverrideFor:in:ifFound:ifNone:" : "jr 7/16/2017 13:50",
 		"slotOverrides" : "jr 7/16/2017 12:21",
 		"squotDiffAgainst:" : "jr 12/13/2020 16:16",
-		"squotMergeWith:basedOn:" : "jr 12/13/2020 16:16" } }
+		"squotMergeWith:basedOn:" : "jr 12/13/2020 16:16",
+		"updateFrom:" : "jr 12/13/2020 21:51" } }

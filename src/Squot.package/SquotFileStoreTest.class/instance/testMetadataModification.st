@@ -1,20 +1,23 @@
 tests
 testMetadataModification
-	| metadata snapshot changed diff |
+	| metadata changed diff |
 	metadata := SquotTrackedObjectMetadata new.
 	metadata
 		at: #dummy put: {1};
+		at: #toBeRemoved put: 'yes';
 		serializer: SquotStonFileCodec.
 	fileStore add: (SquotArtifact new
 					path: 'example';
 					content: (SquotShadowGraph new startShadow: true);
 					storeInfo: metadata;
 					yourself).
-	snapshot := (fileStore artifactAt: 'example') snapshot.
-	changed := snapshot copy.
-	changed storeInfo at: #dummy put: {2}.
+	changed := (fileStore artifactAt: 'example') snapshot copy.
+	changed storeInfo
+		at: #dummy put: {2};
+		removeKey: #toBeRemoved.
 	"when"
 	diff := (fileStore artifactAt: 'example') diffAgainst: changed.
 	fileStore applyDiff: diff toObjectAt: 'example'.
 	"then"
-	self assert: {2} equals: ((fileStore artifactAt: 'example') storeInfo at: #dummy).
+	self assert: {2} equals: ((fileStore artifactAt: 'example') storeInfo at: #dummy);
+		deny: ((fileStore artifactAt: 'example') storeInfo includesKey: #toBeRemoved).

@@ -1,3 +1,3 @@
 patching
 applyTo: aShadowGraph
-	^ diffContent squotApplyTo: aShadowGraph
+	^ self applyContentDiffTo: aShadowGraph

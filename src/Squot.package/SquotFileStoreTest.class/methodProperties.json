@@ -12,10 +12,11 @@
 		"testDeleteMethod" : "jr 12/3/2019 00:08",
 		"testLazySnapshot" : "jr 10/3/2017 00:36",
 		"testLoadOrderIsPreserved" : "jr 8/18/2018 18:17",
+		"testMetadataModification" : "jr 12/14/2020 22:47",
 		"testPatchDeleteArtifact" : "jr 7/22/2017 02:25",
 		"testPatchDeleteFolderArtifact" : "jr 7/22/2017 02:29",
 		"testPatchDeleteMethod" : "jr 7/22/2017 01:33",
-		"testPatchFileTreeWithoutMetadata" : "jr 3/7/2019 08:42",
+		"testPatchFileTreeWithoutMetadata" : "jr 12/14/2020 22:40",
 		"testReadArtifactWithoutMetadata" : "jr 12/8/2019 16:14",
 		"testStringAsTextfile" : "jr 8/17/2017 19:25",
 		"testStringDefaultEncoding" : "jr 8/18/2017 12:41" } }

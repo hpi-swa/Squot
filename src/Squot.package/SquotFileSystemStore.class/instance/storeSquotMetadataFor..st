@@ -1,4 +1,4 @@
 private storing
 storeSquotMetadataFor: anArtifact
-	(self metadataFor: anArtifact) updateFrom: anArtifact.
+	(self metadataFor: anArtifact) updateFrom: anArtifact storeInfo.
 	

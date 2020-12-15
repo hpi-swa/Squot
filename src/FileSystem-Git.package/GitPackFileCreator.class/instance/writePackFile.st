@@ -6,5 +6,5 @@ writePackFile
 		self
 			writePackFileHeaderOn: stream;
 			writeObjectsOn: stream.
-		stream truncate.
+		stream truncate: stream position.
 		self writePackFileTrailerOn: stream]

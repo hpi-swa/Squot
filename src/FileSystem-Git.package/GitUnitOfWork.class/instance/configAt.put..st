@@ -13,5 +13,5 @@ configAt: aNameString put: value
 	repository configFile writeStreamDo: [:stream |
 		stream lineEndConvention: #lf.
 		config writeOn: stream.
-		stream truncate].
+		stream truncate: stream position].
 	^ value

@@ -21,5 +21,5 @@ configUnsetAt: aNameString
 	delete reverseDo: [:each | lines removeAt: each].
 	file writeStreamDo: [:stream |
 		lines do: [:each | stream nextPutAll: each; lf].
-		stream truncate].
+		stream truncate: stream position].
 	config := nil. "reload"

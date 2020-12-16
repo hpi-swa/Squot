@@ -18,78 +18,51 @@ squotMergeWith: incomingTrackedObjectMetadata basedOn: baseTrackedObjectMetadata
 					[base = left
 						ifTrue: [diffs at: (path at: encounter) put: (SquotObjectReplacement left: left right: right)]
 						ifFalse: [conflicts at: (path at: encounter) put: (SquotObjectReferenceConflict key: (path at: encounter) base: base working: left incoming: right)]]
-				ifFalse: [| leftClass rightClass baseClass leftSize rightSize baseSize |
+				ifFalse: [| leftClass rightClass baseClass |
 					((seen includes: left) or: [(seen includes: right) or: [seen includes: base]]) ifTrue: [self error: 'Multiple paths'].
 					seen add: left; add: right; add: base.
 					leftClass := thisContext objectClass: left.
 					rightClass := thisContext objectClass: right.
 					baseClass := thisContext objectClass: base.
-					((leftClass includesBehavior: Dictionary) and: [rightClass includesBehavior: Dictionary])
+					leftClass = rightClass
 						ifTrue:
-							[| baseIsDictionary | baseIsDictionary := baseClass includesBehavior: Dictionary.
-							left keysAndValuesDo:
-								[:eachKey :leftValue |
-								(right includesKey: eachKey)
+							[| mirror refs |
+							mirror := leftClass squotMirror.
+							refs :=
+								{mirror referencesFrom: left.
+								mirror referencesFrom: right.
+								baseClass = leftClass
+									ifTrue: [mirror referencesFrom: base]
+									ifFalse: [baseClass squotMirror referencesFrom: base]}.
+							(refs first intersection: refs second) do:
+								[:each |
+								(refs third includes: each)
 									ifTrue:
-										[(baseIsDictionary and: [base includesKey: eachKey])
-											ifTrue: [upcoming add: {leftValue. right at: eachKey. base at: eachKey}.
-												path at: upcoming last put: ((path at: encounter) copyWith: (Message selector: #at: argument: eachKey))]
-											ifFalse: [conflicts at: ((path at: encounter) copyWith: (Message selector: #at: argument: eachKey)) put: (SquotObjectReferenceConflict key: ((path at: encounter) copyWith: (Message selector: #at: argument: eachKey)) base: nil working: leftValue incoming: (right at: eachKey))]]
+										[upcoming add: {(each reflect: left in: mirror). (each reflect: right in: mirror). (each reflect: base in: mirror)}.
+										path at: upcoming last put: ((path at: encounter) copyWith: each)]
 									ifFalse:
-										[(baseIsDictionary and: [base includesKey: eachKey])
-											ifTrue:
-												[(base at: eachKey) = leftValue
-													ifTrue: [diffs at: ((path at: encounter) copyWith: (Message selector: #at: argument: eachKey)) put: (SquotObjectRemoval of: leftValue)]
-													ifFalse: [conflicts at: ((path at: encounter) copyWith: (Message selector: #at: argument: eachKey)) put: (SquotObjectReferenceConflict key: ((path at: encounter) copyWith: (Message selector: #at: argument: eachKey)) base: (base at: eachKey) working: leftValue incoming: nil)]]
-											ifFalse: [conflicts at: ((path at: encounter) copyWith: (Message selector: #at: argument: eachKey)) put: (SquotObjectReferenceConflict key: ((path at: encounter) copyWith: (Message selector: #at: argument: eachKey)) base: nil working: leftValue incoming: nil)]]].
-							right keysAndValuesDo:
-								[:eachKey :rightValue |
-								(left includesKey: eachKey) ifFalse:
-									[(baseIsDictionary and: [base includesKey: eachKey])
-										ifTrue:
-											[(base at: eachKey) = rightValue
-												ifTrue: ["leave removed"]
-												ifFalse: [conflicts at: ((path at: encounter) copyWith: (Message selector: #at: argument: eachKey)) put: (SquotObjectReferenceConflict key: ((path at: encounter) copyWith: (Message selector: #at: argument: eachKey)) base: (base at: eachKey) working: nil incoming: rightValue)]]
-										ifFalse: [diffs at: ((path at: encounter) copyWith: (Message selector: #at: argument: eachKey)) put: (SquotObjectAddition of: rightValue)]]]]
-						ifFalse:
-							[leftClass ~= rightClass
+										["Would have to go into detail with the differences here and each of them would be conflicts"
+										(each reflect: left in: mirror) = (each reflect: right in: mirror)
+											ifTrue: ["in agreement"]
+											ifFalse: [conflicts at: ((path at: encounter) copyWith: each) put: (SquotObjectAdditionConflict left: (each reflect: left in: mirror) right: (each reflect: right in: mirror))]]].
+							(refs first copyWithoutAll: refs second) do:
+								[:each |
+								(refs third includes: each)
+									ifFalse: ["leave added"]
+									ifTrue:
+										[(each reflect: base in: mirror) = (each reflect: left in: mirror)
+											ifTrue: [diffs at: ((path at: encounter) copyWith: each) put: (SquotObjectRemoval of: (each reflect: left in: mirror))]
+											ifFalse: [conflicts at: ((path at: encounter) copyWith: each) put: (SquotObjectReferenceConflict key: ((path at: encounter) copyWith: each) base: (each reflect: base in: mirror) working: (each reflect: left in: mirror) incoming: nil)]]].
+						(refs second copyWithoutAll: refs first) do:
+							[:each |
+							(refs third includes: each)
 								ifTrue:
-									[(baseClass = leftClass and: [base = left])
-										ifTrue: [diffs at: (path at: encounter) put: (SquotObjectReplacement left: left right: right)]
-										ifFalse: [conflicts at: (path at: encounter) put: (SquotObjectReferenceConflict key: (path at: encounter) base: base working: left incoming: right)]]
-								ifFalse:
-									[(leftClass instVarNames intersection: rightClass instVarNames) do:
-										[:each |
-										(baseClass instVarNames includes: each)
-											ifTrue: 
-												[upcoming add: {thisContext object: left instVarAt: (leftClass instVarIndexFor: each ifAbsent: []). thisContext object: right instVarAt: (rightClass instVarIndexFor: each ifAbsent: []). thisContext object: base instVarAt: (baseClass instVarIndexFor: each ifAbsent: [])}.
-												path at: upcoming last put: ((path at: encounter) copyWith: each)]
-											ifFalse:
-												["Would have to go into detail with the differences here and each of them would be conflicts"
-												(thisContext object: left instVarAt: (leftClass instVarIndexFor: each ifAbsent: [])) ~= (thisContext object: right instVarAt: (rightClass instVarIndexFor: each ifAbsent: []))
-													ifTrue: [conflicts at: ((path at: encounter) copyWith: each) put: (SquotObjectAdditionConflict left: (thisContext object: left instVarAt: (leftClass instVarIndexFor: each ifAbsent: [])) right: (thisContext object: right instVarAt: (rightClass instVarIndexFor: each ifAbsent: [])))]]].
-									leftSize := thisContext objectSize: left.
-									rightSize := thisContext objectSize: right.
-									baseSize := thisContext objectSize: base.
-									1 to: (leftSize min: rightSize) do:
-										[:eachIndex |
-										eachIndex <= baseSize
-											ifTrue:
-												[upcoming add: {thisContext object: left basicAt: eachIndex. thisContext object: right basicAt: eachIndex}.
-												path at: upcoming last put: ((path at: encounter) copyWith: eachIndex)]
-											ifFalse:
-												[(thisContext object: left basicAt: eachIndex) ~= (thisContext object: right basicAt: eachIndex)
-													ifTrue: [conflicts at: ((path at: encounter) copyWith: eachIndex) put: (SquotObjectAdditionConflict left: (thisContext object: left basicAt: eachIndex) right: (thisContext object: right basicAt: eachIndex))]]].
-									rightSize + 1 to: leftSize do:
-										[:eachIndex |
-										eachIndex <= baseSize
-											ifTrue: [diffs at: ((path at: encounter) copyWith: eachIndex) put: (SquotObjectRemoval of: (thisContext object: left basicAt: eachIndex))]
-											ifFalse: ["leave added"]].
-									leftSize +1 to: rightSize do:
-										[:eachIndex |
-										eachIndex <= baseSize
-											ifTrue: [(thisContext object: base basicAt: eachIndex) ~= (thisContext object: right basicAt: eachIndex)
-														ifTrue: [conflicts at: ((path at: encounter) copyWith: eachIndex) put: (SquotObjectReferenceConflict key: ((path at: encounter) copyWith: eachIndex) base: (thisContext object: base basicAt: eachIndex) working: nil incoming: (thisContext object: right basicAt: eachIndex))]
-														ifFalse: ["leave removed"]]
-											ifFalse: [diffs at: ((path at: encounter) copyWith: eachIndex) put: (SquotObjectAddition of: (thisContext object: right basicAt: eachIndex))]]]]]]].
+									[(each reflect: right in: mirror) = (each reflect: base in: mirror)
+										ifTrue: ["leave removed"]
+										ifFalse: [conflicts at: ((path at: encounter) copyWith: each) put: (SquotObjectReferenceConflict key: ((path at: encounter) copyWith: each) base: (each reflect: base in: mirror) working: nil incoming: (each reflect: right in: mirror))]]
+								ifFalse: [diffs at: ((path at: encounter) copyWith: each) put: (SquotObjectAddition of: (each reflect: right in: mirror))]]]
+						ifFalse:
+							[(baseClass = leftClass and: [base = left])
+								ifTrue: [diffs at: (path at: encounter) put: (SquotObjectReplacement left: left right: right)]
+								ifFalse: [conflicts at: (path at: encounter) put: (SquotObjectReferenceConflict key: (path at: encounter) base: base working: left incoming: right)]]]]].
 	^ SquotTrackedObjectMetadataMerge into: self merge: incomingTrackedObjectMetadata basedOn: baseTrackedObjectMetadata diffs: diffs conflicts: conflicts

@@ -1,0 +1,15 @@
+{
+	"class" : {
+		"dependentsFields" : "jr 12/15/2020 23:29",
+		"dependentsFields:" : "jr 12/15/2020 23:29",
+		"key:" : "jr 12/15/2020 23:25" },
+	"instance" : {
+		"=" : "jr 12/15/2020 23:29",
+		"addTo:withValue:" : "jr 12/16/2020 00:31",
+		"hash" : "jr 12/15/2020 23:29",
+		"key" : "jr 12/15/2020 23:29",
+		"printOn:" : "jr 12/15/2020 23:59",
+		"reflect:in:" : "jr 12/16/2020 00:18",
+		"reflect:in:put:" : "jr 12/16/2020 00:18",
+		"removeFrom:" : "jr 12/16/2020 00:30",
+		"setKey:" : "jr 12/15/2020 23:26" } }

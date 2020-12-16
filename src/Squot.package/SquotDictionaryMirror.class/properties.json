@@ -1,0 +1,14 @@
+{
+	"category" : "Squot-Capturing",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "SquotDictionaryMirror",
+	"pools" : [
+		 ],
+	"super" : "SquotMirror",
+	"type" : "normal" }

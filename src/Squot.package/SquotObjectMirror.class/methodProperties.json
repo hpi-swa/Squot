@@ -1,0 +1,17 @@
+{
+	"class" : {
+		"class:" : "jr 12/15/2020 23:32",
+		"dependentsFields" : "jr 12/15/2020 23:32",
+		"dependentsFields:" : "jr 12/15/2020 23:32",
+		"referencesFrom:do:" : "jr 12/15/2020 22:53" },
+	"instance" : {
+		"=" : "jr 12/15/2020 23:33",
+		"hash" : "jr 12/15/2020 23:33",
+		"referencesFrom:" : "jr 12/15/2020 23:20",
+		"referencesFrom:do:" : "jr 12/15/2020 23:15",
+		"reflectIndexableField:in:" : "jr 12/16/2020 00:04",
+		"reflectIndexableField:in:put:" : "jr 12/16/2020 00:07",
+		"reflectInstanceVariable:in:" : "jr 12/15/2020 23:43",
+		"reflectInstanceVariable:in:put:" : "jr 12/16/2020 00:09",
+		"setClass:" : "jr 12/15/2020 23:33",
+		"theClass" : "jr 12/15/2020 23:33" } }

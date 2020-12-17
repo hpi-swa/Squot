@@ -12,24 +12,25 @@ squotDiffAgainst: aTrackedObjectMetadata
 		encounter := upcoming removeLast.
 		left := encounter first. right := encounter second.
 		left ~= right ifTrue:
-			[(left outboundPointers size = 1 and: [right outboundPointers size = 1])
+			[| mirror leftClass rightClass leftRefs rightRefs |
+			leftRefs := rightRefs := nil.
+			leftClass := thisContext objectClass: left.
+			rightClass := thisContext objectClass: right.
+			(leftClass ~= rightClass
+					or: [(leftRefs := (mirror := leftClass squotMirror) referencesFrom: left) isEmpty
+						and: [(rightRefs := rightClass squotMirror referencesFrom: right) isEmpty]])
 				ifTrue: [diffs at: (path at: encounter) put: (SquotObjectReplacement left: left right: right)]
-				ifFalse: [| leftClass rightClass |
+				ifFalse: [
 					((seen includes: left) or: [seen includes: right]) ifTrue: [self error: 'Multiple paths'].
 					seen add: left; add: right.
-					leftClass := thisContext objectClass: left.
-					rightClass := thisContext objectClass: right.
-					leftClass ~= rightClass
-						ifTrue: [diffs at: (path at: encounter) put: (SquotObjectReplacement left: left right: right)]
-						ifFalse:
-							[| mirror refs | mirror := leftClass squotMirror.
-							refs := {mirror referencesFrom: left. mirror referencesFrom: right}.
-							(refs first intersection: refs second) do:
-								[:each |
-								upcoming add: {each reflect: left in: mirror. each reflect: right in: mirror}.
-								path at: upcoming last put: ((path at: encounter) copyWith: each)].
-							(refs first copyWithoutAll: refs second) do:
-								[:each | diffs at: ((path at: encounter) copyWith: each) put: (SquotObjectRemoval of: (each reflect: left in: mirror))].
-							(refs second copyWithoutAll: refs first) do:
-								[:each | diffs at: ((path at: encounter) copyWith: each) put: (SquotObjectAddition of: (each reflect: right in: mirror))]]]]].
+					leftRefs ifNil: [leftRefs := mirror referencesFrom: left].
+					rightRefs ifNil: [rightRefs := mirror referencesFrom: right].
+					(leftRefs intersection: rightRefs) do:
+						[:each |
+						upcoming add: {each reflect: left in: mirror. each reflect: right in: mirror}.
+						path at: upcoming last put: ((path at: encounter) copyWith: each)].
+					(leftRefs copyWithoutAll: rightRefs) do:
+						[:each | diffs at: ((path at: encounter) copyWith: each) put: (SquotObjectRemoval of: (each reflect: left in: mirror))].
+					(rightRefs copyWithoutAll: leftRefs) do:
+						[:each | diffs at: ((path at: encounter) copyWith: each) put: (SquotObjectAddition of: (each reflect: right in: mirror))]]]].
 	^ SquotTrackedObjectMetadataDiff left: self right: aTrackedObjectMetadata diffs: diffs

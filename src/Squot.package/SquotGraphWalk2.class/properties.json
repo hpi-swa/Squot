@@ -1,0 +1,18 @@
+{
+	"category" : "Squot-Diffs",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "jr 12/20/2020 20:19",
+	"instvars" : [
+		"toBeVisited",
+		"visited",
+		"paths",
+		"guide",
+		"latest" ],
+	"name" : "SquotGraphWalk2",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }

@@ -1,0 +1,15 @@
+{
+	"class" : {
+		 },
+	"instance" : {
+		"add:path:" : "jr 12/20/2020 20:23",
+		"add:reachedVia:" : "jr 12/20/2020 20:36",
+		"addFirst:" : "jr 12/20/2020 20:34",
+		"atEnd" : "jr 12/20/2020 20:24",
+		"checkPathsTo:ifMultiple:" : "jr 12/20/2020 22:09",
+		"currentPath" : "jr 12/20/2020 20:30",
+		"do:" : "jr 12/20/2020 21:20",
+		"hasVisited:" : "jr 12/20/2020 20:26",
+		"initialize" : "jr 12/20/2020 20:21",
+		"next" : "jr 12/20/2020 20:31",
+		"visited:" : "jr 12/20/2020 20:26" } }

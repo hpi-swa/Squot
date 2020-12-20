@@ -1,36 +1,13 @@
 comparing
 squotDiffAgainst: aTrackedObjectMetadata
-	| seen upcoming path diffs |
-	seen := IdentitySet new.
-	upcoming := OrderedCollection new.
-	upcoming add: {self. aTrackedObjectMetadata}.
-	path := Dictionary new.
-	path at: upcoming first put: #().
+	| walk diffs |
 	diffs := Dictionary new.
-	[upcoming isEmpty] whileFalse:
-		[| encounter left right |
-		encounter := upcoming removeLast.
-		left := encounter first. right := encounter second.
-		left ~= right ifTrue:
-			[| mirror leftClass rightClass leftRefs rightRefs |
-			leftRefs := rightRefs := nil.
-			leftClass := thisContext objectClass: left.
-			rightClass := thisContext objectClass: right.
-			(leftClass ~= rightClass
-					or: [(leftRefs := (mirror := leftClass squotMirror) referencesFrom: left) isEmpty
-						and: [(rightRefs := rightClass squotMirror referencesFrom: right) isEmpty]])
-				ifTrue: [diffs at: (path at: encounter) put: (SquotObjectReplacement left: left right: right)]
-				ifFalse: [
-					((seen includes: left) or: [seen includes: right]) ifTrue: [self error: 'Multiple paths'].
-					seen add: left; add: right.
-					leftRefs ifNil: [leftRefs := mirror referencesFrom: left].
-					rightRefs ifNil: [rightRefs := mirror referencesFrom: right].
-					(leftRefs intersection: rightRefs) do:
-						[:each |
-						upcoming add: {each reflect: left in: mirror. each reflect: right in: mirror}.
-						path at: upcoming last put: ((path at: encounter) copyWith: each)].
-					(leftRefs copyWithoutAll: rightRefs) do:
-						[:each | diffs at: ((path at: encounter) copyWith: each) put: (SquotObjectRemoval of: (each reflect: left in: mirror))].
-					(rightRefs copyWithoutAll: leftRefs) do:
-						[:each | diffs at: ((path at: encounter) copyWith: each) put: (SquotObjectAddition of: (each reflect: right in: mirror))]]]].
+	walk := SquotGraphComparisonWalk startingFrom: self and: aTrackedObjectMetadata.
+	walk do:
+		[:left :right |
+		walk followReferencesOf: left and: right
+			ifDifferentShape: [:path | diffs at: path put: (SquotObjectReplacement left: left right: right)]
+			ifOnlyLeft: [:removed :path | diffs at: path put: (SquotObjectRemoval of: removed)]
+			ifOnlyRight: [:added :path | diffs at: path put: (SquotObjectAddition of: added)]
+			ifAlreadyVisited: [self error: 'Multiple paths']].
 	^ SquotTrackedObjectMetadataDiff left: self right: aTrackedObjectMetadata diffs: diffs

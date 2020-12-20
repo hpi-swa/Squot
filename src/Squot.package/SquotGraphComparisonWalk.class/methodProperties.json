@@ -1,0 +1,8 @@
+{
+	"class" : {
+		"startingFrom:and:" : "jr 12/20/2020 21:48" },
+	"instance" : {
+		"do:" : "jr 12/20/2020 21:28",
+		"followReferencesOf:and:ifDifferentShape:ifOnlyLeft:ifOnlyRight:ifAlreadyVisited:" : "jr 12/20/2020 22:12",
+		"initialize" : "jr 12/20/2020 21:24",
+		"startFrom:and:" : "jr 12/20/2020 21:26" } }

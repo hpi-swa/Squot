@@ -1,0 +1,3 @@
+enumerating
+atEnd
+	^ toBeVisited isEmpty

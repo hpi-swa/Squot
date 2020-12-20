@@ -1,7 +1,6 @@
 enumerating
 followReferencesOf: left and: right ifDifferentShape: replacementBlock ifOnlyLeft: removalBlock ifOnlyRight: additionBlock ifAlreadyVisited: multiPathBlock
 	| leftMirror rightMirror leftRefs rightRefs |
-	leftRefs := rightRefs := nil.
 	leftMirror := (thisContext objectClass: left) squotMirror.
 	rightMirror := (thisContext objectClass: right) squotMirror.
 	(leftMirror ~= rightMirror

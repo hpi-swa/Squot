@@ -3,4 +3,7 @@ do: aBlock
 	walk do:
 		[:each |
 		each first ~= each second ifTrue:
-			[aBlock valueWithArguments: each]].
+			[latestWorking := each first.
+			latestIncoming := each second.
+			latestBase := each third.
+			aBlock valueWithArguments: each]].

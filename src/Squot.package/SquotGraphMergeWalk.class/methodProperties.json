@@ -2,7 +2,10 @@
 	"class" : {
 		"startingFrom:and:basedOn:" : "jr 12/20/2020 22:22" },
 	"instance" : {
-		"do:" : "jr 12/20/2020 22:27",
-		"followReferencesOf:and:basedOn:ifOpaqueDifference:ifOpaqueConflict:ifAdditionConflict:ifRemovedInIncoming:ifChangedInWorkingButRemovedInIncoming:ifRemovedInWorkingButChangedInIncoming:ifOnlyIncoming:ifAlreadyVisited:" : "jr 12/20/2020 23:52",
+		"do:" : "jr 12/21/2020 00:22",
+		"followCommonReferencesIfAdditionsConflict:" : "jr 12/21/2020 00:40",
+		"followReferencesIfOpaqueDifference:ifOpaqueConflict:ifAdditionConflict:ifRemovedInIncoming:ifChangedInWorkingButRemovedInIncoming:ifRemovedInWorkingButChangedInIncoming:ifOnlyIncoming:ifAlreadyVisited:" : "jr 12/21/2020 00:51",
+		"followReferencesNotInIncoming:ifChangedInWorking:" : "jr 12/21/2020 00:42",
+		"followReferencesNotInWorking:ifChangedInIncoming:" : "jr 12/21/2020 00:43",
 		"initialize" : "jr 12/20/2020 22:22",
 		"startFrom:and:basedOn:" : "jr 12/20/2020 22:23" } }

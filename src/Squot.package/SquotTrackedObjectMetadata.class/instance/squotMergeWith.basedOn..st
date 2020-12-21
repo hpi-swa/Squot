@@ -6,8 +6,7 @@ squotMergeWith: incomingTrackedObjectMetadata basedOn: baseTrackedObjectMetadata
 	walk := SquotGraphMergeWalk startingFrom: self and: incomingTrackedObjectMetadata basedOn: baseTrackedObjectMetadata.
 	walk do:
 		[:working :incoming :base |
-		walk followReferencesOf: working and: incoming basedOn: base
-			ifOpaqueDifference: [:path | diffs at: path put: (SquotObjectReplacement left: working right: incoming)]
+		walk followReferencesIfOpaqueDifference: [:path | diffs at: path put: (SquotObjectReplacement left: working right: incoming)]
 			ifOpaqueConflict:
 				[:path | conflicts at: path put: (SquotObjectReferenceConflict key: path base: base working: working incoming: incoming)]
 			ifAdditionConflict: [:addedWorking :addedIncoming :path | conflicts at: path put: (SquotObjectAdditionConflict working: addedWorking incoming: addedIncoming)]

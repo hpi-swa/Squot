@@ -6,7 +6,13 @@
 		 ],
 	"commentStamp" : "jr 12/20/2020 22:21",
 	"instvars" : [
-		"walk" ],
+		"walk",
+		"latestWorking",
+		"latestIncoming",
+		"latestBase",
+		"workingReflected",
+		"incomingReflected",
+		"baseReflected" ],
 	"name" : "SquotGraphMergeWalk",
 	"pools" : [
 		 ],

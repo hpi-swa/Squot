@@ -9,7 +9,6 @@
 		"toBeVisited",
 		"visited",
 		"paths",
-		"guide",
 		"latest" ],
 	"name" : "SquotGraphWalk2",
 	"pools" : [

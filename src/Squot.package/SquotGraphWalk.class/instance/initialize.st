@@ -1,4 +1,5 @@
 initialize-release
 initialize
+	visited := IdentitySet new.
 	toBeVisited := OrderedCollection new.
-	visited := OrderedCollection new.
+	paths := Dictionary new.

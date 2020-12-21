@@ -7,19 +7,20 @@ show: aGraphWalk nextAfter: aTriple
 	baseObject := aTriple third.
 	(workingObject ifNil: [#()] ifNotNil: [workingObject squotOutgoingReferences]) do:
 		[:each |
-		aGraphWalk nextPut:
-			{each value.
-			each value sameIn: incoming asIn: working ifAbsent: [].
-			each value sameIn: base asIn: working ifAbsent: []}].
+		aGraphWalk
+			add: {each value.
+				each value sameIn: incoming asIn: working ifAbsent: [].
+				each value sameIn: base asIn: working ifAbsent: []}
+			reachedVia: each].
 	(incomingObject ifNil: [#()] ifNotNil: [incomingObject squotOutgoingReferences]) do:
 		[:each |
-		 aGraphWalk nextPut:
-			{each value sameIn: working asIn: incoming ifAbsent: [].
-			each value.
-			each value sameIn: base asIn: incoming ifAbsent: []}].
+		 aGraphWalk add: {each value sameIn: working asIn: incoming ifAbsent: [].
+				each value.
+				each value sameIn: base asIn: incoming ifAbsent: []}
+			reachedVia: each].
 	(baseObject ifNil: [#()] ifNotNil: [baseObject squotOutgoingReferences]) do:
 		[:each |
-		 aGraphWalk nextPut:
-			{each value sameIn: working asIn: base ifAbsent: [].
-			each value sameIn: incoming asIn: base ifAbsent: [].
-			each value}].
+		 aGraphWalk add: {each value sameIn: working asIn: base ifAbsent: [].
+				each value sameIn: incoming asIn: base ifAbsent: [].
+				each value}
+			reachedVia: each].

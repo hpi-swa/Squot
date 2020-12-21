@@ -1,1 +1,1 @@
-I enumerate objects in a graph.
+I iterate over objects in a graph.

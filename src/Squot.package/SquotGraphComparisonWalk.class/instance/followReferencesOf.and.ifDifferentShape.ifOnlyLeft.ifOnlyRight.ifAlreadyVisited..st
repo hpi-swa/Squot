@@ -1,8 +1,8 @@
 enumerating
 followReferencesOf: left and: right ifDifferentShape: replacementBlock ifOnlyLeft: removalBlock ifOnlyRight: additionBlock ifAlreadyVisited: multiPathBlock
 	| leftReflected rightReflected |
-	leftReflected := SquotReflectedObject mirror: (thisContext objectClass: left) squotMirror object: left.
-	rightReflected := SquotReflectedObject mirror: (thisContext objectClass: right) squotMirror object: right.
+	leftReflected := SquotObjectReflection object: left mirror: (thisContext objectClass: left) squotMirror.
+	rightReflected := SquotObjectReflection object: right mirror: (thisContext objectClass: right) squotMirror.
 	((leftReflected isComparableTo: rightReflected) not
 			or: [leftReflected references isEmpty
 				and: [rightReflected references isEmpty]])

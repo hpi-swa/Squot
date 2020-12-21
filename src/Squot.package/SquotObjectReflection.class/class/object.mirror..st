@@ -1,5 +1,5 @@
 instance creation
-mirror: aMirror object: anObject
+object: anObject mirror: aMirror
 	^ self new
 		setMirror: aMirror object: anObject;
 		yourself

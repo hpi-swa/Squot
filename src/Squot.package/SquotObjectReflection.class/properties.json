@@ -9,7 +9,7 @@
 		"object",
 		"mirror",
 		"refs" ],
-	"name" : "SquotReflectedObject",
+	"name" : "SquotObjectReflection",
 	"pools" : [
 		 ],
 	"super" : "Object",

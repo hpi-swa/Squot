@@ -1,5 +1,5 @@
 enumerating
-followReferencesIfOpaqueDifference: opaqueReplacementBlock ifOpaqueConflict: opaqueConflictBlock ifAdditionConflict: additionConflictBlock ifRemovedInIncoming: removalBlock ifChangedInWorkingButRemovedInIncoming: incomingRemovalConflictBlock ifRemovedInWorkingButChangedInIncoming: workingRemovalConflictBlock ifOnlyIncoming: additionBlock ifAlreadyVisited: multiPathBlock
+followReferencesIfReplaced: opaqueReplacementBlock ifReplacedDifferently: opaqueConflictBlock ifRemoved: removalBlock ifWorkingChanged: incomingRemovalConflictBlock ifIncomingChanged: workingRemovalConflictBlock ifAdded: additionBlock ifAddedDifferently: additionConflictBlock ifAlreadyVisited: multiPathBlock
 	workingReflected := incomingReflected := baseReflected := nil.
 	workingReflected := SquotReflectedObject mirror: (thisContext objectClass: latestWorking) squotMirror object: latestWorking.
 	incomingReflected := SquotReflectedObject mirror: (thisContext objectClass: latestIncoming) squotMirror object: latestIncoming.

@@ -4,7 +4,7 @@
 	"instance" : {
 		"do:" : "jr 12/21/2020 00:22",
 		"followCommonReferencesIfAdditionsConflict:" : "jr 12/21/2020 00:40",
-		"followReferencesIfOpaqueDifference:ifOpaqueConflict:ifAdditionConflict:ifRemovedInIncoming:ifChangedInWorkingButRemovedInIncoming:ifRemovedInWorkingButChangedInIncoming:ifOnlyIncoming:ifAlreadyVisited:" : "jr 12/21/2020 00:51",
+		"followReferencesIfReplaced:ifReplacedDifferently:ifRemoved:ifWorkingChanged:ifIncomingChanged:ifAdded:ifAddedDifferently:ifAlreadyVisited:" : "jr 12/21/2020 22:10",
 		"followReferencesNotInIncoming:ifChangedInWorking:" : "jr 12/21/2020 00:42",
 		"followReferencesNotInWorking:ifChangedInIncoming:" : "jr 12/21/2020 00:43",
 		"initialize" : "jr 12/21/2020 01:11",

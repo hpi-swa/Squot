@@ -16,7 +16,13 @@ mergeObject: workingObject with: incomingObject basedOn: baseObject
 				ifNotNil: ["working removal" self notYetImplemented]]
 		ifNotNil:
 			[incomingObject
-				ifNil: ["incoming removal" self notYetImplemented]
+				ifNil: [baseObject
+						ifNil: ["leave added"]
+						ifNotNil:
+							["incoming removal"
+							workingObject = baseObject
+								ifTrue: [containerModifications at: name put: (SquotObjectRemoval of: working)]
+								ifFalse: [containerConflicts at: name put: (SquotObjectReferenceConflict key: name base: baseObject working: workingObject incoming: nil)]]]
 				ifNotNil:
 					["merge editions"
 					baseObject ifNil: [self notYetImplemented].

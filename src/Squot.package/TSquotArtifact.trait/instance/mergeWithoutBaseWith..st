@@ -1,7 +1,5 @@
 merging
 mergeWithoutBaseWith: anArtifact
-	| merge diff |
-	merge := SquotArtifactMerge new working: self; incoming: anArtifact.
-	diff := self diffAgainst: anArtifact.
-	diff mayAffectArtifact ifTrue: [diff addDifferencesAsConflicts: merge].
-	^ merge
+	| emptyBase |
+	emptyBase := SquotArtifact path: self path content: (SquotShadowGraph withSingleShadow: Object new captureWithSquot).
+	^ self mergeWith: anArtifact basedOn: emptyBase

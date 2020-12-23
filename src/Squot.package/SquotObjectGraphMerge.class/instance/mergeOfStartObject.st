@@ -1,3 +1,3 @@
 accessing
 mergeOfStartObject
-	^ elementMerges at: working startName
+	^ self at: working startName

@@ -2,4 +2,7 @@
 	"class" : {
 		 },
 	"instance" : {
-		"testReplacesStrings" : "jr 12/17/2020 19:44" } }
+		"testApplyIsNonDestructive" : "jr 12/23/2020 20:36",
+		"testEverythingIsAValue" : "jr 12/22/2020 00:21",
+		"testReplacesStrings" : "jr 12/17/2020 19:44",
+		"testUnchangedValuesRemain" : "jr 12/22/2020 00:24" } }

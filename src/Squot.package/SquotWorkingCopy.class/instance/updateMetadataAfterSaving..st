@@ -11,6 +11,7 @@ updateMetadataAfterSaving: aVersion
 		artifact := self artifactAt: each path.
 		diff := artifact storeInfo squotDiffAgainst: each storeInfo. self flag: #encapsulation. "storeInfo access"
 		new := diff squotApplyTo: artifact storeInfo.
+		self flag: #generality. "Don't switch on the artifact type below. Use something like absorbDiff: instead."
 		artifact isLoaded
 			ifTrue:
 				["Don't overwrite transient properties."

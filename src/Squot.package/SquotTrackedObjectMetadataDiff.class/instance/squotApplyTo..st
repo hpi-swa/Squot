@@ -25,9 +25,5 @@ squotApplyTo: metadata
 		path allButLast do:
 			[:each | object := each reflect: object
 								in: (thisContext objectClass: object) squotMirror].
-		self flag: #generality. "Type discrimination below. Not open for other kinds of differences and implements the nature of the differences by itself."
-		diff isAddition ifTrue: [path last addTo: object withValue: diff addedObject].
-		diff isModification ifTrue:
-			[path last reflect: object in: (thisContext objectClass: object) squotMirror put: diff incoming].
-		diff isRemoval ifTrue: [path last removeFrom: object]].
+		diff squotReflectOn: object in: (thisContext objectClass: object) squotMirror].
 	^ new

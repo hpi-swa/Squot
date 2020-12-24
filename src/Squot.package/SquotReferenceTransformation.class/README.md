@@ -1,0 +1,1 @@
+I tell how an existing reference was transformed into a different reference (e. g. a rename or move). This is a stub for now.

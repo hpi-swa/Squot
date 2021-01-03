@@ -1,7 +1,7 @@
 patching
 openTableOfContentsDuring: aBlock
 	tableOfContentsDuringTransaction := self tableOfContents.
-	aBlock ensure:
+	^ aBlock ensure:
 		[self shouldStoreMetadata
 			ifTrue: [tableOfContentsDuringTransaction fileOut]
 			ifFalse: [tableOfContentsDuringTransaction delete].

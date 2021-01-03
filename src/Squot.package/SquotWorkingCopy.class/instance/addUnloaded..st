@@ -5,3 +5,4 @@ addUnloaded: anArtifact
 		ifTrue: [self error: 'Artifact already in working copy' "Do not return to allow proceed in debugger."].
 	self unloadedArtifacts at: anArtifact path put: anArtifact snapshot.
 	self appendToLoadOrder: anArtifact path.
+	^ self artifactAt: anArtifact path

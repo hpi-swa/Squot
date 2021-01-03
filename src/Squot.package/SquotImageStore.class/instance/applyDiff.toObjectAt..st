@@ -9,3 +9,5 @@ applyDiff: anArtifactDiff toObjectAt: path
 	SquotCurrentMetadata value: metadata during:
 		[anArtifactDiff applyToLoaded: (graph ifNil: [object])].
 	graph ifNotNil: [objects at: path put: graph startObject].
+	self flag: #todo. "Notice changes and return new live artifact with an initialized snapshot."
+	^ self artifactAt: path

@@ -6,5 +6,5 @@ objectCacheRefresh
 		ifNotNil: [:commit |
 			self withUnitOfWork:
 				[commitForCache := commit.
-				(commit lazyArtifacts values
+				(commit artifacts values
 					collect: [:artifact | SquitArtifactWrapper on: artifact]) sorted]]

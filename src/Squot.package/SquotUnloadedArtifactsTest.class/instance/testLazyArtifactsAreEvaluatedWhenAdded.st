@@ -7,9 +7,9 @@ testLazyArtifactsAreEvaluatedWhenAdded
 	directory := FileSystem memory root.
 	fileStore := SquotFileSystemStore inDirectory: directory.
 	fileStore add: artifactSnapshot.
-	self deny: ((fileStore artifactAt: 'object') diffAgainst: artifactSnapshot) hasChanges.
+	self deny: ((fileStore artifactAt: 'object') content squotDiffAgainst: artifactSnapshot content) hasChanges. "But the serializer was added to the metadata."
 	"when"
 	workingCopy addUnloaded: (fileStore artifactAt: 'object').
 	directory children do: [:each | each deleteAll].
 	"then"
-	self deny: ((workingCopy artifactAt: 'object') diffAgainst: artifactSnapshot) hasChanges.
+	self deny: ((workingCopy artifactAt: 'object') content squotDiffAgainst: artifactSnapshot content) hasChanges.

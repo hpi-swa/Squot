@@ -1,11 +1,11 @@
 adding and removing
 add: anArtifact
-	| tableOfContents |
-	self store: anArtifact.
+	| tableOfContents storedArtifact |
+	storedArtifact := self store: anArtifact.
 	self shouldStoreMetadata ifTrue:
 		[(tableOfContents := self tableOfContents) exists
-			ifTrue: [tableOfContents add: anArtifact]
+			ifTrue: [tableOfContents add: storedArtifact]
 			ifFalse: [self guessArtifacts do: [:each | tableOfContents add: each].
-				tableOfContents add: anArtifact "with correct metadata"].
+				tableOfContents add: storedArtifact "with correct metadata"].
 		tableOfContents fileOut].
-	^ anArtifact
+	^ storedArtifact

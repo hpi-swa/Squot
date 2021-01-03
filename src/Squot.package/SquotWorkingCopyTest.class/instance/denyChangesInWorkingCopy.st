@@ -1,4 +1,6 @@
 utilities
 denyChangesInWorkingCopy
+	| patch |
 	repository withUnitOfWork:
-		[self deny: (workingCopy patchRelativeToBase: workingCopy baseVersion) hasChanges].
+		[patch := workingCopy patchRelativeToBase: workingCopy baseVersion.
+		self deny: patch hasChanges].

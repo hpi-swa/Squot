@@ -1,7 +1,6 @@
 running
 setUp
-	| text |
-	conflictObject := text := Text fromString: 'Base text'.
+	conflictObject := ValueHolder new contents: 'Base text'.
 	others := OrderedCollection new.
 	self repository
 		withUnitOfWork: [ 

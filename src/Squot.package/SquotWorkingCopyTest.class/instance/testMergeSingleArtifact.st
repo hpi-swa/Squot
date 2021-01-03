@@ -5,7 +5,7 @@ testMergeSingleArtifact
 	"given"
 	repository withUnitOfWork:
 	["base version"
-	self workingCopy add: (unrelatedObject := Text fromString: 'unrelated') at: 'unrelated'.
+	self workingCopy add: (unrelatedObject := ValueHolder new contents: 'unrelated') at: 'unrelated'.
 	(self suppressChangeNotificationsDuring: [class := classFactory newClass])
 		compileSilently: 'mergeMe ^ 1' classified: 'to-be-changed'.
 	self workingCopy
@@ -14,7 +14,7 @@ testMergeSingleArtifact
 	self workingCopy saveVersionWithMessage: 'base version'.
 	baseVersion := self workingCopy loadedHistorian version.
 	"right-side version"
-	unrelatedObject replaceFrom: 1 to: unrelatedObject size with: 'unrelated1'.
+	unrelatedObject contents: 'unrelated1'.
 	self suppressChangeNotificationsDuring:
 		[class organization classify: #mergeMe under: 'something else' logged: false].
 	self workingCopy saveVersionWithMessage: 'right-side version'.
@@ -25,7 +25,7 @@ testMergeSingleArtifact
 	self workingCopy loadedHistorian version: baseVersion.
 	self suppressChangeNotificationsDuring: [self workingCopy discardUnsavedChanges].
 	class compileSilently: 'addedMethod ^ self' classified: 'should be kept'.
-	unrelatedObject replaceFrom: 1 to: unrelatedObject size with: 'unrelated2'.
+	unrelatedObject contents: 'unrelated2'.
 	self workingCopy saveVersionWithMessage: 'left-side version'.
 	leftVersion := self workingCopy loadedHistorian version.
 	"when"
@@ -40,4 +40,4 @@ testMergeSingleArtifact
 	] valueSupplyingAnswers: {{'*'. #default}}].
 	self assert: 'something else' = (class organization categoryOfElement: #mergeMe).
 	self assert: (class methodDictionary includesKey: #addedMethod).
-	self assert: 'unrelated2' equals: (self workingCopy objectAt: 'unrelated') asString].
+	self assert: 'unrelated2' equals: (self workingCopy objectAt: 'unrelated') contents].

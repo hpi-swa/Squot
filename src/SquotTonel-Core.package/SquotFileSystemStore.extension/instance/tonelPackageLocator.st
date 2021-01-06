@@ -8,7 +8,7 @@ tonelPackageLocator
 				ifTrue: [(fileOrDirectory entries
 							anySatisfy: 	[:eachEntry |
 											eachEntry basename = 'package.st' and:
-											[eachEntry isFile]])
+											[eachEntry isFile and: [(self isInsideCypressDirectory: fileOrDirectory) not]]])
 							ifTrue: [search addArtifact:
 										(self forgeLazyArtifactAt: fileOrDirectory
 											deserializerFactory: SquotTonelDeserializer

@@ -12,6 +12,7 @@ storeOrdinary: anArtifact
 						yourself)].
 	self validatePathOf: storedArtifact.
 	(serializer writingBelow: directory) write: storedArtifact.
+	self rememberArtifact: storedArtifact.
 	self shouldStoreMetadata ifTrue:
 		[self storeSquotMetadataFor: storedArtifact.
 		self tableOfContents add: storedArtifact].

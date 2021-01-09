@@ -7,5 +7,4 @@ applyDiff: aDiff toObjectAt: path
 	updatedArtifact := aDiff right.
 	reference exists ifTrue: [reference deleteAll].
 	storedArtifact := self store: updatedArtifact.
-	self rememberArtifact: storedArtifact.
 	^ storedArtifact

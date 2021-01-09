@@ -14,8 +14,7 @@
 		"timestamp",
 		"committer",
 		"newVersion",
-		"shouldStoreMetadata",
-		"capturedArtifacts" ],
+		"shouldStoreMetadata" ],
 	"name" : "SquotSaveOperation",
 	"pools" : [
 		 ],

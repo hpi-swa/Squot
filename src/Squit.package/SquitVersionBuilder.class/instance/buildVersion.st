@@ -18,5 +18,4 @@ buildVersion
 		author: author;
 		committer: (commitTimestamp ifNil: [committer now] ifNotNil: [committer atTime: commitTimestamp]);
 		store.
-	SquotArtifactsWereCaptured new artifacts: fsStore capturedArtifacts; signal.
 	^ SquotMemoizingVersion version: (repository versionForCommit: commit) snapshot: newSnapshot

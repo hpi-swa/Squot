@@ -6,7 +6,7 @@ updateWorkingCopy
 		self workingCopy
 			updateMetadataAfterSaving: newVersion fromSnapshot: patch patched;
 			loadedVersion: newVersion;
-			cacheSavedArtifacts: (self capturedArtifacts ifNil: [Dictionary new]);
+			cacheSavedArtifacts: patch in: newVersion;
 			updateLoadOrderFromVersion: newVersion;
 			resetAdditionalParents;
 			resetNewVersionMessage].

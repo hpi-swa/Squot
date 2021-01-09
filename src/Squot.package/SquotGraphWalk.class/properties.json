@@ -9,7 +9,8 @@
 		"toBeVisited",
 		"visited",
 		"paths",
-		"latest" ],
+		"latest",
+		"referrers" ],
 	"name" : "SquotGraphWalk",
 	"pools" : [
 		 ],

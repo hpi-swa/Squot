@@ -2,7 +2,7 @@
 	"class" : {
 		"startingFrom:and:" : "jr 12/20/2020 21:48" },
 	"instance" : {
-		"do:" : "jr 12/20/2020 22:24",
+		"do:" : "jr 1/9/2021 19:33",
 		"followReferencesOf:and:ifDifferentShape:ifOnlyLeft:ifOnlyRight:ifAlreadyVisited:" : "jr 12/21/2020 23:35",
 		"initialize" : "jr 12/21/2020 01:11",
 		"startFrom:and:" : "jr 12/20/2020 21:26" } }

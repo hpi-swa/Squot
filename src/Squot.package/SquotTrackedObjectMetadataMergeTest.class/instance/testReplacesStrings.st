@@ -5,7 +5,7 @@ testReplacesStrings
 	m2 := SquotTrackedObjectMetadata newFrom: {#string -> 'def' copy}.
 	str1 := m1 at: #string.
 	"when"
-	new := (diff := m1 squotMergeWith: m2 basedOn: m1) resolvedPatch squotApplyTo: m1.
+	new := (diff := (m1 squotMergeWith: m2 basedOn: m1) resolvedPatch) squotApplyTo: m1.
 	"then"
 	self assert: 'abc' equals: str1;
 		assert: (new at: #string) ~~ str1;

@@ -3,7 +3,9 @@ do: aBlock
 	walk do:
 		[:each |
 		each first ~= each second ifTrue:
-			[latestWorking := each first.
+			[ | referrers |
+			latestWorking := each first.
 			latestIncoming := each second.
 			latestBase := each third.
-			aBlock valueWithArguments: each]].
+			referrers := walk currentReferrer.
+			aBlock valueWithArguments: each, (referrers ifNotNil: [referrers] ifNil: [#(nil nil nil)])]].

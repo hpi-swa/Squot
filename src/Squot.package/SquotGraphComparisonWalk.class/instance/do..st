@@ -1,6 +1,12 @@
 enumerating
 do: aBlock
-	walk do:
+	walk do: 
 		[:each |
-		each first ~= each second ifTrue:
-			[aBlock value: each first value: each second]].
+		each first ~= each second ifTrue: 
+			[| referrers |
+			referrers := walk currentReferrer.
+			aBlock
+				value: each first
+				value: each second
+				value: (referrers ifNotNil: [referrers first])
+				value: (referrers ifNotNil: [referrers second])]].

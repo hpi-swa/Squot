@@ -1,0 +1,15 @@
+{
+	"category" : "Squot-Internal",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"version",
+		"snapshot" ],
+	"name" : "SquotMemoizingVersion",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }

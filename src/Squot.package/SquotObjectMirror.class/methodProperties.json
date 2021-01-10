@@ -1,9 +1,6 @@
 {
 	"class" : {
-		"class:" : "jr 12/15/2020 23:32",
-		"dependentsFields" : "jr 12/15/2020 23:32",
-		"dependentsFields:" : "jr 12/15/2020 23:32",
-		"referencesFrom:do:" : "jr 12/15/2020 22:53" },
+		"class:" : "jr 12/15/2020 23:32" },
 	"instance" : {
 		"=" : "jr 12/15/2020 23:33",
 		"hash" : "jr 12/15/2020 23:33",

@@ -1,3 +1,3 @@
 patching
 applyDiff: anArtifactDiff
-	self activateObjectRegistryDuring: [anArtifactDiff applyToContainer: self].
+	^ self activateObjectRegistryDuring: [anArtifactDiff applyToContainer: self].

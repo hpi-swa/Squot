@@ -1,10 +1,16 @@
 {
 	"class" : {
-		"guidedBy:" : "jr 8/13/2019 17:41" },
+		 },
 	"instance" : {
-		"atEnd" : "jr 8/11/2019 00:24",
-		"contents" : "jr 8/10/2019 20:43",
-		"guide:" : "jr 8/10/2019 21:19",
-		"initialize" : "jr 8/10/2019 21:29",
-		"next" : "jr 8/11/2019 00:23",
-		"nextPut:" : "jr 8/31/2019 20:30" } }
+		"add:path:" : "jr 1/9/2021 19:29",
+		"add:reachedVia:" : "jr 12/20/2020 20:36",
+		"addFirst:" : "jr 12/20/2020 20:34",
+		"atEnd" : "jr 12/20/2020 20:24",
+		"checkPathsTo:ifMultiple:" : "jr 12/20/2020 22:09",
+		"currentPath" : "jr 12/20/2020 20:30",
+		"currentReferrer" : "jr 1/9/2021 19:30",
+		"do:" : "jr 12/20/2020 21:20",
+		"hasVisited:" : "jr 12/20/2020 20:26",
+		"initialize" : "jr 1/9/2021 19:28",
+		"next" : "jr 12/20/2020 20:31",
+		"visited:" : "jr 12/20/2020 20:26" } }

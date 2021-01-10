@@ -12,3 +12,4 @@ restoreToSnapshot: aSnapshot
 				restoredPaths add: each path]].
 	(self objectPaths copyWithoutAll: restoredPaths)
 		do: [:path | self remove: (self objectAt: path)].
+	^ SquotSnapshot builder startingFrom: self; buildSnapshot

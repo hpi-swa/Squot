@@ -1,4 +1,5 @@
 private
 computeDifferences
+	self flag: #deprecated. 'Compute differences in the caller and use full constructor for the merge instead'.
 	graphMerge := working diffContentAgainstThatOf: incoming withBase: base.
-	metadataMerge := working storeInfo squotMergeWith: incoming storeInfo basedOn: base storeInfo. self flag: #encapsulation. self flag: #generality. "Should artifacts be able to influence this further?"
+	metadataMerge := working storeInfo squotMergeWith: incoming storeInfo basedOn: base storeInfo.

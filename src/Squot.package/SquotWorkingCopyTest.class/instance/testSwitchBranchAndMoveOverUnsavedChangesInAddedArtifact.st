@@ -11,9 +11,9 @@ testSwitchBranchAndMoveOverUnsavedChangesInAddedArtifact
 	self workingCopy saveVersionWithMessage: 'still empty other version'.
 	self workingCopy
 		loadedHistorian: originalHistorian;
-		add: (text := Text fromString: 'added text') at: 'text';
+		add: (text := ValueHolder new contents: 'added text') at: 'text';
 		saveVersionWithMessage: 'add text'.
-	text replaceFrom: 1 to: text size with: 'changed text'.
+	text contents: 'changed text'.
 	hadConflicts := false.
 	[workingCopy switchAndMoveUnsavedChangesOverTo: otherHistorian]
 	on: SquotMergeRequested doAndResume: [:request |
@@ -21,4 +21,4 @@ testSwitchBranchAndMoveOverUnsavedChangesInAddedArtifact
 		self assert: request merge hasConflicts.
 		request merge conflicts do: #chooseIncoming].
 	self assert: hadConflicts description: 'should have detected a conflict'.
-	self assert: 'changed text' equals: (workingCopy objectAt: 'text') string].
+	self assert: 'changed text' equals: (workingCopy objectAt: 'text') contents].

@@ -1,9 +1,11 @@
 {
 	"class" : {
-		"left:right:" : "jr 10/19/2017 19:31" },
+		"left:right:" : "jr 12/21/2020 00:06",
+		"working:incoming:" : "jr 12/20/2020 23:58" },
 	"instance" : {
 		"chooseIncoming" : "jr 9/25/2019 23:22",
 		"initializeSquotDiffNodes:with:" : "jr 11/1/2020 21:42",
-		"left:right:" : "jr 9/25/2019 23:31",
+		"left:right:" : "jr 12/20/2020 23:58",
 		"newSquotDiffNodes" : "jr 3/17/2018 14:35",
+		"setWorking:incoming:" : "jr 12/20/2020 23:58",
 		"squotChangeAsStringOrText" : "jr 11/1/2020 18:50" } }

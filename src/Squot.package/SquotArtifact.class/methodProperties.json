@@ -1,6 +1,7 @@
 {
 	"class" : {
-		 },
+		"path:content:" : "jr 12/23/2020 22:10",
+		"path:content:storeInfo:" : "jr 12/23/2020 22:11" },
 	"instance" : {
 		"=" : "jr 11/21/2020 01:11",
 		"browse" : "jr 12/23/2019 14:39",
@@ -8,9 +9,9 @@
 		"content" : "jr 1/27/2017 15:03",
 		"content:" : "jr 1/27/2017 15:03",
 		"convertToCurrentVersion:refStream:" : "jr 7/16/2017 12:06",
-		"copyWithDiffApplied:" : "jr 12/13/2020 19:05",
+		"copyWithDiffApplied:" : "jr 12/13/2020 21:21",
 		"copyWithDifferentContent:" : "jr 2/16/2017 00:40",
-		"diffAgainst:" : "jr 11/25/2020 21:46",
+		"diffAgainst:" : "jr 12/24/2020 00:35",
 		"displayText" : "fn 4/11/2017 14:24",
 		"hash" : "jr 5/28/2017 14:32",
 		"initialize" : "jr 7/16/2017 12:02",
@@ -18,6 +19,7 @@
 		"isLoadable" : "jr 3/8/2017 16:17",
 		"materializeWith:replacing:" : "jr 5/28/2017 14:33",
 		"mergeStoreInfo:" : "jr 12/13/2020 21:59",
+		"mergeWith:basedOn:" : "jr 12/23/2020 21:56",
 		"path" : "jr 1/27/2017 15:03",
 		"path:" : "jr 8/11/2020 23:46",
 		"postCopy" : "jr 5/28/2017 14:34",
@@ -26,6 +28,8 @@
 		"putArtifactClassInStoreInfo" : "jr 3/8/2017 15:55",
 		"serializer:" : "jr 9/26/2020 18:18",
 		"setContent:storeInfo:" : "jr 12/13/2020 13:03",
+		"setPath:content:" : "jr 12/23/2020 22:09",
+		"setPath:content:storeInfo:" : "jr 12/23/2020 22:10",
 		"shadowOfTrackedObject" : "jr 8/2/2020 15:31",
 		"snapshot" : "jr 11/22/2020 15:53",
 		"storeInfo" : "jr 1/27/2017 15:03",

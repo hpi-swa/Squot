@@ -1,3 +1,3 @@
 applying
 applyTo: anObjectContainer
-	self applyTo: anObjectContainer displayingProgress: [:each | 'Applying changes to ', each].
+	^ self applyTo: anObjectContainer displayingProgress: [:each | 'Applying changes to ', each]

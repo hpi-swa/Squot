@@ -1,0 +1,15 @@
+{
+	"category" : "Squot-Merging",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "jr 12/24/2020 01:59",
+	"instvars" : [
+		"workingOwner",
+		"incomingOwner" ],
+	"name" : "SquotReferenceAdditionConflict",
+	"pools" : [
+		 ],
+	"super" : "SquotConflict",
+	"type" : "normal" }

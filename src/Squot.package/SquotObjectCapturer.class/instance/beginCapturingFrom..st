@@ -3,13 +3,13 @@ beginCapturingFrom: anObject
 	| decorated mirror |
 	objectGraph := SquotMutableObjectGraph new.
 	objectGraph delegateRegistry: objectRegistry.
-	walk := SquotGraphWalk startingFrom: anObject.
+	mirror := (thisContext objectClass: anObject) squotMirror.
+	walk := SquotGraphWalk startingFrom: anObject -> mirror.
 	toBeVisited removeAll.
 	convertedObjects removeAll.
+	replacedObjects removeAll.
 	slotsToConvert removeAll.
 	decorated := SquotCreatorDecorator on: anObject creator: nil slot: nil.
-	mirror := (thisContext objectClass: anObject) squotMirror.
-	mirrors at: anObject put: mirror.
 	(mirror shouldObjectHaveNameAssigned: anObject)
 		ifTrue: [objectGraph assign: (objectRegistry nameOf: anObject ifAbsent: [self newNameFor: anObject reachedFrom: nil via: nil]) to: anObject]
 		ifFalse: [objectGraph assign: objectGraph class anonymousObjectName to: anObject].

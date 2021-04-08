@@ -13,7 +13,6 @@ capture: anObject asValueOf: aReference from: referrerObject reflectedIn: aMirro
 		ifAbsent:
 			[namedObject := SquotNameDecorator on: captureObject withName: name.
 			aShadowMirror reflect: shadowsReference of: referrerShadow put: namedObject. "Tempory, until capturedObject is really captured later during the walk."
-			mirrors at: captureObject put: referencedObjectMirror.
-			walk add: captureObject reachedVia: aReference.
+			walk add: captureObject -> referencedObjectMirror reachedVia: aReference.
 			slotsToConvert add: {referrerShadow. aShadowMirror. shadowsReference. referrerObject. aMirror. aReference}].
 	^ captureObject

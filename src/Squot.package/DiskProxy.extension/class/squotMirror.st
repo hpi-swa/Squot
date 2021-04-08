@@ -1,0 +1,3 @@
+*Squot
+squotMirror
+	^ SquotDiskProxyMirror new

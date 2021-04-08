@@ -6,7 +6,7 @@
 		"testArrayOfIntegers" : "jr 7/20/2017 22:07",
 		"testBooleans" : "jr 9/25/2019 15:47",
 		"testCaptureAgainProducesEqualGraph" : "jr 11/1/2020 18:24",
-		"testCompiledMethod" : "jr 4/7/2021 23:40",
+		"testCompiledMethod" : "jr 4/8/2021 21:45",
 		"testCyclicReferences" : "jr 7/20/2017 22:08",
 		"testCyclicReferences2" : "jr 7/20/2017 22:08",
 		"testDictionariesWithComplexKeys" : "jr 7/20/2017 22:08",
@@ -20,7 +20,7 @@
 		"testPackageInfoIndirect" : "jr 4/25/2020 16:32",
 		"testPoint" : "jr 7/20/2017 22:09",
 		"testRectangle" : "jr 7/20/2017 22:21",
-		"testReplacedObject2" : "jr 7/30/2017 15:03",
+		"testReplacedObject2" : "jr 4/8/2021 21:51",
 		"testSet" : "jr 7/20/2017 22:09",
 		"testString" : "jr 7/20/2017 22:09",
 		"testSymbol" : "jr 4/7/2021 22:05" } }

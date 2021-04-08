@@ -6,5 +6,6 @@ initializeSnapshot: aSquotObjectShadow of: anObject with: aSquotObjectCapturer
 	shadowMirror
 		captureReferences: (self referencesFrom: anObject)
 		from: anObject
+		reflectedIn: self
 		into: aSquotObjectShadow
 		with: aSquotObjectCapturer.

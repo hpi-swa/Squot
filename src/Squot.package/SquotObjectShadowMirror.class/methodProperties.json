@@ -4,9 +4,8 @@
 	"instance" : {
 		"=" : "jr 12/15/2020 23:33",
 		"capture:with:" : "jr 1/16/2021 11:30",
-		"captureReferences:from:into:with:" : "jr 4/4/2021 12:49",
+		"captureReferences:from:reflectedIn:into:with:" : "jr 4/8/2021 21:23",
 		"hash" : "jr 12/15/2020 23:33",
-		"initializeSnapshot:of:with:" : "jr 1/16/2021 11:29",
 		"newShadowObject" : "jr 4/3/2021 21:00",
 		"referencesFrom:" : "jr 1/16/2021 11:29",
 		"reflectIndexableField:in:" : "jr 1/17/2021 22:21",

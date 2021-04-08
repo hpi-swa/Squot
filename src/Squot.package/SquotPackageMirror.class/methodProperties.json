@@ -4,7 +4,6 @@
 	"instance" : {
 		"capture:with:" : "jr 4/7/2021 22:42",
 		"environmentInMetadata:" : "jr 4/7/2021 22:40",
-		"initializeSnapshot:of:with:" : "jr 4/7/2021 22:35",
 		"newShadowObject" : "jr 4/7/2021 22:41",
 		"referencesFrom:" : "jr 4/7/2021 22:35",
 		"shouldObjectHaveNameAssigned:" : "jr 4/7/2021 22:37" } }

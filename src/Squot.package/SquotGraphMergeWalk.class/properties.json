@@ -12,7 +12,8 @@
 		"latestBase",
 		"workingReflected",
 		"incomingReflected",
-		"baseReflected" ],
+		"baseReflected",
+		"mirrors" ],
 	"name" : "SquotGraphMergeWalk",
 	"pools" : [
 		 ],

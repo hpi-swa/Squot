@@ -2,6 +2,7 @@
 	"class" : {
 		 },
 	"instance" : {
+		"expectedFailures" : "jr 4/8/2021 14:07",
 		"setUp" : "jr 4/29/2018 16:54",
 		"snapshotClass:at:" : "jr 1/27/2017 16:19",
 		"snapshotPackage:at:" : "jr 1/27/2017 16:19",

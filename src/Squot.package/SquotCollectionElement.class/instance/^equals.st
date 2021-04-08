@@ -5,7 +5,7 @@ comparing
 	self == anObject
 		ifTrue: [^ true].
 	[anObject target] on: MessageNotUnderstood do:
-		[:e | (e message selector == #target and: [e message receiver == anObject])
+		[:e | (e message selector == #target and: [e receiver == anObject])
 				ifTrue: [^ false]
 				ifFalse: [e pass]].
 	^ self target hasSquotShadowName

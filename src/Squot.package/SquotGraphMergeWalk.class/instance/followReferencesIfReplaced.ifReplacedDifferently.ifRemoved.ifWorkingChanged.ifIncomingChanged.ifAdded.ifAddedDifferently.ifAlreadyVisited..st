@@ -1,6 +1,7 @@
 enumerating
 followReferencesIfReplaced: opaqueReplacementBlock ifReplacedDifferently: opaqueConflictBlock ifRemoved: removalBlock ifWorkingChanged: incomingRemovalConflictBlock ifIncomingChanged: workingRemovalConflictBlock ifAdded: additionBlock ifAddedDifferently: additionConflictBlock ifAlreadyVisited: multiPathBlock
 	workingReflected := incomingReflected := baseReflected := nil.
+	self flag: #todo. "Need to ask referrer mirror for the next mirrors."
 	workingReflected := SquotObjectReflection object: latestWorking mirror: (thisContext objectClass: latestWorking) squotMirror.
 	incomingReflected := SquotObjectReflection object: latestIncoming mirror: (thisContext objectClass: latestIncoming) squotMirror.
 	baseReflected := SquotObjectReflection object: latestBase mirror: (thisContext objectClass: latestBase) squotMirror.

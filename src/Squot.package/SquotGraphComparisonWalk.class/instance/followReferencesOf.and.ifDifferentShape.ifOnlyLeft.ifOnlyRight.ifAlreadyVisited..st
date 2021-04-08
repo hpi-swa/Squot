@@ -1,6 +1,7 @@
 enumerating
 followReferencesOf: left and: right ifDifferentShape: replacementBlock ifOnlyLeft: removalBlock ifOnlyRight: additionBlock ifAlreadyVisited: multiPathBlock
 	| leftReflected rightReflected |
+	self flag: #todo. "Need to ask referrer mirror for the next mirrors."
 	leftReflected := SquotObjectReflection object: left mirror: (thisContext objectClass: left) squotMirror.
 	rightReflected := SquotObjectReflection object: right mirror: (thisContext objectClass: right) squotMirror.
 	((leftReflected isComparableTo: rightReflected) not

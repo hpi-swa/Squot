@@ -7,3 +7,4 @@ initialize
 	slotValueReplacements := IdentityDictionary new.
 	toBeVisited := LinkedList new.
 	slotsToConvert := OrderedCollection new.
+	mirrors := IdentityDictionary new.

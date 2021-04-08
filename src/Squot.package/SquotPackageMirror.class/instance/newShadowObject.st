@@ -1,0 +1,3 @@
+capturing
+newShadowObject
+	^ SquotPackageShadow new

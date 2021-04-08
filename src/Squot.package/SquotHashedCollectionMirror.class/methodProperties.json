@@ -1,0 +1,13 @@
+{
+	"class" : {
+		 },
+	"instance" : {
+		"referencesFrom:" : "jr 4/7/2021 22:23",
+		"reflect:removeFrom:" : "jr 4/8/2021 00:41",
+		"reflectAssociation:in:" : "jr 3/21/2021 12:08",
+		"reflectAssociation:in:put:" : "jr 3/21/2021 12:08",
+		"reflectElement:of:" : "jr 4/7/2021 22:31",
+		"reflectEntry:of:" : "jr 12/16/2020 00:18",
+		"reflectEntry:of:put:" : "jr 12/16/2020 00:18",
+		"shadowFactory" : "jr 4/7/2021 22:19",
+		"shouldObjectHaveNameAssigned:" : "jr 4/7/2021 22:18" } }

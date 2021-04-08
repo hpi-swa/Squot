@@ -1,5 +1,6 @@
 *Squot-trackable-capturing
 squotCaptureSlotsIn: anObjectShadow with: aCapturer
+	self flag: #deprecated. "Use SquotObjectMirror>>initializeSnapshot: anObjectShadow of: self with: aCapturer instead."
 	self squotRelevantInstVars do: [:each |
 		anObjectShadow
 			addInstVarNamed: each

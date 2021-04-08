@@ -1,4 +1,3 @@
 private
 followReferences
-	[toBeVisited isEmpty] whileFalse:
-		[self follow: toBeVisited removeFirst].
+	walk do: [:each | self followReferencesOf: each].

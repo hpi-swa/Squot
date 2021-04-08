@@ -1,9 +1,9 @@
 {
 	"class" : {
-		 },
+		"squotMirror" : "jr 1/17/2021 22:26" },
 	"instance" : {
 		"canHaveNameAssignedBySquot" : "jr 9/25/2019 14:33",
 		"captureWithSquot" : "jr 6/17/2017 20:51",
-		"captureWithSquot:" : "jr 6/17/2017 20:58",
-		"squotShadowFactory" : "jr 6/17/2017 20:12",
+		"captureWithSquot:" : "jr 1/11/2021 00:01",
+		"squotShadowFactory" : "jr 1/10/2021 23:57",
 		"squotShouldKeepIdentity" : "jr 6/22/2017 15:23" } }

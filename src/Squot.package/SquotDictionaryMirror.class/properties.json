@@ -10,5 +10,5 @@
 	"name" : "SquotDictionaryMirror",
 	"pools" : [
 		 ],
-	"super" : "SquotMirror",
+	"super" : "SquotObjectMirror",
 	"type" : "normal" }

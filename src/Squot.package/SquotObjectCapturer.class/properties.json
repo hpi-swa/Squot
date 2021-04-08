@@ -8,6 +8,7 @@
 	"instvars" : [
 		"convertedObjects",
 		"copiedObjects",
+		"walk",
 		"toBeVisited",
 		"objectRegistry",
 		"enumeratedObject",
@@ -16,7 +17,8 @@
 		"objectGraph",
 		"slotValueReplacements",
 		"slotsToConvert",
-		"capturedObjectWithReferrer" ],
+		"capturedObjectWithReferrer",
+		"mirrors" ],
 	"name" : "SquotObjectCapturer",
 	"pools" : [
 		 ],

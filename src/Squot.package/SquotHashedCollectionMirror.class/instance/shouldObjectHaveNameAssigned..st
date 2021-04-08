@@ -1,0 +1,3 @@
+testing
+shouldObjectHaveNameAssigned: aHashedCollection
+	^ true

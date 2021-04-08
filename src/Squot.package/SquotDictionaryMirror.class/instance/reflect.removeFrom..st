@@ -1,4 +1,6 @@
 reflection
-reflect: aReference removeFrom: anObject
+reflect: aCollectionElement removeFrom: aDictionary
 	"Remove the reference from the object."
-	^ aReference removeFrom: anObject
+	(aDictionary at: aCollectionElement target key ifAbsent: []) = aCollectionElement target value
+		ifTrue: [aDictionary removeKey: aCollectionElement target key]
+		

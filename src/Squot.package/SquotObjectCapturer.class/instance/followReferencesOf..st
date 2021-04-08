@@ -1,5 +1,5 @@
 private
-follow: aDecoratedObject
+followReferencesOf: aDecoratedObject
 	| undecorated |
 	undecorated := aDecoratedObject undecorated.
 	(convertedObjects includesKey: undecorated) ifTrue: [^ self].

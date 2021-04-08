@@ -7,7 +7,8 @@ testDictionariesWithComplexKeys
 	self assertDiffAgainstItselfHasNoChanges: dict.
 	diff := self diff: dict againstItselfAfter:
 		[key2 var1: 3.
-		dict at: key1 put: 'new value'].
+		dict at: key1 put: 'new value'.
+		dict rehash].
 	self assert: diff squotHasChanges.
 	key2Diff := diff
 		diffForObjectNamed: (objectRegistry nameOf: key2)

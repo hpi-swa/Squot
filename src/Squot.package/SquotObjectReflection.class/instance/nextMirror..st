@@ -1,3 +1,3 @@
 reflection
 nextMirror: aReference
-	^ mirror mirror: aReference of: object
+	^ mirror mirrorOf: (aReference reflect: object in: mirror) reachedVia: aReference from: object

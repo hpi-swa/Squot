@@ -5,7 +5,7 @@ capture: anObject asValueOf: aReference from: referrerObject reflectedIn: aMirro
 		ifFound: [:replacement | replacement]
 		ifNone: [anObject undecorated].
 	objectGraph creatorOf: captureObject ifAbsentPut: [aReference] of: [referrerObject].
-	name := ((referencedObjectMirror := aMirror mirror: aReference of: referrerObject) shouldObjectHaveNameAssigned: captureObject)
+	name := ((referencedObjectMirror := aMirror mirrorOf: anObject undecorated reachedVia: aReference from: referrerObject) shouldObjectHaveNameAssigned: captureObject)
 		ifTrue: [objectGraph nameOf: captureObject
 				ifAbsentAssign: [self newNameFor: anObject reachedFrom: referrerObject via: aReference]].
 	convertedObjects at: captureObject

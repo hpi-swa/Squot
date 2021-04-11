@@ -18,7 +18,7 @@ squotApplyTo: metadata
 				[referrer := object.
 				object := each reflect: referrer in: mirror
 							put: (each reflect: referrer in: mirror) copy.
-				mirror := mirror mirror: each of: referrer]]].
+				mirror := mirror mirrorOf: object reachedVia: each from: referrer]]].
 	"Apply the differences."
 	diffs keysAndValuesDo:
 		[:path :diff | | object mirror |
@@ -29,6 +29,6 @@ squotApplyTo: metadata
 			[:each | | referrer |
 			referrer := object.
 			object := each reflect: referrer in: mirror.
-			mirror := mirror mirror: each of: referrer].
+			mirror := mirror mirrorOf: object reachedVia: each from: referrer].
 		diff squotReflectOn: object in: mirror].
 	^ new

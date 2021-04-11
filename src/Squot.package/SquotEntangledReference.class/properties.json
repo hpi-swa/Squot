@@ -1,0 +1,16 @@
+{
+	"category" : "Squot-Shadows",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"actualReference",
+		"entangledReferences",
+		"scheduledTarget" ],
+	"name" : "SquotEntangledReference",
+	"pools" : [
+		 ],
+	"super" : "SquotReference",
+	"type" : "normal" }

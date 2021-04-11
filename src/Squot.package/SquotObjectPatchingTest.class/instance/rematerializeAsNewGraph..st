@@ -1,12 +1,11 @@
 testing
 rematerializeAsNewGraph: anObjectGraph
-	| materializer |
+	| materializer newGraph |
 	materializer := SquotShadowMaterializer new.
-	materializer sourceGraph: anObjectGraph.
-	materializer targetGraph: anObjectGraph asShadowGraph mutableCopy.
+	newGraph := anObjectGraph asShadowGraph mutableCopy.
 	"do not surprisingly start to use the previous objects when applying a diff later on"
-	materializer targetGraph delegateRegistry: SquotObjectRegistry new.
-	materializedObject := materializer rematerialize: anObjectGraph startShadow.
+	newGraph delegateRegistry: SquotObjectRegistry new.
+	materializedObject := materializer rematerializeGraph: anObjectGraph into: newGraph.
 	"Needs to be stored into an instance variable because the objects in the graph are
 	only held onto weakly. Tests can access the object with <answer> startObject."
 	^ materializer objectGraph

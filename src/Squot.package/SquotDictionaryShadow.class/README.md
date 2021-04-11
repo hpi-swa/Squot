@@ -1,1 +1,6 @@
 I am a captured Dictionary. My item slots (for HashedCollection items) are the shadows of the associations contained in me.
+
+Materialization of dictionaries is a bit tricky:
+	1. The dictionary must only be reactivated (rehashed) once all associations are materialized and in place.
+	2. Associations must only be added once their key is materialized and in place. They must not be added in an intermediary nil->nil state because their key hash is still wrong.
+To ensure that associations are not added to dictionaries as nil->nil, the key object must be materialized before the association. To achieve this, additional pseudo references from the dictionary to its keys are introduced. Each of these is a SquotEntangledReference entangled with the reference from the dictionary to the association. Because of the entanglement the association is not added to the dictionary until the key is not also pseudo-added to the dictionary. Still the association might not get the key before the dictionary does. That the key is materialized before the association currently relies on the order in which the references are returned to and processed by the materializer's graph walk, but it is not logically enforced.

@@ -1,6 +1,7 @@
 {
 	"class" : {
-		"for:" : "jr 6/15/2017 16:55" },
+		"for:" : "jr 6/15/2017 16:55",
+		"squotMirror" : "jr 4/10/2021 12:37" },
 	"instance" : {
 		"=" : "jr 6/17/2017 22:08",
 		"canHaveNameAssignedBySquot" : "jr 4/25/2020 15:42",

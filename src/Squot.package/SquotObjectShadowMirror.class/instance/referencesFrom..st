@@ -1,3 +1,3 @@
 enumerating
-referencesFrom: anObject
-	self shouldBeImplemented.
+referencesFrom: anObjectShadow
+	^ anObjectShadow references

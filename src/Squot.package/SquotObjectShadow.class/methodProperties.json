@@ -29,6 +29,7 @@
 		"privateApplyDiff:" : "jr 9/23/2019 23:18",
 		"privateApplyDiff:with:" : "jr 7/16/2017 00:29",
 		"reassignSlot:to:" : "jr 7/16/2017 01:47",
+		"references" : "jr 4/10/2021 12:23",
 		"removeInstVarNamed:" : "jr 9/9/2017 14:22",
 		"removeVariablePartSlot:" : "jr 7/20/2017 22:49",
 		"sameIn:withName:ifAbsent:" : "jr 8/31/2019 20:43",

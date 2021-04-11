@@ -9,7 +9,10 @@
 		"convertedObjects",
 		"objectRegistry",
 		"sourceGraph",
-		"targetGraph" ],
+		"targetGraph",
+		"walk",
+		"remainingReferences",
+		"pendingReferences" ],
 	"name" : "SquotShadowMaterializer",
 	"pools" : [
 		 ],

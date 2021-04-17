@@ -6,10 +6,9 @@
 		 ],
 	"commentStamp" : "",
 	"instvars" : [
-		"target",
-		"isHashRelevant" ],
-	"name" : "SquotCollectionElement",
+		 ],
+	"name" : "SquotKeyVariable",
 	"pools" : [
 		 ],
-	"super" : "SquotReference",
+	"super" : "SquotInstanceVariable",
 	"type" : "normal" }

@@ -2,7 +2,8 @@
 	"class" : {
 		 },
 	"instance" : {
-		"referencesFrom:" : "jr 4/7/2021 22:23",
+		"classUsesIdentityHash" : "jr 4/17/2021 17:32",
+		"referencesFrom:" : "jr 4/17/2021 17:36",
 		"reflect:removeFrom:" : "jr 4/8/2021 00:41",
 		"reflectAssociation:in:" : "jr 3/21/2021 12:08",
 		"reflectAssociation:in:put:" : "jr 3/21/2021 12:08",

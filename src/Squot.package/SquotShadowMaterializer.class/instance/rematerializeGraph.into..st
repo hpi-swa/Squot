@@ -8,10 +8,12 @@ rematerializeGraph: aShadowGraph into: targetMutableObjectGraph
 	targetGraph := targetMutableObjectGraph.
 	targetGraph startName: aShadowGraph startName.
 	pendingReferences := IdentityDictionary new.
+	pendingReferencesForHash := IdentityDictionary new.
 	remainingReferences := IdentityDictionary new.
 	convertedObjects := IdentityDictionary new.
 	[walk atEnd] whileFalse:
 		[ | next |
 		next := walk next. mirror := next value. next := next key.
 		self rematerialize: next reflectedIn: mirror].
+	remainingReferences ifNotEmpty: [self error: 'Objects not fully rematerialized'].
 	^ targetGraph startObject

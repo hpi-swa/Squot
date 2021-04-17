@@ -7,6 +7,9 @@ referencesFrom: aHashedCollection
 					collect: [:each | SquotInstanceVariable named: each]);
 		addAll: ((1 to: (thisContext objectSize: aHashedCollection))
 				collect: [:each | SquotIndexableField index: each]).
-	aHashedCollection do:
-		[:each | references add: (SquotCollectionElement target: each)].
+	self classUsesIdentityHash
+		ifTrue: [aHashedCollection do:
+				[:each | references add: (SquotCollectionElement target: each)]]
+		ifFalse: [aHashedCollection do:
+				[:each | references add: (SquotCollectionElement targetWithRelevantHash: each)]].
 	^ references

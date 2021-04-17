@@ -6,10 +6,9 @@
 		 ],
 	"commentStamp" : "",
 	"instvars" : [
-		"target",
-		"isHashRelevant" ],
-	"name" : "SquotCollectionElement",
+		"isKeyHashRelevant" ],
+	"name" : "SquotLookupKeyMirror",
 	"pools" : [
 		 ],
-	"super" : "SquotReference",
+	"super" : "SquotObjectMirror",
 	"type" : "normal" }

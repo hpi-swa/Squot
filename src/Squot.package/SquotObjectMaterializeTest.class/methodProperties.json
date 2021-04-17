@@ -14,6 +14,7 @@
 		"testDictionariesWithSharedAssociations" : "jr 9/21/2019 20:20",
 		"testDictionary" : "jr 9/21/2019 20:20",
 		"testEmptyObject" : "jr 9/21/2019 20:24",
+		"testIdentityDictionaries" : "jr 4/17/2021 21:18",
 		"testIdentityReplacedObject" : "jr 9/21/2019 20:20",
 		"testNil" : "jr 9/21/2019 20:23",
 		"testPoint" : "jr 9/21/2019 20:20",

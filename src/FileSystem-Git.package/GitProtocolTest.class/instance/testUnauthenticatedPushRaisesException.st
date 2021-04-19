@@ -11,4 +11,4 @@ testUnauthenticatedPushRaisesException
 				of: testRepo basicRepository
 				deleting: Array empty]
 		raise: GitRemoteAuthenticationFailed]
-	on: NeedGitCredentials do: [:e | e resumeUnchecked: nil].
+	on: NeedGitCredentials do: [:e | e resume: nil].

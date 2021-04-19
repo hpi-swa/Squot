@@ -6,4 +6,4 @@ packagesIn: aWorkingCopy
 			select: [:each | each storeInfo objectClassName = PackageInfo name]
 			thenDo:
 				[:each |
-				packageNames nextPut: each shadowOfTrackedObject packageName]]
+				packageNames nextPut: each packageName]]

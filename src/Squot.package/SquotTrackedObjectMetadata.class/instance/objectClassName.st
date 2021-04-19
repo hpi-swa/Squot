@@ -1,3 +1,3 @@
 accessing
 objectClassName
-	^ self at: #objectClassName
+	^ self at: #objectClassName ifAbsent: []

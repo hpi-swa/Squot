@@ -1,0 +1,10 @@
+{
+	"class" : {
+		 },
+	"instance" : {
+		"testCorrectLoadOrderAfterExcludedArtifactAddition" : "jr 5/9/2020 00:08",
+		"testCorrectLoadOrderAfterExcludedArtifactRemoval" : "jr 5/9/2020 00:09",
+		"testCorrectLoadOrderAfterExcludedArtifactRemovalAndSimultaneousOrderChange" : "jr 5/9/2020 00:13",
+		"testCorrectLoadOrderAfterExcludedArtifactRemovalAtBeginning" : "jr 5/9/2020 00:13",
+		"testLoadOrderAfterIncludedArtifactAdditionAndSimultaneousOrderChange" : "jr 11/3/2020 18:15",
+		"testLoadOrderAfterIncludedArtifactAdditionAndSimultaneousOrderChange2" : "jr 11/3/2020 18:18" } }

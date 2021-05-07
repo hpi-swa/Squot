@@ -5,7 +5,11 @@ parseReferenceDiscoveryResponse
 	result := Dictionary new.
 	
 	"the first line is special: after a null character, there is a list of capabilities" 
-	firstLine := self readPktLineIfZero: [Error signal: 'The response was not well formed' ].
+	firstLine := self readPktLineIfZero:
+		["Actually this response is invalid since a server must announce its capabilities.
+		But GitHub sends 00000000 nevertheless, so we conform to practice instead of the specification."
+		result at: #capabilities put: #().
+		^ result].
 	(firstLine beginsWith: 'ERR ') ifTrue: [GitRemoteError signal: (firstLine allButFirst: 4)].
 	firstSplit := firstLine splitBy: Character null asString.
 	

@@ -1,0 +1,14 @@
+{
+	"class" : {
+		 },
+	"instance" : {
+		"exclude:andIfNotAlreadyExcluded:" : "jr 5/2/2020 12:12",
+		"initialize" : "jr 5/2/2020 15:36",
+		"packFileCreator" : "jr 5/2/2020 12:06",
+		"packFileCreator:" : "jr 5/2/2020 12:06",
+		"visitBlob:" : "jr 5/2/2020 12:07",
+		"visitCommit:" : "jr 5/2/2020 15:41",
+		"visitRepository:" : "jr 5/2/2020 12:10",
+		"visitRest" : "jr 5/2/2020 15:41",
+		"visitTag:" : "jr 5/2/2020 15:42",
+		"visitTree:" : "jr 5/2/2020 15:42" } }

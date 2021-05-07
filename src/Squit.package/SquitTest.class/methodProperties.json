@@ -2,12 +2,12 @@
 	"class" : {
 		"resources" : "jr 11/21/2018 20:51" },
 	"instance" : {
-		"createReadmeCommit" : "jr 11/21/2018 20:55",
+		"createReadmeCommit" : "jr 3/2/2020 22:30",
 		"createRemoteTrackingBranchForMaster" : "jr 11/21/2018 21:48",
-		"createRemoteTrackingBranchForMasterWithFetchSpec:" : "jr 11/21/2018 20:50",
+		"createRemoteTrackingBranchForMasterWithFetchSpec:" : "jr 3/7/2020 00:11",
 		"master" : "jr 11/21/2018 21:46",
 		"repositoryForTests" : "jr 11/21/2018 20:49",
 		"repositoryPathForTests" : "jr 11/21/2018 20:49",
-		"setUp" : "jr 11/21/2018 20:56",
+		"setUp" : "jr 9/13/2020 22:39",
 		"tearDown" : "jr 11/21/2018 20:49",
-		"trackingBranchForRemote:branch:hash:" : "jr 11/21/2018 21:42" } }
+		"trackingBranchForRemote:branch:hash:" : "jr 3/2/2020 21:30" } }

@@ -4,6 +4,7 @@
 	"instance" : {
 		"asShadowGraph" : "jr 4/7/2019 22:06",
 		"defaultCompareBlock" : "jr 7/29/2019 23:47",
+		"defaultMaterializeBlock" : "jr 11/19/2020 18:20",
 		"defaultMergeBlock" : "jr 8/14/2019 23:37",
 		"diffBlock" : "jr 11/5/2018 21:25",
 		"diffBlock:" : "jr 11/5/2018 21:25",
@@ -16,7 +17,10 @@
 		"printOn:" : "jr 8/15/2019 14:22",
 		"squotDiffAgainst:" : "jr 7/29/2019 23:49",
 		"squotDiffAgainst:withBase:" : "jr 8/14/2019 23:38",
+		"squotMaterializeWith:from:replacing:" : "jr 11/19/2020 18:19",
 		"squotSummaryText" : "jr 11/5/2018 21:20",
+		"startShadow" : "jr 3/4/2020 08:57",
 		"whenComparedReturnMock" : "jr 7/29/2019 23:51",
 		"whenComparedWith:return:" : "jr 7/29/2019 23:46",
+		"whenMaterializedReturn:" : "jr 11/19/2020 18:22",
 		"whenMergedReturn:" : "jr 8/15/2019 00:18" } }

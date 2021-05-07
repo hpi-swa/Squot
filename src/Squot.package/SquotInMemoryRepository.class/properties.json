@@ -1,8 +1,8 @@
 {
-	"category" : "Squot-InMemoryRepository",
+	"category" : "Squot-Tests",
 	"classinstvars" : [
 		 ],
-	"classtraitcomposition" : "TSquotLocalRepository classTrait",
+	"classtraitcomposition" : "TSquotLocalRepository classTrait + TSquotUnitOfWork classTrait",
 	"classvars" : [
 		 ],
 	"commentStamp" : "jr 3/17/2018 19:57",
@@ -13,5 +13,5 @@
 	"pools" : [
 		 ],
 	"super" : "Object",
-	"traitcomposition" : "TSquotLocalRepository",
+	"traitcomposition" : "TSquotLocalRepository + TSquotUnitOfWork",
 	"type" : "normal" }

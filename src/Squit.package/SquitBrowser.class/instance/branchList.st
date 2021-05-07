@@ -1,4 +1,6 @@
 ui
 branchList
-	branchList ifNil: [self loadBranchList].
-	^ branchList
+	self hasProjectSelection
+		ifTrue: [branchList ifNil: [self withUnitOfWork: [self loadBranchList]]]
+		ifFalse: [branchList := #()].
+	^ #('-- Branches --'), branchList

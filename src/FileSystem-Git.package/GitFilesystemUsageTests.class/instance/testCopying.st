@@ -5,6 +5,7 @@ testCopying
 	ref := workingCopy / 'copy'.
 	self deny: ref exists.
 	
+	self withUnitOfWork: [:git |
 	(workingCopy / 'file1') copyTo: ref.
 	self commit: 'a commit'.
 	self assert: ref exists.
@@ -14,4 +15,4 @@ testCopying
 	copyContent := ref readStream contents.
 	self assert: originalContent = copyContent.
 	self assert: copyContent asString = 'content'.
-	
+	].

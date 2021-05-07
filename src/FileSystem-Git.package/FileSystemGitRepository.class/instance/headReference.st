@@ -1,3 +1,3 @@
 accessing
 headReference
-	^ repository headRef
+	^ self unitOfWork headRef

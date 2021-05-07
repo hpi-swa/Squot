@@ -5,5 +5,8 @@
 		"canHaveNameAssignedBySquot" : "jr 9/25/2019 14:33",
 		"captureWithSquot" : "jr 6/17/2017 20:54",
 		"captureWithSquot:" : "jr 6/17/2017 20:58",
+		"sameIn:withName:ifAbsent:" : "jr 12/13/2020 15:00",
+		"squotDiffAgainst:with:" : "jr 12/13/2020 23:20",
+		"squotOutgoingReferences" : "jr 12/13/2020 14:58",
 		"squotShadowFactory" : "jr 6/17/2017 20:12",
 		"squotShouldKeepIdentity" : "jr 6/22/2017 15:23" } }

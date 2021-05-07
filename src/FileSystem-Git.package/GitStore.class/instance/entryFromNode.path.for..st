@@ -9,5 +9,5 @@ entryFromNode: treeEntry path: path for: aFilesystem
 		modification: 0
 		isDir: treeEntry isInDirectoryMode
 		size: (treeEntry hasSize
-				ifTrue: [repository sizeOfObjectNamed: treeEntry entryHash]
+				ifTrue: [self unitOfWork sizeOfObjectNamed: treeEntry entryHash]
 				ifFalse: [0])

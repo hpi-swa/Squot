@@ -1,3 +1,3 @@
 Pur repository
 versionAt: aGitHash
-	^ self versionForCommit: (gitRepository repository objectNamed: aGitHash)
+	^ self versionForCommit: (self git objectNamed: aGitHash)

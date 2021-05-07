@@ -7,6 +7,6 @@ testAddingSingleDirectoryFails
 	ref createDirectory.
 	self assert: ref exists.
 	
-	workingCopy commit: 'aCommit'.
+	self withUnitOfWork: [:git | workingCopy commit: 'aCommit'].
 	"the commit shouldn't have happened:"
 	self assert: sha1name = workingCopy name

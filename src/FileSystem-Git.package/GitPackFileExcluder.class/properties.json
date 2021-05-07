@@ -1,0 +1,17 @@
+{
+	"category" : "FileSystem-Git-Plumbing-Packs",
+	"classinstvars" : [
+		 ],
+	"classtraitcomposition" : "TGitVisitor classTrait",
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"packFileCreator",
+		"queue" ],
+	"name" : "GitPackFileExcluder",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"traitcomposition" : "TGitVisitor",
+	"type" : "normal" }

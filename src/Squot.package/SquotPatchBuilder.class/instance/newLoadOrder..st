@@ -1,4 +1,4 @@
 accessing
 newLoadOrder: aCollection
-	patchedLoadOrder := aCollection.
-	loadOrderDiff := nil.
+	patchedLoadOrder := aCollection asOrderedCollection.
+	self updateLoadOrder.

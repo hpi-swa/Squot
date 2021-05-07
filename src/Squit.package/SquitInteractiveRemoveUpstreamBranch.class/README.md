@@ -1,0 +1,1 @@
+I remove the upstream branch of a local branch at the remote. The branch will no longer be available in the remote repository.

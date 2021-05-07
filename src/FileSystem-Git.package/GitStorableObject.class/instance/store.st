@@ -1,3 +1,3 @@
 public-storing
 store
-	self repository storeObject: self
+	self currentUnitOfWork storeObject: self

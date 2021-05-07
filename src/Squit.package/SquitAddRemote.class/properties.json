@@ -4,12 +4,12 @@
 		 ],
 	"classvars" : [
 		 ],
-	"commentStamp" : "",
+	"commentStamp" : "jr 8/9/2020 21:08",
 	"instvars" : [
 		"remoteName",
 		"remoteUrl",
 		"accepted",
-		"workingCopy" ],
+		"promise" ],
 	"name" : "SquitAddRemote",
 	"pools" : [
 		 ],

@@ -1,0 +1,14 @@
+{
+	"category" : "Squit-Core",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		"Registry" ],
+	"commentStamp" : "jr 2/26/2020 21:33",
+	"instvars" : [
+		"gitUnitOfWork" ],
+	"name" : "SquitUnitOfWork",
+	"pools" : [
+		 ],
+	"super" : "SquotBasicUnitOfWork",
+	"type" : "normal" }

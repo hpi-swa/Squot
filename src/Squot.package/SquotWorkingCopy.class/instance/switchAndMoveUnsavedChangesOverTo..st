@@ -12,7 +12,7 @@ switchAndMoveUnsavedChangesOverTo: aHistorian
 		self loadedHistorian: aHistorian.
 		self privateLoadVersion: aHistorian version].
 	self withCurrentSnapshot: [self mergeTemporaryVersionsOn: aHistorian].
-	UIManager default informUser: 'Restoring unsaved changes' during:
+	SquotProgress displayStatus: 'Restoring unsaved changes' during:
 	[self mergeSilently: temporarySnapshot basedOn: fromHistorian version
 		onConflictsDo:
 			[:merge | | accepted |

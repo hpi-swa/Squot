@@ -11,12 +11,16 @@ testDeletingMultipleWithIntermediateCreate
 	ref2 writeStreamDo: [ :stream | stream nextPutAll: 'content' ].
 	self commit: 'added myFiles'.
 	
+	self withUnitOfWork: [:git |
 	ref2 parent delete.
 	(workingCopy referenceTo: '/a/b/c/') deleteAll.
 	
 	self deny: ref exists.
 	self deny: ref2 exists.
+	].
 	
 	self commit: 'deleted /a/b/c/'.
+	self withUnitOfWork: [:git |
 	self deny: ref exists.
 	self deny: ref2 exists.
+	].

@@ -1,4 +1,4 @@
-testing
+tests
 testDiffTwoPackageArtifacts
 	| package classNode diff diffTree snapshot1 snapshot2 titles scriptNode |
 	package := PackageInfo new packageName: 'Foo'.
@@ -42,7 +42,7 @@ testDiffTwoPackageArtifacts
 	self assert: diffTree children size = 2.
 	self assert: (classNode := diffTree children detect: [:each | each title = 'Foo'] ifNone: []) notNil.
 	self assert: classNode children size = 4.
-	titles := (classNode children collect: [:each | each title]).
+	titles := (classNode children collect: [:each | each title asString]).
 	self deny: (titles anySatisfy: [:each | each includesSubstring: 'aaa']).
 	self assert: (titles anySatisfy: [:each | each includesSubstring: 'Foo ']).
 	self assert: (titles anySatisfy: [:each | each includesSubstring: 'bbb']).
@@ -50,4 +50,4 @@ testDiffTwoPackageArtifacts
 	self assert: (titles anySatisfy: [:each | each includesSubstring: 'postCopy']).
 	self assert: (scriptNode := diffTree children detect: [:each | each title = 'Script'] ifNone: []) notNil.
 	self assert: scriptNode children size = 1.
-	self assert: (scriptNode children first title includesSubstring: 'preamble').
+	self assert: (scriptNode children first title asString includesSubstring: 'preamble').

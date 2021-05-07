@@ -1,0 +1,1 @@
+I am a template implementation for a unit of work. I count the number of clients that have started and finished me. Subclasses still have to implement the activateDuring: method.

@@ -3,13 +3,13 @@ testTrackingAClass
 	| class versionBeforeSave latestVersion |
 	self suppressChangeNotificationsDuring: [class := classFactory newClass].
 	class compileSilently: 'firstMethod ^ self' classified: 'methods of first version'.
-	[workingCopy add: class at: 'src/', class category, '.package/', class name, '.class']
-		on: SquotClassWithoutPackageException
-		do: [:e | e resume: (PackageInfo named: classFactory packageName)].
+	repository withUnitOfWork:
+	[workingCopy add: class at: 'src/', class category, '.package/', class name, '.class'.
 	versionBeforeSave := workingCopy loadedHistorian version.
 	self assert: versionBeforeSave isNil description: 'starting from empty history'.
 	
-	workingCopy saveNewVersionMessage: 'first version' interactive: false.
+	workingCopy saveVersionWithMessage: 'first version'.
+	self denyChangesInWorkingCopy.
 	latestVersion := workingCopy baseVersion.
 	self assert: versionBeforeSave ~= latestVersion description: 'new version'.
 	self assert: latestVersion parents isEmpty description: 'ancestry'.
@@ -23,7 +23,8 @@ testTrackingAClass
 	versionBeforeSave := workingCopy loadedHistorian version.
 	self assert: latestVersion equals: versionBeforeSave.
 	
-	workingCopy saveNewVersionMessage: 'second version' interactive: false.
+	workingCopy saveVersionWithMessage: 'second version'.
+	self denyChangesInWorkingCopy.
 	latestVersion := workingCopy baseVersion.
 	self assert: versionBeforeSave ~= latestVersion description: 'new version'.
 	self assert: (latestVersion parents includes: versionBeforeSave) description: 'ancestry'.
@@ -31,4 +32,4 @@ testTrackingAClass
 		equals: workingCopy loadedHistorian version
 		description: 'loaded historian'.
 	self assertVersion: latestVersion containsMethod: class >> #addedMethod.
-	self assertVersion: latestVersion containsMethod: class >> #firstMethod.
+	self assertVersion: latestVersion containsMethod: class >> #firstMethod].

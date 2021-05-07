@@ -12,7 +12,8 @@ computeDifferences
 		baseValue := base slots at: each ifAbsent: [].
 		incomingValue
 			ifNotNil:
-				[workingValue name = incomingValue name ifFalse: 
+				[((workingValue hasSquotShadowName and: [incomingValue hasSquotShadowName]) or: [workingValue canHaveNameAssignedBySquot not and: [incomingValue canHaveNameAssignedBySquot not]]) ifFalse: [self notYetImplemented "for value objects, such as Point"].
+				workingValue name = incomingValue name ifFalse: 
 					[incomingValue name = baseValue name
 						ifTrue: ["working modification, do nothing (could have deep changes though)"]
 						ifFalse: [workingValue name = baseValue name

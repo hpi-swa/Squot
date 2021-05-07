@@ -4,7 +4,7 @@ testPathInImageStoreIsCorrected
 	class := self class.
 	classPackageName := class category.
 	self workingCopy add: class at: 'src'.
-	self workingCopy saveNewVersionMessage: '' interactive: false.
+	self workingCopy saveVersionWithMessage: ''.
 	self assert: (self
 		shouldnt:
 			[self workingCopy store

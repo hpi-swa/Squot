@@ -2,4 +2,5 @@ accessing
 pickedVersion: aVersion
 
 	pickedVersion := aVersion.
-	self workingCopy addGlobalObjectsToStore: aVersion.
+	self withUnitOfWorkActive:
+		[self workingCopy addGlobalObjectsToStore: aVersion].

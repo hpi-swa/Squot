@@ -1,9 +1,11 @@
 tests
 testGettingCommitTimestamp
-	| commitStamp authorStamp repo fs |
-	repo := FileSystem memory / 'repo.git'.
-	self createFixedTimeStampCommitIn: repo.
-	fs := (FileSystemGitRepository on: repo) head.
+	| commitStamp authorStamp path repository fs |
+	path := FileSystem memory / 'repo.git'.
+	self createFixedTimeStampCommitIn: path.
+	repository := FileSystemGitRepository on: path.
+	repository withUnitOfWork: [
+	fs := repository head.
 	
 	commitStamp := fs timeStampOfCommit.
 	self assert: DateAndTime equals: commitStamp species.
@@ -16,3 +18,4 @@ testGettingCommitTimestamp
 	self 
 		assert: (DateAndTime year: 2010 month: 06 day: 27 hour: 21 minute: 11) asTimeStamp 
 		equals: authorStamp
+	].

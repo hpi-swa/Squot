@@ -1,4 +1,6 @@
 loading
 loadParents
+	| unitOfWork |
+	unitOfWork := self currentUnitOfWork.
 	^ self basicParents collect: [ :parentHash |
-		self repository objectNamed: parentHash ]
+		unitOfWork objectNamed: parentHash ]

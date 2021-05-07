@@ -4,9 +4,9 @@
 		 ],
 	"classvars" : [
 		 ],
-	"commentStamp" : "jr 7/28/2019 01:01",
+	"commentStamp" : "jr 10/19/2020 21:07",
 	"instvars" : [
-		"diff3conflict" ],
+		"differentPositions" ],
 	"name" : "SquotLoadOrderConflict",
 	"pools" : [
 		 ],

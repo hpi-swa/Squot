@@ -1,3 +1,3 @@
 git-delegating
 branchNames
-	^ repository branchNames
+	^ self unitOfWork branchNames

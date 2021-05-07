@@ -2,7 +2,7 @@
 	"category" : "Squot-Tests",
 	"classinstvars" : [
 		 ],
-	"classtraitcomposition" : "TSquotLocalRepository classTrait",
+	"classtraitcomposition" : "TSquotLocalRepository classTrait + TSquotUnitOfWork classTrait",
 	"classvars" : [
 		 ],
 	"commentStamp" : "jr 12/2/2019 21:32",
@@ -12,5 +12,5 @@
 	"pools" : [
 		 ],
 	"super" : "Object",
-	"traitcomposition" : "TSquotLocalRepository",
+	"traitcomposition" : "TSquotLocalRepository + TSquotUnitOfWork",
 	"type" : "normal" }

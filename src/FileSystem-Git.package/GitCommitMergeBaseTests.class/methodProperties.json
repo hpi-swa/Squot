@@ -2,13 +2,15 @@
 	"class" : {
 		"lastStoredRun" : "jr 3/22/2017 15:19" },
 	"instance" : {
+		"createFakeTree" : "jr 2/29/2020 21:11",
 		"newCommit:parents:" : "jr 3/22/2017 15:21",
-		"setUp" : "jr 3/22/2017 15:27",
+		"repository" : "jr 4/13/2020 21:25",
+		"setUp" : "jr 8/8/2020 17:18",
 		"testAllMergeBases" : "jr 5/23/2017 11:36",
-		"testNearestMergeBaseFar" : "jr 5/23/2017 11:29",
-		"testNearestMergeBaseIsNearest" : "jr 5/23/2017 11:29",
-		"testNearestMergeBaseIsNearest2" : "jr 5/23/2017 11:29",
+		"testNearestMergeBaseFar" : "jr 2/23/2020 23:29",
+		"testNearestMergeBaseIsNearest" : "jr 2/23/2020 23:30",
+		"testNearestMergeBaseIsNearest2" : "jr 2/23/2020 23:30",
 		"testNearestMergeBaseNone" : "jr 5/23/2017 11:29",
-		"testNearestMergeBaseOneStep" : "jr 5/23/2017 11:30",
-		"testNearestMergeBaseWithTag" : "jr 11/20/2018 22:31",
-		"testNearestMergeBaseWithUnrelatedMerge" : "jr 5/23/2017 11:30" } }
+		"testNearestMergeBaseOneStep" : "jr 2/23/2020 23:30",
+		"testNearestMergeBaseWithTag" : "jr 2/23/2020 23:30",
+		"testNearestMergeBaseWithUnrelatedMerge" : "jr 2/23/2020 23:31" } }

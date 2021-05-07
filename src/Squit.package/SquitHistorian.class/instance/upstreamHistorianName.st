@@ -1,3 +1,3 @@
 upstream historian
 upstreamHistorianName
-	^ gitRepository upstreamRefOfBranchNamed: self shortName
+	^ self git upstreamRefOfBranchNamed: self shortName

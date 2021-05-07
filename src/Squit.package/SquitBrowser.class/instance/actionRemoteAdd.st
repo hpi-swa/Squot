@@ -1,8 +1,9 @@
 actions on working copies
 actionRemoteAdd
-	| workingCopy query |
+	"Answer a promise that will be resolved if the remote was added, or rejected with #cancelled."
+	| workingCopy |
 	workingCopy := self projectSelection ifNil: [^ self].
-	(query := SquitAddRemote new)
-		workingCopy: workingCopy;
-		afterCloseContinueIn: self with: #actionRemoteAddContinue:.
-	ToolBuilder open: query.
+	^ (SquitInteractiveAddRemote new
+		repository: workingCopy repository;
+		run)
+			then: [:result | self refresh. result].

@@ -1,0 +1,15 @@
+{
+	"category" : "FileSystem-Git-Plumbing-Core",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "jr 2/12/2020 21:31",
+	"instvars" : [
+		"packFiles",
+		"packsDir" ],
+	"name" : "GitPackedObjectStore",
+	"pools" : [
+		 ],
+	"super" : "GitObjectStore",
+	"type" : "normal" }

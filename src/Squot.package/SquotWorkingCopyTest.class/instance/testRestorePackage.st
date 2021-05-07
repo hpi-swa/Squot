@@ -5,16 +5,16 @@ testRestorePackage
 	sampleClass compileSilently: 'firstMethod ^ self' classified: 'methods of first version'.
 	sampleClassName := sampleClass name. "when unloaded, the class is renamed"
 	firstMethod := sampleClass >> #firstMethod.
-	packageInfo := PackageInfo named: classFactory packageName.
-	workingCopy add: packageInfo at: 'src'.
-	workingCopy saveNewVersionMessage: 'first version' interactive: false.
+	repository withUnitOfWork:
+	[packageInfo := self addPackage.
+	workingCopy saveVersionWithMessage: 'first version'.
 	firstVersion := workingCopy baseVersion.
 	self suppressChangeNotificationsDuring:
 		[anotherClass := classFactory newClassInCategory: sampleClass category].
 	sampleClass compileSilently: 'addedMethod ^ self' classified: 'methods of second version'.
 	anotherClassName := anotherClass name. "when unloaded, the class is renamed"
 	addedMethod := sampleClass >> #addedMethod.
-	workingCopy saveNewVersionMessage: 'second version' interactive: false.
+	workingCopy saveVersionWithMessage: 'second version'.
 	latestVersion := workingCopy baseVersion.
 	
 	self suppressChangeNotificationsDuring:
@@ -33,4 +33,4 @@ testRestorePackage
 	self deny: anotherClass isObsolete.
 	self assert: addedMethod getSource asString
 		equals: (sampleClass >> addedMethod selector) getSource asString
-		description: 'restore addedMethod'.
+		description: 'restore addedMethod'].

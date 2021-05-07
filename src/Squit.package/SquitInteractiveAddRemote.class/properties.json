@@ -1,0 +1,16 @@
+{
+	"category" : "Squit-UI",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "jr 8/9/2020 21:16",
+	"instvars" : [
+		"query",
+		"remoteAddedCallbacks",
+		"rollbackCallbacks" ],
+	"name" : "SquitInteractiveAddRemote",
+	"pools" : [
+		 ],
+	"super" : "SquitInteractiveOperation",
+	"type" : "normal" }

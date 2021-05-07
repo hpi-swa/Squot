@@ -2,9 +2,9 @@
 	"class" : {
 		 },
 	"instance" : {
-		"testCreateCommit" : "jr 5/27/2018 16:26",
-		"testDefaultAuthor" : "jr 5/27/2018 16:26",
-		"testGetMasterSnapshot" : "jr 7/22/2017 12:03",
+		"testCreateCommit" : "jr 3/2/2020 23:34",
+		"testDefaultAuthor" : "jr 3/2/2020 22:39",
+		"testGetMasterSnapshot" : "jr 3/2/2020 22:39",
 		"testGetReferenceWithInvalidName" : "pre 6/15/2018 15:51",
 		"testInstantiation" : "jr 1/11/2017 17:50",
 		"testIsAvailable" : "jr 5/27/2018 16:27",

@@ -1,0 +1,14 @@
+{
+	"category" : "FileSystem-Git-Plumbing-Core",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "jr 2/12/2020 21:30",
+	"instvars" : [
+		"repository" ],
+	"name" : "GitObjectStore",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }

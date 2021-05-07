@@ -2,7 +2,8 @@
 	"class" : {
 		"shouldInheritSelectors" : "jr 9/29/2019 22:20" },
 	"instance" : {
-		"newToolOn:" : "jr 10/3/2018 00:30",
-		"testSmalltalkCodeDiffs" : "jr 9/29/2019 22:02",
+		"newToolOn:" : "jr 5/2/2020 01:49",
+		"tearDown" : "jr 5/2/2020 01:53",
+		"testSmalltalkCodeDiffs" : "jr 5/2/2020 02:11",
 		"testTextAddition" : "jr 10/15/2017 20:37",
 		"testTextRemoval" : "jr 10/15/2017 20:37" } }

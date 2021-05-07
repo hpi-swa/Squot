@@ -2,7 +2,7 @@ private materializing
 materializeGraph: anObjectGraph from: anArtifact replacing: anObject
 	| metadata materializedObject |
 	metadata := additionalInfo at: anArtifact path
-		ifPresent: [:existing | existing mergeWith: anArtifact storeInfo]
+		ifPresent: [:existing | existing updateFrom: anArtifact storeInfo]
 		ifAbsent: [anArtifact storeInfo].
 	SquotCurrentMetadata value: metadata during:
 		[materializedObject := SquotShadowMaterializer new

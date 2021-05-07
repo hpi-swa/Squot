@@ -13,4 +13,4 @@ testRevisionChange
 	self commit: 'commit 2'.
 	newRevision := workingCopy revision.
 	self deny: oldRevision = newRevision.
-	self assert: (newRevision parents includes: oldRevision)
+	self withUnitOfWork: [:git | self assert: (newRevision parents includes: oldRevision)].

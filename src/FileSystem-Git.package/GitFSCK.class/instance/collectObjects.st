@@ -1,5 +1,4 @@
 validating
 collectObjects
-	all := repository looseObjects.
-	self flag: 'TODO: collect packed objects'.
+	all := repository unitOfWork allObjects.
 	all := all reject: [ :each| each species == GitTag]

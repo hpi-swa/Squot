@@ -4,9 +4,11 @@ testParents
 	
 	(workingCopy / 'aFile') writeStreamDo: [ :stream | ].
 	self commit: 'a commit'.
+	self withUnitOfWork: [:git |
 	self assert: workingCopy parents isEmpty.
 	
 	(workingCopy / 'anotherfile') writeStreamDo: [ :stream | ].
 	self commit: 'commit number 2'.
 	self deny: workingCopy parents isEmpty.
 	self assert: workingCopy parents size = 1
+	].

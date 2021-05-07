@@ -1,5 +1,6 @@
 setUp
 setUp
-	self createFirstVersion;
-		createSecondVersion;
-		createThirdVersion.
+	repository withUnitOfWork:
+		[self createFirstVersion;
+			createSecondVersion;
+			createThirdVersion].

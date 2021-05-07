@@ -1,0 +1,6 @@
+{
+	"class" : {
+		"into:merge:basedOn:diffs:conflicts:" : "jr 12/13/2020 16:05" },
+	"instance" : {
+		"privateResolvedPatch" : "jr 12/13/2020 16:26",
+		"setWorking:incoming:base:diffs:conflicts:" : "jr 12/13/2020 16:06" } }

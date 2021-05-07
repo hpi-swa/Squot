@@ -6,3 +6,4 @@ actionManageRemotes
 		workingCopy: self projectSelection;
 		yourself.
 	ToolBuilder open: browser.
+	^ browser

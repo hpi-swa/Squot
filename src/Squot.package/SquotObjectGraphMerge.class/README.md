@@ -1,0 +1,1 @@
+A state-based three-way merge of different editions of an object graph. It can have conflicts about whether objects are part of the final graph or not. The objects can undergo merges themselves.

@@ -1,3 +1,3 @@
 accessing
 remotesLabels
-	^ self gitRepository remoteNames sorted
+	^ self withUnitOfWork: [self gitRepository remoteNames sorted]

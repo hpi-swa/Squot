@@ -1,12 +1,13 @@
 {
-	"category" : "Squot-Tools-Tests",
+	"category" : "Squot-Tests-Tools",
 	"classinstvars" : [
 		 ],
 	"classvars" : [
 		 ],
 	"commentStamp" : "",
 	"instvars" : [
-		 ],
+		"workingCopy",
+		"classFactory" ],
 	"name" : "SquotDiffExplorerTest",
 	"pools" : [
 		 ],

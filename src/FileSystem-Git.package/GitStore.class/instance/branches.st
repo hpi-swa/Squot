@@ -1,3 +1,3 @@
 git-delegating
 branches
-	^ repository branches
+	^ self unitOfWork branches

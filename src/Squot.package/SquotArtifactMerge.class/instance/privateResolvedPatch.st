@@ -1,8 +1,14 @@
 private
 privateResolvedPatch
-	^ SquotArtifactModification new
-		left: working;
-		right: incoming;
-		diffContent: graphMerge resolvedPatch;
+	| modification |
+	modification := (SquotArtifactModification
+		left: working
+		right: incoming
+		isLoadedInWorkingCopy: ((working respondsTo: #isLoaded) and: [working isLoaded])
+		contentDiff: graphMerge resolvedPatch
+		metadataDiff: metadataMerge resolvedPatch)
 		updateRightArtifact;
-		yourself
+		yourself.
+	self workingIsLoaded ifTrue: [modification setLoadedInWorkingCopy].
+	self willBeLoaded ifTrue: [modification setWillBeLoaded].
+	^ modification

@@ -1,3 +1,3 @@
 patching
 applyDiff: anArtifactDiff
-	anArtifactDiff applyToContainer: self.
+	^ anArtifactDiff applyToContainer: self

@@ -1,7 +1,7 @@
 tests
 testEncodingWithLatin1
 	| commit commitDataAsSqueakString latin1CommitData |
-	repository configI18nCommitEncoding: 'latin1'.
+	repository unitOfWork configI18nCommitEncoding: 'latin1'.
 	commitDataAsSqueakString := 'tree 0000000000000000000000000000000000000000
 parent 0000000000000000000000000000000000000000
 author Björn Thaddäus <björn.thaddäus@ü.de> 1495318660 +0200

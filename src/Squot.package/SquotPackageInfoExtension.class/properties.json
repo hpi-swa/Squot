@@ -1,0 +1,14 @@
+{
+	"category" : "Squot-Packages",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		"Extensions" ],
+	"commentStamp" : "jr 12/4/2020 20:19",
+	"instvars" : [
+		"tonelProperties" ],
+	"name" : "SquotPackageInfoExtension",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }

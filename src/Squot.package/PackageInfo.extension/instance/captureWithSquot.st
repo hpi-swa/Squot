@@ -11,3 +11,4 @@ captureWithSquot
 	^ self squotShadowFactory
 		forPackageNamed: self packageName
 		withSnapshot: snapshot
+		tonelProperties: (SquotPackageInfoExtension of: self) tonelProperties

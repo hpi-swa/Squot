@@ -14,7 +14,7 @@ privateResolvedPatch
 		diff := each resolvedPatch.
 		diff squotHasChanges ifTrue:
 			[diffs addDiff: diff forObjectNamed: (self keyOf: each object)]].
-	self assert: (base isNil or: [base startName = working startName and: [working startName = incoming startName]]) description: 'Object graph editions must start with the same object unless there is an addition conflict'.
+	self assert: (base isNil or: [base startName isNil or: [base startName = working startName and: [working startName = incoming startName]]]) description: 'Object graph editions must start with the same object unless there is an addition conflict'.
 	diffs startObjectName: working startName.
 	diffs right: (diffs squotApplyTo: working).
 	^ diffs

@@ -1,3 +1,0 @@
-loading
-loadDependencies
-	^ OrderedCollection new

@@ -1,3 +1,3 @@
 git-delegating
 tags
-	^ repository tags
+	^ self unitOfWork tags

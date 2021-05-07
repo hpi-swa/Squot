@@ -1,3 +1,3 @@
-testing
+enumerating
 atEnd
-	^ toBeVisited allSatisfy: [:each | visited includes: each]
+	^ toBeVisited isEmpty

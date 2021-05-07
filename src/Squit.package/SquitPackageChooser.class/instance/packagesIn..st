@@ -1,5 +1,9 @@
 choosing packages
 packagesIn: aWorkingCopy
-	^ (aWorkingCopy store objectPaths
-		select: [:each | each endsWith: '.package'])
-		collect: [:each | each squotPathSegments last allButLast: '.package' size] as: OrderedCollection
+	^ OrderedCollection streamContents:
+		[:packageNames |
+		aWorkingCopy artifacts
+			select: [:each | each storeInfo objectClassName = PackageInfo name]
+			thenDo:
+				[:each |
+				packageNames nextPut: each packageName]]

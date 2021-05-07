@@ -5,6 +5,6 @@ newSaveOperation
 		historian: self loadedHistorian;
 		additionalParentVersions: self additionalParents;
 		message: self newVersionMessage;
-		author: self defaultAuthor;
-		committer: self defaultAuthor;
+		shouldStoreMetadata: self shouldStoreMetadata;
+		workingCopySnapshot: self snapshot;
 		yourself

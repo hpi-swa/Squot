@@ -1,5 +1,17 @@
 {
 	"class" : {
-		 },
+		"allTestSelectors" : "jr 11/18/2020 20:17",
+		"excludedTests" : "jr 11/18/2020 21:11",
+		"testSelectors" : "jr 11/18/2020 20:17" },
 	"instance" : {
-		"newToolOn:" : "jr 11/18/2018 01:47" } }
+		"expectedFailures" : "jr 10/4/2020 20:50",
+		"newToolOn:" : "jr 5/2/2020 01:49",
+		"patchChangingArtifactAt:" : "jr 11/20/2020 23:29",
+		"performUiInteractionTestsOnNode:withPath:inTree:" : "jr 11/18/2020 21:06",
+		"testDoNotLoadAddedArtifact" : "jr 11/18/2020 21:07",
+		"testLeaveUnloadedArtifactUnloaded" : "jr 11/20/2020 23:28",
+		"testLoadUnloadedArtifact" : "jr 11/18/2020 21:38",
+		"testLoadUnloadedArtifactDuringModification" : "jr 11/18/2020 21:38",
+		"testToggleLoadAddedArtifact" : "jr 11/18/2020 21:39",
+		"testUnloadedArtifactsAdorned" : "jr 11/18/2020 22:15",
+		"workingCopySavePatch" : "jr 11/20/2020 23:28" } }

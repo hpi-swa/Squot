@@ -1,9 +1,18 @@
 private storing
 storeOrdinary: anArtifact
-	| serializer |
+	| serializer storedArtifact |
 	serializer := self serializerFactoryFor: anArtifact.
-	self validatePathOf: anArtifact.
-	(serializer writingBelow: directory) write: anArtifact.
+	storedArtifact := anArtifact.
+	anArtifact serializerName ~= serializer name ifTrue:
+		[storedArtifact := SquotArtifact
+			path: anArtifact path
+			content: anArtifact content
+			storeInfo: (anArtifact storeInfo copy
+						serializer: serializer;
+						yourself)].
+	self validatePathOf: storedArtifact.
+	(serializer writingBelow: directory) write: storedArtifact.
 	self shouldStoreMetadata ifTrue:
-		[self storeSquotMetadataFor: anArtifact.
-		self tableOfContents add: anArtifact].
+		[self storeSquotMetadataFor: storedArtifact.
+		self tableOfContents add: storedArtifact].
+	^ storedArtifact

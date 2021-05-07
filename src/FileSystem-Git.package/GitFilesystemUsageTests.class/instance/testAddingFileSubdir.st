@@ -11,5 +11,7 @@ testAddingFileSubdir
 	self assert: (workingCopy / 'foo' / 'bar' / filename) exists.
 	self commit: 'a commit'.
 	
+	self withUnitOfWork: [:git |
 	self assert: ref exists.
 	self assert: (workingCopy / 'foo' / 'bar' / filename) exists
+	].

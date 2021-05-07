@@ -1,0 +1,3 @@
+patching
+rebaseOn: anObjectContainer
+	^ self

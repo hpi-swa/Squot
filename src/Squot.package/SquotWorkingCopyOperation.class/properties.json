@@ -1,5 +1,5 @@
 {
-	"category" : "Squot-Core",
+	"category" : "Squot-WorkingCopies",
 	"classinstvars" : [
 		 ],
 	"classvars" : [
@@ -8,7 +8,8 @@
 	"instvars" : [
 		"workingCopy",
 		"workingCopySnapshot",
-		"extensions" ],
+		"extensions",
+		"unitOfWork" ],
 	"name" : "SquotWorkingCopyOperation",
 	"pools" : [
 		 ],

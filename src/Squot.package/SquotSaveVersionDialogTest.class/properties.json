@@ -1,5 +1,5 @@
 {
-	"category" : "Squot-Tools-Tests",
+	"category" : "Squot-Tests-Tools",
 	"classinstvars" : [
 		 ],
 	"classvars" : [
@@ -10,5 +10,5 @@
 	"name" : "SquotSaveVersionDialogTest",
 	"pools" : [
 		 ],
-	"super" : "SquotChangedArtifactsChooserTest",
+	"super" : "SquotChangesChooserTest",
 	"type" : "normal" }

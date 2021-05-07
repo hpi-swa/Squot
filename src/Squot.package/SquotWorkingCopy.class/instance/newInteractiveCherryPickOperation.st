@@ -1,0 +1,3 @@
+merging
+newInteractiveCherryPickOperation
+	^ SquotInteractiveCherryPick newFrom: self newCherryPickOperation

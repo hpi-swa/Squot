@@ -1,0 +1,8 @@
+{
+	"class" : {
+		"at:ifAbsent:" : "jr 12/4/2020 20:17",
+		"initialize" : "jr 12/4/2020 20:16",
+		"of:" : "jr 12/4/2020 20:18" },
+	"instance" : {
+		"tonelProperties" : "jr 12/5/2020 00:14",
+		"tonelProperties:" : "jr 12/4/2020 20:19" } }

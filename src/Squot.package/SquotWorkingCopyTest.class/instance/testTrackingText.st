@@ -2,11 +2,12 @@ tests
 testTrackingText
 	| text firstVersion latestVersion |
 	text := Text fromString: 'Original text'.
-	workingCopy add: text at: 'my text'.
-	workingCopy saveNewVersionMessage: 'add text' interactive: false.
+	repository withUnitOfWork:
+	[workingCopy add: text at: 'my text'.
+	workingCopy saveVersionWithMessage: 'add text'.
 	firstVersion := workingCopy baseVersion.
 	text replaceFrom: 1 to: text size with: 'New value'.
-	workingCopy saveNewVersionMessage: 'add text' interactive: false.
+	workingCopy saveVersionWithMessage: 'add text'.
 	text replaceFrom: 1 to: text size with: 'New, unsaved value'.
 	latestVersion := workingCopy baseVersion.
 	
@@ -19,4 +20,4 @@ testTrackingText
 	workingCopy loadVersion: latestVersion interactive: false.
 	self assert: (workingCopy baseVersion = latestVersion).
 	self assert: (workingCopy loadedHistorian version = latestVersion).
-	self assert: 'New value' equals: text asString.
+	self assert: 'New value' equals: text asString].

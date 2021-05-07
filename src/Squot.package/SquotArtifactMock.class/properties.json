@@ -1,5 +1,5 @@
 {
-	"category" : "Squot-Tests-Tools",
+	"category" : "Squot-Tests-Support",
 	"classinstvars" : [
 		 ],
 	"classvars" : [
@@ -13,7 +13,8 @@
 		"diffBlock",
 		"mergeBlock",
 		"diffContentBlock",
-		"content" ],
+		"content",
+		"mergeContentBlock" ],
 	"name" : "SquotArtifactMock",
 	"pools" : [
 		 ],

@@ -1,7 +1,8 @@
 {
-	"category" : "Squot-Tools-Packages-Tests",
+	"category" : "Squot-Tests-Tools-Packages",
 	"classinstvars" : [
 		 ],
+	"classtraitcomposition" : "TTestCaseSuppressingProgressDisplay classTrait",
 	"classvars" : [
 		 ],
 	"commentStamp" : "",
@@ -10,10 +11,10 @@
 		"classFactory",
 		"existingMethod",
 		"methodToBeRemoved",
-		"methodToBeAdded",
-		"rootNode" ],
+		"methodToBeAdded" ],
 	"name" : "SquotMonticelloDiffNodesTest",
 	"pools" : [
 		 ],
 	"super" : "TestCase",
+	"traitcomposition" : "TTestCaseSuppressingProgressDisplay",
 	"type" : "normal" }

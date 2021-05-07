@@ -1,10 +1,11 @@
-tests
+tests branch switching
 testSwitchAndMoveOverToBranchAtSameVersion
 	| trackedObject originalHistorian otherHistorian contentsBeforeSwitch |
 	"given"
-	trackedObject := ValueHolder new contents: 'This is a test'.
+	repository withUnitOfWork:
+	[trackedObject := ValueHolder new contents: 'This is a test'.
 	workingCopy add: trackedObject at: 'tracked'.
-	workingCopy saveNewVersionMessage: 'initial version' interactive: false.
+	workingCopy saveVersionWithMessage: 'initial version'.
 	trackedObject contents: 'Unsaved changes'.
 	originalHistorian := workingCopy loadedHistorian.
 	otherHistorian := repository historianNamed: 'other'.
@@ -22,4 +23,4 @@ testSwitchAndMoveOverToBranchAtSameVersion
 	self assert: 'Other changes' = trackedObject contents
 		description: 'Unsaved changes not preserved'.
 	self assert: contentsBeforeSwitch == trackedObject contents
-		description: 'no patching should have occurred'.
+		description: 'no patching should have occurred'].

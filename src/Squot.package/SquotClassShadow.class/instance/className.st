@@ -1,3 +1,3 @@
 accessing
 className
-	^ (snapshot definitions detect: [:each | each isClassDefinition]) className
+	^ (snapshot definitions detect: [:each | each respondsTo: #actualClass]) className

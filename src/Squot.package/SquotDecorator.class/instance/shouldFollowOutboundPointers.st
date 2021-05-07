@@ -1,0 +1,3 @@
+tools - debugger
+shouldFollowOutboundPointers
+	^ true

@@ -1,4 +1,4 @@
 accessing
 author
 
-	^ author
+	^ author ifNil: [author := self workingCopy defaultAuthor]

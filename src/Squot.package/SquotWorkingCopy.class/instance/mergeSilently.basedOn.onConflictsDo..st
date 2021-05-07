@@ -6,4 +6,4 @@ mergeSilently: incomingObjectContainer basedOn: baseObjectContainer onConflictsD
 			merge: incomingObjectContainer
 			basedOn: baseObjectContainer.
 		merge hasConflicts 	ifTrue: [aBlock cull: merge].
-		store applyPatch: merge resolvedPatch].
+		self applyPatch: merge resolvedPatch].

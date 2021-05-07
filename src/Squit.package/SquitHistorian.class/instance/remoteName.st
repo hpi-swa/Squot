@@ -1,3 +1,4 @@
 remote-tracking historian
 remoteName
-	^ (gitRepository fetchSpecOfTrackingBranch: self expandedName) ifNotNil: #remoteName
+	^ (self git fetchSpecOfTrackingBranch: self expandedName)
+		ifNotNil: [:fetchSpec | fetchSpec remoteName]

@@ -1,4 +1,4 @@
 accessing
-authoringTimeStamp: anObject
+authoringTimeStamp: aDateAndTime
 
-	author timeStamp:  anObject
+	author := author atTime: aDateAndTime

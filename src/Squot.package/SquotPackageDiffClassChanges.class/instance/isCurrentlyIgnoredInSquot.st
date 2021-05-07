@@ -1,0 +1,3 @@
+testing
+isCurrentlyIgnoredInSquot
+	^ SquotIgnoredSmalltalkCode isWholeClassIgnored: self className

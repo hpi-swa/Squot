@@ -1,3 +1,0 @@
-actions
-browseDiffContent
-	self selectedNode browseInWorkingCopy.

@@ -1,7 +1,6 @@
-testing
+tests
 testUnset
-	(repository baseDir / 'config') ensureDeleted.
-	(repository baseDir / 'config') writeStreamDo: [:stream | stream nextPutAll: 
+	configFile writeStreamDo: [:stream | stream nextPutAll: 
 '[remote "origin"]
 	url = http://localhost/git/FileSystem-Git.git
 	fetch = +refs/heads/*:refs/remotes/testserver/*
@@ -9,22 +8,22 @@ testUnset
 	foo = bar
 [core]
 	bare = true'].
-	repository configUnsetAt: 'remote.origin.fetch'.
+	self unitOfWork configUnsetAt: 'remote.origin.fetch'.
 	self assert: ('[remote "origin"]
 	url = http://localhost/git/FileSystem-Git.git
 [remote "origin.bla"]
 	foo = bar
 [core]
 	bare = true
-' withLineEndings: String lf) equals: (repository baseDir / 'config' readStreamDo: [:s | s contents]).
-	repository configUnsetAt: 'remote.origin.bla.foo'.
+' withLineEndings: String lf) equals: (configFile  readStreamDo: [:s | s contents]).
+	self unitOfWork configUnsetAt: 'remote.origin.bla.foo'.
 	self assert: ('[remote "origin"]
 	url = http://localhost/git/FileSystem-Git.git
 [remote "origin.bla"]
 [core]
 	bare = true
-' withLineEndings: String lf) equals: (repository baseDir / 'config' readStreamDo: [:s | s contents]).
-	repository configUnsetAt: 'remote.origin'.
+' withLineEndings: String lf) equals: (configFile readStreamDo: [:s | s contents]).
+	self unitOfWork configUnsetAt: 'remote.origin'.
 	self assert: ('[core]
 	bare = true
-' withLineEndings: String lf) equals: (repository baseDir / 'config' readStreamDo: [:s | s contents]).
+' withLineEndings: String lf) equals: (configFile readStreamDo: [:s | s contents]).

@@ -1,0 +1,20 @@
+{
+	"category" : "FileSystem-Git-Plumbing-Core",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "jr 4/19/2020 21:23",
+	"instvars" : [
+		"cache",
+		"totalSize",
+		"thresholdSize",
+		"hits",
+		"misses",
+		"evictions",
+		"objectsSortedBySize" ],
+	"name" : "GitObjectCache",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }

@@ -1,0 +1,10 @@
+{
+	"class" : {
+		 },
+	"instance" : {
+		"activateDuring:" : "jr 4/17/2020 14:39",
+		"finish" : "jr 4/17/2020 14:47",
+		"numberOfClients" : "jr 4/17/2020 14:47",
+		"repository" : "jr 4/17/2020 14:48",
+		"repository:" : "jr 4/17/2020 14:48",
+		"start" : "jr 4/17/2020 14:47" } }

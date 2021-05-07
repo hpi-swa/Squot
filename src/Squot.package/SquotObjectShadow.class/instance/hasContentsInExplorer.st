@@ -1,4 +1,4 @@
 *Squot-Tools
 hasContentsInExplorer
 
-	^ slots isEmpty not
+	^ slots notNil and: [slots isEmpty not]

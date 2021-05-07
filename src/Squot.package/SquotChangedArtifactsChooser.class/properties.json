@@ -4,19 +4,11 @@
 		 ],
 	"classvars" : [
 		 ],
-	"commentStamp" : "jr 4/24/2018 00:05",
+	"commentStamp" : "jr 9/25/2020 18:30",
 	"instvars" : [
-		"controllerForIgnores",
-		"ignored",
-		"canceled",
-		"rootNodes",
-		"editedPatch",
-		"selectedNode",
-		"workingCopy",
-		"view",
-		"promise" ],
+		 ],
 	"name" : "SquotChangedArtifactsChooser",
 	"pools" : [
 		 ],
-	"super" : "Model",
+	"super" : "SquotChangesChooser",
 	"type" : "normal" }

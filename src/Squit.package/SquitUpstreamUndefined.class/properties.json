@@ -1,0 +1,14 @@
+{
+	"category" : "Squit-Exceptions",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "jr 8/9/2020 21:29",
+	"instvars" : [
+		"historian" ],
+	"name" : "SquitUpstreamUndefined",
+	"pools" : [
+		 ],
+	"super" : "Error",
+	"type" : "normal" }

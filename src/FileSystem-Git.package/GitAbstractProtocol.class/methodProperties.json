@@ -8,7 +8,6 @@
 		"schemes" : "DamienPollet 2/19/2013 11:42",
 		"url:" : "CamilloBruni 12/21/2011 14:49" },
 	"instance" : {
-		"addNewObjectsIn:to:basedOn:" : "jr 5/23/2017 11:29",
 		"branches" : "CamilloBruni 10/8/2012 14:22",
 		"continueWith:initialResponseContent:" : "jr 10/25/2016 14:40",
 		"fetchRefs" : "DamienCassou 1/31/2013 16:28",
@@ -16,7 +15,7 @@
 		"host" : "CamilloBruni 12/21/2011 14:50",
 		"initializeWith:" : "DamienCassou 1/29/2013 15:45",
 		"loadRefs" : "jr 12/1/2016 16:52",
-		"preparePackFileToPushRefs:of:" : "jr 3/30/2019 12:47",
+		"preparePackFileToPushRefs:of:" : "jr 5/2/2020 15:53",
 		"printOn:" : "jr 10/25/2016 16:32",
 		"pushReferences:of:deleting:" : "jr 1/2/2017 19:31",
 		"refs" : "DamienCassou 2/26/2013 14:17",

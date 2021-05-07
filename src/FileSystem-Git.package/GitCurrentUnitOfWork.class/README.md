@@ -1,0 +1,1 @@
+Registers the current unit of work for Git repositories, so it needs not be passed around.

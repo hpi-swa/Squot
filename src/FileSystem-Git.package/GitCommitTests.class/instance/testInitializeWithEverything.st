@@ -3,16 +3,14 @@ testInitializeWithEverything
 	| commit tree message author committer blob |
 	blob := GitBlob bytes: 'aBlob' in: nil.
 	message := 'a test message'.
-	author := (GitStamp new
-				email: 'mail@server.ext';
-				name: 'Homer Simpson';
-				timeStamp: TimeStamp now;
-				yourself).
-	committer := (GitStamp new
-					email: 'homer@simpson.spr';
-					name: 'Bart Simpson';
-					timeStamp: TimeStamp now;
-					yourself).
+	author := GitStamp
+				name: 'Homer Simpson'
+				email: 'mail@server.ext'
+				timeStamp: TimeStamp now.
+	committer := GitStamp
+					name: 'Bart Simpson'
+					email: 'homer@simpson.spr'
+					timeStamp: TimeStamp now.
 	tree := GitTree 
 		entries: {
 			GitTreeEntry 

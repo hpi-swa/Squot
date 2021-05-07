@@ -1,4 +1,4 @@
 internal
 basicSwitchToBranch: branchName
-	repository updateHeadToBranch: branchName.
+	self unitOfWork updateHeadToBranch: branchName.
 	self basicReset.

@@ -1,3 +1,4 @@
 loading and unloading
 discardUnsavedChanges
-	self loadVersion: self baseVersion interactive: false.
+	repository withUnitOfWork:
+		[self loadVersion: self baseVersion interactive: false].

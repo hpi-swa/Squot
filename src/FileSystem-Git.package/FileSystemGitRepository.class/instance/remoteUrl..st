@@ -1,3 +1,3 @@
 remotes
 remoteUrl: remoteName
-	^ repository remoteUrl: remoteName
+	^ self unitOfWork remoteUrl: remoteName

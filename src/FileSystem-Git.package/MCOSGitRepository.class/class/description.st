@@ -1,3 +1,0 @@
-configuration
-description
-	^ 'OS-Git'

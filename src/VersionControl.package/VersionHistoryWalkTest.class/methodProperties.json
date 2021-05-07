@@ -1,0 +1,11 @@
+{
+	"class" : {
+		 },
+	"instance" : {
+		"setUp" : "jr 2/8/2020 17:14",
+		"testMultipleVisitsToExcludedVersion" : "jr 2/8/2020 17:14",
+		"testSimple" : "jr 2/8/2020 17:15",
+		"testStartingFromNowhere" : "jr 2/8/2020 17:49",
+		"testWalkingWithMerge" : "jr 2/8/2020 17:17",
+		"testWithMerge" : "jr 2/8/2020 17:17",
+		"testWithSink" : "jr 2/8/2020 17:17" } }

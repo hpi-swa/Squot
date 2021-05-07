@@ -14,7 +14,8 @@
 		"sampleClass",
 		"secondMethodSource",
 		"thirdMethodSource",
-		"otherHistorian" ],
+		"otherHistorian",
+		"classFactory" ],
 	"name" : "SquotWorkingCopyTestMergeConflictScenario",
 	"pools" : [
 		 ],

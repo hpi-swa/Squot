@@ -1,3 +1,3 @@
 private
 performTest
-	self suppressProgressDisplayDuring: [^ super performTest]
+	^ self suppressProgressDisplayDuring: [super performTest]

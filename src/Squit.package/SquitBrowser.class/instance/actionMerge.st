@@ -1,13 +1,11 @@
 actions on versions
 actionMerge
-	| mergeHeadCommit workingCopy |
+	| commit workingCopy |
 	self hasProjectSelection ifFalse: [^ self].
 	self hasCommitSelection ifFalse: [^ self].
-	mergeHeadCommit := self commitSelection.
+	(self hasBranchSelection and: [self withUnitOfWork: [self commitSelection = selectedHistorian version]])
+		ifTrue: [^ self actionBranchMerge "Treat as merging the branch"].
+	commit := self commitSelection.
 	workingCopy := self projectSelection.
-	[self mergeVersionIntoActiveBranch: mergeHeadCommit
-		ifCanceled: [^ self]]
-	on: SquotInitialLogMessageRequested
-	do: [:request | request resume: 'Merge commit ', mergeHeadCommit internalId asString,
-		' into ', workingCopy loadedHistorian shortName].
-	self selectActiveHistorian.
+	[self withUnitOfWork:
+		[self mergeCommit: commit into: workingCopy]] fork.

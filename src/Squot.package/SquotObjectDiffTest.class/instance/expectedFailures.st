@@ -1,3 +1,3 @@
 testing
 expectedFailures
-	^ #(testEqualRectangles)
+	^ #(testEqualRectangles "Points are not yet compared as interchangeable value objects")

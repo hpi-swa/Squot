@@ -12,14 +12,10 @@ setUp
 		#[236 216 1 54 98 69 148 164 244 71 189 82 48 250 53 240 85 4 72 81] asInteger.
 		#[255 216 1 54 98 69 148 164 244 71 189 82 48 250 53 240 85 4 72 81] asInteger }.
 	
-	repository := GitRepository on: (FileSystem memory root / 'repo').
-	1 to: 7 do: [ :index | 
-		"I'm faking the names here. Calculating the hash will yield a different result!"
-		(GitBlob bytes: 'content', index asString in: repository)
-			instVarNamed: 'integerHash' put: (sortedHashes at: index);
-			store ].	
+	self setUpRepository.
 	
-	creator := GitPackFileCreator new
+	repository withUnitOfWork:
+	[creator := GitPackFileCreator new
 		repository: repository;
 		instVarNamed: 'sortedHashes' put: sortedHashes;
 		yourself.
@@ -27,4 +23,4 @@ setUp
 	ByteArray streamContents: [ :stream | 
 		creator 
 			writePackFileHeaderOn: stream;
-			writeObjectsOn: stream ].
+			writeObjectsOn: stream ]].

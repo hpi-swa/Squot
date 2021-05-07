@@ -14,5 +14,5 @@ metadata
 		#committer. commit committer name.
 		#committerEmail. commit committer email.
 		#commitTimeStamp. commit committer timeStamp.
-		#message. commit message.
+		#message. self message.
 		#hash. commit hexHash}

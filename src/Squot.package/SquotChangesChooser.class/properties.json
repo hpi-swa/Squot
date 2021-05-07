@@ -1,0 +1,23 @@
+{
+	"category" : "Squot-Tools",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "jr 9/25/2020 18:29",
+	"instvars" : [
+		"controllerForIgnores",
+		"ignored",
+		"canceled",
+		"rootNodes",
+		"editedPatch",
+		"selectedNode",
+		"workingCopy",
+		"view",
+		"promise",
+		"selectedNodePath" ],
+	"name" : "SquotChangesChooser",
+	"pools" : [
+		 ],
+	"super" : "Model",
+	"type" : "normal" }

@@ -13,7 +13,8 @@
 		"hashDict",
 		"sortedHashes",
 		"indexFile",
-		"packFileChecksum" ],
+		"packFileChecksum",
+		"excludedHashes" ],
 	"name" : "GitPackFileCreator",
 	"pools" : [
 		 ],

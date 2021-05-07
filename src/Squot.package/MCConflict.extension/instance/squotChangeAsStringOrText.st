@@ -1,3 +1,3 @@
 *Squot-Tools
 squotChangeAsStringOrText
-	^ self operation squotChangeAsStringOrText
+	^ self localChosen ifTrue: [''] ifFalse: [self operation squotChangeAsStringOrText]

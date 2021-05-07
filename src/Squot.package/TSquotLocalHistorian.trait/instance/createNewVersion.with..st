@@ -6,7 +6,7 @@ createNewVersion: aSnapshot with: aBlock
 	update me to refer to it."
 	| newVersion |
 	newVersion := self repository createNewVersion: aSnapshot
-		with: [:version | version
+		with: [:aVersion | aVersion
 			parents: (self version
 				ifNil: [OrderedCollection new]
 				ifNotNil: [:it | OrderedCollection with: it]);

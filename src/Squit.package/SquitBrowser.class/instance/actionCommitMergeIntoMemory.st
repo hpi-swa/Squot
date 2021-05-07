@@ -1,3 +1,4 @@
 actions on versions
 actionCommitMergeIntoMemory
-	self projectSelection mergeVersionWithLoadedObjects: self commitSelection ifCanceled: []
+	self withUnitOfWork:
+	[self projectSelection mergeVersionWithLoadedObjects: self commitSelection ifCanceled: []]

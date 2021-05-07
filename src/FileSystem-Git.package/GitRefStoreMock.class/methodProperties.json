@@ -1,0 +1,18 @@
+{
+	"class" : {
+		 },
+	"instance" : {
+		"at:put:" : "jr 5/1/2020 16:07",
+		"delete:" : "jr 5/1/2020 15:47",
+		"deletions" : "jr 5/1/2020 15:54",
+		"enumerations" : "jr 5/1/2020 15:56",
+		"flushCaches" : "jr 5/1/2020 15:47",
+		"flushes" : "jr 5/1/2020 15:58",
+		"initialize" : "jr 5/1/2020 15:46",
+		"reads" : "jr 5/1/2020 15:57",
+		"ref:" : "jr 5/1/2020 15:47",
+		"referencesDo:" : "jr 5/1/2020 15:56",
+		"referencesPrefixedWith:do:" : "jr 5/1/2020 15:56",
+		"reset" : "jr 5/1/2020 16:14",
+		"updateRef:to:" : "jr 5/1/2020 15:55",
+		"updates" : "jr 5/1/2020 15:57" } }

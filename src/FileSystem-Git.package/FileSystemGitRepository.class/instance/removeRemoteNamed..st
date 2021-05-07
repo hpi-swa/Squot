@@ -1,3 +1,3 @@
 remotes
 removeRemoteNamed: aName
-	repository removeRemoteNamed: aName
+	self unitOfWork removeRemoteNamed: aName

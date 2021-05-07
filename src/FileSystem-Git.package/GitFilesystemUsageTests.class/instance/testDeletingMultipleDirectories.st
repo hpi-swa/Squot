@@ -17,11 +17,15 @@ testDeletingMultipleDirectories
 
 	self commit: 'added myFiles'.
 
-	ref2 parent delete.
+	self withUnitOfWork: [:git | ref2 parent delete].
 	self commit: 'deleted /a/b/c/d2/e'.
+	self withUnitOfWork: [:git |
 	self deny: ref2 exists.
 	
 	(workingCopy referenceTo: '/a/b/c/') delete.
+	].
 	self commit: 'deleted /a/b/c/'.
+	self withUnitOfWork: [:git |
 	self deny: ref exists.
 	self deny: ref2 exists.
+	].

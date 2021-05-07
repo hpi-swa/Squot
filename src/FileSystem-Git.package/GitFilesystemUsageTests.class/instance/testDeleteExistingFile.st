@@ -1,6 +1,7 @@
 tests
 testDeleteExistingFile
 	self createSomeCommits.
+	self withUnitOfWork: [:git |
 	self assert: workingCopy root children size = 2.
 	self assert: workingCopy root allChildren size = 4.
 	
@@ -12,3 +13,4 @@ testDeleteExistingFile
 	
 	self commit: 'deleted file1'.
 	self deny: (workingCopy  / 'file1') exists
+	].

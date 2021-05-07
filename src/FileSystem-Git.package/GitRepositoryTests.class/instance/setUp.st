@@ -2,13 +2,12 @@ running
 setUp
 	| commit1 commit2  blob1 blob2 tree1 tree2 stamp |
 	super setUp.
-	stamp := GitStamp new
-		name: 'Homer Simpson';
-		email: 'homer@nuke.com';
-		yourself.
+	stamp := GitStamp nowBy: 'Homer Simpson'
+		email: 'homer@nuke.com'.
 	reference := (FileSystem memory / 'test.git').
 	repository := GitRepository on: reference.
 
+	repository withUnitOfWork: [
 	blob1 := (GitBlob bytes: 'testBlob' in: repository) store; yourself.
 	blob2 := (GitBlob bytes: 'second test Blob' in: repository) store; yourself.
 	tree1 := GitTree 
@@ -43,8 +42,8 @@ setUp
 		store;
 		yourself.
 	
-	repository
-		updateRef: repository headsDir / 'branch1' to: commit1 hexHash;
-		updateRef: repository headsDir / 'master' to: commit2 hexHash;
+	repository unitOfWork
+		updateRef: 'refs/heads/branch1' to: commit1 hexHash;
+		updateRef: 'refs/heads/master' to: commit2 hexHash;
 		updateRef: 'refs/heads/feature/x' to: commit2 hexHash;
-		updateHeadToBranch: 'master'
+		updateHeadToBranch: 'master']

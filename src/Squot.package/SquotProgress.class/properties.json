@@ -1,0 +1,15 @@
+{
+	"category" : "Squot-Internal",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "jr 9/21/2020 23:30",
+	"instvars" : [
+		"totalSteps",
+		"doneSteps" ],
+	"name" : "SquotProgress",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }

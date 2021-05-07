@@ -1,7 +1,7 @@
 tests
 testRetrievingParents
 	| commit |
-	commit := repository head.
+	commit := repository unitOfWork head.
 	
 	self assert: commit tree entries size = 3.
 	self assert: commit parents size = 2.

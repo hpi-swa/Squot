@@ -1,11 +1,12 @@
-testing
+tests
 testGetConfigSections
-	(repository baseDir / 'config') ensureDeleted.
-	(repository baseDir / 'config') writeStreamDo: [:stream | stream nextPutAll: 
+	"This operation is not supported on unit of work.
+	What's the point of retrieving the sections?"
+	configFile writeStreamDo: [:stream | stream nextPutAll: 
 '[remote "origin"]
 	url = http://localhost/git/FileSystem-Git.git
 	fetch = +refs/heads/*:refs/remotes/testserver/*
 
 [core]
 	bare = true'].
-	self assert: #('core' 'remote') asSet equals: repository configSections asSet.
+	"self assert: #('core' 'remote') asSet equals: self unitOfWork configSections asSet."

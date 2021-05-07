@@ -6,5 +6,6 @@ projectIndex: anIndex
 	selectedHistorian := self projectSelection loadedHistorian.
 	commitSelection := nil.
 	commitToDiffAgainst := nil.
+	cachedCommitList := #().
 	repositoryExists ifFalse: [self informThatProjectDoesNotExist].
 	self refresh.

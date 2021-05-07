@@ -1,4 +1,4 @@
 accessing
 committer
 
-	^ committer
+	^ committer ifNil: [committer := self workingCopy defaultAuthor]

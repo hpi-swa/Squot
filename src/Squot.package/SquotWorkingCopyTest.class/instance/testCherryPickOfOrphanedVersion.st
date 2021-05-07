@@ -1,4 +1,4 @@
-tests
+tests cherry picking
 testCherryPickOfOrphanedVersion
 	"When cherry-picking a version without ancestor, there is no base version. An empty snapshot should be assumed as the base, so nothing will be removed during the merge."
 	| cherryPick merge |
@@ -16,4 +16,6 @@ testCherryPickOfOrphanedVersion
 	cherryPick applyMerge.
 	cherryPick save].
 	"then"
-	self assert: workingCopy artifacts size = 2. "Period or right bracket expected ->"
+	self assert:
+		(workingCopy artifacts keys includesAllOf:
+			(scenario firstVersion artifacts keys, scenario secondVersion artifacts keys)).

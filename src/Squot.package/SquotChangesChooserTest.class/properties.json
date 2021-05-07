@@ -1,0 +1,14 @@
+{
+	"category" : "Squot-Tests-Tools",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "SquotChangesChooserTest",
+	"pools" : [
+		 ],
+	"super" : "SquotDiffExplorerTest",
+	"type" : "normal" }

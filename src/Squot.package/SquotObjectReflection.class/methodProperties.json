@@ -1,0 +1,11 @@
+{
+	"class" : {
+		"object:mirror:" : "jr 12/21/2020 23:31" },
+	"instance" : {
+		"isComparableTo:" : "jr 12/21/2020 00:36",
+		"mirror" : "jr 12/21/2020 00:37",
+		"object" : "jr 12/21/2020 00:37",
+		"printOn:" : "jr 12/21/2020 00:50",
+		"references" : "jr 12/21/2020 00:32",
+		"reflect:" : "jr 12/21/2020 00:39",
+		"setMirror:object:" : "jr 12/21/2020 00:32" } }

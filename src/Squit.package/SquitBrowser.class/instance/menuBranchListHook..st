@@ -3,7 +3,8 @@ menuBranchListHook: aMenu
 	<menuBranchListShifted: false>
 	| activeBranchName branchStatus onlyActive onlyInactive onlyLocal onlyRemote onlyWithUpstream hasRemotes |
 	self hasBranchSelection ifFalse: [^ aMenu].
-	activeBranchName := self projectSelection loadedHistorian shortName.
+	self withUnitOfWork:
+	[activeBranchName := self projectSelection loadedHistorian shortName.
 	onlyLocal := selectedHistorian isRemoteTrackingHistorian not.
 	onlyRemote := selectedHistorian isRemoteTrackingHistorian.
 	onlyActive := selectedHistorian = self projectSelection loadedHistorian.
@@ -33,6 +34,6 @@ menuBranchListHook: aMenu
 		{'Rename'. #actionBranchRename. nil. onlyLocal}.
 		{'Remove'. #actionBranchRemove}.
 		'-'.
-		{'Compare with working copy'. #actionBranchDiffWithWorkingCopy}}.
+		{'Compare with working copy'. #actionBranchDiffWithWorkingCopy}}].
 
 	^ aMenu

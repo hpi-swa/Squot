@@ -2,5 +2,5 @@ test data
 createRemoteTrackingBranchForMasterWithFetchSpec: aString
 	| remoteTrackingHistorian |
 	remoteTrackingHistorian := self createRemoteTrackingBranchForMaster.
-	gitRepository remoteConfigFor: 'myremote' option: 'fetch' set: aString.
+	master git remoteConfigFor: 'myremote' option: 'fetch' set: aString.
 	^ remoteTrackingHistorian

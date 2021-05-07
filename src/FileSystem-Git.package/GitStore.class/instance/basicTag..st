@@ -1,6 +1,6 @@
 internal
 basicTag: tagName
-	repository 
-		updateRef: repository tagsDir / tagName 
+	self unitOfWork 
+		updateRef: 'refs/tags/', tagName
 		to: revision hexHash.
 	self basicReset.

@@ -1,0 +1,1 @@
+I am a merge that asks the user what should be loaded and how conflicts have to be resolved.

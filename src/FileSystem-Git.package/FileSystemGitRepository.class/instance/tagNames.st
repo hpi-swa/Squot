@@ -1,3 +1,3 @@
 accessing
 tagNames
-	^ repository tagNames
+	^ self unitOfWork tagNames

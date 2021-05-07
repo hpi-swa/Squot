@@ -1,3 +1,9 @@
 delegating
 doesNotUnderstand: aMessage
-	^ aMessage sendTo: decoratedObject
+	| answer |
+	^ (thisContext
+		object: (answer := aMessage sendTo: decoratedObject)
+		eqeq: decoratedObject)
+		
+		ifTrue: [self]
+		ifFalse: [answer]

@@ -3,7 +3,7 @@ validateStoredObject
 	"Make sure the stored object has the correct type code and length"
 	| stream actualTypeCode expectedTypeCode length start |
 	self validateHash.
-	stream := self repository streamObjectNamed: self hexHash.
+	stream := self currentUnitOfWork streamObjectNamed: self hexHash.
 	expectedTypeCode := self typeCode.
 	actualTypeCode := (stream next: expectedTypeCode size) asString.
 	expectedTypeCode = actualTypeCode

@@ -1,7 +1,10 @@
 delegating
 doesNotUnderstand: aMessage
-	"Forward other messages to the stored artifact."
+	"Forward other messages to the artifact."
 	| answer |
-	answer := aMessage sendTo: storeArtifact.
-	answer == storeArtifact ifTrue: [^ self]. "Keep me as 'self' receiver"
-	^ answer
+	^ (thisContext
+		object: (answer := aMessage sendTo: artifact)
+		eqeq: artifact)
+		
+		ifTrue: [self]
+		ifFalse: [answer]

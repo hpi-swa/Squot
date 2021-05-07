@@ -1,0 +1,17 @@
+{
+	"category" : "Squot-Diffs",
+	"classinstvars" : [
+		 ],
+	"classtraitcomposition" : "TSquotModification classTrait",
+	"classvars" : [
+		 ],
+	"commentStamp" : "jr 1/9/2021 18:18",
+	"instvars" : [
+		"leftTarget",
+		"rightTarget" ],
+	"name" : "SquotDifferentReferenceTarget",
+	"pools" : [
+		 ],
+	"super" : "SquotReferenceDiff",
+	"traitcomposition" : "TSquotModification",
+	"type" : "normal" }

@@ -1,0 +1,14 @@
+{
+	"category" : "Squot-Tests",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "SquotWorkingCopySaveTest",
+	"pools" : [
+		 ],
+	"super" : "SquotWorkingCopyTestIndependentOfRepositoryType",
+	"type" : "normal" }

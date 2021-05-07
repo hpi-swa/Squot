@@ -1,5 +1,6 @@
 instance creation
 readFrom: aStream
-	^ self new
+	^ self basicNew
 		readFrom: aStream;
+		beReadOnlyObject;
 		yourself

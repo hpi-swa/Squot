@@ -3,6 +3,7 @@ sampleArtifactWithoutTimestamps
 	| artifact |
 	artifact := self sampleArtifact.
 	artifact shadowOfTrackedObject
-		packageName: samplePackage name
-		snapshot: (self withoutTimestamps: artifact shadowOfTrackedObject asMCSnapshot).
+		setPackageName: samplePackage name
+		snapshot: (self withoutTimestamps: artifact shadowOfTrackedObject asMCSnapshot)
+		tonelProperties: Dictionary new.
 	^ artifact

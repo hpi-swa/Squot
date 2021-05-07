@@ -12,7 +12,7 @@ testResolveArtifactConflictChooseLeft
 					add: artifact;
 					buildSnapshot).
 	self openToolAndTestOn: merge.
-	self assert: tool rootNodes size = 1.
+	self assert: #('conflicted-artifact (removed/changed)' 'Changed load order') equals: (tool rootNodes collect: [:each | (tool nodeLabelOf: each) asString]) asArray.
 	(conflictNode := tool rootNodes anyOne) resetChoice.
 	self assert: conflictNode anyChildNeedsChoice.
 	self resolveArtifactConflict: [:aNode | tool deactivateSelectedNode].

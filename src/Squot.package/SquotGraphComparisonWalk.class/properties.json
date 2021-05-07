@@ -1,0 +1,14 @@
+{
+	"category" : "Squot-Diffs",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "jr 12/20/2020 22:11",
+	"instvars" : [
+		"walk" ],
+	"name" : "SquotGraphComparisonWalk",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }

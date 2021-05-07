@@ -2,6 +2,8 @@
 	"class" : {
 		"lastStoredRun" : "CamilloBruni 8/1/2011 16:49" },
 	"instance" : {
-		"setUp" : "CamilloBruni 9/3/2012 18:55",
-		"testMakeLightTag" : "MaxLeske 9/5/2012 07:59",
-		"testReadingLightTag" : "MaxLeske 9/5/2012 08:00" } }
+		"repository" : "jr 4/13/2020 21:25",
+		"setUp" : "jr 8/8/2020 16:56",
+		"setUpRepositoryObjects" : "jr 4/6/2020 23:10",
+		"testMakeLightTag" : "jr 8/8/2020 17:17",
+		"testReadingLightTag" : "jr 8/8/2020 17:08" } }

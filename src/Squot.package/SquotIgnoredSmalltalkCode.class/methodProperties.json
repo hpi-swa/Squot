@@ -1,0 +1,14 @@
+{
+	"class" : {
+		"changeSet" : "jr 4/14/2020 14:17",
+		"ignore:" : "jr 4/14/2020 16:18",
+		"ignoreClass:" : "jr 9/8/2020 22:21",
+		"isIgnored:" : "jr 4/14/2020 15:51",
+		"isWholeClassIgnored:" : "jr 9/8/2020 22:22",
+		"privateIsWholeClassIgnored:" : "jr 4/14/2020 16:30",
+		"privateUnignoreClass:" : "jr 4/14/2020 16:19",
+		"symbolInChangeSet:" : "jr 9/8/2020 22:23",
+		"unignore:" : "jr 4/14/2020 16:18",
+		"unignoreClass:" : "jr 9/8/2020 22:22" },
+	"instance" : {
+		 } }

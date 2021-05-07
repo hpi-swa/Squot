@@ -1,6 +1,7 @@
 actions on objects
 actionObjectMerge
-	self projectSelection
+	self withUnitOfWork:
+	[self projectSelection
 		mergeArtifactInteractively: self objectSelection artifact
 		from: self commitSelection
-		ifCanceled: [^ self].
+		ifCanceled: [^ self]].

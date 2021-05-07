@@ -1,0 +1,16 @@
+{
+	"category" : "FileSystem-Git-Core",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		"EvictFromObjectCache",
+		"UseUnitOfWorkInterface",
+		"WarnAboutUseOfDeprecatedMethods" ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "GitFeatureFlags",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }

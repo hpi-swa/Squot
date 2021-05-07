@@ -1,3 +1,3 @@
 private
 gitRepository
-	^ workingCopy repository gitRepository
+	^ workingCopy repository fsgitRepository

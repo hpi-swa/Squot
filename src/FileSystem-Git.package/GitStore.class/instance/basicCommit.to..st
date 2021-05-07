@@ -6,8 +6,8 @@ basicCommit: aMessage to: branchName
 	(commit := self prepareNewCommit)
 		message: aMessage;
 		store.
-	repository 
-		updateRef: repository headsDir / branchName 
+	self unitOfWork 
+		updateRef: 'refs/heads/', branchName 
 		to: commit hexHash
 		message: 'commit: ', aMessage asString.
 	self revision: commit. "calls basicReset and discards the cached files!"

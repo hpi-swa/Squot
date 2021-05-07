@@ -1,3 +1,3 @@
 accessing
 repository: aGitRepository
-	repository := aGitRepository
+	repository := aGitRepository unitOfWork

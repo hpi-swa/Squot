@@ -1,3 +1,3 @@
 accessing
 basicDeltaBaseHeader
-	^ self pack repository headerOfObjectNamed: self deltaBaseName
+	^ self pack repository unitOfWork headerOfObjectNamed: self deltaBaseName

@@ -2,13 +2,10 @@ user requests
 chooseOneRemoteFrom: gitRepository
 	| remoteNames selection |
 	remoteNames := self chooseableRemoteNamesFrom: gitRepository.
-	remoteNames ifEmpty:
-		[self offerToAddRemoteTo: gitRepository
-			ifAccepted: [:newRemotes | remoteNames := newRemotes]
-			ifCanceled: [^ nil]].
+	remoteNames ifEmpty: [^ SquitNoRemotes new repository: gitRepository; signal].
 	selection := remoteNames size = 1
 		ifTrue: [remoteNames anyOne]
-		ifFalse: [UIManager default
+		ifFalse: [SquotGUI
 			chooseFrom: remoteNames
 			values: remoteNames
 			title: 'Choose a remote (http only):'].

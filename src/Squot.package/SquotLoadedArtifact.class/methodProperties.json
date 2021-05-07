@@ -1,0 +1,13 @@
+{
+	"class" : {
+		 },
+	"instance" : {
+		"=" : "jr 11/21/2020 01:32",
+		"applyLoadStatusTo:" : "jr 11/19/2020 13:05",
+		"hash" : "jr 11/21/2020 01:31",
+		"isLoaded" : "jr 9/26/2020 21:02",
+		"printOn:" : "jr 10/4/2020 21:17",
+		"storeArtifact" : "jr 9/26/2020 18:04",
+		"storeArtifact:" : "jr 9/26/2020 18:04",
+		"unload" : "jr 9/26/2020 21:01",
+		"updatePath" : "jr 9/26/2020 18:24" } }

@@ -1,0 +1,3 @@
+actions
+browseOriginalObject
+	self selectedNode browseOriginalEdition: workingCopy.

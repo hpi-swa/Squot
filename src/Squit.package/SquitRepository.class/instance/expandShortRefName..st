@@ -5,6 +5,6 @@ expandShortRefName: aString
 	^ (aString beginsWith: 'refs/')
 		ifTrue: [aString]
 		ifFalse: [self flag: #hack.
-			(gitRepository repository expandRef: aString)
+			(self git expandRef: aString)
 			ifNotNil: [:expandedRef | expandedRef]
 			ifNil: ['refs/heads/', aString]]

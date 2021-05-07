@@ -1,0 +1,1 @@
+I allow users to add or remove packages from a working copy. Users choose from class categories in the system, so this is not necessarily dependent on Monticello packages.

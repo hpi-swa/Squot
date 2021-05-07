@@ -3,7 +3,7 @@ rootNode
 	| rootNode |
 	rootNode :=
 		((preparedWorkingCopy patchRelativeToBase: preparedWorkingCopy baseVersion)
-			diffAt: 'package')
+			diffAt: self packagePath)
 			asDiffTree.
 	rootNode withAllChildren do: [:each | each workingCopy: preparedWorkingCopy].
 	^ rootNode

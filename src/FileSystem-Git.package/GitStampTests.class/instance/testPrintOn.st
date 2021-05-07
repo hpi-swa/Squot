@@ -2,8 +2,7 @@ tests
 testPrintOn
 	| stamp template now |
 	now := TimeStamp now.
-	stamp := self defaultStamp.
-	stamp timeStamp: now.
+	stamp := self defaultStamp atTime: now.
 	
 	template := 
 		GitStamp defaultName, ' <',GitStamp defaultEmail,'> ', 

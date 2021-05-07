@@ -4,7 +4,7 @@ testPatchFileTreeWithoutMetadata
 	"given a file tree with artifacts but without metadata"
 	originalSnapshot := SquotSnapshot builder
 		add: (SquotImageStore new
-				add: (object := 'a string') at: 'aString.txt';
+				add: (object := 'a string' copy) at: 'aString.txt';
 				artifactAt: 'aString.txt');
 		buildSnapshot.
 	fileStore
@@ -18,7 +18,8 @@ testPatchFileTreeWithoutMetadata
 	"when applying a patch"
 	patchedSnapshot := SquotSnapshot builder
 		add: (SquotImageStore new
-				add: (object := 'another string') at: 'aString.txt';
+				add: (originalSnapshot artifactAt: 'aString.txt');
+				in: [:store | (store objectAt: 'aString.txt') become: 'another string' copy];
 				artifactAt: 'aString.txt');
 		buildSnapshot.
 	patch := patchedSnapshot patchRelativeToBase: originalSnapshot.

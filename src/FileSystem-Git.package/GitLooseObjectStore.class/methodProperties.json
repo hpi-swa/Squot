@@ -1,0 +1,26 @@
+{
+	"class" : {
+		"baseDir:" : "jr 2/23/2020 22:51" },
+	"instance" : {
+		"baseDir" : "jr 2/23/2020 22:06",
+		"baseDir:" : "jr 2/23/2020 22:06",
+		"flushCaches" : "jr 3/10/2020 21:57",
+		"hasLooseObject:" : "MaxLeske 9/8/2012 11:52",
+		"hasObject:" : "jr 2/17/2020 22:39",
+		"headerOfLooseObjectNamed:ifAbsent:" : "jr 2/17/2020 20:53",
+		"headerOfObjectNamed:ifAbsent:" : "jr 2/12/2020 23:37",
+		"looseObjectNamed:ifAbsent:" : "jr 2/17/2020 20:52",
+		"looseObjectNamesDo:" : "jr 2/23/2020 23:15",
+		"looseObjectPathFor:" : "MaxLeske 2/26/2012 11:53",
+		"looseObjects" : "CamilloBruni 6/21/2011 05:37",
+		"looseObjectsDo:" : "MaxLeske 2/28/2012 18:17",
+		"objectDirectoriesDo:" : "jr 2/23/2020 23:15",
+		"objectNamed:ifAbsent:" : "jr 2/16/2020 01:14",
+		"objectNamesDo:" : "jr 2/16/2020 11:00",
+		"referenceTo:" : "MaxLeske 9/8/2012 11:53",
+		"referenceToObjectNamed:" : "jr 2/23/2020 23:14",
+		"store:" : "jr 2/13/2020 00:22",
+		"storeLooseObject:" : "jr 2/13/2020 00:23",
+		"streamLooseObjectNamed:" : "MaxLeske 2/28/2012 20:15",
+		"streamLooseObjectNamed:ifAbsent:" : "jr 2/23/2020 22:06",
+		"streamObjectNamed:ifAbsent:" : "jr 2/17/2020 20:26" } }

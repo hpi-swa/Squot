@@ -1,3 +1,3 @@
 testing
 hasChanges
-	^ diffContent squotHasChanges
+	^ diffContent squotHasChanges or: [metadataDiff squotHasChanges]

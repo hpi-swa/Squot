@@ -1,6 +1,8 @@
 {
 	"class" : {
 		"defaultTitle" : "fn 4/12/2017 10:30",
+		"enableDragAndDrop" : "jr 5/4/2020 00:20",
+		"enableDragAndDrop:" : "jr 2/8/2020 23:57",
 		"open" : "fn 4/12/2017 09:18" },
 	"instance" : {
 		"actionCancel" : "fn 4/12/2017 10:29",

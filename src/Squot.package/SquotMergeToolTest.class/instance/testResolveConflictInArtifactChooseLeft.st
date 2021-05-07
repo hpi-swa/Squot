@@ -21,7 +21,7 @@ testResolveConflictInArtifactChooseLeft
 			diffTreeNodes: (Array with:
 				(SquotMergeDiffNode
 					title: 'conflict'
-					content: nil
+					content: mergeMock
 					children: #()
 					onInclude: [mergeMock chooseIncoming]
 					onExclude: [mergeMock chooseWorking]
@@ -45,5 +45,5 @@ testResolveConflictInArtifactChooseLeft
 	self assert: mergeMock choice = #working description: 'exclude block evaluated';
 		assert: (tool selectedPatch mergeAt: path) working = artifact
 		description: 'working artifact should be unmodified';
-		deny: (tool selectedPatch includesModificationAt: path)
+		deny: (tool selectedPatch hasChangesAt: path)
 		description: 'no modification should be left'.

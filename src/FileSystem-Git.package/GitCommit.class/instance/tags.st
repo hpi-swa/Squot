@@ -1,3 +1,3 @@
 public-accessing
 tags
-	^ self tagsInRepository: repository
+	^ self currentUnitOfWork tags select: [ :tag | tag object = self ]

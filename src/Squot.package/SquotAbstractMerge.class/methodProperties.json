@@ -1,6 +1,6 @@
 {
 	"class" : {
-		"into:merge:basedOn:" : "jr 7/30/2019 01:47" },
+		"into:merge:basedOn:" : "jr 12/23/2020 22:06" },
 	"instance" : {
 		"base" : "jr 7/30/2019 00:53",
 		"base:" : "jr 7/30/2019 00:53",
@@ -14,6 +14,7 @@
 		"incoming" : "jr 7/30/2019 00:53",
 		"incoming:" : "jr 7/30/2019 00:53",
 		"initializeSquotDiffNodes:with:" : "jr 9/25/2019 21:50",
+		"isMerge" : "jr 11/18/2020 16:01",
 		"modifications" : "jr 7/30/2019 00:55",
 		"modifies:" : "jr 7/30/2019 02:02",
 		"newSquotDiffNodes" : "jr 9/25/2019 21:45",
@@ -21,6 +22,7 @@
 		"privateResolvedPatch" : "jr 7/30/2019 01:20",
 		"resetChoice" : "jr 7/30/2019 00:53",
 		"resolvedPatch" : "jr 7/30/2019 01:20",
+		"setWorking:incoming:base:" : "jr 12/13/2020 13:16",
 		"squotChangeAsStringOrText" : "jr 9/25/2019 22:21",
 		"squotToolsDiffNodeContent" : "jr 11/3/2019 16:22",
 		"working" : "jr 7/30/2019 00:53",

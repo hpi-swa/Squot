@@ -3,7 +3,8 @@ mergeArtifactInteractively: anArtifact from: aVersion ifCanceled: cancelBlock
 	"Merge a single artifact with the currently loaded one."
 	| mergeBases mergeBase base merge |
 	self temporarilySaveChangesDuring:
-		[mergeBases := self checkMergeBasesOfLoadedVersionWith: aVersion
+		[mergeBases := self checkMergeBasesOf: self loadedVersion
+			with: aVersion
 			ifNoCommonAncestor: [{SquotSnapshot empty}]
 			ifAncestor: [^ self inform: 'The version already is an ancestor of the active branch tip.']
 			ifDescendant: [].

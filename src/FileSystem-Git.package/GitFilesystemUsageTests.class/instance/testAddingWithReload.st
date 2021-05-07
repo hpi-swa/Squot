@@ -12,4 +12,4 @@ testAddingWithReload
 	self commit: 'a commit'.
 	workingCopy := fsRepository head.
 	ref := workingCopy / filename.
-	self assert: ref exists
+	self withUnitOfWork: [:git | self assert: ref exists].

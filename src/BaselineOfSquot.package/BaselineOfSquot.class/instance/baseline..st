@@ -4,12 +4,12 @@ baseline: spec
 	spec for: #'common' do: [
 		spec baseline: 'Ston' with: [
 				spec
-					repository: 'github://fniephaus/ston:fniephaus-patch-3/repository'. ].
+					repository: 'github://squeak-smalltalk/squeak-ston:squeak/repository'. ].
 		spec baseline: 'FileTree' with: [
 				spec
 					repository: 'github://dalehenrich/filetree:squeak4.3/repository'. ].
 		spec baseline: 'Tonel'
-			with: [spec 	repository: 'github://j4yk/tonel:squeak/'].
+			with: [spec 	repository: 'github://squeak-smalltalk/squeak-tonel:squeak/'].
 		spec 
 			package: 'SqueakSSL-Core' with: [
 				spec
@@ -32,7 +32,7 @@ baseline: spec
 					file: 'DiffMerge-tonyg.12'. ];
 			baseline: 'FileSystem' with:
 				[spec
-					repository: 'github://j4yk/Squeak-FileSystem:master/src';
+					repository: 'github://squeak-smalltalk/squeak-filesystem:master/src';
 					loads: #('default' 'tests')];
 			package: 'VersionControl';
 			package: 'Squot' with: [

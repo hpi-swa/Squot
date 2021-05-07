@@ -4,5 +4,7 @@ loadVersionInteractively: aVersion ifCanceled: cancelBlock
 	Answer true if the load was accepted, false if it was canceled."
 	| patch |
 	self addGlobalObjectsToStore: aVersion lazySnapshot.
-	patch := aVersion patchRelativeToBase: store.
-	self loadPatchInteractively: patch ifCanceled: cancelBlock.
+	patch := self incomingPatchWhenLoading: aVersion.
+	self loadPatchInteractively: patch ifCanceled: [^ cancelBlock value].
+	patch hasChanges ifTrue:
+		[self loadedVersion: aVersion].

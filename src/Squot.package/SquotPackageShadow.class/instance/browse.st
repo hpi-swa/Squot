@@ -1,3 +1,3 @@
 *Squot-Tools
 browse
-	^ (MCSnapshotBrowser forSnapshot: snapshot) show
+	^ (MCSnapshotBrowser forSnapshot: snapshot) showLabelled: 'Snapshot of package ', packageName

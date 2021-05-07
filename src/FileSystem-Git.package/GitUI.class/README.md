@@ -1,0 +1,1 @@
+Common GUI facilities used by multiple classes in FileSystem-Git.

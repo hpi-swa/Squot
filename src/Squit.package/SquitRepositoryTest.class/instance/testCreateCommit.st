@@ -1,7 +1,8 @@
 tests
 testCreateCommit
 	| master oldMasterVersion oldMasterSnapshot snapshotBuilder newVersion newSnapshot gitMaster commit |
-	master := squitRepository historianNamed: 'master'.
+	squitRepository withUnitOfWork:
+	[master := squitRepository historianNamed: 'master'.
 	oldMasterVersion := master version.
 	"create a new snapshot"
 	oldMasterSnapshot := oldMasterVersion snapshot.
@@ -25,4 +26,4 @@ testCreateCommit
 	commit := gitMaster revision.
 	self assert: 'This is a test commit' equals: commit message.
 	self assert: 'hollaboo' equals: ((gitMaster / 'README.md') readStreamDo: [:s | s contents asString]).
-	self assert: commit parents asArray = {oldMasterVersion commit}.
+	self assert: commit parents asArray = {oldMasterVersion commit}].

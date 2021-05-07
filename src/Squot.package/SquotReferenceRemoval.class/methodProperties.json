@@ -1,0 +1,6 @@
+{
+	"class" : {
+		"from:reference:rightObject:" : "jr 12/24/2020 01:12" },
+	"instance" : {
+		"setReference:leftOwner:rightObject:" : "jr 12/24/2020 01:10",
+		"squotReflectOn:in:" : "jr 12/24/2020 01:33" } }

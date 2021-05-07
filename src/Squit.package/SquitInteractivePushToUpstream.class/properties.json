@@ -1,0 +1,14 @@
+{
+	"category" : "Squit-UI",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "jr 8/9/2020 21:21",
+	"instvars" : [
+		 ],
+	"name" : "SquitInteractivePushToUpstream",
+	"pools" : [
+		 ],
+	"super" : "SquitInteractiveRemoteOperation",
+	"type" : "normal" }

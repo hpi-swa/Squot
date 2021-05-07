@@ -1,0 +1,1 @@
+I provide access to loose objects in a Git repository.

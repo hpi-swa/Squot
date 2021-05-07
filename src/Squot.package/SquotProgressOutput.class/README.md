@@ -1,0 +1,1 @@
+I hold the current output of progress information, to decouple SquotProgress from an actual output implementation (such as Morphic or UIManager).

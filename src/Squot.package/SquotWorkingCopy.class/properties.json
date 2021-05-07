@@ -2,7 +2,7 @@
 	"category" : "Squot-Core",
 	"classinstvars" : [
 		"registry" ],
-	"classtraitcomposition" : "TSquotMutableObjectContainer classTrait",
+	"classtraitcomposition" : "TSquotMutableObjectContainer classTrait + TSquotConvertibleToVersion classTrait",
 	"classvars" : [
 		 ],
 	"commentStamp" : "jr 6/22/2018 22:42",
@@ -17,10 +17,12 @@
 		"shouldStoreMetadata",
 		"additionalParents",
 		"loadedVersion",
-		"newVersionMessage" ],
+		"newVersionMessage",
+		"unloadedArtifacts",
+		"loadOrder" ],
 	"name" : "SquotWorkingCopy",
 	"pools" : [
 		 ],
 	"super" : "Object",
-	"traitcomposition" : "TSquotMutableObjectContainer",
+	"traitcomposition" : "TSquotMutableObjectContainer + TSquotConvertibleToVersion",
 	"type" : "normal" }

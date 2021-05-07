@@ -1,3 +1,3 @@
 ui
 projectIndex
-	^ projectIndex ifNil: [self projectDefaultIndex]
+	^ projectIndex ifNil: [0]

@@ -1,3 +1,5 @@
 accessing
 commitNamed: hexHash
-	^ self filesystemOn: (repository objectNamed: hexHash)
+	| git |
+	git := repository unitOfWork.
+	^ self filesystemOn: (git objectNamed: hexHash)

@@ -2,7 +2,8 @@ loading and unloading
 mergeVersionWithLoadedObjects: aVersion ifCanceled: cancelBlock
 	"Merge objects with those from aVersion, but do not record the merge in history."
 	| mergeBases merge |
-	mergeBases := self checkMergeBasesOfLoadedVersionWith: aVersion
+	mergeBases := self checkMergeBasesOf: self loadedVersion
+		with: aVersion
 		ifNoCommonAncestor: ["the versions have no common base version"
 			{SquotSnapshot empty}]
 		ifAncestor:

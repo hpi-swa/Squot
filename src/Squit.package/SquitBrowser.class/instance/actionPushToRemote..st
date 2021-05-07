@@ -1,9 +1,7 @@
 actions on branches
 actionPushToRemote: aString
-	self pushSelectedHistorianByDoing:
-		[selectedHistorian repository
-			export: selectedHistorian
-			withName: (UIManager default
-							request: 'Branch name at remote:'
-							initialAnswer: selectedHistorian shortName)
-			toRemoteNamed: aString].
+	| historian |
+	self hasBranchSelection ifFalse: [^ self].
+	historian := selectedHistorian.
+	[self withUnitOfWork:
+		[self push: historian toRemoteNamed: aString]] fork.

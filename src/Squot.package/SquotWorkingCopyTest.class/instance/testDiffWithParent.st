@@ -3,15 +3,15 @@ testDiffWithParent
 	| sampleClass packageInfo anotherClass latestVersion patch |
 	self suppressChangeNotificationsDuring: [sampleClass := classFactory newClass].
 	sampleClass compileSilently: 'firstMethod ^ self' classified: 'methods of first version'.
-	packageInfo := PackageInfo named: classFactory packageName.
-	workingCopy add: packageInfo at: 'src'.
+	packageInfo := self addPackage.
 	
-	workingCopy saveNewVersionMessage: 'first version' interactive: false.
+	repository withUnitOfWork:
+	[workingCopy saveVersionWithMessage: 'first version'.
 	
 	self suppressChangeNotificationsDuring: [anotherClass := classFactory newClass].
 	anotherClass compileSilently: 'addedMethod ^ self' classified: 'methods of second version'.
 	
-	workingCopy saveNewVersionMessage: 'second version' interactive: false.
+	workingCopy saveVersionWithMessage: 'second version'.
 	latestVersion := workingCopy baseVersion.
 	patch := (latestVersion patchRelativeToBase: latestVersion parents first).
-	self assert: patch hasChanges.
+	self assert: patch hasChanges].

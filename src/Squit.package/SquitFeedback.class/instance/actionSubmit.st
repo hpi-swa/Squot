@@ -9,5 +9,5 @@ actionSubmit
 			'message' -> self actionMessage.
 			'author' -> self actionAuthor.
 		} method: 'POST'.
-	UIManager default inform: 'Thanks for providing feedback!'.
+	self inform: 'Thanks for providing feedback!'.
 	self changed: #close.

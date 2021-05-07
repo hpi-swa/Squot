@@ -1,12 +1,12 @@
 {
-	"category" : "Squot-Tests",
+	"category" : "Squot-Tests-Diffs",
 	"classinstvars" : [
 		 ],
 	"classvars" : [
 		 ],
 	"commentStamp" : "",
 	"instvars" : [
-		 ],
+		"workingCopy" ],
 	"name" : "SquotArtifactDiffTest",
 	"pools" : [
 		 ],

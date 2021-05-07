@@ -1,0 +1,1 @@
+I am a captured Dictionary. My item slots (for HashedCollection items) are the shadows of the associations contained in me.

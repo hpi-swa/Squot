@@ -1,0 +1,3 @@
+testing
+mayAffectArtifact
+	^ self hasChanges

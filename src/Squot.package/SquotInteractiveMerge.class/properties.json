@@ -1,0 +1,14 @@
+{
+	"category" : "Squot-Tools",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "jr 8/9/2020 20:48",
+	"instvars" : [
+		 ],
+	"name" : "SquotInteractiveMerge",
+	"pools" : [
+		 ],
+	"super" : "SquotMergeOperation",
+	"type" : "normal" }

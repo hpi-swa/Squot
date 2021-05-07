@@ -2,7 +2,6 @@
 	"class" : {
 		 },
 	"instance" : {
-		"add:of:asCreatorOf:" : "jr 7/30/2017 01:56",
 		"assign:to:" : "jr 7/30/2017 01:57",
 		"creatorOf:ifAbsentPut:of:" : "jr 7/30/2017 01:55",
 		"initialize" : "jr 7/30/2017 01:40",

@@ -8,6 +8,6 @@ lookupTreeAt: aRelativePath startingFrom: startTree
 			entryAt: segment
 			ifPresent: [ :entry | 
 				"let's try to load the entry, might still be that it has been freshly added by a previous processCreation send"
-				repository objectNamed: entry entryHexHash ifAbsent: [ nil]]
+				repository unitOfWork objectNamed: entry entryHexHash ifAbsent: [ nil]]
 			ifAbsent: [ ^ nil ] ].
 	^ tree

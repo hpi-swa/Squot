@@ -5,6 +5,7 @@ testDeleteModifiedFile
 	self createSomeCommits.
 	
 	ref := workingCopy referenceTo: path.
+	self withUnitOfWork: [:git |
 	ref parent ensureDirectory.
 	
 	ref ensureDeleted writeStreamDo: [ :stream | 
@@ -15,3 +16,4 @@ testDeleteModifiedFile
 	ref delete.
 	self deny: ref exists.
 	self deny: (workingCopy referenceTo: path) exists
+	].

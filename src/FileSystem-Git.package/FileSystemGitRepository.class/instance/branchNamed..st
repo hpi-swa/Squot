@@ -1,3 +1,3 @@
 accessing
 branchNamed: aString
-	^ self filesystemOn: (repository branchNamed: aString)
+	^ self filesystemOn: (self unitOfWork branchNamed: aString)

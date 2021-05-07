@@ -1,0 +1,16 @@
+{
+	"category" : "FileSystem-Git-Plumbing-Tests",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"previousEvictSetting",
+		"cache",
+		"repo" ],
+	"name" : "GitObjectCacheTest",
+	"pools" : [
+		 ],
+	"super" : "TestCase",
+	"type" : "normal" }

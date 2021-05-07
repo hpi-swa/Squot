@@ -1,0 +1,18 @@
+{
+	"class" : {
+		 },
+	"instance" : {
+		"ignoreDefinitionTest:" : "jr 5/2/2020 01:24",
+		"runCase" : "jr 5/2/2020 00:30",
+		"setUp" : "jr 5/2/2020 00:33",
+		"tearDown" : "jr 9/8/2020 22:45",
+		"testClassDefinitionAndMethodDefinitionAreIndependent" : "jr 5/2/2020 00:40",
+		"testIgnoreClassDefinition" : "jr 5/2/2020 00:53",
+		"testIgnoreMethod" : "jr 5/2/2020 01:26",
+		"testIgnorePostscript" : "jr 5/2/2020 01:25",
+		"testIgnorePreamble" : "jr 5/2/2020 01:24",
+		"testIgnoreRemovalPostscript" : "jr 5/2/2020 01:25",
+		"testIgnoreRemovalPreamble" : "jr 5/2/2020 01:25",
+		"testIgnoreWholeClass" : "jr 5/2/2020 00:54",
+		"testNotIgnoredAfterWholeClassUnignored" : "jr 5/2/2020 00:47",
+		"xtestIgnoreOrganization" : "jr 5/2/2020 01:39" } }

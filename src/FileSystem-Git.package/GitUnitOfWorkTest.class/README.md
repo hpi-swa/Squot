@@ -1,0 +1,1 @@
+Similar to GitRepositoryTests, but with a unit of work instead of a plain repository.

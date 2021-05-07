@@ -4,13 +4,11 @@ packageFormatMenuSpec
 	builder := ToolBuilder default.
 	serializers := PackageInfo squotSpecializedSerializers.
 	currentSerializer :=
-		(self projectSelection artifacts
-			detect: [:each | each storeInfo objectClassName = #PackageInfo]
-			ifNone: [^ (builder pluggableMenuSpec new
+		self projectSelection packageSerializer
+			ifNil: [^ (builder pluggableMenuSpec new
 							add: 'No packages tracked'
 							target: [] selector: #value argumentList: #();
-							yourself)])
-			storeInfo serializer.
+							yourself)].
 	menu := builder pluggableMenuSpec new.
 	serializers do:
 		[:each |

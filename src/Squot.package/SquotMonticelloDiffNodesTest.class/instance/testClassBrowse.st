@@ -9,6 +9,6 @@ testClassBrowse
 	PackageInfo squotSetEnvironmentOf: preparedWorkingCopy artifacts anyOne
 		to: isolatedEnvironment.
 	"when the class changes grouping node is browsed"
-	(self rootNode children detect: [:each | each title includesSubstring: existingMethod classSymbol caseSensitive: true]) browseInWorkingCopy.
+	(self rootNode children detect: [:each | each title asString includesSubstring: existingMethod classSymbol caseSensitive: true]) browseInWorkingCopy.
 	"then"
 	self assert: SquotBrowseMockClass wasBrowsed.

@@ -1,6 +1,5 @@
 {
 	"class" : {
-		"addClassDirectoryForClass:to:" : "jr 1/25/2017 17:37",
 		"addPackageAndClassDirectoryForClass:to:" : "jr 9/20/2017 21:05",
 		"addPackageDirectoryForPackage:to:" : "jr 9/20/2017 21:01",
 		"rewritePath:for:" : "jr 1/25/2017 17:23",
@@ -11,10 +10,12 @@
 		"directory" : "jr 1/17/2017 14:24",
 		"initialize" : "jr 2/26/2017 13:55",
 		"initializeFileTreeWritersInPackageDirectory:" : "jr 2/26/2017 13:56",
+		"propertiesFileContents" : "jr 9/3/2020 22:47",
 		"propertyFileExtension" : "jr 1/17/2017 15:19",
 		"version" : "jr 1/15/2017 19:07",
 		"write:" : "jr 5/9/2017 18:24",
-		"writeClass:" : "jr 7/27/2017 23:53",
+		"writeClass:" : "jr 9/3/2020 22:48",
 		"writeDefinitions:" : "jr 1/29/2017 21:08",
 		"writeMCSnapshot:forPackageNamed:from:" : "jr 3/16/2019 23:35",
-		"writePackage:" : "jr 7/22/2017 02:03" } }
+		"writePackage:" : "jr 9/3/2020 22:47",
+		"writePropertiesIfExists" : "jr 9/3/2020 22:47" } }

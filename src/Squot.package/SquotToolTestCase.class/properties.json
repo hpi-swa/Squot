@@ -1,14 +1,17 @@
 {
-	"category" : "Squot-Tools-Tests",
+	"category" : "Squot-Tests-Tools",
 	"classinstvars" : [
 		 ],
+	"classtraitcomposition" : "TTestCaseSuppressingProgressDisplay classTrait",
 	"classvars" : [
 		 ],
 	"commentStamp" : "",
 	"instvars" : [
-		"tool" ],
+		"tool",
+		"toolBuilder" ],
 	"name" : "SquotToolTestCase",
 	"pools" : [
 		 ],
 	"super" : "TestCase",
+	"traitcomposition" : "TTestCaseSuppressingProgressDisplay",
 	"type" : "normal" }

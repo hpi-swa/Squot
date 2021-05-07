@@ -1,4 +1,4 @@
 initialize-release
 initializeCache
 	
-	objectCache := WeakValueDictionary new.
+	objectCache := GitObjectCache new.

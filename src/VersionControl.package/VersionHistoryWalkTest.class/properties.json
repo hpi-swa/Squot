@@ -1,0 +1,14 @@
+{
+	"category" : "VersionControl-Algorithms-Tests",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"walk" ],
+	"name" : "VersionHistoryWalkTest",
+	"pools" : [
+		 ],
+	"super" : "VersionsTestCase",
+	"type" : "normal" }

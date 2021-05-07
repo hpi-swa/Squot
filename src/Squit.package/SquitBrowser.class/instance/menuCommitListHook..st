@@ -4,7 +4,8 @@ menuCommitListHook: aMenu
 	| activeBranchName isMenuOnActiveBranch onlyOnInactiveBranch commands |
 	self hasProjectSelection ifFalse: [^ aMenu].
 	aMenu addTitle: (self commitSelection printStringLimitedTo: 50).
-	activeBranchName := self projectSelection loadedHistorian shortName.
+	self withUnitOfWork:
+	[activeBranchName := self projectSelection loadedHistorian shortName.
 	isMenuOnActiveBranch := selectedHistorian = self projectSelection loadedHistorian.
 	onlyOnInactiveBranch := selectedHistorian ~= self projectSelection loadedHistorian.
 	commands := {
@@ -23,5 +24,5 @@ menuCommitListHook: aMenu
 		{'Create new branch at this commit'. #actionBranchAdd}.
 		{'Tag commit'. #actionCommitTag}.
 	}.
-	self buildMenu: aMenu from: commands.
+	self buildMenu: aMenu from: commands].
 	^ aMenu

@@ -1,0 +1,3 @@
+testing
+hasNodeSelected
+	^ selectedNode notNil

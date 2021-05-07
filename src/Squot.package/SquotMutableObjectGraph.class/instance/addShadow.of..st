@@ -2,7 +2,10 @@ adding
 addShadow: aShadow of: anObject
 	| name |
 	name := self nameOf: anObject ifAbsent: [^ aShadow].
-	self assert: anObject canHaveNameAssignedBySquot
+	self assert:
+		((name = self class anonymousObjectName "presumably the start object"
+			and: [(self objectNamed: name) == anObject])
+			or: [anObject shouldHaveNameAssignedBySquot])
 		description: 'Primitive objects should not get names'.
 	shadows at: name put: aShadow undecorated.
 	self answer: name whenAskedForTheNameOf: aShadow undecorated.

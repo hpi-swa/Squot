@@ -1,3 +1,3 @@
 testing
 hasChanges
-	^ graphMerge hasChanges
+	^ graphMerge hasChanges or: [metadataMerge hasChanges]

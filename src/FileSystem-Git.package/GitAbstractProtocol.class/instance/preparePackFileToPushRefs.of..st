@@ -1,6 +1,6 @@
 private
 preparePackFileToPushRefs: updateAssociations of: aRepository 
-	| creator packFile historyWalker remoteRefs mergeBases commits |
+	| creator packFile historyWalker remoteRefs mergeBases excluder commits |
 	'Packing Git objects' displaySequentialProgress:
 		[packFile := GitPackFile new repository: aRepository; yourself.
 		creator := GitPackFileCreator on: packFile.
@@ -9,11 +9,20 @@ preparePackFileToPushRefs: updateAssociations of: aRepository
 			gather: [:each | each value allMergeBasesWithAnyOf: remoteRefs values])
 			asSet asArray
 			select: [:each | each notNil]).
+		excluder := GitPackFileExcluder new
+			packFileCreator: creator;
+			yourself.
+		mergeBases
+			do: [:each | excluder visitTree: each tree; visitRest]
+			displayingProgress: 'Excluding objects that the remote already has'.
 		commits := (historyWalker := GitHistoryWalker new)
 				excludeAncestorsOfAll: mergeBases;
 				startingFromAll: (updateAssociations collect: [:each | each value]).
 		commits
-			do: [:each | self addNewObjectsIn: each to: creator basedOn: remoteRefs values]
+			do:
+				[:each | creator
+					addObject: each "not the parents, that's why not visitCommit:";
+					visitTree: each tree]
 			displayingProgress: 'Collecting objects from commits'.
 		creator writePackFile].
 	^ packFile

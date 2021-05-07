@@ -1,3 +1,3 @@
 accessing
 valueShadow
-	^ (self association instVarSlotNamed: #value) value
+	^ (self association instVarSlotNamed: #value)

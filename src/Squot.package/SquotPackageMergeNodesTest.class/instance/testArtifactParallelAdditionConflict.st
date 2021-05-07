@@ -22,5 +22,5 @@ testArtifactParallelAdditionConflict
 	node := merge elementMerges anyOne asDiffTree.
 	"then"
 	self assert: node content == (merge mergeAt: 'AddedByBoth.package');
-		assert: 'AddedByBoth.package' equals: node title;
+		assert: 'AddedByBoth.package (merge, not loaded)' equals: node title asString;
 		assert: node needsChoice.

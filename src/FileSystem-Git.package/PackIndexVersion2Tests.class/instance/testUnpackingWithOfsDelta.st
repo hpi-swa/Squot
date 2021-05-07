@@ -1,5 +1,4 @@
 tests
 testUnpackingWithOfsDelta
-	self 
-		usePackWithOfsDelta;
-		verifyUnpacking
+	self usePackWithOfsDelta.
+	repository withUnitOfWork: [self verifyUnpacking]

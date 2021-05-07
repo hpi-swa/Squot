@@ -8,4 +8,5 @@ setUp
 	classFactory := ClassFactoryForTestCase new.
 	(SystemChangeNotifier uniqueInstance doSilently: [classFactory newClass])
 		compileSilently: 'testMethod ^ 42'.
-	workingCopy add: (PackageInfo named: classFactory packageName) at: 'src'.
+	self suppressProgressDisplayDuring:
+		[workingCopy add: (PackageInfo named: classFactory packageName) at: 'src'].

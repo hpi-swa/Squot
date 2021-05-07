@@ -1,0 +1,11 @@
+{
+	"class" : {
+		 },
+	"instance" : {
+		"createBaseVersion" : "jr 10/24/2020 15:31",
+		"expectedObjectOrderAfterMerge" : "jr 10/31/2020 11:48",
+		"mergeButKeepArtifact" : "jr 10/31/2020 11:46",
+		"prepareIncomingVersion" : "jr 10/31/2020 11:35",
+		"prepareWorkingVersion" : "jr 1/1/2021 23:37",
+		"setUp" : "jr 1/1/2021 23:37",
+		"testKeepArtifact" : "jr 10/31/2020 11:46" } }

@@ -1,0 +1,3 @@
+synchronizing
+removeAllCredentials
+	credentials removeAll.

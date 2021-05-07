@@ -5,6 +5,7 @@ testCopyingWithReload
 	ref := workingCopy / 'copy'.
 	self deny: ref exists.
 	
+	self withUnitOfWork: [:git |
 	(workingCopy / 'file1') copyTo: ref.
 	self commit: 'a commit'.
 	workingCopy := fsRepository head.
@@ -15,3 +16,4 @@ testCopyingWithReload
 	copyContent := ref readStream contents.
 	self assert: originalContent = copyContent.
 	self assert: copyContent asString = 'content'
+	].

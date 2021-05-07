@@ -9,7 +9,7 @@ testWalkToFindCommitSetDifference
 	commit4 := self addCommit: '4' withParents: {commit1 hexHash}.
 	commit5 := self addCommit: '5' withParents: {commit4 hexHash}.
 	commit6 := self addCommit: '6' withParents: {commit3 hexHash. commit5 hexHash}.
-	repository updateRef: repository headsDir / 'master' to: commit6 hexHash.
+	repository unitOfWork updateRef: 'refs/heads/master' to: commit6 hexHash.
 	GitFSCK validate: repository.
 	"when"
 	"rev-list commit2...commit6 ---> commit[3,4,5,6]"

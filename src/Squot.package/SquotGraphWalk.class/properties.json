@@ -4,13 +4,15 @@
 		 ],
 	"classvars" : [
 		 ],
-	"commentStamp" : "",
+	"commentStamp" : "jr 12/20/2020 20:19",
 	"instvars" : [
 		"toBeVisited",
 		"visited",
-		"guide" ],
+		"paths",
+		"latest",
+		"referrers" ],
 	"name" : "SquotGraphWalk",
 	"pools" : [
 		 ],
-	"super" : "Stream",
+	"super" : "Object",
 	"type" : "normal" }

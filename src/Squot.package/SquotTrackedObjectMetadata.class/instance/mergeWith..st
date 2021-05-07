@@ -1,3 +1,4 @@
-as yet unclassified
+patching
 mergeWith: otherMetadata
-	otherMetadata keysAndValuesDo: [:key :value | self at: key put: value].
+	self deprecated: 'Use updateFrom: instead'.
+	self updateFrom: otherMetadata.

@@ -1,3 +1,3 @@
 converting
 capture
-	^ self copyWithDifferentContent: self content 
+	^ self snapshot

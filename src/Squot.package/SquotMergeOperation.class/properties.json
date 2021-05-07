@@ -1,5 +1,5 @@
 {
-	"category" : "Squot-Core",
+	"category" : "Squot-WorkingCopies",
 	"classinstvars" : [
 		 ],
 	"classvars" : [
@@ -9,7 +9,10 @@
 		"mergeVersion",
 		"baseVersion",
 		"merge",
-		"mergeBases" ],
+		"mergeBases",
+		"shouldAddParent",
+		"workingVersion",
+		"appliedPatch" ],
 	"name" : "SquotMergeOperation",
 	"pools" : [
 		 ],

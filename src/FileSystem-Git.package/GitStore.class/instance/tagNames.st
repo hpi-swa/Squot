@@ -1,3 +1,3 @@
 git-delegating
 tagNames
-	^ repository tagNames
+	^ self unitOfWork tagNames

@@ -1,0 +1,14 @@
+{
+	"category" : "Squot-Tests-Support",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "SquotShadowMock",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }

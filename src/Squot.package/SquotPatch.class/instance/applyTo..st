@@ -1,4 +1,3 @@
 applying
 applyTo: anObjectContainer
-	self privateApplyTo: anObjectContainer
-		diffsDoing: [:diffs :apply | diffs do: apply].
+	^ self applyTo: anObjectContainer displayingProgress: [:each | 'Applying changes to ', each]

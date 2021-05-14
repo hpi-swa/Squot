@@ -1,7 +1,7 @@
 actions
-excludeMethodsWithOnlyTimestampChanges
+excludeMethodsWithOnlyTimestampChanges: aCollection
 	| packageNodes |
-	packageNodes := ((rootNodes select: [:each | each artifactDiff notNil]) select: [:each | each content isModification and: [each content object storeInfo objectClassName = #PackageInfo]]).
+	packageNodes := ((aCollection select: [:each | each artifactDiff notNil]) select: [:each | each content isModification and: [each content object storeInfo objectClassName = #PackageInfo]]).
 	packageNodes do: [:eachPackageNode |
 		eachPackageNode children do: [:eachClassNode |
 			eachClassNode children

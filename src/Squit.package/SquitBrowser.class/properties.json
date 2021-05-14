@@ -21,7 +21,8 @@
 		"selectedHistorian",
 		"indexOfActiveHistorianInBranchList",
 		"branchList",
-		"commitToDiffAgainst" ],
+		"commitToDiffAgainst",
+		"indexOfFirstRemoteTrackingBranch" ],
 	"name" : "SquitBrowser",
 	"pools" : [
 		 ],

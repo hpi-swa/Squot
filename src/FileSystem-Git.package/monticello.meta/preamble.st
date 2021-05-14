@@ -1,5 +1,5 @@
 (PackageInfo named: 'FileSystem-Git') preamble: '"code to be run before the loading of this package"
-| modes |
+| modes VersionsBrowser |
 
 modes := Smalltalk globals at: #TEMP_GitTreeEntryModes put: IdentityDictionary new.
 Smalltalk globals at: #GitTreeEntry ifPresent: [:GitTreeEntry |
@@ -10,11 +10,12 @@ Smalltalk globals at: #GitTreeEntry ifPresent: [:GitTreeEntry |
 			[dict at: #isSubmodule put: each isSubmodule].
 		modes at: each put: dict]].
 
-"Restore original of shadowed method, see #255"
-(DateAndTime respondsTo: #fromUnixTime:) ifTrue: [
+"2021-05-07: Restore original of shadowed fromUnixTime: method, see https://github.com/hpi-swa/Squot/issues/255"
+((DateAndTime respondsTo: #fromUnixTime:) and: [(VersionsBrowser := Environment current classNamed: ''VersionsBrowser'') notNil]) ifTrue: [
 	| versionsBrowser changeRecord |
 	versionsBrowser := VersionsBrowser new scanVersionsOf: DateAndTime class >> #fromUnixTime: class: DateAndTime meta: true category: nil selector: #fromUnixTime:.
 	changeRecord := versionsBrowser changeList
-		detect: [:cr | (cr category beginsWith: ''*'') not]
-		ifNone: [^ self].
-	Smalltalk globals at: #TEMP_Squot_ShadowedChangeRecord255 put: changeRecord].'!
+		detect: [:cr | (cr category beginsWith: ''*FileSystem-Git'') not]
+		ifNone: [].
+	changeRecord ifNotNil:
+		[Smalltalk globals at: #TEMP_Squot_ShadowedChangeRecord255 put: changeRecord]].'!

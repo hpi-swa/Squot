@@ -28,5 +28,15 @@ waitFor: aWaitable
 		assert: newProcess isTerminated;
 		assert: Project uiProcess == oldProcess;
 		assert: Project uiProcess isActiveProcess.
-	exception ifNotNil: [exception signal].
+	exception ifNotNil:
+		[| usesNewExceptionHandling |
+		usesNewExceptionHandling := Exception canUnderstand: #resumeEvaluating:.
+		usesNewExceptionHandling
+			ifTrue:
+				["Sending #signal again would act like #outer, which will search handlers from the original handler context of the dead process."
+				exception copy
+					instVarNamed: 'signalContext' put: nil;
+					tag: exception;
+					signal]
+			ifFalse: [exception signal]].
 	^ answer

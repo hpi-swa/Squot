@@ -25,3 +25,4 @@ fetchFrom: aRemoteName
 		[:each | self unitOfWork
 					updateRef: (remote trackingRefOf: each)
 					to: (remoteRefs at: each)].
+	^ protocol refs

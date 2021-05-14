@@ -8,6 +8,7 @@
 		"setUp" : "jr 8/26/2020 23:26",
 		"tearDown" : "jr 8/17/2020 00:06",
 		"testClone" : "jr 8/17/2020 00:05",
+		"testCloneWithDefaultBranch" : "jr 5/14/2021 21:33",
 		"testPush" : "jr 8/23/2020 18:39",
 		"testPushCreateUpdateDelete" : "jr 8/23/2020 18:40",
 		"withUnitOfWork:" : "jr 8/23/2020 18:39" } }

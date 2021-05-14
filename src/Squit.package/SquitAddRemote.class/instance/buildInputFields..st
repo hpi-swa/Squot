@@ -2,6 +2,7 @@ toolbuilder
 buildInputFields: builder
 	^ {
 	builder pluggableInputFieldSpec new
+		name: 'remoteUrl';
 		model: self;
 		getText: #remoteUrl;
 		editText: #remoteUrl:;
@@ -9,6 +10,7 @@ buildInputFields: builder
 		indicateUnacceptedChanges: false;
 		help: 'URL of the remote. Only HTTP(S) URLs are supported as of now.'.
 	builder pluggableInputFieldSpec new
+		name: 'remoteName';
 		model: self;
 		getText: #remoteName;
 		editText: #remoteName:;

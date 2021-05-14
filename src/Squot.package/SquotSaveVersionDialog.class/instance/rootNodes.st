@@ -3,5 +3,6 @@ rootNodes
 	SquotToggles ignoreMethodsInAssumeUnchanged ifFalse: [^ super rootNodes].
 	rootNodes ifNil: 
 		[super rootNodes.
-		self excludeMethodsThatAreAssumedUnchanged].
+		self excludeMethodsThatAreAssumedUnchanged;
+			excludeMethodsWithOnlyTimestampChanges].
 	^ super rootNodes

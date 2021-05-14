@@ -12,6 +12,7 @@
 		"testLeaveUnloadedArtifactUnloaded" : "jr 11/20/2020 23:28",
 		"testLoadUnloadedArtifact" : "jr 11/18/2020 21:38",
 		"testLoadUnloadedArtifactDuringModification" : "jr 11/18/2020 21:38",
+		"testMethodsGetExcludedIfOnlyTheirStampsChanged" : "jr 5/14/2021 16:18",
 		"testToggleLoadAddedArtifact" : "jr 11/18/2020 21:39",
 		"testUnloadedArtifactsAdorned" : "jr 11/18/2020 22:15",
 		"workingCopySavePatch" : "jr 11/20/2020 23:28" } }

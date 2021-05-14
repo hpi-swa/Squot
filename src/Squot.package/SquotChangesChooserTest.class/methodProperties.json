@@ -10,6 +10,7 @@
 		"patchAddingArtifactAt:" : "jr 11/7/2020 10:55",
 		"patchChangingArtifactAt:" : "jr 11/18/2020 22:31",
 		"patchChangingUnloadedArtifactAt:" : "jr 11/19/2020 13:33",
+		"patchModifyingMethodTimestampInArtifactAt:" : "jr 5/14/2021 16:14",
 		"patchRemovingArtifactAt:" : "jr 11/7/2020 11:03",
 		"patchWithLoadOrderChange" : "jr 8/15/2019 03:15",
 		"patchWithLoadOrderChangeRegression1" : "jr 8/15/2019 03:21",

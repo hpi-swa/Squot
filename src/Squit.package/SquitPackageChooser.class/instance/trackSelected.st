@@ -4,12 +4,13 @@ trackSelected
 	| package conflictingPackages |
 	package := (self untrackedPackagesWithTitle at: self selectionUntracked).
 	
-	conflictingPackages := self trackedPackages select: [:p | p beginsWith: package].
+	conflictingPackages := self trackedPackages select:
+		[:p | (PackageInfo new packageName: package; yourself) includesSystemCategory: p].
 	
 	conflictingPackages ifNotEmpty: [
 		(self confirm: 'To add this package, we will first remove ',
 			(conflictingPackages joinSeparatedBy: ', '),
-			', because the new packages is a prefix/super package for these.', String cr,
+			', because the new package is a prefix/super package for these.', String cr,
 			'(Otherwise the package contents will be duplicated)') ifFalse: [^ self]].
 	
 	self trackedPackages

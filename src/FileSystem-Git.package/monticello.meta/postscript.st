@@ -1,5 +1,7 @@
 (PackageInfo named: 'FileSystem-Git') postscript: '"code to be run after the loading of this package"
-"initialize GitTreeEntry mode inst var"
+| changeRecord |
+
+"2017-05-13: initialize GitTreeEntry mode inst var"
 modes := Smalltalk globals at: #TEMP_GitTreeEntryModes ifAbsent: [Dictionary new].
 modes keysAndValuesDo: [:entry :modes |
 	entry convertToCurrentVersion: modes refStream: nil].
@@ -21,4 +23,9 @@ GitUnitOfWork allInstancesDo:
 		each
 			flushCaches;
 			convertToCurrentVersion: Dictionary new refStream: nil].
-'!
+
+"2021-05-07: Restore original of shadowed method, see #255"
+changeRecord := Smalltalk globals at: #TEMP_Squot_ShadowedChangeRecord255 ifAbsent: [nil].
+changeRecord ifNotNil: [
+    changeRecord fileIn.
+    Smalltalk globals removeKey: #TEMP_Squot_ShadowedChangeRecord255].'!

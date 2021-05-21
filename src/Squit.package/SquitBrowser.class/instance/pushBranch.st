@@ -6,8 +6,8 @@ pushBranch
 	[[(SquitInteractivePushToUpstream historian: historian) push]
 		on: SquitUpstreamUndefined do:
 			[:e |
-			self inform: e historian shortName, ' has no upstream branch. Please set one, then push again.'.
-			Project current addDeferredUIMessage: [self actionSetUpstreamBranch]]
+			self inform: e historian shortName, ' has no upstream branch. Please set one first. Afterwards your branch will be pushed immediately.'.
+			(self setUpstreamBranchOf: historian) ifNotNil: [e retry]]
 		on: SquitBadRemote do:
 			[:e |
 			Project current addDeferredUIMessage: [self showBadRemote: e remote].

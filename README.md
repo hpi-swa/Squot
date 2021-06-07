@@ -1,4 +1,4 @@
-# Squot [![MacOS/Linux Build Status][travis_badge]][travis] [![Windows Build Status][appveyor_badge]][appveyor]
+# Squot [![CI](https://github.com/hpi-swa/Squot/actions/workflows/ci.yml/badge.svg)](https://github.com/hpi-swa/Squot/actions/workflows/ci.yml) [![Windows Build Status][appveyor_badge]][appveyor]
 Squeak Object Tracker - Version control for arbitrary objects in Squeak, currently with Git storage
 
 This repository also contains a variant of the FileSystem library,

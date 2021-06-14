@@ -10,7 +10,8 @@
 		"authorMap",
 		"squotPath",
 		"squotRepository",
-		"versionMapFromMonticello" ],
+		"versionMapFromMonticello",
+		"temporaryHistorians" ],
 	"name" : "SquotMonticelloConverter",
 	"pools" : [
 		 ],

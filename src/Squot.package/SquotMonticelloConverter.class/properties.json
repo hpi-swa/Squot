@@ -8,7 +8,8 @@
 	"instvars" : [
 		"squotRepository",
 		"versionMapFromMonticello",
-		"monticelloRepository" ],
+		"monticelloRepository",
+		"authorMap" ],
 	"name" : "SquotMonticelloConverter",
 	"pools" : [
 		 ],

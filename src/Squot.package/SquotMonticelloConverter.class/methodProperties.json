@@ -2,14 +2,17 @@
 	"class" : {
 		"convertUpToLoadedVersionOfPackageNamed:asHistorianNamed:in:" : "jr 2/21/2017 14:43" },
 	"instance" : {
+		"authorMap" : "ct 6/13/2021 02:07:19",
+		"authorMap:" : "ct 6/13/2021 02:07:26",
 		"captureSquotPatchFrom:basedOnVersion:" : "jr 5/31/2017 13:37",
 		"captureSquotSnapshotFrom:" : "jr 7/21/2017 11:50",
 		"cleanUpTemporaryHistorians" : "jr 2/4/2017 02:41",
 		"convertMonticelloHistoryUpTo:from:asNewHistorianNamed:in:" : "jr 9/13/2020 22:22",
-		"convertMonticelloVersion:" : "jr 5/31/2017 12:13",
+		"convertMonticelloVersion:" : "ct 6/13/2021 02:11:31",
 		"convertMonticelloVersionWithMissingSnapshot:" : "jr 6/9/2019 02:02",
 		"findAvailableBaseVersionWithInfo:" : "jr 2/24/2019 11:37",
 		"initialize" : "jr 2/7/2017 00:19",
 		"mapMonticelloVersion:to:" : "jr 2/4/2017 03:14",
+		"squotAuthorForMonticelloAuthor:" : "ct 6/13/2021 02:07:34",
 		"squotVersionForMonticelloVersion:" : "jr 2/5/2017 23:38",
 		"squotVersionForMonticelloVersionInfo:" : "jr 2/5/2017 23:38" } }

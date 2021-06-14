@@ -1,5 +1,5 @@
 *Squot-shadow
-asSquotArtifactForPackage: aPackageInfo repository: aSquitRepository path: path
+asSquotArtifactForPackage: aPackageInfo path: path
 
 	| artifact |
 	artifact := SquotArtifact new
@@ -9,5 +9,5 @@ asSquotArtifactForPackage: aPackageInfo repository: aSquitRepository path: path
 				withSnapshot: self));
 		initializeDefaultStoreInfoFor: aPackageInfo;
 		yourself.
-	artifact path: (aSquitRepository validatePath: path for: artifact).
+	artifact path: (SquotFileSystemStore validatePath: path for: artifact).
 	^ artifact

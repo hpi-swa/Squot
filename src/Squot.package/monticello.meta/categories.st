@@ -7,6 +7,7 @@ SystemOrganization addCategory: #'Squot-Reflection'!
 SystemOrganization addCategory: #'Squot-Capturing'!
 SystemOrganization addCategory: #'Squot-Shadows'!
 SystemOrganization addCategory: #'Squot-Diffs'!
+SystemOrganization addCategory: #'Squot-Diffs-Internal'!
 SystemOrganization addCategory: #'Squot-Diffs-Generic'!
 SystemOrganization addCategory: #'Squot-Merging'!
 SystemOrganization addCategory: #'Squot-Packages'!

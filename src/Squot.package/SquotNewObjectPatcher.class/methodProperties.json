@@ -1,0 +1,21 @@
+{
+	"class" : {
+		 },
+	"instance" : {
+		"apply:toLoadedGraph:" : "jr 6/27/2021 23:15",
+		"applying:fill:reachedVia:into:reflectedIn:ifDeferredUntilActivated:ifNotTreatedYet:" : "jr 6/27/2021 23:15",
+		"fill:reachedVia:into:reflectedIn:ifDeferredUntilActivated:ifUnavailable:" : "jr 6/13/2021 17:35",
+		"fillInReferencesOf:reflectedIn:from:reflectedIn:unavailableReferencesDo:" : "jr 6/13/2021 17:35",
+		"findOrCreateMaterializedInstanceOf:reflectedIn:ifNew:" : "jr 6/17/2021 23:38",
+		"initialize" : "jr 6/13/2021 12:08",
+		"materialize:in:" : "jr 6/13/2021 22:04",
+		"materializedFrom:ifAbsent:" : "jr 6/13/2021 12:08",
+		"materializedFrom:ifPresent:ifAbsent:" : "jr 6/13/2021 12:08",
+		"reactivate:" : "jr 6/20/2021 21:15",
+		"registry:" : "jr 6/12/2021 17:07",
+		"sourceGraph:" : "jr 6/12/2021 01:37",
+		"sourceNameOf:ifPresent:ifAbsent:" : "jr 6/13/2021 19:26",
+		"take:asMaterializedFrom:" : "jr 6/13/2021 12:08",
+		"updateReference:from:reflectedIn:for:withValue:" : "jr 6/20/2021 21:34",
+		"updateReferrersTo:materializedFrom:" : "jr 6/20/2021 21:33",
+		"wasReactivated:" : "jr 6/13/2021 10:35" } }

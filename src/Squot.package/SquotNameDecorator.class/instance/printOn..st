@@ -1,5 +1,5 @@
 printing
 printOn: aStream
-	aStream print: (name joinSeparatedBy: ' ');
+	aStream print: decoratedObject;
 		space;
-		print: decoratedObject.
+		print: (name joinSeparatedBy: ' ').

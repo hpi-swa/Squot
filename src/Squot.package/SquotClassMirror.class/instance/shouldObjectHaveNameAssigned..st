@@ -1,4 +1,4 @@
 testing
 shouldObjectHaveNameAssigned: aClass 
-	self flag: #stub.
-	^ aClass shouldHaveNameAssignedBySquot
+	"Class identified by its name already"
+	^ false

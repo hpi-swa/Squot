@@ -1,0 +1,3 @@
+testing
+isAddition
+	self subclassResponsibility

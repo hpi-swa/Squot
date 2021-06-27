@@ -1,4 +1,4 @@
 testing
 shouldObjectHaveNameAssigned: aPackageInfo
-	self flag: #stub.
-	^ aPackageInfo shouldHaveNameAssignedBySquot
+	"Package is identified by its name already."
+	^ false

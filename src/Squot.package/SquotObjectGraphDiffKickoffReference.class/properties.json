@@ -1,0 +1,16 @@
+{
+	"category" : "Squot-Diffs-Internal",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "jr 6/27/2021 22:39",
+	"instvars" : [
+		"objectDiff",
+		"leftOwnerMirror",
+		"rightOwnerMirror" ],
+	"name" : "SquotObjectGraphDiffKickoffReference",
+	"pools" : [
+		 ],
+	"super" : "SquotReferenceDiff",
+	"type" : "normal" }

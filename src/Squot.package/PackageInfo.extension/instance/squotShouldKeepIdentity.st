@@ -1,4 +1,4 @@
 *Squot-trackable
 squotShouldKeepIdentity
-	"Package identified by its name already"
-	^ false
+	"If a PackageInfo is already present, keep it."
+	^ true

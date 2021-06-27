@@ -2,15 +2,18 @@
 	"class" : {
 		"startingFrom:" : "jr 1/10/2021 21:40" },
 	"instance" : {
-		"add:path:" : "jr 1/9/2021 19:29",
+		"add:path:" : "jr 6/26/2021 18:19",
 		"add:reachedVia:" : "jr 12/20/2020 20:36",
 		"addFirst:" : "jr 12/20/2020 20:34",
 		"atEnd" : "jr 12/20/2020 20:24",
-		"checkPathsTo:ifMultiple:" : "jr 12/20/2020 22:09",
+		"checkPathsTo:ifMultiple:" : "jr 6/26/2021 19:36",
 		"currentPath" : "jr 12/20/2020 20:30",
 		"currentReferrer" : "jr 1/9/2021 19:30",
 		"do:" : "jr 12/20/2020 21:20",
+		"doNotTrackReferrers" : "jr 6/26/2021 17:21",
 		"hasVisited:" : "jr 12/20/2020 20:26",
-		"initialize" : "jr 1/10/2021 21:47",
-		"next" : "jr 12/20/2020 20:31",
+		"initialize" : "jr 6/26/2021 19:35",
+		"next" : "jr 6/26/2021 18:36",
+		"printOn:" : "jr 6/26/2021 19:36",
+		"useBreadthFirstTraversal" : "jr 6/26/2021 18:36",
 		"visited:" : "jr 12/20/2020 20:26" } }

@@ -24,7 +24,7 @@ rematerialize: aShadow reflectedIn: aMirror
 				referrerMirror := firstReferrer second.
 				reference := firstReferrer third.
 				referrerMirror mirrorOf: materialized reachedVia: reference from: materializedReferrer].
-	"Fill in all references of the new object whose value has already been materialized. Remember the other references to update them later."
+	"Fill in all references of the new object whose values have already been materialized. Remember the other references to update them later."
 	remaining := OrderedCollection new.
 	(aMirror referencesFrom: aShadow) do:
 		[:eachReference | | value | value := eachReference reflect: aShadow in: aMirror.

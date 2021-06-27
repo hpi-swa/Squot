@@ -10,7 +10,11 @@
 		"visited",
 		"paths",
 		"latest",
-		"referrers" ],
+		"referrers",
+		"history",
+		"trackReferrers",
+		"breadthFirst",
+		"numberOfPathChecks" ],
 	"name" : "SquotGraphWalk",
 	"pools" : [
 		 ],

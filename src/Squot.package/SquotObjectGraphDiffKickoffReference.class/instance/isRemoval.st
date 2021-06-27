@@ -1,0 +1,3 @@
+testing
+isRemoval
+	^ objectDiff isRemoval

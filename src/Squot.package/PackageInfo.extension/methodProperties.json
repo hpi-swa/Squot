@@ -9,7 +9,8 @@
 	"instance" : {
 		"captureWithSquot" : "jr 1/10/2021 23:59",
 		"captureWithSquot:" : "jr 1/11/2021 00:01",
+		"shouldHaveNameAssignedBySquot" : "jr 6/26/2021 22:37",
 		"squotAddTransientStoreInfoTo:" : "jr 7/22/2017 00:16",
 		"squotRemoveTransientStoreInfoFrom:" : "jr 3/5/2017 17:24",
 		"squotShadowFactory" : "jr 1/10/2021 23:57",
-		"squotShouldKeepIdentity" : "jr 11/19/2017 16:43" } }
+		"squotShouldKeepIdentity" : "jr 6/26/2021 22:38" } }

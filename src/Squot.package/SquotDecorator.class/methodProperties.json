@@ -13,6 +13,8 @@
 		"decoratorClass" : "jr 6/20/2017 13:31",
 		"doesNotUnderstand:" : "jr 3/23/2020 21:57",
 		"in:" : "jr 4/10/2021 17:20",
+		"instVarAt:" : "jr 6/16/2021 22:47",
+		"instVarAt:put:" : "jr 6/16/2021 22:47",
 		"objectForDataStream:" : "jr 7/22/2017 01:05",
 		"outboundPointersDo:" : "jr 4/17/2020 15:56",
 		"perform:" : "jr 7/30/2017 17:25",

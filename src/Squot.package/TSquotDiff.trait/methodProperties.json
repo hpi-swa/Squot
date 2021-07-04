@@ -3,11 +3,12 @@
 		 },
 	"instance" : {
 		"applyToObjectNamed:inGraph:with:" : "jr 6/13/2021 22:40",
-		"applyToShadowNamed:inGraph:" : "jr 9/23/2019 23:52",
+		"applyToShadowNamed:inGraph:" : "jr 7/4/2021 17:44",
 		"asSquotConflicts" : "jr 10/19/2017 19:20",
 		"initializeSquotDiffNodes:with:" : "jr 1/14/2018 23:10",
 		"newSquotDiffNodes" : "jr 1/14/2018 23:06",
 		"referenceDiffsWithDefaultOwners:reflectedIn:do:" : "jr 6/27/2021 22:53",
+		"rightName" : "jr 7/4/2021 18:42",
 		"squotApplyTo:" : "jr 9/25/2019 19:21",
 		"squotApplyTo:with:" : "jr 6/22/2017 14:04",
 		"squotApplyToLoaded:" : "jr 6/7/2017 14:44",

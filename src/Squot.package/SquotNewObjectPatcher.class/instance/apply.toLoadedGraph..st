@@ -51,7 +51,6 @@ apply: aGraphDiff toLoadedGraph: anObjectGraph
 		remaining
 			ifEmpty: [self reactivate: object]
 			ifNotEmpty: [pendingOutgoingReferences at: object put: remaining].
-		self updateReferrersTo: object materializedFrom: newShadow.
 		"Assign identifier if any."
 		name := self sourceNameOf: newShadow ifPresent: [:sourceName | sourceName] ifAbsent: [].
 		(mirror shouldObjectHaveNameAssigned: object)
@@ -59,6 +58,8 @@ apply: aGraphDiff toLoadedGraph: anObjectGraph
 				[name
 					ifNil: [self error: 'Object has no name but it should have']
 					ifNotNil: [objectRegistry assign: name to: object]].
-		name ifNotNil: [anObjectGraph assign: name to: object]].
+		name ifNotNil: [anObjectGraph assign: name to: object].
+		"Update references to object."
+		self updateReferrersTo: object materializedFrom: newShadow].
 	pendingOutgoingReferences ifNotEmpty: [self error: 'Objects not fully updated'].
 	^ anObjectGraph

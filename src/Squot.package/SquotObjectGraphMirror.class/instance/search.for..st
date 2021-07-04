@@ -2,9 +2,9 @@ private
 search: aGraphDiffOrGraph for: anObject
 	| start walk mirrors |
 	start := aGraphDiffOrGraph roots collect: [:each | each undecorated].
-	walk := SquotGraphWalk startingFrom: (start first -> start first class squotMirror).
+	walk := SquotGraphWalk startingFrom: (start first -> (self defaultMirrorOf: start first)).
 	walk doNotTrackReferrers; useBreadthFirstTraversal.
-	start allButFirstDo: [:each | walk add: each -> each class squotMirror path: #()].
+	start allButFirstDo: [:each | walk add: each -> (self defaultMirrorOf: each) path: #()].
 	start do: [:each | walk checkPathsTo: each ifMultiple: []].
 	mirrors := Mirrors at: aGraphDiffOrGraph.
 	"Find correct mirrors by searching the graph from the start."
@@ -20,4 +20,4 @@ search: aGraphDiffOrGraph for: anObject
 			walk checkPathsTo: value ifMultiple: [skip := true].				
 			skip == true ifFalse:
 				[walk add: value -> valueMirror reachedVia: each]]].
-	^ mirrors at: anObject
+	^ mirrors at: anObject ifAbsent: []

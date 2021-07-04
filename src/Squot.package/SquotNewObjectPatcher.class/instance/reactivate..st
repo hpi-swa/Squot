@@ -19,4 +19,4 @@ reactivate: anObject
 	anObject ~~ materializedObject ifTrue:
 		"For example if anObject is a DiskProxy."
 		[anObject becomeForward: materializedObject copyHash: false].
-	^ anObject
+	^ materializedObject

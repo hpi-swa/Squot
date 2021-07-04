@@ -1,3 +1,6 @@
 Squot-diff-patching
 applyToShadowNamed: name inGraph: anObjectGraph
-	^ self squotApplyTo: (anObjectGraph shadowNamed: name)
+	| patched |
+	patched := self squotApplyTo: (anObjectGraph shadowNamed: name).
+	anObjectGraph assign: name toShadow: patched undecorated.
+	^ patched

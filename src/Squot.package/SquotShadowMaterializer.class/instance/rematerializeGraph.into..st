@@ -1,19 +1,20 @@
 public converting
 rematerializeGraph: aShadowGraph into: targetMutableObjectGraph
-	| start mirror |
-	start := aShadowGraph startShadow.
-	mirror := start undecorated class squotMirror.
-	walk := SquotGraphWalk startingFrom: start -> mirror.
-	sourceGraph := aShadowGraph.
+	| additionDiff currentGraph NotFound |
 	targetGraph := targetMutableObjectGraph.
-	targetGraph startName: aShadowGraph startName.
-	pendingReferences := IdentityDictionary new.
-	pendingReferencesForHash := IdentityDictionary new.
-	remainingReferences := IdentityDictionary new.
-	convertedObjects := IdentityDictionary new.
-	[walk atEnd] whileFalse:
-		[ | next |
-		next := walk next. mirror := next value. next := next key.
-		self rematerialize: next reflectedIn: mirror].
-	remainingReferences ifNotEmpty: [self error: 'Objects not fully rematerialized'].
-	^ targetGraph startObject
+	currentGraph := SquotObjectCapturer new
+						registry: targetMutableObjectGraph;
+						captureGraph: (targetMutableObjectGraph hasObjects ifTrue: [targetMutableObjectGraph startObject] ifFalse: [SquotObjectGraph empty startObject flag: #todo. "This looks contradictory"]);
+						objectGraph.
+	additionDiff := currentGraph squotDiffAgainst: aShadowGraph.
+	NotFound := #().
+	aShadowGraph shadows do:
+		[:each | | name existing |
+		name := aShadowGraph nameOf: each.
+		existing := objectRegistry objectNamed: name ifAbsent: [NotFound].
+		existing ~~ NotFound
+			ifTrue: [targetMutableObjectGraph assign: name to: existing]].
+	(convertedObjects := SquotNewObjectPatcher new)
+		registry: targetMutableObjectGraph;
+		apply: additionDiff toLoadedGraph: targetMutableObjectGraph.
+	^ targetMutableObjectGraph startObject

@@ -1,3 +1,5 @@
 public converting
 rematerializeGraph: aShadowGraph
-	^ self rematerializeGraph: aShadowGraph into: SquotMutableObjectGraph new
+	^ self rematerializeGraph: aShadowGraph into: (SquotMutableObjectGraph empty
+														delegateRegistry: objectRegistry;
+														yourself)

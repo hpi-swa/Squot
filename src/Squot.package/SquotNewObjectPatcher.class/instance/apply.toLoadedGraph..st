@@ -15,8 +15,7 @@ apply: aGraphDiff toLoadedGraph: anObjectGraph
 		next := walk next. diff := next first. object := next second. mirror := next third. newShadow := next fourth. shadowMirror := next fifth. oldShadow := next sixth. oldShadowMirror := next seventh.
 		object := diff update: object reflectedIn: mirror
 			asMaterializedFrom: newShadow reflectedIn: shadowMirror.
-		"Oftentimes the new object is also the old object (same instance).
-		TODO: But if it is not, we need a new mirror."
+		"Oftentimes the new object is also the old object (same instance)." self flag: #todo. "But if it is not, we need a new mirror."
 		self take: object asMaterializedFrom: newShadow.
 		remaining := OrderedCollection new.
 		diff referenceDiffsWithDefaultOwners: {newShadow "because we do not have the original shadow readily available, and in most cases the original one does not matter". newShadow} reflectedIn: shadowMirror do:

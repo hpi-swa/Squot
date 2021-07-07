@@ -1,17 +1,15 @@
 testing
 testRemoveComplexValueObject
-	| set graphBefore graphAfter diff newSet removedItem newLoadedGraph |
+	| a b graphBefore graphAfter diff removedItem |
 	"given"
-	set := Set newFrom: {1. {2. {3}. 4}}.
-	graphBefore := capturer captureGraph: set.
-	set remove: (removedItem := {2. {3}. 4}).
-	self assert: {1} equals: set asArray.
-	graphAfter := capturer captureGraph: set.
+	a := Set newFrom: {1. (removedItem := {2. {3}. 4})}.
+	b := Set newFrom: {1}.
+	graphBefore := capturer captureGraph: a.
+	objectRegistry assign: (objectRegistry nameOf: a) to: b.
+	graphAfter := capturer captureGraph: b.
 	diff := graphBefore squotDiffAgainst: graphAfter.
 	"when"
-	newLoadedGraph := self rematerializeAsNewGraph: graphBefore.
-	newSet := newLoadedGraph startObject.
-	diff squotApplyToLoaded: newLoadedGraph.
+	self apply: diff to: a.
 	"then"
-	self assert: (newSet includes: 1).
-	self deny: (newSet includes: removedItem).
+	self assert: (a includes: 1).
+	self deny: (a includes: removedItem).

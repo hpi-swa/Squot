@@ -1,12 +1,7 @@
 public converting
 rematerializeGraph: aShadowGraph into: targetMutableObjectGraph
-	| additionDiff currentGraph NotFound |
+	| additionDiff NotFound |
 	targetGraph := targetMutableObjectGraph.
-	currentGraph := SquotObjectCapturer new
-						registry: targetMutableObjectGraph;
-						captureGraph: (targetMutableObjectGraph hasObjects ifTrue: [targetMutableObjectGraph startObject] ifFalse: [SquotObjectGraph empty startObject flag: #todo. "This looks contradictory"]);
-						objectGraph.
-	additionDiff := currentGraph squotDiffAgainst: aShadowGraph.
 	NotFound := #().
 	aShadowGraph shadows do:
 		[:each | | name existing |
@@ -14,6 +9,7 @@ rematerializeGraph: aShadowGraph into: targetMutableObjectGraph
 		existing := objectRegistry objectNamed: name ifAbsent: [NotFound].
 		existing ~~ NotFound
 			ifTrue: [targetMutableObjectGraph assign: name to: existing]].
+	additionDiff := targetMutableObjectGraph squotDiffAgainst: aShadowGraph.
 	(convertedObjects := SquotNewObjectPatcher new)
 		registry: targetMutableObjectGraph;
 		apply: additionDiff toLoadedGraph: targetMutableObjectGraph.

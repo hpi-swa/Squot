@@ -15,6 +15,5 @@ beginCapturingFrom: anObject
 		ifFalse: [objectGraph assign: objectGraph class anonymousObjectName to: anObject].
 	toBeVisited add: decorated.
 	self followReferences. "give names to objects and create shadows"
-	self convertSlotValues. "redirect slots from live objects to shadows"
 	objectGraph startShadow: (convertedObjects at: anObject).
 	^ objectGraph as: SquotObjectGraph

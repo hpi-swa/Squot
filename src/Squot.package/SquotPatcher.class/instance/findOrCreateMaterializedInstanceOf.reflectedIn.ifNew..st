@@ -1,4 +1,4 @@
-public
+private
 findOrCreateMaterializedInstanceOf: aShadow reflectedIn: aMirror ifNew: aBlock
 	"Answers a live (but not necessarily reactivated) object. Its references may not all be updated in yet."
 	| existing materialized |

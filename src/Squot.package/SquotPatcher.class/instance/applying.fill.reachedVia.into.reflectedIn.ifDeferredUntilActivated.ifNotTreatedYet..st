@@ -1,4 +1,4 @@
-public
+private
 applying: aReferenceDiff fill: valueShadow reachedVia: eachReference into: materialized reflectedIn: materializedMirror ifDeferredUntilActivated: deferredValueBlock ifNotTreatedYet: unavailableValueBlock
 	"Answer whether the reference could already be filled in."
 	| wasFilledIn |

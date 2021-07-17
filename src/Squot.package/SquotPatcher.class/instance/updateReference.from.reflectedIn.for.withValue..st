@@ -1,4 +1,4 @@
-public
+private
 updateReference: reference from: referrer reflectedIn: mirror for: aDiff withValue: materialized
 	"Update all known references to the new object where its hash does not matter. Reactivate each object that needs no more references to be filled in."
 	| remaining |

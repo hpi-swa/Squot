@@ -1,4 +1,4 @@
-public
+private
 updateReferrersTo: materialized materializedFrom: aShadow
 	"Update all known references to the new object where its hash does not matter. Reactivate each object that needs no more references to be filled in."
 	(pendingIncomingReferences removeKey: aShadow undecorated ifAbsent: [#()]) do:

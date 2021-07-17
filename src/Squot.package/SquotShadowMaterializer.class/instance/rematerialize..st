@@ -1,6 +1,6 @@
 public converting
 rematerialize: aShadow
-	SquotToggles useNewObjectPatching ifTrue: [self deprecated].
+	self deprecated.
 	^ convertedObjects at: aShadow undecorated
 		ifAbsentPut: [ | materialized name |
 			self assert: (aShadow hasSquotShadowName not or: [sourceGraph includesObjectNamed: aShadow name])

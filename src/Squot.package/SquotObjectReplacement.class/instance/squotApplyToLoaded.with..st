@@ -1,4 +1,4 @@
 patching
 squotApplyToLoaded: anObject with: aPatcher
-	SquotToggles useNewObjectPatching ifTrue: [self deprecated].
+	self deprecated.
 	^ aPatcher rematerialize: right

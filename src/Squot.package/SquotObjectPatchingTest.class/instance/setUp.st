@@ -1,7 +1,7 @@
 running
 setUp
 	capturer := SquotObjectCapturer new.
-	patcher := self patcherClass new.
+	patcher := SquotNewObjectPatcher new.
 	objectRegistry := SquotObjectRegistry new.
 	capturer registry: objectRegistry.
 	patcher registry: objectRegistry.

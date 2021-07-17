@@ -1,7 +1,7 @@
 converting
 findOrCreateAndRematerialize: aShadow
 	| existing |
-	SquotToggles useNewObjectPatching ifTrue: [self deprecated].
+	self deprecated.
 	self sourceNameOf: aShadow ifPresent: [:name |
 		existing := objectRegistry objectNamed: name ifAbsent: [].
 		(existing notNil and: [existing squotShouldKeepIdentity])

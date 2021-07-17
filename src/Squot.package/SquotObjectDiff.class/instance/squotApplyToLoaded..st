@@ -1,5 +1,5 @@
 Squot-diff-applying
 squotApplyToLoaded: anObject
 	"Modify anObject such that it matches what I model"
-	^ self patcherClass new
-		apply: self toLoaded: anObject
+	^ SquotNewObjectPatcher new
+		apply: self toLoaded: anObject.

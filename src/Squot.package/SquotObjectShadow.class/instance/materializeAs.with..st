@@ -1,7 +1,7 @@
 rematerializing
 materializeAs: anObject with: aMaterializer
 	"Fill anObject like my original"
-	SquotToggles useNewObjectPatching ifTrue: [self deprecated].
+	self deprecated.
 	anObject class ~= capturedClass ifTrue:
 		[^ aMaterializer materialize: self in: self createMaterializedInstance].
 	anObject basicSize ~= self basicSizeOfMaterializedInstance ifTrue:

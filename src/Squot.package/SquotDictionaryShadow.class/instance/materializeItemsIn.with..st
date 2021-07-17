@@ -1,7 +1,7 @@
 as yet unclassified
 materializeItemsIn: aDictionary with: aMaterializer
 	| materializedAssociations |
-	SquotToggles useNewObjectPatching ifTrue: [self deprecated].
+	self deprecated.
 	materializedAssociations := Array streamContents: [:stream |
 		itemSlots do: [:each | stream nextPut:
 			(each materializeIn: aDictionary with: aMaterializer)]].

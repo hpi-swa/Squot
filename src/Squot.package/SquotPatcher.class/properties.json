@@ -12,7 +12,7 @@
 		"pendingIncomingReferences",
 		"pendingIncomingReferencesForHash",
 		"treatedObjects" ],
-	"name" : "SquotNewObjectPatcher",
+	"name" : "SquotPatcher",
 	"pools" : [
 		 ],
 	"super" : "Object",

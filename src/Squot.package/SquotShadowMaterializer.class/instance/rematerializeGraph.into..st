@@ -10,7 +10,7 @@ rematerializeGraph: aShadowGraph into: targetMutableObjectGraph
 		existing ~~ NotFound
 			ifTrue: [targetMutableObjectGraph assign: name to: existing]].
 	additionDiff := targetMutableObjectGraph squotDiffAgainst: aShadowGraph.
-	(convertedObjects := SquotNewObjectPatcher new)
+	(convertedObjects := SquotPatcher new)
 		registry: targetMutableObjectGraph;
 		apply: additionDiff toLoadedGraph: targetMutableObjectGraph.
 	^ targetMutableObjectGraph startObject

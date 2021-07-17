@@ -7,9 +7,9 @@ mirrorOf: anObject reachedVia: aReference from: aGraphDiffOrGraph
 		at: anObject
 		ifAbsent: [(self search: aGraphDiffOrGraph for: anObject)
 					ifNil: [(notFound := Warning new messageText: 'Object not found in graph') signal.
-						"Assume that it is the new object from a replacement"
+						"Assume that it is the new object from a replacement, or that it is an old object that has to be removed."
 						self defaultMirrorOf: anObject]]]
 		on: Warning do:
-			[:w | (w == notFound and: [aReference objectDiff class = SquotObjectReplacement])
+			[:w | (w == notFound and: [aReference objectDiff class = SquotObjectReplacement or: [aReference objectDiff class = SquotObjectRemoval]])
 				ifTrue: [w resume]
 				ifFalse: [w pass]]

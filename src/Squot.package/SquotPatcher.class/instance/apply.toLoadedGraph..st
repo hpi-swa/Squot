@@ -55,7 +55,7 @@ apply: aGraphDiff toLoadedGraph: anObjectGraph
 		(mirror shouldObjectHaveNameAssigned: object)
 			ifTrue:
 				[name
-					ifNil: [self error: 'Object has no name but it should have']
+					ifNil: ["Object should normally have a name, but maybe it is just materialized to be removed from a collection. Then it does not need to get a name in the registry or the new graph."]
 					ifNotNil: [objectRegistry assign: name to: object]].
 		name ifNotNil: [anObjectGraph assign: name to: object].
 		"Update references to object."

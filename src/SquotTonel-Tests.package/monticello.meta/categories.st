@@ -1,1 +1,1 @@
-SystemOrganization addCategory: #'SquotTonel-Tests'!
+SystemOrganization addCategory: #'SquotTonel-Core'!

@@ -1,0 +1,14 @@
+{
+	"category" : "Squit-Hackday",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"name" ],
+	"name" : "SwaSquitInteractiveClone",
+	"pools" : [
+		 ],
+	"super" : "SquitInteractiveClone",
+	"type" : "normal" }

@@ -1,0 +1,14 @@
+{
+	"category" : "Squit-Hackday",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "SwaSquitBrowser",
+	"pools" : [
+		 ],
+	"super" : "SquitBrowser",
+	"type" : "normal" }

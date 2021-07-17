@@ -1,3 +1,3 @@
 rematerializing
-createMaterializedInstance
+squotMaterializeWith: aMaterializer
 	^ originalClass new: itemSlots size

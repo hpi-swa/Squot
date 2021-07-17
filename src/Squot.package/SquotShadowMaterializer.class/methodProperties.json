@@ -2,17 +2,13 @@
 	"class" : {
 		 },
 	"instance" : {
-		"findOrCreateAndRematerialize:" : "jr 7/17/2021 02:06",
 		"initialize" : "jr 7/30/2017 22:04",
-		"materialize:in:" : "jr 4/10/2021 11:58",
 		"objectGraph" : "jr 7/30/2017 02:18",
 		"registry" : "jr 7/29/2017 18:15",
 		"registry:" : "jr 7/6/2017 15:29",
-		"rematerialize:" : "jr 7/17/2021 02:06",
 		"rematerializeGraph:" : "jr 7/10/2021 13:42",
 		"rematerializeGraph:into:" : "jr 7/17/2021 02:11",
 		"sourceGraph" : "jr 7/30/2017 02:20",
 		"sourceGraph:" : "jr 7/30/2017 02:20",
-		"sourceNameOf:ifPresent:" : "jr 7/18/2021 00:19",
 		"targetGraph" : "jr 7/30/2017 02:15",
 		"targetGraph:" : "jr 7/30/2017 02:15" } }

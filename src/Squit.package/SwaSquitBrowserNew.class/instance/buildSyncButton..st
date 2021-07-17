@@ -3,7 +3,7 @@ buildSyncButton: aBuilder
 
 	^ aBuilder pluggableButtonSpec new
 		model: self;
-		label: 'Add Sync';
+		label: 'Sync New Project';
 		action: #addRepository;
 		frame: (LayoutFrame new
 			leftFraction: 0 offset: 0;

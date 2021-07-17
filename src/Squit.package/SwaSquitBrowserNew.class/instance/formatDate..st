@@ -8,5 +8,5 @@ formatDate: aDateAndTime
 	hh := aDateAndTime hours.
 	mm := aDateAndTime minutes asString.
 	^ aDateAndTime year = DateAndTime now year
-		ifTrue: [DD, ' ', MM, ' ']
+		ifTrue: [DD, ' ', MM]
 		ifFalse: [DD, ' ', MM, ' ', YY]

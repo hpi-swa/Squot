@@ -1,5 +1,5 @@
 capturing
-capture: aClass with: aSquotObjectCapturer 
+capture: aClass with: aSquotObjectCapturer ifReplaced: aBlock
 	aClass isMeta ifTrue: [self error: 'Should capture class, not metaclass'].
 	^ SquotClassShadow
 		forPackageNamed: aClass category

@@ -2,7 +2,6 @@
 	"class" : {
 		"initialize" : "jr 6/27/2021 23:08" },
 	"instance" : {
-		"capture:with:" : "jr 6/17/2021 00:38",
 		"defaultMirrorOf:" : "jr 7/4/2021 19:40",
 		"mirrorOf:reachedVia:from:" : "jr 7/17/2021 21:11",
 		"referencesFrom:" : "jr 6/27/2021 22:20",

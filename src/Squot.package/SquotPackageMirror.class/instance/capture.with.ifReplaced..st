@@ -1,5 +1,5 @@
 capturing
-capture: aPackageInfo with: aSquotObjectCapturer
+capture: aPackageInfo with: aSquotObjectCapturer ifReplaced: aBlock
 	| environment mcEnvironment snapshot |
 	aSquotObjectCapturer flag: #unusedArgument.
 	environment := self environmentInMetadata: SquotCurrentMetadata value.

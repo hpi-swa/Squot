@@ -3,7 +3,7 @@
 		"class:" : "jr 12/15/2020 23:32" },
 	"instance" : {
 		"=" : "jr 12/15/2020 23:33",
-		"capture:with:" : "jr 4/8/2021 21:16",
+		"capture:with:ifReplaced:" : "jr 7/17/2021 23:51",
 		"hash" : "jr 12/15/2020 23:33",
 		"initializeSnapshot:of:with:" : "jr 4/8/2021 21:23",
 		"newShadowObject" : "jr 4/3/2021 20:59",

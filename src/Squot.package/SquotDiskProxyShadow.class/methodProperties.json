@@ -4,6 +4,7 @@
 		"squotMirror" : "jr 4/11/2021 18:32" },
 	"instance" : {
 		"=" : "jr 4/8/2021 22:25",
+		"assumeOriginalClassOf:" : "jr 7/18/2021 00:07",
 		"hash" : "jr 4/8/2021 22:22",
 		"proxy" : "jr 4/8/2021 22:25",
 		"sameIn:withName:ifAbsent:" : "jr 8/31/2019 20:43",

@@ -7,7 +7,8 @@
 	"commentStamp" : "jr 3/17/2018 15:29",
 	"instvars" : [
 		"choice",
-		"resetBlock" ],
+		"resetBlock",
+		"previousContent" ],
 	"name" : "SquotMergeDiffNode",
 	"pools" : [
 		 ],

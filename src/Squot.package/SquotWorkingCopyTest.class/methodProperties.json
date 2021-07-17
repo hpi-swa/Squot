@@ -37,6 +37,7 @@
 		"testMergeWithAddedArtifactOnBothSides" : "jr 9/22/2020 00:25",
 		"testMergeWithConflicts" : "jr 9/22/2020 00:33",
 		"testMergeWithConflictsChooseRemote" : "jr 9/22/2020 00:35",
+		"testMergeWithConflictsEditConflictingMethod" : "pre 7/17/2021 14:12",
 		"testMergeWithRemovedArtifactOnBothSides" : "jr 9/22/2020 00:29",
 		"testMergeWithoutConflicts" : "jr 9/22/2020 00:11",
 		"testOldMergeRemovalAndChange" : "jr 1/1/2021 23:57",

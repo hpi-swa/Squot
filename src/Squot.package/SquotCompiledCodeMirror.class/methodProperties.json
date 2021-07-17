@@ -1,0 +1,11 @@
+{
+	"class" : {
+		 },
+	"instance" : {
+		"capture:with:" : "jr 4/8/2021 20:51",
+		"referencesFrom:" : "jr 4/7/2021 23:31",
+		"reflectHeader:of:" : "jr 4/7/2021 23:17",
+		"reflectHeader:of:put:" : "jr 4/7/2021 23:17",
+		"reflectLiteral:of:" : "jr 4/7/2021 23:34",
+		"reflectLiteral:of:put:" : "jr 4/7/2021 23:34",
+		"shadowFactory" : "jr 4/7/2021 22:52" } }

@@ -3,7 +3,7 @@ hash
 	| hash sizeWithoutExcludedProperties |
 	hash := self species hash.
 	sizeWithoutExcludedProperties := self size.
-	self size <= 10 ifTrue:
+	self size <= 10 ifTrue: "the limitation to 10 is inherited from Collection>>hash"
 		[self associationsDo:
 			[:assoc |
 			assoc key ~= #objectsReplacedByNames

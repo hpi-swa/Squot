@@ -1,0 +1,1 @@
+A mirror that reflects a SquotShadowGraph or a SquotObjectGraphDiff, allowing the lookup of mirrors for objects in a graph.

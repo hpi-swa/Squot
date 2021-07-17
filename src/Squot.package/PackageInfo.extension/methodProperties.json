@@ -3,12 +3,14 @@
 		"squotCypressSerializer" : "jr 3/17/2019 00:36",
 		"squotEnvironmentInMetadata:" : "jr 12/23/2019 12:20",
 		"squotEnvironmentOf:" : "jr 12/22/2019 17:32",
+		"squotMirror" : "jr 4/7/2021 22:36",
 		"squotSetEnvironment:inMetadata:" : "jr 12/22/2019 17:32",
 		"squotSetEnvironmentOf:to:" : "jr 12/22/2019 17:24" },
 	"instance" : {
-		"captureWithSquot" : "jr 12/5/2020 00:13",
-		"captureWithSquot:" : "jr 6/27/2017 18:30",
+		"captureWithSquot" : "jr 1/10/2021 23:59",
+		"captureWithSquot:" : "jr 1/11/2021 00:01",
+		"shouldHaveNameAssignedBySquot" : "jr 6/26/2021 22:37",
 		"squotAddTransientStoreInfoTo:" : "jr 7/22/2017 00:16",
 		"squotRemoveTransientStoreInfoFrom:" : "jr 3/5/2017 17:24",
-		"squotShadowFactory" : "jr 9/19/2017 09:14",
-		"squotShouldKeepIdentity" : "jr 11/19/2017 16:43" } }
+		"squotShadowFactory" : "jr 1/10/2021 23:57",
+		"squotShouldKeepIdentity" : "jr 6/26/2021 22:38" } }

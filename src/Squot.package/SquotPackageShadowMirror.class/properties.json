@@ -1,0 +1,14 @@
+{
+	"category" : "Squot-Packages",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "SquotPackageShadowMirror",
+	"pools" : [
+		 ],
+	"super" : "SquotMirror",
+	"type" : "normal" }

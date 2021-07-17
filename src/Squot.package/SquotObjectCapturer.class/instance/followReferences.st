@@ -1,4 +1,5 @@
 private
 followReferences
-	[toBeVisited isEmpty] whileFalse:
-		[self follow: toBeVisited removeFirst].
+	walk do: [:each | | object mirror |
+		object := each key. mirror := each value.
+		self capture: object reflectedIn: mirror].

@@ -1,4 +1,5 @@
 reflection
-reflect: aReference removeFrom: anObject
+reflect: aCollectionElementOrDictionaryEntry removeFrom: aDictionary
 	"Remove the reference from the object."
-	^ aReference removeFrom: anObject
+	^ aCollectionElementOrDictionaryEntry removeFrom: aDictionary reflectedIn: self
+		

@@ -2,9 +2,15 @@
 	"class" : {
 		 },
 	"instance" : {
-		"=" : "jr 12/15/2020 23:35",
-		"hash" : "jr 12/15/2020 23:35",
-		"referencesFrom:" : "jr 12/16/2020 00:25",
-		"reflect:removeFrom:" : "jr 12/24/2020 01:35",
+		"classUsesIdentityHash" : "jr 4/17/2021 17:35",
+		"mirrorOf:reachedVia:from:" : "jr 4/17/2021 18:11",
+		"referencesFrom:" : "jr 4/17/2021 21:14",
+		"reflect:removeFrom:" : "jr 4/8/2021 13:35",
+		"reflectElement:of:" : "jr 4/3/2021 22:20",
+		"reflectElement:of:put:" : "jr 4/10/2021 17:24",
 		"reflectEntry:of:" : "jr 12/16/2020 00:18",
-		"reflectEntry:of:put:" : "jr 12/16/2020 00:18" } }
+		"reflectEntry:of:put:" : "jr 12/16/2020 00:18",
+		"removeDictionaryEntry:from:" : "jr 4/8/2021 13:40",
+		"removeElement:from:" : "jr 4/8/2021 13:37",
+		"shadowFactory" : "jr 1/17/2021 23:02",
+		"shouldObjectHaveNameAssigned:" : "jr 1/10/2021 21:55" } }

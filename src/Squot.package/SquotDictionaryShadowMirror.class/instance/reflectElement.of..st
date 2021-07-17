@@ -1,0 +1,3 @@
+reflection
+reflectElement: aSquotCollectionElement of: aSquotDictionaryShadow 
+	^ aSquotDictionaryShadow atElement: aSquotCollectionElement

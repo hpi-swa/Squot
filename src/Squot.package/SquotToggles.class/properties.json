@@ -6,6 +6,7 @@
 		"EnableRefactoredCherryPick",
 		"EnableRefactoredSave",
 		"IgnoreMethodsInAssumeUnchanged",
+		"UseNewObjectPatching",
 		"UseUnitOfWorkInterface",
 		"WarnAboutUseOfDeprecatedMethods" ],
 	"commentStamp" : "jr 1/4/2020 19:37",

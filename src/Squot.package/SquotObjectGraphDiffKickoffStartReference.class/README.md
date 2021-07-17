@@ -1,0 +1,1 @@
+I am the special case pseudo difference in the reference from a graph diff to the start object of the patched object graph. I update the startName property of the graph being patched.

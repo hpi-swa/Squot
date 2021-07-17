@@ -2,6 +2,7 @@
 	"class" : {
 		"left:right:" : "jr 6/1/2017 12:48" },
 	"instance" : {
+		"applyToShadowNamed:inGraph:" : "jr 7/4/2021 18:00",
 		"asSquotConflicts" : "jr 12/20/2020 23:32",
 		"incoming" : "jr 8/4/2019 00:14",
 		"initializeSquotDiffNodes:with:" : "jr 3/17/2018 14:22",
@@ -9,11 +10,13 @@
 		"left:" : "jr 6/1/2017 12:44",
 		"newSquotDiffNodes" : "jr 11/18/2018 02:35",
 		"object" : "jr 8/4/2019 00:18",
+		"referenceDiffsWithDefaultOwners:reflectedIn:do:" : "jr 7/4/2021 23:26",
 		"right" : "jr 6/1/2017 12:44",
 		"right:" : "jr 6/1/2017 12:44",
+		"rightName" : "jr 7/4/2021 18:39",
 		"squotApplyTo:" : "jr 6/1/2017 12:44",
 		"squotApplyTo:with:" : "jr 6/12/2017 18:15",
 		"squotApplyToLoaded:" : "jr 6/16/2017 12:06",
-		"squotApplyToLoaded:with:" : "jr 7/28/2019 01:32",
+		"squotApplyToLoaded:with:" : "jr 7/17/2021 02:06",
 		"squotChangeAsStringOrText" : "jr 6/2/2017 15:33",
 		"squotHasChanges" : "jr 6/1/2017 12:44" } }

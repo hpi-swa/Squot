@@ -1,3 +1,3 @@
 *Squot
 squotMirror
-	^ SquotDictionaryMirror new
+	^ SquotDictionaryMirror class: self

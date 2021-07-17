@@ -1,17 +1,19 @@
 private
 beginCapturingFrom: anObject
-	| decorated |
+	| decorated mirror |
 	objectGraph := SquotMutableObjectGraph new.
 	objectGraph delegateRegistry: objectRegistry.
+	mirror := (thisContext objectClass: anObject) squotMirror.
+	walk := SquotGraphWalk startingFrom: anObject -> mirror.
 	toBeVisited removeAll.
 	convertedObjects removeAll.
+	replacedObjects removeAll.
 	slotsToConvert removeAll.
 	decorated := SquotCreatorDecorator on: anObject creator: nil slot: nil.
-	anObject shouldHaveNameAssignedBySquot
-		ifTrue: [objectGraph assign: (objectRegistry nameOf: anObject ifAbsent: [self newNameFor: decorated]) to: anObject]
+	(mirror shouldObjectHaveNameAssigned: anObject)
+		ifTrue: [objectGraph assign: (objectRegistry nameOf: anObject ifAbsent: [self newNameFor: anObject reachedFrom: nil via: nil]) to: anObject]
 		ifFalse: [objectGraph assign: objectGraph class anonymousObjectName to: anObject].
 	toBeVisited add: decorated.
 	self followReferences. "give names to objects and create shadows"
-	self convertSlotValues. "redirect slots from live objects to shadows"
 	objectGraph startShadow: (convertedObjects at: anObject).
 	^ objectGraph as: SquotObjectGraph

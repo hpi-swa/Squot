@@ -1,6 +1,7 @@
 {
 	"class" : {
-		"for:" : "jr 6/15/2017 16:55" },
+		"for:" : "jr 6/15/2017 16:55",
+		"squotMirror" : "jr 4/10/2021 12:37" },
 	"instance" : {
 		"=" : "jr 6/17/2017 22:08",
 		"canHaveNameAssignedBySquot" : "jr 4/25/2020 15:42",
@@ -8,7 +9,7 @@
 		"explorerContents" : "jr 12/30/2019 00:42",
 		"hasContentsInExplorer" : "jr 12/30/2019 00:47",
 		"hash" : "jr 6/17/2017 22:08",
-		"initializeFrom:with:" : "jr 6/15/2017 16:58",
+		"initializeFrom:with:" : "jr 1/11/2021 00:08",
 		"materializeAs:with:" : "jr 7/16/2017 22:30",
 		"originalClass" : "jr 6/17/2017 22:15",
 		"printOn:" : "jr 6/16/2017 12:07",

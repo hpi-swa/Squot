@@ -1,0 +1,8 @@
+{
+	"class" : {
+		"class:" : "jr 1/10/2021 22:04" },
+	"instance" : {
+		"capture:with:" : "jr 4/8/2021 00:04",
+		"replacementFor:using:" : "jr 4/8/2021 22:30",
+		"setReflectedClass:" : "jr 1/10/2021 22:05",
+		"shouldObjectHaveNameAssigned:" : "jr 6/26/2021 22:27" } }

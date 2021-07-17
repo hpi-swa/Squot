@@ -2,5 +2,8 @@
 	"class" : {
 		"to:reference:target:rightOwner:" : "jr 12/24/2020 01:30" },
 	"instance" : {
+		"printOn:" : "jr 6/16/2021 21:20",
 		"setReference:leftOwner:rightOwner:target:" : "jr 12/24/2020 01:29",
-		"squotReflectOn:in:" : "jr 12/24/2020 01:37" } }
+		"squotReflectOn:in:" : "jr 12/24/2020 01:37",
+		"squotReflectOn:in:ifNewValue:ifOldValue:" : "jr 6/20/2021 19:12",
+		"squotReflectOn:in:withValue:" : "jr 6/20/2021 19:16" } }

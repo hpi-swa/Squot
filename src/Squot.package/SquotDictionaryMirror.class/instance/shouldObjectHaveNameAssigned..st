@@ -1,0 +1,3 @@
+testing
+shouldObjectHaveNameAssigned: aDictionary
+	^ true

@@ -1,0 +1,3 @@
+testing
+isModification
+	^ objectDiff isModification

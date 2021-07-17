@@ -1,0 +1,22 @@
+{
+	"class" : {
+		"target:" : "jr 4/3/2021 21:14",
+		"targetWithRelevantHash:" : "jr 4/17/2021 17:29" },
+	"instance" : {
+		"=" : "jr 4/8/2021 13:32",
+		"asCapturedReference" : "jr 4/17/2021 18:24",
+		"asMaterializedReference" : "jr 4/17/2021 18:19",
+		"copyWithTarget:" : "jr 4/17/2021 18:25",
+		"hash" : "jr 4/7/2021 21:34",
+		"initialize" : "jr 4/17/2021 17:30",
+		"isCollectionElement" : "jr 4/17/2021 18:07",
+		"isHashRelevant" : "jr 4/17/2021 18:26",
+		"newNameFragment" : "jr 4/4/2021 12:55",
+		"printOn:" : "jr 4/3/2021 22:14",
+		"reflect:in:" : "jr 4/3/2021 22:19",
+		"reflect:in:put:" : "jr 4/3/2021 21:32",
+		"removeFrom:reflectedIn:" : "jr 4/8/2021 13:36",
+		"setElement:" : "jr 4/3/2021 22:14",
+		"setHashRelevant" : "jr 4/17/2021 17:29",
+		"target" : "jr 4/3/2021 22:14",
+		"target:" : "jr 4/3/2021 22:15" } }

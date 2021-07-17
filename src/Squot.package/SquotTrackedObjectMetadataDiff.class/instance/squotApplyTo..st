@@ -7,23 +7,28 @@ squotApplyTo: metadata
 	pathPrefix := OrderedCollection new.
 	"Copy all objects that will change (also if only their referenced objects change)."
 	(sortedKeys select: [:each | (diffs at: each) isModification]) do:
-		[:eachPath | | object |
+		[:eachPath | | object mirror |
 		object := new.
+		mirror := (thisContext objectClass: object) squotMirror.
 		pathPrefix removeAll.
 		eachPath allButLast do:
-			[:each |
+			[:each | | referrer |
 			pathPrefix add: each.
 			(replaced includes: pathPrefix asArray) ifFalse:
-				[object :=
-					each reflect: object in: (thisContext objectClass: object) squotMirror
-						put: (each reflect: object in: (thisContext objectClass: object) squotMirror) copy]]].
+				[referrer := object.
+				object := each reflect: referrer in: mirror
+							put: (each reflect: referrer in: mirror) copy.
+				mirror := mirror mirrorOf: object reachedVia: each from: referrer]]].
 	"Apply the differences."
 	diffs keysAndValuesDo:
-		[:path :diff | | object |
+		[:path :diff | | object mirror |
 		object := new.
+		mirror := (thisContext objectClass: object) squotMirror.
 		self flag: #todo. "The loop below is actually the traversal of a graph."
 		path allButLast do:
-			[:each | object := each reflect: object
-								in: (thisContext objectClass: object) squotMirror].
-		diff squotReflectOn: object in: (thisContext objectClass: object) squotMirror].
+			[:each | | referrer |
+			referrer := object.
+			object := each reflect: referrer in: mirror.
+			mirror := mirror mirrorOf: object reachedVia: each from: referrer].
+		diff squotReflectOn: object in: mirror].
 	^ new

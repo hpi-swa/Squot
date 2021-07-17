@@ -1,6 +1,7 @@
 *Squot-trackable
 captureWithSquot
 	| environment mcEnvironment snapshot |
+	self flag: #deprecated. "Ask the mirror instead."
 	environment := self class squotEnvironmentInMetadata: SquotCurrentMetadata value.
 	mcEnvironment := self workingCopy environment.
 	(mcEnvironment ~= environment and: [environment = Smalltalk globals]) ifTrue:

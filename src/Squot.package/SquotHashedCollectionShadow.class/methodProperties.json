@@ -1,8 +1,10 @@
 {
 	"class" : {
-		 },
+		"squotMirror" : "jr 4/7/2021 22:21" },
 	"instance" : {
 		"addItemSlot:" : "jr 7/29/2017 22:54",
+		"atElement:" : "jr 4/10/2021 16:50",
+		"atElement:put:" : "jr 4/7/2021 22:25",
 		"createMaterializedInstance" : "jr 6/22/2017 00:13",
 		"diffClass" : "jr 6/22/2017 13:07",
 		"diffItems:" : "jr 9/18/2019 20:22",
@@ -12,10 +14,12 @@
 		"explorerContents" : "jr 12/30/2019 00:56",
 		"explorerItemFor:" : "jr 12/30/2019 00:56",
 		"hasContentsInExplorer" : "jr 2/22/2020 17:08",
-		"initializeFrom:with:" : "jr 6/21/2017 18:06",
-		"initializeHashedItems:with:" : "jr 7/29/2017 23:02",
+		"initialize" : "jr 4/7/2021 21:36",
+		"initializeFrom:with:" : "jr 1/11/2021 00:08",
+		"initializeHashedItems:with:" : "jr 4/8/2021 14:18",
 		"itemSlotForValue:" : "jr 7/16/2017 15:38",
 		"itemSlots" : "jr 6/22/2017 00:14",
-		"materializeAs:with:" : "jr 7/29/2017 23:09",
-		"materializeItemsIn:with:" : "jr 7/29/2017 23:09",
+		"materializeAs:with:" : "jr 7/17/2021 02:04",
+		"materializeItemsIn:with:" : "jr 7/17/2021 02:04",
+		"references" : "jr 4/10/2021 16:43",
 		"removeItemSlot:" : "jr 7/29/2017 22:55" } }

@@ -6,7 +6,8 @@
 		 ],
 	"commentStamp" : "jr 12/20/2020 22:11",
 	"instvars" : [
-		"walk" ],
+		"walk",
+		"mirrors" ],
 	"name" : "SquotGraphComparisonWalk",
 	"pools" : [
 		 ],

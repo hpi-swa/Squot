@@ -6,7 +6,7 @@ testReplacedObject2
 	graph := capturer captureGraph: stringMorph.
 	nameOfFontObject := graph delegateRegistry nameOf: stringMorph font.
 	fontShadow := graph shadowNamed: nameOfFontObject.
-	self assert: fontShadow originalClass = stringMorph font class.
-	self assert: fontShadow capturedClass ~= stringMorph font class.
+	self assert: fontShadow value class ~= stringMorph font class;
+		deny: (fontShadow isMemberOf: SquotObjectShadow).
 	self assert: (graph objectNamed: nameOfFontObject) == stringMorph font
 		description: 'object by name should answer the original object'.

@@ -1,6 +1,6 @@
 testing
 testCyclicReferences
-	| array original target newGraph newArray |
+	| array original target diff |
 	array := Array new: 2.
 	array
 		at: 1 put: array;
@@ -8,13 +8,13 @@ testCyclicReferences
 	original := capturer captureGraph: array.
 	array at: 2 put: 3.
 	target := capturer captureGraph: array.
-	newGraph := self rematerializeAsNewGraph: original.
-	newArray := newGraph startObject.
-	newGraph objectNames do: [:each | objectRegistry assign: each to: (newGraph objectNamed: each)].
-	self assert: (newArray at: 1) == newArray.
-	self assert: 2 equals: (newArray at: 2).
+	"Cannot use become: with two different self-referencing arrays because it would mix them. 1->2->1->2->..."
+	array at: 2 put: 2.
+	self assert: (original startObject at: 1) == array.
+	self assert: 2 equals: (original startObject at: 2).
 	"when"
-	self patch: newArray to: target startObject.
+	diff := original squotDiffAgainst: target.
+	patcher apply: diff toLoadedGraph: original mutableCopy.
 	"then"
-	self assert: (newArray at: 1) == newArray.
-	self assert: 3 equals: (newArray at: 2).
+	self assert: (array at: 1) == array.
+	self assert: 3 equals: (array at: 2).

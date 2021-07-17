@@ -3,8 +3,11 @@
 		"class:" : "jr 12/15/2020 23:32" },
 	"instance" : {
 		"=" : "jr 12/15/2020 23:33",
+		"capture:with:" : "jr 4/8/2021 21:07",
 		"hash" : "jr 12/15/2020 23:33",
+		"newShadowObject" : "jr 4/7/2021 20:42",
 		"referencesFrom:" : "jr 12/16/2020 01:51",
 		"reflectIndexableField:in:" : "jr 12/16/2020 00:04",
 		"setClass:" : "jr 12/15/2020 23:33",
+		"shouldObjectHaveNameAssigned:" : "jr 1/10/2021 21:54",
 		"theClass" : "jr 12/15/2020 23:33" } }

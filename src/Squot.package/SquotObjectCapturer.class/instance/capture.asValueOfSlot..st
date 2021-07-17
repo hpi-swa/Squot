@@ -1,6 +1,7 @@
 capturing
 capture: anObject asValueOfSlot: aShadowSlot
 	| captureObject name namedObject decorated |
+	self flag: #deprecated. "Use capture: anObject asValueOf: aReference from: referrerObject reflectedIn: aMirror intoValueOf: shadowsReference from: referrerShadow reflectedIn: aShadowMirror instead"
 	captureObject := self replacementForSlot: aShadowSlot in: enumeratedObject
 		ifFound: [:replacement | replacement]
 		ifNone: [anObject undecorated].

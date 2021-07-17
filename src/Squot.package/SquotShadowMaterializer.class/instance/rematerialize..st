@@ -1,5 +1,6 @@
 public converting
 rematerialize: aShadow
+	self deprecated.
 	^ convertedObjects at: aShadow undecorated
 		ifAbsentPut: [ | materialized name |
 			self assert: (aShadow hasSquotShadowName not or: [sourceGraph includesObjectNamed: aShadow name])

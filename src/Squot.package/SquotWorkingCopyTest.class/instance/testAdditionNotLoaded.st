@@ -5,7 +5,7 @@ testAdditionNotLoaded
 	snapshot := SquotImageStore new add: text at: 'text.txt'; captureSnapshot.
 	patchBuilder := (snapshot patchRelativeToBase: workingCopy) createNewBuilder.
 	(patchBuilder diffAt: 'text.txt') toggleWhetherToLoad.
-	patch := patchBuilder buildPatch.
+	patch := patchBuilder updateRightArtifacts; buildPatch.
 	self deny: (workingCopy includesObjectAt: 'text.txt');
 		deny: (workingCopy loadOrder includes: 'text.txt').
 	"when"

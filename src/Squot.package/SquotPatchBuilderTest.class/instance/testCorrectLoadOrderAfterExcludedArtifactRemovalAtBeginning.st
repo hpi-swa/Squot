@@ -10,5 +10,5 @@ testCorrectLoadOrderAfterExcludedArtifactRemovalAtBeginning
 		buildSnapshot.
 	builder := (patched patchRelativeToBase: original) createNewBuilder.
 	builder resetAt: '1'.
-	editedPatch := builder buildPatch.
+	editedPatch := builder updateRightArtifacts; buildPatch.
 	self assert: #('1' '2') equals: editedPatch patchedLoadOrder.

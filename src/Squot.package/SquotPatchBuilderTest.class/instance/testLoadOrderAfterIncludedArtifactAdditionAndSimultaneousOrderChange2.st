@@ -14,6 +14,7 @@ testLoadOrderAfterIncludedArtifactAdditionAndSimultaneousOrderChange2
 		startingFrom: original;
 		addDiff: (SquotArtifactAddition of: (patched artifactAt: '2'));
 		newLoadOrder: #('3' '2' '1');
+		updateRightArtifacts;
 		buildPatch.
 	self assert: #('3' '2' '1') equals: (editedPatch loadOrderDiff applyTo: #('1' '3'));
 		assert: #('3' '2' '1') equals: editedPatch patchedLoadOrder.

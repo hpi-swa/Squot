@@ -6,7 +6,7 @@ prepareSave
 	loadedPatch diffsDo: [:each | each hasChanges ifTrue: [patchBuilder addDiff: each]].
 	save := self privateNewSave
 		message: (message ifNil: [self defaultMessage]);
-		patch: patchBuilder buildPatch;
+		patch: (patchBuilder updateRightArtifacts; buildPatch);
 		author: pickedVersion author;
 		timestamp: pickedVersion timestamp;
 		unitOfWork: self unitOfWork;

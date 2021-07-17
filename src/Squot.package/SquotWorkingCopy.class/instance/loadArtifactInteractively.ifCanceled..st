@@ -5,5 +5,6 @@ loadArtifactInteractively: anArtifact ifCanceled: cancelBlock
 	self addGlobalObjectsToStore: (SquotSnapshot builder add: anArtifact; buildSnapshot).
 	patch := self newPatchBuilder
 		updateArtifactTo: anArtifact;
+		updateRightArtifacts;
 		buildPatch.
 	^ self loadPatchInteractively: patch ifCanceled: [cancelBlock value]

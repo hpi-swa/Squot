@@ -1,6 +1,6 @@
 merging
 editConflictedMethodIn: aMerge
-	
+	
 	| packageMerge conflictNode |
 	packageMerge := aMerge mergeAt: packagePath.
 	testCase assert:

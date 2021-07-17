@@ -1,18 +1,15 @@
 tests merging
-testMergeWithConflictsEditConflictingMethod
+testMergeWithConflictsEditRemovedMethod
 	
 	| operation |
 	self suppressChangeNotificationsDuring:
-	[scenario := SquotWorkingCopyTestMergeConflictScenario forTestCase: self.
+	[scenario := SquotWorkingCopyTestPackageChangeAndRemovalScenario forTestCase: self.
 	operation := scenario merge.
 	scenario
 		assertConflictedMethodWorkingEditionPresentIn: operation merge;
-		assertConflictedMethodIncomingEditionPresentIn: operation merge;
-		assertThirdMethodWillBeAdded: operation merge;
+		assertConflictedMethodIncomingEditionNotPresentIn: operation merge;
 		editConflictedMethodIn: operation merge.
 	operation applyToWorkingCopy].
-	scenario
-		assertConflictMethodEdited;
-		assertThirdMethodLoaded.
+	scenario assertConflictMethodEdited.
 	"not saved yet"
 	self assert: scenario secondVersion equals: workingCopy loadedVersion.

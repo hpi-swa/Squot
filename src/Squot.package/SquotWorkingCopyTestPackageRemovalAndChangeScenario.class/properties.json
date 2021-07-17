@@ -1,0 +1,14 @@
+{
+	"category" : "Squot-Tests",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "SquotWorkingCopyTestPackageRemovalAndChangeScenario",
+	"pools" : [
+		 ],
+	"super" : "SquotWorkingCopyTestMergeConflictScenario",
+	"type" : "normal" }

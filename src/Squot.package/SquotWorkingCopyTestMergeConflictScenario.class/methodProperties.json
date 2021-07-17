@@ -14,7 +14,7 @@
 		"classFactory" : "jr 10/24/2020 15:13",
 		"createBaseVersion" : "jr 1/28/2020 23:04",
 		"createFirstMergeParent" : "jr 1/28/2020 23:05",
-		"createSecondMergeParent" : "jr 2/1/2020 00:28",
+		"createSecondMergeParent" : "pre 7/17/2021 17:40",
 		"editConflictedMethodIn:" : "pre 7/17/2021 14:44",
 		"firstVersion" : "jr 10/1/2017 01:02",
 		"initializeForTestCase:" : "jr 10/24/2020 15:12",
@@ -23,6 +23,7 @@
 		"packageInfo" : "jr 10/1/2017 01:02",
 		"packagePath" : "jr 10/1/2017 01:02",
 		"sampleClass" : "jr 1/5/2020 20:02",
+		"secondMergeParentDefinitionsFor:" : "pre 7/17/2021 17:40",
 		"secondVersion" : "jr 10/1/2017 01:02",
 		"setUp" : "jr 3/2/2020 22:52",
 		"thirdVersion" : "jr 10/1/2017 01:02" } }

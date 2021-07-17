@@ -14,5 +14,5 @@
 		"rightOwnerMirror:" : "jr 6/20/2021 17:25",
 		"setReference:leftOwner:leftOwnerMirror:rightOwner:rightOwnerMirror:objectDiff:" : "jr 6/27/2021 22:12",
 		"squotReflectOn:in:" : "jr 6/20/2021 17:11",
-		"squotReflectOn:in:ifNewValue:ifOldValue:" : "jr 6/20/2021 19:12",
-		"squotReflectOn:in:withValue:" : "jr 6/20/2021 20:12" } }
+		"squotReflectOn:in:withValue:" : "jr 6/20/2021 20:12",
+		"squotValueShadowFrom:reflectedIn:" : "jr 7/18/2021 00:36" } }

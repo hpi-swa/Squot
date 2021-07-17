@@ -7,58 +7,25 @@ apply: aGraphDiff toLoadedGraph: anObjectGraph
 	"queue diff for start and updating the start reference"
 	walk := SquotGraphWalk startingFrom: {aGraphDiff asStartDiff. anObjectGraph. SquotObjectGraphMirror new. aGraphDiff right. SquotObjectGraphMirror new. aGraphDiff left. SquotObjectGraphMirror new}.
 	walk doNotTrackReferrers.
-	"queue all diffs, each diff contains one or more updates to the references of its target object"
-	"apply all diffs to their objects, updating their references, refreshing the objects when all their references were updated"
-	"updating a reference might entail materializing new objects, filling in of their references should be queued likewise"
 	[walk atEnd] whileFalse:
-		[ | next diff object mirror newShadow shadowMirror oldShadow oldShadowMirror remaining name |
+		[ | next diff object mirror newShadow shadowMirror oldShadow oldShadowMirror remaining |
 		next := walk next. diff := next first. object := next second. mirror := next third. newShadow := next fourth. shadowMirror := next fifth. oldShadow := next sixth. oldShadowMirror := next seventh.
 		object := diff update: object reflectedIn: mirror
 			asMaterializedFrom: newShadow reflectedIn: shadowMirror.
 		"Oftentimes the new object is also the old object (same instance)." self flag: #todo. "But if it is not, we need a new mirror."
 		self take: object asMaterializedFrom: newShadow.
 		remaining := OrderedCollection new.
-		diff referenceDiffsWithDefaultOwners: {newShadow "because we do not have the original shadow readily available, and in most cases the original one does not matter". newShadow} reflectedIn: shadowMirror do:
-			[:each | | block |
-			block :=
-				[:valueShadow |
-				self applying: each
-					fill: valueShadow reachedVia: each reference
-					into: object reflectedIn: mirror
-					ifDeferredUntilActivated: [remaining add: each reference]
-					ifNotTreatedYet:
-						["Could be new or just not yet patched."
-						| value isNew valueMirror valueShadowMirror valueName valueDiff |
-						valueShadowMirror := shadowMirror mirrorOf: valueShadow undecorated reachedVia: each reference from: newShadow undecorated.
-						isNew := false.
-						value := self findOrCreateMaterializedInstanceOf: valueShadow reflectedIn: valueShadowMirror ifNew: [:newValue | isNew := true].
-						valueMirror := mirror mirrorOf: value reachedVia: each reference from: object.
-						valueName := aGraphDiff right nameOf: valueShadow undecorated ifAbsent: [].
-						valueDiff := aGraphDiff diffForObjectNamed: valueName ifAbsent: [].
-						isNew & valueDiff isNil
-							ifTrue: [valueDiff := SquotObjectAddition of: valueShadow].
-						valueDiff
-							ifNil: [each squotReflectOn: object in: mirror withValue: value]
-							ifNotNil:
-								[| oldValueShadow |
-								oldValueShadow := (valueName ifNil: [valueShadow] ifNotNil: [aGraphDiff left shadowNamed: valueName ifAbsent: [valueShadow]])  undecorated.
-								walk add: {valueDiff. value. valueMirror. valueShadow. valueShadowMirror. oldValueShadow. oldShadowMirror mirrorOf: oldValueShadow reachedVia: each reference from: oldShadow} reachedVia: each.
-								remaining add: each reference]]].
-			each squotReflectOn: oldShadow in: oldShadowMirror
-				ifNewValue: block
-				ifOldValue: block].
+		diff referenceDiffsWithDefaultOwners: {oldShadow. newShadow} reflectedIn: shadowMirror do:
+			[:each | self applyReferenceDiff: each to: object reflectedIn: mirror
+						new: newShadow reflectedIn: shadowMirror
+						old: oldShadow reflectedIn: oldShadowMirror
+						from: aGraphDiff
+						ifDeferred: [remaining add: each reference]
+						nextDiffsDo: [:valueDiff :value :valueMirror :valueShadow  :valueShadowMirror :oldValueShadow | walk add: {valueDiff. value. valueMirror. valueShadow. valueShadowMirror. oldValueShadow. oldShadowMirror mirrorOf: oldValueShadow reachedVia: each reference from: oldShadow} reachedVia: each]].
 		remaining
 			ifEmpty: [self reactivate: object]
 			ifNotEmpty: [pendingOutgoingReferences at: object put: remaining].
-		"Assign identifier if any."
-		name := self sourceNameOf: newShadow ifPresent: [:sourceName | sourceName] ifAbsent: [].
-		(mirror shouldObjectHaveNameAssigned: object)
-			ifTrue:
-				[name
-					ifNil: ["Object should normally have a name, but maybe it is just materialized to be removed from a collection. Then it does not need to get a name in the registry or the new graph."]
-					ifNotNil: [objectRegistry assign: name to: object]].
-		name ifNotNil: [anObjectGraph assign: name to: object].
-		"Update references to object."
+		self assignIdentifierIfAnyTo: object reflectedIn: mirror in: anObjectGraph materializedFrom: newShadow.
 		self updateReferrersTo: object materializedFrom: newShadow].
 	pendingOutgoingReferences ifNotEmpty: [self error: 'Objects not fully updated'].
 	^ anObjectGraph

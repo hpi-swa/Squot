@@ -1,0 +1,15 @@
+{
+	"category" : "Squit-Hackday",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"repositoryListIndex",
+		"commitListIndex" ],
+	"name" : "SwaSquitBrowserNew",
+	"pools" : [
+		 ],
+	"super" : "Model",
+	"type" : "normal" }

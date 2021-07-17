@@ -1,6 +1,7 @@
 materializing
 materializeAs: anObject with: aMaterializer
 	| size |
+	self deprecated.
 	size := value basicSize.
 	(size == anObject basicSize and: [value class format == anObject class format])
 		ifFalse: [^ self squotMaterializeWith: aMaterializer].

@@ -16,9 +16,10 @@ errorRemoteAuthenticationFailed: aGitRemoteError
 		title: message.
 	answer caseOf:
 		{[#retry] -> [aGitRemoteError retry].
-		[#cancel] -> [^ nil].
 		[#dropCredentials] ->
 			[self repository removeCredentialsFor: aGitRemoteError remote url.
 			aGitRemoteError retry "will signal NeedGitCredentials"].
+		[#cancel] -> [^ nil].
+		[nil] "Dialog closed" -> [^ nil].
 		[#debug] -> [ToolSet handleError: aGitRemoteError]}.
 	^ answer

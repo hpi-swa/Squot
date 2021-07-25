@@ -11,7 +11,7 @@ jobs:
         exclude:
           - os: macos-latest
             smalltalk: Squeak32-5.2 # 32bit no longer supported on macOS
-      fail-fast: ${{ matrix.smalltalk != "Squeak32-5.2" }}
+      fail-fast: false # Do not let failures on Squeak 5.2 stop other jobs.
     name: ${{ matrix.smalltalk }} on ${{ matrix.os }}
     runs-on: ${{ matrix.os }}
     steps:

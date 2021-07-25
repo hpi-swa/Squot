@@ -16,7 +16,8 @@
 		"diffedPair",
 		"objectsWithChanges",
 		"referrers",
-		"graphDiff" ],
+		"graphDiff",
+		"walk" ],
 	"name" : "SquotDiffBuilder",
 	"pools" : [
 		 ],

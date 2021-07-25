@@ -9,4 +9,5 @@
 		"followReferencesOf:and:ifDifferentShape:ifFromBoth:ifOnlyLeft:ifOnlyRight:" : "jr 7/18/2021 22:10",
 		"followReferencesOfNewObject:do:" : "jr 7/18/2021 20:20",
 		"initialize" : "jr 4/8/2021 13:25",
+		"newObjectsDo:existingObjectsPairsDo:" : "jr 7/25/2021 21:11",
 		"startFrom:and:" : "jr 7/18/2021 11:39" } }

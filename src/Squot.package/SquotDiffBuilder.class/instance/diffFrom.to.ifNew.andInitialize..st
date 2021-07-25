@@ -1,7 +1,6 @@
-diffing low-level
+comparing
 diffFrom: leftShadow to: rightShadow ifNew: newBlock andInitialize: initBlock
 	| diff leftUndecorated |
-	diffedPair := leftShadow -> rightShadow.
 	leftUndecorated := leftShadow undecorated.
 	diff := objectDiffs at: leftUndecorated
 		ifPresent: [:existing | ^ existing]

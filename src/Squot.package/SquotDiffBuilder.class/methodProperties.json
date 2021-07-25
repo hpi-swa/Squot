@@ -2,10 +2,13 @@
 	"class" : {
 		 },
 	"instance" : {
-		"addToBeVisitedLeft:right:" : "jr 7/18/2021 20:02",
-		"addedObject:withName:" : "jr 7/19/2021 00:14",
-		"diffFrom:to:ifNew:andInitialize:" : "jr 6/27/2020 10:27",
-		"followAddedObjectReferences:" : "jr 9/24/2019 14:19",
+		"addChangesTo:when:reachedFrom:isDifferentFrom:reachedFrom:via:" : "jr 7/25/2021 21:44",
+		"addDiffsToGraphDiff" : "jr 7/25/2021 21:15",
+		"addedObject:withName:reachedVia:" : "jr 7/25/2021 20:54",
+		"compare:reachedFrom:with:reachedFrom:via:" : "jr 7/25/2021 21:59",
+		"detectStartObjectReplacement:with:" : "jr 7/25/2021 20:08",
+		"diffFrom:to:ifNew:andInitialize:" : "jr 7/25/2021 20:26",
+		"followNewObject:" : "jr 7/25/2021 22:00",
 		"initialize" : "jr 9/30/2017 19:47",
 		"left" : "jr 9/21/2019 21:03",
 		"left:" : "jr 9/21/2019 21:03",
@@ -13,6 +16,10 @@
 		"noteChangedReferrer:via:to:" : "jr 7/27/2017 00:03",
 		"rememberNameOf:" : "jr 11/19/2020 16:36",
 		"rememberNameOf:orAssume:" : "jr 7/21/2017 00:42",
+		"rememberStartObjectNamesLeft:right:" : "jr 7/25/2021 20:06",
 		"right" : "jr 9/21/2019 21:03",
 		"right:" : "jr 9/21/2019 21:03",
-		"startFromLeft:right:" : "jr 7/25/2021 15:53" } }
+		"searchAndFollowOnce:reachedVia:" : "jr 7/25/2021 21:59",
+		"searchFor:named:ifNew:ifFound:" : "jr 7/25/2021 22:03",
+		"searchOnceFor:ifNew:ifFound:" : "jr 7/25/2021 21:57",
+		"startFromLeft:right:" : "jr 7/25/2021 21:15" } }

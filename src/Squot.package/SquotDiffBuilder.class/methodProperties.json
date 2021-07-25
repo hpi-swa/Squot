@@ -9,11 +9,10 @@
 		"initialize" : "jr 9/30/2017 19:47",
 		"left" : "jr 9/21/2019 21:03",
 		"left:" : "jr 9/21/2019 21:03",
-		"newStartFromLeft:right:" : "jr 7/18/2021 22:41",
 		"noteChanged:" : "jr 8/15/2017 19:03",
 		"noteChangedReferrer:via:to:" : "jr 7/27/2017 00:03",
 		"rememberNameOf:" : "jr 11/19/2020 16:36",
 		"rememberNameOf:orAssume:" : "jr 7/21/2017 00:42",
 		"right" : "jr 9/21/2019 21:03",
 		"right:" : "jr 9/21/2019 21:03",
-		"startFromLeft:right:" : "jr 7/18/2021 20:03" } }
+		"startFromLeft:right:" : "jr 7/25/2021 15:53" } }

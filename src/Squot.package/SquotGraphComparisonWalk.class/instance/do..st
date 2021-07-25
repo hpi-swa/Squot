@@ -6,9 +6,9 @@ do: aBlock
 			[| referrers path |
 			referrers := walk currentReferrer.
 			path := walk currentPath.
-			aBlock
-				value: each first
-				value: each second
-				value: (referrers ifNotNil: [referrers first])
-				value: (referrers ifNotNil: [referrers second])
-				value: path]].
+			aBlock valueWithArguments:
+				{each first.
+				each second.
+				referrers ifNotNil: [referrers first].
+				referrers ifNotNil: [referrers second].
+				path}]].

@@ -8,24 +8,14 @@ apply: aGraphDiff toLoadedGraph: anObjectGraph
 	walk := SquotGraphWalk startingFrom: {aGraphDiff asStartDiff. anObjectGraph. SquotObjectGraphMirror new. aGraphDiff right. SquotObjectGraphMirror new. aGraphDiff left. SquotObjectGraphMirror new}.
 	walk doNotTrackReferrers.
 	[walk atEnd] whileFalse:
-		[ | next diff object mirror newShadow shadowMirror oldShadow oldShadowMirror remaining |
+		[ | next diff object mirror newShadow shadowMirror oldShadow oldShadowMirror |
 		next := walk next. diff := next first. object := next second. mirror := next third. newShadow := next fourth. shadowMirror := next fifth. oldShadow := next sixth. oldShadowMirror := next seventh.
-		object := diff update: object reflectedIn: mirror
-			asMaterializedFrom: newShadow reflectedIn: shadowMirror.
-		"Oftentimes the new object is also the old object (same instance)." self flag: #todo. "But if it is not, we need a new mirror."
-		self take: object asMaterializedFrom: newShadow.
-		remaining := OrderedCollection new.
-		diff referenceDiffsWithDefaultOwners: {oldShadow. newShadow} reflectedIn: shadowMirror do:
-			[:each | self applyReferenceDiff: each to: object reflectedIn: mirror
-						new: newShadow reflectedIn: shadowMirror
-						old: oldShadow reflectedIn: oldShadowMirror
-						from: aGraphDiff
-						ifDeferred: [remaining add: each reference]
-						nextDiffsDo: [:valueDiff :value :valueMirror :valueShadow  :valueShadowMirror :oldValueShadow | walk add: {valueDiff. value. valueMirror. valueShadow. valueShadowMirror. oldValueShadow. oldShadowMirror mirrorOf: oldValueShadow reachedVia: each reference from: oldShadow} reachedVia: each]].
-		remaining
-			ifEmpty: [self reactivate: object]
-			ifNotEmpty: [pendingOutgoingReferences at: object put: remaining].
-		self assignIdentifierIfAnyTo: object reflectedIn: mirror in: anObjectGraph materializedFrom: newShadow.
-		self updateReferrersTo: object materializedFrom: newShadow].
+		self apply: diff from: aGraphDiff to: object reflectedIn: mirror
+			inGraph: anObjectGraph
+			original: oldShadow reflectedIn: oldShadowMirror
+			patched: newShadow reflectedIn: shadowMirror 
+			diffsOfReferenceValuesDo:
+				[:referenceDiff :valueDiff :value :valueMirror :valueShadow :valueShadowMirror :oldValueShadow :oldValueShadowMirror |
+				walk add: {valueDiff. value. valueMirror. valueShadow. valueShadowMirror. oldValueShadow. oldValueShadowMirror} reachedVia: referenceDiff]].
 	pendingOutgoingReferences ifNotEmpty: [self error: 'Objects not fully updated'].
 	^ anObjectGraph

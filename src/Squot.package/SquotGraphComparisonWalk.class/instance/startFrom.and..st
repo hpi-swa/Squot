@@ -1,5 +1,5 @@
 initialize-release
 startFrom: leftObject and: rightObject
 	walk addFirst: {leftObject. rightObject}.
-	mirrors at: leftObject put: (thisContext objectClass: leftObject) squotMirror.
-	mirrors at: rightObject put: (thisContext objectClass: rightObject) squotMirror.
+	mirrors at: leftObject undecorated put: (thisContext objectClass: leftObject undecorated) squotMirror.
+	mirrors at: rightObject undecorated put: (thisContext objectClass: rightObject undecorated) squotMirror.

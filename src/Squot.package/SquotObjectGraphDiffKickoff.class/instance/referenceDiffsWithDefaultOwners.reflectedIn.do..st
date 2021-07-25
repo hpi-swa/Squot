@@ -5,10 +5,7 @@ referenceDiffsWithDefaultOwners: leftAndRightShadows reflectedIn: aMirror do: aB
 		[:each :name | | left right rightName reference isForStart |
 		each isAddition ifFalse:
 			[rightName := each rightName ifNil: [name].
-			reference := SquotObjectGraphReference new
-							objectDiff: each;
-							objectName: rightName;
-							yourself.
+			reference := SquotObjectGraphReference diff: each objectName: rightName.
 			left := graphDiff left shadowNamed: name ifAbsent: [].
 			right := graphDiff right shadowNamed: rightName ifAbsent: [].
 			isForStart := each == graphDiff startDiff.

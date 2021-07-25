@@ -1,6 +1,7 @@
 initialize-release
 diffSlot: leftSlot withCorrespondingSlotIn: rightSlots with: aDiffBuilder
 	| rightSlot slotDiff |
+	self flag: #deprecated.
 	rightSlot := rightSlots associationAt: leftSlot key
 		ifAbsent: [^ slotChanges add:
 				(SquotSlotRemoval key: leftSlot key removedSlot: leftSlot)].

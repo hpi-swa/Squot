@@ -2,7 +2,12 @@
 	"class" : {
 		"startingFrom:and:" : "jr 12/20/2020 21:48" },
 	"instance" : {
-		"do:" : "jr 1/9/2021 19:33",
-		"followReferencesOf:and:ifDifferentShape:ifOnlyLeft:ifOnlyRight:ifAlreadyVisited:" : "jr 4/8/2021 13:30",
+		"addLeft:right:reachedVia:" : "jr 7/18/2021 21:53",
+		"addNewObject:reachedVia:" : "jr 7/18/2021 16:19",
+		"checkPathsTo:ifMultiple:" : "jr 7/18/2021 17:05",
+		"do:" : "jr 7/18/2021 11:38",
+		"followReferencesOf:and:ifDifferentShape:ifFromBoth:ifOnlyLeft:ifOnlyRight:" : "jr 7/18/2021 22:10",
+		"followReferencesOf:and:ifDifferentShape:ifOnlyLeft:ifOnlyRight:ifAlreadyVisited:" : "jr 7/18/2021 17:00",
+		"followReferencesOfNewObject:do:" : "jr 7/18/2021 20:20",
 		"initialize" : "jr 4/8/2021 13:25",
-		"startFrom:and:" : "jr 4/8/2021 13:26" } }
+		"startFrom:and:" : "jr 7/18/2021 11:39" } }

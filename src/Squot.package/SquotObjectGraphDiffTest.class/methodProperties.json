@@ -10,6 +10,7 @@
 		"testAddSubgraph" : "jr 9/24/2019 00:30",
 		"testArrayOfDifferentlyTypedObjects" : "jr 4/4/2020 19:33",
 		"testArrayOfIntegers" : "jr 9/13/2019 11:29",
+		"testByteArray" : "jr 7/25/2021 19:06",
 		"testCyclicReferences" : "jr 6/25/2017 22:22",
 		"testDeepChanges" : "jr 7/26/2017 23:30",
 		"testDeepChanges2" : "jr 7/26/2017 23:31",

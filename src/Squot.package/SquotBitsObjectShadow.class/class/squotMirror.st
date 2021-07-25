@@ -1,3 +1,3 @@
 reflecting
 squotMirror
-	^ SquotBitsMirror new
+	^ SquotBitsShadowMirror new

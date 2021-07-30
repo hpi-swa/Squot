@@ -1,8 +1,9 @@
 private
 compare: leftShadow reachedFrom: leftReferrer with: rightShadow reachedFrom: rightReferrer via: reference
 	| diff |
+	diff := objectDiffs at: leftShadow undecorated.
 	"Give objects with intrinsic state a chance to compute the mutation."
-	diff := leftShadow squotDiffAgainst: rightShadow with: self.
+	diff initializeFrom: leftShadow to: rightShadow.
 	"For other objects, the evaluation of the references is the important part."
 	walk followReferencesOf: leftShadow and: rightShadow
 		ifDifferentShape:
@@ -19,7 +20,7 @@ compare: leftShadow reachedFrom: leftReferrer with: rightShadow reachedFrom: rig
 				ifFound:
 					[:existing |
 					existing undecorated ~= leftShadow 
-						ifTrue: [walk addLeft: existing right: rightShadow reachedVia: nil]]]
+						ifTrue: [self compareLater: existing with: rightShadow reachedVia: nil]]]
 		ifFromBoth:
 			[:leftValue :rightValue :commonPath |
 			self addChangesTo: diff

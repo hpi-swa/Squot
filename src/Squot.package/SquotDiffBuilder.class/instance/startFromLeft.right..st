@@ -4,7 +4,8 @@ startFromLeft: leftStartShadow right: rightStartShadow
 	"The first objects always get a name, so that their diff can be found in the graph diff. If the first objects have different identities, a SquotObjectReplacement is recorded as their diff. Otherwise the references of each pair of encountered object are followed and if the values of the references have been reassigned, diffs are created for the referrers and reference diffs are added to them. If references have been added or removed, this is also added to the diff of the referrers. If a diff is created for a pair of objects, a diff is also created for the pair of referrers, noting that the object referred to has been changed somehow."
 	self initialize.
 	graphDiff left: left; right: right.
-	walk := SquotGraphComparisonWalk startingFrom: leftStartShadow and: rightStartShadow.
+	walk := SquotGraphComparisonWalk new.
+	objectDiffs at: leftStartShadow undecorated put: (walk startFrom: leftStartShadow and: rightStartShadow).
 	self rememberStartObjectNamesLeft: leftStartShadow right: rightStartShadow.
 	self detectStartObjectReplacement: leftStartShadow with: rightStartShadow.
 	walk

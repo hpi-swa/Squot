@@ -1,8 +1,6 @@
 private diffing
-noteChangedReferrer: referringShadow via: aSlot to: anUndecoratedShadow
+noteChangedReferrer: referringShadow via: aReference to: anUndecoratedShadow
 	"Add a deep change for aSlot in the diff of referringShadow."
-	(self diffFrom: referringShadow to: referringShadow
-		ifNew: [referringShadow diffClass new]
-		andInitialize: [])
-		addTransitiveChangeIn: aSlot.
+	(objectDiffs at: referringShadow undecorated)
+		addTransitiveChangeIn: aReference.
 	self noteChanged: referringShadow.

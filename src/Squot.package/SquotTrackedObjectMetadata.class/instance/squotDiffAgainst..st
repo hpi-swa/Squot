@@ -1,8 +1,9 @@
 comparing
 squotDiffAgainst: aTrackedObjectMetadata
-	| walk diffs |
+	| walk diff diffs |
 	diffs := Dictionary new.
-	walk := SquotGraphComparisonWalk startingFrom: self and: aTrackedObjectMetadata.
+	walk := SquotGraphComparisonWalk new.
+	diff := walk startFrom: self and: aTrackedObjectMetadata.
 	walk checkPathsTo: self ifMultiple: [];
 		checkPathsTo: aTrackedObjectMetadata ifMultiple: ["Same object." ^ SquotDiffOfEqualObjects instance].
 	walk do:
@@ -18,4 +19,5 @@ squotDiffAgainst: aTrackedObjectMetadata
 						[walk addLeft: leftValue right: rightValue reachedVia: commonPath last]]
 				ifOnlyLeft: [:removed :oldPath | diffs at: oldPath put: (SquotReferenceRemoval  of: removed from: left reference: oldPath last rightObject: right)]
 				ifOnlyRight: [:added :newPath | diffs at: newPath put: (SquotReferenceAddition to: left reference: newPath last target: added rightOwner: right)]].
-	^ SquotTrackedObjectMetadataDiff left: self right: aTrackedObjectMetadata diffs: diffs
+	diff setLeft: self right: aTrackedObjectMetadata diffs: diffs.
+	^ diff

@@ -1,8 +1,8 @@
 {
 	"class" : {
-		"startingFrom:and:" : "jr 12/20/2020 21:48" },
+		 },
 	"instance" : {
-		"addLeft:right:reachedVia:" : "jr 7/18/2021 21:53",
+		"addLeft:right:reachedVia:" : "jr 7/30/2021 18:58",
 		"addNewObject:reachedVia:" : "jr 7/18/2021 16:19",
 		"checkPathsTo:ifMultiple:" : "jr 7/18/2021 17:05",
 		"do:" : "jr 7/25/2021 21:10",
@@ -10,4 +10,4 @@
 		"followReferencesOfNewObject:do:" : "jr 7/18/2021 20:20",
 		"initialize" : "jr 4/8/2021 13:25",
 		"newObjectsDo:existingObjectsPairsDo:" : "jr 7/25/2021 21:11",
-		"startFrom:and:" : "jr 7/18/2021 11:39" } }
+		"startFrom:and:" : "jr 7/30/2021 19:15" } }

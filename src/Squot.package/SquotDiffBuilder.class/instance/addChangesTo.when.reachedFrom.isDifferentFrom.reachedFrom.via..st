@@ -18,7 +18,7 @@ addChangesTo: diff when: leftValue reachedFrom: leftShadow isDifferentFrom: righ
 										leftOwner: leftShadow target: leftValue
 										rightOwner: rightShadow target: rightValue)]]
 				ifFalse: "left object not visited yet"
-					[walk addLeft: leftValue right: rightValue reachedVia: aReference]]
+					[self compareLater: leftValue with: rightValue reachedVia: aReference]]
 		ifFalse: "Reference was reassigned to a different object or the targets are value objects."
 			[leftValue = rightValue ifFalse:
 				[diff addReferenceDiff:

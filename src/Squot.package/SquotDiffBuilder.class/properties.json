@@ -13,7 +13,6 @@
 		"shadowNames",
 		"toBeVisited",
 		"visited",
-		"diffedPair",
 		"objectsWithChanges",
 		"referrers",
 		"graphDiff",

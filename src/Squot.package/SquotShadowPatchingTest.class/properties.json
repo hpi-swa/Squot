@@ -10,6 +10,7 @@
 		"objectRegistry",
 		"materializedObject",
 		"sharedObject",
+		"diff",
 		"patchedGraph",
 		"nameOfSharedObject",
 		"patchedShadowOfSharedObject" ],

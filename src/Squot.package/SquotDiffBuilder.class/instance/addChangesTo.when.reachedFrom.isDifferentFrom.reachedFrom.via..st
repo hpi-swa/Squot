@@ -8,7 +8,7 @@ addChangesTo: diff when: leftValue reachedFrom: leftShadow isDifferentFrom: righ
 		ifTrue: "The reference itself did not change, but we might later find out that the value has some differences."
 			[| alreadyVisited |
 			alreadyVisited := false.
-			walk checkPathsTo: leftValue ifMultiple: [alreadyVisited := true].
+			walk checkPathsTo: leftValue undecorated ifMultiple: [alreadyVisited := true].
 			alreadyVisited
 				ifTrue:
 					[(objectsWithChanges includes: leftValue undecorated)

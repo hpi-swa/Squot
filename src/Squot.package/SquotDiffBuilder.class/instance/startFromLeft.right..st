@@ -6,6 +6,7 @@ startFromLeft: leftStartShadow right: rightStartShadow
 	graphDiff left: left; right: right.
 	walk := SquotGraphComparisonWalk new.
 	objectDiffs at: leftStartShadow undecorated put: (walk startFrom: leftStartShadow and: rightStartShadow).
+	walk checkPathsTo: leftStartShadow undecorated ifMultiple: []. "Make sure the leftStartShadow is not compared multiple times."
 	self rememberStartObjectNamesLeft: leftStartShadow right: rightStartShadow.
 	self detectStartObjectReplacement: leftStartShadow with: rightStartShadow.
 	walk

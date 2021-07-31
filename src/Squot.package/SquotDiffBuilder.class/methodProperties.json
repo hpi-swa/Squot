@@ -2,7 +2,7 @@
 	"class" : {
 		 },
 	"instance" : {
-		"addChangesTo:when:reachedFrom:isDifferentFrom:reachedFrom:via:" : "jr 7/30/2021 20:27",
+		"addChangesTo:when:reachedFrom:isDifferentFrom:reachedFrom:via:" : "jr 7/30/2021 21:37",
 		"addDiffsToGraphDiff" : "jr 7/25/2021 21:15",
 		"addedObject:withName:reachedVia:" : "jr 7/25/2021 20:54",
 		"compare:reachedFrom:with:reachedFrom:via:" : "jr 7/30/2021 20:27",
@@ -22,5 +22,5 @@
 		"right:" : "jr 9/21/2019 21:03",
 		"searchAndFollowOnce:reachedVia:" : "jr 7/30/2021 20:28",
 		"searchFor:named:ifNew:ifFound:" : "jr 7/25/2021 22:03",
-		"searchOnceFor:ifNew:ifFound:" : "jr 7/25/2021 21:57",
-		"startFromLeft:right:" : "jr 7/30/2021 19:16" } }
+		"searchOnceFor:ifNew:ifFound:" : "jr 7/30/2021 21:37",
+		"startFromLeft:right:" : "jr 7/30/2021 21:37" } }

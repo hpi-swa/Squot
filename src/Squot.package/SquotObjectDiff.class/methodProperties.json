@@ -14,6 +14,7 @@
 		"initialize" : "jr 6/17/2021 00:57",
 		"initializeFrom:to:" : "jr 7/30/2021 19:19",
 		"initializeSquotDiffNodes:with:" : "jr 11/18/2017 22:41",
+		"inspectorClass" : "jr 7/30/2021 21:44",
 		"newSquotDiffNodes" : "jr 11/18/2017 22:29",
 		"postCopy" : "jr 9/9/2017 12:48",
 		"printOn:" : "jr 6/25/2017 14:49",

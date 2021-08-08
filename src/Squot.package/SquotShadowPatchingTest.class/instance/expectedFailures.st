@@ -1,3 +1,3 @@
 tests
 expectedFailures
-	^ #("testUpdatesReferencesOfChangedShadows" "testUpdatesNameMappingConsistently" "not implemented yet")
+	^ #(testUpdatesReferencesOfChangedShadows testUpdatesNameMappingConsistently "not implemented yet")

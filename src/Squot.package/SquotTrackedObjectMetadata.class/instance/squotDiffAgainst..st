@@ -16,7 +16,8 @@ squotDiffAgainst: aTrackedObjectMetadata
 					walk checkPathsTo: leftValue ifMultiple: [alreadyVisited := true];
 						checkPathsTo: rightValue ifMultiple: [alreadyVisited := true].
 					alreadyVisited ifFalse: 
-						[walk addLeft: leftValue right: rightValue reachedVia: commonPath last]]
+						[leftValue ~= rightValue ifTrue:
+							[walk addLeft: leftValue right: rightValue reachedVia: commonPath last]]]
 				ifOnlyLeft: [:removed :oldPath | diffs at: oldPath put: (SquotReferenceRemoval  of: removed from: left reference: oldPath last rightObject: right)]
 				ifOnlyRight: [:added :newPath | diffs at: newPath put: (SquotReferenceAddition to: left reference: newPath last target: added rightOwner: right)]].
 	diff setLeft: self right: aTrackedObjectMetadata diffs: diffs.

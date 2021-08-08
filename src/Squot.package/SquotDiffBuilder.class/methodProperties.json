@@ -6,7 +6,7 @@
 		"addDiffsToGraphDiff" : "jr 7/25/2021 21:15",
 		"addedObject:withName:reachedVia:" : "jr 7/25/2021 20:54",
 		"compare:reachedFrom:with:reachedFrom:via:" : "jr 7/30/2021 20:27",
-		"compareLater:with:reachedVia:" : "jr 7/30/2021 20:27",
+		"compareLater:with:reachedVia:" : "jr 8/8/2021 16:53",
 		"detectStartObjectReplacement:with:" : "jr 7/30/2021 19:12",
 		"diffFrom:to:ifNew:andInitialize:" : "jr 7/30/2021 19:53",
 		"followNewObject:" : "jr 7/25/2021 22:00",

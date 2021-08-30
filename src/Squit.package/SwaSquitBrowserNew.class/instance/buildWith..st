@@ -7,5 +7,4 @@ buildWith: aBuilder
 			self buildCommitList: aBuilder.
 			self buildSyncButton: aBuilder.
 			self buildRepositoryButtons: aBuilder};
-		extent: 300 @ 200;
 		yourself)

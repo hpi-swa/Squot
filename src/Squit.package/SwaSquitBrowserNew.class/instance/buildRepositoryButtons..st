@@ -6,17 +6,12 @@ buildRepositoryButtons: aBuilder
 		children: {
 			aBuilder pluggableButtonSpec new
 				model: self;
-				label: 'Load';
-				action: #actionLoad.
+				label: 'Fetch & Merge';
+				action: #actionFetchAndMerge.
 			aBuilder pluggableButtonSpec new
 				model: self;
-				label: 'Save';
-				action: #actionSave.
-			aBuilder pluggableButtonSpec new
-				model: self;
-				label: 'Save unpushed';
-				action: #actionSaveUnpushed;
-				enabled: false};
+				label: 'Commit & Push';
+				action: #actionCommitAndPush };
 		frame: (LayoutFrame new
 			leftFraction: 0.5 offset: 0;
 			topFraction: 1 offset: self buttonHeight negated;

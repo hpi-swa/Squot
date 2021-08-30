@@ -3,12 +3,13 @@ buildCommitList: aBuilder
 
 	^ aBuilder pluggableMultiColumnListSpec new
 		model: self;
-		list: #commitList;
+		list: #commitColumns;
 		getIndex: #commitListIndex;
 		hScrollBarPolicy: #whenNeeded;
 		setIndex: #commitListIndex:;
 		columnResizings: #(#shrinkWrap #shrinkWrap #shrinkWrap #spaceFill);
 		itemAlignments: #(#right #left #left #left);
+		itemPaddings: {5 @ 0. 5 @ 0. 5 @ 0. 5 @ 0};
 		frame: (LayoutFrame new
 			leftFraction: 0.3 offset: 0;
 			topFraction: 0 offset: 0;

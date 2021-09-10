@@ -1,0 +1,14 @@
+{
+	"category" : "Squot-Reflection",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"name" ],
+	"name" : "SquotGraphElementWithName",
+	"pools" : [
+		 ],
+	"super" : "SquotReference",
+	"type" : "normal" }

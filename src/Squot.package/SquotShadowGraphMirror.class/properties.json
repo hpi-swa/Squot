@@ -1,13 +1,13 @@
 {
-	"category" : "Squot-Diffs",
+	"category" : "Squot-Reflection",
 	"classinstvars" : [
 		 ],
 	"classvars" : [
-		"Mirrors" ],
-	"commentStamp" : "jr 6/27/2021 22:23",
+		 ],
+	"commentStamp" : "",
 	"instvars" : [
 		 ],
-	"name" : "SquotObjectGraphMirror",
+	"name" : "SquotShadowGraphMirror",
 	"pools" : [
 		 ],
 	"super" : "SquotGraphMirror",

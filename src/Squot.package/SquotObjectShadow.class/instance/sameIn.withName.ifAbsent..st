@@ -1,3 +1,3 @@
 accessing
 sameIn: aShadowGraph withName: aName ifAbsent: aBlock
-	^ aShadowGraph shadowNamed: aName ifAbsent: [aBlock value]
+	^ [aShadowGraph class squotMirror reflect: (SquotGraphElementWithName name: aName) of: aShadowGraph] on: KeyNotFound do: [:e | e return: aBlock value]

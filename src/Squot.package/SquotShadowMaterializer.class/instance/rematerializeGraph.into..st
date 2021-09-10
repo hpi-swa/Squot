@@ -4,11 +4,10 @@ rematerializeGraph: aShadowGraph into: targetMutableObjectGraph
 	targetGraph := targetMutableObjectGraph.
 	NotFound := #().
 	aShadowGraph shadows do:
-		[:each | | name existing |
-		name := aShadowGraph nameOf: each.
-		existing := objectRegistry objectNamed: name ifAbsent: [NotFound].
+		[:each | | existing |
+		existing := each sameIn: objectRegistry asIn: aShadowGraph ifAbsent: [NotFound].
 		existing ~~ NotFound
-			ifTrue: [targetMutableObjectGraph assign: name to: existing]].
+			ifTrue: [targetMutableObjectGraph assign: (objectRegistry nameOf: existing) to: existing]].
 	additionDiff := targetMutableObjectGraph squotDiffAgainst: aShadowGraph.
 	(convertedObjects := SquotPatcher new)
 		registry: targetMutableObjectGraph;

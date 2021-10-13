@@ -1,4 +1,4 @@
-as yet unclassified
+actions
 fetchFrom: aRepository remoteNames: aCollection
 
 	[(SquitInteractiveFetch repository: aRepository 	remoteNames: aCollection)

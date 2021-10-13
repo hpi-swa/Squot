@@ -1,4 +1,4 @@
-as yet unclassified
+accessing
 selectedCommit
 
 	self commitListIndex = 0 ifTrue: [^ nil].

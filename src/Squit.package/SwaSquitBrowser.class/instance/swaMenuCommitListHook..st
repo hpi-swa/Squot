@@ -1,4 +1,4 @@
-as yet unclassified
+ui menu
 swaMenuCommitListHook: aMenu
 	<swaMenuCommitList>
 	| activeBranchName isMenuOnActiveBranch onlyOnInactiveBranch commands |

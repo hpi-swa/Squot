@@ -1,4 +1,4 @@
-as yet unclassified
+running
 registerWorkingCopy
 
 	workingCopy := SquotWorkingCopy newOnObjectMemory.

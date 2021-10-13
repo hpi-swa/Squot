@@ -1,6 +1,8 @@
-as yet unclassified
+initialize-release
 initialize
 
 	super initialize.
-	repositoryListIndex := 1.
-	commitListIndex := 1
+	commitListIndex := 1.
+	self repositoryList
+		ifEmpty: [repositoryListIndex := 0]
+		ifNotEmpty: [repositoryListIndex := 1]. 

@@ -1,0 +1,22 @@
+{
+	"category" : "Squit-Hackday",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"username",
+		"password",
+		"displayName",
+		"email",
+		"textPaneUsername",
+		"textPanePassword",
+		"textPaneDisplayName",
+		"textPaneEmail",
+		"column" ],
+	"name" : "SquitCredentialsFillInMorph",
+	"pools" : [
+		 ],
+	"super" : "DialogWindow",
+	"type" : "normal" }

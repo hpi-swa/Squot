@@ -1,4 +1,4 @@
-as yet unclassified
+toolbuilder
 buildSyncButton: aBuilder
 
 	^ aBuilder pluggableButtonSpec new

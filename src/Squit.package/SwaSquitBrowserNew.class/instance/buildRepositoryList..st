@@ -1,4 +1,4 @@
-as yet unclassified
+toolbuilder
 buildRepositoryList: aBuilder
 
 	^ aBuilder pluggableListSpec new
@@ -7,6 +7,7 @@ buildRepositoryList: aBuilder
 		getIndex: #repositoryListIndex;
 		setIndex: #repositoryListIndex:;
 		hScrollBarPolicy: #never;
+		menu: #repositoryListMenu:;
 		frame: (LayoutFrame new
 			leftFraction: 0 offset: 0;
 			topFraction: 0 offset: 0;

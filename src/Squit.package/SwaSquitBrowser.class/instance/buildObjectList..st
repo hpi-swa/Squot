@@ -1,4 +1,4 @@
-as yet unclassified
+toolbuilder
 buildObjectList: builder
 	^ builder pluggableListSpec new
 		model: self;

@@ -1,4 +1,4 @@
-as yet unclassified
+toolbuilder
 buildRepositoryButtons: aBuilder
 
 	^ aBuilder pluggablePanelSpec new

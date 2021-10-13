@@ -1,4 +1,4 @@
-as yet unclassified
+ui menu
 swaMenuProjectListWorkingCopyHook: aMenu
 	<swaMenuProjectList>
 	<menuPriority: 50>

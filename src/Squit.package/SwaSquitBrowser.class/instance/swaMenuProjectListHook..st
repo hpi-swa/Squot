@@ -1,4 +1,4 @@
-as yet unclassified
+ui menu
 swaMenuProjectListHook: aMenu
 	<swaMenuProjectList>
 	<menuPriority: 100>

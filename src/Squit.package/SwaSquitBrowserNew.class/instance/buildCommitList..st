@@ -1,4 +1,4 @@
-as yet unclassified
+toolbuilder
 buildCommitList: aBuilder
 
 	^ aBuilder pluggableMultiColumnListSpec new
@@ -10,6 +10,7 @@ buildCommitList: aBuilder
 		columnResizings: #(#shrinkWrap #shrinkWrap #shrinkWrap #spaceFill);
 		itemAlignments: #(#right #left #left #left);
 		itemPaddings: {5 @ 0. 5 @ 0. 5 @ 0. 5 @ 0};
+		menu: #commitListMenu:;
 		frame: (LayoutFrame new
 			leftFraction: 0.3 offset: 0;
 			topFraction: 0 offset: 0;

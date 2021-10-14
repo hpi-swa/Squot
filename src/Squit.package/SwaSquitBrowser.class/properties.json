@@ -1,5 +1,5 @@
 {
-	"category" : "Squit-Hackday",
+	"category" : "Squit-Lecture",
 	"classinstvars" : [
 		 ],
 	"classvars" : [
@@ -8,7 +8,7 @@
 	"instvars" : [
 		"repositoryListIndex",
 		"commitListIndex" ],
-	"name" : "SwaSquitBrowserNew",
+	"name" : "SwaSquitBrowser",
 	"pools" : [
 		 ],
 	"super" : "Model",

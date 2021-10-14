@@ -8,8 +8,8 @@ actionCredentialsEdit
 	remoteUrl := (repository remoteNames collect:
 		[:each | (gitRepository remoteUrl: each)]
 		thenSelect: [:each | each beginsWith: 'http']) first.
-	credentials := SquitCredentialsFillInMorph requestCredentials
-		ifNil: [^ nil].
+	credentials := SquitCredentialsFillInMorph requestCredentials.
+	credentials ifNil: [^ nil].
 		
 	repository
 		addCredentialsFor: remoteUrl

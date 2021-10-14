@@ -3,8 +3,8 @@ buildWith: aBuilder
 
 	^ aBuilder build: ((self buildWindowWith: aBuilder)
 		children: {
-			self buildRepositoryList: aBuilder.
+			self buildRepositoryLabel: aBuilder.
 			self buildCommitList: aBuilder.
-			self buildSyncButton: aBuilder.
+			self buildRepositoryButton: aBuilder.
 			self buildRepositoryButtons: aBuilder};
 		yourself)

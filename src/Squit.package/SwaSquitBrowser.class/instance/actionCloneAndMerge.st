@@ -10,3 +10,4 @@ actionCloneAndMerge
 	self actionMergeInteractive: false.
 	Project current addDeferredUIMessage: [self refresh].
 	self browseRepository.
+	self refresh.

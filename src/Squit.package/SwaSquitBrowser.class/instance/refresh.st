@@ -1,5 +1,6 @@
 toolbuilder
 refresh
 
-	self changed: #repositoryList.
 	self changed: #commitColumns.
+	self changed: #repositoryButtonText.
+	self changed: #repositoryText

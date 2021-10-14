@@ -1,0 +1,1 @@
+I provide a UI to browse and manipulate exactly one Git repository and its history. I am intended to be a simpler version of the SquitBrowser that can be used in the SWA lecture.

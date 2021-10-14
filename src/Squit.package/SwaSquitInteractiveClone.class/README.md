@@ -1,0 +1,1 @@
+I am a streamlined version of SquitInteractiveClone. I only need a repository URL, I create folders and names automatically.

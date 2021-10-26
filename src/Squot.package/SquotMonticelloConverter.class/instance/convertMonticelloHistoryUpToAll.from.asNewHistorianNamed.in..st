@@ -29,6 +29,5 @@ convertMonticelloHistoryUpToAll: mcVersions from: aMCRepository asNewHistorianNa
 				parents: versions;
 				message: ('Merge versions using {1}' format: {self className});
 				timestamp: TimeStamp now]).
-	self notify: ('Please merge the following branches into {1} before proceeding:\\{2}' withCRs format: {historianName. tmpHistorianNames asCommaString}).
 	
 	self cleanUpTemporaryHistorians.

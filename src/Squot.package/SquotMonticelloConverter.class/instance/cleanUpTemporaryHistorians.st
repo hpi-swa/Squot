@@ -1,6 +1,6 @@
 private
 cleanUpTemporaryHistorians
 
-	temporaryHistorians removeAllSuchThat: [:historian |
-		squotRepository delete: historian.
-		true].
+	temporaryHistorians
+		do: [:historian | squotRepository delete: historian];
+		removeAll.

@@ -4,7 +4,7 @@
 		"initialize" : "jr 4/18/2018 21:28",
 		"initializeSelfUpdate" : "jr 4/18/2018 21:27",
 		"open" : "fn 4/11/2017 09:09",
-		"registerInWorldMenu" : "jr 4/15/2017 13:34",
+		"registerInWorldMenu" : "ek 10/26/2021 20:45",
 		"selfUpdate" : "jr 3/7/2020 00:09",
 		"selfUpdateBranch" : "jr 4/21/2018 22:22",
 		"selfUpdateBranch:" : "jr 4/18/2018 22:37",

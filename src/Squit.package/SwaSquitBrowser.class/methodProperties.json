@@ -1,6 +1,9 @@
 {
 	"class" : {
-		"open" : "ek 7/18/2021 10:05" },
+		"initialize" : "ek 10/14/2021 13:40",
+		"open" : "ek 7/18/2021 10:05",
+		"registerInWorldMenu" : "ek 10/26/2021 20:49",
+		"unregisterFromWorldMenu" : "ek 10/14/2021 13:43" },
 	"instance" : {
 		"actionAddOrRemoveTrackedPackages" : "ek 9/21/2021 19:24",
 		"actionCloneAndMerge" : "ek 10/14/2021 13:20",

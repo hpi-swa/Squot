@@ -1,3 +1,3 @@
-as yet unclassified
+instance creation
 on: anArtifact
 	^ self new artifact: anArtifact; yourself

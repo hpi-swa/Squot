@@ -1,4 +1,4 @@
-as yet unclassified
+directory tree
 subDirectoriesOf: aDirectory
 	"provide a list of subdirectory names sorted alphnum-no-case"
 

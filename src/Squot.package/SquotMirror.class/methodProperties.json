@@ -2,6 +2,14 @@
 	"class" : {
 		 },
 	"instance" : {
+		"canHaveReferences:" : "jr 7/18/2021 22:11",
+		"capture:with:ifReplaced:" : "jr 7/17/2021 23:52",
+		"is:comparableTo:" : "jr 7/18/2021 20:09",
+		"mirrorForReplacement:" : "jr 4/8/2021 20:30",
+		"mirrorOf:reachedVia:from:" : "jr 4/11/2021 20:56",
+		"newDiffFrom:to:" : "jr 7/30/2021 18:59",
 		"referencesFrom:" : "jr 12/16/2020 00:17",
 		"reflect:of:" : "jr 12/20/2020 22:05",
-		"reflect:of:put:" : "jr 12/24/2020 01:21" } }
+		"reflect:of:put:" : "jr 12/24/2020 01:21",
+		"replacementFor:using:" : "jr 4/8/2021 20:30",
+		"shouldObjectHaveNameAssigned:" : "jr 1/10/2021 21:49" } }

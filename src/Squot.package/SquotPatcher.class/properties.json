@@ -1,0 +1,19 @@
+{
+	"category" : "Squot-Diffs",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "jr 6/11/2021 23:26",
+	"instvars" : [
+		"objectRegistry",
+		"sourceGraph",
+		"pendingOutgoingReferences",
+		"pendingIncomingReferences",
+		"pendingIncomingReferencesForHash",
+		"treatedObjects" ],
+	"name" : "SquotPatcher",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }

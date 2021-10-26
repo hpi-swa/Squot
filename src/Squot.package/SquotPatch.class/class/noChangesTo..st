@@ -1,3 +1,3 @@
 instance creation
 noChangesTo: anObjectContainer
-	^ self builder startingFrom: anObjectContainer; buildPatch
+	^ self builder startingFrom: anObjectContainer; updateRightArtifacts; buildPatch

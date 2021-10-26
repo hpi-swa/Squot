@@ -2,9 +2,9 @@
 	"class" : {
 		 },
 	"instance" : {
-		"addShadow:of:" : "jr 4/25/2020 16:15",
+		"addShadow:of:" : "jr 4/4/2021 13:18",
 		"answer:whenAskedForTheNameOf:" : "jr 7/28/2019 11:03",
-		"applyDiff:toShadowNamed:" : "jr 9/25/2019 20:03",
+		"applyDiff:toShadowNamed:" : "jr 7/4/2021 17:51",
 		"applyDiff:toStartObjectWith:" : "jr 8/4/2019 00:31",
 		"assign:to:" : "jr 7/30/2017 01:27",
 		"assign:toShadow:" : "jr 9/25/2019 14:50",
@@ -12,4 +12,5 @@
 		"ifNecessaryAssignNameToShadow:" : "jr 4/8/2018 00:37",
 		"mutableCopy" : "jr 7/30/2017 02:58",
 		"nameOf:ifAbsentAssign:" : "jr 9/25/2019 20:29",
-		"refreshStartShadow" : "jr 4/7/2019 20:57" } }
+		"refreshStartShadow" : "jr 4/7/2019 20:57",
+		"removeObjectNamed:" : "jr 7/17/2021 21:05" } }

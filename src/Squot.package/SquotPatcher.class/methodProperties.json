@@ -1,0 +1,20 @@
+{
+	"class" : {
+		 },
+	"instance" : {
+		"apply:from:to:reflectedIn:inGraph:original:reflectedIn:patched:reflectedIn:diffsOfReferenceValuesDo:" : "jr 7/25/2021 18:21",
+		"apply:toLoadedGraph:" : "jr 7/25/2021 18:25",
+		"applyReferenceDiff:to:reflectedIn:new:reflectedIn:old:reflectedIn:from:ifDeferred:nextDiffsDo:" : "jr 7/18/2021 00:56",
+		"applying:fill:reachedVia:into:reflectedIn:ifDeferredUntilActivated:ifNotTreatedYet:" : "jr 7/18/2021 00:29",
+		"assignIdentifierIfAnyTo:reflectedIn:in:materializedFrom:" : "jr 7/18/2021 00:57",
+		"fill:reachedVia:into:reflectedIn:ifDeferredUntilActivated:ifUnavailable:" : "jr 6/13/2021 17:35",
+		"findOrCreateMaterializedInstanceOf:reflectedIn:ifNew:" : "jr 6/17/2021 23:38",
+		"initialize" : "jr 6/13/2021 12:08",
+		"reactivate:" : "jr 7/4/2021 18:54",
+		"registry:" : "jr 6/12/2021 17:07",
+		"sourceGraph:" : "jr 6/12/2021 01:37",
+		"sourceNameOf:ifPresent:ifAbsent:" : "jr 6/13/2021 19:26",
+		"take:asMaterializedFrom:" : "jr 6/13/2021 12:08",
+		"updateReference:from:reflectedIn:for:withValue:" : "jr 6/20/2021 21:34",
+		"updateReferrersTo:materializedFrom:" : "jr 6/20/2021 21:33",
+		"wasReactivated:" : "jr 6/13/2021 10:35" } }

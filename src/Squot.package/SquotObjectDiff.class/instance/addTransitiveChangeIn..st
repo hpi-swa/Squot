@@ -1,5 +1,5 @@
 initialize-release
-addTransitiveChangeIn: aSlot
+addTransitiveChangeIn: aReference
 	| change |
-	change := (SquotSlotTransitiveChange key: aSlot key).
+	change := SquotSlotTransitiveChange key: aReference asSlotDiffKey.
 	slotChanges at: change key ifAbsent: [slotChanges add: change].

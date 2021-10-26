@@ -9,6 +9,7 @@ patchWithLoadOrderChange
 		addDiff: (SquotArtifactDiffMock path: '1');
 		addDiff: (SquotArtifactDiffMock path: '2');
 		newLoadOrder: #('2' '1');
+		updateRightArtifacts;
 		buildPatch.
 	self assert: patch diffs size = 2;
 		assert: (patch loadOrderDiff applyTo: #('1' '2')) = #('2' '1').

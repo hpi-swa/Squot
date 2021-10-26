@@ -8,7 +8,7 @@ testMetadataModification
 		serializer: SquotStonFileCodec.
 	fileStore add: (SquotArtifact new
 					path: 'example';
-					content: (SquotShadowGraph new startShadow: true);
+					content: (SquotShadowGraph new startShadow: true captureWithSquot);
 					storeInfo: metadata;
 					yourself).
 	changed := (fileStore artifactAt: 'example') snapshot copy.

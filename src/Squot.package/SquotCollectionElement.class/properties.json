@@ -1,0 +1,15 @@
+{
+	"category" : "Squot-Reflection",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"target",
+		"isHashRelevant" ],
+	"name" : "SquotCollectionElement",
+	"pools" : [
+		 ],
+	"super" : "SquotReference",
+	"type" : "normal" }

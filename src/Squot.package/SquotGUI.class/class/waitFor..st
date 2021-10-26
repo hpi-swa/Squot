@@ -8,8 +8,10 @@ waitFor: aWaitable
 	Project current spawnNewProcess.
 	"Start another process that waits in the background, then reinstantes oldProcess as UI process. The oldProcess waits until all of this is over. The reason for a third process is that oldProcess must be suspended temporarily before it can be reinstated in Project class>>resumeProcess:."
 	[[[answer := aWaitable wait]
+		on: BrokenPromise do:
+			[:bp | bp ifError: [:error | exception := error. bp return] ifNotError: [bp pass]]
 		on: Error do:
-			[:e | exception := e]]
+			[:e | exception := e. e return]]
 		ensure:
 			[| canContinue |
 			newProcess := Project uiProcess.

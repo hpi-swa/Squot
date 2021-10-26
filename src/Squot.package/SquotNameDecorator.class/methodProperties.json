@@ -1,6 +1,7 @@
 {
 	"class" : {
-		"on:withName:" : "jr 2/23/2020 20:06" },
+		"on:withName:" : "jr 2/23/2020 20:06",
+		"squotMirror" : "jr 6/13/2021 22:36" },
 	"instance" : {
 		"=" : "jr 6/20/2017 13:37",
 		"decorated:withName:" : "jr 6/20/2017 13:36",
@@ -8,5 +9,5 @@
 		"hash" : "jr 6/20/2017 12:49",
 		"name" : "jr 6/20/2017 12:49",
 		"name:" : "jr 6/20/2017 12:49",
-		"printOn:" : "jr 6/20/2017 13:41",
+		"printOn:" : "jr 6/9/2021 23:12",
 		"sameIn:withName:ifAbsent:" : "jr 8/31/2019 20:24" } }

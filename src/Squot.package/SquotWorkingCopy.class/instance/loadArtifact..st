@@ -4,5 +4,6 @@ loadArtifact: anArtifact
 	| patch |
 	patch := self newPatchBuilder
 		updateArtifactTo: anArtifact;
+		updateRightArtifacts;
 		buildPatch.
 	self applyPatch: patch

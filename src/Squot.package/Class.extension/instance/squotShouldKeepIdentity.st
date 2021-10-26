@@ -1,4 +1,4 @@
 *Squot-trackable
 squotShouldKeepIdentity
-	"Class identified by its name already"
-	^ false
+	"While a class is identified by its name, we should keep the class if it is already loaded."
+	^ true

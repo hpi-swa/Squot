@@ -4,10 +4,10 @@
 	"instance" : {
 		"addTo:" : "jr 9/23/2019 23:24",
 		"addTo:with:" : "jr 7/16/2017 00:36",
+		"asReference" : "jr 4/10/2021 12:25",
 		"diffToBaseInstVar:" : "jr 9/16/2019 21:31",
 		"instVarName" : "jr 6/17/2017 20:02",
 		"lookupIn:" : "jr 7/16/2017 15:33",
-		"materializeIn:with:" : "jr 9/9/2017 13:31",
 		"removeFrom:" : "jr 9/25/2019 20:24",
 		"removeFrom:with:" : "jr 9/9/2017 14:20",
 		"squotDiffAgainst:" : "jr 9/16/2019 21:30" } }

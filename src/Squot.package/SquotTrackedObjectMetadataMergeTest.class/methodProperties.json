@@ -3,4 +3,6 @@
 		 },
 	"instance" : {
 		"testAdditionConflict" : "jr 1/9/2021 19:46",
+		"testApplyIsNonDestructive" : "jr 4/8/2021 13:45",
+		"testEverythingIsAValue" : "jr 4/8/2021 13:43",
 		"testReplacesStrings" : "jr 1/9/2021 19:46" } }

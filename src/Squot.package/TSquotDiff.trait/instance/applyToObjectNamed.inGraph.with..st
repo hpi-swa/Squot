@@ -1,5 +1,6 @@
 Squot-diff-patching
 applyToObjectNamed: name inGraph: anObjectGraph with: aPatcher
+	self isThisEverCalled.
 	^ aPatcher
 		apply: self
 		toLoaded: (anObjectGraph

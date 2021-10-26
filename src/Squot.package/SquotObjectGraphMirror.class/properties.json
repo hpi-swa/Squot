@@ -1,0 +1,14 @@
+{
+	"category" : "Squot-Diffs",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		"Mirrors" ],
+	"commentStamp" : "jr 6/27/2021 22:23",
+	"instvars" : [
+		 ],
+	"name" : "SquotObjectGraphMirror",
+	"pools" : [
+		 ],
+	"super" : "SquotGraphMirror",
+	"type" : "normal" }

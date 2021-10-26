@@ -1,0 +1,3 @@
+reflection
+reflectLiteral: aCompiledCodeLiteralReference of: aCompiledCode
+	^ aCompiledCode literalAt: aCompiledCodeLiteralReference literalIndex

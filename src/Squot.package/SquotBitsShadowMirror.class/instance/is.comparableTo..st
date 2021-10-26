@@ -1,0 +1,3 @@
+comparing
+is: aSquotBitsObjectShadow comparableTo: aSquotBitsObjectShadow2
+	^ aSquotBitsObjectShadow isComparableTo: aSquotBitsObjectShadow2

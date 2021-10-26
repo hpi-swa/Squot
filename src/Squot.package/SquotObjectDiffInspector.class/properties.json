@@ -1,0 +1,14 @@
+{
+	"category" : "Squot-Dev-Tools",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "SquotObjectDiffInspector",
+	"pools" : [
+		 ],
+	"super" : "Inspector",
+	"type" : "normal" }

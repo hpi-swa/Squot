@@ -8,6 +8,7 @@
 	"instvars" : [
 		"convertedObjects",
 		"copiedObjects",
+		"walk",
 		"toBeVisited",
 		"objectRegistry",
 		"enumeratedObject",

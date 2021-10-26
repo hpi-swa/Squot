@@ -2,6 +2,7 @@ capturing
 capture: anObject as: shadowObjectFactory
 	| newShadow |
 	"if capturedObject is replaced by anObject for capturing, remember the capturedObject's name"
+	self flag: #deprecated. "Superseded by capture: anObject in: aSquotMirror"
 	anObject ~~ capturedObject
 		ifTrue: [objectGraph answer: (objectGraph nameOf: capturedObject)
 				whenAskedForTheNameOf: anObject].

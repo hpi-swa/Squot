@@ -12,5 +12,5 @@ testCorrectLoadOrderAfterExcludedArtifactRemovalAndSimultaneousOrderChange
 		buildSnapshot.
 	builder := (patched patchRelativeToBase: original) createNewBuilder.
 	builder resetAt: '2'.
-	editedPatch := builder buildPatch.
+	editedPatch := builder updateRightArtifacts; buildPatch.
 	self assert: #('3' '1' '2') equals: editedPatch patchedLoadOrder.

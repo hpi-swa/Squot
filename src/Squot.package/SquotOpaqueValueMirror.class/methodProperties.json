@@ -1,0 +1,12 @@
+{
+	"class" : {
+		 },
+	"instance" : {
+		"=" : "jr 4/8/2021 20:17",
+		"canHaveReferences:" : "jr 7/18/2021 22:35",
+		"capture:with:ifReplaced:" : "jr 7/17/2021 23:58",
+		"hash" : "jr 4/8/2021 20:16",
+		"is:comparableTo:" : "jr 7/18/2021 20:14",
+		"newDiffFrom:to:" : "jr 8/8/2021 17:30",
+		"referencesFrom:" : "jr 4/8/2021 20:14",
+		"shouldObjectHaveNameAssigned:" : "jr 4/8/2021 20:15" } }

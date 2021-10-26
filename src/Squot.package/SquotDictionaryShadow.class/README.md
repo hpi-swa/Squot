@@ -1,1 +1,6 @@
 I am a captured Dictionary. My item slots (for HashedCollection items) are the shadows of the associations contained in me.
+
+Materialization of dictionaries is a bit tricky:
+	1. The dictionary must only be reactivated (rehashed) once all associations are materialized and in place.
+	2. Associations must only be added once their key is materialized and in place. They must not be added in an intermediary nil->nil state because their key hash is still wrong.
+Therefore, all references to associations indicate that the hash of the reference value is significant. This will cause that the associations are not added to the Dictionary until they are fully reactivated (which is done only after all their references, to the key and value, have been filled in). While IdentityDictionaries do not need the hash of the key, but only its identity hash, still they must wait until the key is filled into the association. For simplicity, these associations are also added only after they have been fully reactivated.

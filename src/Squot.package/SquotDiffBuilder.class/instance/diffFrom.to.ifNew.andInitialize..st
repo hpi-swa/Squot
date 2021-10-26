@@ -1,7 +1,7 @@
-diffing low-level
+comparing
 diffFrom: leftShadow to: rightShadow ifNew: newBlock andInitialize: initBlock
 	| diff leftUndecorated |
-	diffedPair := leftShadow -> rightShadow.
+	self deprecated: 'Rely on the walk (SquotGraphComparisonWalk) instead'.
 	leftUndecorated := leftShadow undecorated.
 	diff := objectDiffs at: leftUndecorated
 		ifPresent: [:existing | ^ existing]

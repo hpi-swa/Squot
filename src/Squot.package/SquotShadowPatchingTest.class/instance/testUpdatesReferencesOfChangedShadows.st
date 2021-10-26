@@ -1,5 +1,6 @@
 tests
 testUpdatesReferencesOfChangedShadows
+	self patchGraph.
 	self assert:
 			(patchedGraph startShadow slots at: 1) value undecorated
 				== patchedShadowOfSharedObject

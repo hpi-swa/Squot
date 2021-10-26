@@ -1,8 +1,13 @@
 {
 	"class" : {
-		"startingFrom:and:" : "jr 12/20/2020 21:48" },
+		 },
 	"instance" : {
-		"do:" : "jr 1/9/2021 19:33",
-		"followReferencesOf:and:ifDifferentShape:ifOnlyLeft:ifOnlyRight:ifAlreadyVisited:" : "jr 12/21/2020 23:35",
-		"initialize" : "jr 12/21/2020 01:11",
-		"startFrom:and:" : "jr 12/20/2020 21:26" } }
+		"addLeft:right:reachedVia:" : "jr 8/8/2021 16:53",
+		"addNewObject:reachedVia:" : "jr 7/18/2021 16:19",
+		"checkPathsTo:ifMultiple:" : "jr 7/18/2021 17:05",
+		"do:" : "jr 7/25/2021 21:10",
+		"followReferencesOf:and:ifDifferentShape:ifFromBoth:ifOnlyLeft:ifOnlyRight:" : "jr 7/18/2021 22:10",
+		"followReferencesOfNewObject:do:" : "jr 7/18/2021 20:20",
+		"initialize" : "jr 4/8/2021 13:25",
+		"newObjectsDo:existingObjectsPairsDo:" : "jr 7/25/2021 21:11",
+		"startFrom:and:" : "jr 7/30/2021 19:15" } }

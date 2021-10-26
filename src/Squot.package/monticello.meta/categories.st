@@ -3,9 +3,11 @@ SystemOrganization addCategory: #'Squot-Core'!
 SystemOrganization addCategory: #'Squot-WorkingCopies'!
 SystemOrganization addCategory: #'Squot-ImageStore'!
 SystemOrganization addCategory: #'Squot-Exceptions'!
+SystemOrganization addCategory: #'Squot-Reflection'!
 SystemOrganization addCategory: #'Squot-Capturing'!
 SystemOrganization addCategory: #'Squot-Shadows'!
 SystemOrganization addCategory: #'Squot-Diffs'!
+SystemOrganization addCategory: #'Squot-Diffs-Internal'!
 SystemOrganization addCategory: #'Squot-Diffs-Generic'!
 SystemOrganization addCategory: #'Squot-Merging'!
 SystemOrganization addCategory: #'Squot-Packages'!
@@ -16,6 +18,7 @@ SystemOrganization addCategory: #'Squot-Serialization-Cypress'!
 SystemOrganization addCategory: #'Squot-Tools'!
 SystemOrganization addCategory: #'Squot-Tools-Packages'!
 SystemOrganization addCategory: #'Squot-Tools-Support'!
+SystemOrganization addCategory: #'Squot-Dev-Tools'!
 SystemOrganization addCategory: #'Squot-Monticello-Converter'!
 SystemOrganization addCategory: #'Squot-Deprecated'!
 SystemOrganization addCategory: #'Squot-Tests'!

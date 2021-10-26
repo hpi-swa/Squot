@@ -1,0 +1,3 @@
+capturing
+newNameFragment
+	^ name

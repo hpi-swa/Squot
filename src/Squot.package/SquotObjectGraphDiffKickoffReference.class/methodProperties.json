@@ -1,0 +1,18 @@
+{
+	"class" : {
+		"reference:leftOwner:reflectedIn:rightOwner:reflectedIn:objectDiff:" : "jr 6/27/2021 22:10" },
+	"instance" : {
+		"isAddition" : "jr 6/20/2021 22:06",
+		"isModification" : "jr 6/20/2021 22:14",
+		"isRemoval" : "jr 6/20/2021 22:14",
+		"leftOwnerMirror" : "jr 6/20/2021 17:25",
+		"leftOwnerMirror:" : "jr 6/20/2021 17:25",
+		"objectDiff" : "jr 6/20/2021 17:12",
+		"objectDiff:" : "jr 6/20/2021 17:12",
+		"printOn:" : "jr 6/20/2021 17:14",
+		"rightOwnerMirror" : "jr 6/20/2021 17:25",
+		"rightOwnerMirror:" : "jr 6/20/2021 17:25",
+		"setReference:leftOwner:leftOwnerMirror:rightOwner:rightOwnerMirror:objectDiff:" : "jr 6/27/2021 22:12",
+		"squotReflectOn:in:" : "jr 6/20/2021 17:11",
+		"squotReflectOn:in:withValue:" : "jr 6/20/2021 20:12",
+		"squotValueShadowFrom:reflectedIn:" : "jr 7/18/2021 00:36" } }

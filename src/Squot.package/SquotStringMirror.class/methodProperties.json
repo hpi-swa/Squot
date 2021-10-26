@@ -3,8 +3,15 @@
 		"class:" : "jr 12/15/2020 23:32" },
 	"instance" : {
 		"=" : "jr 12/15/2020 23:33",
+		"canHaveReferences:" : "jr 7/18/2021 22:40",
+		"capture:with:ifReplaced:" : "jr 7/18/2021 00:05",
 		"hash" : "jr 12/15/2020 23:33",
+		"initializeSnapshot:of:with:" : "jr 7/18/2021 00:00",
+		"is:comparableTo:" : "jr 7/18/2021 20:15",
+		"newDiffFrom:to:" : "jr 7/30/2021 20:15",
+		"newShadowObject" : "jr 7/25/2021 18:46",
 		"referencesFrom:" : "jr 12/16/2020 01:51",
 		"reflectIndexableField:in:" : "jr 12/16/2020 00:04",
 		"setClass:" : "jr 12/15/2020 23:33",
+		"shouldObjectHaveNameAssigned:" : "jr 1/10/2021 21:54",
 		"theClass" : "jr 12/15/2020 23:33" } }

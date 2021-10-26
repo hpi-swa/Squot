@@ -1,0 +1,3 @@
+capturing
+shadowFactory
+	^ SquotDictionaryShadow

@@ -1,11 +1,11 @@
 {
 	"class" : {
-		 },
+		"squotMirror" : "jr 1/17/2021 23:04" },
 	"instance" : {
 		"addAssociation:" : "jr 9/23/2019 23:23",
 		"addAssociation:with:" : "jr 5/11/2018 00:23",
+		"atElement:put:" : "jr 4/7/2021 22:26",
 		"diffClass" : "jr 6/12/2017 13:05",
 		"explorerItemFor:" : "jr 12/30/2019 01:02",
-		"initializeHashedItems:with:" : "jr 7/29/2017 23:59",
-		"materializeItemsIn:with:" : "jr 7/29/2017 23:12",
+		"initializeHashedItems:with:" : "jr 4/7/2021 21:06",
 		"removeAssociation:" : "jr 7/29/2017 22:25" } }

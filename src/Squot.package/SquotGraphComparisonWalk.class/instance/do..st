@@ -3,10 +3,12 @@ do: aBlock
 	walk do: 
 		[:each |
 		each first ~= each second ifTrue: 
-			[| referrers |
+			[| referrers path |
 			referrers := walk currentReferrer.
-			aBlock
-				value: each first
-				value: each second
-				value: (referrers ifNotNil: [referrers first])
-				value: (referrers ifNotNil: [referrers second])]].
+			path := walk currentPath.
+			aBlock valueWithArguments:
+				{each first.
+				each second.
+				referrers ifNotNil: [referrers first].
+				referrers ifNotNil: [referrers second].
+				path}]].

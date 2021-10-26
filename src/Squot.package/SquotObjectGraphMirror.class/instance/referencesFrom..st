@@ -1,0 +1,3 @@
+enumerating
+referencesFrom: anObjectGraph
+	self shouldBeImplemented

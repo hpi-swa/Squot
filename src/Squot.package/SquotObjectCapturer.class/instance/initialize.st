@@ -6,4 +6,4 @@ initialize
 	replacedObjects := IdentityDictionary new.
 	slotValueReplacements := IdentityDictionary new.
 	toBeVisited := LinkedList new.
-	slotsToConvert := OrderedCollection new.
+	slotsToConvert := IdentityDictionary new.

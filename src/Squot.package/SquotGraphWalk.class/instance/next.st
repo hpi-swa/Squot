@@ -1,4 +1,5 @@
 enumerating
 next
-	latest := toBeVisited removeLast.
+	latest := breadthFirst ifTrue: [toBeVisited removeFirst] ifFalse: [toBeVisited removeLast].
+	history add: latest.
 	^ latest

@@ -4,12 +4,16 @@
 		 ],
 	"classvars" : [
 		 ],
-	"commentStamp" : "jr 6/24/2017 13:21",
+	"commentStamp" : "jr 4/17/2021 18:36",
 	"instvars" : [
 		"convertedObjects",
 		"objectRegistry",
 		"sourceGraph",
-		"targetGraph" ],
+		"targetGraph",
+		"walk",
+		"remainingReferences",
+		"pendingReferences",
+		"pendingReferencesForHash" ],
 	"name" : "SquotShadowMaterializer",
 	"pools" : [
 		 ],

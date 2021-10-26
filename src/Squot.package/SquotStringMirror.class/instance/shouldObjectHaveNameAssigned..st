@@ -1,0 +1,3 @@
+testing
+shouldObjectHaveNameAssigned: aString
+	^ true

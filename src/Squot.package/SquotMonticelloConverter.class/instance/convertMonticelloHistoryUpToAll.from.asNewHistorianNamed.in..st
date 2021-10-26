@@ -1,7 +1,7 @@
 converting history
 convertMonticelloHistoryUpToAll: mcVersions from: aMCRepository asNewHistorianNamed: historianName in: aRepository
 
-	| tmpHistorianNames |
+	| tmpHistorianNames versions workingCopy |
 	squotRepository := aRepository.
 	monticelloRepository := aMCRepository.
 	tmpHistorianNames := OrderedCollection new.
@@ -15,6 +15,20 @@ convertMonticelloHistoryUpToAll: mcVersions from: aMCRepository asNewHistorianNa
 	tmpHistorianNames do: [:tmpHistorianName |
 		self addTemporaryHistorian: (aRepository historianNamed: tmpHistorianName)].
 	
+	workingCopy := squotRepository createWorkingCopy
+		store: SquotImageStore new;
+		yourself.
+	versions := temporaryHistorians collect: #version.
+	versions do: [:version |
+		version artifacts keysAndValuesDo: [:key :artifact |
+			key ifNotEmpty: [workingCopy add: artifact]]].
+	workingCopy additionalParents: versions.
+	squotRepository newHistorian: historianName version: (
+		squotRepository createNewVersion: workingCopy snapshot with: [:version |
+			version
+				parents: versions;
+				message: ('Merge versions using {1}' format: {self className});
+				timestamp: TimeStamp now]).
 	self notify: ('Please merge the following branches into {1} before proceeding:\\{2}' withCRs format: {historianName. tmpHistorianNames asCommaString}).
 	
 	self cleanUpTemporaryHistorians.

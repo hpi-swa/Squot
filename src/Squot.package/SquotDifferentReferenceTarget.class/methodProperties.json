@@ -4,5 +4,5 @@
 	"instance" : {
 		"printOn:" : "jr 6/16/2021 21:19",
 		"setReference:leftOwner:target:rightOwner:target:" : "jr 12/24/2020 01:03",
-		"squotReflectOn:in:ifNewValue:ifOldValue:" : "jr 6/20/2021 19:13",
-		"squotReflectOn:in:withValue:" : "jr 6/20/2021 21:01" } }
+		"squotReflectOn:in:withValue:" : "jr 6/20/2021 21:01",
+		"squotValueShadowFrom:reflectedIn:" : "jr 7/18/2021 00:37" } }

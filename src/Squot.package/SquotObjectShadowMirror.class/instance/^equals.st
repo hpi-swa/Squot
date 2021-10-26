@@ -6,4 +6,4 @@ comparing
 		ifTrue: [^ true].
 	self class = anObject class
 		ifFalse: [^ false].
-	^ self theClass = anObject theClass.
+	^ true

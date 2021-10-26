@@ -30,5 +30,5 @@ squotApplyTo: metadata
 			referrer := object.
 			object := each reflect: referrer in: mirror.
 			mirror := mirror mirrorOf: object reachedVia: each from: referrer].
-		diff squotReflectOn: object in: mirror].
+		[diff squotReflectOn: object in: mirror] on: KeyNotFound do: [:e | diff isRemoval ifTrue: [e return] ifFalse: [e pass]]].
 	^ new

@@ -2,8 +2,10 @@
 	"class" : {
 		 },
 	"instance" : {
-		"expectedFailures" : "jr 9/23/2019 18:52",
-		"patched:asIn:" : "jr 9/23/2019 23:35",
-		"setUp" : "jr 9/23/2019 23:45",
-		"testPatchesShadowsCorrectly" : "jr 9/23/2019 23:44",
-		"testUpdatesReferencesOfChangedShadows" : "jr 9/23/2019 23:45" } }
+		"expectedFailures" : "jr 8/8/2021 15:21",
+		"patchGraph" : "jr 7/31/2021 16:03",
+		"patched:asIn:" : "jr 7/31/2021 15:48",
+		"setUp" : "jr 7/31/2021 16:01",
+		"testPatchesShadowsCorrectly" : "jr 7/31/2021 16:02",
+		"testUpdatesNameMappingConsistently" : "jr 7/31/2021 16:13",
+		"testUpdatesReferencesOfChangedShadows" : "jr 7/31/2021 16:02" } }

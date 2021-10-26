@@ -3,6 +3,8 @@
 		"named:" : "jr 12/15/2020 23:21" },
 	"instance" : {
 		"=" : "jr 12/15/2020 23:30",
+		"asSlotDiffKey" : "jr 7/18/2021 20:18",
+		"asSlotWithValue:" : "jr 7/18/2021 20:31",
 		"hash" : "jr 12/15/2020 23:30",
 		"isInstanceVariable" : "jr 4/17/2021 17:54",
 		"name" : "jr 12/15/2020 23:29",

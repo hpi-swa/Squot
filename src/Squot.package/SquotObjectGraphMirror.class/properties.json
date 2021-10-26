@@ -10,5 +10,5 @@
 	"name" : "SquotObjectGraphMirror",
 	"pools" : [
 		 ],
-	"super" : "SquotMirror",
+	"super" : "SquotGraphMirror",
 	"type" : "normal" }

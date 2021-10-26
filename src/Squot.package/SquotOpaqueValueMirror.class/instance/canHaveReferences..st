@@ -1,0 +1,3 @@
+testing
+canHaveReferences: anObject
+	^ false

@@ -7,4 +7,5 @@ patchWithTwoChangedArtifacts
 		addDiff: (SquotArtifactDiffMock path: '1');
 		addDiff: (SquotArtifactDiffMock path: '2');
 		newLoadOrder: #('1' '2');
+		updateRightArtifacts;
 		buildPatch.

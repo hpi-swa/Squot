@@ -14,6 +14,7 @@ testRemovedUnsavedArtifactStaysRemoved
 			patch: (workingCopy baseVersion newPatchBuilder
 						addDiff: ((workingCopy patchRelativeToBase: workingCopy baseVersion)
 									diffAt: 'other path');
+						updateRightArtifacts; 
 						buildPatch); "Diff at 'obj' not included!"
 			message: 'Add at other path, but don''t remove at old path';
 			applyToWorkingCopy].

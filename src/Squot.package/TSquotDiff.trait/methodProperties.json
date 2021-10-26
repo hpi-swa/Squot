@@ -2,6 +2,7 @@
 	"class" : {
 		 },
 	"instance" : {
+		"addReferenceDiff:" : "jr 7/18/2021 11:21",
 		"applyToObjectNamed:inGraph:with:" : "jr 7/17/2021 02:05",
 		"applyToShadowNamed:inGraph:" : "jr 7/4/2021 17:44",
 		"asSquotConflicts" : "jr 10/19/2017 19:20",
@@ -12,6 +13,5 @@
 		"squotApplyTo:" : "jr 9/25/2019 19:21",
 		"squotApplyTo:with:" : "jr 6/22/2017 14:04",
 		"squotApplyToLoaded:" : "jr 6/7/2017 14:44",
-		"squotApplyToLoaded:with:" : "jr 7/17/2021 02:06",
 		"squotHasChanges" : "jr 4/9/2017 22:42",
 		"update:reflectedIn:asMaterializedFrom:reflectedIn:" : "jr 6/13/2021 21:53" } }

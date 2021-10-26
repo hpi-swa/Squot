@@ -1,6 +1,6 @@
 rematerializing
 squotMaterializeWith: aMaterializer
-	"Answer the object restored from me. Double dispatch path"
-	| object |
-	object := self createMaterializedInstance.
-	^ aMaterializer materialize: self in: object
+	"Answer a fresh object of the same class and with the same size as my original"
+	^ capturedClass isVariable
+		ifTrue: [capturedClass basicNew: self basicSizeOfMaterializedInstance]
+		ifFalse: [capturedClass basicNew]

@@ -1,3 +1,3 @@
 capturing
 newShadowObject
-	^ SquotBitsObjectShadow new
+	^ SquotStringShadow new

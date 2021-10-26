@@ -1,6 +1,6 @@
 tests
 patched: anObject asIn: aBlock
-	| diff patched originalGraph changedGraph |
+	| patched originalGraph changedGraph |
 	originalGraph := (capturer captureGraph: anObject) asShadowGraph.
 	aBlock value.
 	changedGraph := (capturer captureGraph: anObject) asShadowGraph.

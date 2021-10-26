@@ -18,4 +18,6 @@ privateResolvedPatch
 	(elementMerges select: [:each | each mayAffectArtifact])
 		do: [:each | builder addDiff: each resolvedPatch].
 	builder newLoadOrder: (loadOrderMerge resolvedPatch applyTo: working loadOrder).
-	^ builder buildPatch
+	^ builder
+		updateRightArtifacts;
+		buildPatch

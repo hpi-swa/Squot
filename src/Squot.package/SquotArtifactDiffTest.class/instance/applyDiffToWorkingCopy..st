@@ -4,4 +4,5 @@ applyDiffToWorkingCopy: anArtifactDiff
 		applyPatch:
 			(workingCopy newPatchBuilder
 				addDiff: anArtifactDiff;
+				updateRightArtifacts;
 				buildPatch).

@@ -4,4 +4,5 @@ patchRemovingArtifactAt: path
 	artifact := SquotArtifact new path: path; content: SquotArtifactContentMock new.
 	^ (SquotSnapshot builder add: artifact; newPatchBuilder)
 		addDiff: (SquotArtifactRemoval of: artifact);
+		updateRightArtifacts;
 		buildPatch

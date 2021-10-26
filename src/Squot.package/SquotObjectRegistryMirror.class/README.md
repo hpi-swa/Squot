@@ -1,0 +1,1 @@
+I can access live objects in a SquotObjectRegistry.

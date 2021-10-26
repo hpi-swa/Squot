@@ -1,6 +1,6 @@
 {
 	"class" : {
-		 },
+		"diff:objectName:" : "jr 7/18/2021 16:24" },
 	"instance" : {
 		"newNameFragment" : "jr 6/20/2021 17:16",
 		"objectDiff" : "jr 6/20/2021 17:16",
@@ -8,4 +8,5 @@
 		"objectName" : "jr 6/20/2021 18:35",
 		"objectName:" : "jr 6/20/2021 18:35",
 		"reflect:in:" : "jr 6/20/2021 18:38",
-		"reflect:in:put:" : "jr 6/20/2021 19:03" } }
+		"reflect:in:put:" : "jr 6/20/2021 19:03",
+		"setDiff:objectName:" : "jr 7/18/2021 16:24" } }

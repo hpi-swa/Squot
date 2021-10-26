@@ -1,4 +1,4 @@
-public
+private
 fill: value reachedVia: eachReference into: materialized reflectedIn: materializedMirror ifDeferredUntilActivated: deferredValueBlock ifUnavailable: unavailableValueBlock
 	"Answer whether the reference could already be filled in."
 	| wasFilledIn |

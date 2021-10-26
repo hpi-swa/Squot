@@ -11,13 +11,14 @@ jobs:
         exclude:
           - os: macos-latest
             smalltalk: Squeak32-5.2 # 32bit no longer supported on macOS
+      fail-fast: false # Do not let failures on Squeak 5.2 stop other jobs.
     name: ${{ matrix.smalltalk }} on ${{ matrix.os }}
     runs-on: ${{ matrix.os }}
     steps:
       - uses: actions/checkout@v2
       - uses: hpi-swa/setup-smalltalkCI@v1
         with:
-          smalltalk-version: ${{ matrix.smalltalk }}
+          smalltalk-image: ${{ matrix.smalltalk }}
       - run: smalltalkci -s ${{ matrix.smalltalk }}
         shell: bash
         timeout-minutes: 15

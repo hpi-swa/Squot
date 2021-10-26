@@ -1,7 +1,7 @@
 toolbuilder
 buildTrackedList: builder
 
-	^ builder pluggableListSpec new
+	^ builder pluggableMultiSelectionListSpec new
 		model: self;
 		filterableList: true;
 		clearFilterAutomatically: false;
@@ -9,4 +9,7 @@ buildTrackedList: builder
 		list: #trackedPackagesWithTitle;
 		getIndex: #selectionTracked;
 		setIndex: #selectionTracked:;
-		frame: (LayoutFrame fractions: (0.5 @ 0 corner: 1 @ 1) offsets: (self buttonWidth / 2 @ 0 corner: 0 @ 0))
+		getSelectionList: #selectionsTrackedAt:;
+		setSelectionList: #selectionsTrackedAt:put:;
+		frame: (LayoutFrame fractions: (0.5 @ 0 corner: 1 @ 1) offsets: (self buttonWidth / 2 @ 0 corner: 0 @ 0));
+		yourself

@@ -11,7 +11,7 @@ convertMonticelloHistoryUpToAll: mcVersions from: aMCRepository asNewHistorianNa
 		do: [:mcVersion | | tmpHistorianName |
 			tmpHistorianName := 'squot-convert-' , historianName , '/' , mcVersion package name.
 			tmpHistorianNames add: tmpHistorianName.
-			self copy convertMonticelloHistoryUpTo: mcVersion from: aMCRepository asNewHistorianNamed: tmpHistorianName in: aRepository].
+			self convertMonticelloHistoryUpTo: mcVersion from: aMCRepository asNewHistorianNamed: tmpHistorianName in: aRepository].
 	tmpHistorianNames do: [:tmpHistorianName |
 		self addTemporaryHistorian: (aRepository historianNamed: tmpHistorianName)].
 	

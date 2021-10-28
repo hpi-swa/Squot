@@ -7,13 +7,10 @@
 		 ],
 	"commentStamp" : "",
 	"instvars" : [
-		"converter",
-		"repository",
-		"verifier",
-		"classFactory" ],
-	"name" : "SquotMonticelloConverterVerifierTest",
+		"mcRepositories" ],
+	"name" : "AbstractSquotMonticelloConverterTest",
 	"pools" : [
 		 ],
-	"super" : "AbstractSquotMonticelloConverterTest",
+	"super" : "TestCase",
 	"traitcomposition" : "TTestCaseSuppressingProgressDisplay",
 	"type" : "normal" }

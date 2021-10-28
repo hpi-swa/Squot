@@ -1,3 +1,3 @@
 running
 tearDown
-	classFactory cleanUp.
+	[classFactory cleanUp] ensure: [super tearDown]

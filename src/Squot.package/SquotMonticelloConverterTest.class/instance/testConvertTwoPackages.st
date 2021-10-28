@@ -37,8 +37,8 @@ testConvertTwoPackages
 	versionInfo2 := MCVersionInfo name: 'Nurp-squot.1' id: UUID new message: 'Ay caramba!' date: Date today time: Time now author: 'squot' ancestors: #().
 	theVersion1 := MCVersion package: package1 info: versionInfo1 snapshot: mcSnapshot1.
 	theVersion2 := MCVersion package: package2 info: versionInfo2 snapshot: mcSnapshot2.
-	mcRepo1 := MCDictionaryRepository new.
-	mcRepo2 := MCDictionaryRepository new.
+	mcRepo1 := self newMcRepository: #Plonk.
+	mcRepo2 := self newMcRepository: #Nurp.
 	mcRepo1 storeVersion: theVersion1.
 	mcRepo2 storeVersion: theVersion2.
 	mcRepoGroup := MCRepositoryGroup new

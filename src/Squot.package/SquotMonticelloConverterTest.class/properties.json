@@ -12,6 +12,6 @@
 	"name" : "SquotMonticelloConverterTest",
 	"pools" : [
 		 ],
-	"super" : "TestCase",
+	"super" : "AbstractSquotMonticelloConverterTest",
 	"traitcomposition" : "TSnapshotAssertionsForMonticello + TTestCaseSuppressingProgressDisplay",
 	"type" : "normal" }

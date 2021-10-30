@@ -1,4 +1,4 @@
-*Pharo-compatibility
+*Squot-Compatibility-Pharo
 setAuthorInitials: aString during: aBlock
 	"Copied from Pharo 5 Author>>useAuthor:during:"
 	| previous |

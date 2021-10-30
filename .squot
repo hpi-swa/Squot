@@ -1,6 +1,6 @@
 OrderedDictionary {
 	'src/VersionControl.package' : #SquotCypressCodeSerializer,
-	'src/Pharo-compatibility.package' : #SquotCypressCodeSerializer,
+	'src/Squot-Compatibility-Pharo.package' : #SquotCypressCodeSerializer,
 	'src/Squot.package' : #SquotCypressCodeSerializer,
 	'src/FileSystem-Git.package' : #SquotCypressCodeSerializer,
 	'src/Squit.package' : #SquotCypressCodeSerializer,

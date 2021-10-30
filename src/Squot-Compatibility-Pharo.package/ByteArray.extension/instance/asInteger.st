@@ -1,4 +1,4 @@
-*Pharo-compatibility
+*Squot-Compatibility-Pharo
 asInteger
 	"Convert me to an Integer, network byte order, most significant byte first, big endian"
 	

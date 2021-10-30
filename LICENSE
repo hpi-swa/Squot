@@ -1,5 +1,5 @@
 This repository contains multiple packages:
-- Squot, Squit, VersionControl, Squot-Compatibility-Pharo come from here
+- Squot, Squit, VersionControl, SquotCompatibility-Pharo come from here
 - FileSystem-Git and FileSystem (FS-*) are forks of packages originally hosted elsewhere.
 
 The packages originating here are released under the MIT license as described below.
@@ -16,7 +16,7 @@ The additions and changes provided here are also released under the MIT license
 as described below.
 
 ===============================================================
-Squot, Squit, VersionControl, Squot-Compatibility-Pharo packages,
+Squot, Squit, VersionControl, SquotCompatibility-Pharo packages,
 changes and additions to FileSystem and FileSystem-Git packages
 ===============================================================
 

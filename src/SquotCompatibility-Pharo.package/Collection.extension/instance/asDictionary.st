@@ -1,3 +1,3 @@
-*Squot-Compatibility-Pharo
+*SquotCompatibility-Pharo
 asDictionary
 	^ self as: Dictionary

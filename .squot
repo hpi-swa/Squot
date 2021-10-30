@@ -8,5 +8,6 @@ OrderedDictionary {
 	'src/SquotTonel-Core.package' : #SquotCypressCodeSerializer,
 	'src/SquotTonel-Tests.package' : #SquotCypressCodeSerializer,
 	'src/SquotCompatibility-Squeak50.package' : #SquotCypressCodeSerializer,
-	'src/SquotCompatibility-Squeak60.package' : #SquotCypressCodeSerializer
+	'src/SquotCompatibility-Squeak60.package' : #SquotCypressCodeSerializer,
+	'src/SquotCompatibility-SqueakCommon.package' : #SquotCypressCodeSerializer
 }

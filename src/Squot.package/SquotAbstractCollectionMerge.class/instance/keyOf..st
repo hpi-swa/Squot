@@ -1,3 +1,3 @@
 accessing
 keyOf: anObject
-	^ self keyOf: anObject ifAbsent: [NotFound signalFor: anObject]
+	^ self keyOf: anObject ifAbsent: [(NotFound object: anObject) signal]

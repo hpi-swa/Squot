@@ -6,5 +6,7 @@ OrderedDictionary {
 	'src/Squit.package' : #SquotCypressCodeSerializer,
 	'src/BaselineOfSquot.package' : #SquotCypressCodeSerializer,
 	'src/SquotTonel-Core.package' : #SquotCypressCodeSerializer,
-	'src/SquotTonel-Tests.package' : #SquotCypressCodeSerializer
+	'src/SquotTonel-Tests.package' : #SquotCypressCodeSerializer,
+	'src/SquotCompatibility-Squeak50.package' : #SquotCypressCodeSerializer,
+	'src/SquotCompatibility-Squeak60.package' : #SquotCypressCodeSerializer
 }

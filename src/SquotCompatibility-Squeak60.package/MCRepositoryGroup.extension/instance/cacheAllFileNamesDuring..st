@@ -1,4 +1,4 @@
-*SquotCompatibility-SqueakCommon-private-override
+*SquotCompatibility-Squeak60-private-override
 cacheAllFileNamesDuring: aBlock
 	^ (repositories
 		inject: aBlock

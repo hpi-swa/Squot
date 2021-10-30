@@ -1,4 +1,4 @@
-*SquotCompatibility-Squeak50-testing-override
+*SquotCompatibility-Squeak50-testing
 isValid
 
 	^ repositories allSatisfy: #isValid

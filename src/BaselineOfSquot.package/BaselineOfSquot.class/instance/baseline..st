@@ -55,8 +55,12 @@ baseline: spec
 		spec package: 'Squot' with: [
 			spec includes: 'SquotCompatibility-Pharo']].
 	
-	
 	spec for: #'squeak5.x' do: [
 		spec package: 'SquotCompatibility-Squeak50'.
 		spec package: 'Squot' with: [
 			spec includes: 'SquotCompatibility-Squeak50']].
+	
+	spec for: #'squeak6.x' do: [
+		spec package: 'SquotCompatibility-Squeak60'.
+		spec package: 'Squot' with: [
+			spec includes: 'SquotCompatibility-Squeak60']].

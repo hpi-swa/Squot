@@ -1,7 +1,7 @@
 baseline
 baseline: spec
 	<baseline>
-	spec for: #'common' do: [
+	spec for: #common do: [
 		spec baseline: 'Ston' with: [
 				spec
 					repository: 'github://squeak-smalltalk/squeak-ston:squeak/repository'. ].
@@ -37,7 +37,6 @@ baseline: spec
 			package: 'VersionControl';
 			package: 'Squot' with: [
 				spec requires: #('FileSystem' 'Ston' 'DiffMerge' 'VersionControl' ). ];
-			package: 'Pharo-compatibility';
 			package: 'FileSystem-Git' with: [
 				spec requires: #('FileSystem' 'Pharo-compatibility' 'INIFile' 'VersionControl' ). ];
 			package: 'Squit' with: [
@@ -50,3 +49,8 @@ baseline: spec
 			group: 'FileSystemGit' with: #('FileSystem-Git' );
 			group: 'default' with: #('Squit' 'Squot' 'SquotTonel-Core');
 			group: 'tests' with: #('default' 'SquotTonel-Tests'). ].
+	
+	spec for: #pharo do: [
+		spec package: 'SquotCompatibility-Pharo'.
+		spec package: 'Squot' with: [
+			spec includes: 'SquotCompatibility-Pharo']].

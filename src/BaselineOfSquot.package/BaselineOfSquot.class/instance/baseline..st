@@ -38,7 +38,7 @@ baseline: spec
 			package: 'Squot' with: [
 				spec requires: #('FileSystem' 'Ston' 'DiffMerge' 'VersionControl' ). ];
 			package: 'FileSystem-Git' with: [
-				spec requires: #('FileSystem' 'Pharo-compatibility' 'INIFile' 'VersionControl' ). ];
+				spec requires: #('FileSystem' 'INIFile' 'VersionControl' ). ];
 			package: 'Squit' with: [
 				spec requires: #('FileSystem-Git' 'Squot'). ];
 			package: 'SquotTonel-Core' with:

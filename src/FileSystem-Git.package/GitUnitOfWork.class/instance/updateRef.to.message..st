@@ -8,11 +8,15 @@ updateRef: refPath to: hexHash message: reflogMessageString
 	updaterAndTimestamp := GitStamp now.
 	oldHash := (self resolveRef: refPath) ifNil: [0 asHexHash].
 	"also update the reflogs of all symbolic references dereferenced along the way"
-	target := self followSymbolicRefs: refPath
+	[target := self followSymbolicRefs: refPath
 		do: [:each |
 			(self reflogForReference: each)
 				logUpdateFrom: oldHash
 				to: hexHash
 				by: updaterAndTimestamp
 				message: reflogMessageString].
-	self basicUpdateRef: target to: hexHash asHexHash
+	self basicUpdateRef: target to: hexHash asHexHash]
+		on: Error do:
+			[:e | (repository baseDir resolve: refPath) isDirectory
+				ifTrue: [self error: 'Cannot create branch. ', refPath, ' is a directory']
+				ifFalse: [e pass]]

@@ -7,6 +7,10 @@
 		"rewritePath:ofPackage:" : "jr 3/17/2019 00:19",
 		"userFriendlyTitle" : "jr 3/16/2019 15:52" },
 	"instance" : {
+		"delete:" : "jr 11/20/2021 00:29",
+		"deleteClassifier:" : "jr 11/20/2021 12:27",
+		"deleteExtension:" : "jr 11/20/2021 12:42",
+		"deleteMethod:" : "jr 11/20/2021 11:46",
 		"directory" : "jr 1/17/2017 14:24",
 		"initialize" : "jr 2/26/2017 13:55",
 		"initializeFileTreeWritersInPackageDirectory:" : "jr 2/26/2017 13:56",
@@ -16,6 +20,7 @@
 		"write:" : "jr 5/9/2017 18:24",
 		"writeClass:" : "jr 9/3/2020 22:48",
 		"writeDefinitions:" : "jr 1/29/2017 21:08",
+		"writeDiff:" : "jr 11/20/2021 14:14",
 		"writeMCSnapshot:forPackageNamed:from:" : "jr 3/16/2019 23:35",
 		"writePackage:" : "jr 9/3/2020 22:47",
 		"writePropertiesIfExists" : "jr 9/3/2020 22:47" } }

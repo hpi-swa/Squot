@@ -7,6 +7,7 @@
 		"rewritePath:ofPackage:" : "jr 3/17/2019 00:19",
 		"userFriendlyTitle" : "jr 3/16/2019 15:52" },
 	"instance" : {
+		"canWriteDiffs" : "jr 11/20/2021 15:06",
 		"delete:" : "jr 11/20/2021 00:29",
 		"deleteClassifier:" : "jr 11/20/2021 12:27",
 		"deleteExtension:" : "jr 11/20/2021 12:42",

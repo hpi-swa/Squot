@@ -15,15 +15,16 @@ updateMetadataAfterSaving
 			ifTrue: "Cherry-pick any changes back to the working copy if they do not conflict."
 				[metadataMerge := workingArtifact storeInfo squotMergeWith: versionArtifact storeInfo basedOn: savedArtifact storeInfo.
 				metadataMerge conflicts do: [:each | each chooseWorking].
-				metadataDiff := metadataMerge resolvedPatch.
-				workingCopy
-					applyDiff:
-						(SquotArtifactModification
-							left: workingArtifact
-							right: (savedArtifact copy storeInfo: metadataDiff right; yourself)
-							isLoadedInWorkingCopy: true
-							contentDiff: SquotObjectGraphDiff new
-							metadataDiff: metadataDiff)
-					toObjectAt: eachPath]
+				metadataMerge hasChanges ifTrue:
+					[metadataDiff := metadataMerge resolvedPatch.
+					workingCopy
+						applyDiff:
+							(SquotArtifactModification
+								left: workingArtifact
+								right: (savedArtifact copy storeInfo: metadataDiff right; yourself)
+								isLoadedInWorkingCopy: true
+								contentDiff: SquotObjectGraphDiff new
+								metadataDiff: metadataDiff)
+						toObjectAt: eachPath]]
 			ifFalse: "Just overwrite unloaded artifact's metadata"
 				[workingArtifact storeInfo: versionArtifact storeInfo]].

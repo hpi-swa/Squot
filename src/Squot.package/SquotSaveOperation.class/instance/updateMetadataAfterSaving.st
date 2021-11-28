@@ -1,13 +1,14 @@
 private
-updateMetadataAfterSaving: aVersion fromSnapshot: aSnapshot
+updateMetadataAfterSaving
 	"Some repositories cause additional metadata to be added when saving an artifact for the first time. Bring this into the working copy. aSnapshot was taken from the working copy to create aVersion, which may have a slightly different snapshot."
 	| cherryPickMerge |
-	cherryPickMerge := self newMergeOperation
-		flag: #todo; "Unit of work of the current operation should be reused."
-		mergeVersion: aVersion;
-		baseVersion: aSnapshot;
-		workingCopySnapshot: aSnapshot;
+	cherryPickMerge := workingCopy newMergeOperation
+		unitOfWork: unitOfWork;
+		mergeVersion: newVersion;
+		baseVersion: patch patched;
+		workingCopySnapshot: patch patched;
 		doNotAddParent;
+		doNotAddGlobalObjectsAutomatically; "The saved version cannot have new artifacts that are already loaded in the image."
 		prepare;
 		yourself.
 	cherryPickMerge merge conflicts do: [:each | each chooseWorking].

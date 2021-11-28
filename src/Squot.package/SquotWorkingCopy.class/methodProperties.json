@@ -108,7 +108,6 @@
 		"unloadedArtifacts" : "jr 9/26/2020 16:40",
 		"unregister" : "fn 4/11/2017 11:57",
 		"updateLoadOrderFromVersion:" : "jr 10/31/2020 16:10",
-		"updateMetadataAfterSaving:fromSnapshot:" : "jr 1/3/2021 19:35",
 		"validatePath:for:" : "jr 12/7/2019 22:18",
 		"withCurrentSnapshot:" : "jr 9/19/2019 06:06",
 		"withCurrentSnapshot:do:" : "jr 1/5/2020 01:31" } }

@@ -12,7 +12,8 @@
 		"mergeBases",
 		"shouldAddParent",
 		"workingVersion",
-		"appliedPatch" ],
+		"appliedPatch",
+		"shouldAddGlobalObjectsAutomatically" ],
 	"name" : "SquotMergeOperation",
 	"pools" : [
 		 ],

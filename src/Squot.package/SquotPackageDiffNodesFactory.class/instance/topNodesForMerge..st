@@ -8,7 +8,9 @@ topNodesForMerge: aSquotPackageMerge
 			classOperation := eachGroup detect: [:each | each definition isClassDefinition] ifNone: [].
 			classOperation
 				ifNil: [eachGroup]
-				ifNotNil: [{classOperation}, (eachGroup reject: [:each | classOperation = each "The other way around does not work because if classOperation is a MCConflict, it cannot be compared from an MCPatchOperation"])]].
+				ifNotNil: [{classOperation},
+					"All other definitions; use identity comparison to reject because there can be mixture of MCPatchOperation and MCConflict and they are not =-comparable (hence we cannot use copyWithout:, for example)."
+					(eachGroup reject: [:each | classOperation == each])]].
 	"Show classes before Organization and Scripts."
 	topNodes := (((groups associations select: [:each | each value first definition squotBelongsToClass])
 			collect: [:eachClassAndOperations |

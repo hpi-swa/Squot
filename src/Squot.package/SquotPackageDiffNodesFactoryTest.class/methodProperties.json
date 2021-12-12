@@ -1,0 +1,7 @@
+{
+	"class" : {
+		 },
+	"instance" : {
+		"testClassDefinitionDiffHoistedToTop" : "jr 12/12/2021 17:12",
+		"testClassDefinitionDiffHoistedToTopWithClassConflict" : "jr 12/12/2021 17:11",
+		"testClassDefinitionDiffHoistedToTopWithMethodConflict" : "jr 12/12/2021 17:11" } }

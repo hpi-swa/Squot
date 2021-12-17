@@ -1,4 +1,4 @@
-*Squot-CoAuthorsExtension
+*Squit-CoAuthorsExtension
 asStringWithoutTimestamp
 
 	^ self name, ' <', self email, '>'

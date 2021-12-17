@@ -1,0 +1,14 @@
+{
+	"category" : "Squot-Tools",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "jr 3/17/2018 19:48",
+	"instvars" : [
+		"message" ],
+	"name" : "SquotSaveVersionDialog",
+	"pools" : [
+		 ],
+	"super" : "SquotChangedArtifactsChooser",
+	"type" : "normal" }

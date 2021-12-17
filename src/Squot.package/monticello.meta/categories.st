@@ -33,3 +33,4 @@ SystemOrganization addCategory: #'Squot-Tests-Monticello-Converter'!
 SystemOrganization addCategory: #'Squot-Tests-Files'!
 SystemOrganization addCategory: #'Squot-Tests-Serialization'!
 SystemOrganization addCategory: #'Squot-Help'!
+SystemOrganization addCategory: #'Squot-CoAuthorsExtension'!

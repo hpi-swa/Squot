@@ -1,6 +1,7 @@
 This repository contains multiple packages:
 - Squot, Squit, VersionControl, Pharo-compatibility come from here
 - FileSystem-Git and FileSystem (FS-*) are forks of packages originally hosted elsewhere.
+- Squot-CoAuthorsExtension was originally a separate project.
 
 The packages originating here are released under the MIT license as described below.
 
@@ -17,12 +18,14 @@ as described below.
 
 ===============================================================
 Squot, Squit, VersionControl, Pharo-compatibility packages,
+Squot-CoAuthorsExtension,
 changes and additions to FileSystem and FileSystem-Git packages
 ===============================================================
 
 MIT License
 
 Copyright (c) 2017 Jakob Reschke, Software Architecture Group (Hasso Plattner Institute)
+Copyright (c) 2019 Maximilian Stiede, Leon Bein (for the Squot-CoAuthorsExtension package)
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal

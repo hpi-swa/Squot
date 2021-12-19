@@ -2,8 +2,9 @@
 	"class" : {
 		 },
 	"instance" : {
-		"classSuffix:" : "jr 11/29/2020 20:33",
-		"diffNodeForClass:operationsAndConflicts:modifying:" : "jr 11/29/2020 21:36",
+		"classDefOperationOrConflictIn:fromOperations:" : "jr 12/19/2021 09:52",
+		"classSuffix:" : "jr 12/19/2021 09:43",
+		"diffNodeForClassNamed:operationsAndConflicts:modifying:classOperationOrConflict:" : "jr 12/19/2021 09:42",
 		"nodeFor:from:" : "jr 11/29/2020 21:36",
 		"topNodesForDiff:" : "jr 11/29/2020 20:28",
-		"topNodesForMerge:" : "jr 12/12/2021 17:15" } }
+		"topNodesForMerge:" : "jr 12/19/2021 09:53" } }

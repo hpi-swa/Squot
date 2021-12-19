@@ -13,10 +13,15 @@ topNodesForMerge: aSquotPackageMerge
 					(eachGroup reject: [:each | classOperation == each])]].
 	"Show classes before Organization and Scripts."
 	topNodes := (((groups associations select: [:each | each value first definition squotBelongsToClass])
-			collect: [:eachClassAndOperations |
-						self diffNodeForClass: eachClassAndOperations key
+			collect: [:eachClassAndOperations | | classOperationOrConflict |
+						classOperationOrConflict := eachClassAndOperations value
+							detect: [:each | each definition isClassDefinition]
+							ifNone: "Could be a metaclass node, look for corresponding class definition"
+								[self classDefOperationOrConflictIn: groups fromOperations: eachClassAndOperations value].
+						self diffNodeForClassNamed: eachClassAndOperations key
 							operationsAndConflicts: eachClassAndOperations value
-							modifying: aSquotPackageMerge])
+							modifying: aSquotPackageMerge
+							classOperationOrConflict: classOperationOrConflict])
 			sort: [:a :b | a title asString <= b title asString]) ,
 		((groups associations reject: [:each | each value first definition squotBelongsToClass]) collect: 
 			[:eachClassificationAndOperations |

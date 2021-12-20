@@ -14,7 +14,7 @@ menuBranchListHook: aMenu
 	branchStatus := true caseOf:
 		{[onlyRemote] -> ['(remote-tracking branch)'].
 		[onlyActive] -> ['(currently checked out)']}
-		otherwise: ''.
+		otherwise: [''].
 	aMenu addTitle: 'Branch ', selectedHistorian shortName,
 		(branchStatus ifNotEmpty: [String cr, branchStatus]).
 	self buildMenu: aMenu from:

@@ -3,11 +3,14 @@ writeToFile
 	| endOfCommentLines |
 	refsDictionary ifNil: [^ self error: 'Packed references uninitialized'].
 	endOfCommentLines := 0.
-	packedRefsFile readStreamDo: [:stream |
-		stream text.
-		[stream peek = $#] whileTrue:
-			[stream skipTo: Character lf.
-			endOfCommentLines := stream position]].
+	packedRefsFile
+		readStreamDo:
+			[:stream |
+			stream text.
+			[stream peek = $#] whileTrue:
+				[stream skipTo: Character lf.
+				endOfCommentLines := stream position]]
+		ifAbsent: [].
 	packedRefsFile writeStreamDo: [:stream |
 		stream text.
 		stream truncate: endOfCommentLines; position: endOfCommentLines.

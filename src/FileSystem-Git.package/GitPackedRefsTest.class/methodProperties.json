@@ -9,4 +9,5 @@
 		"testPeeledRefs" : "jr 5/26/2019 23:13",
 		"testPrefixed" : "jr 5/26/2019 22:47",
 		"testReadWriteReadRoundtrip" : "jr 5/26/2019 23:33",
-		"testRefs" : "jr 5/26/2019 22:47" } }
+		"testRefs" : "jr 5/26/2019 22:47",
+		"testWriteNew" : "jr 12/20/2021 21:44" } }

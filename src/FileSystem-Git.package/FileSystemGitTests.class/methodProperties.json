@@ -7,4 +7,5 @@
 		"testCreateDirectoryNoParent" : "jr 3/6/2017 14:48",
 		"testDeletedDirectoryContentsDoesNotReappear" : "jr 2/9/2017 13:36",
 		"testEntrySize" : "jr 11/21/2021 00:36",
-		"testFileStreamDo" : "jr 12/20/2021 21:58" } }
+		"testFileStreamDo" : "jr 12/20/2021 21:58",
+		"testFileStreamTruncate" : "jr 12/20/2021 22:01" } }

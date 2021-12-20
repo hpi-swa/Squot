@@ -1,9 +1,14 @@
 reading and writing
 writeToFile
+	| commentLines |
 	refsDictionary ifNil: [^ self error: 'Packed references uninitialized'].
-	packedRefsFile fileStreamDo: [:stream |
+	commentLines := OrderedCollection new.
+	packedRefsFile readStreamDo: [:stream |
 		stream text.
-		[stream peek = $#] whileTrue: [stream skipTo: Character lf].
+		[stream peek = $#] whileTrue: [commentLines add: (stream upTo: Character lf)]].
+	packedRefsFile writeStreamDo: [:stream |
+		stream text.
+		commentLines do: [:each | stream nextPutAll: each; nextPut: Character lf].
 		refsDictionary keys sorted do: [:eachRef |
 			stream nextPutAll: (refsDictionary at: eachRef);
 				nextPut: Character space;

@@ -5,7 +5,7 @@
 	"instance" : {
 		"fourByteLookahead" : "CamilloBruni 2/12/2013 18:08",
 		"initializeWith:" : "DamienCassou 1/30/2013 16:25",
-		"parseReferenceDiscoveryResponse" : "jr 9/6/2020 18:48",
+		"parseReferenceDiscoveryResponse" : "jr 12/22/2021 23:26",
 		"peekForNAK" : "jr 10/26/2016 15:46",
 		"readContentOfLength:" : "DamienCassou 1/30/2013 16:29",
 		"readLineLength" : "CamilloBruni 2/12/2013 18:08",
@@ -20,4 +20,5 @@
 		"readUntilNAK" : "CamilloBruni 2/12/2013 18:08",
 		"readZeroLine" : "CamilloBruni 2/12/2013 17:17",
 		"resetFourByteLookahead" : "CamilloBruni 2/12/2013 18:08",
-		"stream" : "DamienCassou 1/30/2013 16:51" } }
+		"stream" : "DamienCassou 1/30/2013 16:51",
+		"tryDecodeUtf8:" : "jr 12/22/2021 23:25" } }

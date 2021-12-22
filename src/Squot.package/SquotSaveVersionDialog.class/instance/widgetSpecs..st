@@ -7,7 +7,7 @@ widgetSpecs: builder
 		getText: #message;
 		setText: #message:;
 		editText: #message:;
-		frame: (LayoutFrame fractions: (0@0.7 corner: 0.8@1) offsets: (0@0 corner: 0@(-25)));
+		frame: (LayoutFrame fractions: (0@0.7 corner: 0.8@1) offsets: (0@0 corner: 0@(self buttonHeight negated)));
 		yourself.
 	self buildCoAuthorSelector: builder.
 	self buildButtonBar: builder}

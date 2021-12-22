@@ -13,19 +13,19 @@ buildWith: toolBuilder
 				dragItem: #dragFromObjectList:;
 				dropItem: #dropOnObjectList:at:;
 				dropAccept: #wantsDropOnObjectList:dragTransferType:source:;
-				frame: (LayoutFrame fractions: (0@0 corner: 1@1) offsets: (0@0 corner: 0@ -25));
+				frame: (LayoutFrame fractions: (0@0 corner: 1@1) offsets: (0@0 corner: 0@(self buttonHeight negated)));
 				yourself.
 			toolBuilder pluggableButtonSpec new
 				name: #moveUpInLoadOrder;
 				model: self;
 				label: 'Move up';
 				action: #moveUpInLoadOrder;
-				frame: (LayoutFrame fractions: (0@1 corner: 0.5@1) offsets: (0@ -25 corner: 0@0));
+				frame: (LayoutFrame fractions: (0@1 corner: 0.5@1) offsets: (0@(self buttonHeight negated) corner: 0@0));
 				yourself.
 			toolBuilder pluggableButtonSpec new
 				name: #moveDownInLoadOrder;
 				model: self;
 				label: 'Move down';
 				action: #moveDownInLoadOrder;
-				frame: (LayoutFrame fractions: (0.5@1 corner: 1@1) offsets: (0@ -25 corner: 0@0));
+				frame: (LayoutFrame fractions: (0.5@1 corner: 1@1) offsets: (0@(self buttonHeight negated) corner: 0@0));
 				yourself.})

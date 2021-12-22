@@ -4,7 +4,7 @@ buildCoAuthorSelector: builder
 	coAuthorBar := builder pluggablePanelSpec new
 		layout: #horizontal;
 		children: OrderedCollection new;
-		frame: (LayoutFrame fractions: (0.8@0.7 corner: 1@1) offsets: (0@0 corner: 0@(-25)));
+		frame: (LayoutFrame fractions: (0.8@0.7 corner: 1@1) offsets: (0@0 corner: 0@(self buttonHeight negated)));
 		yourself.
 	
 	selectCoAuthorsButton := builder pluggableActionButtonSpec new

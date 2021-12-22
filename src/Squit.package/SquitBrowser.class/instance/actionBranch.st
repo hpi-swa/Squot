@@ -4,7 +4,7 @@ actionBranch
 	self hasBranchSelection ifFalse: [^ self].
 	self withUnitOfWork:
 	[nameSuggestion :=
-		(selectedHistorian isRemoteTrackingHistorian)
+		selectedHistorian isRemoteTrackingHistorian
 			ifTrue: [selectedHistorian remoteRef shortName]
 			ifFalse: [''].
 	selectedHistorian := self createNewBranchAt: selectedHistorian version

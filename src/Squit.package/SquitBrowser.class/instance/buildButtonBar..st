@@ -49,7 +49,7 @@ buildButtonBar: builder
 		label: 'Branch';
 		enabled: #hasBranchSelection;
 		action: #actionBranch;
-		help: 'Create a new branch.'.
+		help: #branchButtonHelpText.
 
 	mergeButton := builder pluggableActionButtonSpec new.
 	mergeButton

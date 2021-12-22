@@ -1,7 +1,7 @@
 ui
 withUnitOfWork: aBlock
 	| unitOfWork |
-	self hasProjectSelection ifFalse: [^ aBlock value].
+	self hasProjectSelection ifFalse: [^ nil "no repository, do nothing" ].
 	unitOfWork := self projectSelection repository unitOfWork.
 	unitOfWork start.
 	^ [unitOfWork activateDuring: aBlock]

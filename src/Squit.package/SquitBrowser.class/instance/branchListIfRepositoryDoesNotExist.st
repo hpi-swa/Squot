@@ -1,0 +1,3 @@
+ui
+branchListIfRepositoryDoesNotExist
+	^ #('-- Repository disappeared --')

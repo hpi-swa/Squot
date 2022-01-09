@@ -1,14 +1,16 @@
 private
 privateResolvedPatch
-	self flag: #todo. "maybe it is more consistent to apply changes to a copy of working, then compute the effective diff again, but it could also be too costly"
+	self flag: #todo. "maybe it is more consistent to copy what is the instance variable 'working', apply changes to the copy, then compute the effective diff again, but it could also be too costly"
 	containerConflicts do:
 		[:each |
-		diffs addDiff: each resolution
-			forObjectNamed: (self keyOf: each resolution object)].
+		each resolution squotHasChanges ifTrue:
+			[diffs addDiff: each resolution
+				forObjectNamed: (self keyOf: each resolution object)]].
 	containerModifications do: 
 		[:each |
-		diffs addDiff: each
-			forObjectNamed: (self keyOf: each object)].
+		each squotHasChanges ifTrue:
+			[diffs addDiff: each
+				forObjectNamed: (self keyOf: each object)]].
 	elementMerges do:
 		[:each | | diff |
 		diff := each resolvedPatch.

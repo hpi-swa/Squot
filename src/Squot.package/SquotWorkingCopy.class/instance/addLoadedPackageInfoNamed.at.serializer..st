@@ -4,5 +4,4 @@ addLoadedPackageInfoNamed: packageName at: path serializer: aSerializerClass
 	| packageInfo |
 	packageInfo := Environment current packageOrganizer packageNamed: packageName ifAbsent: [^ self].
 	(packageInfo classes isEmpty and: [packageInfo methods isEmpty]) ifTrue: [^ self].
-	self add: packageInfo at: path.
-	(store artifactAt: path) serializer: aSerializerClass.
+	^ self addPackageNamed: packageName at: path serializer: aSerializerClass

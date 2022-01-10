@@ -1,0 +1,3 @@
+initialize-release
+unload
+	SquotFileSystemStore removeDeserializerFactory: self.

@@ -1,0 +1,4 @@
+accessing
+repositoryList
+
+	^ SquotWorkingCopy registered

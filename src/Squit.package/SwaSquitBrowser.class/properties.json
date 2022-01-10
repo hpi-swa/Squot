@@ -1,0 +1,15 @@
+{
+	"category" : "Squit-Lecture",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "ek 10/14/2021 13:27",
+	"instvars" : [
+		"repositoryListIndex",
+		"commitListIndex" ],
+	"name" : "SwaSquitBrowser",
+	"pools" : [
+		 ],
+	"super" : "Model",
+	"type" : "normal" }

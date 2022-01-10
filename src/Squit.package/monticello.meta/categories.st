@@ -3,4 +3,5 @@ SystemOrganization addCategory: #'Squit-Exceptions'!
 SystemOrganization addCategory: #'Squit-UI'!
 SystemOrganization addCategory: #'Squit-UI-Support'!
 SystemOrganization addCategory: #'Squit-Tests'!
+SystemOrganization addCategory: #'Squit-Lecture'!
 SystemOrganization addCategory: #'Squit-Tests-UI'!

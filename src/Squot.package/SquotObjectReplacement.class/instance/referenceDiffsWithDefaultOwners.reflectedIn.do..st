@@ -1,13 +1,15 @@
 Squot-diff-enumerating
 referenceDiffsWithDefaultOwners: leftAndRightShadows reflectedIn: aMirror do: aBlock
 	"Allow the replacement to be materialized proper. Like with an addition, enumerate all references to update their values."
-	| leftMirror sameMirror |
-	leftMirror := left class squotMirror.
-	sameMirror := left class squotMirror = aMirror.
-	^ (aMirror referencesFrom: right)
+	| leftUndecorated rightUndecorated leftMirror sameMirror |
+	leftUndecorated := left undecorated.
+	rightUndecorated := right undecorated.
+	leftMirror := leftUndecorated class squotMirror.
+	sameMirror := leftMirror = aMirror.
+	^ (aMirror referencesFrom: rightUndecorated)
 		collect:
 			[:each | SquotReferenceTargetExchange
 				reference: each
-				leftOwner: left target: (sameMirror ifTrue: [leftMirror reflect: each of: left])
-				rightOwner: right target: (aMirror reflect: each of: right)]
+				leftOwner: leftUndecorated target: (sameMirror ifTrue: [leftMirror reflect: each of: leftUndecorated])
+				rightOwner: rightUndecorated target: (aMirror reflect: each of: rightUndecorated)]
 		thenDo: aBlock

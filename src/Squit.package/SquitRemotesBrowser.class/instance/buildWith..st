@@ -3,7 +3,7 @@ buildWith: toolBuilder
 	^ toolBuilder build: (toolBuilder pluggableWindowSpec new
 		model: self;
 		label: #labelString;
-		extent: 250@250;
+		extent: 250@100 * Display scaleFactor;
 		children: {
 			toolBuilder pluggableListSpec new
 				name: #remotesList;
@@ -11,14 +11,14 @@ buildWith: toolBuilder
 				list: #remotesLabels;
 				getSelected: #selectedRemoteName;
 				setSelected: #selectedRemoteName:;
-				frame: (LayoutFrame fractions: (0@0 corner: 1@1) offsets: (0@0 corner: 0@ -25));
+				frame: (LayoutFrame fractions: (0@0 corner: 1@1) offsets: (0@0 corner: 0@(self buttonHeight negated)));
 				yourself.
 			toolBuilder pluggableButtonSpec new
 				name: #addRemote;
 				model: self;
 				label: 'Add remote';
 				action: #addRemote;
-				frame: (LayoutFrame fractions: (0@1 corner: 1/3@1) offsets: (0@ -25 corner: 0@0));
+				frame: (LayoutFrame fractions: (0@1 corner: 1/3@1) offsets: (0@(self buttonHeight negated) corner: 0@0));
 				yourself.
 			toolBuilder pluggableButtonSpec new
 				name: #editSelectedRemote;
@@ -26,7 +26,7 @@ buildWith: toolBuilder
 				label: 'Edit selected';
 				enabled: #isAnyRemoteSelected;
 				action: #editSelectedRemote;
-				frame: (LayoutFrame fractions: (1/3@1 corner: 2/3@1) offsets: (0@ -25 corner: 0@0));
+				frame: (LayoutFrame fractions: (1/3@1 corner: 2/3@1) offsets: (0@(self buttonHeight negated) corner: 0@0));
 				yourself.
 			toolBuilder pluggableButtonSpec new
 				name: #removeSelectedRemote;
@@ -34,5 +34,5 @@ buildWith: toolBuilder
 				label: 'Remove selected';
 				enabled: #isAnyRemoteSelected;
 				action: #removeSelectedRemote;
-				frame: (LayoutFrame fractions: (2/3@1 corner: 1@1) offsets: (0@ -25 corner: 0@0));
+				frame: (LayoutFrame fractions: (2/3@1 corner: 1@1) offsets: (0@(self buttonHeight negated) corner: 0@0));
 				yourself.})

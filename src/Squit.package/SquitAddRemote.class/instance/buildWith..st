@@ -9,7 +9,7 @@ buildWith: builder
 		buttons: (self buildButtons: builder);
 		closeAction: #onClose;
 		exclusive: false;
-		extent: 475@60).
+		extent: 475@60 * Display scaleFactor).
 	remoteNameWidget := builder widgetAt: 'remoteName'.
 	(remoteNameWidget respondsTo: #acceptAction:) ifTrue:
 		[remoteNameWidget acceptAction: [:text | self acceptAndClose]].

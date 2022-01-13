@@ -6,8 +6,11 @@ mergeStartReferencesToStart: aGraphWalk
 				ifFalse:
 					[self flag: #notYetImplemented.
 					"All differences behind the start objects should be conflicts."
-					"The further merge algorithm will not work because it will not find the base object under the same name as the working object."
-					^ containerConflicts at: working startName put: (SquotObjectAdditionConflict working: working startShadow incoming: incoming startShadow)]]
+					"Try to create an empty object of the same kind as base..."
+					^ aGraphWalk addFirst:
+						{working startShadow.
+						incoming startShadow.
+						working startShadow undecorated class new}]]
 		ifFalse:
 			[self flag: #notYetImplemented.
 			(working hasSameStartObjectAs: base)

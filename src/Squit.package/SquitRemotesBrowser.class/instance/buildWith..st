@@ -3,7 +3,7 @@ buildWith: toolBuilder
 	^ toolBuilder build: (toolBuilder pluggableWindowSpec new
 		model: self;
 		label: #labelString;
-		extent: 250@100 * Display scaleFactor;
+		extent: 250@100 * RealEstateAgent scaleFactor;
 		children: {
 			toolBuilder pluggableListSpec new
 				name: #remotesList;

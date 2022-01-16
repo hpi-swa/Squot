@@ -4,6 +4,7 @@ writeDiff: aSquotArtifactDiff
 	aSquotArtifactDiff isAddition ifTrue: [^ self write: aSquotArtifactDiff right].
 	aSquotArtifactDiff isRemoval ifTrue: [^ self notYetImplemented].
 	self assert: aSquotArtifactDiff isModification.
+	aSquotArtifactDiff content squotHasChanges ifFalse: [^ self "nothing to do"].
 	directory := ((aSquotArtifactDiff right storeInfo at: #objectClassName ifAbsent: [#PackageInfo]) endsWith: ' class')
 		ifTrue: [(rootDirectory resolve: aSquotArtifactDiff path) parent]
 		ifFalse: [rootDirectory resolve: aSquotArtifactDiff path].

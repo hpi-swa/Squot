@@ -1,4 +1,4 @@
-private comparing
+*Squot-Tools private
 diffTreeNodeForRemoving: key with: value
 	^ SquotDiffNode
 		title: 'Unset ', key

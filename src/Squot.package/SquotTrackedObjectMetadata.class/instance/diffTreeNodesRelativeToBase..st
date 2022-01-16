@@ -1,4 +1,4 @@
-comparing
+*Squot-Tools
 diffTreeNodesRelativeToBase: baseTrackedObjectMetadata
 	| metadataNodes absent hiddenProperties |
 	hiddenProperties := #(objectsReplacedByNames). "These properties are implementation details and changes to them should not be prevented by users."

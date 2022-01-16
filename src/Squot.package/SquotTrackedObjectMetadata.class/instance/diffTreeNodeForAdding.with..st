@@ -1,4 +1,4 @@
-private comparing
+*Squot-Tools private
 diffTreeNodeForAdding: key with: value
 	^ SquotDiffNode
 		title: 'Set ', key, ' to ', value printString

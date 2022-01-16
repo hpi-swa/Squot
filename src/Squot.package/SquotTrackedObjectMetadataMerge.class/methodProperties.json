@@ -2,5 +2,7 @@
 	"class" : {
 		"into:merge:basedOn:diffs:conflicts:" : "jr 12/13/2020 16:05" },
 	"instance" : {
+		"asSquotHierarchicalDiff" : "jr 1/16/2022 21:34",
 		"privateResolvedPatch" : "jr 12/13/2020 16:26",
-		"setWorking:incoming:base:diffs:conflicts:" : "jr 12/13/2020 16:06" } }
+		"setWorking:incoming:base:diffs:conflicts:" : "jr 12/13/2020 16:06",
+		"squotChangeAsStringOrText" : "jr 1/16/2022 19:29" } }

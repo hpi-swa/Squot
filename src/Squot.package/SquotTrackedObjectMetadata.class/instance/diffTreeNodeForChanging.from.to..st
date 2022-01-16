@@ -1,4 +1,4 @@
-private comparing
+*Squot-Tools private
 diffTreeNodeForChanging: key from: leftValue to: value
 	^ SquotDiffNode
 		title: 'Set ', key, ' to ', value printString

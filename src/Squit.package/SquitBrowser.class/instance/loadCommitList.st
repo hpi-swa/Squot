@@ -6,5 +6,4 @@ loadCommitList
 		^ self changed: #commitList].
 	self withUnitOfWork:
 		[selectedHistorian version ~= (cachedCommitList at: 1 ifAbsent: [])
-			ifTrue: [self rebuildCommitList].
-		self changed: #commitList].
+			ifTrue: [self rebuildCommitList]].

@@ -3,7 +3,8 @@ rebuildCommitList
 	| list count walker |
 	commitListBuildProcess ifNotNil: [commitListBuildProcess terminate].
 	(self hasBranchSelection and: [selectedHistorian version notNil]) ifFalse:
-		[^ cachedCommitList := #()].
+		[cachedCommitList := #().
+		^ self changed: #commitList].
 	list := OrderedCollection new.
 	count := 0.
 	(walker := selectedHistorian repository historyWalkClass new)
@@ -15,3 +16,4 @@ rebuildCommitList
 	cachedCommitList := self sortVersionsTopologically: list.
 	walker atEnd ifFalse:
 		[self continueBuildingCommitList: list asyncWith: walker].
+	self changed: #commitList.

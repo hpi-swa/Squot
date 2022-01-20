@@ -12,13 +12,7 @@ switchTo: aHistorian
 			updateLoadOrderFromVersion: targetVersion.
 		temporarySnapshot := targetVersion snapshot createNewBuilder.
 		(self artifacts reject: [:each | originVersion includesObjectAt: each path])
-			do: [:each | temporarySnapshot add: each snapshot "may overwrite"].
-		temporarySnapshot loadOrder:
-			((SquotLoadOrderMerge
-				into: temporarySnapshot loadOrder
-				merge: (self loadOrder intersection: temporarySnapshot loadOrder)
-				basedOn: (self loadOrder intersection: targetVersion loadOrder))
-				resolvedPatch applyTo: temporarySnapshot loadOrder).
+			do: [:each | temporarySnapshot add: each snapshot "overwrite"].
 		temporarySnapshot := temporarySnapshot buildSnapshot.
 		"Load other branch"
 		self loadedHistorian: aHistorian.

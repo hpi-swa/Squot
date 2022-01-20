@@ -7,4 +7,5 @@
 		"setUp" : "jr 5/4/2019 02:01",
 		"tearDown" : "jr 12/23/2019 17:10",
 		"testPackageTrackedAutomaticallyOnLoad" : "jr 5/4/2019 02:03",
+		"testSwitchAndMoveOverDoesNotDiscardChangesToUntrackedPackage" : "jr 1/20/2022 20:47",
 		"trackPackage" : "jr 1/26/2020 23:19" } }

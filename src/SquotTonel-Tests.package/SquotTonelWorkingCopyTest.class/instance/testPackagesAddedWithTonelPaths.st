@@ -1,7 +1,7 @@
 tests
 testPackagesAddedWithTonelPaths
 	| newArtifact |
-	workingCopy addLoadedPackageInfoNamed: (self class category copyUpTo: $-) at: 'src/', (self class category copyUpTo: $-) serializer: SquotTonelSerializer.
+	workingCopy addLoadedPackageInfoNamed: self class category at: 'src/', self class category serializer: SquotTonelSerializer.
 	"When another package is added without an explicit serializer, Tonel should be used again."
 	workingCopy addPackageNamed: 'Kernel' at: 'src'.
 	newArtifact := workingCopy artifacts detect: [:each | each object name = 'Kernel'].

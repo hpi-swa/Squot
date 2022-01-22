@@ -15,9 +15,14 @@ testSwitchDoesNotDiscardChangesToUntrackedPackage
 	mergePrompted := false.
 	[workingCopy switchTo: mainBranch]
 		on: SquotMergeRequested do:
-			[:request | mergePrompted := true.
-			self assert: (request merge includesModificationAt: path).
+			[:request | | packageMerge |
+			mergePrompted := true.
+			"Exclude all changes"
+			packageMerge := (request merge mergeAt: path) elementMerges anyOne.
+			self assert: {#b} equals: (packageMerge modifications collect: [:each | each definition selector]). 
+			packageMerge modifications do: [:each | packageMerge removeOperationOrConflict: each].
 			request resume].
+	"then"
 	self assert: 2 equals: class new b description: 'Unsaved change should still be loaded';
 		assert: (workingCopy objectAt: path) = package description: 'should track package again';
 		assert: mergePrompted. "Since the merge was unexpected, the user should be aware of it."

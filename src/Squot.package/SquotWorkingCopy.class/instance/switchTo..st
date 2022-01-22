@@ -1,34 +1,42 @@
 switching historians
 switchTo: aHistorian
-	| fromHistorian originVersion targetVersion temporarySnapshot mergeReaddedObjects |
+	| fromHistorian originVersion targetVersion temporarySnapshot addedObjects mergeReaddedObjects |
 	fromHistorian := self loadedHistorian.
 	originVersion := fromHistorian version.
 	targetVersion := aHistorian version.
-	self withCurrentSnapshot:
-		[self temporarilySaveChangesOn: fromHistorian].
-	self withCurrentSnapshot:
-		["The other branch may have packages that are already loaded (and changed)."
+	self withCurrentSnapshot: [self temporarilySaveChangesOn: fromHistorian].
+	SquotProgress displayStatus: 'Loading ', (targetVersion printStringLimitedTo: 100) during:
+	[self withCurrentSnapshot:
+		[| patch |
+		"The other branch may have packages that are already loaded (and changed)."
 		self addGlobalObjectsToStore: targetVersion;
 			updateLoadOrderFromVersion: targetVersion.
 		temporarySnapshot := targetVersion snapshot createNewBuilder.
-		(self artifacts reject: [:each | originVersion includesObjectAt: each path])
-			do: [:each | temporarySnapshot add: each snapshot "overwrite"].
+		addedObjects := self artifacts reject: [:each | originVersion includesObjectAt: each path].
+		addedObjects do: [:each | temporarySnapshot add: each snapshot "overwrite"].
 		temporarySnapshot := temporarySnapshot buildSnapshot.
-		"Load other branch"
+		"Load other branch. First without the added packages..."
 		self loadedHistorian: aHistorian.
-		self privateLoadVersion: targetVersion].
-	self withCurrentSnapshot: [self mergeTemporaryVersionsOn: aHistorian].
-	"Restore unsaved changes to packages that were loaded but untracked"
-	self withCurrentSnapshot:
-		[mergeReaddedObjects := SquotMerge into: self merge: temporarySnapshot basedOn: targetVersion.
-		mergeReaddedObjects hasChanges	
-			ifTrue:
+		patch := temporarySnapshot patchRelativeToBase: self lazySnapshot.
+		self assert: (patch diffs allSatisfy: [:each | addedObjects noneSatisfy: [:eachAdded | eachAdded path = each path]]).
+		self applyPatch: patch.
+		self loadedVersion: targetVersion]].
+	addedObjects ifNotEmpty:
+		[SquotProgress displayStatus: 'Merging previously untracked objects' during:
+		[| workingCopyWithoutAddedObjects |
+		self withCurrentSnapshot:
+			[workingCopyWithoutAddedObjects := self newSnapshotBuilder.
+			addedObjects do: [:each | workingCopyWithoutAddedObjects removeAt: each path].
+			mergeReaddedObjects := SquotMerge into: self merge: targetVersion basedOn: self.
+			mergeReaddedObjects hasChanges ifTrue:
 				[ | accepted |
 				[accepted := true.
 				self selectFromMerge: mergeReaddedObjects
-					title: 'Restore changes in previously untracked objects'
+					title: 'Merge changes in previously untracked objects'
 					ifCancelled:
 						[self inform: 'Cannot abort this merge. But you could choose to exclude all changes to discard them.'.
 						accepted := false].
 				accepted] whileFalse.
-				self applyPatch: mergeReaddedObjects resolvedPatch]].
+				self applyPatch: mergeReaddedObjects resolvedPatch]]]].
+	"Finally, also merge any changes stashed on the branch to which we switch."
+	self withCurrentSnapshot: [self mergeTemporaryVersionsOn: aHistorian].

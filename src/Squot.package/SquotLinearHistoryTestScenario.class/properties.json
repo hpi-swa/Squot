@@ -1,0 +1,20 @@
+{
+	"category" : "Squot-Tests",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"classFactory",
+		"versionA1",
+		"versionB",
+		"versionA2",
+		"sampleClass",
+		"packageInfo",
+		"packagePath" ],
+	"name" : "SquotLinearHistoryTestScenario",
+	"pools" : [
+		 ],
+	"super" : "SquotWorkingCopyTestScenario",
+	"type" : "normal" }

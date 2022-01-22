@@ -5,4 +5,5 @@
 		"testClassDefinitionDiffHoistedToTop" : "jr 12/12/2021 17:12",
 		"testClassDefinitionDiffHoistedToTopWithClassConflict" : "jr 12/12/2021 17:11",
 		"testClassDefinitionDiffHoistedToTopWithMethodConflict" : "jr 12/12/2021 17:11",
+		"testClassesOrderedByCategory" : "jr 1/22/2022 17:07",
 		"testMetaclassNodeSuffix" : "jr 12/19/2021 10:36" } }

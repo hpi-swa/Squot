@@ -1,6 +1,9 @@
 node creation
 topNodesForMerge: aSquotPackageMerge
-	| groups topNodes |
+	| groups topNodes organizations |
+	organizations := {aSquotPackageMerge incoming definitions detect: #isOrganizationDefinition ifNone: [].
+		aSquotPackageMerge working definitions detect: #isOrganizationDefinition ifNone: [].
+		aSquotPackageMerge base definitions detect: #isOrganizationDefinition ifNone: []} reject: [:each | each isNil].
 	groups := (aSquotPackageMerge operationsAndConflicts
 		groupBy: [:each | each definition squotGroup])
 		collect: [:eachGroup | | classOperation |
@@ -22,7 +25,7 @@ topNodesForMerge: aSquotPackageMerge
 							operationsAndConflicts: eachClassAndOperations value
 							modifying: aSquotPackageMerge
 							classOperationOrConflict: classOperationOrConflict])
-			sort: [:a :b | a title asString <= b title asString]) ,
+			sort: [:a :b | self sortClassNodes: a and: b organizations: organizations]) ,
 		((groups associations reject: [:each | each value first definition squotBelongsToClass]) collect: 
 			[:eachClassificationAndOperations |
 			| classification |

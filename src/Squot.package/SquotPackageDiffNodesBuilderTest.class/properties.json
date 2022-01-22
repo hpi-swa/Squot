@@ -7,7 +7,7 @@
 	"commentStamp" : "",
 	"instvars" : [
 		 ],
-	"name" : "SquotPackageDiffNodesFactoryTest",
+	"name" : "SquotPackageDiffNodesBuilderTest",
 	"pools" : [
 		 ],
 	"super" : "TestCase",

@@ -6,8 +6,12 @@
 		 ],
 	"commentStamp" : "",
 	"instvars" : [
-		 ],
-	"name" : "SquotPackageDiffNodesFactory",
+		"packageMerge",
+		"groups",
+		"classNodes",
+		"otherNodes",
+		"classCategories" ],
+	"name" : "SquotPackageDiffNodesBuilder",
 	"pools" : [
 		 ],
 	"super" : "Object",

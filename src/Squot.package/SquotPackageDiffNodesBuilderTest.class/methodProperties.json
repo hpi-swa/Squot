@@ -1,0 +1,9 @@
+{
+	"class" : {
+		 },
+	"instance" : {
+		"testClassDefinitionDiffHoistedToTop" : "jr 1/22/2022 19:26",
+		"testClassDefinitionDiffHoistedToTopWithClassConflict" : "jr 1/22/2022 19:26",
+		"testClassDefinitionDiffHoistedToTopWithMethodConflict" : "jr 1/22/2022 19:26",
+		"testClassesOrderedByCategory" : "jr 1/22/2022 19:26",
+		"testMetaclassNodeSuffix" : "jr 1/22/2022 19:26" } }

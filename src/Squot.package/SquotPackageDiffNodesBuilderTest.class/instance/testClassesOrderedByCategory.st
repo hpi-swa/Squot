@@ -57,7 +57,7 @@ testClassesOrderedByCategory
 		modifications: modifications
 		conflicts: conflicts.
 	"when"
-	nodes := SquotPackageDiffNodesFactory new topNodesForMerge: merge.
+	nodes := SquotPackageDiffNodesBuilder new topNodesForMerge: merge.
 	"The classes are ordered by their categories in the incoming version, then lexicographically."
 	self assert: #(#TestClass2 #TestClass1 #TestClass3)
-		equals: (nodes collect: [:each | each content className]).
+		equals: (nodes collect: [:each | each content className]) asArray.

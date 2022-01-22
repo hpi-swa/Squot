@@ -1,0 +1,18 @@
+{
+	"class" : {
+		 },
+	"instance" : {
+		"addOperationOrConflict:" : "jr 1/22/2022 19:37",
+		"buildNodes" : "jr 1/22/2022 20:03",
+		"classDefOperationOrConflictFor:" : "jr 1/22/2022 19:51",
+		"classSuffix:" : "jr 12/19/2021 09:43",
+		"compareClassNodes:and:" : "jr 1/22/2022 20:18",
+		"createNodeForClass:operationsAndConflicts:" : "jr 1/22/2022 20:21",
+		"createNodeForDefinitionType:operationsAndConflicts:" : "jr 1/22/2022 20:09",
+		"detectClassCategories" : "jr 1/22/2022 20:26",
+		"extensionPseudoClassDefinition" : "jr 1/22/2022 17:39",
+		"hoistClassDefinition:" : "jr 1/22/2022 18:02",
+		"initialize" : "jr 1/22/2022 20:12",
+		"nodeFor:" : "jr 1/22/2022 20:01",
+		"topNodesForDiff:" : "jr 11/29/2020 20:28",
+		"topNodesForMerge:" : "jr 1/22/2022 20:26" } }

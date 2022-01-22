@@ -1,5 +1,5 @@
-private
-nodeFor: aMCPatchOperationOrConflict from: aSquotPackageMergeOrDiff
+node creation
+nodeFor: aMCPatchOperationOrConflict
 	^ aMCPatchOperationOrConflict isConflict
 		ifTrue: 
 			[SquotMergeDiffNode
@@ -14,5 +14,5 @@ nodeFor: aMCPatchOperationOrConflict from: aSquotPackageMergeOrDiff
 				title: aMCPatchOperationOrConflict squotDiffNodeSummary
 				content: aMCPatchOperationOrConflict
 				children: #()
-				onInclude: [aSquotPackageMergeOrDiff addOperationOrConflict: aMCPatchOperationOrConflict]
-				onExclude: [aSquotPackageMergeOrDiff removeOperationOrConflict: aMCPatchOperationOrConflict]].
+				onInclude: [packageMerge addOperationOrConflict: aMCPatchOperationOrConflict]
+				onExclude: [packageMerge removeOperationOrConflict: aMCPatchOperationOrConflict]].

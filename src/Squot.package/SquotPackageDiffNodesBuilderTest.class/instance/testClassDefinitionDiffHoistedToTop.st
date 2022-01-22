@@ -42,7 +42,7 @@ testClassDefinitionDiffHoistedToTop
 		modifications: modifications
 		conflicts: conflicts.
 	"when"
-	nodes := SquotPackageDiffNodesFactory new topNodesForMerge: merge.
+	nodes := SquotPackageDiffNodesBuilder new topNodesForMerge: merge.
 	"then"
 	classNode := nodes detect: [:each | each title beginsWith: 'TestClass'] ifNone: [].
 	self assert: classNode notNil;

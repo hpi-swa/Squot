@@ -27,13 +27,13 @@ testMetaclassNodeSuffix
 		modifications: modifications
 		conflicts: conflicts.
 	"when"
-	nodes := SquotPackageDiffNodesFactory new topNodesForMerge: merge.
+	nodes := SquotPackageDiffNodesBuilder new topNodesForMerge: merge.
 	"then"
 	metaclassNode := nodes detect: [:each | each title beginsWith: 'TestClass class'] ifNone: [].
 	self assert: metaclassNode notNil;
 		assert: (metaclassNode title endsWith: '(added)').
 	"when"
-	nodes := SquotPackageDiffNodesFactory new topNodesForMerge:
+	nodes := SquotPackageDiffNodesBuilder new topNodesForMerge:
 		(SquotPackageMerge
 		working: populatedSnapshot
 		incoming: emptySnapshot "remove all"

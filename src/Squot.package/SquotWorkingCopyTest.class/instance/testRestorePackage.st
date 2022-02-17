@@ -1,12 +1,14 @@
 tests
 testRestorePackage
-	| sampleClass sampleClassName firstMethod packageInfo anotherClass anotherClassName addedMethod firstVersion latestVersion |
+	| sampleClass sampleClassName firstMethod packageInfo anotherClass anotherClassName addedMethod firstVersion latestVersion artifactId path |
 	self suppressChangeNotificationsDuring: [sampleClass := classFactory newClass].
 	sampleClass compileSilently: 'firstMethod ^ self' classified: 'methods of first version'.
 	sampleClassName := sampleClass name. "when unloaded, the class is renamed"
 	firstMethod := sampleClass >> #firstMethod.
 	repository withUnitOfWork:
 	[packageInfo := self addPackage.
+	path := workingCopy artifacts anyOne path.
+	artifactId := (workingCopy artifactAt: path) id.
 	workingCopy saveVersionWithMessage: 'first version'.
 	firstVersion := workingCopy baseVersion.
 	self suppressChangeNotificationsDuring:
@@ -25,6 +27,7 @@ testRestorePackage
 	self deny: sampleClass isObsolete.
 	self assert: firstMethod isInstalled description: 'keep firstMethod'.
 	self deny: addedMethod isInstalled description: 'remove addedMethod'.
+	self assert: artifactId equals: (workingCopy artifactAt: path) id.
 	
 	self suppressChangeNotificationsDuring:
 		[workingCopy loadVersion: latestVersion interactive: false].
@@ -34,3 +37,4 @@ testRestorePackage
 	self assert: addedMethod getSource asString
 		equals: (sampleClass >> addedMethod selector) getSource asString
 		description: 'restore addedMethod'].
+	self assert: artifactId equals: (workingCopy artifactAt: path) id.

@@ -15,4 +15,5 @@ testAdditionNotLoaded
 		deny: (workingCopy artifactAt: 'text.txt') isLoaded;
 		deny: (store includesObjectAt: 'text.txt');
 		deny: (workingCopy patchRelativeToBase: snapshot) hasChanges;
-		assert: (workingCopy loadOrder includes: 'text.txt').
+		assert: (workingCopy loadOrder includes: 'text.txt');
+		assert: (snapshot artifactAt: 'text.txt') id equals: (workingCopy artifactAt: 'text.txt') id.

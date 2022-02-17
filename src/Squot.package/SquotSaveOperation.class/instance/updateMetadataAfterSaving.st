@@ -25,6 +25,8 @@ updateMetadataAfterSaving
 								isLoadedInWorkingCopy: true
 								contentDiff: SquotObjectGraphDiff new
 								metadataDiff: metadataDiff)
-						toObjectAt: eachPath]]
+						toObjectAt: eachPath].
+				(versionArtifact id notNil and: [workingArtifact id ~= versionArtifact id]) 
+					ifTrue: [workingArtifact id: versionArtifact id]. "Take id from version. Ids are ignored during merges and comparisons above."]
 			ifFalse: "Just overwrite unloaded artifact's metadata"
 				[workingArtifact storeInfo: versionArtifact storeInfo]].

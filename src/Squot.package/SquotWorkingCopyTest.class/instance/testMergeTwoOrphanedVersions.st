@@ -20,4 +20,6 @@ testMergeTwoOrphanedVersions
 	repository withUnitOfWork:
 		[self assert:
 			(workingCopy artifacts keys includesAllOf:
-				(scenario firstVersion artifacts keys, scenario secondVersion artifacts keys))].
+				(scenario firstVersion artifacts keys, scenario secondVersion artifacts keys));
+			assert: scenario firstVersionArtifact id equals: (workingCopy artifactAt: scenario firstVersionArtifact path) id;
+			assert: scenario secondVersionArtifact id equals: (workingCopy artifactAt: scenario secondVersionArtifact path) id].

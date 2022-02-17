@@ -1,7 +1,7 @@
 tests
 testTrackingWorkspaceMorph
 	<timeout: 10>
-	| workspace systemWindow bindings previousOwner |
+	| workspace systemWindow bindings previousOwner artifactId |
 	workspace := Workspace new.
 	systemWindow := workspace openLabel: 'Workspace for ', self selector.
 	workspace contents: 'This is a sample.'.
@@ -11,8 +11,9 @@ testTrackingWorkspaceMorph
 	workspace setBindings: bindings.
 	"save"
 	repository withUnitOfWork:
-	[workingCopy add: systemWindow at: 'sample workspace.morph'.
+	[artifactId := (workingCopy add: systemWindow at: 'sample workspace.morph') id.
 	workingCopy saveVersionWithMessage: 'add workspace'.
+	self assert: artifactId equals: (workingCopy baseVersion artifactAt: 'sample workspace.morph') id.
 	"modify bindings and properties"
 	workspace contents: 'Changed contents'.
 	workspace bindings
@@ -31,4 +32,5 @@ testTrackingWorkspaceMorph
 	self assert: workspace == (workspace bindingOf: #This) value.
 	self assert: 'I will be deleted after saving' equals: (workspace bindingOf: #toBeDeleted) value.
 	self deny: (workspace hasBindingOf: #newVar).
+	self assert: artifactId equals: (workingCopy artifactAt: 'sample workspace.morph') id.
 	systemWindow delete].

@@ -9,3 +9,4 @@ testRestoreClass
 	self assert: ((restoredClass := imageStore objectAt: snapshot artifacts anyOne path) isKindOf: Class).
 	self assert: restoredClass
 		equals: (self shouldnt: [testEnvironment at: storedClass name] raise: KeyNotFound).
+	self assert: snapshot artifacts anyOne id equals: imageStore artifacts anyOne id.

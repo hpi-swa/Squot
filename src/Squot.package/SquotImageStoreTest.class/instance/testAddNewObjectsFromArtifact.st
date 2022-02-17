@@ -14,3 +14,4 @@ testAddNewObjectsFromArtifact
 	self assert: 'test' equals: materialized contents.
 	self assert: materialized ~~ object.
 	self assert: (imageStore objectRegistry nameOf: materialized) = artifact shadowOfTrackedObject name.
+	self assert: artifact id equals: (imageStore artifactAt: path) id.

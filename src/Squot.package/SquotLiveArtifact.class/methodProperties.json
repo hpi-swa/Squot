@@ -10,6 +10,8 @@
 		"copyWithDiffApplied:" : "jr 12/13/2020 16:30",
 		"copyWithDifferentContent:" : "jr 7/16/2017 17:14",
 		"hash" : "jr 11/22/2020 18:05",
+		"id" : "jr 2/13/2022 22:55",
+		"id:" : "jr 2/13/2022 23:27",
 		"liveStoreInfo" : "jr 5/4/2019 02:25",
 		"materializeWith:replacing:" : "jr 12/7/2019 22:26",
 		"mergeWith:basedOn:" : "jr 7/17/2021 19:59",
@@ -23,6 +25,6 @@
 		"serializer:" : "jr 12/7/2019 22:40",
 		"serializerName" : "jr 1/3/2021 15:53",
 		"setObject:path:store:" : "jr 10/11/2020 23:47",
-		"snapshot" : "jr 12/13/2020 19:31",
+		"snapshot" : "jr 2/13/2022 22:54",
 		"storeInfo" : "jr 7/16/2017 17:14",
 		"storeInfo:" : "jr 5/1/2017 22:03" } }

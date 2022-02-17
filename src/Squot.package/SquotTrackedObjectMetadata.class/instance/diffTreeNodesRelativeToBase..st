@@ -1,7 +1,7 @@
 *Squot-Tools
 diffTreeNodesRelativeToBase: baseTrackedObjectMetadata
 	| metadataNodes absent hiddenProperties |
-	hiddenProperties := #(objectsReplacedByNames). "These properties are implementation details and changes to them should not be prevented by users."
+	hiddenProperties := #(objectsReplacedByNames id). "These properties are implementation details and changes to them should not be prevented by users."
 	metadataNodes := OrderedCollection new.
 	absent := Object new.
 	self keysAndValuesDo:

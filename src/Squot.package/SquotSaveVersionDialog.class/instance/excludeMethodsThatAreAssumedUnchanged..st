@@ -1,7 +1,7 @@
 actions
 excludeMethodsThatAreAssumedUnchanged: aCollection
 	| packageNodes |
-	packageNodes := ((aCollection select: [:each | each artifactDiff notNil]) select: [:each | (each content object shadowOfTrackedObject isKindOf: SquotPackageShadow) and: [each content isModification]]).
+	packageNodes := ((aCollection select: [:each | each artifactDiff notNil]) select: [:each | each content isModification and: [each content object storeInfo objectClassName = #PackageInfo]]).
 	packageNodes do: [:eachPackage |
 		eachPackage children do: [:eachClass |
 			[eachClass content isCurrentlyIgnoredInSquot
@@ -13,5 +13,4 @@ excludeMethodsThatAreAssumedUnchanged: aCollection
 				on: MessageNotUnderstood do:
 					[:error | error message selector == #isCurrentlyIgnoredInSquot
 						ifTrue: [error resume: false]
-						ifFalse: [error pass]]].
-		eachPackage hasActiveChildren ifFalse: [eachPackage exclude]].
+						ifFalse: [error pass]]]].

@@ -29,3 +29,4 @@ testMergeRemovalAndChange
 	operation applyToWorkingCopy.
 	"then"
 	self assert: 'Changed text' equals: (self workingCopy objectAt: 'text') contents].
+	self assert: (baseVersion artifactAt: 'text') id equals: (workingCopy artifactAt: 'text') id.

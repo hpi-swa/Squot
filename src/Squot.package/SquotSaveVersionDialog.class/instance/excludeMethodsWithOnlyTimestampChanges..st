@@ -7,5 +7,4 @@ excludeMethodsWithOnlyTimestampChanges: aCollection
 			eachClassNode children
 				select: [:each | each title endsWith: '(only different time stamp)']
 				thenDo: [:each | each exclude].
-			eachClassNode hasActiveChildren ifFalse: [eachClassNode exclude]].
-		eachPackageNode hasActiveChildren ifFalse: [eachPackageNode exclude]].
+			eachClassNode hasActiveChildren ifFalse: [eachClassNode exclude]]].

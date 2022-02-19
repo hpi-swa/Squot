@@ -1,4 +1,4 @@
 toolbuilder
 buttonWidth
 
-	^ 40
+	^ 40 * RealEstateAgent scaleFactor

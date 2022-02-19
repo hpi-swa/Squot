@@ -1,3 +1,3 @@
 toolbuilder
-searchPanelHeight
+inputFieldHeight
 	^ ToolBuilder default inputFieldHeight

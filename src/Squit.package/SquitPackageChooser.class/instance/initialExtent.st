@@ -3,4 +3,4 @@ initialExtent
 
 	| listFont |
 	listFont := Preferences standardListFont.
-	^ (20 * (listFont widthOf: $m)) * 2 @ (15 * listFont height)
+	^ (20 * (listFont widthOf: $m)) * 2 @ (ToolBuilder default listHeightFor: 15)

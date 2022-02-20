@@ -9,6 +9,7 @@ testPatchingPreservesId
 					storeInfo: metadata;
 					yourself).
 	originalId := (fileStore artifactAt: 'example') id.
+	self assert: originalId notNil.
 	changed := (fileStore artifactAt: 'example') snapshot copy.
 	changed id: UUID new.
 	changed storeInfo at: #dummy put: 2.

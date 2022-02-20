@@ -1,3 +1,3 @@
 toolbuilder
 inputFieldHeight
-	^ ToolBuilder default inputFieldHeight
+	^ SquotGUI inputFieldHeight

@@ -11,10 +11,10 @@ buildWith: toolBuilder
 				list: #remotesLabels;
 				getSelected: #selectedRemoteName;
 				setSelected: #selectedRemoteName:;
-				frame: (LayoutFrame fractions: (0@0 corner: 1@1) offsets: (0@0 corner: 0@(self buttonHeight + ToolBuilder default panelSpacing) negated));
+				frame: (LayoutFrame fractions: (0@0 corner: 1@1) offsets: (0@0 corner: 0@self buttonHeight negated));
 				yourself.
 			toolBuilder pluggablePanelSpec new
-				frame: (LayoutFrame fractions: (0@1 corner: 1@1) offsets: (0@ (self buttonHeight + ToolBuilder default panelSpacing) negated corner: 0@0));
+				frame: (LayoutFrame fractions: (0@1 corner: 1@1) offsets: (0@ self buttonHeight negated corner: 0@0));
 				layout: #horizontal;
 				children:
 					{toolBuilder pluggableButtonSpec new

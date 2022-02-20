@@ -1,3 +1,3 @@
 toolbuilder
 buttonBarHeight
-	^ ToolBuilder default buttonRowHeight
+	^ SquotGUI buttonBarHeight

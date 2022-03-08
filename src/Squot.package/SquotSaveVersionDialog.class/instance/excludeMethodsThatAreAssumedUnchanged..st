@@ -1,8 +1,6 @@
 actions
 excludeMethodsThatAreAssumedUnchanged: aCollection
-	| packageNodes |
-	packageNodes := ((aCollection select: [:each | each artifactDiff notNil]) select: [:each | each content isModification and: [each content object storeInfo objectClassName = #PackageInfo]]).
-	packageNodes do: [:eachPackage |
+	aCollection do: [:eachPackage |
 		eachPackage children do: [:eachClass |
 			[eachClass content isCurrentlyIgnoredInSquot
 				ifTrue: [eachClass withAllChildren"Nodes" do: [:each | each exclude]]

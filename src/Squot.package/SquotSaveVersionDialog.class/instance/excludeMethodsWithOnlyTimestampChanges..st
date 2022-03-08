@@ -1,8 +1,6 @@
 actions
 excludeMethodsWithOnlyTimestampChanges: aCollection
-	| packageNodes |
-	packageNodes := ((aCollection select: [:each | each artifactDiff notNil]) select: [:each | each content isModification and: [each content object storeInfo objectClassName = #PackageInfo]]).
-	packageNodes do: [:eachPackageNode |
+	aCollection do: [:eachPackageNode |
 		eachPackageNode children do: [:eachClassNode |
 			eachClassNode children
 				select: [:each | each title endsWith: '(only different time stamp)']

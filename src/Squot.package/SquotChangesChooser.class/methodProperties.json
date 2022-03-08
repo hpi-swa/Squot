@@ -42,6 +42,8 @@
 		"diffNodeMenuHook:" : "jr 11/18/2020 15:26",
 		"diffText" : "jr 9/25/2020 18:27",
 		"environment" : "jr 11/1/2020 20:13",
+		"excludeMethodsWithOnlyTimestampChanges:" : "jr 3/8/2022 20:28",
+		"excludePackagesWithoutActiveChanges:" : "jr 3/8/2022 20:28",
 		"hasChildren:" : "jr 9/25/2020 18:27",
 		"hasNodeSelected" : "jr 9/25/2020 18:27",
 		"ignoreSelectedNode" : "jr 9/25/2020 18:27",

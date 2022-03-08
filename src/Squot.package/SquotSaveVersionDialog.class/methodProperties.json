@@ -18,8 +18,6 @@
 		"deactivateNodeCommandLabel" : "jr 4/7/2019 22:29",
 		"defaultMessage" : "jr 10/14/2018 01:24",
 		"excludeMethodsThatAreAssumedUnchanged:" : "jr 3/8/2022 20:28",
-		"excludeMethodsWithOnlyTimestampChanges:" : "jr 3/8/2022 20:28",
-		"excludePackagesWithoutActiveChanges:" : "jr 3/8/2022 20:28",
 		"initialize" : "jr 11/18/2018 00:50",
 		"inspectOriginalArtifactCommandLabel" : "jr 11/18/2018 01:05",
 		"message" : "jr 2/17/2017 17:03",

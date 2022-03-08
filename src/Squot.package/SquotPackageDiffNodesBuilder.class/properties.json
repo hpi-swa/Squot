@@ -9,8 +9,7 @@
 		"packageMerge",
 		"groups",
 		"classNodes",
-		"otherNodes",
-		"classCategories" ],
+		"otherNodes" ],
 	"name" : "SquotPackageDiffNodesBuilder",
 	"pools" : [
 		 ],

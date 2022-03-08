@@ -1,5 +1,5 @@
 tests
-testClassesOrderedByCategory
+testClassesOrderedLexicograhically
 	| workingSnapshot incomingSnapshot baseSnapshot class1b class1i class2b class2i class3b class3i modifications conflicts merge nodes |
 	"given"
 	baseSnapshot := SquotPackageShadow forPackageNamed: 'Test' withSnapshot:
@@ -35,7 +35,7 @@ testClassesOrderedByCategory
 			class3i := MCClassDefinition
 				name: 'TestClass3'
 				superclassName: 'Object'
-				category: 'Test-A'  "moved"
+				category: 'Test-A'  "changed category (we once tried to have classes sorted by category, but since you don't see the categories in the diff tree, the order was rather surprising than helpful)"
 				instVarNames: #()
 				comment: 'Changed comment'.
 			class2i := MCClassDefinition
@@ -47,8 +47,8 @@ testClassesOrderedByCategory
 	workingSnapshot := baseSnapshot.
 	modifications :=
 		{MCModification of: class1b to: class1i.
-		MCModification of: class2b to: class2i.
-		MCModification of: class3b to: class3i}.
+		MCModification of: class3b to: class3i. "deliberately not in the expected order"
+		MCModification of: class2b to: class2i}.
 	conflicts := #().
 	merge := SquotPackageMerge
 		working: workingSnapshot
@@ -58,6 +58,6 @@ testClassesOrderedByCategory
 		conflicts: conflicts.
 	"when"
 	nodes := SquotPackageDiffNodesBuilder new topNodesForMerge: merge.
-	"The classes are ordered by their categories in the incoming version, then lexicographically."
-	self assert: #(#TestClass2 #TestClass1 #TestClass3)
+	"The classes are ordered lexicographically by their names."
+	self assert: #(#TestClass1 #TestClass2 #TestClass3)
 		equals: (nodes collect: [:each | each content className]) asArray.

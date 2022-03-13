@@ -1,5 +1,6 @@
 tests
 testMigrationIntroduceArtifactIds
+	| id |
 	"Given a repository with no artifact ids"
 	workingCopy repository withUnitOfWork:
 		[| git fs metadataFile |
@@ -17,4 +18,9 @@ testMigrationIntroduceArtifactIds
 		self assert: (workingCopy artifactAt: 'x') id notNil;
 			assert: ((workingCopy artifactAt: 'x') storeInfo at: #id) notNil;
 			assert: (workingCopy artifactAt: 'x') id equals: (workingCopy baseVersion artifactAt: 'x') id;
-			assert: (workingCopy artifactAt: 'x') id equals: ((workingCopy baseVersion artifactAt: 'x') storeInfo at: #id)].
+			assert: (workingCopy artifactAt: 'x') id equals: ((workingCopy baseVersion artifactAt: 'x') storeInfo at: #id).
+	"When the old version is checked out later, the id stays in place."
+		id := (workingCopy artifactAt: 'x') id.
+		workingCopy loadVersion: workingCopy baseVersion parents first interactive: false.
+		self assert: id equals: (workingCopy artifactAt: 'x') id;
+			assert: id equals: ((workingCopy artifactAt: 'x') storeInfo at: #id)].

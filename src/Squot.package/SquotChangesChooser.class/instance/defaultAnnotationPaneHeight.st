@@ -1,4 +1,4 @@
 ui toolbuilder
 defaultAnnotationPaneHeight
 
-	^ ToolBuilder default inputFieldHeightFor: 2 "lines"
+	^ SquotGUI inputFieldHeightFor: 2 "lines"

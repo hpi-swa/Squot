@@ -3,15 +3,17 @@
 		"repository:" : "jr 3/13/2022 17:36" },
 	"instance" : {
 		"buildWith:" : "jr 3/13/2022 18:41",
-		"deleteSelectedTag" : "jr 3/13/2022 18:46",
+		"deleteSelectedTag" : "jr 3/13/2022 19:06",
 		"errorNoProjectFound" : "jr 3/13/2022 18:13",
 		"errorNoTagSelected" : "jr 3/13/2022 18:12",
 		"findProjectWith:" : "jr 3/13/2022 18:49",
+		"initialize" : "jr 3/13/2022 19:12",
 		"labelString" : "jr 3/13/2022 17:53",
 		"pushSelectedTag" : "jr 3/13/2022 18:37",
 		"selectedTagHistorian" : "jr 3/13/2022 18:45",
 		"selectedTagName" : "jr 3/13/2022 17:57",
 		"selectedTagName:" : "jr 3/13/2022 17:56",
-		"setRepository:" : "jr 3/13/2022 17:36",
+		"setRepository:" : "jr 3/13/2022 18:52",
 		"showLogSelectedTag" : "jr 3/13/2022 18:49",
-		"tagLabels" : "jr 3/13/2022 17:51" } }
+		"tagLabels" : "jr 3/13/2022 19:11",
+		"update:" : "jr 3/13/2022 19:12" } }

@@ -6,4 +6,5 @@ newHistorian: name version: aVersion
 		[self git
 			updateRef: fullRefName
 			to: aVersion hexHash].
+	Project current addDeferredUIMessage: [self changed: #historians].
 	^ self historianNamed: fullRefName

@@ -15,7 +15,10 @@ menuProjectListWorkingCopyHook: aMenu
 		};
 		add: 'Set package storage format...'
 		subMenu: (ToolBuilder default build: self packageFormatMenuSpec).
-	aMenu addLine.
+	aMenu
+		addLine;
+		addList: {{'Browse tags' translated. #browseTags. 'List tags in the repository of this project' translated}};
+		addLine.
 	aMenu addList: {
 		{'Add remote'. #actionRemoteAdd}.
 		{'Manage remotes'. #actionManageRemotes}.

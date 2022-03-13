@@ -4,4 +4,5 @@ toggleLoadSelectedNode
 	self selectedNode isActive ifFalse: [self selectedNode include].
 	self selectedNode artifactDiff toggleWhetherToLoad.
 	self changed: #rootNodes;
-		changed: #diffText.
+		changed: #diffText;
+		changed: #annotation.

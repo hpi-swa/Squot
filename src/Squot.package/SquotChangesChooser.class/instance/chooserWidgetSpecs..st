@@ -19,5 +19,11 @@ chooserWidgetSpecs: builder
 		name: 'diff text for selected item';
 		model: self;
 		getText: #diffText;
-		frame: (0.4@0 corner: 1@1);
+		frame: (LayoutFrame fractions: (0.4@0 corner: 1@1) offsets: (0 @ 0 corner: 0 @ self defaultAnnotationPaneHeight negated));
+		yourself.
+	builder pluggableTextSpec new
+		name: #annotationPane;
+		model: self;
+		getText: #annotation;
+		frame: (LayoutFrame fractions: (0.4@1 corner: 1@1) offsets: (0 @ self defaultAnnotationPaneHeight negated corner: 0 @ 0));
 		yourself}

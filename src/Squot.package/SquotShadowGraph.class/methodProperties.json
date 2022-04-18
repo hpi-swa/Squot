@@ -3,6 +3,7 @@
 		"anonymousObjectName" : "jr 7/30/2017 18:11",
 		"empty" : "jr 7/7/2021 21:17",
 		"squotMirror" : "jr 9/10/2021 22:54",
+		"stonAllInstVarNames" : "jr 4/18/2022 21:11",
 		"withSingleShadow:" : "jr 9/20/2017 21:14" },
 	"instance" : {
 		"=" : "jr 3/16/2019 20:28",
@@ -22,6 +23,7 @@
 		"mutableCopy" : "jr 7/30/2017 01:28",
 		"nameOf:" : "jr 7/30/2017 01:19",
 		"nameOf:ifAbsent:" : "jr 9/25/2019 14:52",
+		"objectForDataStream:" : "jr 4/18/2022 21:02",
 		"objectNames" : "jr 5/10/2018 19:41",
 		"postCopy" : "jr 8/17/2017 22:18",
 		"preferredSerializer" : "jr 9/20/2017 20:47",

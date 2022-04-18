@@ -58,6 +58,7 @@
 		"testRevertOfOrphanedVersion" : "jr 1/22/2022 22:13",
 		"testRevertWithoutConflicts" : "jr 1/23/2022 00:07",
 		"testSaveTimestampIsNow" : "jr 8/25/2020 19:13",
+		"testSaveWithoutAddedArtifact" : "jr 4/18/2022 16:48",
 		"testSwitchAndMoveOverToBranchAtSameVersion" : "jr 3/2/2020 23:23",
 		"testSwitchBranch" : "jr 3/2/2020 23:23",
 		"testSwitchBranchAndMoveOverUnsavedChanges" : "jr 3/2/2020 23:37",

@@ -5,7 +5,9 @@ actionSettings
 	menu := builder pluggableMenuSpec new.
 	menu
 		add: 'Set package storage format'
-		target: self selector: #offerPackageFormatMenu argumentList: #();
+		target: self selector: #offerPackageFormatMenu argumentList: #().
+	self projectSelection addUserSettingsTo: menu.
+	menu
 		add: 'Edit global author information...'
 		target: self selector: #editGlobalAuthorInfo argumentList: #();
 		add: (self projectSelection shouldStoreMetadata

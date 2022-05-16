@@ -10,6 +10,7 @@
 		"asMCSnapshot" : "jr 7/22/2017 17:26",
 		"browse" : "jr 6/6/2020 03:26",
 		"copyWithSnapshot:" : "jr 12/4/2020 20:23",
+		"copyWithSnapshot:tonelProperties:" : "jr 5/17/2022 00:10",
 		"definitions" : "jr 7/22/2017 00:27",
 		"diffToBase:withSnapshot:" : "jr 9/25/2019 22:48",
 		"diffToSnapshot:" : "jr 9/25/2019 22:33",
@@ -33,5 +34,4 @@
 		"squotRewritePath:with:" : "jr 9/20/2017 21:02",
 		"squotWrite:asTonelWith:" : "jr 12/4/2020 20:26",
 		"squotWrite:with:" : "jr 3/16/2019 23:33",
-		"tonelProperties" : "jr 12/4/2020 23:14",
-		"withPackageDiffPatchApplied:" : "jr 7/22/2017 00:08" } }
+		"tonelProperties" : "jr 12/4/2020 23:14" } }

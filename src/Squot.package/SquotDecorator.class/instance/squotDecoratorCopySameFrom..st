@@ -5,7 +5,7 @@ squotDecoratorCopySameFrom: otherObject
 	| myInstVars otherInstVars |
 	myInstVars := self squotDecoratorClass allInstVarNames.
 	otherInstVars := otherObject squotDecoratorClass allInstVarNames.
-	myInstVars doWithIndex: [:each :index |
+	myInstVars withIndexDo: [:each :index |
 		| match |
 		(match := otherInstVars indexOf: each) > 0 ifTrue:
 			[self instVarAt: index put: (otherObject instVarAt: match)]].

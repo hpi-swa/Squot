@@ -6,7 +6,7 @@
 	"instance" : {
 		"=" : "jr 3/5/2020 00:23",
 		"addCredentialsFor:user:password:" : "jr 4/12/2017 14:21",
-		"addUserSettingsOf:to:" : "jr 5/16/2022 22:56",
+		"addUserSettingsOf:to:" : "jr 5/27/2022 17:30",
 		"cachedSnapshotOf:ifAbsentPut:" : "jr 7/23/2017 01:54",
 		"cloneFrom:" : "jr 5/23/2017 14:22",
 		"convertToCurrentVersion:refStream:" : "jr 4/12/2017 14:20",

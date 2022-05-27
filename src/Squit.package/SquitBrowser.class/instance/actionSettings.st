@@ -6,7 +6,7 @@ actionSettings
 	menu
 		add: 'Set package storage format'
 		target: self selector: #offerPackageFormatMenu argumentList: #().
-	self projectSelection addUserSettingsTo: menu.
+	self projectSelection ifNotNil: [:project | project addUserSettingsTo: menu].
 	menu
 		add: 'Edit global author information...'
 		target: self selector: #editGlobalAuthorInfo argumentList: #();

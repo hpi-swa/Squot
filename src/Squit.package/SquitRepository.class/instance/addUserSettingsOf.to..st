@@ -2,7 +2,7 @@
 addUserSettingsOf: aSquotWorkingCopy to: aPluggableMenuSpec
 	| serializers |
 	serializers := ((aSquotWorkingCopy artifacts
-		groupBy: [:each | each value storeInfo serializer])
+		groupBy: [:each | each storeInfo serializer])
 		associations
 		reject: [:each | each key isNil])
 		collect: [:each | (self class environment classNamed: each key) -> each value].

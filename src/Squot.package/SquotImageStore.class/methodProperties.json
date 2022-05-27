@@ -4,7 +4,7 @@
 	"instance" : {
 		"activateObjectRegistryDuring:" : "jr 7/16/2017 19:16",
 		"add:" : "jr 1/3/2021 21:57",
-		"add:at:" : "jr 12/3/2019 00:06",
+		"add:at:" : "jr 5/28/2022 01:09",
 		"add:at:additionalInfo:" : "jr 5/4/2019 02:21",
 		"add:copiedFromArtifact:" : "jr 7/16/2017 18:56",
 		"appendToLoadOrder:" : "jr 8/18/2018 16:21",
@@ -23,7 +23,6 @@
 		"includes:" : "jr 3/11/2017 01:09",
 		"includesObjectAt:" : "jr 3/8/2017 17:48",
 		"initialize" : "jr 8/18/2018 15:47",
-		"initializeArtifactFor:at:" : "jr 5/27/2022 19:17",
 		"initializeObjectFrom:" : "jr 1/3/2021 21:56",
 		"initializeStoreInfo:forObject:" : "jr 5/27/2022 22:31",
 		"lazySnapshot" : "jr 1/3/2021 17:36",

@@ -4,4 +4,5 @@
 	"instance" : {
 		"setUp" : "jr 1/20/2022 19:41",
 		"testChangestampsAddedAfterTurningThemOn" : "jr 5/22/2022 19:00",
+		"testChangestampsEnabledInAddedPackageToo" : "jr 5/22/2022 20:03",
 		"testPackagesAddedWithTonelPaths" : "jr 1/20/2022 20:21" } }

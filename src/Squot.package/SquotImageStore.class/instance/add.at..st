@@ -1,4 +1,4 @@
-adding and removing
+deprecated
 add: anObject at: aPath
 	"begin tracking anObject and have it accessible under aPath"
 	| artifact |

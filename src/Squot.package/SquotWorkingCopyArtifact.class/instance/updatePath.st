@@ -1,8 +1,4 @@
 private
 updatePath
-	| oldPath newPath |
-	oldPath := artifact path.
-	newPath := workingCopy validatePath: oldPath for: artifact.
-	newPath ~= oldPath ifTrue:
-		[workingCopy moveObjectAt: oldPath to: newPath].
-	^ newPath
+	"Check whether the path of this artifact is still valid, and move it to a new, valid path if it is not."
+	self subclassResponsibility

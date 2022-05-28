@@ -1,9 +1,8 @@
 adding and removing
 supports: aTrackedObjectMetadata forObject: anObject
-	| path expectedPath |
+	| copy path expectedPath |
+	copy := aTrackedObjectMetadata copy.
+	self initializeStoreInfo: copy forObject: anObject.
 	path := aTrackedObjectMetadata at: #path.
-	expectedPath := (pathTransformationRules
-		at: anObject
-		ifAbsent: [self error: 'Mock not prepared for object: ', anObject printString])
-		value: path.
+	expectedPath := copy at: #path.
 	^ path = expectedPath

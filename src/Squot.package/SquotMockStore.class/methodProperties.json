@@ -6,10 +6,9 @@
 		"artifacts" : "jr 12/8/2019 21:39",
 		"capture:withMetadata:" : "jr 12/8/2019 21:37",
 		"copySettingsFrom:to:" : "jr 5/27/2022 23:33",
-		"initializeStoreInfo:forObject:" : "jr 5/27/2022 22:37",
+		"initializeStoreInfo:forObject:" : "jr 5/28/2022 11:37",
 		"loadOrder" : "jr 9/26/2020 18:39",
 		"objectInOwnArtifact:" : "jr 12/2/2019 22:34",
 		"objects" : "jr 12/2/2019 22:22",
-		"pathTransformationRules" : "jr 12/2/2019 22:17",
-		"supports:forObject:" : "jr 5/27/2022 22:47",
-		"when:comesInValidatePathAs:" : "jr 12/2/2019 22:17" } }
+		"supports:forObject:" : "jr 5/28/2022 11:40",
+		"whenInitializingStoreInfoFor:do:" : "jr 5/28/2022 11:39" } }

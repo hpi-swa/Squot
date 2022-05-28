@@ -3,12 +3,15 @@ testStoreAndRepositoryChangePath
 	| object |
 	"given"
 	object := Object new.
-	store when: object comesInValidatePathAs:
-		[:path |
-		(path includesSubstring: 'changed by store' caseSensitive: true)
-			ifFalse: [path, ' changed by store']
-			ifTrue: [path]].
-	repository whenValidatePathAnswer: [:snapshot :path | path, ' and repository'].
+	store
+		whenInitializingStoreInfoFor: object
+		do: [:storeInfo | | path | path := storeInfo at: #path.
+			(path includesSubstring: 'changed by store' caseSensitive: true)
+				ifFalse: [storeInfo at: #path put: path, ' changed by store']].
+	repository whenInitializingStoreInfoDo:
+		[:snapshot :storeInfo | | path | path := storeInfo at: #path.
+		(path endsWith: ' and repository')
+			ifFalse: [storeInfo at: #path put: path, ' and repository']].
 	"when"
 	workingCopy add: object at: 'path'.
 	"then"

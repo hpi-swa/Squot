@@ -3,12 +3,12 @@ testStoreChangesPath
 	| object |
 	"given"
 	object := Object new.
-	store when: object comesInValidatePathAs:
-		[:path |
-		(path endsWith: ' changed by store')
-			ifTrue: [path]
-			ifFalse: [path, ' changed by store']].
-	repository whenValidatePathAnswer: [:snapshot :path | path].
+	store
+		whenInitializingStoreInfoFor: object
+		do: [:storeInfo | | path | path := storeInfo at: #path.
+			(path endsWith: ' changed by store')
+				ifFalse: [storeInfo at: #path put: path, ' changed by store']].
+	repository whenInitializingStoreInfoDo: [:snapshot :storeInfo | "nothing"].
 	"when"
 	workingCopy add: object at: 'path'.
 	"then"

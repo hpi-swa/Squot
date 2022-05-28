@@ -1,3 +1,3 @@
 adding and removing
-initializeStoreInfo: aTrackedObjectMetadata forObject: aSnapshot
-	(storeInfoInitBlock ifNil: [self error: 'Mock not prepared']) value: aSnapshot value: aTrackedObjectMetadata.
+initializeStoreInfo: aTrackedObjectMetadata forObject: aShadow
+	(storeInfoInitBlock ifNil: [self error: 'Mock not prepared']) value: aShadow value: aTrackedObjectMetadata.

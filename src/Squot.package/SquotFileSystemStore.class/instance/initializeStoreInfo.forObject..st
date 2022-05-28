@@ -1,6 +1,6 @@
 adding and removing
-initializeStoreInfo: aTrackedObjectMetadata forObject: aSnapshot
+initializeStoreInfo: aTrackedObjectMetadata forObject: aShadow
 	| serializer rewrittenPath |
-	serializer := self serializerFactoryFrom: aTrackedObjectMetadata ifAbsent: [aSnapshot preferredSerializer].
-	rewrittenPath := serializer rewritePath: (aTrackedObjectMetadata at: #path) for: aSnapshot.
+	serializer := self serializerFactoryFrom: aTrackedObjectMetadata ifAbsent: [aShadow preferredSerializer].
+	rewrittenPath := serializer rewritePath: (aTrackedObjectMetadata at: #path) for: aShadow.
 	aTrackedObjectMetadata at: #path put: rewrittenPath.

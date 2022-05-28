@@ -1,3 +1,3 @@
 validating paths
-initializeStoreInfo: aTrackedObjectMetadata forObject: aSnapshot
-	^ self new initializeStoreInfo: aTrackedObjectMetadata forObject: aSnapshot
+initializeStoreInfo: aTrackedObjectMetadata forObject: aShadow
+	^ self new initializeStoreInfo: aTrackedObjectMetadata forObject: aShadow

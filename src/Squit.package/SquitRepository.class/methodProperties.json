@@ -40,7 +40,7 @@
 		"initialize" : "jr 4/12/2017 14:16",
 		"initializeGitRepositoryIn:" : "jr 1/26/2017 12:28",
 		"initializeInDirectory:" : "jr 1/26/2017 17:35",
-		"initializeStoreInfo:forObject:" : "jr 5/27/2022 22:32",
+		"initializeStoreInfo:forObject:" : "jr 5/28/2022 12:02",
 		"initializeWith:" : "jr 2/1/2017 14:53",
 		"isAvailable" : "jr 6/21/2017 15:46",
 		"location" : "jr 4/27/2017 16:15",

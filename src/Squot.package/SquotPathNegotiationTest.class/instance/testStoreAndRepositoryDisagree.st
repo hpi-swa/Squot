@@ -9,7 +9,7 @@ testStoreAndRepositoryDisagree
 			(path endsWith: ' changed by store')
 				ifFalse: [storeInfo at: #path put: path, ' changed by store']].
 	repository whenInitializingStoreInfoDo:
-		[:snapshot :storeInfo | | path | path := storeInfo at: #path.
+		[:shadow :storeInfo | | path | path := storeInfo at: #path.
 		(path endsWith: ' changed by repository')
 			ifFalse: [storeInfo at: #path put: path, ' changed by repository']].
 	"when"

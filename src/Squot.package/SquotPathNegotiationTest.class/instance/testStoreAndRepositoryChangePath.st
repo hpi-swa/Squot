@@ -9,7 +9,7 @@ testStoreAndRepositoryChangePath
 			(path includesSubstring: 'changed by store' caseSensitive: true)
 				ifFalse: [storeInfo at: #path put: path, ' changed by store']].
 	repository whenInitializingStoreInfoDo:
-		[:snapshot :storeInfo | | path | path := storeInfo at: #path.
+		[:shadow :storeInfo | | path | path := storeInfo at: #path.
 		(path endsWith: ' and repository')
 			ifFalse: [storeInfo at: #path put: path, ' and repository']].
 	"when"

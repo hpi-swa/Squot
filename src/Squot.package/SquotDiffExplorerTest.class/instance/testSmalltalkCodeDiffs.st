@@ -65,7 +65,6 @@ testSmalltalkCodeDiffs
 					(PackageInfo new packageName: classFactory packageName, '-', 'AddedPackage'));
 		buildSnapshot.
 	patch := after patchRelativeToBase: before.
-	workingCopy := SquotWorkingCopy forTestInMemory.
 	workingCopy
 		add: (PackageInfo new packageName: classFactory packageName, '-', 'ChangedPackage') at: classFactory packageName, '-', 'ChangedPackage.package';
 		add: (PackageInfo new packageName: classFactory packageName, '-', 'RemovedPackage') at: classFactory packageName, '-', 'RemovedPackage.package';

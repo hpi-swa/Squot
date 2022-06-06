@@ -2,7 +2,6 @@ test objects
 patchChangingArtifactAt: path
 	| artifact incoming |
 	artifact := SquotArtifact new path: path; content: SquotArtifactContentMock new.
-	workingCopy := SquotWorkingCopy forTestInMemory.
 	workingCopy add: (ValueHolder new contents: 2; yourself) at: path.
 	incoming := workingCopy snapshot.
 	(workingCopy objectAt: path) contents: 1.

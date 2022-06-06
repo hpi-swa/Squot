@@ -1,7 +1,6 @@
 test objects
 patchChangingArtifactAt: path
 	| object changed |
-	workingCopy := SquotWorkingCopy forTestInMemory.
 	object := ValueHolder new contents: 1; yourself.
 	workingCopy add: object at: path.
 	changed := object copy.

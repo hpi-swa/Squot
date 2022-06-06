@@ -6,13 +6,13 @@
 	"instance" : {
 		"expectedFailures" : "jr 10/4/2020 20:50",
 		"newToolOn:" : "jr 5/2/2020 01:49",
-		"patchChangingArtifactAt:" : "jr 11/20/2020 23:29",
+		"patchChangingArtifactAt:" : "jr 6/6/2022 23:18",
 		"performUiInteractionTestsOnNode:withPath:inTree:" : "jr 11/18/2020 21:06",
 		"testDoNotLoadAddedArtifact" : "jr 11/18/2020 21:07",
-		"testLeaveUnloadedArtifactUnloaded" : "jr 11/20/2020 23:28",
+		"testLeaveUnloadedArtifactUnloaded" : "jr 6/6/2022 23:18",
 		"testLoadUnloadedArtifact" : "jr 11/18/2020 21:38",
 		"testLoadUnloadedArtifactDuringModification" : "jr 11/18/2020 21:38",
 		"testMethodsGetExcludedIfOnlyTheirStampsChanged" : "jr 5/14/2021 16:18",
 		"testToggleLoadAddedArtifact" : "jr 11/18/2020 21:39",
-		"testUnloadedArtifactsAdorned" : "jr 11/18/2020 22:15",
+		"testUnloadedArtifactsAdorned" : "jr 6/6/2022 23:18",
 		"workingCopySavePatch" : "jr 11/20/2020 23:28" } }

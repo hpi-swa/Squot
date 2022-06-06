@@ -7,7 +7,6 @@ patchModifyingMethodTimestampInArtifactAt: path
 				category: 'changed stamps' timeStamp: '' source: 'a ^ self'. "must match decompiler output"
 		}) asSquotArtifactForPackage: (PackageInfo new packageName: 'TestPackage'))
 		path: path.
-	workingCopy := SquotWorkingCopy forTestInMemory.
 	SystemChangeNotifier uniqueInstance doSilently:
 		[workingCopy add: artifact.
 		[incoming := SquotSnapshot builder

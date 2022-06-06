@@ -3,6 +3,6 @@
 		 },
 	"instance" : {
 		"setUp" : "jr 1/20/2022 19:41",
-		"testChangestampsAddedAfterTurningThemOn" : "jr 5/22/2022 19:00",
-		"testChangestampsEnabledInAddedPackageToo" : "jr 5/22/2022 20:03",
+		"testChangestampsAddedAfterTurningThemOn" : "jr 6/6/2022 17:47",
+		"testChangestampsEnabledInAddedPackageToo" : "jr 6/6/2022 17:52",
 		"testPackagesAddedWithTonelPaths" : "jr 1/20/2022 20:21" } }

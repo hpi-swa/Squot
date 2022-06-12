@@ -11,7 +11,7 @@ actionBranch
 		initialName: nameSuggestion
 		ifCanceled: [^ self].
 	self loadBranchList; branchSelectionChanged.
-	(SquotGUI chooseFrom: #('Switch and move over unsaved changes' 'Switch but leave unsaved changes at current branch' 'Stay at current branch') values: #(switchMoveOver switchClean stayAtCurrent) title: 'Do you want to switch to the new branch?')
+	(SquotGUI chooseOptionFrom: #('Switch and move over unsaved changes' 'Switch but leave unsaved changes at current branch' 'Stay at current branch') values: #(switchMoveOver switchClean stayAtCurrent) title: 'Do you want to switch to the new branch?')
 		caseOf: 
 		{[#switchMoveOver] -> [self actionBranchSwitchMoveOver].
 		[#switchClean] -> [self actionBranchSwitch].

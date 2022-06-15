@@ -2,7 +2,7 @@ error handling
 errorPushFailed: aGitPushFailed
 	| answer |
 	answer := SquotGUI
-		chooseFrom:
+		chooseOptionFrom:
 			{'Retry' translated. 'Cancel' translated. 'Debug'} 
 		values: #(retry cancel debug)
 		title: aGitPushFailed messageText.

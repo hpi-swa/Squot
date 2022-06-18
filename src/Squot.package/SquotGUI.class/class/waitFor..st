@@ -32,15 +32,5 @@ waitFor: aWaitable
 		assert: newUiProcess isTerminated description: 'Second UI Process not terminated';
 		assert: Project uiProcess == oldUiProcess description: 'Original UI process not reinstantiated';
 		assert: Project uiProcess isActiveProcess description: 'Not running in the UI process'.
-	exception ifNotNil:
-		[| usesNewExceptionHandling |
-		usesNewExceptionHandling := Exception canUnderstand: #resumeEvaluating:.
-		usesNewExceptionHandling
-			ifTrue:
-				["Sending #signal again would act like #outer, which will search handlers from the original handler context of the dead process."
-				exception copy
-					instVarNamed: 'signalContext' put: nil;
-					tag: exception;
-					signal]
-			ifFalse: [exception signal]].
+	exception ifNotNil: [exception signal "using the current exception environment"].
 	^ answer

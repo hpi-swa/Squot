@@ -1,0 +1,3 @@
+testing
+squotHasChanges
+	^ leftTarget ~= rightTarget

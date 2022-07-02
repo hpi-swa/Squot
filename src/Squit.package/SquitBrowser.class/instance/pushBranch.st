@@ -4,7 +4,7 @@ pushBranch
 	self hasBranchSelection ifFalse: [^ self].
 	historian := selectedHistorian.
 	[[(SquitInteractivePushToUpstream historian: historian) push.
-	self rebuildCommitList "update the decorations, the remote-tracking branch changes"]
+	Project current addDeferredUIMessage: [self loadCommitList "the remote-tracking branch changes"]]
 		on: SquitUpstreamUndefined do:
 			[:e |
 			self inform: e historian shortName, ' has no upstream branch. Please set one first. Afterwards your branch will be pushed immediately.'.

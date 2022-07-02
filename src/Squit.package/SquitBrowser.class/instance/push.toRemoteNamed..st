@@ -7,7 +7,8 @@ push: aHistorian toRemoteNamed: aString
 		remoteBranchName: (SquotGUI
 								request: 'Branch name at remote:'
 								initialAnswer: selectedHistorian shortName))
-		push]
+		push.
+	Project current addDeferredUIMessage: [self loadCommitList "the remote-tracking branch changes"]]
 		on: SquitBadRemote do:
 			[:e |
 			Project current addDeferredUIMessage: [self showBadRemote: e remote].

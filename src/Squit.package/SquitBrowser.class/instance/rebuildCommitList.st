@@ -9,9 +9,6 @@ rebuildCommitList
 	count := 0.
 	(walker := selectedHistorian repository historyWalkClass new)
 		nextPut: selectedHistorian version.
-	historiansForDecoration :=
-		(selectedHistorian repository historians, selectedHistorian repository remoteHistorians
-			groupBy: [:each | each version]).
 	[walker atEnd or: [count > 30]]
 		whileFalse:
 			[list add: walker next.
@@ -19,4 +16,3 @@ rebuildCommitList
 	cachedCommitList := self sortVersionsTopologically: list.
 	walker atEnd ifFalse:
 		[self continueAsyncBuildingCommitList: list historyWalk: walker].
-	self changed: #commitList.

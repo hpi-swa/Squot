@@ -2,10 +2,11 @@
 	"class" : {
 		 },
 	"instance" : {
+		"allWithPrefix:ifAbsentPutAll:" : "jr 7/2/2022 14:00",
 		"at:ifAbsentPut:" : "jr 5/1/2020 22:25",
 		"changedRef:" : "jr 5/1/2020 23:05",
 		"deleteRef:" : "jr 5/1/2020 22:26",
-		"initialize" : "jr 5/1/2020 23:05",
+		"initialize" : "jr 7/2/2022 13:26",
 		"refExists:ifNotLookedUp:" : "jr 5/1/2020 20:32",
 		"resolvedAt:ifAbsentPut:" : "jr 5/1/2020 22:28",
 		"updateRef:to:" : "jr 5/1/2020 19:58" } }

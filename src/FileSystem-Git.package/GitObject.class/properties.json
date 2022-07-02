@@ -6,7 +6,8 @@
 		 ],
 	"commentStamp" : "<historical>",
 	"instvars" : [
-		"repository" ],
+		"repository",
+		"loadedSize" ],
 	"name" : "GitObject",
 	"pools" : [
 		 ],

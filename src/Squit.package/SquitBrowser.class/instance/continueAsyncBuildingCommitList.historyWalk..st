@@ -1,5 +1,5 @@
 caching
-continueBuildingCommitList: anOrderedCollection asyncWith: aHistoryWalker
+continueAsyncBuildingCommitList: anOrderedCollection historyWalk: aHistoryWalker
 	commitListBuildProcess := 
 	[self withUnitOfWork:
 		[aHistoryWalker do: [:each | anOrderedCollection add: each].

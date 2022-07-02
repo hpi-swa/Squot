@@ -1,3 +1,3 @@
 private
 historiansDecorationAtVersion: aSquitVersion
-	^ historiansForDecoration at: aSquitVersion ifAbsent: []
+	^ historiansForDecoration at: aSquitVersion ifAbsent: [#()]

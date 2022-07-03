@@ -27,7 +27,7 @@
 		"resultDiffAt:" : "jr 8/15/2019 03:02",
 		"resultLoadOrder" : "jr 8/15/2019 01:06",
 		"testLoadOrderConflicts" : "jr 11/18/2020 16:01",
-		"testMetadataConflict" : "jr 1/16/2022 21:34",
+		"testMetadataConflict" : "jr 7/3/2022 12:24",
 		"testMethodsGetExcludedIfOnlyTheirStampsChanged" : "jr 5/14/2021 16:18",
 		"testResolveArtifactConflictChooseLeft" : "jr 11/18/2020 16:03",
 		"testResolveArtifactConflictChooseRight" : "jr 11/18/2020 16:03",

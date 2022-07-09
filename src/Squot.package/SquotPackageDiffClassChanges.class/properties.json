@@ -8,7 +8,9 @@
 	"instvars" : [
 		"diffTreeNode",
 		"className",
-		"classDefinition" ],
+		"classDefinition",
+		"operations",
+		"conflicts" ],
 	"name" : "SquotPackageDiffClassChanges",
 	"pools" : [
 		 ],

@@ -4,6 +4,7 @@ projectIndex: anIndex
 	projectIndex := anIndex.
 	repositoryExists := self projectSelection repository exists.
 	selectedHistorian := self projectSelection loadedHistorian.
+	self changed: #branchSelection.
 	commitSelection := nil.
 	commitToDiffAgainst := nil.
 	cachedCommitList := #().

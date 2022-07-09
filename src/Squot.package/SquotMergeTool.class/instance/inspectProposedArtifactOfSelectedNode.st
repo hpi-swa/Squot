@@ -1,9 +1,6 @@
 actions
 inspectProposedArtifactOfSelectedNode
-	(self selectedNode content respondsTo: #isModification)
-		ifTrue:
-			[self selectedNode content isRemoval
-				ifTrue: [self inform: 'Object has been removed.']
-				ifFalse: [self selectedNode content right explore]]
-		ifFalse:
-			[self selectedNode content incoming explore].
+	(((self selectedNode content respondsTo: #isMerge) and: [self selectedNode content isMerge])
+			or: [(self selectedNode content respondsTo: #isConflict) and: [self selectedNode content isConflict]])
+		ifTrue: [self selectedNode content incoming explore]
+		ifFalse: [^ super inspectProposedArtifactOfSelectedNode]

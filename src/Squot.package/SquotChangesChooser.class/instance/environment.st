@@ -1,6 +1,7 @@
 Smalltalk tools
 environment
+	| workingCopyArtifact |
 	self selectedNode ifNil: [^ super environment].
-	^ PackageInfo squotEnvironmentOf:
-		(self workingCopy artifactAt: self selectedNode artifactDiff path
-			ifAbsent: [^ super environment])
+	workingCopyArtifact := self workingCopy artifactAt: self selectedNode artifactDiff path ifAbsent: [^ super environment].
+	workingCopyArtifact isLoaded ifFalse: [^ super environment].
+	^ PackageInfo squotEnvironmentOf: workingCopyArtifact

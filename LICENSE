@@ -1,6 +1,6 @@
 This repository contains multiple packages:
 - Squot, Squit, VersionControl come from here
-- Pharo-compatibility was also initialized here, but consists mainly of code that was
+- SquotCompatibility was also initialized here, but consists mainly of code that was
   copied and adapted from Pharo, in order to make FileSystem-Git run in Squeak.
 - FileSystem-Git and FileSystem (FS-*) are forks of packages originally hosted elsewhere.
 - Squot-CoAuthorsExtension was originally a separate project.
@@ -27,7 +27,7 @@ as described below.
 =====================================================================
 Squot, Squit, VersionControl, Squot-CoAuthorsExtension,
 changes and additions to FileSystem and FileSystem-Git packages
-and Squeak adaptations to the code in the Pharo-compatibility package
+and Squeak adaptations to the code in the SquotCompatibility package
 =====================================================================
 
 MIT License

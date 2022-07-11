@@ -13,11 +13,13 @@
 			modes at: each put: dict]]].
 
 "2021-05-07: Restore original of shadowed fromUnixTime: method, see https://github.com/hpi-swa/Squot/issues/255"
+"2022-07-11: Changed to only do something if the extension method is currently installed"
 ((DateAndTime respondsTo: #fromUnixTime:) and: [(VersionsBrowser := Environment current classNamed: ''VersionsBrowser'') notNil]) ifTrue: [
 	| versionsBrowser changeRecord |
 	versionsBrowser := VersionsBrowser new scanVersionsOf: DateAndTime class >> #fromUnixTime: class: DateAndTime meta: true category: nil selector: #fromUnixTime:.
-	changeRecord := versionsBrowser changeList
-		detect: [:cr | (cr category beginsWith: ''*FileSystem-Git'') not]
-		ifNone: [].
-	changeRecord ifNotNil:
-		[Smalltalk globals at: #TEMP_Squot_ShadowedChangeRecord255 put: changeRecord]].'!
+	(versionsBrowser changeList first category beginsWith: ''*FileSystem-Git'') ifTrue:
+		[changeRecord := versionsBrowser changeList
+			detect: [:cr | (cr category beginsWith: ''*FileSystem-Git'') not]
+			ifNone: [].
+		changeRecord ifNotNil:
+			[Smalltalk globals at: #TEMP_Squot_ShadowedChangeRecord255 put: changeRecord]]].'!

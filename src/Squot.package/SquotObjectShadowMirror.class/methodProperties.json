@@ -1,6 +1,6 @@
 {
 	"class" : {
-		"class:" : "jr 12/15/2020 23:32" },
+		"class:" : "jr 8/7/2022 19:18" },
 	"instance" : {
 		"=" : "jr 7/18/2021 20:08",
 		"canHaveReferences:" : "jr 7/18/2021 22:23",
@@ -15,5 +15,4 @@
 		"reflectIndexableField:in:put:" : "jr 1/16/2021 11:40",
 		"reflectInstanceVariable:in:" : "jr 4/10/2021 12:28",
 		"reflectInstanceVariable:in:put:" : "jr 1/17/2021 22:31",
-		"setClass:" : "jr 1/17/2021 23:05",
 		"shouldObjectHaveNameAssigned:" : "jr 1/10/2021 21:49" } }

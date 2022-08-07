@@ -1,6 +1,6 @@
 {
 	"category" : "FileSystem-Git-Plumbing-Tests",
-	"classtraitcomposition" : "TGitTestCaseWithUnitOfWork",
+	"classtraitcomposition" : "TGitTestCaseWithUnitOfWork classTrait",
 	"commentStamp" : "",
 	"name" : "TGitActiveUnitOfWorkDuringTest",
 	"traitcomposition" : "TGitTestCaseWithUnitOfWork" }

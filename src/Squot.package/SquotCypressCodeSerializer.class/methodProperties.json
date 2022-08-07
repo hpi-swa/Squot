@@ -8,7 +8,7 @@
 		"userFriendlyTitle" : "jr 3/16/2019 15:52" },
 	"instance" : {
 		"canWriteDiffs" : "jr 11/20/2021 15:06",
-		"delete:" : "jr 11/20/2021 15:40",
+		"delete:" : "jr 8/7/2022 22:38",
 		"deleteClassifier:" : "jr 11/20/2021 12:27",
 		"deleteExtension:" : "jr 11/20/2021 12:42",
 		"deleteMethod:" : "jr 11/20/2021 11:46",
@@ -22,7 +22,7 @@
 		"write:" : "jr 5/9/2017 18:24",
 		"writeClass:" : "jr 9/3/2020 22:48",
 		"writeDefinitions:" : "jr 1/29/2017 21:08",
-		"writeDiff:" : "jr 1/16/2022 16:03",
+		"writeDiff:" : "jr 8/7/2022 23:33",
 		"writeMCSnapshot:forPackageNamed:from:" : "jr 3/16/2019 23:35",
 		"writePackage:" : "jr 9/3/2020 22:47",
 		"writePropertiesIfExists" : "jr 9/3/2020 22:47" } }

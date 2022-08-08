@@ -53,8 +53,9 @@ writeDiff: aSquotArtifactDiff
 				[classTrait := classTraits at: each className.
 				(newDefinitions includes: classTrait) ifFalse: [missingClassTraits add: classTrait]]].
 	(missingClassifiers select: [:each | each isTraitDefinition])
-		do: [:each | | classTrait | classTrait := classTraits at: each className.
-			(newDefinitions includes: classTrait) ifFalse: [missingClassTraits add: classTrait]].
+		do: [:each | | classTrait | classTrait := classTraits at: each className ifAbsent: [].
+			(classTrait notNil and: [(newDefinitions includes: classTrait) not])
+				ifTrue: [missingClassTraits add: classTrait]].
 	cypressWriter writeDefinitions: newDefinitions, missingClassifiers, missingClassTraits.
 	"Fix up methodProperties.json files (they now only include the methods that were newly written)."
 	allMethods := (newDefinitions select: [:each | each isMethodDefinition]) collect: [:each | each description -> each] as: Dictionary.

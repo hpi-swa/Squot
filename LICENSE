@@ -1,9 +1,17 @@
 This repository contains multiple packages:
-- Squot, Squit, VersionControl, Pharo-compatibility come from here
+- Squot, Squit, VersionControl come from here
+- Pharo-compatibility was also initialized here, but consists mainly of code that was
+  copied and adapted from Pharo, in order to make FileSystem-Git run in Squeak.
 - FileSystem-Git and FileSystem (FS-*) are forks of packages originally hosted elsewhere.
 - Squot-CoAuthorsExtension was originally a separate project.
 
 The packages originating here are released under the MIT license as described below.
+
+The code copied from Pharo in 2017 is released under the MIT license according to
+https://github.com/pharo-project/pharo/blob/6.0.0/src/System-Support.package/SmalltalkImage.class/instance/licenseStringTemplate.st,
+https://pharo.org/features, https://pharo.org/contribute (all last accessed 2022-07-10).
+The adapations to Squeak included here are also released under the MIT license
+as described below.
 
 The original FileSystem-Git was released under the MIT license according to 
 http://smalltalkhub.com/#!/~FileSystemGitDev/FileSystem-Git/ (last accessed 2019-02-15) 
@@ -16,15 +24,16 @@ http://www.squeaksource.com/fs.html (last accessed 2019-02-15).
 The additions and changes provided here are also released under the MIT license 
 as described below.
 
-===============================================================
-Squot, Squit, VersionControl, Pharo-compatibility packages,
-Squot-CoAuthorsExtension,
+=====================================================================
+Squot, Squit, VersionControl, Squot-CoAuthorsExtension,
 changes and additions to FileSystem and FileSystem-Git packages
-===============================================================
+and Squeak adaptations to the code in the Pharo-compatibility package
+=====================================================================
 
 MIT License
 
 Copyright (c) 2017 Jakob Reschke, Software Architecture Group (Hasso Plattner Institute)
+Copyright (c) 2017-2022 Contributors to the Squot project (see Git history)
 Copyright (c) 2019 Maximilian Stiede, Leon Bein (for the Squot-CoAuthorsExtension)
 
 Permission is hereby granted, free of charge, to any person obtaining a copy

@@ -7,7 +7,7 @@ jobs:
     strategy:
       matrix:
         os: [ ubuntu-latest, macos-latest, windows-latest ]
-        smalltalk: [ Squeak64-trunk, Squeak64-5.3, Squeak32-5.2 ]
+        smalltalk: [ Squeak64-trunk, Squeak64-6.0, Squeak64-5.3, Squeak32-5.2 ]
         exclude:
           - os: macos-latest
             smalltalk: Squeak32-5.2 # 32bit no longer supported on macOS

@@ -6,7 +6,7 @@ testSwitchAndMoveOverDoesNotDiscardChangesToUntrackedPackage
 	workingCopy saveVersionWithMessage: 'empty base version'.
 	mainBranch := workingCopy loadedHistorian.
 	(otherBranch := repository historianNamed: 'other') version: workingCopy baseVersion.
-	self savePackage; trackPackage.
+	self savePackageAndKeep.
 	self deny: (workingCopy patchRelativeToBase: workingCopy baseVersion) hasChanges.
 	workingCopy switchTo: otherBranch.
 	self deny: (workingCopy includesObjectAt: path).

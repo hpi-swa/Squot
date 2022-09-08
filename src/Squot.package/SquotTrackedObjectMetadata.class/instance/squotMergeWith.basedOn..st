@@ -19,7 +19,12 @@ squotMergeWith: incomingTrackedObjectMetadata basedOn: baseTrackedObjectMetadata
 					ifTrue: [conflicts at: path
 							put: (SquotObjectReferenceConflict key: path last
 									base: base working: working incoming: incoming)]]
-			ifRemoved: [:removed :path | diffs at: path put: (SquotReferenceRemoval of: removed from: working reference: path last rightObject: incoming)]
+			ifRemoved:
+				[:removed :path |
+				path ~= pathToArtifactId
+					ifTrue: [diffs at: path
+							put: (SquotReferenceRemoval of: removed from: working
+									reference: path last rightObject: incoming)]]
 			ifWorkingChanged:
 				[:changed :original :path |
 				path ~= pathToArtifactId

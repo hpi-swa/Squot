@@ -1,3 +1,3 @@
 testing
 hasChanges
-	^ resolution isNil or: [resolution hasChanges]
+	^ resolution isNil or: [resolution squotHasChanges]

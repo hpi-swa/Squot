@@ -1,3 +1,3 @@
 Squot-diff-testing
 squotHasChanges
-	^ true
+	^ self originalShadow ~= self replacementShadow

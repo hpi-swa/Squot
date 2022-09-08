@@ -10,6 +10,6 @@ menuObjectListGeneral: aMenu
 		aMenu addTitle: selected printString].
 	self buildMenu: aMenu from: {
 		'-'.
-		{'Add or remove packages'. #actionAddOrRemoveTrackedPackages. 'Add or remove packages for this project.'}.
+		{'Add or remove packages'. #actionAddOrRemoveTrackedPackages. 'Add or remove packages for this project.'. self hasProjectSelection}.
 	}.
 	^ aMenu

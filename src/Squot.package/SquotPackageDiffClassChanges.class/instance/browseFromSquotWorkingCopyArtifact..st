@@ -1,6 +1,14 @@
 browsing
 browseFromSquotWorkingCopyArtifact: aWorkingCopyArtifact
 	| environment behavior classTraitName |
+	aWorkingCopyArtifact isLoaded ifFalse:
+		[^ (MCSnapshotBrowser forSnapshot:
+			(MCSnapshot fromDefinitions:
+				(conflicts collect: [:each | each localDefinition]),
+				(operations collect: [:each | each definition])))
+			categorySelection: 1;
+			classSelection: 1;
+			showLabelled: 'Snapshot of ', className].
 	environment := PackageInfo squotEnvironmentOf: aWorkingCopyArtifact.
 	behavior := environment classOrTraitNamed: className.
 	behavior ifNil:

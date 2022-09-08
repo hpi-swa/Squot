@@ -15,7 +15,8 @@
 		"crc",
 		"dataStartPosition",
 		"lengthInPack",
-		"unpackedLength" ],
+		"unpackedLength",
+		"hexHash" ],
 	"name" : "GitPackedObject",
 	"pools" : [
 		 ],

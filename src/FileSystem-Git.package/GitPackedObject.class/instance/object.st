@@ -4,3 +4,4 @@ object
 		fromPackedObjectStream: self unpackedBytes readStream
 		type: self byteTypeCode
 		in: self repository
+		hash: hexHash

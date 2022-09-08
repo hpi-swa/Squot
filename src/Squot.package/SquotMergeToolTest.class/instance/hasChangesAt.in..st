@@ -1,3 +1,3 @@
 test objects
 hasChangesAt: path in: merge
-	^ (merge includesModificationAt: merge) and: [(merge at: path) hasChanges]
+	^ (merge includesModificationAt: path) and: [(merge at: path) hasChanges]

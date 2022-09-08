@@ -12,7 +12,7 @@ convertMonticelloVersion: aMCVersionInfo
 			parents: (aMCVersionInfo ancestors
 				collect: [:each | self squotVersionForMonticelloVersionInfo: each]);
 			message: aMCVersionInfo message;
-			author: aMCVersionInfo author;
+			author: (self squotAuthorForMonticelloAuthor: aMCVersionInfo author);
 			committer: (squotRepository extension: #authorInformation
 				ifPresent: [:authorInformation | authorInformation defaultAuthor]
 				ifAbsent: [Utilities authorInitials]);

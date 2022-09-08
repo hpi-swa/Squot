@@ -7,6 +7,7 @@ looseObjectNamed: aHexHash ifAbsent: aBlock
 			ifAbsent: [ ^ aBlock value ].
 	[object := GitStorableObject 
 		fromLooseObjectStream: stream
-		in: repository]
+		in: repository
+		hash: aHexHash]
 	ensure: [stream close].
 	^ object

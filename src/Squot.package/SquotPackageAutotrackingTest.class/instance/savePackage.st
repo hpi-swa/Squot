@@ -1,7 +1,4 @@
 tests
 savePackage
-	self initializePackage;
-		trackPackage.
-	workingCopy saveVersionWithMessage: 'version with package'.
-	path := self packagePath.
+	self savePackageAndKeep.
 	workingCopy removePackageNamed: package name. "untrack again"

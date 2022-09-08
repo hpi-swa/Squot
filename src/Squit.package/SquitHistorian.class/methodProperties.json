@@ -1,6 +1,7 @@
 {
 	"class" : {
-		 },
+		"existingNamed:repository:git:" : "jr 7/2/2022 19:23",
+		"newNamed:repository:git:" : "jr 7/2/2022 19:21" },
 	"instance" : {
 		"=" : "jr 4/14/2017 00:50",
 		"asSquotVersionIn:" : "jr 2/8/2020 20:20",
@@ -24,6 +25,7 @@
 		"remoteRef" : "jr 3/7/2020 00:10",
 		"repository" : "jr 1/11/2017 16:50",
 		"repository:" : "jr 1/11/2017 17:48",
+		"setName:repository:git:" : "jr 7/2/2022 19:21",
 		"setUpstreamToBranchTrackedByRemoteTrackingBranch:" : "jr 3/7/2020 00:10",
 		"shortName" : "jr 3/7/2020 00:10",
 		"untrackUpstream" : "jr 7/20/2020 13:06",

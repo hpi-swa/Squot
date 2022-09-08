@@ -7,15 +7,18 @@ testMetadataConflict
 	"When the choices are reset, each conflict needs to be resolved."
 	(metadataNode withAllChildren select: [:each | each offersChoice]) do: [:each | each resetChoice].
 	self assert: (fooNode := metadataNode children detect: [:each | each title asString includesSubstring: 'foo']) needsChoice.
-	fooNode chooseRight.
+	tool selectNode: fooNode;
+		activateSelectedNode. "choose incoming edition"
 	self assert: (contestedNode := metadataNode children detect: [:each | each title asString includesSubstring: 'contested']) needsChoice.
-	contestedNode chooseLeft.
+	tool selectNode: contestedNode;
+		deactivateSelectedNode. "choose working copy edition"
 	"The nodes for modifications, additions, removals do not need to be resolved.
 	Exclude them all to test later whether what is selected makes a difference."
 	#('old' 'update' 'new') do:
 		[:each | | node |
 		self deny: (node := metadataNode children detect: [:eachNode | eachNode title asString includesSubstring: each]) needsChoice.
-		node exclude].
+		tool selectNode: node;
+			deactivateSelectedNode].
 	"Since we resolved the conflicts, the merge can be accepted."
 	self closeDialogPossiblyOpenedDuring: [tool accept. acceptReturned := true]
 		timeoutMsecs: 5.

@@ -15,7 +15,7 @@
 		"testApplyPatch" : "jr 7/17/2021 20:42",
 		"testFiles" : "jr 3/8/2017 17:49",
 		"testIgnoredInstanceVariables" : "jr 7/20/2017 13:08",
-		"testMetadataModification" : "jr 12/14/2020 22:57",
+		"testMetadataModification" : "jr 6/26/2022 18:05",
 		"testPatchingPreservesId" : "jr 2/13/2022 18:21",
 		"testRemoveAlsoRemovesFromLoadOrder" : "jr 9/25/2019 15:45",
 		"testRestoreAdheresToTheLoadOrder" : "jr 8/18/2018 18:35",

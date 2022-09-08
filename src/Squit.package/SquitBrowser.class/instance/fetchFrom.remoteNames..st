@@ -6,4 +6,4 @@ fetchFrom: aRepository remoteNames: aCollection
 			[:e |
 			Project current addDeferredUIMessage: [self showBadRemote: e remote].
 			e resume].
-	self refresh.
+	Project current addDeferredUIMessage: [self refresh].

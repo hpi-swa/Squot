@@ -1,5 +1,5 @@
 private
-targetClass
+repositoryClass
 	| testClassName className |
 	testClassName := self class name asText asString.
 	className := (testClassName endsWith: 'WorkingCopyTest')

@@ -10,4 +10,4 @@ testUiProcessWaiting
 		on: AssertionFailure do: [:f | self fail: f messageText].
 	"Further assertions are built-into waitFor:"
 	self assert: Project uiProcess isActiveProcess;
-		assert: x = 42.
+		assert: x = 42 description: 'Deferred messages were not run'.

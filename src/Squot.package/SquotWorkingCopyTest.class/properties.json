@@ -17,6 +17,6 @@
 	"name" : "SquotWorkingCopyTest",
 	"pools" : [
 		 ],
-	"super" : "ClassTestCase",
+	"super" : "TestCase",
 	"traitcomposition" : "TSnapshotAssertionsForMonticello + TTestCaseSuppressingProgressDisplay + TTestCaseThatCreatesClassesOrMethods",
 	"type" : "normal" }

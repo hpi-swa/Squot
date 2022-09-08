@@ -25,10 +25,10 @@ computeDifferences
 									ifFalse: ["conflicting modification"
 											containerConflicts at: each put:
 												(SquotObjectReferenceConflict new
-													key: each;
+													key: (working slots associationAt: each) asReference;
 													base: (base slots associationAt: each);
-													working: (working slots associationAt: each);
-													incoming: (incoming slots associationAt: each);
+													working: (working slots at: each);
+													incoming: (incoming slots at: each);
 													yourself)]]]]
 			ifNil:
 				[(working slots at: each) name = baseValue name

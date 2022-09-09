@@ -7,7 +7,7 @@ buildRepositoryButtons: aBuilder
 			aBuilder pluggableButtonSpec new
 				model: self;
 				label: 'Pull (Fetch & Merge)';
-				action: #actionFetchAndMerge.
+				action: #actionPull.
 			aBuilder pluggableButtonSpec new
 				model: self;
 				label: 'Commit & Push';

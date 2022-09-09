@@ -9,11 +9,12 @@ untrack: aPackage
 	self changed: #trackedPackagesWithTitle.
 	self changed: #untrackedPackagesWithTitle.
 	selectionTracked ifNotNil:
-		[selectionTracked := selectionTracked min: trackedPackages size + 1.
-		self changed: #selectionTracked].
+		[self selectionTracked: (selectionTracked min: trackedPackages size + 1 "title")].
 	selectedUntrackedPackages add: aPackage.
 	selectedTrackedPackages remove: aPackage ifAbsent: [].
 	self changed: #selectionsTrackedAt:.
 	self changed: #selectionsUntrackedAt:.
 	self changed: #hasTrackedSelections.
-	self changed: #hasUntrackedSelections
+	self changed: #hasUntrackedSelections.
+	"Scroll updates into view"
+	self selectionUntracked: (untrackedPackages indexOf: aPackage) + 1 "title".

@@ -3,8 +3,8 @@
 		"requestCredentials" : "ek 9/21/2021 16:53" },
 	"instance" : {
 		"accept" : "ek 9/21/2021 18:23",
-		"addTextPanesAndDescriptions" : "ek 9/21/2021 18:03",
-		"configurePaneMorph" : "ek 9/21/2021 18:15",
+		"addTextPanesAndDescriptions" : "mad 9/9/2022 14:06",
+		"configurePaneMorph" : "mad 9/9/2022 14:06",
 		"createPasswordTextPaneFor:" : "ek 9/21/2021 17:27",
 		"createTextPaneFor:" : "ek 9/21/2021 17:58",
 		"createTextPanes" : "ek 9/21/2021 17:28",

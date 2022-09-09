@@ -4,8 +4,8 @@ addTextPanesAndDescriptions
 	| otherMessageMorph |
 	
 	column := AlignmentMorph newColumn
-		hResizing: #spaceFill;
-		vResizing: #spaceFill;
+		hResizing: #shrinkWrap;
+		vResizing: #shrinkWrap;
 		cellGap: 4;
 		color: Color transparent.
 	self paneMorph addMorph: column.

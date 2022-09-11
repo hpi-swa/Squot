@@ -55,7 +55,7 @@ baseline: spec
 		spec package: 'Squot' with: [
 			spec includes: 'SquotCompatibility-SqueakCommon']].
 	
-	spec for: #(#'squeak5.0.x' #'squeak5.1.x' #'squeak5.2.x' "not for squeak5.3") do: [
-		spec package: 'SquotCompatibility-Squeak52'.
+	spec for: #(#'squeak5.0.x' #'squeak5.1.x' #'squeak5.2.x' #'squeak5.3.x') do: [
+		spec package: 'SquotCompatibility-Squeak50'.
 		spec package: 'Squot' with: [
-			spec includes: 'SquotCompatibility-Squeak52']].
+			spec includes: 'SquotCompatibility-Squeak50']].

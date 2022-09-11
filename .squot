@@ -1,7 +1,7 @@
 OrderedDictionary {
 	'src/VersionControl.package' : #SquotCypressCodeSerializer,
 	'src/SquotCompatibility-SqueakCommon.package' : #SquotCypressCodeSerializer,
-	'src/SquotCompatibility-Squeak52.package' : #SquotCypressCodeSerializer,
+	'src/SquotCompatibility-Squeak50.package' : #SquotCypressCodeSerializer,
 	'src/Squot.package' : #SquotCypressCodeSerializer,
 	'src/FileSystem-Git.package' : #SquotCypressCodeSerializer,
 	'src/Squit.package' : #SquotCypressCodeSerializer,

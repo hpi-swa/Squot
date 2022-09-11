@@ -14,4 +14,4 @@ summaryForCommit: aSquitVersion
 		'Commit: ', commitHash, ', Parents: ', parents asCommaString, String cr,
 		'Author: ', author, String cr,
 		'Committer: ', committer, String cr,
-		'Date: ', timeStamp, String cr
+		'Date: ', timeStamp

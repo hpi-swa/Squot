@@ -1,3 +1,3 @@
 private
 performTest
-	^ repository withUnitOfWork: [super performTest]
+	^ self repository withUnitOfWork: [super performTest]

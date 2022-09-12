@@ -1,3 +1,3 @@
-*Pharo-compatibility
+*SquotCompatibility-SqueakCommon
 asDictionary
 	^ self as: Dictionary

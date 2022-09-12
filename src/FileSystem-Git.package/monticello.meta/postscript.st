@@ -26,7 +26,10 @@ GitUnitOfWork allInstancesDo:
 			convertToCurrentVersion: Dictionary new refStream: nil].
 
 "2021-05-07: Restore original of shadowed fromUnixTime: method, see https://github.com/hpi-swa/Squot/issues/255"
-changeRecord := Smalltalk globals at: #TEMP_Squot_ShadowedChangeRecord255 ifAbsent: [].
-changeRecord ifNotNil:
-	[[changeRecord fileIn]
-		ensure: [Smalltalk globals removeKey: #TEMP_Squot_ShadowedChangeRecord255]].'!
+"2022-07-11: must override the method anyway in Squeak 5.2, to make it return UTC timestamps"
+FileSystemGitCompatibility hadInadequateFromUnixTimeImplementation ifFalse:
+	[changeRecord := Smalltalk globals at: #TEMP_Squot_ShadowedChangeRecord255 ifAbsent: [].
+	changeRecord ifNotNil:
+		[[changeRecord fileIn]
+			ensure: [Smalltalk globals removeKey: #TEMP_Squot_ShadowedChangeRecord255]]].
+FileSystemGitCompatibility ensureValidFromUnixTimeImplementation.'!

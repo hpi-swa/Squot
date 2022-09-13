@@ -7,6 +7,7 @@ buildUntrackedList: builder
 		clearFilterAutomatically: false;
 		autoDeselect: true;
 		list: #untrackedPackagesWithTitle;
+		menu: #untrackedPackagesMenu:;
 		getIndex: #selectionUntracked;
 		setIndex: #selectionUntracked:;
 		getSelectionList: #selectionsUntrackedAt:;

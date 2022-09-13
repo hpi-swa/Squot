@@ -7,6 +7,7 @@ buildTrackedList: builder
 		clearFilterAutomatically: false;
 		autoDeselect: true;
 		list: #trackedPackagesWithTitle;
+		menu: #trackedPackagesMenu:;
 		getIndex: #selectionTracked;
 		setIndex: #selectionTracked:;
 		getSelectionList: #selectionsTrackedAt:;

@@ -11,5 +11,10 @@ trackSelected
 			child ~= root and: [
 				(PackageInfo new packageName: child; includesSystemCategory: root)]]].
 	
+	"Unselect children to be tracked (roots will be unselected by #track: below)"
+	selectedUntrackedPackages removeAllSuchThat: [:each |
+		(newPackages includes: each) not].
+	self changed: #selectedUntrackedPackages.
+	
 	newPackages do: [:package | 
 		self track: package].

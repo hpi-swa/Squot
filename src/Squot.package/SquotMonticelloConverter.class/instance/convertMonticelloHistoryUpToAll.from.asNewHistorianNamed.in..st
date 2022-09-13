@@ -21,7 +21,7 @@ convertMonticelloHistoryUpToAll: mcVersions from: aMCRepository asNewHistorianNa
 	versions := temporaryHistorians collect: [:each | each version].
 	versions do: [:version |
 		version artifacts keysAndValuesDo: [:key :artifact |
-			key ifNotEmpty: [workingCopy add: artifact]]].
+			key ifNotEmpty: [workingCopy addUnloaded: artifact]]].
 	workingCopy additionalParents: versions.
 	squotRepository newHistorian: historianName version: (
 		squotRepository createNewVersion: workingCopy snapshot with: [:version |

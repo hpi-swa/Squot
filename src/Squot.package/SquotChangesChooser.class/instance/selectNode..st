@@ -3,3 +3,4 @@ selectNode: aSquotDiffNode
 	selectedNode := aSquotDiffNode.
 	self changed: #selectedNode.
 	self changed: #diffText.
+	self changed: #annotation.

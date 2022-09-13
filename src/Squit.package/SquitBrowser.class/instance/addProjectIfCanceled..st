@@ -10,6 +10,6 @@ addProjectIfCanceled: cancelBlock
 	repositoryPath := directory pathName.
 	workingCopy repository: (SquitRepository new initializeInDirectory: (FileSystem disk root resolve: repositoryPath)).
 	workingCopy repository unitOfWork activateDuring:
-	[workingCopy loadedHistorian: (workingCopy repository historianNamed: 'master')].
+	[workingCopy loadedHistorian: workingCopy repository headHistorian].
 	workingCopy register.
 	^ workingCopy

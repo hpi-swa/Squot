@@ -38,11 +38,12 @@ testAcceptsCorrectConversionWithMultipleVersions
 			date: Date today time: Time now author: 'squit' ancestors: {first}}.
 	theVersions := versionInfos with: mcSnapshots collect: [:info :snapshot |
 		MCVersion package: package info: info snapshot: snapshot].
-	mcRepo := MCDictionaryRepository new.
+	mcRepo := self newMcRepository: classFactory packageName.
 	theVersions do: [:each | mcRepo storeVersion: each].
 	snapshots := mcSnapshots collect: [:each | SquotSnapshot builder
 		add: (each asSquotArtifactForPackage: package packageInfo);
 		buildSnapshot].
+	previous := nil.
 	squotVersions := versionInfos
 		with: snapshots
 		collect: [:versionInfo :snapshot | previous := repository

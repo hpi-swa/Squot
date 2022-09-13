@@ -1,7 +1,6 @@
 tests unloaded artifacts
 testLeaveUnloadedArtifactUnloaded
 	| path acceptReturned |
-	workingCopy := SquotWorkingCopy forTestInMemory.
 	path := 'artifact'.
 	tool := self newToolOn: (self patchWithUnloadedArtifactAt: path).
 	tool selectNode: tool rootNodes first.

@@ -12,7 +12,8 @@
 		"hits",
 		"misses",
 		"evictions",
-		"objectsSortedBySize" ],
+		"objectsSortedBySize",
+		"commitsSortedByLastAccess" ],
 	"name" : "GitObjectCache",
 	"pools" : [
 		 ],

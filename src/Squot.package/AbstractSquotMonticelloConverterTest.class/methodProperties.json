@@ -1,0 +1,7 @@
+{
+	"class" : {
+		"isAbstract" : "ct 10/28/2021 08:22" },
+	"instance" : {
+		"newMcRepository:" : "ct 10/28/2021 08:20",
+		"setUp" : "ct 10/28/2021 08:20",
+		"tearDown" : "ct 10/28/2021 08:30" } }

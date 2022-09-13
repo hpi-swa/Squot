@@ -3,7 +3,14 @@ testStoreAndRepositoryDisagree
 	| object |
 	"given"
 	object := Object new.
-	store when: object comesInValidatePathAs: [:path | path, ' changed by store'].
-	repository whenValidatePathAnswer: [:snapshot :path | path, ' changed by repository'].
+	store 
+		whenInitializingStoreInfoFor: object
+		do: [:storeInfo | | path | path := storeInfo at: #path.
+			(path endsWith: ' changed by store')
+				ifFalse: [storeInfo at: #path put: path, ' changed by store']].
+	repository whenInitializingStoreInfoDo:
+		[:shadow :storeInfo | | path | path := storeInfo at: #path.
+		(path endsWith: ' changed by repository')
+			ifFalse: [storeInfo at: #path put: path, ' changed by repository']].
 	"when"
 	self should: [workingCopy add: object at: 'path'] raise: Error.

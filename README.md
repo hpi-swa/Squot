@@ -66,7 +66,10 @@ After installing Squot, you will find a "Git Browser" in the Apps menu. With thi
 
 4. After reviewing the changes you can enter the commit message in the text box at the bottom.
 
-5. When you are happy with the commit, you simply finish it by pressing the "commit" button.
+5. You can use a button on the right of the message text box to select pre-defined co-authors to mention in the commit message.
+To define the available authors, simply edit `CoAuthorList class#default`
+
+6. When you are happy with the commit, you simply finish it by pressing the "commit" button.
 
 
 ### Notes on Pushing to Github

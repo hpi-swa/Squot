@@ -1,12 +1,9 @@
 adding and removing
 add: anObject at: path
-	| tempArtifact validatedPath |
-	(tempArtifact := SquotArtifact new)
-		path: path;
-		initializeDefaultStoreInfoFor: anObject;
-		content: (store capture: anObject withMetadata: tempArtifact storeInfo);
-		yourself. "use to validate the path"
-	validatedPath := self validatePath: path for: tempArtifact.
-	store add: anObject at: validatedPath.
-	self appendToLoadOrder: validatedPath.
-	^ store artifactAt: validatedPath
+	| storeInfo |
+	storeInfo := SquotTrackedObjectMetadata new.
+	storeInfo
+		id: SquotArtifact newId;
+		at: #path put: path.
+	anObject squotInitializeStoreInfo: storeInfo. "Instead of SquotArtifact initializeDefaultStoreInfoFor: anObject"
+	^ self add: anObject withStoreInfo: storeInfo

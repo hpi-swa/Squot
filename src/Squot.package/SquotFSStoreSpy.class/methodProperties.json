@@ -3,8 +3,12 @@
 		"on:" : "jr 5/28/2017 13:00" },
 	"instance" : {
 		"basicOpen:writable:" : "jr 5/28/2017 13:04",
+		"delete:" : "jr 11/19/2021 21:28",
 		"doesNotUnderstand:" : "jr 5/28/2017 12:59",
-		"initialize" : "jr 5/28/2017 13:00",
+		"initialize" : "jr 11/19/2021 21:29",
 		"on:" : "jr 5/28/2017 13:01",
+		"recordDelete:" : "jr 11/19/2021 21:29",
 		"recordOpened:writable:" : "jr 5/28/2017 13:05",
+		"resetObservations" : "jr 11/19/2021 21:30",
+		"wasDeleted:" : "jr 11/19/2021 21:29",
 		"wasOpened:" : "jr 5/28/2017 13:09" } }

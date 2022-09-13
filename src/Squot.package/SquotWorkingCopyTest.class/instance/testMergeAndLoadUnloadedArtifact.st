@@ -17,3 +17,4 @@ testMergeAndLoadUnloadedArtifact
 	scenario
 		assertSecondMethodUnmodifiedWith: self;
 		assertThirdMethodLoadedWith: self.
+	self assert: scenario packageId equals: (workingCopy artifactAt: scenario packagePath) id.

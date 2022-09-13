@@ -5,7 +5,7 @@ createThirdVersion
 	packageArtifact := firstSnapshot artifactAt: packagePath.
 	newSnapshot :=
 		firstSnapshot createNewBuilder
-			add: ((MCSnapshot fromDefinitions:
+			add: (((MCSnapshot fromDefinitions:
 					packageArtifact packageArtifactDefinitions ,
 					{thirdMethod := MCMethodDefinition
 						className: sampleClass name
@@ -13,7 +13,9 @@ createThirdVersion
 						category: 'methods of third version'
 						timeStamp: 'whatever'
 						source: ('thirdMethod ^ self')})
-				asSquotArtifactForPackage: packageInfo);
+				asSquotArtifactForPackage: packageInfo)
+				id: packageArtifact id;
+				yourself);
 			 buildSnapshot.
 	otherHistorian := repository historianNamed: 'other'.
 	otherHistorian version: firstVersion.

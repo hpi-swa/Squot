@@ -10,7 +10,7 @@ errorRemoteAuthenticationFailed: aGitRemoteError
 		ifTrue: [message := message, String cr , 'Also please note: If you have two-factor authentification enabled,'
 			, String cr, 'you must use a personal access token instead of your GitHub login password.'].
 	answer := SquotGUI
-		chooseFrom:
+		chooseOptionFrom:
 			{'Retry' translated. 'Change credentials' translated. 'Cancel' translated. 'Debug'} 
 		values: #(retry dropCredentials cancel debug)
 		title: message.

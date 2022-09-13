@@ -6,4 +6,8 @@ buildSearchClearButton: builder
 		enabled: #hasSearchTerm;
 		action: #actionClearSearch;
 		help: 'Clear your search.';
-		frame: (0.9@0 corner: 1@1)
+		frame: (LayoutFrame new
+			topFraction: 0;
+			bottomFraction: 1;
+			leftFraction: 1 offset: self searchClearButtonWidth negated;
+			rightFraction: 1)

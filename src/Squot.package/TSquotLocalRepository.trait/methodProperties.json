@@ -3,6 +3,7 @@
 		 },
 	"instance" : {
 		"clearTemporaryVersionsOn:" : "jr 4/29/2018 18:36",
+		"copySettingsFrom:to:" : "jr 5/27/2022 23:15",
 		"createNewVersion:with:" : "jr 2/5/2017 22:25",
 		"createNewVersionFromPatch:with:" : "jr 1/3/2021 20:52",
 		"createWorkingCopy" : "jr 1/26/2017 17:49",

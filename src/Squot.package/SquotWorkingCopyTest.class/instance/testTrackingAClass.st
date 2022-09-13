@@ -1,10 +1,11 @@
 tests
 testTrackingAClass
-	| class versionBeforeSave latestVersion |
+	| class versionBeforeSave latestVersion artifactId path |
 	self suppressChangeNotificationsDuring: [class := classFactory newClass].
 	class compileSilently: 'firstMethod ^ self' classified: 'methods of first version'.
 	repository withUnitOfWork:
-	[workingCopy add: class at: 'src/', class category, '.package/', class name, '.class'.
+	[path := 'src/', class category, '.package/', class name, '.class'.
+	artifactId := (workingCopy add: class at: path) id.
 	versionBeforeSave := workingCopy loadedHistorian version.
 	self assert: versionBeforeSave isNil description: 'starting from empty history'.
 	
@@ -18,6 +19,7 @@ testTrackingAClass
 		description: 'loaded historian'.
 	self assertVersion: latestVersion containsClass: class.
 	self assertVersion: latestVersion containsMethod: class >> #firstMethod.
+	self assert: artifactId equals: (latestVersion artifactAt: path) id.
 	
 	class compileSilently: 'addedMethod ^ self' classified: 'methods of second version'.
 	versionBeforeSave := workingCopy loadedHistorian version.
@@ -32,4 +34,5 @@ testTrackingAClass
 		equals: workingCopy loadedHistorian version
 		description: 'loaded historian'.
 	self assertVersion: latestVersion containsMethod: class >> #addedMethod.
-	self assertVersion: latestVersion containsMethod: class >> #firstMethod].
+	self assertVersion: latestVersion containsMethod: class >> #firstMethod.
+	self assert: artifactId equals: (latestVersion artifactAt: path) id].

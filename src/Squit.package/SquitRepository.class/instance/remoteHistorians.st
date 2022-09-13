@@ -3,8 +3,8 @@ remoteHistorians
 	^ Array streamContents: [:stream |
 		self git
 			allReferencesPrefixedWith: 'refs/remotes/'
-			do: [:each | stream nextPut: (SquitHistorian new
-					repository: self;
-					gitRepository: gitRepository repository;
-					name: (each allButFirst: 'refs/remotes/' size);
-					yourself)]]
+			do: [:each | stream nextPut:
+					(SquitHistorian
+						existingNamed: (each allButFirst: 'refs/remotes/' size)
+						repository: self
+						git: gitRepository repository)]]

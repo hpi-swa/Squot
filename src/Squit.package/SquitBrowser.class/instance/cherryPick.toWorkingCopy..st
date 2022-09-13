@@ -1,16 +1,8 @@
 actions
 cherryPick: pickedVersion toWorkingCopy: workingCopy
-	| parentVersions parentVersion cherryPick |
+	| parentVersion cherryPick |
 	self withUnitOfWork:
-	[self flag: #todo. "extract parent selection"
-	parentVersions := pickedVersion parents.
-	parentVersion := parentVersions size caseOf: {
-		[0] -> [nil].
-		[1] -> [pickedVersion parents anyOne]}
-	otherwise: [SquotGUI
-			chooseFrom: (parentVersions collect: #printString)
-			values: parentVersions
-			title: 'Pick changes in comparison to which parent?'].
+	[parentVersion := self soleParentOf: pickedVersion orChooseWithPrompt: 'Pick changes in comparison to which parent?'.
 	(cherryPick := workingCopy newInteractiveCherryPickOperation)
 		requestor: self;
 		pickedVersion: pickedVersion;

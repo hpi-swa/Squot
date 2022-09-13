@@ -1,3 +1,3 @@
-initialize-release
+*Squot-Tests
 initializeDefaultStoreInfoFor: anObject
 	anObject squotInitializeStoreInfo: storeInfo.

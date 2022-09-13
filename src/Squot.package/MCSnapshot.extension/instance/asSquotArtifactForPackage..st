@@ -4,7 +4,8 @@ asSquotArtifactForPackage: aPackageInfo
 		content: (SquotShadowGraph withSingleShadow:
 			(SquotPackageShadow
 				forPackageNamed: aPackageInfo packageName
-				withSnapshot: self));
+				withSnapshot: self
+				tonelProperties: (Dictionary newFrom: {#name -> aPackageInfo packageName asSymbol})));
 		path: aPackageInfo name, '.package';
 		initializeDefaultStoreInfoFor: aPackageInfo;
 		yourself

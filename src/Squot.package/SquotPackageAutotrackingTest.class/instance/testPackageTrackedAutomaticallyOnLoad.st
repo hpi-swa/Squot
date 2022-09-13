@@ -18,7 +18,7 @@ testPackageTrackedAutomaticallyOnLoad
 				deny: (request patch diffAt: path) isAddition
 				description: 'is addition instead of modification';
 				assert: (request patch diffAt: path) content startDiff operations size = 1
-				description: ['expected only 1 change, but were ', (request patch diffAt: path) operations size].
+				description: ['expected only 1 change, but were ', (request patch diffAt: path) content startDiff operations size].
 			request return "abort load"].
 	self assert: (workingCopy objectAt: path) = package
 		description: 'package was not tracked automatically'.

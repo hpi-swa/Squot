@@ -1,0 +1,17 @@
+{
+	"category" : "SquotTonel-Tests",
+	"classinstvars" : [
+		 ],
+	"classtraitcomposition" : "TTestCaseSuppressingProgressDisplay classTrait",
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"repository",
+		"workingCopy" ],
+	"name" : "SquotTonelWorkingCopyTest",
+	"pools" : [
+		 ],
+	"super" : "TestCase",
+	"traitcomposition" : "TTestCaseSuppressingProgressDisplay",
+	"type" : "normal" }

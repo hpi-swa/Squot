@@ -2,8 +2,9 @@
 	"class" : {
 		 },
 	"instance" : {
-		"inspectOriginalArtifactOfSelectedNode" : "jr 11/1/2020 21:11",
-		"inspectProposedArtifactOfSelectedNode" : "jr 11/1/2020 21:12",
+		"autoProcessNodes:" : "jr 3/8/2022 22:53",
+		"inspectOriginalArtifactOfSelectedNode" : "jr 7/9/2022 11:45",
+		"inspectProposedArtifactOfSelectedNode" : "jr 7/9/2022 11:45",
 		"on:" : "jr 8/14/2019 23:04",
-		"rootNodes" : "jr 11/3/2020 22:01",
+		"rootNodes" : "jr 3/8/2022 22:55",
 		"selectedPatch" : "jr 8/14/2019 23:24" } }

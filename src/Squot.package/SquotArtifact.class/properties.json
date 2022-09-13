@@ -9,7 +9,8 @@
 	"instvars" : [
 		"content",
 		"path",
-		"storeInfo" ],
+		"storeInfo",
+		"id" ],
 	"name" : "SquotArtifact",
 	"pools" : [
 		 ],

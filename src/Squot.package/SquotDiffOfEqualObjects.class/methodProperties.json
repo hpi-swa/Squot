@@ -1,9 +1,12 @@
 {
 	"class" : {
-		"instance" : "jr 4/9/2017 22:43" },
+		"instance" : "jr 4/9/2017 22:43",
+		"object:" : "jr 1/9/2022 20:06" },
 	"instance" : {
 		"hasChanges" : "jr 7/22/2017 02:44",
 		"mayAffectArtifact" : "jr 11/6/2020 23:06",
+		"object" : "jr 1/9/2022 20:08",
+		"setObject:" : "jr 1/9/2022 20:07",
 		"squotHasChanges" : "jr 4/9/2017 22:43",
 		"squotReflectOn:in:" : "jr 7/17/2021 02:41",
 		"willBeLoaded" : "jr 10/4/2020 17:47" } }

@@ -1,3 +1,3 @@
 class initialization
 initialize
-	Extensions := IdentityDictionary new.
+	Extensions := WeakIdentityKeyDictionary newFrom: (Extensions ifNil: [#()]).

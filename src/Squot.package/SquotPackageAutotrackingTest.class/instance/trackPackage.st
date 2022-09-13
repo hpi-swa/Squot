@@ -1,3 +1,4 @@
 tests
 trackPackage
-	workingCopy addPackageNamed: package name at: 'src/', package name, '.package'.
+	path := 'src/', package name, '.package'.
+	workingCopy addPackageNamed: package name at: path.

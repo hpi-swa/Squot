@@ -1,0 +1,19 @@
+{
+	"category" : "Squot-WorkingCopies",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "jr 1/23/2022 00:20",
+	"instvars" : [
+		"merge",
+		"loadedPatch",
+		"save",
+		"message",
+		"revertedVersion",
+		"relevantParentOfRevertedVersion" ],
+	"name" : "SquotRevertOperation",
+	"pools" : [
+		 ],
+	"super" : "SquotWorkingCopyOperation",
+	"type" : "normal" }

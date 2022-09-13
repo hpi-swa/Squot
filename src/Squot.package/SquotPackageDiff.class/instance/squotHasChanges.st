@@ -1,3 +1,3 @@
 Squot-diff-testing
 squotHasChanges
-	^ patch squotHasChanges
+	^ patch squotHasChanges or: [working tonelProperties ~= incoming tonelProperties]

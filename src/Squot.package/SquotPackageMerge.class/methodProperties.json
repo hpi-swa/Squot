@@ -1,17 +1,19 @@
 {
 	"class" : {
-		 },
+		"working:incoming:base:modifications:conflicts:" : "jr 12/12/2021 16:28" },
 	"instance" : {
 		"addOperationOrConflict:" : "jr 11/29/2020 20:21",
 		"chooseIncoming" : "jr 9/25/2019 21:20",
 		"chooseWorking" : "jr 9/25/2019 21:20",
 		"computeDifferences" : "jr 9/25/2019 21:43",
+		"hasChanges" : "jr 6/29/2022 00:13",
 		"initializeSquotDiffNodes:with:" : "jr 9/25/2019 21:50",
 		"keyOf:ifAbsent:" : "jr 9/25/2019 21:43",
 		"modifications" : "jr 9/25/2019 22:32",
-		"newSquotDiffNodes" : "jr 11/29/2020 20:30",
+		"newSquotDiffNodes" : "jr 1/22/2022 19:26",
 		"operationsAndConflicts" : "jr 11/29/2020 20:16",
 		"privateResolvedPatch" : "jr 9/25/2019 21:35",
 		"removeOperationOrConflict:" : "jr 11/29/2020 20:23",
 		"resetChoice" : "jr 9/25/2019 21:21",
+		"setWorking:incoming:base:modifications:conflicts:" : "jr 12/12/2021 16:26",
 		"squotChangeAsStringOrText" : "jr 5/17/2020 22:59" } }

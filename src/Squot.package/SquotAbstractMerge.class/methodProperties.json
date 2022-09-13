@@ -14,7 +14,10 @@
 		"incoming" : "jr 7/30/2019 00:53",
 		"incoming:" : "jr 7/30/2019 00:53",
 		"initializeSquotDiffNodes:with:" : "jr 9/25/2019 21:50",
+		"isAddition" : "jr 3/8/2022 21:50",
 		"isMerge" : "jr 11/18/2020 16:01",
+		"isModification" : "jr 3/8/2022 21:50",
+		"isRemoval" : "jr 3/8/2022 21:50",
 		"modifications" : "jr 7/30/2019 00:55",
 		"modifies:" : "jr 7/30/2019 02:02",
 		"newSquotDiffNodes" : "jr 9/25/2019 21:45",
@@ -24,6 +27,7 @@
 		"resolvedPatch" : "jr 7/30/2019 01:20",
 		"setWorking:incoming:base:" : "jr 12/13/2020 13:16",
 		"squotChangeAsStringOrText" : "jr 9/25/2019 22:21",
+		"squotHasChanges" : "jr 3/8/2022 21:44",
 		"squotToolsDiffNodeContent" : "jr 11/3/2019 16:22",
 		"working" : "jr 7/30/2019 00:53",
 		"working:" : "jr 7/30/2019 00:53" } }

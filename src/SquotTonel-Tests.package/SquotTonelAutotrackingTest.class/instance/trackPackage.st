@@ -1,4 +1,5 @@
 as yet unclassified
 trackPackage
-	workingCopy addPackageNamed: package name at: 'src/', package name.
+	path := 'src/', package name.
+	workingCopy addPackageNamed: package name at: path.
 	(workingCopy artifactAt: self packagePath) serializer: SquotTonelSerializer.

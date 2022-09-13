@@ -1,3 +1,6 @@
 accessing
 objectNamed: aName
-	^ objects at: aName
+	| object |
+	object := objects at: aName.
+	object ifNil: [^ (KeyNotFound key: aName) signal].
+	^ object

@@ -33,7 +33,7 @@ testConvertVersionsWithRemoval
 			date: Date today time: Time now author: 'squit' ancestors: {first}}.
 	theVersions := versionInfos with: mcSnapshots collect: [:info :snapshot |
 		MCVersion package: package info: info snapshot: snapshot].
-	mcRepo := MCDictionaryRepository new.
+	mcRepo := self newMcRepository: #Plonk.
 	theVersions do: [:each | mcRepo storeVersion: each].
 	"when"
 	converter convertMonticelloHistoryUpTo: theVersions last from: mcRepo

@@ -7,7 +7,7 @@
 		 ],
 	"commentStamp" : "jr 9/25/2019 20:01",
 	"instvars" : [
-		 ],
+		"object" ],
 	"name" : "SquotDiffOfEqualObjects",
 	"pools" : [
 		 ],

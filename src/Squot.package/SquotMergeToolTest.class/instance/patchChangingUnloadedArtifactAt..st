@@ -2,9 +2,7 @@ test objects
 patchChangingUnloadedArtifactAt: path
 	| artifact changedArtifact diff contentDiff contentMerge |
 	artifact := SquotArtifactMock path: path.
-	workingCopy := SquotWorkingCopy forTestInMemory
-		addUnloaded: artifact;
-		yourself.
+	workingCopy addUnloaded: artifact.
 	changedArtifact := artifact copy.
 	contentDiff := SquotArtifactContentDiffMock new.
 	contentMerge := SquotGraphMergeMock resolvedPatch: contentDiff.

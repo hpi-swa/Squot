@@ -8,7 +8,8 @@
 	"instvars" : [
 		"refs",
 		"symbolicRefs",
-		"resolvedRefs" ],
+		"resolvedRefs",
+		"prefixesCompletelyEnumerated" ],
 	"name" : "GitRefCache",
 	"pools" : [
 		 ],

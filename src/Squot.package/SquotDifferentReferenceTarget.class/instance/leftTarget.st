@@ -1,0 +1,3 @@
+accessing
+leftTarget
+	^ leftTarget

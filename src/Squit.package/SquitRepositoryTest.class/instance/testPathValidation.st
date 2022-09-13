@@ -1,16 +1,20 @@
 tests
 testPathValidation
 	"Should rewrite paths using the serializers."
-	| path |
-	path := squitRepository validatePath: '' for:
+	| storeInfo |
+	storeInfo := SquotTrackedObjectMetadata new.
+	storeInfo at: #path put: ''.
+	squitRepository initializeStoreInfo: storeInfo forObject:
 		(MCSnapshot empty asSquotArtifactForPackage:
-			(PackageInfo new packageName: 'Squit-Tests-DoesNotExist')).
-	self assert: 'Squit-Tests-DoesNotExist.package' equals: path.
-	path := squitRepository validatePath: 'src' for:
+			(PackageInfo new packageName: 'Squit-Tests-DoesNotExist')) content.
+	self assert: 'Squit-Tests-DoesNotExist.package' equals: (storeInfo at: #path).
+	storeInfo at: #path put: 'src'.
+	squitRepository initializeStoreInfo: storeInfo forObject:
 		(MCSnapshot empty asSquotArtifactForPackage:
-			(PackageInfo new packageName: 'Squit-Tests-DoesNotExist')).
-	self assert: 'src/Squit-Tests-DoesNotExist.package' equals: path.
-	path := squitRepository validatePath: 'Squit-Tests-DoesNotExist.package' for:
+			(PackageInfo new packageName: 'Squit-Tests-DoesNotExist')) content.
+	self assert: 'src/Squit-Tests-DoesNotExist.package' equals: (storeInfo at: #path).
+	storeInfo at: #path put: 'Squit-Tests-DoesNotExist.package'.
+	squitRepository initializeStoreInfo: storeInfo forObject:
 		(MCSnapshot empty asSquotArtifactForPackage:
-			(PackageInfo new packageName: 'Squit-Tests-DoesNotExist')).
-	self assert: 'Squit-Tests-DoesNotExist.package' equals: path.
+			(PackageInfo new packageName: 'Squit-Tests-DoesNotExist')) content.
+	self assert: 'Squit-Tests-DoesNotExist.package' equals: (storeInfo at: #path).

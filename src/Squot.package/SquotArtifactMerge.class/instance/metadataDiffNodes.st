@@ -1,4 +1,3 @@
 *Squot-Tools
 metadataDiffNodes
-	self flag: #stub.
-	^ #()
+	^ metadataMerge asSquotHierarchicalDiff

@@ -1,3 +1,3 @@
 testing
 hasConflicts
-	^ graphMerge hasConflicts
+	^ graphMerge hasConflicts or: [metadataMerge hasConflicts]

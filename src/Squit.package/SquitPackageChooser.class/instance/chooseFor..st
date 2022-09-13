@@ -4,7 +4,7 @@ chooseFor: aWorkingCopy
 
 	| originalPackages addedPackages removedPackages subPath |
 	acceptChanges := false.
-	trackedPackages := self packagesIn: aWorkingCopy.
+	trackedPackages := (self packagesIn: aWorkingCopy) asSortedCollection.
 	selectedTrackedPackages := Set new.
 	selectedUntrackedPackages := Set new.
 	originalPackages := trackedPackages copy.

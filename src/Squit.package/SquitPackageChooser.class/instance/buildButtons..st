@@ -8,13 +8,13 @@ buildButtons: builder
 			builder pluggableActionButtonSpec new
 				model: self;
 				label: '>';
-				enabled: #hasUntrackedSelection;
+				enabled: #hasUntrackedSelections;
 				action: #trackSelected;
 				help: 'Start tracking the selected package'.
 			
 			builder pluggableActionButtonSpec new
 				model: self;
 				label: '<';
-				enabled: #hasTrackedSelection;
+				enabled: #hasTrackedSelections;
 				action: #untrackSelected;
 				help: 'Stop tracking the selected package'}

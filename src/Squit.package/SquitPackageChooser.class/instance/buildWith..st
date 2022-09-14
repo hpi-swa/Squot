@@ -14,6 +14,14 @@ buildWith: builder
 			builder pluggableButtonSpec new
 				model: self;
 				label: 'Accept';
-				action: #accept}))
+				action: #accept;
+				color: #acceptColor;
+				yourself.
+			builder pluggableButtonSpec new
+				model: self;
+				label: 'Cancel';
+				action: #cancel;
+				color: #cancelColor;
+				yourself}))
 		addKeyboardCaptureFilter: self;
 		yourself

@@ -1,12 +1,12 @@
 actions
 cherryPick: pickedVersion toWorkingCopy: workingCopy
-	| parentVersion cherryPick |
+	| cherryPick |
 	self withUnitOfWork:
-	[parentVersion := self soleParentOf: pickedVersion orChooseWithPrompt: 'Pick changes in comparison to which parent?'.
-	(cherryPick := workingCopy newInteractiveCherryPickOperation)
-		requestor: self;
-		pickedVersion: pickedVersion;
-		relevantParentOfPickedVersion: parentVersion.
-	cherryPick applyToWorkingCopy
-		whenResolved: [self withUnitOfWork: [self loadCommitList]];
-		whenRejected: [:reason | self inform: 'Cherry pick aborted: ', reason]].
+	[( self soleParentOf: pickedVersion orChooseWithPrompt: 'Pick changes in comparison to which parent?') ifNotNil: [:parentVersion |
+		(cherryPick := workingCopy newInteractiveCherryPickOperation)
+			requestor: self;
+			pickedVersion: pickedVersion;
+			relevantParentOfPickedVersion: parentVersion.
+		cherryPick applyToWorkingCopy
+			whenResolved: [self withUnitOfWork: [self loadCommitList]];
+			whenRejected: [:reason | self inform: 'Cherry pick aborted: ', reason]]].

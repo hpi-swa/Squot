@@ -9,5 +9,6 @@ errorPushFailed: aGitPushFailed
 	answer caseOf:
 		{[#retry] -> [aGitPushFailed retry].
 		[#cancel] -> [^ nil].
-		[#debug] -> [ToolSet handleError: aGitPushFailed]}.
+		[#debug] -> [ToolSet handleError: aGitPushFailed].
+		[nil] "Dialog closed" -> [^ nil]}.
 	^ answer

@@ -1,0 +1,1 @@
+I mirror an indexable field in a Smalltalk object with a variable-sized class.

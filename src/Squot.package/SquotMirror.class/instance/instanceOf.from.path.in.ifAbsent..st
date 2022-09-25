@@ -1,0 +1,4 @@
+accessing
+instanceOf: anObject from: sourceShadowGraph path: aSequencebleCollection in: searchShadowGraph ifAbsent: absentBlock
+	"Answer an object from searchShadowGraph that represents the same instance in this graph as anObject does in sourceShadowGraph. If the object does not exist in searchShadowGraph, evalute absentBlock. Value objects, such as numbers or system singletons, need not explicitly be listed among the objects in searchShadowGraph and may be answered as they are if the implementing mirror deems this to be suitable behavior for the current graph operation (e. g. a merge)."
+	self subclassResponsibility

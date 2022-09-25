@@ -1,0 +1,15 @@
+{
+	"category" : "Squot-Tests",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"workingCopy",
+		"artifacts" ],
+	"name" : "SquotLegacyImageStoreFake",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }

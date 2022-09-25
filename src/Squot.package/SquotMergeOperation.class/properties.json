@@ -13,7 +13,8 @@
 		"shouldAddParent",
 		"workingVersion",
 		"appliedPatch",
-		"shouldAddGlobalObjectsAutomatically" ],
+		"shouldAddGlobalObjectsAutomatically",
+		"mergeScope" ],
 	"name" : "SquotMergeOperation",
 	"pools" : [
 		 ],

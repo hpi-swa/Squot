@@ -4,7 +4,7 @@ assertConflictedMethodWorkingEditionPresentIn: aMerge
 	packageMerge := aMerge mergeAt: packagePath.
 	testCase
 		assert:
-			(packageMerge working packageArtifactDefinitions
+			((aMerge working packageDefinitionsOfArtifact: packageMerge working)
 				anySatisfy: [:each | (each source beginsWith: 'conflictMethod')
 							and:  [each source withBlanksTrimmed endsWith: '^ 1']])
 		description: ['loaded edition of conflictMethod not on the left side', String cr,

@@ -7,7 +7,7 @@ testAddedArtifactsNotReadUntilLoaded
 					artifactAt: 'object').
 	self assert: (fileStore directory / 'object') exists.
 	"when"
-	workingCopy := SquotWorkingCopy forTestInMemory.
+	workingCopy := (SquotToggles useNewApi ifTrue: [SquotWorkingCopy2] ifFalse: [SquotWorkingCopy]) forTestInMemory.
 	patch := fileStore patchRelativeToBase: workingCopy.
 	"then the object file should not have been read yet"
 	fileStore

@@ -1,0 +1,1 @@
+I can reflect any kind of Smalltalk object in terms of its instance variables or indexable fields.

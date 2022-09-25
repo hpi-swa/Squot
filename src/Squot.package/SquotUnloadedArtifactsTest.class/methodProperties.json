@@ -2,9 +2,9 @@
 	"class" : {
 		 },
 	"instance" : {
-		"testLazyArtifactsAreEvaluatedWhenAdded" : "jr 1/3/2021 17:34",
-		"testMergeWithLocalChangesToUnloadedArtifact" : "jr 11/27/2020 01:11",
-		"testMergeWithUnloadedArtifact" : "jr 11/27/2020 01:14",
-		"testUnloadedAppearDisabledInLoads" : "jr 11/29/2020 22:36",
-		"testUnloadedAppearInMerges" : "jr 11/29/2020 22:42",
-		"testUnloadedDoNotAppearInSaveUnlessModifiedOrAdded" : "jr 11/29/2020 22:31" } }
+		"testMergeWithLocalChangesToUnloadedArtifact" : "jr 8/6/2022 11:20",
+		"testMergeWithUnloadedArtifact" : "jr 8/6/2022 12:43",
+		"testUnloadedAppearDisabledInLoads" : "jr 8/6/2022 11:14",
+		"testUnloadedAppearInMerges" : "jr 8/6/2022 11:13",
+		"testUnloadedDoNotAppearInSaveUnlessModifiedOrAdded" : "jr 7/30/2022 22:02",
+		"testWorkingCopyNotAffectedBySourceStoreChanges" : "jr 9/3/2022 22:28" } }

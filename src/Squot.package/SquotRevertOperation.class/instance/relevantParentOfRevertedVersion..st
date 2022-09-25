@@ -4,4 +4,6 @@ relevantParentOfRevertedVersion: aVersion
 	relevantParentOfRevertedVersion := aVersion.
 	aVersion ifNotNil:
 		[self withUnitOfWork:
-			[self workingCopy addGlobalObjectsToStore: aVersion]].
+			[SquotToggles useNewApi
+				ifTrue: [aVersion snapshot project artifacts do: [:each | self workingCopy addIfAlreadyLoaded: each]]
+				ifFalse: [self workingCopy addGlobalObjectsToStore: aVersion]]].

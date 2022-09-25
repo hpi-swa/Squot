@@ -1,0 +1,24 @@
+{
+	"class" : {
+		"canStore:" : "jr 8/6/2022 12:53",
+		"empty" : "jr 8/8/2022 21:21",
+		"forArtifact:" : "jr 7/30/2022 19:09",
+		"initialize" : "jr 7/16/2022 23:49",
+		"project:artifactSnapshots:" : "jr 7/16/2022 22:50",
+		"unload" : "jr 7/16/2022 23:50" },
+	"instance" : {
+		"applyMerge:" : "jr 8/19/2022 22:04",
+		"applyPatch:" : "jr 8/7/2022 17:45",
+		"canStore:" : "jr 7/17/2022 00:04",
+		"includesArtifact:" : "jr 7/27/2022 20:33",
+		"postCopy" : "jr 7/18/2022 23:39",
+		"project:" : "jr 7/16/2022 22:28",
+		"putArtifact:" : "jr 7/24/2022 22:21",
+		"readArtifact:" : "jr 8/5/2022 21:01",
+		"readProject" : "jr 7/16/2022 22:28",
+		"removeArtifact:" : "jr 8/6/2022 12:44",
+		"setProject:artifactSnapshots:" : "jr 7/17/2022 21:55",
+		"snapshot" : "jr 7/17/2022 00:35",
+		"storeForArtifact:" : "jr 8/19/2022 23:13",
+		"updateArtifact:" : "jr 8/6/2022 11:35",
+		"writeProject:" : "jr 8/7/2022 16:22" } }

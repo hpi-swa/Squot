@@ -1,8 +1,10 @@
 {
 	"class" : {
-		 },
+		"merge:into:basedOn:merges:additions:removals:conflicts:" : "jr 8/8/2022 20:05",
+		"working:base:incoming:" : "jr 9/4/2022 00:03" },
 	"instance" : {
 		"addConflict:" : "jr 7/30/2019 01:25",
+		"addReferenceDiff:" : "jr 9/24/2022 23:45",
 		"asSquotHierarchicalDiff" : "jr 7/17/2021 02:26",
 		"chooseIncoming" : "jr 8/14/2019 20:31",
 		"chooseWorking" : "jr 8/14/2019 21:36",
@@ -17,8 +19,10 @@
 		"mergeStartReferencesToStart:" : "jr 1/13/2022 22:07",
 		"modifications" : "jr 7/30/2019 01:25",
 		"newSquotDiffNodes" : "jr 11/1/2020 18:44",
-		"privateResolvedPatch" : "jr 1/9/2022 20:59",
+		"privateResolvedPatch" : "jr 9/24/2022 23:58",
+		"rebaseOn:" : "jr 8/8/2022 21:01",
 		"resetChoice" : "jr 8/14/2019 21:36",
 		"show:nextAfter:" : "jr 12/21/2020 01:10",
 		"squotChangeAsStringOrText" : "jr 11/1/2020 20:19",
+		"updateResult" : "jr 9/24/2022 23:55",
 		"working:" : "jr 9/23/2019 22:19" } }

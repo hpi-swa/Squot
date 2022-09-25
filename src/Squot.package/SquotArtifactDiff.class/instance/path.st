@@ -1,6 +1,6 @@
 accessing
 path
 	"Answer that path to which this diff can be applied."
-	^ left
-		ifNotNil: [left path]
-		ifNil: [right path]
+	| object |
+	object := left ifNil: [right].
+	^ SquotToggles useNewApi ifTrue: [object artifact storeInfo at: 'path'] ifFalse: [object path]

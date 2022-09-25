@@ -1,0 +1,1 @@
+I reflect on value objects that should be treated as atomic and without further outgoing references. For singletons like true, false, nil, use SquotSystemSingletonMirror instead.

@@ -10,4 +10,4 @@ updateWorkingCopy
 			updateLoadOrderFromVersion: newVersion;
 			resetAdditionalParents;
 			resetNewVersionMessage].
-	self workingCopy assertConsistentLoadOrder.
+	SquotToggles useNewApi ifFalse: [self workingCopy assertConsistentLoadOrder].

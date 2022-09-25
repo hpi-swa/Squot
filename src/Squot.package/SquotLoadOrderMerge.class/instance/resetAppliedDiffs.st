@@ -1,3 +1,3 @@
 patching
 resetAppliedDiffs
-	editedWorking := OrderedCollection newFrom: working.
+	result := OrderedCollection newFrom: working.

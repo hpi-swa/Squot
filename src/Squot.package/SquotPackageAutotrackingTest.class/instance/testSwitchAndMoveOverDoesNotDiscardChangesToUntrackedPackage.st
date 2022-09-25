@@ -16,5 +16,5 @@ testSwitchAndMoveOverDoesNotDiscardChangesToUntrackedPackage
 	"then"
 		on: SquotMergeRequested do:
 			[:request | self fail: 'Should not have prompted a merge'].
-	self assert: 2 equals: class new b description: 'Unsaved change still loaded';
-		assert: (workingCopy objectAt: path) = package description: 'should track package again'.
+	self assert: ((class canUnderstand: #b) and: [class new b = 2]) description: 'Unsaved change not preserved';
+		assert: (workingCopy objectAt: path) = package description: 'Package not tracked again'.

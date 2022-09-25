@@ -1,0 +1,1 @@
+I mirror the header access of CompiledCode.

@@ -1,10 +1,11 @@
 {
 	"class" : {
-		"into:merge:basedOn:willBeLoaded:graphMerge:metadataMerge:" : "jr 12/13/2020 13:18" },
+		"into:merge:basedOn:willBeLoaded:graphMerge:metadataMerge:" : "jr 8/8/2022 20:05" },
 	"instance" : {
 		"adornedDiffNodeTitle:" : "jr 11/18/2020 18:14",
 		"asDiffTree" : "jr 12/22/2019 23:24",
 		"base:" : "jr 7/30/2019 21:51",
+		"browse" : "jr 8/7/2022 16:34",
 		"chooseIncoming" : "jr 8/14/2019 20:29",
 		"chooseWorking" : "jr 8/14/2019 21:35",
 		"computeDifferences" : "jr 12/24/2020 00:43",
@@ -24,8 +25,11 @@
 		"metadataDiffNodes" : "jr 1/16/2022 18:36",
 		"modifications" : "jr 7/30/2019 01:37",
 		"path" : "jr 8/4/2019 20:47",
-		"privateResolvedPatch" : "jr 12/13/2020 16:20",
+		"printOn:" : "jr 9/24/2022 20:14",
+		"privateResolvedPatch" : "jr 8/6/2022 13:00",
+		"rebaseOn:" : "jr 8/8/2022 21:01",
 		"resetChoice" : "jr 8/14/2019 21:35",
+		"resolveConflictWith:" : "jr 8/19/2022 21:28",
 		"setLoadedInWorkingCopy" : "jr 11/22/2020 22:35",
 		"setMetadataMerge:" : "jr 12/13/2020 18:08",
 		"setUpTreeRoot:toEditMerge:" : "jr 8/15/2019 00:31",
@@ -33,6 +37,7 @@
 		"squotChangeAsStringOrText" : "jr 2/14/2022 00:05",
 		"squotToolsDiffNodeContent" : "jr 11/30/2020 00:56",
 		"toggleWhetherToLoad" : "jr 11/19/2020 16:19",
-		"willBeLoaded" : "jr 11/18/2020 18:16",
+		"updateResult" : "jr 8/14/2022 17:40",
+		"willBeLoaded" : "jr 8/6/2022 12:46",
 		"working:" : "jr 11/22/2020 22:57",
 		"workingIsLoaded" : "jr 11/19/2020 16:27" } }

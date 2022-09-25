@@ -1,0 +1,3 @@
+accessing
+objectRegistry
+	^ SquotObjectStore objectRegistry

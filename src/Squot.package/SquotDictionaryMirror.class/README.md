@@ -1,0 +1,1 @@
+I reflect dictionaries with one SquotCollectionElement per association.

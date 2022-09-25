@@ -1,0 +1,3 @@
+testing
+isMerge
+	^ self isModification

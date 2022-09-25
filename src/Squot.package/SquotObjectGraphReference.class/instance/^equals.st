@@ -1,0 +1,3 @@
+comparing
+= aSquotObjectGraphReference 
+	^ self == aSquotObjectGraphReference

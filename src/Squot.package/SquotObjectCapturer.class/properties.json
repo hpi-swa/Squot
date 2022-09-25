@@ -17,7 +17,8 @@
 		"objectGraph",
 		"slotValueReplacements",
 		"slotsToConvert",
-		"capturedObjectWithReferrer" ],
+		"capturedObjectWithReferrer",
+		"source" ],
 	"name" : "SquotObjectCapturer",
 	"pools" : [
 		 ],

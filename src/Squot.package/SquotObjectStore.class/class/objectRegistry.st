@@ -1,0 +1,3 @@
+*Squot-Tests
+objectRegistry
+	^ ObjectRegistry

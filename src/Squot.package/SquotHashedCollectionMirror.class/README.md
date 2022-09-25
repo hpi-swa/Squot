@@ -1,0 +1,1 @@
+I reflect HashedCollection objects with one SquotCollectionElement per element.

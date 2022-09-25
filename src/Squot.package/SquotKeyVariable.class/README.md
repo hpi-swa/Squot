@@ -1,0 +1,1 @@
+I mirror the key variable in LookupKey. This variable is relevant for hashes.

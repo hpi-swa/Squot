@@ -1,0 +1,1 @@
+I mirror the literal access of CompiledCode.

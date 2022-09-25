@@ -1,3 +1,3 @@
 Squot repository
 workingCopyClass
-	^ SquotWorkingCopy
+	^ SquotToggles useNewApi ifTrue: [SquotWorkingCopy2] ifFalse: [SquotWorkingCopy]

@@ -9,9 +9,14 @@ testUnloadedDoNotAppearInSaveUnlessModifiedOrAdded
 				message: 'Add object';
 				applyToWorkingCopy;
 				patch.
-	self assert: (patch includesDiffAt: 'object').
+	self assert:
+		(SquotToggles useNewApi
+			ifTrue: [patch includesModificationAt: artifactSnapshot artifact id]
+			ifFalse: [patch includesDiffAt: 'object']).
 	patch := workingCopy newSaveOperation
 				message: 'Next version';
 				applyToWorkingCopy;
 				patch.
-	self deny: (patch includesDiffAt: 'object').
+	self deny: (SquotToggles useNewApi
+			ifTrue: [patch includesModificationAt: artifactSnapshot artifact id]
+			ifFalse: [patch includesDiffAt: 'object']).

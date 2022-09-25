@@ -1,0 +1,3 @@
+forward compatiblity
+packageDefinitionsOfArtifact: anArtifact
+	^ anArtifact shadowOfTrackedObject definitions

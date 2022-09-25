@@ -1,7 +1,11 @@
 actions on objects
 actionObjectMerge
 	self withUnitOfWork:
-	[self projectSelection
-		mergeArtifactInteractively: self objectSelection artifact
-		from: self commitSelection
-		ifCanceled: [^ self]].
+	[| mergeOperation |
+	(mergeOperation := self projectSelection newInteractiveMergeOperation)
+		workingVersion: self projectSelection loadedVersion;
+		mergeVersion: self commitSelection;
+		mergeScope: (SquotMergeOperationArtifactScope operation: mergeOperation artifact: self objectSelection artifact);
+		doNotAddParent;
+		prepare;
+		applyToWorkingCopy].

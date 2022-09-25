@@ -18,6 +18,8 @@ privateResolvedPatch
 	(elementMerges select: [:each | each mayAffectArtifact])
 		do: [:each | builder addDiff: each resolvedPatch].
 	builder newLoadOrder: (loadOrderMerge resolvedPatch applyTo: working loadOrder).
+	SquotToggles useNewApi ifTrue:
+		[builder metadataDiff: metadataMerge resolvedPatch].
 	^ builder
 		updateRightArtifacts;
 		buildPatch

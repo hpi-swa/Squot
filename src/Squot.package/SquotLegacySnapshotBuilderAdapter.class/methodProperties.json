@@ -1,0 +1,13 @@
+{
+	"class" : {
+		"startingFrom:" : "jr 8/7/2022 12:54" },
+	"instance" : {
+		"add:" : "jr 8/7/2022 16:01",
+		"addAll:" : "jr 8/7/2022 12:50",
+		"applyDiff:toObjectAt:" : "jr 8/7/2022 12:51",
+		"artifacts" : "jr 8/7/2022 12:51",
+		"buildSnapshot" : "jr 8/7/2022 16:20",
+		"initialize" : "jr 8/8/2022 21:21",
+		"loadOrder" : "jr 8/7/2022 12:52",
+		"loadOrder:" : "jr 8/7/2022 12:52",
+		"readFromSnapshot:" : "jr 8/7/2022 13:00" } }

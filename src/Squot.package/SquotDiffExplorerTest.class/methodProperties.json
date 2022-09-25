@@ -3,7 +3,7 @@
 		"shouldInheritSelectors" : "jr 9/29/2019 22:20" },
 	"instance" : {
 		"newToolOn:" : "jr 5/2/2020 01:49",
-		"setUp" : "jr 6/6/2022 23:16",
+		"setUp" : "jr 7/18/2022 20:20",
 		"tearDown" : "jr 5/2/2020 01:53",
 		"testSmalltalkCodeDiffs" : "jr 6/6/2022 23:17",
 		"testTextAddition" : "jr 10/15/2017 20:37",

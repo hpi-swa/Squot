@@ -1,4 +1,4 @@
 initialize-release
 incomingDiff: anArtifactDiff
-	self assert: base = anArtifactDiff base.
+	SquotToggles useNewApi ifFalse: [self assert: base = anArtifactDiff base].
 	incoming := anArtifactDiff.

@@ -1,0 +1,8 @@
+{
+	"class" : {
+		 },
+	"instance" : {
+		"capture:with:ifReplaced:" : "jr 9/25/2022 19:15",
+		"instanceOf:from:path:in:ifAbsent:" : "jr 9/25/2022 20:43",
+		"shadowFactory" : "jr 9/25/2022 19:14",
+		"shouldObjectHaveNameAssigned:" : "jr 9/25/2022 19:16" } }

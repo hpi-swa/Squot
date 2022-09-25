@@ -5,9 +5,10 @@
 	"classtraitcomposition" : "TSquotMutableObjectContainer classTrait + TSquotConvertibleToVersion classTrait",
 	"classvars" : [
 		 ],
-	"commentStamp" : "jr 6/22/2018 22:42",
+	"commentStamp" : "jr 5/7/2022 23:29",
 	"instvars" : [
 		"name",
+		"project",
 		"store",
 		"repository",
 		"loadedHistorian",

@@ -8,4 +8,6 @@ testSnapshotIncludesLoadOrder
 	"when"
 	snapshot := workingCopy lazySnapshot.
 	"then"
-	self assert: snapshot loadOrder asArray = workingCopy loadOrder asArray.
+	SquotToggles useNewApi
+		ifTrue: [self assert: snapshot artifacts asArray = workingCopy project artifacts asArray]
+		ifFalse: [self assert: snapshot loadOrder asArray = workingCopy loadOrder asArray].

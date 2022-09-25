@@ -1,0 +1,14 @@
+{
+	"category" : "Squot-Serialization",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "jr 7/18/2022 17:15",
+	"instvars" : [
+		"projectRootDirectory" ],
+	"name" : "SquotSmartRefStreamFile",
+	"pools" : [
+		 ],
+	"super" : "SquotFileSystemObjectStore",
+	"type" : "normal" }

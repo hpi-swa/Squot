@@ -5,4 +5,6 @@ metadata
 			readStreamDo: [:stream |
 				(STON reader on: stream; allowComplexMapKeys: true) next
 					asSquotTrackedObjectMetadata]
-			ifAbsent: [^ SquotTrackedObjectMetadata new]]
+			ifAbsent: [^ SquotTrackedObjectMetadata new].
+		metadata migrateOldMetadata.
+		metadata]

@@ -1,7 +1,8 @@
 instance creation
-of: aPrimitiveValue
+of: anObject
 	^ self new
-		working: aPrimitiveValue;
-		incoming: aPrimitiveValue;
-		base: aPrimitiveValue;
+		working: anObject;
+		incoming: anObject;
+		base: anObject;
+		result: anObject;
 		yourself

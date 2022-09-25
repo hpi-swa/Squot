@@ -1,0 +1,12 @@
+{
+	"class" : {
+		"canStore:" : "jr 7/18/2022 19:48",
+		"initialize" : "jr 7/18/2022 19:49",
+		"unload" : "jr 7/18/2022 19:50" },
+	"instance" : {
+		"canStore:" : "jr 7/18/2022 17:28",
+		"includesArtifact:" : "jr 7/18/2022 17:29",
+		"putArtifact:" : "jr 7/18/2022 20:00",
+		"readArtifact:" : "jr 7/18/2022 20:03",
+		"removeArtifact:" : "jr 7/18/2022 17:29",
+		"setProjectRootDirectory:" : "jr 7/18/2022 19:51" } }

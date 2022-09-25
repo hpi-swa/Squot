@@ -2,5 +2,6 @@
 	"class" : {
 		"canReadObjectSerializedBy:" : "jr 1/18/2017 16:30" },
 	"instance" : {
-		"fillContentOf:from:" : "jr 1/29/2017 23:06",
+		"fillContentOf:from:" : "jr 7/18/2022 20:01",
+		"readFrom:" : "jr 7/18/2022 20:03",
 		"streamClass" : "jr 1/5/2017 15:23" } }

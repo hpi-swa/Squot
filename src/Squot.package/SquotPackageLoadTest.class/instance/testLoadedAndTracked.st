@@ -1,6 +1,6 @@
-testing
+tests
 testLoadedAndTracked
 	| snapshot |
 	snapshot := self capturePackage.
-	imageStore applyPatch: (snapshot patchRelativeToBase: imageStore).
+	self updatePackage: snapshot.
 	self checkRestoredPackage.

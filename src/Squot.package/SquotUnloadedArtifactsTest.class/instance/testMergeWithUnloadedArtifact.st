@@ -23,5 +23,12 @@ testMergeWithUnloadedArtifact
 		yourself.
 	"then"
 	self shouldnt: [merge applyToWorkingCopy] raise: Error.
-	(workingCopy artifactAt: 'object') load.
+	SquotToggles useNewApi 
+		ifTrue:
+			[| snapshot |
+			snapshot := (workingCopy storeForArtifact: artifactSnapshot artifact) readArtifact: artifactSnapshot artifact.
+			(workingCopy storeForArtifact: snapshot artifact) removeArtifact: snapshot artifact.
+			workingCopy useStoreImplementation: SquotValueHolderStore forArtifact: snapshot artifact.
+			(workingCopy storeForArtifact: snapshot artifact) putArtifact: snapshot]
+		ifFalse: [(workingCopy artifactAt: 'object') load].
 	self assert: 1 equals: (workingCopy objectAt: 'object') contents.

@@ -1,0 +1,3 @@
+ancestry
+resetNewVersionMessage
+	newVersionMessage := nil.

@@ -4,4 +4,5 @@ asBaseDiff: leftArtifactContent against: rightArtifactContent
 	"New name suggestions:
 	mergeGraphAsBaseOf: workingGraph with: incomingGraph
 	withGraphAsBaseMerge: workingGraph with: incomingGraph"
-	^ leftArtifactContent squotDiffAgainst: rightArtifactContent withBase: self content
+	self deprecated.
+	^ leftArtifactContent squotMergeWith: rightArtifactContent basedOn: self content

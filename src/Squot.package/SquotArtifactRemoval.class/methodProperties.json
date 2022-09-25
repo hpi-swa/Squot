@@ -2,17 +2,18 @@
 	"class" : {
 		"of:" : "jr 10/2/2017 19:59" },
 	"instance" : {
-		"applyToContainer:" : "jr 7/16/2017 02:36",
+		"applyToContainer:" : "jr 8/9/2022 22:45",
 		"diffNodeOperationTitle" : "jr 10/26/2019 21:25",
-		"isBasedOn:" : "jr 11/5/2020 16:56",
+		"isBasedOn:" : "jr 8/19/2022 21:32",
 		"mayAffectArtifact" : "jr 11/29/2020 22:21",
-		"mergeWith:" : "jr 3/16/2019 18:36",
+		"mergeWith:" : "jr 9/25/2022 18:08",
 		"mergeWithDiff:" : "jr 4/15/2018 13:10",
-		"mergeWithLoad:" : "jr 11/19/2020 16:07",
+		"mergeWithLoad:" : "jr 9/25/2022 18:08",
 		"mergeWithRemoval:" : "jr 4/15/2018 12:13",
 		"needsChoice" : "jr 7/22/2017 23:55",
+		"path" : "jr 7/19/2022 00:46",
 		"rebaseOn:" : "jr 2/9/2020 03:44",
-		"resolveConflictWith:" : "jr 7/23/2019 00:20",
+		"resolveConflictWith:" : "jr 8/14/2022 18:33",
 		"right" : "jr 10/2/2017 19:58",
 		"squotChangeAsStringOrText" : "jr 11/17/2018 22:34",
 		"topNodes" : "jr 11/6/2018 08:11" } }

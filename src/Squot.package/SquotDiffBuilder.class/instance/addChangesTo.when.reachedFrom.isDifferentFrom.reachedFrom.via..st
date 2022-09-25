@@ -12,7 +12,7 @@ addChangesTo: diff when: leftValue reachedFrom: leftShadow isDifferentFrom: righ
 			alreadyVisited
 				ifTrue:
 					[(objectsWithChanges includes: leftValue undecorated)
-						ifTrue: [diff	addReferenceDiff:
+						ifTrue: [diff addReferenceDiff:
 									(SquotDifferentReferenceTarget
 										reference: aReference
 										leftOwner: leftShadow target: leftValue

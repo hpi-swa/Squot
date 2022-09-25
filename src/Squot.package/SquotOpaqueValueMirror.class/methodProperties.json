@@ -6,6 +6,7 @@
 		"canHaveReferences:" : "jr 7/18/2021 22:35",
 		"capture:with:ifReplaced:" : "jr 7/17/2021 23:58",
 		"hash" : "jr 4/8/2021 20:16",
+		"instanceOf:from:path:in:ifAbsent:" : "jr 9/24/2022 15:37",
 		"is:comparableTo:" : "jr 7/18/2021 20:14",
 		"newDiffFrom:to:" : "jr 8/8/2021 17:30",
 		"referencesFrom:" : "jr 4/8/2021 20:14",

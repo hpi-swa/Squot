@@ -1,0 +1,15 @@
+{
+	"category" : "Squot-ImageStore",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"holder",
+		"artifact" ],
+	"name" : "SquotValueHolderStore",
+	"pools" : [
+		 ],
+	"super" : "SquotObjectStore",
+	"type" : "normal" }

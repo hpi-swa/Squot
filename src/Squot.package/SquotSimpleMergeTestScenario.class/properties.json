@@ -16,7 +16,8 @@
 		"secondMethod",
 		"thirdMethod",
 		"classFactory",
-		"packageId" ],
+		"packageId",
+		"originalPackageArtifact" ],
 	"name" : "SquotSimpleMergeTestScenario",
 	"pools" : [
 		 ],

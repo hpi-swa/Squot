@@ -10,4 +10,5 @@
 		"printOn:" : "jr 12/21/2020 00:50",
 		"references" : "jr 12/21/2020 00:32",
 		"reflect:" : "jr 12/21/2020 00:39",
-		"setMirror:object:" : "jr 12/21/2020 00:32" } }
+		"setMirror:object:" : "jr 12/21/2020 00:32",
+		"shouldHaveNameAssigned" : "jr 9/3/2022 22:46" } }

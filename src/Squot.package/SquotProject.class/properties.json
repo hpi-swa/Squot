@@ -1,0 +1,16 @@
+{
+	"category" : "Squot-Core",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "jr 5/7/2022 23:21",
+	"instvars" : [
+		"id",
+		"metadata",
+		"artifacts" ],
+	"name" : "SquotProject",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }

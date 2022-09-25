@@ -1,0 +1,21 @@
+{
+	"category" : "Squot-Merging",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"client",
+		"workingRoot",
+		"baseRoot",
+		"incomingRoot",
+		"walk",
+		"mirrors",
+		"currentTuple",
+		"nilReflection" ],
+	"name" : "SquotMergeBuilder",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }

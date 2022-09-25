@@ -1,7 +1,7 @@
 running
 setUp
 	| existingClass |
-	preparedWorkingCopy := SquotWorkingCopy forTestInMemory.
+	preparedWorkingCopy := (SquotToggles useNewApi ifTrue: [SquotWorkingCopy2] ifFalse: [SquotWorkingCopy]) forTestInMemory.
 	classFactory := ClassFactoryForTestCase new.
 	SystemChangeNotifier uniqueInstance doSilently:
 		[existingClass := classFactory newClass].

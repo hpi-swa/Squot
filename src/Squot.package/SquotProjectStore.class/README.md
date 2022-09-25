@@ -1,0 +1,1 @@
+I can read and write SquotProjects from and to my storage. What kind of storage that is is determined by my subclasses.

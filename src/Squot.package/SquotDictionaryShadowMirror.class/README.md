@@ -1,0 +1,1 @@
+I reflect SquotDictionaryShadow instances, allowing access to associations with SquotCollectionElement references.

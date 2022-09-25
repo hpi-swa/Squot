@@ -9,4 +9,6 @@ addShadow: aShadow of: anObject
 		description: 'Primitive objects should not get names'.
 	shadows at: name put: aShadow undecorated.
 	self answer: name whenAskedForTheNameOf: aShadow undecorated.
+	aShadow undecorated == startShadow undecorated
+		ifTrue: [startName := name].
 	^ aShadow

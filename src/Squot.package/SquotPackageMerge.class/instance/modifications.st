@@ -1,3 +1,3 @@
 accessing
 modifications
-	^ containerModifications values
+	^ containerModifications values, (containerConflicts values select: [:each | each remoteChosen] thenCollect: [:each | each operation])

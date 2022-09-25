@@ -1,6 +1,6 @@
 patching
 removeAt: path
 	"Note the removal."
-	self assert: (editedWorking includes: path).
-	editedWorking remove: path.
+	self assert: (result includes: path).
+	result remove: path.
 	self resetResolution.

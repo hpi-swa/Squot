@@ -2,6 +2,7 @@ loading and unloading
 mergeArtifactInteractively: anArtifact from: aVersion ifCanceled: cancelBlock
 	"Merge a single artifact with the currently loaded one."
 	| mergeBases mergeBase base merge |
+	self deprecated. "Use newInteractiveMergeOperation with mergeScope: (SquotMergeOperationArtifactScope operation:artifact: anArtifact), workingVersion: self loadedVersion and mergeVersion: aVersion instead."
 	self temporarilySaveChangesDuring:
 		[mergeBases := self checkMergeBasesOf: self loadedVersion
 			with: aVersion

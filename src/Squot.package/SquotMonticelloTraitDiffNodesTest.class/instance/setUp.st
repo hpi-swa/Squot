@@ -1,7 +1,7 @@
 running
 setUp
 	| isolatedEnvironment |
-	preparedWorkingCopy := SquotWorkingCopy forTestInMemory. "no super setUp!"
+	preparedWorkingCopy := (SquotToggles useNewApi ifTrue: [SquotWorkingCopy2] ifFalse: [SquotWorkingCopy]) forTestInMemory. "no super setUp!"
 	self tearDown.
 	isolatedEnvironment := Environment withName: self printString.
 	isolatedEnvironment importSelf. "at the time of writing this, PackageInfo looked at the bindings of the current environment instead of its declarations"

@@ -1,0 +1,16 @@
+{
+	"class" : {
+		"canStore:" : "jr 7/18/2022 17:37",
+		"forArtifact:" : "jr 7/18/2022 17:38",
+		"initialize" : "jr 7/18/2022 17:42",
+		"unload" : "jr 7/18/2022 17:43" },
+	"instance" : {
+		"canStore:" : "jr 7/18/2022 17:37",
+		"includesArtifact:" : "jr 7/18/2022 17:35",
+		"initializeArtifact:forObject:" : "jr 7/30/2022 11:49",
+		"migrateOldArtifact:snapshot:" : "jr 8/20/2022 00:04",
+		"putArtifact:" : "jr 7/18/2022 18:22",
+		"readArtifact:" : "jr 8/19/2022 23:59",
+		"removeArtifact:" : "jr 7/18/2022 17:35",
+		"setProjectRootDirectory:" : "jr 7/18/2022 17:56",
+		"updateArtifact:" : "jr 9/25/2022 00:43" } }

@@ -1,6 +1,7 @@
 private
 computeDifferences
 	| fromBaseToExisting fromBaseToIncoming commonPaths |
+	SquotToggles useNewApi ifTrue: [self deprecated: 'Use SquotProjectMergeFactory instead'].
 	fromBaseToIncoming := incoming patchRelativeToBase: base.
 	fromBaseToExisting := working patchRelativeToBase: base.
 	commonPaths := fromBaseToIncoming commonPathsWith: fromBaseToExisting.

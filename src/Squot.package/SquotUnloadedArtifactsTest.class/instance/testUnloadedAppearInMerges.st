@@ -19,6 +19,12 @@ testUnloadedAppearInMerges
 		mergeVersion: incoming;
 		prepare.
 	"then"
-	self assert: (merge includesModificationAt: 'object');
-		assert: (merge modificationAt: 'object' ifAbsent: []) isLoad;
-		deny: (merge modificationAt: 'object' ifAbsent: []) willBeLoaded.
+	SquotToggles useNewApi
+		ifTrue:
+			[self assert: (merge includesMergeAt: artifactSnapshot artifact id);
+				assert: ((workingCopy storeForArtifact: artifactSnapshot artifact) isKindOf: SquotSnapshotStore).
+			self flag: #todo. "Test that merge tool produces a node to load the artifact."]
+		ifFalse:
+			[self assert: (merge includesModificationAt: 'object');
+				assert: (merge modificationAt: 'object' ifAbsent: []) isLoad;
+				deny: (merge modificationAt: 'object' ifAbsent: []) willBeLoaded].

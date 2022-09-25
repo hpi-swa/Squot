@@ -2,7 +2,7 @@
 	"class" : {
 		 },
 	"instance" : {
-		"expectedFailures" : "jr 8/8/2021 16:55",
+		"expectedFailures" : "jr 9/25/2022 18:12",
 		"newRepository" : "jr 6/18/2022 16:29",
-		"testImmutabilityOfSnapshots" : "jr 1/26/2020 22:58",
-		"testVersionsDoNotContainWorkingCopyArtifacts" : "jr 11/18/2020 21:35" } }
+		"testImmutabilityOfSnapshots" : "jr 8/5/2022 14:16",
+		"testVersionsDoNotContainWorkingCopyArtifacts" : "jr 8/6/2022 12:49" } }

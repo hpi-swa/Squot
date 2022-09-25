@@ -2,6 +2,7 @@ tests
 testUnchangedValuesRemain
 	"Unchanged objects need not be replaced. Soft requirement."
 	| str m1 m2 diff |
+	SquotToggles useNewApi ifTrue: [^ self "Copies the whole storeInfo now"].
 	str := 'a string' copy.
 	m1 := SquotTrackedObjectMetadata newFrom: {#string -> str}.
 	m2 := SquotTrackedObjectMetadata newFrom: {#string -> str copy}.

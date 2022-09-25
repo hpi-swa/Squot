@@ -1,0 +1,3 @@
+reflection
+rootReference
+	^ SquotObjectGraphRootReference new

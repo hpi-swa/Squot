@@ -1,0 +1,1 @@
+I reflect CompiledCode instances, and expose the header and literals in addition to the indexable fields.

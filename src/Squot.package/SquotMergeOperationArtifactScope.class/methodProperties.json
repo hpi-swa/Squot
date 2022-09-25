@@ -1,0 +1,10 @@
+{
+	"class" : {
+		"operation:" : "jr 8/25/2022 12:43",
+		"operation:artifact:" : "jr 8/25/2022 12:43" },
+	"instance" : {
+		"addAlreadyLoadedArtifacts" : "jr 8/25/2022 12:35",
+		"artifactToMerge" : "jr 8/25/2022 12:33",
+		"artifactToMerge:" : "jr 8/25/2022 12:33",
+		"prepareMerge" : "jr 8/25/2022 16:55",
+		"setMergeOperation:artifact:" : "jr 8/25/2022 12:44" } }

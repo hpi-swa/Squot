@@ -2,5 +2,6 @@
 	"class" : {
 		 },
 	"instance" : {
+		"instanceOf:from:path:in:ifAbsent:" : "jr 8/28/2022 20:28",
 		"reflectGraphElementWithName:in:" : "jr 9/10/2021 22:19",
 		"shouldObjectHaveNameAssigned:" : "jr 9/10/2021 22:45" } }

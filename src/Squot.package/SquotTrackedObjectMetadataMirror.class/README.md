@@ -1,0 +1,1 @@
+I reflect project and artifact metadata, making sure that all elements are treated like value objects.

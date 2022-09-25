@@ -1,0 +1,14 @@
+{
+	"category" : "Squot-Tests",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"workingCopy" ],
+	"name" : "SquotLegacyArtifactAdapter",
+	"pools" : [
+		 ],
+	"super" : "SquotArtifactSnapshot",
+	"type" : "normal" }

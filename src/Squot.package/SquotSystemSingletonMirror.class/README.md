@@ -1,0 +1,1 @@
+I reflect system-wide singletons (nil, true, false) that are universally the same in all object graph instances.

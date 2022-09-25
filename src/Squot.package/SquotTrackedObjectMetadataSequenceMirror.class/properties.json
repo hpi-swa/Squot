@@ -1,0 +1,14 @@
+{
+	"category" : "Squot-Reflection",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "jr 8/28/2022 21:36",
+	"instvars" : [
+		 ],
+	"name" : "SquotTrackedObjectMetadataSequenceMirror",
+	"pools" : [
+		 ],
+	"super" : "SquotObjectMirror",
+	"type" : "normal" }

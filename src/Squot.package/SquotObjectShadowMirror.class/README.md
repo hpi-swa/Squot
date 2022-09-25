@@ -1,0 +1,1 @@
+I can reflect SquotObjectShadows in terms of their captured instance variables or indexable fields.

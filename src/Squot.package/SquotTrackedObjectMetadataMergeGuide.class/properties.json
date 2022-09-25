@@ -1,0 +1,22 @@
+{
+	"category" : "Squot-Merging",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"working",
+		"base",
+		"incoming",
+		"mergeBuilder",
+		"pathToArtifactId",
+		"diffs",
+		"currentWorking",
+		"currentIncoming",
+		"conflicts" ],
+	"name" : "SquotTrackedObjectMetadataMergeGuide",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }

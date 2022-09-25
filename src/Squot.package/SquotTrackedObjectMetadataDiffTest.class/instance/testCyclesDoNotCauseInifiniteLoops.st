@@ -9,4 +9,4 @@ testCyclesDoNotCauseInifiniteLoops
 	"when"
 	m1 absorbDiff: (diff := m1 squotDiffAgainst: m2).
 	"then"
-	self assert: (m1 at: #complex) == holder. "Not changed"
+	self assert: (m1 at: #complex) == (m1 at: #complex) contents. "Not changed"

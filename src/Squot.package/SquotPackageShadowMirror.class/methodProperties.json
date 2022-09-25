@@ -3,6 +3,8 @@
 		 },
 	"instance" : {
 		"capture:with:ifReplaced:" : "jr 7/17/2021 23:59",
+		"instanceOf:from:path:in:ifAbsent:" : "jr 9/24/2022 21:56",
 		"newDiffFrom:to:" : "jr 7/30/2021 19:35",
+		"newMergeOf:with:basedOn:" : "jr 9/24/2022 22:07",
 		"referencesFrom:" : "jr 6/16/2021 22:27",
-		"shouldObjectHaveNameAssigned:" : "jr 6/16/2021 22:28" } }
+		"shouldObjectHaveNameAssigned:" : "jr 9/24/2022 21:41" } }

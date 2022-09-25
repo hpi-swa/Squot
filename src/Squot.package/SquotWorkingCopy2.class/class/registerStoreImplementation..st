@@ -1,0 +1,3 @@
+store implementation registry
+registerStoreImplementation: aClass
+	ObjectStoreImplementationRegistry add: aClass.

@@ -1,0 +1,1 @@
+I reflect SquotBitsObjectShadow instances, comparing them specially.

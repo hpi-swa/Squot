@@ -3,7 +3,8 @@
 	"classinstvars" : [
 		 ],
 	"classvars" : [
-		"EnableDragAndDrop" ],
+		"EnableDragAndDrop",
+		"UseNewApi" ],
 	"commentStamp" : "jr 3/17/2018 20:32",
 	"instvars" : [
 		"userEmail",

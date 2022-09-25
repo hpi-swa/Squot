@@ -1,0 +1,14 @@
+{
+	"category" : "Squot-Merging",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "SquotProjectMerge",
+	"pools" : [
+		 ],
+	"super" : "SquotMerge",
+	"type" : "normal" }

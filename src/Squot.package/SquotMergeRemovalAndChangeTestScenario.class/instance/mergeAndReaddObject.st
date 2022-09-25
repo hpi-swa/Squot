@@ -6,7 +6,7 @@ mergeAndReaddObject
 		mergeVersion: incomingVersion;
 		prepare.
 	"then"
-	conflict := merge conflictAt: 'text'.
+	conflict := merge conflictAt: conflictObjectId.
 	self assert: conflict isResolved not.
 
 	"when"

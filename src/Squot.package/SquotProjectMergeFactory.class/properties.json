@@ -1,0 +1,23 @@
+{
+	"category" : "Squot-Merging",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"workingProjectSnapshot",
+		"incomingProjectSnapshot",
+		"baseProjectSnapshot",
+		"merges",
+		"conflicts",
+		"additions",
+		"incomingArtifactsMapping",
+		"removals",
+		"loadOrderMerge",
+		"metadataMerge" ],
+	"name" : "SquotProjectMergeFactory",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }

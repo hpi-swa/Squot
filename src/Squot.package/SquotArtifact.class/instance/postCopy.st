@@ -1,4 +1,4 @@
 copying
 postCopy
-	self content: self content copy.
+	SquotToggles useNewApi ifFalse: [self content: self content copy].
 	self postCopyWithoutContent.

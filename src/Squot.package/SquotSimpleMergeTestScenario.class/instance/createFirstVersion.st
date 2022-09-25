@@ -5,10 +5,13 @@ createFirstVersion
 	packageInfo := PackageInfo named: classFactory packageName.
 	packagePath := (MCSnapshot empty asSquotArtifactForPackage: packageInfo) path.
 	workingCopy add: packageInfo at: packagePath.
-	packageId := (workingCopy artifactAt: packagePath) id.
+	SquotToggles useNewApi
+		ifTrue: [packageId := (workingCopy project artifacts detect: [:each | each path = packagePath]) id]
+		ifFalse: [packageId := packagePath].
 	workingCopy newSaveOperation
 		message: 'first version';
 		timestamp: DateAndTime now - 5 minutes;
 		applyToWorkingCopy.
 	firstVersion := workingCopy baseVersion.
+	originalPackageArtifact := firstVersion snapshot artifactAt: packageId.
 	^ firstVersion

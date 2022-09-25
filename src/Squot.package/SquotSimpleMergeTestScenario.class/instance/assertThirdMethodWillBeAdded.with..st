@@ -1,7 +1,7 @@
 asserting
 assertThirdMethodWillBeAdded: aMerge with: aTestCase
 	| operation |
-	operation := (aMerge mergeAt: packagePath) mergeOfTrackedObject resolvedPatch
+	operation := (aMerge mergeAt: packageId) mergeOfTrackedObject resolvedPatch
 		operations
 		detect:
 			[:each |

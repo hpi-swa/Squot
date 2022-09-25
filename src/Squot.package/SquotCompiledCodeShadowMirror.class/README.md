@@ -1,0 +1,1 @@
+I reflect SquotCompiledCodeShadow instances, allowing access to header and literals.

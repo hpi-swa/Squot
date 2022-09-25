@@ -1,0 +1,3 @@
+ancestry
+resetAdditionalParents
+	additionalParentVersions removeAll.

@@ -1,0 +1,1 @@
+I reflect instances of bits classes (such as ByteArray or WordArray) to capture them differently than pointer classes.

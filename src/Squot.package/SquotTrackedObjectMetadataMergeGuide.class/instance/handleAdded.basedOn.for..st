@@ -1,0 +1,3 @@
+callbacks
+handleAdded: incomingObjectReflection basedOn: baseObjectReflection for: aMergeBuilder
+	"For normal graph merges do the same as if it were present without references (e. g. use nil), except that we do not add reference additions or conflicts because there is no object to patch in the working copy." "Irrelevant for metadata because it must not have multiple references to the same object. Adding the reference with the complete object from the incoming graph is therefore enough."

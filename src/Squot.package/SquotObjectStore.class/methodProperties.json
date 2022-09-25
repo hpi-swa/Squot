@@ -1,0 +1,19 @@
+{
+	"class" : {
+		"canStore:" : "jr 7/18/2022 00:55",
+		"forArtifact:" : "jr 7/18/2022 00:56",
+		"initialize" : "jr 8/9/2022 19:07",
+		"isAbstract" : "jr 7/18/2022 17:15",
+		"objectRegistry" : "jr 8/14/2022 19:15",
+		"registerStoreImplementation" : "jr 7/18/2022 00:57",
+		"unregisterStoreImplementation" : "jr 7/18/2022 00:57" },
+	"instance" : {
+		"canStore:" : "jr 7/18/2022 00:53",
+		"canonicalArgumentName" : "jr 7/18/2022 17:10",
+		"includesArtifact:" : "jr 7/18/2022 13:46",
+		"initializeArtifact:forObject:" : "jr 7/30/2022 11:47",
+		"initializeStoreInfo:forObject:" : "jr 9/25/2022 00:12",
+		"putArtifact:" : "jr 7/18/2022 00:59",
+		"readArtifact:" : "jr 7/18/2022 01:00",
+		"removeArtifact:" : "jr 7/18/2022 01:00",
+		"updateArtifact:" : "jr 9/25/2022 00:20" } }

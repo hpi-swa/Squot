@@ -1,0 +1,3 @@
+accessing
+shadowOfTrackedObject
+	^ objectSnapshot startShadow

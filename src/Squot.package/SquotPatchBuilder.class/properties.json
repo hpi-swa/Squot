@@ -14,7 +14,8 @@
 		"loadOrderMerge",
 		"base",
 		"patched",
-		"progress" ],
+		"progress",
+		"metadataDiff" ],
 	"name" : "SquotPatchBuilder",
 	"pools" : [
 		 ],

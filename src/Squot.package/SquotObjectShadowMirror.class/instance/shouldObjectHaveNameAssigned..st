@@ -1,4 +1,4 @@
 testing
-shouldObjectHaveNameAssigned: anObject
+shouldObjectHaveNameAssigned: aShadow
 	self flag: #stub.
-	^ anObject shouldHaveNameAssignedBySquot
+	^ aShadow canHaveNameAssignedBySquot

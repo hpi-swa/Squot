@@ -18,7 +18,9 @@ testSwitchDoesNotDiscardChangesToUntrackedPackage
 			[:request | | packageMerge |
 			mergePrompted := true.
 			"Exclude all changes"
-			packageMerge := (request merge mergeAt: path) elementMerges anyOne.
+			packageMerge := SquotToggles useNewApi
+				ifTrue: [(request merge mergeAt: (workingCopy project artifacts detect: [:each | each path = path]) id) elementMerges anyOne]
+				ifFalse: [(request merge mergeAt: path) elementMerges anyOne].
 			self assert: {#b} equals: (packageMerge modifications collect: [:each | each definition selector]). 
 			packageMerge modifications do: [:each | packageMerge removeOperationOrConflict: each].
 			request resume].

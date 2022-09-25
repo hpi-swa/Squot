@@ -2,6 +2,8 @@
 	"class" : {
 		"ignoreMethodsInAssumeUnchanged" : "jr 8/10/2020 23:42",
 		"ignoreMethodsInAssumeUnchanged:" : "jr 2/26/2020 22:52",
+		"useNewApi" : "jr 7/16/2022 17:57",
+		"useNewApi:" : "jr 7/16/2022 17:55",
 		"warnAboutUseOfDeprecatedMethods" : "jr 9/21/2020 23:11",
 		"warnAboutUseOfDeprecatedMethods:" : "jr 9/21/2020 23:11" },
 	"instance" : {

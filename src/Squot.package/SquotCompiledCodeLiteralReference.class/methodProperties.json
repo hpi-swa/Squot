@@ -2,7 +2,9 @@
 	"class" : {
 		"index:" : "jr 4/7/2021 23:32" },
 	"instance" : {
+		"=" : "jr 9/24/2022 21:19",
 		"asDiffTreeStringOrText" : "jr 1/16/2022 21:31",
+		"hash" : "jr 9/24/2022 21:18",
 		"literalIndex" : "jr 4/7/2021 23:32",
 		"newNameFragment" : "jr 4/7/2021 23:33",
 		"reflect:in:" : "jr 4/7/2021 23:33",

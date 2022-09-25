@@ -1,9 +1,12 @@
 {
 	"class" : {
-		 },
+		"objectAtPath:in:ifAbsent:" : "jr 9/24/2022 22:45",
+		"substituteMirrorOf:reachedVia:from:" : "jr 9/24/2022 22:44" },
 	"instance" : {
+		"instanceOf:from:path:in:ifAbsent:" : "jr 9/24/2022 22:47",
 		"is:comparableTo:" : "jr 7/18/2021 20:12",
-		"mirrorOf:reachedVia:from:" : "jr 4/11/2021 20:46",
+		"mirrorOf:reachedVia:from:" : "jr 9/24/2022 22:47",
 		"newDiffFrom:to:" : "jr 7/30/2021 19:30",
 		"referencesFrom:" : "jr 4/8/2021 00:51",
+		"reflect:of:put:" : "jr 9/1/2022 00:50",
 		"reflectElement:of:put:" : "jr 4/8/2021 00:48" } }

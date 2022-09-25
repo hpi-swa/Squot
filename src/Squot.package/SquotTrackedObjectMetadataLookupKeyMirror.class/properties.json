@@ -1,0 +1,14 @@
+{
+	"category" : "Squot-Reflection",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "SquotTrackedObjectMetadataLookupKeyMirror",
+	"pools" : [
+		 ],
+	"super" : "SquotLookupKeyMirror",
+	"type" : "normal" }

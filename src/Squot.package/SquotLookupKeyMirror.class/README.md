@@ -1,0 +1,1 @@
+I reflect LookupKey instances, treating the key variable specially to indicate its relevance for the hash.

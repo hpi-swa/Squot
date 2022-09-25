@@ -7,4 +7,5 @@ into: workingArtifact merge: incomingArtifact basedOn: baseArtifact willBeLoaded
 		willBeLoaded: aBoolean
 		graphMerge: anObjectGraphMerge
 		metadataMerge: aTrackedObjectMetadataMerge;
+		updateResult;
 		yourself

@@ -2,6 +2,7 @@
 	"class" : {
 		 },
 	"instance" : {
+		"expectedFailures" : "jr 7/30/2022 12:07",
 		"newRepository" : "jr 12/2/2019 22:07",
 		"newStore" : "jr 12/2/2019 22:07",
 		"testRepositoryChangesPath" : "jr 5/28/2022 12:09",

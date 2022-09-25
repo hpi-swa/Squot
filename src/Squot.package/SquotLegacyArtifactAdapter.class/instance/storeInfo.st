@@ -1,0 +1,3 @@
+accessing
+storeInfo
+	^ artifact storeInfo

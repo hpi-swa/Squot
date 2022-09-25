@@ -1,0 +1,1 @@
+I mirror an instance variable of a Smalltalk object.

@@ -1,0 +1,15 @@
+{
+	"class" : {
+		"artifact:objectSnapshot:" : "jr 7/17/2022 00:50" },
+	"instance" : {
+		"artifact" : "jr 5/7/2022 23:15",
+		"artifact:" : "jr 5/7/2022 23:15",
+		"browse" : "jr 8/7/2022 16:30",
+		"copyWithDiffApplied:" : "jr 7/19/2022 00:37",
+		"objectSnapshot" : "jr 5/7/2022 23:15",
+		"objectSnapshot:" : "jr 5/7/2022 23:15",
+		"patchRelativeToBase:" : "jr 9/3/2022 22:27",
+		"path" : "jr 8/11/2022 18:43",
+		"postCopy" : "jr 7/30/2022 21:45",
+		"setArtifact:objectSnapshot:" : "jr 7/17/2022 00:50",
+		"shadowOfTrackedObject" : "jr 8/11/2022 22:50" } }

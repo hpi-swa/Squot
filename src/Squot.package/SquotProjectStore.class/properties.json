@@ -1,0 +1,14 @@
+{
+	"category" : "Squot-ImageStore",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "jr 7/18/2022 17:04",
+	"instvars" : [
+		 ],
+	"name" : "SquotProjectStore",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }

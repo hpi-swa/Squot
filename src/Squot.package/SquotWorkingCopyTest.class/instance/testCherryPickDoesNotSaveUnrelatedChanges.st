@@ -11,9 +11,9 @@ testCherryPickDoesNotSaveUnrelatedChanges
 		relevantParentOfPickedVersion: scenario firstVersion;
 		message: 'new version'.
 	merge := cherryPick prepareMerge.
-	self assert: ((merge resolvedPatch diffAt: scenario packagePath)
-			diffOfTrackedObject
-			operations
+	self assert: ((merge mergeAt: scenario packageId)
+			mergeOfTrackedObject
+			modifications
 			noneSatisfy:
 				[:each | each definition isMethodDefinition
 					and: [each definition selector = 'firstMethod']])

@@ -1,0 +1,7 @@
+{
+	"class" : {
+		 },
+	"instance" : {
+		"expectedFailures" : "jr 9/25/2022 12:18",
+		"testRemovalsResolvedAutomatically" : "jr 9/25/2022 18:09",
+		"testUnrelatedNewArtifactsAreAppendedWithoutConflicts" : "jr 9/24/2022 17:38" } }

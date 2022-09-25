@@ -10,4 +10,4 @@ startShadow: aShadow
 					ifTrue: [self assert: aShadow name = name.
 							aShadow]
 					ifFalse: [aShadow withSquotObjectName: name]].
-	startName := name.
+	startName := name ifNil: [aShadow hasSquotShadowName ifTrue: [aShadow name]].

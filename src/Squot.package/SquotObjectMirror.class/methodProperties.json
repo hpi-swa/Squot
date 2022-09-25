@@ -7,6 +7,7 @@
 		"capture:with:ifReplaced:" : "jr 7/17/2021 23:51",
 		"hash" : "jr 12/15/2020 23:33",
 		"initializeSnapshot:of:with:" : "jr 4/8/2021 21:23",
+		"instanceOf:from:path:in:ifAbsent:" : "jr 8/28/2022 20:28",
 		"is:comparableTo:" : "jr 7/18/2021 20:13",
 		"newDiffFrom:to:" : "jr 7/30/2021 20:15",
 		"newShadowObject" : "jr 4/3/2021 20:59",

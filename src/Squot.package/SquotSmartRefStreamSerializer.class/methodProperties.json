@@ -2,7 +2,8 @@
 	"class" : {
 		 },
 	"instance" : {
+		"atPathOf:writeStreamDo:" : "jr 7/18/2022 19:58",
 		"streamClass" : "jr 1/5/2017 15:01",
 		"version" : "jr 1/5/2017 14:11",
-		"write:" : "jr 7/20/2017 14:08",
+		"write:" : "jr 7/18/2022 19:58",
 		"writeObject:from:" : "jr 7/20/2017 14:06" } }

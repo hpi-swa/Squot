@@ -2,11 +2,11 @@ setUp
 createThirdVersion
 	| firstSnapshot packageArtifact newSnapshot |
 	firstSnapshot := firstVersion snapshot.
-	packageArtifact := firstSnapshot artifactAt: packagePath.
+	packageArtifact := firstSnapshot artifactAt: packageId.
 	newSnapshot :=
 		firstSnapshot createNewBuilder
 			add: (((MCSnapshot fromDefinitions:
-					packageArtifact packageArtifactDefinitions ,
+					(firstSnapshot packageDefinitionsOfArtifact: packageArtifact) ,
 					{thirdMethod := MCMethodDefinition
 						className: sampleClass name
 						selector: #thirdMethod

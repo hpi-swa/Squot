@@ -3,4 +3,5 @@ workingDiff: workingArtifactDiff conflictingDiff: incomingArtifactDiff
 	^ self new
 		workingDiff: workingArtifactDiff;
 		incomingDiff: incomingArtifactDiff;
+		updateBase;
 		yourself

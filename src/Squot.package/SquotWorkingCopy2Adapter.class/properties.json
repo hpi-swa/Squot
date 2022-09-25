@@ -1,0 +1,15 @@
+{
+	"category" : "Squot-Tests",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"workingCopy",
+		"fakeStore" ],
+	"name" : "SquotWorkingCopy2Adapter",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }

@@ -1,0 +1,17 @@
+{
+	"class" : {
+		"canStore:" : "jr 7/17/2022 00:08",
+		"environment:" : "jr 7/16/2022 23:58",
+		"forArtifact:" : "jr 8/19/2022 22:33",
+		"initialize" : "jr 7/16/2022 23:57",
+		"unload" : "jr 7/16/2022 23:57" },
+	"instance" : {
+		"canStore:" : "jr 8/14/2022 22:11",
+		"includesArtifact:" : "jr 7/24/2022 20:52",
+		"packageInfoFor:" : "jr 7/24/2022 20:49",
+		"packageNameOf:" : "jr 7/24/2022 20:49",
+		"putArtifact:" : "jr 8/14/2022 22:15",
+		"readArtifact:" : "jr 7/24/2022 20:47",
+		"removeArtifact:" : "jr 7/24/2022 21:36",
+		"setEnvironment:" : "jr 7/16/2022 23:58",
+		"updateArtifact:" : "jr 7/24/2022 22:19" } }

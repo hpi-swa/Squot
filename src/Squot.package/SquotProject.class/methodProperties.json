@@ -1,0 +1,20 @@
+{
+	"class" : {
+		"empty" : "jr 7/16/2022 23:07",
+		"id:metadata:artifacts:" : "jr 7/16/2022 23:07" },
+	"instance" : {
+		"addArtifact:" : "jr 7/19/2022 00:42",
+		"artifactAt:" : "jr 7/16/2022 23:25",
+		"artifactAt:ifAbsent:" : "jr 7/16/2022 23:25",
+		"artifacts" : "jr 5/7/2022 23:10",
+		"artifacts:" : "jr 5/7/2022 23:10",
+		"id" : "jr 5/7/2022 23:09",
+		"id:" : "jr 5/7/2022 23:09",
+		"includesArtifactWithId:" : "jr 7/17/2022 00:44",
+		"metadata" : "jr 5/7/2022 23:09",
+		"metadata:" : "jr 5/7/2022 23:09",
+		"postCopy" : "jr 8/5/2022 20:03",
+		"putArtifact:" : "jr 7/19/2022 00:41",
+		"removeArtifactAt:" : "jr 7/17/2022 01:04",
+		"reorder:" : "jr 7/27/2022 21:04",
+		"setId:metadata:artifacts:" : "jr 7/17/2022 22:02" } }

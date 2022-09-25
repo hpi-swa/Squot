@@ -1,0 +1,3 @@
+comparing
+= anotherReference
+	^ self subclassResponsibility

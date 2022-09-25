@@ -1,3 +1,3 @@
 initialize-release
 on: aPatch
-	editedPatch := aPatch createNewBuilder.
+	editedPatch := SquotToggles useNewApi ifTrue: [aPatch "is actually a merge"] ifFalse: [aPatch createNewBuilder].

@@ -1,0 +1,14 @@
+{
+	"category" : "Squot-FileSystemStore",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		"ImplementationRegistry" ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "SquotFileSystemObjectStore",
+	"pools" : [
+		 ],
+	"super" : "SquotObjectStore",
+	"type" : "normal" }

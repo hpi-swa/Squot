@@ -6,7 +6,10 @@ mergeButKeepArtifact
 		mergeVersion: incomingVersion;
 		prepare.
 	"then"
-	conflict := merge conflictAt: 'text'.
+	conflict := merge conflictAt:
+		(SquotToggles useNewApi
+			ifTrue: [(baseVersion snapshot artifacts detect: [:each | each path = 'text']) id]
+			ifFalse: ['text']).
 	self assert: conflict isResolved not.
 
 	"when"

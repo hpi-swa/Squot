@@ -1,8 +1,8 @@
 patching
 add: aSquotArtifact
-	| path |
+	| id |
 	"Note the addition and insert after all items that precede it in the incoming order."
-	path := aSquotArtifact path.
-	self assert: (editedWorking includes: path) not.
-	self insert: path into: editedWorking afterPredecessorsIn: incoming.
+	id := SquotToggles useNewApi ifTrue: [aSquotArtifact id] ifFalse: [aSquotArtifact path].
+	self assert: (result includes: id) not.
+	self insert: id into: result afterPredecessorsIn: incoming.
 	self resetResolution

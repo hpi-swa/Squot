@@ -1,0 +1,3 @@
+accessing artifacts
+includesArtifact: anArtifact
+	self shouldBeImplemented

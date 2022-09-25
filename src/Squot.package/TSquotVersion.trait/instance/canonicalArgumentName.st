@@ -1,0 +1,3 @@
+*Squot-Tools
+canonicalArgumentName
+	^ 'Version'

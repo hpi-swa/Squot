@@ -1,3 +1,5 @@
 testing
 isBasedOn: aSquotObjectContainer
-	^ (aSquotObjectContainer artifactAt: self path) = left
+	^ SquotToggles useNewApi
+		ifTrue: [(aSquotObjectContainer artifactAt: left artifact id) = left artifact]
+		ifFalse: [(aSquotObjectContainer artifactAt: self path) = left]

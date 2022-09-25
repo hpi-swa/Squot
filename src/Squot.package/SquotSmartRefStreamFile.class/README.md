@@ -1,0 +1,1 @@
+I store artifact data in a file using SmartRefStream.

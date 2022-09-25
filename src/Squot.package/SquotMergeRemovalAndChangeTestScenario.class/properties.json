@@ -9,7 +9,8 @@
 		"conflictObject",
 		"others",
 		"baseVersion",
-		"incomingVersion" ],
+		"incomingVersion",
+		"conflictObjectId" ],
 	"name" : "SquotMergeRemovalAndChangeTestScenario",
 	"pools" : [
 		 ],

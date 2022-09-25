@@ -3,17 +3,21 @@
 		"working:incoming:base:modifications:conflicts:" : "jr 12/12/2021 16:28" },
 	"instance" : {
 		"addOperationOrConflict:" : "jr 11/29/2020 20:21",
+		"browse" : "jr 8/7/2022 16:37",
 		"chooseIncoming" : "jr 9/25/2019 21:20",
 		"chooseWorking" : "jr 9/25/2019 21:20",
 		"computeDifferences" : "jr 9/25/2019 21:43",
+		"elementMerges" : "jr 8/11/2022 18:53",
 		"hasChanges" : "jr 6/29/2022 00:13",
 		"initializeSquotDiffNodes:with:" : "jr 9/25/2019 21:50",
 		"keyOf:ifAbsent:" : "jr 9/25/2019 21:43",
-		"modifications" : "jr 9/25/2019 22:32",
+		"modifications" : "jr 8/11/2022 20:05",
 		"newSquotDiffNodes" : "jr 1/22/2022 19:26",
 		"operationsAndConflicts" : "jr 11/29/2020 20:16",
 		"privateResolvedPatch" : "jr 9/25/2019 21:35",
+		"rebaseOn:" : "jr 8/19/2022 22:20",
 		"removeOperationOrConflict:" : "jr 11/29/2020 20:23",
 		"resetChoice" : "jr 9/25/2019 21:21",
 		"setWorking:incoming:base:modifications:conflicts:" : "jr 12/12/2021 16:26",
-		"squotChangeAsStringOrText" : "jr 5/17/2020 22:59" } }
+		"squotChangeAsStringOrText" : "jr 5/17/2020 22:59",
+		"updateResult" : "jr 8/8/2022 21:36" } }

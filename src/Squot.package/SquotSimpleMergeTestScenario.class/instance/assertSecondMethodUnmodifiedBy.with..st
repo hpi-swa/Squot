@@ -1,7 +1,7 @@
 asserting
 assertSecondMethodUnmodifiedBy: aMerge with: aTestCase
 	aTestCase deny:
-		((aMerge mergeAt: packagePath) mergeOfTrackedObject resolvedPatch operations 
+		((aMerge mergeAt: packageId) mergeOfTrackedObject resolvedPatch operations 
 			anySatisfy:
 				[:each |
 				each definition isMethodDefinition

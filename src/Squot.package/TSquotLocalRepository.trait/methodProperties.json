@@ -2,11 +2,12 @@
 	"class" : {
 		 },
 	"instance" : {
+		"canonicalArgumentName" : "jr 7/16/2022 17:51",
 		"clearTemporaryVersionsOn:" : "jr 4/29/2018 18:36",
 		"copySettingsFrom:to:" : "jr 5/27/2022 23:15",
 		"createNewVersion:with:" : "jr 2/5/2017 22:25",
 		"createNewVersionFromPatch:with:" : "jr 1/3/2021 20:52",
-		"createWorkingCopy" : "jr 1/26/2017 17:49",
+		"createWorkingCopy" : "jr 7/18/2022 20:14",
 		"defaultHistorian" : "jr 1/26/2017 17:48",
 		"extension:" : "jr 2/20/2017 11:31",
 		"extension:ifPresent:ifAbsent:" : "jr 2/20/2017 11:29",
@@ -18,4 +19,4 @@
 		"initializeInDirectory:" : "jr 1/26/2017 17:16",
 		"unitOfWork" : "jr 2/26/2020 21:24",
 		"withUnitOfWork:" : "jr 8/8/2020 16:36",
-		"workingCopyClass" : "jr 1/26/2017 17:37" } }
+		"workingCopyClass" : "jr 7/18/2022 20:13" } }

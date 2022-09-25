@@ -1,0 +1,14 @@
+{
+	"category" : "Squot-Packages",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"environment" ],
+	"name" : "SquotClassStore",
+	"pools" : [
+		 ],
+	"super" : "SquotObjectStore",
+	"type" : "normal" }

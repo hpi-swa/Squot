@@ -1,0 +1,14 @@
+{
+	"category" : "Squot-Serialization-Cypress",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"projectRootDirectory" ],
+	"name" : "SquotCypressPackageStore",
+	"pools" : [
+		 ],
+	"super" : "SquotFileSystemObjectStore",
+	"type" : "normal" }

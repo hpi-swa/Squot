@@ -1,0 +1,14 @@
+{
+	"class" : {
+		"canStore:" : "jr 8/14/2022 21:56",
+		"environment:" : "jr 8/14/2022 21:55",
+		"forArtifact:" : "jr 8/19/2022 22:33",
+		"initialize" : "jr 8/14/2022 21:55",
+		"unload" : "jr 8/14/2022 21:55" },
+	"instance" : {
+		"canStore:" : "jr 8/14/2022 22:11",
+		"classNameOf:" : "jr 8/14/2022 22:16",
+		"monticelloSnapshot:" : "jr 8/14/2022 22:26",
+		"putArtifact:" : "jr 8/14/2022 22:32",
+		"readArtifact:" : "jr 8/14/2022 22:28",
+		"setEnvironment:" : "jr 8/14/2022 21:56" } }

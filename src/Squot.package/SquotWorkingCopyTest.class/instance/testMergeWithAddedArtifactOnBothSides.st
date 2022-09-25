@@ -1,11 +1,12 @@
 tests merging
 testMergeWithAddedArtifactOnBothSides
-	| baseVersion leftVersion rightVersion leftName rightName operation versionMerge artifactMerge loadedArtifactId |
+	| baseVersion leftId rightId leftVersion rightVersion leftName rightName operation versionMerge artifactMerge loadedArtifactId |
 	repository withUnitOfWork:
 	[self workingCopy saveVersionWithMessage: 'empty base version'.
 	baseVersion := self workingCopy loadedHistorian version.
 	self workingCopy add: (ValueHolder new contents: #right) at: 'added';
 		saveVersionWithMessage: 'right-side version'.
+	rightId := self workingCopy idOfObject: (self workingCopy objectAt: 'added').
 	rightVersion := self workingCopy loadedHistorian version.
 	rightName := store objectRegistry nameOf: (self workingCopy objectAt: 'added').
 	self workingCopy loadedHistorian version: baseVersion.
@@ -13,6 +14,7 @@ testMergeWithAddedArtifactOnBothSides
 	self deny: (self workingCopy includesObjectAt: 'added').
 	self workingCopy add: (ValueHolder new contents: #left) at: 'added';
 		saveVersionWithMessage: 'left-side version'.
+	leftId := self workingCopy idOfObject: (self workingCopy objectAt: 'added').
 	leftVersion := self workingCopy loadedHistorian version.
 	leftName := store objectRegistry nameOf: (self workingCopy objectAt: 'added').
 	self assert: leftName ~= rightName.
@@ -23,7 +25,7 @@ testMergeWithAddedArtifactOnBothSides
 	versionMerge := (operation := self workingCopy newMergeOperation) 
 		mergeVersion: rightVersion;
 		prepare.
-	artifactMerge := versionMerge mergeAt: 'added'.
+	artifactMerge := versionMerge mergeAt: leftId.
 	self assert: artifactMerge hasConflicts.
 	(artifactMerge graphMerge conflictAt: (self workingCopy artifactAt: 'added') content startName) chooseIncoming.
 	operation applyToWorkingCopy.

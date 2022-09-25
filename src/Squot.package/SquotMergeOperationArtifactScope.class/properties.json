@@ -1,0 +1,14 @@
+{
+	"category" : "Squot-WorkingCopies",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"artifactToMerge" ],
+	"name" : "SquotMergeOperationArtifactScope",
+	"pools" : [
+		 ],
+	"super" : "SquotMergeOperationScope",
+	"type" : "normal" }

@@ -1,0 +1,27 @@
+{
+	"class" : {
+		"workingCopySnapshot:baseSnapshot:incomingSnapshot:" : "jr 8/25/2022 16:23" },
+	"instance" : {
+		"added:at:" : "jr 9/3/2022 21:04",
+		"added:reachedVia:ifSkipping:" : "jr 9/4/2022 13:11",
+		"compareConsolidatedIncomingArtifact:" : "jr 9/3/2022 22:29",
+		"compareIncomingArtifact:" : "jr 8/25/2022 16:39",
+		"compareWholeProjects" : "jr 8/25/2022 16:40",
+		"conflictingAdded:and:at:" : "jr 9/3/2022 19:34",
+		"conflictingRemoved:base:at:" : "jr 9/3/2022 20:54",
+		"conflictingRemovedFromWorkingCopy:incoming:at:" : "jr 9/3/2022 21:11",
+		"consolidateArtifactsOf:and:" : "jr 8/19/2022 23:23",
+		"foundAnotherPathTo:incoming:reachedVia:from:and:" : "jr 9/3/2022 18:48",
+		"foundAnotherPathToNew:reachedVia:from:" : "jr 9/3/2022 19:44",
+		"handleAdded:basedOn:for:" : "jr 9/3/2022 18:49",
+		"handleExisting:basedOn:incoming:for:" : "jr 9/3/2022 18:52",
+		"initialize" : "jr 8/25/2022 16:29",
+		"is:instanceOf:" : "jr 9/3/2022 21:05",
+		"merge:into:basedOn:" : "jr 8/25/2022 16:35",
+		"mergeOfRoot" : "jr 9/3/2022 21:18",
+		"noChangesToMetadata" : "jr 8/25/2022 16:55",
+		"prepareMerge:with:basedOn:reachedVia:ifSkipping:" : "jr 9/4/2022 13:06",
+		"projectMerge" : "jr 8/25/2022 16:53",
+		"reached:at:" : "jr 9/4/2022 13:20",
+		"removed:at:" : "jr 9/3/2022 20:50",
+		"setWorkingCopySnapshot:baseSnapshot:incomingSnapshot:" : "jr 8/25/2022 16:22" } }

@@ -1,3 +1,3 @@
 printing
 displayText
-	^ self path
+	^ self path asString "if nil"

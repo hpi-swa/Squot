@@ -6,8 +6,7 @@
 		 ],
 	"commentStamp" : "jr 10/24/2020 16:50",
 	"instvars" : [
-		"resolvedPatch",
-		"editedWorking" ],
+		"resolvedPatch" ],
 	"name" : "SquotLoadOrderMerge",
 	"pools" : [
 		 ],

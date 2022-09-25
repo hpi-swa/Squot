@@ -1,0 +1,1 @@
+I reflect SquotHashedCollectionShadow instances, allowing access to elements with SquotCollectionElement references.

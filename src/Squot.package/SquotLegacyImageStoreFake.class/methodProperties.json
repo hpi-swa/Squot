@@ -1,0 +1,19 @@
+{
+	"class" : {
+		"for:" : "jr 7/18/2022 20:31" },
+	"instance" : {
+		"add:at:" : "jr 8/14/2022 21:53",
+		"artifactAt:" : "jr 8/14/2022 19:06",
+		"artifacts" : "jr 7/24/2022 11:34",
+		"atPath:put:" : "jr 7/18/2022 20:55",
+		"includes:" : "jr 8/11/2022 22:41",
+		"includesObjectAt:" : "jr 8/8/2022 21:15",
+		"initialize" : "jr 7/18/2022 20:56",
+		"loadOrder:" : "jr 7/24/2022 11:38",
+		"objectRegistry" : "jr 8/14/2022 19:16",
+		"pathsOf:" : "jr 8/11/2022 22:22",
+		"remove:" : "jr 8/14/2022 19:53",
+		"removeAt:" : "jr 7/30/2022 21:58",
+		"setWorkingCopy:" : "jr 7/18/2022 20:31",
+		"workingCopy" : "jr 7/18/2022 20:30",
+		"workingCopy:" : "jr 7/18/2022 20:30" } }

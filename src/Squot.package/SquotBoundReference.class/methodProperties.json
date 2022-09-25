@@ -1,0 +1,16 @@
+{
+	"class" : {
+		"owner:mirror:reference:" : "jr 8/26/2022 15:39" },
+	"instance" : {
+		"mirror" : "jr 5/7/2022 23:02",
+		"mirror:" : "jr 5/7/2022 23:02",
+		"owner" : "jr 5/7/2022 23:01",
+		"owner:" : "jr 5/7/2022 23:01",
+		"printOn:" : "jr 8/26/2022 16:24",
+		"reference" : "jr 5/7/2022 23:01",
+		"reference:" : "jr 5/7/2022 23:01",
+		"setOwner:mirror:reference:" : "jr 8/26/2022 15:40",
+		"value" : "jr 5/7/2022 23:03",
+		"value:" : "jr 5/7/2022 23:03",
+		"valueMirror" : "jr 8/26/2022 15:49",
+		"valueReflection" : "jr 8/26/2022 15:51" } }

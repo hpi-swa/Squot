@@ -10,11 +10,11 @@ testMergeAndLoadUnloadedArtifact
 		[merge := (operation := workingCopy newMergeOperation)
 			mergeVersion: scenario thirdVersion;
 			prepare.
-		(merge at: scenario packagePath) toggleWhetherToLoad.
+		workingCopy toggleWhetherToLoad: (merge at: scenario packageId).
 		operation applyToWorkingCopy]].
 	"then"
 	self assert: (workingCopy artifactAt: scenario packagePath) isLoaded.
 	scenario
 		assertSecondMethodUnmodifiedWith: self;
 		assertThirdMethodLoadedWith: self.
-	self assert: scenario packageId equals: (workingCopy artifactAt: scenario packagePath) id.
+	self assert: scenario originalPackageArtifact id equals: (workingCopy artifactAt: scenario packagePath) id.

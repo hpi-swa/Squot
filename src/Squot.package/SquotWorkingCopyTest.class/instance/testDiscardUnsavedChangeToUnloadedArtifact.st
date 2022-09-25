@@ -1,15 +1,17 @@
 tests unloaded artifacts
 testDiscardUnsavedChangeToUnloadedArtifact
-	| object firstSnapshot secondSnapshot patch |
+	| object helperWorkingCopy firstSnapshot secondSnapshot patch |
 	object := ValueHolder new contents: 1; yourself.
-	firstSnapshot := SquotImageStore new add: object at: 'obj'; captureSnapshot.
+	helperWorkingCopy := self newWorkingCopy.
+	helperWorkingCopy add: object at: 'obj'.
+	firstSnapshot := helperWorkingCopy snapshot.
 	workingCopy addUnloaded: (firstSnapshot artifactAt: 'obj').
 	workingCopy saveVersionWithMessage: 'add obj'.
 	self denyChangesInWorkingCopy.
 	repository withUnitOfWork:
 		[firstSnapshot := workingCopy baseVersion snapshot. "Repository might add objects automatically."].
 	object contents: 2.
-	secondSnapshot := SquotImageStore new add: object at: 'obj'; captureSnapshot.
+	secondSnapshot := helperWorkingCopy snapshot.
 	patch := secondSnapshot patchRelativeToBase: workingCopy.
 	workingCopy applyPatch: patch.
 	"when"

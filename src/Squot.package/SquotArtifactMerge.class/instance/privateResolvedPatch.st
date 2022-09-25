@@ -10,5 +10,5 @@ privateResolvedPatch
 		updateRightArtifact;
 		yourself.
 	self workingIsLoaded ifTrue: [modification setLoadedInWorkingCopy].
-	self willBeLoaded ifTrue: [modification setWillBeLoaded].
+	(SquotToggles useNewApi not and: [self willBeLoaded]) ifTrue: [modification setWillBeLoaded].
 	^ modification

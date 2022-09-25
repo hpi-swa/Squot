@@ -1,0 +1,3 @@
+merging
+mergeClass
+	^ SquotObjectShadowMerge

@@ -2,6 +2,7 @@ comparing
 patchRelativeToBaseVersion: baseSquitVersion
 	"compute tree diff, then deduce object diffs"
 	| diff changedPaths mySnapshot baseSnapshot myChangedArtifactPaths baseChangedArtifactPaths deletedPaths patchBuilder |
+	SquotToggles useNewApi ifTrue: [self shouldBeImplemented].
 	self = baseSquitVersion ifTrue: [^ SquotPatch noChangesTo: self].
 	SquotProgress display: 'Diff ', baseSquitVersion shortId, '..', self shortId, ' ... ' during:
 		[:progress |

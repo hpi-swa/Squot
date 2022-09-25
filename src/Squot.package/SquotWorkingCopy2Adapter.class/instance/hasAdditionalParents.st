@@ -1,0 +1,3 @@
+testing
+hasAdditionalParents
+	^ workingCopy hasAdditionalParentVersions

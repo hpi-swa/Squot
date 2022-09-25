@@ -1,0 +1,3 @@
+private
+newInteractiveSaveOperation
+	^ SquotInteractiveSave newFrom: self newSaveOperation

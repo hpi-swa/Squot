@@ -1,4 +1,4 @@
 testing
 shouldObjectHaveNameAssigned: anObject
-	"Package identified by its name already"
-	^ false
+	"Packages are identified in the system by their name alone, but we want to be able to track package renames in the future."
+	^ true

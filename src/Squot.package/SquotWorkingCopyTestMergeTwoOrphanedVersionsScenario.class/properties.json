@@ -17,7 +17,9 @@
 		"secondMethodSource",
 		"otherHistorian",
 		"classFactory2",
-		"classFactory" ],
+		"classFactory",
+		"packageId1",
+		"packageId2" ],
 	"name" : "SquotWorkingCopyTestMergeTwoOrphanedVersionsScenario",
 	"pools" : [
 		 ],

@@ -1,4 +1,4 @@
-I connect a Store with a local repository and a historian, so you can create new versions with snapshots from the store and restore the snaphots from versions.
+I connect a project with a local repository and a historian, so you can create new versions with snapshots from the project and update the project from other versions.
 
 Instance Variables
 	name:				<String> display name of this working copy

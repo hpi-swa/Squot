@@ -12,7 +12,9 @@ testRevertOfOrphanedVersion
 	self assert: merge hasConflicts
 		description: 'there should be a conflict since the method was later changed again'.
 	merge conflicts do: [:each | each chooseIncoming].
-	self assert: (merge resolvedPatch diffs allSatisfy: [:each | each isRemoval])
+	self assert: (SquotToggles useNewApi
+			ifTrue: [merge removals notEmpty and: [merge elementMerges isEmpty]]
+			ifFalse: [merge resolvedPatch diffs allSatisfy: [:each | each isRemoval]])
 		description: 'removes everything'.
 	revert applyMerge.
 	revert save].

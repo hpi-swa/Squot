@@ -2,13 +2,14 @@ tests unloaded artifacts
 testPatchAndLoadUnloadedArtifact
 	| object snapshot store patch |
 	object := ValueHolder new contents: 1; yourself.
-	store := SquotImageStore new.
-	snapshot := store add: object at: 'obj'; captureSnapshot.
+	store := self newWorkingCopy.
+	snapshot := store add: object at: 'obj'; snapshot.
 	workingCopy addUnloaded: (snapshot artifactAt: 'obj').
 	object contents: 2.
-	snapshot := store captureSnapshot.
+	snapshot := store snapshot.
 	patch := snapshot patchRelativeToBase: workingCopy.
-	(patch diffAt: 'obj') toggleWhetherToLoad.
+	workingCopy toggleWhetherToLoad: (patch diffAt: 'obj').
+	SquotToggles useNewApi ifTrue: [patch updateResult].
 	"when"
 	workingCopy applyPatch: patch.
 	"then"

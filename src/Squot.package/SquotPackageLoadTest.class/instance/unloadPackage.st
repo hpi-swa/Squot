@@ -1,4 +1,4 @@
-testing
+tests
 unloadPackage
 	self suppressChangeNotificationsDuring:
 		[(MCPackage named: classFactory packageName) unload].

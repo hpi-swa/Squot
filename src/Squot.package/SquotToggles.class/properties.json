@@ -6,6 +6,7 @@
 		"EnableRefactoredCherryPick",
 		"EnableRefactoredSave",
 		"IgnoreMethodsInAssumeUnchanged",
+		"UseNewApi",
 		"UseNewObjectPatching",
 		"UseUnitOfWorkInterface",
 		"WarnAboutUseOfDeprecatedMethods" ],

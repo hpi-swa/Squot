@@ -23,4 +23,6 @@ testMergeWithLocalChangesToUnloadedArtifact
 		prepare;
 		applyToWorkingCopy.
 	"then"
-	self deny: ((workingCopy artifactAt: 'object') diffAgainst: artifactSnapshot) hasChanges.
+	SquotToggles useNewApi
+		ifTrue: [self deny: (((workingCopy storeForArtifact: artifactSnapshot artifact) readArtifact: artifactSnapshot artifact) patchRelativeToBase: artifactSnapshot) hasChanges]
+		ifFalse: [self deny: ((workingCopy artifactAt: 'object') diffAgainst: artifactSnapshot) hasChanges].

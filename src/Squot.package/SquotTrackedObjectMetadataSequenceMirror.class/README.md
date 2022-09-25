@@ -1,0 +1,1 @@
+I reflect sequenceable collections in project and artifact metdata, making sure that all elements are treated like value objects. Similar to SquotTrackedObjectMetadataMirror.

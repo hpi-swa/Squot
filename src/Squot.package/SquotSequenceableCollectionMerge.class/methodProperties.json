@@ -1,0 +1,8 @@
+{
+	"class" : {
+		"into:merge:basedOn:modifications:conflicts:" : "jr 8/5/2022 18:30" },
+	"instance" : {
+		"hasChanges" : "jr 8/5/2022 18:38",
+		"privateResolvedPatch" : "jr 8/5/2022 18:46",
+		"setWorking:incoming:base:modifications:conflicts:" : "jr 8/5/2022 18:37",
+		"updateResult" : "jr 8/11/2022 21:48" } }

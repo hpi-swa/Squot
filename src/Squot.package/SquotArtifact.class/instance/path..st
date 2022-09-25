@@ -1,5 +1,9 @@
 accessing
 path: aString
 	| oldPath |
-	oldPath := path.
-	path := aString.
+	SquotToggles useNewApi
+		ifTrue:
+			[storeInfo at: 'path' put: aString]
+		ifFalse:
+			[oldPath := path.
+			path := aString].

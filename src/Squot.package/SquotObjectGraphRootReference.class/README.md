@@ -1,0 +1,1 @@
+I mirror the reference from a SquotShadowGraph to the object that induces the object graph. That is, all other objects in this graph are reachable from this object.

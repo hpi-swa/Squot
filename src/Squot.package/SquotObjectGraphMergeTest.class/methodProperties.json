@@ -2,4 +2,27 @@
 	"class" : {
 		 },
 	"instance" : {
-		"testResolvedPatchHasStates" : "jr 9/23/2019 22:05" } }
+		"merge:into:" : "jr 9/3/2022 22:26",
+		"mergeOf:withChanges:" : "jr 9/3/2022 22:27",
+		"setUp" : "jr 8/25/2022 19:12",
+		"testAddObjects" : "jr 8/25/2022 19:12",
+		"testAddSubgraph" : "jr 8/25/2022 19:13",
+		"testArrayOfDifferentlyTypedObjects" : "jr 8/25/2022 19:17",
+		"testArrayOfIntegers" : "jr 9/4/2022 00:41",
+		"testByteArray" : "jr 9/4/2022 00:50",
+		"testDeepChanges" : "jr 8/25/2022 19:44",
+		"testDeepChanges2" : "jr 8/25/2022 19:45",
+		"testDeepChanges3" : "jr 8/25/2022 19:47",
+		"testDictionariesWithComplexKeys" : "jr 8/25/2022 19:51",
+		"testDictionariesWithSharedAssociations" : "jr 9/4/2022 10:44",
+		"testDictionary" : "jr 8/25/2022 20:00",
+		"testIdentityReplacedObject" : "jr 8/25/2022 20:01",
+		"testMoveObjectCloserToStart" : "jr 8/25/2022 20:03",
+		"testObjects" : "jr 9/3/2022 22:27",
+		"testRectangles" : "jr 8/25/2022 20:10",
+		"testReferenceSwap" : "jr 8/25/2022 20:11",
+		"testReplacedObject" : "jr 8/25/2022 20:12",
+		"testReplacedObject2" : "jr 8/25/2022 20:13",
+		"testResolvedPatchHasStates" : "jr 9/23/2019 22:05",
+		"testSet" : "jr 8/25/2022 20:15",
+		"xtestCyclicReferences" : "jr 8/25/2022 20:26" } }

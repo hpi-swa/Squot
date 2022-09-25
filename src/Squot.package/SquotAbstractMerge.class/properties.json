@@ -8,7 +8,8 @@
 	"instvars" : [
 		"base",
 		"working",
-		"incoming" ],
+		"incoming",
+		"result" ],
 	"name" : "SquotAbstractMerge",
 	"pools" : [
 		 ],

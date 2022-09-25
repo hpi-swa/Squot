@@ -5,11 +5,17 @@ addProjectIfCanceled: cancelBlock
 	directory ifNil: [^ cancelBlock value].
 	name := SquotGUI request: 'Project name:' initialAnswer: directory directoryEntry name.
 	name ifEmpty: [^ cancelBlock value].
-	workingCopy := SquotWorkingCopy newOnObjectMemory.
-	workingCopy name: name.
 	repositoryPath := directory pathName.
-	workingCopy repository: (SquitRepository new initializeInDirectory: (FileSystem disk root resolve: repositoryPath)).
+	SquitSettings useNewApi
+		ifTrue:
+			[workingCopy := SquotWorkingCopy2 repository: (SquitRepository new initializeInDirectory: repositoryPath asFileReference)]
+		ifFalse:
+			[workingCopy := SquotWorkingCopy newOnObjectMemory.
+			workingCopy repository: (SquitRepository new initializeInDirectory: (FileSystem disk root resolve: repositoryPath))].
+	workingCopy name: name.
 	workingCopy repository unitOfWork activateDuring:
-	[workingCopy loadedHistorian: workingCopy repository headHistorian].
+		[SquitSettings useNewApi
+			ifTrue: [workingCopy activeHistorian: workingCopy repository headHistorian]
+			ifFalse: [workingCopy loadedHistorian: workingCopy repository headHistorian]].
 	workingCopy register.
 	^ workingCopy

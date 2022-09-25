@@ -1,0 +1,22 @@
+{
+	"category" : "Squot-Core",
+	"classinstvars" : [
+		"registry" ],
+	"classvars" : [
+		"ObjectStoreImplementationRegistry" ],
+	"commentStamp" : "jr 8/21/2022 10:46",
+	"instvars" : [
+		"name",
+		"project",
+		"stores",
+		"repository",
+		"previouslySavedArtifactSnapshots",
+		"additionalParentVersions",
+		"loadedVersion",
+		"newVersionMessage",
+		"activeHistorian" ],
+	"name" : "SquotWorkingCopy2",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }

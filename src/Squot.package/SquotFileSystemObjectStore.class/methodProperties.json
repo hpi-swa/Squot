@@ -1,0 +1,12 @@
+{
+	"class" : {
+		"detectImplementation:ifNone:" : "jr 7/18/2022 17:47",
+		"forArtifact:inDirectory:" : "jr 7/18/2022 17:55",
+		"initialize" : "jr 7/18/2022 17:42",
+		"isAbstract" : "jr 7/18/2022 17:39",
+		"registerStoreImplementation" : "jr 7/18/2022 17:40",
+		"registerStoreImplementation:" : "jr 7/18/2022 17:40",
+		"unregisterStoreImplementation" : "jr 7/18/2022 17:41",
+		"unregisterStoreImplementation:" : "jr 7/18/2022 17:40" },
+	"instance" : {
+		 } }

@@ -1,0 +1,3 @@
+store implementation registry
+unregisterStoreImplementation: aClass
+	ObjectStoreImplementationRegistry remove: aClass.

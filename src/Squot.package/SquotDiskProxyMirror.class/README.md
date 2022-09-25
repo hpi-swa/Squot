@@ -1,0 +1,1 @@
+I reflect on DiskProxy instances, treating them as value objects and capturing them specially.

@@ -1,0 +1,16 @@
+{
+	"category" : "Squot-Tests-Merging",
+	"classinstvars" : [
+		 ],
+	"classtraitcomposition" : "TTestCaseSuppressingProgressDisplay classTrait",
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "SquotProjectMergeTest",
+	"pools" : [
+		 ],
+	"super" : "TestCase",
+	"traitcomposition" : "TTestCaseSuppressingProgressDisplay",
+	"type" : "normal" }

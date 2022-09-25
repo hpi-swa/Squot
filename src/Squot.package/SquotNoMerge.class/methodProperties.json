@@ -1,7 +1,9 @@
 {
 	"class" : {
-		"of:" : "jr 9/7/2019 12:10" },
+		"of:" : "jr 8/11/2022 18:17" },
 	"instance" : {
 		"conflicts" : "jr 9/7/2019 12:11",
 		"hasChanges" : "jr 9/17/2019 20:24",
-		"privateResolvedPatch" : "jr 9/13/2019 10:08" } }
+		"mayAffectArtifact" : "jr 8/17/2022 20:43",
+		"privateResolvedPatch" : "jr 9/13/2019 10:08",
+		"updateResult" : "jr 8/25/2022 13:15" } }

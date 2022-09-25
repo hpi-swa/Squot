@@ -1,9 +1,10 @@
 tests merging
 testMergeRemovalAndChange
-	| text baseVersion leftVersion rightVersion operation merge conflict |
+	| text id baseVersion leftVersion rightVersion operation merge conflict |
 	"given"
 	repository withUnitOfWork:
 	[self workingCopy add: (text := ValueHolder new contents: 'Base text') at: 'text'.
+	id := self workingCopy idOfObject: text.
 	self workingCopy saveVersionWithMessage: 'base version'.
 	baseVersion := self workingCopy loadedHistorian version.
 	text contents: 'Changed text'.
@@ -21,12 +22,12 @@ testMergeRemovalAndChange
 		mergeVersion: rightVersion;
 		prepare.
 	"then"
-	conflict := merge conflictAt: 'text'.
+	conflict := merge conflictAt: id.
 	self assert: conflict isResolved not.
 	
 	"when"
 	conflict chooseIncoming. "the changed text"
 	operation applyToWorkingCopy.
 	"then"
-	self assert: 'Changed text' equals: (self workingCopy objectAt: 'text') contents].
-	self assert: (baseVersion artifactAt: 'text') id equals: (workingCopy artifactAt: 'text') id.
+	self assert: 'Changed text' equals: (self workingCopy objectAt: id) contents].
+	self assert: (baseVersion artifactAt: id) id equals: (workingCopy artifactAt: id) id.

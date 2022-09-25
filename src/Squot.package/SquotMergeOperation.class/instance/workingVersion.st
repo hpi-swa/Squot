@@ -1,4 +1,4 @@
 accessing
 workingVersion
-	"The version to merge into."
-	^ workingVersion
+	"The version on which the working copy is based."
+	^ workingVersion ifNil: [workingVersion := self workingCopy baseVersion]

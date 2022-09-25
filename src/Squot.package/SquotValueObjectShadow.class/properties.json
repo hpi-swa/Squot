@@ -1,0 +1,14 @@
+{
+	"category" : "Squot-Shadows",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"liveObject" ],
+	"name" : "SquotValueObjectShadow",
+	"pools" : [
+		 ],
+	"super" : "SquotObjectShadow",
+	"type" : "normal" }

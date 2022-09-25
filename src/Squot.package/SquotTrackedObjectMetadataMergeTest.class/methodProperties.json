@@ -2,8 +2,12 @@
 	"class" : {
 		 },
 	"instance" : {
+		"testAddition" : "jr 8/28/2022 22:09",
 		"testAdditionConflict" : "jr 1/16/2022 21:46",
 		"testApplyIsNonDestructive" : "jr 4/8/2021 13:45",
+		"testCyclesDoNotCauseInifiniteLoops" : "jr 8/28/2022 21:03",
 		"testDeepConflict" : "jr 1/16/2022 21:40",
 		"testEverythingIsAValue" : "jr 4/8/2021 13:43",
+		"testIdenticalAddition" : "jr 9/1/2022 01:05",
+		"testRemove" : "jr 8/28/2022 21:05",
 		"testReplacesStrings" : "jr 1/9/2021 19:46" } }

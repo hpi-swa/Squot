@@ -1,0 +1,1 @@
+I reflect shadows of Strings, avoiding references to each individual character.

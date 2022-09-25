@@ -1,0 +1,1 @@
+I reflect on strings, avoiding references for each single character.

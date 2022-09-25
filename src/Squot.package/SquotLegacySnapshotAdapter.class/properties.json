@@ -1,0 +1,14 @@
+{
+	"category" : "Squot-Tests",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"snapshot" ],
+	"name" : "SquotLegacySnapshotAdapter",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }

@@ -2,10 +2,10 @@ private
 resolveLoadOrders
 	"Determine whether there are conflicts. Answer either a tuple of a resolved load order and #noConflicts, or a tuple of a cycle path and #conflicts."
 	| resolvedWorking resolvedIncoming |
-	resolvedWorking := editedWorking.
+	resolvedWorking := result.
 	"If the incoming order is chosen, reorder elements accordingly and keep those which are not present in the incoming order."
 	containerConflicts do: [:each | each resolution ~= #working ifTrue:
-			[resolvedWorking := self copy: editedWorking withOrder: incoming]].
+			[resolvedWorking := self copy: result withOrder: incoming]].
 	"Now prepare an incoming order to merge.
 	Remove elements that were removed in the working copy from incoming order."
 	resolvedIncoming := incoming asOrderedCollection select: [:each | resolvedWorking includes: each].

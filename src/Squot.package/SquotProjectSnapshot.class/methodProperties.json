@@ -1,0 +1,19 @@
+{
+	"class" : {
+		"empty" : "jr 7/27/2022 20:30",
+		"fromStore:" : "jr 7/16/2022 21:37" },
+	"instance" : {
+		"applyPatch:" : "jr 7/16/2022 23:02",
+		"artifactAt:" : "jr 7/17/2022 00:57",
+		"artifactAt:ifAbsent:" : "jr 7/17/2022 00:58",
+		"artifacts" : "jr 7/16/2022 21:40",
+		"artifactsDo:" : "jr 7/17/2022 01:37",
+		"createNewBuilder" : "jr 8/7/2022 12:49",
+		"id" : "jr 7/17/2022 00:32",
+		"loadOrder" : "jr 7/18/2022 13:59",
+		"metadata" : "jr 7/17/2022 00:27",
+		"packageDefinitionsOfArtifact:" : "jr 8/11/2022 18:23",
+		"patchRelativeToBase:" : "jr 7/19/2022 00:14",
+		"project" : "jr 7/18/2022 18:23",
+		"readProjectFromStore:" : "jr 7/27/2022 20:31",
+		"snapshotArtifact:" : "jr 7/27/2022 22:17" } }

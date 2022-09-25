@@ -6,9 +6,9 @@
 		 ],
 	"commentStamp" : "jr 7/22/2019 22:16",
 	"instvars" : [
-		"loadOrderConflicts",
 		"loadOrderMerge",
-		"customizedLoadOrder" ],
+		"customizedLoadOrder",
+		"metadataMerge" ],
 	"name" : "SquotMerge",
 	"pools" : [
 		 ],

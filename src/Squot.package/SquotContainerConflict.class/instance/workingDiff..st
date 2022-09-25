@@ -1,4 +1,4 @@
 initialize-release
 workingDiff: anArtifactDiff
-	base := anArtifactDiff left.
+	SquotToggles useNewApi ifFalse: [base := anArtifactDiff left].
 	working := anArtifactDiff.

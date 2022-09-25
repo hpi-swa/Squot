@@ -1,0 +1,3 @@
+accessing
+metadata
+	^ metadata copy

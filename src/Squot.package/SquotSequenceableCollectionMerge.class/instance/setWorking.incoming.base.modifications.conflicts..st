@@ -1,0 +1,5 @@
+initialize-release
+setWorking: workingSequenceableCollection incoming: incomingSequenceableCollection base: baseSequenceableCollection modifications: modificationsCollection conflicts: conflictsCollection
+	super setWorking: workingSequenceableCollection incoming: incomingSequenceableCollection base: baseSequenceableCollection.
+	containerModifications := modificationsCollection.
+	containerConflicts := conflictsCollection.

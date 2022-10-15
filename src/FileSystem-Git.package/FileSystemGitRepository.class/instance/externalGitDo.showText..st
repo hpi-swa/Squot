@@ -1,12 +1,7 @@
-git porcelain
+git porcelain - external
 externalGitDo: aCommandLineSuffix showText: aBoolean
-	(Smalltalk classNamed: #OSProcess)
-		ifNotNil: [:osProcess | | pipeline err out |
-			pipeline := osProcess evaluate: ('git -C {1} {2}' format: {repository workingDir. aCommandLineSuffix}).
-			out := pipeline upToEndOfFile.
-			err := pipeline errorUpToEndOfFile.
-			pipeline waitForAllToComplete.
-			pipeline last exitCode = 0
-				ifFalse: [self notify: out, String cr, err]
-				ifTrue: [aBoolean ifTrue: [self inform: out, err] ifFalse: [Transcript showln: out, err]]]
-		ifNil: [self error: 'For external commands, OSProcess must be installed']
+	| res |
+	res := self externalCommand: ('git -C {1} {2}' format: {repository workingDir. aCommandLineSuffix}).
+	res first
+		ifFalse: [self error: res second]
+		ifTrue: [aBoolean ifTrue: [self inform: res second] ifFalse: [Transcript showln: res second]]

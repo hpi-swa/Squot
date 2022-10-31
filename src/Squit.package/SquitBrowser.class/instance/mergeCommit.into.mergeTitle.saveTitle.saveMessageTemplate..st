@@ -15,9 +15,10 @@ mergeCommit: aVersion into: aWorkingCopy mergeTitle: mergeString saveTitle: save
 		^ self].
 	self flag: #todo. "Try to exclude changes that were already unsaved in the working copy before the merge."
 	[SquotGUI waitFor:
-		(aWorkingCopy newInteractiveSaveOperation
+		([aWorkingCopy newInteractiveSaveOperation
 			title: saveString;
 			message: messageString;
-			applyToWorkingCopy)]
+			applyToWorkingCopy]
+			on: SquotWorkingCopyHasAdditionalParents do: [:n | n confirmAndProceed])]
 		on: BrokenPromise "cancelled" do: [:e | e ifNotError: [^ nil]].
 	Project current addDeferredUIMessage: [self selectActiveHistorian].

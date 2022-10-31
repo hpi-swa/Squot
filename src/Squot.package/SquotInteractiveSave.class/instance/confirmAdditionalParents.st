@@ -1,5 +1,7 @@
 private
 confirmAdditionalParents
+	(SquotWorkingCopyHasAdditionalParents workingCopy: self workingCopy operation: self)
+		signal ifNotNil: [:answer | ^ answer].
 	^ SquotGUI confirm: ('Your working copy has multiple parent versions:
 
 {1}

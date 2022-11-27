@@ -3,6 +3,7 @@ switchTo: aHistorian
 	| fromHistorian originVersion targetVersion temporarySnapshot addedObjects mergeReaddedObjects |
 	fromHistorian := self loadedHistorian.
 	originVersion := fromHistorian version.
+	originVersion ifNil: [originVersion := SquotSnapshot empty].
 	targetVersion := aHistorian version.
 	self withCurrentSnapshot: [self temporarilySaveChangesOn: fromHistorian].
 	SquotProgress displayStatus: 'Loading ', (targetVersion printStringLimitedTo: 100) during:

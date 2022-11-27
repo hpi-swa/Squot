@@ -1,7 +1,8 @@
 switching historians
 switchAndMoveUnsavedChangesOverTo: aHistorian
-	| fromHistorian temporarySnapshot |
+	| fromHistorian fromVersion temporarySnapshot |
 	fromHistorian := self loadedHistorian.
+	fromVersion := fromHistorian version ifNil: [SquotSnapshot empty].
 	(fromHistorian version = aHistorian version
 	and: [(self repository hasTemporaryVersionsOn: aHistorian) not]) ifTrue:
 		["nothing needs to be modified in the store"
@@ -23,7 +24,7 @@ switchAndMoveUnsavedChangesOverTo: aHistorian
 		self privateLoadVersion: aHistorian version].
 	self withCurrentSnapshot: [self mergeTemporaryVersionsOn: aHistorian].
 	SquotProgress displayStatus: 'Restoring unsaved changes' during:
-	[self mergeSilently: temporarySnapshot basedOn: fromHistorian version
+	[self mergeSilently: temporarySnapshot basedOn: fromVersion
 		onConflictsDo:
 			[:merge | | accepted |
 			[accepted := true.

@@ -60,6 +60,7 @@
 		"testSaveTimestampIsNow" : "jr 8/25/2020 19:13",
 		"testSaveWithoutAddedArtifact" : "jr 4/18/2022 16:48",
 		"testSwitchAndMoveOverToBranchAtSameVersion" : "jr 3/2/2020 23:23",
+		"testSwitchAwayFromOrphanedBranch" : "jr 11/27/2022 18:56",
 		"testSwitchBranch" : "jr 3/2/2020 23:23",
 		"testSwitchBranchAndMoveOverUnsavedChanges" : "jr 3/2/2020 23:37",
 		"testSwitchBranchAndMoveOverUnsavedChangesInAddedArtifact" : "jr 1/2/2021 00:31",

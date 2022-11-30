@@ -1,5 +1,5 @@
-*SquotTonel-Core
-currentPackageProperties	
+*SquotTonel-Tests
+currentPackageProperties
 	^ (self packageDirectory notNil and: [self fileUtils filePathExists: 'package.st' relativeTo: self packageDirectory])
 		ifTrue: [
 			(self packageDirectory / 'package.st') readStreamDo: [:stream |

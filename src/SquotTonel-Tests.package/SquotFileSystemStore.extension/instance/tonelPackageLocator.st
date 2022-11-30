@@ -1,4 +1,4 @@
-*SquotTonel-Core-guessing
+*SquotTonel-Tests-guessing
 tonelPackageLocator
 	<squotArtifactLocatorFor: #PackageInfo priority: 100>
 	"Look for directories with package.st"

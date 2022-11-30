@@ -1,0 +1,16 @@
+{
+	"category" : "Squit-UI",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"repository",
+		"selectedTagName",
+		"tagLabels" ],
+	"name" : "SquitTagsBrowser",
+	"pools" : [
+		 ],
+	"super" : "Model",
+	"type" : "normal" }

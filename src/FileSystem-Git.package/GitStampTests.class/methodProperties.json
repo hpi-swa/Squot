@@ -4,4 +4,5 @@
 	"instance" : {
 		"testNow" : "CamilloBruni 6/22/2011 05:34",
 		"testPrintOn" : "jr 8/26/2020 23:09",
-		"testStampReading" : "MaxLeske 7/22/2010 18:48" } }
+		"testStampReading" : "MaxLeske 7/22/2010 18:48",
+		"testStampReadingInAnotherTimezone" : "jr 7/11/2022 16:16" } }

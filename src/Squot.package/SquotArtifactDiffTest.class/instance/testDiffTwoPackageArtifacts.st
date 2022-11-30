@@ -37,6 +37,7 @@ testDiffTwoPackageArtifacts
 	c := c copy.'.
 			MCPreambleDefinition script: 'Transcript show: #Foo2' packageName: 'Foo'.})
 		asSquotArtifactForPackage: package.
+	snapshot2 id: snapshot1 id.
 	diff := snapshot1 diffAgainst: snapshot2.
 	diffTree := diff asDiffTree.
 	self assert: diffTree children size = 2.

@@ -1,0 +1,15 @@
+{
+	"category" : "FileSystem-Git-Core",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "jr 11/20/2021 23:53",
+	"instvars" : [
+		"unitOfWork",
+		"treeEntry" ],
+	"name" : "GitFSDirectoryEntry",
+	"pools" : [
+		 ],
+	"super" : "FSDirectoryEntry",
+	"type" : "normal" }

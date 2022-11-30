@@ -4,5 +4,5 @@
 	"instance" : {
 		"delete:" : "jr 12/2/2019 22:27",
 		"historians" : "jr 12/2/2019 22:16",
-		"validatePath:for:" : "jr 12/2/2019 22:20",
-		"whenValidatePathAnswer:" : "jr 12/2/2019 22:19" } }
+		"initializeStoreInfo:forObject:" : "jr 5/28/2022 12:03",
+		"whenInitializingStoreInfoDo:" : "jr 5/28/2022 11:46" } }

@@ -1,5 +1,5 @@
 testing
 hasChanges
-	^ containerConflicts notEmpty or:
-		[containerModifications notEmpty or:
-			[elementMerges notEmpty]]
+	^ (containerConflicts anySatisfy: [:each | each hasChanges]) or:
+		[(containerModifications anySatisfy: [:each | each squotHasChanges]) or:
+			[elementMerges anySatisfy: [:each | each hasChanges]]]

@@ -15,4 +15,5 @@ testPatchAndLoadUnloadedArtifact
 	self deny: (snapshot patchRelativeToBase: workingCopy) hasChanges;
 		assert: (workingCopy artifactAt: 'obj') isLoaded;
 		assert: (store includesObjectAt: 'obj');
-		assert: 2 equals: (store objectAt: 'obj') contents.
+		assert: 2 equals: (store objectAt: 'obj') contents;
+		assert: (snapshot artifactAt: 'obj') id equals: (workingCopy artifactAt: 'obj') id.

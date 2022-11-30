@@ -1,3 +1,3 @@
 *Squot-Tools
 newSquotDiffNodes
-	^ SquotPackageDiffNodesFactory new topNodesForMerge: self
+	^ SquotPackageDiffNodesBuilder new topNodesForMerge: self

@@ -1,0 +1,17 @@
+{
+	"category" : "Squot-Tools-Packages",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"packageMerge",
+		"groups",
+		"classNodes",
+		"otherNodes" ],
+	"name" : "SquotPackageDiffNodesBuilder",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }

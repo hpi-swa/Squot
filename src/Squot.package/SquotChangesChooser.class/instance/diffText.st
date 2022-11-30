@@ -2,4 +2,4 @@ ui diff tree
 diffText
 	^ selectedNode
 		ifNil: ['']
-		ifNotNil: [selectedNode asStringOrText]
+		ifNotNil: [workingCopy repository withUnitOfWork: [selectedNode asStringOrText]]

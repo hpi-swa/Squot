@@ -1,0 +1,14 @@
+{
+	"category" : "FileSystem-Git-Compatibility",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		"InadequateFromUnixTimeImplementation" ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "FileSystemGitCompatibility",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }

@@ -1,3 +1,3 @@
 testing
 includesObjectNamed: name
-	^ (objects includesKey: name) or: [super includesObjectNamed: name]
+	^ (objects at: name ifAbsent: []) notNil or: [super includesObjectNamed: name]

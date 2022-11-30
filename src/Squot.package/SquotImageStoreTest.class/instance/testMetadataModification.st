@@ -19,4 +19,5 @@ testMetadataModification
 	imageStore applyDiff: diff toObjectAt: 'example'.
 	"then"
 	self assert: {2} equals: ((imageStore metadataForObjectAt: 'example') at: #dummy);
-		assert: 2 equals: ((imageStore metadataForObjectAt: 'example') at: #transient).
+		assert: 2 equals: ((imageStore metadataForObjectAt: 'example') at: #transient);
+		assert: ((imageStore metadataForObjectAt: 'example') includesKey: #toBeRemoved) not.

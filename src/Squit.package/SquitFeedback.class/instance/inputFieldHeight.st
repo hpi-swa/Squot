@@ -1,0 +1,3 @@
+toolbuilder
+inputFieldHeight
+	^ SquotGUI inputFieldHeight

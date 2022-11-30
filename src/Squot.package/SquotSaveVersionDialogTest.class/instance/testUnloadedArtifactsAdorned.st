@@ -1,7 +1,6 @@
 tests unloaded artifacts
 testUnloadedArtifactsAdorned
 	| store patch |
-	workingCopy := SquotWorkingCopy forTestInMemory.
 	store := SquotImageStore new.
 	store add: (ValueHolder new contents: 1) at: 'changed'.
 	workingCopy

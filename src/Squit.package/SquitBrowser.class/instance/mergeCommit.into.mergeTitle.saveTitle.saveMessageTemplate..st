@@ -9,12 +9,16 @@ mergeCommit: aVersion into: aWorkingCopy mergeTitle: mergeString saveTitle: save
 			[self inform: 'Already on branch ', aWorkingCopy loadedHistorian shortName, ': ', aVersion.
 			^ nil]
 		on: BrokenPromise "cancelled" do: [:e | e ifNotError: [^ nil]].
-	aWorkingCopy loadedVersion = aVersion ifTrue: [self inform: 'Updated ', aWorkingCopy loadedHistorian shortName, ' to ', aVersion. ^ self].
+	aWorkingCopy loadedVersion = aVersion ifTrue:
+		[self inform: 'Updated ', aWorkingCopy loadedHistorian shortName, ' to ', aVersion.
+		Project current addDeferredUIMessage: [self loadCommitList].
+		^ self].
 	self flag: #todo. "Try to exclude changes that were already unsaved in the working copy before the merge."
 	[SquotGUI waitFor:
-		(aWorkingCopy newInteractiveSaveOperation
+		([aWorkingCopy newInteractiveSaveOperation
 			title: saveString;
 			message: messageString;
-			applyToWorkingCopy)]
+			applyToWorkingCopy]
+			on: SquotWorkingCopyHasAdditionalParents do: [:n | n confirmAndProceed])]
 		on: BrokenPromise "cancelled" do: [:e | e ifNotError: [^ nil]].
 	Project current addDeferredUIMessage: [self selectActiveHistorian].

@@ -1,8 +1,10 @@
 {
 	"class" : {
+		"copySettingsFrom:to:" : "jr 5/27/2022 23:15",
 		"rewritePath:for:" : "jr 1/25/2017 17:21",
 		"writingBelow:" : "jr 3/8/2017 17:15" },
 	"instance" : {
+		"canWriteDiffs" : "jr 11/19/2021 20:48",
 		"name" : "jr 1/4/2017 17:46",
 		"rootDirectory" : "jr 3/8/2017 17:14",
 		"rootDirectory:" : "jr 3/8/2017 17:14",

@@ -2,7 +2,6 @@ tests unloaded artifacts
 testLeaveUnloadedArtifactUnloaded
 	"Unloaded artifacts should not appear if they are not changed. If they are changed, they stay unloaded while saving."
 	| store artifact path patch acceptReturned |
-	workingCopy := SquotWorkingCopy forTestInMemory.
 	path := 'artifact'.
 	store := SquotImageStore new.
 	store add: (ValueHolder new contents: 1) at: 'changed';

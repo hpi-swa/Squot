@@ -14,4 +14,6 @@ createNewBranchAt: aVersion initialName: aString ifCanceled: cancelBlock
 	"if the active branch is new and a new branch was created from it, activate the new one"
 	(aVersion isNil and: [self projectSelection loadedHistorian version isNil])
 		ifTrue: [self projectSelection loadedHistorian: newHistorian].
+	"If the branch could not be updated, cancel."
+	newHistorian version ifNil: [^ cancelBlock value].
 	^ newHistorian

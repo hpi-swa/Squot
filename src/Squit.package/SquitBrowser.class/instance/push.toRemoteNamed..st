@@ -1,13 +1,17 @@
 actions on branches
 push: aHistorian toRemoteNamed: aString
 	self flag: #remoteRepository.
-	[(SquitInteractivePush
-		historian: aHistorian
-		remote: (aHistorian repository git remoteNamed: aString)
-		remoteBranchName: (SquotGUI
-								request: 'Branch name at remote:'
-								initialAnswer: selectedHistorian shortName))
-		push]
+	[| remoteBranchName |
+	remoteBranchName := SquotGUI
+		request: 'Branch name at remote:'
+		initialAnswer: selectedHistorian shortName.
+	remoteBranchName isEmptyOrNil ifFalse:
+		[(SquitInteractivePush
+			historian: aHistorian
+			remote: (aHistorian repository git remoteNamed: aString)
+			remoteBranchName: remoteBranchName)
+			push].
+	Project current addDeferredUIMessage: [self loadCommitList "the remote-tracking branch changes"]]
 		on: SquitBadRemote do:
 			[:e |
 			Project current addDeferredUIMessage: [self showBadRemote: e remote].

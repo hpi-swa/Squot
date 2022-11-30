@@ -1,5 +1,6 @@
 actions
 inspectOriginalArtifactOfSelectedNode
-	(self selectedNode content respondsTo: #isModification)
-		ifTrue: [self selectedNode content left explore]
-		ifFalse: [self selectedNode content working explore].
+	(((self selectedNode content respondsTo: #isMerge) and: [self selectedNode content isMerge])
+			or: [(self selectedNode content respondsTo: #isConflict) and: [self selectedNode content isConflict]])
+		ifTrue: [self selectedNode content working explore]
+		ifFalse: [^ super inspectOriginalArtifactOfSelectedNode]

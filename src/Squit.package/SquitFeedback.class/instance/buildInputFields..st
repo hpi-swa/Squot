@@ -7,7 +7,10 @@ buildInputFields: builder
 		editText: #actionTitle:;
 		setText: #actionTitle:;
 		help: 'A feedback title...';
-		frame: (0@0 corner: 1@0.1).
+		frame: (LayoutFrame new
+			topFraction: 0;
+			bottomFraction: 0 offset: self inputFieldHeight;
+			leftFraction: 0; rightFraction: 1).
 	builder pluggableTextSpec new
 		model: self;
 		getText: #actionMessage;
@@ -15,12 +18,18 @@ buildInputFields: builder
 		setText: #actionMessage:;
 		help: 'A message explaining your issue/suggestion in detail...';
 		softLineWrap: true;
-		frame: (0@0.1 corner: 1@0.9).
+		frame: (LayoutFrame new
+			topFraction: 0 offset: self inputFieldHeight;
+			bottomFraction: 1 offset: self inputFieldHeight negated;
+			leftFraction: 0; rightFraction: 1).
 	builder pluggableInputFieldSpec new
 		model: self;
 		getText: #actionAuthor;
 		editText: #actionAuthor:;
 		setText: #actionAuthor:;
 		help: 'Your name (preferably your GitHub @username)...';
-		frame: (0@0.9 corner: 1@1).
+		frame: (LayoutFrame new
+			topFraction: 1 offset: self inputFieldHeight negated;
+			bottomFraction: 1;
+			leftFraction: 0; rightFraction: 1).
 	}

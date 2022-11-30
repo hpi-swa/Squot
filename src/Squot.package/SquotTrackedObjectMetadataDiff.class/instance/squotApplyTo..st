@@ -1,6 +1,6 @@
 Squot-diff-patching
 squotApplyTo: metadata
-	| new sortedKeys replaced pathPrefix |
+	| new sortedKeys replaced pathPrefix idPath |
 	new := metadata copy.
 	sortedKeys := diffs keys sorted: [:a :b | a size < b size].
 	replaced := Set new.
@@ -20,9 +20,10 @@ squotApplyTo: metadata
 							put: (each reflect: referrer in: mirror) copy.
 				mirror := mirror mirrorOf: object reachedVia: each from: referrer]]].
 	"Apply the differences."
+	idPath := {SquotDictionaryEntry key: #id}.
 	diffs keysAndValuesDo:
-		[:path :diff | | object mirror |
-		object := new.
+		[:path :diff | | object mirror | (diff isAddition or: [path ~= idPath]) "Ignore all changes in the id, except if it is added." ifTrue:
+		[object := new.
 		mirror := (thisContext objectClass: object) squotMirror.
 		self flag: #todo. "The loop below is actually the traversal of a graph."
 		path allButLast do:
@@ -30,5 +31,5 @@ squotApplyTo: metadata
 			referrer := object.
 			object := each reflect: referrer in: mirror.
 			mirror := mirror mirrorOf: object reachedVia: each from: referrer].
-		[diff squotReflectOn: object in: mirror] on: KeyNotFound do: [:e | diff isRemoval ifTrue: [e return] ifFalse: [e pass]]].
+		[diff squotReflectOn: object in: mirror] on: KeyNotFound do: [:e | diff isRemoval ifTrue: [e return] ifFalse: [e pass]]]].
 	^ new

@@ -4,7 +4,7 @@ buildWith: builder
 		model: self;
 		label: #labelString;
 		autoCancel: true;
-		extent: 200@60;
+		extent: 200@60 * RealEstateAgent scaleFactor;
 		message: 'Edit global author information:';
 		children: {self buildInputPanel: builder};
 		buttons: (self buildButtons: builder))

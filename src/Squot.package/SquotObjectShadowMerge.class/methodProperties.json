@@ -4,9 +4,10 @@
 	"instance" : {
 		"chooseIncoming" : "jr 11/1/2020 19:20",
 		"chooseWorking" : "jr 11/1/2020 19:18",
-		"computeDifferences" : "jr 1/2/2021 00:48",
+		"computeDifferences" : "jr 6/29/2022 00:34",
+		"hasChanges" : "jr 6/28/2022 23:21",
 		"initializeSquotDiffNodes:with:" : "jr 11/1/2020 19:08",
 		"newSquotDiffNodes" : "jr 11/1/2020 19:19",
 		"printOn:" : "jr 8/31/2019 19:38",
-		"privateResolvedPatch" : "jr 9/7/2019 18:07",
+		"privateResolvedPatch" : "jr 6/28/2022 23:34",
 		"squotChangeAsStringOrText" : "jr 11/1/2020 19:16" } }

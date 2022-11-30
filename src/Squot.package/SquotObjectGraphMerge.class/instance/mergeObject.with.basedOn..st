@@ -22,7 +22,7 @@ mergeObject: workingObject with: incomingObject basedOn: baseObject
 							["incoming removal"
 							workingObject = baseObject
 								ifTrue: [containerModifications at: name put: (SquotObjectRemoval of: workingObject)]
-								ifFalse: [containerConflicts at: name put: (SquotObjectReferenceConflict key: name base: baseObject working: workingObject incoming: nil)]]]
+								ifFalse: [containerConflicts at: name put: (SquotObjectReferenceConflict key: (SquotGraphElementWithName name: name) base: baseObject working: workingObject incoming: nil)]]]
 				ifNotNil:
 					["merge editions"
 					baseObject ifNil: [self notYetImplemented].

@@ -1,0 +1,4 @@
+accessing
+hasUntrackedSelections
+
+	^ selectedUntrackedPackages notEmpty

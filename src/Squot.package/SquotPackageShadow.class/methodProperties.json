@@ -1,7 +1,8 @@
 {
 	"class" : {
-		"forPackageNamed:withSnapshot:" : "jr 12/4/2020 20:22",
-		"forPackageNamed:withSnapshot:tonelProperties:" : "jr 12/4/2020 20:30",
+		"forPackageNamed:withSnapshot:" : "jr 1/13/2022 22:02",
+		"forPackageNamed:withSnapshot:tonelProperties:" : "jr 1/13/2022 22:02",
+		"newNotEmpty" : "jr 1/13/2022 22:02",
 		"squotMirror" : "jr 6/16/2021 22:30",
 		"squotPreferredSerializer" : "jr 8/31/2020 23:27" },
 	"instance" : {
@@ -9,10 +10,12 @@
 		"asMCSnapshot" : "jr 7/22/2017 17:26",
 		"browse" : "jr 6/6/2020 03:26",
 		"copyWithSnapshot:" : "jr 12/4/2020 20:23",
+		"copyWithSnapshot:tonelProperties:" : "jr 5/17/2022 00:10",
 		"definitions" : "jr 7/22/2017 00:27",
 		"diffToBase:withSnapshot:" : "jr 9/25/2019 22:48",
 		"diffToSnapshot:" : "jr 9/25/2019 22:33",
 		"hash" : "jr 3/12/2019 22:01",
+		"initialize" : "jr 1/13/2022 22:04",
 		"mergeSnapshot:basedOn:" : "jr 9/25/2019 21:15",
 		"mergeSnapshot:into:" : "jr 9/25/2019 21:17",
 		"mergeSnapshotInto:basedOn:" : "jr 9/25/2019 21:16",
@@ -31,5 +34,4 @@
 		"squotRewritePath:with:" : "jr 9/20/2017 21:02",
 		"squotWrite:asTonelWith:" : "jr 12/4/2020 20:26",
 		"squotWrite:with:" : "jr 3/16/2019 23:33",
-		"tonelProperties" : "jr 12/4/2020 23:14",
-		"withPackageDiffPatchApplied:" : "jr 7/22/2017 00:08" } }
+		"tonelProperties" : "jr 12/4/2020 23:14" } }

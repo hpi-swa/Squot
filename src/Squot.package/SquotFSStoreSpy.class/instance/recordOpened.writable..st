@@ -1,4 +1,4 @@
-spying
+private
 recordOpened: aPath writable: aBoolean
 	| access existingAccess |
 	access := aBoolean ifTrue: [#write] ifFalse: [#read].

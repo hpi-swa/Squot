@@ -11,5 +11,6 @@ rootNodes
 			each setUpTreeRoot: root toEditMerge: editedPatch.
 			root withAllChildren do: [:eachNode | eachNode workingCopy: workingCopy].
 			rootNodes add: root].
+	rootNodes := self autoProcessNodes: rootNodes.
 	rootNodes addAll: self createLoadOrderNodes.
 	^ rootNodes

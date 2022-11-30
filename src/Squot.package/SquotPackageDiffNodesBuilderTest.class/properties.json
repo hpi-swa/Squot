@@ -1,0 +1,14 @@
+{
+	"category" : "Squot-Tests-Tools-Packages",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "SquotPackageDiffNodesBuilderTest",
+	"pools" : [
+		 ],
+	"super" : "TestCase",
+	"type" : "normal" }

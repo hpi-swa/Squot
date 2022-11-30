@@ -11,7 +11,7 @@ testDetectsBogusTrait
 			commentStamp: ''}.
 	versionInfo := MCVersionInfo name: package name, '-squot.1' id: UUID new message: 'hooray' date: Date today time: Time now author: 'squot' ancestors: #().
 	theVersion := MCVersion package: package info: versionInfo snapshot: mcSnapshot.
-	mcRepo := MCDictionaryRepository new.
+	mcRepo := self newMcRepository: classFactory packageName.
 	mcRepo storeVersion: theVersion.
 	snapshot := SquotSnapshot builder
 		add: ((MCSnapshot

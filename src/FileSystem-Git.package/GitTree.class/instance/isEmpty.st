@@ -1,3 +1,3 @@
 public-testing
 isEmpty
-	^ self size isZero
+	^ self entries isEmpty

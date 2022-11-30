@@ -11,3 +11,4 @@ testRestorePackage
 	self shouldnt: [restoredClass := testEnvironment at: sampleClass name] raise: KeyNotFound.
 	self assert: (restoredClass isKindOf: Class).
 	self assert: (testEnvironment info packages packageNames includes: packageInfo packageName).
+	self assert: snapshot artifacts anyOne id equals: imageStore artifacts anyOne id.

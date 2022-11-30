@@ -1,5 +1,5 @@
 initialize-release
 newRepository
-	^ self targetClass new
+	^ self repositoryClass new
 		initializeInDirectory: self repositoryRootDirectory;
 		yourself

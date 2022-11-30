@@ -2,7 +2,7 @@ ui
 loadBranchList
 	| list |
 	repositoryExists ifFalse:
-		[branchList := #('-- Repository disappeared --').
+		[branchList := self branchListIfRepositoryDoesNotExist.
 		^ self changed: #branchList].
 	list := self projectSelection
 			ifNil: [#()]

@@ -1,4 +1,4 @@
 actions
 browseOriginalEdition
 	selectedNode ifNil: [^ self].
-	selectedNode browseOriginalEdition: workingCopy.
+	workingCopy repository withUnitOfWork: [selectedNode browseOriginalEdition: workingCopy].

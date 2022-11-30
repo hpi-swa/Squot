@@ -17,6 +17,7 @@
 		"testPatchDeleteFolderArtifact" : "jr 7/22/2017 02:29",
 		"testPatchDeleteMethod" : "jr 7/22/2017 01:33",
 		"testPatchFileTreeWithoutMetadata" : "jr 12/14/2020 22:40",
+		"testPatchingPreservesId" : "jr 2/20/2022 21:01",
 		"testReadArtifactWithoutMetadata" : "jr 12/8/2019 16:14",
 		"testStringAsTextfile" : "jr 8/17/2017 19:25",
 		"testStringDefaultEncoding" : "jr 8/18/2017 12:41" } }

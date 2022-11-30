@@ -1,5 +1,12 @@
 *Squot-Tools
 squotChangeAsStringOrText
-	^ ('Merge of ', self object path) asText allBold, '
+	| text |
+	text := ('Merge of ', self object path) asText allBold, '
 	
-', graphMerge squotChangeAsStringOrText
+'.
+	((metadataMerge working includesKey: #id) not and: [metadataMerge incoming includesKey: #id])
+		ifTrue: [text append: 'Set id to '; append: (metadataMerge incoming at: #id) asString; append: '
+
+'].
+	text append: graphMerge squotChangeAsStringOrText.
+	^ text

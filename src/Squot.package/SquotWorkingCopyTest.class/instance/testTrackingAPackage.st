@@ -1,10 +1,12 @@
 tests
 testTrackingAPackage
-	| sampleClass packageInfo anotherClass versionBeforeSave latestVersion |
+	| sampleClass packageInfo anotherClass versionBeforeSave latestVersion artifactId path |
 	self suppressChangeNotificationsDuring: [sampleClass := classFactory newClass].
 	sampleClass compileSilently: 'firstMethod ^ self' classified: 'methods of first version'.
 	repository withUnitOfWork:
 	[packageInfo := self addPackage.
+	path := workingCopy artifacts anyOne path.
+	artifactId := (workingCopy artifactAt: path) id.
 	versionBeforeSave := workingCopy loadedHistorian version.
 	self assert: versionBeforeSave isNil description: 'starting from an empty history'.
 	
@@ -19,6 +21,7 @@ testTrackingAPackage
 	self assertVersion: latestVersion containsPackage: packageInfo.
 	self assertVersion: latestVersion containsClass: sampleClass.
 	self assertVersion: latestVersion containsMethod: sampleClass >> #firstMethod.
+	self assert: artifactId equals: (workingCopy artifactAt: path) id.
 	
 	self suppressChangeNotificationsDuring:
 		[anotherClass := classFactory newClassInCategory: sampleClass category].
@@ -38,4 +41,5 @@ testTrackingAPackage
 	self assertVersion: latestVersion containsClass: anotherClass.
 	self assertVersion: latestVersion containsMethod: anotherClass >> #addedMethod.
 	self assertVersion: latestVersion containsClass: sampleClass.
-	self assertVersion: latestVersion containsMethod: sampleClass >> #firstMethod].
+	self assertVersion: latestVersion containsMethod: sampleClass >> #firstMethod.
+	self assert: artifactId equals: (workingCopy artifactAt: path) id].

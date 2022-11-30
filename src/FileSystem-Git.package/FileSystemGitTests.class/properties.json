@@ -6,7 +6,7 @@
 		 ],
 	"commentStamp" : "jr 2/1/2017 17:04",
 	"instvars" : [
-		 ],
+		"repository" ],
 	"name" : "FileSystemGitTests",
 	"pools" : [
 		 ],

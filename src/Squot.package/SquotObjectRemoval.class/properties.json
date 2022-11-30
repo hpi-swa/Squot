@@ -12,5 +12,5 @@
 	"pools" : [
 		 ],
 	"super" : "Object",
-	"traitcomposition" : "TSquotRemoval + TSquotDiff",
+	"traitcomposition" : "TSquotRemoval + (TSquotDiff - {#squotHasChanges})",
 	"type" : "normal" }

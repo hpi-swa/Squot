@@ -1,0 +1,4 @@
+accessing
+hasTrackedSelections
+
+	^ selectedTrackedPackages notEmpty

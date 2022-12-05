@@ -8,5 +8,5 @@ buildProjectList: builder
 		dragItem: #dragFromProjectList:;
 		dropAccept: #wantsProjectListDrop:type:from:;
 		dropItem: #dropOnProjectList:at:copyIndicated:;
-		menu: #projectListMenu:;
+		menu: #projectListMenu:shifted:;
 		frame: (0@0 corner: 1@0.5)

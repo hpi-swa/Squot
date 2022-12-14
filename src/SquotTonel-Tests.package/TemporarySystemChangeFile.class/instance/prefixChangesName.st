@@ -1,0 +1,3 @@
+private
+prefixChangesName
+	^self prefixGeneral

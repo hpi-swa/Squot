@@ -1,0 +1,15 @@
+{
+	"category" : "SquotTonel-Tests",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"tempChangesFile",
+		"tempChangesName" ],
+	"name" : "TemporarySystemChangeFile",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }

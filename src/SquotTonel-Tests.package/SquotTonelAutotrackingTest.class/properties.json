@@ -1,0 +1,14 @@
+{
+	"category" : "SquotTonel-Tests",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "SquotTonelAutotrackingTest",
+	"pools" : [
+		 ],
+	"super" : "SquotPackageAutotrackingTest",
+	"type" : "normal" }

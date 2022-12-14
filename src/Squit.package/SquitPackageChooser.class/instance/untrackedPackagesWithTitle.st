@@ -1,4 +1,4 @@
 accessing
 untrackedPackagesWithTitle
 
-	^ #('-- Untracked Packages --'), self untrackedPackages
+	^ #('-- Untracked class categories --'), self untrackedPackages

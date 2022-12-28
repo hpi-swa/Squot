@@ -1,0 +1,3 @@
+callbacks
+removedFromWorkingCopy: incomingTargetReflection at: pathCollection
+	self shouldBeImplemented

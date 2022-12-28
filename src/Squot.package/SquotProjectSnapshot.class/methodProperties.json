@@ -12,8 +12,12 @@
 		"id" : "jr 7/17/2022 00:32",
 		"loadOrder" : "jr 7/18/2022 13:59",
 		"metadata" : "jr 7/17/2022 00:27",
+		"mirrorOf:reachedVia:from:" : "jr 12/28/2022 17:53",
 		"packageDefinitionsOfArtifact:" : "jr 8/11/2022 18:23",
-		"patchRelativeToBase:" : "jr 7/19/2022 00:14",
+		"patchRelativeToBase:" : "jr 12/28/2022 16:37",
 		"project" : "jr 7/18/2022 18:23",
 		"readProjectFromStore:" : "jr 7/27/2022 20:31",
-		"snapshotArtifact:" : "jr 7/27/2022 22:17" } }
+		"referencesFrom:" : "jr 12/28/2022 17:39",
+		"reflect:of:" : "jr 12/28/2022 17:50",
+		"snapshotArtifact:" : "jr 7/27/2022 22:17",
+		"squotMergeWith:basedOn:" : "jr 12/28/2022 16:36" } }

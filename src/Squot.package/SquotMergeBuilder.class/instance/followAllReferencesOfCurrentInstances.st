@@ -93,18 +93,23 @@ followAllReferencesOfCurrentInstances
 			ifFalse:
 				[client added: nextInIncoming at: path.
 				nextInWorking
-					ifNotNil: [self enqueueInstances: (SquotObjectReflection object: nextInWorking mirror: (nextInWorking ifNotNil: [nextInIncoming mirror] ifNil: [self nilReflection mirror])) base: (SquotObjectReflection object: nextInBase mirror: (nextInBase ifNotNil: [nextInIncoming mirror] ifNil: [self nilReflection mirror])) incoming: nextInIncoming reachedVia: each]
+					ifNotNil: [self enqueueInstances: (SquotObjectReflection object: nextInWorking mirror: nextInIncoming mirror) base: (SquotObjectReflection object: nextInBase mirror: (nextInBase ifNotNil: [nextInIncoming mirror] ifNil: [self nilReflection mirror])) incoming: nextInIncoming reachedVia: each]
 					ifNil: [self enqueueNewInstances: nextInIncoming base: (SquotObjectReflection object: nextInBase mirror: (nextInBase ifNotNil: [nextInIncoming mirror] ifNil: [self nilReflection mirror])) reachedVia: each]]
 			ifTrue: "Working copy has the reference removed"
 				[| baseReferent | baseReferent := SquotObjectReflection object: (baseReflected reflect: each) mirror: (baseReflected nextMirror: each).
 				(client is: nextInBase instanceOf: baseReferent object)
 					ifTrue: "Reference not changed in incoming version."
 						["Leave it removed"
-						self flag: #todo. "What if there are deep differences between nextInBase and nextInWorking?" "Irrelevant for metadata"]
+						client removedFromWorkingCopy: baseReferent at: path.
+						nextInWorking
+							ifNotNil:
+								["Object still exists in the working copy, but elsewhere. Wait until it is encountered at the other reference."]
+							ifNil:
+								[self enqueueDisappearedInstances: nextInIncoming base: baseReferent reachedVia: each. "Irrelevant for metadata."]]
 					ifFalse: "Reference was changed to a different object in incoming version"
 						[client conflictingRemovedFromWorkingCopy: baseReferent incoming: nextInIncoming at: path.
 						nextInWorking
 							ifNotNil:
-								[self enqueueInstances: (SquotObjectReflection object: nextInWorking mirror: (nextInWorking ifNotNil: [nextInIncoming mirror] ifNil: [self nilReflection mirror])) base: (SquotObjectReflection object: nextInBase mirror: (nextInBase ifNotNil: [nextInIncoming mirror] ifNil: [self nilReflection mirror])) incoming: nextInIncoming reachedVia: each]
+								[self enqueueInstances: (SquotObjectReflection object: nextInWorking mirror: nextInIncoming mirror) base: (SquotObjectReflection object: nextInBase mirror: (nextInBase ifNotNil: [nextInIncoming mirror] ifNil: [self nilReflection mirror])) incoming: nextInIncoming reachedVia: each]
 							ifNil:
 								[self enqueueNewInstances: nextInIncoming base: (SquotObjectReflection object: nextInBase mirror: (nextInBase ifNotNil: [nextInIncoming mirror] ifNil: [self nilReflection mirror])) reachedVia: each]]]].

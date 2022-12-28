@@ -14,7 +14,7 @@ testAdditionAndAdditionFormMerge
 		(incoming storeForArtifact: artifactA) contents: valueHolder copy.
 		(incoming storeForArtifact: artifactA) contents contents: 2.
 		"when"
-		merge := SquotProjectMergeFactory new merge: (SquotProjectSnapshot fromStore: incoming) into: (SquotProjectSnapshot fromStore: working) basedOn: (SquotProjectSnapshot fromStore: base).
+		merge := (SquotProjectSnapshot fromStore: working) squotMergeWith: (SquotProjectSnapshot fromStore: incoming) basedOn: (SquotProjectSnapshot fromStore: base).
 		"then"
 		self assert: (merge elementMerges includesKey: artifactA id).
 		^ self].

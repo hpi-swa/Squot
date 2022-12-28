@@ -1,0 +1,13 @@
+{
+	"class" : {
+		"path:" : "jr 12/28/2022 17:46" },
+	"instance" : {
+		"=" : "jr 12/28/2022 17:44",
+		"asDiffTreeStringOrText" : "jr 12/28/2022 17:43",
+		"hash" : "jr 12/28/2022 17:44",
+		"newNameFragment" : "jr 12/28/2022 17:43",
+		"path" : "jr 12/28/2022 17:47",
+		"printOn:" : "jr 12/28/2022 17:47",
+		"reflect:in:" : "jr 12/28/2022 17:51",
+		"reflect:in:put:" : "jr 12/28/2022 17:43",
+		"setPath:" : "jr 12/28/2022 17:46" } }

@@ -12,7 +12,7 @@ testRemovalAndRemovalResolvesTrivially
 		incoming := base copy.
 		incoming project removeArtifactAt: artifactA id.
 		"when"
-		merge := SquotProjectMergeFactory new merge: (SquotProjectSnapshot fromStore: incoming) into: (SquotProjectSnapshot fromStore: working) basedOn: (SquotProjectSnapshot fromStore: base).
+		merge := (SquotProjectSnapshot fromStore: working) squotMergeWith: (SquotProjectSnapshot fromStore: incoming) basedOn: (SquotProjectSnapshot fromStore: base).
 		"then"
 		self deny: (merge modifies: artifactA).
 		^ self].

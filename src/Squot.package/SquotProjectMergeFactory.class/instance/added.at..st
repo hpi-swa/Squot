@@ -1,3 +1,3 @@
 callbacks
 added: incomingTargetReflection at: pathCollection
-	self shouldBeImplemented
+	additions add: (SquotArtifactAddition of: incomingTargetReflection object).

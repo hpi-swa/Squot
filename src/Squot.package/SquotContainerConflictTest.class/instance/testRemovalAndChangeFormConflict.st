@@ -16,7 +16,7 @@ testRemovalAndChangeFormConflict
 		SquotObjectStore objectRegistry assign: (SquotObjectStore objectRegistry nameOf: valueHolder) to: (incoming storeForArtifact: artifactA) contents.
 		(incoming storeForArtifact: artifactA) contents contents: 2.
 		"when"
-		merge := SquotProjectMergeFactory new merge: (SquotProjectSnapshot fromStore: incoming) into: (SquotProjectSnapshot fromStore: working) basedOn: (SquotProjectSnapshot fromStore: base).
+		merge := (SquotProjectSnapshot fromStore: working) squotMergeWith: (SquotProjectSnapshot fromStore: incoming) basedOn: (SquotProjectSnapshot fromStore: base).
 		"then"
 		merge conflictAt: artifactA id ifAbsent: [self fail: 'conflict expected'].
 		^ self].

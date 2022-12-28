@@ -3,13 +3,15 @@
 		"working:base:incoming:" : "jr 9/3/2022 17:54" },
 	"instance" : {
 		"added:at:" : "jr 9/4/2022 01:08",
-		"added:reachedVia:ifSkipping:" : "jr 9/4/2022 13:11",
+		"added:reachedVia:ifSkipping:" : "jr 12/28/2022 23:31",
 		"changed:to:at:" : "jr 9/4/2022 01:08",
 		"conflictingAdded:and:at:" : "jr 9/4/2022 01:08",
 		"conflictingChanged:to:base:at:" : "jr 9/4/2022 01:07",
 		"conflictingRemoved:base:at:" : "jr 9/4/2022 01:09",
 		"conflictingRemovedFromWorkingCopy:incoming:at:" : "jr 9/4/2022 01:10",
+		"disappeared:reachedVia:ifSkipping:" : "jr 12/28/2022 20:36",
 		"foundAnotherPathTo:incoming:reachedVia:from:and:" : "jr 9/3/2022 18:32",
+		"foundAnotherPathToDisappeared:reachedVia:from:" : "jr 12/28/2022 20:38",
 		"foundAnotherPathToNew:reachedVia:from:" : "jr 9/3/2022 19:43",
 		"handleAdded:basedOn:for:" : "jr 9/3/2022 18:14",
 		"handleExisting:basedOn:incoming:for:" : "jr 9/3/2022 19:06",
@@ -19,4 +21,5 @@
 		"prepareMerge:with:basedOn:reachedVia:ifSkipping:" : "jr 9/4/2022 13:06",
 		"reached:at:" : "jr 9/4/2022 13:19",
 		"removed:at:" : "jr 9/4/2022 01:10",
+		"removedFromWorkingCopy:at:" : "jr 12/28/2022 20:30",
 		"setWorking:base:incoming:" : "jr 9/3/2022 17:54" } }

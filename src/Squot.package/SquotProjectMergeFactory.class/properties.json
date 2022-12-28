@@ -10,14 +10,14 @@
 		"incomingProjectSnapshot",
 		"baseProjectSnapshot",
 		"merges",
-		"conflicts",
 		"additions",
 		"incomingArtifactsMapping",
 		"removals",
 		"loadOrderMerge",
-		"metadataMerge" ],
+		"metadataMerge",
+		"mergeBuilder" ],
 	"name" : "SquotProjectMergeFactory",
 	"pools" : [
 		 ],
-	"super" : "Object",
+	"super" : "SquotAbstractMergeGuide",
 	"type" : "normal" }

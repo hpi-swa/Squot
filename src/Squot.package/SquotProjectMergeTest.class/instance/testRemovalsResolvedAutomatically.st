@@ -9,6 +9,6 @@ testRemovalsResolvedAutomatically
 		putArtifact: (SquotArtifact storeInfo: (SquotTrackedObjectMetadata withNewIdValueHeldAtPath: 'a'));
 		yourself.
 	"when"
-	merge := SquotProjectMergeFactory new merge: b into: a basedOn: base.
+	merge := (SquotProjectSnapshot fromStore: a) squotMergeWith: (SquotProjectSnapshot fromStore: b) basedOn: (SquotProjectSnapshot fromStore: base).
 	"then"
 	self deny: merge hasConflicts.

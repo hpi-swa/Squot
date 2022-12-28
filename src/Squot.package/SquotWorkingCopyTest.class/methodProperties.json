@@ -34,7 +34,7 @@
 		"testMergeSingleArtifact" : "jr 8/25/2022 12:44",
 		"testMergeTwoOrphanedVersions" : "jr 2/13/2022 21:08",
 		"testMergeVersionWithLoadedObjects" : "jr 8/24/2022 19:00",
-		"testMergeWithAddedArtifactOnBothSides" : "jr 8/14/2022 19:19",
+		"testMergeWithAddedArtifactOnBothSides" : "jr 12/29/2022 00:01",
 		"testMergeWithConflicts" : "jr 9/22/2020 00:33",
 		"testMergeWithConflictsChooseRemote" : "jr 9/22/2020 00:35",
 		"testMergeWithRemovedArtifactOnBothSides" : "jr 9/22/2020 00:29",

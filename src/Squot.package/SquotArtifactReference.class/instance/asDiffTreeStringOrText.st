@@ -1,0 +1,3 @@
+*Squot-Tools
+asDiffTreeStringOrText
+	self shouldBeImplemented

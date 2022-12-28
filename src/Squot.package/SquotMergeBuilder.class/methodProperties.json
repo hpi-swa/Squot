@@ -3,9 +3,10 @@
 		"client:" : "jr 9/3/2022 17:50",
 		"client:workingRoot:baseRoot:incomingRoot:" : "jr 9/3/2022 17:51" },
 	"instance" : {
+		"enqueueDisappearedInstances:base:reachedVia:" : "jr 12/28/2022 19:56",
 		"enqueueInstances:base:incoming:reachedVia:" : "jr 9/4/2022 13:07",
 		"enqueueNewInstances:base:reachedVia:" : "jr 9/4/2022 13:11",
-		"followAllReferencesOfCurrentInstances" : "jr 9/24/2022 22:21",
+		"followAllReferencesOfCurrentInstances" : "jr 12/28/2022 23:46",
 		"initialize" : "jr 9/3/2022 18:03",
 		"nilReflection" : "jr 9/3/2022 23:49",
 		"setClient:" : "jr 9/3/2022 17:50",

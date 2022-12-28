@@ -18,7 +18,7 @@ testApplyModificationDoesNothing
 		(right storeForArtifact: artifactA) contents: valueHolder copy.
 		SquotObjectStore objectRegistry assign: (SquotObjectStore objectRegistry nameOf: valueHolder) to: (right storeForArtifact: artifactA) contents.
 		(right storeForArtifact: artifactA) contents contents: 2.
-		merge := SquotProjectMergeFactory new merge: (SquotProjectSnapshot fromStore: right) into: (SquotProjectSnapshot fromStore: left) basedOn: (SquotProjectSnapshot fromStore: base).
+		merge := (SquotProjectSnapshot fromStore: left) squotMergeWith: (SquotProjectSnapshot fromStore: right) basedOn: (SquotProjectSnapshot fromStore: base).
 		self deny: merge hasConflicts;
 			assert: #('a' 'b' 'c') equals: (merge result artifacts asArray collect: [:each | each path]).
 		^ self].

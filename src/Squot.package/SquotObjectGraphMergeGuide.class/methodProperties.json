@@ -10,10 +10,11 @@
 		"conflictingRemoved:base:at:" : "jr 9/3/2022 20:53",
 		"conflictingRemovedFromWorkingCopy:incoming:at:" : "jr 9/3/2022 21:11",
 		"currentMerge" : "jr 9/24/2022 21:53",
+		"disappeared:reachedVia:ifSkipping:" : "jr 12/28/2022 20:10",
 		"foundAnotherPathTo:incoming:reachedVia:from:and:" : "jr 9/4/2022 13:32",
 		"foundAnotherPathToNew:reachedVia:from:" : "jr 9/4/2022 11:47",
 		"graphId" : "jr 9/24/2022 21:52",
-		"handleAdded:basedOn:for:" : "jr 9/4/2022 12:48",
+		"handleAdded:basedOn:for:" : "jr 12/28/2022 20:39",
 		"handleExisting:basedOn:incoming:for:" : "jr 9/3/2022 23:07",
 		"initialize" : "jr 9/4/2022 20:54",
 		"is:instanceOf:" : "jr 9/24/2022 15:39",
@@ -21,4 +22,5 @@
 		"prepareMerge:with:basedOn:reachedVia:ifSkipping:" : "jr 9/4/2022 20:54",
 		"reached:at:" : "jr 9/24/2022 21:34",
 		"removed:at:" : "jr 9/4/2022 10:28",
+		"removedFromWorkingCopy:at:" : "jr 12/28/2022 20:08",
 		"setWorking:base:incoming:" : "jr 9/24/2022 21:53" } }

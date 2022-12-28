@@ -1,6 +1,6 @@
 tests merging
 testMergeWithAddedArtifactOnBothSides
-	| baseVersion leftId rightId leftVersion rightVersion leftName rightName operation versionMerge artifactMerge loadedArtifactId |
+	| baseVersion leftId rightId leftVersion rightVersion leftName rightName operation versionMerge artifactMerge artifactConflict loadedArtifactId |
 	repository withUnitOfWork:
 	[self workingCopy saveVersionWithMessage: 'empty base version'.
 	baseVersion := self workingCopy loadedHistorian version.
@@ -25,14 +25,22 @@ testMergeWithAddedArtifactOnBothSides
 	versionMerge := (operation := self workingCopy newMergeOperation) 
 		mergeVersion: rightVersion;
 		prepare.
-	artifactMerge := versionMerge mergeAt: leftId.
-	self assert: artifactMerge hasConflicts.
-	(artifactMerge graphMerge conflictAt: (self workingCopy artifactAt: 'added') content startName) chooseIncoming.
+	SquotToggles useNewApi
+		ifTrue:
+			[artifactConflict := versionMerge conflictAt: leftId.
+			artifactConflict chooseIncoming]
+		ifFalse:
+			[artifactMerge := versionMerge mergeAt: leftId.
+			self assert: artifactMerge hasConflicts.
+			(artifactMerge graphMerge conflictAt: (self workingCopy artifactAt: 'added') content startName) chooseIncoming].
 	operation applyToWorkingCopy.
 	self assert: #right equals: (self workingCopy objectAt: 'added') contents;
 		assert: rightName equals:
-			(store objectRegistry nameOf: (self workingCopy objectAt: 'added'));
-		assert: loadedArtifactId equals: (workingCopy artifactAt: 'added') id.
-	"The loaded artifact id should also be the saved one."
+			(store objectRegistry nameOf: (self workingCopy objectAt: 'added')).
+	SquotToggles useNewApi
+		ifTrue: [self assert: rightId equals: (workingCopy artifactAt: 'added') id]
+		ifFalse: [self assert: loadedArtifactId equals: (workingCopy artifactAt: 'added') id].
 	workingCopy saveVersionWithMessage: 'merge commit'.
-	self assert: loadedArtifactId equals: (workingCopy baseVersion artifactAt: 'added') id].
+	SquotToggles useNewApi
+		ifTrue: [self assert: rightId equals: (workingCopy baseVersion artifactAt: 'added') id]
+		ifFalse: [self assert: loadedArtifactId equals: (workingCopy baseVersion artifactAt: 'added') id]].

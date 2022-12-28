@@ -1,0 +1,1 @@
+I mirror the access of artifacts in project stores via the path of an artifact. That means artifacts at the same path would be stored under the same reference, which in turn means no two distinct artifacts can be stored at the same path.

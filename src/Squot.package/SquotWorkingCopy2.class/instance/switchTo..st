@@ -59,7 +59,7 @@ switchTo: aHistorian
 	"Merge back saved changes from new historian"
 	(repository hasTemporaryVersionsOn: aHistorian) ifTrue:
 		[tempHistorian := repository historianForTemporaryVersionsOn: aHistorian.
-		merge := SquotProjectMergeFactory new merge: tempHistorian version snapshot into: (SquotProjectSnapshot fromStore: self) basedOn: tempHistorian version parents first snapshot.
+		merge := (SquotProjectSnapshot fromStore: self) squotMergeWith: tempHistorian version snapshot basedOn: tempHistorian version parents first snapshot.
 		merge hasConflicts
 			ifTrue:
 				[| mergeRequest |

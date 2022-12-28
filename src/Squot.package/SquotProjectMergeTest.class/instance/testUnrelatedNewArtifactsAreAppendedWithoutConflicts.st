@@ -9,7 +9,7 @@ testUnrelatedNewArtifactsAreAppendedWithoutConflicts
 		putArtifact: (SquotArtifact storeInfo: (SquotTrackedObjectMetadata withNewIdValueHeldAtPath: 'b'));
 		yourself.
 	"when"
-	merge := SquotProjectMergeFactory new merge: (SquotProjectSnapshot fromStore: b) into: (SquotProjectSnapshot fromStore: a) basedOn: (SquotProjectSnapshot fromStore: base).
+	merge := (SquotProjectSnapshot fromStore: a) squotMergeWith: (SquotProjectSnapshot fromStore: b) basedOn: (SquotProjectSnapshot fromStore: base).
 	"then"
 	self deny: merge hasConflicts.
 	self assert: #('a' 'b') asBag equals: (merge result artifacts asArray collect: [:each | each path]) asBag.

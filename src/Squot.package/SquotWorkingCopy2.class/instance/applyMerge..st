@@ -4,8 +4,7 @@ applyMerge: aProjectMerge
 		[:each | self putArtifact: each object.
 		(self storeForArtifact: each object) putArtifact: (aProjectMerge incoming snapshotArtifact: each object)].
 	aProjectMerge removals do:
-		[:each | self project removeArtifactAt: each object id.
-		(self storeForArtifact: each object) removeArtifact: each object].
+		[:each | self unloadArtifact: each object].
 	aProjectMerge elementMerges do:
 		[:each |
 		(each result artifact storeInfo includesKey: 'load')

@@ -1,4 +1,4 @@
 callbacks
-added: incomingObjectReflection reachedVia: anObject ifSkipping: skipBlock
+added: incomingObjectReflection reachedVia: aReference ifSkipping: skipBlock
 	"Irrelevant for metadata merge, only need the reference addition or change."
 	^ skipBlock value

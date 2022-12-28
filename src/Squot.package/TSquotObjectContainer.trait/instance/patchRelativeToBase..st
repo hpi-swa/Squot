@@ -4,10 +4,7 @@ patchRelativeToBase: anObjectContainer
 		ifTrue:
 			[| baseSnapshot |
 			baseSnapshot := SquotProjectSnapshot fromStore: anObjectContainer.
-			SquotProjectMergeFactory new
-				merge: (SquotProjectSnapshot fromStore: self)
-				into: baseSnapshot
-				basedOn: baseSnapshot]
+			baseSnapshot squotMergeWith: self basedOn: baseSnapshot]
 		ifFalse:
 			[SquotPatch builder
 				patchFrom: (anObjectContainer ifNil: [SquotSnapshot empty])

@@ -6,8 +6,4 @@ putArtifact: anArtifactSnapshot
 		[materializedObject := SquotShadowMaterializer new
 			registry: self objectRegistry;
 			rematerializeGraph: anArtifactSnapshot objectSnapshot].
-	holder contents
-		ifNil: [holder contents: materializedObject]
-		ifNotNil:
-			[self haltIf: holder contents ~~ materializedObject.
-			holder contents becomeForward: materializedObject].
+	holder contents: materializedObject.

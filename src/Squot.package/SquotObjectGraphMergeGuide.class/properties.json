@@ -6,20 +6,14 @@
 		 ],
 	"commentStamp" : "",
 	"instvars" : [
-		"working",
-		"base",
-		"incoming",
 		"additions",
 		"removals",
 		"merges",
-		"conflicts",
 		"ids",
-		"currentWorking",
-		"currentIncoming",
 		"referrers",
 		"reflections" ],
 	"name" : "SquotObjectGraphMergeGuide",
 	"pools" : [
 		 ],
-	"super" : "Object",
+	"super" : "SquotAbstractMergeGuide",
 	"type" : "normal" }

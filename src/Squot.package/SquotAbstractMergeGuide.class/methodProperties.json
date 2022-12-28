@@ -1,0 +1,19 @@
+{
+	"class" : {
+		 },
+	"instance" : {
+		"added:at:" : "jr 12/28/2022 14:56",
+		"added:reachedVia:ifSkipping:" : "jr 12/28/2022 13:50",
+		"changed:to:at:" : "jr 12/28/2022 14:44",
+		"conflictingAdded:and:at:" : "jr 12/28/2022 13:52",
+		"conflictingChanged:to:base:at:" : "jr 12/28/2022 13:54",
+		"conflictingRemoved:base:at:" : "jr 12/28/2022 13:54",
+		"conflictingRemovedFromWorkingCopy:incoming:at:" : "jr 12/28/2022 13:55",
+		"foundAnotherPathTo:incoming:reachedVia:from:and:" : "jr 12/28/2022 13:56",
+		"foundAnotherPathToNew:reachedVia:from:" : "jr 12/28/2022 13:57",
+		"handleAdded:basedOn:for:" : "jr 12/28/2022 15:00",
+		"handleExisting:basedOn:incoming:for:" : "jr 12/28/2022 15:00",
+		"is:instanceOf:" : "jr 12/28/2022 14:05",
+		"prepareMerge:with:basedOn:reachedVia:ifSkipping:" : "jr 12/28/2022 14:09",
+		"reached:at:" : "jr 12/28/2022 14:43",
+		"removed:at:" : "jr 12/28/2022 16:07" } }

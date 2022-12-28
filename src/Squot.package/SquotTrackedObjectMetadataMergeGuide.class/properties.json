@@ -6,17 +6,10 @@
 		 ],
 	"commentStamp" : "",
 	"instvars" : [
-		"working",
-		"base",
-		"incoming",
-		"mergeBuilder",
 		"pathToArtifactId",
-		"diffs",
-		"currentWorking",
-		"currentIncoming",
-		"conflicts" ],
+		"diffs" ],
 	"name" : "SquotTrackedObjectMetadataMergeGuide",
 	"pools" : [
 		 ],
-	"super" : "Object",
+	"super" : "SquotAbstractMergeGuide",
 	"type" : "normal" }

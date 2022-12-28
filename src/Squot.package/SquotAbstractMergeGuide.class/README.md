@@ -1,0 +1,3 @@
+I control the merge of object graphs and build the merge information. To do that, I direct the SquotMergeBuilder what to do with the objects that it encounters while it walks simultaneously through the different graph versions. The SquotMergeBuilder sends messages to me to either let me decide on the further action or to notify me of any new encounters.
+
+My subclasses are expected to be stateful and remember certain things during some callbacks if that is needed to answer later callbacks accurately. For example, it might be necessary to remember the current instances being merged, or the identies of the objects that were already encountered.

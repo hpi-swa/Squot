@@ -1,4 +1,4 @@
-callbacks
+callbacks for objects
 is: anArtifact instanceOf: anotherArtifact
 	^ anArtifact notNil & anotherArtifact notNil and: [anArtifact id = anotherArtifact id
 		or:

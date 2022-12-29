@@ -1,4 +1,4 @@
-callbacks
+callbacks for objects
 prepareMerge: workingObjectReflection with: incomingObjectReflection basedOn: baseObjectReflection reachedVia: anObject ifSkipping: skipBlock
 	"Project merges spawn artifact merging here."
 	| workingArtifact incomingArtifact merge incomingSnapshot workingSnapshot |

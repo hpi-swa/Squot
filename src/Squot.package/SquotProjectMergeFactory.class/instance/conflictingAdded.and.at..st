@@ -1,4 +1,4 @@
-callbacks
+callbacks for references
 conflictingAdded: workingTargetReflection and: incomingTargetReflection at: pathCollection
 	"Differences between working and incoming are conflicts"
 	| workingArtifact incomingArtifact merge incomingSnapshot workingSnapshot base |

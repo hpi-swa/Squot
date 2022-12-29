@@ -1,4 +1,4 @@
-callbacks
+callbacks for objects
 added: incomingObjectReflection reachedVia: aReference ifSkipping: skipBlock
 	(conflicts anySatisfy: [:each | each incoming artifact id = incomingObjectReflection object id])
 		ifTrue: "Is part of a conflict already."

@@ -1,3 +1,3 @@
 callbacks
 reached: workingCopyObjectReflection at: pathCollection
-	"Irrelevant."
+	"Keep the artifact that was added here in the working copy."

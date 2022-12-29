@@ -1,3 +1,3 @@
 callbacks
 added: incomingTargetReflection at: pathCollection
-	additions add: (SquotArtifactAddition of: incomingTargetReflection object).
+	"That an artifact appeared at a certain path is not relevant, whether an artifact was newly added is relevant. An existing artifact may just have been moved to another path."

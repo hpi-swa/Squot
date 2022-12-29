@@ -2,16 +2,14 @@
 	"class" : {
 		"workingCopySnapshot:baseSnapshot:incomingSnapshot:" : "jr 8/25/2022 16:23" },
 	"instance" : {
-		"added:at:" : "jr 12/28/2022 23:33",
-		"added:reachedVia:ifSkipping:" : "jr 12/28/2022 23:38",
+		"added:at:" : "jr 12/29/2022 10:46",
+		"added:reachedVia:ifSkipping:" : "jr 12/29/2022 20:56",
 		"changed:to:at:" : "jr 12/28/2022 23:27",
-		"compareConsolidatedIncomingArtifact:" : "jr 9/3/2022 22:29",
-		"compareIncomingArtifact:" : "jr 8/25/2022 16:39",
-		"compareWholeProjects" : "jr 12/28/2022 17:21",
+		"compareIncomingArtifact:" : "jr 12/29/2022 20:42",
+		"compareWholeProjects" : "jr 12/29/2022 21:47",
 		"conflictingAdded:and:at:" : "jr 12/28/2022 22:32",
 		"conflictingRemoved:base:at:" : "jr 9/3/2022 20:54",
 		"conflictingRemovedFromWorkingCopy:incoming:at:" : "jr 9/3/2022 21:11",
-		"consolidateArtifactsOf:and:" : "jr 8/19/2022 23:23",
 		"disappeared:reachedVia:ifSkipping:" : "jr 12/28/2022 23:35",
 		"foundAnotherPathTo:incoming:reachedVia:from:and:" : "jr 9/3/2022 18:48",
 		"foundAnotherPathToDisappeared:reachedVia:from:" : "jr 12/28/2022 20:37",
@@ -23,9 +21,9 @@
 		"merge:into:basedOn:" : "jr 8/25/2022 16:35",
 		"mergeOfRoot" : "jr 9/3/2022 21:18",
 		"noChangesToMetadata" : "jr 8/25/2022 16:55",
-		"prepareMerge:with:basedOn:reachedVia:ifSkipping:" : "jr 12/28/2022 18:02",
+		"prepareMerge:with:basedOn:reachedVia:ifSkipping:" : "jr 12/29/2022 10:38",
 		"projectMerge" : "jr 8/25/2022 16:53",
-		"reached:at:" : "jr 9/4/2022 13:20",
+		"reached:at:" : "jr 12/29/2022 10:54",
 		"removed:at:" : "jr 12/28/2022 18:53",
 		"removedFromWorkingCopy:at:" : "jr 12/28/2022 23:35",
-		"setWorkingCopySnapshot:baseSnapshot:incomingSnapshot:" : "jr 8/25/2022 16:22" } }
+		"setWorkingCopySnapshot:baseSnapshot:incomingSnapshot:" : "jr 12/29/2022 21:47" } }

@@ -3,4 +3,3 @@ setWorkingCopySnapshot: workingCopyProjectSnapshot baseSnapshot: baseVersionProj
 	workingProjectSnapshot := workingCopyProjectSnapshot.
 	baseProjectSnapshot := baseVersionProjectSnapshot.
 	incomingProjectSnapshot := incomingVersionProjectSnapshot.
-	incomingArtifactsMapping := self consolidateArtifactsOf: workingProjectSnapshot project and: incomingProjectSnapshot project.

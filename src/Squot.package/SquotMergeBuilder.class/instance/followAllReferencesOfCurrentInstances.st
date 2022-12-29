@@ -7,11 +7,11 @@ followAllReferencesOfCurrentInstances
 	(workingReflected references intersection: incomingReflected references) do:
 		[:each | | path workingReferent |
 		path := walk currentPath copyWith: each.
-		nextInIncoming := SquotObjectReflection object: (incomingReflected reflect: each) mirror: (incomingReflected nextMirror: each).
+		nextInIncoming := incomingReflected nextReflection: each.
 		mirrors at: nextInIncoming object put: nextInIncoming mirror.
 		nextInWorking := nextInIncoming mirror instanceOf: nextInIncoming object from: incomingRoot path: path in: workingRoot ifAbsent: [].
 		nextInBase := nextInIncoming mirror instanceOf: nextInIncoming object from: incomingRoot path: path in: baseRoot ifAbsent: [].
-		workingReferent := SquotObjectReflection object: (workingReflected reflect: each) mirror: (workingReflected nextMirror: each).
+		workingReferent := workingReflected nextReflection: each.
 		mirrors at: workingReferent object put: workingReferent mirror.
 		(client is: nextInWorking instanceOf: workingReferent object)
 			ifTrue: "No need to update the reference"
@@ -19,7 +19,7 @@ followAllReferencesOfCurrentInstances
 				client reached: workingReferent at: path.
 				(baseReflected references includes: each)
 					ifTrue:
-						[| baseReferent | baseReferent := SquotObjectReflection object: (baseReflected reflect: each) mirror: (baseReflected nextMirror: each).
+						[| baseReferent | baseReferent := baseReflected nextReflection: each.
 						mirrors at: baseReferent object put: baseReferent mirror.
 						(client is: nextInBase instanceOf: baseReferent object)
 							ifTrue: "Nothing changed"
@@ -31,7 +31,7 @@ followAllReferencesOfCurrentInstances
 			ifFalse: "Reference was changed"
 				[(baseReflected references includes: each)
 					ifTrue:
-						[| baseReferent | baseReferent := SquotObjectReflection object: (baseReflected reflect: each) mirror: (baseReflected nextMirror: each).
+						[| baseReferent | baseReferent := baseReflected nextReflection: each.
 						mirrors at: baseReferent object put: baseReferent mirror.
 						(client is: nextInBase instanceOf: baseReferent object)
 							ifTrue: "Working copy is unique"
@@ -65,7 +65,7 @@ followAllReferencesOfCurrentInstances
 	(workingReflected references copyWithoutAll: incomingReflected references) do:
 		[:each | | path |
 		path := walk currentPath copyWith: each.
-		nextInWorking := SquotObjectReflection object: (workingReflected reflect: each) mirror: (workingReflected nextMirror: each).
+		nextInWorking := workingReflected nextReflection: each.
 		mirrors at: nextInWorking object put: nextInWorking mirror.
 		nextInIncoming := nextInWorking mirror instanceOf: nextInWorking object from: workingRoot path: path in: incomingRoot ifAbsent: [].
 		nextInBase := nextInWorking mirror instanceOf: nextInWorking object from: workingRoot path: path in: baseRoot ifAbsent: [].
@@ -75,7 +75,7 @@ followAllReferencesOfCurrentInstances
 				"If the incoming graph has any differences in the referent, the graph will have a reference to it elsewhere. The differences will be detected at the other reference. If it is not referenced anywhere else, the incoming graph cannot introduce any changes to it." "For metadata, the referent cannot be referenced from anywhere else." "For projects the project cannot be referenced from anywhere else."
 				client reached: nextInWorking at: path]
 			ifTrue: "Incoming version has the reference removed"
-				[| baseReferent | baseReferent := SquotObjectReflection object: (baseReflected reflect: each) mirror: (baseReflected nextMirror: each).
+				[| baseReferent | baseReferent := baseReflected nextReflection: each.
 				(client is: nextInBase instanceOf: baseReferent object)
 					ifTrue: "Working copy did not change the reference, so remove it"
 						[client removed: nextInWorking at: path]
@@ -85,7 +85,7 @@ followAllReferencesOfCurrentInstances
 	(incomingReflected references copyWithoutAll: workingReflected references) do:
 		[:each | | path |
 		path := walk currentPath copyWith: each.
-		nextInIncoming := SquotObjectReflection object: (incomingReflected reflect: each) mirror: (incomingReflected nextMirror: each).
+		nextInIncoming := incomingReflected nextReflection: each.
 		mirrors at: nextInIncoming object put: nextInIncoming mirror.
 		nextInWorking := nextInIncoming mirror instanceOf: nextInIncoming object from: incomingRoot path: path in: workingRoot ifAbsent: [].
 		nextInBase := nextInIncoming mirror instanceOf: nextInIncoming object from: incomingRoot path: path in: baseRoot ifAbsent: [].
@@ -96,7 +96,7 @@ followAllReferencesOfCurrentInstances
 					ifNotNil: [self enqueueInstances: (SquotObjectReflection object: nextInWorking mirror: nextInIncoming mirror) base: (SquotObjectReflection object: nextInBase mirror: (nextInBase ifNotNil: [nextInIncoming mirror] ifNil: [self nilReflection mirror])) incoming: nextInIncoming reachedVia: each]
 					ifNil: [self enqueueNewInstances: nextInIncoming base: (SquotObjectReflection object: nextInBase mirror: (nextInBase ifNotNil: [nextInIncoming mirror] ifNil: [self nilReflection mirror])) reachedVia: each]]
 			ifTrue: "Working copy has the reference removed"
-				[| baseReferent | baseReferent := SquotObjectReflection object: (baseReflected reflect: each) mirror: (baseReflected nextMirror: each).
+				[| baseReferent | baseReferent := baseReflected nextReflection: each.
 				(client is: nextInBase instanceOf: baseReferent object)
 					ifTrue: "Reference not changed in incoming version."
 						["Leave it removed"

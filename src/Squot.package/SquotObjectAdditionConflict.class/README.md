@@ -1,1 +1,1 @@
-I am a conflict of two additions under the same name/path/key.
+I am a conflict where two different objects have been added independently in the same place.

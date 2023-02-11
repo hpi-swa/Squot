@@ -1,4 +1,4 @@
-A conflict of containment: at least one of the three editions does not contain the artifact.
+A conflict where the object was removed in one edition and modified in others.
 
 Instance Variables
 	base:		<SquotArtifact>

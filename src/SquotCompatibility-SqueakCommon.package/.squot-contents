@@ -5,9 +5,9 @@ SquotTrackedObjectMetadata {
 	#serializer : #SquotCypressCodeSerializer,
 	'references' : [
 		'package_SquotCompatibility-SqueakCommon' : {
-			'content-type' : 'application/x.smalltalk.cypress',
+			'packageName' : 'SquotCompatibility-SqueakCommon',
 			'type' : 'package',
-			'packageName' : 'SquotCompatibility-SqueakCommon'
+			'content-type' : 'application/x.smalltalk.cypress'
 		}
 	]
 }

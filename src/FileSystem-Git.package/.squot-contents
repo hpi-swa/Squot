@@ -5,9 +5,9 @@ SquotTrackedObjectMetadata {
 	#serializer : #SquotCypressCodeSerializer,
 	'references' : [
 		'package_FileSystem-Git' : {
-			'content-type' : 'application/x.smalltalk.cypress',
+			'packageName' : 'FileSystem-Git',
 			'type' : 'package',
-			'packageName' : 'FileSystem-Git'
+			'content-type' : 'application/x.smalltalk.cypress'
 		}
 	]
 }

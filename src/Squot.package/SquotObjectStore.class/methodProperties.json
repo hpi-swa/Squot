@@ -10,6 +10,7 @@
 	"instance" : {
 		"canStore:" : "jr 7/18/2022 00:53",
 		"canonicalArgumentName" : "jr 7/18/2022 17:10",
+		"hasLoaded:" : "jr 2/11/2023 22:12",
 		"includesArtifact:" : "jr 7/18/2022 13:46",
 		"initializeArtifact:forObject:" : "jr 7/30/2022 11:47",
 		"initializeStoreInfo:forObject:" : "jr 9/25/2022 00:12",

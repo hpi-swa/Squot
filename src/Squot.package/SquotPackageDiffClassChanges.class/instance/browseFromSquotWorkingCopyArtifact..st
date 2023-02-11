@@ -1,7 +1,10 @@
 browsing
 browseFromSquotWorkingCopyArtifact: aWorkingCopyArtifact
-	| environment behavior classTraitName |
-	aWorkingCopyArtifact isLoaded ifFalse:
+	| environment behavior classTraitName isLoaded |
+	isLoaded := (SquotToggles useNewApi
+		ifTrue: [(diffTreeNode workingCopy storeForArtifact: aWorkingCopyArtifact) hasLoaded: aWorkingCopyArtifact]
+		ifFalse: [aWorkingCopyArtifact isLoaded]).
+	isLoaded ifFalse:
 		[^ (MCSnapshotBrowser forSnapshot:
 			(MCSnapshot fromDefinitions:
 				(conflicts collect: [:each | each localDefinition]),
@@ -9,7 +12,9 @@ browseFromSquotWorkingCopyArtifact: aWorkingCopyArtifact
 			categorySelection: 1;
 			classSelection: 1;
 			showLabelled: 'Snapshot of ', className].
-	environment := PackageInfo squotEnvironmentOf: aWorkingCopyArtifact.
+	environment := SquotToggles useNewApi
+		ifTrue: [(diffTreeNode workingCopy storeForArtifact: aWorkingCopyArtifact) environment]
+		ifFalse: [PackageInfo squotEnvironmentOf: aWorkingCopyArtifact].
 	behavior := environment classOrTraitNamed: className.
 	behavior ifNil:
 		["Could be a class trait."

@@ -1,7 +1,7 @@
 *Squot-Tools
 squotChangeAsStringOrText
 	| text |
-	text := ('Merge of ', self object path) asText allBold, '
+	text := ((SquotToggles useNewApi ifTrue: [''] ifFalse: ['Merge of ']), self object path) asText allBold, '
 	
 '.
 	((metadataMerge working includesKey: #id) not and: [metadataMerge incoming includesKey: #id])

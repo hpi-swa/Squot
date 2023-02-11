@@ -1,5 +1,8 @@
 *Squot-Tools
-setUpTreeRoot: aDiffNode toEditMerge: aMerge
-	aDiffNode
-		includeBlock: [aMerge containerModifications at: aDiffNode content path put: aDiffNode content];
-		excludeBlock: [aMerge containerModifications removeKey: aDiffNode content path].
+setUpTreeRoot: aDiffNode toEditMerge: aProjectMerge
+	SquotToggles useNewApi
+		ifTrue: [self subclassResponsibility]
+		ifFalse:
+			[aDiffNode
+				includeBlock: [aProjectMerge containerModifications at: aDiffNode content path put: aDiffNode content];
+				excludeBlock: [aProjectMerge containerModifications removeKey: aDiffNode content path]]

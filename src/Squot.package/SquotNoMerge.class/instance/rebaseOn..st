@@ -1,0 +1,3 @@
+merging
+rebaseOn: anObject
+	^ self

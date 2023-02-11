@@ -1,0 +1,3 @@
+merging
+resetChoice
+	"Do nothing"

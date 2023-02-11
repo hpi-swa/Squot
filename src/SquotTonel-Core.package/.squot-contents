@@ -5,9 +5,9 @@ SquotTrackedObjectMetadata {
 	#serializer : #SquotCypressCodeSerializer,
 	'references' : [
 		'package_SquotTonel-Core' : {
-			'packageName' : 'SquotTonel-Core',
+			'content-type' : 'application/x.smalltalk.cypress',
 			'type' : 'package',
-			'content-type' : 'application/x.smalltalk.cypress'
+			'packageName' : 'SquotTonel-Core'
 		}
 	]
 }

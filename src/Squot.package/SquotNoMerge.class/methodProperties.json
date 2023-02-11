@@ -2,8 +2,14 @@
 	"class" : {
 		"of:" : "jr 8/11/2022 18:17" },
 	"instance" : {
+		"asSquotHierarchicalDiff" : "jr 2/11/2023 21:27",
+		"chooseIncoming" : "jr 2/11/2023 21:53",
+		"chooseWorking" : "jr 2/11/2023 21:53",
 		"conflicts" : "jr 9/7/2019 12:11",
 		"hasChanges" : "jr 9/17/2019 20:24",
 		"mayAffectArtifact" : "jr 8/17/2022 20:43",
-		"privateResolvedPatch" : "jr 9/13/2019 10:08",
+		"privateResolvedPatch" : "jr 12/30/2022 17:55",
+		"rebaseOn:" : "jr 2/11/2023 21:54",
+		"resetChoice" : "jr 2/11/2023 21:54",
+		"squotChangeAsStringOrText" : "jr 2/11/2023 21:46",
 		"updateResult" : "jr 8/25/2022 13:15" } }

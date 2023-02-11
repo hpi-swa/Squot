@@ -5,9 +5,9 @@ SquotTrackedObjectMetadata {
 	#serializer : #SquotCypressCodeSerializer,
 	'references' : [
 		'package_BaselineOfSquot' : {
-			'packageName' : 'BaselineOfSquot',
+			'content-type' : 'application/x.smalltalk.cypress',
 			'type' : 'package',
-			'content-type' : 'application/x.smalltalk.cypress'
+			'packageName' : 'BaselineOfSquot'
 		}
 	]
 }

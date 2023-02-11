@@ -1,7 +1,13 @@
 SquotTrackedObjectMetadata {
+	#path : 'src/FileSystem-Git.package',
 	#objectClassName : #PackageInfo,
 	#id : UUID [ '9d2378120e641f4fad4dd02310c91f53' ],
-	#slotOverrides : { },
-	#objectsReplacedByNames : true,
-	#serializer : #SquotCypressCodeSerializer
+	#serializer : #SquotCypressCodeSerializer,
+	'references' : [
+		'package_FileSystem-Git' : {
+			'packageName' : 'FileSystem-Git',
+			'type' : 'package',
+			'content-type' : 'application/x.smalltalk.cypress'
+		}
+	]
 }

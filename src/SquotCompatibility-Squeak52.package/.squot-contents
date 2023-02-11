@@ -1,6 +1,13 @@
 SquotTrackedObjectMetadata {
+	#path : 'src/SquotCompatibility-Squeak52.package',
 	#objectClassName : #PackageInfo,
 	#id : UUID [ 'd30235033c690e419a340f405fe93b24' ],
-	#objectsReplacedByNames : true,
-	#serializer : #SquotCypressCodeSerializer
+	#serializer : #SquotCypressCodeSerializer,
+	'references' : [
+		'package_SquotCompatibility-Squeak52' : {
+			'packageName' : 'SquotCompatibility-Squeak52',
+			'type' : 'package',
+			'content-type' : 'application/x.smalltalk.cypress'
+		}
+	]
 }

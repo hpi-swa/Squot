@@ -7,4 +7,7 @@ instanceOf: anArtifact from: sourceProjectSnapshot path: aSequencebleCollection 
 			result := searchProjectSnapshot artifacts detect: [:each | each path = anArtifact path] ifNone: absentBlock.
 			(result isNil or: [result id isNil])
 				ifTrue: [result]
-				ifFalse: [absentBlock value]]
+				ifFalse:
+					[(result isEquivalentTo: anArtifact)
+						ifTrue: [result]
+						ifFalse: [absentBlock value]]]

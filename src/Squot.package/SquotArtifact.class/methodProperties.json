@@ -22,6 +22,7 @@
 		"id:" : "jr 2/13/2022 15:50",
 		"initialize" : "jr 2/13/2022 17:41",
 		"initializeDefaultStoreInfoFor:" : "jr 2/21/2017 21:35",
+		"isEquivalentTo:" : "jr 2/11/2023 19:55",
 		"isLoadable" : "jr 3/8/2017 16:17",
 		"materializeWith:replacing:" : "jr 5/28/2017 14:33",
 		"mergeStoreInfo:" : "jr 12/13/2020 21:59",

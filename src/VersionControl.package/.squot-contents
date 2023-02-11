@@ -1,7 +1,13 @@
 SquotTrackedObjectMetadata {
+	#path : 'src/VersionControl.package',
 	#objectClassName : #PackageInfo,
 	#id : UUID [ 'fe5b516fea2e5f49b14656f6c609b721' ],
-	#objectsReplacedByNames : true,
-	#slotOverrides : { },
-	#serializer : #SquotCypressCodeSerializer
+	#serializer : #SquotCypressCodeSerializer,
+	'references' : [
+		'package_VersionControl' : {
+			'packageName' : 'VersionControl',
+			'type' : 'package',
+			'content-type' : 'application/x.smalltalk.cypress'
+		}
+	]
 }

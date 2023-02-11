@@ -7,6 +7,7 @@ readProject
 		[:eachPath | | storeInfo artifact |
 		storeInfo := (self metadataForObjectAt: (directory resolve: eachPath)) metadata.
 		storeInfo at: #path put: eachPath.
+		storeInfo migrateOldMetadata.
 		artifact := SquotArtifact storeInfo: storeInfo.
 		artifacts at: artifact id put: artifact].
 	self flag: #todo. "Read and write project id and project metadata."

@@ -1,7 +1,13 @@
 SquotTrackedObjectMetadata {
+	#path : 'src/SquotTonel-Core.package',
 	#objectClassName : #PackageInfo,
 	#id : UUID [ 'bb46712d8562f14bbe0b9f0b66967b48' ],
-	#objectsReplacedByNames : true,
-	#slotOverrides : { },
-	#serializer : #SquotCypressCodeSerializer
+	#serializer : #SquotCypressCodeSerializer,
+	'references' : [
+		'package_SquotTonel-Core' : {
+			'packageName' : 'SquotTonel-Core',
+			'type' : 'package',
+			'content-type' : 'application/x.smalltalk.cypress'
+		}
+	]
 }

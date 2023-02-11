@@ -3,5 +3,7 @@
 		 },
 	"instance" : {
 		"expectedFailures" : "jr 9/25/2022 12:18",
+		"testArtifactMoved" : "jr 12/30/2022 17:41",
+		"testMergesPackagesWithDifferentIdsButSameNamesAtSamePath" : "jr 2/11/2023 20:06",
 		"testRemovalsResolvedAutomatically" : "jr 12/28/2022 18:12",
 		"testUnrelatedNewArtifactsAreAppendedWithoutConflicts" : "jr 12/28/2022 16:42" } }

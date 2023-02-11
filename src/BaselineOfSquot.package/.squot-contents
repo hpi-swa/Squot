@@ -1,7 +1,13 @@
 SquotTrackedObjectMetadata {
+	#path : 'src/BaselineOfSquot.package',
 	#objectClassName : #PackageInfo,
 	#id : UUID [ '2e6bf85bea1d114fb70219ff89791241' ],
-	#slotOverrides : { },
-	#objectsReplacedByNames : true,
-	#serializer : #SquotCypressCodeSerializer
+	#serializer : #SquotCypressCodeSerializer,
+	'references' : [
+		'package_BaselineOfSquot' : {
+			'packageName' : 'BaselineOfSquot',
+			'type' : 'package',
+			'content-type' : 'application/x.smalltalk.cypress'
+		}
+	]
 }

@@ -8,7 +8,7 @@ addPackageNamed: nameString at: pathString
 				ifTrue: [pathString]
 				ifFalse: [pathString, '/', nameString, '.package']);
 		at: 'references' put: (Array
-			with: 'package_', nameString -> (Dictionary newFrom:
+			with: 'package_', nameString -> (OrderedDictionary newFrom:
 				{'type' -> 'package'.
 				'packageName' -> nameString.
 				'content-type' -> SquotCypressCodeSerializer contentType}));

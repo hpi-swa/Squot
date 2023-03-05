@@ -5,11 +5,11 @@ testWorkingCopyNotAffectedBySourceStoreChanges
 		[| artifact project objectSnapshot |
 		artifact := SquotArtifact storeInfo: (SquotTrackedObjectMetadata withNewId
 			at: 'path' put: 'object';
-			at: 'references' put: (Dictionary newFrom:
-				{'object_1' -> (Dictionary newFrom:
-					{'type' -> 'ValueHolder'.
-					'content-type' -> 'application/octet-stream'.
-					'codec-class' -> 'SmartRefStream'})});
+			at: 'references' put:
+				{'object_1' -> (OrderedDictionary newFrom:
+						{'type' -> 'ValueHolder'.
+						'content-type' -> 'application/octet-stream'.
+						'codec-class' -> 'SmartRefStream'})};
 			yourself).
 		objectSnapshot := (SquotObjectCapturer new registry: SquotObjectRegistry new; captureGraph: ValueHolder new; objectGraph) asShadowGraph.
 		artifactSnapshot := SquotArtifactSnapshot artifact: artifact objectSnapshot: objectSnapshot.

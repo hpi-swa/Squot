@@ -6,7 +6,7 @@ migrateOldMetadata
 			((self at: #objectClassName) caseOf:
 				{[#PackageInfo] ->
 					[| path packageName referenceInfo referenceId |
-					referenceInfo := Dictionary newFrom:
+					referenceInfo := OrderedDictionary newFrom:
 						{'type' -> 'package'.
 						'content-type' -> (self class environment classNamed: (self at: #serializer)) contentType}.
 					path := self at: #path.
@@ -25,11 +25,11 @@ migrateOldMetadata
 					referenceId -> referenceInfo]}
 				otherwise:
 					[((self at: #objectClassName) endsWith: ' class')
-						ifTrue: ['class' -> (Dictionary newFrom:
+						ifTrue: ['class' -> (OrderedDictionary newFrom:
 									{'type' -> 'class'.
 									'className' -> ((self at: #objectClassName) copyUpTo: Character space).
 									'content-type' -> (self class environment classNamed: (self at: #serializer)) contentType})]
-						ifFalse: ['object' -> (Dictionary newFrom: {'type' -> 'ValueHolder'})]])).
+						ifFalse: ['object' -> (OrderedDictionary newFrom: {'type' -> 'ValueHolder'})]])).
 		(self at: #serializer) = #SquotSmartRefStreamSerializer ifTrue:
 			[(references at: 1) value
 				at: 'content-type' put: 'application/octet-stream';

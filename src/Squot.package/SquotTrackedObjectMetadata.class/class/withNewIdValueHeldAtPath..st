@@ -2,9 +2,9 @@
 withNewIdValueHeldAtPath: aString
 	^ self withNewId
 		at: 'path' put: aString;
-		at: 'references' put: (Dictionary newFrom:
-				{'object_1' -> (Dictionary newFrom:
+		at: 'references' put: 
+			{'object_1' -> (OrderedDictionary newFrom:
 					{'type' -> 'ValueHolder'.
 					'content-type' -> 'application/octet-stream'.
-					'codec-class' -> 'SmartRefStream'})});
+					'codec-class' -> 'SmartRefStream'})};
 		yourself

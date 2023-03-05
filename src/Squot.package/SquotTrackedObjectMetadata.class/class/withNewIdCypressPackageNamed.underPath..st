@@ -3,7 +3,7 @@ withNewIdCypressPackageNamed: packageNameString underPath: pathString
 	^ self withNewId
 		at: 'path' put: pathString, '/', packageNameString, '.package';
 		at: 'references' put:
-			{'package_', packageNameString -> (Dictionary newFrom:
+			{'package_', packageNameString -> (OrderedDictionary newFrom:
 					{'type' -> 'package'.
 					'content-type' -> SquotCypressCodeSerializer contentType.
 					'packageName' -> packageNameString})};

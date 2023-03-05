@@ -6,7 +6,7 @@ add: anObject at: path
 	storeInfo
 		at: 'path' put: path;
 		at: 'references' put: ({
-			'object_1' -> Dictionary new
+			'object_1' -> OrderedDictionary new
 		}).
 	true caseOf:
 		{[anObject isKindOf: PackageInfo] ->

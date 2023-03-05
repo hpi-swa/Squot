@@ -5,4 +5,4 @@
 		"expectedFailures" : "jr 9/25/2022 18:12",
 		"newRepository" : "jr 6/18/2022 16:29",
 		"testImmutabilityOfSnapshots" : "jr 8/5/2022 14:16",
-		"testVersionsDoNotContainWorkingCopyArtifacts" : "jr 8/6/2022 12:49" } }
+		"testVersionsDoNotContainWorkingCopyArtifacts" : "jr 3/5/2023 20:23" } }

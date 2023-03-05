@@ -6,7 +6,7 @@ captureProjectWith: anObject atPath: aString
 			artifact := SquotArtifact storeInfo: (SquotTrackedObjectMetadata withNewId
 				at: 'path' put: aString;
 				at: 'references' put:
-					{'value_1' -> (Dictionary newFrom:
+					{'value_1' -> (OrderedDictionary newFrom:
 						{'type' -> 'ValueHolder'. "This does not mean the class of 'object', but that nothing in the image references this object, except for the working copy store itself."
 						'content-type' -> 'application/octet-stream'.
 						'codec-class' -> 'SmartRefStream'})};

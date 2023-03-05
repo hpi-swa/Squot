@@ -5,7 +5,7 @@ asSquotArtifactForPackage: aPackageInfo
 			artifact: (SquotArtifact storeInfo: (SquotTrackedObjectMetadata withNewId
 				at: 'path' put: aPackageInfo name, '.package';
 				at: 'references' put:
-					{'package_', aPackageInfo name -> (Dictionary newFrom:
+					{'package_', aPackageInfo name -> (OrderedDictionary newFrom:
 						{'type' -> 'package'.
 						'packageName' -> aPackageInfo name.
 						'content-type' -> SquotCypressCodeSerializer contentType})};

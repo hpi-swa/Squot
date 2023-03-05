@@ -9,7 +9,7 @@ addPackage
 			storeInfo := SquotTrackedObjectMetadata withNewId
 				at: 'path' put: packageName, '.package';
 				at: 'references' put: (Array
-					with: 'package_', packageName -> (Dictionary newFrom:
+					with: 'package_', packageName -> (OrderedDictionary newFrom:
 						{'type' -> 'package'.
 						'packageName' -> packageName.
 						'content-type' -> SquotCypressCodeSerializer contentType}));

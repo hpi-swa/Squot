@@ -6,6 +6,7 @@
 		"setUp" : "jr 3/2/2017 17:39",
 		"tearDown" : "jr 2/9/2017 11:51",
 		"testAddedArtifactsNotReadUntilLoaded" : "jr 7/18/2022 20:20",
+		"testArtifactMetadataFileIsStable" : "jr 2/15/2023 20:45",
 		"testByteArrayAsBinaryFile" : "jr 8/17/2017 19:29",
 		"testCypressCode" : "jr 12/3/2019 00:07",
 		"testDeleteArtifact" : "jr 9/20/2017 21:11",

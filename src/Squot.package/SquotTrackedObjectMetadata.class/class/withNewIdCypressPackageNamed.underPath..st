@@ -2,11 +2,11 @@
 withNewIdCypressPackageNamed: packageNameString underPath: pathString
 	^ self withNewId
 		at: 'path' put: pathString, '/', packageNameString, '.package';
-		at: 'references' put: (Dictionary newFrom:
-				{'package_', packageNameString -> (Dictionary newFrom:
+		at: 'references' put:
+			{'package_', packageNameString -> (Dictionary newFrom:
 					{'type' -> 'package'.
 					'content-type' -> SquotCypressCodeSerializer contentType.
-					'packageName' -> packageNameString})});
+					'packageName' -> packageNameString})};
 		"legacy"
 		at: #objectClassName put: #PackageInfo;
 		at: #serializer put: SquotCypressCodeSerializer name;

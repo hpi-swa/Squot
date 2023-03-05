@@ -4,10 +4,10 @@ SquotTrackedObjectMetadata {
 	#id : UUID [ '2e6bf85bea1d114fb70219ff89791241' ],
 	#serializer : #SquotCypressCodeSerializer,
 	'references' : [
-		'package_BaselineOfSquot' : {
-			'packageName' : 'BaselineOfSquot',
+		'package_BaselineOfSquot' : OrderedDictionary {
+			'content-type' : 'application/x.smalltalk.cypress',
 			'type' : 'package',
-			'content-type' : 'application/x.smalltalk.cypress'
+			'packageName' : 'BaselineOfSquot'
 		}
 	]
 }

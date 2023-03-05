@@ -2,6 +2,7 @@
 	"class" : {
 		"class:" : "jr 1/17/2021 22:27" },
 	"instance" : {
+		"canObjectsHaveMultipleEqualInstances" : "jr 3/5/2023 19:42",
 		"capture:with:ifReplaced:" : "jr 7/18/2021 00:00",
 		"instanceOf:from:path:in:ifAbsent:" : "jr 8/28/2022 20:29",
 		"newDiffFrom:to:" : "jr 2/17/2022 22:21",

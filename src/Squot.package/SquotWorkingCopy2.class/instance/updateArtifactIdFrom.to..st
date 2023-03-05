@@ -4,5 +4,5 @@ updateArtifactIdFrom: oldArtifactId to: newArtifactId
 	artifact := project removeArtifactAt: oldArtifactId.
 	store := stores removeKey: oldArtifactId ifAbsent: [].
 	artifact id: newArtifactId.
-	project addArtifact: artifact.
+	project putArtifact: artifact.
 	store ifNotNil: [stores at: artifact id put: store].

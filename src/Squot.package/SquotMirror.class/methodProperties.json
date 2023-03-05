@@ -3,6 +3,7 @@
 		 },
 	"instance" : {
 		"canHaveReferences:" : "jr 7/18/2021 22:11",
+		"canObjectsHaveMultipleEqualInstances" : "jr 3/5/2023 19:39",
 		"capture:with:ifReplaced:" : "jr 7/17/2021 23:52",
 		"instanceOf:from:path:in:ifAbsent:" : "jr 8/28/2022 20:28",
 		"is:comparableTo:" : "jr 7/18/2021 20:09",

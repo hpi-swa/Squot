@@ -34,3 +34,4 @@ SystemOrganization addCategory: #'Squot-Tests-Files'!
 SystemOrganization addCategory: #'Squot-Tests-Serialization'!
 SystemOrganization addCategory: #'Squot-Help'!
 SystemOrganization addCategory: #'Squot-CoAuthorsExtension'!
+SystemOrganization addCategory: #'Squot-Mapper'!

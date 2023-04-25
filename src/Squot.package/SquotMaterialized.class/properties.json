@@ -1,0 +1,14 @@
+{
+	"category" : "Squot-Mapper",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"deserialized" ],
+	"name" : "SquotMaterialized",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }

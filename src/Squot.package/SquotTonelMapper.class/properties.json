@@ -1,0 +1,15 @@
+{
+	"category" : "Squot-Mapper",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"package",
+		"path" ],
+	"name" : "SquotTonelMapper",
+	"pools" : [
+		 ],
+	"super" : "SquotMapper",
+	"type" : "normal" }

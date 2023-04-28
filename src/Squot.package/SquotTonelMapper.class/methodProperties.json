@@ -3,11 +3,19 @@
 		"package:" : "mad 4/21/2023 23:40",
 		"package:path:" : "mad 4/21/2023 23:41" },
 	"instance" : {
-		"deserialize:" : "mad 4/22/2023 00:23",
-		"initialize" : "mad 4/22/2023 00:11",
+		"applyChanges:to:" : "mad 4/26/2023 21:57",
+		"changesFrom:to:" : "mad 4/26/2023 21:49",
+		"changesFrom:toImage:" : "mad 4/26/2023 21:49",
+		"changesFromImage:to:" : "mad 4/26/2023 21:49",
+		"changesFromSnapshot:toSnapshot:" : "mad 4/26/2023 21:48",
+		"displayChange:" : "mad 4/25/2023 18:36",
+		"initialize" : "mad 4/25/2023 19:41",
+		"loadSnapshotFrom:" : "mad 4/26/2023 21:47",
+		"materializeChanges:in:" : "mad 4/25/2023 18:42",
 		"package" : "mad 4/21/2023 23:34",
 		"package:" : "mad 4/22/2023 00:09",
 		"path" : "mad 4/21/2023 23:35",
 		"path:" : "mad 4/22/2023 00:09",
-		"serialize:" : "mad 4/22/2023 00:12",
-		"version" : "mad 4/21/2023 23:40" } }
+		"serializeChanges:into:" : "mad 4/26/2023 21:57",
+		"version" : "mad 4/21/2023 23:40",
+		"workingCopySnapshot" : "mad 4/25/2023 18:30" } }

@@ -1,4 +1,4 @@
 initialize-release
 initialize
 	super initialize.
-	self path: '/'.
+	self path: FSPath root.

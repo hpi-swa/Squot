@@ -2,5 +2,9 @@
 	"class" : {
 		 },
 	"instance" : {
-		"deserialize:" : "mad 4/22/2023 00:26",
-		"serialize:" : "mad 4/22/2023 00:26" } }
+		"changesFrom:to:" : "mad 4/26/2023 21:18",
+		"changesFrom:toImage:" : "mad 4/26/2023 21:18",
+		"changesFromImage:to:" : "mad 4/26/2023 21:18",
+		"displayChange:" : "mad 4/25/2023 18:30",
+		"materializeChanges:in:" : "mad 4/25/2023 17:29",
+		"serializeChanges:into:" : "mad 4/26/2023 21:21" } }

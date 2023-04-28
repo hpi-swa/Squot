@@ -1,0 +1,15 @@
+{
+	"category" : "FileSystem-Git-Core",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"fsgitRepository",
+		"commit" ],
+	"name" : "FileSystemGitCommit",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }

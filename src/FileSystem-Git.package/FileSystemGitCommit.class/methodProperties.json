@@ -1,0 +1,11 @@
+{
+	"class" : {
+		"emptyIn:" : "mad 4/26/2023 21:33",
+		"withCommit:in:" : "mad 4/26/2023 21:24" },
+	"instance" : {
+		"commit" : "mad 4/26/2023 21:24",
+		"commit:" : "mad 4/26/2023 21:25",
+		"filesystem" : "mad 4/26/2023 21:25",
+		"fsgitRepository" : "mad 4/26/2023 21:24",
+		"fsgitRepository:" : "mad 4/26/2023 21:24",
+		"hash" : "mad 4/26/2023 21:25" } }

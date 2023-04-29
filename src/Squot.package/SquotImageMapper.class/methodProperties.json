@@ -1,0 +1,19 @@
+{
+	"class" : {
+		"path:" : "mad 4/29/2023 16:44",
+		"path:writerClass:" : "mad 4/29/2023 17:09" },
+	"instance" : {
+		"changesFrom:to:" : "mad 4/28/2023 22:04",
+		"changesFrom:toImage:" : "mad 4/28/2023 22:05",
+		"changesFromForm:toForm:" : "mad 4/28/2023 22:00",
+		"changesFromImage:to:" : "mad 4/28/2023 22:06",
+		"displayChange:" : "mad 4/28/2023 22:37",
+		"initialize" : "mad 4/29/2023 17:08",
+		"loadFormFrom:" : "mad 4/29/2023 17:05",
+		"loadFormFromImage:" : "mad 4/28/2023 22:05",
+		"materializeChanges:in:" : "mad 4/28/2023 22:46",
+		"path" : "mad 4/29/2023 17:09",
+		"path:" : "mad 4/29/2023 17:10",
+		"serializeChanges:into:" : "mad 4/29/2023 18:23",
+		"writerClass" : "mad 4/29/2023 17:09",
+		"writerClass:" : "mad 4/29/2023 17:09" } }

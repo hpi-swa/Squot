@@ -1,0 +1,16 @@
+{
+	"class" : {
+		"on:" : "mad 4/28/2023 21:55" },
+	"instance" : {
+		"changesFrom:to:" : "mad 4/29/2023 17:14",
+		"changesFromCommitToImage:" : "mad 4/29/2023 17:18",
+		"changesFromImageTo:" : "mad 4/29/2023 17:18",
+		"fsgitRepository" : "mad 4/28/2023 21:20",
+		"fsgitRepository:" : "mad 4/28/2023 21:21",
+		"initialize" : "mad 4/29/2023 17:12",
+		"materialized" : "mad 4/28/2023 21:20",
+		"materialized:" : "mad 4/28/2023 21:21",
+		"materializedAt:" : "mad 4/28/2023 21:22",
+		"materializedAt:put:" : "mad 4/28/2023 21:22",
+		"materializedMappers" : "mad 4/29/2023 17:12",
+		"materializedMappers:" : "mad 4/29/2023 18:21" } }

@@ -1,0 +1,3 @@
+accessing
+fsgitRepository: aFileSystemGitRepository
+	fsgitRepository := aFileSystemGitRepository

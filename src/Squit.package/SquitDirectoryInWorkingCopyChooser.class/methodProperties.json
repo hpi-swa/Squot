@@ -2,8 +2,10 @@
 	"class" : {
 		"openOn:label:" : "jr 9/6/2020 14:41" },
 	"instance" : {
+		"defaultDirectory" : "ct 10/26/2021 20:49",
 		"excludeGitRepositoryDirectory:from:" : "jr 9/6/2020 12:51",
 		"hasMoreDirectories:" : "jr 9/6/2020 13:00",
+		"root" : "ct 10/26/2021 19:58",
 		"rootDirectoryList" : "jr 9/6/2020 12:29",
 		"subDirectoriesOf:" : "jr 9/6/2020 12:49",
 		"workingCopyDirectory" : "jr 9/5/2020 19:08",

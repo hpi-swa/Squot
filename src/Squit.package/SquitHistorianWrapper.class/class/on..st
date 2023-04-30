@@ -1,3 +1,3 @@
-as yet unclassified
+instance creation
 on: aHistorian
 	^ self new historian: aHistorian; yourself

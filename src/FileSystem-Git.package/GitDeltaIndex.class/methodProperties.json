@@ -1,0 +1,19 @@
+{
+	"class" : {
+		"for:" : "mad 4/30/2023 00:27",
+		"hashBucketLimit" : "mad 4/29/2023 22:00" },
+	"instance" : {
+		"bucketForHashValue:do:" : "mad 4/30/2023 00:20",
+		"compute" : "mad 4/29/2023 21:24",
+		"computeHashedLinkedLists" : "mad 4/30/2023 00:27",
+		"entries" : "mad 4/29/2023 21:01",
+		"entries:" : "mad 4/29/2023 21:01",
+		"entriesWithHashValue:do:" : "mad 4/29/2023 21:11",
+		"entryIndexHashMap" : "mad 4/29/2023 20:54",
+		"entryIndexHashMap:" : "mad 4/29/2023 20:54",
+		"hashMask" : "mad 4/29/2023 20:54",
+		"hashMask:" : "mad 4/29/2023 21:01",
+		"limitHashBucket:withSize:" : "mad 4/29/2023 22:01",
+		"limitHashBuckets:withSizes:" : "mad 4/29/2023 22:01",
+		"source" : "mad 4/29/2023 20:54",
+		"source:" : "mad 4/29/2023 20:54" } }

@@ -1,0 +1,3 @@
+accessing
+deltaIndex
+	^ deltaIndex

@@ -1,5 +1,6 @@
 actions
 actionSubmit
+	self changed: #acceptChanges.
 	self actionTitle ifEmpty: [self error: 'No title provided.'].
 	self actionMessage ifEmpty: [self error: 'No message provided.'].
 	WebClient 

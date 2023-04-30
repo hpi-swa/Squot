@@ -7,7 +7,7 @@ refresh
 	self hasProjectSelection ifFalse:
 		[selectedHistorian := nil.
 		commitSelection := nil.
-		branchList := self branchListIfRepositoryDoesNotExist.
+		branchList := nil.
 		indexOfActiveHistorianInBranchList := 0.
 		cachedCommitList := #().
 		self changed: #branchList;

@@ -1,5 +1,5 @@
 changes-creation
-changesFrom: anFSCommit to: anotherFSCommit
+changesFromFSCommit: anFSCommit toFSCommit: anotherFSCommit
 	anFSCommit hash = anotherFSCommit hash ifTrue: [^ {}].
 	^ self
 		changesFromSnapshot: (self loadSnapshotFrom: anFSCommit filesystem)

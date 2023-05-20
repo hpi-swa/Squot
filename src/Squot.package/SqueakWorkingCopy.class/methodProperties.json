@@ -2,9 +2,9 @@
 	"class" : {
 		"on:" : "mad 4/28/2023 21:55" },
 	"instance" : {
-		"changesFrom:to:" : "mad 4/29/2023 17:14",
-		"changesFromCommitToImage:" : "mad 4/29/2023 17:18",
-		"changesFromImageTo:" : "mad 4/29/2023 17:18",
+		"changesFromFSCommit:toFSCommit:" : "mad 5/20/2023 21:48",
+		"changesFromFSCommitToImage:" : "mad 5/20/2023 21:48",
+		"changesFromImageToFSCommit:" : "mad 5/20/2023 21:48",
 		"fsgitRepository" : "mad 4/28/2023 21:20",
 		"fsgitRepository:" : "mad 4/28/2023 21:21",
 		"initialize" : "mad 4/29/2023 17:12",

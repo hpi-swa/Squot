@@ -3,4 +3,4 @@ initialize
 	super initialize.
 	self
 		materialized: Dictionary new;
-		materializedMappers: OrderedCollection new.
+		mappers: OrderedCollection new.

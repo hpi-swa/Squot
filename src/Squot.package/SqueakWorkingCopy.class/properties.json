@@ -8,7 +8,7 @@
 	"instvars" : [
 		"fsgitRepository",
 		"materialized",
-		"materializedMappers" ],
+		"mappers" ],
 	"name" : "SqueakWorkingCopy",
 	"pools" : [
 		 ],

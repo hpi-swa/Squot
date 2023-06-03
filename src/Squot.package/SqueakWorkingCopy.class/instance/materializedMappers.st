@@ -1,3 +1,3 @@
 accessing
 materializedMappers
-	^ materializedMappers
+	^ self mappers select: [:mapper | mapper isMaterialized]

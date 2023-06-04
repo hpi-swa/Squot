@@ -2,12 +2,14 @@
 	"class" : {
 		"on:" : "mad 4/28/2023 21:55" },
 	"instance" : {
+		"branchName:" : "mad 6/3/2023 14:17",
 		"changesFromCommit:toCommit:" : "mad 5/20/2023 21:50",
 		"changesFromCommitToImage:" : "mad 5/20/2023 22:36",
 		"changesFromFSCommit:toFSCommit:" : "mad 5/20/2023 21:48",
 		"changesFromFSCommitToImage:" : "mad 5/20/2023 21:48",
 		"changesFromImageToCommit:" : "mad 5/20/2023 21:46",
 		"changesFromImageToFSCommit:" : "mad 5/20/2023 21:48",
+		"commitChanges:message:" : "mad 6/3/2023 15:37",
 		"commitChanges:onCommit:message:" : "mad 5/20/2023 21:39",
 		"displayChanges:" : "mad 5/20/2023 22:26",
 		"emptyCommit" : "mad 5/20/2023 21:22",
@@ -15,6 +17,10 @@
 		"fsCommitFrom:" : "mad 5/20/2023 21:44",
 		"fsgitRepository" : "mad 4/28/2023 21:20",
 		"fsgitRepository:" : "mad 4/28/2023 21:21",
+		"headCommit" : "mad 6/3/2023 15:35",
+		"headCommitHash" : "mad 6/3/2023 15:34",
+		"headRefName" : "mad 6/3/2023 14:17",
+		"imageHash" : "mad 6/3/2023 13:36",
 		"initialize" : "mad 6/1/2023 22:37",
 		"mappers" : "mad 6/1/2023 22:35",
 		"mappers:" : "mad 6/1/2023 22:36",
@@ -24,4 +30,7 @@
 		"materializedAt:" : "mad 4/28/2023 21:22",
 		"materializedAt:put:" : "mad 4/28/2023 21:22",
 		"materializedMappers" : "mad 6/1/2023 22:36",
-		"serializeChanges:onCommit:" : "mad 5/20/2023 22:00" } }
+		"refName:" : "mad 6/3/2023 14:17",
+		"refsBaseName" : "mad 6/3/2023 14:16",
+		"serializeChanges:onCommit:" : "mad 5/20/2023 22:00",
+		"unitOfWork" : "mad 6/3/2023 14:15" } }

@@ -8,7 +8,8 @@
 	"instvars" : [
 		"fsgitRepository",
 		"materialized",
-		"mappers" ],
+		"mappers",
+		"lastImageHash" ],
 	"name" : "SqueakWorkingCopy",
 	"pools" : [
 		 ],

@@ -1,3 +1,7 @@
-refs
+image-hash
 imageHash
-	^ (GitHash from: Smalltalk imagePath) hexHash
+	| hash |
+	hash := self basicImageHash.
+	hash ~= self lastImageHash ifTrue: [self handleMovedImage].
+	self lastImageHash: hash.
+	^ hash

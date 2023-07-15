@@ -1,9 +1,12 @@
 building
 walkUpToEnd
 	walk do:
-		[:eachTuple | | isAddedObject |
+		[:eachTuple | | isAddedObject existing base incoming |
 		currentTuple := eachTuple.
-		isAddedObject := eachTuple first isNil.
+		existing := eachTuple first.
+		base := eachTuple second.
+		incoming := eachTuple third.
+		isAddedObject := existing isNil.
 		isAddedObject
-			ifTrue: [client handleAdded: eachTuple third basedOn: eachTuple second for: self]
-			ifFalse: [client handleExisting: eachTuple first basedOn: eachTuple second incoming: eachTuple third for: self]].
+			ifTrue: [client handleAdded: incoming basedOn: base for: self]
+			ifFalse: [client handleExisting: existing basedOn: base incoming: incoming for: self]].

@@ -5,3 +5,5 @@ compareWholeProjects
 	mergeBuilder walkUpToEnd.
 	self flag: #todo. "progress notifications"
 	metadataMerge := (SquotTrackedObjectMetadata newFrom: workingProjectSnapshot project metadata) squotMergeWith: (SquotTrackedObjectMetadata newFrom: incomingProjectSnapshot project metadata) basedOn: (SquotTrackedObjectMetadata newFrom: baseProjectSnapshot project metadata).
+	"Clean up unnecessary items."
+	merges removeAllSuchThat: [:each | each hasChanges not].

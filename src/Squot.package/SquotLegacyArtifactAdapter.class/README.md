@@ -1,0 +1,1 @@
+I present an artifact snapshot with the protocol of the old SquotArtifact (which included a snapshot).

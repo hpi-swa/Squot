@@ -4,7 +4,7 @@
 		 ],
 	"classvars" : [
 		 ],
-	"commentStamp" : "",
+	"commentStamp" : "jr 7/15/2023 17:12",
 	"instvars" : [
 		"workingCopy" ],
 	"name" : "SquotLegacyArtifactAdapter",

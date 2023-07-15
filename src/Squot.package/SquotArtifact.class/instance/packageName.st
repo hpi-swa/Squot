@@ -1,5 +1,5 @@
 converting
 packageName
 	^ SquotToggles useNewApi
-		ifTrue: [(storeInfo references detect: [:each | (each at: 'type') = 'package']) at: 'packageName']
+		ifTrue: [(storeInfo firstReferenceOfType: 'package') value at: 'packageName']
 		ifFalse: [self shadowOfTrackedObject packageName]

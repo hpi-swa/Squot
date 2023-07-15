@@ -1,6 +1,6 @@
 accessing artifacts
 includesArtifact: anArtifact
 	| packageName |
-	packageName := self packageNameOf: anArtifact.
+	packageName := anArtifact packageName.
 	environment packageOrganizer packageNamed: packageName ifAbsent: [^ false].
 	^ true

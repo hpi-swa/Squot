@@ -4,7 +4,7 @@ testVersionsDoNotContainWorkingCopyArtifacts
 	SquotToggles useNewApi
 		ifTrue:
 			[| snapshot |
-			snapshot := (SquotValueHolderStore new contents: 'this is a string'; readArtifact: (SquotArtifact storeInfo: (SquotTrackedObjectMetadata withNewId at: 'references' put: {'object_1' -> (OrderedDictionary newFrom: {'type' -> 'ValueHolder'})}; yourself))).
+			snapshot := (SquotValueHolderStore new contents: 'this is a string'; readArtifact: (SquotArtifact storeInfo: (SquotTrackedObjectMetadata withNewIdValueHeldAtPath: 'string'))).
 			(self workingCopy putArtifact: snapshot artifact;
 				useStoreImplementation: SquotSnapshotStore forArtifact: snapshot artifact;
 				storeForArtifact: snapshot artifact) putArtifact: snapshot.

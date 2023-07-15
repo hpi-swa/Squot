@@ -1,5 +1,5 @@
 packages
 packageSerializer
 	^ (workingCopy project artifacts
-		detect: [:each | each storeInfo references anySatisfy: [:eachReference | (eachReference at: 'type') = 'package']]
+		detect: [:each | each storeInfo hasReferenceOfType: 'package']
 		ifNone: [^ nil]) storeInfo serializer

@@ -7,4 +7,4 @@ updateArtifact: anArtifactMerge
 	self flag: #todo. "Move the check for the presence of changes to a more general place?"
 	patch := MCPatch operations: anArtifactMerge graphMerge mergeOfStartObject modifications.
 	patch applyTo: loader.
-	loader loadWithNameLike: (self packageNameOf: anArtifactMerge incoming artifact).
+	loader loadWithNameLike: anArtifactMerge incoming artifact packageName.

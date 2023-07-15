@@ -4,7 +4,7 @@ assertVersion: aVersion containsClass: aClass
 		[| snapshot |
 		snapshot := aVersion snapshot.
 		snapshot artifactsDo: [:eachArtifact |
-			(eachArtifact storeInfo references anySatisfy: [:each | (each at: 'type') = 'package' or: [(each at: 'type') = 'class']]) ifTrue:
+			((eachArtifact storeInfo hasReferenceOfType: 'package') or: [eachArtifact storeInfo hasReferenceOfType: 'class']) ifTrue:
 				[(snapshot snapshotArtifact: eachArtifact) objectSnapshot startShadow definitions
 					detect: [:each | each isClassDefinition and: [each className = aClass name]]
 					ifFound: [:it | ^ eachArtifact]

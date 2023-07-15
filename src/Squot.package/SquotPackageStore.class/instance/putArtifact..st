@@ -5,4 +5,4 @@ putArtifact: aSquotArtifactSnapshot
 	environment beCurrentDuring: 
 		[loader := MCPackageLoader new.
 		loader installSnapshot: aSquotArtifactSnapshot objectSnapshot startShadow asMCSnapshot;
-			loadWithNameLike: (self packageNameOf: aSquotArtifactSnapshot artifact)].
+			loadWithNameLike: aSquotArtifactSnapshot artifact packageName].

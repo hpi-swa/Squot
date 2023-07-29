@@ -15,8 +15,8 @@ updateMetadataAfterSaving
 		"Update metadata"
 		workingCopy project artifacts do:
 			[:workingArtifact | | savedArtifact versionArtifact metadataMerge metadataDiff |
-			savedArtifact := patch incoming reflect: workingArtifact asObjectReference of: patch incoming.
-			versionArtifact := storedSnapshot reflect: workingArtifact asObjectReference of: storedSnapshot.
+			savedArtifact := [patch incoming reflect: workingArtifact asObjectReference of: patch incoming] on: NotFound do: [:e | e return: nil].
+			versionArtifact := [storedSnapshot reflect: workingArtifact asObjectReference of: storedSnapshot] on: NotFound do: [:e | e return: nil].
 			"Artifacts may have been removed from the working copy without saving this.
 			Artifacts may have been added to the working copy without saving them."
 			versionArtifact notNil & savedArtifact notNil & workingArtifact notNil

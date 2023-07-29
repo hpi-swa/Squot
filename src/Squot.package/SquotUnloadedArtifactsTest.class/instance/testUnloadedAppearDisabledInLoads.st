@@ -13,9 +13,10 @@ testUnloadedAppearDisabledInLoads
 			ifFalse: [workingCopy]).
 	SquotToggles useNewApi
 		ifTrue:
-			[self assert: (patch includesMergeAt: artifactSnapshot artifact id);
-				deny: (patch mergeAt: artifactSnapshot artifact id) hasChanges;
-				assert: ((workingCopy storeForArtifact: artifactSnapshot artifact) isKindOf: SquotSnapshotStore)]
+			["Unloaded objects are no longer treated specially on this level."
+			self deny: (patch includesMergeAt: artifactSnapshot artifact id);
+				assert: ((workingCopy storeForArtifact: artifactSnapshot artifact) isKindOf: SquotSnapshotStore).
+			self flag: #todo. "Test that load tool produces a node to load the artifact?"]
 		ifFalse:
 			[self assert: (patch includesDiffAt: 'object');
 				assert: (patch diffAt: 'object') isLoad;

@@ -21,8 +21,8 @@ testUnloadedAppearInMerges
 	"then"
 	SquotToggles useNewApi
 		ifTrue:
-			[self assert: (merge includesMergeAt: artifactSnapshot artifact id);
-				assert: ((workingCopy storeForArtifact: artifactSnapshot artifact) isKindOf: SquotSnapshotStore).
+			["Unloaded objects are no longer treated specially at this level."
+			self deny: (merge includesMergeAt: artifactSnapshot artifact id).
 			self flag: #todo. "Test that merge tool produces a node to load the artifact."]
 		ifFalse:
 			[self assert: (merge includesModificationAt: 'object');

@@ -1,13 +1,12 @@
 {
 	"class" : {
 		"forTestInMemory" : "jr 7/18/2022 20:20",
-		"initialize" : "jr 7/16/2022 23:42",
 		"register:" : "fn 4/11/2017 11:35",
-		"registerStoreImplementation:" : "jr 7/16/2022 23:41",
+		"registerStoreImplementation:" : "jr 8/5/2023 15:41",
 		"registered" : "fn 4/11/2017 11:36",
 		"repository:" : "jr 7/16/2022 15:14",
 		"unregister:" : "jr 5/13/2017 14:46",
-		"unregisterStoreImplementation:" : "jr 7/16/2022 23:41" },
+		"unregisterStoreImplementation:" : "jr 8/5/2023 15:42" },
 	"instance" : {
 		"activeHistorian" : "jr 7/16/2022 15:11",
 		"activeHistorian:" : "jr 7/16/2022 15:11",
@@ -55,7 +54,7 @@
 		"snapshot" : "jr 8/6/2022 08:00",
 		"snapshotArtifact:" : "jr 8/6/2022 07:45",
 		"storeForArtifact:" : "jr 8/6/2022 12:39",
-		"storeImplementationForArtifact:ifNone:" : "jr 8/6/2022 12:38",
+		"storeImplementationForArtifact:ifNone:" : "jr 8/5/2023 15:42",
 		"stores" : "jr 7/16/2022 15:11",
 		"stores:" : "jr 7/16/2022 15:11",
 		"storesOnlySnapshotOf:" : "jr 8/17/2022 22:33",

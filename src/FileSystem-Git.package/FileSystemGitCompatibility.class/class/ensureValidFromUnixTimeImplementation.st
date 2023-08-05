@@ -4,7 +4,7 @@ ensureValidFromUnixTimeImplementation
 	"self ensureValidFromUnixTimeImplementation"
 	| originalTimeZone tzWithOffset |
 	originalTimeZone := DateAndTime localTimeZone.
-	tzWithOffset := TimeZone offset: 2 hours name: 'Test time zone' abbreviation: 'TEST'.
+	tzWithOffset := ((self environment classNamed: #FixedTimeZone) ifNil: [TimeZone]) offset: 2 hours name: 'Test time zone' abbreviation: 'TEST'.
 	DateAndTime localTimeZone: tzWithOffset.
 	[InadequateFromUnixTimeImplementation :=
 		(DateAndTime fromUnixTime: 0) offset isZero not]

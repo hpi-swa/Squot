@@ -26,7 +26,7 @@
 		"materializer" : "jr 7/16/2017 12:27",
 		"materializer:" : "jr 7/16/2017 12:28",
 		"mergeWith:" : "jr 12/13/2020 22:53",
-		"migrateOldMetadata" : "jr 3/5/2023 21:19",
+		"migrateOldMetadataFromFiles:" : "jr 8/6/2023 23:10",
 		"nameOf:ifAbsent:" : "jr 8/28/2022 18:53",
 		"objectClass:" : "jr 7/16/2017 12:28",
 		"objectClassName" : "jr 4/19/2021 19:49",

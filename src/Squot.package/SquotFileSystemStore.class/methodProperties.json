@@ -27,6 +27,7 @@
 		"doNotStoreMetadata" : "jr 3/7/2017 17:38",
 		"doStoreMetadata" : "jr 3/7/2019 08:41",
 		"findDeserializerFor:in:" : "jr 12/9/2018 17:38",
+		"findStoreForOldArtifactWithoutReferences:" : "jr 8/6/2023 13:42",
 		"forgeLazyArtifactAt:deserializerFactory:serializerFactory:objectClass:" : "jr 3/6/2019 22:55",
 		"guessArtifacts" : "jr 3/10/2019 21:46",
 		"guessMetadataForArtifact:at:" : "jr 12/13/2020 22:03",
@@ -46,7 +47,7 @@
 		"prepareArtifactSearchWith:startingAt:" : "jr 3/10/2019 21:47",
 		"readContent:" : "jr 12/9/2018 17:34",
 		"readMetadata:" : "jr 3/10/2019 10:45",
-		"readProject" : "jr 2/11/2023 19:16",
+		"readProject" : "jr 8/6/2023 13:35",
 		"removeArtifactsOutdatedBy:" : "jr 7/28/2017 00:41",
 		"removeAt:" : "jr 9/1/2020 00:03",
 		"removeFilesFrom:" : "jr 10/5/2020 22:37",
@@ -65,4 +66,4 @@
 		"tableOfContentsReference" : "jr 10/2/2017 22:34",
 		"tableOfContentsReferenceIn:" : "jr 10/2/2017 22:34",
 		"validatePathOf:" : "jr 5/28/2022 00:54",
-		"writeProject:" : "jr 7/30/2022 11:08" } }
+		"writeProject:" : "jr 8/6/2023 13:22" } }

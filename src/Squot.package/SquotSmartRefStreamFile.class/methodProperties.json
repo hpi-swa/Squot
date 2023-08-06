@@ -1,7 +1,10 @@
 {
 	"class" : {
 		"canStore:" : "jr 7/18/2022 19:48",
+		"canStoreOldArtifactWithoutReferences:" : "jr 8/6/2023 13:52",
 		"initialize" : "jr 7/18/2022 19:49",
+		"migrateOldArtifactWithoutReferences:" : "jr 8/6/2023 13:54",
+		"setUpArtifactMetadata:referenceNamed:" : "jr 8/6/2023 23:37",
 		"unload" : "jr 7/18/2022 19:50" },
 	"instance" : {
 		"canStore:" : "jr 7/18/2022 17:28",

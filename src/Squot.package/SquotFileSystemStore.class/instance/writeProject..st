@@ -17,3 +17,4 @@ writeProject: aSquotProject
 		[:each | | fileOrDirectory |
 		fileOrDirectory := directory resolve: (each storeInfo at: 'path').
 		(self metadataForObjectAt: fileOrDirectory) updateFrom: each storeInfo].
+	self flag: #todo. "Write project id and project metadata."

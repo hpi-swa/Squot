@@ -1,0 +1,16 @@
+{
+	"category" : "Squot-Tests-Files",
+	"classinstvars" : [
+		 ],
+	"classtraitcomposition" : "TTestCaseSuppressingProgressDisplay classTrait",
+	"classvars" : [
+		 ],
+	"commentStamp" : "jr 8/6/2023 23:12",
+	"instvars" : [
+		"fileStore" ],
+	"name" : "SquotFileSystemStoreMigrationTest",
+	"pools" : [
+		 ],
+	"super" : "TestCase",
+	"traitcomposition" : "TTestCaseSuppressingProgressDisplay",
+	"type" : "normal" }

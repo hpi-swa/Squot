@@ -1,0 +1,1 @@
+I test that older Squot repositories can still be processed after refactorings.

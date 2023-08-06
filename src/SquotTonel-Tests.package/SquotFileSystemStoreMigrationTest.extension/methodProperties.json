@@ -1,0 +1,6 @@
+{
+	"class" : {
+		 },
+	"instance" : {
+		"expectedFailures" : "jr 8/6/2023 23:56",
+		"testMigrateOldTonelPackage" : "jr 8/6/2023 23:55" } }

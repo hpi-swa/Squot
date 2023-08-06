@@ -1,14 +1,16 @@
 {
 	"class" : {
 		"canStore:" : "jr 7/18/2022 17:37",
+		"canStoreOldArtifactWithoutReferences:" : "jr 8/6/2023 13:48",
 		"forArtifact:" : "jr 7/18/2022 17:38",
 		"initialize" : "jr 7/18/2022 17:42",
+		"migrateOldArtifactWithoutReferences:" : "jr 8/6/2023 13:50",
 		"unload" : "jr 7/18/2022 17:43" },
 	"instance" : {
 		"canStore:" : "jr 7/18/2022 17:37",
 		"includesArtifact:" : "jr 7/18/2022 17:35",
 		"initializeArtifact:forObject:" : "jr 7/30/2022 11:49",
-		"migrateOldArtifact:snapshot:" : "jr 7/15/2023 20:36",
+		"migrateOldArtifact:snapshot:" : "jr 8/6/2023 13:16",
 		"putArtifact:" : "jr 7/18/2022 18:22",
 		"readArtifact:" : "jr 8/19/2022 23:59",
 		"removeArtifact:" : "jr 7/18/2022 17:35",

@@ -1,0 +1,16 @@
+{
+	"category" : "Squot-Mapper",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"left",
+		"right",
+		"base" ],
+	"name" : "SquotMergeConflict",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }

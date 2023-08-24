@@ -1,6 +1,6 @@
 {
 	"class" : {
-		 },
+		"stonAllInstVarNames" : "mad 6/4/2023 16:02" },
 	"instance" : {
 		"changesFromFSCommit:toFSCommit:" : "mad 5/20/2023 21:46",
 		"changesFromFSCommit:toImage:" : "mad 5/20/2023 21:46",

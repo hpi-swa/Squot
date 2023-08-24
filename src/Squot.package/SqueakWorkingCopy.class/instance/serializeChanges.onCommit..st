@@ -4,4 +4,5 @@ serializeChanges: aDictionary onCommit: aCommitOrNil
 	filesystem := self filesystemOn: aCommitOrNil.
 	aDictionary keysAndValuesDo: [:mapper :changes |
 		mapper serializeChanges: changes into: filesystem].
+	self writeMappersFileInto: filesystem.
 	^ filesystem

@@ -1,3 +1,4 @@
 initialize-release
-in: aGitRepository
-	^ self new initializeOn: aGitRepository; yourself
+in: aGitRepositoryOrBlock
+	aGitRepositoryOrBlock isBlock ifTrue: [^ super in: aGitRepositoryOrBlock].
+	^ self new initializeOn: aGitRepositoryOrBlock; yourself

@@ -1,0 +1,16 @@
+{
+	"category" : "FileSystem-Git-Plumbing-Utilities",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"left",
+		"right",
+		"base" ],
+	"name" : "GitMergeConflict",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }

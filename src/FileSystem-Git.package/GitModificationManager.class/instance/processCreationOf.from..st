@@ -9,9 +9,9 @@ processCreationOf: entries from: entryPath
 			"don't process empty trees for now"
 			childTree isEmpty ifFalse: [
 				tree := (self copiedTreeForModificationAt: entryPath)
-					putEntry: (GitTreeEntry
-						directoryNamed: directory basename
-						hash: childTree hash
+					putEntry: (GitOwningTreeEntry
+						directory: childTree
+						named: directory basename
 						in: repository);
 					yourself.
 				addedEntryPathToPending

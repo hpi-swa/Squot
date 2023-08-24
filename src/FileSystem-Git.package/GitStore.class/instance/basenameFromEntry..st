@@ -1,4 +1,4 @@
 delegate
 basenameFromEntry: entry
-	entry class == GitTreeEntry ifTrue: [^ entry entryName].
+	(entry isKindOf: GitTreeEntry) ifTrue: [^ entry entryName].
 	^ cacheStore basenameFromEntry: entry

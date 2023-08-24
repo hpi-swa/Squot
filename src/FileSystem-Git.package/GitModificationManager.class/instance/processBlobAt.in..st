@@ -7,11 +7,10 @@ processBlobAt: path in: tree
 	
 	data := reference readStreamDo: [:stream | self filterBytesFrom: stream at: path].
 	blob := GitBlob bytes: data in: repository.
-	blob store.
 	
-	entry := GitTreeEntry
-		fileNamed: path basename
-		hash: blob hash
+	entry := GitOwningTreeEntry
+		file: blob
+		named: path basename
 		in: repository.
 		
 	(self copiedTreeForModification: tree at: path parent) putEntry: entry.

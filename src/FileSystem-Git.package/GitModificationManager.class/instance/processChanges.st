@@ -5,4 +5,3 @@ processChanges
 	self processCreations.
 	self processDeletions.
 	self updateIntermediateEntries.
-	self storeTrees.

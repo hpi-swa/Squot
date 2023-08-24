@@ -11,7 +11,7 @@ buildMockFor: aGitObjectClass
 		in: repository.
 	aGitObjectClass = GitBlob
 		ifTrue: [ ^ GitBlob bytes: 'test' in: repository ].
-	aGitObjectClass = GitCommit
+	(aGitObjectClass includesBehavior: GitCommit)
 		ifTrue: [ 
 			^ (GitCommit in: repository)
 				author: self defaultStamp;

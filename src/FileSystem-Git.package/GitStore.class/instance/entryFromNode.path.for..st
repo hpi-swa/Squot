@@ -1,6 +1,6 @@
 delegate
 entryFromNode: treeEntry path: path for: aFilesystem
-	treeEntry class == GitTreeEntry
+	(treeEntry isKindOf: GitTreeEntry)
 		ifFalse: [^ cacheStore entryFromNode: treeEntry path: path for: aFilesystem].
 	^ GitFSDirectoryEntry
 		unitOfWork: self unitOfWork

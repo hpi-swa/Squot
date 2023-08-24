@@ -2,7 +2,7 @@ git plumbing
 prepareNewCommit
 	| commit parents |
 	modManager processChanges.
-	commit := GitCommit new
+	commit := GitOwningCommit new
 		tree: modManager rootTree;
 		author: GitStamp now;
 		committer: GitStamp now;

@@ -1,6 +1,6 @@
 as yet unclassified
 atomicMergeLeft: leftObject right: rightObject base: baseObject ifConflict: aBlock
-	leftObject = rightObject ifTrue: [^ leftObject].
-	leftObject = baseObject ifTrue: [^ rightObject].
-	rightObject = baseObject ifTrue: [^ leftObject].
+	(leftObject squotEqual: rightObject) ifTrue: [^ leftObject].
+	(leftObject squotEqual: baseObject )ifTrue: [^ rightObject].
+	(rightObject squotEqual: baseObject) ifTrue: [^ leftObject].
 	^ aBlock value

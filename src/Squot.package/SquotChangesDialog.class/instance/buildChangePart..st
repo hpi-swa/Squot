@@ -1,4 +1,3 @@
 toolbuilder
 buildChangePart: builder
-	"TODO"
-	^ nil
+	^ (self selectedChangePart ifNil: [^ self buildNothingSelected: builder]) buildWith: builder

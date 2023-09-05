@@ -1,0 +1,3 @@
+toolbuilder
+minimumChildHeight
+	^ 400

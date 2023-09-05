@@ -1,0 +1,14 @@
+{
+	"category" : "Squot-Mapper-Browser",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"children" ],
+	"name" : "BuildInParent",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }

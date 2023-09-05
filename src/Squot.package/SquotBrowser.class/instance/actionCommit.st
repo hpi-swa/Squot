@@ -1,3 +1,3 @@
 actions
 actionCommit
-	"TODO"
+	(SquotChangesDialog onChanges: self workingCopy changesFromHeadCommitToImage) open.

@@ -1,0 +1,17 @@
+{
+	"category" : "Squot-Mapper-Browser",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"changes",
+		"changesParts",
+		"changesTree",
+		"selectedChangePart" ],
+	"name" : "SquotChangesDialog",
+	"pools" : [
+		 ],
+	"super" : "Model",
+	"type" : "normal" }

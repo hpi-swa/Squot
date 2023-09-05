@@ -4,6 +4,7 @@
 		"package:path:" : "mad 4/21/2023 23:41" },
 	"instance" : {
 		"applyChanges:to:" : "mad 4/26/2023 21:57",
+		"build:inChanges:with:" : "mad 9/3/2023 17:07",
 		"changesFromFSCommit:toFSCommit:" : "mad 5/20/2023 21:47",
 		"changesFromFSCommit:toImage:" : "mad 5/20/2023 21:47",
 		"changesFromImage:toFSCommit:" : "mad 5/20/2023 21:47",
@@ -14,6 +15,7 @@
 		"materializeChanges:in:" : "mad 4/25/2023 18:42",
 		"mergeCommit:into:withBase:" : "mad 7/2/2023 15:22",
 		"operationPath:" : "mad 9/2/2023 19:17",
+		"operationText:" : "mad 9/3/2023 17:07",
 		"package" : "mad 4/21/2023 23:34",
 		"package:" : "mad 4/22/2023 00:09",
 		"partsInChanges:" : "mad 9/3/2023 12:22",

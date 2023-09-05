@@ -9,7 +9,6 @@
 		"changesFromFSCommit:toImage:" : "mad 5/20/2023 21:47",
 		"changesFromImage:toFSCommit:" : "mad 5/20/2023 21:47",
 		"changesFromSnapshot:toSnapshot:" : "mad 4/26/2023 21:48",
-		"displayChange:" : "mad 4/25/2023 18:36",
 		"initialize" : "mad 4/25/2023 19:41",
 		"loadSnapshotFrom:" : "mad 4/26/2023 21:47",
 		"materializeChanges:in:" : "mad 4/25/2023 18:42",

@@ -1,5 +1,5 @@
 as yet unclassified
-on: aFileSystemGitRepository
+onFSGitRepository: aFileSystemGitRepository
 	^ self new
 		fsgitRepository: aFileSystemGitRepository;
 		gitInitialize;

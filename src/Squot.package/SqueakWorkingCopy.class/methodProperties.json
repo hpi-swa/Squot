@@ -1,6 +1,7 @@
 {
 	"class" : {
-		"on:" : "mad 6/4/2023 13:42" },
+		"onFSGitRepository:" : "mad 8/30/2023 16:44",
+		"onFSReference:" : "mad 8/30/2023 16:44" },
 	"instance" : {
 		"basicImageHash" : "mad 6/9/2023 19:05",
 		"branchName:" : "mad 6/4/2023 16:09",

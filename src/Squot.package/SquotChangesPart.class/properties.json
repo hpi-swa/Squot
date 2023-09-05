@@ -1,0 +1,16 @@
+{
+	"category" : "Squot-Mapper",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"changes",
+		"key",
+		"path" ],
+	"name" : "SquotChangesPart",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }

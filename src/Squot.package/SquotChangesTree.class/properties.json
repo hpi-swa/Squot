@@ -1,0 +1,15 @@
+{
+	"category" : "Squot-Mapper-Browser",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"name",
+		"children" ],
+	"name" : "SquotChangesTree",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }

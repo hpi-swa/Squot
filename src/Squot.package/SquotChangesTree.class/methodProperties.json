@@ -1,0 +1,21 @@
+{
+	"class" : {
+		"named:" : "mad 9/2/2023 18:20" },
+	"instance" : {
+		"add:" : "mad 9/3/2023 12:11",
+		"addAll:" : "mad 9/3/2023 12:12",
+		"atPath:" : "mad 9/2/2023 18:29",
+		"atPath:put:" : "mad 9/2/2023 18:53",
+		"children" : "mad 9/1/2023 18:02",
+		"children:" : "mad 9/1/2023 18:02",
+		"flatChildren" : "mad 9/3/2023 12:52",
+		"flatChildrenDo:" : "mad 9/3/2023 12:53",
+		"flatChildrenSorted" : "mad 9/3/2023 18:11",
+		"initialize" : "mad 9/2/2023 18:54",
+		"isLeaf" : "mad 9/1/2023 18:00",
+		"isTree" : "mad 9/2/2023 18:39",
+		"name" : "mad 9/2/2023 18:19",
+		"name:" : "mad 9/2/2023 18:19",
+		"printOn:" : "mad 9/2/2023 18:16",
+		"recursiveChildrenDo:" : "mad 9/3/2023 18:12",
+		"treeAt:" : "mad 9/2/2023 18:53" } }

@@ -1,0 +1,3 @@
+ui
+windowTitle
+	^ 'Squot Browser'

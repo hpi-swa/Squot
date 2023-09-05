@@ -1,0 +1,14 @@
+{
+	"category" : "Squot-Mapper-Browser",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "SquotCommitWrapper",
+	"pools" : [
+		 ],
+	"super" : "PluggableListItemWrapper",
+	"type" : "normal" }

@@ -1,0 +1,20 @@
+{
+	"class" : {
+		"onFSReference:" : "mad 8/30/2023 17:40",
+		"onWorkingCopy:" : "mad 8/30/2023 17:39" },
+	"instance" : {
+		"actionCommit" : "mad 9/5/2023 16:58",
+		"buildButtons:" : "mad 9/3/2023 12:32",
+		"buildCommitButton:" : "mad 9/1/2023 14:07",
+		"buildCommitList:" : "mad 9/1/2023 13:41",
+		"buildLayout:" : "mad 9/1/2023 14:05",
+		"buildWindow:" : "mad 9/1/2023 14:44",
+		"buildWith:" : "mad 9/1/2023 14:44",
+		"commitList" : "mad 8/31/2023 14:26",
+		"commitListStartingCommits" : "mad 9/5/2023 16:59",
+		"open" : "mad 8/30/2023 17:41",
+		"unitOfWork" : "mad 8/31/2023 12:58",
+		"windowTitle" : "mad 8/31/2023 12:25",
+		"withUnitOfWork:" : "mad 8/31/2023 12:57",
+		"workingCopy" : "mad 8/30/2023 16:14",
+		"workingCopy:" : "mad 8/30/2023 16:14" } }

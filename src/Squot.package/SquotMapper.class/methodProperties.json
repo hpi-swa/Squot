@@ -2,6 +2,7 @@
 	"class" : {
 		"stonAllInstVarNames" : "mad 6/4/2023 16:02" },
 	"instance" : {
+		"build:inChanges:with:" : "mad 9/2/2023 14:11",
 		"changesFromFSCommit:toFSCommit:" : "mad 5/20/2023 21:46",
 		"changesFromFSCommit:toImage:" : "mad 5/20/2023 21:46",
 		"changesFromImage:toFSCommit:" : "mad 5/20/2023 21:46",

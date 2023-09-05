@@ -1,8 +1,7 @@
 changes-operations
-serializeChanges: aDictionary onCommit: aCommitOrNil
+serializeChanges: aCollection onCommit: aCommitOrNil
 	| filesystem |
 	filesystem := self filesystemOn: aCommitOrNil.
-	aDictionary keysAndValuesDo: [:mapper :changes |
-		mapper serializeChanges: changes into: filesystem].
+	aCollection do: [:each | each serializeInto: filesystem].
 	self writeMappersFileInto: filesystem.
 	^ filesystem

@@ -1,4 +1,6 @@
 changes-creation
 changesFromFSCommit: anFSCommit toFSCommit: anotherFSCommit
-	^ Dictionary newFrom: (self materializedMappers collect: [:each |
-		each -> (each changesFromFSCommit: anFSCommit toFSCommit: anotherFSCommit)])
+	^ self materializedMappers collect: [:each |
+		SquotChanges
+			mapper: each
+			changes: (each changesFromFSCommit: anFSCommit toFSCommit: anotherFSCommit)]

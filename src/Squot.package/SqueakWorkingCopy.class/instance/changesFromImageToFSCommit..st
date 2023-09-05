@@ -1,4 +1,6 @@
 changes-creation
 changesFromImageToFSCommit: anFSCommit
-	^ Dictionary newFrom: (self materializedMappers collect: [:each |
-		each -> (each changesFromImage: self toFSCommit: anFSCommit)])
+	^ self materializedMappers collect: [:each |
+		SquotChanges
+			mapper: each
+			changes: (each changesFromImage: self toFSCommit: anFSCommit)]

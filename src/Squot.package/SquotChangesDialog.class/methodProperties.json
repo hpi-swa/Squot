@@ -3,10 +3,10 @@
 		"onChanges:" : "mad 9/3/2023 12:33" },
 	"instance" : {
 		"buildButtons:" : "mad 9/3/2023 12:45",
-		"buildChangePane:" : "mad 9/3/2023 13:20",
+		"buildChangePane" : "mad 9/6/2023 18:23",
 		"buildChangePart:" : "mad 9/5/2023 17:28",
 		"buildChangesTree:" : "mad 9/3/2023 14:07",
-		"buildLayout:" : "mad 9/2/2023 18:09",
+		"buildLayout:" : "mad 9/6/2023 18:22",
 		"buildNothingSelected:" : "mad 9/3/2023 14:04",
 		"buildWindow:" : "mad 9/3/2023 12:38",
 		"buildWith:" : "mad 9/2/2023 18:05",
@@ -23,5 +23,5 @@
 		"partHasChildren:" : "mad 9/3/2023 14:07",
 		"rootParts" : "mad 9/3/2023 14:07",
 		"selectedChangePart" : "mad 9/3/2023 12:43",
-		"selectedChangePart:" : "mad 9/3/2023 13:21",
+		"selectedChangePart:" : "mad 9/6/2023 18:24",
 		"windowTitle" : "mad 9/3/2023 17:43" } }

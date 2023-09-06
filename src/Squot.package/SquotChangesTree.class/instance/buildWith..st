@@ -16,4 +16,4 @@ buildWith: builder
 	scrollPane
 		color: Color transparent;
 		borderWidth: 0.
-	^ BuildInParent child: scrollPane
+	^ scrollPane

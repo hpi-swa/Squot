@@ -1,15 +1,17 @@
 {
 	"class" : {
-		"onChanges:" : "mad 9/3/2023 12:33" },
+		"onChangeSet:" : "mad 9/6/2023 18:50" },
 	"instance" : {
 		"buildButtons:" : "mad 9/3/2023 12:45",
 		"buildChange:" : "mad 9/6/2023 12:53",
-		"buildChangePane" : "mad 9/6/2023 18:23",
+		"buildChangePane" : "mad 9/6/2023 18:47",
 		"buildChangesTree:" : "mad 9/6/2023 12:57",
 		"buildLayout:" : "mad 9/6/2023 18:22",
 		"buildNothingSelected:" : "mad 9/3/2023 14:04",
 		"buildWindow:" : "mad 9/3/2023 12:38",
 		"buildWith:" : "mad 9/2/2023 18:05",
+		"changeSet" : "mad 9/6/2023 18:50",
+		"changeSet:" : "mad 9/6/2023 18:50",
 		"changes" : "mad 9/6/2023 12:56",
 		"changes:" : "mad 9/3/2023 12:37",
 		"changesTree" : "mad 9/3/2023 12:12",
@@ -21,5 +23,5 @@
 		"open" : "mad 9/3/2023 17:36",
 		"rootNodes" : "mad 9/6/2023 12:55",
 		"selectedChange" : "mad 9/6/2023 12:54",
-		"selectedChange:" : "mad 9/6/2023 12:54",
+		"selectedChange:" : "mad 9/6/2023 18:48",
 		"windowTitle" : "mad 9/3/2023 17:43" } }

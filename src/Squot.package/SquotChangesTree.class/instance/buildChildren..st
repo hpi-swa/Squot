@@ -1,14 +1,10 @@
 toolbuilder
 buildChildren: builder
-	^ Array streamContents: [:stream | | first |
-		first := true.
+	^ Array streamContents: [:stream | 
 		self recursiveChildrenDo: [:each |
-			first
-				ifTrue: [first := false]
-				ifFalse: [stream nextPut: builder pluggableSpacerSpec new].
 			stream nextPut:
 				(builder pluggablePanelSpec new
 					horizontalResizing: #spaceFill;
-					minimumHeight: self minimumChildHeight;
+					minimumHeight: (self minimumChildHeight: builder);
 					children: {each buildWith: builder};
 					yourself)]]

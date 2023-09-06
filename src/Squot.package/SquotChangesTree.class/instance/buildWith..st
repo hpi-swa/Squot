@@ -2,18 +2,17 @@ toolbuilder
 buildWith: builder
 	| scrollPane |
 	scrollPane := builder build: (builder pluggableScrollPaneSpec new
-		vScrollBarPolicy: #whenNeeded;
-		morph: (builder build:
-			(builder pluggablePanelSpec new
-				children: (self buildChildren: builder);
-				layout: #vertical;
-				horizontalResizing: #spaceFill;
-				frame: LayoutFrame fullFrame;
-				yourself));
+		children: (self buildChildren: builder);
 		frame: LayoutFrame fullFrame;
 		yourself).
-	scrollPane scroller changeProportionalLayout.
+	scrollPane scroller layoutPolicy: TableLayout new.
+	scrollPane scroller firstSubmorph
+		layoutPolicy: TableLayout new;
+		listDirection: #topToBottom;
+		hResizing: #spaceFill;
+		vResizing: #spaceFill;
+		cellGap: self childrenGap.
 	scrollPane
 		color: Color transparent;
 		borderWidth: 0.
-	^ BuildInParent child: scrollPane
+	^ scrollPane

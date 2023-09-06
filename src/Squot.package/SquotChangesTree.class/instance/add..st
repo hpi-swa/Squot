@@ -1,3 +1,3 @@
 adding
-add: aChangesPart
-	self atPath: aChangesPart path put: aChangesPart.
+add: aChange
+	self atPath: aChange path put: aChange.

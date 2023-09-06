@@ -6,10 +6,10 @@
 		 ],
 	"commentStamp" : "",
 	"instvars" : [
+		"changeSet",
 		"changes",
-		"changesParts",
 		"changesTree",
-		"selectedChangePart" ],
+		"selectedChange" ],
 	"name" : "SquotChangesDialog",
 	"pools" : [
 		 ],

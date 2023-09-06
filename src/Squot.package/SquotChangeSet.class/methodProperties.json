@@ -1,0 +1,10 @@
+{
+	"class" : {
+		"withMapper:" : "mad 9/6/2023 12:45" },
+	"instance" : {
+		"changes" : "mad 9/5/2023 22:51",
+		"hasConflicts" : "mad 9/5/2023 22:58",
+		"mapper" : "mad 9/1/2023 17:25",
+		"mapper:" : "mad 9/1/2023 17:25",
+		"materializeIn:" : "mad 9/5/2023 22:51",
+		"serializeInto:" : "mad 9/5/2023 22:51" } }

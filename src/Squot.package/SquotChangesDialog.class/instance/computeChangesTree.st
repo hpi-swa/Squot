@@ -1,5 +1,5 @@
 accessing
 computeChangesTree
 	^ SquotChangesTree new
-		addAll: self changesParts;
+		addAll: self changes;
 		yourself

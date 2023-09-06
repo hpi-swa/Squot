@@ -5,4 +5,4 @@ atPath: aCollection
 	aCollection do: [:part | | tree |
 		tree := current detect: #isTree ifNone: [^ {}].
 		current := tree children at: part ifAbsent: [^ {}]].
-	^ current select: #isLeaf thenCollect: #value
+	^ current select: #isChange thenCollect: #value

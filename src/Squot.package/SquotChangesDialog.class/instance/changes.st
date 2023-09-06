@@ -1,3 +1,3 @@
 accessing
 changes
-	^ changes
+	^ changes ifNil: [changes := self computeChanges]

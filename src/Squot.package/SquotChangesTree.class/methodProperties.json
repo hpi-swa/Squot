@@ -2,10 +2,10 @@
 	"class" : {
 		"named:" : "mad 9/2/2023 18:20" },
 	"instance" : {
-		"add:" : "mad 9/3/2023 12:11",
+		"add:" : "mad 9/6/2023 12:57",
 		"addAll:" : "mad 9/3/2023 12:12",
-		"atPath:" : "mad 9/2/2023 18:29",
-		"atPath:put:" : "mad 9/2/2023 18:53",
+		"atPath:" : "mad 9/5/2023 22:49",
+		"atPath:put:" : "mad 9/6/2023 12:57",
 		"buildChildren:" : "mad 9/3/2023 18:13",
 		"buildWith:" : "mad 9/3/2023 17:41",
 		"children" : "mad 9/1/2023 18:02",
@@ -14,7 +14,7 @@
 		"flatChildrenDo:" : "mad 9/3/2023 12:53",
 		"flatChildrenSorted" : "mad 9/3/2023 18:11",
 		"initialize" : "mad 9/2/2023 18:54",
-		"isLeaf" : "mad 9/1/2023 18:00",
+		"isChange" : "mad 9/6/2023 12:58",
 		"isTree" : "mad 9/2/2023 18:39",
 		"minimumChildHeight" : "mad 9/3/2023 18:13",
 		"name" : "mad 9/2/2023 18:19",

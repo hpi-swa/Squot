@@ -2,13 +2,10 @@
 	"class" : {
 		"stonAllInstVarNames" : "mad 6/4/2023 16:02" },
 	"instance" : {
-		"build:inChanges:with:" : "mad 9/2/2023 14:11",
-		"changesFromFSCommit:toFSCommit:" : "mad 5/20/2023 21:46",
-		"changesFromFSCommit:toImage:" : "mad 5/20/2023 21:46",
-		"changesFromImage:toFSCommit:" : "mad 5/20/2023 21:46",
+		"changeSetFromFSCommit:toFSCommit:" : "mad 9/6/2023 12:51",
+		"changeSetFromFSCommit:toImage:" : "mad 9/6/2023 12:51",
+		"changeSetFromImage:toFSCommit:" : "mad 9/6/2023 12:51",
 		"initialize" : "mad 6/1/2023 22:34",
 		"isMaterialized" : "mad 6/1/2023 22:33",
 		"isMaterialized:" : "mad 6/1/2023 22:34",
-		"materializeChanges:in:" : "mad 4/25/2023 17:29",
-		"partsInChanges:" : "mad 9/5/2023 17:06",
-		"serializeChanges:into:" : "mad 4/26/2023 21:21" } }
+		"mergeCommit:into:withBase:" : "mad 9/6/2023 12:52" } }

@@ -1,6 +1,6 @@
 toolbuilder
 buildChangePane: builder
 	^ BuildInParent child: 
-		((DynamicToolBuilderMorph on: self specSelector: #buildChangePart:)
+		((DynamicToolBuilderMorph on: self specSelector: #buildChange:)
 			layoutFrame: LayoutFrame fullFrame;
 			yourself)

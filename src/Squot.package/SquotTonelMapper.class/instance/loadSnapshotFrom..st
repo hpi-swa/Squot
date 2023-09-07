@@ -4,5 +4,5 @@ loadSnapshotFrom: aFilesystem
 			on: (aFilesystem referenceTo: self path)
 			fileName: self package name)
 			version snapshot]
-		on: ExceptionSet new, DirectoryDoesNotExist, TonelParseError
+		on: DirectoryDoesNotExist, TonelParseError
 		do: [^ MCSnapshot empty]

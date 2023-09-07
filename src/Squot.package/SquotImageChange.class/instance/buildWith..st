@@ -1,10 +1,10 @@
-as yet unclassified
+toolbuilder
 buildWith: builder
 	^ builder pluggablePanelSpec new
 		color: Color white;
 		layout: #vertical;
 		children: ({
-			(self path asReference pathString, String lf, 'Old:') -> self from.
+			(self pathString, String lf, 'Old:') -> self from.
 			'New:' -> self to.
 		} gather: [:each | {
 			builder pluggableTextSpec new

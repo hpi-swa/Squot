@@ -1,3 +1,3 @@
 accessing
 path
-	^ self mapper path
+	^ OrderedCollection withAll: self fsPath

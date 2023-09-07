@@ -1,3 +1,5 @@
 actions
 actionCommit
-	(SquotChangesDialog onChangeSets: self workingCopy changeSetsFromHeadCommitToImage) open.
+	(SquotChangesDialog
+		withWorkingCopy: self workingCopy
+		changeSets: self workingCopy changeSetsFromHeadCommitToImage) open.

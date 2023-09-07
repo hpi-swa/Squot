@@ -6,10 +6,13 @@
 		 ],
 	"commentStamp" : "",
 	"instvars" : [
+		"workingCopy",
+		"originalHeadCommit",
 		"changeSets",
 		"changes",
 		"changesTree",
-		"selectedChange" ],
+		"selectedChange",
+		"commitMessage" ],
 	"name" : "SquotChangesDialog",
 	"pools" : [
 		 ],

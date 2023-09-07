@@ -1,5 +1,10 @@
 toolbuilder
 buildButtons: builder
 	^ builder pluggablePanelSpec new
-		children: {};
+		layout: #horizontal;
+		children: {
+			self buildCancelButton: builder.
+			self buildCommitButton: builder.
+		};
+		frame: LayoutFrame fullFrame;
 		yourself

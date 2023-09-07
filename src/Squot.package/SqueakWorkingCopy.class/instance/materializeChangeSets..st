@@ -1,3 +1,3 @@
 changes-operations
-materializeChanges: aCollection
+materializeChangeSets: aCollection
 	aCollection do: [:each | each materializeIn: self].

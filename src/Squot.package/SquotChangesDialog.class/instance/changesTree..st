@@ -1,3 +1,3 @@
 accessing
-changesTree: anObject
-	changesTree := anObject
+changesTree: aChangesTree
+	changesTree := aChangesTree

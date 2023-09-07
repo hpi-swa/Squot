@@ -1,4 +1,4 @@
 changes-creation
-changeSetFromImageToFSCommit: anFSCommit
+changeSetsFromImageToFSCommit: anFSCommit
 	^ self materializedMappers collect: [:each |
 		each changeSetFromImage: self toFSCommit: anFSCommit]

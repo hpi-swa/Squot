@@ -1,3 +1,3 @@
 accessing
-changes: anObject
-	changes := anObject
+changes: aCollection
+	changes := aCollection

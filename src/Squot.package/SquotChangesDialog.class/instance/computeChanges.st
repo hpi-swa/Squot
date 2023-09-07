@@ -1,3 +1,3 @@
 accessing
 computeChanges
-	^ self changeSet gather: [:each | each changes]
+	^ self changeSets gather: [:each | each changes]

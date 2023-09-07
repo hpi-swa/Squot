@@ -1,5 +1,5 @@
 changes-operations
-serializeChanges: aCollection onCommit: aCommitOrNil
+serializeChangeSets: aCollection onCommit: aCommitOrNil
 	| filesystem |
 	filesystem := self filesystemOn: aCommitOrNil.
 	aCollection do: [:each | each serializeInto: filesystem].

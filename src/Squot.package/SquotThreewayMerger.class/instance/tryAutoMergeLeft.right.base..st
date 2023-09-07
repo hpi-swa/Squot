@@ -1,4 +1,4 @@
-as yet unclassified
+auto-merging
 tryAutoMergeLeft: leftDefinition right: rightDefinition base: baseDefinition
 	| allDefinitions |
 	allDefinitions := {leftDefinition. rightDefinition. baseDefinition}.

@@ -1,3 +1,3 @@
-as yet unclassified
+accessing
 rootNodes
 	^ self changesTree flatChildren

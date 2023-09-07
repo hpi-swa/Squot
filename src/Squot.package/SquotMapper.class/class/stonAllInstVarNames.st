@@ -1,3 +1,3 @@
-as yet unclassified
+ston-core
 stonAllInstVarNames
 	^ super stonAllInstVarNames copyWithout: #isMaterialized

@@ -1,4 +1,4 @@
-as yet unclassified
+instance creation
 path: aPath writerClass: anImageReadWriterClass
 	^ self new
 		path: aPath;

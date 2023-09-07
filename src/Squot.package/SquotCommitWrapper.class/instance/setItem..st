@@ -1,4 +1,4 @@
-as yet unclassified
+initialization
 setItem: aCommit
 	super setItem: aCommit.
 	self string: ({

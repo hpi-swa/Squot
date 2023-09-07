@@ -1,3 +1,3 @@
-as yet unclassified
+formatting
 formatTimeStamp: aTimeStamp
 	^ Time humanWordsForSecondsAgo: (TimeStamp now - aTimeStamp) asSeconds

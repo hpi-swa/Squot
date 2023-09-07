@@ -1,3 +1,3 @@
-as yet unclassified
+toolbuilder
 open
 	^ ToolBuilder open: self

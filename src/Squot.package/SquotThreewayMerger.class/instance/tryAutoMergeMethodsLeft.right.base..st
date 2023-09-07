@@ -1,4 +1,4 @@
-as yet unclassified
+auto-merging
 tryAutoMergeMethodsLeft: leftDefinition right: rightDefinition base: baseDefinition
 	| category diffResult |
 	category := SquotMergeUtilities

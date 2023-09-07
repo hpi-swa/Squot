@@ -1,4 +1,4 @@
-as yet unclassified
+definitions-operations
 removeDefinition: aDefinition
 	index
 		definitionLike: aDefinition

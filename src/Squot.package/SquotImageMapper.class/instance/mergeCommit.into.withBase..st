@@ -1,4 +1,4 @@
-as yet unclassified
+merging
 mergeCommit: rightFSCommit into: leftFSCommit withBase: baseFSCommit
 	| left right base merged |
 	left := self loadFormFrom: leftFSCommit filesystem.

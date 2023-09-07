@@ -1,4 +1,4 @@
-as yet unclassified
+definitions-operations
 modifyDefinition: baseDefinition to: targetDefinition
 	index
 		definitionLike: baseDefinition

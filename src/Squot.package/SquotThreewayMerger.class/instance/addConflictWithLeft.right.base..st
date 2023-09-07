@@ -1,4 +1,4 @@
-as yet unclassified
+definitions-operations
 addConflictWithLeft: leftDefinition right: rightDefinition base: baseDefinition
 	(self tryAutoMergeLeft: leftDefinition right: rightDefinition base: baseDefinition)
 		ifTrue: [^ self].

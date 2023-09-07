@@ -1,0 +1,14 @@
+{
+	"category" : "Squot-Mapper",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"operation" ],
+	"name" : "SquotTonelChange",
+	"pools" : [
+		 ],
+	"super" : "SquotChange",
+	"type" : "normal" }

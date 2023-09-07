@@ -1,5 +1,12 @@
 {
 	"class" : {
-		 },
+		"withMapper:patch:" : "mad 9/6/2023 19:04" },
 	"instance" : {
-		 } }
+		"changes" : "mad 9/6/2023 19:10",
+		"hasConflicts" : "mad 9/7/2023 14:50",
+		"materializeIn:" : "mad 9/6/2023 19:05",
+		"package" : "mad 9/6/2023 19:18",
+		"patch" : "mad 9/6/2023 19:05",
+		"patch:" : "mad 9/6/2023 19:05",
+		"path" : "mad 9/6/2023 19:17",
+		"serializeInto:" : "mad 9/6/2023 19:18" } }

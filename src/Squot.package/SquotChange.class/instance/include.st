@@ -1,0 +1,3 @@
+excluding
+include
+	self subclassResponsibility.

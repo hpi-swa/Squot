@@ -1,3 +1,3 @@
 accessing
 operations
-	^ self changes collect: #operation thenSelect: #notNil
+	^ (self changes select: #isIncluded) collect: #operation thenSelect: #notNil

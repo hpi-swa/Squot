@@ -1,3 +1,3 @@
-initialize-release
+defaults
 defaultCommitMessage
 	^ 'Insert commit message here'

@@ -1,4 +1,4 @@
-accessing
+ui
 getCommitMessageIfInvalid: aBlock
 	self commitMessage ifEmpty: [self inform: 'Empty commit message, aborting.'. ^ aBlock value].
 	self commitMessage = self defaultCommitMessage

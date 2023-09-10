@@ -1,3 +1,3 @@
 *Squot-Mapper
 squotChangePath
-	^ {self name}
+	^ {self baseTrait, ' classSide'. self summary}

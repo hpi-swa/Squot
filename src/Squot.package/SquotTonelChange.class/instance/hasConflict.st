@@ -1,0 +1,3 @@
+accessing
+hasConflict
+	self subclassResponsibility.

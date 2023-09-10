@@ -1,3 +1,3 @@
 accessing
 patch
-	^ patch
+	^ MCPatch operations: self operations

@@ -1,3 +1,3 @@
 accessing
 operation
-	^ operation
+	self subclassResponsibility.

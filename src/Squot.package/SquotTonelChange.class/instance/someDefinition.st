@@ -1,0 +1,3 @@
+accessing
+someDefinition
+	self subclassResponsibility.

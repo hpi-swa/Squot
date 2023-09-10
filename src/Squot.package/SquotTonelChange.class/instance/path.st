@@ -1,3 +1,3 @@
 accessing
 path
-	^ self fsPath segments, {self package name}, self definition squotChangePath
+	^ self fsPath segments, {self package name}, self someDefinition squotChangePath

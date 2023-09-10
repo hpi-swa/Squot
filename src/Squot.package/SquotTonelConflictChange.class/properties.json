@@ -1,0 +1,18 @@
+{
+	"category" : "Squot-Mapper",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"text",
+		"conflict",
+		"resolution",
+		"isResolved",
+		"isInEditMode" ],
+	"name" : "SquotTonelConflictChange",
+	"pools" : [
+		 ],
+	"super" : "SquotTonelChange",
+	"type" : "normal" }

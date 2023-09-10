@@ -1,12 +1,11 @@
 {
 	"class" : {
-		"withChangeSet:operation:" : "mad 9/6/2023 19:11" },
+		 },
 	"instance" : {
-		"buildWith:" : "mad 9/6/2023 19:14",
-		"definition" : "mad 9/6/2023 19:12",
+		"definitionAsString:" : "mad 9/10/2023 16:12",
 		"fsPath" : "mad 9/6/2023 19:12",
-		"operation" : "mad 9/6/2023 19:10",
-		"operation:" : "mad 9/6/2023 19:10",
-		"operationText" : "mad 9/6/2023 19:14",
+		"hasConflict" : "mad 9/9/2023 18:25",
+		"operation" : "mad 9/10/2023 14:31",
 		"package" : "mad 9/6/2023 19:20",
-		"path" : "mad 9/6/2023 19:12" } }
+		"path" : "mad 9/10/2023 18:51",
+		"someDefinition" : "mad 9/10/2023 18:51" } }

@@ -1,3 +1,3 @@
 accessing
 hasConflicts
-	^ false
+	^ self changes anySatisfy: #hasConflict

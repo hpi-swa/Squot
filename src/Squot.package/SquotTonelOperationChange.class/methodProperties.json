@@ -1,0 +1,23 @@
+{
+	"class" : {
+		"withChangeSet:operation:" : "mad 9/6/2023 19:11" },
+	"instance" : {
+		"buildEditButton:" : "mad 9/10/2023 18:15",
+		"buildText:" : "mad 9/9/2023 13:35",
+		"buildWith:" : "mad 9/9/2023 14:02",
+		"editButtonLabel" : "mad 9/9/2023 13:37",
+		"fromDefinition" : "mad 9/8/2023 18:59",
+		"fromString" : "mad 9/8/2023 20:32",
+		"hasConflict" : "mad 9/9/2023 18:25",
+		"initialize" : "mad 9/9/2023 13:38",
+		"isEditable" : "mad 9/9/2023 13:59",
+		"isInEditMode" : "mad 9/9/2023 13:33",
+		"isInEditMode:" : "mad 9/9/2023 13:41",
+		"operation" : "mad 9/6/2023 19:10",
+		"operation:" : "mad 9/9/2023 13:08",
+		"operationText" : "mad 9/10/2023 18:28",
+		"operationText:" : "mad 9/10/2023 16:13",
+		"someDefinition" : "mad 9/10/2023 18:51",
+		"toDefinition" : "mad 9/8/2023 19:00",
+		"toString" : "mad 9/8/2023 20:32",
+		"toggleEditMode" : "mad 9/9/2023 13:37" } }

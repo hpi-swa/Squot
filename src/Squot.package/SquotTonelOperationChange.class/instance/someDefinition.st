@@ -1,3 +1,3 @@
 accessing
-definition
+someDefinition
 	^ self operation definition

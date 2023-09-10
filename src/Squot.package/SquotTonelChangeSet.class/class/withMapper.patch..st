@@ -1,5 +1,5 @@
 instance creation
-withMapper: aMapper patch: aPatch
+withMapper: aMapper patch: aCollection
 	^ (self withMapper: aMapper)
-		patch: aPatch;
+		addPatch: aCollection;
 		yourself

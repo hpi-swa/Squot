@@ -1,12 +1,19 @@
 {
 	"class" : {
-		"withMapper:patch:" : "mad 9/6/2023 19:04" },
+		"withMapper:operations:" : "mad 9/7/2023 16:02",
+		"withMapper:operations:conflicts:" : "mad 9/7/2023 19:55",
+		"withMapper:patch:" : "mad 9/7/2023 16:02" },
 	"instance" : {
-		"changes" : "mad 9/6/2023 19:10",
-		"hasConflicts" : "mad 9/7/2023 14:50",
+		"addConflicts:" : "mad 9/7/2023 19:56",
+		"addOperations:" : "mad 9/7/2023 16:34",
+		"addPatch:" : "mad 9/7/2023 16:04",
+		"changes" : "mad 9/7/2023 16:05",
+		"changes:" : "mad 9/7/2023 16:05",
+		"hasConflicts" : "mad 9/9/2023 18:25",
+		"initialize" : "mad 9/7/2023 20:08",
 		"materializeIn:" : "mad 9/6/2023 19:05",
+		"operations" : "mad 9/10/2023 18:31",
 		"package" : "mad 9/6/2023 19:18",
-		"patch" : "mad 9/6/2023 19:05",
-		"patch:" : "mad 9/6/2023 19:05",
+		"patch" : "mad 9/7/2023 16:03",
 		"path" : "mad 9/6/2023 19:17",
 		"serializeInto:" : "mad 9/6/2023 19:18" } }

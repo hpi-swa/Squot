@@ -1,0 +1,3 @@
+diffing
+diffClass
+	^ HuntMcilroyDiff

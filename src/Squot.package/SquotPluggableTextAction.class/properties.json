@@ -1,0 +1,14 @@
+{
+	"category" : "Squot-Mapper",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "SquotPluggableTextAction",
+	"pools" : [
+		 ],
+	"super" : "PluggableTextAttribute",
+	"type" : "normal" }

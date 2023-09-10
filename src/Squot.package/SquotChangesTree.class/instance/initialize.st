@@ -2,5 +2,5 @@ initialize-release
 initialize
 	super initialize.
 	self
-		name: 'root';
+		label: 'root';
 		children: Dictionary new.

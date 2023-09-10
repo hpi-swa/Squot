@@ -7,5 +7,6 @@ buildChangesTree: builder
 		getChildren: #nodeChildren:;
 		getSelected: #selectedChange;
 		setSelected: #selectedChange:;
+		label: #nodeLabel:;
 		frame: LayoutFrame fullFrame;
 		yourself

@@ -1,3 +1,3 @@
 accessing
-name
+label
 	^ self path last

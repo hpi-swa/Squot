@@ -1,3 +1,7 @@
 printing
 printOn: aStream
-	aStream nextPutAll: self name.
+	super printOn: aStream.
+	aStream
+		nextPut: $(;
+		nextPutAll: self label;
+		nextPut: $).

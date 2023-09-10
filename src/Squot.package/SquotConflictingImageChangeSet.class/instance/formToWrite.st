@@ -1,0 +1,3 @@
+accessing
+formToWrite
+	^ self resolution

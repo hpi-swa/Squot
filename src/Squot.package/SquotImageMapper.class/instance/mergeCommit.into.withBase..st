@@ -6,9 +6,8 @@ mergeCommit: rightFSCommit into: leftFSCommit withBase: baseFSCommit
 	base := self loadFormFrom: baseFSCommit filesystem.
 	merged := SquotMergeUtilities
 		atomicMergeLeft: left right: right base: base
-		ifConflict: [^ SquotMergeResult
-						changes: {}
-						conflicts: {SquotMergeConflict left: left right: right base: base}].
-	^ SquotMergeResult
-		changes: (left = merged ifTrue: [{}] ifFalse: [{left -> merged}])
-		conflicts: {}
+		ifConflict: [^ SquotConflictingImageChangeSet
+						withMapper: self left: left right: right base: base].
+	^ left = merged
+		ifTrue: [SquotEmptyChangeSet withMapper: self]
+		ifFalse: [SquotImageChangeSet withMapper: self from: left to: merged]

@@ -1,0 +1,3 @@
+accessing
+base
+	^ self from

@@ -2,13 +2,15 @@
 	"class" : {
 		"withMapper:from:to:" : "mad 9/6/2023 12:50" },
 	"instance" : {
-		"changes" : "mad 9/6/2023 12:38",
+		"changeClass" : "mad 9/8/2023 12:08",
+		"changes" : "mad 9/8/2023 11:10",
+		"formToWrite" : "mad 9/8/2023 16:28",
 		"from" : "mad 9/5/2023 22:54",
 		"from:" : "mad 9/5/2023 22:55",
 		"hasConflicts" : "mad 9/6/2023 12:38",
-		"materializeIn:" : "mad 9/5/2023 22:55",
+		"materializeIn:" : "mad 9/8/2023 16:29",
 		"path" : "mad 9/5/2023 22:56",
-		"serializeInto:" : "mad 9/5/2023 22:56",
+		"serializeInto:" : "mad 9/8/2023 16:28",
 		"to" : "mad 9/5/2023 22:54",
 		"to:" : "mad 9/5/2023 22:55",
 		"writerClass" : "mad 9/5/2023 22:56" } }

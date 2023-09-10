@@ -7,17 +7,8 @@ buildWith: builder
 			(self pathString, String lf, 'Old:') -> self from.
 			'New:' -> self to.
 		} gather: [:each | {
-			builder pluggableTextSpec new
-				model: each key;
-				getText: #yourself;
-				verticalResizing: #shrinkWrap;
-				yourself.
-			builder pluggableScrollPaneSpec new
-				morph: (each value
-							ifNil: ['Missing' asText addAttribute: TextEmphasis italic; yourself])
-							asMorph;
-				padding: 10;
-				yourself.
+			self buildText: each key with: builder.
+			self buildVersion: each value with: builder.
 		}]);
 		frame: LayoutFrame fullFrame;
 		yourself

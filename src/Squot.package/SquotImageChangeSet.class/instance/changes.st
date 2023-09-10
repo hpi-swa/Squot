@@ -1,3 +1,3 @@
 accessing
 changes
-	^ {SquotImageChange withChangeSet: self}
+	^ {self changeClass withChangeSet: self}

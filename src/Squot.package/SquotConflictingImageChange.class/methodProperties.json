@@ -1,0 +1,19 @@
+{
+	"class" : {
+		 },
+	"instance" : {
+		"base" : "mad 9/8/2023 12:09",
+		"buildBody:" : "mad 9/10/2023 15:53",
+		"buildHead:" : "mad 9/8/2023 16:25",
+		"buildResolutionPanel:" : "mad 9/8/2023 12:10",
+		"buildResolveButton:with:" : "mad 9/8/2023 16:11",
+		"buildVersion:label:resolveAction:with:" : "mad 9/8/2023 11:56",
+		"buildWith:" : "mad 9/8/2023 16:25",
+		"changeSet:" : "mad 9/8/2023 16:08",
+		"headText" : "mad 9/8/2023 16:23",
+		"isResolved" : "mad 9/8/2023 16:24",
+		"left" : "mad 9/8/2023 12:09",
+		"resolution" : "mad 9/8/2023 12:10",
+		"resolutionPanel" : "mad 9/10/2023 15:52",
+		"right" : "mad 9/8/2023 12:09",
+		"update:" : "mad 9/10/2023 15:51" } }

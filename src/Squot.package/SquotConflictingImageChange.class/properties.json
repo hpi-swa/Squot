@@ -6,11 +6,9 @@
 		 ],
 	"commentStamp" : "",
 	"instvars" : [
-		"right",
-		"resolution",
-		"isResolved" ],
-	"name" : "SquotConflictingImageChangeSet",
+		 ],
+	"name" : "SquotConflictingImageChange",
 	"pools" : [
 		 ],
-	"super" : "SquotImageChangeSet",
+	"super" : "SquotImageChange",
 	"type" : "normal" }

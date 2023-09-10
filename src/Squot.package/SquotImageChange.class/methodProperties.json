@@ -2,9 +2,12 @@
 	"class" : {
 		 },
 	"instance" : {
-		"buildWith:" : "mad 9/6/2023 18:57",
+		"buildText:with:" : "mad 9/8/2023 11:27",
+		"buildVersion:with:" : "mad 9/8/2023 11:55",
+		"buildWith:" : "mad 9/8/2023 11:56",
 		"from" : "mad 9/5/2023 22:59",
 		"fsPath" : "mad 9/6/2023 18:57",
 		"path" : "mad 9/6/2023 18:57",
 		"pathString" : "mad 9/6/2023 18:57",
-		"to" : "mad 9/5/2023 23:00" } }
+		"to" : "mad 9/5/2023 23:00",
+		"versionAsMorph:" : "mad 9/8/2023 11:26" } }

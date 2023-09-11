@@ -2,6 +2,7 @@
 	"class" : {
 		"withChangeSet:" : "mad 9/6/2023 12:37" },
 	"instance" : {
+		"addMenuItemsTo:" : "mad 9/11/2023 14:21",
 		"buildWith:" : "mad 9/5/2023 22:49",
 		"changeSet" : "mad 9/5/2023 22:45",
 		"changeSet:" : "mad 9/6/2023 18:51",

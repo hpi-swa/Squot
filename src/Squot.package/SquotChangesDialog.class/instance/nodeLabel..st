@@ -1,3 +1,7 @@
 accessing
 nodeLabel: aNode
-	^ aNode label
+	| label |
+	label := aNode label.
+	^ aNode isExcluded
+		ifTrue: [self formatExcludedLabel: label]
+		ifFalse: [label]

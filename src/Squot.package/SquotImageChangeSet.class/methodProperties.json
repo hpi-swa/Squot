@@ -2,8 +2,9 @@
 	"class" : {
 		"withMapper:from:to:" : "mad 9/6/2023 12:50" },
 	"instance" : {
+		"change" : "mad 9/11/2023 14:39",
 		"changeClass" : "mad 9/8/2023 12:08",
-		"changes" : "mad 9/8/2023 11:10",
+		"changes" : "mad 9/11/2023 14:38",
 		"exclude" : "mad 9/7/2023 15:30",
 		"formToWrite" : "mad 9/8/2023 16:28",
 		"from" : "mad 9/5/2023 22:54",
@@ -12,7 +13,7 @@
 		"include" : "mad 9/7/2023 15:30",
 		"initialize" : "mad 9/7/2023 15:29",
 		"isExcluded" : "mad 9/7/2023 15:29",
-		"isExcluded:" : "mad 9/7/2023 15:29",
+		"isExcluded:" : "mad 9/11/2023 14:39",
 		"materializeIn:" : "mad 9/8/2023 16:29",
 		"path" : "mad 9/5/2023 22:56",
 		"serializeInto:" : "mad 9/8/2023 16:28",

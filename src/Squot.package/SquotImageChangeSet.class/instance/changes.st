@@ -1,3 +1,3 @@
 accessing
 changes
-	^ {self changeClass withChangeSet: self}
+	^ {self change}

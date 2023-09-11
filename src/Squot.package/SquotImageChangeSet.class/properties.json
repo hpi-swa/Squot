@@ -8,7 +8,8 @@
 	"instvars" : [
 		"from",
 		"to",
-		"isExcluded" ],
+		"isExcluded",
+		"change" ],
 	"name" : "SquotImageChangeSet",
 	"pools" : [
 		 ],

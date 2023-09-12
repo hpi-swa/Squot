@@ -36,3 +36,6 @@ SystemOrganization addCategory: #'Squot-Help'!
 SystemOrganization addCategory: #'Squot-CoAuthorsExtension'!
 SystemOrganization addCategory: #'Squot-Mapper'!
 SystemOrganization addCategory: #'Squot-Mapper-Browser'!
+SystemOrganization addCategory: #'Squot-Mapper-Image'!
+SystemOrganization addCategory: #'Squot-Mapper-Tonel'!
+SystemOrganization addCategory: #'Squot-Mapper-Utilities'!

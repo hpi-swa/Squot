@@ -1,5 +1,4 @@
 accessing
 isInEditMode: aBoolean
-	isInEditMode := aBoolean.
+	super isInEditMode: aBoolean.
 	self updateText.
-	self changed: #editButtonLabel.

@@ -3,6 +3,7 @@
 		 },
 	"instance" : {
 		"definitionAsString:" : "mad 9/10/2023 16:12",
+		"editButtonLabel" : "mad 9/12/2023 14:47",
 		"exclude" : "mad 9/7/2023 16:38",
 		"fsPath" : "mad 9/6/2023 19:12",
 		"hasConflict" : "mad 9/9/2023 18:25",
@@ -10,7 +11,10 @@
 		"initialize" : "mad 9/7/2023 16:36",
 		"isExcluded" : "mad 9/7/2023 16:36",
 		"isExcluded:" : "mad 9/11/2023 14:39",
+		"isInEditMode" : "mad 9/12/2023 14:48",
+		"isInEditMode:" : "mad 9/12/2023 14:49",
 		"operation" : "mad 9/10/2023 14:31",
 		"package" : "mad 9/6/2023 19:20",
 		"path" : "mad 9/10/2023 18:51",
-		"someDefinition" : "mad 9/10/2023 18:51" } }
+		"someDefinition" : "mad 9/10/2023 18:51",
+		"toggleEditMode" : "mad 9/12/2023 14:48" } }

@@ -6,8 +6,7 @@
 		 ],
 	"commentStamp" : "",
 	"instvars" : [
-		"operation",
-		"isInEditMode" ],
+		"operation" ],
 	"name" : "SquotTonelOperationChange",
 	"pools" : [
 		 ],

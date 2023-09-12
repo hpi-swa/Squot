@@ -9,8 +9,7 @@
 		"text",
 		"conflict",
 		"resolution",
-		"isResolved",
-		"isInEditMode" ],
+		"isResolved" ],
 	"name" : "SquotTonelConflictChange",
 	"pools" : [
 		 ],

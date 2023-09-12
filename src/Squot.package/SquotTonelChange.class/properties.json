@@ -6,7 +6,8 @@
 		 ],
 	"commentStamp" : "",
 	"instvars" : [
-		"isExcluded" ],
+		"isExcluded",
+		"isInEditMode" ],
 	"name" : "SquotTonelChange",
 	"pools" : [
 		 ],

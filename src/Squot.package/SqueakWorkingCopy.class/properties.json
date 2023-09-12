@@ -9,7 +9,8 @@
 		"fsgitRepository",
 		"materialized",
 		"mappers",
-		"lastImageHash" ],
+		"lastImageHash",
+		"refsForCommits" ],
 	"name" : "SqueakWorkingCopy",
 	"pools" : [
 		 ],

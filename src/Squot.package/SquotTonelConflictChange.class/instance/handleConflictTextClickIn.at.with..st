@@ -1,6 +1,7 @@
 click-handling
 handleConflictTextClickIn: aParagraph at: aPoint with: aTextEditor
 	| lineIndex source conflictAssoc conflictInterval resolution |
+	self ensureInEditMode.
 	lineIndex := aParagraph lineIndexForPoint: aPoint.
 	source := aParagraph text asString.
 	conflictAssoc := self conflictIntervalAndResolutionSurrounding: lineIndex in: source.

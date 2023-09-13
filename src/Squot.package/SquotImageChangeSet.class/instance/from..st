@@ -1,3 +1,4 @@
 accessing
 from: aForm
-	from := aForm
+	from := aForm.
+	self changed: #from.

@@ -1,7 +1,10 @@
 toolbuilder
 buildResolutionPanel: builder
 	^ builder pluggablePanelSpec new
-		model: self;
-		children: #resolutionPanel;
+		layout: #vertical;
+		children: {
+			self buildText: 'Resolution:' with: builder.
+			self buildDynamicVersion: #buildResolution with: builder.
+		};
 		frame: LayoutFrame fullFrame;
-		yourself
+		yourself.

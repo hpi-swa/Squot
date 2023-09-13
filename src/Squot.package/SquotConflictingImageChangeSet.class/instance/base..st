@@ -1,3 +1,5 @@
 accessing
 base: aForm
-	self from: aForm.
+	self
+		from: aForm;
+		changed: #base.

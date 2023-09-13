@@ -1,5 +1,10 @@
 updating
 update: aSymbol
 	super update: aSymbol.
-	aSymbol = #resolution ifTrue: [self changed: #resolutionPanel].
-	aSymbol = #isResolved ifTrue: [self changed: #headText].
+	(aSymbol caseOf: {
+		[#left] -> [#buildLeft].
+		[#right] -> [#buildRight].
+		[#base] -> [#buildBase].
+		[#resolution] -> [#buildResolution].
+		[#isResolved] -> [#headText].
+	} otherwise: [nil]) ifNotNil: [:symbol | self changed: symbol].

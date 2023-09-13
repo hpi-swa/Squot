@@ -3,15 +3,16 @@
 		"withMapper:left:right:base:" : "mad 9/8/2023 11:09" },
 	"instance" : {
 		"base" : "mad 9/8/2023 11:07",
-		"base:" : "mad 9/8/2023 11:08",
+		"base:" : "mad 9/13/2023 14:38",
 		"changeClass" : "mad 9/8/2023 12:08",
 		"formToWrite" : "mad 9/8/2023 16:28",
+		"formToWrite:" : "mad 9/13/2023 15:08",
 		"hasConflicts" : "mad 9/8/2023 11:12",
 		"initialize" : "mad 9/8/2023 11:11",
 		"isResolved" : "mad 9/8/2023 11:12",
 		"isResolved:" : "mad 9/8/2023 16:13",
 		"left" : "mad 9/8/2023 11:07",
-		"left:" : "mad 9/8/2023 11:08",
+		"left:" : "mad 9/13/2023 14:38",
 		"resolution" : "mad 9/8/2023 11:11",
 		"resolution:" : "mad 9/8/2023 16:13",
 		"resolve" : "mad 9/10/2023 15:55",
@@ -20,4 +21,4 @@
 		"resolveToLeft" : "mad 9/8/2023 11:16",
 		"resolveToRight" : "mad 9/8/2023 11:16",
 		"right" : "mad 9/8/2023 11:08",
-		"right:" : "mad 9/10/2023 15:56" } }
+		"right:" : "mad 9/13/2023 14:38" } }

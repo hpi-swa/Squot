@@ -1,3 +1,5 @@
 accessing
 left: aForm
-	self to: aForm.
+	self
+		to: aForm;
+		changed: #left.

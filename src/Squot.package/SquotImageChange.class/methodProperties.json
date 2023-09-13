@@ -2,9 +2,14 @@
 	"class" : {
 		 },
 	"instance" : {
+		"buildDynamicVersion:with:" : "mad 9/13/2023 14:41",
+		"buildFrom" : "mad 9/13/2023 14:30",
 		"buildText:with:" : "mad 9/8/2023 11:27",
-		"buildVersion:with:" : "mad 9/8/2023 11:55",
-		"buildWith:" : "mad 9/8/2023 11:56",
+		"buildTo" : "mad 9/13/2023 14:30",
+		"buildVersion:" : "mad 9/13/2023 14:41",
+		"buildVersion:with:" : "mad 9/13/2023 14:42",
+		"buildWith:" : "mad 9/13/2023 16:05",
+		"changeSet:" : "mad 9/13/2023 14:39",
 		"exclude" : "mad 9/7/2023 15:31",
 		"from" : "mad 9/5/2023 22:59",
 		"fsPath" : "mad 9/6/2023 18:57",
@@ -13,4 +18,5 @@
 		"path" : "mad 9/6/2023 18:57",
 		"pathString" : "mad 9/6/2023 18:57",
 		"to" : "mad 9/5/2023 23:00",
-		"versionAsMorph:" : "mad 9/8/2023 11:26" } }
+		"update:" : "mad 9/13/2023 15:09",
+		"versionAsMorph:" : "mad 9/13/2023 15:45" } }

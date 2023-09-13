@@ -1,4 +1,4 @@
 accessing
 isInEditMode: aBoolean
 	super isInEditMode: aBoolean.
-	self changed: #operationText.
+	self changed: #text.

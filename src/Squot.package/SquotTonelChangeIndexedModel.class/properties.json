@@ -1,0 +1,15 @@
+{
+	"category" : "Squot-Mapper-Tonel",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"change",
+		"index" ],
+	"name" : "SquotTonelChangeIndexedModel",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }

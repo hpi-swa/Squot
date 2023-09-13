@@ -1,5 +1,5 @@
-resolving
+merging
 resetToConflict
-	self text: self mergeStrings.
+	self texts: self mergeSources.
 	self isResolved: false.
 	self resolution: nil.

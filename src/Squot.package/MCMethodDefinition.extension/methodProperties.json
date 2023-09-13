@@ -8,10 +8,11 @@
 		"squotAddToChangeSet:" : "jr 4/14/2020 14:46",
 		"squotBelongsToClass" : "jr 9/8/2020 22:00",
 		"squotChangePath" : "mad 9/2/2023 19:13",
-		"squotCopyWithSource:" : "mad 9/10/2023 16:13",
+		"squotCopyWithSources:notifying:ifFail:" : "mad 9/13/2023 12:05",
 		"squotDiffNodeSummary" : "jr 4/17/2017 01:42",
 		"squotGroup" : "jr 9/8/2020 21:00",
 		"squotIsInChangeSet:" : "jr 9/8/2020 22:29",
 		"squotRemoveFromChangeSet:" : "jr 4/14/2020 14:44",
 		"squotShouldGroupByClass" : "jr 8/25/2020 18:27",
-		"squotSource" : "mad 9/10/2023 16:12" } }
+		"squotSources" : "mad 9/12/2023 15:10",
+		"squotSourcesSize" : "mad 9/12/2023 16:25" } }

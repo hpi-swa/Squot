@@ -1,0 +1,12 @@
+{
+	"class" : {
+		"withChange:index:" : "mad 9/12/2023 16:50" },
+	"instance" : {
+		"addDependent:" : "mad 9/12/2023 16:49",
+		"change" : "mad 9/12/2023 16:48",
+		"change:" : "mad 9/12/2023 16:49",
+		"doesNotUnderstand:" : "mad 9/13/2023 14:01",
+		"index" : "mad 9/12/2023 16:48",
+		"index:" : "mad 9/12/2023 16:48",
+		"indexedSelector:" : "mad 9/12/2023 16:51",
+		"removeDependent:" : "mad 9/12/2023 16:49" } }

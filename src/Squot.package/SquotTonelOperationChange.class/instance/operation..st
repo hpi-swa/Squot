@@ -1,4 +1,4 @@
 accessing
 operation: anOperation
 	operation := anOperation.
-	self changed: #operationText.
+	self changed: #text.

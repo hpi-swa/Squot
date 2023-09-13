@@ -1,3 +1,3 @@
 *Squot-Mapper
 squotSourcesStylerClasses
-	^ (1 to: self squotSourcesSize) collect: [nil]
+	^ (1 to: self squotSourcesSize) collect: [:index | nil]

@@ -2,7 +2,7 @@
 	"class" : {
 		 },
 	"instance" : {
-		"buildText:with:" : "mad 9/13/2023 13:50",
+		"buildText:with:" : "mad 9/13/2023 14:03",
 		"buildTexts:" : "mad 9/13/2023 11:48",
 		"definitionAsSources:" : "mad 9/12/2023 16:26",
 		"editButtonLabel" : "mad 9/12/2023 14:47",
@@ -23,4 +23,5 @@
 		"someDefinition" : "mad 9/10/2023 18:51",
 		"sources:at:" : "mad 9/13/2023 13:16",
 		"sourcesSize" : "mad 9/12/2023 16:26",
-		"toggleEditMode" : "mad 9/12/2023 14:48" } }
+		"toggleEditMode" : "mad 9/12/2023 14:48",
+		"verticalResizingFor:" : "mad 9/13/2023 13:20" } }

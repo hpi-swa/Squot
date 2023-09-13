@@ -9,6 +9,6 @@ buildWith: builder
 		} gather: [:each | {
 			self buildText: each key with: builder.
 			self buildDynamicVersion: each value with: builder.
-		}]);
+		}]), {self buildWorkspacePanel: builder};
 		frame: LayoutFrame fullFrame;
 		yourself

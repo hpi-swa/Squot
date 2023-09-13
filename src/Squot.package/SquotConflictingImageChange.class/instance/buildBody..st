@@ -11,8 +11,10 @@ buildBody: builder
 			(LayoutFrame fractions: (0 @ 0.5 corner: 0.5 @ 1))
 				-> (self buildDynamicVersion: #buildRight label: 'Incoming:'
 						resolveAction: #resolveToRight with: builder).
-			(LayoutFrame fractions: (0.5 @ 0.5 corner: 1 @ 1))
+			(LayoutFrame fractions: (0.5 @ 0.5 corner: 1 @ 0.8))
 				-> (self buildResolutionPanel: builder).
+			(LayoutFrame fractions: (0.5 @ 0.8 corner: 1 @ 1))
+				-> (self buildWorkspace: builder).
 		} collect: [:each |
 			builder pluggablePanelSpec new
 				children: {each value};

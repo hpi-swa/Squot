@@ -4,5 +4,6 @@ buildText: aNumber with: builder
 		model: (self indexedModel: aNumber);
 		getText: #text;
 		setText: #saveText:notifying:;
+		stylerClass: (self stylerClassFor: aNumber);
 		verticalResizing: (self verticalResizingFor: aNumber);
 		yourself

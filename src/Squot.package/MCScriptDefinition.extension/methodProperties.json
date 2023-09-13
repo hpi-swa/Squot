@@ -4,4 +4,5 @@
 	"instance" : {
 		"browseFromSquotWorkingCopyArtifact:" : "jr 7/9/2022 11:13",
 		"squotCopyWithSources:notifying:ifFail:" : "mad 9/13/2023 12:06",
-		"squotGroup" : "jr 9/9/2020 18:51" } }
+		"squotGroup" : "jr 9/9/2020 18:51",
+		"squotSourcesStylerClasses" : "mad 9/13/2023 13:40" } }

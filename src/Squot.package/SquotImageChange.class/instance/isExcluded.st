@@ -1,3 +1,3 @@
 accessing
 isExcluded
-	self changeSet isExcluded.
+	^ self changeSet isExcluded

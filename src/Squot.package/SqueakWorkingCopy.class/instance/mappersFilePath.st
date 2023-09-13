@@ -1,3 +1,3 @@
 mappers
 mappersFilePath
-	^ FSPath / '.mappers'
+	^ FSPath / '.squot-materialize'

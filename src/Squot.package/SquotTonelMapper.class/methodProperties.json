@@ -3,10 +3,12 @@
 		"package:" : "mad 4/21/2023 23:40",
 		"package:path:" : "mad 4/21/2023 23:41" },
 	"instance" : {
+		"=" : "mad 9/13/2023 18:26",
 		"changeSetFromFSCommit:toFSCommit:" : "mad 9/6/2023 19:03",
 		"changeSetFromFSCommit:toImage:" : "mad 9/6/2023 19:03",
 		"changeSetFromImage:toFSCommit:" : "mad 9/6/2023 19:03",
 		"changeSetFromSnapshot:toSnapshot:" : "mad 9/6/2023 19:04",
+		"hash" : "mad 9/13/2023 18:28",
 		"initialize" : "mad 4/25/2023 19:41",
 		"loadSnapshotFrom:" : "mad 9/7/2023 14:49",
 		"mergeCommit:into:withBase:" : "mad 9/8/2023 16:39",

@@ -3,10 +3,12 @@
 		"path:" : "mad 4/29/2023 16:44",
 		"path:writerClass:" : "mad 4/29/2023 17:09" },
 	"instance" : {
+		"=" : "mad 9/13/2023 18:23",
 		"changeSetFromFSCommit:toFSCommit:" : "mad 9/6/2023 12:49",
 		"changeSetFromFSCommit:toImage:" : "mad 9/6/2023 12:49",
 		"changeSetFromForm:toForm:" : "mad 9/6/2023 12:50",
 		"changeSetFromImage:toFSCommit:" : "mad 9/6/2023 12:51",
+		"hash" : "mad 9/13/2023 18:25",
 		"initialize" : "mad 4/29/2023 17:08",
 		"loadFormFrom:" : "mad 4/29/2023 17:05",
 		"loadFormFromImage:" : "mad 4/28/2023 22:05",

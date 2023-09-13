@@ -2,9 +2,11 @@
 	"class" : {
 		"stonAllInstVarNames" : "mad 6/4/2023 16:02" },
 	"instance" : {
+		"=" : "mad 9/13/2023 18:20",
 		"changeSetFromFSCommit:toFSCommit:" : "mad 9/6/2023 12:51",
 		"changeSetFromFSCommit:toImage:" : "mad 9/6/2023 12:51",
 		"changeSetFromImage:toFSCommit:" : "mad 9/6/2023 12:51",
+		"hash" : "mad 9/13/2023 18:20",
 		"initialize" : "mad 6/1/2023 22:34",
 		"isMaterialized" : "mad 6/1/2023 22:33",
 		"isMaterialized:" : "mad 6/1/2023 22:34",

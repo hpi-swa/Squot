@@ -1,5 +1,5 @@
 toolbuilder
-buildText: aNumber with: builder
+buildTextFor: aNumber with: builder
 	^ builder pluggableTextSpec new
 		model: (self indexedModel: aNumber);
 		getText: #text;

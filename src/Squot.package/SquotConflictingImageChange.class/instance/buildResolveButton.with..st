@@ -4,6 +4,4 @@ buildResolveButton: aSelector with: builder
 		model: self changeSet;
 		action: aSelector;
 		label: 'Resolve to this version';
-		padding: 4 px;
-		verticalResizing: #shrinkWrap;
 		yourself

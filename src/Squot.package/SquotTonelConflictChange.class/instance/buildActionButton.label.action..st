@@ -4,6 +4,4 @@ buildActionButton: builder label: aStringOrSelector action: aSelector
 		model: self;
 		action: aSelector;
 		label: aStringOrSelector;
-		padding: 4 px;
-		verticalResizing: #shrinkWrap;
 		yourself

@@ -1,10 +1,6 @@
 toolbuilder
 buildButtons: builder
-	^ builder pluggablePanelSpec new
-		layout: #horizontal;
-		children: {
-			self buildCancelButton: builder.
-			self buildCommitButton: builder.
-		};
-		frame: LayoutFrame fullFrame;
-		yourself
+	^ SquotGUIUtilities buildButtons: {
+		self buildCancelButton: builder.
+		self buildCommitButton: builder.
+	} with: builder

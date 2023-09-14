@@ -1,0 +1,18 @@
+{
+	"class" : {
+		"buildButtons:with:" : "mad 9/14/2023 13:30",
+		"buildEvenGrid:ofSize:with:" : "mad 9/14/2023 14:58",
+		"buildFullSizeText:with:" : "mad 9/14/2023 13:52",
+		"buildGrid:horizontalSplits:verticalSplits:with:" : "mad 9/14/2023 14:59",
+		"buildHorizontalLayout:with:" : "mad 9/14/2023 13:35",
+		"buildHorizontalSplit:of:and:with:" : "mad 9/14/2023 14:55",
+		"buildLayout:with:" : "mad 9/14/2023 14:33",
+		"buildShrinkWrapText:with:" : "mad 9/14/2023 13:52",
+		"buildTableLayout:direction:with:" : "mad 9/14/2023 14:23",
+		"buildText:with:" : "mad 9/14/2023 13:52",
+		"buildVerticalLayout:with:" : "mad 9/14/2023 13:36",
+		"buildVerticalSplit:of:and:with:" : "mad 9/14/2023 14:54",
+		"children:" : "mad 9/14/2023 14:11",
+		"putSpecs:on:" : "mad 9/14/2023 14:33" },
+	"instance" : {
+		 } }

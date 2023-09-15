@@ -1,3 +1,3 @@
 ui
 commitListStartingCommits
-	^ {self workingCopy headCommit} select: #notNil
+	^ {self activeRefCommit ifNil: [self workingCopy headCommit]} select: #notNil

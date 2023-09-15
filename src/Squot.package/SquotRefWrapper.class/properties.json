@@ -6,11 +6,9 @@
 		 ],
 	"commentStamp" : "",
 	"instvars" : [
-		"workingCopy",
-		"activeCommit",
-		"activeRef" ],
-	"name" : "SquotBrowser",
+		 ],
+	"name" : "SquotRefWrapper",
 	"pools" : [
 		 ],
-	"super" : "Model",
+	"super" : "PluggableListItemWrapper",
 	"type" : "normal" }

@@ -4,6 +4,8 @@ buildCommitList: builder
 		model: self;
 		roots: #commitList;
 		nodeClass: SquotCommitWrapper;
+		getSelected: #activeCommit;
+		setSelected: #activeCommit:;
 		columns: {
 			[:listMorph | (listMorph filteredItems collect: [:item |
 					item preferredWidthOfColumn: 1]) max].

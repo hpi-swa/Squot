@@ -13,5 +13,6 @@ buildCommitList: builder
 					item preferredWidthOfColumn: 2]) max].
 			nil.
 		};
+		menu: #commitListMenu:;
 		frame: LayoutFrame fullFrame;
 		yourself

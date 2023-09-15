@@ -6,5 +6,6 @@ buildRefList: builder
 		getSelected: #activeRef;
 		setSelected: #activeRef:;
 		nodeClass: SquotRefWrapper;
+		menu: #refListMenu:;
 		frame: LayoutFrame fullFrame;
 		yourself

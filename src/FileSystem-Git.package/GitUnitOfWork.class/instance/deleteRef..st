@@ -8,3 +8,4 @@ deleteRef: refPath
 	(repository reflogFileForReference: expandedRef) ensureDeleted.
 	refLogs removeKey: refPath ifAbsent: [].
 	refCache deleteRef: expandedRef.
+	self refChanged: (GitReference zeroRefWithName: expandedRef).

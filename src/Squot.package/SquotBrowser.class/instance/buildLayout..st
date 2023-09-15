@@ -1,6 +1,6 @@
 toolbuilder
 buildLayout: builder
 	^ SquotGUIUtilities buildVerticalLayout: {
-		self buildCommitList: builder.
+		self buildMainLayout: builder.
 		self buildButtons: builder.
 	} with: builder

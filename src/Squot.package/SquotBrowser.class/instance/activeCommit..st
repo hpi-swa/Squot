@@ -1,4 +1,6 @@
 accessing
 activeCommit: aCommit
 	activeCommit := aCommit.
-	self changed: #activeCommit.
+	self
+		changed: #activeCommit;
+		changed: #activeCommitInfo.

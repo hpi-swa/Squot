@@ -5,5 +5,4 @@ buildTableLayout: aCollection direction: aSymbol with: builder
 		children: ((self children: aCollection)
 					do: [:each | each frame: nil];
 					yourself);
-		frame: LayoutFrame fullFrame;
 		yourself

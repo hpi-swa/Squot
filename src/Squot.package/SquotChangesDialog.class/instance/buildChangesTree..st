@@ -9,5 +9,4 @@ buildChangesTree: builder
 		setSelected: #selectedChange:;
 		menu: #changesTreeMenu:;
 		label: #nodeLabel:;
-		frame: LayoutFrame fullFrame;
 		yourself

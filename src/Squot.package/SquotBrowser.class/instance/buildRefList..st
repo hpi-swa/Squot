@@ -7,5 +7,4 @@ buildRefList: builder
 		setSelected: #activeRef:;
 		nodeClass: SquotRefWrapper;
 		menu: #refListMenu:;
-		frame: LayoutFrame fullFrame;
 		yourself

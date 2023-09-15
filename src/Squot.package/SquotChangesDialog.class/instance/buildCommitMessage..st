@@ -7,5 +7,4 @@ buildCommitMessage: builder
 		editText: #commitMessage:;
 		plainTextOnly: true;
 		indicateUnacceptedChanges: false;
-		frame: LayoutFrame fullFrame;
 		yourself

@@ -3,7 +3,6 @@ buildWith: builder
 	| scrollPane |
 	scrollPane := builder build: (builder pluggableScrollPaneSpec new
 		children: (self buildChildren: builder);
-		frame: LayoutFrame fullFrame;
 		yourself).
 	scrollPane scroller layoutPolicy: TableLayout new.
 	scrollPane scroller firstSubmorph

@@ -14,5 +14,4 @@ buildCommitList: builder
 			nil.
 		};
 		menu: #commitListMenu:;
-		frame: LayoutFrame fullFrame;
 		yourself

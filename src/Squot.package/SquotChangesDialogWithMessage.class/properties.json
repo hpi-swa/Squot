@@ -6,13 +6,10 @@
 		 ],
 	"commentStamp" : "",
 	"instvars" : [
-		"changeSets",
-		"changes",
-		"changesTree",
-		"selectedChange",
-		"buttons" ],
-	"name" : "SquotChangesDialog",
+		"message",
+		"messageName" ],
+	"name" : "SquotChangesDialogWithMessage",
 	"pools" : [
 		 ],
-	"super" : "Model",
+	"super" : "SquotChangesDialog",
 	"type" : "normal" }

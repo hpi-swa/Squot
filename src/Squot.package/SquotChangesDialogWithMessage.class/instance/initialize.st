@@ -1,4 +1,6 @@
 initialize-release
 initialize
 	super initialize.
-	self buttons: OrderedCollection new.
+	self
+		message: '';
+		messageName: 'message'.

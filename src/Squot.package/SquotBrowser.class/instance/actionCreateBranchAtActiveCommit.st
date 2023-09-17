@@ -6,3 +6,4 @@ actionCreateBranchAtActiveCommit
 		('Create a branch at {1}. Branch name:' format: {self activeCommit showOneLine}).
 	name isEmptyOrNil ifTrue: [^ self].
 	self workingCopy createBranchNamed: name at: self activeCommit.
+	^ name

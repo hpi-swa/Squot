@@ -1,4 +1,4 @@
-as yet unclassified
+updating
 refChanged: aGitReference
 	self
 		changed: #commitList;

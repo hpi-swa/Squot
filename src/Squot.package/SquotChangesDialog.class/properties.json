@@ -10,6 +10,7 @@
 		"changes",
 		"changesTree",
 		"selectedChange",
+		"windowTitle",
 		"buttons" ],
 	"name" : "SquotChangesDialog",
 	"pools" : [

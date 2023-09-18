@@ -1,3 +1,3 @@
-ui
+accessing
 windowTitle
-	^ 'Changes'
+	^ windowTitle

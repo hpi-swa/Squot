@@ -1,4 +1,6 @@
 ui
 diffSources
-	^ self leftSources with: self resolutionSources collect: [:leftSource :resolutionSource |
-		SquotTextUtilities diffFrom: leftSource to: resolutionSource]
+	^ (1 to: self sourcesSize) collect: [:index |
+		SquotTextUtilities
+			diffFrom: (self sources: self leftSources at: index)
+			to: (self sources: self resolutionSources at: index)]

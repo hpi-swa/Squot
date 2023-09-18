@@ -10,7 +10,8 @@
 		"materialized",
 		"mappers",
 		"lastImageHash",
-		"refsForCommits" ],
+		"refsForCommits",
+		"credentials" ],
 	"name" : "SqueakWorkingCopy",
 	"pools" : [
 		 ],

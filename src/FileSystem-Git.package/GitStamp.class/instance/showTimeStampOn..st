@@ -6,7 +6,7 @@ showTimeStampOn: aStream
 		nextPutAll: (t dayOfWeekName first: 3); space;
 		nextPutAll: (t monthName first: 3); space;
 		nextPutAll: (t dayOfMonth printString); space;
-		nextPutAll: (t time print24); space;
+		nextPutAll: (t asTime print24); space;
 		nextPutAll: (t year printString); space. 
 	offset := t offset.
 	offset negative

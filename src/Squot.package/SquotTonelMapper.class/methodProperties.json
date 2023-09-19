@@ -1,7 +1,8 @@
 {
 	"class" : {
 		"package:" : "mad 4/21/2023 23:40",
-		"package:path:" : "mad 4/21/2023 23:41" },
+		"package:path:" : "mad 4/21/2023 23:41",
+		"projectListMenu:for:" : "mad 9/19/2023 16:01" },
 	"instance" : {
 		"=" : "mad 9/13/2023 18:26",
 		"changeSetFromFSCommit:toFSCommit:" : "mad 9/6/2023 19:03",

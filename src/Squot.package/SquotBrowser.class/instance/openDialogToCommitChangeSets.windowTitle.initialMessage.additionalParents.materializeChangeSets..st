@@ -4,8 +4,9 @@ windowTitle: titleString
 initialMessage: messageString
 additionalParents: commitCollection
 materializeChangeSets: materializeBoolean
-	| currentHeadCommit promise dialog |
-	currentHeadCommit := self workingCopy headCommit.
+	| workingCopy currentHeadCommit promise dialog |
+	workingCopy := self activeWorkingCopyIfNilInformAnd: [^ Promise new "never resolves"].
+	currentHeadCommit := self activeWorkingCopy headCommit.
 	promise := Promise new.
 	(dialog := SquotChangesDialogWithMessage onChangeSets: changeSetCollection)
 		windowTitle: titleString;
@@ -17,11 +18,11 @@ materializeChangeSets: materializeBoolean
 				validateDialogState: dialog
 				andOriginalHeadCommit: currentHeadCommit
 				before: [
-					self workingCopy
+					workingCopy
 						commitChangeSets: changeSetCollection
 						message: dialog message
 						additionalParents: commitCollection].
-					materializeBoolean ifTrue: [self workingCopy materializeChangeSets: changeSetCollection].
+					materializeBoolean ifTrue: [workingCopy materializeChangeSets: changeSetCollection].
 					dialog close.
 					promise resolveWith: dialog];
 		open.

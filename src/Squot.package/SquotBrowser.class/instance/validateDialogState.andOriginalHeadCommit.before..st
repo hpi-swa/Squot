@@ -2,7 +2,7 @@ dialog
 validateDialogState: aChangesDialogWithMessage
 andOriginalHeadCommit: aCommit
 before: aBlock
-	self workingCopy headCommit = aCommit ifFalse: [
+	self activeWorkingCopy headCommit = aCommit ifFalse: [
 		self inform: 'These changes are outdated. Aborting.'.
 		^ nil].
 	^ self

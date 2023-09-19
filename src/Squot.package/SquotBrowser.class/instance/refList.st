@@ -1,3 +1,3 @@
 ui
 refList
-	^ self workingCopy allReferences
+	^ self activeWorkingCopy ifNotNil: #allReferences ifNil: [{}]

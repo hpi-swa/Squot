@@ -1,7 +1,8 @@
 merging
 mergeCommitIntoHead: aCommit displayName: aString
 	| head mergeBases mergeBase changeSets |
-	head := self workingCopy headCommit.
+	self activeWorkingCopyIfNilInformAnd: [^ self].
+	head := self activeWorkingCopy headCommit.
 	mergeBases := head allMergeBasesWithAnyOf: {aCommit}.
 	mergeBase := mergeBases size caseOf: {
 		[0] -> [^ self inform: 'Cannot merge unrelated histories.'].
@@ -9,10 +10,10 @@ mergeCommitIntoHead: aCommit displayName: aString
 	} otherwise: [^ self inform: 'Found multiple merge bases. Recursive merging is currently unsupported.'].
 	mergeBase = head ifTrue: [
 		self inform: 'Fast-forwarding.'.
-		^ self workingCopy fastForwardTo: aCommit displayName: aString].
+		^ self activeWorkingCopy fastForwardTo: aCommit displayName: aString].
 	mergeBase = aCommit ifTrue: [
 		^ self inform: 'Already up to date.'].
-	changeSets := self workingCopy
+	changeSets := self activeWorkingCopy
 						mergeCommit: aCommit
 						into: head
 						withBase: mergeBase.

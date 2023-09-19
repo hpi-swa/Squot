@@ -1,7 +1,8 @@
 dialog
 openDialogToMergeChangeSets: aCollection from: aCommit displayName: aString
 	| headRef currentBranch |
-	headRef := self workingCopy headRef.
+	self activeWorkingCopyIfNilInformAnd: [^ Promise new "never resolves"].
+	headRef := self activeWorkingCopy headRef.
 	currentBranch := headRef isSymbolic
 						ifTrue: [GitReference shortName: headRef targetRef]
 						ifFalse: ['HEAD'].

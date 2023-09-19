@@ -1,4 +1,5 @@
 actions
 actionCommit
 	^ self openDialogToCommitChangeSets:
-		self workingCopy changeSetsFromHeadCommitToImage
+		(self activeWorkingCopyIfNilInformAnd: [^ nil])
+			changeSetsFromHeadCommitToImage

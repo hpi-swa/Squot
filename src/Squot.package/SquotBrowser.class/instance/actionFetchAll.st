@@ -1,3 +1,3 @@
 actions
 actionFetchAll
-	self workingCopy fetchAll.
+	(self activeWorkingCopyIfNilInformAnd: [^ self]) fetchAll.

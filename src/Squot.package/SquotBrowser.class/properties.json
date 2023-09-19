@@ -6,7 +6,7 @@
 		 ],
 	"commentStamp" : "",
 	"instvars" : [
-		"workingCopy",
+		"activeWorkingCopy",
 		"activeCommit",
 		"activeRef" ],
 	"name" : "SquotBrowser",

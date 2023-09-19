@@ -1,3 +1,3 @@
 accessing
 withUnitOfWork: aBlock
-	^ self workingCopy withUnitOfWork: aBlock
+	^ self activeWorkingCopy withUnitOfWork: aBlock

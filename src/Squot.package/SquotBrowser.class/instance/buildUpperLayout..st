@@ -1,6 +1,6 @@
 toolbuilder
 buildUpperLayout: builder
 	^ SquotGUIUtilities buildHorizontalSplit: 0.2
-		of: (self buildRefList: builder)
+		of: (self buildProjectsAndRefsPanel: builder)
 		and: (self buildCommitList: builder)
 		with: builder

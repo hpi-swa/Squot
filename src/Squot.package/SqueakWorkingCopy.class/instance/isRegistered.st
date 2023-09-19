@@ -1,3 +1,3 @@
 accessing
 isRegistered
-	self class isRegistered: self.
+	^ self class isRegistered: self

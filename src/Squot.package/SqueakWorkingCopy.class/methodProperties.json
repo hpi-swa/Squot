@@ -1,7 +1,7 @@
 {
 	"class" : {
-		"onFSGitRepository:" : "mad 8/30/2023 16:44",
-		"onFSReference:" : "mad 8/30/2023 16:44" },
+		"onFSGitRepository:named:" : "mad 9/19/2023 11:53",
+		"onFSReference:named:" : "mad 9/19/2023 11:53" },
 	"instance" : {
 		"allReferences" : "mad 9/13/2023 21:23",
 		"basicImageHash" : "mad 6/9/2023 19:05",
@@ -64,6 +64,8 @@
 		"materializedMappers" : "mad 6/1/2023 22:36",
 		"mergeCommit:into:withBase:" : "mad 8/23/2023 19:49",
 		"mergeFSCommit:into:withBase:" : "mad 9/13/2023 21:09",
+		"name" : "mad 9/19/2023 11:52",
+		"name:" : "mad 9/19/2023 11:52",
 		"pushRef:" : "mad 9/18/2023 20:07",
 		"readMappersFileFromFSCommit:" : "mad 9/13/2023 19:16",
 		"readMappersFileFromFileSystem:" : "mad 9/13/2023 20:32",

@@ -1,7 +1,7 @@
 {
 	"category" : "Squot-Mapper",
 	"classinstvars" : [
-		 ],
+		"registry" ],
 	"classvars" : [
 		 ],
 	"commentStamp" : "",

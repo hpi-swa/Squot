@@ -3,5 +3,9 @@
 		 },
 	"instance" : {
 		"balloonText" : "mad 9/13/2023 21:49",
+		"icon" : "mad 9/19/2023 14:46",
+		"isActive" : "mad 9/19/2023 14:13",
+		"isRemoteRef" : "mad 9/19/2023 14:36",
 		"isSqueakBranch" : "mad 9/19/2023 14:49",
+		"isSqueakRef" : "mad 9/19/2023 14:11",
 		"setItem:" : "mad 9/19/2023 14:49" } }

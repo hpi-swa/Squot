@@ -1,0 +1,16 @@
+{
+	"category" : "Squot-Mapper-Tonel",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"workingCopy",
+		"packageOrganizer",
+		"selectedPackageName" ],
+	"name" : "SquotTonelPackageBrowser",
+	"pools" : [
+		 ],
+	"super" : "Model",
+	"type" : "normal" }

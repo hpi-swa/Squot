@@ -4,9 +4,10 @@ windowTitle: titleString
 initialMessage: messageString
 additionalParents: commitCollection
 materializeChangeSets: materializeBoolean
-	| currentHeadCommit dialog |
+	| currentHeadCommit promise dialog |
 	currentHeadCommit := self workingCopy headCommit.
-	^ (dialog := SquotChangesDialogWithMessage onChangeSets: changeSetCollection)
+	promise := Promise new.
+	(dialog := SquotChangesDialogWithMessage onChangeSets: changeSetCollection)
 		windowTitle: titleString;
 		message: messageString;
 		addCloseButton: 'Cancel';
@@ -21,6 +22,7 @@ materializeChangeSets: materializeBoolean
 						message: dialog message
 						additionalParents: commitCollection].
 					materializeBoolean ifTrue: [self workingCopy materializeChangeSets: changeSetCollection].
-					dialog close];
-		open;
-		yourself
+					dialog close.
+					promise resolve];
+		open.
+	^ promise

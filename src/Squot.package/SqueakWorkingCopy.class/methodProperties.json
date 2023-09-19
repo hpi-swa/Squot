@@ -1,5 +1,8 @@
 {
 	"class" : {
+		"cloneFrom:to:named:" : "mad 9/19/2023 11:53",
+		"cloneFromUserAndRegister" : "mad 9/19/2023 13:36",
+		"cloneFromUserNamed:" : "mad 9/19/2023 13:38",
 		"isNameRegistered:" : "mad 9/19/2023 12:02",
 		"isRegistered:" : "mad 9/19/2023 12:20",
 		"named:" : "mad 9/19/2023 12:04",
@@ -28,6 +31,7 @@
 		"changeSetsFromMappers:toMappers:old:common:new:" : "mad 9/13/2023 20:57",
 		"checkoutReflogMessageTo:" : "mad 6/4/2023 16:47",
 		"chooseRemoteName" : "mad 9/18/2023 20:04",
+		"cloneFrom:" : "mad 9/18/2023 14:14",
 		"commitChangeSets:message:additionalParents:" : "mad 9/17/2023 18:17",
 		"commitChangeSets:onCommit:message:additionalParents:" : "mad 9/18/2023 17:29",
 		"computeRefsForCommits" : "mad 9/11/2023 16:47",

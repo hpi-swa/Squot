@@ -5,4 +5,5 @@ buildProjectList: builder
 		list: #projectList;
 		getSelected: #activeProject;
 		setSelected: #activeProject:;
+		menu: #projectListMenu:;
 		yourself

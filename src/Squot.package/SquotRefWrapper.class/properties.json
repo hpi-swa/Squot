@@ -10,5 +10,5 @@
 	"name" : "SquotRefWrapper",
 	"pools" : [
 		 ],
-	"super" : "PluggableListItemWrapper",
+	"super" : "SquotListItemWrapper",
 	"type" : "normal" }

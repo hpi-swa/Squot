@@ -1,5 +1,9 @@
 actions
 actionCommit
-	^ self openDialogToCommitChangeSets:
-		(self activeWorkingCopyIfNilInformAnd: [^ nil])
-			changeSetsFromHeadCommitToImage
+	| changeSets |
+	changeSets := (self activeWorkingCopyIfNilInformAnd: [^ nil])
+						changeSetsFromHeadCommitToImage.
+	(self activeWorkingCopy allEmpty: changeSets)
+		ifTrue: [^ self inform: 'Nothing to commit.'].
+	^ self openDialogToCommitChangeSets: changeSets
+		

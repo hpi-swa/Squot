@@ -10,6 +10,6 @@ windowTitle: titleString
 			self validateDialogHasNoConflicts: dialog before: [
 				self workingCopy materializeChangeSets: changeSetCollection.
 				dialog close.
-				promise resolve]];
+				promise resolveWith: dialog]];
 		open.
 	^ promise

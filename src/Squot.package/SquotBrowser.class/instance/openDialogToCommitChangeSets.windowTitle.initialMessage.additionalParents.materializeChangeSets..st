@@ -23,6 +23,6 @@ materializeChangeSets: materializeBoolean
 						additionalParents: commitCollection].
 					materializeBoolean ifTrue: [self workingCopy materializeChangeSets: changeSetCollection].
 					dialog close.
-					promise resolve];
+					promise resolveWith: dialog];
 		open.
 	^ promise

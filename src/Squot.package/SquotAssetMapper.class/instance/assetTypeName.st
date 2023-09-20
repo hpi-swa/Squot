@@ -1,3 +1,3 @@
-printing
+accessing
 assetTypeName
-	^ 'Asset'
+	^ self class assetTypeName

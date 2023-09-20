@@ -1,0 +1,3 @@
+encodings
+defaultEncoding
+	^ PNGReadWriter

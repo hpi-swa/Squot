@@ -1,0 +1,3 @@
+accessing
+assetTypeName
+	self subclassResponsibility.

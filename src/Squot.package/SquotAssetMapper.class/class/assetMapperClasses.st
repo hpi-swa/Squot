@@ -1,0 +1,3 @@
+accessing
+assetMapperClasses
+	^ self subclasses

@@ -1,3 +1,3 @@
 accessing
 writerClass
-	^ writerClass
+	^ self encoding

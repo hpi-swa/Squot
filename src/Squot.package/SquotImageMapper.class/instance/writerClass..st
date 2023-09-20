@@ -1,3 +1,3 @@
 accessing
 writerClass: anImageReadWriterClass
-	writerClass := anImageReadWriterClass
+	self encoding: anImageReadWriterClass.

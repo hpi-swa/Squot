@@ -1,16 +1,14 @@
 {
 	"class" : {
-		"path:writerClass:" : "mad 9/20/2023 14:29" },
+		"assetTypeName" : "mad 9/20/2023 19:10",
+		"defaultEncoding" : "mad 9/20/2023 18:44",
+		"encodingName:" : "mad 9/20/2023 19:02",
+		"validEncodings" : "mad 9/20/2023 18:49" },
 	"instance" : {
-		"=" : "mad 9/20/2023 14:15",
-		"assetTypeName" : "mad 9/20/2023 14:25",
-		"hash" : "mad 9/20/2023 14:20",
-		"initialize" : "mad 4/29/2023 17:08",
 		"isValidVersion:" : "mad 9/20/2023 14:19",
-		"printOn:" : "mad 9/20/2023 14:22",
 		"readVersionFrom:" : "mad 9/20/2023 14:35",
 		"versionAsMorph:" : "mad 9/20/2023 14:18",
 		"versionTypeName" : "mad 9/20/2023 14:25",
 		"writeVersion:on:" : "mad 9/20/2023 14:27",
-		"writerClass" : "mad 4/29/2023 17:09",
-		"writerClass:" : "mad 4/29/2023 17:09" } }
+		"writerClass" : "mad 9/20/2023 18:42",
+		"writerClass:" : "mad 9/20/2023 20:01" } }

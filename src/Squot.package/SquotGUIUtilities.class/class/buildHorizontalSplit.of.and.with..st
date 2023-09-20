@@ -1,7 +1,6 @@
 toolbuilder
 buildHorizontalSplit: aNumber of: leftSpec and: rightSpec with: builder
 	^ self
-		buildGrid: {leftSpec. rightSpec}
-		horizontalSplits: {aNumber}
-		verticalSplits: {}
+		buildRow: {leftSpec. rightSpec}
+		splits: {aNumber}
 		with: builder

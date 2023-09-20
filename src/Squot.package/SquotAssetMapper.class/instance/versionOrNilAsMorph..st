@@ -1,5 +1,5 @@
 toolbuilder
-versionAsMorph: anObject
+versionOrNilAsMorph: anObject
 	^ anObject
 		ifNil: [(SquotTextUtilities italic: 'Missing') asMorph]
-		ifNotNil: [self mapper versionAsMorph: anObject]
+		ifNotNil: [self versionAsMorph: anObject]

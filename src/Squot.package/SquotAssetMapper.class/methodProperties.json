@@ -4,6 +4,7 @@
 	"instance" : {
 		"=" : "mad 9/20/2023 14:15",
 		"assetTypeName" : "mad 9/20/2023 14:22",
+		"buildVersion:with:" : "mad 9/20/2023 17:36",
 		"changeSetFromFSCommit:toFSCommit:" : "mad 9/20/2023 14:17",
 		"changeSetFromFSCommit:toImage:" : "mad 9/20/2023 14:24",
 		"changeSetFromImage:toFSCommit:" : "mad 9/20/2023 14:17",
@@ -18,5 +19,6 @@
 		"printOn:" : "mad 9/20/2023 14:22",
 		"readVersionFrom:" : "mad 9/20/2023 14:18",
 		"versionAsMorph:" : "mad 9/20/2023 14:19",
+		"versionOrNilAsMorph:" : "mad 9/20/2023 17:36",
 		"versionTypeName" : "mad 9/20/2023 14:19",
 		"writeVersion:on:" : "mad 9/20/2023 14:41" } }

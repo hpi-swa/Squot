@@ -1,0 +1,15 @@
+{
+	"category" : "Squot-Mapper-Asset",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"activeWorkingCopy",
+		"selectedMapper" ],
+	"name" : "SquotAssetBrowser",
+	"pools" : [
+		 ],
+	"super" : "Model",
+	"type" : "normal" }

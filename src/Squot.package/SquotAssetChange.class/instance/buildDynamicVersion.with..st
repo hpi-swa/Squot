@@ -1,6 +1,6 @@
 toolbuilder
 buildDynamicVersion: aSelector with: builder
-	^ builder pluggablePanelSpec new
-		model: self;
-		children: aSelector;
-		yourself
+	^ SquotDynamicallyBuilt
+		model: self
+		child: aSelector
+		buildWith: builder

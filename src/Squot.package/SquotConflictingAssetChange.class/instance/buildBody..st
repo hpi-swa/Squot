@@ -2,9 +2,9 @@ toolbuilder
 buildBody: builder
 	^ SquotGUIUtilities buildEvenGrid: {
 		{
-			{#buildBase. 'Base:'. #resolveToBase}.
-			{#buildLeft. 'Current:'. #resolveToLeft}.
-			{#buildRight. 'Incoming:'. #resolveToRight}
+			{#buildBase:. 'Base:'. #resolveToBase}.
+			{#buildLeft:. 'Current:'. #resolveToLeft}.
+			{#buildRight:. 'Incoming:'. #resolveToRight}
 		} collect: [:each |
 			self
 				buildDynamicVersion: each first

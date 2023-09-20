@@ -1,3 +1,0 @@
-mappers
-mappersFileContents
-	^ self mappers

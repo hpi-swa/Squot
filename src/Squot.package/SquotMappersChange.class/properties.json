@@ -1,0 +1,14 @@
+{
+	"category" : "Squot-Mapper",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "SquotMappersChange",
+	"pools" : [
+		 ],
+	"super" : "SquotChange",
+	"type" : "normal" }

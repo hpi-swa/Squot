@@ -1,0 +1,3 @@
+mappers
+mappersMapper
+	^ SquotMappersMapper new

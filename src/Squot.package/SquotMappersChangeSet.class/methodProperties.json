@@ -1,0 +1,13 @@
+{
+	"class" : {
+		"withMapper:old:new:" : "mad 9/20/2023 13:03" },
+	"instance" : {
+		"changes" : "mad 9/20/2023 12:04",
+		"hasConflicts" : "mad 9/20/2023 11:59",
+		"materializeIn:" : "mad 9/20/2023 12:02",
+		"newMappers" : "mad 9/20/2023 12:00",
+		"newMappers:" : "mad 9/20/2023 12:00",
+		"oldMappers" : "mad 9/20/2023 12:00",
+		"oldMappers:" : "mad 9/20/2023 12:00",
+		"referenceIn:" : "mad 9/20/2023 12:02",
+		"serializeInto:" : "mad 9/20/2023 12:03" } }

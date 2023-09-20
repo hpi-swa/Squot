@@ -1,3 +1,3 @@
-mappers
-mappersFilePath
+accessing
+path
 	^ FSPath / '.squot-materialize'

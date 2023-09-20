@@ -1,0 +1,20 @@
+{
+	"class" : {
+		 },
+	"instance" : {
+		"changeSetFromFSCommit:toFSCommit:" : "mad 9/20/2023 12:07",
+		"changeSetFromFSCommit:toImage:" : "mad 9/20/2023 12:09",
+		"changeSetFromImage:toFSCommit:" : "mad 9/20/2023 12:10",
+		"changeSetFromMappers:toMappers:" : "mad 9/20/2023 12:08",
+		"changeSetsFromFSCommit:toFSCommit:in:" : "mad 9/20/2023 12:50",
+		"changeSetsFromFSCommit:toImage:" : "mad 9/20/2023 12:51",
+		"changeSetsFromImage:toFSCommit:" : "mad 9/20/2023 12:51",
+		"changeSetsFromMappers:toMappers:old:common:new:in:" : "mad 9/20/2023 12:51",
+		"loadMappersFromFSCommit:" : "mad 9/20/2023 12:05",
+		"loadMappersFromFileSystem:" : "mad 9/20/2023 12:05",
+		"loadMappersFromWorkingCopy:" : "mad 9/20/2023 12:09",
+		"mergeCommit:into:withBase:" : "mad 9/20/2023 13:02",
+		"mergeCommit:into:withBase:in:" : "mad 9/20/2023 12:59",
+		"mergeMappers:into:" : "mad 9/20/2023 13:02",
+		"path" : "mad 9/20/2023 11:53",
+		"referenceIn:" : "mad 9/20/2023 11:54" } }

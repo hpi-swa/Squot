@@ -1,3 +1,3 @@
 accessing
 selectedAsset
-	^ self selectedMapper ifNotNil: [:mapper | self pathToString: mapper path]
+	^ self selectedMapper ifNotNil: [:mapper | SquotPathUtilities asString: mapper path]

@@ -1,3 +1,3 @@
 ui
 assetList
-	^ (self mappers collect: [:each | self pathToString: each path]) sorted
+	^ (self mappers collect: [:each | SquotPathUtilities asString: each path]) sorted

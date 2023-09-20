@@ -2,5 +2,5 @@ printing
 printOn: aStream
 	aStream 
 		nextPutAll: self assetTypeName;
-		nextPutAll: ' at '.
-	self path asReference printOn: aStream.
+		nextPutAll: ' at ';
+		nextPutAll: (SquotPathUtilities asString: self path).

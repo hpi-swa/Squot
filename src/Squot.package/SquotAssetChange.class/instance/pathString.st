@@ -1,3 +1,3 @@
 accessing
 pathString
-	^ self fsPath asReference pathString
+	^ SquotPathUtilities asString: self fsPath

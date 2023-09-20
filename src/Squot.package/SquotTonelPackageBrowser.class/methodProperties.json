@@ -3,9 +3,9 @@
 		"onWorkingCopy:" : "mad 9/19/2023 15:45",
 		"openOnWorkingCopy:" : "mad 9/19/2023 15:47" },
 	"instance" : {
-		"actionAddPackage" : "mad 9/19/2023 16:18",
+		"actionAddPackage" : "mad 9/20/2023 17:31",
 		"actionEditPackagePath" : "mad 9/19/2023 16:53",
-		"actionRemovePackage" : "mad 9/19/2023 16:20",
+		"actionRemovePackage" : "mad 9/20/2023 17:31",
 		"buildAddPackageButton:" : "mad 9/19/2023 16:23",
 		"buildButtons:" : "mad 9/19/2023 16:22",
 		"buildEditPackagePathButton:" : "mad 9/19/2023 16:24",
@@ -28,5 +28,6 @@
 		"selectedPackageName" : "mad 9/19/2023 15:53",
 		"selectedPackageName:" : "mad 9/19/2023 16:24",
 		"unmappedPackageList" : "mad 9/19/2023 15:54",
+		"update:" : "mad 9/20/2023 17:32",
 		"workingCopy" : "mad 9/19/2023 15:44",
-		"workingCopy:" : "mad 9/19/2023 15:45" } }
+		"workingCopy:" : "mad 9/20/2023 17:32" } }

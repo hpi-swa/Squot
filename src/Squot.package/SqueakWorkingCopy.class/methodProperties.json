@@ -17,6 +17,7 @@
 		"requestUnregisteredName" : "mad 9/19/2023 12:02",
 		"unregister:" : "mad 9/19/2023 12:20" },
 	"instance" : {
+		"addMapper:" : "mad 9/20/2023 17:30",
 		"allEmpty:" : "mad 9/19/2023 15:24",
 		"allReferences" : "mad 9/13/2023 21:23",
 		"basicImageHash" : "mad 6/9/2023 19:05",
@@ -89,6 +90,7 @@
 		"refsForCommits" : "mad 9/11/2023 16:36",
 		"refsForCommits:" : "mad 9/11/2023 16:36",
 		"register" : "mad 9/19/2023 12:07",
+		"removeMapper:" : "mad 9/20/2023 17:30",
 		"requestCredentialsFor:ifCanceled:" : "mad 9/18/2023 12:49",
 		"requestRemoteNameAndRefFor:" : "mad 9/18/2023 20:04",
 		"serializeChangeSets:onCommit:" : "mad 9/20/2023 12:45",

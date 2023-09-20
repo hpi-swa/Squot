@@ -1,6 +1,5 @@
 actions
 actionAddPackage
-	self workingCopy mappers add:
+	self workingCopy addMapper:
 		(SquotTonelMapper package:
 			(MCPackage named: self selectedPackageName)).
-	self mappersChanged.

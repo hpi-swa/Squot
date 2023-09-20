@@ -1,3 +1,3 @@
-ui
-projectList
+toolbuilder
+list
 	^ SqueakWorkingCopy registeredNames sorted

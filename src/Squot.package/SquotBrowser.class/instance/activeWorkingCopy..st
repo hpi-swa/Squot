@@ -4,7 +4,7 @@ activeWorkingCopy: aWorkingCopy
 	activeWorkingCopy := aWorkingCopy.
 	activeWorkingCopy ifNotNil: [activeWorkingCopy addDependent: self].
 	self
-		changed: #activeProject;
+		changed: #activeWorkingCopy;
 		changed: #refList;
 		changed: #commitList.
 	self activeRef: nil.

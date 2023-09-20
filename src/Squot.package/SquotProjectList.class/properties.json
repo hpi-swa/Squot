@@ -1,0 +1,17 @@
+{
+	"category" : "Squot-Mapper-Utilities",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"model",
+		"getWorkingCopySelector",
+		"setWorkingCopySelector",
+		"menuSelector" ],
+	"name" : "SquotProjectList",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }

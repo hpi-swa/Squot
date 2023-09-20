@@ -1,6 +1,6 @@
 diffing
-diffChunksFrom: fromString to: toString
+diffChunksFrom: fromCollection to: toCollection
 	^ self diffClass new
-		file1: fromString lines;
-		file2: toString lines;
+		file1: fromCollection;
+		file2: toCollection;
 		comm

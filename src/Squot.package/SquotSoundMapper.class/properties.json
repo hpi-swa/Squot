@@ -1,0 +1,14 @@
+{
+	"category" : "Squot-Mapper-Sound",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"encoding" ],
+	"name" : "SquotSoundMapper",
+	"pools" : [
+		 ],
+	"super" : "SquotAssetMapper",
+	"type" : "normal" }

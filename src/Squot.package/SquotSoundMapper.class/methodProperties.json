@@ -1,0 +1,17 @@
+{
+	"class" : {
+		"aiffEncoding" : "mad 9/20/2023 17:58",
+		"validEncodings" : "mad 9/20/2023 17:58",
+		"wavEncoding" : "mad 9/20/2023 17:58" },
+	"instance" : {
+		"assetTypeName" : "mad 9/20/2023 15:04",
+		"defaultEncoding" : "mad 9/20/2023 18:02",
+		"encoding" : "mad 9/20/2023 17:57",
+		"encoding:" : "mad 9/20/2023 18:00",
+		"initialize" : "mad 9/20/2023 18:02",
+		"isValidVersion:" : "mad 9/20/2023 14:49",
+		"printOn:" : "mad 9/20/2023 17:59",
+		"readVersionFrom:" : "mad 9/20/2023 17:56",
+		"versionAsMorph:" : "mad 9/20/2023 15:02",
+		"versionTypeName" : "mad 9/20/2023 15:02",
+		"writeVersion:on:" : "mad 9/20/2023 17:57" } }

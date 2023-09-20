@@ -1,0 +1,24 @@
+{
+	"class" : {
+		"model:mapper:setVersion:getBindings:editTargetName:buildWith:" : "mad 9/20/2023 21:01" },
+	"instance" : {
+		"addBindings" : "mad 9/20/2023 20:42",
+		"editTargetName" : "mad 9/20/2023 20:47",
+		"editTargetName:" : "mad 9/20/2023 20:48",
+		"evaluate:notifying:" : "mad 9/20/2023 21:19",
+		"getBindings" : "mad 9/20/2023 20:47",
+		"getBindingsSelector" : "mad 9/20/2023 20:44",
+		"getBindingsSelector:" : "mad 9/20/2023 20:44",
+		"initialContents" : "mad 9/20/2023 21:05",
+		"initialize" : "mad 9/20/2023 20:41",
+		"isValidVersion:" : "mad 9/20/2023 20:49",
+		"mapper" : "mad 9/20/2023 20:44",
+		"mapper:" : "mad 9/20/2023 20:44",
+		"model" : "mad 9/20/2023 20:43",
+		"model:" : "mad 9/20/2023 20:44",
+		"setVersionSelector" : "mad 9/20/2023 20:44",
+		"setVersionSelector:" : "mad 9/20/2023 20:44",
+		"setup" : "mad 9/20/2023 20:49",
+		"variablesString" : "mad 9/20/2023 21:28",
+		"version:" : "mad 9/20/2023 20:43",
+		"versionTypeName" : "mad 9/20/2023 21:05" } }

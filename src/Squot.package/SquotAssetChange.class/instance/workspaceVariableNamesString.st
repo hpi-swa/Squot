@@ -1,3 +1,0 @@
-workspace
-workspaceVariableNamesString
-	^ self workspaceBindings keys asCommaStringAnd

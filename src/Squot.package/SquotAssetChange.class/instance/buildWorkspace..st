@@ -1,11 +1,9 @@
 toolbuilder
 buildWorkspace: builder
-	| workspace |
-	workspace := SquotPluggableWorkspace new
-					onSave: [:source :requestor |
-								self evaluate: source
-									in: workspace
-									notifying: requestor];
-					yourself.
-	self setupWorkspace: workspace.
-	^ workspace buildWith: builder
+	^ SquotAssetWorkspace
+		model: self
+		mapper: self mapper
+		setVersion: #versionToWrite:
+		getBindings: #workspaceBindings
+		editTargetName: self workspaceEditTargetString
+		buildWith: builder

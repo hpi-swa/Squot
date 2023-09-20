@@ -1,3 +1,0 @@
-workspace
-setInitialWorkspaceContents: aPluggableWorkspace
-	aPluggableWorkspace contents: self initialWorkspaceContents.

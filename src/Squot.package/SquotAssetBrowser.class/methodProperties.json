@@ -1,7 +1,9 @@
 {
 	"class" : {
 		"open" : "mad 9/20/2023 15:51",
-		"openOnWorkingCopy:" : "mad 9/20/2023 18:16" },
+		"openOnWorkingCopy:" : "mad 9/20/2023 18:16",
+		"registerInWorldMenu" : "mad 9/20/2023 18:25",
+		"unregisterFromWorldMenu" : "mad 9/20/2023 18:25" },
 	"instance" : {
 		"activeWorkingCopy" : "mad 9/20/2023 15:20",
 		"activeWorkingCopy:" : "mad 9/20/2023 16:42",

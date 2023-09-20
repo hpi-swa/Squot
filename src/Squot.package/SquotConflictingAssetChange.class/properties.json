@@ -1,14 +1,14 @@
 {
-	"category" : "Squot-Mapper-Image",
+	"category" : "Squot-Mapper-Asset",
 	"classinstvars" : [
 		 ],
 	"classvars" : [
 		 ],
 	"commentStamp" : "",
 	"instvars" : [
-		"writerClass" ],
-	"name" : "SquotImageMapper",
+		 ],
+	"name" : "SquotConflictingAssetChange",
 	"pools" : [
 		 ],
-	"super" : "SquotAssetMapper",
+	"super" : "SquotAssetChange",
 	"type" : "normal" }

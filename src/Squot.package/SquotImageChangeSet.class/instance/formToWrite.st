@@ -1,3 +1,0 @@
-accessing
-formToWrite
-	^ self to

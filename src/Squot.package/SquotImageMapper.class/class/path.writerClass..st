@@ -1,6 +1,5 @@
 instance creation
 path: aPath writerClass: anImageReadWriterClass
-	^ self new
-		path: aPath;
+	^ (self path: aPath)
 		writerClass: anImageReadWriterClass;
 		yourself

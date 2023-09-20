@@ -1,3 +1,3 @@
 operations
 materializeIn: aWorkingCopy
-	aWorkingCopy materializedAt: self path put: self versionToWrite.
+	self mapper materialize: self versionToWrite in: aWorkingCopy.

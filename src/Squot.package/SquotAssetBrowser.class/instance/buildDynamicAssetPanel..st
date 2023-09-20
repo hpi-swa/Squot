@@ -2,5 +2,5 @@ toolbuilder
 buildDynamicAssetPanel: builder
 	^ SquotDynamicallyBuilt
 		model: self
-		child: #buildAsset:
+		child: #buildAssetPanel:
 		buildWith: builder

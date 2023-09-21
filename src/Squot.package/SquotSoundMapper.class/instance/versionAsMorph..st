@@ -1,5 +1,6 @@
 ui
 versionAsMorph: aSound
-	^ InterimSoundMorph new
+	^ SquotSoundMorph new
 		sound: aSound;
+		extent: 100 @ 100;
 		yourself

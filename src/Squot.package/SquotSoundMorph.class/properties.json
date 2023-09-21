@@ -1,0 +1,15 @@
+{
+	"category" : "Squot-Mapper-Sound",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"sound",
+		"button" ],
+	"name" : "SquotSoundMorph",
+	"pools" : [
+		 ],
+	"super" : "Morph",
+	"type" : "normal" }

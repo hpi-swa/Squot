@@ -14,4 +14,5 @@ configAt: aNameString put: value
 		stream lineEndConvention: #lf.
 		config writeOn: stream.
 		stream truncate: stream position].
+	self configChanged.
 	^ value

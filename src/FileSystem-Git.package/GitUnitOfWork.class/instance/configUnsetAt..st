@@ -23,3 +23,4 @@ configUnsetAt: aNameString
 		lines do: [:each | stream nextPutAll: each; lf].
 		stream truncate: stream position].
 	config := nil. "reload"
+	self configChanged.

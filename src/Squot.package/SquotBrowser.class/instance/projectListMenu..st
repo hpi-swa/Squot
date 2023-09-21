@@ -1,8 +1,8 @@
 menu
 projectListMenu: aMenu
 	aMenu
-		target: SqueakWorkingCopy;
-		add: 'new project' action: #newFromUserAndRegister;
-		add: 'clone project' action: #cloneFromUserAndRegister.
+		target: self;
+		add: 'new project' action: #actionNewProject;
+		add: 'clone project' action: #actionCloneProject.
 	self addMappersProjectListMenu: aMenu.
 	^ aMenu

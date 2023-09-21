@@ -1,0 +1,3 @@
+actions
+actionNewProject
+	self newProject: SqueakWorkingCopy newFromUserAndRegister.

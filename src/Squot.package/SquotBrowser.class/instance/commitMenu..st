@@ -8,5 +8,6 @@ commitMenu: aMenu
 		add: 'materialize this commit' action: #actionMaterializeActiveCommit;
 		add: 'create a CLI branch at this commit'
 		help: 'the created branch will be visible from the git command line'
-		action: #actionCreateGitBranchAtActiveCommit.
+		action: #actionCreateGitBranchAtActiveCommit;
+		add: 'merge this commit' action: #actionMergeActiveCommit.
 	^ aMenu

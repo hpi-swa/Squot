@@ -21,9 +21,9 @@ materializeChangeSets: materializeBoolean
 					workingCopy
 						commitChangeSets: changeSetCollection
 						message: dialog message
-						additionalParents: commitCollection].
+						additionalParents: commitCollection.
 					materializeBoolean ifTrue: [workingCopy materializeChangeSets: changeSetCollection].
 					dialog close.
-					promise resolveWith: dialog];
+					promise resolveWith: dialog]];
 		open.
 	^ promise

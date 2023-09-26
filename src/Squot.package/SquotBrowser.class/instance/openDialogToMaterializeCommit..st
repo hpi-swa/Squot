@@ -1,5 +1,5 @@
 dialog
 openDialogToMaterializeCommit: aCommit
-	self
+	^ self
 		openDialogToMaterializeCommit: aCommit
 		displayName: aCommit showOneLine

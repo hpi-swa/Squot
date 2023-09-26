@@ -1,3 +1,3 @@
 dialog
 openDialogToMaterializeHead
-	self openDialogToMaterializeCommit: self activeWorkingCopy headCommit
+	^ self openDialogToMaterializeCommit: self activeWorkingCopy headCommit

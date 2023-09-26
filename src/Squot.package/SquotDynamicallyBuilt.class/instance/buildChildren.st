@@ -1,5 +1,9 @@
 toolbuilder
 buildChildren
-	^ {(self builder build: self buildChild)
+	| child |
+	child := (self builder build: self buildChild)
 		layoutFrame: LayoutFrame fullFrame;
-		yourself}
+		yourself.
+	self flag: #todo. "workaround for layout bug"
+	Project current addDeferredUIMessage: [child owner ifNotNil: #layoutChanged].
+	^ {child}

@@ -8,5 +8,6 @@ buildChangesTree: builder
 		getSelected: #selectedChange;
 		setSelected: #selectedChange:;
 		menu: #changesTreeMenu:;
+		keyPress: #changesTreeKeyStroke:;
 		label: #nodeLabel:;
 		yourself

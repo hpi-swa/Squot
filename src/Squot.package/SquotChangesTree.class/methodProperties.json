@@ -4,7 +4,7 @@
 	"instance" : {
 		"add:" : "mad 9/6/2023 12:57",
 		"addAll:" : "mad 9/3/2023 12:12",
-		"addMenuItemsTo:" : "mad 9/11/2023 14:27",
+		"addMenuItemsTo:" : "mad 9/26/2023 17:11",
 		"allExcluded" : "mad 9/11/2023 14:28",
 		"allIncluded" : "mad 9/11/2023 14:28",
 		"atPath:" : "mad 9/5/2023 22:49",
@@ -24,10 +24,12 @@
 		"isChange" : "mad 9/6/2023 12:58",
 		"isExcluded" : "mad 9/11/2023 14:33",
 		"isTree" : "mad 9/2/2023 18:39",
+		"keyStroke:" : "mad 9/26/2023 17:10",
 		"label" : "mad 9/10/2023 19:25",
 		"label:" : "mad 9/10/2023 19:26",
 		"minimumChildHeight:" : "mad 9/6/2023 18:40",
 		"printOn:" : "mad 9/10/2023 19:23",
 		"recursiveChildrenDo:" : "mad 9/3/2023 18:12",
-		"toggleExcluded" : "mad 9/11/2023 14:29",
+		"toggleExcludedAll" : "mad 9/26/2023 17:10",
+		"toggleExcludedIndividual" : "mad 9/26/2023 17:10",
 		"treeAt:" : "mad 9/10/2023 19:26" } }

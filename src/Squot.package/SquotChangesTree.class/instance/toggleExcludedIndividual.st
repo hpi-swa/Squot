@@ -1,3 +1,3 @@
 excluding
-toggleExcluded
+toggleExcludedIndividual
 	^ self recursiveChildrenDo: #toggleExcluded

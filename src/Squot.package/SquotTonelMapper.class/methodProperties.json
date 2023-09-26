@@ -4,7 +4,7 @@
 		"package:path:" : "mad 4/21/2023 23:41",
 		"projectListMenu:for:" : "mad 9/20/2023 11:47" },
 	"instance" : {
-		"=" : "mad 9/13/2023 18:26",
+		"=" : "mad 9/26/2023 15:20",
 		"changeSetFromFSCommit:toFSCommit:" : "mad 9/6/2023 19:03",
 		"changeSetFromFSCommit:toImage:" : "mad 9/6/2023 19:03",
 		"changeSetFromImage:toFSCommit:" : "mad 9/6/2023 19:03",
@@ -18,4 +18,6 @@
 		"path" : "mad 4/21/2023 23:35",
 		"path:" : "mad 4/22/2023 00:09",
 		"printOn:" : "mad 9/20/2023 12:27",
-		"workingCopySnapshot" : "mad 4/25/2023 18:30" } }
+		"workingCopySnapshot" : "mad 4/25/2023 18:30",
+		"writeTimestamps" : "mad 9/26/2023 15:24",
+		"writeTimestamps:" : "mad 9/26/2023 15:24" } }

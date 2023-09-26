@@ -5,6 +5,7 @@ buildResolutionPanel: builder
 				buildDynamicVersion: #buildResolution:
 				label: 'Resolution:'
 				resolveAction: nil
+				state: nil
 				with: builder)
 		and: (self buildWorkspace: builder)
 		with: builder

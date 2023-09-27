@@ -17,12 +17,14 @@ materializeChangeSets: materializeBoolean
 			self
 				validateDialogState: dialog
 				andOriginalHeadCommit: currentHeadCommit
-				before: [
+				before: [ | shouldMaterialize |
 					workingCopy
 						commitChangeSets: changeSetCollection
 						message: dialog message
 						additionalParents: commitCollection.
-					materializeBoolean ifTrue: [workingCopy materializeChangeSets: changeSetCollection].
+					shouldMaterialize := materializeBoolean or: [
+						dialog wasEdited and: [self confirm: 'You edited some changes. Do you wish to materialize them?']].
+					shouldMaterialize ifTrue: [workingCopy materializeChangeSets: changeSetCollection].
 					dialog close.
 					promise resolveWith: dialog]];
 		open.

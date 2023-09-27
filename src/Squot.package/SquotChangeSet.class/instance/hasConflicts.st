@@ -1,3 +1,3 @@
 accessing
 hasConflicts
-	self subclassResponsibility.
+	^ self changes anySatisfy: #hasConflicts

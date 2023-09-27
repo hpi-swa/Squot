@@ -1,3 +1,3 @@
 accessing
-hasConflict
+hasConflicts
 	^ self isResolved not

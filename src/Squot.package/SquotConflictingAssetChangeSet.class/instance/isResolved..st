@@ -1,4 +1,6 @@
 accessing
 isResolved: aBoolean
 	isResolved := aBoolean.
-	self changed: #isResolved.
+	self
+		changed: #isResolved;
+		changed: #hasConflicts.

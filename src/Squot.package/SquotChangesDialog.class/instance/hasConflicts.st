@@ -1,3 +1,3 @@
 accessing
 hasConflicts
-	^ self changeSets anySatisfy: #hasConflicts
+	^ self changes anySatisfy: #hasConflicts

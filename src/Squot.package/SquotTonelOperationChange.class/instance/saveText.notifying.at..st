@@ -10,5 +10,7 @@ saveText: aText notifying: requestor at: aNumber
 	newOperation := self operation isModification
 						ifTrue: [MCModification of: self fromDefinition to: newDefinition]
 						ifFalse: [MCAddition of: newDefinition].
-	self operation: newOperation.
-	self isInEditMode: false.
+	self
+		operation: newOperation;
+		isInEditMode: false;
+		markAsEdited.

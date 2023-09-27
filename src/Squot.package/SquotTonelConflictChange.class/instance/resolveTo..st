@@ -1,5 +1,7 @@
 resolving
 resolveTo: aDefinition
-	self isResolved: true.
-	self resolution: aDefinition.
-	self isInEditMode: false.
+	self
+		isResolved: true;
+		resolution: aDefinition;
+		isInEditMode: false;
+		markAsEdited.

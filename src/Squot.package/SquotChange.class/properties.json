@@ -6,7 +6,8 @@
 		 ],
 	"commentStamp" : "",
 	"instvars" : [
-		"changeSet" ],
+		"changeSet",
+		"wasEdited" ],
 	"name" : "SquotChange",
 	"pools" : [
 		 ],

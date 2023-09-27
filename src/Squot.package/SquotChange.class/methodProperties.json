@@ -11,6 +11,7 @@
 		"hasConflicts" : "mad 9/27/2023 16:05",
 		"hasIncludedConflicts" : "mad 9/27/2023 16:10",
 		"include" : "mad 9/7/2023 15:28",
+		"initialize" : "mad 9/27/2023 16:30",
 		"isChange" : "mad 9/5/2023 22:49",
 		"isExcluded" : "mad 9/7/2023 15:28",
 		"isIncluded" : "mad 9/10/2023 14:33",
@@ -18,6 +19,9 @@
 		"keyStroke:" : "mad 9/26/2023 17:06",
 		"label" : "mad 9/10/2023 19:21",
 		"mapper" : "mad 9/5/2023 22:45",
+		"markAsEdited" : "mad 9/27/2023 16:31",
 		"path" : "mad 9/5/2023 22:48",
 		"printOn:" : "mad 9/10/2023 19:23",
-		"toggleExcluded" : "mad 9/7/2023 15:30" } }
+		"toggleExcluded" : "mad 9/7/2023 15:30",
+		"wasEdited" : "mad 9/27/2023 16:30",
+		"wasEdited:" : "mad 9/27/2023 16:29" } }

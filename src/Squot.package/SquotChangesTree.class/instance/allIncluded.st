@@ -1,4 +1,3 @@
 accessing
 allIncluded
-	self recursiveChildrenDo: [:each | each isIncluded ifFalse: [^ false]].
-	^ true
+	^ self allChildrenSatisfy: #isIncluded

@@ -1,0 +1,3 @@
+ui
+formatEditedLabel: aTextOrString
+	^ aTextOrString, ' *'

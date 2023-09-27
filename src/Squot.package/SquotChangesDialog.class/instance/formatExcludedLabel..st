@@ -1,3 +1,3 @@
 ui
-formatExcludedLabel: aString
-	^ SquotTextUtilities colorText: '( ', aString, ' )' with: self excludedColor
+formatExcludedLabel: aTextOrString
+	^ SquotTextUtilities colorText: '( ' asText, aTextOrString, ' )' with: self excludedColor

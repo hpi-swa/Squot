@@ -1,5 +1,5 @@
-paths
-commonPathOf: aPath and: anotherPath
+common-prefix
+commonPrefixOf: aPath and: anotherPath
 	| segments |
 	segments := OrderedCollection new.
 	1 to: (aPath size min: anotherPath size) do: [:index |

@@ -1,0 +1,3 @@
+paths
+defaultPath
+	^ FSPath root

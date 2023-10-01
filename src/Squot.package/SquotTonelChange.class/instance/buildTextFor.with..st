@@ -6,6 +6,6 @@ buildTextFor: aNumber with: builder
 		setText: #saveText:notifying:;
 		help: (self helpFor: aNumber);
 		stylerClass: (self stylerClassFor: aNumber);
-		verticalResizing: (self verticalResizingFor: aNumber);
+		verticalResizing: #shrinkWrap;
 		readOnly: self isReadOnly;
 		yourself

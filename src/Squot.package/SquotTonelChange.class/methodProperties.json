@@ -3,7 +3,7 @@
 		 },
 	"instance" : {
 		"aboutToStyle:requestor:at:" : "mad 9/13/2023 13:48",
-		"buildTextFor:with:" : "mad 9/14/2023 14:06",
+		"buildTextFor:with:" : "mad 10/1/2023 17:51",
 		"buildTexts:" : "mad 9/14/2023 14:06",
 		"definitionAsSources:" : "mad 9/12/2023 16:26",
 		"dependentTextMorphs" : "mad 9/13/2023 12:22",
@@ -27,5 +27,4 @@
 		"sources:at:" : "mad 9/13/2023 13:16",
 		"sourcesSize" : "mad 9/12/2023 16:26",
 		"stylerClassFor:" : "mad 9/13/2023 13:40",
-		"toggleEditMode" : "mad 9/12/2023 14:48",
-		"verticalResizingFor:" : "mad 9/13/2023 13:20" } }
+		"toggleEditMode" : "mad 9/12/2023 14:48" } }

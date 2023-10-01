@@ -1,5 +1,5 @@
-as yet unclassified
+toolbuilder
 buildWith: builder
-	^ (SquotGUIUtilities buildText: (self diffText) with: builder)
+	^ (SquotGUIUtilities buildShrinkWrapText: (self diffText) with: builder)
 		readOnly: true;
 		yourself

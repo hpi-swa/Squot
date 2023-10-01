@@ -4,8 +4,8 @@ cloneFrom: aStringOrUrl
 	url := aStringOrUrl asUrl.
 	self addRemote: 'origin' url: aStringOrUrl.
 	remoteRefs := self fetchFrom: 'origin'.
-	head := (((remoteRefs at: #capabilities ifAbsent: [#()]) detect: [:each | each beginsWith: 'symref=HEAD:'] ifNone: [':']) splitBy: ':') second.
-	head ifNotEmpty: [self unitOfWork updateHeadToRef: head message: 'clone: from ', url].
+	head := self remoteHead: remoteRefs.
+	head ifNotNil: [self unitOfWork updateHeadToRef: head message: 'clone: from ', url].
 	self unitOfWork allReferencesPrefixedWith: 'refs/remotes/origin/'
 		do: [:each | | branchName |
 			branchName := each allButFirst: 'refs/remotes/origin/' size.

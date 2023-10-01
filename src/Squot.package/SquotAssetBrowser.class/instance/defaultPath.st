@@ -1,3 +1,3 @@
 paths
 defaultPath
-	^ FSPath root
+	^ FSPath / 'assets'

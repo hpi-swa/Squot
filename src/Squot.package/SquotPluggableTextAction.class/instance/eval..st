@@ -1,3 +1,3 @@
-as yet unclassified
+evaluating
 eval: argumentsCollection
 	^ evalBlock valueWithEnoughArguments: argumentsCollection

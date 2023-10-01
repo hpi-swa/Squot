@@ -1,4 +1,4 @@
-as yet unclassified
+encodings
 compatibleMappersFromStream: aStream
 	^ self validEncodings gather: [:each | | mapper |
 		mapper := self new

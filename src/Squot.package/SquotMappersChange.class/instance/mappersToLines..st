@@ -1,3 +1,3 @@
-as yet unclassified
+accessing
 mappersToLines: aCollection
 	^ (aCollection collect: #name) sorted

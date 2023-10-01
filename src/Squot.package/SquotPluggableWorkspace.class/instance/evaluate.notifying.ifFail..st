@@ -1,4 +1,4 @@
-as yet unclassified
+evaluation
 evaluate: aString notifying: requestor ifFail: aBlock
 	^ self class evaluatorClass new
 		evaluate: aString

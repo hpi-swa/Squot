@@ -1,4 +1,4 @@
-as yet unclassified
+instance creation
 openOnWorkingCopy: aWorkingCopy
 	^ (self onWorkingCopy: aWorkingCopy)
 		open

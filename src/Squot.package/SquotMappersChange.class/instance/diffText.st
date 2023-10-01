@@ -1,4 +1,4 @@
-as yet unclassified
+accessing
 diffText
 	^ SquotTextUtilities
 		diffFromLines: self oldMapperLines

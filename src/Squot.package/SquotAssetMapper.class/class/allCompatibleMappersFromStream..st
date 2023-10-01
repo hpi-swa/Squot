@@ -1,4 +1,4 @@
-as yet unclassified
+encodings
 allCompatibleMappersFromStream: aStream
 	^ self assetMapperClasses gather: [:each |
 		aStream reset.

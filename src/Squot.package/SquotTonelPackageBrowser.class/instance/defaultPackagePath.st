@@ -1,0 +1,3 @@
+paths
+defaultPackagePath
+	^ FSPath / 'src'

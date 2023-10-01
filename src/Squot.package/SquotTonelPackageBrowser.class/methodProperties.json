@@ -3,7 +3,7 @@
 		"onWorkingCopy:" : "mad 9/19/2023 15:45",
 		"openOnWorkingCopy:" : "mad 9/19/2023 15:47" },
 	"instance" : {
-		"actionAddPackage" : "mad 9/20/2023 17:31",
+		"actionAddPackage" : "mad 10/1/2023 17:57",
 		"actionEditPackagePath" : "mad 9/20/2023 19:28",
 		"actionRemovePackage" : "mad 9/20/2023 17:31",
 		"buildAddPackageButton:" : "mad 9/19/2023 16:23",
@@ -17,6 +17,8 @@
 		"buildUnmappedPackageList:" : "mad 9/19/2023 15:52",
 		"buildWindow:" : "mad 9/19/2023 16:11",
 		"buildWith:" : "mad 9/19/2023 15:46",
+		"commonPackagePathPrefix" : "mad 10/1/2023 17:57",
+		"defaultPackagePath" : "mad 10/1/2023 17:56",
 		"isSelectedPackageMapped" : "mad 9/19/2023 16:23",
 		"isSelectedPackageUnmapped" : "mad 9/19/2023 16:23",
 		"mappedPackageList" : "mad 9/19/2023 15:55",

@@ -1,6 +1,6 @@
 changes-creation
 changeSetFromMappers: aCollection toMappers: anotherCollection
-	(aCollection sameElements: anotherCollection) ifTrue: [
+	(aCollection asSet = anotherCollection asSet) ifTrue: [
 		^ SquotEmptyChangeSet withMapper: self].
 	^ SquotMappersChangeSet
 		withMapper: self

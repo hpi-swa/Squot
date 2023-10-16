@@ -1,0 +1,3 @@
+refs
+headRefBasename
+	^ 'HEAD'

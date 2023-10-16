@@ -5,7 +5,7 @@
 		"withTitle:" : "mad 9/21/2023 17:52",
 		"withTitle:name:url:" : "mad 9/21/2023 17:52" },
 	"instance" : {
-		"accept" : "mad 9/21/2023 18:14",
+		"accept" : "mad 10/16/2023 20:19",
 		"accepted" : "mad 9/21/2023 18:15",
 		"accepted:" : "mad 9/21/2023 18:15",
 		"buildButtons:" : "mad 9/21/2023 17:47",
@@ -17,6 +17,7 @@
 		"buildRemoteNameInput:" : "mad 9/21/2023 18:20",
 		"buildRemoteUrlInput:" : "mad 10/16/2023 20:16",
 		"buildWith:" : "mad 9/21/2023 17:48",
+		"checkValidRemoteName" : "mad 10/16/2023 20:20",
 		"close" : "mad 9/21/2023 17:43",
 		"getRemote" : "mad 9/21/2023 17:49",
 		"open" : "mad 9/21/2023 18:17",

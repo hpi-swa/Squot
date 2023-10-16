@@ -5,5 +5,5 @@ buildRemoteUrlInput: builder
 		getText: #remoteUrl;
 		editText: #remoteUrl:;
 		setText: #remoteUrl:;
-		help: 'URL';
+		help: 'URL (https)';
 		yourself

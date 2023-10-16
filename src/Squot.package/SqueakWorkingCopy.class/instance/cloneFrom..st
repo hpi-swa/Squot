@@ -8,5 +8,5 @@ cloneFrom: aStringOrUrl
 			branchName := head allButFirst: 'refs/heads/' size.
 			trackingRef := remote trackingRefOf: head.
 			commit := self unitOfWork objectReferenced: trackingRef.
-			branch := self createBranchNamed: branchName at: commit.
+			branch := (self createBranchNamed: branchName at: commit) ifNil: [^ self].
 			self updateHeadToRef: branch]].

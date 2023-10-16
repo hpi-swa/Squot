@@ -5,4 +5,5 @@ printOn: aStream
 		nextPutAll: self package name;
 		nextPutAll: ' at ';
 		nextPutAll: (SquotPathUtilities asString: self path);
-		nextPutAll: ' encoded using Tonel'.
+		nextPutAll: ' encoded using ';
+		nextPutAll: self encodingName.

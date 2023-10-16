@@ -1,5 +1,5 @@
 {
-	"category" : "Squot-Mapper-Tonel",
+	"category" : "Squot-Mapper-Code",
 	"classinstvars" : [
 		 ],
 	"classvars" : [
@@ -10,8 +10,8 @@
 		"conflict",
 		"resolution",
 		"isResolved" ],
-	"name" : "SquotTonelConflictChange",
+	"name" : "SquotCodeConflictChange",
 	"pools" : [
 		 ],
-	"super" : "SquotTonelChange",
+	"super" : "SquotCodeChange",
 	"type" : "normal" }

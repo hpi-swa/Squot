@@ -6,11 +6,9 @@
 		 ],
 	"commentStamp" : "",
 	"instvars" : [
-		"left",
-		"right",
-		"base" ],
-	"name" : "SquotMergeConflict",
+		 ],
+	"name" : "SquotThreewayCodeMerger",
 	"pools" : [
 		 ],
-	"super" : "Object",
+	"super" : "MCThreeWayMerger",
 	"type" : "normal" }

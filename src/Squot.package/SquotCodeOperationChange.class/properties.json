@@ -1,14 +1,14 @@
 {
-	"category" : "Squot-Mapper-Tonel",
+	"category" : "Squot-Mapper-Code",
 	"classinstvars" : [
 		 ],
 	"classvars" : [
 		 ],
 	"commentStamp" : "",
 	"instvars" : [
-		 ],
-	"name" : "SquotThreewayMerger",
+		"operation" ],
+	"name" : "SquotCodeOperationChange",
 	"pools" : [
 		 ],
-	"super" : "MCThreeWayMerger",
+	"super" : "SquotCodeChange",
 	"type" : "normal" }

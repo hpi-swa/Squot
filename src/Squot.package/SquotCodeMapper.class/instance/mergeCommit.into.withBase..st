@@ -1,7 +1,7 @@
 merging
 mergeCommit: rightFSCommit into: leftFSCommit withBase: baseFSCommit
 	| merger |
-	merger := [SquotThreewayMerger
+	merger := [SquotThreewayCodeMerger
 		base: (self loadSnapshotFrom: leftFSCommit filesystem)
 		target: (self loadSnapshotFrom: rightFSCommit filesystem)
 		ancestor: (self loadSnapshotFrom: baseFSCommit filesystem)]
@@ -9,7 +9,7 @@ mergeCommit: rightFSCommit into: leftFSCommit withBase: baseFSCommit
 			do: #resume.
 	(merger operations isEmpty and: [merger conflicts isEmpty])
 		ifTrue: [^ SquotEmptyChangeSet withMapper: self].
-	^ SquotTonelChangeSet
+	^ SquotCodeChangeSet
 		withMapper: self
 		operations: merger operations
 		conflicts: merger conflicts

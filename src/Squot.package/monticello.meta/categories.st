@@ -39,5 +39,5 @@ SystemOrganization addCategory: #'Squot-Mapper-Browser'!
 SystemOrganization addCategory: #'Squot-Mapper-Asset'!
 SystemOrganization addCategory: #'Squot-Mapper-Image'!
 SystemOrganization addCategory: #'Squot-Mapper-Sound'!
-SystemOrganization addCategory: #'Squot-Mapper-Tonel'!
+SystemOrganization addCategory: #'Squot-Mapper-Code'!
 SystemOrganization addCategory: #'Squot-Mapper-Utilities'!

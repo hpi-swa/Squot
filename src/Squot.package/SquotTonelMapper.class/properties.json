@@ -1,16 +1,14 @@
 {
-	"category" : "Squot-Mapper-Tonel",
+	"category" : "Squot-Mapper-Code",
 	"classinstvars" : [
 		 ],
 	"classvars" : [
 		 ],
 	"commentStamp" : "",
 	"instvars" : [
-		"package",
-		"path",
 		"writeTimestamps" ],
 	"name" : "SquotTonelMapper",
 	"pools" : [
 		 ],
-	"super" : "SquotMapper",
+	"super" : "SquotCodeMapper",
 	"type" : "normal" }

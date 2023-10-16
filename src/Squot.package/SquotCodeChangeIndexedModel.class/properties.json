@@ -1,14 +1,15 @@
 {
-	"category" : "Squot-Mapper-Tonel",
+	"category" : "Squot-Mapper-Code",
 	"classinstvars" : [
 		 ],
 	"classvars" : [
 		 ],
 	"commentStamp" : "",
 	"instvars" : [
-		"changes" ],
-	"name" : "SquotTonelChangeSet",
+		"change",
+		"index" ],
+	"name" : "SquotCodeChangeIndexedModel",
 	"pools" : [
 		 ],
-	"super" : "SquotChangeSet",
+	"super" : "Object",
 	"type" : "normal" }

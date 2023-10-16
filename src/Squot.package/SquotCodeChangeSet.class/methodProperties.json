@@ -4,8 +4,8 @@
 		"withMapper:operations:conflicts:" : "mad 9/7/2023 19:55",
 		"withMapper:patch:" : "mad 9/7/2023 16:02" },
 	"instance" : {
-		"addConflicts:" : "mad 9/7/2023 19:56",
-		"addOperations:" : "mad 9/7/2023 16:34",
+		"addConflicts:" : "mad 10/16/2023 17:19",
+		"addOperations:" : "mad 10/16/2023 17:19",
 		"addPatch:" : "mad 9/7/2023 16:04",
 		"changes" : "mad 9/7/2023 16:05",
 		"changes:" : "mad 9/7/2023 16:05",
@@ -15,6 +15,5 @@
 		"package" : "mad 9/6/2023 19:18",
 		"patch" : "mad 9/7/2023 16:03",
 		"path" : "mad 9/6/2023 19:17",
-		"serializeInto:" : "mad 9/26/2023 15:25",
-		"writeTimestamps" : "mad 9/26/2023 15:21",
+		"serializeInto:" : "mad 10/16/2023 17:25",
 		"writerOn:" : "mad 9/26/2023 15:25" } }

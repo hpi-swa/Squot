@@ -1,3 +1,3 @@
 accessing
-remoteName: aString
-	remoteName := aString
+remoteName: aStringOrText
+	remoteName := aStringOrText asString

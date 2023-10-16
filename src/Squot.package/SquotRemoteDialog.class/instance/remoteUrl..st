@@ -1,3 +1,3 @@
 accessing
-remoteUrl: aString
-	remoteUrl := aString
+remoteUrl: aStringOrText
+	remoteUrl := aStringOrText asString

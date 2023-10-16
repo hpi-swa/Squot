@@ -5,7 +5,7 @@ squotCopyWithSources: aCollection notifying: requestor ifFail: aBlock
 	[Parser new "check syntax"
 		parse: source
 		class: ProtoObject
-		noPattern: false
+		noPattern: true
 		notifying: requestor
 		ifFail: [^ aBlock value: 'failed to parse the source']]
 		on: UndeclaredVariable

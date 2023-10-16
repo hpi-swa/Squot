@@ -1,0 +1,3 @@
+actions
+actionSelfUpdateSetBranch
+	self class requestNewSelfUpdateBranch.

@@ -17,6 +17,7 @@
 		"requestUnregisteredName" : "mad 9/19/2023 12:02",
 		"unregister:" : "mad 9/21/2023 12:00" },
 	"instance" : {
+		"actionAddRemote" : "mad 10/16/2023 20:49",
 		"addMapper:" : "mad 9/20/2023 17:30",
 		"allEmpty:" : "mad 9/19/2023 15:24",
 		"allReferences" : "mad 9/13/2023 21:23",
@@ -31,7 +32,7 @@
 		"changeSetsFromImageToCommit:" : "mad 9/6/2023 19:29",
 		"changeSetsFromImageToFSCommit:" : "mad 9/20/2023 12:44",
 		"checkoutReflogMessageTo:" : "mad 6/4/2023 16:47",
-		"chooseRemoteName" : "mad 9/26/2023 16:52",
+		"chooseRemoteName" : "mad 10/16/2023 20:48",
 		"cloneFrom:" : "mad 10/1/2023 17:02",
 		"commitChangeSets:message:additionalParents:" : "mad 9/17/2023 18:17",
 		"commitChangeSets:onCommit:message:additionalParents:" : "mad 9/18/2023 17:29",

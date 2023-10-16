@@ -8,12 +8,11 @@ mergeCommitIntoHead: aCommit displayName: aString
 		[0] -> [^ self inform: 'Cannot merge unrelated histories.'].
 		[1] -> [mergeBases anyOne].
 	} otherwise: [^ self inform: 'Found multiple merge bases. Recursive merging is currently unsupported.'].
+	mergeBase = aCommit ifTrue: [^ self inform: 'Already up to date.'].
 	mergeBase = head ifTrue: [
 		self inform: 'Fast-forwarding.'.
 		^ self openDialogToMaterializeHead then:
 			[:dialog | self activeWorkingCopy fastForwardTo: aCommit displayName: aString]].
-	mergeBase = aCommit ifTrue: [
-		^ self inform: 'Already up to date.'].
 	changeSets := self activeWorkingCopy
 						mergeCommit: aCommit
 						into: head

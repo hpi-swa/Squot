@@ -8,6 +8,6 @@ evaluate: aString notifying: requestor
 	(self isValidVersion: version) ifFalse: [
 		self inform: 'evaluation did not produce a ', self versionTypeName.
 		^ false].
-	self version: version.
+	self version: (self transformVersion: version ifFail: [^ false]).
 	self addBindings.
 	^ true

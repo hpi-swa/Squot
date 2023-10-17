@@ -1,3 +1,7 @@
 changes-operations
 serialize: aSnapshot into: aFileSystem
-	(self writerOn: aFileSystem) writeSnapshot: aSnapshot.
+	| writer |
+	writer := (self writerOn: aFileSystem).
+	aSnapshot definitions
+		ifEmpty: [writer packageDir deleteAll]
+		ifNotEmpty: [writer writeSnapshot: aSnapshot].

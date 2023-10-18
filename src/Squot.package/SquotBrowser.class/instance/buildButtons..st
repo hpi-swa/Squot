@@ -6,4 +6,5 @@ buildButtons: builder
 		self buildPushButton: builder.
 		self buildFetchAllButton: builder.
 		self buildBranchButton: builder.
+		self buildOtherButton: builder.
 	} with: builder

@@ -3,7 +3,7 @@
 		"gitIcon" : "mad 9/19/2023 15:03",
 		"initialize" : "mad 9/21/2023 18:47",
 		"open" : "mad 9/19/2023 12:44",
-		"registerInWorldMenu" : "mad 9/19/2023 13:47",
+		"registerInWorldMenu" : "mad 10/18/2023 15:14",
 		"requestNewSelfUpdateBranch" : "mad 10/16/2023 23:12",
 		"selfUpdate" : "mad 10/16/2023 23:12",
 		"selfUpdater" : "mad 10/16/2023 23:13",
@@ -86,5 +86,5 @@
 		"update:" : "mad 9/20/2023 15:35",
 		"validateDialogHasNoConflicts:before:" : "mad 9/27/2023 16:11",
 		"validateDialogState:andOriginalHeadCommit:before:" : "mad 9/19/2023 12:37",
-		"windowTitle" : "mad 8/31/2023 12:25",
+		"windowTitle" : "mad 10/18/2023 15:14",
 		"withUnitOfWork:" : "mad 9/19/2023 12:37" } }

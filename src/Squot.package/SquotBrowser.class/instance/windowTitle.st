@@ -1,3 +1,3 @@
 ui
 windowTitle
-	^ 'Squot Browser'
+	^ 'Git Browser'

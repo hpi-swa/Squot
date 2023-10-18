@@ -1,3 +1,6 @@
 self-update
 selfUpdate
-	self selfUpdater selfUpdate.
+	Metacello new
+		baseline: 'Squot';
+		repository: 'github://hpi-swa/Squot:mapper/src';
+		get; load.

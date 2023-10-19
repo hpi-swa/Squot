@@ -1,5 +1,7 @@
 {
 	"class" : {
+		"canReadAIFFStream:" : "mad 10/19/2023 12:51",
+		"canReadWAVStream:" : "mad 10/19/2023 13:00",
 		"fromAIFFStream:" : "mad 9/20/2023 17:52",
 		"fromWAVStream:" : "mad 9/20/2023 17:54" },
 	"instance" : {

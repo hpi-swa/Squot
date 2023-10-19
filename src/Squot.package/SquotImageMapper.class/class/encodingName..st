@@ -1,3 +1,3 @@
 encodings
 encodingName: anImageReadWriterClass
-	^ anImageReadWriterClass name
+	^ anImageReadWriterClass squotEncodingName

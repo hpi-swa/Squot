@@ -11,7 +11,7 @@ mergeCommitIntoHead: aCommit displayName: aString
 	mergeBase = aCommit ifTrue: [^ self inform: 'Already up to date.'].
 	mergeBase = head ifTrue: [
 		self inform: 'Fast-forwarding.'.
-		^ self openDialogToMaterializeHead then:
+		^ (self openDialogToMaterializeCommit: aCommit) then:
 			[:dialog | self activeWorkingCopy fastForwardTo: aCommit displayName: aString]].
 	changeSets := self activeWorkingCopy
 						mergeCommit: aCommit

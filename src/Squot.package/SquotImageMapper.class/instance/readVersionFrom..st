@@ -1,3 +1,3 @@
 version-io
 readVersionFrom: aStream
-	^ ImageReadWriter formFromStream: aStream
+	^ (self writerClass on: aStream) nextImage

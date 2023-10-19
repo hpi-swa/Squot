@@ -1,0 +1,15 @@
+{
+	"category" : "Squot-Mapper-Asset",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"workingCopy",
+		"basePath" ],
+	"name" : "GitAssetLoader",
+	"pools" : [
+		 ],
+	"super" : "Model",
+	"type" : "normal" }

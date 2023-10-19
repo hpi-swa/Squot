@@ -1,3 +1,3 @@
 paths
 defaultPath
-	^ FSPath / 'assets'
+	^ self class defaultPath

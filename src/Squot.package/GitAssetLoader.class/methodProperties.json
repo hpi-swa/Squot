@@ -1,0 +1,17 @@
+{
+	"class" : {
+		"forProject:" : "mad 10/19/2023 12:17",
+		"forWorkingCopy:" : "mad 10/19/2023 12:17" },
+	"instance" : {
+		"assetAt:" : "mad 10/19/2023 12:15",
+		"basePath" : "mad 10/19/2023 12:14",
+		"basePath:" : "mad 10/19/2023 12:14",
+		"initialize" : "mad 10/19/2023 12:08",
+		"loadAsset:" : "mad 10/19/2023 13:58",
+		"loadAsset:ofType:" : "mad 10/19/2023 13:58",
+		"loadForm:" : "mad 10/19/2023 13:58",
+		"loadImageMorph:" : "mad 10/19/2023 13:58",
+		"loadSound:" : "mad 10/19/2023 13:58",
+		"nameToPath:" : "mad 10/19/2023 14:02",
+		"workingCopy" : "mad 10/19/2023 12:14",
+		"workingCopy:" : "mad 10/19/2023 12:14" } }

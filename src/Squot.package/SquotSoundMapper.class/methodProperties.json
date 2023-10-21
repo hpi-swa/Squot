@@ -8,9 +8,9 @@
 		"wavEncoding" : "mad 9/20/2023 17:58" },
 	"instance" : {
 		"canReadVersionFrom:" : "mad 10/19/2023 12:56",
-		"isValidVersion:" : "mad 9/20/2023 14:49",
+		"isValidVersion:" : "mad 10/21/2023 21:33",
 		"readVersionFrom:" : "mad 10/17/2023 12:22",
 		"transformVersion:ifFail:" : "mad 10/17/2023 12:33",
 		"versionAsMorph:" : "mad 9/21/2023 12:37",
-		"versionTypeName" : "mad 9/20/2023 15:02",
+		"versionTypeName" : "mad 10/21/2023 22:28",
 		"writeVersion:on:" : "mad 9/20/2023 17:57" } }

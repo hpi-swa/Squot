@@ -1,3 +1,3 @@
 ui
 isValidVersion: anObject
-	^ anObject isNil or: [anObject isKindOf: AbstractSound]
+	^ anObject isKindOf: AbstractSound

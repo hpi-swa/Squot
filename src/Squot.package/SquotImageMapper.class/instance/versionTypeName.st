@@ -1,3 +1,3 @@
 ui
 versionTypeName
-	^ 'Form or nil'
+	^ 'Form'

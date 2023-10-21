@@ -1,3 +1,3 @@
 ui
 versionTypeName
-	^ 'Sound or nil'
+	^ 'Sound'

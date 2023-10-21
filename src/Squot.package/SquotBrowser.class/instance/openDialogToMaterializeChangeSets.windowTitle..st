@@ -3,7 +3,7 @@ openDialogToMaterializeChangeSets: changeSetCollection
 windowTitle: titleString
 	| workingCopy promise dialog |
 	workingCopy := self activeWorkingCopyIfNilInformAnd: [^ Promise new "never resolves"].
-	(workingCopy allEmpty: changeSetCollection) ifTrue: [
+	(SquotChangeSet allEmpty: changeSetCollection) ifTrue: [
 		self inform: 'No changes to materialize.'.
 		^ Promise unit: nil].
 	promise := Promise new.

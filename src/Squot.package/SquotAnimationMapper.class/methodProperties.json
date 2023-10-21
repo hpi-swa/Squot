@@ -1,0 +1,15 @@
+{
+	"class" : {
+		"assetTypeName" : "mad 10/21/2023 21:36",
+		"defaultEncoding" : "mad 10/21/2023 21:35",
+		"encodingName:" : "mad 10/19/2023 11:54",
+		"validEncodings" : "mad 10/21/2023 21:35" },
+	"instance" : {
+		"canReadVersionFrom:" : "mad 10/19/2023 12:55",
+		"isValidVersion:" : "mad 10/21/2023 22:17",
+		"readVersionFrom:" : "mad 10/21/2023 22:17",
+		"versionAsMorph:" : "mad 10/21/2023 22:19",
+		"versionTypeName" : "mad 10/21/2023 22:18",
+		"writeVersion:on:" : "mad 10/21/2023 21:39",
+		"writerClass" : "mad 9/20/2023 18:42",
+		"writerClass:" : "mad 9/20/2023 20:01" } }

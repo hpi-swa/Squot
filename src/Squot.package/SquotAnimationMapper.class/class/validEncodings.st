@@ -1,0 +1,3 @@
+encodings
+validEncodings
+	^ {self defaultEncoding}

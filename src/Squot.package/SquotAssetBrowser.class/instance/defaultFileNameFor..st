@@ -1,5 +1,6 @@
 requests
 defaultFileNameFor: anAssetMapperClass
-	^ (anAssetMapperClass assetTypeName,
+	^ self formatFileName:
+		anAssetMapperClass assetTypeName,
 		FSPath extensionDelimiter,
-		anAssetMapperClass defaultEncodingName) asLowercase
+		anAssetMapperClass defaultEncodingName

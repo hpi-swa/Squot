@@ -1,0 +1,3 @@
+accessing
+mappedPaths
+	^ {self packagePath}

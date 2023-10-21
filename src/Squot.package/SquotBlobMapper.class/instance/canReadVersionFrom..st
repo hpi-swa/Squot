@@ -1,0 +1,3 @@
+testing
+canReadVersionFrom: aStream
+	^ true

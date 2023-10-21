@@ -1,0 +1,3 @@
+encodings
+encodingName: aString
+	^ aString

@@ -1,0 +1,14 @@
+{
+	"category" : "Squot-Mapper-Blob",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "SquotBlobMapper",
+	"pools" : [
+		 ],
+	"super" : "SquotAssetMapper",
+	"type" : "normal" }

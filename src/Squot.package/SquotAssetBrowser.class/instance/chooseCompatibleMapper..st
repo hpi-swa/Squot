@@ -1,13 +1,19 @@
 importing
 chooseCompatibleMapper: aReference
-	| mappers |
+	| mappers nonGenericMappers |
 	mappers := SquotAssetMapper allCompatibleMappersFromStream: aReference readStream.
-	^ mappers size caseOf: {
+	nonGenericMappers := mappers reject: #isGeneric.
+	^ nonGenericMappers size caseOf: {
 		[0] -> [
-			self inform: ('Cannot import {1}: Unknown file format.' format: {aReference}).
-			nil].
+			mappers
+				ifEmpty: [self inform: ('Cannot import {1}: Unknown file format.' format: {aReference}). nil]
+				ifNotEmpty: [self
+								chooseFromMappers: mappers 
+								title:
+									('Unknown file format: {1}. You can import it as one of these ',
+									'generic asset types (or cancel to stop the import of this file):'
+										format: {aReference})]].
 		[1] -> [mappers first].
-	} otherwise: [
-		UIManager default
-			chooseFrom: (mappers collect: #name)
-			values: mappers]
+	} otherwise: [self
+					chooseFromMappers: nonGenericMappers
+					title: ('As which type of asset should {1} be imported?' format: {aReference})]

@@ -1,11 +1,12 @@
 {
 	"class" : {
-		"assetTypeName" : "mad 10/21/2023 21:17",
+		"assetTypeName" : "mad 10/21/2023 22:48",
 		"defaultEncoding" : "mad 10/21/2023 21:21",
 		"encodingName:" : "mad 10/21/2023 21:21",
 		"validEncodings" : "mad 10/21/2023 21:15" },
 	"instance" : {
 		"canReadVersionFrom:" : "mad 10/21/2023 21:06",
+		"isGeneric" : "mad 10/21/2023 22:47",
 		"isValidVersion:" : "mad 10/21/2023 21:06",
 		"printOn:" : "mad 10/21/2023 21:22",
 		"printWithoutPathOn:" : "mad 10/21/2023 21:47",

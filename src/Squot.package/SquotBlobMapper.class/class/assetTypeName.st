@@ -1,3 +1,3 @@
 accessing
 assetTypeName
-	^ 'Blob'
+	^ 'Generic binary file'

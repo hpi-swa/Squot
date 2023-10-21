@@ -1,0 +1,15 @@
+{
+	"category" : "Squot-Mapper",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"mappedPaths",
+		"block" ],
+	"name" : "SquotUnmappedReferencesVisitor",
+	"pools" : [
+		 ],
+	"super" : "FSGuide",
+	"type" : "normal" }

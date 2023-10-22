@@ -5,9 +5,13 @@ conflictLines: aConflict on: aStream
 			({(SquotTextUtilities monospace: self conflictMarkerLeft), ' current'},
 			aConflict left).
 		self baseColor ->
-			({(SquotTextUtilities monospace: self conflictMarkerBase), ' base'},
-			aConflict original,
-			{SquotTextUtilities monospace: self conflictMarkerSeparator}).
+			(SquotPreferences showBase
+				ifTrue: [
+					{(SquotTextUtilities monospace: self conflictMarkerBase), ' base'},
+					aConflict original,
+					{SquotTextUtilities monospace: self conflictMarkerSeparator}]
+				ifFalse: [
+					{SquotTextUtilities monospace: self conflictMarkerSeparator}]).
 		self rightColor ->
 			(aConflict right,
 			{(SquotTextUtilities monospace: self conflictMarkerRight), ' incoming'}).

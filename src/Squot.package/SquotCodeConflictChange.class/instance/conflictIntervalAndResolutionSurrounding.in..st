@@ -24,16 +24,16 @@ conflictIntervalAndResolutionSurrounding: lineIndex in: source
 				ifTrue: [resolutionStart := nextLineStart]
 				ifFalse: [resolutionEnd ifNil: [resolutionEnd := previousLineEnd]]].
 		(line beginsWith: self conflictMarkerRight) ifTrue: [
-			lineIndex <= currentLineIndex ifTrue: [ | conflictEnd conflictInterval resolution newLine |
+			lineIndex <= currentLineIndex ifTrue: [ | conflictEnd conflictInterval resolution |
 				conflictStart ifNil: [^ nil].
 				self assert: (conflictStart notNil and: [resolutionStart notNil]).
-				conflictEnd := endIndexWithDelimiter.
+				conflictEnd := endIndexWithoutDelimiter.
 				resolutionEnd ifNil: [resolutionEnd := previousLineEnd].
+				resolution := resolutionStart - 1 <= resolutionEnd "- 1 to allow for a single empty line"
+								ifTrue: [source copyFrom: resolutionStart to: resolutionEnd]
+								"if there is no line, remove the line end after the conflict, too"
+								ifFalse: [conflictEnd := endIndexWithDelimiter. ''].
 				conflictInterval := Interval from: conflictStart to: conflictEnd.
-				resolution := source copyFrom: resolutionStart to: resolutionEnd.
-				"resolution is missing a new line at the end. Add it from the conflictMarkerRight line, if there is one."
-				newLine := source copyFrom: endIndexWithoutDelimiter + 1 to: endIndexWithDelimiter.
-				resolution := resolution, newLine.
 				^ conflictInterval -> resolution].
 			conflictStart := nil.
 			resolutionStart := nil.

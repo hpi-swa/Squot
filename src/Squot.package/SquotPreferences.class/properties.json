@@ -1,0 +1,14 @@
+{
+	"category" : "Squot-Mapper-Utilities",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		"ShowBase" ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "SquotPreferences",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }

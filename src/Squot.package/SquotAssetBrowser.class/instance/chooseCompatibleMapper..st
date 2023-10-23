@@ -13,7 +13,7 @@ chooseCompatibleMapper: aReference
 									('Unknown file format: {1}. You can import it as one of these ',
 									'generic asset types (or cancel to stop the import of this file):'
 										format: {aReference})]].
-		[1] -> [mappers first].
+		[1] -> [nonGenericMappers first].
 	} otherwise: [self
 					chooseFromMappers: nonGenericMappers
 					title: ('As which type of asset should {1} be imported?' format: {aReference})]

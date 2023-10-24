@@ -1,7 +1,7 @@
 ui
-saveText: aText notifying: requestor at: aNumber
+saveTexts: aCollection notifying: requestors
 	(self isResolved and: [self isInEditMode not]) ifTrue: [^ self inform: 'Please enter edit mode first'].
 	self resolveTo: (self someDefinition
-						squotCopyWithSources: (self sourcesWith: aText asString at: aNumber)
-						notifying: requestor
+						squotCopyWithSources: aCollection
+						notifying: requestors
 						ifFail: [:message | ^ self inform: 'Error: ', message asString]).

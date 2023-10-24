@@ -1,5 +1,5 @@
 *Squot-Mapper
-squotCopyWithSources: aCollection notifying: requestor ifFail: aBlock
+squotCopyWithSources: aCollection notifying: requestors ifFail: aBlock
 	| source comment stString definitions definition |
 	source := aCollection first.
 	comment := aCollection second.

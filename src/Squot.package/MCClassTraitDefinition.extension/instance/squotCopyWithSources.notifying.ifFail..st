@@ -1,5 +1,5 @@
 *Squot-Mapper
-squotCopyWithSources: aCollection notifying: requestor ifFail: aBlock
+squotCopyWithSources: aCollection notifying: requestors ifFail: aBlock
 	| definitions definition |
 	definitions := (MCStReader on: aCollection first readStream) definitions.
 	definitions size = 1 ifTrue: [^ aBlock value: 'expected to parse exactly one class trait definition'].

@@ -7,7 +7,9 @@
 	"commentStamp" : "",
 	"instvars" : [
 		"isExcluded",
-		"isInEditMode" ],
+		"isInEditMode",
+		"editedTexts",
+		"lastRequestors" ],
 	"name" : "SquotCodeChange",
 	"pools" : [
 		 ],

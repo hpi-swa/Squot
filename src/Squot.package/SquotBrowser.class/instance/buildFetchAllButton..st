@@ -3,6 +3,6 @@ buildFetchAllButton: builder
 	^ builder pluggableActionButtonSpec new
 		model: self;
 		action: #actionFetchAll;
-		label: 'Fetch All';
+		label: 'Fetch all';
 		help: 'Fetch from all remotes.';
 		yourself

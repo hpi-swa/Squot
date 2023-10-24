@@ -3,5 +3,5 @@ buildRemoveButton: builder
 	^ builder pluggableActionButtonSpec new
 		model: self;
 		action: #actionRemove;
-		label: 'Remove Asset';
+		label: 'Remove asset';
 		yourself

@@ -3,14 +3,14 @@ projectListMenu: aMenu
 	self activeWorkingCopy ifNotNil: [
 		aMenu
 			target: self;
-			add: 'remove this project' action: #actionRemoveActiveProject;
-			add: 'manage remotes'
+			add: 'Remove this project' action: #actionRemoveActiveProject;
+			add: 'Manage remotes'
 			target: SquotRemotesBrowser
 			selector: #openOnWorkingCopy:
 			argument: self activeWorkingCopy].
 	aMenu
 		target: self;
-		add: 'new project' action: #actionNewProject;
-		add: 'clone project' action: #actionCloneProject.
+		add: 'New project' action: #actionNewProject;
+		add: 'Clone project' action: #actionCloneProject.
 	self addMappersProjectListMenu: aMenu.
 	^ aMenu

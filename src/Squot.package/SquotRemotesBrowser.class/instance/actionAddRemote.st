@@ -1,3 +1,3 @@
 actions
 actionAddRemote
-	self addRemote: (SquotRemoteDialog getRemoteWithTitle: 'Add Remote').
+	self addRemote: (SquotRemoteDialog getRemoteWithTitle: 'Add remote').

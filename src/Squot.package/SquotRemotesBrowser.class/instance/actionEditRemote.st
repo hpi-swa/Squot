@@ -4,7 +4,7 @@ actionEditRemote
 	self withUnitOfWork: [| remote newRemote |
 		remote := self selectedRemote.
 		newRemote := SquotRemoteDialog
-							getRemoteWithTitle: 'Edit Remote'
+							getRemoteWithTitle: 'Edit remote'
 							name: remote name
 							url: remote url.
 		newRemote ifNotNil: [

@@ -1,7 +1,7 @@
 menu
 otherMenu: aMenuSpec
 	aMenuSpec
-		add: 'self-update'
+		add: 'Self-update'
 		target: self
 		selector: #actionSelfUpdate
 		argumentList: {}.

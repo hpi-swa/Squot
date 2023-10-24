@@ -23,7 +23,7 @@ materializeChangeSets: materializeBoolean
 						message: dialog message
 						additionalParents: commitCollection.
 					shouldMaterialize := materializeBoolean or: [
-						dialog wasEdited and: [self confirm: 'You edited some changes. Do you wish to materialize them?']].
+						dialog wasEdited and: [self confirm: 'You edited some changes. Do you wish to load them into the image?']].
 					shouldMaterialize ifTrue: [workingCopy materializeChangeSets: changeSetCollection].
 					dialog close.
 					promise resolveWith: dialog]];

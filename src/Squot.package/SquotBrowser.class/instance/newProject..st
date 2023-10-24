@@ -5,5 +5,5 @@ newProject: aWorkingCopy
 	self activeWorkingCopy: aWorkingCopy.
 	headCommit := aWorkingCopy headCommit.
 	headCommit ifNotNil: [
-		(self confirm: 'Do you want to materialize the current commit?') ifTrue: [
+		(self confirm: 'Do you want to load the current commit into the image?') ifTrue: [
 			self openDialogToMaterializeHead]].

@@ -3,8 +3,10 @@
 		 },
 	"instance" : {
 		"balloonText" : "mad 9/13/2023 21:49",
-		"icon" : "mad 9/19/2023 14:46",
+		"icon" : "mad 10/24/2023 17:21",
 		"isActive" : "mad 9/19/2023 14:13",
+		"isDetachedHead" : "mad 10/24/2023 17:22",
+		"isHead" : "mad 10/24/2023 17:22",
 		"isRemoteRef" : "mad 9/19/2023 14:36",
 		"isSqueakBranch" : "mad 9/19/2023 14:49",
 		"isSqueakRef" : "mad 9/19/2023 14:11",

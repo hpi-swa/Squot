@@ -1,3 +1,3 @@
 ui
 missingSources
-	^ (1 to: self sourcesSize) collect: [SquotTextUtilities italic: 'Missing']
+	^ self sourceIndices collect: [SquotTextUtilities italic: 'Missing']

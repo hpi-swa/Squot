@@ -4,7 +4,7 @@
 	"instance" : {
 		"aboutToStyle:requestor:at:" : "mad 9/13/2023 13:48",
 		"buildTextFor:with:" : "mad 10/1/2023 17:51",
-		"buildTexts:" : "mad 9/14/2023 14:06",
+		"buildTexts:" : "mad 10/24/2023 19:45",
 		"definitionAsSources:" : "mad 9/12/2023 16:26",
 		"dependentTextMorphs" : "mad 9/13/2023 12:22",
 		"editButtonLabel" : "mad 9/12/2023 14:47",
@@ -24,6 +24,7 @@
 		"package" : "mad 9/6/2023 19:20",
 		"path" : "mad 9/10/2023 18:51",
 		"someDefinition" : "mad 9/10/2023 18:51",
+		"sourceIndices" : "mad 10/24/2023 19:45",
 		"sources:at:" : "mad 9/13/2023 13:16",
 		"sourcesSize" : "mad 9/12/2023 16:26",
 		"stylerClassFor:" : "mad 9/13/2023 13:40",

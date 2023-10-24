@@ -10,9 +10,10 @@ mergeCommitIntoHead: aCommit displayName: aString
 	} otherwise: [^ self inform: 'Found multiple merge bases. Recursive merging is currently unsupported.'].
 	mergeBase = aCommit ifTrue: [^ self inform: 'Already up to date.'].
 	mergeBase = head ifTrue: [
-		self inform: 'Fast-forwarding.'.
-		^ (self openDialogToMaterializeCommit: aCommit) then:
-			[:dialog | self activeWorkingCopy fastForwardTo: aCommit displayName: aString]].
+		^ (self
+			openDialogToMaterializeCommit: aCommit
+			windowTitlePrefix: 'Fast-forwarding: ') then:
+				[:dialog | self activeWorkingCopy fastForwardTo: aCommit displayName: aString]].
 	changeSets := self activeWorkingCopy
 						mergeCommit: aCommit
 						into: head

@@ -1,4 +1,5 @@
 toolbuilder
 list
 	^ SqueakWorkingCopy registeredNames sorted
-		ifEmpty: [{SquotTextUtilities italic: 'Right click here to add a project'}]
+		ifEmpty: [{'Right click here'. 'to add a project'}
+					collect: [:each | SquotTextUtilities italic: each]]

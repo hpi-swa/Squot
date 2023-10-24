@@ -12,5 +12,9 @@ refListMenu: aMenu
 		self commitMenu: aMenu].
 	aMenu target: self.
 	aMenu hasItems ifTrue: [aMenu addLine].
-	aMenu add: (self showGitRefs ifTrue: ['<yes>'] ifFalse: ['<no>']), 'Show git refs' action: #toggleShowGitRefs.
+	aMenu
+		add: 'Refresh refs'
+		action: #actionRefreshRefList;
+		add: (self showGitRefs ifTrue: ['<yes>'] ifFalse: ['<no>']), 'Show git refs'
+		action: #toggleShowGitRefs.
 	^ aMenu

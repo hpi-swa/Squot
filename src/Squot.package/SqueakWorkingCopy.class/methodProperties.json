@@ -43,6 +43,8 @@
 		"createBranchNamed:at:" : "mad 10/16/2023 21:32",
 		"credentials" : "mad 9/18/2023 12:52",
 		"credentials:" : "mad 9/18/2023 12:52",
+		"currentHeadTarget" : "mad 10/24/2023 16:25",
+		"currentSymbolicHeadTarget" : "mad 10/24/2023 16:46",
 		"emptyCommit" : "mad 5/20/2023 21:22",
 		"fastForwardTo:displayName:" : "mad 9/18/2023 17:13",
 		"fetch:" : "mad 9/18/2023 16:03",

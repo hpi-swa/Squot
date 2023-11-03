@@ -7,4 +7,4 @@ requestFSReferenceForName: aString
 	defaultDirectoryReference ensureCreateDirectory.
 	chosen := UIManager default chooseDirectory: 'Repository location:' from: defaultDirectory.
 	(defaultDirectoryExisted not and: [chosen = defaultDirectory]) ifFalse: [defaultDirectoryReference delete].
-	^ chosen asFSReference
+	^ chosen ifNotNil: #asFSReference

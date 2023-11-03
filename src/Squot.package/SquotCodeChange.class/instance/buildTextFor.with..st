@@ -7,5 +7,5 @@ buildTextFor: aNumber with: builder
 		help: (self helpFor: aNumber);
 		stylerClass: (self stylerClassFor: aNumber);
 		verticalResizing: #shrinkWrap;
-		readOnly: self isReadOnly;
+		readOnly: (self isReadOnly: aNumber);
 		yourself

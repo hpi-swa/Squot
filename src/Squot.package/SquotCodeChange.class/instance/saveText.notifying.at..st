@@ -8,7 +8,7 @@ saveText: aText notifying: requestor at: aNumber
 				lastRequestors: (self sourceIndices collect: [:index |
 									index = aNumber ifTrue: [requestor] ifFalse: [nil]]);
 				changed: #acceptChanges; "trigger an accept for all text editors, populating editedTexts and lastRequestors"
-				saveTexts: (self editedTexts collect: #asString) notifying: self lastRequestors]
+				saveTexts: self preprocessEditedTexts notifying: self lastRequestors]
 					ensure: [self editedTexts: nil; lastRequestors: nil]]
 		ifNotNil: [
 			self editedTexts at: aNumber put: aText asString.

@@ -3,7 +3,7 @@ squotCopyWithSources: aCollection notifying: requestors ifFail: aBlock
 	| category source sourceRequestor timeStamp |
 	category := aCollection first.
 	source := aCollection second.
-	sourceRequestor := requestors second.
+	sourceRequestor := requestors ifNotNil: #second.
 	timeStamp := aCollection third.
 	self selector = (Parser new parseSelector: source) ifFalse: [^ aBlock value: 'expected selector not to change'].
 	[Parser new "check syntax"

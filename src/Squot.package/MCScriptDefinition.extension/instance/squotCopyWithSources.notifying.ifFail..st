@@ -2,7 +2,7 @@
 squotCopyWithSources: aCollection notifying: requestors ifFail: aBlock
 	| source sourceRequestor |
 	source := aCollection first.
-	sourceRequestor := requestors first.
+	sourceRequestor := requestors ifNotNil: #first.
 	Parser new "check syntax"
 		parse: source
 		class: ProtoObject

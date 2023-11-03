@@ -8,9 +8,10 @@ projectListMenu: aMenu
 			target: SquotRemotesBrowser
 			selector: #openOnWorkingCopy:
 			argument: self activeWorkingCopy].
+	self addMappersProjectListMenu: aMenu.
+	aMenu items ifNotEmpty: [aMenu addLine].
 	aMenu
 		target: self;
 		add: 'New project' action: #actionNewProject;
 		add: 'Clone project' action: #actionCloneProject.
-	self addMappersProjectListMenu: aMenu.
 	^ aMenu

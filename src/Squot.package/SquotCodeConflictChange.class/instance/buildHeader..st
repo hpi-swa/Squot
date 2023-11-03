@@ -4,4 +4,5 @@ buildHeader: builder
 		model: self;
 		getText: #headerText;
 		verticalResizing: #shrinkWrap;
+		readOnly: true;
 		yourself

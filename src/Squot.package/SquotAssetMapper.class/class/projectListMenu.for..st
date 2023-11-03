@@ -2,7 +2,7 @@ menu
 projectListMenu: aMenu for: aWorkingCopy
 	aWorkingCopy ifNil: [^ self].
 	aMenu
-		add: 'manage assets'
+		add: 'Manage assets'
 		target: SquotAssetBrowser
 		selector: #openOnWorkingCopy:
 		argument: aWorkingCopy.

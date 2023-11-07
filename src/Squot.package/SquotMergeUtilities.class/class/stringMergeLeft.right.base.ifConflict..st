@@ -1,12 +1,12 @@
-auto-merging
-mergeSourcesLeft: leftSource right: rightSource base: baseSource
+merging
+stringMergeLeft: leftString right: rightString base: baseString ifConflict: aBlock
 	| diffResult |
 	diffResult := Diff3 new
-		file0: baseSource lines;
-		file1: leftSource lines;
-		file2: rightSource lines;
+		file0: baseString lines;
+		file1: leftString lines;
+		file2: rightString lines;
 		diffClass: HuntMcilroyDiff;
 		merge: true.
 	^ (diffResult size = 1 and: [diffResult first key = #ok])
 		ifTrue: [diffResult first value joinSeparatedBy: Character cr]
-		ifFalse: [nil]
+		ifFalse: [aBlock value]

@@ -6,12 +6,13 @@ tryAutoMergeLeft: leftDefinition right: rightDefinition base: baseDefinition
 	allSources := allDefinitions collect: #squotSources.
 	stamp := Utilities changeStamp.
 	mergedSources := (1 to: leftDefinition squotSourcesSize) collect: [:index |
-		(self mergeSourcesLeft: (allSources first at: index)
+		SquotMergeUtilities
+			stringMergeLeft: (allSources first at: index)
 			right: (allSources second at: index)
-			base: (allSources third at: index))
-				ifNil: [(leftDefinition squotSourcesIsTimeStamp at: index)
-						ifTrue: [stamp]
-						ifFalse: [^ false]]].
+			base: (allSources third at: index)
+			ifConflict: [(leftDefinition squotSourcesIsTimeStamp at: index)
+							ifTrue: [stamp]
+							ifFalse: [^ false]]].
 	mergedDefinition := leftDefinition
 		squotCopyWithSources: mergedSources
 		notifying: nil

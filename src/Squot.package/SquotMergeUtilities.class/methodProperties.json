@@ -1,5 +1,6 @@
 {
 	"class" : {
-		"atomicMergeLeft:right:base:ifConflict:" : "mad 8/29/2023 16:52" },
+		"atomicMergeLeft:right:base:ifConflict:" : "mad 8/29/2023 16:52",
+		"stringMergeLeft:right:base:ifConflict:" : "mad 11/7/2023 13:29" },
 	"instance" : {
 		 } }

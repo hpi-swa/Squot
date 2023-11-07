@@ -1,3 +1,3 @@
 enumerating
 referencesDo: aBlock
-	self packedRefs refs do: aBlock.
+	self packedRefs refsDictionary keysDo: aBlock.

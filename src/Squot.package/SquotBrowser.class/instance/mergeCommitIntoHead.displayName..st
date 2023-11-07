@@ -3,7 +3,8 @@ mergeCommitIntoHead: aCommit displayName: aString
 	| head mergeBases mergeBase changeSets |
 	self activeWorkingCopyIfNilInformAnd: [^ self].
 	self warnIfImageNotClean: [^ self].
-	head := self activeWorkingCopy headCommit.
+	head := self activeWorkingCopy headCommit
+				ifNil: [^ self inform: 'Please create a commit first.'].
 	mergeBases := head allMergeBasesWithAnyOf: {aCommit}.
 	mergeBase := mergeBases size caseOf: {
 		[0] -> [^ self inform: 'Cannot merge unrelated histories.'].

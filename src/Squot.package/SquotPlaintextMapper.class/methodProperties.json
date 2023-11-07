@@ -1,0 +1,28 @@
+{
+	"class" : {
+		"assetTypeName" : "mad 11/7/2023 12:44",
+		"defaultEncoding" : "mad 11/7/2023 12:45",
+		"encodingName:" : "mad 11/7/2023 12:45",
+		"validEncodings" : "mad 11/7/2023 12:45" },
+	"instance" : {
+		"aboutToStyle:with:requestor:at:" : "mad 11/7/2023 14:42",
+		"canReadVersionFrom:" : "mad 11/7/2023 12:55",
+		"changeSetClass" : "mad 11/7/2023 13:37",
+		"copyOf:withSources:notifying:ifFail:" : "mad 11/7/2023 14:49",
+		"helpFor:at:" : "mad 11/7/2023 14:42",
+		"isGeneric" : "mad 11/7/2023 12:46",
+		"isSourceAt:timeStampOf:" : "mad 11/7/2023 14:42",
+		"isValidVersion:" : "mad 11/6/2023 13:22",
+		"mergeVersion:into:withBase:" : "mad 11/7/2023 14:46",
+		"pathFor:" : "mad 11/7/2023 14:42",
+		"printOn:" : "mad 11/7/2023 12:47",
+		"printWithoutPathOn:" : "mad 11/7/2023 12:47",
+		"readVersionFrom:" : "mad 11/7/2023 14:40",
+		"sourcesSizeOf:" : "mad 11/7/2023 14:41",
+		"stylerClassFor:at:" : "mad 11/7/2023 14:41",
+		"toPlaintext:" : "mad 11/7/2023 14:40",
+		"transformVersion:ifFail:" : "mad 11/7/2023 14:41",
+		"versionAsMorph:" : "mad 11/7/2023 14:49",
+		"versionAsSources:" : "mad 11/7/2023 14:41",
+		"versionTypeName" : "mad 11/7/2023 12:53",
+		"writeVersion:on:" : "mad 11/6/2023 13:24" } }

@@ -1,0 +1,10 @@
+{
+	"class" : {
+		"withMapper:from:to:" : "mad 11/7/2023 12:58" },
+	"instance" : {
+		"change" : "mad 11/7/2023 13:01",
+		"change:" : "mad 11/7/2023 13:15",
+		"hasConflicts" : "mad 11/7/2023 13:22",
+		"isExcluded" : "mad 11/7/2023 14:58",
+		"setChangeFrom:to:" : "mad 11/7/2023 13:19",
+		"versionToWrite" : "mad 11/7/2023 13:18" } }

@@ -1,0 +1,3 @@
+multitext
+versionAsSources: aPlaintext
+	^ {aPlaintext}

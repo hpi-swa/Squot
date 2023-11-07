@@ -1,0 +1,14 @@
+{
+	"category" : "Squot-Mapper-Plaintext",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "SquotPlaintextNormalChangeSet",
+	"pools" : [
+		 ],
+	"super" : "SquotAssetChangeSet",
+	"type" : "normal" }

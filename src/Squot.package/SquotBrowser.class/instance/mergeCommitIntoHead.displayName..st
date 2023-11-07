@@ -2,6 +2,7 @@ merging
 mergeCommitIntoHead: aCommit displayName: aString
 	| head mergeBases mergeBase changeSets |
 	self activeWorkingCopyIfNilInformAnd: [^ self].
+	self warnIfImageNotClean: [^ self].
 	head := self activeWorkingCopy headCommit.
 	mergeBases := head allMergeBasesWithAnyOf: {aCommit}.
 	mergeBase := mergeBases size caseOf: {

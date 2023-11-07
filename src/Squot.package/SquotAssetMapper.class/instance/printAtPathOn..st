@@ -1,5 +1,5 @@
 printing
 printAtPathOn: aStream
 	aStream
-		nextPutAll: ' at ';
+		nextPutAll: 'at ';
 		nextPutAll: (SquotPathUtilities asString: self path).

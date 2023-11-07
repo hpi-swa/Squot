@@ -6,10 +6,9 @@
 		 ],
 	"commentStamp" : "",
 	"instvars" : [
-		"left",
-		"right",
-		"base" ],
-	"name" : "SquotMergeConflict",
+		"change",
+		"index" ],
+	"name" : "SquotMultitextChangeIndexedModel",
 	"pools" : [
 		 ],
 	"super" : "Object",

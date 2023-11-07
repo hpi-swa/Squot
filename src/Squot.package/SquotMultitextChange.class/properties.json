@@ -6,11 +6,12 @@
 		 ],
 	"commentStamp" : "",
 	"instvars" : [
-		"left",
-		"right",
-		"base" ],
-	"name" : "SquotMergeConflict",
+		"isExcluded",
+		"isInEditMode",
+		"editedTexts",
+		"lastRequestors" ],
+	"name" : "SquotMultitextChange",
 	"pools" : [
 		 ],
-	"super" : "Object",
+	"super" : "SquotChange",
 	"type" : "normal" }

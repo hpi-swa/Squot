@@ -1,3 +1,0 @@
-accessing-sources
-sourcesIsTimeStamp
-	^ self someDefinition squotSourcesIsTimeStamp

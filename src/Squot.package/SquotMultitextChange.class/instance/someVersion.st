@@ -1,0 +1,3 @@
+accessing
+someVersion
+	self subclassResponsibility.

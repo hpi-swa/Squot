@@ -40,5 +40,6 @@ SystemOrganization addCategory: #'Squot-Mapper-Asset'!
 SystemOrganization addCategory: #'Squot-Mapper-Image'!
 SystemOrganization addCategory: #'Squot-Mapper-Blob'!
 SystemOrganization addCategory: #'Squot-Mapper-Sound'!
+SystemOrganization addCategory: #'Squot-Mapper-Multitext'!
 SystemOrganization addCategory: #'Squot-Mapper-Code'!
 SystemOrganization addCategory: #'Squot-Mapper-Utilities'!

@@ -1,16 +1,14 @@
 {
-	"category" : "Squot-Mapper-Multitext",
+	"category" : "Squot-Mapper-Code",
 	"classinstvars" : [
 		 ],
 	"classvars" : [
 		 ],
 	"commentStamp" : "",
 	"instvars" : [
-		"left",
-		"right",
-		"base" ],
-	"name" : "SquotMergeConflict",
+		 ],
+	"name" : "SquotCodeNormalChange",
 	"pools" : [
 		 ],
-	"super" : "Object",
+	"super" : "SquotMultitextNormalChange",
 	"type" : "normal" }

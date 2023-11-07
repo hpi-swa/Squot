@@ -1,3 +1,0 @@
-accessing
-someDefinition
-	self subclassResponsibility.

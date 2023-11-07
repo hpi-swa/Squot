@@ -1,0 +1,19 @@
+{
+	"class" : {
+		"withChangeSet:from:to:" : "mad 11/7/2023 12:03" },
+	"instance" : {
+		"buildEditButton:" : "mad 9/10/2023 18:15",
+		"buildWith:" : "mad 9/14/2023 14:17",
+		"from" : "mad 11/7/2023 12:01",
+		"from:" : "mad 11/7/2023 12:01",
+		"fromSources" : "mad 11/7/2023 11:57",
+		"hasConflicts" : "mad 9/27/2023 16:08",
+		"initialize" : "mad 9/9/2023 13:38",
+		"isEditable" : "mad 11/7/2023 11:58",
+		"isInEditMode:" : "mad 9/13/2023 11:54",
+		"saveTexts:notifying:" : "mad 11/7/2023 12:21",
+		"someVersion" : "mad 11/7/2023 12:00",
+		"textAt:" : "mad 9/13/2023 13:15",
+		"to" : "mad 11/7/2023 12:01",
+		"to:" : "mad 11/7/2023 12:01",
+		"toSources" : "mad 11/7/2023 12:00" } }

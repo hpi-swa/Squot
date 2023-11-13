@@ -27,21 +27,19 @@ After installing Squot, you will find a "Git Browser" in the Apps menu. With thi
 
 4. A wizard opens which will guide us through the steps to clone the project.
 
-5. First, we can enter a project name which helps us remember our project. It will be displayed in the projects list.
+5. First, the wizard asks for an URL to clone from. We use the https URL of our repository for that. For GitHub projects you can find the https URL on the project main page after clicking on the button labeled "Clone or download" (You might have to select "Use HTTPS").
 
-6. Second, the wizard asks for an URL to clone from. We use the https URL of our repository for that. For GitHub projects you can find the https URL on the project main page after clicking on the button labeled "Clone or download" (You might have to select "Use HTTPS").
+6. Second, we have to select a folder in which Squot can store the Git repository. Squot suggests a folder based on the URL.
 
-7. Third, we have to select a folder in which Squot can store the Git repository. Squot suggests a folder based on the project name.
+7. We have now provided all necessary details and Squot will go ahead and clone the project for us.
 
-8. We have now provided all necessary details and Squot will go ahead and clone the project for us.
+8. Depending on the repository, Squot might ask for credentials. In that case, you have to enter your GitHub username and a GitHub personal access token with the `repo` scope. You can create one on the [settings page](https://github.com/settings/tokens).
 
-9. Depending on the repository, Squot might ask for credentials. In that case, you have to enter your GitHub username and a GitHub personal access token with the `repo` scope. You can create one on the [settings page](https://github.com/settings/tokens).
+9.  As soon as Squot finished cloning, we have the repository on the disk and registered in the system, but we do not yet have the objects loaded from the repository into Squeak. Squot now asks you to do just that.
 
-10.  As soon as Squot finished cloning, we have the repository on the disk and registered in the system, but we do not yet have the objects loaded from the repository into Squeak. Squot now asks you to do just that.
+10. If you tell Squot to load the current commit into the image, a window pops up with the changes to load. You can inspect the changes by selecting them in the left tree pane. If you are happy with them, you can click on the "Load changes" button on the bottom right.
 
-11. If you tell Squot to load the current commit into the image, a window pops up with the changes to load. You can inspect the changes by selecting them in the left tree pane. If you are happy with them, you can click on the "Load changes" button on the bottom right.
-
-12. After a short loading time, the objects are now loaded in the system. If the repository stored packages, you can now start browsing your code. If the repository stored assets, you can browse them in the [Git Asset Browser](#using-the-git-asset-browser).
+11. After a short loading time, the objects are now loaded in the system. If the repository stored packages, you can now start browsing your code. If the repository stored assets, you can browse them in the [Git Asset Browser](#using-the-git-asset-browser).
 
 ### Committing to a project
 
@@ -108,7 +106,7 @@ You can use the "Import unmanaged assets" button. It is useful when you want to 
 You can use the `GitAssetLoader` class to access the managed assets in your projects:
 ```smalltalk
 | assetLoader form sound |
-assetLoader := GitAssetLoader forProject: 'MyProjectName'.
+assetLoader := GitAssetLoader for: 'MyProjectName'.
 "by default, the GitAssetLoader imports assets from /assets/"
 form := assetLoader loadForm: 'image.png'. "loads /assets/image.png"
 "you can change this basePath:"

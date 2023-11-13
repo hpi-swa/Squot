@@ -1,11 +1,12 @@
 {
 	"class" : {
 		"cloneFrom:to:named:" : "mad 9/19/2023 11:53",
-		"cloneFromUserAndRegister" : "mad 10/1/2023 19:21",
-		"cloneFromUserNamed:" : "mad 10/22/2023 00:12",
+		"cloneFromUserAndRegister" : "mad 11/13/2023 12:09",
 		"defaultDirectoryForName:" : "mad 10/22/2023 00:24",
+		"gitSuffix" : "mad 11/13/2023 12:03",
 		"isNameRegistered:" : "mad 9/19/2023 12:02",
 		"isRegistered:" : "mad 9/19/2023 12:20",
+		"nameFromURL:" : "mad 11/13/2023 12:07",
 		"named:" : "mad 9/19/2023 12:04",
 		"newFromUserAndRegister" : "mad 10/22/2023 00:12",
 		"onFSGitRepository:named:" : "mad 9/19/2023 11:53",
@@ -15,8 +16,10 @@
 		"registry" : "mad 9/19/2023 11:59",
 		"registry:" : "mad 9/19/2023 11:59",
 		"requestFSReferenceForName:" : "mad 11/13/2023 12:55",
-		"requestUnregisteredName" : "mad 9/19/2023 12:02",
-		"unregister:" : "mad 9/21/2023 12:00" },
+		"requestUnregisteredName" : "mad 11/13/2023 12:01",
+		"requestUnregisteredNameFrom:" : "mad 11/13/2023 12:01",
+		"unregister:" : "mad 9/21/2023 12:00",
+		"withoutGitSuffix:" : "mad 11/13/2023 12:03" },
 	"instance" : {
 		"actionAddRemote" : "mad 10/16/2023 20:49",
 		"addMapper:" : "mad 9/20/2023 17:30",

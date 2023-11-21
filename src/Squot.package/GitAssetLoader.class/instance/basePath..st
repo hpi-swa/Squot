@@ -1,3 +1,3 @@
 accessing
-basePath: aPath
-	basePath := aPath
+basePath: aStringOrPath
+	basePath := SquotPathUtilities toAbsolutePath: aStringOrPath.

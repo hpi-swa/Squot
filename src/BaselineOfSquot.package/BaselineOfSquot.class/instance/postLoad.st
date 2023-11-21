@@ -1,3 +1,3 @@
 migrations
-doPostUpdateMigrations
+postLoad
 	SqueakWorkingCopy doPostUpdateMigrations.

@@ -36,7 +36,9 @@ baseline: spec
 					loads: #('default' 'tests')];
 			package: 'VersionControl';
 			package: 'Squot' with: [
-				spec requires: #('FileSystem' 'Ston' 'DiffMerge' 'VersionControl' ). ];
+				spec
+					requires: #('FileSystem' 'Ston' 'DiffMerge' 'VersionControl' );
+					postLoadDoIt: #postLoad. ];
 			package: 'FileSystem-Git' with: [
 				spec requires: #('FileSystem' 'INIFile' 'VersionControl' ). ];
 			package: 'Squit' with: [

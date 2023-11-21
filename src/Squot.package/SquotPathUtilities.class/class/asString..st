@@ -2,4 +2,6 @@ converting
 asString: aPath
 	aPath ifNil: [^ ''].
 	aPath isString ifTrue: [^ aPath].
-	^ aPath asReference printString
+	^ String streamContents: [:stream |
+		stream nextPut: self mainDelimiter. "always absolute"
+		aPath printOn: stream delimiter: self mainDelimiter]

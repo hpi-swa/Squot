@@ -1,3 +1,8 @@
 requests
 requestAbsolute: aString initialAnswer: aPath
-	^ self toAbsolute: (self request: aString initialAnswer: aPath)
+	| path |
+	path := UIManager default
+				request: aString
+				initialAnswer: (self asString: aPath).
+	path isEmptyOrNil ifTrue: [^ nil].
+	^ self fromString: path

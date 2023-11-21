@@ -6,4 +6,4 @@ commonPrefixOf: aPath and: anotherPath
 		(aPath at: index) = (anotherPath at: index)
 			ifTrue: [segments add: (aPath at: index)]
 			ifFalse: [^ FSAbsolutePath withAll: segments]].
-	^ aPath
+	^ SquotPathUtilities toAbsolutePath: aPath

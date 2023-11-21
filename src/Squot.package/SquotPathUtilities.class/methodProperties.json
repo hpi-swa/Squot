@@ -1,17 +1,14 @@
 {
 	"class" : {
-		"asString:" : "mad 9/20/2023 19:23",
-		"commonPrefixOf:and:" : "mad 10/1/2023 17:53",
+		"asString:" : "mad 11/21/2023 15:02",
+		"commonPrefixOf:and:" : "mad 11/21/2023 14:34",
 		"commonPrefixOf:ifNone:" : "mad 10/1/2023 17:53",
-		"delimiters" : "mad 10/18/2023 16:50",
-		"fromString:" : "mad 10/18/2023 16:57",
+		"fromString:" : "mad 11/21/2023 14:34",
+		"mainDelimiter" : "mad 11/21/2023 15:02",
+		"otherDelimiters" : "mad 11/21/2023 14:03",
 		"path:collidesWith:" : "mad 10/21/2023 23:04",
 		"path:containsOrEquals:" : "mad 10/21/2023 23:56",
-		"request:" : "mad 9/20/2023 19:23",
-		"request:initialAnswer:" : "mad 9/20/2023 19:23",
-		"requestAbsolute:" : "mad 10/18/2023 16:48",
-		"requestAbsolute:initialAnswer:" : "mad 10/18/2023 16:47",
-		"toAbsolute:" : "mad 10/18/2023 16:47",
-		"toPath:" : "mad 10/19/2023 13:57" },
+		"requestAbsolute:initialAnswer:" : "mad 11/21/2023 14:32",
+		"toAbsolutePath:" : "mad 11/21/2023 14:34" },
 	"instance" : {
 		 } }

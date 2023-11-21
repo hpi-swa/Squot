@@ -6,3 +6,4 @@ uncheckedMoveTo: aPath in: aWorkingCopy
 		materialize: nil in: aWorkingCopy;
 		path: aPath;
 		materialize: version in: aWorkingCopy.
+	aWorkingCopy changed: #mappers.

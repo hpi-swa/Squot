@@ -1,0 +1,3 @@
+migrations
+doPostUpdateMigrations
+	self allInstancesDo: #doPostUpdateMigrations.

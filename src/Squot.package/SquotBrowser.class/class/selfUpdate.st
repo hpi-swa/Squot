@@ -4,3 +4,4 @@ selfUpdate
 		baseline: 'Squot';
 		repository: 'github://hpi-swa/Squot:mapper/src';
 		get; load.
+	self doPostUpdateMigrations.

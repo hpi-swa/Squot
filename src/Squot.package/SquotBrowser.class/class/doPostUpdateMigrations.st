@@ -1,0 +1,3 @@
+migrations
+doPostUpdateMigrations
+	SqueakWorkingCopy doPostUpdateMigrations.

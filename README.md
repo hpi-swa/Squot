@@ -107,11 +107,12 @@ You can use the `GitAssetLoader` class to access the managed assets in your proj
 ```smalltalk
 | assetLoader form sound |
 assetLoader := GitAssetLoader for: 'MyProjectName'.
-"by default, the GitAssetLoader imports assets from /assets/"
-form := assetLoader loadForm: 'image.png'. "loads /assets/image.png"
-"you can change this basePath:"
-assetLoader basePath: FSPath root.
-sound := assetLoader loadSound: 'jingle.wav' "loads /jingle.wav"
+form := assetLoader loadForm: 'image.png'. "loads /image.png"
+"you can add a basePath to the GitAssetLoader:"
+assetLoader basePath: 'assets'.
+sound := assetLoader loadSound: 'jingle.wav'. "loads /assets/jingle.wav"
+"you can also set the basePath with a constructor:"
+assetLoader := GitAssetLoader for: 'MyProjectName' basePath: 'assets'.
 ```
 
 ### Supported asset types

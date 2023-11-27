@@ -5,11 +5,13 @@
 		"encodingName:" : "mad 10/19/2023 11:54",
 		"validEncodings" : "mad 10/21/2023 21:35" },
 	"instance" : {
-		"canReadVersionFrom:" : "mad 10/19/2023 12:55",
-		"isValidVersion:" : "mad 10/21/2023 22:17",
-		"readVersionFrom:" : "mad 10/21/2023 22:17",
-		"versionAsMorph:" : "mad 10/21/2023 22:19",
-		"versionTypeName" : "mad 10/21/2023 22:18",
-		"writeVersion:on:" : "mad 10/21/2023 21:39",
-		"writerClass" : "mad 9/20/2023 18:42",
-		"writerClass:" : "mad 9/20/2023 20:01" } }
+		"canReadVersionFrom:" : "mad 11/27/2023 11:58",
+		"doPostUpdateMigrationsIn:" : "mad 11/27/2023 12:48",
+		"gifReadWriterToAnimation:" : "mad 11/27/2023 12:49",
+		"isValidVersion:" : "mad 11/27/2023 12:03",
+		"readVersionFrom:" : "mad 11/27/2023 11:59",
+		"readerClass" : "mad 11/27/2023 12:41",
+		"toAnimation:" : "mad 11/27/2023 12:48",
+		"versionAsMorph:" : "mad 11/27/2023 12:41",
+		"versionTypeName" : "mad 11/27/2023 12:03",
+		"writeVersion:on:" : "mad 11/27/2023 12:05" } }

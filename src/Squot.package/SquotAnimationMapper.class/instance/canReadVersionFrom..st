@@ -1,3 +1,3 @@
 testing
 canReadVersionFrom: aStream
-	^ self writerClass understandsImageFormat: aStream
+	^ self readerClass understandsImageFormat: aStream

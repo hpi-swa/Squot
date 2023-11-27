@@ -1,3 +1,3 @@
 ui
 versionTypeName
-	^ self writerClass name
+	^ 'SquotAnimation'

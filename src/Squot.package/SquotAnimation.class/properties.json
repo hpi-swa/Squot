@@ -1,0 +1,14 @@
+{
+	"category" : "Squot-Mapper-Image",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"gif" ],
+	"name" : "SquotAnimation",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }

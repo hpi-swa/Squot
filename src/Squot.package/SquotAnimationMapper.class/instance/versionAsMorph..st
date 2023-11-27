@@ -1,5 +1,5 @@
 ui
-versionAsMorph: aGIFReadWriter
+versionAsMorph: anAnimation
 	^ AnimatedImageMorph new
-		fromGIFReader: aGIFReadWriter;
+		fromGIFReader: anAnimation asGIFReadWriter
 		yourself

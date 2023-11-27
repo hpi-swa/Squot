@@ -3,4 +3,8 @@ squotEqual: anObject
 	self == anObject ifTrue: [^ true].
 	anObject isForm ifFalse: [^ false].
 	self extent = anObject extent ifFalse: [^ false].
-	^ (self pixelCompare: (0@0 corner: self extent) with: anObject at: 0@0) = 0
+	0 to: self width - 1 do: [:x |
+		0 to: self height - 1 do: [:y | | point |
+			point := x @ y.
+			(self colorAt: point) = (anObject colorAt: point) ifFalse: [^ false]]].
+	^ true

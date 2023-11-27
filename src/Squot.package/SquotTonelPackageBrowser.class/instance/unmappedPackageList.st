@@ -1,5 +1,6 @@
 ui
 unmappedPackageList
-	^ (self packageOrganizer packageNames
-		difference: self mappedPackageList)
+	^ (self categoriesPlusPrefixes reject: [:category |
+		self mappedPackageList anySatisfy: [:package |
+			category = package or: [category beginsWith: package, '-']]])
 		sorted

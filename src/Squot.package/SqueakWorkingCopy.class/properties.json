@@ -3,14 +3,13 @@
 	"classinstvars" : [
 		"registry" ],
 	"classvars" : [
-		 ],
+		"LastImageHash" ],
 	"commentStamp" : "",
 	"instvars" : [
 		"name",
 		"fsgitRepository",
 		"materialized",
 		"mappers",
-		"lastImageHash",
 		"refsForCommits",
 		"credentials" ],
 	"name" : "SqueakWorkingCopy",

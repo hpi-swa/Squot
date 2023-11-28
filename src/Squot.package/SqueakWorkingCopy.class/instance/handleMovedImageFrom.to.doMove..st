@@ -1,12 +1,6 @@
 image-hash
-handleMovedImageFrom: oldHash to: newHash
-	| doMove oldPrefix newPrefix oldRefs |
-	doMove := (UIManager default
-					chooseFrom: {'I copied it.'. 'I moved it.'}
-					title:
-						'The image is not where it used to be. Did you move or copy it?', String cr,
-						'If in doubt, choose copy.')
-					= 2.
+handleMovedImageFrom: oldHash to: newHash doMove: doMove
+	| oldPrefix newPrefix oldRefs |
 	oldPrefix := self refsBaseNameForHash: oldHash.
 	newPrefix := self refsBaseNameForHash: newHash.
 	self withUnitOfWork: [
@@ -23,4 +17,7 @@ handleMovedImageFrom: oldHash to: newHash
 				and: [ref isSymbolic]
 				and: [(target := ref targetRef) startsWith: oldPrefix])
 				ifTrue: [
-					self unitOfWork updateSymbolicRef: ref name toRef: newPrefix, (target allButFirst: oldPrefix size) message: nil]]].
+					self unitOfWork
+						updateSymbolicRef: ref name
+						toRef: newPrefix, (target allButFirst: oldPrefix size)
+						message: nil]]].

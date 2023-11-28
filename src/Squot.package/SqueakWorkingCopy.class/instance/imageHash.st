@@ -1,7 +1,9 @@
 image-hash
 imageHash
-	| hash |
+	| hash lastHash |
 	hash := self basicImageHash.
-	hash ~= self lastImageHash ifTrue: [self handleMovedImage].
+	lastHash := self lastImageHash.
 	self lastImageHash: hash.
+	hash ~= lastHash ifTrue: [
+		self handleMovedImageFrom: lastHash to: hash].
 	^ hash

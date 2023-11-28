@@ -1,3 +1,3 @@
 refs
 refsBaseName
-	^ 'refs/squeak/', self imageHash, '/'
+	^ self refsBaseNameForHash: self imageHash

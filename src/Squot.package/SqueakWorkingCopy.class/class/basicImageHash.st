@@ -1,3 +1,3 @@
 image-hash
 basicImageHash
-	^ (GitHash from: Smalltalk imagePath) hexHash
+	^ (GitHash from: Smalltalk imageName) hexHash

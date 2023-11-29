@@ -1,3 +1,3 @@
 refs
 isRemoteRef: aString
-	^ aString beginsWith: 'refs/remotes/'
+	^ aString beginsWith: self remoteRefBaseName

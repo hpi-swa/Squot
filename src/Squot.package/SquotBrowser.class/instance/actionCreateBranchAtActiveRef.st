@@ -1,0 +1,3 @@
+actions
+actionCreateBranchAtActiveRef
+	^ self actionCreateBranchAtActiveCommitFromRef: self activeRef

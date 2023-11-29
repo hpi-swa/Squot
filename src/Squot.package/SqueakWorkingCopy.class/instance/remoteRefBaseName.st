@@ -1,0 +1,3 @@
+refs
+remoteRefBaseName
+	^ 'refs/remotes/'

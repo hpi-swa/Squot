@@ -8,6 +8,8 @@ commitMenu: aMenu forRef: aStringOrNil
 		target: self;
 		add: 'Create a branch at this ', refTypeName
 		action: (isRef ifTrue: [#actionCreateBranchAtActiveRef] ifFalse: [#actionCreateBranchAtActiveCommit]);
+		add: 'Create a branch at this ', refTypeName, ' and switch to it'
+		action: (isRef ifTrue: [#actionCreateBranchAtActiveRefAndSwitchToIt] ifFalse: [#actionCreateBranchAtActiveCommitAndSwitchToIt]);
 		add: 'Create an external branch at this ', refTypeName
 		help: 'The created branch will be visible from external git tools, like the git command line'
 		action: (isRef ifTrue: [#actionCreateGitBranchAtActiveRef] ifFalse: [#actionCreateGitBranchAtActiveCommit]);
@@ -17,9 +19,11 @@ commitMenu: aMenu forRef: aStringOrNil
 		add: 'Merge this ', refTypeName action: (isRef ifTrue: [#actionMergeActiveRef] ifFalse: [#actionMergeActiveCommit]).
 	branch := self activeWorkingCopy currentSymbolicHeadTarget.
 	branch ifNotNil: [
+		| resetLabel |
+		resetLabel := 'Reset branch ''{1}'' to this ', refTypeName format: {GitReference shortName: branch}.
 		aMenu
-			add: ('Reset branch ''{1}'' to this ', refTypeName format: {GitReference shortName: branch})
-			action: #actionResetToActiveCommit].
+			add: resetLabel action: #actionResetToActiveCommit;
+			add: resetLabel, ' and restore it' action: #actionResetToActiveCommitAndRestoreIt].
 	aMenu
 		addLine;
 		add: 'Compare this ', refTypeName, ' to its parent commit' action: #actionCompareActiveCommitToParent.

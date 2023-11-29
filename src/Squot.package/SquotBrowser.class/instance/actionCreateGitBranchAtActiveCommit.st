@@ -1,3 +1,3 @@
 actions
 actionCreateGitBranchAtActiveCommit
-	self actionCreateGitBranchAtActiveCommitFromRef: nil.
+	^ self actionCreateGitBranchAtActiveCommitFromRef: nil.

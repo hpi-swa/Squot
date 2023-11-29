@@ -26,5 +26,6 @@ commitMenu: aMenu forRef: aStringOrNil
 			add: resetLabel, ' and restore it' action: #actionResetToActiveCommitAndRestoreIt].
 	aMenu
 		addLine;
-		add: 'Compare this ', refTypeName, ' to its parent commit' action: #actionCompareActiveCommitToParent.
+		add: 'Compare this ', refTypeName, ' to its parent commit' action: #actionCompareActiveCommitToParent;
+		add: 'Compare this ', refTypeName, ' to the image' action: #actionCompareActiveCommitToImage.
 	^ aMenu

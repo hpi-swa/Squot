@@ -10,6 +10,7 @@ duplicateRef: oldRefPath to: newRefPath deleteOld: aBoolean
 	oldReflogFile exists ifTrue: [| newReflogFile |
 		newReflogFile := repository reflogFileForReference: newRefPath.
 		newReflogFile parent ensureCreateDirectory.
+		newReflogFile ensureDeleted.
 		oldReflogFile
 			perform: (aBoolean ifTrue: [#moveTo:] ifFalse: [#copyTo:])
 			with: newReflogFile].

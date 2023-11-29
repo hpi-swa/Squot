@@ -37,7 +37,7 @@ baseline: spec
 			package: 'VersionControl';
 			package: 'Squot' with: [
 				spec
-					requires: #('FileSystem' 'Ston' 'DiffMerge' 'VersionControl' );
+					requires: #('FileSystem' 'Ston' 'DiffMerge' 'VersionControl' 'FileSystem-Git');
 					postLoadDoIt: #postLoad. ];
 			package: 'FileSystem-Git' with: [
 				spec requires: #('FileSystem' 'INIFile' 'VersionControl' ). ];

@@ -1,6 +1,7 @@
 ui
 refList
 	| refs |
+	self ifRepositoryDoesNotExist: [^ {}].
 	refs := self activeWorkingCopy ifNotNil: #allReferences ifNil: [^ {}].
 	self showGitRefs ifFalse: [
 		refs := refs select: [:each |

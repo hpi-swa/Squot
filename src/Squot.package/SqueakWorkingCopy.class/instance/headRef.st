@@ -1,3 +1,7 @@
 refs
 headRef
-	^ self unitOfWork ref: self headRefName
+	^ self basicHeadRef ifNil: [
+		self unitOfWork
+			updateRef: self headRefName
+			toRef: (self branchName: 'main').
+		self basicHeadRef].

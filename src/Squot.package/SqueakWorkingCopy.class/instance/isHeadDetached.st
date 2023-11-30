@@ -1,3 +1,3 @@
 refs
 isHeadDetached
-	^ (self headRef ifNil: [^ false]) isSymbolic not
+	^ self headRef isSymbolic not

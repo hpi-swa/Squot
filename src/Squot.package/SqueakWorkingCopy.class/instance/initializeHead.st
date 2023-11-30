@@ -1,6 +1,3 @@
 initialize-release
 initializeHead
-	self headRef ifNil: [
-		self unitOfWork
-			updateRef: self headRefName
-			toRef: (self branchName: 'main')].
+	self headRef. "internally ensures the head ref exists"

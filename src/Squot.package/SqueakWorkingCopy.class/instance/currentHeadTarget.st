@@ -1,3 +1,3 @@
 refs
 currentHeadTarget
-	^ self headRef ifNotNil: #target
+	^ self headRef target

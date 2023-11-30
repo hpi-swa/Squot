@@ -1,5 +1,5 @@
 refs
 currentSymbolicHeadTarget
-	^ (self headRef ifNil: [^ nil]) isSymbolic
+	^ self headRef isSymbolic
 		ifTrue: [self currentHeadTarget]
 		ifFalse: [nil]

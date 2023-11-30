@@ -4,7 +4,7 @@ handleMovedImageFrom: oldHash to: newHash doMove: doMove
 	oldPrefix := self refsBaseNameForHash: oldHash.
 	newPrefix := self refsBaseNameForHash: newHash.
 	self withUnitOfWork: [
-		oldRefs := self allReferences select: [:each | each startsWith: oldPrefix].
+		oldRefs := self allReferences select: [:each | each beginsWith: oldPrefix].
 		oldRefs do: [:oldRef | | newRef |
 			newRef := newPrefix, (oldRef allButFirst: oldPrefix size).
 			self unitOfWork
@@ -13,9 +13,9 @@ handleMovedImageFrom: oldHash to: newHash doMove: doMove
 				with: newRef].
 		self allReferences do: [:each | | ref target |
 			ref := self unitOfWork ref: each.
-			((ref name startsWith: newPrefix)
+			((ref name beginsWith: newPrefix)
 				and: [ref isSymbolic]
-				and: [(target := ref targetRef) startsWith: oldPrefix])
+				and: [(target := ref targetRef) beginsWith: oldPrefix])
 				ifTrue: [
 					self unitOfWork
 						updateSymbolicRef: ref name

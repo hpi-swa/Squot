@@ -3,7 +3,7 @@ mergeVersion: right into: left withBase: base
 	| merged |
 	merged := self toPlaintext:
 					(SquotMergeUtilities
-						stringMergeLeft: left
+						stringOrNilMergeLeft: left
 						right: right
 						base: base
 						ifConflict: [^ SquotPlaintextConflictChangeSet

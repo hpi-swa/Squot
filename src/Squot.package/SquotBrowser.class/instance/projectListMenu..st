@@ -3,6 +3,7 @@ projectListMenu: aMenu
 	self activeWorkingCopy ifNotNil: [
 		aMenu
 			target: self;
+			add: 'Rename this project' action: #actionRenameActiveProject;
 			add: 'Remove this project' action: #actionRemoveActiveProject;
 			add: 'Manage remotes'
 			target: SquotRemotesBrowser

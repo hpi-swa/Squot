@@ -133,6 +133,7 @@
 		"requestUnmappedPathWithTitle:initialAnswer:" : "mad 11/21/2023 14:31",
 		"serializeChangeSets:onCommit:" : "mad 9/20/2023 12:45",
 		"setUpstreamRemoteName:andRef:for:" : "mad 9/18/2023 20:01",
+		"setUpstreamRemoteNameAndRef:for:" : "mad 12/8/2023 19:31",
 		"splitRemoteRef:" : "mad 12/8/2023 19:28",
 		"unitOfWork" : "mad 6/3/2023 14:15",
 		"unmappedReferencesIn:do:" : "mad 10/21/2023 23:37",

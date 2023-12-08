@@ -10,4 +10,5 @@ actionCreateGitBranchAtActiveCommitFromRef: aStringOrNil
 		updateRef: gitRef
 		to: commit
 		message: 'export from squeak'.
+	aStringOrNil ifNotNil: [self checkSetUpstreamForCreatedBranch: gitRef to: aStringOrNil].
 	^ gitRef

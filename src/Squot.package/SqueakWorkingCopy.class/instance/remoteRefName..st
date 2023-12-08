@@ -1,3 +1,3 @@
 refs
 remoteRefName: aString
-	^ (aString allButFirst: self remoteRefBaseName size) copyAfter: $/
+	^ (self splitRemoteRef: aString) value

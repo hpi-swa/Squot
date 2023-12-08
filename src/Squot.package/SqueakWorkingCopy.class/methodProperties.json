@@ -25,7 +25,8 @@
 		"registry:" : "mad 9/19/2023 11:59",
 		"requestFSReferenceForName:" : "mad 11/13/2023 12:55",
 		"requestUnregisteredName" : "mad 11/13/2023 12:01",
-		"requestUnregisteredNameFrom:" : "mad 11/13/2023 12:01",
+		"requestUnregisteredNameFrom:" : "mad 12/8/2023 19:56",
+		"requestUnregisteredNameFrom:title:" : "mad 12/8/2023 19:56",
 		"unregister:" : "mad 9/21/2023 12:00",
 		"withoutGitSuffix:" : "mad 11/13/2023 12:03" },
 	"instance" : {
@@ -125,7 +126,7 @@
 		"remoteRefName:" : "mad 12/8/2023 19:29",
 		"removeCredentialsFor:" : "mad 10/17/2023 12:01",
 		"removeMapper:" : "mad 9/20/2023 17:30",
-		"rename" : "mad 12/8/2023 17:33",
+		"rename" : "mad 12/8/2023 20:04",
 		"repository" : "mad 11/30/2023 17:02",
 		"repositoryExists" : "mad 11/30/2023 17:03",
 		"requestCredentialsFor:ifCanceled:" : "mad 9/18/2023 12:49",

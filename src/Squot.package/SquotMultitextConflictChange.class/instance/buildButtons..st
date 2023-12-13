@@ -1,7 +1,9 @@
 toolbuilder
 buildButtons: builder
-	^ SquotGUIUtilities buildButtons: ({
-		{'Resolve to base'. #resolveToBase. #isResolvedToBase}.
+	^ SquotGUIUtilities buildButtons: 
+		((SquotPreferences showBase
+			ifTrue: [{{'Resolve to base'. #resolveToBase. #isResolvedToBase}}]
+			ifFalse: [{}]), {
 		{'Resolve to current'. #resolveToLeft. #isResolvedToLeft}.
 		{'Resolve to incoming'. #resolveToRight. #isResolvedToRight}.
 		{'Reset to conflict'. #resetToConflict. nil}.

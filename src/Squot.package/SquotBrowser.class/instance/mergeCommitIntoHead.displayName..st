@@ -2,6 +2,8 @@ merging
 mergeCommitIntoHead: aCommit displayName: aString
 	| head mergeBases mergeBase changeSets |
 	self activeWorkingCopyIfNilInformAnd: [^ self].
+	aCommit ifNil: [^ self inform:
+						('Cannot merge {1}, it does not refer to a commit.' format: {aString})].
 	self warnIfImageNotClean: [^ self].
 	head := self activeWorkingCopy headCommit
 				ifNil: [^ self inform: 'Please create a commit first.'].

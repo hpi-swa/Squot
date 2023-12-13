@@ -8,7 +8,12 @@ refListMenu: aMenu
 		aMenu
 			add: ('Delete this {1}' format: {refTypeName}) action: #actionDeleteActiveRef;
 			addLine.
-		self commitMenu: aMenu forRef: self activeRef].
+		self commitMenu: aMenu forRef: self activeRef.
+		isBranch ifTrue: [
+			aMenu
+				addLine;
+				add: 'Set the remote branch of this branch' action: #actionSetUpstreamOfActiveBranch;
+				add: 'Unset the remote branch of this branch' action: #actionUnsetUpstreamOfActiveBranch]].
 	aMenu target: self.
 	aMenu hasItems ifTrue: [aMenu addLine].
 	aMenu

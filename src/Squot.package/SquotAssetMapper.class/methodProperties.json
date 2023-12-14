@@ -49,6 +49,7 @@
 		"printWithoutPathOn:" : "mad 11/7/2023 12:51",
 		"readVersionFrom:" : "mad 9/20/2023 14:18",
 		"space:" : "mad 11/7/2023 12:52",
+		"transformAndMaterializeVersion:in:ifFail:" : "mad 12/14/2023 17:19",
 		"transformVersion:ifFail:" : "mad 10/17/2023 12:30",
 		"uncheckedMoveTo:in:" : "mad 11/21/2023 16:45",
 		"versionAsMorph:" : "mad 9/20/2023 14:19",

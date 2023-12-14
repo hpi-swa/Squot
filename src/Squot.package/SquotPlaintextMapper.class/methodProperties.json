@@ -6,6 +6,7 @@
 		"validEncodings" : "mad 11/7/2023 12:45" },
 	"instance" : {
 		"aboutToStyle:with:requestor:at:" : "mad 11/7/2023 14:42",
+		"buildVersionFromImage:with:" : "mad 12/14/2023 17:23",
 		"canReadVersionFrom:" : "mad 11/16/2023 13:10",
 		"changeSetClass" : "mad 11/7/2023 13:37",
 		"copyOf:withSources:notifying:ifFail:" : "mad 11/7/2023 14:49",

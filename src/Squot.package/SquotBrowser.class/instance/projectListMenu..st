@@ -4,6 +4,7 @@ projectListMenu: aMenu
 		aMenu
 			target: self;
 			add: 'Rename this project' action: #actionRenameActiveProject;
+			add: 'Choose new repository location' action: #actionChooseNewRepositoryLocationForActiveProject;
 			add: 'Remove this project' action: #actionRemoveActiveProject;
 			add: 'Manage remotes'
 			target: SquotRemotesBrowser

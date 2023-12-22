@@ -12,7 +12,7 @@ externalCommand: aString
 					] ensure: [FileDirectory deleteFilePath: tmpFile].
 					{process exitStatus = 0. output}]
 				ifFalse: [
-					pipeline := osProcess evaluate: aString.
+					pipeline := osProcess evaluate: (self terminalCommand: aString).
 					out := pipeline upToEndOfFile.
 					err := pipeline errorUpToEndOfFile.
 					pipeline waitForAllToComplete.

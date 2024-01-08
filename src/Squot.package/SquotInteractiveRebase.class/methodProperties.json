@@ -1,0 +1,26 @@
+{
+	"class" : {
+		"newWithCommits:" : "mad 12/5/2023 21:40",
+		"newWithOperations:" : "mad 12/5/2023 21:39" },
+	"instance" : {
+		"actionChangeOperation" : "mad 12/5/2023 22:18",
+		"actionRun" : "mad 12/5/2023 21:19",
+		"activeOperation" : "mad 12/5/2023 21:49",
+		"activeOperation:" : "mad 12/5/2023 22:18",
+		"addAll:" : "mad 12/5/2023 22:14",
+		"buildButtons:" : "mad 12/5/2023 22:08",
+		"buildChangeOperationButton:" : "mad 12/5/2023 22:08",
+		"buildLayout:" : "mad 12/5/2023 21:18",
+		"buildMainLayout:" : "mad 12/5/2023 21:49",
+		"buildRunButton:" : "mad 12/5/2023 21:19",
+		"buildTodoList:" : "mad 12/5/2023 21:22",
+		"buildWindow:" : "mad 12/5/2023 21:17",
+		"buildWith:" : "mad 12/5/2023 21:17",
+		"initialize" : "mad 12/5/2023 21:38",
+		"nextOperation" : "mad 12/5/2023 21:16",
+		"open" : "mad 12/5/2023 21:44",
+		"removeNextOperation" : "mad 12/5/2023 21:16",
+		"runNextOperation" : "mad 12/5/2023 21:16",
+		"todoList" : "mad 12/5/2023 21:16",
+		"todoList:" : "mad 12/5/2023 21:38",
+		"windowTitle" : "mad 12/5/2023 21:18" } }

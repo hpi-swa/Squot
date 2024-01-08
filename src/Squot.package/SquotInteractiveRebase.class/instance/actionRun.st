@@ -1,0 +1,3 @@
+running
+actionRun
+	self runNextOperation.

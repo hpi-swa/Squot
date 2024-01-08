@@ -1,0 +1,14 @@
+{
+	"category" : "Squot-Mapper-Rebase",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "SquotRebaseOperationExec",
+	"pools" : [
+		 ],
+	"super" : "SquotRebaseOperation",
+	"type" : "normal" }

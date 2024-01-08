@@ -23,7 +23,9 @@ commitMenu: aMenu forRef: aStringOrNil
 		resetLabel := 'Reset branch ''{1}'' to this ', refTypeName format: {GitReference shortName: branch}.
 		aMenu
 			add: resetLabel action: #actionResetToActiveCommit;
-			add: resetLabel, ' and restore it' action: #actionResetToActiveCommitAndRestoreIt].
+			add: resetLabel, ' and restore it' action: #actionResetToActiveCommitAndRestoreIt;
+			add: ('Rebase branch ''{1}'' onto this ', refTypeName format: {GitReference shortName: branch})
+			action: #actionRebaseOntoActiveCommit].
 	aMenu
 		addLine;
 		add: 'Compare this ', refTypeName, ' to its parent commit' action: #actionCompareActiveCommitToParent;

@@ -1,0 +1,3 @@
+accessing
+compatibleOperationClasses
+	self subclassResponsibility.

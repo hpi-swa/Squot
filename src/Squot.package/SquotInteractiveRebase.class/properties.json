@@ -1,0 +1,15 @@
+{
+	"category" : "Squot-Mapper-Rebase",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"todoList",
+		"activeOperation" ],
+	"name" : "SquotInteractiveRebase",
+	"pools" : [
+		 ],
+	"super" : "Model",
+	"type" : "normal" }

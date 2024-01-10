@@ -32,4 +32,12 @@ FileSystemGitCompatibility hadInadequateFromUnixTimeImplementation ifFalse:
 	changeRecord ifNotNil:
 		[[changeRecord fileIn]
 			ensure: [Smalltalk globals removeKey: #TEMP_Squot_ShadowedChangeRecord255]]].
-FileSystemGitCompatibility ensureValidFromUnixTimeImplementation.'!
+FileSystemGitCompatibility ensureValidFromUnixTimeImplementation.
+
+"2024-01-10: fix git log rotation and truncate older logs, see https://github.com/hpi-swa/Squot/pull/410"
+(GitStore classPool at: #LogMessages) ifNotNil: [:logMessages |
+	| count |
+	count := logMessages size.
+	GitStore classPool
+		at: #LogMessages put: ((logMessages asArray last: (count := 5000 clampHigh: count)) as: LinkedList) "forth and back conversion to avoid inefficient LinkedList(...)>>#last: (quadratic in older versions of Squeak)";
+		at: #LogMessageCount put: count].'!

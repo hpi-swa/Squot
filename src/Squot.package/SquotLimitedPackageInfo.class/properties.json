@@ -1,0 +1,14 @@
+{
+	"category" : "Squot-Mapper-Sar",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"classes" ],
+	"name" : "SquotLimitedPackageInfo",
+	"pools" : [
+		 ],
+	"super" : "PackageInfo",
+	"type" : "normal" }

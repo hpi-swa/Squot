@@ -1,3 +1,3 @@
-accessing
+adding
 addPreambleLine: aString
-	self preamble: self preamble, aString, String cr.
+	self preamble: self preamble, (self preamble ifNotEmpty: [String cr]), aString.

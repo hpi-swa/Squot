@@ -1,3 +1,3 @@
 instance creation
 for: aString
-	^ self forWorkingCopy: (SqueakWorkingCopy named: aString)
+	^ GitStandaloneAssetLoader named: aString ifAbsent: [self forWorkingCopyNamed: aString]

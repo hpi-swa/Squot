@@ -1,4 +1,4 @@
-as yet unclassified
+*Squot-Mapper-comparing
 squotEqual: aString
 	self == aString ifTrue: [^ true].
 	aString isString ifFalse: [^ false].

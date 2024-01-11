@@ -5,6 +5,8 @@
 	"instance" : {
 		"addPackage:at:" : "mad 11/14/2023 19:28",
 		"addPreambleLine:" : "mad 11/14/2023 18:46",
+		"addString:at:" : "mad 1/9/2024 17:58",
+		"addUncompressedString:at:" : "mad 1/9/2024 20:04",
 		"addVersion:at:" : "mad 11/21/2023 15:15",
 		"addedPackages" : "mad 11/14/2023 19:05",
 		"addedPackages:" : "mad 1/8/2024 20:33",

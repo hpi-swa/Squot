@@ -8,8 +8,7 @@
 	"instvars" : [
 		"workingCopy",
 		"zip",
-		"preamble",
-		"addedPackages" ],
+		"preamble" ],
 	"name" : "SquotSarBuilder",
 	"pools" : [
 		 ],

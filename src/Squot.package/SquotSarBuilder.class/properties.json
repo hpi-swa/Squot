@@ -8,7 +8,8 @@
 	"instvars" : [
 		"workingCopy",
 		"zip",
-		"preamble" ],
+		"preamble",
+		"postAddHooks" ],
 	"name" : "SquotSarBuilder",
 	"pools" : [
 		 ],

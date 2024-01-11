@@ -3,4 +3,5 @@ initialize
 	super initialize.
 	self
 		zip: ZipArchive new;
-		preamble: ''.
+		preamble: '';
+		postAddHooks: OrderedCollection new.

@@ -1,5 +1,6 @@
 {
 	"class" : {
+		"classDependencies" : "mad 1/9/2024 19:55",
 		"named:ifAbsent:" : "mad 1/9/2024 18:46",
 		"newWithName:" : "mad 1/9/2024 19:06",
 		"register:" : "mad 1/9/2024 19:08",

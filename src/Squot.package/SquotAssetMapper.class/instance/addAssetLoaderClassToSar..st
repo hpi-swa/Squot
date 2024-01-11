@@ -1,10 +1,7 @@
 sar
 addAssetLoaderClassToSar: aSarBuilder
-	| package packageInfo packageName |
-	packageName := self class package name.
-	packageInfo := SquotLimitedPackageInfo new
-						packageName: packageName;
-						classes: GitStandaloneAssetLoader classDependencies;
-						yourself.
-	package := SquotPackageWithFixedPackageInfo withPackageInfo: packageInfo.
-	aSarBuilder addPackage: package at: packageName.
+	| fileOutPath |
+	fileOutPath := self class package name, '.st'.
+	aSarBuilder
+		addString: self fileOutAssetLoaderClass at: fileOutPath;
+		addPreambleLine: ('self fileInMemberNamed: {1}.' format: {fileOutPath printString}).

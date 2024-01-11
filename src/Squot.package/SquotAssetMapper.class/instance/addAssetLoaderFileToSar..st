@@ -7,7 +7,7 @@ addAssetLoaderFileToSar: aSarBuilder
 					at: self sarAssetLoaderFileName.
 	aSarBuilder
 		addPreambleLine:
-			('SystemChangeNotifier uniqueInstance doSilently: [self fileInMemberNamed: {1}].'
+			('(self memberNamed: {1}) contentStream text; fileInFor: self announcing: ''Loading assets''.'
 				format: {self sarAssetLoaderFileName printString});
 		addPostAddHook:
 			[member contents: (aSarBuilder fixupChunkTerminatorsIn: member contents)].

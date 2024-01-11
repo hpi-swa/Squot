@@ -8,7 +8,8 @@ projectListMenu: aMenu
 			add: 'Manage remotes'
 			target: SquotRemotesBrowser
 			selector: #openOnWorkingCopy:
-			argument: self activeWorkingCopy].
+			argument: self activeWorkingCopy;
+			add: 'Export this project to a .sar' action: #actionExportActiveProjectToSar].
 	self addMappersProjectListMenu: aMenu.
 	aMenu items ifNotEmpty: [aMenu addLine].
 	aMenu

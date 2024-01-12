@@ -1,0 +1,3 @@
+migrations
+doPostUpdateMigrationsIn: aWorkingCopy
+	self fixNilEncoding.

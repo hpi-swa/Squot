@@ -1,0 +1,14 @@
+{
+	"category" : "Squot-Mapper-Code",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "SquotCypressMapper",
+	"pools" : [
+		 ],
+	"super" : "SquotCodeMapper",
+	"type" : "normal" }

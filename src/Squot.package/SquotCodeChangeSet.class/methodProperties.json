@@ -7,6 +7,12 @@
 		"addConflicts:" : "mad 10/16/2023 17:19",
 		"addOperations:" : "mad 11/7/2023 11:57",
 		"addPatch:" : "mad 9/7/2023 16:04",
+		"canBeRemovedForSnapshot:" : "mad 2/20/2024 15:36",
+		"canMapperBeRemovedAfterMaterializeIn:" : "mad 2/20/2024 15:39",
+		"canMapperBeRemovedAfterSerializeInto:" : "mad 2/20/2024 15:38",
+		"changedSnapshotForCurrentSnapshot:" : "mad 2/20/2024 17:35",
+		"changedSnapshotForMaterializeIn:" : "mad 2/20/2024 17:35",
+		"changedSnapshotForSerializeInto:" : "mad 2/20/2024 17:35",
 		"changes" : "mad 9/7/2023 16:05",
 		"changes:" : "mad 9/7/2023 16:05",
 		"initialize" : "mad 9/7/2023 20:08",
@@ -15,4 +21,4 @@
 		"package" : "mad 9/6/2023 19:18",
 		"patch" : "mad 9/7/2023 16:03",
 		"path" : "mad 9/6/2023 19:17",
-		"serializeInto:" : "mad 10/16/2023 17:25" } }
+		"serializeInto:" : "mad 2/20/2024 15:38" } }

@@ -1,3 +1,3 @@
 accessing
 newMappers
-	^ newMappers
+	^ self newMappersWithRemovalCheck: [:mapper | true]

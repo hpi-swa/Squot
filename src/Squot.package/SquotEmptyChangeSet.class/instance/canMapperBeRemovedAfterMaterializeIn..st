@@ -1,0 +1,3 @@
+as yet unclassified
+canMapperBeRemovedAfterMaterializeIn: aWorkingCopy
+	^ self mapper canBeRemovedAfterMaterializeIn: aWorkingCopy

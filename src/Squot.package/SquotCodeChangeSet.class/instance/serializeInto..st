@@ -1,5 +1,5 @@
 operations
 serializeInto: aFileSystem
 	self mapper
-		serialize: (self patch squotApplyTo: (self mapper loadSnapshotFrom: aFileSystem))
+		serialize: (self changedSnapshotForSerializeInto: aFileSystem)
 		into: aFileSystem.

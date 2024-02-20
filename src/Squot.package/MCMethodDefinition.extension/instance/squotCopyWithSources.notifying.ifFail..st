@@ -5,6 +5,7 @@ squotCopyWithSources: aCollection notifying: requestors ifFail: aBlock
 	source := aCollection second.
 	sourceRequestor := requestors ifNotNil: #second.
 	timeStamp := aCollection third.
+	category ifEmpty: [^ aBlock value: 'please enter a non-empty method category'].
 	self selector = (Parser new parseSelector: source) ifFalse: [^ aBlock value: 'expected selector not to change'].
 	[Parser new "check syntax"
 		parse: source

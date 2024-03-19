@@ -4,7 +4,8 @@
 		"cleanUp:" : "ct 1/10/2024 18:18",
 		"logMessage:" : "ct 1/10/2024 18:17",
 		"memory" : "CamilloBruni 8/30/2012 14:04",
-		"openLog" : "jr 6/29/2017 10:42" },
+		"openLog" : "jr 6/29/2017 10:42",
+		"trimLog" : "jr 3/19/2024 14:13" },
 	"instance" : {
 		"addParent:" : "jr 2/26/2017 00:10",
 		"basenameFromEntry:" : "jr 3/6/2017 23:35",

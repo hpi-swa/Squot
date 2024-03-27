@@ -13,3 +13,4 @@ SystemOrganization addCategory: #'FileSystem-Git-Notifications'!
 SystemOrganization addCategory: #'FileSystem-Git-UI'!
 SystemOrganization addCategory: #'FileSystem-Git-Compatibility'!
 SystemOrganization addCategory: #'FileSystem-Git-Help'!
+SystemOrganization addCategory: #'FileSystem-Git-Plumbing-Packs-Delta'!

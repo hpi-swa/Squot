@@ -1,0 +1,15 @@
+{
+	"category" : "FileSystem-Git-Plumbing-Packs-Delta",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"index",
+		"hashValue" ],
+	"name" : "GitDeltaIndexEntry",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }

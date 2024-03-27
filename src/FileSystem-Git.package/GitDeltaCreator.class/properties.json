@@ -1,0 +1,22 @@
+{
+	"category" : "FileSystem-Git-Plumbing-Packs-Delta",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"deltaIndex",
+		"hasher",
+		"target",
+		"targetIndex",
+		"output",
+		"maxSize",
+		"insertionCount",
+		"matchIndex",
+		"matchSize" ],
+	"name" : "GitDeltaCreator",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }

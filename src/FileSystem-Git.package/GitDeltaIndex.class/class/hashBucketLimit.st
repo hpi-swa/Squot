@@ -1,0 +1,3 @@
+constants
+hashBucketLimit
+	^ 64

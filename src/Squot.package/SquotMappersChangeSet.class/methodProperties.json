@@ -2,7 +2,7 @@
 	"class" : {
 		"withMapper:old:potentiallyRemoved:changeSets:" : "mad 2/20/2024 15:04" },
 	"instance" : {
-		"allMappers" : "mad 2/20/2024 15:28",
+		"allMappers" : "mad 3/19/2024 21:25",
 		"canMapperBeRemoved" : "mad 2/20/2024 15:42",
 		"canMapperBeRemovedAfterMaterializeIn:" : "mad 2/20/2024 15:41",
 		"canMapperBeRemovedAfterSerializeInto:" : "mad 2/20/2024 15:41",

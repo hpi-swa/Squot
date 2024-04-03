@@ -4,7 +4,10 @@ nameFromURL: aString
 	url := Url absoluteFromText: aString.
 	path := url path.
 	path ifEmpty: [^ self requestUnregisteredName].
-	name := self withoutGitSuffix: path last.
+	name := (path
+				reversed
+				collect: [:each | self withoutGitSuffix: name])
+				detect: #notEmpty ifNone: [''].
 	(name isEmpty or: [self isNameRegistered: name])
 		ifTrue: [^ self requestUnregisteredNameFrom: name].
 	^ name

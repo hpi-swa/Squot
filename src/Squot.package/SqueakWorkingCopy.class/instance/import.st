@@ -1,3 +1,5 @@
 importing
 import
-	self checkForMissingHead.
+	self
+		checkForMissingHead;
+		importSquotContents.

@@ -4,7 +4,7 @@ actionCreateGitBranchAtActiveCommitFromRef: aStringOrNil
 	commit := self activeCommit ifNil: [self inform: 'Please select a commit first.'. ^ nil].
 	branch := self requestBranchNameFor: 'an external branch' fromRef: aStringOrNil.
 	branch isEmptyOrNil ifTrue: [^ nil].
-	gitRef := 'refs/heads/', branch.
+	gitRef := self activeWorkingCopy gitBranchName: branch.
 	(self activeWorkingCopy checkRefExists: gitRef displayName: branch) ifTrue: [^ nil].
 	self unitOfWork
 		updateRef: gitRef

@@ -1,3 +1,3 @@
 accessing
-packagePath
+pathWithPackage
 	^ self path / self package name

@@ -1,3 +1,3 @@
 accessing
 mappedPaths
-	^ {self packagePath}
+	^ {self pathWithPackage}

@@ -1,8 +1,9 @@
 {
 	"class" : {
-		"for:" : "mad 11/13/2023 13:03",
+		"for:" : "mad 1/9/2024 18:45",
 		"for:basePath:" : "mad 11/21/2023 14:27",
-		"forWorkingCopy:" : "mad 10/19/2023 12:17" },
+		"forWorkingCopy:" : "mad 10/19/2023 12:17",
+		"forWorkingCopyNamed:" : "mad 1/9/2024 16:52" },
 	"instance" : {
 		"assetAt:" : "mad 10/19/2023 12:15",
 		"assetFSPaths" : "mad 12/14/2023 12:51",
@@ -10,12 +11,13 @@
 		"basePath" : "mad 10/19/2023 12:14",
 		"basePath:" : "mad 11/21/2023 14:29",
 		"initialize" : "mad 11/21/2023 15:06",
-		"loadAnimation:" : "mad 10/21/2023 22:20",
+		"loadAnimatedImageMorph:" : "mad 1/6/2024 00:24",
+		"loadAnimation:" : "mad 1/6/2024 00:24",
 		"loadAsset:" : "mad 10/19/2023 13:58",
 		"loadAsset:ofType:" : "mad 10/19/2023 13:58",
 		"loadByteArray:" : "mad 12/8/2023 19:04",
 		"loadForm:" : "mad 10/19/2023 13:58",
-		"loadGIFReadWriter:" : "mad 10/21/2023 22:19",
+		"loadGIFReadWriter:" : "mad 1/6/2024 00:25",
 		"loadImageMorph:" : "mad 10/19/2023 13:58",
 		"loadPlaintext:" : "mad 12/8/2023 19:01",
 		"loadSound:" : "mad 10/19/2023 13:58",

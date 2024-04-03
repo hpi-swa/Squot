@@ -4,16 +4,17 @@ refListMenu: aMenu
 		aMenu target: self.
 		isBranch := self activeWorkingCopy isSqueakBranchRef: self activeRef.
 		refTypeName := self refTypeName: self activeRef.
-		isBranch ifTrue: [aMenu add: 'Switch to this branch' action: #actionSwitchToActiveBranch].
+		aMenu addTitle: ('{1} {2}' format: {refTypeName capitalized. (GitReference shortName: self activeRef) printString}).
+		isBranch ifTrue: [aMenu add: 'Switch to it' action: #actionSwitchToActiveBranch].
 		aMenu
-			add: ('Delete this {1}' format: {refTypeName}) action: #actionDeleteActiveRef;
+			add: 'Delete it' action: #actionDeleteActiveRef;
 			addLine.
 		self commitMenu: aMenu forRef: self activeRef.
 		isBranch ifTrue: [
 			aMenu
 				addLine;
-				add: 'Set the remote branch of this branch' action: #actionSetUpstreamOfActiveBranch;
-				add: 'Unset the remote branch of this branch' action: #actionUnsetUpstreamOfActiveBranch]].
+				add: 'Set its remote branch' action: #actionSetUpstreamOfActiveBranch;
+				add: 'Unset its remote branch' action: #actionUnsetUpstreamOfActiveBranch]].
 	aMenu target: self.
 	aMenu hasItems ifTrue: [aMenu addLine].
 	aMenu

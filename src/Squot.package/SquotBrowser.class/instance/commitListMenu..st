@@ -1,4 +1,3 @@
 menu
 commitListMenu: aMenu
-	self commitMenu: aMenu forRef: nil.
-	^ aMenu
+	^ self menu: aMenu forCommit: self activeCommit

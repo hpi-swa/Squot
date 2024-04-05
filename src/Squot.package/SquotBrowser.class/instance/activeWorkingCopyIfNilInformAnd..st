@@ -1,6 +1,5 @@
 accessing
 activeWorkingCopyIfNilInformAnd: aBlock
-	self activeWorkingCopy ifNil: [
+	^ self activeWorkingCopy ifNil: [
 		self inform: 'Please select a project first.'.
-		^ aBlock value].
-	^ self activeWorkingCopy
+		aBlock value]

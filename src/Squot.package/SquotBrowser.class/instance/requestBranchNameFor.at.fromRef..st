@@ -1,11 +1,11 @@
 ui
-requestBranchNameFor: aString fromRef: aStringOrNil
+requestBranchNameFor: aString at: aCommit fromRef: aStringOrNil
 	^ UIManager default
 		request: ('Create {1} at {2}. Branch name:' format: {
 					aString.
 					aStringOrNil
 						ifNotNil: [GitReference shortName: aStringOrNil]
-						ifNil: [self activeCommit showOneLine]})
+						ifNil: [aCommit showOneLine]})
 		initialAnswer: (aStringOrNil
 							ifNil: ['']
 							ifNotNilDo: [:ref |

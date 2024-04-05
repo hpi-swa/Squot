@@ -1,3 +1,3 @@
 actions
 actionCreateBranchAtActiveCommitAndSwitchToIt
-	self actionSwitchToBranch: (self actionCreateBranchAtActiveCommit ifNil: [^ self]).
+	self actionCreateBranchAtCommitAndSwitchToIt: (self activeCommitIfNilInformAnd: [^ self]).

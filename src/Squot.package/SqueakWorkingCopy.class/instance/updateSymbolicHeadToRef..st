@@ -1,5 +1,5 @@
 git-operations
-updateHeadToRef: aString
+updateSymbolicHeadToRef: aString
 	self unitOfWork
 		updateSymbolicRef: self headRefName
 		toRef: aString

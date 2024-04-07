@@ -7,5 +7,5 @@ commitChangeSets: aCollection message: aString additionalParents: anotherCollect
 							onCommit: self headCommit
 							message: aString
 							additionalParents: anotherCollection.
-		self unitOfWork updateRef: self headRefName to: newCommit hash message: 'commit: ', aString.
+		self updateHeadTo: newCommit message: 'commit: ', aString.
 		newCommit]

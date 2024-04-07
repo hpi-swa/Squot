@@ -4,4 +4,4 @@ actionSwitchToCommit: aCommit
 	self
 		actionSwitchToCommit: aCommit
 		displayName: aCommit showOneLine
-		updateHeadTo: aCommit asHexHash.
+		updateSymbolicHeadTo: aCommit asHexHash.

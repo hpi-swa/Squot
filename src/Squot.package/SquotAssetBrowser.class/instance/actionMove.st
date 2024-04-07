@@ -1,7 +1,7 @@
 actions
 actionMove
 	| newPath |
-	self selectedMapper ifNil: [^ self inform: 'Please select an asset first.'].
+	self selectedMapperIfNilInformAnd: [^ self].
 	newPath := (self activeWorkingCopy
 					requestUnmappedPathWithTitle:
 						('New path for asset ''{1}'':' format: {self selectedMapper printStringWithoutPath})

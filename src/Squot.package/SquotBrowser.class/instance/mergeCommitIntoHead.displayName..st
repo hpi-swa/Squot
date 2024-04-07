@@ -5,8 +5,7 @@ mergeCommitIntoHead: aCommit displayName: aString
 	aCommit ifNil: [^ self inform:
 						('Cannot merge {1}, it does not refer to a commit.' format: {aString})].
 	self warnIfImageNotClean: [^ self].
-	head := self activeWorkingCopy headCommit
-				ifNil: [^ self inform: 'Please create a commit first.'].
+	head := self activeWorkingCopy headCommitIfNilInformAnd: [^ self].
 	mergeBases := head allMergeBasesWithAnyOf: {aCommit}.
 	mergeBase := mergeBases size caseOf: {
 		[0] -> [^ self inform: 'Cannot merge unrelated histories.'].

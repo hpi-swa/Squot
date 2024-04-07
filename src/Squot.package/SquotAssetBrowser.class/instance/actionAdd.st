@@ -1,7 +1,7 @@
 actions
 actionAdd
 	| mapperClass path mapper |
-	self activeWorkingCopy ifNil: [^ self inform: 'Please select a project first.'].
+	self activeWorkingCopyIfNilInformAnd: [^ self].
 	mapperClass := SquotAssetMapper requestMapperClass ifNil: [^ nil].
 	path := (self
 				requestPathWithSuffix: (self defaultFileNameFor: mapperClass)

@@ -1,0 +1,3 @@
+accessing
+editsMessage
+	^ self editMessage

@@ -1,0 +1,3 @@
+compatibility
+wantsToChangeTo: aRebaseOperationClass
+	^ true

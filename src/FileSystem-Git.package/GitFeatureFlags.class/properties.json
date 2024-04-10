@@ -5,6 +5,7 @@
 	"classvars" : [
 		"EvictFromObjectCache",
 		"ExternalFetchAndPush",
+		"PruneWhenFetching",
 		"TerminalCommandForExternalCommands",
 		"UseUnitOfWorkInterface",
 		"WarnAboutUseOfDeprecatedMethods" ],

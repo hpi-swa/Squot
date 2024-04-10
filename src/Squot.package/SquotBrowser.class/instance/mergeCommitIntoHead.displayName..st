@@ -1,12 +1,11 @@
 merging
 mergeCommitIntoHead: aCommit displayName: aString
-	| head mergeBases mergeBase changeSets |
+	| head mergeBases mergeBase |
 	self activeWorkingCopyIfNilInformAnd: [^ self].
 	aCommit ifNil: [^ self inform:
 						('Cannot merge {1}, it does not refer to a commit.' format: {aString})].
 	self warnIfImageNotClean: [^ self].
-	head := self activeWorkingCopy headCommit
-				ifNil: [^ self inform: 'Please create a commit first.'].
+	head := self activeWorkingCopy headCommitIfNilInformAnd: [^ self].
 	mergeBases := head allMergeBasesWithAnyOf: {aCommit}.
 	mergeBase := mergeBases size caseOf: {
 		[0] -> [^ self inform: 'Cannot merge unrelated histories.'].
@@ -18,8 +17,7 @@ mergeCommitIntoHead: aCommit displayName: aString
 			openDialogToMaterializeCommit: aCommit
 			windowTitlePrefix: 'Fast-forwarding: ') then:
 				[:dialog | self activeWorkingCopy fastForwardTo: aCommit displayName: aString]].
-	changeSets := self activeWorkingCopy
-						mergeCommit: aCommit
-						into: head
-						withBase: mergeBase.
-	self openDialogToMergeChangeSets: changeSets from: aCommit displayName: aString.
+	self
+		openDialogToMergeCommitIntoHead: aCommit
+		mergeBase: mergeBase
+		displayName: aString.

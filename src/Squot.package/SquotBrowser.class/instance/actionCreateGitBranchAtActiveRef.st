@@ -1,3 +1,3 @@
 actions
 actionCreateGitBranchAtActiveRef
-	^ self actionCreateGitBranchAtActiveCommitFromRef: self activeRef.
+	^ self actionCreateGitBranchAtRef: (self activeRefIfNilInformAnd: [^ nil])

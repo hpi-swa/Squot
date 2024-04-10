@@ -1,3 +1,3 @@
 actions
 actionSwitchToActiveBranch
-	self actionSwitchToBranch: self activeRef.
+	self actionSwitchToBranch: (self activeRefIfNilInformAnd: [^ self]).

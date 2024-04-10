@@ -1,6 +1,5 @@
 git-operations
 fastForwardTo: aCommit displayName: aString
-	self unitOfWork
-		updateRef: self headRefName
-		to: aCommit asHexHash
+	self
+		updateHeadTo: aCommit
 		message: ('merge {1}: Fast-forward' format: {aString}).

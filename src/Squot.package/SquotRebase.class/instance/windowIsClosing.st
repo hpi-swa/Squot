@@ -1,0 +1,3 @@
+toolbuilder
+windowIsClosing
+	self abort.

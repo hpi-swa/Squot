@@ -1,3 +1,3 @@
 operations
 materializeIn: aWorkingCopy
-	aWorkingCopy mappers: self newMappers.
+	aWorkingCopy mappers: (self newMappersAfterMaterializeIn: aWorkingCopy).

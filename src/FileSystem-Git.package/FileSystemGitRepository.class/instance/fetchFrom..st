@@ -25,4 +25,8 @@ fetchFrom: aRemoteName
 		[:each | self unitOfWork
 					updateRef: (remote trackingRefOf: each)
 					to: (remoteRefs at: each)].
+	GitFeatureFlags pruneWhenFetching ifTrue: [
+		self
+			pruneRefs: fetchSpec
+			keep: (wantRefs collect: [:each | fetchSpec trackingRefOf: each])].
 	^ protocol refs

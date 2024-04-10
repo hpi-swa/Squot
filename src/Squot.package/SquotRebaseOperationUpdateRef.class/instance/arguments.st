@@ -1,0 +1,3 @@
+accessing
+arguments
+	^ self ref

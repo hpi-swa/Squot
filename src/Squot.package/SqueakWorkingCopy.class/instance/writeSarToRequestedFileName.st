@@ -1,0 +1,3 @@
+sar
+writeSarToRequestedFileName
+	self writeSarToFileNamed: self requestSarFileName.

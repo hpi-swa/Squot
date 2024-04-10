@@ -1,21 +1,27 @@
 merging
 mergeCommit: rightFSCommit into: leftFSCommit withBase: baseFSCommit in: aWorkingCopy
-	| emptyCommit commits mappersCollections combinedMappers |
+	| emptyCommit commits mappersForCommits commitsForMappers potentiallyRemovedMappers mapperChangeSets mappersChangeSet |
 	emptyCommit := aWorkingCopy emptyCommit.
 	commits := {rightFSCommit. leftFSCommit. baseFSCommit}.
-	mappersCollections := commits collect: [:each | self loadMappersFromFSCommit: each].
-	combinedMappers := Dictionary new.
+	mappersForCommits := commits collect: [:each | self loadMappersFromFSCommit: each].
+	commitsForMappers := Dictionary new.
 	commits withIndexDo: [:commit :index |
-		(mappersCollections at: index) do: [:mapper |
-			(combinedMappers at: mapper ifAbsentPut: [{emptyCommit. emptyCommit. emptyCommit}])
+		(mappersForCommits at: index) do: [:mapper |
+			(commitsForMappers at: mapper ifAbsentPut: [{emptyCommit. emptyCommit. emptyCommit}])
 				at: index put: commit]].
-	^ Array streamContents: [:stream |
-		combinedMappers keysAndValuesDo: [:mapper :mapperCommits |
-			stream nextPut: (mapper
-								mergeCommit: mapperCommits first
-								into: mapperCommits second
-								withBase: mapperCommits third)].
-		stream nextPut:
-			(self
-				mergeMappers: mappersCollections first
-				into: mappersCollections second)]
+	potentiallyRemovedMappers := commitsForMappers keys select: [:mapper | | commitsForMapper |
+		commitsForMapper := (commitsForMappers at: mapper).
+		commitsForMapper first = emptyCommit or: [commitsForMapper second = emptyCommit]].
+	mapperChangeSets := Dictionary new.
+	commitsForMappers keysAndValuesDo: [:mapper :mapperCommits |
+		mapperChangeSets
+			at: mapper
+			put: (mapper
+					mergeCommit: mapperCommits first
+					into: mapperCommits second
+					withBase: mapperCommits third)].
+	mappersChangeSet := self
+		changeSetFromMappers: mappersForCommits second
+		removing: potentiallyRemovedMappers
+		changeSets: mapperChangeSets.
+	^ mapperChangeSets values copyWith: mappersChangeSet

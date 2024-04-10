@@ -1,0 +1,3 @@
+refs
+gitBranchesBaseName
+	^ 'refs/heads/'

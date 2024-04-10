@@ -1,3 +1,3 @@
 multitext
 pathFor: aDefinition
-	^ self path segments, {self package name}, aDefinition squotChangePath
+	^ self pathWithPackage segments, aDefinition squotChangePath

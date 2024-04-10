@@ -8,6 +8,8 @@
 		"wavEncoding" : "mad 9/20/2023 17:58" },
 	"instance" : {
 		"canReadVersionFrom:" : "mad 10/19/2023 12:56",
+		"doPostUpdateMigrationsIn:" : "mad 1/12/2024 12:34",
+		"fixNilEncoding" : "mad 1/12/2024 12:37",
 		"isValidVersion:" : "mad 10/21/2023 21:33",
 		"readVersionFrom:" : "mad 10/17/2023 12:22",
 		"transformVersion:ifFail:" : "mad 10/17/2023 12:33",

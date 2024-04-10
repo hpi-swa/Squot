@@ -4,6 +4,8 @@
 		"anyIncludesConflicts:" : "mad 4/10/2024 16:15",
 		"withMapper:" : "mad 9/6/2023 12:45" },
 	"instance" : {
+		"canMapperBeRemovedAfterMaterializeIn:" : "mad 2/20/2024 15:33",
+		"canMapperBeRemovedAfterSerializeInto:" : "mad 2/20/2024 13:58",
 		"changes" : "mad 9/5/2023 22:51",
 		"hasConflicts" : "mad 9/27/2023 16:06",
 		"hasIncludedConflicts" : "mad 9/27/2023 16:12",

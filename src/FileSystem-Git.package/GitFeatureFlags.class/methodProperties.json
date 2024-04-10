@@ -3,8 +3,12 @@
 		"evictFromObjectCache" : "jr 8/10/2020 23:42",
 		"evictFromObjectCache:" : "jr 4/20/2020 21:59",
 		"evictFromObjectCacheForTests:" : "jr 4/20/2020 23:33",
+		"externalFetchAndPush" : "tobe 10/15/2022 07:17",
+		"externalFetchAndPush:" : "tobe 10/15/2022 07:17",
 		"pruneWhenFetching" : "mad 4/7/2024 18:31",
 		"pruneWhenFetching:" : "mad 4/7/2024 14:46",
+		"terminalCommandForExternalCommands" : "mad 4/3/2024 16:37",
+		"terminalCommandForExternalCommands:" : "mad 12/20/2023 18:04",
 		"warnAboutUseOfDeprecatedMethods" : "jr 9/21/2020 23:10",
 		"warnAboutUseOfDeprecatedMethods:" : "jr 4/17/2020 11:49" },
 	"instance" : {

@@ -44,4 +44,5 @@ SystemOrganization addCategory: #'Squot-Mapper-Sound'!
 SystemOrganization addCategory: #'Squot-Mapper-Multitext'!
 SystemOrganization addCategory: #'Squot-Mapper-Code'!
 SystemOrganization addCategory: #'Squot-Mapper-Rebase'!
+SystemOrganization addCategory: #'Squot-Mapper-Sar'!
 SystemOrganization addCategory: #'Squot-Mapper-Utilities'!

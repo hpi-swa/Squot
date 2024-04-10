@@ -3,7 +3,7 @@ actionCreateGitBranchAtCommit: aCommit fromRef: aStringOrNil
 	| branch gitRef |
 	branch := self requestBranchNameFor: 'an external branch' at: aCommit fromRef: aStringOrNil.
 	branch isEmptyOrNil ifTrue: [^ nil].
-	gitRef := 'refs/heads/', branch.
+	gitRef := self activeWorkingCopy gitBranchName: branch.
 	(self activeWorkingCopy checkRefExists: gitRef displayName: branch) ifTrue: [^ nil].
 	self unitOfWork
 		updateRef: gitRef

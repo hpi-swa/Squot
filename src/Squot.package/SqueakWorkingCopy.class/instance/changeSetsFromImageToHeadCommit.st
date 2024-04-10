@@ -1,0 +1,3 @@
+changes-creation
+changeSetsFromImageToHeadCommit
+	^ self changeSetsFromImageToCommit: self headCommit

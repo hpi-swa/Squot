@@ -45,6 +45,7 @@
 		"changeSetsFromHeadCommitToImage" : "mad 9/6/2023 19:29",
 		"changeSetsFromImageToCommit:" : "mad 9/6/2023 19:29",
 		"changeSetsFromImageToFSCommit:" : "mad 9/20/2023 12:44",
+		"changeSetsFromImageToHeadCommit" : "mad 4/7/2024 15:33",
 		"checkCanDeleteRef:" : "mad 10/16/2023 22:52",
 		"checkRefExists:displayName:" : "mad 10/16/2023 21:31",
 		"checkoutReflogMessageTo:" : "mad 11/30/2023 13:19",

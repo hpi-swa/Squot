@@ -106,6 +106,7 @@
 		"currentBranchIfNilInformAnd:" : "mad 9/26/2023 16:56",
 		"doesRef:comeBeforeRef:" : "mad 9/19/2023 14:45",
 		"emptyCommit" : "mad 4/4/2024 23:07",
+		"ensureHeadCommitMaterializedTo:" : "mad 4/7/2024 17:48",
 		"ifRepositoryDoesNotExist:" : "mad 11/30/2023 17:08",
 		"menu:forCommit:" : "mad 4/5/2024 20:19",
 		"menu:forCommit:ref:" : "mad 4/5/2024 19:43",

@@ -1,3 +1,0 @@
-toolbuilder
-windowTitle
-	^ 'Interactive Rebase'

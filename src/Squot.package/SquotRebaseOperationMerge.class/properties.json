@@ -6,9 +6,11 @@
 		 ],
 	"commentStamp" : "",
 	"instvars" : [
-		 ],
+		"messageCommit",
+		"oneLineMessage",
+		"editMessage" ],
 	"name" : "SquotRebaseOperationMerge",
 	"pools" : [
 		 ],
-	"super" : "SquotRebaseOperation",
+	"super" : "SquotRebaseOperationWithLabel",
 	"type" : "normal" }

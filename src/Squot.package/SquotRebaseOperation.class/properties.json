@@ -3,10 +3,10 @@
 	"classinstvars" : [
 		 ],
 	"classvars" : [
-		 ],
+		"Icons" ],
 	"commentStamp" : "",
 	"instvars" : [
-		 ],
+		"rebase" ],
 	"name" : "SquotRebaseOperation",
 	"pools" : [
 		 ],

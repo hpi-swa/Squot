@@ -6,7 +6,8 @@
 		 ],
 	"commentStamp" : "",
 	"instvars" : [
-		 ],
+		"keepCurrentMessage",
+		"editMessage" ],
 	"name" : "SquotRebaseOperationFixup",
 	"pools" : [
 		 ],

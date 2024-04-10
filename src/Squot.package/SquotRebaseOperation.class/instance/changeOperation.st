@@ -1,5 +1,3 @@
-as yet unclassified
+operation-changing
 changeOperation
-	^ (self class chooseCompatibleOperationClass ifNil: [^ nil]) new
-		copyFrom: self;
-		yourself
+	^ self changeOperationTo: self class chooseNewOperationClass

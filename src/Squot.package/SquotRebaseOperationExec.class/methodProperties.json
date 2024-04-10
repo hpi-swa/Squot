@@ -2,4 +2,9 @@
 	"class" : {
 		"operationName" : "mad 12/5/2023 21:52" },
 	"instance" : {
-		"keepsCommit" : "mad 12/5/2023 21:30" } }
+		"arguments" : "mad 4/3/2024 18:02",
+		"command" : "mad 4/3/2024 17:58",
+		"command:" : "mad 4/3/2024 17:59",
+		"handleError:" : "mad 4/10/2024 17:24",
+		"requestMissingInstVars" : "mad 4/4/2024 20:16",
+		"run" : "mad 4/4/2024 22:24" } }

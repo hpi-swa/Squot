@@ -1,0 +1,3 @@
+compatibility
+wantsToBeCreatedFrom: aRebaseOperationClass
+	^ true

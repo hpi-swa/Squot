@@ -1,9 +1,13 @@
 actions
 actionRebaseOntoCommit: aCommit
-	| commits |
-	self activeWorkingCopyIfNilInformAnd: [^ self].
+	| workingCopy commits rebase |
+	workingCopy := self activeWorkingCopyIfNilInformAnd: [^ self].
 	commits := GitHistoryWalker new
-		excludeAncestorsOf: aCommit;
-		startingFrom: self activeWorkingCopy headCommit.
-	self actionResetToCommit: aCommit.
-	(SquotRebase newWithBrowser: self commits: commits reversed) open.
+					excludeAncestorsOf: aCommit;
+					startingFrom: workingCopy headCommit.
+	rebase := SquotRebase newWithBrowser: self commits: commits reversed.
+	rebase start then: [:x |
+		workingCopy
+			updateHeadToAndMaterialize: aCommit
+			message: 'rebase (start): checkout ', aCommit hexHash.
+		rebase open].

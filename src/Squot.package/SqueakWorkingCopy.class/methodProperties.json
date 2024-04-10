@@ -147,6 +147,7 @@
 		"unregister" : "mad 9/19/2023 12:07",
 		"update:" : "mad 9/21/2023 17:03",
 		"updateHeadTo:message:" : "mad 4/7/2024 18:09",
+		"updateHeadToAndMaterialize:message:" : "mad 4/7/2024 18:10",
 		"updateSymbolicHeadTo:" : "mad 4/7/2024 18:01",
 		"updateSymbolicHeadToCommit:" : "mad 4/7/2024 18:01",
 		"updateSymbolicHeadToRef:" : "mad 4/7/2024 18:00",

@@ -1,0 +1,3 @@
+running
+nextOperation
+	^ SquotRebase nextOperation

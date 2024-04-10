@@ -1,0 +1,3 @@
+icon
+icon
+	^ self lineIcon

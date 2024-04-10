@@ -1,3 +1,0 @@
-running
-actionRun
-	self runNextOperation.

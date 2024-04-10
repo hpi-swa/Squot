@@ -1,3 +1,3 @@
-accessing
+compatibility
 compatibleOperationClasses
-	self subclassResponsibility.
+	^ self operationClasses select: [:each | self canChangeTo: each]

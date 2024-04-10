@@ -1,3 +1,0 @@
-accessing
-compatibleOperationClasses
-	^ SquotRebaseOperationWithCommit allSubclasses

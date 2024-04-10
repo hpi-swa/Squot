@@ -1,8 +1,4 @@
-as yet unclassified
-setItem: aRebaseOperation
-	super setItem: aRebaseOperation.
-	self string: ({
-		aRebaseOperation textIcon.
-		aRebaseOperation operationName.
-		aRebaseOperation label.
-	} joinSeparatedBy: Character tab).
+initialization
+setItem: aRebaseOperationOrNil
+	super setItem: aRebaseOperationOrNil.
+	self string: (aRebaseOperationOrNil columns joinSeparatedBy: Character tab).

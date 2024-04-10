@@ -10,5 +10,5 @@
 	"name" : "SquotRebaseOperationLabel",
 	"pools" : [
 		 ],
-	"super" : "SquotRebaseOperation",
+	"super" : "SquotRebaseOperationWithLabel",
 	"type" : "normal" }

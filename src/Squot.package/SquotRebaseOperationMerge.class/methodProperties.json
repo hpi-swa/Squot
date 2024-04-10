@@ -2,4 +2,12 @@
 	"class" : {
 		"operationName" : "mad 12/5/2023 21:53" },
 	"instance" : {
-		 } }
+		"arguments" : "mad 4/3/2024 18:06",
+		"editMessage" : "mad 4/3/2024 18:03",
+		"editMessage:" : "mad 4/3/2024 18:03",
+		"initialize" : "mad 4/5/2024 16:11",
+		"messageCommit" : "mad 4/5/2024 16:06",
+		"messageCommit:" : "mad 4/5/2024 16:06",
+		"oneLineMessage" : "mad 4/5/2024 16:11",
+		"oneLineMessage:" : "mad 4/5/2024 16:11",
+		"run" : "mad 4/10/2024 16:48" } }

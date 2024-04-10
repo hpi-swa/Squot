@@ -3,16 +3,20 @@ openDialogToCommitChangeSets: changeSetCollection
 windowTitle: titleString
 initialMessage: messageString
 additionalParents: commitCollection
+onlyAdditionalParents: overrideParentsBoolean
 materializeChangeSets: materializeBoolean
-	| workingCopy currentHeadCommit promise dialog |
+	| workingCopy currentHeadCommit commitButtonLabel promise dialog |
 	workingCopy := self activeWorkingCopyIfNilInformAnd: [^ Promise new "never resolves"].
 	currentHeadCommit := self activeWorkingCopy headCommit.
+	commitButtonLabel := commitCollection size > (overrideParentsBoolean ifTrue: [1] ifFalse: [0])
+								ifTrue: ['Merge']
+								ifFalse: ['Commit'].
 	promise := Promise new.
 	(dialog := SquotChangesDialogWithMessage onChangeSets: changeSetCollection)
 		windowTitle: titleString;
 		message: messageString;
 		addCloseButton: 'Cancel';
-		addButton: (commitCollection ifEmpty: ['Commit'] ifNotEmpty: ['Merge'])
+		addButton: commitButtonLabel
 		action: [
 			self
 				validateDialogState: dialog
@@ -21,7 +25,8 @@ materializeChangeSets: materializeBoolean
 					workingCopy
 						commitChangeSets: changeSetCollection
 						message: dialog message
-						additionalParents: commitCollection.
+						additionalParents: commitCollection
+						onlyAdditionalParents: overrideParentsBoolean.
 					shouldMaterialize := materializeBoolean or: [
 						dialog wasEdited and: [self confirm: 'You edited some changes. Do you wish to load them into the image?']].
 					shouldMaterialize ifTrue: [workingCopy materializeChangeSets: changeSetCollection].

@@ -1,8 +1,9 @@
 dialog
-openDialogToCommitChangeSets: aCollection
+openDialogToCommitChangeSets: aCollection initialMessage: aString
 	^ self
 		openDialogToCommitChangeSets: aCollection
 		windowTitle: 'Changes to commit'
-		initialMessage: ''
+		initialMessage: aString
 		additionalParents: {}
+		onlyAdditionalParents: false
 		materializeChangeSets: false

@@ -3,6 +3,7 @@ importSquotContents
 	| filesystem readStream loadOrder |
 	self mappers ifNotEmpty: [^ self].
 	filesystem := (self headFSCommit ifNil: [^ self]) filesystem.
+	(self mappersMapper hasMappersFile: filesystem) ifTrue: [^ self].
 	readStream := [filesystem readStreamOn: '.squot'] on: FileDoesNotExist do: [^ self].
 	loadOrder := STON fromStream: readStream.
 	loadOrder ifEmpty: [^ self].

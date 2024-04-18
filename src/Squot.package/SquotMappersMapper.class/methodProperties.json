@@ -14,6 +14,7 @@
 		"changeSetsFromFSCommit:toImage:" : "mad 9/20/2023 12:51",
 		"changeSetsFromImage:toFSCommit:" : "mad 9/20/2023 12:51",
 		"changeSetsFromMappers:toMappers:old:common:new:in:" : "mad 2/20/2024 15:19",
+		"hasMappersFile:" : "mad 4/18/2024 18:33",
 		"loadMappersFromFSCommit:" : "mad 9/20/2023 12:05",
 		"loadMappersFromFileSystem:" : "mad 9/20/2023 12:05",
 		"loadMappersFromWorkingCopy:" : "mad 9/20/2023 12:09",

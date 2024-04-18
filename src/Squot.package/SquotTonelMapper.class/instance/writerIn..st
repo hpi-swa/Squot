@@ -1,5 +1,5 @@
 changes-operations
-writerOn: aFileSystem
+writerIn: aFileSystem
 	| writer |
 	writer := TonelWriter on: (aFileSystem referenceTo: self path).
 	writer packageName: self package name.

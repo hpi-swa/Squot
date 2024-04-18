@@ -1,3 +1,3 @@
-printing
+accessing
 encodingName
 	^ 'Tonel'

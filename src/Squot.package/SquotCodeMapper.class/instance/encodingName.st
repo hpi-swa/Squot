@@ -1,3 +1,3 @@
-printing
+accessing
 encodingName
-	self subclassResponsibility.
+	^ self class encodingName

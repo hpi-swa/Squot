@@ -1,8 +1,8 @@
-as yet unclassified
+menu
 projectListMenu: aMenu for: aWorkingCopy
 	aWorkingCopy ifNil: [^ self].
 	aMenu
 		add: 'Manage packages'
-		target: SquotTonelPackageBrowser
+		target: SquotCodePackageBrowser
 		selector: #openOnWorkingCopy:
 		argument: aWorkingCopy.

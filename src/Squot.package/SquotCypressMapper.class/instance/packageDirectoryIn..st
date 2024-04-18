@@ -1,3 +1,3 @@
-as yet unclassified
+accessing
 packageDirectoryIn: aFileSystem
-	^ aFileSystem resolve: self packagePath
+	^ aFileSystem referenceTo: self packagePath

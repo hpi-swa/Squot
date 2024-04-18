@@ -1,3 +1,3 @@
-as yet unclassified
+accessing
 packagePath
 	^ self pathWithPackage withExtension: self readerClass extension

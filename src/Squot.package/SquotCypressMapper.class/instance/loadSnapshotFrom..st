@@ -1,5 +1,5 @@
-as yet unclassified
+snapshot-creation
 loadSnapshotFrom: aFilesystem
 	^ [(self readerIn: aFilesystem) version snapshot]
-		on: DirectoryDoesNotExist, TonelParseError
+		on: DirectoryDoesNotExist
 		do: [^ MCSnapshot empty]

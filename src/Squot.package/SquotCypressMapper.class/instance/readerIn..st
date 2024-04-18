@@ -1,4 +1,4 @@
-as yet unclassified
+changes-operations
 readerIn: aFileSystem
 	| directory |
 	directory := self packageDirectoryIn: aFileSystem.

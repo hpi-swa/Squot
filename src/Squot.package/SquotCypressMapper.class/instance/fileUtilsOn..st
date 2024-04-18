@@ -1,5 +1,5 @@
-as yet unclassified
+changes-operations
 fileUtilsOn: aDirectory
-	^ (MCFileTreeFileSystemUtilsForSquot new)
+	^ MCFileTreeFileSystemUtilsForSquot new
 		directory: aDirectory;
 		yourself

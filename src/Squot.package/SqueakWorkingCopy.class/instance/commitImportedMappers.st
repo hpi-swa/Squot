@@ -14,4 +14,5 @@ commitImportedMappers
 	self
 		commitChangeSets: {mappersChangeSet}
 		message: commitMessage
-		additionalParents: {}.
+		additionalParents: {}
+		onlyAdditionalParents: false.

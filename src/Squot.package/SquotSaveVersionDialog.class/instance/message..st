@@ -1,4 +1,5 @@
 accessing
 message: anObject
 
-	message := anObject
+	message := anObject.
+	^ true

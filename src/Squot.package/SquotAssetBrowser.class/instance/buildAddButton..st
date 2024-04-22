@@ -3,5 +3,5 @@ buildAddButton: builder
 	^ builder pluggableActionButtonSpec new
 		model: self;
 		action: #actionAdd;
-		label: 'Add asset';
+		label: 'Add empty asset';
 		yourself

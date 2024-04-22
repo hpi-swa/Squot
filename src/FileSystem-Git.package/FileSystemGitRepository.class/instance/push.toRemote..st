@@ -13,4 +13,5 @@ push: aCollectionOfBranchNamesAndAssociations toRemote: remoteName
 					do: [:exception |
 						self
 							handleConnectionClosed: exception
+							whileTryingTo: 'push'
 							ifRetry: [self push: aCollectionOfBranchNamesAndAssociations toRemote: remoteName]]]

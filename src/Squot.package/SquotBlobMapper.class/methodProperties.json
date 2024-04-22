@@ -6,7 +6,7 @@
 		"validEncodings" : "mad 10/21/2023 21:15" },
 	"instance" : {
 		"canReadVersionFrom:" : "mad 10/21/2023 21:06",
-		"isGeneric" : "mad 10/21/2023 22:47",
+		"importPriority" : "mad 4/22/2024 16:43",
 		"isValidVersion:" : "mad 10/21/2023 21:06",
 		"printOn:" : "mad 10/21/2023 21:22",
 		"printWithoutPathOn:" : "mad 10/21/2023 21:47",

@@ -1,8 +1,8 @@
 importing
-commitImportedMappers
+commitImportedMappers: aCollection on: aCommit
 	| commitMessage emptyChangeSets mappersChangeSet |
 	emptyChangeSets := Dictionary newFrom:
-		(self mappers collect: [:each | each -> (SquotEmptyChangeSet withMapper: each)]).
+		(aCollection collect: [:each | each -> (SquotEmptyChangeSet withMapper: each)]).
 	mappersChangeSet := self mappersMapper
 								changeSetFromMappers: {}
 								removing: {}
@@ -10,9 +10,10 @@ commitImportedMappers
 	commitMessage := UIManager default
 							request: 'Commit message for the repository metadata conversion (leave empty to cancel):'
 							initialAnswer: 'Convert repository metadata'.
-	commitMessage ifEmpty: [^ self].
-	self
+	commitMessage isEmptyOrNil ifTrue: [^ nil].
+	^ self
 		commitChangeSets: {mappersChangeSet}
+		onCommit: aCommit
 		message: commitMessage
 		additionalParents: {}
-		onlyAdditionalParents: false.
+		onlyAdditionalParents: false

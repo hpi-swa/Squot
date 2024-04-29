@@ -1,0 +1,3 @@
+accessing
+packagePath
+	self subclassResponsibility.

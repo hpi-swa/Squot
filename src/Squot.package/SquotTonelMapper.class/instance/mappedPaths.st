@@ -1,3 +1,0 @@
-accessing
-mappedPaths
-	^ {self pathWithPackage}

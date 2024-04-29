@@ -11,5 +11,5 @@ onlyAdditionalParents: aBoolean
 							message: aString
 							additionalParents: anotherCollection
 							onlyAdditionalParents: aBoolean.
-		self updateHeadTo: newCommit message: 'commit: ', aString.
+		self updateHeadRefToNewCommit: newCommit.
 		newCommit]

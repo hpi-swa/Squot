@@ -2,6 +2,7 @@ changes-operations
 writerIn: aFileSystem
 	| directory repository fileUtils fileTreeWriter |
 	directory := self packageDirectoryIn: aFileSystem.
+	directory ensureDirectory.
 	repository := SquotMockMCRepository new
 					directory: directory;
 					yourself.

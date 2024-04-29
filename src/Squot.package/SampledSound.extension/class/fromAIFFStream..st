@@ -1,5 +1,6 @@
 *Squot-Mapper-Sound
 fromAIFFStream: aStream
+	aStream binary.
 	^ AIFFFileReader new
 		readFromStream: aStream
 		mergeIfStereo: false

@@ -8,4 +8,4 @@ actionProjectChangeDirectory
 		from: (FileDirectory on: gitRepository workingDir pathName).
 	directory ifNil: [^ self].
 	gitRepository workingDir: (FileSystem disk root resolve: directory pathName).
-	self projectSelection: self projectSelection. "updates repositoryExists, selectedHistorian, et al."
+	self updateProjectSelection.

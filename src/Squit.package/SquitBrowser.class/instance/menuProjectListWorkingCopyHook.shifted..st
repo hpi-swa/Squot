@@ -1,13 +1,15 @@
 ui menu
-menuProjectListWorkingCopyHook: aMenu
+menuProjectListWorkingCopyHook: aMenu shifted: shifted
 	<menuProjectList>
 	<menuPriority: 50>
 	self projectSelection ifNil: [^ aMenu].
-	aMenu addTitle: 'Working copy of ', self projectSelection name.
-	aMenu addList: {
-		{'Rename project'. #actionProjectRename}.
-		{'Remove project'. #actionProjectRemove}.
-	}.
+	aMenu addTitle: ('Working copy of {1}' format: {self projectSelection name}).
+	aMenu add: 'Rename project' action: #actionProjectRename.
+	(shifted or: [self projectSelection repository exists not]) ifTrue:
+		[aMenu addList: {
+			{'Change project directory'. #actionProjectChangeDirectory. 'Assign this project to a different directory. This does NOT move the existing repository to another location.'}
+		}].
+	aMenu add: 'Remove project' action: #actionProjectRemove.
 	aMenu addLine.
 	aMenu
 		addList: {

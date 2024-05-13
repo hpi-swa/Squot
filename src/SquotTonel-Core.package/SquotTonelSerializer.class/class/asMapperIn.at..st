@@ -1,4 +1,4 @@
-*Squot-Mapper-importing
+mapper-importing
 asMapperIn: aFilesystem at: aPath
 	| packagePath |
 	packagePath := aPath parent.

@@ -13,7 +13,7 @@ knownTerminalCommands
 		'konsole -e {}'.
 		'lxterminal -e {}'.
 		'mate-terminal -x {}'.
-		'osascript -e ''tell app "Terminal" to do script "{'':\'',":\"}"'''.
+		'osascript -e ''tell app "Terminal" to do script "{":\",'':''"''"''}"'''.
 		'st -e {}'.
 		'terminator -x {}'.
 		'terminology -e {quote}'.

@@ -1,4 +1,4 @@
-as yet unclassified
+*Squot-Mapper-comparing
 squotEqual: aString
 	| a b aHasNewLine bHasNewLine |
 	self == aString ifTrue: [^ true].

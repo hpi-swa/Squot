@@ -1,4 +1,5 @@
 refs
 refChanged: aGitReference
-	self refsForCommits: nil.
-	self changed: aGitReference.
+	self
+		refsChanged;
+		changed: aGitReference.

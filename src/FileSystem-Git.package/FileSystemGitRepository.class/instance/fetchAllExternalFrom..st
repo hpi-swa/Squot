@@ -6,5 +6,6 @@ fetchAllExternalFrom: aRemoteName
 	self externalGitDo: ('fetch {1}{2}' format: {
 		GitFeatureFlags pruneWhenFetching ifTrue: ['--prune '] ifFalse: [''].
 		aRemoteName}).
+	self repository changed: #allReferences.
 	url := remote url ifNil: [(GitRemoteUndefined remote: remote) signal: 'No URL configured.'].
 	^ (GitAbstractProtocol url: url) refs

@@ -5,7 +5,7 @@ knownTerminalCommands
 		'cool-retro-term -e {}'.
 		'deepin-terminal -e {no-key}'.
 		'foot -- {}'.
-		'gnome-terminal -- {}'.
+		'gnome-terminal --wait -- {}'.
 		"'guake --show -e {quote}'." "doesn't work properly"
 		"'io.elementary.terminal -x {}'." "doesn't work properly"
 		'kgx -e {}'.

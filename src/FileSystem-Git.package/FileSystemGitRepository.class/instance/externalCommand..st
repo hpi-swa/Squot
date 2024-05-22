@@ -8,5 +8,5 @@ externalCommand: aString
 		^ self externalCommand: aString].
 	osProcess waitForCommand:
 		(osProcess isWindows
-			ifTrue: ['cmd.exe /c "{1} & pause"' format: {aString copyReplaceAll: '"' with: '\"'}]
+			ifTrue: ['cmd.exe /c "{1} & pause"' format: {aString}]
 			ifFalse: [self terminalCommand: aString]).

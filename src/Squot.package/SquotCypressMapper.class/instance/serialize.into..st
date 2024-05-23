@@ -1,7 +1,9 @@
 changes-operations
 serialize: aSnapshot into: aFileSystem
-	| writer |
+	| writer directory |
 	writer := self writerIn: aFileSystem.
-	aSnapshot definitions
-		ifEmpty: [writer stream packageFileDirectory deleteAll]
-		ifNotEmpty: [:definitions | writer writeDefinitions: definitions].
+	directory := writer stream packageFileDirectory.
+	directory deleteAll.
+	aSnapshot definitions ifEmpty: [^ self].
+	directory ensureDirectory.
+	writer writeDefinitions: aSnapshot definitions.

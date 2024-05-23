@@ -1,6 +1,6 @@
 git porcelain
 fetchFrom: aRemoteName
-	^ GitFeatureFlags externalFetchAndPush
+	GitFeatureFlags externalFetchAndPush
 		ifTrue: [self fetchAllExternalFrom: aRemoteName]
 		ifFalse: [[self fetchInternalFrom: aRemoteName]
 					on: ConnectionClosed

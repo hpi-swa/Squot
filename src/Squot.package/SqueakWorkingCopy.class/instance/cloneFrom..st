@@ -1,13 +1,13 @@
 git-operations
 cloneFrom: aStringOrUrl
-	self handleCredentialsDuring: [ | remote refs head |
-		remote := self fsgitRepository addRemote: 'origin' url: aStringOrUrl asUrl.
-		refs := self fsgitRepository fetchFrom: remote name.
-		head := self fsgitRepository remoteHead: refs.
-		head ifNotNil: [ | branchName trackingRef branch commit |
-			branchName := head allButFirst: 'refs/heads/' size.
-			trackingRef := remote trackingRefOf: head.
-			commit := self unitOfWork objectReferenced: trackingRef.
-			branch := (self createBranchNamed: branchName at: commit) ifNil: [^ self].
-			self setUpstreamRemoteName: remote name andRef: branchName for: branch.
-			self updateSymbolicHeadToRef: branch]].
+	| gitHead target |
+	self handleCredentialsDuring: [self fsgitRepository cloneFrom: aStringOrUrl].
+	gitHead := self unitOfWork ref: self headRefBasename.
+	gitHead ifNil: [^ self error: 'No HEAD found after clone.'].
+	target := self unitOfWork objectReferenced: self headRefBasename.
+	(gitHead isSymbolic and: [self isGitBranchRef: gitHead targetRef]) ifTrue: [ | branchName branch |
+		branchName := gitHead targetRef allButFirst: self gitBranchesBaseName size.
+		branch := self createBranchNamed: branchName at: target.
+		self setUpstreamRemoteName: self unitOfWork remoteNames first andRef: branchName for: branch.
+		target := branch].
+	self updateSymbolicHeadTo: target.

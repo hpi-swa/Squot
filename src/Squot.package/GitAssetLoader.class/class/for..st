@@ -6,5 +6,8 @@ for: aString
 			GitWorkingCopyAssetLoader
 				named: aString
 				ifAbsent: [
-					self error: ('No project with the name {1} could be found.'
-									format: {aString printString})]]
+					GitMCRepositoryAssetLoader
+						scanFor: aString
+						ifAbsent: [
+							self error: ('No project with the name {1} could be found.'
+										format: {aString printString})]]]

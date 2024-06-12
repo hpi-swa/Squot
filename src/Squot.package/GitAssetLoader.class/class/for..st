@@ -1,3 +1,10 @@
 instance creation
 for: aString
-	^ GitStandaloneAssetLoader named: aString ifAbsent: [self forWorkingCopyNamed: aString]
+	^ GitNamedAssetLoader
+		named: aString
+		ifAbsent: [
+			GitWorkingCopyAssetLoader
+				named: aString
+				ifAbsent: [
+					self error: ('No project with the name {1} could be found.'
+									format: {aString printString})]]

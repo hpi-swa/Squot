@@ -1,19 +1,11 @@
 {
 	"class" : {
 		"classDependencies" : "mad 1/11/2024 21:53",
-		"extensionMethodCategoryDependencies" : "mad 1/11/2024 22:45",
-		"named:ifAbsent:" : "mad 1/15/2024 12:03",
-		"newWithName:" : "mad 1/9/2024 19:06",
-		"register:" : "mad 1/9/2024 19:08",
-		"registry" : "mad 1/9/2024 19:07",
-		"registry:" : "mad 1/9/2024 19:07" },
+		"extensionMethodCategoryDependencies" : "mad 1/11/2024 22:45" },
 	"instance" : {
 		"assetAt:" : "mad 1/9/2024 20:26",
 		"assetAt:put:" : "mad 1/9/2024 20:26",
 		"assetFSPaths" : "mad 1/9/2024 16:50",
 		"assets" : "mad 1/9/2024 16:49",
 		"assets:" : "mad 1/9/2024 16:49",
-		"initialize" : "mad 1/9/2024 16:50",
-		"name" : "mad 1/9/2024 19:06",
-		"name:" : "mad 1/9/2024 19:06",
-		"register" : "mad 1/9/2024 19:06" } }
+		"initialize" : "mad 1/9/2024 16:50" } }

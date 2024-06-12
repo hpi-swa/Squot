@@ -1,12 +1,10 @@
 {
 	"class" : {
-		"for:" : "mad 1/9/2024 18:45",
-		"for:basePath:" : "mad 11/21/2023 14:27",
-		"forWorkingCopy:" : "mad 10/19/2023 12:17",
-		"forWorkingCopyNamed:" : "mad 1/9/2024 16:52" },
+		"for:" : "mad 6/12/2024 16:32",
+		"for:basePath:" : "mad 11/21/2023 14:27" },
 	"instance" : {
-		"assetAt:" : "mad 10/19/2023 12:15",
-		"assetFSPaths" : "mad 12/14/2023 12:51",
+		"assetAt:" : "mad 6/12/2024 14:51",
+		"assetFSPaths" : "mad 6/12/2024 14:51",
 		"assetPaths" : "mad 12/14/2023 12:51",
 		"basePath" : "mad 10/19/2023 12:14",
 		"basePath:" : "mad 11/21/2023 14:29",
@@ -22,7 +20,4 @@
 		"loadPlaintext:" : "mad 12/8/2023 19:01",
 		"loadSound:" : "mad 10/19/2023 13:58",
 		"loadString:" : "mad 12/8/2023 19:02",
-		"mappers" : "mad 12/14/2023 12:50",
-		"nameToPath:" : "mad 11/21/2023 14:29",
-		"workingCopy" : "mad 10/19/2023 12:14",
-		"workingCopy:" : "mad 10/19/2023 12:14" } }
+		"nameToPath:" : "mad 11/21/2023 14:29" } }

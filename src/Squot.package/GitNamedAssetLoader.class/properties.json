@@ -3,12 +3,12 @@
 	"classinstvars" : [
 		 ],
 	"classvars" : [
-		 ],
+		"Registry" ],
 	"commentStamp" : "",
 	"instvars" : [
-		"basePath" ],
-	"name" : "GitAssetLoader",
+		"name" ],
+	"name" : "GitNamedAssetLoader",
 	"pools" : [
 		 ],
-	"super" : "Model",
+	"super" : "GitAssetLoader",
 	"type" : "normal" }

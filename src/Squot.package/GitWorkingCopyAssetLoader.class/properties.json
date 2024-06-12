@@ -6,9 +6,9 @@
 		 ],
 	"commentStamp" : "",
 	"instvars" : [
-		"basePath" ],
-	"name" : "GitAssetLoader",
+		"workingCopy" ],
+	"name" : "GitWorkingCopyAssetLoader",
 	"pools" : [
 		 ],
-	"super" : "Model",
+	"super" : "GitAssetLoader",
 	"type" : "normal" }

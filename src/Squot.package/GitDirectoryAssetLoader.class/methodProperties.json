@@ -1,0 +1,16 @@
+{
+	"class" : {
+		"newWithName:on:" : "mad 6/12/2024 15:37" },
+	"instance" : {
+		"assetAt:" : "mad 6/12/2024 15:32",
+		"assetFSPaths" : "mad 6/12/2024 15:36",
+		"assetsCache" : "mad 6/12/2024 15:54",
+		"assetsCache:" : "mad 6/12/2024 15:54",
+		"directory" : "mad 6/12/2024 15:48",
+		"directory:" : "mad 6/12/2024 15:48",
+		"initialize" : "mad 6/12/2024 15:54",
+		"mapperAt:" : "mad 6/12/2024 15:35",
+		"mappers" : "mad 6/12/2024 15:33",
+		"readAsset:" : "mad 6/12/2024 16:30",
+		"readMappers" : "mad 6/12/2024 16:31",
+		"readStreamOn:do:" : "mad 6/12/2024 16:21" } }

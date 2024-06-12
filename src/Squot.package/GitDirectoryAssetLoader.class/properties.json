@@ -1,0 +1,16 @@
+{
+	"category" : "Squot-Mapper-Asset",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"directory",
+		"mappersCache",
+		"assetsCache" ],
+	"name" : "GitDirectoryAssetLoader",
+	"pools" : [
+		 ],
+	"super" : "GitNamedAssetLoader",
+	"type" : "normal" }

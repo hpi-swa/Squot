@@ -1,3 +1,3 @@
 accessing
 path
-	^ FSPath / '.squot-materialize'
+	^ self class path

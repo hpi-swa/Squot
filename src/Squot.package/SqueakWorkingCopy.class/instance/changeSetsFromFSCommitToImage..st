@@ -1,3 +1,3 @@
 changes-creation
 changeSetsFromFSCommitToImage: anFSCommit
-	^ self mappersMapper changeSetsFromFSCommit: anFSCommit toImage: self
+	^ self metadataMapper changeSetsFromFSCommit: anFSCommit toImage: self

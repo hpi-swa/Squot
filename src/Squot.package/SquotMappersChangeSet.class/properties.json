@@ -12,5 +12,5 @@
 	"name" : "SquotMappersChangeSet",
 	"pools" : [
 		 ],
-	"super" : "SquotChangeSet",
+	"super" : "SquotMetadataPropertyChangeSet",
 	"type" : "normal" }

@@ -3,7 +3,7 @@ commitImportedMappers: aCollection on: aCommit
 	| commitMessage emptyChangeSets mappersChangeSet |
 	emptyChangeSets := Dictionary newFrom:
 		(aCollection collect: [:each | each -> (SquotEmptyChangeSet withMapper: each)]).
-	mappersChangeSet := self mappersMapper
+	mappersChangeSet := self metadataMapper
 								changeSetFromMappers: {}
 								removing: {}
 								changeSets: emptyChangeSets.

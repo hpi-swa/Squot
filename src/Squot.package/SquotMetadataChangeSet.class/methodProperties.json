@@ -1,0 +1,19 @@
+{
+	"class" : {
+		 },
+	"instance" : {
+		"buildMetadata:" : "mad 6/12/2024 14:22",
+		"canMapperBeRemoved" : "mad 6/11/2024 19:44",
+		"canMapperBeRemovedAfterMaterializeIn:" : "mad 6/11/2024 19:44",
+		"canMapperBeRemovedAfterSerializeInto:" : "mad 6/11/2024 19:45",
+		"changeSetForProperty:" : "mad 6/12/2024 14:19",
+		"changes" : "mad 6/12/2024 13:45",
+		"legacyMappersFileReferenceIn:" : "mad 6/11/2024 19:51",
+		"materializeIn:" : "mad 6/12/2024 13:53",
+		"metadataFileReferenceIn:" : "mad 6/11/2024 19:50",
+		"newMetadata" : "mad 6/11/2024 19:46",
+		"newMetadata:" : "mad 6/11/2024 19:46",
+		"newMetadataAfterMaterializeIn:" : "mad 6/12/2024 14:21",
+		"newMetadataAfterSerializeInto:" : "mad 6/12/2024 14:21",
+		"referenceIn:" : "mad 6/11/2024 19:49",
+		"serializeInto:" : "mad 6/11/2024 19:53" } }

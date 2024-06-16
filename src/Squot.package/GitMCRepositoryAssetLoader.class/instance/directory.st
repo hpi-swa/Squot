@@ -1,6 +1,4 @@
 accessing
 directory
-	self directory: (self repository
-		projectDirectoryFrom: self repository projectPath
-		version: self repository projectVersion) asFSReference.
+	self directory: (self repository squotDirectoryForProjectNamed: self name).
 	^ super directory

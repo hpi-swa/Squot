@@ -1,7 +1,6 @@
 {
 	"class" : {
-		"classDependencies" : "mad 1/11/2024 21:53",
-		"extensionMethodCategoryDependencies" : "mad 1/11/2024 22:45" },
+		 },
 	"instance" : {
 		"assetAt:" : "mad 1/9/2024 20:26",
 		"assetAt:put:" : "mad 1/9/2024 20:26",

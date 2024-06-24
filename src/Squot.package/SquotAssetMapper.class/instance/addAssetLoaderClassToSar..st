@@ -1,7 +1,3 @@
 sar
 addAssetLoaderClassToSar: aSarBuilder
-	| fileOutPath |
-	fileOutPath := self class package name, '.st'.
-	aSarBuilder
-		addString: self fileOutAssetLoaderClass at: fileOutPath;
-		addPreambleLine: ('self fileInMemberNamed: {1}.' format: {fileOutPath printString}).
+	aSarBuilder addPreambleLine: 'Metacello new baseline: ''Squot''; repository: ''github://hpi-swa/Squot:mapper/src''; get; load.'.

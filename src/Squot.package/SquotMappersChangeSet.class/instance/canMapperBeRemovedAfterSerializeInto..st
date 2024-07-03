@@ -1,3 +1,3 @@
 testing
 canMapperBeRemovedAfterSerializeInto: aFileSystem
-	^ self canMapperBeRemoved
+	^ self canMapperBeRemovedAtAll

@@ -3,9 +3,9 @@
 		"withMapper:old:potentiallyRemoved:changeSets:" : "mad 2/20/2024 15:04" },
 	"instance" : {
 		"allMappers" : "mad 3/19/2024 21:25",
-		"canMapperBeRemoved" : "mad 2/20/2024 15:42",
-		"canMapperBeRemovedAfterMaterializeIn:" : "mad 2/20/2024 15:41",
-		"canMapperBeRemovedAfterSerializeInto:" : "mad 2/20/2024 15:41",
+		"canMapperBeRemovedAfterMaterializeIn:" : "mad 7/3/2024 16:27",
+		"canMapperBeRemovedAfterSerializeInto:" : "mad 7/3/2024 16:27",
+		"canMapperBeRemovedAtAll" : "mad 7/3/2024 16:27",
 		"changes" : "mad 9/20/2023 12:04",
 		"mapperChangeSets" : "mad 2/20/2024 14:51",
 		"mapperChangeSets:" : "mad 2/20/2024 14:51",

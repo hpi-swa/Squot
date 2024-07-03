@@ -2,9 +2,9 @@
 	"class" : {
 		"withMapper:from:to:" : "mad 9/20/2023 14:39" },
 	"instance" : {
-		"canMapperBeRemoved" : "mad 2/20/2024 15:43",
-		"canMapperBeRemovedAfterMaterializeIn:" : "mad 2/20/2024 15:33",
-		"canMapperBeRemovedAfterSerializeInto:" : "mad 2/20/2024 15:33",
+		"canMapperBeRemovedAfterMaterializeIn:" : "mad 7/3/2024 16:27",
+		"canMapperBeRemovedAfterSerializeInto:" : "mad 7/3/2024 16:27",
+		"canMapperBeRemovedAtAll" : "mad 7/3/2024 16:38",
 		"change" : "mad 9/11/2023 14:39",
 		"changeClass" : "mad 9/20/2023 14:02",
 		"changes" : "mad 9/11/2023 14:38",

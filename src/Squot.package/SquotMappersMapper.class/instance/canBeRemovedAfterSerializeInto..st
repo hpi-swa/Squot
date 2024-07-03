@@ -1,3 +1,3 @@
 testing
 canBeRemovedAfterSerializeInto: aFileSystem
-	^ self canBeRemoved
+	^ self canBeRemovedAtAll

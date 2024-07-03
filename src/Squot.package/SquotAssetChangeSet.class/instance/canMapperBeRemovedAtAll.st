@@ -1,3 +1,3 @@
 testing
-canMapperBeRemoved
+canMapperBeRemovedAtAll
 	^ self mapper canBeRemovedForVersion: self versionToWrite

@@ -3,9 +3,9 @@
 		"path" : "mad 6/12/2024 15:29" },
 	"instance" : {
 		"addToSar:" : "mad 1/8/2024 20:54",
-		"canBeRemoved" : "mad 2/20/2024 15:42",
-		"canBeRemovedAfterMaterializeIn:" : "mad 2/20/2024 15:42",
-		"canBeRemovedAfterSerializeInto:" : "mad 2/20/2024 15:42",
+		"canBeRemovedAfterMaterializeIn:" : "mad 7/3/2024 16:28",
+		"canBeRemovedAfterSerializeInto:" : "mad 7/3/2024 16:28",
+		"canBeRemovedAtAll" : "mad 7/3/2024 16:29",
 		"changeSetFromFSCommit:toFSCommit:" : "mad 2/20/2024 15:08",
 		"changeSetFromFSCommit:toImage:" : "mad 2/20/2024 15:09",
 		"changeSetFromImage:toFSCommit:" : "mad 2/20/2024 15:09",

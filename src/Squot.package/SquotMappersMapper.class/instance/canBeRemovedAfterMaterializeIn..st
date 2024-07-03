@@ -1,3 +1,3 @@
 testing
 canBeRemovedAfterMaterializeIn: aWorkingCopy
-	^ self canBeRemoved
+	^ self canBeRemovedAtAll

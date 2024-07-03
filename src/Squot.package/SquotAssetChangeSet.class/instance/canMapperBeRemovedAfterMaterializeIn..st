@@ -1,3 +1,3 @@
 testing
 canMapperBeRemovedAfterMaterializeIn: aWorkingCopy
-	^ self canMapperBeRemoved
+	^ self canMapperBeRemovedAtAll

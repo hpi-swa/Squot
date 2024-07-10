@@ -1,3 +1,3 @@
 ui
-transformVersion: aString ifFail: aBlock
-	^ self toPlaintext: (aString ifNil: [^ nil])
+transformVersion: aStringOrNil ifFail: aBlock
+	^ self transformVersion: aStringOrNil

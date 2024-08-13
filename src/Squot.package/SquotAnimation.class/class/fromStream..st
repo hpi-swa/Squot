@@ -1,4 +1,4 @@
 instance creation
 fromStream: aStream
 	aStream binary.
-	^ self gif: aStream contents.
+	^ self gif: aStream contents

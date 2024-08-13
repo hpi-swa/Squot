@@ -3,4 +3,4 @@ openDialogToMaterializeCommit: aCommit displayName: aString windowTitlePrefix: a
 	^ self
 		openDialogToMaterializeChangeSets:
 			(self activeWorkingCopy changeSetsFromImageToCommit: aCommit)
-		windowTitle: anotherString, ('Load changes from the image to {1}' format: {aString}).
+		windowTitle: anotherString, ('Load changes from the image to {1}' format: {aString})

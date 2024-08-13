@@ -4,4 +4,4 @@ buildCommitInfo: builder
 		model: self;
 		getText: #activeCommitInfo;
 		readOnly: true;
-		yourself.
+		yourself

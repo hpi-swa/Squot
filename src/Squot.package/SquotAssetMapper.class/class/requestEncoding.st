@@ -5,4 +5,4 @@ requestEncoding
 	^ UIManager default
 		chooseFrom: (encodings collect: [:each | self encodingName: each])
 		values: encodings
-		title: 'Encoding:'.
+		title: 'Encoding:'

@@ -1,3 +1,3 @@
 accessing
 refsForCommits
-	^ refsForCommits ifNil: [self refsForCommits: self computeRefsForCommits].
+	^ refsForCommits ifNil: [self refsForCommits: self computeRefsForCommits]

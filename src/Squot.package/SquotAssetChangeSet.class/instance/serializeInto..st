@@ -6,4 +6,4 @@ serializeInto: aFileSystem
 	version := self versionToWrite.
 	version ifNil: [^ reference delete].
 	reference writeStreamDo: [:stream |
-		self mapper writeVersion: self versionToWrite on: stream].
+		self mapper writeVersion: version on: stream].

@@ -10,5 +10,6 @@ actionPull
 	self activeWorkingCopy fetch: remoteName.
 	remote := self unitOfWork remoteNamed: remoteName.
 	trackingRef := remote trackingRefOf: remoteRef.
-	(self unitOfWork objectReferenced: trackingRef) ifNil: [^ self inform: 'Cannot pull, the branch does not exist on the remote.'].
+	(self unitOfWork objectReferenced: trackingRef) ifNil: [
+		^ self inform: 'Cannot pull, the branch does not exist on the remote.'].
 	self mergeRefIntoHead: trackingRef.

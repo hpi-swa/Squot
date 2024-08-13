@@ -12,7 +12,9 @@ menu: aMenu forCommit: aCommit ref: aStringOrNil
 		argument: refOrCommit;
 		
 		add: 'Create a branch at it and switch to it'
-		selector: (isRef ifTrue: [#actionCreateBranchAtRefAndSwitchToIt:] ifFalse: [#actionCreateBranchAtCommitAndSwitchToIt:])
+		selector: (isRef
+					ifTrue: [#actionCreateBranchAtRefAndSwitchToIt:]
+					ifFalse: [#actionCreateBranchAtCommitAndSwitchToIt:])
 		argument: refOrCommit;
 		
 		add: 'Create an external branch at it'

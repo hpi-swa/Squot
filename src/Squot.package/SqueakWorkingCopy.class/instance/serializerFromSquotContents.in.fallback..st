@@ -4,7 +4,9 @@ serializerFromSquotContents: aPath in: aFilesystem fallback: aSymbol
 	serializerName := self serializerNameFromSquotContents: aPath in: aFilesystem.
 	serializerName ifNil: [
 		self inform:
-			('Warning: failed to read serializer name from {1} referenced in .squot. Assuming serializer {2}, as named in .squot.'
+			('Warning: failed to read serializer name from {1}
+			referenced in .squot. Assuming serializer {2}, as named in .squot.'
+				withoutLineEndings withBlanksCondensed
 				format: {SquotPathUtilities asString: aPath. aSymbol}).
 		serializerName := aSymbol].
 	^ Environment current valueOf: serializerName

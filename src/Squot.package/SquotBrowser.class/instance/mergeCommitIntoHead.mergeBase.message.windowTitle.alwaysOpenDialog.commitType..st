@@ -20,7 +20,9 @@ commitType: aSymbol
 	(openDialog or: [SquotChangeSet anyIncludesConflicts: changeSets]) ifTrue: [
 		^ self
 			openDialogToCommitChangeSets: changeSets
-			windowTitle: (openDialog ifTrue: [titleString] ifFalse: ['Resolve conflicts to ', titleString withFirstCharacterDownshifted])
+			windowTitle: (openDialog
+							ifTrue: [titleString]
+							ifFalse: ['Resolve conflicts to ', titleString withFirstCharacterDownshifted])
 			initialMessage: messageString
 			additionalParents: additionalParents
 			onlyAdditionalParents: onlyAdditionalParents

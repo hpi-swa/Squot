@@ -1,6 +1,6 @@
 {
 	"class" : {
-		"withChangeSet:conflict:" : "mad 9/9/2023 15:04" },
+		"withChangeSet:model:conflict:" : "mad 8/13/2024 17:32" },
 	"instance" : {
 		"base" : "mad 9/7/2023 19:56",
 		"baseColor" : "mad 9/9/2023 14:55",
@@ -47,7 +47,7 @@
 		"right" : "mad 9/7/2023 19:56",
 		"rightColor" : "mad 9/9/2023 14:54",
 		"rightSources" : "mad 11/6/2023 15:09",
-		"saveTexts:notifying:" : "mad 11/7/2023 12:20",
+		"saveTexts:notifying:" : "mad 8/13/2024 17:44",
 		"someVersion" : "mad 11/6/2023 15:05",
 		"textAt:" : "mad 9/12/2023 16:02",
 		"texts" : "mad 9/12/2023 16:01",

@@ -1,0 +1,14 @@
+{
+	"category" : "Squot-Mapper-Plaintext",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "SquotPlaintextModel",
+	"pools" : [
+		 ],
+	"super" : "SquotMultitextModel",
+	"type" : "normal" }

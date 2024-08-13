@@ -1,3 +1,3 @@
 accessing-sources
 sourcesSize
-	^ self mapper sourcesSizeOf: self someVersion
+	^ self model sourcesSizeOf: self someVersion

@@ -1,7 +1,7 @@
 ui
 saveTexts: aCollection notifying: requestors
 	(self isResolved and: [self isInEditMode not]) ifTrue: [^ self inform: 'Please enter edit mode first'].
-	self resolveTo: (self mapper
+	self resolveTo: (self model
 						copyOf: self someVersion
 						withSources: aCollection
 						notifying: requestors

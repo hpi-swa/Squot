@@ -1,0 +1,14 @@
+{
+	"class" : {
+		"withMapper:" : "mad 8/13/2024 17:43" },
+	"instance" : {
+		"aboutToStyle:with:requestor:at:" : "mad 8/13/2024 17:23",
+		"copyOf:withSources:notifying:ifFail:" : "mad 8/13/2024 17:25",
+		"helpFor:at:" : "mad 8/13/2024 17:24",
+		"isSourceAt:timeStampOf:" : "mad 8/13/2024 17:24",
+		"mapper" : "mad 8/13/2024 17:43",
+		"mapper:" : "mad 8/13/2024 17:43",
+		"pathFor:" : "mad 8/13/2024 17:23",
+		"sourcesSizeOf:" : "mad 8/13/2024 17:25",
+		"stylerClassFor:at:" : "mad 8/13/2024 17:25",
+		"versionAsSources:" : "mad 8/13/2024 17:25" } }

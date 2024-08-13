@@ -1,3 +1,3 @@
 accessing-sources
 versionAsSources: anObject
-	^ self mapper versionAsSources: anObject
+	^ self model versionAsSources: anObject

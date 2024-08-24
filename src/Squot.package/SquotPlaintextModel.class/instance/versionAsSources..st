@@ -1,3 +1,0 @@
-conversion
-versionAsSources: aPlaintext
-	^ {aPlaintext}

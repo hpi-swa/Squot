@@ -1,0 +1,3 @@
+conversion
+fromString: aString
+	^ aString

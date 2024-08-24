@@ -1,0 +1,15 @@
+{
+	"category" : "Squot-Mapper-Utilities",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"fileSystem",
+		"rootPath" ],
+	"name" : "SquotSubFileSystem",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }

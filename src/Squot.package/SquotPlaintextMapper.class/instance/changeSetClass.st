@@ -1,3 +1,3 @@
 accessing
 changeSetClass
-	^ SquotPlaintextNormalChangeSet
+	^ SquotPlaintextChangeSet

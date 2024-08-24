@@ -1,5 +1,5 @@
 accessing
-setChangeWith: aMergeConflict
+setChangeWithConflict: aMergeConflict
 	self change: (SquotPlaintextConflictChange
 					withChangeSet: self
 					conflict: aMergeConflict).

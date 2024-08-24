@@ -9,4 +9,4 @@ stringMergeLeft: leftString right: rightString base: baseString ifConflict: aBlo
 		merge: true.
 	^ (diffResult size = 1 and: [diffResult first key = #ok])
 		ifTrue: [diffResult first value joinSeparatedBy: Character cr]
-		ifFalse: [aBlock value]
+		ifFalse: [aBlock value: (SquotMergeConflict left: leftString right: rightString base: baseString)]

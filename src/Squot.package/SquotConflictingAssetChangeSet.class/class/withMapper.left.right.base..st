@@ -1,7 +1,7 @@
 instance creation
-withMapper: aMapper left: leftForm right: rightForm base: baseForm
+withMapper: aMapper left: leftObject right: rightObject base: baseObject
 	^ (self withMapper: aMapper)
-		left: leftForm;
-		right: rightForm;
-		base: baseForm;
+		left: leftObject;
+		right: rightObject;
+		base: baseObject;
 		yourself

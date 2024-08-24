@@ -1,8 +1,7 @@
 {
 	"class" : {
-		"atomicMergeLeft:right:base:ifConflict:" : "mad 8/29/2023 16:52",
-		"atomicMergeLeft:right:base:ifSuccess:ifConflict:" : "mad 12/7/2023 10:53",
-		"stringMergeLeft:right:base:ifConflict:" : "mad 11/7/2023 13:29",
-		"stringOrNilMergeLeft:right:base:ifConflict:" : "mad 12/7/2023 14:14" },
+		"atomicMergeLeft:right:base:ifUnchanged:ifMerged:ifConflict:" : "mad 8/24/2024 17:41",
+		"stringMergeLeft:right:base:ifConflict:" : "mad 8/24/2024 17:41",
+		"stringOrNilMergeLeft:right:base:ifUnchanged:ifMerged:ifConflict:" : "mad 8/24/2024 17:34" },
 	"instance" : {
 		 } }

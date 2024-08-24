@@ -1,6 +1,7 @@
 {
 	"class" : {
-		"withChangeSet:model:" : "mad 8/13/2024 17:32" },
+		"modelClass" : "mad 8/18/2024 19:05",
+		"withChangeSet:" : "mad 8/27/2024 20:37" },
 	"instance" : {
 		"aboutToStyle:requestor:at:" : "mad 8/13/2024 17:37",
 		"buildTextFor:with:" : "mad 11/3/2023 15:40",

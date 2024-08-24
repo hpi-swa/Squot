@@ -1,0 +1,3 @@
+accessing
+modelClass
+	self subclassResponsibility.

@@ -1,3 +1,0 @@
-accessing
-path
-	^ {'Project Structure'}

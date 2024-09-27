@@ -1,0 +1,3 @@
+filesystem
+legacyMappersFileReferenceIn: aFileSystem
+	^ self mapper legacyMappersFileReferenceIn: aFileSystem

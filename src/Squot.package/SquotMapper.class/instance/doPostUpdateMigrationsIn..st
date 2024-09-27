@@ -1,3 +1,3 @@
 migrations
 doPostUpdateMigrationsIn: aWorkingCopy
-	"do nothing"
+	self fallbackToLegacyVersion.

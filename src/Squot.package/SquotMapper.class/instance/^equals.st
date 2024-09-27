@@ -1,4 +1,4 @@
 comparing
 = anObject
-	"ignore isMaterialized"
+	"ignore isMaterialized and version"
 	^ self class == anObject class

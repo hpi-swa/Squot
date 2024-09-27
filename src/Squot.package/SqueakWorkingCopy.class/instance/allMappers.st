@@ -1,3 +1,3 @@
 accessing
 allMappers
-	^ self mappers, {self mappersMapper}
+	^ self mappers copyWith: self metadataMapper

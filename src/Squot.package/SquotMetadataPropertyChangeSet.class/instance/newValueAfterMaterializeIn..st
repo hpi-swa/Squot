@@ -1,0 +1,3 @@
+accessing
+newValueAfterMaterializeIn: aWorkingCopy
+	self subclassResponsibility.

@@ -2,7 +2,7 @@ importing
 importSquotContentsFromCommit: aCommit
 	| filesystem readStream loadOrder newMappers |
 	filesystem := self filesystemOn: aCommit.
-	(self mappersMapper hasMappersFile: filesystem) ifTrue: [^ nil].
+	(self metadataMapper hasAnyFile: filesystem) ifTrue: [^ nil].
 	readStream := [filesystem readStreamOn: '.squot'] on: FileDoesNotExist do: [^ nil].
 	loadOrder := STON fromStream: readStream.
 	loadOrder ifEmpty: [^ nil].

@@ -1,0 +1,14 @@
+{
+	"category" : "Squot-Mapper-Metadata-Name",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"change" ],
+	"name" : "SquotMetadataNameChangeSet",
+	"pools" : [
+		 ],
+	"super" : "SquotMetadataPropertyChangeSet",
+	"type" : "normal" }

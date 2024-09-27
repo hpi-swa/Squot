@@ -3,8 +3,8 @@ commitImportedMappers: aCollection on: aCommit
 	| commitMessage emptyChangeSets mappersChangeSet |
 	emptyChangeSets := Dictionary newFrom:
 		(aCollection collect: [:each | each -> (SquotEmptyChangeSet withMapper: each)]).
-	mappersChangeSet := self mappersMapper
-								changeSetFromMappers: {}
+	mappersChangeSet := self metadataMapper
+								mappersChangeSetFromMappers: {}
 								removing: {}
 								changeSets: emptyChangeSets.
 	commitMessage := UIManager default

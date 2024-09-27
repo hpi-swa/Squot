@@ -35,6 +35,9 @@ SystemOrganization addCategory: #'Squot-Tests-Serialization'!
 SystemOrganization addCategory: #'Squot-Help'!
 SystemOrganization addCategory: #'Squot-CoAuthorsExtension'!
 SystemOrganization addCategory: #'Squot-Mapper'!
+SystemOrganization addCategory: #'Squot-Mapper-Metadata'!
+SystemOrganization addCategory: #'Squot-Mapper-Metadata-Mappers'!
+SystemOrganization addCategory: #'Squot-Mapper-Metadata-Name'!
 SystemOrganization addCategory: #'Squot-Mapper-Browser'!
 SystemOrganization addCategory: #'Squot-Mapper-Asset'!
 SystemOrganization addCategory: #'Squot-Mapper-Image'!

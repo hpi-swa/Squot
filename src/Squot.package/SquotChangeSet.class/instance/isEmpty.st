@@ -1,3 +1,3 @@
 accessing
 isEmpty
-	^ false
+	^ self changes allSatisfy: #isExcluded

@@ -1,4 +1,4 @@
-as yet unclassified
+ui
 chooseNewEncodingClass
 	| classes |
 	classes := SquotCodeMapper allSubclasses.

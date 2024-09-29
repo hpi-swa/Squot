@@ -1,3 +1,3 @@
-as yet unclassified
+testing
 canMapperBeRemovedAfterSerializeInto: aFileSystem
 	^ self mapper canBeRemovedAfterSerializeInto: aFileSystem

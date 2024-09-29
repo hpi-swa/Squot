@@ -1,4 +1,4 @@
-as yet unclassified
+ui
 transformAsset: aSound ifFail: aBlock
 	^ [aSound ifNotNil: #asSampledSound]
 		on: Error

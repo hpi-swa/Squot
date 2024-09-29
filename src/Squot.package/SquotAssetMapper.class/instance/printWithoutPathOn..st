@@ -1,6 +1,6 @@
 printing
 printWithoutPathOn: aStream
 	self
-		printAssetTypeOn: aStream;
+		printKindOn: aStream;
 		space: aStream;
 		printEncodedUsingOn: aStream.

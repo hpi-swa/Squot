@@ -1,3 +1,3 @@
 accessing
 assetFSPaths
-	^ self assets keys
+	^ self assetFiles keys

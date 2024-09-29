@@ -1,3 +1,3 @@
 toolbuilder
 buildBase: builder
-	^ self buildVersion: self base with: builder
+	^ self buildAssetFile: self base with: builder

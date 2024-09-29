@@ -4,6 +4,6 @@ loadAsset: aStringOrPath ofType: aClass
 	asset := self loadAsset: aStringOrPath.
 	self
 		assert: (asset isKindOf: aClass)
-		description: ('Expected to find a ''{1}'' but found {2} while loading asset ''{3}''.'
-						format: {aClass name. asset. aStringOrPath}).
+		description: ('Expected to find a {1} but found {2} while loading asset {3}.'
+						format: {aClass name printString. asset. aStringOrPath printString}).
 	^ asset

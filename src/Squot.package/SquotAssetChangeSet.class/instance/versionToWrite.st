@@ -1,3 +1,0 @@
-accessing
-versionToWrite
-	^ self to

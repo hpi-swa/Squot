@@ -1,7 +1,7 @@
 instance creation
-withMapper: aMapper left: leftObject right: rightObject base: baseObject
+withMapper: aMapper left: leftAssetFile right: rightAssetFile base: baseAssetFile
 	^ (self withMapper: aMapper)
-		left: leftObject;
-		right: rightObject;
-		base: baseObject;
+		left: leftAssetFile;
+		right: rightAssetFile;
+		base: baseAssetFile;
 		yourself

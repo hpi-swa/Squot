@@ -1,3 +1,3 @@
 conversion
 fromString: aString
-	^ self mapper toPlaintext: aString
+	^ self mapper assetAsAssetFile: (self mapper toPlaintext: aString)

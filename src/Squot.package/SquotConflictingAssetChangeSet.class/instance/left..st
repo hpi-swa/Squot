@@ -1,5 +1,5 @@
 accessing
-left: anObject
+left: anAssetFile
 	self
-		to: anObject;
+		to: anAssetFile;
 		changed: #left.

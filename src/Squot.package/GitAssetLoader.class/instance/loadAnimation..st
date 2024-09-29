@@ -1,3 +1,4 @@
 loading
 loadAnimation: aStringOrPath
-	^ self loadAsset: aStringOrPath ofType: SquotAnimation
+	self deprecated: 'Use loadGIFReadWriter: or loadAnimatedImageMorph:'.
+	^ self loadGIFReadWriter: aStringOrPath

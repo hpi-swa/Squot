@@ -3,7 +3,7 @@ buildWorkspace: builder
 	^ SquotAssetWorkspace
 		model: self
 		mapper: self selectedMapper
-		setVersion: #version:
+		setAsset: #asset:
 		getBindings: #workspaceBindings
 		editTargetName: 'the asset'
 		buildWith: builder

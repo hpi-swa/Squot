@@ -1,3 +1,3 @@
 testing
 canBeRemovedAfterMaterializeIn: aWorkingCopy
-	^ self canBeRemovedForVersion: (self loadVersionFromImage: aWorkingCopy)
+	^ self canBeRemovedForAssetFile: (self loadAssetFileFromImage: aWorkingCopy)

@@ -2,10 +2,11 @@
 	"class" : {
 		 },
 	"instance" : {
-		"aboutToStyle:with:requestor:at:" : "mad 8/18/2024 18:51",
-		"copyOf:withSources:notifying:ifFail:" : "mad 8/18/2024 18:51",
+		"aboutToStyle:with:requestor:at:" : "mad 10/1/2024 14:33",
+		"asString:" : "mad 10/1/2024 14:34",
+		"copyOf:withSources:notifying:ifFail:" : "mad 10/1/2024 14:33",
 		"fromString:" : "mad 8/18/2024 18:53",
-		"isSourceAt:timeStampOf:" : "mad 8/18/2024 18:52",
-		"sourcesSizeOf:" : "mad 8/18/2024 18:52",
-		"stylerClassFor:at:" : "mad 8/18/2024 18:52",
-		"versionAsSources:" : "mad 8/18/2024 18:52" } }
+		"isSourceAt:timeStampOf:" : "mad 9/30/2024 16:05",
+		"sourcesSizeOf:" : "mad 9/30/2024 16:05",
+		"stylerClassFor:at:" : "mad 9/30/2024 16:05",
+		"versionAsSources:" : "mad 9/30/2024 16:04" } }

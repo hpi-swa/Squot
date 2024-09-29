@@ -1,5 +1,5 @@
 workspace
 workspaceBindings
 	^ Dictionary newFrom: {
-		'current' -> (self selectedMapper loadVersionFromImage: self activeWorkingCopy).
+		'current' -> (self selectedMapper loadAssetFromImage: self activeWorkingCopy).
 	}

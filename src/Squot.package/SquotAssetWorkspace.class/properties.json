@@ -8,7 +8,7 @@
 	"instvars" : [
 		"model",
 		"mapper",
-		"setVersionSelector",
+		"setAssetSelector",
 		"getBindingsSelector",
 		"editTargetName" ],
 	"name" : "SquotAssetWorkspace",

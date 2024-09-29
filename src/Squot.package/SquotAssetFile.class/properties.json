@@ -1,0 +1,16 @@
+{
+	"category" : "Squot-Mapper-Asset",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"mapper",
+		"contents",
+		"asset" ],
+	"name" : "SquotAssetFile",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }

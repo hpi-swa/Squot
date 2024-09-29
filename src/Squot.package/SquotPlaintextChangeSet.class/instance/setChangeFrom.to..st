@@ -1,6 +1,6 @@
 accessing
-setChangeFrom: aString to: anotherString
+setChangeFrom: anAssetFile to: anotherAssetFile
 	self change: (SquotPlaintextNormalChange
 					withChangeSet: self
-					from: aString
-					to: anotherString).
+					from: anAssetFile
+					to: anotherAssetFile).

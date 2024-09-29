@@ -1,7 +1,7 @@
 resolving
-resolveTo: anObject
+resolveTo: anAssetFile
 	self
-		resolution: anObject;
+		resolution: anAssetFile;
 		resolve.
 	{#isResolvedToBase. #isResolvedToLeft. #isResolvedToRight}
 		do: [:each | self changed: each].

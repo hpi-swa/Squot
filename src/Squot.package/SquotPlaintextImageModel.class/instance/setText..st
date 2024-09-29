@@ -1,6 +1,6 @@
 accessing
 setText: aText
 	self mapper
-		transformAndMaterializeVersion: aText asString
+		transformAndMaterializeAsset: aText asString
 		in: self workingCopy
 		ifFail: [].

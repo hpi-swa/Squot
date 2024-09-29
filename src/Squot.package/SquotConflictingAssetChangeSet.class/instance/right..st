@@ -1,4 +1,4 @@
 accessing
-right: anObject
-	right := anObject.
+right: anAssetFile
+	right := anAssetFile.
 	self changed: #right.

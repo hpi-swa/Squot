@@ -1,3 +1,3 @@
 toolbuilder
 buildResolution: builder
-	^ self buildVersion: self resolution with: builder
+	^ self buildAssetFile: self resolution with: builder

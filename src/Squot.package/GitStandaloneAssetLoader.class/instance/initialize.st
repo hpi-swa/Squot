@@ -1,4 +1,4 @@
 initialize-release
 initialize
 	super initialize.
-	self assets: Dictionary new.
+	self assetFiles: Dictionary new.

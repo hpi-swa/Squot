@@ -1,4 +1,4 @@
 accessing
-to: anObject
-	to := anObject.
+to: anAssetFile
+	to := anAssetFile.
 	self changed: #to.

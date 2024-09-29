@@ -1,3 +1,3 @@
 accessing
 getText
-	^ self mapper loadVersionFromImage: self workingCopy
+	^ self mapper loadAssetFromImage: self workingCopy

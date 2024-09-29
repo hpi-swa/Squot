@@ -1,9 +1,8 @@
 operations
 serializeInto: aFileSystem
-	| reference version |
+	| reference assetFile |
 	self isExcluded ifTrue: [^ self].
 	reference := aFileSystem referenceTo: self path.
-	version := self versionToWrite.
-	version ifNil: [^ reference delete].
-	reference writeStreamDo: [:stream |
-		self mapper writeVersion: version on: stream].
+	assetFile := self assetFileToWrite.
+	assetFile ifNil: [^ reference delete].
+	reference writeStreamDo: [:stream | stream nextPutAll: assetFile contents].

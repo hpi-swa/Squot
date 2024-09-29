@@ -1,3 +1,3 @@
 editing
-copyOf: aString withSources: aCollection notifying: requestors ifFail: aBlock
+copyOf: anObject withSources: aCollection notifying: requestors ifFail: aBlock
 	^ self fromString: aCollection first

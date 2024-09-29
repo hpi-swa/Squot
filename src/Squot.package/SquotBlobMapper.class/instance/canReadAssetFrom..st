@@ -1,0 +1,3 @@
+testing
+canReadAssetFrom: aStream
+	^ true

@@ -2,9 +2,9 @@
 	"class" : {
 		 },
 	"instance" : {
-		"assetAt:" : "mad 1/9/2024 20:26",
-		"assetAt:put:" : "mad 1/9/2024 20:26",
-		"assetFSPaths" : "mad 1/9/2024 16:50",
-		"assets" : "mad 1/9/2024 16:49",
-		"assets:" : "mad 1/9/2024 16:49",
-		"initialize" : "mad 1/9/2024 16:50" } }
+		"assetFSPaths" : "mad 9/29/2024 16:42",
+		"assetFileAt:" : "mad 9/29/2024 16:42",
+		"assetFileAt:put:" : "mad 9/29/2024 19:38",
+		"assetFiles" : "mad 9/29/2024 16:40",
+		"assetFiles:" : "mad 9/29/2024 16:42",
+		"initialize" : "mad 9/29/2024 16:43" } }

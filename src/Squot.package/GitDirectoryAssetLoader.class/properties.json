@@ -8,7 +8,7 @@
 	"instvars" : [
 		"directory",
 		"mappersCache",
-		"assetsCache" ],
+		"assetFilesCache" ],
 	"name" : "GitDirectoryAssetLoader",
 	"pools" : [
 		 ],

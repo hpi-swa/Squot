@@ -1,3 +1,3 @@
 conversion
-versionAsSources: aString
-	^ {aString}
+versionAsSources: anObject
+	^ {self asString: anObject}

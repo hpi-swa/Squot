@@ -1,5 +1,5 @@
 accessing
-base: anObject
+base: anAssetFile
 	self
-		from: anObject;
+		from: anAssetFile;
 		changed: #base.

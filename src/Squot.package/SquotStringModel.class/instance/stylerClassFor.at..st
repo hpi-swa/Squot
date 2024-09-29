@@ -1,3 +1,3 @@
 accessing
-stylerClassFor: aString at: aNumber
+stylerClassFor: anObject at: aNumber
 	^ nil

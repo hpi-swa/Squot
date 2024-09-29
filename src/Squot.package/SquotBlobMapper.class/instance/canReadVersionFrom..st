@@ -1,3 +1,0 @@
-testing
-canReadVersionFrom: aStream
-	^ true

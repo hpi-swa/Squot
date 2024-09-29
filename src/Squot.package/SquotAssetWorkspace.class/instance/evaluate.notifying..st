@@ -1,13 +1,13 @@
 evaluation
 evaluate: aString notifying: requestor
-	| version |
-	version := self
+	| asset |
+	asset := self
 				evaluate: aString
 				notifying: requestor
 				ifFail: [self inform: 'evaluating failed'. ^ false].
-	(version isNil or: [self isValidVersion: version]) ifFalse: [
-		self inform: 'evaluation did not produce a ', self versionOrNilTypeName.
+	(asset isNil or: [self isValidAsset: asset]) ifFalse: [
+		self inform: 'evaluation did not produce a ', self assetOrNilTypeName.
 		^ false].
-	self version: (self transformVersion: version ifFail: [^ false]).
+	self asset: (self transformAsset: asset ifFail: [^ false]).
 	self addBindings.
 	^ true

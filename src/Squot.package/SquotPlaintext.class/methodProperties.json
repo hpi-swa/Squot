@@ -2,5 +2,7 @@
 	"class" : {
 		 },
 	"instance" : {
-		"squotEqual:" : "mad 5/13/2024 22:03",
+		"=" : "mad 9/29/2024 19:54",
+		"hashWithInitialHash:" : "mad 9/29/2024 19:54",
+		"peekForNewLine:" : "mad 9/29/2024 19:55",
 		"storeOn:" : "mad 1/9/2024 20:13" } }

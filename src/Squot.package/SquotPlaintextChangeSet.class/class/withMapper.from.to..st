@@ -1,5 +1,5 @@
 instance creation
-withMapper: aMapper from: aString to: anotherString
+withMapper: aMapper from: anAssetFile to: anotherAssetFile
 	^ (self withMapper: aMapper)
-		setChangeFrom: aString to: anotherString;
+		setChangeFrom: anAssetFile to: anotherAssetFile;
 		yourself

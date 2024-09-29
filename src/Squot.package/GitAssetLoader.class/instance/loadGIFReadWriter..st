@@ -1,3 +1,3 @@
 loading
 loadGIFReadWriter: aStringOrPath
-	^ (self loadAnimation: aStringOrPath) asGIFReadWriter
+	^ self loadAsset: aStringOrPath ofType: GIFReadWriter

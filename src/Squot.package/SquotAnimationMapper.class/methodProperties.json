@@ -1,17 +1,17 @@
 {
 	"class" : {
-		"assetTypeName" : "mad 10/21/2023 21:36",
 		"defaultEncoding" : "mad 10/21/2023 21:35",
 		"encodingName:" : "mad 10/19/2023 11:54",
+		"gifReadWriterAsMorph:" : "mad 9/29/2024 19:10",
+		"kind" : "mad 9/29/2024 19:29",
 		"validEncodings" : "mad 10/21/2023 21:35" },
 	"instance" : {
-		"canReadVersionFrom:" : "mad 11/27/2023 11:58",
-		"doPostUpdateMigrationsIn:" : "mad 11/27/2023 12:48",
-		"gifReadWriterToAnimation:" : "mad 11/27/2023 12:49",
-		"isValidVersion:" : "mad 11/27/2023 12:03",
-		"readVersionFrom:" : "mad 11/27/2023 11:59",
+		"assetAsMorph:" : "mad 9/29/2024 17:33",
+		"assetTypeName" : "mad 9/29/2024 17:35",
+		"canReadAssetFrom:" : "mad 9/29/2024 17:38",
+		"isValidAsset:" : "mad 9/29/2024 17:39",
+		"migrateMaterialized:" : "mad 9/29/2024 16:28",
+		"obsoleteSquotAnimationAsAssetFile:" : "mad 9/29/2024 16:28",
+		"readAssetFrom:" : "mad 9/29/2024 17:44",
 		"readerClass" : "mad 11/27/2023 12:41",
-		"toAnimation:" : "mad 11/27/2023 12:48",
-		"versionAsMorph:" : "mad 11/27/2023 12:41",
-		"versionTypeName" : "mad 11/27/2023 12:03",
-		"writeVersion:on:" : "mad 11/27/2023 12:05" } }
+		"writeAsset:on:" : "mad 9/29/2024 17:48" } }

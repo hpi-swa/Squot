@@ -1,3 +1,3 @@
 loading
 loadAsset: aStringOrPath
-	^ self assetAt: (self nameToPath: aStringOrPath)
+	^ (self loadAssetFile: aStringOrPath) ifNotNil: #asset

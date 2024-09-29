@@ -1,7 +1,7 @@
 importing
 importMapper: aMapper fromStream: aStream
-	| version |
-	version := aMapper readVersionFrom: aStream.
+	| assetFile |
+	assetFile := SquotAssetFile withMapper: aMapper fromStream: aStream.
 	self activeWorkingCopy addMapper: aMapper.
-	aMapper materialize: version in: self activeWorkingCopy.
+	aMapper materialize: assetFile in: self activeWorkingCopy.
 	self selectedMapper: aMapper.

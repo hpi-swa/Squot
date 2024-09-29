@@ -1,3 +1,3 @@
 testing
 canMapperBeRemovedAtAll
-	^ self isIncluded and: [self mapper canBeRemovedForVersion: self versionToWrite]
+	^ self isIncluded and: [self mapper canBeRemovedForAssetFile: self assetFileToWrite]

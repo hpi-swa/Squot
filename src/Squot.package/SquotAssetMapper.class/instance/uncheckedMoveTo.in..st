@@ -1,9 +1,9 @@
 moving
 uncheckedMoveTo: aPath in: aWorkingCopy
-	| version |
-	version := self loadVersionFromImage: aWorkingCopy.
+	| assetFile |
+	assetFile := self loadAssetFileFromImage: aWorkingCopy.
 	self
 		materialize: nil in: aWorkingCopy;
 		path: aPath;
-		materialize: version in: aWorkingCopy.
+		materialize: assetFile in: aWorkingCopy.
 	aWorkingCopy changed: #mappers.

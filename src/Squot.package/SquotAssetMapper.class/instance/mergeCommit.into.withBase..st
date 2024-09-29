@@ -1,7 +1,7 @@
 merging
 mergeCommit: rightFSCommit into: leftFSCommit withBase: baseFSCommit
 	| left right base |
-	left := self loadVersionFrom: leftFSCommit filesystem.
-	right := self loadVersionFrom: rightFSCommit filesystem.
-	base := self loadVersionFrom: baseFSCommit filesystem.
-	^ self mergeVersion: right into: left withBase: base
+	left := self loadAssetFileFrom: leftFSCommit filesystem.
+	right := self loadAssetFileFrom: rightFSCommit filesystem.
+	base := self loadAssetFileFrom: baseFSCommit filesystem.
+	^ self mergeAssetFile: right into: left withBase: base

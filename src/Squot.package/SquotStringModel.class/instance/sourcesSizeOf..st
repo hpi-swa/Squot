@@ -1,3 +1,3 @@
 accessing
-sourcesSizeOf: aString
+sourcesSizeOf: anObject
 	^ 1

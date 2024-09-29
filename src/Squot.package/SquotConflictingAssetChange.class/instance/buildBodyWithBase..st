@@ -1,8 +1,8 @@
 toolbuilder
 buildBodyWithBase: builder
 	^ SquotGUIUtilities buildEvenGrid: {
-		self buildBaseVersionWith: builder.
-		self buildLeftVersionWith: builder.
-		self buildRightVersionWith: builder.
+		self buildDynamicBase: builder.
+		self buildDynamicLeft: builder.
+		self buildDynamicRight: builder.
 		self buildResolutionPanel: builder.
 	} ofSize: 2 @ 2 with: builder

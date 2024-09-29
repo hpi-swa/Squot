@@ -5,6 +5,6 @@ compatibleMappersFromStream: aStream
 						encoding: each;
 						yourself.
 		aStream reset.
-		(mapper canReadVersionFrom: aStream)
+		(mapper canReadAssetFrom: aStream)
 			ifTrue: [{mapper}]
 			ifFalse: [{}]]

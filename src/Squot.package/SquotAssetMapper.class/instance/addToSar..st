@@ -1,11 +1,11 @@
 sar
 addToSar: aSarBuilder
-	| version |
-	version := (self loadVersionFromImage: aSarBuilder workingCopy) ifNil: [^ self].
+	| assetFile |
+	assetFile := (self loadAssetFileFromImage: aSarBuilder workingCopy) ifNil: [^ self].
 	self
 		addAssetLoaderFileLine: 
-			('{1} assetAt: {2} put: {3}.' format: {
+			('{1} assetFileAt: {2} put: {3}.' format: {
 				self sarAssetLoaderVariableName.
 				self path storeString.
-				self serializeVersion: version toSar: aSarBuilder})
+				self serializeAssetFile: assetFile toSar: aSarBuilder})
 		toSar: aSarBuilder.

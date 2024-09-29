@@ -1,18 +1,18 @@
 {
 	"class" : {
 		"aiffEncoding" : "mad 9/20/2023 17:58",
-		"assetTypeName" : "mad 9/20/2023 19:11",
 		"defaultEncoding" : "mad 9/20/2023 18:43",
 		"encodingName:" : "mad 9/20/2023 19:03",
+		"kind" : "mad 9/29/2024 19:30",
 		"validEncodings" : "mad 9/20/2023 17:58",
 		"wavEncoding" : "mad 9/20/2023 17:58" },
 	"instance" : {
-		"canReadVersionFrom:" : "mad 10/19/2023 12:56",
-		"doPostUpdateMigrationsIn:" : "mad 1/12/2024 12:34",
+		"assetAsMorph:" : "mad 9/29/2024 17:34",
+		"assetTypeName" : "mad 9/29/2024 17:36",
+		"canReadAssetFrom:" : "mad 9/29/2024 17:38",
+		"doPostUpdateMigrationsIn:" : "mad 9/27/2024 23:06",
 		"fixNilEncoding" : "mad 1/12/2024 12:37",
-		"isValidVersion:" : "mad 10/21/2023 21:33",
-		"readVersionFrom:" : "mad 10/17/2023 12:22",
-		"transformVersion:ifFail:" : "mad 10/17/2023 12:33",
-		"versionAsMorph:" : "mad 9/21/2023 12:37",
-		"versionTypeName" : "mad 10/21/2023 22:28",
-		"writeVersion:on:" : "mad 9/20/2023 17:57" } }
+		"isValidAsset:" : "mad 9/29/2024 17:40",
+		"readAssetFrom:" : "mad 9/29/2024 17:44",
+		"transformAsset:ifFail:" : "mad 9/29/2024 19:59",
+		"writeAsset:on:" : "mad 9/29/2024 17:48" } }

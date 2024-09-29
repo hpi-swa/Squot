@@ -1,3 +1,3 @@
 editing
-aboutToStyle: aString with: aStyler requestor: requestor at: aNumber
+aboutToStyle: anObject with: aStyler requestor: requestor at: aNumber
 	^ true

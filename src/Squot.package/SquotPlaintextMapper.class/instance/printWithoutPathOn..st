@@ -1,3 +1,3 @@
 printing
 printWithoutPathOn: aStream
-	self printAssetTypeOn: aStream.
+	self printKindOn: aStream.

@@ -1,6 +1,6 @@
 requests
 defaultFileNameFor: anAssetMapperClass
 	^ self formatFileName:
-		anAssetMapperClass assetTypeName,
+		anAssetMapperClass kind,
 		FSPath extensionDelimiter,
 		anAssetMapperClass defaultEncodingName

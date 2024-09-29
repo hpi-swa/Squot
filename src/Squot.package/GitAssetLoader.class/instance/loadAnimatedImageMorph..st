@@ -1,5 +1,3 @@
 loading
 loadAnimatedImageMorph: aStringOrPath
-	^ AnimatedImageMorph new
-		fromGIFReader: (self loadGIFReadWriter: aStringOrPath);
-		yourself
+	^ SquotAnimationMapper gifReadWriterAsMorph: (self loadGIFReadWriter: aStringOrPath)

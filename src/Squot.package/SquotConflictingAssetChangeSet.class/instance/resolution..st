@@ -1,5 +1,5 @@
 accessing
-resolution: anObject
-	resolution := anObject.
+resolution: anAssetFile
+	resolution := anAssetFile.
 	self markAsEdited.
 	self changed: #resolution.

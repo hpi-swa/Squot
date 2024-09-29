@@ -2,7 +2,7 @@ toolbuilder
 buildResolutionPanel: builder
 	^ SquotGUIUtilities buildVerticalSplit: 0.6
 		of: (self
-				buildDynamicVersion: #buildResolution:
+				buildDynamicAsset: #buildResolution:
 				label: 'Resolution:'
 				resolveAction: nil
 				state: nil

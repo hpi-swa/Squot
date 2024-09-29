@@ -1,7 +1,7 @@
 printing
 printOn: aStream
 	self
-		printAssetTypeOn: aStream;
+		printKindOn: aStream;
 		space: aStream;
 		printAtPathOn: aStream;
 		space: aStream;

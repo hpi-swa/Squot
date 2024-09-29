@@ -1,3 +1,3 @@
 testing
 canBeRemovedAfterSerializeInto: aFileSystem
-	^ self canBeRemovedForVersion: (self loadVersionFrom: aFileSystem)
+	^ self canBeRemovedForAssetFile: (self loadAssetFileFrom: aFileSystem)

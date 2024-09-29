@@ -1,15 +1,15 @@
 {
 	"class" : {
-		"assetTypeName" : "mad 9/20/2023 19:10",
 		"defaultEncoding" : "mad 9/20/2023 18:44",
 		"encodingName:" : "mad 10/19/2023 11:54",
+		"kind" : "mad 9/29/2024 19:29",
 		"validEncodings" : "mad 9/20/2023 18:49" },
 	"instance" : {
-		"canReadVersionFrom:" : "mad 10/19/2023 12:55",
-		"isValidVersion:" : "mad 10/21/2023 21:33",
-		"readVersionFrom:" : "mad 10/19/2023 12:28",
-		"versionAsMorph:" : "mad 9/20/2023 14:18",
-		"versionTypeName" : "mad 10/21/2023 22:28",
-		"writeVersion:on:" : "mad 9/20/2023 14:27",
+		"assetAsMorph:" : "mad 9/29/2024 17:33",
+		"assetTypeName" : "mad 9/29/2024 17:35",
+		"canReadAssetFrom:" : "mad 9/29/2024 17:38",
+		"isValidAsset:" : "mad 9/29/2024 17:40",
+		"readAssetFrom:" : "mad 9/29/2024 17:44",
+		"writeAsset:on:" : "mad 9/29/2024 17:48",
 		"writerClass" : "mad 9/20/2023 18:42",
 		"writerClass:" : "mad 9/20/2023 20:01" } }

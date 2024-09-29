@@ -1,3 +1,3 @@
 accessing
-isSourceAt: aNumber timeStampOf: aString
+isSourceAt: aNumber timeStampOf: anObject
 	^ false

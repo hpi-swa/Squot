@@ -1,5 +1,5 @@
 toolbuilder
 buildAsset: builder
 	^ self selectedMapper
-		buildVersionFromImage: self activeWorkingCopy
+		buildAssetFromImage: self activeWorkingCopy
 		with: builder

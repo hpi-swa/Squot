@@ -1,3 +1,3 @@
-accessing
+ui
 assetTypeName
-	^ self class assetTypeName
+	self subclassResponsibility.

@@ -2,5 +2,5 @@ changes-creation
 changeSetFromFSCommit: anFSCommit toFSCommit: anotherFSCommit
 	anFSCommit hash = anotherFSCommit hash ifTrue: [^ SquotEmptyChangeSet withMapper: self].
 	^ self
-		changeSetFromVersion: (self loadVersionFrom: anFSCommit filesystem)
-		toVersion: (self loadVersionFrom: anotherFSCommit filesystem)
+		changeSetFromAssetFile: (self loadAssetFileFrom: anFSCommit filesystem)
+		toAssetFile: (self loadAssetFileFrom: anotherFSCommit filesystem)

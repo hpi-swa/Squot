@@ -1,3 +1,0 @@
-ui
-versionTypeName
-	^ 'Form'

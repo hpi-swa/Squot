@@ -1,6 +1,6 @@
 instance creation
-withMapper: aMapper from: anObject to: anotherObject
+withMapper: aMapper from: anAssetFile to: anotherAssetFile
 	^ (self withMapper: aMapper)
-		from: anObject;
-		to: anotherObject;
+		from: anAssetFile;
+		to: anotherAssetFile;
 		yourself

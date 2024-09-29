@@ -1,3 +1,3 @@
 migrations
 doPostUpdateMigrations
-	self allInstancesDo: #doPostUpdateMigrations.
+	self allInstances do: #doPostUpdateMigrations displayingProgress: 'Migrating projects'.

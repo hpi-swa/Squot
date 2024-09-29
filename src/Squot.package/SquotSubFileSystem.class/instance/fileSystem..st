@@ -1,3 +1,3 @@
 accessing
-fileSystem: anObject
-	fileSystem := anObject
+fileSystem: aFileSystem
+	fileSystem := aFileSystem

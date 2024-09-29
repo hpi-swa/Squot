@@ -1,3 +1,3 @@
 accessing
-rootPath: anObject
-	rootPath := anObject
+rootPath: anFSPath
+	rootPath := anFSPath

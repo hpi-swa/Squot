@@ -1,10 +1,9 @@
 {
 	"class" : {
 		"currentVersion" : "mad 9/27/2024 13:55",
-		"legacyVersion" : "mad 9/27/2024 13:55",
-		"stonAllInstVarNames" : "mad 6/4/2023 16:02" },
+		"legacyVersion" : "mad 9/27/2024 13:55" },
 	"instance" : {
-		"=" : "mad 9/27/2024 17:53",
+		"=" : "mad 9/30/2024 13:40",
 		"addToSar:" : "mad 1/8/2024 20:54",
 		"basicVersion:" : "mad 9/27/2024 15:46",
 		"canBeRemovedAfterMaterializeIn:" : "mad 2/20/2024 15:47",
@@ -19,9 +18,7 @@
 		"fromSton:" : "mad 9/27/2024 15:46",
 		"hash" : "mad 9/13/2023 18:20",
 		"hashIncludingVersion" : "mad 9/27/2024 17:42",
-		"initialize" : "mad 9/27/2024 13:58",
-		"isMaterialized" : "mad 6/1/2023 22:33",
-		"isMaterialized:" : "mad 6/1/2023 22:34",
+		"initialize" : "mad 9/30/2024 13:35",
 		"mappedPaths" : "mad 10/21/2023 22:52",
 		"mergeCommit:into:withBase:" : "mad 9/6/2023 12:52",
 		"setCurrentVersion" : "mad 9/27/2024 13:55",

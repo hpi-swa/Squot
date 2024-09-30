@@ -6,7 +6,6 @@
 		 ],
 	"commentStamp" : "",
 	"instvars" : [
-		"isMaterialized",
 		"version" ],
 	"name" : "SquotMapper",
 	"pools" : [

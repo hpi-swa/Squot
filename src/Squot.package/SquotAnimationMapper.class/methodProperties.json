@@ -1,17 +1,19 @@
 {
 	"class" : {
-		"defaultEncoding" : "mad 10/21/2023 21:35",
+		"defaultEncoding" : "mad 9/30/2024 14:30",
 		"encodingName:" : "mad 10/19/2023 11:54",
 		"gifReadWriterAsMorph:" : "mad 9/29/2024 19:10",
 		"kind" : "mad 9/29/2024 19:29",
+		"readGIF:" : "mad 9/30/2024 14:29",
+		"readerClass" : "mad 9/30/2024 14:30",
 		"validEncodings" : "mad 10/21/2023 21:35" },
 	"instance" : {
 		"assetAsMorph:" : "mad 9/29/2024 17:33",
 		"assetTypeName" : "mad 9/29/2024 17:35",
-		"canReadAssetFrom:" : "mad 9/29/2024 17:38",
+		"canReadAssetFrom:" : "mad 9/30/2024 14:00",
 		"isValidAsset:" : "mad 9/29/2024 17:39",
 		"migrateMaterialized:" : "mad 9/29/2024 16:28",
 		"obsoleteSquotAnimationAsAssetFile:" : "mad 9/29/2024 16:28",
-		"readAssetFrom:" : "mad 9/29/2024 17:44",
-		"readerClass" : "mad 11/27/2023 12:41",
+		"readAssetFrom:" : "mad 9/30/2024 14:29",
+		"readerClass" : "mad 9/30/2024 14:30",
 		"writeAsset:on:" : "mad 9/29/2024 17:48" } }

@@ -1,3 +1,3 @@
 encodings
 defaultEncoding
-	^ GIFReadWriter
+	^ self readerClass

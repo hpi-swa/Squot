@@ -1,3 +1,3 @@
 accessing
 readerClass
-	^ self encoding
+	^ self class readerClass

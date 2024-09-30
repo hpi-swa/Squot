@@ -1,3 +1,3 @@
 testing
 canReadAssetFrom: aStream
-	^ self readerClass understandsImageFormat: aStream
+	^ [(self readAssetFrom: aStream) isAnimated] ifError: [false]

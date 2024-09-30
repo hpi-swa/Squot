@@ -1,0 +1,3 @@
+reading
+readerClass
+	^ GIFReadWriter

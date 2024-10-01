@@ -1,3 +1,3 @@
 accessing
 allMappers
-	^ self mapperChangeSets keys
+	^ self mapperChangeSets keys select: #isTracked

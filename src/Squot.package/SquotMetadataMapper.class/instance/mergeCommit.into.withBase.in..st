@@ -3,14 +3,14 @@ mergeCommit: rightFSCommit into: leftFSCommit withBase: baseFSCommit in: aWorkin
 	| emptyCommit commits metadataForCommits commitsForMappers potentiallyRemovedMappers mapperChangeSets mappersChangeSet metadataChangeSet |
 	emptyCommit := aWorkingCopy emptyCommit.
 	commits := {rightFSCommit. leftFSCommit. baseFSCommit}.
-	metadataForCommits := commits collect: [:each | self loadMetadataFromFSCommit: each in: aWorkingCopy].
+	metadataForCommits := commits collect: [:each | self loadMetadataWithUntrackedMappersFromFSCommit: each in: aWorkingCopy].
 	commitsForMappers := Dictionary new.
 	commits withIndexDo: [:commit :index |
 		(metadataForCommits at: index) mappers do: [:mapper |
 			(commitsForMappers at: mapper ifAbsentPut: [{emptyCommit. emptyCommit. emptyCommit}])
 				at: index put: commit]].
 	potentiallyRemovedMappers := commitsForMappers keys select: [:mapper | | commitsForMapper |
-		commitsForMapper := (commitsForMappers at: mapper).
+		commitsForMapper := commitsForMappers at: mapper.
 		commitsForMapper first = emptyCommit or: [commitsForMapper second = emptyCommit]].
 	mapperChangeSets := Dictionary new.
 	commitsForMappers keysAndValuesDo: [:mapper :mapperCommits |

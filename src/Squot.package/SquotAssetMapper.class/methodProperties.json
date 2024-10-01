@@ -2,6 +2,7 @@
 	"class" : {
 		"allCompatibleMappersFromStream:" : "mad 9/20/2023 18:53",
 		"assetMapperClasses" : "mad 9/20/2023 18:27",
+		"chooseCompatibleMapper:ifAmbiguous:" : "mad 9/30/2024 14:09",
 		"compatibleMappersFromStream:" : "mad 9/29/2024 17:38",
 		"defaultEncoding" : "mad 9/20/2023 18:41",
 		"defaultEncodingName" : "mad 10/19/2023 11:50",

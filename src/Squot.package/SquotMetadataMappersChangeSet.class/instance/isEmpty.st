@@ -1,4 +1,4 @@
 accessing
 isEmpty
 	^ self potentiallyRemovedMappers isEmpty
-		and: [self oldMappers asSet = self mapperChangeSets keys asSet]
+		and: [self oldMappers asSet = self allMappers asSet]

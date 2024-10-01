@@ -5,4 +5,4 @@ buildMetadata: aBlock
 	self propertyChangeSets do: [:each |
 		metadata perform: each property asSimpleSetter with: (aBlock value: each)].
 	metadata setCurrentVersion.
-	^ metadata
+	^ metadata withoutUntrackedMappers

@@ -1,3 +1,3 @@
 version-io
 writeAsset: aString on: aStream
-	aStream nextPutAll: aString asByteArray.
+	aStream nextPutAll: aString utf8Encoded.

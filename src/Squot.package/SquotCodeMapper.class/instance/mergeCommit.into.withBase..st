@@ -1,6 +1,12 @@
 merging
 mergeCommit: rightFSCommit into: leftFSCommit withBase: baseFSCommit
 	| merger |
+	SquotMergeUtilities
+		hexHashMerge: [:commit | self hexHashIn: commit]
+		left: leftFSCommit
+		right: rightFSCommit
+		base: baseFSCommit
+		ifUnchanged: [^ SquotEmptyChangeSet withMapper: self].
 	merger := [SquotThreewayCodeMerger
 		base: (self loadSnapshotFrom: leftFSCommit filesystem)
 		target: (self loadSnapshotFrom: rightFSCommit filesystem)

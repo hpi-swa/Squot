@@ -1,3 +1,0 @@
-metadata-loading
-loadMetadataWithUntrackedMappersFromFSCommit: anFSCommit in: aWorkingCopy
-	^ self loadMetadataWithUntrackedMappersFromFileSystem: anFSCommit filesystem in: aWorkingCopy

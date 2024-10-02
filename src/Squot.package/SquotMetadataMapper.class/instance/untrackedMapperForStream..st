@@ -1,4 +1,4 @@
-untracked-mappers
+metadata-loading
 untrackedMapperForStream: aStream
 	^ (SquotAssetMapper
 		chooseCompatibleMapper: aStream

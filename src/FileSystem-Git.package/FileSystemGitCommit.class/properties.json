@@ -7,7 +7,8 @@
 	"commentStamp" : "",
 	"instvars" : [
 		"fsgitRepository",
-		"commit" ],
+		"commit",
+		"filesystem" ],
 	"name" : "FileSystemGitCommit",
 	"pools" : [
 		 ],

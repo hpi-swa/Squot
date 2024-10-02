@@ -1,3 +1,3 @@
 accessing
 filesystem
-	^ self fsgitRepository filesystemOn: self commit
+	^ filesystem ifNil: [filesystem := self createFilesystem]

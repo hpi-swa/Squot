@@ -18,4 +18,6 @@ ifConflict: conflictBlock
 				stringMergeLeft: leftStringOrNil
 				right: rightStringOrNil
 				base: baseStringOrNil
+				ifUnchanged: unchangedBlock
+				ifMerged: mergedBlock
 				ifConflict: conflictBlock]

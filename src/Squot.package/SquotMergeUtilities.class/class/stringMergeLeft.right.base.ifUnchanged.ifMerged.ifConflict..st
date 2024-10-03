@@ -6,7 +6,7 @@ stringMergeLeft: leftString right: rightString base: baseString ifUnchanged: unc
 		file0: baseString lines;
 		file1: leftLines;
 		file2: rightString lines;
-		diffClass: HuntMcilroyDiff;
+		diffClass: SquotTextUtilities diffClass;
 		merge: true.
 	^ (diffResult size = 1 and: [diffResult first key = #ok])
 		ifFalse: [conflictBlock value: (SquotMergeConflict left: leftString right: rightString base: baseString)]

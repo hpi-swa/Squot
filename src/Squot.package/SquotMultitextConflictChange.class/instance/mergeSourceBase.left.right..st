@@ -5,7 +5,7 @@ mergeSourceBase: baseSource left: leftSource right: rightSource
 		file0: baseSource lines;
 		file1: leftSource lines;
 		file2: rightSource lines;
-		diffClass: HuntMcilroyDiff;
+		diffClass: SquotTextUtilities diffClass;
 		merge: true.
 	^ SquotTextUtilities joinTexts: (Array streamContents: [:stream |
 		chunks do: [:chunk |

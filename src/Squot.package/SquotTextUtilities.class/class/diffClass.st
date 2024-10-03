@@ -1,3 +1,3 @@
 diffing
 diffClass
-	^ HuntMcilroyDiff
+	^ MyersUkkonenDiff

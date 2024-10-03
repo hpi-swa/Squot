@@ -1,5 +1,5 @@
 printing
-printOn: aStream
+printDescriptionOn: aStream
 	self
 		printKindOn: aStream;
 		space: aStream;

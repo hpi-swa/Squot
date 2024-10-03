@@ -1,5 +1,5 @@
 printing
-printWithoutPathOn: aStream
+printDescriptionWithoutPathOn: aStream
 	self
 		printKindOn: aStream;
 		space: aStream;

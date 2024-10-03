@@ -1,5 +1,5 @@
 printing
-printOn: aStream
+printDescriptionOn: aStream
 	aStream
 		nextPutAll: 'Package ';
 		nextPutAll: self package name;

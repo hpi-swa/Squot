@@ -1,5 +1,5 @@
 printing
-printWithoutEncodingOn: aStream
+printDescriptionWithoutEncodingOn: aStream
 	self
 		printKindOn: aStream;
 		space: aStream;

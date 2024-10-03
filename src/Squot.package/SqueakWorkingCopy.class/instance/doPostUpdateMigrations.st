@@ -2,5 +2,5 @@ migrations
 doPostUpdateMigrations
 	self mappers
 		do: [:each | each doPostUpdateMigrationsIn: self]
-		displayingProgress: ('Migrating project {1}' format: {self name printString}).
+		displayingProgress: [:each | 'Migrating {1}' format: {each}].
 	self doImageHashMigration.

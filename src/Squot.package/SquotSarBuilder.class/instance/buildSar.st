@@ -2,7 +2,7 @@ building
 buildSar
 	self mappers
 		do: [:each | each addToSar: self]
-		displayingProgress: 'Building .sar'.
+		displayingProgress: [:each | 'Building .sar - adding {1}' format: {each name}].
 	self
 		addString: (self fixupChunkTerminatorsIn: self preamble)
 		at: 'install/preamble'.

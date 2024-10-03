@@ -13,13 +13,17 @@ mergeCommit: rightFSCommit into: leftFSCommit withBase: baseFSCommit in: aWorkin
 		commitsForMapper := commitsForMappers at: mapper.
 		commitsForMapper first = emptyCommit or: [commitsForMapper second = emptyCommit]].
 	mapperChangeSets := Dictionary new.
-	commitsForMappers keysAndValuesDo: [:mapper :mapperCommits |
-		mapperChangeSets
-			at: mapper
-			put: (mapper
-					mergeCommit: mapperCommits first
-					into: mapperCommits second
-					withBase: mapperCommits third)].
+	commitsForMappers associations
+		do: [:mapperToCommits | | mapper mapperCommits |
+			mapper := mapperToCommits key.
+			mapperCommits := mapperToCommits value.
+			mapperChangeSets
+				at: mapper
+				put: (mapper
+						mergeCommit: mapperCommits first
+						into: mapperCommits second
+						withBase: mapperCommits third)]
+		displayingProgress: [:mapperToCommits | 'Merging {1}' format: {mapperToCommits key}].
 	mappersChangeSet := self
 		mappersChangeSetFromMappers: metadataForCommits second mappers
 		removing: potentiallyRemovedMappers

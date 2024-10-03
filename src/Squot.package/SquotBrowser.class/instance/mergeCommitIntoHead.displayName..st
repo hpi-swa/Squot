@@ -6,7 +6,9 @@ mergeCommitIntoHead: aCommit displayName: aString
 						('Cannot merge {1}, it does not refer to a commit.' format: {aString})].
 	self warnIfImageNotClean: [^ self].
 	head := self activeWorkingCopy headCommitIfNilInformAnd: [^ self].
-	mergeBases := head allMergeBasesWithAnyOf: {aCommit}.
+	mergeBases := SquotGUIUtilities
+		displayStatus: 'Looking for a merge base'
+		during: [head allMergeBasesWithAnyOf: {aCommit}].
 	mergeBase := mergeBases size caseOf: {
 		[0] -> [^ self inform: 'Cannot merge unrelated histories.'].
 		[1] -> [mergeBases anyOne].

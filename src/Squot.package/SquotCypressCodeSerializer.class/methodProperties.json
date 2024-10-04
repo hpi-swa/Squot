@@ -2,7 +2,6 @@
 	"class" : {
 		"addPackageAndClassDirectoryForClass:to:" : "jr 9/20/2017 21:05",
 		"addPackageDirectoryForPackage:to:" : "jr 9/20/2017 21:01",
-		"asMapperFromReference:" : "mad 10/4/2024 14:59",
 		"rewritePath:for:" : "jr 1/25/2017 17:23",
 		"rewritePath:ofClass:" : "jr 9/20/2017 21:04",
 		"rewritePath:ofPackage:" : "jr 3/17/2019 00:19",

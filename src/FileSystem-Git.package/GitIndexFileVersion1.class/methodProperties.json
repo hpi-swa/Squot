@@ -1,8 +1,8 @@
 {
 	"class" : {
-		"canDecode:" : "MaxLeske 6/24/2012 16:05" },
+		"canDecode:" : "mad 10/4/2024 18:07" },
 	"instance" : {
-		"findBinary:from:to:" : "MaxLeske 6/24/2012 20:10",
-		"initializeWith:" : "MaxLeske 6/24/2012 20:21",
+		"findBinary:from:to:" : "mad 10/4/2024 18:26",
+		"headerSize" : "mad 10/4/2024 18:40",
 		"offsetForIndex:" : "MaxLeske 6/27/2012 10:50",
 		"offsetForObjectNamed:" : "MaxLeske 6/24/2012 20:20" } }

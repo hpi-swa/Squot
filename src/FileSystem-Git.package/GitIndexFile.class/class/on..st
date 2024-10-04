@@ -1,9 +1,9 @@
 instance creation
 on: aReference
-	| bytes class |
-	bytes := aReference readStreamDo: [ :stream | stream binary; contents ].
-	class := self subclasses detect: [ :subclass | 
-		subclass canDecode: bytes ].
+	| class |
+	class := aReference readStreamDo: [:stream |
+		self subclasses detect: [:subclass | subclass canDecode: stream]].
 	^ class new
-		initializeWith: bytes;
+		reference: aReference;
+		initializeWithReference;
 		yourself

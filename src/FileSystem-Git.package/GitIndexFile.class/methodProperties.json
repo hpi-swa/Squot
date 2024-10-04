@@ -1,18 +1,22 @@
 {
 	"class" : {
 		"canDecode:" : "MaxLeske 6/24/2012 15:51",
-		"hasVersion2MagicNumber:" : "MaxLeske 6/24/2012 15:57",
-		"hasVersionNumber2:" : "MaxLeske 6/24/2012 16:07",
-		"on:" : "jr 1/20/2017 15:07",
-		"version2MagicNumber" : "MaxLeske 6/24/2012 15:58" },
+		"isVersion2:" : "mad 10/4/2024 18:07",
+		"on:" : "mad 10/4/2024 18:07",
+		"version2Header" : "mad 10/4/2024 18:27" },
 	"instance" : {
 		"boundsFor:" : "MaxLeske 6/23/2012 19:35",
-		"crcAt:" : "MaxLeske 6/24/2012 09:57",
+		"fanoutTableSize" : "mad 10/4/2024 18:12",
+		"fanoutTableStart" : "mad 10/4/2024 18:39",
 		"findBinary:from:to:" : "MaxLeske 6/24/2012 20:06",
+		"hashStreamStart" : "mad 10/4/2024 18:40",
+		"headerSize" : "mad 10/4/2024 18:39",
 		"indexForFanout:" : "jr 11/23/2016 18:38",
 		"indexForObjectNamed:" : "jr 3/6/2017 19:02",
-		"initializeWith:" : "MaxLeske 6/24/2012 15:49",
+		"initializeWithReference" : "mad 10/4/2024 18:39",
+		"objectCount" : "mad 10/4/2024 18:02",
 		"offsetForIndex:" : "MaxLeske 6/24/2012 20:10",
 		"offsetForObjectNamed:" : "MaxLeske 6/24/2012 20:15",
+		"readStreamDo:" : "mad 10/4/2024 18:24",
 		"reference" : "MaxLeske 8/29/2012 15:38",
 		"reference:" : "MaxLeske 8/29/2012 15:39" } }

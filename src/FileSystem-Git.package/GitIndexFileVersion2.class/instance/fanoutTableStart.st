@@ -1,0 +1,3 @@
+accessing
+fanoutTableStart
+	^ self headerSize

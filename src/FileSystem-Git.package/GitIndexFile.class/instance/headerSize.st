@@ -1,0 +1,3 @@
+accessing
+headerSize
+	self subclassResponsibility.

@@ -53,7 +53,7 @@
 		"loadAssetFileFrom:" : "mad 9/29/2024 19:35",
 		"loadAssetFileFromImage:" : "mad 9/29/2024 16:35",
 		"loadAssetFromImage:" : "mad 9/29/2024 17:42",
-		"mappedPaths" : "mad 10/21/2023 22:53",
+		"mappedPathPatterns" : "mad 10/4/2024 15:33",
 		"materialize:in:" : "mad 9/29/2024 19:37",
 		"materializeAsset:in:" : "mad 9/29/2024 17:43",
 		"mergeAssetFile:into:withBase:" : "mad 9/29/2024 17:03",

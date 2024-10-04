@@ -1,0 +1,19 @@
+{
+	"class" : {
+		"contains:" : "mad 10/4/2024 15:28",
+		"endsWith:" : "mad 10/4/2024 15:28",
+		"exactMatch:" : "mad 10/4/2024 15:10",
+		"startsWith:" : "mad 10/4/2024 15:28" },
+	"instance" : {
+		"allowLeading" : "mad 10/4/2024 15:24",
+		"allowTrailing" : "mad 10/4/2024 15:25",
+		"allowsLeading" : "mad 10/4/2024 15:24",
+		"allowsLeading:" : "mad 10/4/2024 15:25",
+		"allowsTrailing" : "mad 10/4/2024 15:24",
+		"allowsTrailing:" : "mad 10/4/2024 15:25",
+		"disallowLeading" : "mad 10/4/2024 15:25",
+		"disallowTrailing" : "mad 10/4/2024 15:25",
+		"matches:" : "mad 10/4/2024 15:42",
+		"matches:startingAt:" : "mad 10/4/2024 15:43",
+		"path" : "mad 10/4/2024 15:10",
+		"path:" : "mad 10/4/2024 15:10" } }

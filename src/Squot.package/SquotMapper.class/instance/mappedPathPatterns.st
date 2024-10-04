@@ -1,3 +1,3 @@
 accessing
-mappedPaths
+mappedPathPatterns
 	self subclassResponsibility.

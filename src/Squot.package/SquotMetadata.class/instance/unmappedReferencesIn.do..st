@@ -1,6 +1,6 @@
 untracked-mappers
 unmappedReferencesIn: aFileSystem do: aBlock
 	SquotUnmappedReferencesVisitor new
-		mappedPaths: (self trackedMappers gather: #mappedPaths);
+		mappedPathPatterns: self mappedPathPatterns;
 		block: aBlock;
 		show: aFileSystem root

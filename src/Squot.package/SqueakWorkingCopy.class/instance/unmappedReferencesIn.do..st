@@ -1,6 +1,6 @@
 paths
 unmappedReferencesIn: anFSCommit do: aBlock
 	SquotUnmappedReferencesVisitor new
-		mappedPaths: self mappedPaths;
+		mappedPathPatterns: self mappedPathPatterns;
 		block: aBlock;
 		show: anFSCommit filesystem root.

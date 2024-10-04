@@ -1,4 +1,3 @@
 accessing
 isUnmapped: aPath
-	^ self mappedPaths noneSatisfy: [:each |
-		SquotPathUtilities path: each containsOrEquals: aPath]
+	^ self mappedPathPatterns noneSatisfy: [:each | each matches: aPath]

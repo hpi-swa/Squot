@@ -1,7 +1,7 @@
 mapper-importing
-asMapperIn: aFilesystem at: aPath
+asMapperFromReference: aReference
 	| packagePath |
-	packagePath := aPath parent.
+	packagePath := aReference path parent.
 	^ SquotTonelMapper
 		package: (MCPackage named: packagePath basename)
 		path: packagePath parent

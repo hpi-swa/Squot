@@ -1,3 +1,5 @@
 metadata-loading
 loadFallbackMappersFromFileSystem: aFileSystem
-	^ (self loadLegacyMappersFromFileSystem: aFileSystem) ifNil: [OrderedCollection new]
+	^ (self loadMappersFromLegacyMappersFileIn: aFileSystem)
+		ifNil: [(self loadMappersFromLegacySquotFileIn: aFileSystem)
+				ifNil: [OrderedCollection new]]

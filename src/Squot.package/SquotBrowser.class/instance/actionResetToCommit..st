@@ -7,5 +7,4 @@ actionResetToCommit: aCommit
 		updateRef: headRef name
 		to: aCommit
 		message: 'reset ', aCommit hexHash.
-	self activeWorkingCopy import.
 	^ true

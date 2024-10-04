@@ -1,0 +1,3 @@
+accessing
+legacySquotContentsFileBaseName
+	^ '.squot-contents'

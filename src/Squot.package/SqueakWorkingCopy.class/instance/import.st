@@ -1,5 +1,3 @@
 importing
 import
-	self
-		checkForMissingHead;
-		importSquotContentsFromHeadCommit.
+	self checkForMissingHead.

@@ -1,3 +1,3 @@
 accessing
 mappedPaths
-	^ {self metadataFilePath. self legacyMappersFilePath}
+	^ {self metadataFilePath. self legacyMappersFilePath. self legacySquotFilePath}

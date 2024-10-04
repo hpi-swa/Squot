@@ -1,7 +1,7 @@
 mapper-importing
-asMapperIn: aFilesystem at: aPath
+asMapperFromReference: aReference
 	| packagePath |
-	packagePath := aPath parent.
+	packagePath := aReference path parent.
 	^ SquotCypressMapper
 		package: (MCPackage named: packagePath base)
 		path: packagePath parent

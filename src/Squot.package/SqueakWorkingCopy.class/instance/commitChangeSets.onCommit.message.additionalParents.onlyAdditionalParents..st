@@ -8,7 +8,7 @@ onlyAdditionalParents: aBoolean
 	fileSystem := self serializeChangeSets: aCollection onCommit: aCommitOrNil.
 	aBoolean ifFalse: [anotherCollection do: [:each | fileSystem addParent: each asHexHash]].
 	commit := fileSystem prepareNewCommit
-					message: aString;
+					message: aString withUnixLineEndings;
 					yourself.
 	aBoolean ifTrue: [commit parents: (anotherCollection collect: #asHexHash)].
 	commit store.

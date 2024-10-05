@@ -1,0 +1,3 @@
+snapshot-creation
+expectedReadErrorsOnMissingSnapshot
+	^ DirectoryDoesNotExist

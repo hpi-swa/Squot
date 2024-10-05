@@ -1,3 +1,5 @@
 snapshot-creation
 loadSnapshotFrom: aFilesystem
-	self subclassResponsibility.
+	^ [(self readerOn: (self packageDirectoryIn: aFilesystem)) version snapshot]
+		on: self expectedReadErrorsOnMissingSnapshot
+		do: [^ MCSnapshot empty]

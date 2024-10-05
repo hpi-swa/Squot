@@ -1,14 +1,12 @@
 changes-operations
-writerIn: aFileSystem
-	| directory repository fileUtils fileTreeWriter |
-	directory := self packageDirectoryIn: aFileSystem.
-	directory ensureDirectory.
+writerOn: aReference
+	| repository fileUtils fileTreeWriter |
 	repository := SquotMockMCRepository new
-					directory: directory;
+					directory: aReference;
 					yourself.
-	fileUtils := self fileUtilsOn: directory.
+	fileUtils := self fileUtilsOn: aReference.
 	fileTreeWriter := (self fileTreeWriterClass on: repository)
-						directory: (SquotPathUtilities asString: directory path);
+						directory: (SquotPathUtilities asString: aReference path);
 						fileUtils: fileUtils;
 						initializePackageFileDirectoryCache;
 						yourself.

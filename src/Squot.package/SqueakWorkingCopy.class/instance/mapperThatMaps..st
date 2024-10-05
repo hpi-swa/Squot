@@ -1,5 +1,5 @@
 paths
 mapperThatMaps: aPath
 	^ self allMappers
-		detect: [:mapper | mapper mappedPathPatterns anySatisfy: [:each | each matches: aPath]]
+		detect: [:mapper | mapper maps: aPath]
 		ifNone: [nil]

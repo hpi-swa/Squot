@@ -1,3 +1,9 @@
 changes-operations
 serialize: aSnapshot into: aFileSystem
-	self subclassResponsibility.
+	| directory |
+	directory := self packageDirectoryIn: aFileSystem.
+	aSnapshot definitions
+		ifEmpty: [directory deleteAll]
+		ifNotEmpty: [
+			self cleanDirectory: directory.
+			self write: aSnapshot with: (self writerOn: directory)].

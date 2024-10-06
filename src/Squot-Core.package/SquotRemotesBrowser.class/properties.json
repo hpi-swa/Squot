@@ -1,0 +1,15 @@
+{
+	"category" : "Squot-Core-Browser",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"workingCopy",
+		"selectedRemoteName" ],
+	"name" : "SquotRemotesBrowser",
+	"pools" : [
+		 ],
+	"super" : "Model",
+	"type" : "normal" }

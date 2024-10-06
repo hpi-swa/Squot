@@ -1,0 +1,14 @@
+{
+	"category" : "Squot-Core-Plaintext",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "SquotPlaintextNormalChange",
+	"pools" : [
+		 ],
+	"super" : "SquotMultitextNormalChange",
+	"type" : "normal" }

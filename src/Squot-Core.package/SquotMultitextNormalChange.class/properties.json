@@ -1,0 +1,15 @@
+{
+	"category" : "Squot-Core-Multitext",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"from",
+		"to" ],
+	"name" : "SquotMultitextNormalChange",
+	"pools" : [
+		 ],
+	"super" : "SquotMultitextChange",
+	"type" : "normal" }

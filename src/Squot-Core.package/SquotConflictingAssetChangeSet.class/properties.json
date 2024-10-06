@@ -1,0 +1,16 @@
+{
+	"category" : "Squot-Core-Asset",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"right",
+		"resolution",
+		"isResolved" ],
+	"name" : "SquotConflictingAssetChangeSet",
+	"pools" : [
+		 ],
+	"super" : "SquotAssetChangeSet",
+	"type" : "normal" }

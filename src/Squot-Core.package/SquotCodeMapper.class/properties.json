@@ -1,0 +1,15 @@
+{
+	"category" : "Squot-Core-Code",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"package",
+		"path" ],
+	"name" : "SquotCodeMapper",
+	"pools" : [
+		 ],
+	"super" : "SquotMapper",
+	"type" : "normal" }

@@ -1,0 +1,14 @@
+{
+	"category" : "Squot-Core-Browser",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "SquotRefWrapper",
+	"pools" : [
+		 ],
+	"super" : "SquotListItemWrapper",
+	"type" : "normal" }

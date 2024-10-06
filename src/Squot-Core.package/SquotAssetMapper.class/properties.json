@@ -1,0 +1,15 @@
+{
+	"category" : "Squot-Core-Asset",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"path",
+		"encoding" ],
+	"name" : "SquotAssetMapper",
+	"pools" : [
+		 ],
+	"super" : "SquotMapper",
+	"type" : "normal" }

@@ -1,0 +1,14 @@
+{
+	"category" : "Squot-Core-Code",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "SquotThreewayCodeMerger",
+	"pools" : [
+		 ],
+	"super" : "MCThreeWayMerger",
+	"type" : "normal" }

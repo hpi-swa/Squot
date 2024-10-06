@@ -1,0 +1,14 @@
+{
+	"category" : "Squot-Core-Asset",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"basePath" ],
+	"name" : "GitAssetLoader",
+	"pools" : [
+		 ],
+	"super" : "Model",
+	"type" : "normal" }

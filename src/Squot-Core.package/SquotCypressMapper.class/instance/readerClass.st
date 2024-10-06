@@ -1,0 +1,3 @@
+classes
+readerClass
+	^ SquotMCFileTreeStCypressReader

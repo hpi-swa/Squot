@@ -1,0 +1,14 @@
+{
+	"category" : "Squot-Core-Plaintext",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "SquotPlaintext",
+	"pools" : [
+		 ],
+	"super" : "ByteString",
+	"type" : "bytes" }

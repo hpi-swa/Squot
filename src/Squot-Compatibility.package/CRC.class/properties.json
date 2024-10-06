@@ -1,0 +1,25 @@
+{
+	"category" : "Squot-Compatibility-SqueakCommon",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "<historical>",
+	"instvars" : [
+		"width",
+		"polynome",
+		"registerFill",
+		"finalXorBytes",
+		"shouldReflectOutput",
+		"lookupTable",
+		"widthMask",
+		"theRegister",
+		"shouldReflectInput",
+		"message",
+		"runMethodSelector",
+		"lowestByteShift" ],
+	"name" : "CRC",
+	"pools" : [
+		 ],
+	"super" : "Checksum",
+	"type" : "normal" }

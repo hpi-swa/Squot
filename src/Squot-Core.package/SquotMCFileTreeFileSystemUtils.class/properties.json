@@ -1,0 +1,14 @@
+{
+	"category" : "Squot-Core-Code",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "jr 3/17/2018 19:34",
+	"instvars" : [
+		"directory" ],
+	"name" : "SquotMCFileTreeFileSystemUtils",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }

@@ -1,0 +1,18 @@
+{
+	"category" : "Squot-Core-Asset",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"model",
+		"mapper",
+		"setAssetSelector",
+		"getBindingsSelector",
+		"editTargetName" ],
+	"name" : "SquotAssetWorkspace",
+	"pools" : [
+		 ],
+	"super" : "SquotPluggableWorkspace",
+	"type" : "normal" }

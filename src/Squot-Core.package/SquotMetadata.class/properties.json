@@ -1,0 +1,16 @@
+{
+	"category" : "Squot-Core-Metadata",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"version",
+		"name",
+		"mappers" ],
+	"name" : "SquotMetadata",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }

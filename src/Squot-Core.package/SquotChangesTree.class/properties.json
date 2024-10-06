@@ -1,0 +1,15 @@
+{
+	"category" : "Squot-Core-Browser",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"label",
+		"children" ],
+	"name" : "SquotChangesTree",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }

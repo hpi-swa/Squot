@@ -1,0 +1,14 @@
+{
+	"category" : "Squot-Compatibility-SqueakCommon",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "<historical>",
+	"instvars" : [
+		 ],
+	"name" : "Checksum",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }

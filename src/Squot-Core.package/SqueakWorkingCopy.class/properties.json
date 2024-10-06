@@ -1,0 +1,20 @@
+{
+	"category" : "Squot-Core",
+	"classinstvars" : [
+		"registry" ],
+	"classvars" : [
+		"LastImageHash" ],
+	"commentStamp" : "",
+	"instvars" : [
+		"name",
+		"fsgitRepository",
+		"materialized",
+		"mappers",
+		"refsForCommits",
+		"credentials",
+		"lastImageHash" ],
+	"name" : "SqueakWorkingCopy",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }

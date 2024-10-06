@@ -1,0 +1,14 @@
+{
+	"category" : "Squot-Core-Multitext",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"mapper" ],
+	"name" : "SquotMultitextModel",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }

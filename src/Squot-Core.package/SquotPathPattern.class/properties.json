@@ -1,0 +1,16 @@
+{
+	"category" : "Squot-Core-Utilities",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"path",
+		"allowsLeading",
+		"allowsTrailing" ],
+	"name" : "SquotPathPattern",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }

@@ -1,0 +1,15 @@
+SystemOrganization addCategory: #'Squot-Core'!
+SystemOrganization addCategory: #'Squot-Core-Metadata'!
+SystemOrganization addCategory: #'Squot-Core-Metadata-Mappers'!
+SystemOrganization addCategory: #'Squot-Core-Metadata-Name'!
+SystemOrganization addCategory: #'Squot-Core-Browser'!
+SystemOrganization addCategory: #'Squot-Core-Asset'!
+SystemOrganization addCategory: #'Squot-Core-Image'!
+SystemOrganization addCategory: #'Squot-Core-Plaintext'!
+SystemOrganization addCategory: #'Squot-Core-Blob'!
+SystemOrganization addCategory: #'Squot-Core-Sound'!
+SystemOrganization addCategory: #'Squot-Core-Multitext'!
+SystemOrganization addCategory: #'Squot-Core-Code'!
+SystemOrganization addCategory: #'Squot-Core-Rebase'!
+SystemOrganization addCategory: #'Squot-Core-Sar'!
+SystemOrganization addCategory: #'Squot-Core-Utilities'!

@@ -1,0 +1,16 @@
+{
+	"category" : "Squot-Core-Rebase",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"messageCommit",
+		"oneLineMessage",
+		"editMessage" ],
+	"name" : "SquotRebaseOperationMerge",
+	"pools" : [
+		 ],
+	"super" : "SquotRebaseOperationWithLabel",
+	"type" : "normal" }

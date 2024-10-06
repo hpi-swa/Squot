@@ -1,3 +1,0 @@
-patching
-applyMetadataDiffTo: aTrackedObjectMetadata
-	^ metadataDiff squotApplyTo: aTrackedObjectMetadata

@@ -1,1 +1,0 @@
-I capture a HashedCollection, such as a Set. To abstract away how the hash tables are implemented in HashedCollection, I store the shadows of the collection items in the hash table in my "itemSlots".

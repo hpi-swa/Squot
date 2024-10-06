@@ -1,3 +1,0 @@
-accessing
-ignoreMethodsInAssumeUnchanged: aBoolean
-	IgnoreMethodsInAssumeUnchanged := aBoolean

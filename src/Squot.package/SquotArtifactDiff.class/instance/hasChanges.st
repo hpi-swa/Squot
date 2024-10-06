@@ -1,3 +1,0 @@
-testing
-hasChanges
-	^ left ~= right

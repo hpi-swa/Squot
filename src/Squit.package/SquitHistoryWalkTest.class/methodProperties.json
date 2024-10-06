@@ -1,9 +1,0 @@
-{
-	"class" : {
-		 },
-	"instance" : {
-		"newVersion:parents:authoredAt:committedAt:" : "jr 5/10/2020 22:42",
-		"performTest" : "jr 9/13/2020 22:55",
-		"setUp" : "jr 5/10/2020 22:17",
-		"testCorrectExclusionOfAncestorsThroughCorrectWalkOrder" : "jr 5/10/2020 22:29",
-		"testOrderOfRebasedCommits" : "jr 5/2/2022 00:41" } }

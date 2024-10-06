@@ -1,1 +1,0 @@
-An element of a TSquotObjectContainer that can be loaded into memory (or already is). Usually contains an object graph that is a module of the system tracked in a particular repository. But it could also be something different.

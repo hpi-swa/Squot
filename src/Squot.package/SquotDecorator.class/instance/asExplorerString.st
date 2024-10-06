@@ -1,3 +1,0 @@
-Object
-asExplorerString
-	^ self printString

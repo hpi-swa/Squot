@@ -1,3 +1,0 @@
-testing
-shouldObjectHaveNameAssigned: aHashedCollection
-	^ true

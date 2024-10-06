@@ -1,4 +1,0 @@
-accessing
-mcVersion
-
-	^ mcVersion

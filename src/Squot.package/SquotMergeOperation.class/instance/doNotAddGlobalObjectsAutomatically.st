@@ -1,3 +1,0 @@
-accessing
-doNotAddGlobalObjectsAutomatically
-	shouldAddGlobalObjectsAutomatically := false.

@@ -1,1 +1,0 @@
-Subclass of Trait (not a trait itself!) that mocks browsing.

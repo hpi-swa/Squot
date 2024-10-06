@@ -1,3 +1,0 @@
-tools
-objectNames
-	^ objectNames values

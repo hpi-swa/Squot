@@ -1,3 +1,0 @@
-ui
-branchListIfRepositoryDoesNotExist
-	^ #('-- Repository disappeared --')

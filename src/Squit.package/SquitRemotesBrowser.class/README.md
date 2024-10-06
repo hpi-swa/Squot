@@ -1,1 +1,0 @@
-I show and allow to change users the remotes configured in a repository.

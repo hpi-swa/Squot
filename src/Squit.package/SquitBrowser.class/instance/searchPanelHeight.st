@@ -1,3 +1,0 @@
-toolbuilder
-searchPanelHeight
-	^ SquotGUI inputFieldHeight

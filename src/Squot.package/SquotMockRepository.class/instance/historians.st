@@ -1,3 +1,0 @@
-accessing
-historians
-	^ {Object new}

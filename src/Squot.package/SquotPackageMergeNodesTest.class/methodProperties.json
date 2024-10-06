@@ -1,7 +1,0 @@
-{
-	"class" : {
-		 },
-	"instance" : {
-		"testArtifactModifcationRemovalConflict" : "jr 11/22/2020 23:43",
-		"testArtifactParallelAdditionConflict" : "jr 11/22/2020 23:44",
-		"testArtifactRemovalModifcationConflict" : "jr 11/22/2020 23:44" } }

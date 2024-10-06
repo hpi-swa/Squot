@@ -1,1 +1,0 @@
-When patching an object graph, I am the first pseudo-diff worked upon. I direct the patching process to all the entity objects that must be patched according to the graph diff.

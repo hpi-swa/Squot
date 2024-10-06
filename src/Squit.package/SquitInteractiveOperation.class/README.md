@@ -1,1 +1,0 @@
-I am an abstract method object for a Git operation that would be too long if fit into a single method. This helps that SquitBrowser does not become a god class with hundreds of methods.

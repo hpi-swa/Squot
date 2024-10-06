@@ -1,3 +1,0 @@
-testing
-canHaveReferences: aString
-	^ false

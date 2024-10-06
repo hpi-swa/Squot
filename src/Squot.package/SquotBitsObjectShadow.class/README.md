@@ -1,1 +1,0 @@
-I am a shadow of bytes objects, 16-bit words objects, 32-bit words objects etc.

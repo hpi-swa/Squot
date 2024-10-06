@@ -1,3 +1,0 @@
-*Squot-FileSystemStore
-wantsToBeInTableOfContents
-	^ true

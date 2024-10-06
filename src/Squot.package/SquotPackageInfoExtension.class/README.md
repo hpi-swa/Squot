@@ -1,1 +1,0 @@
-I hold additional state for PackageInfo objects.

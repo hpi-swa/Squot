@@ -1,3 +1,0 @@
-reflecting
-squotMirror
-	^ SquotDiskProxyMirror new

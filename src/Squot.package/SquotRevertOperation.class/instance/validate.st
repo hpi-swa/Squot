@@ -1,3 +1,0 @@
-applying
-validate
-	self validateAncestry.

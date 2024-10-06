@@ -1,3 +1,0 @@
-comparing
-= anObject
-	^ anObject == self

@@ -1,3 +1,0 @@
-copying
-mutableCopy
-	^ self copy

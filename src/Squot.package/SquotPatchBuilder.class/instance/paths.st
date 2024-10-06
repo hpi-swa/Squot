@@ -1,3 +1,0 @@
-SquotPatch
-paths
-	^ diffs keys

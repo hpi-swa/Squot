@@ -1,3 +1,0 @@
-capturing
-newShadowObject
-	^ SquotStringShadow new

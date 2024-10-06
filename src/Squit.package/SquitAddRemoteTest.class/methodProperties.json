@@ -1,8 +1,0 @@
-{
-	"class" : {
-		 },
-	"instance" : {
-		"testValidateUrlAcceptsHttp" : "jr 10/14/2018 21:14",
-		"testValidateUrlAcceptsHttps" : "jr 10/14/2018 21:14",
-		"testValidateUrlRejectsSsh" : "jr 10/14/2018 21:17",
-		"testValidateUrlRejectsSshWithoutScheme" : "jr 10/14/2018 21:15" } }

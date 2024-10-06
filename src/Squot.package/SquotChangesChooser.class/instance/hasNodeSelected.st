@@ -1,3 +1,0 @@
-testing
-hasNodeSelected
-	^ selectedNode notNil

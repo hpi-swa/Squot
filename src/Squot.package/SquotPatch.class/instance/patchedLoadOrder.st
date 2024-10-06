@@ -1,3 +1,0 @@
-accessing
-patchedLoadOrder
-	^ patched loadOrder

@@ -1,3 +1,0 @@
-converting
-asStringWithoutTimestamp
-	^ '* Edit authors'

@@ -2,8 +2,5 @@
 	"class" : {
 		 },
 	"instance" : {
-		"squotAddOperation:" : "jr 11/29/2020 20:23",
 		"squotApplyTo:" : "jr 5/29/2017 23:45",
-		"squotApplyToLoaded:" : "jr 6/7/2017 14:49",
-		"squotHasChanges" : "jr 4/17/2017 01:15",
-		"squotRemoveOperation:" : "jr 11/29/2020 20:24" } }
+		"squotApplyToLoaded:" : "jr 6/7/2017 14:49" } }

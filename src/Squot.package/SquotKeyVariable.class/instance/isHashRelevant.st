@@ -1,3 +1,0 @@
-testing
-isHashRelevant
-	^ true

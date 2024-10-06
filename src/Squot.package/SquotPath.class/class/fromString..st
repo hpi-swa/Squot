@@ -1,3 +1,0 @@
-converting
-fromString: aString
-	^ aString

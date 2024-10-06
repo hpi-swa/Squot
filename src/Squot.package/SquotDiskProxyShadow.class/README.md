@@ -1,1 +1,0 @@
-I wrap a DiskProxy that is captured as-is. When rematerializing, the proxy constructor is evaluated.

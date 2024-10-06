@@ -1,4 +1,0 @@
-Smalltalk tools
-doItContext
-
-	^ nil

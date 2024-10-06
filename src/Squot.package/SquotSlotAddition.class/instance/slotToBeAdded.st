@@ -1,3 +1,0 @@
-accessing
-slotToBeAdded
-	^ self value

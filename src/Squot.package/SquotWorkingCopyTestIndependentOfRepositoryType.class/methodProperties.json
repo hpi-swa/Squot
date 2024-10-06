@@ -1,9 +1,0 @@
-{
-	"class" : {
-		"isAbstract" : "jr 5/4/2019 00:53" },
-	"instance" : {
-		"newRepository" : "jr 6/30/2017 22:14",
-		"newStore" : "jr 1/29/2017 22:20",
-		"newWorkingCopy" : "jr 1/26/2017 17:05",
-		"setUp" : "jr 6/30/2017 22:15",
-		"tearDown" : "jr 6/30/2017 22:16" } }

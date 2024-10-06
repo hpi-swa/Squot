@@ -1,1 +1,0 @@
-I suppress the display of progress (through progress notifications) to speed up tests.

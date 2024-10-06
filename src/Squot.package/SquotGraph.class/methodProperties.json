@@ -1,9 +1,0 @@
-{
-	"class" : {
-		"nodes:" : "jr 10/31/2020 15:38" },
-	"instance" : {
-		"decreaseEdgesFromTotalOrdering:" : "jr 10/31/2020 15:45",
-		"increaseEdgesFromTotalOrdering:" : "jr 10/31/2020 15:44",
-		"initializeEdgesFromTotalOrdering:" : "jr 10/31/2020 15:42",
-		"setNodes:" : "jr 10/31/2020 15:39",
-		"topologicalOrderIfNone:" : "jr 10/31/2020 15:48" } }

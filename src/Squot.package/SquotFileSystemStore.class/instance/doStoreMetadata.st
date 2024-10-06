@@ -1,3 +1,0 @@
-accessing
-doStoreMetadata
-	shouldStoreMetadata := true.

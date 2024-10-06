@@ -1,3 +1,0 @@
-*Squot-Tools
-browseFromSquotWorkingCopyArtifact: aSquotWorkingCopyArtifact
-	^ self object browseFromSquotWorkingCopyArtifact: aSquotWorkingCopyArtifact

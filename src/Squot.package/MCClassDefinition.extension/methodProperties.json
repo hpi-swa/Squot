@@ -2,17 +2,8 @@
 	"class" : {
 		 },
 	"instance" : {
-		"actualClassInSquotWorkingCopy:" : "jr 5/17/2020 21:43",
-		"browse" : "jr 6/6/2020 03:05",
-		"browseFromSquotWorkingCopyArtifact:" : "jr 7/9/2022 11:12",
-		"squotAddToChangeSet:" : "jr 4/14/2020 15:34",
-		"squotBelongsToClass" : "jr 9/8/2020 22:00",
 		"squotChangePath" : "mad 9/3/2023 17:55",
 		"squotCopyWithSources:notifying:ifFail:" : "mad 10/24/2023 19:36",
-		"squotGroup" : "jr 9/8/2020 20:56",
-		"squotIsInChangeSet:" : "jr 4/14/2020 16:32",
-		"squotRemoveFromChangeSet:" : "jr 4/14/2020 16:26",
-		"squotShouldGroupByClass" : "jr 8/25/2020 18:26",
 		"squotSources" : "mad 9/12/2023 15:08",
 		"squotSourcesHelp" : "mad 9/13/2023 13:21",
 		"squotSourcesSize" : "mad 9/12/2023 16:24",

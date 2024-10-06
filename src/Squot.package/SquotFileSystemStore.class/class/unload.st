@@ -1,6 +1,0 @@
-initialize-release
-unload
-	self removeDeserializerFactory: SquotSmartRefStreamDeserializer.
-	self removeDeserializerFactory: SquotCypressCodeDeserializer.
-	self removeDeserializerFactory: SquotStonFileCodec.
-	self removeDeserializerFactory: SquotTextFileCodec.

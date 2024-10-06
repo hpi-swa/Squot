@@ -1,3 +1,0 @@
-ui
-hasBranchSelection
-	^ selectedHistorian notNil

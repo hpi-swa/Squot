@@ -1,1 +1,0 @@
-I push a branch to a remote branch, which is not necessarily the tracked branch. In case of errors or missing credentials I prompt users how to proceed.

@@ -1,1 +1,0 @@
-Stub for SquotProgressOutput value that does nothing. Protocol is a subset of SquotGUI.

@@ -1,3 +1,0 @@
-*Squot
-hasSquotShadowName
-	^ false

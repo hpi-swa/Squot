@@ -1,1 +1,0 @@
-My users can fill the roles of both SquotSerializer and SquotDeserializer.

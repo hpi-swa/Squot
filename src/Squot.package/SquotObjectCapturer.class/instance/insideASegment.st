@@ -1,3 +1,0 @@
-DataStream
-insideASegment
-	^ false

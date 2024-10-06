@@ -1,3 +1,0 @@
-constants
-defaultTitle
-	^ 'Git Browser'

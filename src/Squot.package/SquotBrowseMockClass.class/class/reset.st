@@ -1,3 +1,0 @@
-mocking
-reset
-	Browsed := false.

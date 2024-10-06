@@ -1,3 +1,0 @@
-testing
-hasChanges
-	^ self subclassResponsibility

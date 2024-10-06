@@ -1,1 +1,0 @@
-I collect the start node and all of its descendants in a graph of nodes.

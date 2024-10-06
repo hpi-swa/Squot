@@ -1,3 +1,0 @@
-private
-privateResolvedPatch
-	^ self subclassResponsibility

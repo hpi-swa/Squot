@@ -1,3 +1,0 @@
-accessing
-committer
-	^ self shouldBeImplemented

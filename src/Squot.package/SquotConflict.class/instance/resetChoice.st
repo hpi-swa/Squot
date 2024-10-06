@@ -1,3 +1,0 @@
-merging
-resetChoice
-	resolution := nil.

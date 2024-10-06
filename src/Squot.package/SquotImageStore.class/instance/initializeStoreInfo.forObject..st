@@ -1,3 +1,0 @@
-adding and removing
-initializeStoreInfo: aTrackedObjectMetadata forObject: anObject
-	anObject squotAddTransientStoreInfoTo: aTrackedObjectMetadata.

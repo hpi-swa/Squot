@@ -1,3 +1,0 @@
-testing
-exists
-	^ file exists

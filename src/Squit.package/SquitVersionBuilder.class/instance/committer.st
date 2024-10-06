@@ -1,4 +1,0 @@
-accessing
-committer
-
-	^ committer

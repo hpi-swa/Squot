@@ -1,1 +1,0 @@
-My users capture references from one object to another in a graph.

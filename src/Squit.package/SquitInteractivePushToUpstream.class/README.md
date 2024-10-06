@@ -1,1 +1,0 @@
-I push a branch to its tracked remote under the name of the tracked branch. In case of errors or missing credentials I prompt users how to proceed.

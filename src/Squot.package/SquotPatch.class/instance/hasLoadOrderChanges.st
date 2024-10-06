@@ -1,3 +1,0 @@
-testing
-hasLoadOrderChanges
-	^ loadOrderDiff squotHasChanges

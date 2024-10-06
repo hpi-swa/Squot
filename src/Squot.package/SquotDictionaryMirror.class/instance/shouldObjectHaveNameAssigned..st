@@ -1,3 +1,0 @@
-testing
-shouldObjectHaveNameAssigned: aDictionary
-	^ true

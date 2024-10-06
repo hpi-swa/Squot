@@ -1,3 +1,0 @@
-Object
-= other
-	^ self == other

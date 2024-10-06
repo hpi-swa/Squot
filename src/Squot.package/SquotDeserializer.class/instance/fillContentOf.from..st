@@ -1,3 +1,0 @@
-Squot deserialization
-fillContentOf: anArtifact from: aFileOrDirectoryReference
-	self shouldBeImplemented

@@ -1,3 +1,0 @@
-testing
-isBasedOn: anObjectContainer
-	^ true

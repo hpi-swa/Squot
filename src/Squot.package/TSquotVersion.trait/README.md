@@ -1,1 +1,0 @@
-A Version that supports accessing the artifacts contained in its snapshot and ancestry queries.

@@ -1,1 +1,0 @@
-I carry the old name of SquotChangesChooser. I am only here for compatibility reasons and will be removed in a future release. My subclasses will then become subclasses of my parent class. Please move your extension methods to my parent class.

@@ -1,3 +1,0 @@
-accessing
-association
-	^ self value

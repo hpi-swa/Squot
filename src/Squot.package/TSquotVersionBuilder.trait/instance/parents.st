@@ -1,4 +1,0 @@
-accessing
-parents
-
-	^ self shouldBeImplemented

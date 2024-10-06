@@ -1,4 +1,0 @@
-accessing
-message
-
-	^ self shouldBeImplemented

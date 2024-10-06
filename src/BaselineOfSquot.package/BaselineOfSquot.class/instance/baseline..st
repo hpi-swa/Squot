@@ -3,61 +3,53 @@ baseline: spec
 	<baseline>
 	spec for: #common do: [
 		spec baseline: 'Ston' with: [
-				spec
-					repository: 'github://squeak-smalltalk/squeak-ston:squeak/repository'. ].
+			spec
+				repository: 'github://squeak-smalltalk/squeak-ston:squeak/repository'].
 		spec baseline: 'FileTree' with: [
-				spec
-					repository: 'github://dalehenrich/filetree:squeak4.3/repository'. ].
-		spec baseline: 'Tonel'
-			with: [spec 	repository: 'github://squeak-smalltalk/squeak-tonel:squeak/'].
+			spec
+				repository: 'github://dalehenrich/filetree:squeak4.3/repository'].
+		spec baseline: 'Tonel' with: [
+			spec
+				repository: 'github://squeak-smalltalk/squeak-tonel:squeak/'].
 		spec 
 			package: 'SqueakSSL-Core' with: [
 				spec
-					repository: 'http://source.squeak.org/trunk'. ];
+					repository: 'http://source.squeak.org/trunk'];
 			package: 'WebClient-Core' with: [
 				spec
 					repository: 'http://source.squeak.org/trunk';
-					file: 'WebClient-Core-jr.104'. ];
+					file: 'WebClient-Core-jr.104'];
 			package: 'WebClient-HTTP' with: [
 				spec
 					repository: 'http://source.squeak.org/trunk';
-					file: 'WebClient-HTTP-cmm.6'. ];
+					file: 'WebClient-HTTP-cmm.6'];
 			package: 'INIFile' with: [
 				spec
 					repository: 'http://www.squeaksource.com/INIFile';
-					file: 'INIFile-jf.3'. ];
+					file: 'INIFile-jf.3'];
 			package: 'DiffMerge' with: [
 				spec
 					repository: 'http://www.squeaksource.com/DiffMerge';
-					file: 'DiffMerge-tonyg.12'. ];
-			baseline: 'FileSystem' with:
-				[spec
+					file: 'DiffMerge-tonyg.12'];
+			baseline: 'FileSystem' with: [
+				spec
 					repository: 'github://squeak-smalltalk/squeak-filesystem:master/src';
 					loads: #('default' 'tests')];
 			package: 'VersionControl';
+			package: 'FileSystem-Git' with: [
+				spec
+					requires: #('FileSystem' 'VersionControl' 'INIFile')];
 			package: 'Squot' with: [
 				spec
-					requires: #('FileSystem' 'Ston' 'DiffMerge' 'VersionControl' 'FileSystem-Git');
-					postLoadDoIt: #postLoad. ];
-			package: 'FileSystem-Git' with: [
-				spec requires: #('FileSystem' 'INIFile' 'VersionControl' ). ];
-			package: 'Squit' with: [
-				spec requires: #('FileSystem-Git' 'Squot'). ];
-			package: 'SquotTonel-Core' with:
-				[spec requires: #('Squot' 'FileSystem' 'Tonel')];
-			package: 'SquotTonel-Tests' with:
-				[spec requires: #('SquotTonel-Core')].
+					requires: #('FileSystem' 'VersionControl' 'FileSystem-Git' 'DiffMerge' 'Ston' 'Tonel');
+					postLoadDoIt: #postLoad].
 		spec 
-			group: 'FileSystemGit' with: #('FileSystem-Git' );
-			group: 'default' with: #('Squit' 'Squot' 'SquotTonel-Core');
-			group: 'tests' with: #('default' 'SquotTonel-Tests'). ].
+			group: 'FileSystemGit' with: #('FileSystem-Git');
+			group: 'default' with: #('Squot');
+			group: 'tests' with: #('default')].
 	
 	spec for: #'squeakCommon' do: [
-		spec package: 'SquotCompatibility-SqueakCommon'.
-		spec package: 'Squot' with: [
-			spec includes: 'SquotCompatibility-SqueakCommon']].
-	
-	spec for: #(#'squeak5.0.x' #'squeak5.1.x' #'squeak5.2.x' #'squeak5.3.x') do: [
-		spec package: 'SquotCompatibility-Squeak50'.
-		spec package: 'Squot' with: [
-			spec includes: 'SquotCompatibility-Squeak50']].
+		spec
+			package: 'SquotCompatibility-SqueakCommon';
+			package: 'Squot' with: [
+				spec includes: 'SquotCompatibility-SqueakCommon']].

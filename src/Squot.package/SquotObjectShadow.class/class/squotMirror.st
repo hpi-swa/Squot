@@ -1,3 +1,0 @@
-reflecting
-squotMirror
-	^ SquotObjectShadowMirror new

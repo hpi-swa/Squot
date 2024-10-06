@@ -1,3 +1,0 @@
-accessing
-setWillBeLoaded
-	willBeLoaded := true.

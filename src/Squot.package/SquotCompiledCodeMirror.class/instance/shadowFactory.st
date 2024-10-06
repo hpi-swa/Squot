@@ -1,3 +1,0 @@
-capturing
-shadowFactory
-	^ SquotCompiledCodeShadow

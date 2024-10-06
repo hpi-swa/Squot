@@ -1,3 +1,0 @@
-synchronizing
-removeCredentialsFor: repositoryUrlString
-	credentials removeKey: repositoryUrlString

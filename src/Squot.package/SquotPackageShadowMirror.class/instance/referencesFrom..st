@@ -1,3 +1,0 @@
-enumerating
-referencesFrom: anObject
-	^ #()

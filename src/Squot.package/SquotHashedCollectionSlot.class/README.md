@@ -1,1 +1,0 @@
-I capture an item of a hashed collection.

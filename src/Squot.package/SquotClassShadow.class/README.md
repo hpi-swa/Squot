@@ -1,1 +1,0 @@
-I am a captured single class, independent of a particular package.

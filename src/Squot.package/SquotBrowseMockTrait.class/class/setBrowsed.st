@@ -1,3 +1,0 @@
-mocking
-setBrowsed
-	Browsed := true.

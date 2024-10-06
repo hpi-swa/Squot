@@ -1,4 +1,0 @@
-accessing
-relevantParentOfRevertedVersion
-
-	^ relevantParentOfRevertedVersion

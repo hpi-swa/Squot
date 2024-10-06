@@ -1,8 +1,0 @@
-{
-	"class" : {
-		 },
-	"instance" : {
-		"expectedFailures" : "jr 8/8/2021 16:55",
-		"newRepository" : "jr 6/18/2022 16:29",
-		"testImmutabilityOfSnapshots" : "jr 1/26/2020 22:58",
-		"testVersionsDoNotContainWorkingCopyArtifacts" : "jr 11/18/2020 21:35" } }

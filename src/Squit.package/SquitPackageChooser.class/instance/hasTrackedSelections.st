@@ -1,4 +1,0 @@
-accessing
-hasTrackedSelections
-
-	^ selectedTrackedPackages notEmpty

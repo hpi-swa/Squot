@@ -1,4 +1,0 @@
-accessing
-controllerForIgnores
-
-	^ controllerForIgnores

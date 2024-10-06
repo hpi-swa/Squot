@@ -1,1 +1,0 @@
-I am signalled when a new version is about to be saved, but the working copy has multiple parent versions. During merges this is natural, but if there has been some time between the addition of the additional parents and the saving of the new version, users may not desire to create a version with multiple parents anymore.

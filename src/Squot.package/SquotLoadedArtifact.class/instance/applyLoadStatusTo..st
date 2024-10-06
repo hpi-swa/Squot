@@ -1,3 +1,0 @@
-comparing
-applyLoadStatusTo: anArtifactDiff
-	anArtifactDiff setLoadedInWorkingCopy.

@@ -1,3 +1,0 @@
-utilities
-suppressChangeNotificationsDuring: aBlock
-	^ SystemChangeNotifier uniqueInstance doSilently: aBlock

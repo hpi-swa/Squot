@@ -1,3 +1,0 @@
-accessing
-tonelProperties
-	^ tonelProperties copy

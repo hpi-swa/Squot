@@ -1,1 +1,0 @@
-I am a special item in the CoAuthorList. When I am selected, the list will show a tool to edit the list of authors to choose from.

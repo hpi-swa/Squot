@@ -1,1 +1,0 @@
-I am an abstract method object for an operation that involves contacting remote repositories. I provide common error handling and credentials input procedures.

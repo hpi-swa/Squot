@@ -1,3 +1,0 @@
-accessing
-slots
-	^ Dictionary new

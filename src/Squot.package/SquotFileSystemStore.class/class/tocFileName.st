@@ -1,3 +1,0 @@
-filenames
-tocFileName
-	^ '.squot'

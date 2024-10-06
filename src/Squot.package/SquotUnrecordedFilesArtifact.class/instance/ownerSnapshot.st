@@ -1,4 +1,0 @@
-accessing
-ownerSnapshot
-	
-	^ ownerSnapshot

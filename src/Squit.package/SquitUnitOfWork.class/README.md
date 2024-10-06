@@ -1,1 +1,0 @@
-Adapter between Squot and GitUnitOfWork.

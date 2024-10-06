@@ -1,3 +1,0 @@
-FileSystem
-/ anObject
-	^ directory / anObject

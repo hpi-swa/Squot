@@ -1,3 +1,0 @@
-accessing
-slotToBeRemoved
-	^ self value

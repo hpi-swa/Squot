@@ -1,3 +1,0 @@
-ui
-labelString
-	^ 'Tags' translated

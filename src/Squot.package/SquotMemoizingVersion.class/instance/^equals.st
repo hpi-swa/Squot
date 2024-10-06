@@ -1,3 +1,0 @@
-comparing
-= anotherVersion	
-	^ version = anotherVersion

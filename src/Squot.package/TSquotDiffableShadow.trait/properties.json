@@ -1,6 +1,0 @@
-{
-	"category" : "Squot-Interfaces",
-	"classtraitcomposition" : "TSquotShadow classTrait + TSquotDiffable classTrait",
-	"commentStamp" : "jr 3/17/2018 15:55",
-	"name" : "TSquotDiffableShadow",
-	"traitcomposition" : "TSquotShadow + TSquotDiffable" }

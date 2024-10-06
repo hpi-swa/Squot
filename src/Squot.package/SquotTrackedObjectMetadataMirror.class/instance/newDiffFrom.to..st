@@ -1,3 +1,0 @@
-comparing
-newDiffFrom: aSquotTrackedObjectMetadata to: aSquotTrackedObjectMetadata2 
-	^ SquotTrackedObjectMetadataDiff new

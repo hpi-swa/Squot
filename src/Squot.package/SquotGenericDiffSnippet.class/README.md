@@ -1,1 +1,0 @@
-A Squot adapter for DiffPatch snippets (which are Associations of sequence changes) from the "DiffMerge" package. Currently assumes that the diffed SequenceableCollection is a String and that the differences can, thus, be displayed as a text diff.

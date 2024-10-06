@@ -1,1 +1,0 @@
-I record that an artifact will be converted from unloaded to loaded.

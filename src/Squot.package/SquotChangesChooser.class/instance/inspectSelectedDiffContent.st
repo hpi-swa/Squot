@@ -1,3 +1,0 @@
-actions
-inspectSelectedDiffContent
-	self selectedNode inspectContent.

@@ -1,3 +1,0 @@
-patching
-removeFrom: anObjectShadow
-	self subclassResponsibility

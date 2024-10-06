@@ -1,1 +1,0 @@
-I record which pieces of code are ignored during commits by default.

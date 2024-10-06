@@ -1,1 +1,0 @@
-Like ClassFactoryForTestCase, but the packageName can be configured.

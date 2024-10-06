@@ -1,1 +1,0 @@
-I fetch from one or more remotes and prompt users if there are any errors or credentials are needed.

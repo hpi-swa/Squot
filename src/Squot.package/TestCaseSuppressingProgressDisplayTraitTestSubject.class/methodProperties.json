@@ -1,7 +1,0 @@
-{
-	"class" : {
-		"isAbstract" : "jr 5/31/2017 15:04" },
-	"instance" : {
-		"testThatErrs" : "jr 5/31/2017 15:13",
-		"testThatFails" : "jr 5/31/2017 15:13",
-		"testThatPasses" : "jr 5/31/2017 15:13" } }

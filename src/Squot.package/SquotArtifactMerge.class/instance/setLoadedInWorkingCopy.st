@@ -1,3 +1,0 @@
-accessing
-setLoadedInWorkingCopy
-	willBeLoaded := true.

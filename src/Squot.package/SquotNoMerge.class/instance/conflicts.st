@@ -1,4 +1,0 @@
-accessing
-conflicts
-	"Impossible"
-	^ #()

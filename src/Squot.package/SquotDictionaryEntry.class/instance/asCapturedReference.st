@@ -1,3 +1,0 @@
-capturing
-asCapturedReference
-	self shouldBeImplemented

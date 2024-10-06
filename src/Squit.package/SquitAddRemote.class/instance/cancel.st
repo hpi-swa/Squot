@@ -1,3 +1,0 @@
-accessing
-cancel
-	accepted := false.

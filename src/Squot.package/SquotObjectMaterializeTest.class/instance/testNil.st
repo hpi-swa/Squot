@@ -1,3 +1,0 @@
-tests
-testNil
-	self captureInValueHolderThenRestoreAndCompare: nil

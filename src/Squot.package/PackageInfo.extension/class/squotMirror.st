@@ -1,3 +1,0 @@
-*Squot
-squotMirror
-	^ SquotPackageMirror new

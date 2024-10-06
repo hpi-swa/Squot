@@ -1,6 +1,0 @@
-{
-	"class" : {
-		"isAbstract" : "jr 8/14/2019 22:21" },
-	"instance" : {
-		"performUiInteractionTestsOnNode:withPath:inTree:" : "jr 9/26/2020 15:14",
-		"performUiTestsOnToolBuiltBy:" : "jr 9/26/2020 19:34" } }

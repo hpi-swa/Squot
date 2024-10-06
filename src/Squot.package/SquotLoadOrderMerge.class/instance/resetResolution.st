@@ -1,3 +1,0 @@
-private
-resetResolution
-	resolvedPatch := nil.

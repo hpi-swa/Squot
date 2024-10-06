@@ -1,3 +1,0 @@
-accessing
-resetAdditionalParents
-	additionalParents := nil.

@@ -1,1 +1,0 @@
-I coordinate a cherry pick to a working copy. A cherry pick reproduces the changes that were committed with a version on another base version. This creates a new version on the other base version. Therefore a cherry-pick is composed of a merge and a save operation.

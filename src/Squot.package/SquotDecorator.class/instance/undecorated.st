@@ -1,3 +1,0 @@
-accessing
-undecorated
-	^ decoratedObject undecorated

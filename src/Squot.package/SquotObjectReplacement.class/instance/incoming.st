@@ -1,3 +1,0 @@
-accessing
-incoming
-	^ self right

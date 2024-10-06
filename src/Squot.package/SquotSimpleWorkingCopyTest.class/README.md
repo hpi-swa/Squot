@@ -1,1 +1,0 @@
-I test some basic behavior of working copies (that did not fit into any other sibling test class).

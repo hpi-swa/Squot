@@ -1,1 +1,0 @@
-I define some messages that local repositores should understand and provide default implementations for some of them.

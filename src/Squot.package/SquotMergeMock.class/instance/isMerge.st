@@ -1,3 +1,0 @@
-testing
-isMerge
-	^ true

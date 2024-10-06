@@ -1,3 +1,0 @@
-accessing
-accept
-	accepted := true.

@@ -1,3 +1,0 @@
-accessing
-metadata
-	^ metadataDiff

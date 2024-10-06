@@ -1,3 +1,0 @@
-testing
-hasChanges
-	^ choice ~= #working

@@ -1,1 +1,0 @@
-An operation depends on the upstream branch of a local branch, but the local branch is not configured to track any remote branch (yet).

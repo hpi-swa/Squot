@@ -1,1 +1,0 @@
-While verifying the converted history, the snapshots of a converted version and its original were different.

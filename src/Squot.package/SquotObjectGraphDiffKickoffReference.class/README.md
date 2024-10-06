@@ -1,1 +1,0 @@
-I am a pseudo difference in a reference from a graph diff to an object to be updated. I dispatch the patching to an original shadow to be removed, or to a patched shadow that is either to be added or that was modified. I do not change anything in the object graph directly.

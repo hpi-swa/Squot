@@ -1,3 +1,0 @@
-private
-directory
-	^ currentDirectory

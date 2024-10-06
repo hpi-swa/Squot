@@ -1,1 +1,0 @@
-A state-based three-way merge of anything.

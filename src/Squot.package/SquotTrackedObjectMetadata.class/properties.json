@@ -1,10 +1,10 @@
 {
-	"category" : "Squot-Core",
+	"category" : "Squot-Mapper-Metadata",
 	"classinstvars" : [
 		 ],
 	"classvars" : [
 		 ],
-	"commentStamp" : "jr 7/16/2017 12:01",
+	"commentStamp" : "",
 	"instvars" : [
 		 ],
 	"name" : "SquotTrackedObjectMetadata",

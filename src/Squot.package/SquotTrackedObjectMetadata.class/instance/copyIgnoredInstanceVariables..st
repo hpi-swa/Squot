@@ -1,3 +1,0 @@
-copying
-copyIgnoredInstanceVariables: anIdentityDictionary
-	^ anIdentityDictionary copy

@@ -1,3 +1,0 @@
-actions
-actionClearSearch
-	self searchTerm: ''.

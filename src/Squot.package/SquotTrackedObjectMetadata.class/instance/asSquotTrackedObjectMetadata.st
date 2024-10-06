@@ -1,3 +1,0 @@
-converting
-asSquotTrackedObjectMetadata
-	^ self

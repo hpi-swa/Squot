@@ -1,3 +1,0 @@
-actions
-browseModifiedObject
-	self selectedNode browseIncomingEdition: workingCopy.

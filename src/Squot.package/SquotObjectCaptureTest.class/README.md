@@ -1,1 +1,0 @@
-Tests that objects can be captured correctly.

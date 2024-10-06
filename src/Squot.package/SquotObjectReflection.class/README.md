@@ -1,1 +1,0 @@
-I reflect on the references of a particular object in a mirror. I cache the references found.

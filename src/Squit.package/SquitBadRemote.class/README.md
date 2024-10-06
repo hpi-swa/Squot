@@ -1,1 +1,0 @@
-A remote was found to be out of order. For example, no repository was not found at the URL. This is a Notification and not an Error because the purpose is only to allow a GUI to initiate further actions to allow the user to remedy the issue (e. g. change the URL).

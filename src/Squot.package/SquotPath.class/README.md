@@ -1,1 +1,0 @@
-Helper class to handle or convert paths. Used to consitently form artifact paths from filesystem paths.

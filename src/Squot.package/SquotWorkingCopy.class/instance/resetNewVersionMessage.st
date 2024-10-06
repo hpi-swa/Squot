@@ -1,3 +1,0 @@
-accessing
-resetNewVersionMessage
-	newVersionMessage := nil.

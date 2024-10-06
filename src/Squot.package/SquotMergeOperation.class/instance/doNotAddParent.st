@@ -1,3 +1,0 @@
-accessing
-doNotAddParent
-	shouldAddParent := false.

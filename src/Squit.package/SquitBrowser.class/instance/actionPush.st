@@ -1,3 +1,0 @@
-actions
-actionPush
-	self actionBranchPush

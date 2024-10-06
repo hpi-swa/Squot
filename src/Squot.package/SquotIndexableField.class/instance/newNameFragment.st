@@ -1,3 +1,0 @@
-capturing
-newNameFragment
-	^ index

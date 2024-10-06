@@ -1,1 +1,0 @@
-I prompt the user where to clone a repository from and where to put the clone.

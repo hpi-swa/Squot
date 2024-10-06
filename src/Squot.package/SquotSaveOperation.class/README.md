@@ -1,1 +1,0 @@
-I coordinate the saving of a new version from a working copy.

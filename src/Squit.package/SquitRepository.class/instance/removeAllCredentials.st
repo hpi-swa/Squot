@@ -1,3 +1,0 @@
-synchronizing
-removeAllCredentials
-	credentials removeAll.

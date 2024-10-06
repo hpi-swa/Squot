@@ -1,1 +1,0 @@
-I allow to edit the properties of a Git remote, such as its name and its URL.

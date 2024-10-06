@@ -1,1 +1,0 @@
-I test that the TTestCaseSuppressingProgressDisplay trait does not affect the outcome of tests.

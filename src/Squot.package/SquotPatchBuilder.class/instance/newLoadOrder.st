@@ -1,3 +1,0 @@
-accessing
-newLoadOrder
-	^ patchedLoadOrder asOrderedCollection

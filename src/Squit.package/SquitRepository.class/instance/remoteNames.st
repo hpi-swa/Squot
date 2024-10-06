@@ -1,3 +1,0 @@
-accessing
-remoteNames
-	^ gitRepository remoteNames

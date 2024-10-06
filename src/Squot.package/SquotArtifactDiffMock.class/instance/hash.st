@@ -1,3 +1,0 @@
-comparing
-hash
-	^ path hash

@@ -1,1 +1,0 @@
-I serialize and deserialize arbitrary objects in STON (Smalltalk object notation) format.

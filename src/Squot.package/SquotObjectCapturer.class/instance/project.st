@@ -1,3 +1,0 @@
-DataStream
-project
-	^ Project current

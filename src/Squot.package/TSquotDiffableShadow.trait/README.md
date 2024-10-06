@@ -1,2 +1,0 @@
-TSquotShadow that supports computing changes between itself and another one.
-If the shadow of an object is not diffable, the captured live object can only be replaced altogether during patching operations, but it cannot be modified in-place.

@@ -1,1 +1,0 @@
-I wrap a SquotArtifact that is loaded in my SquotWorkingCopy. Actually the objects live in the working copy's store (e. g. SquotImageStore).

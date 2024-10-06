@@ -1,3 +1,0 @@
-testing
-canHaveReferences: anObject
-	^ false

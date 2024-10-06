@@ -1,1 +1,0 @@
-Nothing has changed in the slot itself, but an object directly or indirectly reachable via it has been changed.

@@ -1,3 +1,0 @@
-merging
-chooseWorking
-	choice := #working.

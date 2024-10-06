@@ -1,3 +1,0 @@
-accessing
-newLoadOrder
-	^ loadOrderMerge newLoadOrder

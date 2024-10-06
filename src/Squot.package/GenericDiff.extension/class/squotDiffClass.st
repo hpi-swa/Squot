@@ -1,3 +1,0 @@
-*Squot-Diffs
-squotDiffClass
-	^ HuntMcilroyDiff

@@ -1,4 +1,0 @@
-accessing
-storeInfo
-
-	^ storeInfo

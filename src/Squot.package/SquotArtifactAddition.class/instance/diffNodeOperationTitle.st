@@ -1,3 +1,0 @@
-*Squot-Tools
-diffNodeOperationTitle
-	^ 'added'

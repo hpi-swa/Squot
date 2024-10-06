@@ -1,9 +1,0 @@
-{
-	"class" : {
-		"of:" : "jr 12/7/2020 21:48" },
-	"instance" : {
-		"applyToShadowNamed:inGraph:" : "jr 7/17/2021 21:06",
-		"object" : "jr 7/17/2021 20:59",
-		"setObject:" : "jr 12/7/2020 21:58",
-		"squotApplyTo:" : "jr 7/17/2021 21:06",
-		"squotChangeAsStringOrText" : "jr 7/17/2021 20:58" } }

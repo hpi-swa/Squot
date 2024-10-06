@@ -1,1 +1,0 @@
-I can access objects in different classes of object graphs.

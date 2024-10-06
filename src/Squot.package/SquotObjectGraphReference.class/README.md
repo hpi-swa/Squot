@@ -1,1 +1,0 @@
-Pseudo-reference derived from a SquotObjectGraphDiff, referring to the patched version of an object in the graph. I can look up a shadow in a graph by name, or add a new shadow under that name to a graph.

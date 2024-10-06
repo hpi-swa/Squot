@@ -1,3 +1,0 @@
-testing
-isAnyRemoteSelected
-	^ selectedRemoteName notNil

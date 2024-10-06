@@ -1,1 +1,0 @@
-A state-based three-way merge of different editions of a package. Uses Monticello underneath to merge snapshots.

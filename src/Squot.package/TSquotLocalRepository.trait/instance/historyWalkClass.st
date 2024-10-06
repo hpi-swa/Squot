@@ -1,3 +1,0 @@
-Squot repository
-historyWalkClass
-	^ SquotHistoryWalker

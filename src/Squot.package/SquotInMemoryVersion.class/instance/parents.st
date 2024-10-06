@@ -1,3 +1,0 @@
-Pur version
-parents
-	^ parents

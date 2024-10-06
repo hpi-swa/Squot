@@ -1,1 +1,0 @@
-An interactive merge is attempted.

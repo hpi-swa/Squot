@@ -1,4 +1,0 @@
-accessing
-hasUntrackedSelections
-
-	^ selectedUntrackedPackages notEmpty

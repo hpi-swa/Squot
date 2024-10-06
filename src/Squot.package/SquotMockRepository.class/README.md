@@ -1,1 +1,0 @@
-I provide configurable answers to messages sent to local Squot repositories.

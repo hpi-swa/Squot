@@ -1,3 +1,0 @@
-mocking
-wasBrowsed
-	^ Browsed == true

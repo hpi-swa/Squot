@@ -1,1 +1,0 @@
-My users are removals in diffs and patches.

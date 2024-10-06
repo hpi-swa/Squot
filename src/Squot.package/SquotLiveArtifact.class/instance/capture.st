@@ -1,3 +1,0 @@
-converting
-capture
-	^ self snapshot

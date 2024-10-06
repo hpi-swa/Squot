@@ -1,2 +1,0 @@
-*Squot-shadow
-squotShadowMarker

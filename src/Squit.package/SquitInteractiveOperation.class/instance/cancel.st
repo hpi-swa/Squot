@@ -1,3 +1,0 @@
-running
-cancel
-	self finish.

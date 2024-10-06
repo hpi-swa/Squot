@@ -1,3 +1,0 @@
-toolbuilder
-artifactsList
-	^ workingCopy artifactsInLoadOrder

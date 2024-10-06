@@ -1,1 +1,0 @@
-I write objects to files with a SmartRefStream.

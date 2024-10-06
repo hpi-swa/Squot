@@ -1,1 +1,0 @@
-My users are SquotSerializers that write to a single file per artifact.

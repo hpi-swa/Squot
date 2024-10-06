@@ -1,1 +1,0 @@
-I tell how a reference was removed from an object.

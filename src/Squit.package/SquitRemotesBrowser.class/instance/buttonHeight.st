@@ -1,3 +1,0 @@
-toolbuilder
-buttonHeight
-	^ SquotGUI buttonBarHeight

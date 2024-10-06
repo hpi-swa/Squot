@@ -1,1 +1,0 @@
-I search a file system tree for Squot artifacts. My SquotArtifactLocator companions detect for me whether a directory or file could have been a Smalltalk object. This is necessary when a repository is inspected that does not have the Squot metadata files, such as a table of contents. So the objects must be discovered in the file tree.

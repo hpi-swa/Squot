@@ -1,1 +1,0 @@
-I mirror a reference from one class of objects to another object.

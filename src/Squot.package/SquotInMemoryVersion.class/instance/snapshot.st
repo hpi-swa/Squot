@@ -1,3 +1,0 @@
-Pur version
-snapshot
-	^ snapshot

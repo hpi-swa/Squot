@@ -1,1 +1,0 @@
-Abstract superclass for slots of shadow objects.

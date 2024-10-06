@@ -1,1 +1,0 @@
-I capture an instance variable in an object.

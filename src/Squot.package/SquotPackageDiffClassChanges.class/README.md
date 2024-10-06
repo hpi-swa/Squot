@@ -1,1 +1,0 @@
-I am assigned to a SquotDiffNode that groups all changes that apply to the same class.

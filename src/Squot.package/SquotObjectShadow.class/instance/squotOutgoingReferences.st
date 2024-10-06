@@ -1,3 +1,0 @@
-accessing
-squotOutgoingReferences
-	^ slots associations

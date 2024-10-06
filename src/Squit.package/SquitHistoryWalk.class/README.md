@@ -1,1 +1,0 @@
-I walk the history of commits like git-rev-list does. Commits are ordered by committer time to ensure that ancestors of a commit are not met before the commit itself.

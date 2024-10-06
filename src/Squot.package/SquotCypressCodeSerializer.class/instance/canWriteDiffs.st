@@ -1,3 +1,0 @@
-testing
-canWriteDiffs
-	^ true

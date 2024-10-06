@@ -1,1 +1,0 @@
-Tests that different editions of objects are compared correctly. The comparisons should not compare other objects, only the target object.

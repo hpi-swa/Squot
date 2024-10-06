@@ -1,3 +1,0 @@
-actions
-browseOtherEdition
-	self browseIncomingEdition.

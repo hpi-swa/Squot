@@ -1,3 +1,0 @@
-accessing
-instVarName
-	^ self key

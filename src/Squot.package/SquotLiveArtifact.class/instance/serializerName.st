@@ -1,3 +1,0 @@
-serializing
-serializerName
-	^ storeInfo serializer

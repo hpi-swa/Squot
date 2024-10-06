@@ -1,3 +1,0 @@
-testing
-squotHasChanges
-	^ leftTarget ~= rightTarget

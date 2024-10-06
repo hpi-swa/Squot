@@ -1,3 +1,0 @@
-model
-aboutToStyle: aStyler
-	^ false

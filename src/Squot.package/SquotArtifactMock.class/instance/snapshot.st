@@ -1,3 +1,0 @@
-converting
-snapshot
-	^ self

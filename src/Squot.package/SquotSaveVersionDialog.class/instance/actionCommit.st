@@ -1,3 +1,0 @@
-actions
-actionCommit
-	self accept

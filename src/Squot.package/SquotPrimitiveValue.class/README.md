@@ -1,1 +1,0 @@
-I am a shadow for primitive values like SmallIntegers, Characters, Booleans or UndefinedObject.

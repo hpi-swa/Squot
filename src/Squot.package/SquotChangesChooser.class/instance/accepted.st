@@ -1,3 +1,0 @@
-testing
-accepted
-	^ canceled == false

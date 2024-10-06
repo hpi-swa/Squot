@@ -1,3 +1,0 @@
-converting
-initializeSquotDiffNode: aSquotDiffNode with: aDiffNodesBuilder
-	self subclassResponsibility

@@ -1,3 +1,0 @@
-testing
-isModification
-	self subclassResponsibility

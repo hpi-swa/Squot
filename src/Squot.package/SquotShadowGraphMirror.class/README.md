@@ -1,1 +1,0 @@
-I can access shadows in a SquotShadowGraph (or its subclasses).

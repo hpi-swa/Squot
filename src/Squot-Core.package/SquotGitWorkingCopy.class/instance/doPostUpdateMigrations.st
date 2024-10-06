@@ -1,0 +1,4 @@
+migrations
+doPostUpdateMigrations
+	super doPostUpdateMigrations.
+	self doImageHashMigration.

@@ -1,3 +1,3 @@
 accessing
 assetFileAt: aPath
-	self subclassResponsibility.
+	^ self workingCopy materializedAt: aPath

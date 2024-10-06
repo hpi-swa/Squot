@@ -1,3 +1,3 @@
 actions
 actionCloneProject
-	self newProject: SqueakWorkingCopy cloneFromUserAndRegister.
+	self newProject: SquotGitWorkingCopy cloneFromUserAndRegister.

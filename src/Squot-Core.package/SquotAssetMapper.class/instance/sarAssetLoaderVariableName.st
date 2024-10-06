@@ -1,3 +1,0 @@
-sar
-sarAssetLoaderVariableName
-	^ 'standaloneAssetLoader'

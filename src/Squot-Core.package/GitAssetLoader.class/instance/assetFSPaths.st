@@ -1,3 +1,3 @@
 accessing
 assetFSPaths
-	self subclassResponsibility.
+	^ self mappers collect: #path

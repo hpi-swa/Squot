@@ -1,0 +1,3 @@
+sar
+sarAssetFileVariableName
+	^ 'assetFile'

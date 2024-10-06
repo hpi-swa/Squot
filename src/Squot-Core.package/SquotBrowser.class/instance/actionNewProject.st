@@ -1,3 +1,3 @@
 actions
 actionNewProject
-	self newProject: SqueakWorkingCopy newFromUserAndRegister.
+	self newProject: SquotGitWorkingCopy newFromUserAndRegister.

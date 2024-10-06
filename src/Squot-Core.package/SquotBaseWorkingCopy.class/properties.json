@@ -1,14 +1,15 @@
 {
-	"category" : "Squot-Core-Asset",
+	"category" : "Squot-Core",
 	"classinstvars" : [
-		 ],
+		"registry" ],
 	"classvars" : [
 		 ],
 	"commentStamp" : "",
 	"instvars" : [
-		"workingCopy",
-		"basePath" ],
-	"name" : "GitAssetLoader",
+		"name",
+		"materialized",
+		"mappers" ],
+	"name" : "SquotBaseWorkingCopy",
 	"pools" : [
 		 ],
 	"super" : "Object",

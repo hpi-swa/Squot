@@ -1,3 +1,3 @@
 migrations
 postLoad
-	SqueakWorkingCopy doPostUpdateMigrations.
+	SquotBaseWorkingCopy doPostUpdateMigrations.

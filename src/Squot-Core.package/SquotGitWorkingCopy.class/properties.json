@@ -1,0 +1,17 @@
+{
+	"category" : "Squot-Core",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		"LastImageHash" ],
+	"commentStamp" : "",
+	"instvars" : [
+		"fsgitRepository",
+		"refsForCommits",
+		"credentials",
+		"lastImageHash" ],
+	"name" : "SquotGitWorkingCopy",
+	"pools" : [
+		 ],
+	"super" : "SquotBaseWorkingCopy",
+	"type" : "normal" }

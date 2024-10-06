@@ -1,0 +1,14 @@
+{
+	"category" : "Squot-Core-Rebase",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "SquotRebaseOperationPick",
+	"pools" : [
+		 ],
+	"super" : "SquotRebaseOperationWithCommit",
+	"type" : "normal" }

@@ -1,0 +1,17 @@
+{
+	"category" : "Squot-Core-Browser",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"activeWorkingCopy",
+		"activeCommit",
+		"activeRef",
+		"showGitRefs" ],
+	"name" : "SquotBrowser",
+	"pools" : [
+		 ],
+	"super" : "Model",
+	"type" : "normal" }

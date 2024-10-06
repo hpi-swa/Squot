@@ -1,0 +1,15 @@
+{
+	"category" : "Squot-Core-Rebase",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"keepCurrentMessage",
+		"editMessage" ],
+	"name" : "SquotRebaseOperationFixup",
+	"pools" : [
+		 ],
+	"super" : "SquotRebaseOperationWithCommit",
+	"type" : "normal" }

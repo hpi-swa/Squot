@@ -1,0 +1,14 @@
+{
+	"category" : "Squot-Core-Image",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "SquotImageMapper",
+	"pools" : [
+		 ],
+	"super" : "SquotAssetMapper",
+	"type" : "normal" }

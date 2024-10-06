@@ -1,0 +1,14 @@
+{
+	"category" : "Squot-Core-Code",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"writeTimestamps" ],
+	"name" : "SquotTonelMapper",
+	"pools" : [
+		 ],
+	"super" : "SquotCodeMapper",
+	"type" : "normal" }

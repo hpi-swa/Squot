@@ -1,0 +1,15 @@
+{
+	"category" : "Squot-Core-Browser",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"message",
+		"messageName" ],
+	"name" : "SquotChangesDialogWithMessage",
+	"pools" : [
+		 ],
+	"super" : "SquotChangesDialog",
+	"type" : "normal" }

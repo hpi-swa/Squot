@@ -1,0 +1,17 @@
+{
+	"category" : "Squot-Core-Sar",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"workingCopy",
+		"zip",
+		"preamble",
+		"postAddHooks" ],
+	"name" : "SquotSarBuilder",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }

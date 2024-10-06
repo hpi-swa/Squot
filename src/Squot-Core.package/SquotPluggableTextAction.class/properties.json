@@ -1,0 +1,14 @@
+{
+	"category" : "Squot-Core-Utilities",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "SquotPluggableTextAction",
+	"pools" : [
+		 ],
+	"super" : "PluggableTextAttribute",
+	"type" : "normal" }

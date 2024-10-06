@@ -1,0 +1,14 @@
+{
+	"category" : "Squot-Core-Rebase",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		"Icons" ],
+	"commentStamp" : "",
+	"instvars" : [
+		"rebase" ],
+	"name" : "SquotRebaseOperation",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }

@@ -1,0 +1,15 @@
+{
+	"category" : "Squot-Core",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"changeSet",
+		"wasEdited" ],
+	"name" : "SquotChange",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }

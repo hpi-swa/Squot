@@ -1,0 +1,14 @@
+{
+	"category" : "Squot-Core-Code",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "SquotCodeConflictChange",
+	"pools" : [
+		 ],
+	"super" : "SquotMultitextConflictChange",
+	"type" : "normal" }

@@ -1,0 +1,14 @@
+{
+	"category" : "Squot-Core-Asset",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "SquotConflictingAssetChange",
+	"pools" : [
+		 ],
+	"super" : "SquotAssetChange",
+	"type" : "normal" }

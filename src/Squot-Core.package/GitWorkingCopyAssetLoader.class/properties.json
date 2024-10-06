@@ -1,0 +1,14 @@
+{
+	"category" : "Squot-Core-Asset",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"workingCopy" ],
+	"name" : "GitWorkingCopyAssetLoader",
+	"pools" : [
+		 ],
+	"super" : "GitAssetLoader",
+	"type" : "normal" }

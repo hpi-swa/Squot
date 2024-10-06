@@ -5,6 +5,26 @@ SquotMetadata {
 			#version : 1,
 			#isTracked : true,
 			#package : MCPackage {
+				#name : 'Squot-Compatibility'
+			},
+			#path : FSAbsolutePath [
+				'src'
+			]
+		},
+		SquotCypressMapper {
+			#version : 1,
+			#isTracked : true,
+			#package : MCPackage {
+				#name : 'FileSystem-Git'
+			},
+			#path : FSAbsolutePath [
+				'src'
+			]
+		},
+		SquotCypressMapper {
+			#version : 1,
+			#isTracked : true,
+			#package : MCPackage {
 				#name : 'VersionControl'
 			},
 			#path : FSAbsolutePath [
@@ -25,31 +45,9 @@ SquotMetadata {
 			#version : 1,
 			#isTracked : true,
 			#package : MCPackage {
-				#name : 'SquotCompatibility-SqueakCommon'
+				#name : 'Squot-Core'
 			},
-			#path : FSAbsolutePath [
-				'src'
-			]
-		},
-		SquotCypressMapper {
-			#version : 1,
-			#isTracked : true,
-			#package : MCPackage {
-				#name : 'FileSystem-Git'
-			},
-			#path : FSAbsolutePath [
-				'src'
-			]
-		},
-		SquotCypressMapper {
-			#version : 1,
-			#isTracked : true,
-			#package : MCPackage {
-				#name : 'Squot'
-			},
-			#path : FSAbsolutePath [
-				'src'
-			]
+			#path : @5
 		}
 	],
 	#name : 'Squot'

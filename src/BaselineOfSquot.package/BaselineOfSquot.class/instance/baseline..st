@@ -39,17 +39,17 @@ baseline: spec
 			package: 'FileSystem-Git' with: [
 				spec
 					requires: #('FileSystem' 'VersionControl' 'INIFile')];
-			package: 'Squot' with: [
+			package: 'Squot-Core' with: [
 				spec
 					requires: #('FileSystem' 'VersionControl' 'FileSystem-Git' 'DiffMerge' 'Ston' 'Tonel');
 					postLoadDoIt: #postLoad].
 		spec 
 			group: 'FileSystemGit' with: #('FileSystem-Git');
-			group: 'default' with: #('Squot');
+			group: 'default' with: #('Squot-Core');
 			group: 'tests' with: #('default')].
 	
 	spec for: #'squeakCommon' do: [
 		spec
-			package: 'SquotCompatibility-SqueakCommon';
-			package: 'Squot' with: [
-				spec includes: 'SquotCompatibility-SqueakCommon']].
+			package: 'Squot-Compatibility';
+			package: 'Squot-Core' with: [
+				spec includes: 'Squot-Compatibility']].

@@ -1,0 +1,14 @@
+{
+	"category" : "Squot-Core-Rebase",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "SquotRebaseFirstOperationHeader",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }

@@ -1,0 +1,14 @@
+{
+	"category" : "Squot-Core-Metadata-Name",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "SquotMetadataNameNormalChange",
+	"pools" : [
+		 ],
+	"super" : "SquotMultitextNormalChange",
+	"type" : "normal" }

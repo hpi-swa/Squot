@@ -1,0 +1,15 @@
+{
+	"category" : "Squot-Core-Multitext",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"change",
+		"index" ],
+	"name" : "SquotMultitextChangeIndexedModel",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }

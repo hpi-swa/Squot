@@ -1,4 +1,4 @@
-merging
+changes-creation
 changeSetToMergeFSCommit: rightFSCommit into: leftFSCommit withBase: baseFSCommit
 	| left right base |
 	SquotMergeUtilities

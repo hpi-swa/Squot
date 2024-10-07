@@ -1,4 +1,4 @@
-merging
+changes-creation
 changeSetToMergeName: rightString into: leftString withBase: baseString
 	^ SquotMergeUtilities
 		atomicMergeLeft: leftString

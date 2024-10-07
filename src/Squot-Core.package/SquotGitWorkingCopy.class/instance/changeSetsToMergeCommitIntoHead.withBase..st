@@ -1,4 +1,4 @@
-git-operations
+changes-creation
 changeSetsToMergeCommitIntoHead: rightCommit withBase: baseCommit
 	^ self
 		changeSetsToMergeCommit: rightCommit

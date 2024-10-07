@@ -1,4 +1,4 @@
-merging
+changes-creation
 changeSetsToMergeFSCommit: rightFSCommit into: leftFSCommit withBase: baseFSCommit in: aWorkingCopy
 	| emptyCommit commits metadataForCommits commitsForMappers potentiallyRemovedMappers mapperChangeSets mappersChangeSet metadataChangeSet |
 	emptyCommit := aWorkingCopy emptyCommit.

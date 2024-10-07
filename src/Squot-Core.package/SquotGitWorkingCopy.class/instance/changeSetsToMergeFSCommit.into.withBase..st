@@ -1,4 +1,4 @@
-git-operations
+changes-creation
 changeSetsToMergeFSCommit: rightFSCommit into: leftFSCommit withBase: baseFSCommit
 	^ self metadataMapper
 		changeSetsToMergeFSCommit: rightFSCommit

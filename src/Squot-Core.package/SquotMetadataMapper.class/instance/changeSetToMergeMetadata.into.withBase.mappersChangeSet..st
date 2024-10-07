@@ -1,4 +1,4 @@
-merging
+changes-creation
 changeSetToMergeMetadata: rightMetadata into: leftMetadata withBase: baseMetadata mappersChangeSet: aChangeSet
 	| nameChangeSet |
 	nameChangeSet := self

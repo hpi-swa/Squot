@@ -1,4 +1,4 @@
-git-operations
+changes-creation
 changeSetsToMergeCommit: rightCommit into: leftCommit withBase: baseCommit
 	^ self
 		changeSetsToMergeFSCommit: (self fsCommitFrom: rightCommit)

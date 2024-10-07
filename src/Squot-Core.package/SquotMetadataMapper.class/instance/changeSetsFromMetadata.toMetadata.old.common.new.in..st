@@ -17,11 +17,11 @@ in: aWorkingCopy
 		displayingProgress: [:todo | 'Gathering changes from {1}' format: {todo key}].
 
 	mappersChangeSet := self
-		mappersChangeSetFromMappers: fromMetadata mappers
+		changeSetFromMappers: fromMetadata mappers
 		removing: potentiallyRemovedMappers
 		changeSets: mapperChangeSets.
 	metadataChangeSet := self
-		metadataChangeSetFrom: fromMetadata
+		changeSetFromMetadata: fromMetadata
 		to: toMetadata
 		mappersChangeSet: mappersChangeSet.
 	^ mapperChangeSets values copyWith: metadataChangeSet

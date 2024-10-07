@@ -1,5 +1,5 @@
 merging
-mergeCommit: rightFSCommit into: leftFSCommit withBase: baseFSCommit in: aWorkingCopy
+changeSetsToMergeFSCommit: rightFSCommit into: leftFSCommit withBase: baseFSCommit in: aWorkingCopy
 	| emptyCommit commits metadataForCommits commitsForMappers potentiallyRemovedMappers mapperChangeSets mappersChangeSet metadataChangeSet |
 	emptyCommit := aWorkingCopy emptyCommit.
 	commits := {rightFSCommit. leftFSCommit. baseFSCommit}.
@@ -20,16 +20,16 @@ mergeCommit: rightFSCommit into: leftFSCommit withBase: baseFSCommit in: aWorkin
 			mapperChangeSets
 				at: mapper
 				put: (mapper
-						mergeCommit: mapperCommits first
+						changeSetToMergeFSCommit: mapperCommits first
 						into: mapperCommits second
 						withBase: mapperCommits third)]
 		displayingProgress: [:mapperToCommits | 'Merging {1}' format: {mapperToCommits key}].
 	mappersChangeSet := self
-		mappersChangeSetFromMappers: metadataForCommits second mappers
+		changeSetFromMappers: metadataForCommits second mappers
 		removing: potentiallyRemovedMappers
 		changeSets: mapperChangeSets.
 	metadataChangeSet := self
-		mergeMetadata: metadataForCommits second
+		changeSetToMergeMetadata: metadataForCommits second
 		into: metadataForCommits first
 		withBase: metadataForCommits third
 		mappersChangeSet: mappersChangeSet.

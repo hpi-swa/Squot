@@ -9,7 +9,7 @@ commitType: aSymbol
 	self activeWorkingCopyIfNilInformAnd: [^ Promise new "never resolves"].
 	headCommit := self activeWorkingCopy headCommit.
 	changeSets := self activeWorkingCopy
-						mergeCommit: rightCommit
+						changeSetsToMergeCommit: rightCommit
 						into: headCommit
 						withBase: baseCommit.
 	onlyAdditionalParents := false.

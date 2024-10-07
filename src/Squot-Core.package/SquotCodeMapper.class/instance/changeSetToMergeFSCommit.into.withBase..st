@@ -1,5 +1,5 @@
 merging
-mergeCommit: rightFSCommit into: leftFSCommit withBase: baseFSCommit
+changeSetToMergeFSCommit: rightFSCommit into: leftFSCommit withBase: baseFSCommit
 	| merger |
 	SquotMergeUtilities
 		hexHashMerge: [:commit | self hexHashIn: commit]

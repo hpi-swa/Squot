@@ -1,4 +1,4 @@
 changes-creation
-nameChangeSetFrom: aString to: anotherString
+changeSetFromName: aString to: anotherString
 	aString = anotherString ifTrue: [^ nil].
 	^ SquotMetadataNameChangeSet withMapper: self from: aString to: anotherString

@@ -1,5 +1,5 @@
 merging
-mergeAssetFile: right into: left withBase: base
+changeSetToMergeAssetFile: right into: left withBase: base
 	^ SquotMergeUtilities
 		stringOrNilMergeLeft: (left ifNotNil: #asset)
 		right: (right ifNotNil: #asset)

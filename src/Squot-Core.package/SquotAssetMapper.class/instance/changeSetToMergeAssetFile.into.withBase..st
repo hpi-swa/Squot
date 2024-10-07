@@ -1,5 +1,5 @@
 merging
-mergeAssetFile: right into: left withBase: base
+changeSetToMergeAssetFile: right into: left withBase: base
 	^ SquotMergeUtilities
 		atomicMergeLeft: left
 		right: right

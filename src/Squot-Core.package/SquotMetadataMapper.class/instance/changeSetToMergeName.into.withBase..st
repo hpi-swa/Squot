@@ -1,5 +1,5 @@
 merging
-mergeName: rightString into: leftString withBase: baseString
+changeSetToMergeName: rightString into: leftString withBase: baseString
 	^ SquotMergeUtilities
 		atomicMergeLeft: leftString
 		right: rightString

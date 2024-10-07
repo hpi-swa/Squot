@@ -1,5 +1,5 @@
 changes-creation
-metadataChangeSetFromOldMetadata: aMetadata propertyChangeSets: aCollection
+changeSetFromOldMetadata: aMetadata propertyChangeSets: aCollection
 	^ SquotMetadataChangeSet
 		withMapper: self
 		oldMetadata: aMetadata

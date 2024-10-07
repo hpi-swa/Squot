@@ -1,5 +1,5 @@
 merging
-mergeCommit: rightFSCommit into: leftFSCommit withBase: baseFSCommit
+changeSetToMergeFSCommit: rightFSCommit into: leftFSCommit withBase: baseFSCommit
 	| left right base |
 	SquotMergeUtilities
 		hexHashMerge: [:commit | self hexHashIn: commit]
@@ -10,4 +10,4 @@ mergeCommit: rightFSCommit into: leftFSCommit withBase: baseFSCommit
 	left := self loadAssetFileFrom: leftFSCommit filesystem.
 	right := self loadAssetFileFrom: rightFSCommit filesystem.
 	base := self loadAssetFileFrom: baseFSCommit filesystem.
-	^ self mergeAssetFile: right into: left withBase: base
+	^ self changeSetToMergeAssetFile: right into: left withBase: base

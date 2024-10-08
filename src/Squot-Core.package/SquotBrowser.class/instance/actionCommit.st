@@ -1,4 +1,3 @@
 actions
 actionCommit
-	self activeWorkingCopyIfNilInformAnd: [^ self].
-	self openDialogToCommitImageWithInitialMessage: ''.
+	self workingCopyAction: #openDialogToCommitImage.

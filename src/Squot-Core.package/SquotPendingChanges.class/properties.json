@@ -1,0 +1,23 @@
+{
+	"category" : "Squot-Core",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"workingCopy",
+		"changeSets",
+		"initialMessage",
+		"parents",
+		"windowTitle",
+		"originalHeadCommit",
+		"dialog",
+		"promise",
+		"shouldAlwaysOpenDialog",
+		"shouldAlwaysMaterialize" ],
+	"name" : "SquotPendingChanges",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }

@@ -1,0 +1,3 @@
+dialog
+openDialogToCommitImage
+	^ self openDialogToCommitImageWithInitialMessage: ''

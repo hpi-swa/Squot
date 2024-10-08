@@ -9,10 +9,9 @@
 		"unload" : "mad 9/26/2023 15:50",
 		"unregisterFromWorldMenu" : "mad 9/19/2023 13:45" },
 	"instance" : {
-		"actionCherryPick:" : "mad 4/5/2024 00:37",
-		"actionChooseNewRepositoryLocationForActiveProject" : "mad 12/22/2023 18:15",
+		"actionChooseNewRepositoryLocationForActiveProject" : "mad 10/7/2024 22:56",
 		"actionCloneProject" : "mad 10/6/2024 20:42",
-		"actionCommit" : "mad 4/5/2024 15:21",
+		"actionCommit" : "mad 10/7/2024 19:52",
 		"actionCompareActiveCommitToImage" : "mad 4/5/2024 19:07",
 		"actionCompareActiveCommitToParent" : "mad 4/5/2024 19:07",
 		"actionCompareCommitToImage:" : "mad 4/5/2024 19:00",
@@ -129,9 +128,7 @@
 		"newProject:" : "mad 3/19/2024 21:29",
 		"onConflictOpenDialogToMaterializeChangeSets:windowTitle:" : "mad 4/10/2024 16:16",
 		"open" : "mad 8/30/2023 17:41",
-		"openDialogToCommitChangeSets:initialMessage:" : "mad 4/5/2024 15:17",
 		"openDialogToCommitChangeSets:windowTitle:initialMessage:additionalParents:onlyAdditionalParents:materializeChangeSets:" : "mad 4/5/2024 01:20",
-		"openDialogToCommitImageWithInitialMessage:" : "mad 4/5/2024 15:20",
 		"openDialogToMaterializeChangeSets:windowTitle:" : "mad 10/24/2023 16:22",
 		"openDialogToMaterializeCommit:" : "mad 10/24/2023 17:36",
 		"openDialogToMaterializeCommit:displayName:windowTitlePrefix:" : "mad 8/13/2024 17:56",
@@ -160,4 +157,5 @@
 		"validateDialogState:andOriginalHeadCommit:before:" : "mad 9/19/2023 12:37",
 		"warnIfImageNotClean:" : "mad 11/7/2023 15:24",
 		"windowTitle" : "mad 10/18/2023 15:14",
-		"withUnitOfWork:" : "mad 9/19/2023 12:37" } }
+		"withUnitOfWork:" : "mad 9/19/2023 12:37",
+		"workingCopyAction:" : "mad 10/7/2024 19:52" } }

@@ -1,4 +1,5 @@
 actions
 actionChooseNewRepositoryLocationForActiveProject
-	(self activeWorkingCopyIfNilInformAnd: [^ self]) requestAndMoveToNewRepositoryLocation.
-	self everythingChanged.
+	self workingCopyAction: [:workingCopy |
+		workingCopy requestAndMoveToNewRepositoryLocation.
+		self everythingChanged].

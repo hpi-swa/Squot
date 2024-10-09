@@ -2,4 +2,4 @@ updating
 refsChanged
 	self
 		changed: #commitList;
-		changed: #refList.
+		changed: #refTreeRoots.

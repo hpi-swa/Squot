@@ -1,3 +1,3 @@
 accessing
 isActive
-	^ self workingCopy currentHeadTarget = self item
+	^ self workingCopy currentHeadTarget = self ref

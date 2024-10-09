@@ -2,7 +2,7 @@ updating
 everythingChanged
 	self
 		changed: #activeWorkingCopy;
-		changed: #refList;
+		changed: #refTreeRoots;
 		changed: #commitList;
-		activeRef: nil;
+		activeRefTreeMember: nil;
 		activeCommit: (self activeWorkingCopy ifNotNil: #headCommit).

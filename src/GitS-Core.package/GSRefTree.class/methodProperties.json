@@ -1,0 +1,18 @@
+{
+	"class" : {
+		 },
+	"instance" : {
+		"add:" : "mad 10/10/2024 00:03",
+		"addInTree:" : "mad 10/10/2024 01:10",
+		"addRef:" : "mad 10/10/2024 00:03",
+		"addTree:" : "mad 10/10/2024 00:05",
+		"children" : "mad 10/9/2024 23:30",
+		"children:" : "mad 10/9/2024 23:30",
+		"compress" : "mad 10/10/2024 01:09",
+		"compressChildren" : "mad 10/10/2024 00:57",
+		"createRef:" : "mad 10/10/2024 01:12",
+		"createTree:" : "mad 10/10/2024 01:28",
+		"getTree:" : "mad 10/10/2024 00:05",
+		"initialize" : "mad 10/10/2024 00:06",
+		"isEmpty" : "mad 10/10/2024 00:13",
+		"isTree" : "mad 10/9/2024 23:33" } }

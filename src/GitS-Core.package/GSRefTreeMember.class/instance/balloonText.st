@@ -1,3 +1,3 @@
 accessing
 balloonText
-	^ self item
+	^ self ref

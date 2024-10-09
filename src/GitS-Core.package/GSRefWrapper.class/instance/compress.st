@@ -1,0 +1,3 @@
+compressing
+compress
+	^ self

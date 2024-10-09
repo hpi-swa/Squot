@@ -6,9 +6,6 @@ refListMenu: aMenu
 		addLine;
 
 		add: 'Refresh refs'
-		action: #actionRefreshRefList;
-
-		add: (self showGitRefs ifTrue: ['<yes>'] ifFalse: ['<no>']), 'Show git refs'
-		action: #toggleShowGitRefs.
+		action: #actionRefreshRefTree.
 	
 	^ aMenu

@@ -6,11 +6,11 @@
 		 ],
 	"commentStamp" : "",
 	"instvars" : [
-		"activeWorkingCopy",
-		"activeCommit",
-		"activeRefTreeMember" ],
-	"name" : "GSBrowser",
+		"workingCopy",
+		"label",
+		"ref" ],
+	"name" : "GSRefTreeMember",
 	"pools" : [
 		 ],
-	"super" : "Model",
+	"super" : "Object",
 	"type" : "normal" }

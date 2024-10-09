@@ -10,5 +10,5 @@
 	"name" : "GSRefWrapper",
 	"pools" : [
 		 ],
-	"super" : "GSListItemWrapper",
+	"super" : "GSRefTreeMember",
 	"type" : "normal" }

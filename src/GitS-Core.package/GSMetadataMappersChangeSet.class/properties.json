@@ -1,0 +1,16 @@
+{
+	"category" : "GitS-Core-Metadata-Mappers",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"oldMappers",
+		"potentiallyRemovedMappers",
+		"mapperChangeSets" ],
+	"name" : "GSMetadataMappersChangeSet",
+	"pools" : [
+		 ],
+	"super" : "GSMetadataPropertyChangeSet",
+	"type" : "normal" }

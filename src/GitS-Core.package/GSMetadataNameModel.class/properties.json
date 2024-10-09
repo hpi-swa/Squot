@@ -1,0 +1,14 @@
+{
+	"category" : "GitS-Core-Metadata-Name",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "GSMetadataNameModel",
+	"pools" : [
+		 ],
+	"super" : "GSStringModel",
+	"type" : "normal" }

@@ -1,0 +1,16 @@
+{
+	"category" : "GitS-Core-Utilities",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"model",
+		"buildSelector",
+		"builder" ],
+	"name" : "GSDynamicallyBuilt",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }

@@ -1,3 +1,0 @@
-versions
-legacyVersion
-	^ SquotMetadataMapper legacyVersion

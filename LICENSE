@@ -1,11 +1,8 @@
 This repository contains multiple packages:
-- Squot, Squit, VersionControl come from here
-- SquotCompatibility-SqueakCommon was also initialized here, but consists mainly of code
+- GitS-Core, GitS-Tests and VersionControl come from here
+- GitS-Compatibility was also initialized here, but consists mainly of code
   that was copied and adapted from Pharo, in order to make FileSystem-Git run in Squeak.
-- The other SquotCompatibility-Squeak* packages contain methods from later Squeak releases
-  or Squeak Trunk that are provided for older Squeak versions.
 - FileSystem-Git and FileSystem (FS-*) are forks of packages originally hosted elsewhere.
-- Squot-CoAuthorsExtension was originally a separate project.
 
 The packages originating here are released under the MIT license as described below.
 
@@ -15,35 +12,28 @@ https://pharo.org/features, https://pharo.org/contribute (all last accessed 2022
 The adapations to Squeak included here are also released under the MIT license
 as described below.
 
-The code copied from Squeak Trunk was released under the MIT license according to
-https://squeak.org/license/ (last accessed 2022-07-10). The license statement in the
-Squeak image is in the class SmalltalkImage just like in Pharo, but one cannot have
-permalinks to the Squeak method from https://source.squeak.org.
-Should any adaptations become necessary to such backported methods, the adaptations
-included here are also released under the MIT license as described below.
-
-The original FileSystem-Git was released under the MIT license according to 
-http://smalltalkhub.com/#!/~FileSystemGitDev/FileSystem-Git/ (last accessed 2019-02-15) 
+The original FileSystem-Git was released under the MIT license according to
+http://smalltalkhub.com/#!/~FileSystemGitDev/FileSystem-Git/ (last accessed 2019-02-15)
 and http://ss3.gemstone.com/ss/FileSystem-Git.html (last accessed 2019-02-15).
-The additions and changes provided here are also released under the MIT license 
+The additions and changes provided here are also released under the MIT license
 as described below.
 
-The original FileSystem was released under the MIT license according to 
+The original FileSystem was released under the MIT license according to
 http://www.squeaksource.com/fs.html (last accessed 2019-02-15).
-The additions and changes provided here are also released under the MIT license 
+The additions and changes provided here are also released under the MIT license
 as described below.
 
 =====================================================================
-Squot, Squit, VersionControl, Squot-CoAuthorsExtension,
-changes and additions to FileSystem and FileSystem-Git packages
-and Squeak adaptations to the code in the SquotCompatibility package
+GitS-Core, GitS-Tests, VersionControl, changes and additions to
+FileSystem and FileSystem-Git packages and Squeak adaptations to the
+code in the GitS-Compatibility package
 =====================================================================
 
 MIT License
 
+Copyright (c) 2023-2024 Marius Dörbandt, Software Architecture Group (Hasso Plattner Institute)
 Copyright (c) 2017 Jakob Reschke, Software Architecture Group (Hasso Plattner Institute)
 Copyright (c) 2017-2022 Contributors to the Squot project (see Git history)
-Copyright (c) 2019 Maximilian Stiede, Leon Bein (for the Squot-CoAuthorsExtension)
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal

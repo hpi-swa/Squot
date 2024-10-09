@@ -1,0 +1,17 @@
+{
+	"category" : "GitS-Core-Multitext",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"texts",
+		"conflict",
+		"resolution",
+		"isResolved" ],
+	"name" : "GSMultitextConflictChange",
+	"pools" : [
+		 ],
+	"super" : "GSMultitextChange",
+	"type" : "normal" }

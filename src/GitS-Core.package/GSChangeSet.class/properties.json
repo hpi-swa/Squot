@@ -1,0 +1,14 @@
+{
+	"category" : "GitS-Core",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"mapper" ],
+	"name" : "GSChangeSet",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }

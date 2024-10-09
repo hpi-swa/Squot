@@ -1,3 +1,0 @@
-filesystem
-loadLegacySquotContentsFileReferencesIn: aFileSystem
-	^ self mapper loadLegacySquotContentsFileReferencesIn: aFileSystem

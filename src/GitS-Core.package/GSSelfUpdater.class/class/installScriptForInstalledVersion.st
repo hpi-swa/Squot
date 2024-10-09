@@ -1,0 +1,3 @@
+self-updating
+installScriptForInstalledVersion
+	^ self installScriptForVersion: self installedVersion

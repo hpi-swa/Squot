@@ -1,0 +1,17 @@
+{
+	"category" : "GitS-Core-Browser",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"activeWorkingCopy",
+		"activeCommit",
+		"activeRef",
+		"showGitRefs" ],
+	"name" : "GSBrowser",
+	"pools" : [
+		 ],
+	"super" : "Model",
+	"type" : "normal" }

@@ -1,0 +1,16 @@
+{
+	"category" : "GitS-Core-Rebase",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"messageCommit",
+		"oneLineMessage",
+		"editMessage" ],
+	"name" : "GSRebaseOperationMerge",
+	"pools" : [
+		 ],
+	"super" : "GSRebaseOperationWithLabel",
+	"type" : "normal" }

@@ -1,0 +1,15 @@
+{
+	"category" : "GitS-Core-Asset",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"workingCopy",
+		"basePath" ],
+	"name" : "GitAssetLoader",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }

@@ -1,0 +1,15 @@
+{
+	"category" : "GitS-Core-Sound",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"sound",
+		"button" ],
+	"name" : "GSSoundMorph",
+	"pools" : [
+		 ],
+	"super" : "Morph",
+	"type" : "normal" }

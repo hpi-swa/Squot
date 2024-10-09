@@ -1,0 +1,16 @@
+{
+	"category" : "GitS-Core-Multitext",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"left",
+		"right",
+		"base" ],
+	"name" : "GSMergeConflict",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }

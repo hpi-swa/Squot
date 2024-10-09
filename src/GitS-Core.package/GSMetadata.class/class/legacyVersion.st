@@ -1,0 +1,3 @@
+versions
+legacyVersion
+	^ GSMetadataMapper legacyVersion

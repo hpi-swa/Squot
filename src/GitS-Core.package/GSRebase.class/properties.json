@@ -1,0 +1,21 @@
+{
+	"category" : "GitS-Core-Rebase",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"workingCopy",
+		"browser",
+		"operations",
+		"activeOperation",
+		"continueBlock",
+		"labels",
+		"refsToUpdate",
+		"originalHeadCommit" ],
+	"name" : "GSRebase",
+	"pools" : [
+		 ],
+	"super" : "Model",
+	"type" : "normal" }

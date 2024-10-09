@@ -1,0 +1,3 @@
+filesystem
+legacySquotMaterializeReferenceIn: aFileSystem
+	^ aFileSystem referenceTo: self legacySquotMaterializeFilePath

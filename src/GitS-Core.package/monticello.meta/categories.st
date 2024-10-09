@@ -1,0 +1,15 @@
+SystemOrganization addCategory: #'GitS-Core'!
+SystemOrganization addCategory: #'GitS-Core-Metadata'!
+SystemOrganization addCategory: #'GitS-Core-Metadata-Mappers'!
+SystemOrganization addCategory: #'GitS-Core-Metadata-Name'!
+SystemOrganization addCategory: #'GitS-Core-Browser'!
+SystemOrganization addCategory: #'GitS-Core-Asset'!
+SystemOrganization addCategory: #'GitS-Core-Image'!
+SystemOrganization addCategory: #'GitS-Core-Plaintext'!
+SystemOrganization addCategory: #'GitS-Core-Blob'!
+SystemOrganization addCategory: #'GitS-Core-Sound'!
+SystemOrganization addCategory: #'GitS-Core-Multitext'!
+SystemOrganization addCategory: #'GitS-Core-Code'!
+SystemOrganization addCategory: #'GitS-Core-Rebase'!
+SystemOrganization addCategory: #'GitS-Core-Sar'!
+SystemOrganization addCategory: #'GitS-Core-Utilities'!

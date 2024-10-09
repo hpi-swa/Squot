@@ -1,0 +1,15 @@
+{
+	"category" : "GitS-Core",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"mappedPathPatterns",
+		"block" ],
+	"name" : "GSUnmappedReferencesVisitor",
+	"pools" : [
+		 ],
+	"super" : "FSGuide",
+	"type" : "normal" }

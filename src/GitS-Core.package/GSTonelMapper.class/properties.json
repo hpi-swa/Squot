@@ -1,0 +1,14 @@
+{
+	"category" : "GitS-Core-Code",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"writeTimestamps" ],
+	"name" : "GSTonelMapper",
+	"pools" : [
+		 ],
+	"super" : "GSCodeMapper",
+	"type" : "normal" }

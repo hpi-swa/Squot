@@ -1,0 +1,14 @@
+{
+	"category" : "GitS-Core-Blob",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "GSBlobMapper",
+	"pools" : [
+		 ],
+	"super" : "GSAssetMapper",
+	"type" : "normal" }

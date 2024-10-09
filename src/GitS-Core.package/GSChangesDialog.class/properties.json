@@ -1,0 +1,19 @@
+{
+	"category" : "GitS-Core-Browser",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"changeSets",
+		"changes",
+		"changesTree",
+		"selectedChange",
+		"windowTitle",
+		"buttons" ],
+	"name" : "GSChangesDialog",
+	"pools" : [
+		 ],
+	"super" : "Model",
+	"type" : "normal" }

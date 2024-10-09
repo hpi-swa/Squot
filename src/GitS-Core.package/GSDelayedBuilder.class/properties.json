@@ -1,0 +1,15 @@
+{
+	"category" : "GitS-Core-Utilities",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"innerSpec",
+		"children" ],
+	"name" : "GSDelayedBuilder",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }

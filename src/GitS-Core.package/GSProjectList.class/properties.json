@@ -1,0 +1,17 @@
+{
+	"category" : "GitS-Core-Utilities",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"model",
+		"getWorkingCopySelector",
+		"setWorkingCopySelector",
+		"menuSelector" ],
+	"name" : "GSProjectList",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }

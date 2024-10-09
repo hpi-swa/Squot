@@ -1,0 +1,14 @@
+{
+	"category" : "GitS-Core-Code",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "GSCodeNormalChange",
+	"pools" : [
+		 ],
+	"super" : "GSMultitextNormalChange",
+	"type" : "normal" }

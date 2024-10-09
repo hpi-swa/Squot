@@ -1,0 +1,14 @@
+{
+	"category" : "GitS-Core-Utilities",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "GSMergeUtilities",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }

@@ -1,0 +1,15 @@
+{
+	"category" : "GitS-Core-Rebase",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"keepCurrentMessage",
+		"editMessage" ],
+	"name" : "GSRebaseOperationFixup",
+	"pools" : [
+		 ],
+	"super" : "GSRebaseOperationWithCommit",
+	"type" : "normal" }

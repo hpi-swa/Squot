@@ -1,0 +1,14 @@
+{
+	"category" : "GitS-Core-Plaintext",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "GSPlaintextConflictChange",
+	"pools" : [
+		 ],
+	"super" : "GSMultitextConflictChange",
+	"type" : "normal" }

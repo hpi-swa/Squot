@@ -1,0 +1,18 @@
+{
+	"class" : {
+		"aiffEncoding" : "mad 9/20/2023 17:58",
+		"defaultEncoding" : "mad 9/20/2023 18:43",
+		"encodingName:" : "mad 9/20/2023 19:03",
+		"kind" : "mad 9/29/2024 19:30",
+		"validEncodings" : "mad 9/20/2023 17:58",
+		"wavEncoding" : "mad 9/20/2023 17:58" },
+	"instance" : {
+		"assetAsMorph:" : "mad 10/9/2024 16:01",
+		"assetTypeName" : "mad 9/29/2024 17:36",
+		"canReadAssetFrom:" : "mad 9/29/2024 17:38",
+		"doPostUpdateMigrationsIn:" : "mad 9/27/2024 23:06",
+		"fixNilEncoding" : "mad 1/12/2024 12:37",
+		"isValidAsset:" : "mad 9/29/2024 17:40",
+		"readAssetFrom:" : "mad 9/29/2024 17:44",
+		"transformAsset:ifFail:" : "mad 9/29/2024 19:59",
+		"writeAsset:on:" : "mad 9/29/2024 17:48" } }

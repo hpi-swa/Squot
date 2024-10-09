@@ -1,0 +1,17 @@
+{
+	"category" : "GitS-Core-Sar",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"workingCopy",
+		"zip",
+		"preamble",
+		"postAddHooks" ],
+	"name" : "GSSarBuilder",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }

@@ -1,0 +1,14 @@
+{
+	"category" : "GitS-Core-Plaintext",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "GSPlaintextMapper",
+	"pools" : [
+		 ],
+	"super" : "GSAssetMapper",
+	"type" : "normal" }

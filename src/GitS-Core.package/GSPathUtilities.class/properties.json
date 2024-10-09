@@ -1,0 +1,14 @@
+{
+	"category" : "GitS-Core-Utilities",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "GSPathUtilities",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }

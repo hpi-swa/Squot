@@ -1,0 +1,16 @@
+{
+	"category" : "GitS-Core-Metadata",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"version",
+		"name",
+		"mappers" ],
+	"name" : "GSMetadata",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }

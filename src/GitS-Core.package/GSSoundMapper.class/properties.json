@@ -1,0 +1,14 @@
+{
+	"category" : "GitS-Core-Sound",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "GSSoundMapper",
+	"pools" : [
+		 ],
+	"super" : "GSAssetMapper",
+	"type" : "normal" }

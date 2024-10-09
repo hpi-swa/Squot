@@ -1,0 +1,16 @@
+{
+	"category" : "GitS-Core",
+	"classinstvars" : [
+		"registry" ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"name",
+		"materialized",
+		"mappers" ],
+	"name" : "GSBaseWorkingCopy",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }

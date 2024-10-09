@@ -1,5 +1,5 @@
-# Squot
-Squeak Object Tracker - Version control for objects such as code and files in Squeak, using [git](https://git-scm.com/).
+# git/s
+[git](https://git-scm.com/) client for Squeak - Version control for objects such as code and files in Squeak.
 
 ## Installation instructions
 
@@ -8,36 +8,36 @@ Then, use the following snippet to load the Git Browser and all its dependencies
 
 ```smalltalk
 Metacello new
-  baseline: 'Squot';
-  repository: 'github://hpi-swa/Squot:mapper/src';
+  baseline: 'GitS';
+  repository: 'github://hpi-swa/git-s:latest-release/src';
   load.
 ```
 
 ## Usage instructions
 
-After installing Squot, you will find a "Git Browser" in the Apps menu. With this tool you can create projects (in-image working copies) that can contain multiple objects, such as packages (code) and other files, called *assets*. Each object is stored at or under a path. When you checkout the Git repository in the file system, an object's path is its relative path in the working copy. From the Git Browser, you can create new commits, synchronize with remote repositories (fetch, pull, push), manage and merge branches, switch between them, and compare different versions. There is also another user interface called the Git Asset Browser. Using it, you can import and edit assets, like images, animations, sounds, texts or blobs.
+After installing git/s, you will find a "Git Browser" in the Apps menu. With this tool you can create projects (in-image working copies) that can contain multiple objects, such as packages (code) and other files, called *assets*. Each object is stored at or under a path. When you checkout the Git repository in the file system, an object's path is its relative path in the working copy. From the Git Browser, you can create new commits, synchronize with remote repositories (fetch, pull, push), manage and merge branches, switch between them, and compare different versions. There is also another user interface called the Git Asset Browser. Using it, you can import and edit assets, like images, animations, sounds, texts or blobs.
 
 ### Getting started with an existing remote project
 
 1. Open the Git Browser from the Apps menu in the docking bar.
 
-2. To ensure you have an up-to-date version of Squot, click the "..." button on the bottom right and select "Self-update".
+2. To ensure you have an up-to-date version of git/s, click the "..." button on the bottom right and select "Self-update".
 
-3. The pane at the top left pane is the list of projects which are currently managed through Squot. We will now clone an existing project by opening the context menu of the list and selecting "Clone project".
+3. The pane at the top left pane is the list of projects which are currently managed through git/s. We will now clone an existing project by opening the context menu of the list and selecting "Clone project".
 
 4. A wizard opens which will guide us through the steps to clone the project.
 
 5. First, the wizard asks for an URL to clone from. We use the https URL of our repository for that. For GitHub projects you can find the https URL on the project main page after clicking on the button labeled "Clone or download" (You might have to select "Use HTTPS").
 
-6. Second, we have to select a folder in which Squot can store the Git repository. Squot suggests a folder based on the URL.
+6. Second, we have to select a folder in which git/s can store the Git repository. git/s suggests a folder based on the URL.
 
-7. We have now provided all necessary details and Squot will go ahead and clone the project for us.
+7. We have now provided all necessary details and git/s will go ahead and clone the project for us.
 
-8. Depending on the repository, Squot might ask for credentials. In that case, you have to enter your GitHub username and a GitHub personal access token with the `repo` scope. You can create one on the [settings page](https://github.com/settings/tokens).
+8. Depending on the repository, git/s might ask for credentials. In that case, you have to enter your GitHub username and a GitHub personal access token with the `repo` scope. You can create one on the [settings page](https://github.com/settings/tokens).
 
-9.  As soon as Squot finished cloning, we have the repository on the disk and registered in the system, but we do not yet have the objects loaded from the repository into Squeak. Squot now asks you to do just that.
+9.  As soon as git/s finished cloning, we have the repository on the disk and registered in the system, but we do not yet have the objects loaded from the repository into Squeak. git/s now asks you to do just that.
 
-10. If you tell Squot to load the current commit into the image, a window pops up with the changes to load. You can inspect the changes by selecting them in the left tree pane. If you are happy with them, you can click on the "Load changes" button on the bottom right.
+10. If you tell git/s to load the current commit into the image, a window pops up with the changes to load. You can inspect the changes by selecting them in the left tree pane. If you are happy with them, you can click on the "Load changes" button on the bottom right.
 
 11. After a short loading time, the objects are now loaded in the system. If the repository stored packages, you can now start browsing your code. If the repository stored assets, you can browse them in the [Git Asset Browser](#using-the-git-asset-browser).
 
@@ -61,7 +61,7 @@ After installing Squot, you will find a "Git Browser" in the Apps menu. With thi
 
 3. You can now import an asset by clicking the "Import file" button. See [below](#supported-asset-types) for a list of supported asset types.
 
-4. Squot will try to infer the asset type from the contents of the file you chose. If it is unable to do so, it will ask you to choose a generic asset type.
+4. git/s will try to infer the asset type from the contents of the file you chose. If it is unable to do so, it will ask you to choose a generic asset type.
 
 5. Based on the name of the file, the Git Asset Browser will suggest a path at which the asset will be stored inside the repository.
 
@@ -77,7 +77,7 @@ Besides the method described above, there are some other methods of importing as
 
 #### Import directory
 
-You can use the "Import directory" button instead of the "Import file" button. This will recursively import an entire directory. The directory can contain multiple types of assets, as Squot will infer the asset type for each file individually.
+You can use the "Import directory" button instead of the "Import file" button. This will recursively import an entire directory. The directory can contain multiple types of assets, as git/s will infer the asset type for each file individually.
 
 #### Import unmanaged assets
 
@@ -117,18 +117,18 @@ assetLoader := GitAssetLoader for: 'MyProjectName' basePath: 'assets'.
 
 ### Supported asset types
 
-Squot can handle these asset types:
+git/s can handle these asset types:
 - Images (BMP, GIF, JPEG, PCX, PNG, PNM, XBM)
 - Animations (GIF)
 - Sounds (AIFF, WAV)
 
-Additionally, Squot can track these generic asset types:
+Additionally, git/s can track these generic asset types:
 - Plaintext (UTF-8)
 - BLOB (any binary data)
 
 ### Using external git tools
 
-If you try to use an external git tool, like the git command line, on the repository inside your Squeak folder, you will quickly notice that all your branches are gone. The reason for this is that Squot hides its branches (and other refs like HEAD) to protect itself from external changes that would otherwise lead to problems. Nevertheless, there is a way to use external git tools in the same repository as Squeak.
+If you try to use an external git tool, like the git command line, on the repository inside your Squeak folder, you will quickly notice that all your branches are gone. The reason for this is that git/s hides its branches (and other refs like HEAD) to protect itself from external changes that would otherwise lead to problems. Nevertheless, there is a way to use external git tools in the same repository as Squeak.
 
 1. In Squeak, open the context menu on the branch or the commit on which you want to work on using the external git tool.
 

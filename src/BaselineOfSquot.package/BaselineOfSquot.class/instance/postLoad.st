@@ -1,3 +1,0 @@
-migrations
-postLoad
-	SquotBaseWorkingCopy doPostUpdateMigrations.

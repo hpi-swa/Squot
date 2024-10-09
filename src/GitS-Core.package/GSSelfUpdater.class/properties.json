@@ -1,0 +1,14 @@
+{
+	"category" : "GitS-Core",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		"InstalledVersion" ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "GSSelfUpdater",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }

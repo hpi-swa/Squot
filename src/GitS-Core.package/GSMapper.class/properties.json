@@ -1,0 +1,15 @@
+{
+	"category" : "GitS-Core",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"version",
+		"isTracked" ],
+	"name" : "GSMapper",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }

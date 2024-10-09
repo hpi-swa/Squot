@@ -1,0 +1,14 @@
+{
+	"category" : "GitS-Core-Utilities",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"onSave" ],
+	"name" : "GSPluggableWorkspace",
+	"pools" : [
+		 ],
+	"super" : "Workspace",
+	"type" : "normal" }

@@ -1,0 +1,15 @@
+{
+	"category" : "GitS-Core-Browser",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"workingCopy",
+		"selectedRemoteName" ],
+	"name" : "GSRemotesBrowser",
+	"pools" : [
+		 ],
+	"super" : "Model",
+	"type" : "normal" }

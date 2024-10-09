@@ -1,0 +1,17 @@
+{
+	"category" : "GitS-Core-Asset",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"from",
+		"to",
+		"isExcluded",
+		"change" ],
+	"name" : "GSAssetChangeSet",
+	"pools" : [
+		 ],
+	"super" : "GSChangeSet",
+	"type" : "normal" }

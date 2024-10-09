@@ -8,7 +8,7 @@ jobs:
       matrix:
         os: [ ubuntu-latest ]
         smalltalk: [ Squeak64-trunk, Squeak64-6.0, Squeak64-5.3, Squeak32-5.2 ]
-        # Since Squot does not deal with platforms really,
+        # Since git/s does not deal with platforms really,
         # only run the latest versions on Windows and macOS.
         include:
           - os: macos-latest

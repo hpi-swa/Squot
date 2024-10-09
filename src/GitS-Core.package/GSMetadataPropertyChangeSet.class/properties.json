@@ -1,0 +1,14 @@
+{
+	"category" : "GitS-Core-Metadata",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "GSMetadataPropertyChangeSet",
+	"pools" : [
+		 ],
+	"super" : "GSChangeSet",
+	"type" : "normal" }

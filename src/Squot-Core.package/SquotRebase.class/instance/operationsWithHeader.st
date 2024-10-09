@@ -1,3 +1,0 @@
-accessing
-operationsWithHeader
-	^ self operations copyWithFirst: SquotRebaseFirstOperationHeader new

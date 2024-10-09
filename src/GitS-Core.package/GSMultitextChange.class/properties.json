@@ -1,0 +1,18 @@
+{
+	"category" : "GitS-Core-Multitext",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"model",
+		"isExcluded",
+		"isInEditMode",
+		"editedTexts",
+		"lastRequestors" ],
+	"name" : "GSMultitextChange",
+	"pools" : [
+		 ],
+	"super" : "GSChange",
+	"type" : "normal" }

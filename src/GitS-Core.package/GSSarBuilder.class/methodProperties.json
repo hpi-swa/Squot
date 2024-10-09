@@ -1,0 +1,22 @@
+{
+	"class" : {
+		"buildSarFrom:" : "mad 11/14/2023 18:28",
+		"newWithWorkingCopy:" : "mad 11/14/2023 18:27" },
+	"instance" : {
+		"addPackage:at:" : "mad 10/9/2024 16:54",
+		"addPostAddHook:" : "mad 1/9/2024 21:37",
+		"addPreambleLine:" : "mad 1/9/2024 20:09",
+		"addString:at:" : "mad 1/9/2024 17:58",
+		"addUncompressedString:at:" : "mad 1/9/2024 20:04",
+		"buildSar" : "mad 10/2/2024 18:36",
+		"fixupChunkTerminatorsIn:" : "mad 1/9/2024 21:41",
+		"initialize" : "mad 1/9/2024 21:37",
+		"mappers" : "mad 11/14/2023 18:35",
+		"postAddHooks" : "mad 1/9/2024 21:36",
+		"postAddHooks:" : "mad 1/9/2024 21:37",
+		"preamble" : "mad 11/14/2023 18:30",
+		"preamble:" : "mad 11/14/2023 18:30",
+		"workingCopy" : "mad 11/14/2023 18:30",
+		"workingCopy:" : "mad 11/14/2023 18:30",
+		"zip" : "mad 11/14/2023 18:30",
+		"zip:" : "mad 11/14/2023 18:31" } }

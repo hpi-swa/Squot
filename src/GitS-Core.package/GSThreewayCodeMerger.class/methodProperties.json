@@ -1,0 +1,9 @@
+{
+	"class" : {
+		 },
+	"instance" : {
+		"addConflictWithLeft:right:base:" : "mad 10/9/2024 16:01",
+		"addDefinition:" : "mad 7/2/2023 14:52",
+		"modifyDefinition:to:" : "mad 7/2/2023 14:55",
+		"removeDefinition:" : "mad 7/2/2023 14:51",
+		"tryAutoMergeLeft:right:base:" : "mad 10/9/2024 17:03" } }

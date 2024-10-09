@@ -1,0 +1,16 @@
+{
+	"category" : "GitS-Core-Utilities",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"path",
+		"allowsLeading",
+		"allowsTrailing" ],
+	"name" : "GSPathPattern",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }

@@ -1,0 +1,15 @@
+{
+	"category" : "GitS-Core-Asset",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"activeWorkingCopy",
+		"selectedMapper" ],
+	"name" : "GSAssetBrowser",
+	"pools" : [
+		 ],
+	"super" : "Model",
+	"type" : "normal" }

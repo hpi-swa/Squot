@@ -1,0 +1,14 @@
+{
+	"category" : "GitS-Core-Code",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "GSCypressMapper",
+	"pools" : [
+		 ],
+	"super" : "GSCodeMapper",
+	"type" : "normal" }

@@ -1,3 +1,0 @@
-mappers
-metadataMapper
-	^ SquotMetadataMapper new

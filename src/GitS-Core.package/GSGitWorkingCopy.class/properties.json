@@ -1,0 +1,17 @@
+{
+	"category" : "GitS-Core",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		"LastImageHash" ],
+	"commentStamp" : "",
+	"instvars" : [
+		"fsgitRepository",
+		"refsForCommits",
+		"credentials",
+		"lastImageHash" ],
+	"name" : "GSGitWorkingCopy",
+	"pools" : [
+		 ],
+	"super" : "GSBaseWorkingCopy",
+	"type" : "normal" }

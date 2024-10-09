@@ -1,0 +1,15 @@
+{
+	"category" : "GitS-Core-Asset",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"path",
+		"encoding" ],
+	"name" : "GSAssetMapper",
+	"pools" : [
+		 ],
+	"super" : "GSMapper",
+	"type" : "normal" }

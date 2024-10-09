@@ -1,0 +1,14 @@
+{
+	"category" : "GitS-Core-Browser",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "GSListItemWrapper",
+	"pools" : [
+		 ],
+	"super" : "PluggableListItemWrapper",
+	"type" : "normal" }

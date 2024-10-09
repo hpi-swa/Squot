@@ -1,0 +1,17 @@
+{
+	"category" : "GitS-Core-Asset",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"mapper",
+		"contents",
+		"asset",
+		"hexHash" ],
+	"name" : "GSAssetFile",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }

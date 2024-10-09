@@ -1,0 +1,15 @@
+{
+	"category" : "GitS-Core-Browser",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"message",
+		"messageName" ],
+	"name" : "GSChangesDialogWithMessage",
+	"pools" : [
+		 ],
+	"super" : "GSChangesDialog",
+	"type" : "normal" }

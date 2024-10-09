@@ -1,0 +1,17 @@
+{
+	"category" : "GitS-Core-Browser",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"title",
+		"remoteName",
+		"remoteUrl",
+		"accepted" ],
+	"name" : "GSRemoteDialog",
+	"pools" : [
+		 ],
+	"super" : "Model",
+	"type" : "normal" }

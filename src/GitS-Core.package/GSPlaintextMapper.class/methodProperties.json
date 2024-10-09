@@ -1,0 +1,24 @@
+{
+	"class" : {
+		"defaultEncoding" : "mad 11/7/2023 12:45",
+		"encodingName:" : "mad 11/7/2023 12:45",
+		"kind" : "mad 9/29/2024 19:30",
+		"validEncodings" : "mad 11/7/2023 12:45" },
+	"instance" : {
+		"assetAsMorph:" : "mad 9/29/2024 17:33",
+		"assetFile:equals:" : "mad 9/29/2024 17:31",
+		"assetFileHash:" : "mad 9/29/2024 17:31",
+		"assetTypeName" : "mad 9/29/2024 17:35",
+		"buildAssetFromImage:with:" : "mad 10/9/2024 16:01",
+		"canReadAssetFrom:" : "mad 9/29/2024 17:44",
+		"changeSetClass" : "mad 10/9/2024 16:01",
+		"changeSetToMergeAssetFile:into:withBase:" : "mad 10/9/2024 16:01",
+		"importPriority" : "mad 4/22/2024 16:43",
+		"isValidAsset:" : "mad 9/29/2024 17:40",
+		"printDescriptionOn:" : "mad 10/2/2024 20:12",
+		"printDescriptionWithoutPathOn:" : "mad 10/2/2024 20:11",
+		"readAssetFrom:" : "mad 10/1/2024 17:23",
+		"toPlaintext:" : "mad 10/9/2024 16:01",
+		"transformAsset:" : "mad 9/29/2024 17:53",
+		"transformAsset:ifFail:" : "mad 9/29/2024 17:54",
+		"writeAsset:on:" : "mad 10/2/2024 20:39" } }

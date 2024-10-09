@@ -1,0 +1,15 @@
+{
+	"category" : "GitS-Core-Plaintext",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"mapper",
+		"workingCopy" ],
+	"name" : "GSPlaintextImageModel",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }

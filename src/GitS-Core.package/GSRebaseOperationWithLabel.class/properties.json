@@ -1,0 +1,14 @@
+{
+	"category" : "GitS-Core-Rebase",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"label" ],
+	"name" : "GSRebaseOperationWithLabel",
+	"pools" : [
+		 ],
+	"super" : "GSRebaseOperation",
+	"type" : "normal" }

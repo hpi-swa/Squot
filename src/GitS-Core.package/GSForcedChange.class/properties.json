@@ -1,0 +1,14 @@
+{
+	"category" : "GitS-Core",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "GSForcedChange",
+	"pools" : [
+		 ],
+	"super" : "GSChange",
+	"type" : "normal" }

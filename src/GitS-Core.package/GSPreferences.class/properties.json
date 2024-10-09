@@ -1,0 +1,14 @@
+{
+	"category" : "GitS-Core-Utilities",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		"ShowBase" ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "GSPreferences",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }

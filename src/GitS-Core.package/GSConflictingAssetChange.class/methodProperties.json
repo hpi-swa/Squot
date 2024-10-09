@@ -1,0 +1,28 @@
+{
+	"class" : {
+		 },
+	"instance" : {
+		"base" : "mad 9/8/2023 12:09",
+		"buildBase:" : "mad 9/29/2024 16:50",
+		"buildBody:" : "mad 10/9/2024 16:01",
+		"buildBodyWithBase:" : "mad 10/9/2024 16:01",
+		"buildBodyWithoutBase:" : "mad 10/9/2024 16:01",
+		"buildDynamicAsset:label:resolveAction:state:with:" : "mad 10/9/2024 16:01",
+		"buildDynamicBase:" : "mad 9/29/2024 17:27",
+		"buildDynamicLeft:" : "mad 9/29/2024 17:27",
+		"buildDynamicRight:" : "mad 9/29/2024 17:27",
+		"buildHead:" : "mad 9/8/2023 16:25",
+		"buildLeft:" : "mad 9/29/2024 16:50",
+		"buildResolution:" : "mad 9/29/2024 16:50",
+		"buildResolutionPanel:" : "mad 10/9/2024 16:01",
+		"buildResolveButton:state:with:" : "mad 9/26/2023 14:01",
+		"buildRight:" : "mad 9/29/2024 16:50",
+		"buildWith:" : "mad 10/9/2024 16:01",
+		"headText" : "mad 9/8/2023 16:23",
+		"isResolved" : "mad 9/8/2023 16:24",
+		"left" : "mad 9/8/2023 12:09",
+		"resolution" : "mad 9/8/2023 12:10",
+		"right" : "mad 9/8/2023 12:09",
+		"update:" : "mad 9/20/2023 17:06",
+		"workspaceBindings" : "mad 9/13/2023 15:52",
+		"workspaceEditTargetString" : "mad 9/13/2023 16:01" } }

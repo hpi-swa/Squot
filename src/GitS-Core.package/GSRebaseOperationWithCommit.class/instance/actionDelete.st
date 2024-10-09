@@ -1,0 +1,3 @@
+actions
+actionDelete
+	self actionChangeOperationTo: GSRebaseOperationDrop.

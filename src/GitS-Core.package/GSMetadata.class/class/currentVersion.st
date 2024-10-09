@@ -1,0 +1,3 @@
+versions
+currentVersion
+	^ GSMetadataMapper currentVersion

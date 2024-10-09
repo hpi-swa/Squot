@@ -1,0 +1,15 @@
+{
+	"category" : "GitS-Core-Utilities",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"fileSystem",
+		"rootPath" ],
+	"name" : "GSSubFileSystem",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }

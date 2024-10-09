@@ -1,0 +1,25 @@
+{
+	"class" : {
+		"newWithCommit:" : "mad 12/5/2023 21:40",
+		"wantsToBeCreatedFrom:" : "mad 4/4/2024 21:24",
+		"wantsToChangeTo:" : "mad 10/9/2024 16:01" },
+	"instance" : {
+		"actionDelete" : "mad 10/9/2024 16:01",
+		"arguments" : "mad 4/3/2024 18:03",
+		"color" : "mad 4/3/2024 20:09",
+		"coloredCommitIcon:" : "mad 4/3/2024 20:31",
+		"commit" : "mad 12/5/2023 21:40",
+		"commit:" : "mad 12/5/2023 21:40",
+		"commitDeletionColor" : "mad 4/3/2024 20:15",
+		"commitIcon" : "mad 4/3/2024 20:41",
+		"commitModificationColor" : "mad 4/3/2024 20:17",
+		"createsCommit" : "mad 4/3/2024 17:49",
+		"deletesCommit" : "mad 4/3/2024 20:06",
+		"editsMessage" : "mad 4/3/2024 19:53",
+		"icon" : "mad 4/3/2024 20:31",
+		"isCommitModified" : "mad 4/5/2024 00:51",
+		"menu:" : "mad 4/5/2024 20:25",
+		"messageEditColor" : "mad 4/3/2024 20:16",
+		"messageEditCommitIcon" : "mad 4/3/2024 20:02",
+		"modifiedCommitIcon" : "mad 4/3/2024 20:03",
+		"requestMissingInstVars" : "mad 4/3/2024 18:00" } }

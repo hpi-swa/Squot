@@ -1,0 +1,16 @@
+{
+	"category" : "GitS-Core-Asset",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"right",
+		"resolution",
+		"isResolved" ],
+	"name" : "GSConflictingAssetChangeSet",
+	"pools" : [
+		 ],
+	"super" : "GSAssetChangeSet",
+	"type" : "normal" }

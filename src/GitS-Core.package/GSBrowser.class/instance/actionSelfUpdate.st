@@ -1,0 +1,3 @@
+actions
+actionSelfUpdate
+	GSSelfUpdater selfUpdate.

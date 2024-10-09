@@ -1,0 +1,14 @@
+{
+	"category" : "GitS-Core-Code",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "jr 1/17/2017 13:43",
+	"instvars" : [
+		"fileUtils" ],
+	"name" : "GSMCFileTreeWriter",
+	"pools" : [
+		 ],
+	"super" : "MCFileTreeWriter",
+	"type" : "normal" }

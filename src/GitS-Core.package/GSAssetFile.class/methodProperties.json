@@ -1,0 +1,17 @@
+{
+	"class" : {
+		"withMapper:asset:" : "mad 9/29/2024 19:21",
+		"withMapper:contents:" : "mad 9/27/2024 20:03",
+		"withMapper:fromStream:" : "mad 9/30/2024 14:33" },
+	"instance" : {
+		"=" : "mad 9/29/2024 16:58",
+		"asset" : "mad 9/29/2024 19:17",
+		"computeHexHash" : "mad 10/2/2024 18:06",
+		"contents" : "mad 9/27/2024 20:02",
+		"contents:" : "mad 9/27/2024 20:02",
+		"convertTo:" : "mad 10/9/2024 16:01",
+		"hash" : "mad 9/29/2024 16:59",
+		"hexHash" : "mad 10/1/2024 22:52",
+		"mapper" : "mad 9/27/2024 19:42",
+		"mapper:" : "mad 9/27/2024 19:42",
+		"readAsset" : "mad 9/29/2024 19:17" } }

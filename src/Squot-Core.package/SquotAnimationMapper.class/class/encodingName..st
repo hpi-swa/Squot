@@ -1,3 +1,0 @@
-encodings
-encodingName: anImageReadWriterClass
-	^ anImageReadWriterClass squotEncodingName

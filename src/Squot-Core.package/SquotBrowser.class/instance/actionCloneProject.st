@@ -1,3 +1,0 @@
-actions
-actionCloneProject
-	self newProject: SquotGitWorkingCopy cloneFromUserAndRegister.

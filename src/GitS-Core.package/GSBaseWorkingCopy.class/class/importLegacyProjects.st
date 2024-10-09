@@ -1,0 +1,5 @@
+migrations
+importLegacyProjects
+	self
+		importLegacySqueakWorkingCopyInstances;
+		importLegacySquotWorkingCopyInstances.

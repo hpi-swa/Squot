@@ -1,0 +1,14 @@
+{
+	"category" : "GitS-Core-Image",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "GSImageMapper",
+	"pools" : [
+		 ],
+	"super" : "GSAssetMapper",
+	"type" : "normal" }

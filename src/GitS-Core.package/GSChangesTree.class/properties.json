@@ -1,0 +1,15 @@
+{
+	"category" : "GitS-Core-Browser",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"label",
+		"children" ],
+	"name" : "GSChangesTree",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }

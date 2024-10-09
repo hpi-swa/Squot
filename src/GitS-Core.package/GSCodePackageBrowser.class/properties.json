@@ -1,0 +1,16 @@
+{
+	"category" : "GitS-Core-Code",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"workingCopy",
+		"packageOrganizer",
+		"selectedPackageName" ],
+	"name" : "GSCodePackageBrowser",
+	"pools" : [
+		 ],
+	"super" : "Model",
+	"type" : "normal" }

@@ -1,0 +1,12 @@
+{
+	"class" : {
+		 },
+	"instance" : {
+		"aboutToStyle:with:requestor:at:" : "mad 10/9/2024 17:00",
+		"copyOf:withSources:notifying:ifFail:" : "mad 10/9/2024 17:02",
+		"helpFor:at:" : "mad 10/9/2024 17:02",
+		"isSourceAt:timeStampOf:" : "mad 10/9/2024 17:03",
+		"pathFor:" : "mad 10/9/2024 17:00",
+		"sourcesSizeOf:" : "mad 10/9/2024 17:03",
+		"stylerClassFor:at:" : "mad 10/9/2024 17:03",
+		"versionAsSources:" : "mad 10/9/2024 17:02" } }

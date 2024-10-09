@@ -1,0 +1,52 @@
+GSMetadata {
+	#version : 1,
+	#mappers : [
+		GSCypressMapper {
+			#version : 1,
+			#isTracked : true,
+			#package : MCPackage {
+				#name : 'VersionControl'
+			},
+			#path : FSAbsolutePath [
+				'src'
+			]
+		},
+		GSCypressMapper {
+			#version : 1,
+			#isTracked : true,
+			#package : MCPackage {
+				#name : 'GitS-Compatibility'
+			},
+			#path : FSAbsolutePath [
+				'src'
+			]
+		},
+		GSCypressMapper {
+			#version : 1,
+			#isTracked : true,
+			#package : MCPackage {
+				#name : 'FileSystem-Git'
+			},
+			#path : FSAbsolutePath [
+				'src'
+			]
+		},
+		GSCypressMapper {
+			#version : 1,
+			#isTracked : true,
+			#package : MCPackage {
+				#name : 'GitS-Core'
+			},
+			#path : @8
+		},
+		GSCypressMapper {
+			#version : 1,
+			#isTracked : true,
+			#package : MCPackage {
+				#name : 'BaselineOfGitS'
+			},
+			#path : @8
+		}
+	],
+	#name : 'GitS'
+}

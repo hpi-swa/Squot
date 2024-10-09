@@ -17,6 +17,6 @@ loadMetadatasWithUntrackedMappersFromFSCommits: aCollection in: aWorkingCopy
 				withMappedPathPatterns: mappedPathPatterns) ifTrue: [
 				fileSystems with: untrackedMappers do: [:fileSystem :mappers | | reference |
 					reference := fileSystem referenceTo: path.
-					reference exists ifTrue: [mappers add: (self untrackedMapperForReference: reference)]]]]
+					reference isFile ifTrue: [mappers add: (self untrackedMapperForReference: reference)]]]]
 		displayingProgress: [:path | 'Scanning for potential changes in untracked file {1}' format: {GSPathUtilities asString: path}].
 	^ metadatas with: untrackedMappers collect: [:metadata :mappers | metadata withAddedMappers: mappers]

@@ -1,7 +1,7 @@
 moving
 requestNewRepositoryLocation
 	| start |
-	start := GSPathUtilities ancestorThatExists: self fsReference.
+	start := GSPathUtilities ancestorOf: self fsReference that: #isDirectory.
 	start := FileDirectory on: start printString.
 	^ (UIManager default
 		chooseDirectory: 'New repository location:'

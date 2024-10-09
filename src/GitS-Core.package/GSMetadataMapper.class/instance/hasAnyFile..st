@@ -1,3 +1,3 @@
 testing
 hasAnyFile: aFileSystem
-	^ (self fixedLegacyReferencesIn: aFileSystem) anySatisfy: #exists
+	^ (self fixedLegacyReferencesIn: aFileSystem) anySatisfy: #isFile

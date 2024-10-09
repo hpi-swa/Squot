@@ -1,9 +1,8 @@
 workspace
 workspaceBindings
-	^ Dictionary newFrom: {
+	^ (Dictionary newFrom: {
 		'current' -> self left.
 		'incoming' -> self right.
 		'base' -> self base.
 		'resolution' -> self resolution.
-	}
-	
+	}) collect: [:each | each ifNotNil: #asset]

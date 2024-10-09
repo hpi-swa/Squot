@@ -45,11 +45,13 @@ baseline: spec
 			package: 'GitS-Core' with: [
 				spec
 					requires: #('FileSystem' 'VersionControl' 'FileSystem-Git' 'DiffMerge' 'Ston' 'Tonel');
-					postLoadDoIt: #postLoad].
-		spec 
+					postLoadDoIt: #postLoad];
+			package: 'GitS-Tests' with: [
+				spec
+					requires: #('GitS-Core')];
 			group: 'FileSystemGit' with: #('FileSystem-Git');
 			group: 'default' with: #('GitS-Core');
-			group: 'tests' with: #('default')].
+			group: 'tests' with: #('GitS-Tests')].
 	
 	spec for: #'squeakCommon' do: [
 		spec

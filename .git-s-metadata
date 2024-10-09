@@ -46,6 +46,16 @@ GSMetadata {
 				#name : 'BaselineOfGitS'
 			},
 			#path : @8
+		},
+		GSCypressMapper {
+			#version : 1,
+			#isTracked : true,
+			#package : MCPackage {
+				#name : 'GitS-Tests'
+			},
+			#path : FSAbsolutePath [
+				'src'
+			]
 		}
 	],
 	#name : 'GitS'

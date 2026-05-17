@@ -11,7 +11,7 @@ waitFor: aWaitable
 	[[[answer := aWaitable wait]
 		on: BrokenPromise do:
 			[:bp | bp ifError: [:error | exception := error. bp return] ifNotError: [bp pass]]
-		on: Error do:
+		on: Error , BrokenPromise ">= Squeak 6.1 BrokenPromise is not an Error" do:
 			[:e | exception := e. e return]]
 		ensure:
 			[| canContinue |

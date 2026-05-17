@@ -2,5 +2,5 @@
 reason
 	| nested |
 	nested := promise.
-	[(nested isKindOf: Promise) and: [nested isRejected]] whileTrue: [nested := nested error].
+	[(nested isKindOf: Promise) and: [nested isRejected]] whileTrue: [nested := nested errorValue].
 	^ nested

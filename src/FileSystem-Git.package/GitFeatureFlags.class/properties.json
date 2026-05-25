@@ -4,6 +4,7 @@
 		 ],
 	"classvars" : [
 		"EvictFromObjectCache",
+		"ExternalFetchAndPush",
 		"UseUnitOfWorkInterface",
 		"WarnAboutUseOfDeprecatedMethods" ],
 	"commentStamp" : "",

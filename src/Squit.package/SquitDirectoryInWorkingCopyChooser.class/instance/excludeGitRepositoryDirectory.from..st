@@ -1,4 +1,4 @@
-as yet unclassified
+private
 excludeGitRepositoryDirectory: aFSFileDirectoryAdapter from: anArray
 	| index result |
 	result := anArray.

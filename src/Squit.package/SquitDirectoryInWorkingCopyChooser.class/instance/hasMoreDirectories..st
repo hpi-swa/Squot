@@ -1,4 +1,4 @@
-as yet unclassified
+directory tree
 hasMoreDirectories: aDirectory
 	workingCopyDirectory = aDirectory ifTrue:
 		[^ "exclude .git" aDirectory asFSReference entries anySatisfy: [:each | each isDirectory and: [each basename ~= '.git']]].

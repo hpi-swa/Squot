@@ -1,0 +1,17 @@
+{
+	"class" : {
+		"hashMask" : "mad 4/29/2023 21:59",
+		"initialize" : "mad 4/29/2023 21:59",
+		"on:" : "mad 4/29/2023 19:27",
+		"shift" : "mad 4/29/2023 21:58",
+		"window" : "mad 4/29/2023 21:58" },
+	"instance" : {
+		"addFirstWindowValueAt:" : "mad 4/29/2023 22:00",
+		"addRollingValueAt:" : "mad 4/29/2023 21:58",
+		"data" : "mad 4/29/2023 19:14",
+		"data:" : "mad 4/29/2023 19:15",
+		"hashFirstWindowAt:" : "mad 4/29/2023 21:58",
+		"hashValue" : "mad 4/29/2023 19:05",
+		"hashValue:" : "mad 4/29/2023 19:15",
+		"initialize" : "mad 4/29/2023 19:26",
+		"resetHashValue" : "mad 4/29/2023 19:14" } }

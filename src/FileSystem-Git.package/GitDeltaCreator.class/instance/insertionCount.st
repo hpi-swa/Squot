@@ -1,0 +1,3 @@
+accessing
+insertionCount
+	^ insertionCount

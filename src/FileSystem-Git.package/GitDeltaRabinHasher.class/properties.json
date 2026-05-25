@@ -1,0 +1,16 @@
+{
+	"category" : "FileSystem-Git-Plumbing-Packs-Delta",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		"T",
+		"U" ],
+	"commentStamp" : "",
+	"instvars" : [
+		"hashValue",
+		"data" ],
+	"name" : "GitDeltaRabinHasher",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }

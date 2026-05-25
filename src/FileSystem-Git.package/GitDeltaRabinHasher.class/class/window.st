@@ -1,0 +1,3 @@
+constants
+window
+	^ 16
